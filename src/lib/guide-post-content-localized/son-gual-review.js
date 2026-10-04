@@ -18,7 +18,7 @@ const content = {
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Cuanto cuesta jugar al golf en Mallorca?"
+          "title": "¿Cuánto cuesta jugar al golf en Mallorca?"
         },
         {
           "slug": "best-time-play-golf-mallorca",
@@ -38,7 +38,7 @@ const content = {
         "text": "Son Gual es mi campo más jugado de Mallorca y el que recomiendo con más constancia cuando los clientes preguntan dónde jugar. Quiero ser honesto sobre por qué, y honesto sobre lo que lo hace difícil, porque es difícil, y quien reserve esperando un día relajado se llevará una sorpresa. Si también estás pensando en <a href=\"/guides/alcanada-review\">Alcanada</a> o <a href=\"/guides/son-muntaner-review\">Son Muntaner</a>, lee también esas reseñas antes de decidir."
       },
       {
-        "text": "Respuesta rápida: merece la pena reservar Son Gual?"
+        "text": "Respuesta rápida: ¿merece la pena reservar Son Gual?"
       },
       {
         "text": "Sí, si quieres una ronda de campeonato en serio y no te importa pagar tarifas premium. Es uno de los campos mejor cuidados de Mallorca, pero no es una vuelta vacacional blanda. Si tu grupo quiere puntuar más fácil y con menos presión, compara primero <a href='/guides/son-muntaner-review'>Son Muntaner</a> y <a href='/guides/alcanada-review'>Alcanada</a>."
@@ -50,10 +50,10 @@ const content = {
         "text": "El primer tee"
       },
       {
-        "text": "La primera vez que jugué Son Gual estaba en los tees negros, con viento fuerte desde la izquierda, junto a un amigo Profesional PGA que juega y puntua muy bien. También había una cámara grabando para un vlog. Eso añade presión. Estaba algo nervioso."
+        "text": "La primera vez que jugué Son Gual estaba en los tees negros, con viento fuerte desde la izquierda, junto a un amigo Profesional PGA que juega y puntúa muy bien. También había una cámara grabando para un vlog. Eso añade presión. Estaba algo nervioso."
       },
       {
-        "text": "El drive salió un poco de talon. Aun así voló más de lo esperado y evito los bunkers, por poco. En Son Gual hay muchos bunkers, colocados justo donde acaban los golpes un poco mal pegados. Tienes que tener en cuenta viento, desniveles, contacto irregular y esos bunkers parecen crecer cuanto más los miras."
+        "text": "El drive salió un poco de talón. Aun así voló más de lo esperado y evitó los bunkers, por poco. En Son Gual hay muchos bunkers, colocados justo donde acaban los golpes un poco mal pegados. Tienes que tener en cuenta viento, desniveles, contacto irregular y esos bunkers parecen crecer cuanto más los miras."
       },
       {
         "caption": "Son Gual tiene muchos bunkers. Están justo donde acaban los golpes ligeramente fallados."
@@ -71,7 +71,7 @@ const content = {
         "text": "Los greens"
       },
       {
-        "text": "Rápidos, elevados e implacables con las malas aproximaciones. En enero, los greens y antegreens estaban tan rapados que llamaban la atención para esa época del año. Bueno para generar spin, incomodo cuando tienes un chip tenso con poca zona de aterrizaje."
+        "text": "Rápidos, elevados e implacables con las malas aproximaciones. En enero, los greens y antegreens estaban tan rapados que llamaban la atención para esa época del año. Bueno para generar spin, incómodo cuando tienes un chip tenso con poca zona de aterrizaje."
       },
       {
         "text": "Una de mis compañeras de juego ese día, una alumna que visitaba Mallorca desde China, cogió el putter creyendo que estaba en el green. Todavía le quedaban unas 30 yardas de antegreen. Así de meticuloso es el mantenimiento."
@@ -133,23 +133,23 @@ const content = {
         "text": "Alquiler de palos en la tienda: Callaway €35, Titleist €45 por ronda. Buggy €45, trolley eléctrico desde €15. Límite de hándicap: 33 para hombres, 35 para señoras. Al reservar se exige un certificado WHS válido. Se permite ir andando."
       },
       {
-        "title": "Cuatro cosas que yo sabría antes de reservar Son Gual",
+        "title": "Cuatro cosas que me habría gustado saber antes de reservar Son Gual",
         "items": [
           [
             "Mejor hora de salida",
-            "Temprano por la mañana o a última hora de la tarde. Son Gual se siente tranquilo cuando puede ver sobre Palma y el campo está en calma. La luz en la finca es mejor en esos dos momentos del día."
+            "Temprano por la mañana o a última hora de la tarde. Son Gual se siente tranquilo cuando puedes ver sobre Palma y el campo está en calma. La luz en la finca es mejor en esos dos momentos del día."
           ],
           [
             "Consejo con el viento",
-            "Si hay aunque sea un poco de brisa, preste atención al tramo expuesto del medio. Es uno de los pocos campos de Mallorca donde fallar medio palo puede dejarle justo en la parte equivocada del green, y desde ahí dos putts son duros."
+            "Si hay aunque sea un poco de brisa, presta atención al tramo expuesto del medio. Es uno de los pocos campos de Mallorca donde fallar medio palo puede dejarte justo en la parte equivocada del green, y desde ahí dos putts son duros."
           ],
           [
-            "Donde suelen perder golpes los visitantes",
-            "La mayoría de golpes perdidos empiezan con una mala posición ligera desde el tee, una bola en uno de los bunkers grandes y luego un juego corto muy incomodo alrededor de esos greens elevados."
+            "Dónde suelen perder golpes los visitantes",
+            "La mayoría de golpes perdidos empiezan con una mala posición ligera desde el tee, una bola en uno de los bunkers grandes y luego un juego corto muy incómodo alrededor de esos greens elevados."
           ],
           [
             "Consejo de casa club",
-            "Si va a hacer un día completo, coma después de la vuelta y no antes. La terraza es un lugar tranquilo para comer bien y ver a los jugadores terminar sus rondas."
+            "Si vas a hacer un día completo, come después de la vuelta y no antes. La terraza es un lugar tranquilo para comer bien y ver a los jugadores terminar sus rondas."
           ]
         ]
       },
@@ -395,10 +395,10 @@ const content = {
         "text": "La première fois que j'ai joué Son Gual, j'étais sur les départs noirs. Le vent venait fort de la gauche, je jouais avec un ami professionnel PGA qui score très bien, et la caméra tournait pour un vlog. Cela ajoute sa propre pression. J'étais un peu nerveux."
       },
       {
-        "text": "Le drive est parti légèrement du talon. Il a quand même volé plus loin que prévu et a évite les bunkers, de peu. A Son Gual, les bunkers sont nombreux, places exactement la ou les coups légèrement manques finissent. Vous devez gérer le vent, les deniveles, les contacts irréguliers, et plus vous les regardez, plus les bunkers semblent grands."
+        "text": "Le drive est parti légèrement du talon. Il a quand même volé plus loin que prévu et a évité les bunkers, de peu. À Son Gual, les bunkers sont nombreux, placés exactement là où les coups légèrement manqués finissent. Vous devez gérer le vent, les dénivelés, les contacts irréguliers, et plus vous les regardez, plus les bunkers semblent grands."
       },
       {
-        "caption": "Son Gual compte beaucoup de bunkers. Ils sont places exactement la ou finissent les coups un peu ratés."
+        "caption": "Son Gual compte beaucoup de bunkers. Ils sont placés exactement là où finissent les coups un peu ratés."
       },
       {
         "text": "Le vent"
@@ -413,7 +413,7 @@ const content = {
         "text": "Les greens"
       },
       {
-        "text": "Rapides, surélevés et sans pardon pour les mauvaises attaques. En janvier, les greens et les avant-greens étaient tondus très court, remarquable pour la saison. Bon pour produire du spin, moins confortable quand il faut jouer un chip serre avec une petite zone de réception."
+        "text": "Rapides, surélevés et sans pardon pour les mauvaises attaques. En janvier, les greens et les avant-greens étaient tondus très court, remarquable pour la saison. Bon pour produire du spin, moins confortable quand il faut jouer un chip serré avec une petite zone de réception."
       },
       {
         "text": "L'une de mes partenaires ce jour-là - une élève chinoise en visite à Majorque - a sorti son putter en croyant être sur le green. Il lui restait encore environ 30 yards de frange à parcourir. L'entretien est à ce point méticuleux."
@@ -443,7 +443,7 @@ const content = {
         "text": "Rafa Nadal y joue régulièrement et a dit que c'est son parcours préféré de l'île. Barack Obama y a joué en novembre 2024 et l'a tellement apprécié qu'il a promis d'y revenir. De nombreux grands tournois amateurs et professionnels s'y tiennent aussi."
       },
       {
-        "caption": "Le départ du 10, juste devant le clubhouse. Le par 4 s ouvre devant vous."
+        "caption": "Le départ du 10, juste devant le clubhouse. Le par 4 s'ouvre devant vous."
       },
       {
         "items": [
@@ -479,14 +479,14 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Tôt le matin ou en fin d'après-midi. Son Gual paraît plus calme quand on voit Palma au loin et que le parcours est tranquille. C'est aussi la que la lumière est la meilleure sur toute la propriété."
+            "Tôt le matin ou en fin d'après-midi. Son Gual paraît plus calme quand on voit Palma au loin et que le parcours est tranquille. C'est aussi là que la lumière est la meilleure sur toute la propriété."
           ],
           [
             "Conseil vent",
-            "S'il y a même un peu de vent, faites attention à la partie exposée du milieu. C'est l'un des rares parcours de Majorque ou une demi-can ne de moins peut vous laisser exactement sur la mauvaise partie du green, et de la deux putts deviennent difficiles."
+            "S'il y a même un peu de vent, faites attention à la partie exposée du milieu. C'est l'un des rares parcours de Majorque où se tromper d'un demi-club peut vous laisser exactement sur la mauvaise partie du green, et de là deux putts deviennent difficiles."
           ],
           [
-            "Ou les visiteurs perdent des coups",
+            "Où les visiteurs perdent des coups",
             "La plupart des coups perdus commencent par une position légèrement mauvaise au départ, une balle dans un des grands bunkers, puis un petit jeu très délicat autour de ces greens surélevés."
           ],
           [
@@ -734,10 +734,10 @@ const content = {
         "text": "Första tee"
       },
       {
-        "text": "Första gången jag spelade Son Gual stöd jag på svart tee. Vinden kom hårt från vänster, jag spelade med en PGA Professional-van som spelar och scorar bra, och kameran rullade för en vlogg. Det lägger till sin egen press. Jag var lite nervös."
+        "text": "Första gången jag spelade Son Gual stod jag på svart tee. Vinden kom hårt från vänster, jag spelade med en PGA Professional-van som spelar och scorar bra, och kameran rullade för en vlogg. Det lägger till sin egen press. Jag var lite nervös."
       },
       {
-        "text": "Driven kom lite ur hålen. Den flog ändå längre an väntat och undvek bunkrarna, precis. Det finns många bunkrar på Son Gual, placerade där lätt missade slag hamnar. Du räknar med vind, höjdskillnader och ojamt bolltraff, och bunkrarna verkar växa ju längre du tittar på dem."
+        "text": "Driven träffade lite i hälen. Den flög ändå längre än väntat och undvek bunkrarna, precis. Det finns många bunkrar på Son Gual, placerade där lätt missade slag hamnar. Du räknar med vind, höjdskillnader och ojämn bollträff, och bunkrarna verkar växa ju längre du tittar på dem."
       },
       {
         "caption": "Son Gual har många bunkrar. De ligger precis där små missar brukar hamna."
@@ -755,7 +755,7 @@ const content = {
         "text": "Greenerna"
       },
       {
-        "text": "Snabba, upphöjda och hårda mot dåliga inspel. I januari var greener och foregreens så kortklippta att det stack ut för årstiden. Bra för spinn, obekvämt när man står med en tajt chip och liten landningsyta."
+        "text": "Snabba, upphöjda och hårda mot dåliga inspel. I januari var greener och förgreen så kortklippta att det stack ut för årstiden. Bra för spinn, obekvämt när man står med en tajt chip och liten landningsyta."
       },
       {
         "text": "En av mina spelpartners den dagen - en elev som besökte Mallorca från Kina - tog fram sin putter i tron att hon stod på greenen. Hon hade ungefär 30 yards framkant kvar. Så noggrant är banskötseln."
@@ -825,15 +825,15 @@ const content = {
           ],
           [
             "Vindtips",
-            "Om det ens finns en liten bris, håll koll på den öppna mittdelen. Det har är en av få banor på Mallorca där en halv klubba fel kan lämna dig exakt på fel del av greenen, och därifrån är två puttar svåra."
+            "Om det ens finns en liten bris, håll koll på den öppna mittdelen. Det här är en av få banor på Mallorca där en halv klubba fel kan lämna dig exakt på fel del av greenen, och därifrån är två puttar svåra."
           ],
           [
             "Där besökare tappar slag",
-            "De flesta tappade slagen börjar med en lite dålig position från tee, en boll i en av de stora bunkrarna och sedan ett riktigt knepigt narspel runt de upphöjda greenerna."
+            "De flesta tappade slag börjar med en något dålig position från tee, en boll i en av de stora bunkrarna och sedan ett riktigt knepigt närspel runt de upphöjda greenerna."
           ],
           [
             "Klubbhustips",
-            "Om du gör en hel dag av det, åt efter rundan i stället för före. Terrassen är en lugn plats för bra mat och för att se andra spelare avsluta sina rundor."
+            "Om du gör en hel dag av det, ät efter rundan i stället för före. Terrassen är en lugn plats för bra mat och för att se andra spelare avsluta sina rundor."
           ]
         ]
       },
@@ -1012,7 +1012,7 @@ const content = {
         "text": "常见问题"
       },
       {
-        "text": "单人可以预订吗？可以。接受单人预订，不过旺季当天你很可能会和其他球友组队。差点要求真的是字面意思吗？是的。球会在报到时会用有效的 WHS 证书来执行。"
+        "text": "单人可以预订吗？可以。接受单人预订，不过旺季当天你很可能会和其他球友组队。差点要求真的是字面意思吗？是的。球会会在报到时用有效的 WHS 证书来执行。"
       },
       {
         "text": "结论"

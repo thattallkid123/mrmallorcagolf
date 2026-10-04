@@ -123,34 +123,34 @@ const content = {
         "text": "Preguntas frecuentes"
       },
       {
-        "text": "El límite de hándicap es 28 para hombres y 36 para damas, comprobado al reservar. Los buggies son obligatorios antes de las 14:00; caminar está permitido después. Se aplica una licencia federativa diaria (3 €) si no es federado. Este campo es ideal para golfistas con confianza que disfrutan de una prueba estratégica más que de la distancia: el control de la distancia desde el tee importa más que la potencia. Lo que sorprende a los primerizos: a pesar de pasar la mayor parte de la vuelta en lo alto de las montañas, la vista al mar sobre Camp de Mar solo es visible desde el hoyo 2, así que no construya sus expectativas alrededor de las vistas al agua. Consejo local: lleve un GPS o un plano del campo, ya que varias aproximaciones son semiciegas."
+        "text": "El límite de hándicap es 28 para hombres y 36 para damas, comprobado al reservar. Los buggies son obligatorios antes de las 14:00; caminar está permitido después. Se aplica una licencia federativa diaria (3 €) si no es federado. Este campo es ideal para golfistas con confianza que disfrutan de una prueba estratégica más que de la distancia: el control de la distancia desde el tee importa más que la potencia. Lo que sorprende a los primerizos: a pesar de pasar la mayor parte de la vuelta en lo alto de las montañas, la vista al mar sobre Camp de Mar solo es visible desde el hoyo 2, así que no construyas tus expectativas alrededor de las vistas al agua. Consejo local: lleva un GPS o un plano del campo, ya que varias aproximaciones son semiciegas."
       },
       {
         "text": "Veredicto"
       },
       {
-        "title": "Cuatro cosas que yo sabría antes de reservar Golf de Andratx",
+        "title": "Cuatro cosas que me habría gustado saber antes de reservar Golf de Andratx",
         "items": [
           [
             "Mejor hora de salida",
-            "Salga tan temprano como le resulte razonable. El campo tiene demanda, la luz de montaña es mejor por la mañana, y así tiene la mejor opción de evitar el viento más fuerte."
+            "Sal tan temprano como te resulte razonable. El campo tiene demanda, la luz de montaña es mejor por la mañana, y así tienes la mejor opción de evitar el viento más fuerte."
           ],
           [
             "Consejo con el viento",
-            "Use un GPS o una buena guía del campo y confie en ella. Este recorrido castiga mucho más las medias decisiones en carries y pares 3 expuestos que una elección conservadora bien asumida."
+            "Usa un GPS o una buena guía del campo y confía en ella. Este recorrido castiga mucho más las medias decisiones en carries y pares 3 expuestos que una elección conservadora bien asumida."
           ],
           [
-            "Donde suelen perder golpes los visitantes",
-            "El error más común es pensar que el reto es solo la longitud. Los números altos aquí vienen mucho más de un mal control de distancia hacia obstáculos cruzados, de grandes cambios de elevación en hoyos cortos y de problemas que no ve del todo desde el tee."
+            "Dónde suelen perder golpes los visitantes",
+            "El error más común es pensar que el reto es solo la longitud. Los números altos aquí vienen mucho más de un mal control de distancia hacia obstáculos cruzados, de grandes cambios de elevación en hoyos cortos y de problemas que no ves del todo desde el tee."
           ],
           [
             "Consejo de casa club",
-            "La zona de prácticas es un poco peculiar. Llegue con tiempo suficiente para usar el área de juego corto y asentarse bien antes del primer tee."
+            "La zona de prácticas es un poco peculiar. Llega con tiempo suficiente para usar el área de juego corto y asentarte bien antes del primer tee."
           ]
         ]
       },
       {
-        "text": "Golf Andratx es un 7,5 sobre 10. Las vistas desde los hoyos más altos son las mejores que he visto en el suroeste de la isla. El trazado es una prueba seria, el Green Monster es el par 5 más largo de España y se juega cada metro, y el hoyo 12 sobre Camp del Mar es uno de los mejores que he jugado en Mallorca. Los buggies obligatorios antes de las 14:00 y una mañana concurrida lo hicieron sentir más organizado que relajado, pero esa es la realidad de un campo con está demanda. Merece la pena jugarlo, y merece la pena volver con un plano del campo en mano. Para ayuda con la secuencia frente a otros campos, consulta la <a href=\"/plan-your-trip\">guía de planificación del viaje</a>."
+        "text": "Golf Andratx es un 7,5 sobre 10. Las vistas desde los hoyos más altos son las mejores que he visto en el suroeste de la isla. El trazado es una prueba seria, el Green Monster es el par 5 más largo de España y se juega cada metro, y el hoyo 12 sobre Camp del Mar es uno de los mejores que he jugado en Mallorca. Los buggies obligatorios antes de las 14:00 y una mañana concurrida lo hicieron sentir más organizado que relajado, pero esa es la realidad de un campo con esta demanda. Merece la pena jugarlo, y merece la pena volver con un plano del campo en mano. Para ayuda con la secuencia frente a otros campos, consulta la <a href=\"/plan-your-trip\">guía de planificación del viaje</a>."
       },
       {
         "text": "¿Vas a jugar Golf Andratx? Puedo ayudarte con la estrategia, la elección de palos y las zonas de problemas que más importan en este trazado.",
@@ -263,7 +263,7 @@ const content = {
             "Berglayout"
           ],
           [
-            "SW Mallorca",
+            "Südwest-Mallorca",
             "Oberhalb von Andratx"
           ]
         ]
@@ -377,7 +377,7 @@ const content = {
         "text": "Quelques trous qui méritent deux passages"
       },
       {
-        "text": "Le trou 6, le Green Monster, est le par 5 le plus long d'Espagne. Lorsque nous avons joué, le fairway était entretenu par des robots de green-keeping qui tondaient le gazon, et on voyait vraiment à quelle point la surface est homogène à cette échelle. Nous avions le vent dans le dos sur ce trou et ça nous a quand même demandé le maximum."
+        "text": "Le trou 6, le Green Monster, est le par 5 le plus long d'Espagne. Lorsque nous avons joué, le fairway était entretenu par des robots de green-keeping qui tondaient le gazon, et on voyait vraiment à quel point la surface est homogène à cette échelle. Nous avions le vent dans le dos sur ce trou et ça nous a quand même demandé le maximum."
       },
       {
         "alt": "Coup de départ au trou 7 du Golf de Andratx avec des murs en pierre devant le green",
@@ -404,7 +404,7 @@ const content = {
         "text": "Les greens étaient bien entretenus et à une bonne vitesse. Beaucoup de pente sur plusieurs des trous les plus courts, ce qui deviendra un défi plus grand à mesure que les greens s'accéléreront au cours de l'été. Les bunkers étaient en excellent état tout au long du parcours. Sable homogène, bien ratissé. L'équipe de green-keeping travaillait sur plusieurs zones pendant notre tour, et les bunkers montraient où leur attention s'était concentrée."
       },
       {
-        "text": "Les voiturettes sont modernes et bien équipées. A noter : quelque part autour du trou 16, j'ai remarqué que l'écran de la voiturette semblait indiquer l'endroit où notre balle s'était arrêtée sur le green. Je ne suis pas certain que ce soit exactement ce qu'il faisait, mais à partir de ce moment il semblait suivre la position de la balle avec une certaine précision. Un petit détail, mais pratique."
+        "text": "Les voiturettes sont modernes et bien équipées. À noter : quelque part autour du trou 16, j'ai remarqué que l'écran de la voiturette semblait indiquer l'endroit où notre balle s'était arrêtée sur le green. Je ne suis pas certain que ce soit exactement ce qu'il faisait, mais à partir de ce moment il semblait suivre la position de la balle avec une certaine précision. Un petit détail, mais pratique."
       },
       {
         "items": [
@@ -454,12 +454,12 @@ const content = {
             "Utilisez un GPS ou un vrai guide du parcours et faites-lui confiance. Ce parcours punit bien plus les demi-décisions sur les carries et les par 3 exposés qu'un choix conservateur assume."
           ],
           [
-            "Ou les visiteurs perdent des coups",
-            "L'erreur la plus courante est de croire que le défi n'est qu'une question de longueur. Les gros scores viennent ici bien plus d'un mauvais contrôle de distance vers des obstacles en travers, de gros changements de denivele sur les trous courts, et de problèmes que l'on ne voit pas totalement depuis le tee."
+            "Où les visiteurs perdent des coups",
+            "L'erreur la plus courante est de croire que le défi n'est qu'une question de longueur. Les gros scores viennent ici bien plus d'un mauvais contrôle de distance vers des obstacles en travers, de gros changements de dénivelé sur les trous courts, et de problèmes que l'on ne voit pas totalement depuis le tee."
           ],
           [
             "Conseil clubhouse",
-            "La zone d'entrainement est un peu particulière. Arrivez assez tôt pour utiliser l'espace de petit jeu et vous installer tranquillement avant le premier départ."
+            "La zone d'entraînement est un peu particulière. Arrivez assez tôt pour utiliser l'espace de petit jeu et vous installer tranquillement avant le premier départ."
           ]
         ]
       },
@@ -494,7 +494,7 @@ const content = {
         },
         {
           "slug": "best-golf-courses-mallorca",
-          "title": "Beste Golfbanen op Mallorca 2026"
+          "title": "De beste golfbanen van Mallorca 2026"
         },
         {
           "slug": "golf-cost-mallorca",
@@ -557,7 +557,7 @@ const content = {
         "text": "Greens en conditie"
       },
       {
-        "text": "De greens waren goed onderhouden en op een goed tempo. Behoorlijk veel helling op een aantal van de kortere holes, wat een grotere uitdaging wordt naarmate de greens in de zomer sneller worden. De bunkers waren gedurende het hele ronde in uitstekende conditie. Consistent zand, goed geharkt. Het greenkeeperteam werkte tijdens onze ronde aan meerdere plaatsen, en de bunkers lieten zien waar hun aandacht naartoe was gegaan."
+        "text": "De greens waren goed onderhouden en op een goed tempo. Behoorlijk veel helling op een aantal van de kortere holes, wat een grotere uitdaging wordt naarmate de greens in de zomer sneller worden. De bunkers waren gedurende de hele ronde in uitstekende conditie. Consistent zand, goed geharkt. Het greenkeeperteam werkte tijdens onze ronde aan meerdere plaatsen, en de bunkers lieten zien waar hun aandacht naartoe was gegaan."
       },
       {
         "text": "De buggies zijn modern en goed uitgerust. Het vermelden waard: ergens rond hole 16 viel me op dat het buggyschermpje leek te tonen waar onze bal op het green was terechtgekomen. Of dat precies was wat het deed weet ik niet zeker, maar daarna leek het de balpositie met enige nauwkeurigheid bij te houden. Een klein detail, maar een handig."
@@ -640,7 +640,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Maj 2026",
       "title": "Golf de Andratx Recension - En PGA-professionals ärliga syn (2026)",
-      "intro": "Vi startade på hål 3, robotar klippte Green Mönster, och vid hål 8 blickade vi ut över hela sydvästra Mallorca. En 7,5 av 10 och väl värt resan.",
+      "intro": "Vi startade på hål 3, robotar klippte Green Monster, och vid hål 8 blickade vi ut över hela sydvästra Mallorca. En 7,5 av 10 och väl värt resan.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -691,11 +691,11 @@ const content = {
         "text": "Några hål värda att spela två gånger"
       },
       {
-        "text": "Hål 6, Green Mönster, är det längsta par 5-hålet i Spanien. När vi spelade sköttes fairway av greenkeeperrobotar som klippte gräset, och man kunde verkligen se hur jämnt ytorna är på den skalan. Vi hade vinden i ryggen på det här hålet och det tog ändå allt vi hade."
+        "text": "Hål 6, Green Monster, är det längsta par 5-hålet i Spanien. När vi spelade sköttes fairway av greenkeeperrobotar som klippte gräset, och man kunde verkligen se hur jämnt ytorna är på den skalan. Vi hade vinden i ryggen på det här hålet och det tog ändå allt vi hade."
       },
       {
         "alt": "Avslag på hål 7 vid Golf de Andratx med stenväggar framför greenen",
-        "caption": "Hål 7. Stenväggarns blockerar sikten mot greenen från avslagsplatsen. Man väljer en linje och genomför slaget utan att se vart man är på väg."
+        "caption": "Hål 7. Stenväggarna blockerar sikten mot greenen från avslagsplatsen. Man väljer en linje och genomför slaget utan att se vart man är på väg."
       },
       {
         "text": "Hål 12 har en skarp dogleg höger och erbjuder utsikt ned mot Camp del Mar under hela hålet. Ett av banans mest minnesvärda. Hål 15, Hello Mrs Robinson, spelar ungefär 20 yards kortare från en högt belägen avslagsplats, vilket låter som en fördel tills man inser att greenen är välskyddad och att hitta rätt distans i den situationen är svårare än det ser ut."
@@ -718,7 +718,7 @@ const content = {
         "text": "Greenerna var välskötta och i bra tempo. Gott om lutning på flera av de kortare hålen, vilket kommer att bli en större utmaning allt eftersom greenerna snabbas upp under sommaren. Bunkrarna var i utmärkt skick genomgående. Jämn sand, välkrattad. Greenkeeperteamet arbetade på flera ställen under vår runda, och bunkrarna visade var deras fokus legat."
       },
       {
-        "text": "Golfbilarna är moderna och välutrustad. Värt att nämna: någonstans runt hål 16 lade jag märke till att golfbilens skärm tycktes visa var vår boll hade stannat på greenen. Jag är inte helt säker på att det var precis vad den gjorde, men efter det verkade den följa bollens position med viss noggrannhet. En liten detalj, men en praktisk."
+        "text": "Golfbilarna är moderna och välutrustade. Värt att nämna: någonstans runt hål 16 lade jag märke till att golfbilens skärm tycktes visa var vår boll hade stannat på greenen. Jag är inte helt säker på att det var precis vad den gjorde, men efter det verkade den följa bollens position med viss noggrannhet. En liten detalj, men en praktisk."
       },
       {
         "items": [
@@ -763,24 +763,24 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Ga ut så tidigt som det rimligen går. Banan är efterfrågad, bergsljuset är som bäst på morgonen, och då har du bäst chans att slippa den starkare vinden."
+            "Gå ut så tidigt som det rimligen går. Banan är efterfrågad, bergsljuset är som bäst på morgonen, och då har du bäst chans att slippa den starkare vinden."
           ],
           [
             "Vindtips",
-            "Använd GPS eller en riktig banbok och lita på den. Den har banan straffar halvhjartade beslut över carries och på öppna par 3-hall mycket mer an ett medvetet konservativt val."
+            "Använd GPS eller en riktig banbok och lita på den. Den här banan straffar halvhjartade beslut över carries och på öppna par 3-hål mycket mer än ett medvetet konservativt val."
           ],
           [
             "Där besökare tappar slag",
-            "Det vanligaste misstaget är att tro att utmaningen bara handlar om längd. De stora siffrorna kommer har mycket oftare från dålig distanskontroll in i tvarliggande hinder, stora höjdskillnader på korta hål och problem som du inte ser fullt ut från tee."
+            "Det vanligaste misstaget är att tro att utmaningen bara handlar om längd. De stora siffrorna kommer här mycket oftare från dålig distanskontroll in i tvärliggande hinder, stora höjdskillnader på korta hål och problem som du inte ser fullt ut från tee."
           ],
           [
             "Klubbhustips",
-            "Ovningsupplagget är lite ovanligt. Kom tillräckligt tidigt för att använda kortspelsomradet och landa i rundan innan du går till första tee."
+            "Övningsupplägget är lite ovanligt. Kom tillräckligt tidigt för att använda kortspelsområdet och landa in i rundan innan du går till första tee."
           ]
         ]
       },
       {
-        "text": "Golf Andratx får 7,5 av 10. Utsikten från de högre hålen är den bästa jag har sett i sydvästra delen av ön. Layouten är ett ordentligt test, Green Mönster är det längsta par 5-hålet i Spanien och spelar varenda meter av det, och hål 12 ovanför Camp del Mar är ett av de bästa hål jag har spelat på Mallorca. De obligatoriska golfbilarna före klockan 14 och en full morgon gav det en mer organiserad än avslappnad känsla, men det är verkligheten för en bana med denna efterfrågan. Värd att spela, och värd att återvända till med en banplan i handen. Behöver du hjälp att sekvensera det med andra banor? Se <a href=\"/plan-your-trip\">reseplaneringsguiden</a>."
+        "text": "Golf Andratx får 7,5 av 10. Utsikten från de högre hålen är den bästa jag har sett i sydvästra delen av ön. Layouten är ett ordentligt test, Green Monster är det längsta par 5-hålet i Spanien och spelar varenda meter av det, och hål 12 ovanför Camp del Mar är ett av de bästa hål jag har spelat på Mallorca. De obligatoriska golfbilarna före klockan 14 och en full morgon gav det en mer organiserad än avslappnad känsla, men det är verkligheten för en bana med denna efterfrågan. Värd att spela, och värd att återvända till med en banplan i handen. Behöver du hjälp att sekvensera det med andra banor? Se <a href=\"/plan-your-trip\">reseplaneringsguiden</a>."
       },
       {
         "text": "Ska du spela Golf Andratx? Jag kan hjälpa till med strategin, klubbvalet och de problemzoner som betyder mest på den här banan.",
@@ -911,7 +911,7 @@ const content = {
         "text": "常见问题"
       },
       {
-        "text": "差点限制为男子 28、女子 36，预订时会核实。下午 2 点前必须使用球车，之后可以步行。若非西班牙高协会员，需缴纳每日会籍费（3 €）。这座球场适合喜欢策略性考验多于比拼距离的自信球手：发球的落点控制比力量更重要。让第一次来访者意外的一点：尽管大部分时间都在山间高处打球，只有在第 2 洞才能看到 Camp de Mar 的海景，所以不要对海景抱太高期待。当地建议：带上 GPS 或球场导览图，因为好几个攻果岭的角度是半盲打。"
+        "text": "差点限制为男子 28、女子 36，预订时会核实。下午 2 点前必须使用球车，之后可以步行。若非西班牙高尔夫联合会会员，需缴纳每日联合会执照费（3 €）。这座球场适合喜欢策略性考验多于比拼距离的自信球手：发球的落点控制比力量更重要。让第一次来访者意外的一点：尽管大部分时间都在山间高处打球，只有在第 2 洞才能看到 Camp de Mar 的海景，所以不要对海景抱太高期待。当地建议：带上 GPS 或球场导览图，因为好几个攻果岭的角度是半盲打。"
       },
       {
         "text": "总评"

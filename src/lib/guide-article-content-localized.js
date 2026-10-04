@@ -6378,7 +6378,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "2 min",
         "updated": "Juli 2026",
         "title": "Golfbanor på Mallorca karta",
-        "intro": "Alla 24 banor på en karta. Hitta dem efter plats, avstånd från Palma eller banannamn."
+        "intro": "Alla 24 banor på en karta. Hitta dem efter plats, avstånd från Palma eller banans namn."
       },
       "blocks": [
         { "text": "Använd denna interaktiva karta för att utforska alla 24 golfbanor på Mallorca. Filtrera efter region, avstånd från Palma eller svårighetsgrad. Klicka på en bana för fullständig information, greenfees och bokningsdetaljer." }

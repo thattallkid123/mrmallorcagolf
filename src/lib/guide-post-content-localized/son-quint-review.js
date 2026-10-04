@@ -146,7 +146,7 @@ const content = {
         "text": "8/10. Son Quint es el campo más accesible del grupo Arabella Golf sin dejar de ser exigente. Calles anchas, cuatro posiciones de salida y un ambiente cercano y sociable lo hacen apto para golfistas de cualquier nivel, mientras que los greens firmes y bien defendidos, junto con unos segundos nueve exigentes, plantean preguntas de verdad a un jugador mejor también. El mantenimiento fue excelente para septiembre, y la acogida, desde recepción hasta el jefe de caddies y el personal de sala, fue de las mejores que he tenido en Mallorca."
       },
       {
-        "title": "Cuatro cosas que yo sabría antes de reservar Son Quint",
+        "title": "Cuatro cosas que me habría gustado saber antes de reservar Son Quint",
         "items": [
           [
             "Mejor hora de salida",
@@ -649,7 +649,7 @@ const content = {
         ]
       },
       {
-        "text": "Greenfees zijn dynamisch en lopen van ongeveer €76 in het laagseizoen tot €172 in het hoogseizoen, plus de gebruikelijke dagelijkse federatielicentie van €3 als je geen lid van de federatie bent. De greenfee van mijn klant op de dag was €120. Buggy's zijn beschikbaar voor €55 maar optioneel; wij hebben de hele ronde gelopen. De handicaplimiet is 54 voor mannen en vrouwen, met een certificaat verplicht bij het boeken. Boek je als individuele speler, dan word je meestal bij een andere groep ingedeeld; wij hadden onze eigen starttijd geboekt en voor onszelf afgehuurd."
+        "text": "Greenfees zijn dynamisch en lopen van ongeveer €76 in het laagseizoen tot €172 in het hoogseizoen, plus de gebruikelijke dagelijkse federatielicentie van €3 als je geen lid van de federatie bent. De greenfee van mijn klant op de dag was €120. Buggy's zijn beschikbaar voor €55 maar optioneel; wij hebben de hele ronde gelopen. De handicaplimiet is 54 voor mannen en vrouwen, met een certificaat verplicht bij het boeken. Boek je als individuele speler, dan word je meestal bij een andere groep ingedeeld; wij hadden onze eigen starttijd geboekt en volledig voor onszelf gereserveerd."
       },
       {
         "alt": "Plattegrond van golfbaan Son Quint op Mallorca met de ligging van alle 18 holes",
@@ -824,7 +824,7 @@ const content = {
         ]
       },
       {
-        "text": "Greenfee är dynamisk och ligger på ungefär 76 € i lågsäsong upp till 172 € i högsäsong, plus den vanliga dagliga federationslicensen på 3 € om du inte är federationsmedlem. Min kunds greenfee den dagen var 120 €. Buggy finns för 55 € men är valfritt; vi gick hela rundan. Handicapgränsen är 54 för både herrar och damer, med intyg som krävs vid bokning. Bokar du som enskild spelare blir du oftast ihopkopplad med en annan grupp; vi hade bokat och stängt av vår egen starttid."
+        "text": "Greenfee är dynamisk och ligger på ungefär 76 € i lågsäsong upp till 172 € i högsäsong, plus den vanliga dagliga federationslicensen på 3 € om du inte är federationsmedlem. Min kunds greenfee den dagen var 120 €. Buggy finns för 55 € men är valfritt; vi gick hela rundan. Handicapgränsen är 54 för både herrar och damer, med intyg som krävs vid bokning. Bokar du som enskild spelare blir du oftast ihopkopplad med en annan grupp; vi hade bokat och reserverat hela vår egen starttid."
       },
       {
         "alt": "Banskiss över golfbanan Son Quint på Mallorca som visar dragningen för alla 18 hål",

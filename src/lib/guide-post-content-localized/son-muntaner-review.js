@@ -192,23 +192,23 @@ const content = {
         "text": "Son Muntaner forma parte del grupo Arabella Golf Mallorca, junto a Son Vida y Son Quint. Los tres campos son accesibles desde el mismo complejo resort."
       },
       {
-        "title": "Cuatro cosas que yo sabría antes de reservar Son Muntaner",
+        "title": "Cuatro cosas que me habría gustado saber antes de reservar Son Muntaner",
         "items": [
           [
             "Mejor hora de salida",
-            "Si se aloja en Palma, aproveche la cercanía y salga temprano. Tiene el traslado fácil, greens más frescos y un inicio algo más calmado antes de que se llene el tee sheet."
+            "Si te alojas en Palma, aprovecha la cercanía y sal temprano. Tienes el traslado fácil, greens más frescos y un inicio algo más calmado antes de que se llene el tee sheet."
           ],
           [
             "Consejo con el viento",
             "Este es un campo de posición antes que nada. Elige tu zona de aterrizaje, no la línea heroica, y deja que el buggy te guarde las piernas para más adelante en la vuelta."
           ],
           [
-            "Donde suelen perder golpes los visitantes",
+            "Dónde suelen perder golpes los visitantes",
             "Mucha gente ataca los greens desde el ángulo equivocado, se queda corta en los pares 3 elevados o subestima lo pequeños que son los objetivos reales desde lejos."
           ],
           [
             "Consejo de casa club",
-            "Quédese a comer después. El restaurante es mejor que una parada rápida de casa club y tiene sentido si Son Muntaner es su día en Palma."
+            "Quédate a comer después. El restaurante es mejor que una parada rápida de casa club y tiene sentido si Son Muntaner es tu día en Palma."
           ]
         ]
       },
@@ -656,7 +656,7 @@ const content = {
             "C'est d'abord un parcours de placement. Choisissez votre zone d'atterrissage, pas la ligne héroïque, et laissez le buggy garder vos jambes pour plus tard dans la partie."
           ],
           [
-            "Ou les visiteurs perdent des coups",
+            "Où les visiteurs perdent des coups",
             "Beaucoup attaquent les greens depuis le mauvais angle, restent courts sur les par 3 surélevés ou sous-estiment la petite taille des vraies cibles vues de loin."
           ],
           [
@@ -794,7 +794,7 @@ const content = {
         "text": "Eerste negen versus tweede negen"
       },
       {
-        "text": "De eerste negen, met name de openende zes holes, speelt nauw. Water en duidelijke landingszones houden het spel eerlijk. Er is geen ruimte voor losjes slagen vanaf de tee."
+        "text": "De eerste negen, met name de openende zes holes, spelen nauw. Water en duidelijke landingszones houden het spel eerlijk. Er is geen ruimte voor slordige afslagen."
       },
       {
         "text": "De tweede negen opent iets. Meer vrijheid met de driver, maar de greencomplexen blijven klein en bedrieglijk moeilijk. Diepteperceptie op afstand is een constante uitdaging hier. Greens lijken groter dan ze zijn, en benaderingsafstanden zien er korter uit dan ze spelen."
@@ -847,7 +847,7 @@ const content = {
           ],
           [
             "Par 72",
-            "Championship layout"
+            "Kampioenschapsbaan"
           ],
           [
             "Inbegrepen",
@@ -977,7 +977,7 @@ const content = {
         "text": "Fem minuter från centrala Palma. Det ensamt placerar den i en annan kategori än de flesta banor på ön värda att nämna. Son Gual tar tjugo minuter, Alcanada femtio. Om du är baserad i staden och vill ha en seriös runda utan att planera en halvdag kring körningen, är Son Muntaner svaret."
       },
       {
-        "text": "Servicen från ankomst till runda var smidig. Teamet är uppmärksamt utan att vara påträngande. Räckviddsbollar, träningsanläggningar och den övergripande driften ligger alla på den nivå som banans rykte leder dig att förvänta dig."
+        "text": "Servicen från ankomst till runda var smidig. Teamet är uppmärksamt utan att vara påträngande. Rangebollar, träningsanläggningar och den övergripande driften ligger alla på den nivå som banans rykte leder dig att förvänta dig."
       },
       {
         "alt": "Golfbanan Son Muntaner Mallorca med utsikt ned längs hål 17 med Palma-bukten i bakgrunden",
@@ -997,7 +997,7 @@ const content = {
         "text": "Hur banan avslöjar sig"
       },
       {
-        "text": "Mitt öppningstag var oregelbundet. Jag gjorde konservativa utvalsmärken och kunde ändå inte få en fullständig läsning av layouten tidigt. Det är inte kritik. Det är vad designen gör. Son Muntaner visar dig inte allt från utslaget. Banan avslöjar sig genom inflygningsspelet."
+        "text": "Mitt öppningsspel var oregelbundet. Jag gjorde konservativa utslagsval och kunde ändå inte läsa layouten ordentligt tidigt. Det är inte kritik. Det är vad designen gör. Son Muntaner visar dig inte allt från utslaget. Banan avslöjar sig genom inflygningsspelet."
       },
       {
         "text": "Att hålla greener från fel vinkel är svårt. Det finns smala sektioner och subtila mål som kräver exakt positionering snarare än att bara få bollen någonstans nära flaggan. Landningszoner definierar banan. Utslag och layups kräver ofta engagemang för tajta zoner som inte är uppenbara förrän du når dem. När du förstår det börjar designen kännas rättvis. Starka slag får tydlig belöning."
@@ -1020,10 +1020,10 @@ const content = {
         "text": "Niohålet ut mot hem"
       },
       {
-        "text": "Niohålet ut, särskilt de öppnande sex hålen, spelas tajt. Vatten och definierade landningszoner håller det ärligt. Det finns inget utrymme för löst körande."
+        "text": "Främre nian, särskilt de sex första hålen, spelas tajt. Vatten och definierade landningszoner håller spelet ärligt. Det finns inget utrymme för slarviga utslag."
       },
       {
-        "text": "Niohålet hem öppnar sig något. Mer frihet med driverslagen, men greenkomplexen förblir små och vilseledande svåra. Djupperception på avstånd är en konsekvent utmaning här. Greener ser större ut än de är, och inflygningsavstånd ser kortare ut än de spelar."
+        "text": "Bakre nian öppnar sig något. Mer frihet med driverslagen, men greenkomplexen förblir små och vilseledande svåra. Djupperception på avstånd är en konsekvent utmaning här. Greener ser större ut än de är, och inflygningsavstånd ser kortare ut än de spelar."
       },
       {
         "alt": "Änder på vattenhinder på golfbanan Son Muntaner Mallorca",
@@ -1043,7 +1043,7 @@ const content = {
         "text": "Bunkrar"
       },
       {
-        "text": "En ärlig negativ punkt: bunkersanden var ojämn. Vissa ligganden fastare, andra mjukare, vilket komplicerar utförandet av slag du planerat på samma sätt. Liten på en bana av den här standarden, men värt att veta om greensidesand är en del av ditt spel."
+        "text": "En ärlig negativ punkt: bunkersanden var ojämn. Vissa lägen fastare, andra mjukare, vilket komplicerar utförandet av slag du planerat på samma sätt. Liten på en bana av den här standarden, men värt att veta om greensidesand är en del av ditt spel."
       },
       {
         "text": "Olivträdet"
@@ -1053,13 +1053,13 @@ const content = {
       },
       {
         "alt": "Gammalt olivträd på hål 15 på golfbanan Son Muntaner Mallorca med Na Burguesa-bergen bakom",
-        "caption": "Hål 15. Det där olivträdet har stått här i ungefär tusen år. Balearernas regering förklarade det ett naturmonument. Någon bestämde sig för att bygga ett golhål runt det. Jag är glad att de gjorde det."
+        "caption": "Hål 15. Det där olivträdet har stått här i ungefär tusen år. Balearernas regering förklarade det ett naturmonument. Någon bestämde sig för att bygga ett golfhål runt det. Jag är glad att de gjorde det."
       },
       {
         "text": "Restaurangen"
       },
       {
-        "text": "Inget eftertanke. Maten matchar banans standard. Värt att stanna kvar efter ronden snarare än att åka tillbaka till Palma direkt."
+        "text": "Ingen eftertanke. Maten matchar banans standard. Värt att stanna kvar efter rundan snarare än att åka tillbaka till Palma direkt."
       },
       {
         "items": [
@@ -1073,7 +1073,7 @@ const content = {
           ],
           [
             "Par 72",
-            "Championship layout"
+            "Mästerskapsbana"
           ],
           [
             "Ingår",
@@ -1101,11 +1101,11 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Om du bor i Palma, utnyttja närheten och gå ut tidigt. Du får enkel transfer, fraschare greener och en lite lugnare start innan tee sheet fylls upp."
+            "Om du bor i Palma, utnyttja närheten och gå ut tidigt. Du får enkel transfer, fräschare greener och en lite lugnare start innan tee sheet fylls upp."
           ],
           [
             "Vindtips",
-            "Det har är först och främst en positionsbana. Välj landningsyta, inte den heroiska linjen, och lat buggyn spara benen till senare i rundan."
+            "Det här är först och främst en positionsbana. Välj landningsyta, inte den heroiska linjen, och låt buggyn spara benen till senare i rundan."
           ],
           [
             "Där besökare tappar slag",
@@ -1113,7 +1113,7 @@ const content = {
           ],
           [
             "Klubbhustips",
-            "Stanna och åt efter rundan. Restaurangen är bättre an ett snabbt klubbhusstopp och passar bra om Son Muntaner är din Palma-dag."
+            "Stanna och ät efter rundan. Restaurangen är bättre än ett snabbt klubbhusstopp och passar bra om Son Muntaner är din Palma-dag."
           ]
         ]
       },
@@ -1175,7 +1175,7 @@ const content = {
         "text": "快速结论：谁适合预订 Son Muntaner？"
       },
       {
-        "text": "如果你想要靠近巴尔马市中心的顶级场地维护水准，球车费用已包含在内，而且球场设计更看重落点选择而非单纯力量，那么 Son Muntaner 值得预订。如果你的团队更看重视觉体验，可以对比 <a href=\"/guides/alcanada-review\">Alcanada</a>；如果你想要最严苛的锦标赛级考验，可以对比 <a href=\"/guides/son-gual-review\">Son Gual</a>。"
+        "text": "如果你想要靠近帕尔马市中心的顶级场地维护水准，球车费用已包含在内，而且球场设计更看重落点选择而非单纯力量，那么 Son Muntaner 值得预订。如果你的团队更看重视觉体验，可以对比 <a href=\"/guides/alcanada-review\">Alcanada</a>；如果你想要最严苛的锦标赛级考验，可以对比 <a href=\"/guides/son-gual-review\">Son Gual</a>。"
       },
       {
         "items": [
@@ -1189,7 +1189,7 @@ const content = {
           ],
           [
             "5分钟",
-            "距巴尔马市中心"
+            "距帕尔马市中心"
           ],
           [
             "7/10",
@@ -1201,14 +1201,14 @@ const content = {
         "text": "前往方式"
       },
       {
-        "text": "距巴尔马市中心仅五分钟。仅凭这一点，它就已跻身岛上最值得一去的球场中的另一个层次。Son Gual需要二十分钟，Alcanada五十分钟。如果你住在市区，想要打一场认真的球而不必为往返花上半天时间，Son Muntaner就是答案。"
+        "text": "距帕尔马市中心仅五分钟。仅凭这一点，它就与岛上大多数值得一去的球场不在同一档次。Son Gual需要二十分钟，Alcanada五十分钟。如果你住在市区，想要打一场认真的球而不必为往返花上半天时间，Son Muntaner就是答案。"
       },
       {
         "text": "从抵达到开球，整个服务流程顺畅自然。工作人员体贴而不失分寸。练习场用球、训练设施以及整体运营水准，都与这个球场的声誉相符。"
       },
       {
-        "alt": "马略卡Son Muntaner高尔夫球场俯视第17洞球道，背景为巴尔马湾",
-        "caption": "俯瞰第17洞球道。距巴尔马市中心仅五分钟车程，却宛如身处另一个世界。"
+        "alt": "马略卡Son Muntaner高尔夫球场俯视第17洞球道，背景为帕尔马湾",
+        "caption": "俯瞰第17洞球道。距帕尔马市中心仅五分钟车程，却宛如身处另一个世界。"
       },
       {
         "text": "步行挑战：以及球车为何包含在内"
@@ -1217,8 +1217,8 @@ const content = {
         "text": "徒步打完这个球场是真正的体能考验。通往开球台的路有多处长坡。球车费用已含在果岭费中：这是俱乐部的正确决策。大多数球手都会需要它，若单独收费在这个水准的球场会显得不妥。在中国打球多年靠球童辅助，我习惯步行，但我理解为何大多数来访者选择乘坐球车。"
       },
       {
-        "alt": "马略卡Son Muntaner高尔夫球场穿越纳布尔格萨山脉的高处球道视角",
-        "caption": "从一段长坡顶部回望。穿越纳布尔格萨山脉的球道设计，让这个球场与巴尔马附近所有球场都截然不同。"
+        "alt": "马略卡Son Muntaner高尔夫球场穿越Na Burguesa 山脉的高处球道视角",
+        "caption": "从一段长坡顶部回望。穿越Na Burguesa 山脉的球道设计，让这个球场与帕尔马附近所有球场都截然不同。"
       },
       {
         "text": "球场如何逐渐呈现"
@@ -1227,7 +1227,7 @@ const content = {
         "text": "开局阶段发挥不稳。选择了保守的开球位置，依然无法在早期完全读懂球道布局。这不是批评：这正是设计的用意所在。Son Muntaner不会在开球台就把一切展示给你看。球场是在攻果岭时慢慢呈现自身的。"
       },
       {
-        "text": "从错误角度攻果岭时很难停住球。球场有狭窄的通道和需要精准落点的微妙目标区，要求的是精确的位置选择，而不仅仅是把球打到旗杆附近。落球区主导着整个球场的节奏。开球和保守击球往往需要坚定地打向不到达时并不明显的窄小区域。一旦理解这一点，设计便显得合理了。优质击球会得到清晰的奖励。"
+        "text": "从错误角度攻果岭时很难停住球。球场有狭窄的通道和需要精准落点的微妙目标区，要求的是精确的位置选择，而不仅仅是把球打到旗杆附近。落球区主导着整个球场的节奏。开球和保守的落点击球，往往需要坚定地打向直到走近才看得出的窄小区域。一旦理解这一点，设计便显得合理了。优质击球会得到清晰的奖励。"
       },
       {
         "alt": "马略卡Son Muntaner高尔夫球洞，紧凑的标准杆3洞，左侧石墙，右侧沙坑",
@@ -1279,14 +1279,14 @@ const content = {
         "text": "第15洞。站在球道中央的那棵古老橄榄树已在此屹立约一千年。巴利阿里群岛政府将其列为自然遗址。球场的设计围绕它展开。"
       },
       {
-        "alt": "马略卡Son Muntaner高尔夫球场第15洞古老橄榄树，背景为纳布尔格萨山脉",
+        "alt": "马略卡Son Muntaner高尔夫球场第15洞古老橄榄树，背景为Na Burguesa 山脉",
         "caption": "第15洞。那棵橄榄树在这里已矗立约一千年。巴利阿里群岛政府将其列为自然遗址。有人决定在它周围建造一个球洞：我很庆幸他们做出了这个决定。"
       },
       {
         "text": "餐厅"
       },
       {
-        "text": "餐厅并非附加项目。食物的水准与球场相称。打完球后值得留下用餐，而不是直接驱车返回巴尔马。"
+        "text": "餐厅并非附加项目。食物的水准与球场相称。打完球后值得留下用餐，而不是直接驱车返回帕尔马。"
       },
       {
         "items": [

@@ -26,7 +26,7 @@ const content = {
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Cuanto cuesta jugar al golf en Mallorca?"
+          "title": "¿Cuánto cuesta jugar al golf en Mallorca?"
         }
       ]
     },
@@ -115,18 +115,18 @@ const content = {
         "text": "Veredicto"
       },
       {
-        "title": "Cuatro cosas que yo sabría antes de reservar Santa Ponsa 1",
+        "title": "Cuatro cosas que me habría gustado saber antes de reservar Santa Ponsa 1",
         "items": [
           [
             "Mejor hora de salida",
-            "Cuanto antes, mejor, si puede conseguirla. El campo se juega más cómodo antes de que entre la brisa habitual, y los hoyos largos se sienten bastante más amables a primera hora."
+            "Cuanto antes, mejor, si puedes conseguirla. El campo se juega más cómodo antes de que entre la brisa habitual, y los hoyos largos se sienten bastante más amables a primera hora."
           ],
           [
             "Consejo con el viento",
-            "Cuando llega el viento, golpea sobre todo a los pares 3 largos y al hoyo 10. Coja palo suficiente y trate la distancia de la tarjeta como un punto de partida, no como la respuesta final."
+            "Cuando llega el viento, golpea sobre todo a los pares 3 largos y al hoyo 10. Coge palo suficiente y trata la distancia de la tarjeta como un punto de partida, no como la respuesta final."
           ],
           [
-            "Donde suelen perder golpes los visitantes",
+            "Dónde suelen perder golpes los visitantes",
             "Muchos visitantes disfrutan de las calles anchas, se confían con el driver y luego pierden golpes por atacar objetivos pequeños con demasiada agresividad desde buenas posiciones y dejarse chips incómodos."
           ],
           [
@@ -412,7 +412,7 @@ const content = {
             "Quand le vent arrive, il touche surtout les longs par 3 et le trou 10. Prenez assez de club et considérez le yardage de la carte comme un point de départ, pas comme la réponse définitive."
           ],
           [
-            "Ou les visiteurs perdent des coups",
+            "Où les visiteurs perdent des coups",
             "Beaucoup de visiteurs profitent des fairways larges, prennent trop confiance avec le driver, puis perdent des coups en attaquant des cibles petites trop agressivement depuis de bonnes positions et en se laissant des chips délicats."
           ],
           [
@@ -636,10 +636,10 @@ const content = {
         "text": "Kopplingen till European Tour"
       },
       {
-        "text": "Att vara värd för Mallorca Golf Open 2021 var viktigt för ön. Det var det första European Tour-evenemanget här på tio år, och Santa Ponsa 1 stöd upp för uppgiften. Banskicket under tävlingsveckan, routingen under press och de scorer som var möjliga utan att banan gav upp - allt fungerade. Den här kvaliteten är äkta, och den märks direkt när man spelar banan som besökare."
+        "text": "Att vara värd för Mallorca Golf Open 2021 var viktigt för ön. Det var det första European Tour-evenemanget här på tio år, och Santa Ponsa 1 klarade uppgiften. Banskicket under tävlingsveckan, routingen under press och de scorer som var möjliga utan att banan gav upp - allt fungerade. Den här kvaliteten är äkta, och den märks direkt när man spelar banan som besökare."
       },
       {
-        "caption": "Tramuntana-bergen bakom. Hål 5, 6 och 7 har de bästa bergsuyerna."
+        "caption": "Tramuntana-bergen bakom. Hål 5, 6 och 7 har de bästa bergsvyerna."
       },
       {
         "text": "Utsikten mot Tramuntana"
@@ -701,11 +701,11 @@ const content = {
           ],
           [
             "Där besökare tappar slag",
-            "Många besökare gillar de breda fairwaysen, blir för självsäkra med drivern och tappar sedan slag genom att attackera små mål för aggressivt från bra lagen och lämna sig knepiga chippar."
+            "Många besökare gillar de breda fairwaysen, blir för självsäkra med drivern och tappar sedan slag genom att attackera små mål för aggressivt från bra lägen och lämna sig knepiga chippar."
           ],
           [
             "Klubbhustips",
-            "Det har är en bra sjalvfortroendebana, om drivern fungerar, innan ett tuffare test senare. Om resan också innehåller Son Gual eller Andratx passar Santa Ponsa 1 bra tidigare i veckan."
+            "Det här är en bra självförtroendebana, om drivern fungerar, innan ett tuffare test senare. Om resan också innehåller Son Gual eller Andratx passar Santa Ponsa 1 bra tidigare i veckan."
           ]
         ]
       },

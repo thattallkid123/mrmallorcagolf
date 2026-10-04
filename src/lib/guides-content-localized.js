@@ -814,7 +814,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Banomdöme",
         "badgeGold": true,
         "title": "Golf de Andratx - ärlig recension av en PGA Professional (2026)",
-        "intro": "Spaniens längsta par 5, bergsvyer över sydväst och en layout som belönar bankhantering mycket mer än längd. En 7,5 av 10.",
+        "intro": "Spaniens längsta par 5, bergsvyer över sydväst och en layout som belönar banstrategi mycket mer än längd. En 7,5 av 10.",
         "readTime": "6 min",
         "keywords": "Bergsbana · Par 72 · €90-140 · Sydvästra Mallorca"
       },

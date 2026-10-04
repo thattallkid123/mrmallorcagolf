@@ -144,7 +144,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "Solo y Grupo son las tarifas base del día de Play With A Pro. Los campos juntan reservas cuando hay mucha afluencia, así que un partido de uno o dos jugadores puede acabar compartiendo la salida con desconocidos. Si prefiere que sea solo su grupo, puedo reservar las plazas libres y la hora de salida es suya. El campo fija ese cargo y yo se lo traslado al coste. Los green fees y el almuerzo van aparte. La hora de salida privada está incluida de serie en el Signature Day.",
       "tiers": [
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Un día con Andy",
           "name": "Individual",
           "note": "Mi tarifa del día. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
           "features": [
@@ -159,7 +159,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/es/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Un día con Andy",
           "name": "Grupo",
           "price": "€950 en total",
           "features": [
@@ -181,7 +181,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
-          "price": "Auf Anfrage",
+          "price": "Bajo petición",
           "note": "Todo organizado. Todos los detalles se confirman antes del día.",
           "features": [
             "Campo, hora de salida privada y un día completamente organizado conmigo",
@@ -428,7 +428,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "Solo und Gruppe sind die Kern-Tagessätze für Play With A Pro. Plätze legen Buchungen an vollen Tagen zusammen, ein Einzel- oder Zweiball kann die Startzeit also mit Fremden teilen. Wenn Sie lieber unter sich bleiben, reserviere ich die freien Plätze mit und die Startzeit gehört Ihnen. Der Platz legt diesen Betrag fest und ich gebe ihn zum Selbstkostenpreis weiter. Greenfees und Mittagessen sind separat. Beim Signature Day ist die private Startzeit standardmäßig enthalten.",
       "tiers": [
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Ein Tag mit Andy",
           "name": "Solo",
           "note": "Mein Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
           "features": [
@@ -443,7 +443,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/de/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Ein Tag mit Andy",
           "name": "Gruppe",
           "price": "€950 insgesamt",
           "features": [
@@ -578,7 +578,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "items": [
         { "label": "Idéal pour", "text": "Golfeurs solo, duos et petits groupes qui veulent une vraie journée de golf à Majorque." },
         { "label": "Format", "text": "Un parcours, 18 trous, choisi selon votre jeu, avec moi à vos côtés pendant toute la partie." },
-        { "label": "Tarifs", "text": "Solo à partir de €795. Groupe à partir de €950 au total. Les green fees restent à part et sont confirmes avant la réservation." },
+        { "label": "Tarifs", "text": "Solo à partir de €795. Groupe à partir de €950 au total. Les green fees restent à part et sont confirmés avant la réservation." },
         { "label": "Étape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Je réponds personnellement sous 24 heures." }
       ],
       "signatureRoute": {
@@ -712,7 +712,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "Solo et Groupe sont les tarifs journée de base de Play With A Pro. Les parcours regroupent les réservations les jours chargés, une partie d'un ou deux joueurs peut donc partager le départ avec des inconnus. Si vous préférez rester entre vous, je réserve les places restantes et le départ est à vous. Le parcours fixe ce montant et je vous le répercute au prix coûtant. Green fees et déjeuner en sus. Le départ privatisé est inclus d'office dans le Signature Day.",
       "tiers": [
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Une journée avec Andy",
           "name": "Solo",
           "note": "Mon tarif journée. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, je peux vous aider à organiser.",
           "features": [
@@ -727,7 +727,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/fr/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Une journée avec Andy",
           "name": "Groupe",
           "price": "€950 au total",
           "features": [
@@ -995,7 +995,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "Solo en Groep zijn de kerntarieven per dag voor Play With A Pro. Banen voegen boekingen samen als het druk is, dus een een- of tweebal kan de starttijd met onbekenden delen. Wilt u liever alleen met uw eigen groep spelen, dan reserveer ik de vrije plekken en is de starttijd van u. De baan bepaalt dat bedrag en ik reken het door tegen kostprijs. Greenfees en lunch zijn apart. Bij de Signature Day is de privé starttijd standaard inbegrepen.",
       "tiers": [
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Een dag met Andy",
           "name": "Solo",
           "note": "Mijn dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, ik help graag bij de organisatie.",
           "features": [
@@ -1010,7 +1010,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/nl/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Een dag met Andy",
           "name": "Groep",
           "price": "€950 totaal",
           "features": [
@@ -1032,7 +1032,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
-          "price": "Auf Anfrage",
+          "price": "Op aanvraag",
           "note": "Alles geregeld. Alle details worden voor de dag bevestigd.",
           "features": [
             "Baan, privé starttijd en een volledig georganiseerde dag met mij",
@@ -1146,7 +1146,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Bäst för", "text": "Ensamspelare, par och små sällskap som vill ha en riktig golfdag på Mallorca." },
         { "label": "Format", "text": "En bana, 18 hål, vald efter ditt spel, med mig vid din sida under hela rundan." },
         { "label": "Priser", "text": "Solo från €795. Grupp från €950 totalt. Green fees är separata och bekräftas innan bokning." },
-        { "label": "Nasta steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Jag svarar personligen inom 24 timmar." }
+        { "label": "Nästa steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Jag svarar personligen inom 24 timmar." }
       ],
       "signatureRoute": {
         "text": "För en privat starttid, ett pass med John Brazier (The Golf Doctor) efter rundan, transfer och en kväll ordnad för gruppen finns Signature Day.",
@@ -1279,7 +1279,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "Solo och Grupp är grunddagspriserna för Play With A Pro. Banor slår ihop bokningar när det är fullt, så en en- eller tvåboll kan få dela starttid med okända. Vill du hellre spela bara med ditt sällskap, bokar jag de lediga platserna och starttiden är din. Banan sätter den avgiften och jag för den vidare till självkostnadspris. Green fees och lunch tillkommer. Privat starttid ingår som standard i Signature Day.",
       "tiers": [
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "En dag med Andy",
           "name": "Solo",
           "note": "Mitt dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, jag hjälper gärna till att ordna.",
           "features": [
@@ -1294,7 +1294,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/sv/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "En dag med Andy",
           "name": "Grupp",
           "price": "€950 totalt",
           "features": [
@@ -1316,7 +1316,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         {
           "eyebrow": "Signature Day",
           "name": "Signature Day",
-          "price": "Sur demande",
+          "price": "På förfrågan",
           "note": "Allt är ordnat. Alla detaljer bekräftas före dagen.",
           "features": [
             "Bana, privat starttid och en helt organiserad dag med mig",
@@ -1563,7 +1563,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "单人与小组是 Play With A Pro 的基础日费方案。球场繁忙时会把预订拼组，因此一人或两人的组合可能要和陌生球手共享同一个开球时段。如果您希望只有自己这一行人，我可以把空出的名额一并预订下来，这个开球时段就完全属于您。费用由球会设定，我按成本价原样转给您。果岭费与午餐另计。Signature Day 已标准包含私人开球时段。",
       "tiers": [
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "与 Andy 共度一天",
           "name": "单人",
           "note": "我的单人日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，我可以帮忙安排。",
           "features": [
@@ -1578,7 +1578,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "href": "/zh/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "与 Andy 共度一天",
           "name": "小组",
           "price": "€950 总计",
           "features": [

@@ -134,7 +134,7 @@ const content = {
         "text": "9/10. T Golf Calvià es uno de los campos mejor cuidados que he jugado en Mallorca. Los greens son excelentes, las calles están en gran forma, y el diseño te pone a prueba de verdad, especialmente en el cálculo de distancias y con el agua, sin ser injusto."
       },
       {
-        "title": "Cuatro cosas que yo sabría antes de reservar T Golf Calvià",
+        "title": "Cuatro cosas que me habría gustado saber antes de reservar T Golf Calvià",
         "items": [
           [
             "Mejor hora de salida",
@@ -142,15 +142,15 @@ const content = {
           ],
           [
             "Consejo con el viento",
-            "Trabaje desde su número, no desde lo que le diga el ojo. Las aproximaciones semiciega y los golpes sobre agua en zonas expuestas castigan a quien adivina en lugar de decidirse."
+            "Trabaja desde tu número, no desde lo que te diga el ojo. Las aproximaciones semiciegas y los golpes sobre agua en zonas expuestas castigan a quien adivina en lugar de decidirse."
           ],
           [
-            "Donde suelen perder golpes los visitantes",
-            "El error habitual es quedarse corto de palo en los hoyos que parecen más amables y luego ponerse agresivo, metiendo aun más agua en juego."
+            "Dónde suelen perder golpes los visitantes",
+            "El error habitual es quedarse corto de palo en los hoyos que parecen más amables y luego ponerse agresivo, metiendo aún más agua en juego."
           ],
           [
             "Consejo de casa club",
-            "Use la cancha de hierba antes de salir y deje tiempo para una bebida después. Todo el montaje se siente más completo si no trata la ronda como una carrera."
+            "Usa la cancha de hierba antes de salir y deja tiempo para una bebida después. Todo el montaje se siente más completo si no tratas la ronda como una carrera."
           ]
         ]
       },
@@ -469,7 +469,7 @@ const content = {
             "Travaillez à partir de votre nombre, pas de ce que l'oeil vous raconte. Les approches semi-aveugles et les carries d'eau exposés punissent ceux qui devinent au lieu de s'engager."
           ],
           [
-            "Ou les visiteurs perdent des coups",
+            "Où les visiteurs perdent des coups",
             "L'erreur classique consiste à prendre trop peu de club sur les trous qui paraissent plus aimables, puis à devenir trop agressif et à ramener encore plus d'eau dans le jeu."
           ],
           [
@@ -509,7 +509,7 @@ const content = {
         },
         {
           "slug": "best-golf-courses-mallorca",
-          "title": "Beste Golfbanen op Mallorca 2026"
+          "title": "De beste golfbanen van Mallorca 2026"
         },
         {
           "slug": "golf-cost-mallorca",
@@ -536,7 +536,7 @@ const content = {
         "text": "De greens zijn groot en waren op de dag dat ik speelde vlekkeloos. Geen excuses voor gemiste putts. Op meerdere holes moet je ook volledig vertrouwen op je afstand omdat je de onderkant van de vlag niet kunt zien vanaf de approach. Spelers die op de vlagpositie vertrouwen voor afstandsbepaling in plaats van op yards te werken, worden verrast."
       },
       {
-        "text": "De baan meet iets minder dan 6.500 meter vanaf de achterste tees waar ik speelde, met 15 meren en carries vanaf de tee op meerdere holes. Windmolens staan verspreid over de hele baan, wat ongebruikelijk is en de baan een eigen karakter geeft. De mediterrane pijnbomen en de Tramuntana-bergen zijn constant aanwezig van de voornegen tot de terugweg."
+        "text": "De baan meet iets minder dan 6.500 meter vanaf de achterste tees waar ik speelde, met 15 meren en carries vanaf de tee op meerdere holes. Windmolens staan verspreid over de hele baan, wat ongebruikelijk is en de baan een eigen karakter geeft. De mediterrane pijnbomen en de Tramuntana-bergen zijn constant aanwezig van de eerste negen tot de laatste negen."
       },
       {
         "alt": "Fairway op T Golf Calvià met windmolen en Tramuntana-bergen op de achtergrond",
@@ -566,7 +566,7 @@ const content = {
         "text": "Hole 16 is een par 4 met een opgaande tee-shot omlijst door rotsen en bomen. Een van de visueel meest onderscheidende holes op de baan en hij speelt moeilijker dan de kaart suggereert."
       },
       {
-        "text": "Hole 18 is een smalle par 5 die opentrekt naarmate je de fairway afloopt. Het is een echte slotshole. Hij vraagt commitment vanaf de tee die smal lijkt, en beloont je als je het doet."
+        "text": "Hole 18 is een smalle par 5 die opentrekt naarmate je de fairway afloopt. Het is een echte slothole. Hij vraagt commitment vanaf de tee die smal lijkt, en beloont je als je het doet."
       },
       {
         "alt": "Twee golfers op de baan bij T Golf Calvià met de fairway en bergen achter hen",
@@ -602,7 +602,7 @@ const content = {
         "text": "De service was gedurende de hele ronde goed. Tees en water beschikbaar, vriendelijk caddy master personeel. Het clubhuis en de buitenruimtes zijn goed uitgevoerd en een prettige plek om tijd door te brengen voor of na de ronde. De driving range is op gras, wat niet bij elke Mallorca club gegarandeerd is."
       },
       {
-        "text": "Één punt om op te letten: de bewegwijzering rond beperkte buggygebieden kan duidelijker. Een paar keer bevond ik me ergens dat niet duidelijk als verboden was aangegeven en moest ik achteruit. Geen probleem als je de baan kent."
+        "text": "Één punt om op te letten: de bewegwijzering rond beperkte buggygebieden had duidelijker gekund. Een paar keer kwam ik in zones die niet duidelijk als verboden waren aangegeven en moest ik achteruit. Geen probleem als je de baan kent."
       },
       {
         "text": "Veelgestelde vragen"
@@ -686,7 +686,7 @@ const content = {
         "caption": "Väderkvarnarna är ett utmärkande inslag på T Golf Calvià."
       },
       {
-        "text": "Jag teed off klockan 15:20 en tisdagseftermiddag och banan var tillräckligt lugn för att höra vinden röra sig genom tallarna mellan slagen. Från de flesta fairways syns varken väg eller byggnad, bara tallar, vatten och berg. För en bana i sydvästra hörnet av Mallorca förvånade det mig."
+        "text": "Jag slog ut klockan 15:20 en tisdagseftermiddag och banan var tillräckligt lugn för att höra vinden röra sig genom tallarna mellan slagen. Från de flesta fairways syns varken väg eller byggnad, bara tallar, vatten och berg. För en bana i sydvästra hörnet av Mallorca förvånade det mig."
       },
       {
         "text": "Skicket är lika bra som något jag spelat på ön. Mycket tätt klippta fairways och fringe, perfekt räfsade bunkrar, och en enkel men ovanlig räfsdesign som gör att bollen sällan hamnar mot räfsan. Det är en liten detalj, men en som verkligen uppskattas."
@@ -699,7 +699,7 @@ const content = {
         "text": "Greenerna är stora och var, den dag jag spelade, perfekta. Inga ursäkter för missade puttar. På flera hål måste man också lita helt på sitt avstånd eftersom man inte kan se nederkanten av flaggan från approachen. Spelare som förlitar sig på flaggpositionen snarare än att arbeta från yardage blir tagna på sängen."
       },
       {
-        "text": "Banan sträcker sig till knappt 6 500 meter från de bakre tee där jag spelade, med 15 sjöar och carries från tee på flera hål. Väderkvarnar är utspridda över hela banan, vilket är ovanligt och ger banan sin egen karaktär. Medelhavstallar och Tramuntana-bergen är ett konstant inslag från ute till in."
+        "text": "Banan sträcker sig till knappt 6 500 meter från de bakre tee där jag spelade, med 15 sjöar och carries från tee på flera hål. Väderkvarnar är utspridda över hela banan, vilket är ovanligt och ger banan sin egen karaktär. Medelhavstallar och Tramuntana-bergen är ett konstant inslag från front nine till back nine."
       },
       {
         "alt": "Fairway på T Golf Calvià med väderkvarn och Tramuntana-bergen i bakgrunden",
@@ -723,7 +723,7 @@ const content = {
       },
       {
         "alt": "Fairway och bunkrar på T Golf Calvià med Tramuntana-bergen i bakgrunden",
-        "caption": "Tramuntana-bergen syns i bakgrunden på de flesta hål på inne-nio."
+        "caption": "Tramuntana-bergen syns i bakgrunden på de flesta hål på back nine."
       },
       {
         "text": "Hål 16 är ett par 4 med ett uppförsbackigt slag från tee inramat av klippor och träd. Ett av de visuellt mest distinkta hålen på banan och det spelar svårare än kortet antyder."
@@ -788,7 +788,7 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Twilight mitt i veckan är ett mycket bra spel har. Du får banan i vackert ljus, ett lugnare tempo och dessutom mycket rimliga twilight-priser."
+            "Twilight mitt i veckan är ett mycket bra spel här. Du får banan i vackert ljus, ett lugnare tempo och dessutom mycket rimliga twilight-priser."
           ],
           [
             "Vindtips",
@@ -796,7 +796,7 @@ const content = {
           ],
           [
             "Där besökare tappar slag",
-            "Det vanliga misstaget är att ta för lite klubba på hålen som ser snällare ut an de är, och sedan bli aggressiv så att ännu mer vatten kommer in i spelet."
+            "Det vanliga misstaget är att ta för lite klubba på hålen som ser snällare ut än de är, och sedan bli aggressiv så att ännu mer vatten kommer in i spelet."
           ],
           [
             "Klubbhustips",

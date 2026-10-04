@@ -369,11 +369,11 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Behöver man ett handicapintyg för att spela på Mallorca?",
-          "a": "De flesta banor välkomnar alla nivåer, men vissa kräver ett giltigt handicapintyg eller sätter ett maxhandicap. På bankorten ovan har jag markerat banorna med handicapkrav och gränsen som gäller, så att du ser det före bokning. Om du är osäker på ditt intyg, säg vilka banor du överväger så kollar jag åt dig."
+          "a": "De flesta banor välkomnar alla nivåer, men vissa kräver ett giltigt handicapintyg eller sätter ett maxhandicap. På korten ovan har jag markerat banorna med handicapkrav och gränsen som gäller, så att du ser det före bokning. Om du är osäker på ditt intyg, säg vilka banor du överväger så kollar jag åt dig."
         }
       ],
       "toolCta": {
-        "eyebrow": "Genvag",
+        "eyebrow": "Genväg",
         "title": "Vill du hellre ha en kortlista än läsa alla 24 recensioner?",
         "body": "Använd banväljaren om du redan vet handicap, budget, bas och resestil. Den smalnar av ön innan du börjar jämföra starttider.",
         "cta": "Hitta mina banor",

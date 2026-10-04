@@ -194,7 +194,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "price": "€795",
           "tier": "Solo",
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Un día con Andy",
           "name": "Solo",
           "features": [
             "Campo elegido según su juego y su hándicap",
@@ -209,7 +209,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "href": "/es/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Un día con Andy",
           "tier": "Grupo",
           "name": "Grupo",
           "features": [
@@ -515,7 +515,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "price": "€795",
           "tier": "Solo",
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Ein Tag mit Andy",
           "name": "Solo",
           "features": [
             "Platz passend zu Ihrem Spiel und Handicap",
@@ -530,7 +530,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "href": "/de/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Ein Tag mit Andy",
           "tier": "Gruppe",
           "name": "Gruppe",
           "features": [
@@ -836,7 +836,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "price": "€795",
           "tier": "Solo",
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Une journée avec Andy",
           "name": "Solo",
           "features": [
             "Parcours choisi selon votre jeu et votre index",
@@ -851,7 +851,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "href": "/fr/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Une journée avec Andy",
           "tier": "Groupe",
           "name": "Groupe",
           "features": [
@@ -1157,7 +1157,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "price": "€795",
           "tier": "Solo",
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Een dag met Andy",
           "name": "Solo",
           "features": [
             "Baan gekozen op basis van uw spel en handicap",
@@ -1172,7 +1172,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "href": "/nl/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "Een dag met Andy",
           "tier": "Groep",
           "name": "Groep",
           "features": [
@@ -1338,7 +1338,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "coursesBlurb": "Jag spelar och recenserar varje bana på ön: Son Gual, Alcanada, T Golf Calvià, Son Muntaner och resten. Vill du jämföra banor innan du bokar,",
       "coursesBlurbLink": "se hela listan",
       "guideBlurb": "För den fullständiga rankade genomgången av alla 24 Mallorcabanor, med green fees och vem varje bana passar,",
-      "guideBlurbLink": "läs bankguiden"
+      "guideBlurbLink": "läs banguiden"
     },
     "journey": {
       "eyebrow": "Välj din utgångspunkt",
@@ -1478,7 +1478,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "price": "€795",
           "tier": "Solo",
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "En dag med Andy",
           "name": "Solo",
           "features": [
             "Bana vald efter ditt spel och handicap",
@@ -1493,7 +1493,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "href": "/sv/contact"
         },
         {
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "En dag med Andy",
           "tier": "Grupp",
           "name": "Grupp",
           "features": [
@@ -1806,7 +1806,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "price": "€795",
           "tier": "单人",
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "与 Andy 共度一天",
           "name": "单人",
           "features": [
             "按照您的球技与差点匹配球场",
@@ -1822,7 +1822,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "小组",
-          "eyebrow": "A Day With Andy",
+          "eyebrow": "与 Andy 共度一天",
           "name": "小组",
           "features": [
             "最多 3 位球手，我收取固定日费",

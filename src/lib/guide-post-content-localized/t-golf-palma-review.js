@@ -10,7 +10,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Septiembre 2026",
       "title": "T Golf Palma - Análisis y Tarifas",
-      "intro": "Greenes rápidos, a menudo pequeños y con ondulaciones, y más de un hoyo de riesgo y recompensa que te hacen pensar desde el tee. Un 9 sobre 10, un campo que merece juzgarse por sí mismo y no solo por compartir nombre con su campo hermano, T Golf Calvià.",
+      "intro": "Greens rápidos, a menudo pequeños y con ondulaciones, y más de un hoyo de riesgo y recompensa que te hacen pensar desde el tee. Un 9 sobre 10, un campo que merece juzgarse por sí mismo y no solo por compartir nombre con su campo hermano, T Golf Calvià.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -81,7 +81,7 @@ const content = {
         "text": "Estado del Campo"
       },
       {
-        "text": "El estado del campo fue excelente en todo momento, a la altura de Calvià. Los greenes estaban rápidos y pequeños, y el rough agarra el palo lo suficiente como para que fallar la calle se penalice, y cerca del green un chip difícil se complica aún más por lo mucho que ondulan los greenes. Jugamos en un día blando porque habían regado mucho con los aspersores; cuando el terreno se endurezca, algunos de esos chips serán aún más difíciles."
+        "text": "El estado del campo fue excelente en todo momento, a la altura de Calvià. Los greens estaban rápidos y pequeños, y el rough agarra el palo lo suficiente como para que fallar la calle se penalice, y cerca del green un chip difícil se complica aún más por lo mucho que ondulan los greens. Jugamos en un día blando porque habían regado mucho con los aspersores; cuando el terreno se endurezca, algunos de esos chips serán aún más difíciles."
       },
       {
         "alt": "Un avión sobrevolando la calle y los búnkeres en T Golf Palma con pinos detrás",
@@ -139,7 +139,7 @@ const content = {
         "text": "9/10. T Golf Palma, en mi opinión, consiguió parte de su reputación inicial por compartir nombre con T Golf Calvià. Jugarlo confirmó lo contrario: el estado del campo, los hoyos de riesgo y recompensa y el cierre en el 15 y el 18 lo convierten en una vuelta igual de buena por mérito propio. Le va bien a un jugador que quiera pensar el tee shot en lugar de solo pegarle fuerte, con varios hoyos donde el control de distancia importa más que la distancia."
       },
       {
-        "title": "Cuatro cosas que sabría antes de reservar T Golf Palma",
+        "title": "Cuatro cosas que me habría gustado saber antes de reservar T Golf Palma",
         "items": [
           [
             "Mejor hora de salida",
@@ -150,7 +150,7 @@ const content = {
             "El control de distancia importa más que la distancia bruta aquí. A menudo me quedaban 80-120 yardas y necesitaba mucha precisión para puntuar bien. Un jugador de hándicap medio jugará el campo más corto que yo, pero los hierros largos hacia zonas de aterrizaje pequeñas seguirán siendo exigentes."
           ],
           [
-            "Donde suelen perder golpes los visitantes",
+            "Dónde suelen perder golpes los visitantes",
             "El tee shot del 18 parece más sencillo de lo que juega. Estudia bien la línea antes de decidirte por el driver."
           ],
           [
@@ -535,7 +535,7 @@ const content = {
         },
         {
           "slug": "best-golf-courses-mallorca",
-          "title": "Beste Golfbanen op Mallorca 2026"
+          "title": "De beste golfbanen van Mallorca 2026"
         },
         {
           "slug": "golf-cost-mallorca",
@@ -643,7 +643,7 @@ const content = {
         "text": "Veelgestelde Vragen"
       },
       {
-        "text": "Het handicaplimiet is 28 voor heren en 34 voor dames, met certificaat verplicht bij het boeken. Lopen is hier goed te doen, licht glooiend eerder dan heuvelachtig, al nemen de meeste bezoekers toch een buggy. Singles kunnen boeken maar worden in het seizoen meestal gekoppeld aan een andere groep. Er staat vrijwel de hele ronde een lichte bries, niets dat de clubkeuze bepaalt zoals op meer blootgestelde banen. De verrassing is hoe afgelegen de baan aanvoelt, zo dicht bij Palma airport: er vliegen vliegtuigen over, maar er is verder nauwelijks een teken van iets buiten de baan zelf."
+        "text": "De handicaplimiet is 28 voor heren en 34 voor dames, met certificaat verplicht bij het boeken. Lopen is hier goed te doen, licht glooiend eerder dan heuvelachtig, al nemen de meeste bezoekers toch een buggy. Singles kunnen boeken maar worden in het seizoen meestal gekoppeld aan een andere groep. Er staat vrijwel de hele ronde een lichte bries, niets dat de clubkeuze bepaalt zoals op meer blootgestelde banen. De verrassing is hoe afgelegen de baan aanvoelt, zo dicht bij Palma airport: er vliegen vliegtuigen over, maar er is verder nauwelijks een teken van iets buiten de baan zelf."
       },
       {
         "text": "Conclusie"
@@ -660,7 +660,7 @@ const content = {
           ],
           [
             "Clubkeuze",
-            "Afstandscontrole is hier belangrijker dan pure lengte. Ik had vaak nog 80-120 yards en had echte precisie nodig om te scoren. Een speler met een gemiddeld handicap speelt de baan korter dan ik, maar lange ijzers naar kleine landingszones blijven veeleisend."
+            "Afstandscontrole is hier belangrijker dan pure lengte. Ik had vaak nog 80-120 yards en had echte precisie nodig om te scoren. Een speler met een gemiddelde handicap speelt de baan korter dan ik, maar lange ijzers naar kleine landingszones blijven veeleisend."
           ],
           [
             "Waar bezoekers slagen verliezen",
@@ -716,8 +716,8 @@ const content = {
     },
     "blocks": [
       {
-        "alt": "Den vattenskyddade greenen på baksidan nio hos T Golf Palma, inramad av tallar",
-        "caption": "Vatten och bunkrar skyddar greenen på ett av par 4-hålen på baksidan nio hos T Golf Palma."
+        "alt": "Den vattenskyddade greenen på back nine hos T Golf Palma, inramad av tallar",
+        "caption": "Vatten och bunkrar skyddar greenen på ett av par 4-hålen på back nine hos T Golf Palma."
       },
       {
         "text": "Vi hade dagens första starttid hos T Golf Palma, 7:30, ingen framför oss. Greenkeeperna arbetade på banan och stannade för att berömma några slag när vi gick förbi. En bana så nära Palma är sällan så här tyst."
@@ -745,7 +745,7 @@ const content = {
         "caption": "Vattnet till höger på hål 8. Även den säkra vägen från tee lämnar ett krävande andraslag mot en smal green."
       },
       {
-        "text": "Hål 12 mäter 392 m med en sluttande green, på pappret det svåraste par 4-hålet på baksidan nio. Det spelar lika svårt som längden antyder."
+        "text": "Hål 12 mäter 392 m med en sluttande green, på pappret det svåraste par 4-hålet på back nine. Det spelar lika svårt som längden antyder."
       },
       {
         "text": "Hål 15 var det snyggaste hålet på banan. Vatten löper längs hela högersidan och träd kantar vänstersidan, så det är trångt redan innan andraslaget, som återigen måste ta sig över vattnet för att nå greenen. Jag fick min nära flaggan på det smala landningsområdet och gjorde birdien också, så det går."

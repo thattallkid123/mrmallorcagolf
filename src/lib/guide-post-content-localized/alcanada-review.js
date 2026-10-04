@@ -22,11 +22,11 @@ const content = {
         },
         {
           "slug": "golf-trip-planning-mallorca",
-          "title": "Como planificar un viaje de golf a Mallorca"
+          "title": "Cómo planificar un viaje de golf a Mallorca"
         },
         {
           "slug": "golf-cost-mallorca",
-          "title": "Cuanto cuesta jugar al golf en Mallorca?"
+          "title": "¿Cuánto cuesta jugar al golf en Mallorca?"
         }
       ]
     },
@@ -41,7 +41,7 @@ const content = {
         "text": "El entorno"
       },
       {
-        "text": "Robert Trent Jones Jr. diseñó Alcanada, y lo que hizo con está franja de costa es extraordinario. Cuando estás en los tees de atrás, con el faro detrás y el Mediterráneo abierto en casi todas las direcciones, vives uno de esos momentos de golf en los que el paisaje casi hace que te olvides de la tarjeta."
+        "text": "Robert Trent Jones Jr. diseñó Alcanada, y lo que hizo con esta franja de costa es extraordinario. Cuando estás en los tees de atrás, con el faro detrás y el Mediterráneo abierto en casi todas las direcciones, vives uno de esos momentos de golf en los que el paisaje casi hace que te olvides de la tarjeta."
       },
       {
         "text": "El faro de Alcanada está en un pequeño islote justo frente a la costa y se ve desde 16 de los 18 hoyos. En una mañana clara, con el mar en calma y la luz entrando sobre la bahía, es uno de los escenarios de golf más bonitos que he visto en cualquier parte del mundo."
@@ -115,7 +115,7 @@ const content = {
         "text": "Información práctica"
       },
       {
-        "text": "Green fees 2026: €115 en temporada baja y hasta €230 en los periodos fuertes de marzo a mayo y de septiembre a octubre. El desglose completo está en golf-alcanada.com. Los jugadores no federados en España deben pagar una licencia diaria de golf de €3 por persona."
+        "text": "Green fees 2026: €115 en temporada baja (enero, diciembre) y hasta €230 en los periodos fuertes de marzo a mayo y de septiembre a octubre. El desglose completo está en golf-alcanada.com. Los jugadores no federados en España deben pagar una licencia diaria de golf de €3 por persona."
       },
       {
         "text": "Alquiler de palos: juegos TaylorMade por €38 para 18 hoyos. Buggy €48, trolley eléctrico €20. El campo de prácticas con Toptracer es excelente para hacer un buen calentamiento - úsalo."
@@ -124,7 +124,7 @@ const content = {
         "text": "Ubicación: Port d'Alcúdia, a unos 50 minutos al norte de Palma. Merece la pena ir con tiempo y no salir corriendo al acabar."
       },
       {
-        "title": "Cuatro cosas que yo sabría antes de reservar Alcanada",
+        "title": "Cuatro cosas que me habría gustado saber antes de reservar Alcanada",
         "items": [
           [
             "Mejor hora de salida",
@@ -132,15 +132,15 @@ const content = {
           ],
           [
             "Consejo con el viento",
-            "Trate los hoyos expuestos con respeto. El aire del mar puede hacer que una distancia cómoda juegue de repente un palo más, sobre todo cuando va contra el viento en la segunda vuelta."
+            "Trata los hoyos expuestos con respeto. El aire del mar puede hacer que una distancia cómoda juegue de repente un palo más, sobre todo cuando juegas contra el viento en la segunda vuelta."
           ],
           [
-            "Donde suelen perder golpes los visitantes",
+            "Dónde suelen perder golpes los visitantes",
             "Las vistas pueden hacer que el tee parezca más fácil de lo que es. Elige primero la línea, sobre todo desde los tees elevados, y luego prepárate para greens rápidos con muy pocos putts sencillos."
           ],
           [
             "Consejo de casa club",
-            "Deje tiempo para almorzar en la terraza. La comida es muy buena, la terraza grande mira al faro y alarga un gran día."
+            "Deja tiempo para almorzar en la terraza. La comida es muy buena, la terraza grande mira al faro y alarga un gran día."
           ]
         ]
       },
@@ -457,7 +457,7 @@ const content = {
         "text": "Infos pratiques"
       },
       {
-        "text": "Green fees 2026 : €115 en basse saison et jusqu'à €230 pendant les périodes fortes de mars à mai puis de septembre à octobre. Le détail complet est disponible sur golf-alcanada.com. Une licence journalière de golf de €3 par personne s'applique aux joueurs non affiliés à la fédération espagnole."
+        "text": "Green fees 2026 : €115 en basse saison (janvier, décembre) et jusqu'à €230 pendant les périodes fortes de mars à mai puis de septembre à octobre. Le détail complet est disponible sur golf-alcanada.com. Une licence journalière de golf de €3 par personne s'applique aux joueurs non affiliés à la fédération espagnole."
       },
       {
         "text": "Location de clubs : ensembles TaylorMade à €38 pour 18 trous. Buggy €48, chariot électrique €20. Le practice Toptracer est excellent pour bien se mettre en route - profitez-en."
@@ -477,8 +477,8 @@ const content = {
             "Respectez les trous exposés. L'air de la mer peut faire jouer une distance confortable avec un club de plus, surtout quand vous jouez face au vent sur le retour."
           ],
           [
-            "Ou les visiteurs perdent des coups",
-            "La vue peut faire paraître le départ plus simple qu'il ne l'est. Choisissez d'abord votre ligne, surtout depuis les tees surélevés, puis attendez-vous a des greens rapides avec très peu de putts faciles."
+            "Où les visiteurs perdent des coups",
+            "La vue peut faire paraître le départ plus simple qu'il ne l'est. Choisissez d'abord votre ligne, surtout depuis les tees surélevés, puis attendez-vous à des greens rapides avec très peu de putts faciles."
           ],
           [
             "Conseil clubhouse",
@@ -626,7 +626,7 @@ const content = {
         "text": "Praktische info"
       },
       {
-        "text": "Greenfees 2026: €115 in het laagseizoen en tot €230 in de piekperiodes van maart tot mei en van september tot oktober. Het volledige seizoensoverzicht staat op golf-alcanada.com. Voor spelers zonder Spaanse federatielicentie geldt een dagelijkse golftoeslag van €3 per persoon."
+        "text": "Greenfees 2026: €115 in het laagseizoen (januari, december) en tot €230 in de piekperiodes van maart tot mei en van september tot oktober. Het volledige seizoensoverzicht staat op golf-alcanada.com. Voor spelers zonder Spaanse federatielicentie geldt een dagelijkse golftoeslag van €3 per persoon."
       },
       {
         "text": "Clubhuur: TaylorMade-sets voor €38 per 18 holes. Buggy €48, elektrische trolley €20. De Toptracer-range is uitstekend voor een serieuze warming-up - gebruik hem."
@@ -768,10 +768,10 @@ const content = {
         "text": "Designarvet"
       },
       {
-        "text": "Robert Trent Jones Jr:s får ritade Valderrama - värd för Ryder Cup 1997 - och Spyglass Hill i Pebble Beach. RTJ Jr. ritade också Spring City Golf i Kunming, rankad som Kinas bästa bana av Golf Digest. Den linjen känns i Alcanada: inget verkar slumpmässigt, allt använder marken smart."
+        "text": "Robert Trent Jones Jr:s far ritade Valderrama - värd för Ryder Cup 1997 - och Spyglass Hill i Pebble Beach. RTJ Jr. ritade också Spring City Golf i Kunming, rankad som Kinas bästa bana av Golf Digest. Den linjen känns i Alcanada: inget verkar slumpmässigt, allt använder marken smart."
       },
       {
-        "caption": "En sommarkväll runda. Ljuset på Alcanada i juli är något speciellt."
+        "caption": "En runda en sommarkväll. Ljuset på Alcanada i juli är något speciellt."
       },
       {
         "items": [
@@ -797,7 +797,7 @@ const content = {
         "text": "Praktisk information"
       },
       {
-        "text": "Greenfees 2026: €115 i lågsäsong och upp till €230 under toppperioderna mars till maj samt september till oktober. Hela översikten finns på golf-alcanada.com. För spelare utan spansk federationslicens tillkommer en daglig golflicens på €3 per person."
+        "text": "Greenfees 2026: €115 i lågsäsong (januari, december) och upp till €230 under toppperioderna mars till maj samt september till oktober. Hela översikten finns på golf-alcanada.com. För spelare utan spansk federationslicens tillkommer en daglig golflicens på €3 per person."
       },
       {
         "text": "Klubbhyra: TaylorMade-set för €38 per 18 hål. Buggy €48, elektrisk trolley €20. Toptracer-rangen är utmärkt för en ordentlig uppvärmning - använd den."
@@ -810,7 +810,7 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Morgonen är idealisk har. Ljuset är som bäst och kustbrisen är oftast som mildast."
+            "Morgonen är idealisk här. Ljuset är som bäst och kustbrisen är oftast som mildast."
           ],
           [
             "Vindtips",
@@ -818,7 +818,7 @@ const content = {
           ],
           [
             "Där besökare tappar slag",
-            "Utsikten kan få utslaget att kännas enklare an det är. Välj linjen först, särskilt från de upphöjda tees, och var sedan redo för snabba greener med väldigt få enkla puttar."
+            "Utsikten kan få utslaget att kännas enklare än det är. Välj linjen först, särskilt från de upphöjda tees, och var sedan redo för snabba greener med väldigt få enkla puttar."
           ],
           [
             "Klubbhustips",
@@ -968,7 +968,7 @@ const content = {
         "text": "实用信息"
       },
       {
-        "text": "2026年果岭费：淡季为€115，高峰期三月至五月及九月至十月最高为€230。完整价格表见golf-alcanada.com。没有西班牙高协会员资格的球手需额外支付每日€3的高尔夫许可证费用。"
+        "text": "2026年果岭费：淡季（1月、12月）为€115，高峰期三月至五月及九月至十月最高为€230。完整价格表见golf-alcanada.com。没有西班牙高尔夫联合会会员资格的球手需额外支付每日€3的高尔夫许可证费用。"
       },
       {
         "text": "球杆租赁：TaylorMade套杆18洞€38。球车€48，电动手推车€20。这里的Toptracer练习场非常适合认真热身 - 值得利用。"
@@ -1010,7 +1010,7 @@ const content = {
         "text": "常见问题"
       },
       {
-        "text": "步行可选（电动手推车 20 €），也可以选择球车（48 €）；非西班牙高协会员需缴纳每日会籍费（3 €）。Alcanada 适合有信心、想要一场真正难忘考验的球手，而不是轻松的一轮：尽管环境壮观，果岭却起伏剧烈、速度很快。第一次来访者容易忽略的一点：美景会让开球看起来比实际更简单，所以先选好落点线路，再欣赏风景。最佳开球时间是早上，风最轻、光线最好，打完后也值得留出时间在面向灯塔的露台上享用午餐。"
+        "text": "步行可选（电动手推车 20 €），也可以选择球车（48 €）；非西班牙高尔夫联合会会员需缴纳每日联合会执照费（3 €）。Alcanada 适合有信心、想要一场真正难忘考验的球手，而不是轻松的一轮：尽管环境壮观，果岭却起伏剧烈、速度很快。第一次来访者容易忽略的一点：美景会让开球看起来比实际更简单，所以先选好落点线路，再欣赏风景。最佳开球时间是早上，风最轻、光线最好，打完后也值得留出时间在面向灯塔的露台上享用午餐。"
       },
       {
         "text": "结论"

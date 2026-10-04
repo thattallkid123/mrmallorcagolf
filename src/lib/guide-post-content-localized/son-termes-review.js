@@ -133,29 +133,29 @@ const content = {
         "text": "Preguntas frecuentes"
       },
       {
-        "text": "La mayoría de los jugadores usa buggy, sobre todo en días calurosos, aunque caminar la vuelta de ida es sencillo (las subidas de la vuelta de vuelta son lo más exigente). Son Termes es ideal para golfistas que buscan carácter y vistas a la montaña más que longitud pura: varios pares 4 son alcanzables desde el tee, y es una alternativa buena y más económica a los campos premium cerca de Palma. Lo que sorprende a los primerizos: a pesar de ser corto, el campo penaliza los golpes fallados de formas que no son evidentes en la tarjeta, y probablemente comparta algún hoyo con las cabras que viven allí. La mejor hora de salida es temprano, antes de que el viento se levante en los hoyos altos y expuestos."
+        "text": "La mayoría de los jugadores usa buggy, sobre todo en días calurosos, aunque caminar los primeros nueve es sencillo (las subidas de los segundos nueve son lo más exigente). Son Termes es ideal para golfistas que buscan carácter y vistas a la montaña más que longitud pura: varios pares 4 son alcanzables desde el tee, y es una alternativa buena y más económica a los campos premium cerca de Palma. Lo que sorprende a los primerizos: a pesar de ser corto, el campo penaliza los golpes fallados de formas que no son evidentes en la tarjeta, y probablemente comparta algún hoyo con las cabras que viven allí. La mejor hora de salida es temprano, antes de que el viento se levante en los hoyos altos y expuestos."
       },
       {
         "text": "Veredicto"
       },
       {
-        "title": "Cuatro cosas que yo sabría antes de reservar Son Termes",
+        "title": "Cuatro cosas que me habría gustado saber antes de reservar Son Termes",
         "items": [
           [
             "Mejor hora de salida",
-            "Salir antes es la opción más segura, sobre todo si quiere caminar en los meses más calurosos. La segunda vuelta sube, el viento suele crecer, y cuanto más tarde salga, más duro se pone el campo."
+            "Salir antes es la opción más segura, sobre todo si quieres caminar en los meses más calurosos. La segunda vuelta sube, el viento suele crecer, y cuanto más tarde salgas, más duro se pone el campo."
           ],
           [
             "Consejo con el viento",
-            "En los hoyos cortos expuestos de la parte alta del recorrido, suba un palo. La distancia parece modesta, pero la brisa de montaña cambia el golpe muy rápido."
+            "En los hoyos cortos expuestos de la parte alta del recorrido, sube un palo. La distancia parece modesta, pero la brisa de montaña cambia el golpe muy rápido."
           ],
           [
-            "Donde suelen perder golpes los visitantes",
+            "Dónde suelen perder golpes los visitantes",
             "Muchos golpes perdidos vienen de asumir que un campo corto tiene que ser sencillo. Doglegs ciegos, agua que entra en juego, rough pegajoso y objetivos escondidos castigan a quien se desconecta."
           ],
           [
             "Consejo de casa club",
-            "Si prefiere los campos con personalidad antes que los más pulidos, está es una buena alternativa cerca de Palma frente a los nombres premium. Terminar en la terraza con vistas a la montaña es una muy buena forma de acabar."
+            "Si prefieres los campos con personalidad antes que los más pulidos, esta es una buena alternativa cerca de Palma frente a los nombres premium. Terminar en la terraza con vistas a la montaña es una muy buena forma de acabar."
           ]
         ]
       },
@@ -371,7 +371,7 @@ const content = {
         "caption": "La balle est à moi. La chèvre n'était pas invitée. Retour, Son Termes."
       },
       {
-        "text": "J'ai joué Son Termes un vendredi matin avec un ami classé 20 de handicap. Au retour, il commençait à manquer de balles. Le rough attrape vite, plusieurs mises en jeu laissent très peu de marge et le parcours sanctionné les erreurs d'une façon qui ne saute pas aux yeux sur la carte. C'est un résumé assez juste de ce qu'est Son Termes."
+        "text": "J'ai joué Son Termes un vendredi matin avec un ami classé 20 de handicap. Au retour, il commençait à manquer de balles. Le rough attrape vite, plusieurs mises en jeu laissent très peu de marge et le parcours sanctionne les erreurs d'une façon qui ne saute pas aux yeux sur la carte. C'est un résumé assez juste de ce qu'est Son Termes."
       },
       {
         "text": "Son Termes se trouve dans les montagnes de Na Burguesa au-dessus de Palma. À vingt minutes du centre-ville, et pourtant dans un autre monde. Par temps clair, depuis les départs les plus hauts, on aperçoit le Castell de Bellver et la cathédrale sur l'horizon de Palma, avec la Méditerranée derrière. En venant de Shanghai, où un parcours aussi accessible et aussi spectaculaire aurait une liste d'attente de cinq ans pour devenir membre, cela reste marquant."
@@ -468,7 +468,7 @@ const content = {
         "text": "Questions fréquentes"
       },
       {
-        "text": "La plupart des joueurs prennent une voiturette, surtout par temps chaud, même si marcher l'aller est simple (les montées du retour sont plus exigeantes). Son Termes convient aux golfeurs qui recherchent du caractère et des vues sur la montagne plutôt que la longueur pure : plusieurs pars 4 sont driveables, et c'est une bonne alternative, moins chère, aux parcours premium proches de Palma. Ce qui surprend les visiteurs pour la première fois : malgré sa courtesse, le parcours pénalise les coups manqués de façons qui ne sont pas évidentes sur la carte, et vous partagerez probablement quelques trous avec les chèvres qui y vivent. La meilleure heure de départ est tôt, avant que le vent ne se lève sur les trous exposés du haut du parcours."
+        "text": "La plupart des joueurs prennent une voiturette, surtout par temps chaud, même si marcher l'aller est simple (les montées du retour sont plus exigeantes). Son Termes convient aux golfeurs qui recherchent du caractère et des vues sur la montagne plutôt que la longueur pure : plusieurs par 4 sont driveables, et c'est une bonne alternative, moins chère, aux parcours premium proches de Palma. Ce qui surprend les visiteurs pour la première fois : malgré sa faible longueur, le parcours pénalise les coups manqués de façons qui ne sont pas évidentes sur la carte, et vous partagerez probablement quelques trous avec les chèvres qui y vivent. La meilleure heure de départ est tôt, avant que le vent ne se lève sur les trous exposés du haut du parcours."
       },
       {},
       {
@@ -476,15 +476,15 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Partir plus tôt est l'option la plus sure, surtout si vous voulez marcher pendant les mois chauds. Le retour monte, le vent prend souvent de la force, et plus vous laissez trainer le départ, plus le parcours devient exigeant."
+            "Partir plus tôt est l'option la plus sûre, surtout si vous voulez marcher pendant les mois chauds. Le retour monte, le vent prend souvent de la force, et plus vous laissez traîner le départ, plus le parcours devient exigeant."
           ],
           [
             "Conseil vent",
             "Sur les trous courts exposés de la partie haute, prenez un club de plus. Le yardage paraît modeste, mais la brise de montagne change vite le coup."
           ],
           [
-            "Ou les visiteurs perdent des coups",
-            "Beaucoup de coups perdus viennent de l'idée qu'un parcours court doit forcément être simple. Doglegs aveugles, eau qui rentre en jeu, rough collant et cibles cachées punissent ceux qui deconnectent."
+            "Où les visiteurs perdent des coups",
+            "Beaucoup de coups perdus viennent de l'idée qu'un parcours court doit forcément être simple. Doglegs aveugles, eau qui rentre en jeu, rough collant et cibles cachées punissent ceux qui déconnectent."
           ],
           [
             "Conseil clubhouse",
@@ -588,7 +588,7 @@ const content = {
         "text": "De geiten"
       },
       {
-        "text": "Tijdens de ronde liepen er op meerdere holes geiten rond. Ze gedroegen zich alsof de baan van hen was, wat eerlijk gezegd waarschijnlijk ook zo was voordat iemand hier een golfclub bouwde. De hele kudde kwam ons op 17 bekijken terwijl we uitputtten. Eentje volgde alles vanuit een bunker en had zichtbaar nul belangstelling voor het idee van harken. Een oprecht gevaarlijk dierlijk obstakel dat eigenlijk op de scorekaart thuishoort."
+        "text": "Tijdens de ronde liepen er op meerdere holes geiten rond. Ze gedroegen zich alsof de baan van hen was, wat eerlijk gezegd waarschijnlijk ook zo was voordat iemand hier een golfclub bouwde. De hele kudde kwam ons op 17 bekijken terwijl we afmaakten. Eentje volgde alles vanuit een bunker en had zichtbaar nul belangstelling voor het idee van harken. Een oprecht gevaarlijk dierlijk obstakel dat eigenlijk op de scorekaart thuishoort."
       },
       {
         "text": "De greens"
@@ -634,7 +634,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "De meeste spelers nemen een buggy, vooral op warmere dagen, hoewel lopen op de eerste negen eenvoudig is (de klimmen op de tweede negen zijn de zwaardere opgave). Son Termes is geschikt voor golfers die karakter en bergzicht zoeken boven pure lengte: verschillende par 4's zijn bijna te drivenen, en het is een goed, goedkoper alternatief voor de premium banen bij Palma. Wat beginners verrast: ondanks de korte lengte verzamelt de baan gemiste slagen op manieren die niet duidelijk zijn op de scorekaart, en je deelt waarschijnlijk enkele holes met de geiten die er wonen. De beste starttijd is een vroege start, voordat de wind opsteekt op de blootgestelde hogere holes."
+        "text": "De meeste spelers nemen een buggy, vooral op warmere dagen, hoewel lopen op de eerste negen eenvoudig is (de klimmen op de tweede negen zijn de zwaardere opgave). Son Termes is geschikt voor golfers die karakter en bergzicht zoeken boven pure lengte: verschillende par 4's liggen bijna binnen drive-bereik, en het is een goed, goedkoper alternatief voor de premium banen bij Palma. Wat beginners verrast: ondanks de korte lengte verzamelt de baan gemiste slagen op manieren die niet duidelijk zijn op de scorekaart, en je deelt waarschijnlijk enkele holes met de geiten die er wonen. De beste starttijd is een vroege start, voordat de wind opsteekt op de blootgestelde hogere holes."
       },
       {
         "text": "Eindoordeel"
@@ -705,7 +705,7 @@ const content = {
         "caption": "Bollen är min. Geten var inte inbjuden. Back nine på Son Termes."
       },
       {
-        "text": "Jag spelade Son Termes en fredag morgon med en vän som har 20 i handicap. När vi kom till back nine började hans bollförråd sina. Ruffen är tät, flera utslag ger dig väldigt lite utrymme och banan samlar upp missar på ett sätt som inte syns på scorekortet. Det är en ganska rättvis sammanfattning av vad Son Termes är."
+        "text": "Jag spelade Son Termes en fredag morgon med en vän som har 20 i handicap. När vi kom till back nine började bollarna ta slut för honom. Ruffen är tät, flera utslag ger dig väldigt lite utrymme och banan samlar upp missar på ett sätt som inte syns på scorekortet. Det är en ganska rättvis sammanfattning av vad Son Termes är."
       },
       {
         "text": "Son Termes ligger i Na Burguesa-bergen ovanför Palma. Tjugo minuter från stadskärnan och ändå en helt annan värld. En klar dag ser man från de högre tees Castell de Bellver och katedralen i Palmas silhuett, med Medelhavet bakom. Kommer man från Shanghai, där en bana som är så här lättillgänglig och så här naturskön skulle ha fem års väntelista för medlemskap, så fastnar det fortfarande."
@@ -756,7 +756,7 @@ const content = {
         "text": "Getterna"
       },
       {
-        "text": "Det gick getter på flera hål under rundan. De betedde sig som om banan var deras, vilket rättvist nog antagligen stämde innan någon byggde en golfklubb här. Hela flocken kom för att titta när vi hålade ut på 17. En stöd i en bunker och följde spelet utan minsta intresse för konceptet att kratta. Ett genuint farligt djur som vi tycker borde finnas med på scorekortet."
+        "text": "Det gick getter på flera hål under rundan. De betedde sig som om banan var deras, vilket rättvist nog antagligen stämde innan någon byggde en golfklubb här. Hela flocken kom för att titta när vi hålade ut på 17. En stod i en bunker och följde spelet utan minsta intresse för konceptet att kratta. Ett genuint farligt djur som vi tycker borde finnas med på scorekortet."
       },
       {
         "text": "Greenerna"
@@ -820,11 +820,11 @@ const content = {
           ],
           [
             "Där besökare tappar slag",
-            "Många tappade slag kommer från antagandet att en kort bana måste vara enkel. Blinda doglegs, vatten som skar in, seg ruff och dolda mål straffar den som stänger av."
+            "Många tappade slag kommer från antagandet att en kort bana måste vara enkel. Blinda doglegs, vatten som kommer in i spelet, seg ruff och dolda mål straffar den som stänger av."
           ],
           [
             "Klubbhustips",
-            "Om du föredrar banor med personlighet framför perfekt putsade banor är det har ett bra Palma-nära alternativ till premiumnamnen. Att avsluta på terrassen med bergsutsikt är ett mycket bra sätt att runda av."
+            "Om du föredrar banor med personlighet framför perfekt putsade banor är det här ett bra Palma-nära alternativ till premiumnamnen. Att avsluta på terrassen med bergsutsikt är ett mycket bra sätt att runda av."
           ]
         ]
       },
@@ -905,7 +905,7 @@ const content = {
         "text": "几个值得一提的球洞"
       },
       {
-        "text": "第 6 洞让我个人很满意。五杆洞，开球一号木几乎打到果岭边，挖起杆攻上去，老鹰推差一点进。这里的五杆洞都有机会两上附近，手里拿着短铁时，确实会有实打实的抓鸟机会。"
+        "text": "第 6 洞让我个人很满意。五杆洞，开球一号木几乎打到果岭边，挖起杆攻上去，老鹰推差一点进。这里的五杆洞都有机会两杆上果岭，手里拿着短铁时，确实会有实打实的抓鸟机会。"
       },
       {
         "text": "第 12 洞是一个短三杆洞，要越过林地，景色也是全场最佳。站在发球台上找旗杆，比你想象中更费劲，而四周树木把这个洞框得很漂亮，使它成为帕尔马附近最让人记得住的短洞之一。"

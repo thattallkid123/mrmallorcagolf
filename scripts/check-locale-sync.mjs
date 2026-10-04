@@ -176,6 +176,7 @@ function writeManifest(m) {
   }
   if (m.fileGuards) sorted.fileGuards = m.fileGuards
   if (m.snap) sorted.snap = m.snap
+  if (m.identicalOk) sorted.identicalOk = m.identicalOk
   fs.writeFileSync(MANIFEST, JSON.stringify(sorted) + '\n')
 }
 
@@ -426,7 +427,8 @@ if (flag('--baseline') || flag('--ratchet')) {
 // the locale sync system): French elisions with the apostrophe dropped ("l echelle", "d eau"),
 // Swedish ä/ö typed as ae/oe ("laengsta", "hoer"), Chinese sentences punctuated with ASCII , : ;.
 const TYPO_RULES = [
-  { lc: 'fr', rx: /(?<![\p{L}\d'’])(?<!\d )([dljnscmtDLJNSCMT]|[Qq]u|[Jj]usqu|[Ll]orsqu|[Qq]uelqu) (?=[aeiouhàâéèêîôûAEIOUHÉ]\p{L})/u, what: 'French elision without its apostrophe' },
+  // "m" after a digit is the metre unit ("364 m avec"), so only that letter is exempt after a number: "par 4 s ouvre" is damage
+  { lc: 'fr', rx: /(?<![\p{L}\d'’])(?:(?<!\d )m|[dljnsctDLJNSCT]|[Qq]u|[Jj]usqu|[Ll]orsqu|[Qq]uelqu) (?=[aeiouhàâéèêîôûAEIOUHÉ]\p{L})/u, what: 'French elision without its apostrophe' },
   { lc: 'sv', rx: /\b\w*(?:laeng|hoer|hoera|boer\b|foer\b|goer\b)\w*/i, what: 'Swedish ä/ö typed as ae/oe' },
   { lc: 'zh', rx: /[一-鿿][,:;]|[,:;][一-鿿]/, what: 'ASCII punctuation next to Chinese text' },
 ]
@@ -444,6 +446,64 @@ function typographyFindings() {
     }
   }
   return out
+}
+// A translated string that is word for word the English one. check:rendered-english skips phrases made
+// of capitalised words (it cannot tell "A Day With Andy" from a place name), so those slipped through
+// on every translated homepage. Names, numbers, urls and ids are not copy; everything else must differ.
+const identicalFindings = () => {
+  const out = []
+  for (const s of sources) {
+    for (const r of collect(s)) {
+      const t = r.tr.replace(/<[^>]+>/g, ' ').trim()
+      if (r.locale === 'en' || t !== r.en.replace(/<[^>]+>/g, ' ').trim()) continue
+      if (!/[a-z]{3}/.test(t) || /^(https?:|\/|[\w./-]+$)/.test(t)) continue
+      if (/\d.*\d/.test(t) && !/[a-z]{4,}\s+[a-z]{4,}/.test(t)) continue
+      if ((manifest.identicalOk || []).includes(t)) continue
+      out.push({ label: s.label, locale: r.locale, path: r.path, text: t })
+    }
+  }
+  return out
+}
+if (flag('--allow-identical')) {
+  // Records the strings that are meant to read the same in every language (product names, courses, credentials).
+  // Review the --identical list first: anything that is a sentence or a label a visitor reads must be translated instead.
+  const keep = new Set(manifest.identicalOk || [])
+  for (const r of identicalFindings()) keep.add(r.text)
+  manifest.identicalOk = [...keep].sort()
+  writeManifest(manifest)
+  console.log('Recorded ' + manifest.identicalOk.length + ' string(s) that may be identical to the English.')
+  process.exit(0)
+}
+if (flag('--identical')) {
+  const f = identicalFindings()
+  const seenText = new Map()
+  for (const r of f) { const k = r.text; if (!seenText.has(k)) seenText.set(k, []); seenText.get(k).push(`${r.label} ${r.locale} ${r.path}`) }
+  for (const [text, where] of seenText) console.log(`"${text.slice(0, 100)}" x${where.length}  e.g. ${where[0]}`)
+  console.log(`\n${seenText.size} distinct string(s) identical to English in a translation.`)
+  process.exit(0)
+}
+// A parenthetical in the English that has vanished from the translation (Alcanada's "(January, December)"
+// was dropped from five languages). Counts "(" in both; zh may use full-width brackets.
+const parenFindings = () => {
+  const out = []
+  for (const s of sources) {
+    for (const r of collect(s)) {
+      const open = (x) => (x.match(/[(（]/g) || []).length
+      const en = r.en.replace(/<[^>]+>/g, ' ')
+      const tr = r.tr.replace(/<[^>]+>/g, ' ')
+      if (open(en) > open(tr) && /\([A-Za-z]/.test(en)) out.push({ label: s.label, locale: r.locale, path: r.path, en, tr })
+    }
+  }
+  return out
+}
+if (flag('--parens')) {
+  const f = parenFindings()
+  for (const r of f) console.log(`[${r.label} ${r.locale}] ${r.path}
+  EN: ${r.en.slice(0, 220)}
+  ${r.locale.toUpperCase()}: ${r.tr.slice(0, 220)}`)
+  console.log(`
+${f.length} string(s) lost a parenthetical.`)
+  process.exit(0)
 }
 if (flag('--typography')) {
   const f = typographyFindings()
@@ -481,6 +541,12 @@ for (const [lab, t] of Object.entries(totals)) {
   if (t.unverified > base) failures.push(`${lab}: ${t.unverified} unverified translated string(s), baseline is ${base}. New or changed translations must be confirmed (--confirm ${lab} --prefix <path>).`)
 }
 
+const sameAsEnglish = identicalFindings()
+if (sameAsEnglish.length) {
+  failures.push(`${sameAsEnglish.length} translated string(s) are word for word the English (node scripts/check-locale-sync.mjs --identical). Translate them, or if they are names meant to read the same, --allow-identical:`)
+  for (const r of sameAsEnglish.slice(0, 8)) failures.push(`  - ${r.label} ${r.locale} ${r.path}: "${r.text.slice(0, 80)}"`)
+  if (sameAsEnglish.length > 8) failures.push(`  ...and ${sameAsEnglish.length - 8} more`)
+}
 failures.push(...guardFindings(manifest))
 failures.push(...deadCopyFindings())
 const sumUnv = Object.values(totals).reduce((a, t) => a + t.unverified, 0)

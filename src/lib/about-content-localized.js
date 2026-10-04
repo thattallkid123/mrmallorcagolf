@@ -517,7 +517,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
       ],
       "tags": [
         "PGA Advanced Professional",
-        "Trackman Master Certified",
+        "Certifierad Trackman Master",
         "TPI Level 3",
         "Baserad i Mallorca"
       ]
