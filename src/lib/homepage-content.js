@@ -392,7 +392,7 @@ export const HOME_CONTENT = {
       },
       {
         "q": "Is this suitable for a group?",
-        "a": "Yes. The experiences work for solos, pairs, groups of friends, and corporate days. The multi-day option is especially well suited to business groups and executives visiting the island."
+        "a": "Yes. The experiences work for solos, pairs, groups of friends, and corporate days. Trip planning is especially well suited to business groups and executives visiting the island."
       },
       {
         "q": "When is the best time of year to visit?",

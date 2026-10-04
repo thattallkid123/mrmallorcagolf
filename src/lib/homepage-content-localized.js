@@ -292,7 +292,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Sirve para grupos?",
-          "a": "Sí. Funciona para una persona, para parejas, para grupos de amigos y para días corporativos. La experiencia completa encaja especialmente bien con grupos de empresa y directivos que visitan la isla."
+          "a": "Sí. Las experiencias funcionan para una persona, para parejas, para grupos de amigos y para días corporativos. La planificación del viaje encaja especialmente bien con grupos de empresa y directivos que visitan la isla."
         },
         {
           "q": "¿Cuál es la mejor época del año?",
@@ -613,7 +613,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Ist das für Gruppen geeignet?",
-          "a": "Ja. Für Einzelpersonen, Paare, Freundesgruppen und Firmenrunden."
+          "a": "Ja. Die Erlebnisse funktionieren für Einzelpersonen, Paare, Freundesgruppen und Firmentage. Die Reiseplanung eignet sich besonders für Geschäftsgruppen und Führungskräfte, die die Insel besuchen."
         },
         {
           "q": "Wann ist die beste Jahreszeit?",
@@ -934,7 +934,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Est-ce adapté aux groupes ?",
-          "a": "Oui. Pour une personne seule, un couple, un groupe d'amis ou une journée d'entreprise."
+          "a": "Oui. Les expériences conviennent à une personne seule, à un couple, à un groupe d'amis ou à une journée d'entreprise. La planification du voyage convient particulièrement aux groupes d'entreprise et aux dirigeants de passage sur l'île."
         },
         {
           "q": "Quelle est la meilleure période ?",
@@ -1255,7 +1255,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Is dit geschikt voor groepen?",
-          "a": "Ja. Voor solo's, koppels, vriendengroepen en zakelijke dagen."
+          "a": "Ja. De ervaringen werken voor solo's, koppels, vriendengroepen en zakelijke dagen. Reisplanning past vooral goed bij zakelijke groepen en leidinggevenden die het eiland bezoeken."
         },
         {
           "q": "Wat is de beste tijd van het jaar?",
@@ -1576,7 +1576,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Passar det här grupper?",
-          "a": "Ja. För solo, par, kompisgäng och företagsdagar."
+          "a": "Ja. Upplevelserna fungerar för enskilda spelare, par, vängrupper och företagsdagar. Reseplanering passar särskilt bra för företagsgrupper och chefer som besöker ön."
         },
         {
           "q": "När är bästa tiden på året?",
@@ -1904,7 +1904,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "适合团体吗？",
-          "a": "适合。无论是一人、两人、朋友小团体，还是企业接待日，都可以安排。"
+          "a": "适合。这些体验适用于个人、两人、朋友小团体和企业接待日。行程规划尤其适合来岛上的商务团队和企业高管。"
         },
         {
           "q": "一年里什么时候最好？",

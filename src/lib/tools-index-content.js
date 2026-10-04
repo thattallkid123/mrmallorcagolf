@@ -101,10 +101,10 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/de/tools/green-fees',
         eyebrow: 'Wählen Sie Ihren Platz',
-        title: 'Alle 24 Plätze Durchsuchen',
-        desc: 'Jeder Golfplatz auf Mallorca in einer Tabelle: Greenfees, Buggy-Kosten, Begehungsregeln, Par, Schwierigkeit und Handicap-Limits, mit meiner Bewertung. Oder vergleiche zwei oder drei direkt miteinander.',
+        title: 'Alle 24 Plätze durchsuchen',
+        desc: 'Jeder Golfplatz auf Mallorca in einer Tabelle: Greenfees, Buggy-Kosten, Gehregeln, Par, Schwierigkeit und Handicap-Limits, mit meiner Bewertung. Oder stellen Sie zwei oder drei direkt gegenüber.',
         time: '< 1 Min',
-        cta: 'Vergleiche Golfplätze',
+        cta: 'Golfplätze vergleichen',
       },
       {
         href: '/de/tools/handicap-checker',
@@ -133,7 +133,7 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/de/tools/hotel-recommender',
         eyebrow: 'Planen Sie Ihre Reise',
-        title: 'Hotels Finden',
+        title: 'Hotels finden',
         desc: 'Sechs Fragen. Eine persönliche Liste mit Hotels, abgestimmt auf Ihre Golfplätze, Gruppengröße und Reisestil. Deckt die Hauptgebiete der Insel ab.',
         time: '< 1 Min',
         cta: 'Finden Sie Hotels',
@@ -168,7 +168,7 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/es/tools/green-fees',
         eyebrow: 'Elija Su Campo',
-        title: 'Examina Los 24 Campos',
+        title: 'Examine los 24 campos',
         desc: 'Todos los campos de Mallorca en una tabla: green fees, costos de buggy, reglas de caminar, par, dificultad y límites de hándicap, con mi veredicto. O compare dos o tres cara a cara.',
         time: '< 1 min',
         cta: 'Comparar campos',

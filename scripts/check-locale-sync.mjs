@@ -81,6 +81,16 @@ async function loadSources() {
     const raw = o[c.overlayExportName]
     sources.push({ label: c.label, english, overlay: (lc) => raw[lc] })
   }
+  // pages whose content module exposes getter(locale) with the English fallback already merged in:
+  // rows where the translation equals the English are untranslated fallbacks (check:rendered-english
+  // owns those), so collect() skips them
+  for (const [label, mod, fn] of [
+    ['PWAP_EXPLAINED', 'src/lib/play-with-a-pro-explained-content.js', 'getPlayWithAProExplainedContent'],
+    ['TOOLS_INDEX', 'src/lib/tools-index-content.js', 'getToolsIndexContent'],
+  ]) {
+    const m = await importLib(mod)
+    sources.push({ label, english: m[fn]('en'), overlay: (lc) => m[fn](lc), skipIdentical: true })
+  }
   const [ga, gal, gp, gpl] = await Promise.all([
     importLib('src/lib/guide-article-content.js'), importLib('src/lib/guide-article-content-localized.js'),
     importLib('src/lib/guide-post-content.js'), importLib('src/lib/guide-post-content-localized.js'),
@@ -108,7 +118,7 @@ function collect(source) {
     if (!ov) continue
     for (const [p, tr] of leaves(ov, '', [])) {
       const en = getPath(source.english, p)
-      if (typeof en === 'string') rows.push({ path: p, locale: lc, en, tr })
+      if (typeof en === 'string' && !(source.skipIdentical && tr === en)) rows.push({ path: p, locale: lc, en, tr })
     }
   }
   return rows
@@ -124,14 +134,40 @@ function writeManifest(m) {
     sorted.entries[label] = {}
     for (const p of Object.keys(m.entries[label])) sorted.entries[label][p] = m.entries[label][p]
   }
+  if (m.fileGuards) sorted.fileGuards = m.fileGuards
+  if (m.snap) sorted.snap = m.snap
   fs.writeFileSync(MANIFEST, JSON.stringify(sorted) + '\n')
 }
 
-function classify(rows, entries) {
+// English pages that are hard-coded in JSX (no data object to fingerprint per string). The file's
+// hash is recorded when its translations were last brought into line; a changed hash fails the
+// check until the translation files are updated and `--ack-file <path>` is run.
+const FILE_GUARDS = [
+  { en: 'src/app/(en)/signature-day/SignatureDayView.jsx', translations: 'src/lib/signature-day-content.js' },
+  { en: 'src/app/(en)/privacy-policy/page.jsx', translations: 'src/app/{de,es,fr}/privacy-policy/page.jsx' },
+  { en: 'src/app/(en)/terms/page.jsx', translations: 'src/app/{de,es,fr}/terms/page.jsx' },
+]
+const fileHash = (rel) => crypto.createHash('sha1').update(fs.readFileSync(path.join(root, rel), 'utf8').replace(/\r\n/g, '\n')).digest('hex').slice(0, 10)
+function guardFindings(m) {
+  const out = []
+  for (const g of FILE_GUARDS) {
+    if (!fs.existsSync(path.join(root, g.en))) continue
+    const rec = m.fileGuards?.[g.en]
+    if (rec !== fileHash(g.en)) out.push(`  ${g.en} changed since its translations were last checked.
+    Update ${g.translations}, then: node scripts/check-locale-sync.mjs --ack-file "${g.en}"`)
+  }
+  return out
+}
+
+// snap: English hash recorded for strings nobody has verified yet (--snapshot-english). It cannot
+// say the translation was right, but it makes any LATER English edit fail the check, so the
+// unverified backlog can no longer drift silently while it is being audited.
+function classify(rows, entries, snap) {
   const stale = [], unverified = [], ok = []
   for (const r of rows) {
     const e = entries?.[r.path]
     if (e && e[r.locale]) (e.en === enHash(r.en) ? ok : stale).push(r)
+    else if ((e?.en ?? snap?.[r.path]) && (e?.en ?? snap[r.path]) !== enHash(r.en)) stale.push(r)
     else unverified.push(r)
   }
   return { stale, unverified, ok }
@@ -145,6 +181,22 @@ function chosenSeen(l, p, lc) { return seen.has(`${l}|${p}|${lc}`) }
 const args = process.argv.slice(2)
 const flag = (n) => args.includes(n)
 const opt = (n) => { const i = args.indexOf(n); return i >= 0 ? args[i + 1] : undefined }
+if (opt('--ack-file')) {
+  const m = readManifest()
+  const f = opt('--ack-file')
+  if (!FILE_GUARDS.some((g) => g.en === f)) { console.error('Not a guarded file: ' + f); process.exit(2) }
+  m.fileGuards = { ...(m.fileGuards || {}), [f]: fileHash(f) }
+  writeManifest(m)
+  console.log('Recorded ' + f)
+  process.exit(0)
+}
+if (flag('--ack-all-files')) {
+  const m = readManifest()
+  m.fileGuards = Object.fromEntries(FILE_GUARDS.filter((g) => fs.existsSync(path.join(root, g.en))).map((g) => [g.en, fileHash(g.en)]))
+  writeManifest(m)
+  console.log('Recorded ' + Object.keys(m.fileGuards).length + ' guarded file(s)')
+  process.exit(0)
+}
 const label = opt('--confirm') || opt('--report') || opt('--facts') || opt('--outliers')
 const prefix = opt('--prefix')
 const localeArg = opt('--locale')
@@ -163,7 +215,7 @@ if (opt('--report')) {
   const limit = Number(opt('--limit') || 200)
   let shown = 0
   for (const s of chosen) {
-    const { stale, unverified, ok } = classify(collect(s), manifest.entries[s.label])
+    const { stale, unverified, ok } = classify(collect(s), manifest.entries[s.label], manifest.snap?.[s.label])
     const pool = flag('--stale') ? stale : flag('--all') ? [...stale, ...unverified, ...ok] : unverified
     for (const r of pool) {
       if (!wantLocales.includes(r.locale) || !matchesPrefix(r.path) || shown >= limit) continue
@@ -251,6 +303,24 @@ if (opt('--outliers')) {
   process.exit(0)
 }
 
+
+if (flag('--snapshot-english')) {
+  manifest.snap ||= {}
+  let added = 0
+  for (const s of sources) {
+    const snap = (manifest.snap[s.label] ||= {})
+    const entries = manifest.entries[s.label] || {}
+    for (const r of collect(s)) {
+      const e = entries[r.path]
+      if ((e && e[r.locale]) || snap[r.path]) continue
+      snap[r.path] = enHash(r.en)
+      added++
+    }
+  }
+  writeManifest(manifest)
+  console.log('Recorded the current English for ' + added + ' unverified string(s).')
+  process.exit(0)
+}
 // ---- --confirm
 if (opt('--confirm')) {
   const chosen = pick(label)
@@ -297,7 +367,7 @@ if (opt('--confirm')) {
 const totals = {}
 const staleAll = []
 for (const s of sources) {
-  const { stale, unverified, ok } = classify(collect(s), manifest.entries[s.label])
+  const { stale, unverified, ok } = classify(collect(s), manifest.entries[s.label], manifest.snap?.[s.label])
   totals[s.label] = { stale: stale.length, unverified: unverified.length, ok: ok.length, unverifiedByLocale: Object.fromEntries(LOCALES.map((lc) => [lc, unverified.filter((r) => r.locale === lc).length])) }
   staleAll.push(...stale.map((r) => ({ label: s.label, ...r })))
 }
@@ -336,6 +406,7 @@ for (const [lab, t] of Object.entries(totals)) {
   if (t.unverified > base) failures.push(`${lab}: ${t.unverified} unverified translated string(s), baseline is ${base}. New or changed translations must be confirmed (--confirm ${lab} --prefix <path>).`)
 }
 
+failures.push(...guardFindings(manifest))
 const sumUnv = Object.values(totals).reduce((a, t) => a + t.unverified, 0)
 const sumOk = Object.values(totals).reduce((a, t) => a + t.ok, 0)
 if (failures.length) {
