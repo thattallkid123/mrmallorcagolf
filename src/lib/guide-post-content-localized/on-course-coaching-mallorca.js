@@ -291,7 +291,7 @@ const content = {
         "text": "Vi spelar en runda tillsammans. Det är strukturen. Men i stället för att bara spela går vi igenom varje beslutspunkt när den uppstår: klubbval i sidvind, var man ska missa en green, hur man läser ett sluttande läge, när man ska ta en carry över vatten och när man ska lägga upp kort. Pre-shot-rutin. Banstrategi. Det mentala spelet under press."
       },
       {
-        "text": "Jag observerar också din sving under de förhållanden som faktiskt påverkar den: markens hårdhet, lutning, rough, vind. Inte en platt övningsmatta. Jag ser säker på banan som jag inte skulle se på rangen, och feedbacken är direkt relevant eftersom du strax ska slå nästa slag."
+        "text": "Jag observerar också din sving under de förhållanden som faktiskt påverkar den: markens hårdhet, lutning, rough, vind. Inte en platt övningsmatta. Jag ser saker på banan som jag inte skulle se på rangen, och feedbacken är direkt relevant eftersom du strax ska slå nästa slag."
       },
       {
         "text": "Vem det passar för"
@@ -312,7 +312,7 @@ const content = {
         "text": "Vad du får ut av det"
       },
       {
-        "text": "De flesta spelare går därifrån med tre eller fyra konkreta säker att jobba på. Inte en lista med tjugo svingfel, utan den handfull säker som faktiskt kostar dem slag i verkliga rundor. Du kommer också förstå bättre hur man hanterar en golfbana: var man tar risker, var man är försiktig, och hur man fattar beslut under press."
+        "text": "De flesta spelare går därifrån med tre eller fyra konkreta saker att jobba på. Inte en lista med tjugo svingfel, utan den handfull saker som faktiskt kostar dem slag i verkliga rundor. Du kommer också förstå bättre hur man hanterar en golfbana: var man tar risker, var man är försiktig, och hur man fattar beslut under press."
       },
       {
         "text": "Utöver coachingen får du en runda på Mallorca på en av öns bästa banor, med någon som känner varje hål och kan göra dagen genuint njutbar. Den kombinationen är vad <a href=\"/play-with-a-pro\">Play With A Pro-upplevelsen</a> bygger på."

@@ -60,7 +60,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       title: 'Die Lücke zwischen dem, was Sie erwartet haben, und dem, was Sie bekommen haben.',
       paragraphs: [
         'Die meisten Coachings enden mit einer Liste. Dinge zum Üben, Positionen, die man finden soll, Angewohnheiten, die man ablegen soll. Ein Tag wie dieser bringt etwas anderes hervor. Weil die Entscheidungen echt waren und die Schläge Konsequenzen hatten, wird das Gelernte anders gespeichert. Es bleibt.',
-        'Die Scorekarte zeigt, was sie zeigt. Das eigentliche Ergebnis ist die Veränderung darin, wie Sie an die nächste Runde herangehen: die Fragen, die Sie sich vor dem Spiel stellen, die Lesungen, denen Sie vertrauen, die Entscheidungen, die Sie mit mehr Klarheit treffen, weil Sie sie auf einem Platz getroffen haben, auf dem sie zählten.',
+        'Die Scorekarte zeigt, was sie zeigt. Das eigentliche Ergebnis ist die Veränderung darin, wie Sie an die nächste Runde herangehen: die Fragen, die Sie sich vor dem Spiel stellen, die Einschätzungen von Linie und Break, denen Sie vertrauen, die Entscheidungen, die Sie mit mehr Klarheit treffen, weil Sie sie auf einem Platz getroffen haben, auf dem sie zählten.',
       ],
     },
     facts: {
@@ -105,7 +105,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraphs: [
         'Jugando solo, se le puede escapar lo que realmente está pasando. Un golpe que se sintió sólido pero salió ligeramente distinto de la cara del palo. Una decisión que salió bien pero se basó en información incompleta. Un hábito que ha desarrollado durante semanas y que no ve porque está dentro de él.',
         'Cuando estoy ahí, veo esas cosas. No para criticar. Para mostrarle lo que realmente es posible si cambia la decisión. Eso es el producto: claridad sobre lo que está haciendo y por qué importa.',
-        'Gran parte del coaching tradicional gira en torno a posiciones de swing y mecánica. Este día es distinto. Se trata de la fruta más baja del árbol. Cuál es esa única cosa en su elección de golpe o en su gestión del campo que, si cambia, marca la mayor diferencia. Tipos de práctica que realmente funcionan según cómo aprende. Preguntas sobre su propio juego que un campo de prácticas no puede responder. No una revisión completa. Solo la claridad de saber en qué trabajar y cómo.',
+        'Gran parte del coaching tradicional gira en torno a posiciones de swing y mecánica. Este día es distinto. Se trata de lo que se puede mejorar con menos esfuerzo. Cuál es esa única cosa en su elección de golpe o en su gestión del campo que, si cambia, marca la mayor diferencia. Tipos de práctica que realmente funcionan según cómo aprende. Preguntas sobre su propio juego que un campo de prácticas no puede responder. No una revisión completa. Solo la claridad de saber en qué trabajar y cómo.',
       ],
     },
     beforeDay: {
@@ -200,7 +200,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
         "C'est ce que j'entends le plus souvent. L'inquiétude est réelle. Vous réservez une journée, vous arrivez, et votre swing vous semble étranger. Votre petit jeu est rouillé. Vous lisez mal le fairway. Rien de tout cela n'est le sujet.",
         "Une journée comme celle-ci ne se mesure pas à votre index ou à votre meilleur score. Elle se mesure à ce qui change dans votre façon de voir le jeu. Adam joue depuis l'âge de cinq ans et pensait maîtriser les fondamentaux. Une journée sur le parcours a complètement changé son approche du choix de coup. Jo n'avait pas joué depuis des années. Cette journée a ouvert quelque chose qu'une semaine de practice n'aurait pas pu apporter.",
         "Le score compte moins que les questions qu'il soulève. Quel était le bon club à cet endroit. Sur quoi dois-je vraiment travailler en rentrant. Ce sont ces choses-là qui restent.",
-        "Avant la journée, je consulte votre questionnaire préalable et nous parlons de votre jeu : ce que vous avez travaillé, ce qui vous frustré et ce qui représenterait une bonne journée pour vous. Lorsque nous arrivons au premier départ, je sais déjà ce que je dois observer. Ce contexte guide tout ce qui suit.",
+        "Avant la journée, je consulte votre questionnaire préalable et nous parlons de votre jeu : ce que vous avez travaillé, ce qui vous a frustré et ce qui représenterait une bonne journée pour vous. Lorsque nous arrivons au premier départ, je sais déjà ce que je dois observer. Ce contexte guide tout ce qui suit.",
       ],
     },
     duringRound: {
@@ -315,7 +315,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       title: 'Het verschil tussen wat u verwachtte en wat u kreeg.',
       paragraphs: [
         'De meeste coaching levert een lijstje op. Dingen om te oefenen, posities om te vinden, gewoontes om af te leren. Een dag als deze levert iets anders op. Omdat de beslissingen echt waren en de slagen gevolgen hadden, wordt wat u leerde anders opgeslagen. Het blijft hangen.',
-        'De scorekaart laat zien wat hij laat zien. Het echte resultaat is de verschuiving in hoe u de volgende ronde benadert: de vragen die u zich stelt voordat u speelt, de lezingen die u vertrouwt, de beslissingen die u met meer duidelijkheid neemt omdat u ze nam op een baan waar ze ertoe deden.',
+        'De scorekaart laat zien wat hij laat zien. Het echte resultaat is de verschuiving in hoe u de volgende ronde benadert: de vragen die u zich stelt voordat u speelt, de inschattingen die u vertrouwt, de beslissingen die u met meer duidelijkheid neemt omdat u ze nam op een baan waar ze ertoe deden.',
       ],
     },
     facts: {
@@ -378,7 +378,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       title: 'Här är besluten verkliga.',
       paragraphs: [
         'Banan väljs för att matcha ditt spel. Ett riktigt test, men inte orättvist. Vind, förhållanden, smala fairways, vatten: besluten du fattar förändras med det som ligger framför dig, och att få dem rätt eller fel spelar roll. Det är därför det gör skillnad att spela med någon.',
-        'På en range är ett tips om klubbval eller inriktning abstrakt. Du hör det, lägger det på minnet och går vidare till nästa slag. Ute på banan, när vinden trycker på, fairwayn är smal och resultatet är på riktigt, blir samma information konkret. Du känner den. Den skillnaden är det som gör att säker fastnar.',
+        'På en range är ett tips om klubbval eller inriktning abstrakt. Du hör det, lägger det på minnet och går vidare till nästa slag. Ute på banan, när vinden trycker på, fairwayn är smal och resultatet är på riktigt, blir samma information konkret. Du känner den. Den skillnaden är det som gör att sakerna fastnar.',
         "Coachingen kommer i rätt ögonblick: vid tee'et mot vinden där beslutet är svårt, vid inspelet där klubbvalet förändrar hålet, vid putten där att läsa breaket från rätt sida gör ett slag mindre möjligt. Ingen ständig kommentar. Bara observationen som förändrar hålet.",
       ],
     },
@@ -399,7 +399,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Efteråt',
       title: 'Skillnaden mellan vad du förväntade dig och vad du fick.',
       paragraphs: [
-        'De flesta coachingtillfällen ger en lista. Säker att öva på, positioner att hitta, vanor att bryta. En dag som den här ger något annat. Eftersom besluten var verkliga och slagen fick konsekvenser lagras det du lärde dig på ett annat sätt. Det stannar kvar.',
+        'De flesta coachingtillfällen ger en lista. Saker att öva på, positioner att hitta, vanor att bryta. En dag som den här ger något annat. Eftersom besluten var verkliga och slagen fick konsekvenser lagras det du lärde dig på ett annat sätt. Det stannar kvar.',
         'Scorekortet visar det det visar. Det verkliga resultatet är förändringen i hur du närmar dig nästa runda: frågorna du ställer innan du spelar, läsningarna du litar på, besluten du fattar med mer tydlighet eftersom du fattade dem på en bana där de spelade roll.',
       ],
     },
@@ -407,7 +407,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       format: { label: 'Format', value: '18 hål, hel dag' },
       courseSelection: { label: 'Val av bana', value: 'Anpassad efter ditt spel och handicap' },
       included: { label: 'Vad som ingår', value: 'Bana, starttid, coaching, strategi' },
-      duration: { label: 'Längd', value: 'Vanligtvis 5-6 timmar' },
+      duration: { label: 'Tidsåtgång', value: 'Vanligtvis 5-6 timmar' },
       dayRateLabel: 'Dagtaxa',
       soloLabel: 'solo',
       groupSuffix: 'för 2-3 golfare (greenfee tillkommer)',

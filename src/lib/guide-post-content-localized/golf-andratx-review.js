@@ -669,7 +669,7 @@ const content = {
         "text": "Vi slog av strax efter klockan 8 som ett av de första sällskapen. En lite ovanlig start: underhållet hade stängt de två första hålen, så vi började på det tredje. Träningsanläggningen ligger på andra sidan vägen från klubbhuset, vilket gör uppvärmningen lite annorlunda, men det finns ett riktigt bra område för alla tänkbara kortspelsslag i utmärkt skick och en driving range på en brant sluttning som gör sitt jobb att lösa upp kroppen inför en runda."
       },
       {
-        "text": "Golfbilar är obligatoriska före klockan 14 och banan var välbesökt tidigt på morgonen. Speltempot var bra, men morgonen hade tidvis en lite stressad känsla. Under högsäsong är det vanligt överallt, särskilt på en av de bästa och mest efterfrågade banorna i sydväst, och det märktes. Det var en bra morgon ute, även om ett par säker kunde ha flutit lite smidigare."
+        "text": "Golfbilar är obligatoriska före klockan 14 och banan var välbesökt tidigt på morgonen. Speltempot var bra, men morgonen hade tidvis en lite stressad känsla. Under högsäsong är det vanligt överallt, särskilt på en av de bästa och mest efterfrågade banorna i sydväst, och det märktes. Det var en bra morgon ute, även om ett par saker kunde ha flutit lite smidigare."
       },
       {
         "text": "Hur banan spelar"
@@ -759,7 +759,7 @@ const content = {
         "text": "Omdöme"
       },
       {
-        "title": "Fyra säker jag skulle vilja veta innan jag bokar Golf de Andratx",
+        "title": "Fyra saker jag skulle vilja veta innan jag bokar Golf de Andratx",
         "items": [
           [
             "Bästa starttid",

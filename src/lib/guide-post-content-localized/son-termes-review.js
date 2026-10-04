@@ -714,7 +714,7 @@ const content = {
         "text": "Att gå banan"
       },
       {
-        "text": "Jag försöker alltid gå. På front nine på Son Termes är det enkelt. På back nine blir det ett ärligt samtal med dig själv. Flera stigningar är branta nog att få upp pulsen, och när du når de övre hålen har två säker hänt: utsikten har blivit betydligt bättre och vinden har tilltagit så pass att längdkontrollen på par 3-hålen blir svårare än yardaget antyder. De flesta tar buggy. En varm dag är det rätt beslut."
+        "text": "Jag försöker alltid gå. På front nine på Son Termes är det enkelt. På back nine blir det ett ärligt samtal med dig själv. Flera stigningar är branta nog att få upp pulsen, och när du når de övre hålen har två saker hänt: utsikten har blivit betydligt bättre och vinden har tilltagit så pass att längdkontrollen på par 3-hålen blir svårare än yardaget antyder. De flesta tar buggy. En varm dag är det rätt beslut."
       },
       {
         "alt": "Utslag på Son Termes golfbana på Mallorca med berg i bakgrunden",
@@ -808,7 +808,7 @@ const content = {
         "text": "Omdöme"
       },
       {
-        "title": "Fyra säker jag skulle vilja veta innan jag bokar Son Termes",
+        "title": "Fyra saker jag skulle vilja veta innan jag bokar Son Termes",
         "items": [
           [
             "Bästa starttid",

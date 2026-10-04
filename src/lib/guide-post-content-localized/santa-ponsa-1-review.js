@@ -689,7 +689,7 @@ const content = {
         "text": "Omdöme"
       },
       {
-        "title": "Fyra säker jag skulle vilja veta innan jag bokar Santa Ponsa 1",
+        "title": "Fyra saker jag skulle vilja veta innan jag bokar Santa Ponsa 1",
         "items": [
           [
             "Bästa starttid",

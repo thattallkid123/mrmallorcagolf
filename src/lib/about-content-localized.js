@@ -49,7 +49,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "quote": "Volver a jugar en serio solo ha confirmado lo que ya creía: las mejoras más rápidas suelen ocurrir en el campo, no en la zona de prácticas."
       }
     ],
-    "imageAlt": "Andy Griffiths - profesional PGA en Mallorca",
+    "imageAlt": "Andy Griffiths - Profesional Avanzado de la UK PGA, Mallorca",
     "summary": "Soy un UK PGA Advanced Professional. Once años entrenando en China - jugadores de la selección nacional, el primer Trackman Master del país y cientos de millones de visualizaciones en Douyin. Antes de eso: Pebble Beach, The Open Championship y Evian. Me mudé a Mallorca en marzo de 2025 para construir algo propio. Juego los mejores campos de la isla casi cada semana y tengo opiniones muy claras sobre todos ellos.",
     "clients": {
       "label": "Con sus palabras",
@@ -265,7 +265,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "Derrière l'Expérience."
       ],
       "tags": [
-        "Professionnel PGA Avancé",
+        "Professionnel avancé UKPGA",
         "Certifié Maître Trackman",
         "TPI Niveau 3",
         "Basé à Majorque"
@@ -301,7 +301,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "quote": "Rejouer sérieusement n'a fait que confirmer ce que je croyais déjà : les progrès les plus rapides se font généralement sur le parcours, pas au practice."
       }
     ],
-    "imageAlt": "Andy Griffiths - Professionnel PGA avancé, Majorque",
+    "imageAlt": "Andy Griffiths - Professionnel avancé UK PGA, Majorque",
     "summary": "Je suis un UK PGA Advanced Professional. Onze ans à coacher en Chine - des joueurs de l'équipe nationale, le premier Trackman Master du pays et des centaines de millions de vues sur Douyin. Avant cela : Pebble Beach, The Open Championship, Evian. Je me suis installé à Majorque en mars 2025 pour construire quelque chose à moi. Je joue presque chaque semaine les meilleurs parcours de l'île et j'ai un avis tranché sur chacun d'eux.",
     "clients": {
       "label": "Dans leurs mots",
@@ -321,11 +321,11 @@ export const ABOUT_LOCALIZED_CONTENT = {
     "credentialsLabel": "Références",
     "credentials": [
       {
-        "title": "Professionnel PGA Avancé",
+        "title": "Professionnel avancé UKPGA",
         "detail": "Plus de 15 000 heures de coaching dispensées"
       },
       {
-        "title": "Études en Gestion du Golf",
+        "title": "Études appliquées en gestion du golf",
         "detail": "Université de Birmingham"
       },
       {

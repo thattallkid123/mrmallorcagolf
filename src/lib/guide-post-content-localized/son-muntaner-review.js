@@ -1097,7 +1097,7 @@ const content = {
         "text": "Son Muntaner är en del av Arabella Golf Mallorca-gruppen tillsammans med Son Vida och Son Quint. Alla tre banorna är tillgängliga från samma resortanläggning."
       },
       {
-        "title": "Fyra säker jag skulle vilja veta innan jag bokar Son Muntaner",
+        "title": "Fyra saker jag skulle vilja veta innan jag bokar Son Muntaner",
         "items": [
           [
             "Bästa starttid",

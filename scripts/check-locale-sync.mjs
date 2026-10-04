@@ -112,6 +112,43 @@ async function loadSources() {
   return sources
 }
 
+// Copy that sits in a content file but that no component reads (the page was redesigned and the
+// strings were left behind). It is not audited, because nobody sees it, but the claim "nobody reads
+// it" is checked on every run: deadCopyFindings() fails if one of the listed files starts reading a
+// key, so dead copy cannot quietly come back to life unaudited. `locale` is a language code, not copy.
+const DEAD_COPY = [
+  {
+    label: 'HOME', ident: 'home',
+    files: ['src/app/HomePageInner.jsx', 'src/app/(en)/about/AboutView.jsx', 'src/components/WinnersProofStrip.jsx'],
+    keys: ['how', 'whyMallorca', 'courses', 'ui', 'packages.multiDay', 'packages.intro', 'winners.testimonial'],
+  },
+  {
+    label: 'CONTACT', ident: 'content',
+    files: ['src/app/(en)/contact/ContactForm.jsx', 'src/app/(en)/contact/ContactFormPanel.jsx', 'src/app/(en)/contact/page.jsx'],
+    keys: ['form.experiences', 'form.experienceHelp', 'form.experienceHelpTitle', 'form.labels.experience', 'stayInTouch', 'dateCta'],
+  },
+  {
+    label: 'PLAY_WITH_A_PRO', ident: 'content',
+    files: ['src/app/(en)/play-with-a-pro/PlayWithAProView.jsx'],
+    keys: ['packages.multiDay'],
+  },
+]
+const isDeadCopy = (label, p) => p === 'locale' || DEAD_COPY.some((d) => d.label === label && d.keys.some((k) => p === k || p.startsWith(k + '.') || p.startsWith(k + '[')))
+function deadCopyFindings() {
+  const out = []
+  for (const d of DEAD_COPY) {
+    for (const f of d.files) {
+      if (!fs.existsSync(path.join(root, f))) { out.push(`  ${d.label}: renderer file ${f} no longer exists; update DEAD_COPY in scripts/check-locale-sync.mjs`); continue }
+      const text = fs.readFileSync(path.join(root, f), 'utf8')
+      for (const k of d.keys) {
+        const rx = new RegExp(`\\b${d.ident}\\??\\.${k.split('.').join('\\??\\.')}\\b`)
+        if (rx.test(text)) out.push(`  ${d.label}: ${f} now reads "${d.ident}.${k}", which was listed as dead copy. Audit its translations and take it off DEAD_COPY.`)
+      }
+    }
+  }
+  return out
+}
+
 // every translated string that has an English string at the same path
 function collect(source) {
   const rows = [] // { path, locale, en, tr }
@@ -119,6 +156,7 @@ function collect(source) {
     const ov = source.overlay(lc)
     if (!ov) continue
     for (const [p, tr] of leaves(ov, '', [])) {
+      if (isDeadCopy(source.label, p)) continue
       const en = getPath(source.english, p)
       if (typeof en === 'string' && !(source.skipIdentical && tr === en)) rows.push({ path: p, locale: lc, en, tr })
     }
@@ -444,6 +482,7 @@ for (const [lab, t] of Object.entries(totals)) {
 }
 
 failures.push(...guardFindings(manifest))
+failures.push(...deadCopyFindings())
 const sumUnv = Object.values(totals).reduce((a, t) => a + t.unverified, 0)
 const sumOk = Object.values(totals).reduce((a, t) => a + t.ok, 0)
 if (failures.length) {

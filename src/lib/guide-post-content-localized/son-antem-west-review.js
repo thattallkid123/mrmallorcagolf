@@ -839,7 +839,7 @@ const content = {
         "text": "Omdöme"
       },
       {
-        "title": "Fyra säker jag skulle vilja veta innan jag bokar Son Antem West",
+        "title": "Fyra saker jag skulle vilja veta innan jag bokar Son Antem West",
         "items": [
           [
             "Bästa starttid",

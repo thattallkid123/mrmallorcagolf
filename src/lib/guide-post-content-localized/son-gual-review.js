@@ -817,7 +817,7 @@ const content = {
         "text": "Klubbhyra i proshopen: Callaway €35, Titleist €45 per runda. Buggy €45, elvagn från €15. Handicapgräns: 33 för herrar, 35 för damer. Ett giltigt WHS-intyg krävs vid bokning. Det är tillåtet att gå."
       },
       {
-        "title": "Fyra säker jag skulle vilja veta innan jag bokar Son Gual",
+        "title": "Fyra saker jag skulle vilja veta innan jag bokar Son Gual",
         "items": [
           [
             "Bästa starttid",

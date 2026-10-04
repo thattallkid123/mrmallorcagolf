@@ -784,7 +784,7 @@ const content = {
         "text": "9/10. T Golf Calvià är en av de bäst skötta banor jag spelat på Mallorca. Greenerna är utmärkta, fairways i bra skick, och layouten testar en ordentligt, särskilt kring avståndsbedömning och vatten, utan att vara orättvis."
       },
       {
-        "title": "Fyra säker jag skulle vilja veta innan jag bokar T Golf Calvià",
+        "title": "Fyra saker jag skulle vilja veta innan jag bokar T Golf Calvià",
         "items": [
           [
             "Bästa starttid",

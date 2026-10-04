@@ -806,7 +806,7 @@ const content = {
         "text": "Läge: Port d'Alcúdia, cirka 50 minuter norr om Palma. Avsätt tid och stressa inte direkt därifrån efter rundan."
       },
       {
-        "title": "Fyra säker jag skulle vilja veta innan jag bokar Alcanada",
+        "title": "Fyra saker jag skulle vilja veta innan jag bokar Alcanada",
         "items": [
           [
             "Bästa starttid",
