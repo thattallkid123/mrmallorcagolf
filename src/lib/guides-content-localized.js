@@ -48,7 +48,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Análisis de Campo",
         "badgeGold": true,
         "title": "T Golf Palma Análisis - La Opinión Honesta de un Profesional PGA (2026)",
-        "intro": "Greenes rápidos y pequeños y hoyos de riesgo y recompensa que te hacen pensar desde el tee. Un 9 sobre 10 que merece su propia reputación, no solo la de T Golf Calvià.",
+        "intro": "Greens rápidos y pequeños y hoyos de riesgo y recompensa que te hacen pensar desde el tee. Un 9 sobre 10 que merece su propia reputación, no solo la de T Golf Calvià.",
         "readTime": "6 min",
         "keywords": "Par 71 · €80-150 · Palma · Diseño de Jack Nicklaus"
       },
@@ -515,7 +515,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badgeGold": true,
         "img": "/images/blog-trip-planning/Son Gual.webp",
         "imgPosition": "center 48%",
-        "title": "Itinéraire golf à Mallorca: 5 jours depuis Palma",
+        "title": "Itinéraire golf à Majorque: 5 jours depuis Palma",
         "intro": "Une route précise de cinq jours avec Son Quint, Santa Ponsa 1, Son Gual, Alcanada et T Golf Calvià, plus les dîners et trajets.",
         "readTime": "8 min",
         "keywords": "5 jours · Base Palma · Son Gual · Alcanada"

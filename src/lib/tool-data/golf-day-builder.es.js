@@ -317,7 +317,7 @@ const data = {
     "Par 73 · José Gancedo",
     "Caseta de piedra en el hoyo 9, única en Mallorca"
    ],
-   "blurb": "Un campo de valle cerca de la costa que pocos visitantes planifican y del que la mayoría se alegra. Exigente sin hacer ruido, sobre todo en las aproximaciones a greenes inclinados."
+   "blurb": "Un campo de valle cerca de la costa que pocos visitantes planifican y del que la mayoría se alegra. Exigente sin hacer ruido, sobre todo en las aproximaciones a greens inclinados."
   },
   "pula": {
    "facts": [

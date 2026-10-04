@@ -9,7 +9,7 @@ const data = {
    "areaLabel": "Palma",
    "buggyNote": "Buggies disponibles; se puede caminar si está en forma",
    "bestFor": "Una ronda seria en la prueba más completa de la isla",
-   "why": "El diseño de Thomas Himmel de 2007 tiene su propio ecosistema de viento: la posición elevada hace que el viento se comporte de forma distinta en cada hoyo. Los greenes son rápidos y elevados, así que importa más dónde falla que cómo golpea. El tramo final, del 15 al 18, está entre los mejores cuatro hoyos del golf europeo. Y el precio está en consonancia.",
+   "why": "El diseño de Thomas Himmel de 2007 tiene su propio ecosistema de viento: la posición elevada hace que el viento se comporte de forma distinta en cada hoyo. Los greens son rápidos y elevados, así que importa más dónde falla que cómo golpea. El tramo final, del 15 al 18, está entre los mejores cuatro hoyos del golf europeo. Y el precio está en consonancia.",
    "andy": "El viento en el 16 es un reto distinto del viento en el 7. Eso es lo que hace que el campo sea tan rejugable.",
    "bestPlayer": "Jugador habitual a hándicap bajo"
   },
@@ -17,7 +17,7 @@ const data = {
    "areaLabel": "Port d'Alcúdia · Norte",
    "buggyNote": "El buggy es popular; con zonas de pendiente",
    "bestFor": "La ronda de campeonato más pintoresca de Mallorca",
-   "why": "Diseño de Robert Trent Jones Jr., sede de la Gran Final del Rolex Challenge Tour. El faro de Alcanada se ve desde 16 de los 18 hoyos y los 58 búnkeres exigen atención en cada aproximación. Los greenes tienen mucha ondulación y son muy rápidos, lo que sorprende a los golfistas de vacaciones que nunca han puteado en algo parecido. La terraza del restaurante tras la ronda es una de las mejores de la isla.",
+   "why": "Diseño de Robert Trent Jones Jr., sede de la Gran Final del Rolex Challenge Tour. El faro de Alcanada se ve desde 16 de los 18 hoyos y los 58 búnkeres exigen atención en cada aproximación. Los greens tienen mucha ondulación y son muy rápidos, lo que sorprende a los golfistas de vacaciones que nunca han puteado en algo parecido. La terraza del restaurante tras la ronda es una de las mejores de la isla.",
    "andy": "Una de las rondas más bonitas que jugará en cualquier lugar de Europa. La vista del faro en el 17 se queda con usted mucho después de tirar la tarjeta.",
    "bestPlayer": "Jugador ocasional a hándicap bajo"
   },
@@ -130,7 +130,7 @@ const data = {
    "buggyNote": "Terreno llano; fácil de caminar, aunque la mayoría usa buggy por el ritmo",
    "bestFor": "Un campo de resort bien gestionado cerca de Palma con calles tolerantes y un hoyo memorable",
    "why": "Un trazado abierto en plena campiña cerca de Llucmajor, a 15 minutos de Palma y 25 del aeropuerto. Las calles generosas y el rough ligero lo hacen accesible para la mayoría de los niveles. Los hoyos bordeados de árboles son donde la ronda cobra vida. El hoyo 16, un par 5 en cuesta con dogleg a la derecha que termina en un green protegido, es el más destacado. El terreno llano invita a caminar.",
-   "andy": "El 16 vale la ronda por sí solo. Reserve pronto para controlar el ritmo y use un chip rodado en los greenes elevados en lugar de intentar parar la bola con suavidad.",
+   "andy": "El 16 vale la ronda por sí solo. Reserve pronto para controlar el ritmo y use un chip rodado en los greens elevados en lugar de intentar parar la bola con suavidad.",
    "bestPlayer": "Principiante a jugador habitual"
   },
   "son-termes": {
@@ -145,7 +145,7 @@ const data = {
    "areaLabel": "Calvià · Suroeste",
    "buggyNote": "Los buggies se usan mucho; se puede caminar, pero la mayoría prefiere ir en buggy",
    "bestFor": "Una de las experiencias de golf más completas de la isla",
-   "why": "Diseñado originalmente por John Harris en 1978 y completamente reconstruido tras una renovación de 10 millones de euros, T Golf Calvià se siente ahora pulido de principio a fin. Quince lagos, líneas de salida amplias y greenes grandes y ondulados lo hacen jugable sin ser insípido. El mar está a un lado y la Tramuntana al otro. Sede del Mallorca Open.",
+   "why": "Diseñado originalmente por John Harris en 1978 y completamente reconstruido tras una renovación de 10 millones de euros, T Golf Calvià se siente ahora pulido de principio a fin. Quince lagos, líneas de salida amplias y greens grandes y ondulados lo hacen jugable sin ser insípido. El mar está a un lado y la Tramuntana al otro. Sede del Mallorca Open.",
    "andy": "El estado del campo y el servicio están aquí en lo más alto. El sistema de lagos le obliga a pensar en aproximadamente la mitad de los hoyos. Pero las líneas son lo bastante generosas como para que sea justo para la mayoría de los niveles. Uno de los campos que más recomiendo en el suroeste.",
    "bestPlayer": "Jugador ocasional a hándicap bajo"
   },

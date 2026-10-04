@@ -129,7 +129,7 @@ const data = {
    "areaLabel": "Llucmajor · Syd",
    "buggyNote": "Platt terräng; lätt att gå, men de flesta använder golfbil för tempots skull",
    "bestFor": "En välskött resortbana nära Palma med förlåtande fairways och ett minnesvärt hål",
-   "why": "En öppen bana på landsbygden nära Llucmajor, 15 minuter från Palma och 25 från flygplatsen. Generösa fairways och lätt ruff gör den tillgänglig för de flesta nivåer. De trädkantade hålen är där rundan kommer till liv. Hål 16, en uppförsbacke-dogleg-höger par 5 som slutar vid en skyddad green, är höjdpunkten. Den platta terrängen lämpar sig för att gå.",
+   "why": "En öppen bana på landsbygden nära Llucmajor, 15 minuter från Palma och 25 från flygplatsen. Generösa fairways och lätt ruff gör den tillgänglig för de flesta nivåer. De trädkantade hålen är där rundan kommer till liv. Hål 16, en par 5 uppför med dogleg höger som slutar vid en skyddad green, är höjdpunkten. Den platta terrängen lämpar sig för att gå.",
    "andy": "16:an är värd rundan i sig. Boka tidigt för att hålla tempot, och spela en rullande chip på de upphöjda greenerna i stället för att försöka landa bollen mjukt.",
    "bestPlayer": "Nybörjare till van golfare"
   },

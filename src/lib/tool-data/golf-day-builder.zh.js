@@ -39,7 +39,7 @@ const data = {
   },
   "regions": {
    "southwest": "住在西南部",
-   "palma": "住在帕尔玛或附近",
+   "palma": "住在帕尔马或附近",
    "north": "住在北部",
    "east": "住在东部",
    "south": "住在南部",
@@ -56,8 +56,8 @@ const data = {
      "Santa Ponsa、Andratx、Bendinat、Calvià"
     ],
     "palma": [
-     "帕尔玛及周边",
-     "帕尔玛市区、Son Vida、岛屿中部"
+     "帕尔马及周边",
+     "帕尔马市区、Son Vida、岛屿中部"
     ],
     "north": [
      "北部",
@@ -268,14 +268,14 @@ const data = {
     "标准杆 71 · Jack Nicklaus 设计",
     "马略卡唯一的 Nicklaus 球场"
    ],
-   "blurb": "Jack Nicklaus 设计的球场，距帕尔玛二十分钟。球道偏硬，讲究策略，也很公平：好球得到奖励，坏球按比例受罚。"
+   "blurb": "Jack Nicklaus 设计的球场，距帕尔马二十分钟。球道偏硬，讲究策略，也很公平：好球得到奖励，坏球按比例受罚。"
   },
   "son-muntaner": {
    "facts": [
     "标准杆 72 · 2025 年西班牙最佳",
     "Sa Capitana 橄榄树，第 15 洞"
    ],
-   "blurb": "Arabella 系列球场的旗舰，也是帕尔玛附近最精致的俱乐部体验。场地养护和服务是这里的吸引力，两者都很到位。"
+   "blurb": "Arabella 系列球场的旗舰，也是帕尔马附近最精致的俱乐部体验。场地养护和服务是这里的吸引力，两者都很到位。"
   },
   "santa-ponsa": {
    "facts": [
@@ -336,16 +336,16 @@ const data = {
   "son-antem-west": {
    "facts": [
     "标准杆 72 · Francisco Lopez Segales，1995 年",
-    "距帕尔玛 25 分钟"
+    "距帕尔马 25 分钟"
    ],
-   "blurb": "Llucmajor 附近的开阔乡间高尔夫，距帕尔玛 15 分钟、距机场 25 分钟。宽阔的球道和平坦的布局，让大多数水平都能打。"
+   "blurb": "Llucmajor 附近的开阔乡间高尔夫，距帕尔马 15 分钟、距机场 25 分钟。宽阔的球道和平坦的布局，让大多数水平都能打。"
   },
   "son-termes": {
    "facts": [
     "标准杆 70 · Grupo Harris，1998 年",
-    "可眺望帕尔玛的山景"
+    "可眺望帕尔马的山景"
    ],
-   "blurb": "位于 Na Burguesa 的山地高尔夫，距帕尔玛 20 分钟。晴天时，在较高的球洞上能看到 Castell de Bellver 和大教堂，背后是地中海。"
+   "blurb": "位于 Na Burguesa 的山地高尔夫，距帕尔马 20 分钟。晴天时，在较高的球洞上能看到 Castell de Bellver 和大教堂，背后是地中海。"
   },
   "t-golf-calvia": {
    "facts": [
@@ -366,14 +366,14 @@ const data = {
     "标准杆 71 · 2007 年开业",
     "Tiger Woods 与 Charlie 曾在此打球，2022 年 7 月"
    ],
-   "blurb": "Son Vida 球场中最容易上手的一座。球道宽阔，有四个发球位置，从第 8 洞可以直接望见帕尔玛大教堂。"
+   "blurb": "Son Vida 球场中最容易上手的一座。球道宽阔，有四个发球位置，从第 8 洞可以直接望见帕尔马大教堂。"
   },
   "maioris": {
    "facts": [
     "标准杆 72 · 2006 年开业",
     "马略卡少数几个公共草地练习场之一"
    ],
-   "blurb": "前九洞偏苏格兰式、起伏多，后九洞更偏美式、更平坦：一轮球里有两种性格。比帕尔玛的球场人少。"
+   "blurb": "前九洞偏苏格兰式、起伏多，后九洞更偏美式、更平坦：一轮球里有两种性格。比帕尔马的球场人少。"
   },
   "vall-dor": {
    "facts": [
@@ -430,9 +430,9 @@ const data = {
   },
   "palma": {
    "casual": "Son Muntaner 的 Na Capitana：露台上可眺望球场的可靠地中海午餐，或开车一小段到 Santa Catalina 市场吃 tapas",
-   "premium": "帕尔玛市中心的 DINS Santi Taura（1 颗米其林星），或老城的 Marc Fosh（1 颗米其林星）。我会根据您的球局安排订位时间",
-   "village": "Santa Catalina 市场：帕尔玛最好的美食街区，距大多数球场 10 分钟。我来为团队选合适的地方",
-   "michelin": "DINS Santi Taura（1★）、Marc Fosh（1★）和 Zaranda（1★）都在帕尔玛：岛上最集中的米其林群，都在帕尔玛各球场 15 分钟之内"
+   "premium": "帕尔马市中心的 DINS Santi Taura（1 颗米其林星），或老城的 Marc Fosh（1 颗米其林星）。我会根据您的球局安排订位时间",
+   "village": "Santa Catalina 市场：帕尔马最好的美食街区，距大多数球场 10 分钟。我来为团队选合适的地方",
+   "michelin": "DINS Santi Taura（1★）、Marc Fosh（1★）和 Zaranda（1★）都在帕尔马：岛上最集中的米其林群，都在帕尔马各球场 15 分钟之内"
   },
   "north": {
    "casual": "Port de Pollença 海滩边的午餐：海滨步道上有好几处不错的鱼和海鲜选择。旺季我会提前订位",
@@ -449,7 +449,7 @@ const data = {
   "south": {
    "casual": "Golf Maioris 的 T19 Restobar：室外露台，德式和地中海俱乐部餐，靠近机场的实用一站",
    "premium": "Llucmajor 附近的 Andreu Genestra（1 颗米其林星 + 绿星）：应季品鉴菜单，以可持续为导向的烹饪。距 Golf Maioris 和 Son Antem 约 10 分钟。请提前很久预订",
-   "village": "Llucmajor 老城：距帕尔玛 20 分钟的安静集镇，有不错的本地餐厅和周六市集",
+   "village": "Llucmajor 老城：距帕尔马 20 分钟的安静集镇，有不错的本地餐厅和周六市集",
    "michelin": "Llucmajor 附近的 Andreu Genestra（1★ + 绿星）：马略卡最有意思的主厨餐厅之一，离南部球场群很近"
   }
  },

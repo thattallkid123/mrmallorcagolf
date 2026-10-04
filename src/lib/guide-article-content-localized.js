@@ -3943,7 +3943,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
   "golf-cost-mallorca": {
     "es": {
       "metadata": {
-        "title": "¿Cuánto cuesta golf en Mallorca? 2026",
+        "title": "¿Cuánto cuesta el golf en Mallorca? 2026",
         "description": "Los green fees en Mallorca cuestan €55–€260. Costes de buggy, meses con mejor precio, tarifas dinámicas y cuándo reservar pronto, campo a campo."
       },
       "meta": {

@@ -5,7 +5,7 @@
 // scoring never read it.
 const data = {
  "verdicts": {
-  "Son Gual": "Mi campo más jugado de la isla. El viento es caprichoso, los greenes son rápidos y el tramo final es tan bueno como cualquier otro de Mallorca.",
+  "Son Gual": "Mi campo más jugado de la isla. El viento es caprichoso, los greens son rápidos y el tramo final es tan bueno como cualquier otro de Mallorca.",
   "Alcanada": "El faro se ve desde 16 de los 18 hoyos. El campo al que llevo a la gente cuando quiero que recuerden una ronda en particular.",
   "T Golf Calvià": "Uno de los campos mejor cuidados que he jugado en Mallorca. Quince lagos mantienen el agua presente en la cabeza todo el día.",
   "Son Muntaner": "Elegido mejor campo de golf de España en 2025, y el estado del campo respalda el título. Una de las rondas premium de Palma, con licencia diaria aparte.",

@@ -550,7 +550,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
   },
   "fr": {
     "metadata": {
-      "title": "Itinéraire golf à Mallorca: 5 jours depuis Palma",
+      "title": "Itinéraire golf à Majorque: 5 jours depuis Palma",
       "description": "Un itinéraire golf pratique de 5 jours à Majorque depuis Palma : Son Quint, Santa Ponsa 1, Son Gual, Alcanada et T Golf Calvià, avec trajets et adresses.",
       "imageAlt": "Itinéraire de golf de 5 jours à Majorque depuis une base à Palma"
     },
