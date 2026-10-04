@@ -384,7 +384,45 @@ if (flag('--baseline') || flag('--ratchet')) {
   process.exit(0)
 }
 
+// Text damage that is mechanical to detect and was found live on 2026-10-04 (see the memory note on
+// the locale sync system): French elisions with the apostrophe dropped ("l echelle", "d eau"),
+// Swedish ä/ö typed as ae/oe ("laengsta", "hoer"), Chinese sentences punctuated with ASCII , : ;.
+const TYPO_RULES = [
+  { lc: 'fr', rx: /(?<![\p{L}\d'’])(?<!\d )([dljnscmtDLJNSCMT]|[Qq]u|[Jj]usqu|[Ll]orsqu|[Qq]uelqu) (?=[aeiouhàâéèêîôûAEIOUHÉ]\p{L})/u, what: 'French elision without its apostrophe' },
+  { lc: 'sv', rx: /\b\w*(?:laeng|hoer|hoera|boer\b|foer\b|goer\b)\w*/i, what: 'Swedish ä/ö typed as ae/oe' },
+  { lc: 'zh', rx: /[一-鿿][,:;]|[,:;][一-鿿]/, what: 'ASCII punctuation next to Chinese text' },
+]
+function typographyFindings() {
+  const out = []
+  for (const s of sources) {
+    for (const r of collect(s)) {
+      if (/^(https?:|\/)/.test(r.tr)) continue
+      // testimonials stay word for word unless Andy approves a change (check:testimonial-integrity)
+      if (/testimonial/i.test(r.path)) continue
+      const plain = r.tr.replace(/<[^>]+>/g, ' ')
+      for (const rule of TYPO_RULES) {
+        if (rule.lc !== r.locale) continue
+        const m = rule.rx.exec(plain)
+        if (m) out.push({ label: s.label, locale: r.locale, path: r.path, what: rule.what, snippet: plain.slice(Math.max(0, m.index - 15), m.index + m[0].length + 15) })
+      }
+    }
+  }
+  return out
+}
+if (flag('--typography')) {
+  const f = typographyFindings()
+  for (const r of f) console.log(`[${r.label} ${r.locale}] ${r.path}: ${r.what}: "${r.snippet}"`)
+  console.log(`\n${f.length} typography finding(s).`)
+  process.exit(0)
+}
+
 const failures = []
+const typoFindings = typographyFindings()
+if (typoFindings.length) {
+  failures.push(`${typoFindings.length} translated string(s) with damaged text (node scripts/check-locale-sync.mjs --typography):`)
+  for (const r of typoFindings.slice(0, 8)) failures.push(`  - ${r.label} ${r.locale} ${r.path}: ${r.what}: "${r.snippet}"`)
+  if (typoFindings.length > 8) failures.push(`  ...and ${typoFindings.length - 8} more`)
+}
 const badHrefs = hrefFindings()
 if (badHrefs.length) {
   failures.push(`${badHrefs.length} translated link(s) point somewhere other than the English link (node scripts/check-locale-sync.mjs --hrefs):`)

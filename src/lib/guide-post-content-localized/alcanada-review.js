@@ -474,11 +474,11 @@ const content = {
           ],
           [
             "Conseil vent",
-            "Respectez les trous exposes. L air de la mer peut faire jouer une distance confortable avec un club de plus, surtout quand vous jouez face au vent sur le retour."
+            "Respectez les trous exposés. L'air de la mer peut faire jouer une distance confortable avec un club de plus, surtout quand vous jouez face au vent sur le retour."
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "La vue peut faire paraître le départ plus simple qu'il ne l est. Choisissez d abord votre ligne, surtout depuis les tees surélevés, puis attendez-vous a des greens rapides avec très peu de putts faciles."
+            "La vue peut faire paraître le départ plus simple qu'il ne l'est. Choisissez d'abord votre ligne, surtout depuis les tees surélevés, puis attendez-vous a des greens rapides avec très peu de putts faciles."
           ],
           [
             "Conseil clubhouse",
@@ -588,7 +588,7 @@ const content = {
         "text": "Rolex Challenge Tour Grand Final"
       },
       {
-        "text": "Alcanada is gastheer van de Rolex Challenge Tour Grand Final, die in oktober 2026 voor de zesde keer terugkeert. Dit is geen baan die zich alleen voor een toernooi oppoetst. Het is een baan die altijd al dat niveau had. Als je op de tee staat, voel je dat dezelfde holes hier beslissen over professionele carrieres."
+        "text": "Alcanada is gastheer van de Rolex Challenge Tour Grand Final, die in oktober 2026 voor de zesde keer terugkeert. Dit is geen baan die zich alleen voor een toernooi oppoetst. Het is een baan die altijd al dat niveau had. Als je op de tee staat, voel je dat dezelfde holes hier beslissen over professionele carrières."
       },
       {
         "caption": "De Rolex Challenge Tour Grand Final op Alcanada. Het keert voor de zesde keer terug in oktober 2026."
@@ -814,7 +814,7 @@ const content = {
           ],
           [
             "Vindtips",
-            "Respektera de öppna hålen. Havsluften kan få ett bekvämt avstånd att plötsligt spela en klubba laengre, särskilt när du spelar i motvind på back nine."
+            "Respektera de öppna hålen. Havsluften kan få ett bekvämt avstånd att plötsligt spela en klubba längre, särskilt när du spelar i motvind på back nine."
           ],
           [
             "Där besökare tappar slag",

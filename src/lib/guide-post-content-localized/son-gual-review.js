@@ -392,13 +392,13 @@ const content = {
         "text": "Le premier tee"
       },
       {
-        "text": "La première fois que j'ai joue Son Gual, j'étais sur les départs noirs. Le vent venait fort de la gauche, je jouais avec un ami professionnel PGA qui score très bien, et la caméra tournait pour un vlog. Cela ajoute sa propre pression. J'étais un peu nerveux."
+        "text": "La première fois que j'ai joué Son Gual, j'étais sur les départs noirs. Le vent venait fort de la gauche, je jouais avec un ami professionnel PGA qui score très bien, et la caméra tournait pour un vlog. Cela ajoute sa propre pression. J'étais un peu nerveux."
       },
       {
-        "text": "Le drive est parti légèrement du talon. Il a quand même vole plus loin que prévu et a évite les bunkers, de peu. A Son Gual, les bunkers sont nombreux, places exactement la ou les coups légèrement manques finissent. Vous devez gérer le vent, les deniveles, les contacts irréguliers, et plus vous les regardez, plus les bunkers semblent grands."
+        "text": "Le drive est parti légèrement du talon. Il a quand même volé plus loin que prévu et a évite les bunkers, de peu. A Son Gual, les bunkers sont nombreux, places exactement la ou les coups légèrement manques finissent. Vous devez gérer le vent, les deniveles, les contacts irréguliers, et plus vous les regardez, plus les bunkers semblent grands."
       },
       {
-        "caption": "Son Gual compte beaucoup de bunkers. Ils sont places exactement la ou finissent les coups un peu rates."
+        "caption": "Son Gual compte beaucoup de bunkers. Ils sont places exactement la ou finissent les coups un peu ratés."
       },
       {
         "text": "Le vent"
@@ -479,11 +479,11 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Tôt le matin ou en fin d après-midi. Son Gual paraît plus calme quand on voit Palma au loin et que le parcours est tranquille. C est aussi la que la lumière est la meilleure sur toute la propriété."
+            "Tôt le matin ou en fin d'après-midi. Son Gual paraît plus calme quand on voit Palma au loin et que le parcours est tranquille. C'est aussi la que la lumière est la meilleure sur toute la propriété."
           ],
           [
             "Conseil vent",
-            "S il y a même un peu de vent, faites attention à la partie exposée du milieu. C est l un des rares parcours de Majorque ou une demi-can ne de moins peut vous laisser exactement sur la mauvaise partie du green, et de la deux putts deviennent difficiles."
+            "S'il y a même un peu de vent, faites attention à la partie exposée du milieu. C'est l'un des rares parcours de Majorque ou une demi-can ne de moins peut vous laisser exactement sur la mauvaise partie du green, et de la deux putts deviennent difficiles."
           ],
           [
             "Ou les visiteurs perdent des coups",
@@ -491,7 +491,7 @@ const content = {
           ],
           [
             "Conseil clubhouse",
-            "Si vous en faites une vraie journée, mangez après la partie plutôt qu avant. La terrasse est un endroit calme pour bien manger et regarder les joueurs terminer leur parcours."
+            "Si vous en faites une vraie journée, mangez après la partie plutôt qu'avant. La terrasse est un endroit calme pour bien manger et regarder les joueurs terminer leur parcours."
           ]
         ]
       },
@@ -716,7 +716,7 @@ const content = {
     },
     "blocks": [
       {
-        "caption": "Son Gual. 11 km från Palma. Det känns betydligt laengre bort när vinden tar tag på första tee."
+        "caption": "Son Gual. 11 km från Palma. Det känns betydligt längre bort när vinden tar tag på första tee."
       },
       {
         "text": "Son Gual är min mest spelade bana på Mallorca och den jag oftast rekommenderar när kunder frågar var de ska spela. Jag vill vara ärlig med varför - och ärlig med vad som gör den svår, för den är svår, och den som bokar och väntar sig en avslappnad dag blir överraskad. Om du också överväger <a href=\"/guides/alcanada-review\">Alcanada</a> eller <a href=\"/guides/son-muntaner-review\">Son Muntaner</a>, läs de recensionerna också innan du bestämmer dig."
@@ -737,7 +737,7 @@ const content = {
         "text": "Första gången jag spelade Son Gual stöd jag på svart tee. Vinden kom hårt från vänster, jag spelade med en PGA Professional-van som spelar och scorar bra, och kameran rullade för en vlogg. Det lägger till sin egen press. Jag var lite nervös."
       },
       {
-        "text": "Driven kom lite ur hålen. Den flog ändå laengre an väntat och undvek bunkrarna, precis. Det finns många bunkrar på Son Gual, placerade där lätt missade slag hamnar. Du räknar med vind, höjdskillnader och ojamt bolltraff, och bunkrarna verkar växa ju laengre du tittar på dem."
+        "text": "Driven kom lite ur hålen. Den flog ändå längre an väntat och undvek bunkrarna, precis. Det finns många bunkrar på Son Gual, placerade där lätt missade slag hamnar. Du räknar med vind, höjdskillnader och ojamt bolltraff, och bunkrarna verkar växa ju längre du tittar på dem."
       },
       {
         "caption": "Son Gual har många bunkrar. De ligger precis där små missar brukar hamna."
@@ -779,7 +779,7 @@ const content = {
         "caption": "Tramuntanabergen bakom banan. Så ser bakgrunden ut från de högre hålen."
       },
       {
-        "text": "Kanda besökare"
+        "text": "Kända besökare"
       },
       {
         "text": "Rafa Nadal spelar här regelbundet och har sagt att det är hans favoritbana på ön. Barack Obama spelade här i november 2024 och gillade det så mycket att han lovade att komma tillbaka. Många stora amatör- och proffstävlingar hålls också på den populära banan."
@@ -865,7 +865,7 @@ const content = {
       "readTime": "7分钟阅读",
       "updated": "2026年3月",
       "title": "Son Gual高尔夫球场马略卡岛 - PGA职业球手诚实点评（2026）",
-      "intro": "岛上我打球最多的球场。风的特性、果岭难度、收关几洞: 以及奥巴马和纳达尔为何一再回访。",
+      "intro": "岛上我打球最多的球场。风的特性、果岭难度、收关几洞： 以及奥巴马和纳达尔为何一再回访。",
       "related": [
         {
           "slug": "alcanada-review",

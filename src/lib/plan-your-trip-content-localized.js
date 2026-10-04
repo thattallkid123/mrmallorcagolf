@@ -518,7 +518,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelCta": "Använd hotellrekommendationen",
       "eyebrow": "Exempelresa",
       "title": "Fem banor, fem dagar. Bas i Palma.",
-      "intro": "Ett Palma-baserat exempel för en grupp klubbgolfare: fem ronder, en laengre dag norrut och en tydlig anledning till ordningen.",
+      "intro": "Ett Palma-baserat exempel för en grupp klubbgolfare: fem ronder, en längre dag norrut och en tydlig anledning till ordningen.",
       "routeLabel": "Ruttförhandsvisning",
       "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
@@ -543,7 +543,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           }
         ]
       },
-      "summary": "Poängen är enkel: samma hotell, rimliga körningar och den svåraste golfen placerad där den hoer hemma.",
+      "summary": "Poängen är enkel: samma hotell, rimliga körningar och den svåraste golfen placerad där den hör hemma.",
       "feesNote": "Greenfeerna varierar med säsong."
     }
   },

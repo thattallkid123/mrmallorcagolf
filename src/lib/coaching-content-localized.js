@@ -520,7 +520,7 @@ export const COACHING_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "Redo att spela bättre?",
-      "title": "Hoer av dig om du vill prata om en session.",
+      "title": "Hör av dig om du vill prata om en session.",
       "body": "Berätta var ditt spel står i dag och vad du vill få ut av det. Jag bygger sessionen runt det.",
       "primaryCta": "Kontakta mig →",
       "secondaryCta": "Se golfdagarna"

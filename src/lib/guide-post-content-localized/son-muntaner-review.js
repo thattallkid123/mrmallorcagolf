@@ -653,7 +653,7 @@ const content = {
           ],
           [
             "Conseil vent",
-            "C est d abord un parcours de placement. Choisissez votre zone d atterrissage, pas la ligne héroïque, et laissez le buggy garder vos jambes pour plus tard dans la partie."
+            "C'est d'abord un parcours de placement. Choisissez votre zone d'atterrissage, pas la ligne héroïque, et laissez le buggy garder vos jambes pour plus tard dans la partie."
           ],
           [
             "Ou les visiteurs perdent des coups",
@@ -661,7 +661,7 @@ const content = {
           ],
           [
             "Conseil clubhouse",
-            "Restez manger après la partie. Le restaurant vaut mieux qu un simple arrêt au clubhouse et fonctionne bien si Son Muntaner est votre journée Palma."
+            "Restez manger après la partie. Le restaurant vaut mieux qu'un simple arrêt au clubhouse et fonctionne bien si Son Muntaner est votre journée Palma."
           ]
         ]
       },
@@ -980,7 +980,7 @@ const content = {
         "text": "Servicen från ankomst till runda var smidig. Teamet är uppmärksamt utan att vara påträngande. Räckviddsbollar, träningsanläggningar och den övergripande driften ligger alla på den nivå som banans rykte leder dig att förvänta dig."
       },
       {
-        "alt": "Golfbanan Son Muntaner Mallorca med utsikt ned laengs hål 17 med Palma-bukten i bakgrunden",
+        "alt": "Golfbanan Son Muntaner Mallorca med utsikt ned längs hål 17 med Palma-bukten i bakgrunden",
         "caption": "Vy ned över hål 17. Fem minuter från centrala Palma och det känns som en annan värld."
       },
       {
@@ -991,7 +991,7 @@ const content = {
       },
       {
         "alt": "Golfbanan Son Muntaner Mallorca förhöjd utsikt över fairway genom Na Burguesa-bergen",
-        "caption": "Tillbaka från en av de laengre klättringarna. Layouten genom Na Burguesa-bergen är det som gör den här banan annorlunda än allt annat nära Palma."
+        "caption": "Tillbaka från en av de längre klättringarna. Layouten genom Na Burguesa-bergen är det som gör den här banan annorlunda än allt annat nära Palma."
       },
       {
         "text": "Hur banan avslöjar sig"
@@ -1109,7 +1109,7 @@ const content = {
           ],
           [
             "Där besökare tappar slag",
-            "Många attackerar greener från fel vinkel, kommer kort på de upphöjda par 3-halen eller underskattar hur små de verkliga malen är på distans."
+            "Många attackerar greener från fel vinkel, kommer kort på de upphöjda par 3-hålen eller underskattar hur små de verkliga målen är på distans."
           ],
           [
             "Klubbhustips",
@@ -1124,7 +1124,7 @@ const content = {
         "text": "Titeln som Spaniens bästa golfbana är ingen marknadsföring. Son Muntaner levererar en bana som testar positionering, disciplin och tydlighet i beslutsfattandet från första till sista hålet. Den belönar kontroll framför kraft och skapar scoringschanser genom precision. Fem minuter från Palma gör logistiken enkel. Greenerna ensamma motiverar resan. Jämför alla banor på sidan om <a href='/golf-courses'>golfbanor på Mallorca</a>."
       },
       {
-        "text": "Ett återbesök med fler hittade fairways skulle låsa upp en djupare läsning av layouten. Det är tecknet på en bana värd att komma tillbaka till. Om Son Muntaner är mittpunkten i en laengre resa tar <a href=\"/plan-your-trip\">reseplaneringsguiden</a> upp timing och logistik."
+        "text": "Ett återbesök med fler hittade fairways skulle låsa upp en djupare läsning av layouten. Det är tecknet på en bana värd att komma tillbaka till. Om Son Muntaner är mittpunkten i en längre resa tar <a href=\"/plan-your-trip\">reseplaneringsguiden</a> upp timing och logistik."
       },
       {
         "text": "Ska du spela Son Muntaner? Jag kan hjälpa till så att premiumavgiften känns motiverad med rätt plan från utslaget till greenerna.",
@@ -1211,10 +1211,10 @@ const content = {
         "caption": "俯瞰第17洞球道。距巴尔马市中心仅五分钟车程，却宛如身处另一个世界。"
       },
       {
-        "text": "步行挑战:以及球车为何包含在内"
+        "text": "步行挑战：以及球车为何包含在内"
       },
       {
-        "text": "徒步打完这个球场是真正的体能考验。通往开球台的路有多处长坡。球车费用已含在果岭费中:这是俱乐部的正确决策。大多数球手都会需要它，若单独收费在这个水准的球场会显得不妥。在中国打球多年靠球童辅助，我习惯步行，但我理解为何大多数来访者选择乘坐球车。"
+        "text": "徒步打完这个球场是真正的体能考验。通往开球台的路有多处长坡。球车费用已含在果岭费中：这是俱乐部的正确决策。大多数球手都会需要它，若单独收费在这个水准的球场会显得不妥。在中国打球多年靠球童辅助，我习惯步行，但我理解为何大多数来访者选择乘坐球车。"
       },
       {
         "alt": "马略卡Son Muntaner高尔夫球场穿越纳布尔格萨山脉的高处球道视角",
@@ -1224,7 +1224,7 @@ const content = {
         "text": "球场如何逐渐呈现"
       },
       {
-        "text": "开局阶段发挥不稳。选择了保守的开球位置，依然无法在早期完全读懂球道布局。这不是批评:这正是设计的用意所在。Son Muntaner不会在开球台就把一切展示给你看。球场是在攻果岭时慢慢呈现自身的。"
+        "text": "开局阶段发挥不稳。选择了保守的开球位置，依然无法在早期完全读懂球道布局。这不是批评：这正是设计的用意所在。Son Muntaner不会在开球台就把一切展示给你看。球场是在攻果岭时慢慢呈现自身的。"
       },
       {
         "text": "从错误角度攻果岭时很难停住球。球场有狭窄的通道和需要精准落点的微妙目标区，要求的是精确的位置选择，而不仅仅是把球打到旗杆附近。落球区主导着整个球场的节奏。开球和保守击球往往需要坚定地打向不到达时并不明显的窄小区域。一旦理解这一点，设计便显得合理了。优质击球会得到清晰的奖励。"
@@ -1250,7 +1250,7 @@ const content = {
         "text": "前九洞，尤其是开局六洞，打法紧凑。水障和明确的落球区让游戏保持诚实。没有容纳粗心开球的空间。"
       },
       {
-        "text": "后九洞略显开阔。使用开球木的自由度更高，但果岭区依然小而难以预料。从远处判断距离是Son Muntaner一贯的挑战:果岭看起来比实际更大，攻果岭的距离看上去也比实际更短。"
+        "text": "后九洞略显开阔。使用开球木的自由度更高，但果岭区依然小而难以预料。从远处判断距离是Son Muntaner一贯的挑战：果岭看起来比实际更大，攻果岭的距离看上去也比实际更短。"
       },
       {
         "alt": "马略卡Son Muntaner高尔夫球场水障上的鸭子",
@@ -1260,7 +1260,7 @@ const content = {
         "text": "果岭"
       },
       {
-        "text": "果岭滚球纯正，速度稳健，明显有随夏季到来进一步加快的潜力。这种品质奖励了良好的推杆，尤其是长距离推杆。西班牙最佳的称号在这里开始显现其意义:果岭品质始终如一，在忙碌的周六满员运营全程中，速度和表面质量始终保持稳定。"
+        "text": "果岭滚球纯正，速度稳健，明显有随夏季到来进一步加快的潜力。这种品质奖励了良好的推杆，尤其是长距离推杆。西班牙最佳的称号在这里开始显现其意义：果岭品质始终如一，在忙碌的周六满员运营全程中，速度和表面质量始终保持稳定。"
       },
       {
         "alt": "马略卡Son Muntaner第9洞果岭，背景为会所",
@@ -1280,7 +1280,7 @@ const content = {
       },
       {
         "alt": "马略卡Son Muntaner高尔夫球场第15洞古老橄榄树，背景为纳布尔格萨山脉",
-        "caption": "第15洞。那棵橄榄树在这里已矗立约一千年。巴利阿里群岛政府将其列为自然遗址。有人决定在它周围建造一个球洞:我很庆幸他们做出了这个决定。"
+        "caption": "第15洞。那棵橄榄树在这里已矗立约一千年。巴利阿里群岛政府将其列为自然遗址。有人决定在它周围建造一个球洞：我很庆幸他们做出了这个决定。"
       },
       {
         "text": "餐厅"

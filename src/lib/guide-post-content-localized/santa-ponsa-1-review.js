@@ -405,7 +405,7 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Le plus tôt possible, si vous pouvez l avoir. Le parcours est plus agréable avant que la brise habituelle ne monte, et les longs trous paraissent bien plus abordables tôt le matin."
+            "Le plus tôt possible, si vous pouvez l'avoir. Le parcours est plus agréable avant que la brise habituelle ne monte, et les longs trous paraissent bien plus abordables tôt le matin."
           ],
           [
             "Conseil vent",
@@ -417,7 +417,7 @@ const content = {
           ],
           [
             "Conseil clubhouse",
-            "C est un bon parcours de confiance, si votre driver est en place, avant un test plus sérieux. Si votre voyage comprend Son Gual ou Andratx, Santa Ponsa 1 se place bien plus tôt dans la semaine."
+            "C'est un bon parcours de confiance, si votre driver est en place, avant un test plus sérieux. Si votre voyage comprend Son Gual ou Andratx, Santa Ponsa 1 se place bien plus tôt dans la semaine."
           ]
         ]
       },
@@ -584,7 +584,7 @@ const content = {
       "readTime": "6 min läsning",
       "updated": "Mars 2026",
       "title": "Golf Santa Ponsa 1, Mallorca - ärlig recension från ett PGA-proffs",
-      "intro": "En av öns laengsta banor. Riktig European Tour-historia. Och fairways som är breda nog för drivern.",
+      "intro": "En av öns längsta banor. Riktig European Tour-historia. Och fairways som är breda nog för drivern.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -618,7 +618,7 @@ const content = {
         "text": "Jag kan säga det rakt ut: den här banan har hjälpt mig att hitta tillbaka till självförtroendet med drivern. Efter rundor på Son Gual eller Alcanada, där bra banstrategi ofta betyder att lämna drivern i bagen, är Santa Ponsa 1 något helt annat. Fairways är breda, de första hålen generösa, och banan belönar verkligen ett offensivt spel från tee."
       },
       {
-        "text": "Med min laengd har jag ofta bara en wedge kvar in på par 4-greener efter en bra drive. För spelare med mer normal laengd blir det en ordentlig utmaning när vinden kommer in, men det är den sortens utmaning som bygger självförtroende snarare än bryter ner det."
+        "text": "Med min längd har jag ofta bara en wedge kvar in på par 4-greener efter en bra drive. För spelare med mer normal längd blir det en ordentlig utmaning när vinden kommer in, men det är den sortens utmaning som bygger självförtroende snarare än bryter ner det."
       },
       {
         "caption": "Fairways är breda. Det här är en bana som bjuder in drivern."
@@ -627,10 +627,10 @@ const content = {
         "text": "Hål 10"
       },
       {
-        "text": "Med sina 590 meter är 10:e ett av Europas laengsta par 5-hål. Spelat rakt in i vinden känns det ännu laengre. Det finns en mycket tillfredsställande version av hålet - driver, hybrid, wedge - och en betydligt mindre trevlig version där ett av de tre slagen går fel. Par 3-hålen är den andra ytterligheten: långa, med små greener. Här handlar det mer om att begränsa skadan än att jaga birdies."
+        "text": "Med sina 590 meter är 10:e ett av Europas längsta par 5-hål. Spelat rakt in i vinden känns det ännu längre. Det finns en mycket tillfredsställande version av hålet - driver, hybrid, wedge - och en betydligt mindre trevlig version där ett av de tre slagen går fel. Par 3-hålen är den andra ytterligheten: långa, med små greener. Här handlar det mer om att begränsa skadan än att jaga birdies."
       },
       {
-        "caption": "Banlayouten. En lugn dag smickrar den här banan dig. Lägg till vind och den förtjänar varje meter av sin laengd."
+        "caption": "Banlayouten. En lugn dag smickrar den här banan dig. Lägg till vind och den förtjänar varje meter av sin längd."
       },
       {
         "text": "Kopplingen till European Tour"
@@ -697,7 +697,7 @@ const content = {
           ],
           [
             "Vindtips",
-            "När vinden kommer slår den framför allt mot de långa par 3-halen och hål 10. Ta tillräckligt med klubba och se yardaget på scorekortet som en startpunkt, inte som hela svaret."
+            "När vinden kommer slår den framför allt mot de långa par 3-hålen och hål 10. Ta tillräckligt med klubba och se yardaget på scorekortet som en startpunkt, inte som hela svaret."
           ],
           [
             "Där besökare tappar slag",

@@ -464,7 +464,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "img": "/images/courses/son-antem-west.webp",
         "imgPosition": "center 45%",
         "title": "Son Antem West Golf Club, Majorque - avis honnête d'un professionnel PGA (2026)",
-        "intro": "Un parcours de resort à 15-20 minutes de Palma. Bon entretien, campagne ouverte et un trace qui convient à beaucoup de joueurs.",
+        "intro": "Un parcours de resort à 15-20 minutes de Palma. Bon entretien, campagne ouverte et un tracé qui convient à beaucoup de joueurs.",
         "readTime": "6 min",
         "keywords": "Resort - Par 72 - €109-135 - 15-20 min de Palma"
       },
@@ -805,7 +805,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Banomdöme",
         "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Mallorca - ärlig recension av en PGA Professional (2026)",
-        "intro": "En av Europas laengsta banor, riktig European-Tour-historia och en bana som verkligen återger självförtroendet med drivern.",
+        "intro": "En av Europas längsta banor, riktig European-Tour-historia och en bana som verkligen återger självförtroendet med drivern.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €77-126 · Öppen för besökare"
       },
@@ -814,7 +814,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Banomdöme",
         "badgeGold": true,
         "title": "Golf de Andratx - ärlig recension av en PGA Professional (2026)",
-        "intro": "Spaniens laengsta par 5, bergsvyer över sydväst och en layout som belönar bankhantering mycket mer än laengd. En 7,5 av 10.",
+        "intro": "Spaniens längsta par 5, bergsvyer över sydväst och en layout som belönar bankhantering mycket mer än längd. En 7,5 av 10.",
         "readTime": "6 min",
         "keywords": "Bergsbana · Par 72 · €90-140 · Sydvästra Mallorca"
       },
@@ -972,7 +972,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "球场评测",
         "badgeGold": true,
         "title": "T Golf Palma 评测 — PGA职业球员的真实评价（2026）",
-        "intro": "果岭快而小,风险与回报并存的球洞逼你在发球台上多想一步。综合评分9/10,靠自身实力赢得的口碑,而不只是沾了T Golf Calvià的光。",
+        "intro": "果岭快而小，风险与回报并存的球洞逼你在发球台上多想一步。综合评分9/10，靠自身实力赢得的口碑，而不只是沾了T Golf Calvià的光。",
         "readTime": "6分钟",
         "keywords": "标准杆71 · €80-150 · 帕尔马 · 杰克·尼克劳斯设计"
       },
@@ -1052,7 +1052,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "is-mallorca-good-for-golf",
         "badge": "指南",
         "title": "马略卡岛适合打高尔夫吗？一位住在这里的人给出的诚实答案",
-        "intro": "不加滤镜的真实版本:这座岛在哪些方面胜过葡萄牙，哪些方面有所不足，以及它适合哪类球手。",
+        "intro": "不加滤镜的真实版本：这座岛在哪些方面胜过葡萄牙，哪些方面有所不足，以及它适合哪类球手。",
         "readTime": "5分钟",
         "keywords": "马略卡 vs 葡萄牙 · 球场品质 · 适合各水平"
       },
@@ -1079,7 +1079,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "golf-cost-mallorca",
         "badge": "指南",
         "title": "马略卡岛打高尔夫要多少钱？果岭费、租杆费及隐性费用全解析",
-        "intro": "一次马略卡高尔夫之旅的真实花销:果岭费、租杆、球童，以及在哪里可以省钱而不降低体验。",
+        "intro": "一次马略卡高尔夫之旅的真实花销：果岭费、租杆、球童，以及在哪里可以省钱而不降低体验。",
         "readTime": "5分钟",
         "keywords": "€55-260果岭费 · 租杆 · 球童 · 2026年价格"
       },

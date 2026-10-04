@@ -476,15 +476,15 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Partir plus tôt est l option la plus sure, surtout si vous voulez marcher pendant les mois chauds. Le retour monte, le vent prend souvent de la force, et plus vous laissez trainer le départ, plus le parcours devient exigeant."
+            "Partir plus tôt est l'option la plus sure, surtout si vous voulez marcher pendant les mois chauds. Le retour monte, le vent prend souvent de la force, et plus vous laissez trainer le départ, plus le parcours devient exigeant."
           ],
           [
             "Conseil vent",
-            "Sur les trous courts exposes de la partie haute, prenez un club de plus. Le yardage paraît modeste, mais la brise de montagne change vite le coup."
+            "Sur les trous courts exposés de la partie haute, prenez un club de plus. Le yardage paraît modeste, mais la brise de montagne change vite le coup."
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "Beaucoup de coups perdus viennent de l idée qu un parcours court doit forcément être simple. Doglegs aveugles, eau qui rentre en jeu, rough collant et cibles cachées punissent ceux qui deconnectent."
+            "Beaucoup de coups perdus viennent de l'idée qu'un parcours court doit forcément être simple. Doglegs aveugles, eau qui rentre en jeu, rough collant et cibles cachées punissent ceux qui deconnectent."
           ],
           [
             "Conseil clubhouse",
@@ -714,7 +714,7 @@ const content = {
         "text": "Att gå banan"
       },
       {
-        "text": "Jag försöker alltid gå. På front nine på Son Termes är det enkelt. På back nine blir det ett ärligt samtal med dig själv. Flera stigningar är branta nog att få upp pulsen, och när du når de övre hålen har två säker hänt: utsikten har blivit betydligt bättre och vinden har tilltagit så pass att laengdkontrollen på par 3-hålen blir svårare än yardaget antyder. De flesta tar buggy. En varm dag är det rätt beslut."
+        "text": "Jag försöker alltid gå. På front nine på Son Termes är det enkelt. På back nine blir det ett ärligt samtal med dig själv. Flera stigningar är branta nog att få upp pulsen, och när du når de övre hålen har två säker hänt: utsikten har blivit betydligt bättre och vinden har tilltagit så pass att längdkontrollen på par 3-hålen blir svårare än yardaget antyder. De flesta tar buggy. En varm dag är det rätt beslut."
       },
       {
         "alt": "Utslag på Son Termes golfbana på Mallorca med berg i bakgrunden",
@@ -724,10 +724,10 @@ const content = {
         "text": "Så spelar banan"
       },
       {
-        "text": "Son Termes är ingen lång bana. Flera par 4-hål är drivbara eller nästan, vilket lämnar korta järn eller wedgar in mot green. För en låghandicappare som söker ett laengdtest är det bra att veta i förväg."
+        "text": "Son Termes är ingen lång bana. Flera par 4-hål är drivbara eller nästan, vilket lämnar korta järn eller wedgar in mot green. För en låghandicappare som söker ett längdtest är det bra att veta i förväg."
       },
       {
-        "text": "Det den saknar i laengd tar den igen i karaktär. Blinda utslag, skarpa doglegs, konstgjorda vattenhinder placerade för att fånga slaget som de flesta golfare instinktivt vill slå. Flera hål kräver att du bestämmer dig för ett mål du inte ser fullt ut. Det håller rundan intressant från början till slut, och det gör att ett andra besök nästan alltid ger ett bättre resultat."
+        "text": "Det den saknar i längd tar den igen i karaktär. Blinda utslag, skarpa doglegs, konstgjorda vattenhinder placerade för att fånga slaget som de flesta golfare instinktivt vill slå. Flera hål kräver att du bestämmer dig för ett mål du inte ser fullt ut. Det håller rundan intressant från början till slut, och det gör att ett andra besök nästan alltid ger ett bättre resultat."
       },
       {
         "alt": "Son Termes golfbana på Mallorca i Na Burguesa-bergen",
@@ -824,7 +824,7 @@ const content = {
           ],
           [
             "Klubbhustips",
-            "Om du föredrar banor med personlighet framför perfekt putsade banor är det har ett bra Palma-nara alternativ till premiumnamnen. Att avsluta på terrassen med bergsutsikt är ett mycket bra sätt att runda av."
+            "Om du föredrar banor med personlighet framför perfekt putsade banor är det har ett bra Palma-nära alternativ till premiumnamnen. Att avsluta på terrassen med bergsutsikt är ett mycket bra sätt att runda av."
           ]
         ]
       },

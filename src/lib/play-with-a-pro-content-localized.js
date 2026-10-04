@@ -1373,7 +1373,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Var exakt äger sessionerna rum på Mallorca?",
-          "a": "På banor runt om på ön, valda utifrån ditt spel. När du hoer av dig väljer vi tillsammans det bästa alternativet för din nivå och dina mål."
+          "a": "På banor runt om på ön, valda utifrån ditt spel. När du hör av dig väljer vi tillsammans det bästa alternativet för din nivå och dina mål."
         },
         {
           "q": "På vilka språk undervisar du?",
@@ -1401,7 +1401,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Hur långt i förväg måste jag boka?",
-          "a": "3 till 4 veckor är typiskt, men det finns flexibilitet. Hoer av dig så hittar vi något som passar."
+          "a": "3 till 4 veckor är typiskt, men det finns flexibilitet. Hör av dig så hittar vi något som passar."
         },
         {
           "q": "Vad händer om det regnar?",

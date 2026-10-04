@@ -447,19 +447,19 @@ const content = {
         "items": [
           [
             "Meilleur départ",
-            "Partez aussi tôt que raisonnablement possible. Le parcours est demandé, la lumière de montagne est la meilleure le matin, et c'est ainsi que vous avez la meilleure chance d éviter le vent plus fort."
+            "Partez aussi tôt que raisonnablement possible. Le parcours est demandé, la lumière de montagne est la meilleure le matin, et c'est ainsi que vous avez la meilleure chance d'éviter le vent plus fort."
           ],
           [
             "Conseil vent",
-            "Utilisez un GPS ou un vrai guide du parcours et faites-lui confiance. Ce parcours punit bien plus les demi-decisions sur les carries et les par 3 exposes qu un choix conservateur assume."
+            "Utilisez un GPS ou un vrai guide du parcours et faites-lui confiance. Ce parcours punit bien plus les demi-décisions sur les carries et les par 3 exposés qu'un choix conservateur assume."
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "L erreur la plus courante est de croire que le défi n'est qu une question de longueur. Les gros scores viennent ici bien plus d'un mauvais contrôle de distance vers des obstacles en travers, de gros changements de denivele sur les trous courts, et de problèmes que l on ne voit pas totalement depuis le tee."
+            "L'erreur la plus courante est de croire que le défi n'est qu'une question de longueur. Les gros scores viennent ici bien plus d'un mauvais contrôle de distance vers des obstacles en travers, de gros changements de denivele sur les trous courts, et de problèmes que l'on ne voit pas totalement depuis le tee."
           ],
           [
             "Conseil clubhouse",
-            "La zone d entrainement est un peu particulière. Arrivez assez tôt pour utiliser l espace de petit jeu et vous installer tranquillement avant le premier départ."
+            "La zone d'entrainement est un peu particulière. Arrivez assez tôt pour utiliser l'espace de petit jeu et vous installer tranquillement avant le premier départ."
           ]
         ]
       },
@@ -675,7 +675,7 @@ const content = {
         "text": "Hur banan spelar"
       },
       {
-        "text": "Golf Andratx förtjänar sitt rykte som en av de svårare banorna på ön. Flera kortare par 4 ser enkla ut tills man ser var hindren är placerade. Bäckar och vatten korsar fairways i stället för att löpa laengs dem, så distanskontrollen från avslagsplatsen väger tyngre än laengden. Att vara lite fel på yardaget innebär ofta vatten eller problem."
+        "text": "Golf Andratx förtjänar sitt rykte som en av de svårare banorna på ön. Flera kortare par 4 ser enkla ut tills man ser var hindren är placerade. Bäckar och vatten korsar fairways i stället för att löpa längs dem, så distanskontrollen från avslagsplatsen väger tyngre än längden. Att vara lite fel på yardaget innebär ofta vatten eller problem."
       },
       {
         "text": "Höjdskillnaderna är ständigt närvarande. Avslag där bollen försvinner ur sikte, inslag där man förbinder sig till en siffra utan att se flaggan. Par 3-hålen spelar i synnerhet väldigt annorlunda mot vad som står på scorekortet, på grund av de fall som är inblandade. En GPS eller banplan är verkligt värdefull här."
@@ -691,7 +691,7 @@ const content = {
         "text": "Några hål värda att spela två gånger"
       },
       {
-        "text": "Hål 6, Green Mönster, är det laengsta par 5-hålet i Spanien. När vi spelade sköttes fairway av greenkeeperrobotar som klippte gräset, och man kunde verkligen se hur jämnt ytorna är på den skalan. Vi hade vinden i ryggen på det här hålet och det tog ändå allt vi hade."
+        "text": "Hål 6, Green Mönster, är det längsta par 5-hålet i Spanien. När vi spelade sköttes fairway av greenkeeperrobotar som klippte gräset, och man kunde verkligen se hur jämnt ytorna är på den skalan. Vi hade vinden i ryggen på det här hålet och det tog ändå allt vi hade."
       },
       {
         "alt": "Avslag på hål 7 vid Golf de Andratx med stenväggar framför greenen",
@@ -747,7 +747,7 @@ const content = {
         "text": "Greenfeen i maj 2026 var cirka €125 per person. Buggy är obligatoriskt före 14.00 och debiteras separat. Från 14.00 är det tillåtet att gå. En golfförsäkring på €3 krävs vid incheckning. Gula tee är rätt val för de flesta besökande golfare. Banan ligger i sydvästra delen av ön, cirka 30 minuter från Palma. Själva staden Andratx ligger bara några minuter bort. Trots att man spenderar nästan hela rundan högt uppe i bergen syns havsutsikten över Camp de Mar bara från hål 2, en detalj som är bra att känna till innan man bygger förväntningar kring vattenutsikten."
       },
       {
-        "text": "Banan spelar svårare än yardaget antyder, särskilt en blåsig dag. Ett andra besök skulle ge ett bättre resultat. Layouten belönar lokalkännedom och banmanagement mycket mer än laengd."
+        "text": "Banan spelar svårare än yardaget antyder, särskilt en blåsig dag. Ett andra besök skulle ge ett bättre resultat. Layouten belönar lokalkännedom och banmanagement mycket mer än längd."
       },
       {
         "text": "Vanliga frågor"
@@ -780,7 +780,7 @@ const content = {
         ]
       },
       {
-        "text": "Golf Andratx får 7,5 av 10. Utsikten från de högre hålen är den bästa jag har sett i sydvästra delen av ön. Layouten är ett ordentligt test, Green Mönster är det laengsta par 5-hålet i Spanien och spelar varenda meter av det, och hål 12 ovanför Camp del Mar är ett av de bästa hål jag har spelat på Mallorca. De obligatoriska golfbilarna före klockan 14 och en full morgon gav det en mer organiserad än avslappnad känsla, men det är verkligheten för en bana med denna efterfrågan. Värd att spela, och värd att återvända till med en banplan i handen. Behöver du hjälp att sekvensera det med andra banor? Se <a href=\"/plan-your-trip\">reseplaneringsguiden</a>."
+        "text": "Golf Andratx får 7,5 av 10. Utsikten från de högre hålen är den bästa jag har sett i sydvästra delen av ön. Layouten är ett ordentligt test, Green Mönster är det längsta par 5-hålet i Spanien och spelar varenda meter av det, och hål 12 ovanför Camp del Mar är ett av de bästa hål jag har spelat på Mallorca. De obligatoriska golfbilarna före klockan 14 och en full morgon gav det en mer organiserad än avslappnad känsla, men det är verkligheten för en bana med denna efterfrågan. Värd att spela, och värd att återvända till med en banplan i handen. Behöver du hjälp att sekvensera det med andra banor? Se <a href=\"/plan-your-trip\">reseplaneringsguiden</a>."
       },
       {
         "text": "Ska du spela Golf Andratx? Jag kan hjälpa till med strategin, klubbvalet och de problemzoner som betyder mest på den här banan.",

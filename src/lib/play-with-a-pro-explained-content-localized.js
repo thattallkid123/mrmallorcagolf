@@ -365,9 +365,9 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     },
     beforeDay: {
       eyebrow: 'Inför dagen',
-      title: 'Tänk om jag spelar dåligt. Jag har inte spelat på laenge.',
+      title: 'Tänk om jag spelar dåligt. Jag har inte spelat på länge.',
       paragraphs: [
-        'Det här hoer jag oftare än något annat. Oron är verklig. Du bokar en dag, dyker upp, och din sving känns främmande. Ditt korta spel är rostigt. Du läser fairwayn fel. Inget av det är poängen.',
+        'Det här hör jag oftare än något annat. Oron är verklig. Du bokar en dag, dyker upp, och din sving känns främmande. Ditt korta spel är rostigt. Du läser fairwayn fel. Inget av det är poängen.',
         'En sådan här dag mäts inte mot ditt handicap eller din bästa runda. Den mäts mot vad som förändras i hur du ser på spelet. Adam har spelat sedan han var fem och trodde att grunderna satt. En dag på banan förändrade helt hans sätt att tänka kring slagval. Jo hade inte spelat på flera år. Dagen öppnade något hos honom som en vecka på range aldrig hade kunnat göra.',
         'Resultatet spelar mindre roll än de frågor det väcker. Vilken klubba var rätt där. Vad behöver jag faktiskt jobba på när jag kommer hem. Det är sådant som stannar kvar.',
         'Inför dagen går jag igenom ditt frågeformulär och vi pratar om ditt spel: vad du har arbetat med, vad som har frustrerat dig och hur en bra dag ser ut för dig. När vi når första tee vet jag redan vad jag ska hålla utkik efter. Den bakgrunden formar allt som händer sedan.',
@@ -378,7 +378,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       title: 'Här är besluten verkliga.',
       paragraphs: [
         'Banan väljs för att matcha ditt spel. Ett riktigt test, men inte orättvist. Vind, förhållanden, smala fairways, vatten: besluten du fattar förändras med det som ligger framför dig, och att få dem rätt eller fel spelar roll. Det är därför det gör skillnad att spela med någon.',
-        'På en range är ett tips om klubbval eller inriktning abstrakt. Du hoer det, lägger det på minnet och går vidare till nästa slag. Ute på banan, när vinden trycker på, fairwayn är smal och resultatet är på riktigt, blir samma information konkret. Du känner den. Den skillnaden är det som gör att säker fastnar.',
+        'På en range är ett tips om klubbval eller inriktning abstrakt. Du hör det, lägger det på minnet och går vidare till nästa slag. Ute på banan, när vinden trycker på, fairwayn är smal och resultatet är på riktigt, blir samma information konkret. Du känner den. Den skillnaden är det som gör att säker fastnar.',
         "Coachingen kommer i rätt ögonblick: vid tee'et mot vinden där beslutet är svårt, vid inspelet där klubbvalet förändrar hålet, vid putten där att läsa breaket från rätt sida gör ett slag mindre möjligt. Ingen ständig kommentar. Bara observationen som förändrar hålet.",
       ],
     },
@@ -392,7 +392,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraph:
         'När rundan är klar har du redan fått tydlig återkoppling om vad som fungerade bra, vad som inte gjorde det och vad du bör fortsätta arbeta med. Efteråt skickar jag också en skriftlig sammanfattning så att du inte glömmer detaljerna från dagen. Du går därifrån med en tydlig bild, inte en lång lista, bara det som faktiskt gör skillnad.',
       quoteText:
-        'Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag laenge kämpat med, har förbättrats mycket.',
+        'Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag länge kämpat med, har förbättrats mycket.',
       quoteCredit: 'Synøve',
     },
     whatChanges: {
@@ -407,7 +407,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       format: { label: 'Format', value: '18 hål, hel dag' },
       courseSelection: { label: 'Val av bana', value: 'Anpassad efter ditt spel och handicap' },
       included: { label: 'Vad som ingår', value: 'Bana, starttid, coaching, strategi' },
-      duration: { label: 'Laengd', value: 'Vanligtvis 5-6 timmar' },
+      duration: { label: 'Längd', value: 'Vanligtvis 5-6 timmar' },
       dayRateLabel: 'Dagtaxa',
       soloLabel: 'solo',
       groupSuffix: 'för 2-3 golfare (greenfee tillkommer)',
@@ -417,11 +417,11 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Redo att spela',
       title: 'Berätta när du kommer.',
       body: 'Berätta dina datum, hur många som ska spela och vad du är ute efter. Jag återkommer personligen inom 24 timmar.',
-      primaryCta: 'Hoer av dig',
+      primaryCta: 'Hör av dig',
       secondaryCta: 'Se priser →',
     },
     sticky: {
-      primaryLabel: 'Hoer av dig',
+      primaryLabel: 'Hör av dig',
       secondaryLabel: 'Skriv på WhatsApp',
       secondaryHref: 'https://wa.me/34624466702?text=Hej%20Andy%2C%20jag%20%C3%A4r%20intresserad%20av%20en%20golfdag%20p%C3%A5%20Mallorca.',
     },

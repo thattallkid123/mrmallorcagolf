@@ -466,15 +466,15 @@ const content = {
           ],
           [
             "Conseil vent",
-            "Travaillez à partir de votre nombre, pas de ce que l oeil vous raconte. Les approches semi-aveugles et les carries d eau exposes punissent ceux qui devinent au lieu de s engager."
+            "Travaillez à partir de votre nombre, pas de ce que l'oeil vous raconte. Les approches semi-aveugles et les carries d'eau exposés punissent ceux qui devinent au lieu de s'engager."
           ],
           [
             "Ou les visiteurs perdent des coups",
-            "L erreur classique consiste à prendre trop peu de club sur les trous qui paraissent plus aimables, puis à devenir trop agressif et à ramener encore plus d eau dans le jeu."
+            "L'erreur classique consiste à prendre trop peu de club sur les trous qui paraissent plus aimables, puis à devenir trop agressif et à ramener encore plus d'eau dans le jeu."
           ],
           [
             "Conseil clubhouse",
-            "Utilisez le practice sur herbe avant de partir et gardez du temps pour boire quelque chose après. L ensemble paraît plus complet quand on ne traite pas la partie comme une course."
+            "Utilisez le practice sur herbe avant de partir et gardez du temps pour boire quelque chose après. L'ensemble paraît plus complet quand on ne traite pas la partie comme une course."
           ]
         ]
       },
@@ -686,7 +686,7 @@ const content = {
         "caption": "Väderkvarnarna är ett utmärkande inslag på T Golf Calvià."
       },
       {
-        "text": "Jag teed off klockan 15:20 en tisdagseftermiddag och banan var tillräckligt lugn för att hoera vinden röra sig genom tallarna mellan slagen. Från de flesta fairways syns varken väg eller byggnad, bara tallar, vatten och berg. För en bana i sydvästra hoernet av Mallorca förvånade det mig."
+        "text": "Jag teed off klockan 15:20 en tisdagseftermiddag och banan var tillräckligt lugn för att höra vinden röra sig genom tallarna mellan slagen. Från de flesta fairways syns varken väg eller byggnad, bara tallar, vatten och berg. För en bana i sydvästra hörnet av Mallorca förvånade det mig."
       },
       {
         "text": "Skicket är lika bra som något jag spelat på ön. Mycket tätt klippta fairways och fringe, perfekt räfsade bunkrar, och en enkel men ovanlig räfsdesign som gör att bollen sällan hamnar mot räfsan. Det är en liten detalj, men en som verkligen uppskattas."
@@ -729,7 +729,7 @@ const content = {
         "text": "Hål 16 är ett par 4 med ett uppförsbackigt slag från tee inramat av klippor och träd. Ett av de visuellt mest distinkta hålen på banan och det spelar svårare än kortet antyder."
       },
       {
-        "text": "Hål 18 är ett trångt par 5 som öppnar upp sig laengre ner på fairway. Det är ett riktigt avslutningshål. Det kräver att man bestämmer sig från tee som ser smal ut, och belönar en om man gör det."
+        "text": "Hål 18 är ett trångt par 5 som öppnar upp sig längre ner på fairway. Det är ett riktigt avslutningshål. Det kräver att man bestämmer sig från tee som ser smal ut, och belönar en om man gör det."
       },
       {
         "alt": "Två golfare på banan vid T Golf Calvià med fairway och berg bakom",
@@ -792,7 +792,7 @@ const content = {
           ],
           [
             "Vindtips",
-            "Utga från ditt nummer, inte från vad ögat tycker. De halvblinda inspelen och exponerade vattencarry-slagen straffar alla som gissar i stället för att bestämma sig."
+            "Utgå från ditt nummer, inte från vad ögat tycker. De halvblinda inspelen och exponerade vattencarry-slagen straffar alla som gissar i stället för att bestämma sig."
           ],
           [
             "Där besökare tappar slag",
@@ -805,7 +805,7 @@ const content = {
         ]
       },
       {
-        "text": "Det passar spelare som vill ha en seriös runda i bra skick. Jag skulle inte skicka en högt handicappare hit som första bana på en semesterresa, men för alla på ett dedikerat golfbesök hoer det hemma på programmet. Twilight-priset och veckodagserbjudandena gör det till ett bra värde vid rätt tidpunkt. Passar det in i en laengre resa? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp ordningsföljd och timing."
+        "text": "Det passar spelare som vill ha en seriös runda i bra skick. Jag skulle inte skicka en högt handicappare hit som första bana på en semesterresa, men för alla på ett dedikerat golfbesök hör det hemma på programmet. Twilight-priset och veckodagserbjudandena gör det till ett bra värde vid rätt tidpunkt. Passar det in i en längre resa? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp ordningsföljd och timing."
       },
       {
         "text": "Ska du spela T Golf Calvià? Jag kan hjälpa dig att hantera carries, greenkomplexen och de scoringsbeslut som banan kräver.",

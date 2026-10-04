@@ -282,7 +282,7 @@ const content = {
         "text": "Lektioner på rangen löser rangeproblem. On-course coaching löser golfproblem. Skillnaden betyder mer än de flesta inser förrän de har provat båda."
       },
       {
-        "text": "Jag är PGA Advanced Professional och har coachat i över ett decennium på alla nivåer. De sessioner jag tycker är mest effektiva, och de som klienter pratar om laengst efteråt, är de som sker på banan själv, i verkliga situationer, under förhållanden som inte går att återskapa på en övningsbana."
+        "text": "Jag är PGA Advanced Professional och har coachat i över ett decennium på alla nivåer. De sessioner jag tycker är mest effektiva, och de som klienter pratar om längst efteråt, är de som sker på banan själv, i verkliga situationer, under förhållanden som inte går att återskapa på en övningsbana."
       },
       {
         "text": "Vad on-course coaching faktiskt innebär"

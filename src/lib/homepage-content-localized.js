@@ -1366,7 +1366,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "title": "Tre enkla steg.",
       "steps": [
         {
-          "title": "Hoer av dig",
+          "title": "Hör av dig",
           "text": "Berätta dina datum, ditt handicap och vad du letar efter. Jag svarar personligen inom 24 timmar."
         },
         {
@@ -1406,13 +1406,13 @@ export const HOME_LOCALIZED_CONTENT = {
           "badge": "Expertval",
           "region": "Palma · 11 km från stan",
           "difficulty": "9/10 svårighet",
-          "excerpt": "Thomas Himmels bana från 2007 lever i sitt eget vindsystem. Slutsträckan från hål 15 till 18 hoer till det bästa i europeisk golf."
+          "excerpt": "Thomas Himmels bana från 2007 lever i sitt eget vindsystem. Slutsträckan från hål 15 till 18 hör till det bästa i europeisk golf."
         },
         {
           "badge": "Expertval",
           "region": "Alcúdia · norra Mallorca",
           "difficulty": "7/10 svårighet",
-          "excerpt": "Robert Trent Jones Jr. när han är som mest naturskön. Fyren syns under större delen av rundan och miljön hoer till det vackraste i Spanien."
+          "excerpt": "Robert Trent Jones Jr. när han är som mest naturskön. Fyren syns under större delen av rundan och miljön hör till det vackraste i Spanien."
         },
         {
           "badge": "Bäst i Spanien 2025",
@@ -1427,7 +1427,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "region": "Camp de Mar · sydväst",
           "difficulty": "9/10 svårighet",
-          "excerpt": "Hål 6 är Spaniens laengsta par 5 på 609 meter. Inritad i kustkullarna utan kompromisser. Ta med extra bollar och lämna egot hemma."
+          "excerpt": "Hål 6 är Spaniens längsta par 5 på 609 meter. Inritad i kustkullarna utan kompromisser. Ta med extra bollar och lämna egot hemma."
         }
       ]
     },
@@ -1580,7 +1580,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "När är bästa tiden på året?",
-          "a": "För bästa förhållanden, titta på sen vår och höst. För bättre värde är juni till augusti och december till februari oftast billigare. Ön går att spela året runt, men vår och höst är inte laengre lågprissäsongen."
+          "a": "För bästa förhållanden, titta på sen vår och höst. För bättre värde är juni till augusti och december till februari oftast billigare. Ön går att spela året runt, men vår och höst är inte längre lågprissäsongen."
         },
         {
           "q": "Kan jag boka en enskild session under en golfsemester?",
