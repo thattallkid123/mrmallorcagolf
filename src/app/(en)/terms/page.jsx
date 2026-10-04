@@ -16,7 +16,7 @@ export default function Terms() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Terms &amp; Conditions</h1>
-            <p className="legal-page__updated">Last updated: March 2025</p>
+            <p className="legal-page__updated">Last updated: October 2026</p>
           </div>
 
           <section className="legal-section">
@@ -41,19 +41,28 @@ export default function Terms() {
           <section className="legal-section">
             <h2>3. Bookings and Payment</h2>
             <p>All bookings are subject to availability and confirmed only once we have agreed the details with you directly by email, WhatsApp, or phone.</p>
-            <p>Payment is made by bank transfer in Euros. Payment details will be provided upon confirmation of your booking. All prices are quoted inclusive of any applicable taxes unless stated otherwise.</p>
-            <p>A deposit may be required to secure your booking. The balance will be due as agreed at time of booking. Your booking is not confirmed until the deposit (or full payment where applicable) has been received.</p>
+            <p>Payment is by bank transfer in euros, and an invoice is issued for each payment. Payment details will be provided when your booking is confirmed. All prices are quoted inclusive of any applicable taxes unless stated otherwise.</p>
+            <p><strong>Golf trips (tee times booked through us):</strong> a deposit of 50% confirms the booking, and the balance is due 35 days before your first tee time. A booking made within 35 days of the first tee time is paid in full when it is made. Two things are paid in full with the deposit: rounds at Arabella&apos;s courses (Son Muntaner, Son Vida, Son Quint and Palma Pitch &amp; Putt), because Arabella charges in full at booking, and any management fee. A Play With A Pro day included in a trip is paid in the same way as a round. Your proposal states the exact amounts and dates. Until the deposit has been received, tee times are held but not confirmed. If the balance is not paid by its due date, the booking is treated as cancelled by you and the deposit is kept.</p>
+            <p><strong>Play With A Pro and coaching booked on their own:</strong> paid in a single payment, at any time before the day or on the day itself.</p>
           </section>
 
           <section className="legal-section">
             <h2>4. Cancellation and Changes</h2>
-            <p><strong>Cancellation by you:</strong></p>
+            <p><strong>Cancellation by you:</strong> notice must be given in writing by email to <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a> and takes effect when it is received.</p>
+            <p><strong>Golf trips.</strong> Each round is treated on its own date:</p>
             <ul>
-              <li>More than 14 days before the experience: full refund of any deposit paid</li>
-              <li>7–14 days before: 50% of the total booking value is retained</li>
-              <li>Less than 7 days before: the full booking value is retained</li>
+              <li>35 days or more before the round: full refund, including the deposit</li>
+              <li>15 to 34 days before: the 50% deposit for that round is kept, and any balance already paid is refunded</li>
+              <li>14 days or fewer before, or a no-show: the full cost of that round is charged</li>
             </ul>
-            <p>Cancellations must be made in writing by email to <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a>.</p>
+            <p>Arabella rounds follow Arabella&apos;s own terms: full refund 22 days or more before play, 50% from 8 to 21 days before, nothing within 7 days. Your proposal lists the exact cut-off dates for each round, and those dates apply.</p>
+            <p><strong>Play With A Pro and coaching booked on their own:</strong></p>
+            <ul>
+              <li>More than 14 days before: full refund of anything paid</li>
+              <li>7 to 14 days before: 50% of the price is due</li>
+              <li>Less than 7 days before, or a no-show: the full price is due</li>
+            </ul>
+            <p>If your proposal or booking confirmation differs from this page, your proposal or booking confirmation applies.</p>
             <p><strong>Cancellation by us:</strong> In the rare event that we need to cancel (for example due to illness, extreme weather, or circumstances beyond our control), we will offer you either a full refund or an alternative date. We are not liable for any additional costs you may have incurred, such as flights or accommodation.</p>
             <p><strong>Weather:</strong> Golf is an outdoor activity. We do not cancel due to light rain. In the event of lightning, severe weather, or course closure, we will rearrange or issue a refund at our discretion.</p>
           </section>

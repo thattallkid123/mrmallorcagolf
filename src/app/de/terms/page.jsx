@@ -15,7 +15,7 @@ export default function TermsDE() {
           </p>
 
           <h1 style={{marginBottom:'0.5rem'}}>Allgemeine Geschäftsbedingungen</h1>
-          <p style={{color:'rgba(255,255,255,0.72)', marginBottom:'3rem', fontSize:'0.9rem'}}>Zuletzt aktualisiert: März 2025</p>
+          <p style={{color:'rgba(255,255,255,0.72)', marginBottom:'3rem', fontSize:'0.9rem'}}>Zuletzt aktualisiert: Oktober 2026</p>
 
           <section className="legal-section">
             <h2>1. Über diese Bedingungen</h2>
@@ -39,19 +39,28 @@ export default function TermsDE() {
           <section className="legal-section">
             <h2>3. Buchungen und Zahlung</h2>
             <p>Alle Buchungen unterliegen der Verfügbarkeit und werden erst bestätigt, sobald wir die Details direkt mit Ihnen per E-Mail, WhatsApp oder Telefon vereinbart haben.</p>
-            <p>Die Zahlung erfolgt per Banküberweisung in Euro. Die Zahlungsdetails werden Ihnen nach Bestätigung Ihrer Buchung mitgeteilt. Alle Preise verstehen sich inklusive anfallender Steuern, sofern nicht anders angegeben.</p>
-            <p>Zur Sicherung Ihrer Buchung kann eine Anzahlung erforderlich sein. Der Restbetrag ist wie zum Zeitpunkt der Buchung vereinbart fällig. Ihre Buchung gilt erst als bestätigt, wenn die Anzahlung (oder gegebenenfalls die vollständige Zahlung) eingegangen ist.</p>
+            <p>Die Zahlung erfolgt per Banküberweisung in Euro, und für jede Zahlung wird eine Rechnung ausgestellt. Die Zahlungsdetails werden Ihnen nach Bestätigung Ihrer Buchung mitgeteilt. Alle Preise verstehen sich inklusive anfallender Steuern, sofern nicht anders angegeben.</p>
+            <p><strong>Golfreisen (über uns gebuchte Startzeiten):</strong> Eine Anzahlung von 50 % bestätigt die Buchung, der Restbetrag ist 35 Tage vor Ihrer ersten Startzeit fällig. Eine Buchung innerhalb von 35 Tagen vor der ersten Startzeit wird bei der Buchung vollständig bezahlt. Zwei Posten werden vollständig mit der Anzahlung bezahlt: Runden auf den Plätzen von Arabella (Son Muntaner, Son Vida, Son Quint und Palma Pitch &amp; Putt), da Arabella bei der Buchung den vollen Betrag berechnet, sowie eine etwaige Managementgebühr. Ein Play-With-A-Pro-Tag innerhalb einer Reise wird wie eine Runde bezahlt. Ihr Angebot nennt die genauen Beträge und Termine. Bis die Anzahlung eingegangen ist, sind die Startzeiten reserviert, aber nicht bestätigt. Wird der Restbetrag nicht bis zum Fälligkeitsdatum bezahlt, gilt die Buchung als von Ihnen storniert, und die Anzahlung wird einbehalten.</p>
+            <p><strong>Einzeln gebuchte Play-With-A-Pro-Tage und Coaching:</strong> Zahlung in einem Betrag, jederzeit vor dem Tag oder am Tag selbst.</p>
           </section>
 
           <section className="legal-section">
             <h2>4. Stornierung und Änderungen</h2>
-            <p><strong>Stornierung durch Sie:</strong></p>
+            <p><strong>Stornierung durch Sie:</strong> Die Stornierung muss schriftlich per E-Mail an <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a> erfolgen und wird mit ihrem Eingang wirksam.</p>
+            <p><strong>Golfreisen.</strong> Jede Runde wird nach ihrem eigenen Datum behandelt:</p>
             <ul>
-              <li>Mehr als 14 Tage vor dem Erlebnis: vollständige Rückerstattung einer geleisteten Anzahlung</li>
-              <li>7&ndash;14 Tage vorher: 50 % des gesamten Buchungswerts werden einbehalten</li>
-              <li>Weniger als 7 Tage vorher: der gesamte Buchungswert wird einbehalten</li>
+              <li>35 Tage oder mehr vor der Runde: vollständige Rückerstattung einschließlich der Anzahlung</li>
+              <li>15 bis 34 Tage vorher: Die Anzahlung von 50 % für diese Runde wird einbehalten, ein bereits gezahlter Restbetrag wird erstattet</li>
+              <li>14 Tage oder weniger vorher oder bei Nichterscheinen: Der volle Preis dieser Runde wird berechnet</li>
             </ul>
-            <p>Stornierungen müssen schriftlich per E-Mail an <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a> erfolgen.</p>
+            <p>Für Runden bei Arabella gelten die Bedingungen von Arabella: vollständige Rückerstattung bis 22 Tage vor dem Spiel, 50 % von 8 bis 21 Tagen vorher, keine Erstattung innerhalb von 7 Tagen. Ihr Angebot nennt die genauen Fristen für jede Runde, und diese Fristen gelten.</p>
+            <p><strong>Einzeln gebuchte Play-With-A-Pro-Tage und Coaching:</strong></p>
+            <ul>
+              <li>Mehr als 14 Tage vorher: vollständige Rückerstattung bereits gezahlter Beträge</li>
+              <li>7 bis 14 Tage vorher: 50 % des Preises sind fällig</li>
+              <li>Weniger als 7 Tage vorher oder bei Nichterscheinen: Der volle Preis ist fällig</li>
+            </ul>
+            <p>Weichen Ihr Angebot oder Ihre Buchungsbestätigung von dieser Seite ab, gelten Ihr Angebot bzw. Ihre Buchungsbestätigung.</p>
             <p><strong>Stornierung durch uns:</strong> Sollten wir in seltenen Fällen stornieren müssen (zum Beispiel wegen Krankheit, extremer Wetterbedingungen oder Umständen außerhalb unserer Kontrolle), bieten wir Ihnen entweder eine vollständige Rückerstattung oder einen alternativen Termin an. Wir haften nicht für zusätzliche Kosten, die Ihnen entstanden sein könnten, wie Flüge oder Unterkunft.</p>
             <p><strong>Wetter:</strong> Golf ist eine Outdoor-Aktivität. Wir sagen bei leichtem Regen nicht ab. Bei Gewitter, schweren Wetterbedingungen oder Platzsperrung werden wir den Termin nach unserem Ermessen verlegen oder eine Rückerstattung vornehmen.</p>
           </section>

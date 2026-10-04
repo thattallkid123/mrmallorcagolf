@@ -15,7 +15,7 @@ export default function TermsES() {
           </p>
 
           <h1 style={{marginBottom:'0.5rem'}}>Términos y Condiciones</h1>
-          <p style={{color:'rgba(255,255,255,0.72)', marginBottom:'3rem', fontSize:'0.9rem'}}>Última actualización: marzo de 2025</p>
+          <p style={{color:'rgba(255,255,255,0.72)', marginBottom:'3rem', fontSize:'0.9rem'}}>Última actualización: octubre de 2026</p>
 
           <section className="legal-section">
             <h2>1. Sobre estos términos</h2>
@@ -39,19 +39,28 @@ export default function TermsES() {
           <section className="legal-section">
             <h2>3. Reservas y pago</h2>
             <p>Todas las reservas están sujetas a disponibilidad y solo se confirman una vez que hemos acordado los detalles contigo directamente por correo electrónico, WhatsApp o teléfono.</p>
-            <p>El pago se realiza mediante transferencia bancaria en euros. Los datos bancarios se facilitarán al confirmar la reserva. Todos los precios se indican con los impuestos aplicables incluidos, salvo que se indique lo contrario.</p>
-            <p>Puede requerirse un depósito para garantizar la reserva. El saldo restante deberá abonarse según lo acordado en el momento de la reserva. La reserva no se considera confirmada hasta que se haya recibido el depósito (o el importe íntegro, en su caso).</p>
+            <p>El pago se realiza mediante transferencia bancaria en euros, y se emite una factura por cada pago. Los datos bancarios se facilitarán al confirmar la reserva. Todos los precios se indican con los impuestos aplicables incluidos, salvo que se indique lo contrario.</p>
+            <p><strong>Viajes de golf (horas de salida reservadas a través de nosotros):</strong> un depósito del 50 % confirma la reserva, y el saldo se abona 35 días antes de tu primera hora de salida. Una reserva hecha dentro de los 35 días previos a la primera hora de salida se paga íntegramente al hacerla. Dos conceptos se pagan íntegramente con el depósito: las vueltas en los campos de Arabella (Son Muntaner, Son Vida, Son Quint y Palma Pitch &amp; Putt), porque Arabella cobra el importe completo al reservar, y la tarifa de gestión, si la hay. Un día de Play With A Pro incluido en un viaje se paga igual que una vuelta. Tu propuesta indica los importes y las fechas exactas. Hasta recibir el depósito, las horas de salida quedan retenidas pero no confirmadas. Si el saldo no se paga en su fecha de vencimiento, la reserva se considera cancelada por tu parte y se retiene el depósito.</p>
+            <p><strong>Play With A Pro y coaching reservados por separado:</strong> se pagan en un único pago, en cualquier momento antes del día o el mismo día.</p>
           </section>
 
           <section className="legal-section">
             <h2>4. Cancelaciones y modificaciones</h2>
-            <p><strong>Cancelación por tu parte:</strong></p>
+            <p><strong>Cancelación por tu parte:</strong> debe comunicarse por escrito al correo <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a> y es efectiva desde su recepción.</p>
+            <p><strong>Viajes de golf.</strong> Cada vuelta se trata según su propia fecha:</p>
             <ul>
-              <li>Con más de 14 días de antelación: reembolso íntegro del depósito abonado</li>
-              <li>Entre 7 y 14 días de antelación: se retiene el 50 % del importe total de la reserva</li>
-              <li>Con menos de 7 días de antelación: se retiene el importe total de la reserva</li>
+              <li>Con 35 días o más de antelación: reembolso íntegro, depósito incluido</li>
+              <li>Entre 15 y 34 días antes: se retiene el depósito del 50 % de esa vuelta y se reembolsa el saldo ya abonado</li>
+              <li>Con 14 días o menos, o si no te presentas: se cobra el importe completo de esa vuelta</li>
             </ul>
-            <p>Las cancelaciones deben comunicarse por escrito al correo <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a>.</p>
+            <p>Las vueltas en Arabella siguen las condiciones de Arabella: reembolso íntegro con 22 días o más de antelación, 50 % entre 8 y 21 días antes y nada en los 7 días previos. Tu propuesta indica las fechas límite exactas de cada vuelta, y son esas fechas las que se aplican.</p>
+            <p><strong>Play With A Pro y coaching reservados por separado:</strong></p>
+            <ul>
+              <li>Con más de 14 días de antelación: reembolso íntegro de lo abonado</li>
+              <li>Entre 7 y 14 días antes: se debe el 50 % del precio</li>
+              <li>Con menos de 7 días, o si no te presentas: se debe el precio completo</li>
+            </ul>
+            <p>Si tu propuesta o la confirmación de tu reserva difieren de esta página, prevalecen la propuesta o la confirmación.</p>
             <p><strong>Cancelación por nuestra parte:</strong> En el improbable caso de que debamos cancelar (por ejemplo, por enfermedad, condiciones meteorológicas extremas o circunstancias de fuerza mayor), te ofreceremos un reembolso íntegro o una fecha alternativa. No nos hacemos responsables de los gastos adicionales en los que puedas haber incurrido, como vuelos o alojamiento.</p>
             <p><strong>Condiciones meteorológicas:</strong> El golf es una actividad al aire libre. No cancelamos por lluvia ligera. En caso de tormenta eléctrica, condiciones climatológicas severas o cierre del campo, reprogramaremos la actividad o emitiremos un reembolso según nuestro criterio.</p>
           </section>

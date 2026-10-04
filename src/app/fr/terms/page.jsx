@@ -15,7 +15,7 @@ export default function TermsFR() {
           </p>
 
           <h1 style={{marginBottom:'0.5rem'}}>Conditions générales</h1>
-          <p style={{color:'rgba(255,255,255,0.72)', marginBottom:'3rem', fontSize:'0.9rem'}}>Dernière mise à jour : mars 2025</p>
+          <p style={{color:'rgba(255,255,255,0.72)', marginBottom:'3rem', fontSize:'0.9rem'}}>Dernière mise à jour : octobre 2026</p>
 
           <section className="legal-section">
             <h2>1. À propos de ces conditions</h2>
@@ -39,19 +39,28 @@ export default function TermsFR() {
           <section className="legal-section">
             <h2>3. Réservations et paiement</h2>
             <p>Toutes les réservations sont soumises à disponibilité et ne sont confirmées qu&rsquo;une fois les détails convenus directement avec vous par e-mail, WhatsApp ou téléphone.</p>
-            <p>Le paiement s&rsquo;effectue par virement bancaire en euros. Les coordonnées bancaires vous seront communiquées à la confirmation de votre réservation. Tous les prix s&rsquo;entendent taxes comprises, sauf indication contraire.</p>
-            <p>Un acompte peut être requis pour garantir votre réservation. Le solde est dû selon les modalités convenues au moment de la réservation. Votre réservation n&rsquo;est confirmée qu&rsquo;à réception de l&rsquo;acompte (ou du paiement intégral, le cas échéant).</p>
+            <p>Le paiement s&rsquo;effectue par virement bancaire en euros, et une facture est émise pour chaque paiement. Les coordonnées bancaires vous seront communiquées à la confirmation de votre réservation. Tous les prix s&rsquo;entendent taxes comprises, sauf indication contraire.</p>
+            <p><strong>Séjours golf (heures de départ réservées par notre intermédiaire) :</strong> un acompte de 50 % confirme la réservation, et le solde est dû 35 jours avant votre première heure de départ. Une réservation effectuée moins de 35 jours avant la première heure de départ est réglée intégralement au moment de la réservation. Deux éléments sont réglés intégralement avec l&rsquo;acompte : les parcours sur les golfs d&rsquo;Arabella (Son Muntaner, Son Vida, Son Quint et Palma Pitch &amp; Putt), car Arabella facture la totalité à la réservation, et les éventuels frais de gestion. Une journée Play With A Pro incluse dans un séjour se règle comme un parcours. Votre proposition indique les montants et les dates exacts. Tant que l&rsquo;acompte n&rsquo;est pas reçu, les heures de départ sont bloquées mais non confirmées. Si le solde n&rsquo;est pas réglé à son échéance, la réservation est considérée comme annulée de votre part et l&rsquo;acompte est conservé.</p>
+            <p><strong>Play With A Pro et coaching réservés seuls :</strong> réglés en un seul paiement, à tout moment avant la journée ou le jour même.</p>
           </section>
 
           <section className="legal-section">
             <h2>4. Annulation et modifications</h2>
-            <p><strong>Annulation de votre part :</strong></p>
+            <p><strong>Annulation de votre part :</strong> elle doit être notifiée par écrit à <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a> et prend effet à sa réception.</p>
+            <p><strong>Séjours golf.</strong> Chaque parcours est traité à sa propre date :</p>
             <ul>
-              <li>Plus de 14 jours avant l&rsquo;expérience : remboursement intégral de l&rsquo;acompte versé</li>
-              <li>Entre 7 et 14 jours avant : 50 % du montant total de la réservation est retenu</li>
-              <li>Moins de 7 jours avant : le montant total de la réservation est retenu</li>
+              <li>35 jours ou plus avant le parcours : remboursement intégral, acompte compris</li>
+              <li>De 15 à 34 jours avant : l&rsquo;acompte de 50 % de ce parcours est conservé, et tout solde déjà versé est remboursé</li>
+              <li>14 jours ou moins avant, ou en cas d&rsquo;absence : le prix total de ce parcours est facturé</li>
             </ul>
-            <p>Les annulations doivent être notifiées par écrit à <a href="mailto:andy@mrmallorcagolf.com">andy@mrmallorcagolf.com</a>.</p>
+            <p>Les parcours Arabella suivent les conditions d&rsquo;Arabella : remboursement intégral jusqu&rsquo;à 22 jours avant le jeu, 50 % de 8 à 21 jours avant, aucun remboursement dans les 7 jours. Votre proposition indique les dates limites exactes de chaque parcours, et ce sont ces dates qui s&rsquo;appliquent.</p>
+            <p><strong>Play With A Pro et coaching réservés seuls :</strong></p>
+            <ul>
+              <li>Plus de 14 jours avant : remboursement intégral des sommes versées</li>
+              <li>De 7 à 14 jours avant : 50 % du prix est dû</li>
+              <li>Moins de 7 jours avant, ou en cas d&rsquo;absence : le prix total est dû</li>
+            </ul>
+            <p>Si votre proposition ou votre confirmation de réservation diffère de cette page, c&rsquo;est votre proposition ou votre confirmation qui s&rsquo;applique.</p>
             <p><strong>Annulation de notre part :</strong> Dans le cas rare où nous devrions annuler (par exemple pour cause de maladie, de conditions météorologiques extrêmes ou de circonstances hors de notre contrôle), nous vous proposerons soit un remboursement intégral, soit une date alternative. Nous ne sommes pas responsables des frais additionnels que vous auriez pu engager, tels que les vols ou l&rsquo;hébergement.</p>
             <p><strong>Météo :</strong> le golf est une activité de plein air. Nous n&rsquo;annulons pas en cas de pluie légère. En cas d&rsquo;orage, de conditions météorologiques sévères ou de fermeture du parcours, nous reprogrammerons l&rsquo;activité ou procéderons à un remboursement, à notre discrétion.</p>
           </section>
