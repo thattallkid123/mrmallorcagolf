@@ -87,11 +87,14 @@ async function loadSources() {
   ])
   for (const slug of Object.keys(gal.LOCALIZED_GUIDE_ARTICLE_CONTENT)) {
     if (!ga.GUIDE_ARTICLE_CONTENT[slug]) continue
-    sources.push({ label: `GUIDE_ARTICLE:${slug}`, english: ga.GUIDE_ARTICLE_CONTENT[slug], overlay: (lc) => gal.LOCALIZED_GUIDE_ARTICLE_CONTENT[slug][lc] })
+    sources.push({ label: `GUIDE_ARTICLE:${slug}`, english: ga.getGuideArticleContent(slug, 'en'), overlay: (lc) => gal.LOCALIZED_GUIDE_ARTICLE_CONTENT[slug][lc] })
   }
+  const site = await importLib('src/lib/site.js')
   for (const slug of Object.keys(gpl.LOCALIZED_GUIDE_POST_CONTENT)) {
     const en = gp.GUIDE_POST_CONTENT[slug]?.en
     if (!en) continue
+    // English-only guides have no translated route, so their overlay is never shown: not audited
+    if (site.EN_ONLY_REVIEW_POST_SLUGS.has(slug)) continue
     sources.push({ label: `GUIDE_POST:${slug}`, english: en, overlay: (lc) => gpl.LOCALIZED_GUIDE_POST_CONTENT[slug][lc] })
   }
   return sources

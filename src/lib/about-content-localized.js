@@ -22,12 +22,12 @@ export const ABOUT_LOCALIZED_CONTENT = {
     "chapters": [
       {
         "label": "Primeros años",
-        "title": "Siguiendo a los mejores entrenadores en dos continentes.",
+        "title": "Aprender de los mejores entrenadores del mundo en entornos de coaching perfectos.",
         "paragraphs": [
           "Crecí jugando al golf, llegué a un hándicap de +1 y supe pronto que la enseñanza era mi camino. Tras estudiar Applied Golf Management en la Universidad de Birmingham y obtener la titulación de PGA Professional, empecé a construir mi carrera siguiendo a los entrenadores más experimentados de Europa y Norteamérica.",
-          "Esos primeros años me llevaron a lugares extraordinarios. Entrené en Pebble Beach, Doral, Évian durante el major femenino y en The Open Championship. También pasé una temporada enseñando a bordo de un crucero en una vuelta al mundo - más de cuarenta países, golf en lugares a los que la mayoría de los profesionales nunca llega."
+          "Esos primeros años me llevaron a lugares extraordinarios. Entrené en Pebble Beach, Doral, Évian durante el major femenino y en The Open Championship. También pasé una temporada enseñando a bordo de un crucero en una vuelta al mundo - más de cuarenta países, golf en lugares que mucha gente nunca llega a ver."
         ],
-        "quote": "Cada entorno era distinto. Cada golfista era distinto. Esa variedad, desde el principio, es lo que dio forma a todo lo que vino después."
+        "quote": "Esos primeros años importaron porque no había dos entornos iguales, ni tampoco dos golfistas iguales."
       },
       {
         "label": "Shanghái, 2014-2025",
@@ -46,7 +46,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "Volví a jugar en serio. Recorriendo todos los campos de la isla. Redescubriendo lo que se siente al estar en el primer tee y realmente importarte el resultado. Ese instinto competitivo, dormido durante años de coaching a tiempo completo, volvió muy rápido.",
           "Soy PGA Professional y pasé más de una década enseñando en Asia. Ahora ayudo a los golfistas que visitan Mallorca a jugarla como se debe: ya sea como un día en el campo conmigo, o como un viaje completo planificado alrededor de eso. La experiencia en coaching importa, pero la tarea más grande es elegir los campos, el ritmo y los extras adecuados para el día o la semana."
         ],
-        "quote": "La filosofía de coaching que ha surgido de volver a jugar es sencilla: las mejoras más rápidas ocurren en el campo, no en la zona de prácticas. Condiciones reales, decisiones reales. Ese progreso suele quedarse."
+        "quote": "Volver a jugar en serio solo ha confirmado lo que ya creía: las mejoras más rápidas suelen ocurrir en el campo, no en la zona de prácticas."
       }
     ],
     "imageAlt": "Andy Griffiths - profesional PGA en Mallorca",
@@ -116,9 +116,9 @@ export const ABOUT_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "¿Listo para jugar?",
-      "title": "Un UK PGA Advanced Professional. Una isla de golf excepcional. Su vuelta.",
-      "body": "Dígame sus fechas, su hándicap y lo que busca. Construiré el día en torno a usted.",
-      "primaryCta": "Ver las experiencias →",
+      "title": "Toda esa experiencia. Una isla de golf. Su vuelta.",
+      "body": "Todo eso marca cómo planteo un día en el campo en Mallorca. Si busca a alguien que conozca todos los campos de la isla y que sepa sacar el máximo partido a su tiempo aquí, póngase en contacto conmigo.",
+      "primaryCta": "Ver la experiencia Play With A Pro →",
       "primaryHref": "/es/play-with-a-pro",
       "secondaryCta": "Ponerse en contacto",
       "secondaryHref": "/es/contact"
@@ -149,12 +149,12 @@ export const ABOUT_LOCALIZED_CONTENT = {
     "chapters": [
       {
         "label": "Frühe Karriere",
-        "title": "Den besten Trainern über zwei Kontinente folgen.",
+        "title": "Von den besten Trainern der Welt lernen, in perfekten Coaching-Umgebungen.",
         "paragraphs": [
           "Ich bin mit Golf aufgewachsen, spielte mich bis auf Handicap +1 herunter und wusste früh, dass Coaching mein Weg sein würde. Nach meinem Studium im Applied Golf Management an der Universität Birmingham und meiner PGA-Qualifikation begann ich meine Karriere, indem ich den erfahrensten Trainern in Europa und Nordamerika folgte.",
-          "Die frühen Jahre führten mich an bemerkenswerte Orte. Ich coachte in Pebble Beach, Doral, Evian während des Damen-Majors und bei The Open Championship. Eine Saison arbeitete ich auf einem Kreuzfahrtschiff während einer Weltreise - über vierzig Länder, Golf an Orten, die die meisten Professionals nie zu Gesicht bekommen."
+          "Die frühen Jahre führten mich an bemerkenswerte Orte. Ich coachte in Pebble Beach, Doral, Evian während des Damen-Majors und bei The Open Championship. Eine Saison arbeitete ich auf einem Kreuzfahrtschiff während einer Weltreise - über vierzig Länder, Golf an Orten, die viele Menschen nie zu Gesicht bekommen."
         ],
-        "quote": "Jede Umgebung war anders. Jeder Golfer war anders. Diese Vielfalt in den frühen Jahren hat alles geprägt, was danach kam."
+        "quote": "Diese frühen Jahre waren wichtig, weil keine Umgebung der anderen glich und kein Golfer dem anderen."
       },
       {
         "title": "Elf Jahre an der Spitze des Spiels in China.",
@@ -172,7 +172,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "Ich begann wieder ernsthaft zu spielen. Ich arbeite mich durch jeden Platz der Insel. Ich erinnere mich wieder daran, wie es sich anfühlt, am ersten Abschlag zu stehen und sich wirklich für das Ergebnis zu interessieren. Dieser Wettkampfinstinkt, der während Jahren im Vollzeit-Coaching geschlafen hatte, war schnell wieder da.",
           "Ich bin PGA Professional und habe über ein Jahrzehnt in Asien gecoacht. Heute helfe ich Golfern dabei, Mallorca richtig zu spielen: entweder als Tag auf dem Platz mit mir, oder als komplett geplante Reise darum herum. Der Coaching-Hintergrund zählt, aber die größere Aufgabe ist es, die richtigen Plätze, den richtigen Rhythmus und die richtigen Extras für den Tag oder die Woche zu wählen."
         ],
-        "quote": "Die Coaching-Philosophie, die daraus entstanden ist, wieder selbst zu spielen, ist einfach: Die schnellsten Verbesserungen passieren auf dem Platz, nicht auf der Range. Echte Bedingungen, echte Entscheidungen. Genau dieser Fortschritt bleibt."
+        "quote": "Wieder richtig zu spielen hat nur bestätigt, was ich schon glaubte: Die schnellsten Fortschritte entstehen meist auf dem Platz, nicht auf der Range."
       }
     ],
     "summary": "Ich bin ein UK PGA Advanced Professional. Elf Jahre Coaching in China - Nationalmannschaftsspieler, Chinas erster Trackman Master und Hunderte Millionen Aufrufe auf Douyin. Davor: Pebble Beach, The Open Championship, Evian. Im März 2025 bin ich nach Mallorca gezogen, um etwas Eigenes aufzubauen. Ich spiele die besten Plätze der Insel fast jede Woche und habe zu jedem eine klare Meinung.",
@@ -237,9 +237,9 @@ export const ABOUT_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "Bereit zu spielen?",
-      "title": "Ein PGA Advanced Professional. Eine außergewöhnliche Golfinsel. Ihre Runde.",
-      "body": "Nennen Sie mir Ihre Daten, Ihr Handicap und wonach Sie suchen. Ich gestalte den Tag um Sie herum.",
-      "primaryCta": "Die Erlebnisse ansehen →",
+      "title": "All diese Erfahrung. Eine Golfinsel. Ihre Runde.",
+      "body": "All das prägt, wie ich einen Tag auf dem Platz auf Mallorca angehe. Wenn Sie jemanden suchen, der jeden Platz der Insel kennt und Ihre Zeit hier bestmöglich nutzt, melden Sie sich bei mir.",
+      "primaryCta": "Das Play-With-A-Pro-Erlebnis ansehen →",
       "primaryHref": "/de/play-with-a-pro",
       "secondaryCta": "Kontakt",
       "secondaryHref": "/de/contact"
@@ -274,12 +274,12 @@ export const ABOUT_LOCALIZED_CONTENT = {
     "chapters": [
       {
         "label": "Débuts de carrière",
-        "title": "Suivre les meilleurs coachs sur deux continents.",
+        "title": "Apprendre auprès des meilleurs coachs du monde, dans des environnements de coaching parfaits.",
         "paragraphs": [
           "J'ai grandi avec le golf, je suis descendu à +1 de handicap et j'ai su très tôt que le coaching serait ma voie. Après des études d'Applied Golf Management à l'Université de Birmingham et ma qualification de professionnel PGA, j'ai commencé à construire ma carrière en suivant les coachs les plus expérimentés d'Europe et d'Amérique du Nord.",
-          "Les premières années m'ont mené dans des lieux remarquables. J'ai coaché à Pebble Beach, Doral, Evian pendant le major féminin et à The Open Championship. J'ai aussi passé une saison à coacher à bord d'un paquebot pendant un tour du monde - plus de quarante pays, du golf dans des endroits que peu de professionnels approchent un jour."
+          "Les premières années m'ont mené dans des lieux remarquables. J'ai coaché à Pebble Beach, Doral, Evian pendant le major féminin et à The Open Championship. J'ai aussi passé une saison à coacher à bord d'un paquebot pendant un tour du monde - plus de quarante pays, du golf dans des endroits que beaucoup de gens ne verront jamais."
         ],
-        "quote": "Chaque environnement était différent. Chaque golfeur était différent. Cette variété, au début, a façonné tout ce qui a suivi."
+        "quote": "Ces premières années ont compté parce qu'aucun environnement ne ressemblait à un autre, et aucun golfeur non plus."
       },
       {
         "title": "Onze ans au sommet du golf en Chine.",
@@ -298,7 +298,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "J'ai recommencé à jouer sérieusement. En découvrant chaque parcours de l'île. En retrouvant cette sensation d'être sur le premier tee et de vraiment se soucier du score. Cet instinct compétitif, endormi pendant des années de coaching à plein temps, est revenu très vite.",
           "Je suis un professionnel PGA qui a passé plus d'une décennie à coacher en Asie. Aujourd'hui, j'aide les golfeurs de passage à jouer Majorque comme il faut : soit comme une journée sur le parcours avec moi, soit comme un voyage complet organisé autour de cela. L'expérience de coaching compte, mais la tâche la plus importante est de choisir les bons parcours, le bon rythme et les bons extras pour la journée ou la semaine."
         ],
-        "quote": "La philosophie de coaching née du fait de rejouer est simple : les progrès les plus rapides se font sur le parcours, pas au practice. De vraies conditions, de vraies décisions. Les progrès obtenus ainsi ont tendance à durer."
+        "quote": "Rejouer sérieusement n'a fait que confirmer ce que je croyais déjà : les progrès les plus rapides se font généralement sur le parcours, pas au practice."
       }
     ],
     "imageAlt": "Andy Griffiths - Professionnel PGA avancé, Majorque",
@@ -366,9 +366,9 @@ export const ABOUT_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "Prêt à jouer ?",
-      "title": "Un Professionnel PGA Avancé. Une île de golf exceptionnelle. Votre partie.",
-      "body": "Dites-moi vos dates, votre handicap et ce que vous recherchez. Je construirai la journée autour de vous.",
-      "primaryCta": "Voir les expériences →",
+      "title": "Toute cette expérience. Une île de golf. Votre partie.",
+      "body": "Tout cela façonne ma façon d'aborder une journée sur un parcours à Majorque. Si vous cherchez quelqu'un qui connaît chaque parcours de l'île et sait tirer le meilleur de votre temps ici, contactez-moi.",
+      "primaryCta": "Découvrir l'expérience Play With A Pro →",
       "primaryHref": "/fr/play-with-a-pro",
       "secondaryCta": "Nous contacter",
       "secondaryHref": "/fr/contact"
@@ -402,12 +402,12 @@ export const ABOUT_LOCALIZED_CONTENT = {
     "chapters": [
       {
         "label": "Vroege carriere",
-        "title": "De beste coaches op twee continenten volgen.",
+        "title": "Leren van de beste coaches ter wereld, in perfecte coachingomgevingen.",
         "paragraphs": [
           "Ik groeide op met golf, bereikte een handicap van +1 en wist al vroeg dat coaching mijn richting zou worden. Na mijn studie Applied Golf Management aan de University of Birmingham en mijn kwalificatie als PGA Professional begon ik een carriere op te bouwen door de meest ervaren coaches in Europa en Noord-Amerika te volgen.",
-          "Die vroege jaren brachten me naar bijzondere plekken. Ik coachte op Pebble Beach, Doral, Évian tijdens het dames-major en op The Open Championship. Ik bracht ook een seizoen door als coach op een cruiseschip tijdens een wereldreis - meer dan veertig landen, golf op plekken waar de meeste professionals nooit komen."
+          "Die vroege jaren brachten me naar bijzondere plekken. Ik coachte op Pebble Beach, Doral, Évian tijdens het dames-major en op The Open Championship. Ik bracht ook een seizoen door als coach op een cruiseschip tijdens een wereldreis - meer dan veertig landen, golf op plekken die veel mensen nooit te zien krijgen."
         ],
-        "quote": "Elke omgeving was anders. Elke golfer was anders. Die variatie in de beginjaren heeft alles gevormd wat daarna kwam."
+        "quote": "Die vroege jaren waren belangrijk omdat geen twee omgevingen hetzelfde waren, en geen twee golfers ook."
       },
       {
         "title": "Elf jaar aan de top van golf in China.",
@@ -425,7 +425,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "Ik begon weer serieus te spelen. Ik werk me door elke baan op het eiland heen. Ik ontdekte opnieuw hoe het voelt om op de eerste tee te staan en echt om de score te geven. Dat competitieve instinct, jarenlang slapend door fulltime coaching, kwam snel terug.",
           "Ik ben PGA Professional en heb meer dan tien jaar in Azië gecoacht. Nu help ik bezoekende golfers Mallorca goed te spelen: hetzij als een dag op de baan met mij, hetzij als een volledige reis eromheen gepland. De coachingervaring telt, maar de grotere taak is het kiezen van de juiste banen, het juiste ritme en de juiste extra's voor de dag of de week."
         ],
-        "quote": "De coachingsfilosofie die voortkwam uit weer spelen is eenvoudig: de snelste verbeteringen gebeuren op de baan, niet op de range. Echte omstandigheden, echte beslissingen. Vooruitgang die zo ontstaat, blijft hangen."
+        "quote": "Weer serieus spelen heeft alleen bevestigd wat ik al geloofde: de snelste verbeteringen gebeuren meestal op de baan, niet op de range."
       }
     ],
     "summary": "Ik ben een UK PGA Advanced Professional. Elf jaar coaching in China - nationale teamspelers, Chinas eerste Trackman Master en honderden miljoenen weergaven op Douyin. Daarvoor: Pebble Beach, The Open Championship en Evian. In maart 2025 verhuisde ik naar Mallorca om iets van mezelf op te bouwen. Ik speel bijna elke week de beste banen van het eiland en heb over allemaal een uitgesproken mening.",
@@ -488,9 +488,9 @@ export const ABOUT_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "Klaar om te spelen?",
-      "title": "Een PGA Advanced Professional. Een uitzonderlijk golfeiland. Uw ronde.",
-      "body": "Vertel me uw data, uw handicap en wat u zoekt. Ik bouw de dag rondom u.",
-      "primaryCta": "Bekijk de ervaringen →",
+      "title": "Al die ervaring. Eén golfeiland. Uw ronde.",
+      "body": "Dat alles bepaalt hoe ik een dag op de baan op Mallorca aanpak. Wilt u iemand die elke baan op het eiland kent en het meeste uit uw tijd hier haalt, neem dan contact met me op.",
+      "primaryCta": "Bekijk de Play With A Pro-ervaring →",
       "primaryHref": "/nl/play-with-a-pro",
       "secondaryCta": "Neem contact op",
       "secondaryHref": "/nl/contact"
@@ -525,12 +525,12 @@ export const ABOUT_LOCALIZED_CONTENT = {
     "chapters": [
       {
         "label": "Tidigt i karriären",
-        "title": "Följde de bästa tränarna över två kontinenter.",
+        "title": "Att lära av världens bästa tränare i perfekta coachingmiljöer.",
         "paragraphs": [
           "Jag växte upp med golf, nådde +1 i handicap och visste tidigt att coaching var min väg. Efter studier i Applied Golf Management vid University of Birmingham och min kvalificering som PGA Professional började jag bygga en karriär genom att följa de mest erfarna tränarna runt om i Europa och Nordamerika.",
-          "De tidiga åren tog mig till några anmärkningsvärda platser. Jag coachade på Pebble Beach, Doral, Evian under damernas major och vid The Open Championship. Jag tillbringade även en säsong med att coacha ombord på ett kryssningsfartyg under en världsomsegling - över fyrtio länder, golf på platser som de flesta proffs aldrig kommer nära."
+          "De tidiga åren tog mig till några anmärkningsvärda platser. Jag coachade på Pebble Beach, Doral, Evian under damernas major och vid The Open Championship. Jag tillbringade även en säsong med att coacha ombord på ett kryssningsfartyg under en världsomsegling - över fyrtio länder, golf på platser som många aldrig får se."
         ],
-        "quote": "Varje miljö var annorlunda. Varje golfare var annorlunda. Den variationen tidigt i karriären formade allt som kom efteråt."
+        "quote": "De tidiga åren spelade roll eftersom ingen miljö var den andra lik, och ingen golfare heller."
       },
       {
         "title": "Elva år på toppen av golfen i Kina.",
@@ -548,7 +548,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "Jag började spela ordentligt igen. Jag arbetade mig genom varje bana på ön. Jag återupptäckte hur det känns att stå på första tee och faktiskt bry sig om resultatet. Den tävlingsinstinkt som varit vilande under år av heltidscoaching kom snabbt tillbaka.",
           "Jag är PGA Professional och tillbringade mer än ett decennium med att coacha i Asien. Nu hjälper jag besökande golfare att spela Mallorca på rätt sätt: antingen som en dag på banan med mig, eller som en hel resa planerad runt det. Coachingbakgrunden spelar roll, men det större jobbet är att välja rätt banor, rätt rytm och rätt tillägg för dagen eller veckan."
         ],
-        "quote": "Coachingfilosofin som kom ur att spela igen är enkel: de snabbaste förbättringarna sker på banan, inte på rangen. Verkliga förhållanden, verkliga beslut. Framsteg som skapas där brukar stanna kvar."
+        "quote": "Att spela på riktigt igen har bara bekräftat det jag redan trodde: de snabbaste förbättringarna sker oftast på banan, inte på rangen."
       }
     ],
     "summary": "Jag är en UK PGA Advanced Professional. Elva år som coach i Kina - landslagsspelare, landets första Trackman Master och hundratals miljoner visningar på Douyin. Innan dess: Pebble Beach, The Open Championship och Evian. I mars 2025 flyttade jag till Mallorca för att bygga något eget. Jag spelar öns bästa banor nästan varje vecka och har starka åsikter om varenda en.",
@@ -603,9 +603,9 @@ export const ABOUT_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "Redo att spela?",
-      "title": "En PGA Advanced Professional. En exceptionell golfö. Din runda.",
-      "body": "Berätta dina datum, ditt handicap och vad du letar efter. Jag bygger dagen runt dig.",
-      "primaryCta": "Se upplevelserna →",
+      "title": "All den erfarenheten. En golfö. Din runda.",
+      "body": "Allt det formar hur jag lägger upp en dag på banan på Mallorca. Vill du ha någon som kan varje bana på ön och får ut det mesta av din tid här, hör av dig.",
+      "primaryCta": "Se Play With A Pro-upplevelsen →",
       "primaryHref": "/sv/play-with-a-pro",
       "secondaryCta": "Kontakta mig",
       "secondaryHref": "/sv/contact"
@@ -640,12 +640,12 @@ export const ABOUT_LOCALIZED_CONTENT = {
     "chapters": [
       {
         "label": "职业早期",
-        "title": "追随两大洲最优秀的教练。",
+        "title": "在完美的教学环境中，向世界上最优秀的教练学习。",
         "paragraphs": [
           "我从小打高尔夫，最低打到过 +1 差点，但很早就知道，教学才是我真正想走的路。在伯明翰大学学习应用高尔夫管理并取得 PGA Professional 资格后，我开始在欧洲和北美追随最有经验的教练，逐步建立自己的职业生涯。",
-          "职业早期把我带到了很多特别的地方。我曾在 Pebble Beach、Doral、Evian 女子大满贯以及 The Open Championship 期间执教。我还在一艘邮轮上执教了一个赛季，完成了环球航行 - 超过四十个国家，在很多职业球员一辈子都不会接触到的地方打高尔夫。"
+          "职业早期把我带到了很多特别的地方。我曾在 Pebble Beach、Doral、Evian 女子大满贯以及 The Open Championship 期间执教。我还在一艘邮轮上执教了一个赛季，完成了环球航行 - 超过四十个国家，在很多人一辈子都不会去到的地方打高尔夫。"
         ],
-        "quote": "每一个环境都不同。每一个球员都不同。正是这种早期的多样性，塑造了后来的一切。"
+        "quote": "那些早年很重要，因为没有两个环境是一样的，也没有两个球手是一样的。"
       },
       {
         "label": "上海，2014-2025",
@@ -665,7 +665,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "我也重新开始认真打球，走遍岛上的每一座球场。重新找回站在第一洞发球台上、真正关心成绩的感觉。那个在多年全职教学中沉睡下来的竞争本能，很快就回来了。",
           "我是一位在亚洲执教超过十年的PGA Professional。现在，我帮助来马略卡的球手真正打好这座岛：可以是和我一起下场的一天，也可以是围绕它安排的一整趟行程。教学背景很重要，但更大的工作是为这一天或这一周选对球场、节奏和附加安排。"
         ],
-        "quote": "重新开始认真打球后，我的教学理念变得很简单：最快的进步发生在球场上，而不是练习场。真实条件，真实决策。这样得到的进步，往往更能保持。"
+        "quote": "重新认真打球，只是印证了我原本的想法：最快的进步通常发生在球场上，而不是练习场。"
       }
     ],
     "imageAlt": "Andy Griffiths - 英国 PGA 高级职业教练，马略卡",
@@ -734,9 +734,9 @@ export const ABOUT_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "准备好下场了吗？",
-      "title": "PGA高级职业教练。一座非凡的高尔夫岛屿。属于您的一轮。",
-      "body": "告诉我您的日期、差点和您想要的体验。我会围绕您来安排这一天。",
-      "primaryCta": "查看体验 →",
+      "title": "所有这些经历。一座高尔夫岛屿。属于您的一轮。",
+      "body": "这一切塑造了我在马略卡安排球场一天的方式。如果您想找一位熟悉岛上每一座球场、能让您在这里的时间发挥最大价值的人，请联系我。",
+      "primaryCta": "查看 Play With A Pro 体验 →",
       "primaryHref": "/zh/play-with-a-pro",
       "secondaryCta": "联系我",
       "secondaryHref": "/zh/contact"

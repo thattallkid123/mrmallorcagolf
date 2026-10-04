@@ -42,7 +42,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Beginnen Sie mit Region, Preis und Schwierigkeit, um die passenden Plätze schnell einzugrenzen. Jede Karte zeigt Preis, Schwierigkeit, Bewertung und eventuelle dynamische Preise oder Handicap-Vorgaben vor der Buchung.",
+      "explorerIntro": "Nach Region durchsuchen. Jede Karte zeigt Preis, Schwierigkeit, Andys Bewertung sowie eventuelle dynamische Preise oder Handicap-Vorgaben vor der Buchung.",
       "faqEyebrow": "Fragen",
       "faqTitle": "Häufige Fragen",
       "faqIntro": "Ein paar schnelle Antworten, bevor Sie Ihre Auswahl treffen oder buchen.",
@@ -74,7 +74,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       "allCourses": "Alle Plätze",
       "ctaEyebrow": "Shortlist fertig?",
       "ctaH2": "Aus der Shortlist die richtige Reise machen.",
-      "ctaP": "Schicken Sie mir Ihre Daten, Ihr Handicap, Ihre Hotelregion und die zwei oder drei Plätze, die Sie in Betracht ziehen. Ich sage Ihnen, welche in die Reise gehören, in welcher Reihenfolge, und wie der klarste Plan aussieht.",
+      "ctaP": "Schicken Sie mir Ihre Daten, Ihr Handicap, Ihre Hotelregion und die zwei oder drei Plätze, die Sie in Betracht ziehen. Ich sage Ihnen, welche in die Reise gehören, welche Reihenfolge Sinn ergibt und was Sie zuerst buchen sollten.",
       "seeExperiences": "Reise planen",
       "getInTouch": "Play With A Pro"
     }
@@ -120,7 +120,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Empiece por zona, precio y dificultad para reducir los campos rápidamente. Cada ficha muestra precio, dificultad, valoración y cualquier tarifa dinámica o requisito de hándicap antes de reservar.",
+      "explorerIntro": "Explore por zona. Cada ficha muestra precio, dificultad, la valoración de Andy y cualquier tarifa dinámica o requisito de hándicap antes de reservar.",
       "faqEyebrow": "Preguntas",
       "faqTitle": "Preguntas frecuentes",
       "faqIntro": "Respuestas rápidas antes de hacer su lista corta o reservar.",
@@ -152,7 +152,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       "allCourses": "Todos los campos",
       "ctaEyebrow": "¿¿Ya tiene su lista corta?",
       "ctaH2": "Convierta la lista corta en el viaje correcto.",
-      "ctaP": "Envíeme sus fechas, hándicap, zona de hotel y los dos o tres campos que está considerando. Le diré cuáles encajan en el viaje, en qué orden, y como es el plan más claro.",
+      "ctaP": "Envíeme sus fechas, hándicap, zona de hotel y los dos o tres campos que está considerando. Le diré cuáles encajan en el viaje, qué orden tiene sentido y qué reservar primero.",
       "seeExperiences": "Planifique su viaje",
       "getInTouch": "Play With A Pro"
     }
@@ -197,7 +197,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Commencez par la région, le prix et la difficulté pour réduire rapidement les choix. Chaque fiche montre le prix, la difficulté, la note et tout tarif dynamique ou exigence de handicap avant de réserver.",
+      "explorerIntro": "Parcourez par région. Chaque fiche montre le prix, la difficulté, la note d'Andy et tout tarif dynamique ou exigence de handicap avant de réserver.",
       "faqEyebrow": "Questions",
       "faqTitle": "Questions fréquentes",
       "faqIntro": "Quelques réponses rapides avant de faire votre short-list ou de réserver.",
@@ -212,7 +212,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Combien coûte une partie de golf à Majorque ?",
-          "a": "Les green fees vont d\'environ 55 € dans la gamme accessible jusqu\'à environ 260 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c\'est une option de parcours court à part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coûte généralement de 35 € a 48 € en plus."
+          "a": "Les green fees vont d'environ 55 € dans la gamme accessible jusqu'à environ 260 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c'est une option de parcours court à part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coûte généralement de 35 € à 48 € en plus."
         },
         {
           "q": "Faut-il un certificat de handicap pour jouer à Majorque ?",
@@ -229,7 +229,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       "allCourses": "Tous les parcours",
       "ctaEyebrow": "Vous avez votre short-list ?",
       "ctaH2": "Transformez la short-list en le bon voyage.",
-      "ctaP": "Envoyez-moi vos dates, votre index, la zone de votre hôtel et les deux ou trois parcours que vous envisagez. Je vous dirai lesquels ont leur place dans le voyage, dans quel ordre, et à quoi ressemble le plan le plus clair.",
+      "ctaP": "Envoyez-moi vos dates, votre index, la zone de votre hôtel et les deux ou trois parcours que vous envisagez. Je vous dirai lesquels ont leur place dans le voyage, quel ordre est logique et quoi réserver en premier.",
       "seeExperiences": "Planifiez votre voyage",
       "getInTouch": "Play With A Pro"
     }
@@ -273,7 +273,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Begin met regio, prijs en moeilijkheid om de banen snel terug te brengen tot de juiste opties. Elke kaart toont prijs, moeilijkheid, beoordeling en eventuele dynamische prijzen of handicapeisen voor het boeken.",
+      "explorerIntro": "Blader per regio. Elke kaart toont prijs, moeilijkheid, de beoordeling van Andy en eventuele dynamische prijzen of handicapeisen voor het boeken.",
       "faqEyebrow": "Vragen",
       "faqTitle": "Veelgestelde vragen",
       "faqIntro": "Snelle antwoorden voordat u een shortlist maakt of boekt.",
@@ -305,7 +305,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       "allCourses": "Alle banen",
       "ctaEyebrow": "Shortlist rond?",
       "ctaH2": "Maak van de shortlist de juiste reis.",
-      "ctaP": "Stuur me uw data, handicap, hotelregio en de twee of drie banen die u overweegt. Ik vertel u welke in de reis passen, in welke volgorde, en hoe het duidelijkste plan eruitziet.",
+      "ctaP": "Stuur me uw data, handicap, hotelregio en de twee of drie banen die u overweegt. Ik vertel u welke in de reis passen, welke volgorde logisch is en wat u het eerst moet boeken.",
       "seeExperiences": "Plan uw reis",
       "getInTouch": "Play With A Pro"
     }
@@ -350,7 +350,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Börja med region, pris och svårighetsgrad för att smalna av banorna snabbt. Varje kort visar pris, svårighetsgrad, betyg och eventuell dynamisk prissättning eller handicapkrav före bokning.",
+      "explorerIntro": "Bläddra efter region. Varje kort visar pris, svårighetsgrad, Andys betyg och eventuell dynamisk prissättning eller handicapkrav före bokning.",
       "faqEyebrow": "Frågor",
       "faqTitle": "Vanliga frågor",
       "faqIntro": "Några snabba svar innan du gör din kortlista eller bokar.",
@@ -382,7 +382,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       "allCourses": "Alla banor",
       "ctaEyebrow": "Har du en kortlista?",
       "ctaH2": "Gör om kortlistan till rätt resa.",
-      "ctaP": "Skicka dina datum, ditt handicap, ditt hotellområde och de två eller tre banor du överväger. Jag talar om vilka som hör hemma i resan, i vilken ordning, och hur den tydligaste planen ser ut.",
+      "ctaP": "Skicka dina datum, ditt handicap, ditt hotellområde och de två eller tre banor du överväger. Jag talar om vilka som hör hemma i resan, vilken ordning som är vettig och vad du ska boka först.",
       "seeExperiences": "Planera din resa",
       "getInTouch": "Play With A Pro"
     }
@@ -429,7 +429,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "先按地区、价格和难度筛选，这样可以更快缩小到合适的球场。每张卡片都会标出价格、难度、评分，以及预订前要注意的动态定价或差点要求。",
+      "explorerIntro": "按地区浏览。每张卡片都会标出价格、难度、Andy 的评分，以及预订前要注意的动态定价或差点要求。",
       "faqEyebrow": "问题",
       "faqTitle": "常见问题",
       "faqIntro": "在您列出 shortlist 或预订之前，先看几个简短答案。",
@@ -461,7 +461,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       "allCourses": "全部球场",
       "ctaEyebrow": "已经缩小范围了？",
       "ctaH2": "把候选清单变成合适的行程。",
-      "ctaP": "把您的日期、差点、酒店区域，以及正在考虑的两三座球场发给我。我会告诉您哪些适合安排进这趟行程、先后顺序如何，以及最清晰的方案是什么样的。",
+      "ctaP": "把您的日期、差点、酒店区域，以及正在考虑的两三座球场发给我。我会告诉您哪些适合安排进这趟行程、怎样的顺序合理，以及应该先预订什么。",
       "seeExperiences": "规划行程",
       "getInTouch": "陪打体验"
     }

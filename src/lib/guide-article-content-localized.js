@@ -3141,11 +3141,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "description": "El alquiler de palos de golf en Mallorca cuesta €25–€65 por día. Mejores empresas, calidad y dónde obtener el mejor precio en 2026."
       },
       "meta": {
-        "badge": "Alquiler",
-        "readTime": "5 min de lectura",
+        "badge": "Guía práctica",
+        "readTime": "6 min de lectura",
         "updated": "Agosto 2026",
         "title": "Alquiler de palos en Mallorca: la versión práctica",
-        "intro": "¿Traer sus propios palos o alquilar en la isla? Está es la respuesta honesta y útil.",
+        "intro": "¿Traer tus propios palos? ¿Qué empresas de alquiler merecen la pena? ¿Cuánto hay que pagar? Respondido con honestidad.",
         "related": [
           {
             "slug": "golf-cost-mallorca",
@@ -3167,63 +3167,74 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "El alquiler de palos es una de las preguntas más habituales antes de venir a jugar a Mallorca. Merece la pena traer los propios? Se puede alquilar algo realmente bueno aquí? O al final se termina jugando con cualquier set cansado del pro shop?"
+          "text": "El alquiler de palos es uno de los temas más habituales en las preguntas que recibo de golfistas que planean un viaje. ¿Debo llevar mis palos? ¿Puedo alquilar unos decentes? ¿Dónde y por cuánto? ¿Tiene sets el campo?"
         },
         {
-          "text": "La respuesta honesta es que si, aquí se pueden alquilar palos muy decentes. Pero no todas las opciones son iguales. Los sets del propio campo van de aceptables a bastante dudosos. Si va a hacer un día serio de golf, conviene mirar algo mejor."
+          "text": "La respuesta honesta: sí, aquí puedes alquilar palos excelentes. Los sets de alquiler de los campos van de dudosos a muy buenos. Para cualquier campo en el que importen la calidad y la familiaridad, merece la pena una empresa de alquiler especializada."
         },
         {
-          "text": "Importante: yo no ofrezco alquiler de palos como servicio. Está guía es solo informativa. Si quiere, si puedo orientarle de forma honesta sobre que opción encaja mejor."
+          "text": "Nota: yo no ofrezco alquiler de palos directamente. Esta guía es puramente práctica. Si te pones en contacto conmigo, puedo ayudarte a encontrar la empresa adecuada para tu viaje."
         },
         {
-          "text": "Traer los propios o no?"
+          "text": "¿Llevar tus propios palos?"
         },
         {
-          "text": "Si va a jugar tres vueltas o más en un viaje claramente de golf, traiga los suyos. Los gastos de aerolínea (normalmente €30–60 por tramo) casi siempre compensan por las sensaciones, distancias conocidas y por no hacer concesiones innecesarias."
+          "text": "Si vas a jugar tres rondas o más en un viaje dedicado al golf, plantéate llevarlos. Las tarifas de las aerolíneas (normalmente €30-60 por trayecto) suelen compensar en un viaje en serio, y tiene una ventaja real jugar con palos que conoces, a menos que tus palos sean heredados de hace dos generaciones, ¡y entonces es hora de un set nuevo!"
         },
         {
-          "text": "Si es una estancia mixta con una o dos vueltas, alquilar suele tener más sentido. Los buenos especialistas entregan directamente en el hotel o en el campo y le ahorran el circo del travel bag por el aeropuerto."
+          "text": "Si vas de vacaciones mixtas con unas pocas rondas previstas, alquilar tiene más sentido. Las empresas especializadas de aquí tienen material estupendo y actualizado, el coste sale más bajo que facturar los palos de ida y vuelta, y además quita mucho estrés porque tienen experiencia en ponértelo fácil."
         },
         {
-          "text": "Las empresas principales"
-        },
-        {},
-        {},
-        {
-          "text": "Entrega y recogida personal en hoteles, villas y campos por toda la isla. Sets actuales de Callaway Rogue ST Max y una opción seria para el visitante que quiere cero fricción. Es una opción especialmente recomendable si valora el trato personal y una entrega sencilla; indique ANDYGOLF10 por <a href=\"https://wa.me/34722691766\">WhatsApp</a> o <a href=\"mailto:info@clubrentalsmallorca.com\">email</a> al reservar para obtener entrega prioritaria en su campo u hotel, además de un pequeño descuento en las bolas de golf que añada a la reserva."
+          "text": "Las principales empresas de alquiler"
         },
         {
-          "alt": "Callaway Rogue ST Max",
-          "caption": "Callaway Rogue ST Max - material actual, no restos de almacén"
-        },
-        {},
-        {
-          "text": "Opciones Callaway Rogue y TaylorMade Qi4D, además de algunos sets más económicos de temporadas anteriores. Buena opción intermedia para quien quiere calidad seria sin pagar de más. Ventaja para lectores de Mr Mallorca Golf: use el código MRMALLORCAGOLF para recibir un pequeño regalo de cortesía, según los artículos promocionales disponibles, o añada MRMALLORCAGOLFBALLS para un 10% de descuento en cualquier compra de bolas nuevas con los palos. Ambos códigos pueden usarse juntos al pagar."
+          "text": "Club Rentals Mallorca"
         },
         {
-          "alt": "TaylorMade Qi4D",
-          "caption": "TaylorMade Qi4D - opción premium para viajar sin su propia bolsa"
-        },
-        {},
-        {
-          "text": "Más marcas, más sets económicos y a menudo opciones de flex que encajan mejor con swings más lentos o con jugadores senior. Tiene sentido cuando importa más el precio o el shaft adecuado que el último modelo."
+          "alt": "Logotipo de Club Rentals Mallorca",
+          "caption": "Club Rentals Mallorca"
         },
         {
-          "alt": "Cobra Fly XL",
-          "caption": "Cobra Fly XL - más económico y perfectamente válido para muchos jugadores de ocio"
-        },
-        {},
-        {
-          "text": "Cancelación flexible, reserva online sencilla y especialmente útil si viene una semana entera o más. Cuanto más largo es el alquiler, más sentido suele tener."
+          "text": "Entrega y recogida personal en hoteles, campos y villas de toda la isla. Los modelos de la temporada actual incluyen TaylorMade Qi4D y Callaway Rogue ST Max para diestros y zurdos, y TaylorMade Kalea para señoras. Los sets de grafito con flex regular empiezan en €55 por 2 días y bajan mucho en alquileres más largos, mientras que los de acero regular o stiff empiezan en €70 por 2 días. Los precios incluyen entrega, recogida y asesoramiento sobre lo que mejor te conviene. Es el extremo premium del mercado, y los golfistas de la costa este pueden incluso usar un servicio gratuito de lanzadera de golf del hotel al campo y vuelta para grupos de hasta 8. Son una opción especialmente buena si valoras el trato personal y la entrega sin complicaciones; indica el código ANDYGOLF10 por <a href=\"https://wa.me/34722691766\">WhatsApp</a> o por <a href=\"mailto:info@clubrentalsmallorca.com\">correo electrónico</a> al reservar para tener entrega prioritaria en tu campo u hotel, además de un pequeño descuento en las bolas de golf que añadas a la reserva."
         },
         {
-          "text": "La decisión real casi nunca es propios palos o cualquier alquiler. Suele ser más bien material actual de un especialista o lo que casualmente haya en el pro shop."
+          "alt": "Palos Callaway Rogue ST Max",
+          "caption": "Callaway Rogue ST Max: material de la temporada actual"
         },
         {
-          "text": "Sets de alquiler del propio campo"
+          "text": "Rent2Play Golf"
         },
         {
-          "text": "La mayoría de los campos tienen sets en el pro shop, normalmente por €35-50. Para una vuelta relajada en un campo de gama media pueden bastar. Para Son Gual, Alcanada o un día premium entero, yo preferiría claramente un set serio de un proveedor especializado."
+          "text": "Opciones de Callaway Rogue y TaylorMade Qi4D, además de algunos sets de la temporada anterior a menor precio. También puedes añadir tees, bolas y los pequeños extras, para ir bien equipado. Un alquiler de TaylorMade Qi4D de 2 días ronda los €62, con entrega posible en aeropuerto, hotel y campo, y en viajes más largos baja a unos €142 por 10 días. Un gran todoterreno con cada vez más clientes muy satisfechos en sus reseñas de Google. Bonus para los lectores de Mr Mallorca Golf: usa el código MRMALLORCAGOLF para un pequeño regalo, según los artículos promocionales disponibles, o añade MRMALLORCAGOLFBALLS para un 10 % de descuento en cualquier compra de bolas nuevas con los palos. Los dos códigos se pueden usar juntos al pagar."
+        },
+        {
+          "alt": "Palos TaylorMade Qi4D",
+          "caption": "TaylorMade Qi4D: opción premium"
+        },
+        {
+          "text": "MyCaddyMaster"
+        },
+        {
+          "text": "Hay otras marcas, con muchas opciones económicas y flex de varilla más adecuados para golfistas senior o de swing más lento. Los alquileres de dos días van de €63 por el Cobra Fly XL hasta €115 por los modelos XXIO 2026. Por 10 días, los mismos sets salen por unos €87 y €209 si reservas online y usas su descuento online. Es posible la recogida y entrega en el aeropuerto, y si reservas pronto algunos sets pueden salir aún más baratos."
+        },
+        {
+          "alt": "Palos Cobra Fly XL",
+          "caption": "Cobra Fly XL: opción económica"
+        },
+        {
+          "text": "ClubsToHire"
+        },
+        {
+          "text": "Cancelación flexible y reserva online sencilla. Los precios son por semana, así que puede funcionar especialmente bien en alquileres largos. El modelo Callaway Quantum Max 2026 ronda los €100 por 2 días, pero solo unos €120 por 10 días, y hay modelos más baratos si intentas controlar el coste."
+        },
+        {
+          "text": "En muchos campos conviene valorar alquilar material de la temporada actual a una empresa especializada en lugar de usar lo que haya en el expositor de la tienda. En muchos casos los palos del campo también son de la temporada actual, pero varía y hay que confirmarlo."
+        },
+        {
+          "text": "Sets de alquiler del campo"
+        },
+        {
+          "text": "La mayoría de los campos tienen sets de alquiler en la tienda, normalmente por €35-50. Bien para un campo de gama media en un día tranquilo. Cada campo tiene marcas distintas, pero espera Callaway, Titleist, TaylorMade y Vice Golf. Muchas opciones decentes si no quieres organizar la entrega, pero a menudo con menos elección y menos certeza de conseguir exactamente el set adecuado para ti, así que planificar con tiempo es imprescindible."
         },
         {
           "text": "Consejos para ahorrar"
@@ -3231,26 +3242,26 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {
           "items": [
             {
-              "label": "Reserve con 7 días o más de margen:",
-              "text": "Muchos proveedores ofrecen 10-20 % de descuento."
+              "label": "Reserva con 7+ días de antelación:",
+              "text": "10-20 % de descuento en la mayoría de las empresas."
             },
             {
-              "label": "Mire tarifa semanal:",
-              "text": "En alquileres largos el precio diario baja mucho."
+              "label": "Tarifa semanal:",
+              "text": "ahorra un 20-30 % si juegas 5+ días."
             },
             {
-              "label": "No sobredimensione el material:",
-              "text": "Para dos vueltas suaves no necesita el set más caro del mercado."
+              "label": "Recogida en el campo:",
+              "text": "gratis en la mayoría de las empresas si los horarios encajan, así que organízalo y ahórrate el dolor de cabeza."
             },
             {
-              "label": "Valore la entrega:",
-              "text": "La comodidad de recibirlo en hotel o campo vale mucho."
+              "label": "Descuento de grupo:",
+              "text": "pregunta si sois 4 o más."
             }
           ]
         },
         {
-          "text": "¿Quiere alquilar palos y aprovechar para hacer el día bien de verdad, ya sea en Son Gual, Alcanada o un campo de ese nivel?",
-          "linkLabel": "Ver la experiencia play-with-a-pro →"
+          "text": "¿Vas a alquilar palos y quieres hacer un día de verdad en Son Gual o Alcanada?",
+          "linkLabel": "Mira cómo es un día completo →"
         }
       ]
     },
@@ -3260,11 +3271,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "description": "Golfschlägerverleih auf Mallorca kostet €25–€65 pro Tag. Beste Unternehmen, Qualität und wie man 2026 das beste Angebot bekommt."
       },
       "meta": {
-        "badge": "Leihschläger",
-        "readTime": "5 Min. Lesezeit",
+        "badge": "Praktischer Ratgeber",
+        "readTime": "6 Min. Lesezeit",
         "updated": "August 2026",
         "title": "Leihschläger auf Mallorca - die praktische Version",
-        "intro": "Bringt man die eigenen Schläger mit oder leiht man vor Ort? Das ist die ehrliche, praktische Antwort.",
+        "intro": "Eigene Schläger mitbringen? Welche Verleiher lohnen sich? Was sollte man zahlen? Ehrlich beantwortet.",
         "related": [
           {
             "slug": "golf-cost-mallorca",
@@ -3286,90 +3297,101 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Leihschläger gehören zu den häufigsten Fragen vor einer Golfreise nach Mallorca. Soll man die eigenen Schläger mitbringen? Gibt es vor Ort wirklich gute Sets? Oder landet man am Ende doch bei etwas Müdegewordenem aus dem Pro Shop?"
+          "text": "Leihschläger gehören zu den häufigsten Themen in den Fragen von Golfern, die eine Reise planen. Soll ich meine Schläger mitbringen? Kann ich brauchbare leihen? Wo und wie viel kostet das? Gibt es am Platz Sets?"
         },
         {
-          "text": "Die ehrliche Antwort: Ja, man kann hier gute Schläger leihen. Aber nicht alle Optionen sind gleich gut. Die Sets direkt am Platz reichen von ordentlich bis fragwürdig. Wer einen ernsthaften Golftag plant, sollte genauer hinschauen."
+          "text": "Die ehrliche Antwort: Ja, hier lassen sich ausgezeichnete Schläger leihen. Die Leihsets am Platz reichen von fragwürdig bis sehr gut. Für jeden Platz, auf dem Qualität und Vertrautheit zählen, lohnt sich ein spezialisierter Verleiher."
         },
         {
-          "text": "Wichtig: Ich biete selbst keine Leihschläger als Service an. Diese Seite ist rein informativ. Wenn Sie wollen, kann ich Sie aber ehrlich in die richtige Richtung weisen."
+          "text": "Hinweis: Ich biete selbst keinen Schlägerverleih an. Dieser Guide ist rein praktisch. Wenn Sie sich bei mir melden, kann ich Ihnen helfen, den richtigen Anbieter für Ihre Reise zu finden."
         },
         {
-          "text": "Eigene Schläger mitbringen oder nicht?"
+          "text": "Eigene Schläger mitbringen?"
         },
         {
-          "text": "Wenn Sie auf einer klaren Golfreise drei oder mehr Runden spielen, bringen Sie Ihre eigenen Schläger mit. Die Airline-Kosten (typisch €30–60 pro Strecke) lohnen sich meistens - für das bessere Gefühl, die bekannten Distanzen und die Sicherheit, keine Kompromisse zu machen."
+          "text": "Wenn Sie auf einer reinen Golfreise drei oder mehr Runden spielen, denken Sie darüber nach, sie mitzubringen. Die Gebühren der Airline (meist €30-60 pro Strecke) lohnen sich bei einer richtigen Reise in der Regel, und es hat einen echten Vorteil, mit Schlägern zu spielen, die man kennt, es sei denn, Ihre Schläger sind Erbstücke von vor zwei Generationen, dann ist es Zeit für ein neues Set!"
         },
         {
-          "text": "Wenn es ein gemischter Urlaub mit ein oder zwei Runden ist, macht Leihe oft mehr Sinn. Gute Spezialanbieter liefern direkt ins Hotel oder an den Platz und ersparen Ihnen das ganze Travel-Bag-Theater am Flughafen."
+          "text": "Bei einem gemischten Urlaub mit ein paar geplanten Runden ist Leihen sinnvoller. Die Spezialanbieter hier haben tolles, aktuelles Material, die Kosten fallen niedriger aus, als die Schläger in beide Richtungen aufzugeben, und es nimmt viel Stress heraus, weil sie darin geübt sind, Ihnen das Leben leicht zu machen."
         },
         {
           "text": "Die wichtigsten Leihanbieter"
         },
-        {},
-        {},
         {
-          "text": "Persönliche Lieferung und Abholung an Hotels, Villen und Plätzen auf der ganzen Insel. Aktuelle Callaway-Rogue-ST-Max-Sets und insgesamt eine saubere, seriöse Option für Besucher, die keinen Aufwand wollen. Besonders empfehlenswert, wenn Sie persönlichen Service und eine unkomplizierte Lieferung schätzen; nennen Sie bei der Buchung per <a href=\"https://wa.me/34722691766\">WhatsApp</a> oder <a href=\"mailto:info@clubrentalsmallorca.com\">E-Mail</a> ANDYGOLF10, um eine bevorzugte Lieferung an Ihren Golfplatz oder Ihr Hotel sowie einen kleinen Rabatt auf mitgebuchte Golfbälle zu erhalten."
+          "text": "Club Rentals Mallorca"
         },
         {
-          "alt": "Callaway Rogue ST Max",
-          "caption": "Callaway Rogue ST Max - aktuelle Ausstattung statt Restbestand"
-        },
-        {},
-        {
-          "text": "Callaway-Rogue- und TaylorMade-Qi4D-Optionen, dazu einige günstigere Sets aus der Vorsaison. Eine gute Allround-Option mit Flughafenlieferung und sinnvoll für Spieler, die solide Qualität ohne Theater wollen. Bonus für Leser von Mr Mallorca Golf: Verwenden Sie den Code MRMALLORCAGOLF für ein kleines Gratisgeschenk, je nachdem welche Werbeartikel verfügbar sind, oder fügen Sie MRMALLORCAGOLFBALLS hinzu, um 10% Rabatt auf neue Golfbälle zu erhalten, die Sie mit den Schlägern kaufen. Beide Codes können zusammen beim Checkout verwendet werden."
+          "alt": "Club Rentals Mallorca Logo",
+          "caption": "Club Rentals Mallorca"
         },
         {
-          "alt": "TaylorMade Qi4D",
-          "caption": "TaylorMade Qi4D - Premiumoption für Reisende ohne eigenes Bag"
-        },
-        {},
-        {
-          "text": "Mehr Marken, mehr Budgetsets und oft auch Flex-Optionen, die für langsamere Schwunggeschwindigkeiten oder Senioren besser passen. Funktioniert gut, wenn Preis oder bestimmte Schäfte wichtiger sind als das neueste Modelljahr."
+          "text": "Persönliche Lieferung und Abholung an Hotels, Plätzen und Villen auf der ganzen Insel. Zu den Modellen der aktuellen Saison gehören TaylorMade Qi4D und Callaway Rogue ST Max für Rechts- und Linkshänder sowie TaylorMade Kalea für Damen. Graphit-Sets mit Regular-Flex starten bei €55 für 2 Tage und werden bei längerer Miete deutlich günstiger, Stahl-Sets in Regular oder Stiff starten bei €70 für 2 Tage. Die Preise enthalten Lieferung, Abholung und Beratung dazu, was für Sie am besten passt. Das obere Ende des Marktes, und Golfer an der Ostküste können für Gruppen bis 8 Personen sogar einen kostenlosen Golf-Shuttle vom Hotel zum Platz und zurück nutzen. Eine besonders gute Wahl, wenn Ihnen persönlicher Service und unkomplizierte Lieferung wichtig sind; nennen Sie bei der Buchung per <a href=\"https://wa.me/34722691766\">WhatsApp</a> oder <a href=\"mailto:info@clubrentalsmallorca.com\">E-Mail</a> den Code ANDYGOLF10 für bevorzugte Lieferung zu Ihrem Platz oder Hotel sowie einen kleinen Rabatt auf Golfbälle, die Sie zur Buchung hinzufügen."
         },
         {
-          "alt": "Cobra Fly XL",
-          "caption": "Cobra Fly XL - budgetfreundlicher und für viele Freizeitspieler völlig ausreichend"
-        },
-        {},
-        {
-          "text": "Flexible Stornierung, unkomplizierte Online-Buchung und oft attraktiv, wenn Sie für eine ganze Woche oder langer leihen. Besonders sinnvoll, wenn die Reise nicht nur aus zwei Runden besteht."
+          "alt": "Callaway Rogue ST Max Schläger",
+          "caption": "Callaway Rogue ST Max - Material der aktuellen Saison"
         },
         {
-          "text": "Die eigentliche Entscheidung ist meist nicht eigene Schläger versus irgendein Leihset. Sie lautet eher: aktuelles Material vom Spezialanbieter oder das, was zufällig im Pro Shop steht."
+          "text": "Rent2Play Golf"
         },
         {
-          "text": "Leihsets direkt am Platz"
+          "text": "Callaway-Rogue- und TaylorMade-Qi4D-Optionen sowie einige Sets der Vorsaison zu einem niedrigeren Preis. Sie können Tees, Bälle und die kleinen Extras gleich mit dazubuchen, damit Sie rundum ausgestattet sind. Ein TaylorMade-Qi4D-Set kostet für 2 Tage rund €62, Lieferung zum Flughafen, Hotel und Platz ist möglich, und bei längeren Reisen sinkt der Preis auf rund €142 für 10 Tage. Ein starker Allrounder mit immer mehr sehr zufriedenen Kunden in den Google-Bewertungen. Bonus für Leser von Mr Mallorca Golf: Mit dem Code MRMALLORCAGOLF gibt es ein kleines Geschenk, je nachdem, welche Werbeartikel gerade verfügbar sind, und mit MRMALLORCAGOLFBALLS 10 % Rabatt auf neue Golfbälle zu den Schlägern. Beide Codes lassen sich an der Kasse kombinieren."
         },
         {
-          "text": "Die meisten Plätze haben Leihsets im Pro Shop, meist für €35-50. Für eine entspannte Mittelfeldrunde können die völlig ausreichen. Für Son Gual, Alcanada oder einen ganzen Premiumtag würde ich persönlich lieber ein gutes Set von einem Spezialanbieter nehmen."
+          "alt": "TaylorMade Qi4D Schläger",
+          "caption": "TaylorMade Qi4D - Premiumoption"
         },
         {
-          "text": "Tipps zum Geld sparen"
+          "text": "MyCaddyMaster"
+        },
+        {
+          "text": "Hier gibt es andere Marken, viele Budgetoptionen und Schaftflexe, die für Senioren oder Spieler mit langsamerem Schwung besser geeignet sind. Zwei-Tages-Mieten reichen von €63 für den Cobra Fly XL bis €115 für die XXIO-2026-Modelle. Für 10 Tage liegen dieselben Sets bei rund €87 und €209, wenn Sie online buchen und den Online-Rabatt nutzen. Abholung und Rückgabe am Flughafen sind möglich, und wer früh bucht, bekommt einige Sets sogar noch günstiger."
+        },
+        {
+          "alt": "Cobra Fly XL Schläger",
+          "caption": "Cobra Fly XL - budgetfreundliche Option"
+        },
+        {
+          "text": "ClubsToHire"
+        },
+        {
+          "text": "Flexible Stornierung und einfache Online-Buchung. Die Preise gelten pro Woche, deshalb passt das besonders gut für längere Mieten. Das Modell Callaway Quantum Max 2026 kostet rund €100 für 2 Tage, aber nur etwa €120 für 10 Tage, und günstigere Modelle gibt es, wenn Sie die Kosten niedrig halten wollen."
+        },
+        {
+          "text": "Bei vielen Plätzen sollten Sie abwägen, ob Sie Material der aktuellen Saison von einem Spezialanbieter mieten, statt zu nehmen, was im Regal des Pro Shops steht. In vielen Fällen stammen auch die Schläger am Platz aus der aktuellen Saison, das variiert aber und sollte bestätigt werden."
+        },
+        {
+          "text": "Leihsets am Platz"
+        },
+        {
+          "text": "Die meisten Plätze haben Leihsets im Pro Shop, meist für €35-50. Für einen Platz im mittleren Segment an einem entspannten Tag völlig in Ordnung. Jeder Platz arbeitet mit anderen Marken, erwarten Sie aber Callaway, Titleist, TaylorMade und Vice Golf. Viele ordentliche Optionen, wenn Sie keine Lieferung organisieren wollen, aber oft weniger Auswahl und weniger Sicherheit, genau das richtige Set für Sie zu bekommen, deshalb ist frühe Planung ein Muss."
+        },
+        {
+          "text": "Tipps zum Geldsparen"
         },
         {
           "items": [
             {
-              "label": "Mindestens 7 Tage vorher buchen:",
-              "text": "Bei vielen Anbietern gibt es dann 10-20 % Rabatt."
+              "label": "7+ Tage im Voraus buchen:",
+              "text": "10-20 % Rabatt bei den meisten Anbietern."
             },
             {
-              "label": "Woche statt Einzeltage buchen:",
-              "text": "Ab längeren Zeiträumen wird der Tagespreis deutlich besser."
+              "label": "Wochenpreis:",
+              "text": "spart 20-30 %, wenn Sie 5+ Tage spielen."
             },
             {
-              "label": "Sinnvoll bleiben:",
-              "text": "Wenn Sie nur zwei lockere Runden spielen, brauchen Sie kein teuerstes Tour-Setup."
+              "label": "Abholung am Platz:",
+              "text": "bei den meisten Anbietern kostenlos, wenn der Zeitplan passt, also arrangieren Sie das und ersparen Sie sich Ärger."
             },
             {
-              "label": "Lieferung mitdenken:",
-              "text": "Hotel- oder Platzlieferung spart Zeit und oft auch Ärger."
+              "label": "Gruppenrabatt:",
+              "text": "fragen Sie nach, wenn Sie zu viert oder mehr sind."
             }
           ]
         },
         {
-          "text": "Sie wollen Schläger leihen und den Tag gleich richtig machen - Son Gual, Alcanada oder etwas Ähnliches?",
-          "linkLabel": "Golf-Tag mit Pro ansehen →"
+          "text": "Sie mieten Schläger und möchten daraus einen richtigen Tag in Son Gual oder Alcanada machen?",
+          "linkLabel": "Sehen Sie, wie ein ganzer Tag aussieht →"
         }
       ]
     },
@@ -3379,11 +3401,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "description": "La location de clubs de golf à Majorque coûte €25–€65 par jour. Meilleures entreprises, qualité et où obtenir la meilleure affaire en 2026."
       },
       "meta": {
-        "badge": "Location",
-        "readTime": "5 min de lecture",
+        "badge": "Guide pratique",
+        "readTime": "6 min de lecture",
         "updated": "Août 2026",
         "title": "Location de clubs à Majorque - la version pratique",
-        "intro": "Apporter ses propres clubs ou louer sur place ? Voici la réponse honnête et utile.",
+        "intro": "Faut-il apporter ses propres clubs ? Quels loueurs valent la peine ? Combien faut-il payer ? Réponses honnêtes.",
         "related": [
           {
             "slug": "golf-cost-mallorca",
@@ -3405,63 +3427,74 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "La location de clubs est l'une des questions qui reviennent le plus avant un voyage golf à Majorque. Faut-il prendre ses propres clubs ? Trouve-t-on vraiment de bons sets sur place ? Ou finit-on avec n'importe quel matériel fatigue du pro shop ?"
+          "text": "La location de clubs est l'un des sujets qui revient le plus dans les questions de golfeurs qui préparent un voyage. Dois-je apporter mes clubs ? Puis-je en louer des corrects ? Où, et pour combien ? Le parcours propose-t-il des sets ?"
         },
         {
-          "text": "La réponse honnête est oui, on peut louer de bons clubs ici. Mais toutes les options ne se valent pas. Les sets du parcours vont de corrects à franchement discutables. Si vous prévoyez une vraie journée de golf, il faut regarder un peu mieux."
+          "text": "La réponse honnête : oui, on peut louer d'excellents clubs ici. Les sets de location des parcours vont de douteux à très bons. Pour tout parcours où la qualité et la familiarité comptent, un loueur spécialisé vaut la peine."
         },
         {
-          "text": "Important : je ne propose pas moi-même de service de location de clubs. Ce guide est purement informatif. En revanche, je peux vous orienter honnêtement vers l'option la plus logique."
+          "text": "Remarque : je ne propose pas de location de clubs directement. Ce guide est purement pratique. Contactez-moi et je pourrai vous orienter vers le bon loueur pour votre voyage."
         },
         {
-          "text": "Faut-il prendre ses propres clubs ?"
+          "text": "Faut-il apporter ses propres clubs ?"
         },
         {
-          "text": "Si vous jouez trois parties ou plus sur un vrai voyage golf, prenez les votres. En général, les frais aériens (typiquement €30–60 par trajet) se justifient pour les sensations, les distances connues et l'absence de compromis."
+          "text": "Si vous jouez trois parties ou plus pendant un voyage dédié au golf, pensez à les apporter. Les frais de compagnie aérienne (généralement €30-60 par trajet) valent le plus souvent la peine pour un vrai séjour, et il y a un vrai avantage à jouer avec des clubs que l'on connaît, sauf si vos clubs ont été hérités d'il y a deux générations, auquel cas il est temps de changer de set !"
         },
         {
-          "text": "Si c'est un séjour mixte avec une ou deux parties, la location est souvent plus intelligente. Les bons spécialistes livrent à l'hôtel ou au parcours et vous évitent tout le théâtre du travel bag dans l'aéroport."
+          "text": "Si vous êtes en vacances mixtes avec quelques parties prévues, louer est plus logique. Les loueurs spécialisés d'ici ont du matériel excellent et à jour, le coût revient moins cher que d'enregistrer les clubs à l'aller et au retour, et cela enlève beaucoup de stress, car ils ont l'habitude de vous simplifier la vie."
         },
         {
-          "text": "Les principaux prestataires"
-        },
-        {},
-        {},
-        {
-          "text": "Livraison et reprise personnelles dans les hôtels, villas et parcours sur toute l'île. Sets Callaway Rogue ST Max récents et une option très propre pour le visiteur qui veut zero friction. C'est un choix particulièrement recommandé si vous appréciez le service personnel et une livraison simple ; indiquez ANDYGOLF10 par <a href=\"https://wa.me/34722691766\">WhatsApp</a> ou par <a href=\"mailto:info@clubrentalsmallorca.com\">e-mail</a> lors de la réservation pour bénéficier d'une livraison prioritaire à votre parcours ou à votre hôtel, ainsi que d'une petite remise sur les balles de golf ajoutées à la réservation."
+          "text": "Les principaux loueurs"
         },
         {
-          "alt": "Callaway Rogue ST Max",
-          "caption": "Callaway Rogue ST Max - du matériel récent, pas un reste de stock"
-        },
-        {},
-        {
-          "text": "Des options Callaway Rogue et TaylorMade Qi4D, avec aussi quelques sets plus économiques des saisons précédentes. Bon compromis pour qui veut une vraie qualité sans payer n'importe quoi. Bonus pour les lecteurs de Mr Mallorca Golf : utilisez le code MRMALLORCAGOLF pour recevoir un petit cadeau offert, selon les articles promotionnels disponibles, ou ajoutez MRMALLORCAGOLFBALLS pour obtenir 10% de remise sur tout achat de balles neuves avec les clubs. Les deux codes peuvent être utilisés ensemble au moment du paiement."
+          "text": "Club Rentals Mallorca"
         },
         {
-          "alt": "TaylorMade Qi4D",
-          "caption": "TaylorMade Qi4D - option premium pour voyager sans son propre sac"
-        },
-        {},
-        {
-          "text": "Plus de marques, plus de sets budget et souvent des options de flex mieux adaptées aux swings plus lents ou aux joueurs seniors. Utile quand le prix ou le shaft juste importe davantage que le dernier modèle sorti."
+          "alt": "Logo de Club Rentals Mallorca",
+          "caption": "Club Rentals Mallorca"
         },
         {
-          "alt": "Cobra Fly XL",
-          "caption": "Cobra Fly XL - plus abordable et largement suffisant pour beaucoup de joueurs loisirs"
-        },
-        {},
-        {
-          "text": "Annulation flexible, réservation simple et souvent très logique si vous louez une semaine complète ou davantage. Plus la durée s'allonge, plus le tarif devient intéressant."
+          "text": "Livraison et récupération personnelles dans les hôtels, parcours et villas de toute l'île. Les modèles de la saison actuelle comprennent des TaylorMade Qi4D et Callaway Rogue ST Max pour droitiers et gauchers, et des TaylorMade Kalea pour dames. Les sets graphite en flex regular démarrent à €55 pour 2 jours et baissent fortement pour les locations plus longues, tandis que les sets acier regular ou stiff démarrent à €70 pour 2 jours. Les prix comprennent la livraison, la récupération et des conseils sur ce qui vous convient le mieux. Le haut de gamme du marché, et les golfeurs de la côte est peuvent même profiter d'une navette golf gratuite de l'hôtel au parcours et retour pour des groupes jusqu'à 8. Un choix particulièrement solide si vous appréciez le service personnalisé et une livraison sans complication ; indiquez le code ANDYGOLF10 par <a href=\"https://wa.me/34722691766\">WhatsApp</a> ou par <a href=\"mailto:info@clubrentalsmallorca.com\">e-mail</a> lors de la réservation pour une livraison prioritaire à votre parcours ou hôtel, ainsi qu'une petite remise sur les balles de golf ajoutées à la réservation."
         },
         {
-          "text": "Le vrai choix n'est généralement pas ses clubs contre n'importe quel set de location. C'est plutôt du matériel récent chez un spécialiste contre ce qui traine au pro shop."
+          "alt": "Clubs Callaway Rogue ST Max",
+          "caption": "Callaway Rogue ST Max - matériel de la saison actuelle"
+        },
+        {
+          "text": "Rent2Play Golf"
+        },
+        {
+          "text": "Des options Callaway Rogue et TaylorMade Qi4D ainsi que quelques sets de la saison précédente à prix réduit. Vous pouvez aussi ajouter des tees, des balles et les petits extras, pour être bien équipé. Une location de TaylorMade Qi4D pour 2 jours revient à environ €62, avec livraison possible à l'aéroport, à l'hôtel et au parcours, et pour les séjours plus longs le prix descend à environ €142 pour 10 jours. Un excellent généraliste, avec de plus en plus de clients très satisfaits dans ses avis Google. Bonus pour les lecteurs de Mr Mallorca Golf : utilisez le code MRMALLORCAGOLF pour un petit cadeau, selon les articles promotionnels disponibles, ou ajoutez MRMALLORCAGOLFBALLS pour 10 % de remise sur tout achat de balles neuves avec les clubs. Les deux codes peuvent être utilisés ensemble au moment du paiement."
+        },
+        {
+          "alt": "Clubs TaylorMade Qi4D",
+          "caption": "TaylorMade Qi4D - option premium"
+        },
+        {
+          "text": "MyCaddyMaster"
+        },
+        {
+          "text": "D'autres marques sont proposées, avec beaucoup d'options économiques et des flex de shaft mieux adaptés aux golfeurs seniors ou au swing plus lent. Les locations de deux jours vont de €63 pour le Cobra Fly XL à €115 pour les modèles XXIO 2026. Pour 10 jours, les mêmes sets reviennent à environ €87 et €209 si vous réservez en ligne et utilisez leur remise en ligne. La prise en charge et la dépose à l'aéroport sont possibles, et en réservant tôt certains sets peuvent même coûter moins cher."
+        },
+        {
+          "alt": "Clubs Cobra Fly XL",
+          "caption": "Cobra Fly XL - option économique"
+        },
+        {
+          "text": "ClubsToHire"
+        },
+        {
+          "text": "Annulation flexible et réservation en ligne facile. Les tarifs sont à la semaine, ce qui peut convenir particulièrement bien aux locations longues. Le modèle Callaway Quantum Max 2026 coûte environ €100 pour 2 jours mais seulement environ €120 pour 10 jours, et des modèles moins chers existent si vous voulez limiter les coûts."
+        },
+        {
+          "text": "Pour de nombreux parcours, il faut comparer la location de matériel de la saison actuelle auprès d'un loueur spécialisé et l'utilisation de ce qui se trouve dans le rack du pro-shop. Souvent, les clubs du parcours sont aussi de la saison actuelle, mais cela varie et doit être confirmé."
         },
         {
           "text": "Sets de location du parcours"
         },
         {
-          "text": "La plupart des parcours ont des sets au pro shop, en général entre 35 et €50. Pour une partie détendue sur un parcours de milieu de gamme, cela peut suffire. Pour Son Gual, Alcanada ou une vraie journée premium, je préférerais clairement un set sérieux d'un spécialiste."
+          "text": "La plupart des parcours proposent des sets de location au pro-shop, généralement à €35-50. Convenable pour un parcours de milieu de gamme lors d'une journée décontractée. Chaque parcours a ses propres marques, mais attendez-vous à du Callaway, Titleist, TaylorMade et Vice Golf. Beaucoup d'options correctes si vous ne voulez pas organiser de livraison, mais souvent moins de choix et moins de certitude d'obtenir exactement le bon set, donc il faut absolument planifier tôt."
         },
         {
           "text": "Conseils pour économiser"
@@ -3469,26 +3502,26 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {
           "items": [
             {
-              "label": "Réserver au moins 7 jours à l'avance :",
-              "text": "beaucoup d'acteurs proposent 10-20 % de remise."
+              "label": "Réservez 7+ jours à l'avance :",
+              "text": "10-20 % de remise chez la plupart des loueurs."
             },
             {
-              "label": "Regarder le tarif hebdomadaire :",
-              "text": "des que la location dure, le coût journalier baisse nettement."
+              "label": "Tarif à la semaine :",
+              "text": "économise 20-30 % si vous jouez 5+ jours."
             },
             {
-              "label": "Rester raisonnable :",
-              "text": "pour deux parties detendues, vous n'avez pas besoin du set le plus cher."
+              "label": "Récupération au parcours :",
+              "text": "gratuite chez la plupart des loueurs si les horaires s'y prêtent, alors organisez-la et évitez-vous un casse-tête."
             },
             {
-              "label": "Valoriser la livraison :",
-              "text": "recevoir le matériel à l'hôtel ou au parcours fait gagner du temps et des nerfs."
+              "label": "Remise de groupe :",
+              "text": "demandez-la pour les groupes de 4 ou plus."
             }
           ]
         },
         {
-          "text": "Vous voulez louer des clubs et en profiter pour faire la journée correctement - Son Gual, Alcanada ou quelque chose de ce niveau ?",
-          "linkLabel": "Voir l'expérience play-with-a-pro →"
+          "text": "Vous louez des clubs et voulez faire de votre journée à Son Gual ou à Alcanada un vrai moment ?",
+          "linkLabel": "Découvrez à quoi ressemble une journée complète →"
         }
       ]
     },
@@ -3498,11 +3531,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "description": "Golfspelenset verhuur op Mallorca kost €25–€65 per dag. Beste bedrijven, kwaliteit en waar je de beste deal in 2026 krijgt."
       },
       "meta": {
-        "badge": "Clubhuur",
-        "readTime": "5 min leestijd",
+        "badge": "Praktische gids",
+        "readTime": "6 min leestijd",
         "updated": "Augustus 2026",
         "title": "Clubhuur op Mallorca - de praktische versie",
-        "intro": "Eigen clubs meenemen of op het eiland huren? Dit is het eerlijke, bruikbare antwoord.",
+        "intro": "Eigen clubs meenemen? Welke verhuurbedrijven zijn de moeite waard? Wat is een redelijke prijs? Eerlijk beantwoord.",
         "related": [
           {
             "slug": "golf-cost-mallorca",
@@ -3524,90 +3557,101 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Clubhuur is een van de meest voorkomende vragen voor een golfreis naar Mallorca. Loont het om de eigen clubs mee te nemen? Kun je hier echt goede sets huren? Of eindig je toch met een vermoeid pro-shop-setje?"
+          "text": "Clubhuur is een van de meest voorkomende thema's in de vragen die ik krijg van golfers die een reis plannen. Moet ik mijn clubs meenemen? Kan ik fatsoenlijke huren? Waar, en voor hoeveel? Heeft de baan sets beschikbaar?"
         },
         {
-          "text": "Het eerlijke antwoord is: ja, je kunt hier goede clubs huren. Maar niet alle opties zijn gelijk. De sets van de baan zelf lopen van behoorlijk tot twijfelachtig. Voor een serieuze golfdag zou ik iets gerichter kiezen."
+          "text": "Het eerlijke antwoord: ja, je kunt hier uitstekende clubs huren. Huursets op de baan lopen uiteen van twijfelachtig tot heel goed. Voor elke baan waar kwaliteit en vertrouwdheid tellen, is een gespecialiseerd verhuurbedrijf het gebruiken waard."
         },
         {
-          "text": "Belangrijk: ik bied zelf geen clubhuur aan als dienst. Deze gids is puur informatief. Als je wilt, kan ik wel eerlijk aangeven welke richting het meest logisch is."
+          "text": "Let op: ik bied zelf geen clubhuur aan. Deze gids is puur praktisch. Neem contact met me op, dan wijs ik je graag naar het juiste bedrijf voor jouw reis."
         },
         {
-          "text": "Eigen clubs meenemen of niet?"
+          "text": "Je eigen clubs meenemen?"
         },
         {
-          "text": "Speel je drie rondes of meer op een echte golfreis, neem dan je eigen clubs mee. De airlinekosten (typisch €30–60 per traject) zijn het meestal waard voor gevoel, bekende afstanden en het vermijden van concessies."
+          "text": "Als je drie rondes of meer speelt op een echte golfreis, overweeg dan om ze mee te nemen. De kosten van de airline (meestal €30-60 per enkele reis) zijn bij een serieuze reis meestal de moeite waard, en het is echt een voordeel om met clubs te spelen die je kent, tenzij je clubs afgedankt zijn van twee generaties terug, dan is het tijd voor een nieuwe set!"
         },
         {
-          "text": "Is het een gemengde vakantie met een of twee rondes, dan is huren vaak slimmer. Goede specialisten leveren aan hotel of baan en besparen je het hele travel-bag-circus op de luchthaven."
+          "text": "Ben je op een gemengde vakantie met een paar geplande rondes, dan is huren logischer. De gespecialiseerde bedrijven hier hebben prima, actuele apparatuur, de kosten vallen lager uit dan clubs heen en terug inchecken, en het scheelt veel stress omdat zij ervaren zijn in het je makkelijk maken."
         },
         {
-          "text": "De belangrijkste verhuurders"
-        },
-        {},
-        {},
-        {
-          "text": "Persoonlijke levering en ophalen bij hotels, villa's en banen over het hele eiland. Recente Callaway Rogue ST Max-sets en een nette optie voor bezoekers die geen gedoe willen. Een bijzonder sterke keuze als je persoonlijke service en eenvoudige levering waardeert; vermeld ANDYGOLF10 bij je boeking via <a href=\"https://wa.me/34722691766\">WhatsApp</a> of <a href=\"mailto:info@clubrentalsmallorca.com\">e-mail</a> voor prioriteitslevering aan je golfbaan of hotel, plus een kleine korting op golfballen die je aan de boeking toevoegt."
+          "text": "De belangrijkste verhuurbedrijven"
         },
         {
-          "alt": "Callaway Rogue ST Max",
-          "caption": "Callaway Rogue ST Max - recent materiaal, geen restpartij"
-        },
-        {},
-        {
-          "text": "Callaway Rogue- en TaylorMade Qi4D-opties, plus wat goedkopere sets uit eerdere seizoenen. Sterke middenweg voor wie serieuze kwaliteit wil zonder onnodig veel te betalen. Bonus voor lezers van Mr Mallorca Golf: gebruik code MRMALLORCAGOLF voor een klein gratis extraatje, afhankelijk van welke promotieartikelen beschikbaar zijn, of voeg MRMALLORCAGOLFBALLS toe voor 10% korting op nieuwe golfballen die je samen met de clubs koopt. Beide codes kunnen samen worden gebruikt bij het afrekenen."
+          "text": "Club Rentals Mallorca"
         },
         {
-          "alt": "TaylorMade Qi4D",
-          "caption": "TaylorMade Qi4D - premiumkeuze als je zonder eigen tas reist"
-        },
-        {},
-        {
-          "text": "Meer merken, meer budgetsets en vaak flexopties die beter passen bij langzamere swings of senior golfers. Logisch wanneer prijs of de juiste shaft belangrijker is dan het allernieuwste model."
+          "alt": "Logo van Club Rentals Mallorca",
+          "caption": "Club Rentals Mallorca"
         },
         {
-          "alt": "Cobra Fly XL",
-          "caption": "Cobra Fly XL - betaalbaarder en voor veel recreatieve golfers meer dan genoeg"
-        },
-        {},
-        {
-          "text": "Flexibele annulering, eenvoudige boeking en vaak vooral interessant wanneer je een volle week of langer huurt. Hoe langer de huur, hoe logischer het vaak wordt."
+          "text": "Persoonlijke levering en ophalen bij hotels, banen en villa's overal op het eiland. Modellen van het huidige seizoen zijn onder meer TaylorMade Qi4D en Callaway Rogue ST Max voor rechts- en linkshandigen en TaylorMade Kalea voor dames. Grafiet regular-flex sets beginnen bij €55 voor 2 dagen en worden bij langer huren flink goedkoper, terwijl stalen regular- of stiff-sets beginnen bij €70 voor 2 dagen. De prijzen zijn inclusief levering, ophalen en advies over wat het beste bij je past. Het premium segment van de markt, en golfers aan de oostkust kunnen zelfs gratis gebruikmaken van een golfshuttle van hotel naar baan en terug voor groepen tot 8. Een bijzonder sterke keuze als je persoonlijke service en eenvoudige levering waardeert; noem bij het boeken via <a href=\"https://wa.me/34722691766\">WhatsApp</a> of <a href=\"mailto:info@clubrentalsmallorca.com\">e-mail</a> de code ANDYGOLF10 voor voorrangslevering op je baan of hotel, plus een kleine korting op golfballen die je aan de boeking toevoegt."
         },
         {
-          "text": "De echte keuze is meestal niet eigen clubs versus zomaar een huurset. Het is eerder recent materiaal van een specialist versus wat er toevallig in de pro shop staat."
+          "alt": "Callaway Rogue ST Max clubs",
+          "caption": "Callaway Rogue ST Max - materiaal van het huidige seizoen"
         },
         {
-          "text": "Huurssets van de baan zelf"
+          "text": "Rent2Play Golf"
         },
         {
-          "text": "De meeste banen hebben sets in de pro shop, meestal tussen €35 en €50. Voor een ontspannen ronde op een middenklassebaan kan dat prima genoeg zijn. Voor Son Gual, Alcanada of een volwaardige premiumdag zou ik liever een serieuze set van een specialist nemen."
+          "text": "Callaway Rogue- en TaylorMade Qi4D-opties en ook enkele sets van het vorige seizoen voor een lagere prijs. Je kunt ook tees, ballen en de kleine extra's toevoegen, zodat je goed voorbereid bent. Een TaylorMade Qi4D-huur van 2 dagen kost ongeveer €62, met levering op luchthaven, hotel en baan mogelijk, en bij langere reizen zakt de prijs naar ongeveer €142 voor 10 dagen. Een goede allrounder met een groeiend aantal zeer tevreden klanten in de Google-reviews. Bonus voor lezers van Mr Mallorca Golf: gebruik code MRMALLORCAGOLF voor een klein cadeautje, afhankelijk van welke promotionele items beschikbaar zijn, of voeg MRMALLORCAGOLFBALLS toe voor 10% korting op nieuwe golfballen bij de clubs. Beide codes kunnen bij het afrekenen samen worden gebruikt."
         },
         {
-          "text": "Tips om geld te besparen"
+          "alt": "TaylorMade Qi4D clubs",
+          "caption": "TaylorMade Qi4D - premiumoptie"
+        },
+        {
+          "text": "MyCaddyMaster"
+        },
+        {
+          "text": "Er zijn andere merken beschikbaar, met veel budgetopties en shaftflexen die beter passen bij senioren of golfers met een langzamere swing. Huur voor twee dagen loopt van €63 voor de Cobra Fly XL tot €115 voor de XXIO 2026-modellen. Voor 10 dagen komen dezelfde sets uit op ongeveer €87 en €209 als je online boekt en hun online korting gebruikt. Ophalen en terugbrengen op de luchthaven is mogelijk, en bij vroeg boeken zijn sommige sets nog goedkoper."
+        },
+        {
+          "alt": "Cobra Fly XL clubs",
+          "caption": "Cobra Fly XL - budgetvriendelijke optie"
+        },
+        {
+          "text": "ClubsToHire"
+        },
+        {
+          "text": "Flexibel annuleren en eenvoudig online boeken. De prijzen gelden per week, dus het kan vooral goed werken voor langere huur. Het model Callaway Quantum Max 2026 kost ongeveer €100 voor 2 dagen maar slechts zo'n €120 voor 10 dagen, en er zijn goedkopere modellen als je de kosten laag wilt houden."
+        },
+        {
+          "text": "Voor veel banen moet je afwegen of je materiaal van het huidige seizoen huurt bij een gespecialiseerd bedrijf in plaats van te gebruiken wat er in het rek van de proshop staat. In veel gevallen zijn de clubs op de baan ook van het huidige seizoen, maar dat verschilt en moet worden bevestigd."
+        },
+        {
+          "text": "Huursets op de baan"
+        },
+        {
+          "text": "De meeste banen hebben huursets in de proshop, meestal €35-50. Prima voor een baan in het middensegment op een ontspannen dag. Elke baan heeft andere merken, maar verwacht Callaway, Titleist, TaylorMade en Vice Golf. Genoeg degelijke opties als je geen levering wilt regelen, maar vaak minder keuze en minder zekerheid dat je precies de juiste set krijgt, dus vroeg plannen is een must."
+        },
+        {
+          "text": "Tips om te besparen"
         },
         {
           "items": [
             {
-              "label": "Minimaal 7 dagen vooraf boeken:",
-              "text": "veel aanbieders geven dan 10-20 % korting."
+              "label": "Boek 7+ dagen vooruit:",
+              "text": "10-20% korting bij de meeste bedrijven."
             },
             {
-              "label": "Kijk naar weektarieven:",
-              "text": "bij langere huur zakt de dagprijs flink."
+              "label": "Weektarief:",
+              "text": "bespaart 20-30% als je 5+ dagen speelt."
             },
             {
-              "label": "Blijf realistisch:",
-              "text": "voor twee rustige rondes heb je het duurste tourset niet nodig."
+              "label": "Ophalen op de baan:",
+              "text": "bij de meeste bedrijven gratis als de timing past, dus regel het en bespaar jezelf gedoe."
             },
             {
-              "label": "Waardeer de levering:",
-              "text": "materiaal bij hotel of baan ontvangen bespaart veel tijd."
+              "label": "Groepskorting:",
+              "text": "vraag ernaar bij groepen van 4 of meer."
             }
           ]
         },
         {
-          "text": "Wil je clubs huren en de dag meteen goed opzetten - Son Gual, Alcanada of iets van dat niveau?",
-          "linkLabel": "Bekijk de play-with-a-pro ervaring →"
+          "text": "Clubs huren en er een echte dag van maken op Son Gual of Alcanada?",
+          "linkLabel": "Zie hoe een volledige dag eruitziet →"
         }
       ]
     },
@@ -3617,11 +3661,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "description": "Golfklubbuthyrning på Mallorca kostar €25–€65 per dag. Bästa företag, kvalitet och var man får det bästa erbjudandet 2026."
       },
       "meta": {
-        "badge": "Klubbhyra",
-        "readTime": "5 min läsning",
+        "badge": "Praktisk guide",
+        "readTime": "6 min läsning",
         "updated": "Augusti 2026",
         "title": "Klubbhyra på Mallorca - den praktiska versionen",
-        "intro": "Ta med egna klubbor eller hyra på plats? Har är det raka, användbara svaret.",
+        "intro": "Ska du ta med egna klubbor? Vilka uthyrare är värda att använda? Vad bör du betala? Ärligt besvarat.",
         "related": [
           {
             "slug": "golf-cost-mallorca",
@@ -3643,63 +3687,74 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Klubbhyra är en av de vanligaste frågorna inför en golfresa till Mallorca. Är det värt att ta med sina egna klubbor? Går det att hyra något riktigt bra här? Eller slutar man med ett trött set från proshopen?"
+          "text": "Klubbhyra är ett av de vanligaste temana i frågorna jag får från golfare som planerar en resa. Ska jag ta med mina klubbor? Kan jag hyra hyfsade? Var, och hur mycket? Har banan set att hyra?"
         },
         {
-          "text": "Det raka svaret är att ja, det går att hyra bra klubbor här. Men alla alternativ är inte lika bra. Banornas egna set sträcker sig från fullt okej till tveksamma. Ska du ha en seriöst upplagd golfdag skulle jag titta lite noggrannare."
+          "text": "Det ärliga svaret: ja, du kan hyra utmärkta klubbor här. Hyrset på banorna varierar från tveksamma till mycket bra. För varje bana där kvalitet och vana spelar roll är ett specialiserat uthyrningsföretag värt att använda."
         },
         {
-          "text": "Viktigt: jag erbjuder inte klubbhyra som tjänst. Den här guiden är bara informativ. Om du vill kan jag däremot peka dig i en vettig riktning."
+          "text": "Observera: jag erbjuder inte klubbhyra själv. Den här guiden är rent praktisk. Hör av dig så kan jag hjälpa dig att hitta rätt företag för din resa."
         },
         {
-          "text": "Ta med egna klubbor eller inte?"
+          "text": "Ska du ta med egna klubbor?"
         },
         {
-          "text": "Spelar du tre rundor eller fler på en ren golfresa, ta med dina egna. Flygkostnaden (typiskt €30–60 per sträcka) brukar vara värd det för känslan, avstanden och för att slippa kompromissa."
+          "text": "Om du spelar tre rundor eller fler på en renodlad golfresa, överväg att ta med dem. Flygbolagens avgifter (vanligtvis €30-60 per håll) är oftast värda det på en riktig resa, och det är en verklig fördel att spela med klubbor du känner, om inte dina klubbor är ärvda från två generationer tillbaka, då är det dags för ett nytt set!"
         },
         {
-          "text": "Är det en blandad semester med en eller två rundor är hyrning ofta smartare. Bra specialister levererar till hotellet eller banan och sparar dig hela travel-bag-cirkusen genom flygplatsen."
+          "text": "Om du är på en blandad semester med några rundor inplanerade är det mer rimligt att hyra. Specialistföretagen här har bra och uppdaterad utrustning, kostnaden blir lägre än att checka in klubborna båda vägarna, och det minskar mycket stress eftersom de är vana vid att göra det enkelt för dig."
         },
         {
           "text": "De viktigaste uthyrarna"
         },
-        {},
-        {},
         {
-          "text": "Personlig leverans och upphämtning vid hotell, villor och banor över hela ön. Nyare Callaway Rogue ST Max-set och ett stabilt val för besökaren som vill ha minimalt strul. Ett särskilt bra val om du uppskattar personlig service och enkel leverans; ange ANDYGOLF10 när du bokar via <a href=\"https://wa.me/34722691766\">WhatsApp</a> eller <a href=\"mailto:info@clubrentalsmallorca.com\">e-post</a> för prioriterad leverans till golfbanan eller hotellet, plus en mindre rabatt på golfbollar som läggs till i bokningen."
+          "text": "Club Rentals Mallorca"
         },
         {
-          "alt": "Callaway Rogue ST Max",
-          "caption": "Callaway Rogue ST Max - nytt material, inte gammalt restlager"
-        },
-        {},
-        {
-          "text": "Callaway Rogue- och TaylorMade Qi4D-alternativ, plus lite billigare set från tidigare säsonger. Ett bra mellanalternativ för den som vill ha riktig kvalitet utan att overbetala. Bonus för läsare av Mr Mallorca Golf: använd koden MRMALLORCAGOLF för en liten kostnadsfri gåva, beroende på vilka kampanjartiklar som finns tillgängliga, eller lägg till MRMALLORCAGOLFBALLS för 10% rabatt på nya golfbollar som köps tillsammans med klubborna. Båda koderna kan användas samtidigt i kassan."
+          "alt": "Club Rentals Mallorca-logotyp",
+          "caption": "Club Rentals Mallorca"
         },
         {
-          "alt": "TaylorMade Qi4D",
-          "caption": "TaylorMade Qi4D - premiumval för resenärer utan eget bag"
-        },
-        {},
-        {
-          "text": "Fler marken, fler budgetset och ofta flexalternativ som passar bättre för långsammare svinghastigheter eller seniorspelare. Logiskt när pris eller rätt skaft är viktigare an det senaste modellaret."
+          "text": "Personlig leverans och hämtning till hotell, banor och villor över hela ön. Modeller för innevarande säsong inkluderar TaylorMade Qi4D och Callaway Rogue ST Max för höger- och vänsterhänta samt TaylorMade Kalea för damer. Grafitset med regular flex börjar på €55 för 2 dagar och blir betydligt billigare vid längre hyra, medan stålset i regular eller stiff börjar på €70 för 2 dagar. Priserna inkluderar leverans, hämtning och råd om vad som passar dig bäst. Marknadens premiumsegment, och golfare på östkusten kan till och med använda en gratis golfshuttle från hotell till bana och tillbaka för grupper på upp till 8. Ett särskilt bra val om du uppskattar personlig service och okomplicerad leverans; ange koden ANDYGOLF10 via <a href=\"https://wa.me/34722691766\">WhatsApp</a> eller <a href=\"mailto:info@clubrentalsmallorca.com\">e-post</a> vid bokning för prioriterad leverans till din bana eller ditt hotell, plus en liten rabatt på golfbollar du lägger till bokningen."
         },
         {
-          "alt": "Cobra Fly XL",
-          "caption": "Cobra Fly XL - billigare och fullt tillräckligt för många fritidsgolfare"
-        },
-        {},
-        {
-          "text": "Flexibla avbokningsvillkor, enkel onlinebokning och ofta mest logiskt om du hyr en hel vecka eller laengre. Ju laengre uthyrningen är, desto bättre blir ofta kalkylen."
+          "alt": "Callaway Rogue ST Max-klubbor",
+          "caption": "Callaway Rogue ST Max - utrustning för innevarande säsong"
         },
         {
-          "text": "Det riktiga valet är oftast inte egna klubbor eller vilken hyra som helst. Det är snarare nytt material från en specialist eller det som rakar stå i pro shopen."
+          "text": "Rent2Play Golf"
         },
         {
-          "text": "Hyresset direkt från banan"
+          "text": "Callaway Rogue- och TaylorMade Qi4D-alternativ samt några set från föregående säsong till lägre pris. Du kan också lägga till tees, bollar och de små extra sakerna så att du är ordentligt utrustad. En TaylorMade Qi4D-hyra på 2 dagar kostar runt €62, med leverans till flygplats, hotell och bana möjlig, och vid längre resor sjunker priset till runt €142 för 10 dagar. En bra allroundare med allt fler mycket nöjda kunder i Google-recensionerna. Bonus för läsare av Mr Mallorca Golf: använd koden MRMALLORCAGOLF för en liten present, beroende på vilka reklamartiklar som finns, eller lägg till MRMALLORCAGOLFBALLS för 10 % rabatt på nya golfbollar tillsammans med klubborna. Båda koderna kan användas tillsammans i kassan."
         },
         {
-          "text": "De flesta banor har set i pro shopen, vanligtvis för €35-50. För en avslappnad rond på en mellanbana kan det vara fullt tillräckligt. För Son Gual, Alcanada eller en premiumdag skulle jag hellre ta ett ordentligt set från en specialist."
+          "alt": "TaylorMade Qi4D-klubbor",
+          "caption": "TaylorMade Qi4D - premiumalternativ"
+        },
+        {
+          "text": "MyCaddyMaster"
+        },
+        {
+          "text": "Här finns andra märken, med gott om budgetalternativ och shaftflexar som passar seniorer eller långsammare svingar bättre. Tvådagarshyra går från €63 för Cobra Fly XL upp till €115 för XXIO 2026-modellerna. För 10 dagar hamnar samma set runt €87 och €209 om du bokar online och använder deras onlinerabatt. Hämtning och lämning på flygplatsen är möjlig, och bokar du tidigt kan vissa set bli ännu billigare."
+        },
+        {
+          "alt": "Cobra Fly XL-klubbor",
+          "caption": "Cobra Fly XL - budgetvänligt alternativ"
+        },
+        {
+          "text": "ClubsToHire"
+        },
+        {
+          "text": "Flexibel avbokning och enkel onlinebokning. Priserna är per vecka, så det kan fungera särskilt bra för längre hyra. Modellen Callaway Quantum Max 2026 kostar runt €100 för 2 dagar men bara cirka €120 för 10 dagar, och billigare modeller finns om du vill hålla kostnaden nere."
+        },
+        {
+          "text": "På många banor behöver du väga in att hyra utrustning för innevarande säsong från ett specialistföretag i stället för att använda det som står i stället i golfshopen. I många fall är klubborna på banan också från innevarande säsong, men det varierar och måste bekräftas."
+        },
+        {
+          "text": "Hyrset på banan"
+        },
+        {
+          "text": "De flesta banor har hyrset i golfshopen, vanligtvis €35-50. Helt okej för en medelklassbana en avslappnad dag. Olika banor har olika märken, men räkna med Callaway, Titleist, TaylorMade och Vice Golf. Gott om hyfsade alternativ om du inte vill ordna leverans, men ofta mindre urval och mindre säkerhet att få exakt rätt set för dig, så tidig planering är ett måste."
         },
         {
           "text": "Tips för att spara pengar"
@@ -3707,26 +3762,26 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         {
           "items": [
             {
-              "label": "Boka minst 7 dagar i forvag:",
-              "text": "många företag ger då 10-20 % rabatt."
+              "label": "Boka 7+ dagar i förväg:",
+              "text": "10-20 % rabatt hos de flesta företag."
             },
             {
-              "label": "Titta på veckopriser:",
-              "text": "vid laengre hyror faller dagskostnaden tydligt."
+              "label": "Veckopris:",
+              "text": "sparar 20-30 % om du spelar 5+ dagar."
             },
             {
-              "label": "Var rimlig:",
-              "text": "för två lugna rundor behöver du inte det dyraste toursetet."
+              "label": "Hämtning på banan:",
+              "text": "gratis hos de flesta företag om tiderna fungerar, så ordna det och spara dig huvudvärken."
             },
             {
-              "label": "Rakna in leveransen:",
-              "text": "att få klubborna till hotellet eller banan sparar mycket tid."
+              "label": "Grupprabatt:",
+              "text": "fråga om ni är 4 eller fler."
             }
           ]
         },
         {
-          "text": "Vill du hyra klubbor och samtidigt göra dagen ordentligt - Son Gual, Alcanada eller något på den nivån?",
-          "linkLabel": "Se play-with-a-pro upplevelsen →"
+          "text": "Hyr du klubbor och vill göra en riktig dag av det på Son Gual eller Alcanada?",
+          "linkLabel": "Se hur en hel dag ser ut →"
         }
       ]
     },
@@ -3736,11 +3791,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "description": "马略卡高尔夫球具租赁每天€25-€65。最好的租赁公司、质量和如何在2026年获得最佳价格。"
       },
       "meta": {
-        "badge": "租杆指南",
-        "readTime": "5分钟阅读",
+        "badge": "实用指南",
+        "readTime": "6分钟阅读",
         "updated": "2026年8月",
         "title": "马略卡租杆指南：实用版",
-        "intro": "自己的杆要不要带？当地租够不够好？这是不绕弯子的版本。",
+        "intro": "该不该自带球杆？哪些租杆公司值得选？价格多少算合理？诚实回答。",
         "related": [
           {
             "slug": "golf-cost-mallorca",
@@ -3762,90 +3817,101 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "来马略卡打球前，租杆几乎是每个人都会问的问题。到底要不要带自己的杆？这里能不能租到真正像样的套杆？还是最后只能拿会所里一套状态一般的杆凑合？"
+          "text": "租杆是我收到的、关于计划行程的球手提问中最常见的话题之一。我要不要带自己的球杆？能租到像样的吗？去哪里租，多少钱？球场有租杆吗？"
         },
         {
-          "text": "诚实答案是：能租到不错的杆，但不是所有选择都一样好。球场自带的租杆，从“还可以”到“将就用”都有。如果你打算认真打一两场，最好别只看最省事的选项。"
+          "text": "诚实的回答：可以，这里能租到非常出色的球杆。球场自己的租杆套装从让人存疑到非常好都有。对于任何看重品质和熟悉感的球场，专业租杆公司都值得选择。"
         },
         {
-          "text": "先说清楚：我自己不提供租杆服务。这篇内容只是信息指南。不过如果你问我，我可以很直接地告诉你哪种方式更适合你。"
+          "text": "说明：我本人不直接提供租杆服务。这份指南纯粹是实用信息。如果你联系我，我可以帮你找到适合这次行程的公司。"
         },
         {
-          "text": "自己的杆要不要带？"
+          "text": "要不要带自己的球杆？"
         },
         {
-          "text": "如果你这次是明确的高尔夫之旅，而且会打三轮或以上，我建议带自己的杆。航空托运费用通常是值得的，因为手感、距离感和信心都不一样。"
+          "text": "如果你在专门的高尔夫行程中要打三轮或更多，建议带上自己的球杆。航空公司的托运费（通常每程 €30-60）对一次正式的行程来说通常值得，而且用熟悉的球杆打球确实有优势，除非你的球杆是两代人以前传下来的，那就该换新的了！"
         },
         {
-          "text": "如果是混合型假期，只安排一两轮，租杆通常更合理。好的专业租杆公司可以送到酒店或球场，省掉你带travel bag穿机场的全部麻烦。"
+          "text": "如果你是混合型度假、只安排了几轮球，租杆更合理。这里的专业公司设备出色且是最新款，成本比来回托运球杆更低，也能省掉很多麻烦，因为他们很擅长让你的事情变简单。"
         },
         {
-          "text": "主要租杆公司"
-        },
-        {},
-        {},
-        {
-          "text": "能送到酒店、别墅和球场，覆盖全岛。主打较新的Callaway Rogue ST Max套杆，是那种想省心、不想踩坑的人会选的公司。如果你看重一对一服务和省心的配送，这家很值得考虑；通过<a href=\"https://wa.me/34722691766\">WhatsApp</a>或<a href=\"mailto:info@clubrentalsmallorca.com\">电子邮件</a>预订时报代码ANDYGOLF10，可优先送到球场或酒店，加购高尔夫球也可享受小额优惠。"
+          "text": "主要的租杆公司"
         },
         {
-          "alt": "Callaway Rogue ST Max",
-          "caption": "Callaway Rogue ST Max，是真正的新套杆，不是库存尾货"
-        },
-        {},
-        {
-          "text": "有Callaway Rogue和TaylorMade Qi4D，也有一些上一季的更便宜版本。适合想要靠谱质量，但不一定非要最贵最新的人。Mr Mallorca Golf读者福利：使用代码MRMALLORCAGOLF可获赠一份小礼品，具体取决于当时可提供的推广物品；如果随球杆一起购买新高尔夫球，可再添加MRMALLORCAGOLFBALLS享受10%折扣。两个代码可以在结账时一起使用。"
+          "text": "Club Rentals Mallorca"
         },
         {
-          "alt": "TaylorMade Qi4D",
-          "caption": "TaylorMade Qi4D，适合不带自己球包但又不想降配置的人"
-        },
-        {},
-        {
-          "text": "品牌更多，预算型套杆更多，而且经常能找到更适合挥速慢一点或者年长球手的杆身配置。如果你更看重价格，或者更在乎杆身适配，这家公司有意义。"
+          "alt": "Club Rentals Mallorca 标志",
+          "caption": "Club Rentals Mallorca"
         },
         {
-          "alt": "Cobra Fly XL",
-          "caption": "Cobra Fly XL，更省钱，对很多休闲球手也完全够用"
-        },
-        {},
-        {
-          "text": "取消政策更灵活，网上预订也简单。如果你打算租一整周甚至更久，这家公司通常更值得看。租得越久，整体算下来通常越划算。"
+          "text": "在全岛的酒店、球场和别墅提供上门送取。当季型号包括右手和左手的 TaylorMade Qi4D、Callaway Rogue ST Max，以及女士用的 TaylorMade Kalea。石墨杆身 regular 硬度的套杆 2 天 €55 起，租期更长价格会大幅下降；钢杆身 regular 或 stiff 的套杆 2 天 €70 起。价格包含送达、取回，以及关于哪种最适合你的建议。属于市场的高端，东海岸的球手甚至可以使用免费的高尔夫接驳服务，从酒店到球场再返回，最多 8 人一组。如果你看重个人化服务和省心的送达，这是特别好的选择；预订时通过<a href=\"https://wa.me/34722691766\">WhatsApp</a>或<a href=\"mailto:info@clubrentalsmallorca.com\">电子邮件</a>报上代码 ANDYGOLF10，可享受送到球场或酒店的优先配送，另外订单中加购的高尔夫球还有小额折扣。"
         },
         {
-          "text": "真正的选择通常不是“带自己的杆还是随便租一套”。更像是“找专业公司租一套状态好的，还是用球场会所里碰运气”。"
+          "alt": "Callaway Rogue ST Max 球杆",
+          "caption": "Callaway Rogue ST Max - 当季装备"
         },
         {
-          "text": "球场会所直接租杆"
+          "text": "Rent2Play Golf"
         },
         {
-          "text": "大多数球场在pro shop都有租杆，价格一般是€35-50。对于一轮轻松的中档球场，这样也许够用。但如果你要打Son Gual、Alcanada，或者是想把一天安排成高质量体验，我会更倾向于让你租专业公司的好套杆。"
+          "text": "提供 Callaway Rogue 和 TaylorMade Qi4D，也有价格更低的上一季套杆。你还可以加购球 tee、球和各种小配件，把装备备齐。TaylorMade Qi4D 租 2 天约 €62，可送到机场、酒店和球场，更长的行程 10 天降到约 €142。是一家很全面的选择，谷歌评价里满意的客户越来越多。给 Mr Mallorca Golf 读者的福利：使用代码 MRMALLORCAGOLF 可获得一份小礼品（视当时有哪些促销品而定），或加上 MRMALLORCAGOLFBALLS，在租杆的同时购买新高尔夫球可享 9 折。两个代码可在结账时一起使用。"
         },
         {
-          "text": "省钱建议"
+          "alt": "TaylorMade Qi4D 球杆",
+          "caption": "TaylorMade Qi4D - 高端选择"
+        },
+        {
+          "text": "MyCaddyMaster"
+        },
+        {
+          "text": "有其他品牌可选，预算选项很多，杆身硬度也更适合年长或挥杆较慢的球手。两天的租金从 Cobra Fly XL 的 €63 到 XXIO 2026 型号的 €115 不等。10 天的话，同样的套杆如果在线预订并使用他们的线上折扣，大约是 €87 和 €209。可以在机场取还，提前预订的话，有些套杆还能更便宜。"
+        },
+        {
+          "alt": "Cobra Fly XL 球杆",
+          "caption": "Cobra Fly XL - 经济实惠之选"
+        },
+        {
+          "text": "ClubsToHire"
+        },
+        {
+          "text": "可灵活取消，在线预订简单。价格按周计算，所以特别适合较长的租期。Callaway Quantum Max 2026 型号 2 天约 €100，而 10 天只要约 €120，如果想控制成本，也有更便宜的型号。"
+        },
+        {
+          "text": "对很多球场来说，你需要权衡：是向专业公司租当季装备，还是用球场球房架子上现成的。很多情况下球场的球杆也是当季货，但各处不同，需要确认。"
+        },
+        {
+          "text": "球场的租杆套装"
+        },
+        {
+          "text": "大多数球场的球房都有租杆套装，通常 €35-50。适合中档球场、轻松的一天。不同球场合作的品牌不同，但一般会有 Callaway、Titleist、TaylorMade 和 Vice Golf。如果你不想安排送达，这里有不少不错的选择，但往往选择更少，也不太能确定拿到最适合你的那一套，所以提前计划是必须的。"
+        },
+        {
+          "text": "省钱小贴士"
         },
         {
           "items": [
             {
-              "label": "至少提前7天预订：",
-              "text": "很多公司会给10%-20%的提前预订折扣。"
+              "label": "提前 7 天以上预订：",
+              "text": "大多数公司可享 10-20% 折扣。"
             },
             {
-              "label": "看周租价格：",
-              "text": "如果租得久，平均每天的费用会明显下降。"
+              "label": "周租价：",
+              "text": "如果打 5 天以上，可省 20-30%。"
             },
             {
-              "label": "别过度配置：",
-              "text": "如果只打两轮轻松球，没必要上最贵的tour级套杆。"
+              "label": "在球场取杆：",
+              "text": "时间合适的话大多数公司免费，所以安排好，省得头疼。"
             },
             {
-              "label": "把配送算进去：",
-              "text": "送到酒店或球场的便利，本身就值钱。"
+              "label": "团体折扣：",
+              "text": "4 人或以上可以询问。"
             }
           ]
         },
         {
-          "text": "如果你打算租杆，同时想把Son Gual、Alcanada这一类球日安排好，也可以直接加微信：andygriffiths1。",
-          "linkLabel": "查看与职业球手同场体验 →"
+          "text": "要租杆，还想在 Son Gual 或 Alcanada 好好过上一天？",
+          "linkLabel": "看看完整的一天是什么样 →"
         }
       ]
     }
@@ -3854,14 +3920,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "es": {
       "metadata": {
         "title": "¿Cuánto cuesta golf en Mallorca? 2026",
-        "description": "Golf en Mallorca cuesta €55–€260, mayoría €90–€150. Más barato Pollença (€55), más caro Son Muntaner (€260). Alquiler desde €30."
+        "description": "Los green fees en Mallorca cuestan €55–€260. Costes de buggy, meses con mejor precio, tarifas dinámicas y cuándo reservar pronto, campo a campo."
       },
       "meta": {
         "badge": "Greenfees",
         "readTime": "5 min de lectura",
         "updated": "Marzo 2026",
         "title": "Cuánto cuesta golf - Desglose 2026",
-        "intro": "Una vuelta puede costar desde unos 55 € en el segmento más económico hasta unos 260 € en temporada alta. Este es el desglose honesto para 2026 de alguien que juega aquí casi cada semana.",
+        "intro": "Una ronda pública de 18 hoyos en Mallorca va desde unos 55 € en el extremo económico hasta unos 260 € en Son Muntaner en temporada alta. Este es el desglose honesto para 2026 de alguien que juega aquí casi cada semana.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -3883,7 +3949,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Jugar al golf en Mallorca puede ser realmente asequible o bastante caro. La diferencia entre un extremo y otro es mayor de lo que suele imaginar el visitante. Este es el desglose honesto para 2026 de alguien que juega aquí casi todas las semanas. Comparado con Shanghái, donde pasé once años, Mallorca ofrece muchísimo valor. Aun así, si uno no planifica bien, los extras se acumulan rápido."
+          "text": "El golf en Mallorca, la mayor de las islas Baleares, va desde lo realmente asequible hasta lo muy caro, y la diferencia es mayor de lo que la mayoría de los visitantes espera. Este es un desglose honesto para 2026, de alguien que juega aquí casi todas las semanas. Para un repaso a todos los campos de la isla, consulta la <a href='/es/golf-courses'>guía de campos de golf de Mallorca</a>. Es un valor increíble comparado con los precios del golf en Shanghái, donde pasé 11 años, pero los costes pueden dispararse si no planificas bien."
         },
         {
           "text": "Greenfees"
@@ -3892,11 +3958,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Presupuesto (nueve hoyos, pitch and putt)"
         },
         {
-          "text": "Desde €17 por 9 hoyos o €27-30 por 18 hoyos (alquiler de palos aparte). El Palma Pitch & Putt es un recorrido corto de verdad dentro del tramo más económico. Muy bueno para principiantes, con poco estrés y además muy cerca de sus campos grandes del mismo complejo."
+          "text": "Desde €17 por 9 hoyos o €27-30 por 18 hoyos en Palma Pitch & Putt (alquiler de palos aparte), o unos €65-75 si quieres las opciones de tamaño completo más baratas, como Golf Pollença en los meses más tranquilos. Palma Pitch & Putt es una opción de campo corto de verdad: ideal para principiantes, divertida para familias o grupos mixtos y una forma sin presión de coger los palos sin comprometerte a una ronda completa."
         },
         {
           "alt": "Palma Pitch and Putt",
-          "caption": "Palma Pitch & Putt - perfecto para empezar"
+          "caption": "Palma Pitch & Putt: una de las formas más económicas de jugar"
         },
         {
           "text": "Campos de 18 hoyos de gama media"
@@ -3908,10 +3974,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Campos premium"
         },
         {
-          "text": "Son Gual va de 115 € en temporada baja a 165 € en los picos de marzo a mayo y de septiembre a noviembre. Alcanada va de 115 € en temporada baja a 220 € en los picos. Son tarifas publicadas para 2026. Son Muntaner, elegido Mejor Campo de Golf de España en los World Golf Awards 2025, se mueve en una franja parecida. Conviene confirmar los precios actuales de Arabella en arabellagolfmallorca.com."
+          "text": "Son Gual ronda los €115-165. Alcanada va de unos €115 a €230. Son Muntaner llega a unos €260 en temporada alta y baja a unos €125 en la ventana de mejor precio. T Golf Calvià puede subir hasta unos €210 y Son Vida hasta unos €190. El extremo alto en Mallorca es más caro de lo que sugieren muchas guías antiguas."
         },
         {
-          "text": "Muchos campos usan precios dinámicos. Si buscas una salida a última hora en un campo muy solicitado, normalmente pagarás más. Planifica con margen, ten claras tus prioridades y ahorrarás dinero. También merece la pena revisar ofertas de Black Friday, Navidad y promociones de varias vueltas. Si lo hace bien, a menudo se puede ahorrar un 30-40 %."
+          "text": "Alrededor de la mitad de la isla usa ya precios dinámicos, incluidos los campos de Arabella, los dos T Golf, Pula, Capdepera y Son Antem East y West. La regla práctica es sencilla: cuanto antes reserves, más probabilidades tendrás de asegurar el extremo bajo del rango. El Black Friday, el invierno y las ofertas de varias rondas con socios pueden ahorrar dinero de verdad si eliges bien el momento. Si quieres que la elección de campos y las salidas estén resueltas antes de llegar, empieza por la <a href='/es/plan-your-trip'>planificación del viaje</a>."
         },
         {
           "caption": "Son Gual - campo premium, 115-165 €"
@@ -3923,7 +3989,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Meses con mejor relación calidad-precio"
         },
         {
-          "text": "Enero, febrero y en parte noviembre pueden dar buen valor, pero la caída típica respecto al pico hoy suele acercarse más al 30-50 %. Los periodos fuertes siguen siendo mediados de marzo a principios de junio y mediados de septiembre a mediados de noviembre."
+          "text": "Junio-agosto y diciembre-febrero suelen ser las ventanas de mejor precio. Los precios pico van normalmente de mediados de marzo a principios de junio y de mediados de septiembre a mediados de noviembre. Importa porque muchos consejos antiguos sobre golf en Mallorca siguen tratando por error de octubre a abril como la temporada barata."
         },
         {
           "text": "Alquiler de palos"
@@ -3932,7 +3998,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Los juegos del propio campo suelen costar entre 35 y 50 € en la tienda profesional. La calidad varía bastante."
         },
         {
-          "text": "Las empresas especializadas entregan en hotel, aeropuerto o campo. Los sets básicos empiezan alrededor de €25 por día. Las opciones premium de temporada actual arrancan en unos €55 por dos días, y después mejoran bastante en estancias largas, hasta rondar €140 por diez días. Las tarifas semanales suelen ahorrar un 20-30 %. Reserve al menos con una semana de margen para encontrar el set adecuado y aprovechar descuentos por antelación."
+          "text": "Las empresas de alquiler especializadas entregan en tu hotel, el aeropuerto o el campo. Los sets básicos cuestan desde unos €25 al día; las opciones premium de la temporada actual, desde €55 por 2 días, y luego se aplica descuento en viajes más largos, con unos €140 por 10 días. Las tarifas semanales ahorran un 20-30 %. Reserva con al menos una semana de antelación para tener la mejor disponibilidad, los palos adecuados y descuentos por reserva anticipada. Si el alquiler de palos importa en tu viaje, lee también la guía completa de alquiler de palos, porque las empresas, los rangos de precios y las formas de entrega varían más de lo que la mayoría espera."
         },
         {
           "text": "Buggies y trolleys"
@@ -3941,7 +4007,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Los buggies cuestan entre 35 y 48 € según el campo. Son Gual cobra 45 €, Alcanada 48 €; los modelos con GPS aportan distancias y mapas de hoyo. Trolley manual: 6-8 €. Trolley eléctrico: 14-25 €."
         },
         {
-          "text": "En campos con más desnivel, como Bendinat, Andratx o Son Vida, el buggy compensa. En trazados más llanos, como Son Antem, Maioris o Santa Ponsa, un trolley suele ser suficiente."
+          "text": "En campos más montañosos como Bendinat, Andratx o Son Vida, el buggy compensa. En los más llanos (Son Antem, Maioris, Santa Ponsa y otros), un trolley puede bastar si te apetece hacer ejercicio."
         },
         {
           "caption": "Los buggies suelen costar 35-48 € por vuelta"
@@ -3982,8 +4048,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Comparado con el Reino Unido: no. Hay muchas opciones más baratas que en otros destinos de golf de Europa. La gama media aquí ofrece un valor excelente. Comparado con el Algarve: parecido en la parte alta y un poco más barato en la media. Comparado con la Costa del Sol: bastante similar en el segmento premium."
         },
         {
-          "text": "¿Quiere que le organicen un día premium completo con campo, acompañamiento, comida y todo resuelto?",
-          "linkLabel": "Ver la experiencia play-with-a-pro →"
+          "text": "¿Quieres todos los green fees, costes de buggy y precios por temporada en un solo lugar? Descarga la guía de costes 2026 gratuita en PDF.",
+          "linkLabel": "Obtén la guía de costes gratuita →"
         },
         {
           "text": "Quiere llegar con el día completo ya resuelto, con campo, hora de salida, coaching y todo organizado antes de aterrizar?",
@@ -3994,14 +4060,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "de": {
       "metadata": {
         "title": "Was kostet Golf auf Mallorca? 2026",
-        "description": "Golf auf Mallorca kostet €55–€260, meist €90–€150. Günstigste Pollença (€55), teuerste Son Muntaner (€260). Verleih ab €30."
+        "description": "Greenfees auf Mallorca: €55–€260. Buggy-Kosten, günstige Monate, dynamische Preise und wann Sie früh buchen sollten, Platz für Platz."
       },
       "meta": {
         "badge": "Greenfees",
         "readTime": "5 Min. Lesezeit",
         "updated": "März 2026",
         "title": "Golf Kosten - Preisüberblick 2026",
-        "intro": "Eine Runde kostet zwischen rund 55 € im günstigeren Segment und bis zu etwa 260 € in der Hochsaison. Hier ist der ehrliche Preisüberblick für 2026 von jemandem, der hier fast jede Woche spielt.",
+        "intro": "Eine öffentliche 18-Loch-Runde auf Mallorca kostet von rund 55 € im günstigen Bereich bis zu etwa 260 € in Son Muntaner in der Hochsaison. Hier ist der ehrliche Überblick für 2026 von jemandem, der hier fast jede Woche spielt.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4023,7 +4089,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Golf auf Mallorca reicht von erstaunlich günstig bis richtig teuer. Die Spanne ist größer, als viele Besucher erwarten. Hier ist der ehrliche Überblick für 2026 von jemandem, der hier fast jede Woche spielt. Verglichen mit den Preisen in Shanghai, wo ich elf Jahre gearbeitet habe, ist Mallorca starkes Preis-Leistungs-Golf. Wer schlecht plant, gibt trotzdem schnell mehr aus als nötig."
+          "text": "Golf auf Mallorca, der größten der spanischen Baleareninseln, reicht von erstaunlich günstig bis richtig teuer. Die Spanne ist größer, als die meisten Besucher erwarten. Hier ist der ehrliche Überblick für 2026 von jemandem, der hier fast jede Woche spielt. Einen Überblick über jeden Platz der Insel finden Sie im <a href='/de/golf-courses'>Guide zu den Golfplätzen auf Mallorca</a>. Im Vergleich zu den Golfpreisen in Shanghai, wo ich 11 Jahre verbracht habe, ist es ein unglaubliches Preis-Leistungs-Verhältnis, aber die Kosten können steigen, wenn Sie schlecht planen."
         },
         {
           "text": "Greenfees"
@@ -4032,11 +4098,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Budget (9 Löcher, Pitch & Putt)"
         },
         {
-          "text": "Ab €17 für 9 Löcher oder €27-30 für 18 Löcher (Schlägermiete extra). Das Palma Pitch & Putt ist ein richtiges Kurzplatz-Setup am unteren Ende der Skala. Sehr gut für Anfänger, entspannt und ohne Druck, dazu praktisch direkt neben den größeren Arabella-Plätzen."
+          "text": "Ab €17 für 9 Löcher oder €27-30 für 18 Löcher im Palma Pitch & Putt (Schlägermiete extra), oder etwa €65-75, wenn Sie die günstigsten vollwertigen Plätze wie Golf Pollença in ruhigeren Monaten wollen. Palma Pitch & Putt ist eine richtige Kurzplatz-Option: ideal für Anfänger, unterhaltsam für Familien oder gemischte Gruppen und ein druckfreier Weg, Schläger in die Hand zu nehmen, ohne sich auf eine volle Runde festzulegen."
         },
         {
           "alt": "Palma Pitch and Putt",
-          "caption": "Palma Pitch & Putt - ideal für Anfänger"
+          "caption": "Palma Pitch & Putt - eine der günstigeren Möglichkeiten zu spielen"
         },
         {
           "text": "18-Loch-Plätze im mittleren Segment"
@@ -4048,10 +4114,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Premiumplätze"
         },
         {
-          "text": "Son Gual liegt zwischen 115 € in der Nebensaison und 165 € in den Spitzenzeiten von März bis Mai sowie September bis November. Alcanada liegt zwischen 115 € in der Nebensaison und 220 € in den Spitzenzeiten. Beides sind veröffentlichte Preislisten für 2026. Son Muntaner - bei den World Golf Awards 2025 als bester Golfplatz Spaniens ausgezeichnet - liegt in einer ähnlichen Kategorie. Aktuelle Preise bei Arabella bitte direkt auf arabellagolfmallorca.com prüfen."
+          "text": "Son Gual liegt bei etwa €115-165. Alcanada bei grob €115-230. Son Muntaner erreicht in der Spitze rund €260 und fällt im günstigen Zeitfenster auf etwa €125. T Golf Calvià kann auf rund €210 steigen, Son Vida auf etwa €190. Das obere Ende auf Mallorca liegt höher, als viele ältere Guides vermuten lassen."
         },
         {
-          "text": "Viele Plätze arbeiten mit dynamischen Preisen. Wer kurzfristig eine Tee Time auf einem gefragten Platz möchte, zahlt in der Regel mehr. Früh planen, Prioritäten setzen und etwas Geld sparen. Außerdem lohnt sich der Blick auf Black-Friday-, Weihnachts- und Kombiangebote der Clubs. Wenn Sie das klug angehen, sparen Sie oft 30-40 %."
+          "text": "Rund die Hälfte der Insel arbeitet inzwischen mit dynamischen Preisen, darunter die Arabella-Plätze, beide T-Golf-Anlagen, Pula, Capdepera sowie Son Antem East und West. Die Faustregel ist einfach: Je früher Sie buchen, desto größer die Chance auf das untere Ende der Preisspanne. Black Friday, Winter und Mehrfachrunden-Angebote der Partner können echtes Geld sparen, wenn Sie den Zeitpunkt klug wählen. Wenn Platzauswahl und Startzeiten schon vor Ihrer Ankunft erledigt sein sollen, beginnen Sie mit der <a href='/de/plan-your-trip'>Reiseplanung</a>."
         },
         {
           "caption": "Son Gual - Premiumplatz, 115-165 €"
@@ -4063,7 +4129,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Monate mit dem besten Gegenwert"
         },
         {
-          "text": "Januar, Februar und teils November können gute Value-Monate sein, aber der typische Rückgang gegenüber den Peak-Zeiten liegt heute eher bei 30-50 %. Die Hauptphasen bleiben Mitte März bis Anfang Juni sowie Mitte September bis Mitte November."
+          "text": "Juni bis August und Dezember bis Februar sind in der Regel die günstigen Zeitfenster. Die Spitzenpreise gelten normalerweise von Mitte März bis Anfang Juni und von Mitte September bis Mitte November. Das ist wichtig, weil viele ältere Mallorca-Golfratgeber Oktober bis April fälschlich noch als günstige Saison behandeln."
         },
         {
           "text": "Leihschläger"
@@ -4072,7 +4138,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Leihsets direkt am Platz kosten meist 35-50 € im Pro Shop. Die Qualität schwankt."
         },
         {
-          "text": "Spezialisierte Verleiher liefern ins Hotel, zum Flughafen oder direkt an den Platz. Einfache Sets beginnen bei etwa €25 pro Tag. Premiumsets des aktuellen Modelljahres liegen ab etwa €55 für zwei Tage, danach wird es bei längeren Reisen günstiger und landet bei rund €140 für zehn Tage. Wochenpreise sparen oft 20-30 %. Mindestens eine Woche vorher buchen - dann sind passende Schläger und Frühbucherrabatte am ehesten verfügbar."
+          "text": "Spezialisierte Verleiher liefern ins Hotel, zum Flughafen oder direkt an den Platz. Einfache Sets beginnen bei etwa €25 pro Tag; Premiumsets des aktuellen Modelljahres gibt es ab €55 für 2 Tage, danach greift bei längeren Reisen ein Rabatt, und für 10 Tage liegt der Preis bei rund €140. Wochenpreise sparen 20-30 %. Buchen Sie mindestens eine Woche im Voraus, für die beste Verfügbarkeit, die passenden Schläger und Frühbucherrabatte. Wenn der Schlägerverleih für Ihre Reise eine Rolle spielt, lesen Sie auch den vollständigen Leihschläger-Guide, denn Anbieter, Preisstufen und Lieferoptionen unterscheiden sich stärker, als die meisten erwarten."
         },
         {
           "text": "Buggies und Trolleys"
@@ -4081,7 +4147,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Golfbuggies kosten je nach Platz 35-48 €. Son Gual verlangt 45 €, Alcanada 48 € - die GPS-Modelle liefern Yardages und Lochübersichten. Zieh-Trolleys 6-8 €. Elektro-Trolleys 14-25 €."
         },
         {
-          "text": "Auf hügeligen Plätzen wie Bendinat, Andratx oder Son Vida lohnt sich ein Buggy. Auf flacheren Plätzen wie Son Antem, Maioris oder Santa Ponsa reicht ein Trolley völlig aus."
+          "text": "Auf hügeligeren Plätzen wie Bendinat, Andratx oder Son Vida lohnt sich ein Buggy. Auf den flacheren Plätzen (Son Antem, Maioris, Santa Ponsa und weitere) reicht ein Trolley, wenn Sie gern Bewegung haben."
         },
         {
           "caption": "Buggies kosten pro Runde meist 35-48 €"
@@ -4122,8 +4188,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Verglichen mit dem Vereinigten Königreich: nein. Es gibt hier viele günstigere Optionen als in anderen europäischen Golfzielen. Das mittlere Segment ist nach britischem Maßstab ausgezeichnet. Verglichen mit der Algarve: an der Spitze ähnlich, in der Mitte etwas günstiger. Verglichen mit der Costa del Sol: auf Premiumniveau weitgehend ähnlich."
         },
         {
-          "text": "Möchten Sie einen vollen Premiumtag arrangieren lassen - Platz, Coaching, Mittagessen und alles drumherum?",
-          "linkLabel": "Golf-Tag mit Pro ansehen →"
+          "text": "Möchten Sie alle Greenfees, Buggy-Kosten und saisonalen Preise an einem Ort? Laden Sie den kostenlosen Kostenführer 2026 als PDF herunter.",
+          "linkLabel": "Den kostenlosen Kostenführer erhalten →"
         },
         {
           "text": "Möchten Sie einen kompletten Golftag organisiert haben, mit Platz, Tee Time, Coaching und allem vor Ihrer Ankunft geklärt?",
@@ -4134,14 +4200,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "fr": {
       "metadata": {
         "title": "Combien coûte le golf à Majorque? 2026",
-        "description": "Le golf à Majorque coûte €55–€260, la plupart €90–€150. Le moins cher Pollença (€55), le plus cher Son Muntaner (€260). Location dès €30."
+        "description": "Les green fees à Majorque coûtent €55–€260. Voiturettes, mois les moins chers, tarifs dynamiques et quand réserver tôt, parcours par parcours."
       },
       "meta": {
         "badge": "Green fees",
         "readTime": "5 min de lecture",
         "updated": "Mars 2026",
         "title": "Combien coûte le golf à Majorque ? Le vrai détail 2026",
-        "intro": "Une partie peut coûter d’environ €55 en saison creuse jusqu’à environ €260 aux tarifs les plus élevés. Voici le détail honnête pour 2026, donné par quelqu'un qui joue ici presque chaque semaine.",
+        "intro": "Une partie de 18 trous en accès public à Majorque coûte d'environ 55 € dans la gamme accessible jusqu'à environ 260 € à Son Muntaner en haute saison. Voici le détail honnête pour 2026, donné par quelqu'un qui joue ici presque chaque semaine.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4163,7 +4229,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Le golf à Majorque peut être franchement abordable ou vraiment coûteux. L'écart entre les deux est plus grand que ce que la plupart des visiteurs imaginent. Voici le détail honnête pour 2026, donné par quelqu'un qui joue ici presque toutes les semaines. Comparé à Shanghai, où j'ai passé onze ans, Majorque offre un excellent rapport qualité-prix. En revanche, les coûts annexes montent vite si l'on ne planifie pas correctement."
+          "text": "Le golf à Majorque, la plus grande des îles Baléares, va de franchement abordable à très cher, et l'écart est plus grand que ce que la plupart des visiteurs imaginent. Voici le détail honnête pour 2026, donné par quelqu'un qui joue ici presque toutes les semaines. Pour un tour d'horizon de chaque parcours de l'île, consultez le <a href='/fr/golf-courses'>guide des parcours de golf de Majorque</a>. Le rapport qualité-prix est incroyable comparé aux tarifs de Shanghai, où j'ai passé 11 ans, mais les coûts peuvent grimper si vous planifiez mal."
         },
         {
           "text": "Green fees"
@@ -4172,11 +4238,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Budget (9 trous, pitch and putt)"
         },
         {
-          "text": "À partir de €17 pour 9 trous ou €27-30 pour 18 trous (location de clubs en supplément). Le Palma Pitch & Putt est un vrai petit parcours dans le bas de l'échelle tarifaire. Très bien pour les débutants, avec une ambiance détendue et sans pression, juste à côté des grands parcours Arabella."
+          "text": "À partir de €17 pour 9 trous ou €27-30 pour 18 trous au Palma Pitch & Putt (location de clubs en supplément), ou environ €65-75 si vous voulez les parcours complets les moins chers, comme Golf Pollença pendant les mois calmes. Palma Pitch & Putt est un vrai parcours court : idéal pour les débutants, agréable pour les familles ou les groupes mixtes, et une façon sans pression de reprendre les clubs en main sans s'engager sur une partie complète."
         },
         {
           "alt": "Palma Pitch and Putt",
-          "caption": "Palma Pitch & Putt - parfait pour débuter"
+          "caption": "Palma Pitch & Putt - l'une des façons les moins chères de jouer"
         },
         {
           "text": "Parcours 18 trous de milieu de gamme"
@@ -4188,10 +4254,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Parcours premium"
         },
         {
-          "text": "Son Gual varie d’environ €115 en basse saison à €165 aux pics de mars à mai et de septembre à novembre. Alcanada va d’environ €115 en basse saison à €220 au plus haut. Son Muntaner monte jusqu’à environ €260 et descend autour de €125 aux créneaux les moins chers. Ce sont les cartes tarifaires publiées pour 2026. Pour les parcours Arabella, mieux vaut vérifier le tarif du moment sur arabellagolfmallorca.com."
+          "text": "Son Gual tourne autour de €115-165. Alcanada va d'environ €115 à €230. Son Muntaner atteint environ €260 en pointe et descend autour de €125 pendant la période la moins chère. T Golf Calvià peut grimper jusqu'à environ €210, et Son Vida jusqu'à environ €190. Le haut de la fourchette à Majorque est plus élevé que ne le laissent penser beaucoup de guides anciens."
         },
         {
-          "text": "Beaucoup de parcours pratiquent une tarification dynamique. Si vous cherchez un départ de dernière minute sur un parcours demandé, vous paierez plus cher. Réservez tôt, fixez vos priorités et vous économiserez un peu. Il vaut aussi la peine de surveiller les offres Black Friday, Noël et les packs multi-parcours. En faisant les choses correctement, on économise souvent 30-40 %."
+          "text": "Environ la moitié de l'île applique désormais des tarifs dynamiques, dont les parcours Arabella, les deux T Golf, Pula, Capdepera et Son Antem East et West. La règle pratique est simple : plus vous réservez tôt, plus vous avez de chances de décrocher le bas de la fourchette. Le Black Friday, l'hiver et les offres multi-parties avec nos partenaires peuvent encore faire économiser de l'argent si vous choisissez bien le moment. Si vous voulez que le choix des parcours et les départs soient réglés avant votre arrivée, commencez par la <a href='/fr/plan-your-trip'>planification du voyage</a>."
         },
         {
           "caption": "Son Gual - parcours premium, €115-165"
@@ -4203,7 +4269,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Les meilleurs mois côté rapport qualité-prix"
         },
         {
-          "text": "Janvier, février et novembre restent de bons mois, mais la vraie baisse par rapport aux pics est souvent plus proche de 30-50 %. Les grandes périodes chères et fortes sont surtout de mi-mars a début juin puis de mi-septembre a mi-novembre."
+          "text": "Juin-août et décembre-février sont généralement les périodes les moins chères. Les prix de pointe courent normalement de la mi-mars au début juin et de la mi-septembre à la mi-novembre. C'est important, car beaucoup de vieux conseils sur le golf à Majorque considèrent encore à tort octobre-avril comme la basse saison."
         },
         {
           "text": "Location de clubs"
@@ -4212,7 +4278,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Les séries louées directement au pro shop coûtent généralement €35-50. La qualité est variable."
         },
         {
-          "text": "Les sociétés specialisees livrent à l'hôtel, à l'aéroport ou directement au parcours. Les sets budget commencent autour de €25 par jour. Les options premium de la saison en cours tournent autour de €55 pour deux jours, puis deviennent plus intéressantes sur les séjours plus longs, avec environ €140 pour dix jours. Les tarifs hebdomadaires font souvent gagner 20-30 %. Réservez au moins une semaine à l'avance pour avoir le bon matériel."
+          "text": "Les loueurs spécialisés livrent à votre hôtel, à l'aéroport ou au parcours. Les sets basiques démarrent autour de €25 par jour ; les options premium de la saison en cours, à partir de €55 pour 2 jours, avec une remise sur les séjours plus longs, pour environ €140 les 10 jours. Les tarifs à la semaine font économiser 20-30 %. Réservez au moins une semaine à l'avance pour la meilleure disponibilité, les bons clubs et les remises de réservation anticipée. Si la location de clubs compte pour votre séjour, lisez aussi le guide complet de la location de clubs, car les loueurs, les gammes de prix et les modes de livraison varient plus qu'on ne le pense."
         },
         {
           "text": "Voiturettes et chariots"
@@ -4221,7 +4287,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Les voiturettes coûtent entre 35 et €48 selon le parcours. Son Gual facture €45, Alcanada €48 ; les modèles GPS donnent les distances et le plan du trou. Chariot manuel : €6-8. Chariot électrique : €14-25."
         },
         {
-          "text": "Sur des parcours vallonnés comme Bendinat, Andratx ou Son Vida, la voiturette se justifie. Sur les parcours plus plats comme Son Antem, Maioris ou Santa Ponsa, un chariot suffit largement."
+          "text": "Sur les parcours vallonnés comme Bendinat, Andratx ou Son Vida, la voiturette vaut son prix. Sur les parcours plus plats (Son Antem, Maioris, Santa Ponsa et d'autres), un chariot suffit si vous aimez marcher."
         },
         {
           "caption": "Les voiturettes coûtent en général €35-48 par partie"
@@ -4262,8 +4328,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Comparé au Royaume-Uni : non. Il existe ici beaucoup d'options moins chères que dans d'autres destinations golf en Europe. Le milieu de gamme offre une vraie valeur. Comparé à l'Algarve : similaire tout en haut, un peu moins cher au milieu. Comparé à la Costa del Sol : globalement comparable sur le premium."
         },
         {
-          "text": "Vous voulez une vraie journée premium organisée correctement - parcours, accompagnement, déjeuner et logistique comprise ?",
-          "linkLabel": "Voir l'expérience play-with-a-pro →"
+          "text": "Vous voulez tous les green fees, les tarifs de voiturette et les prix saisonniers au même endroit ? Téléchargez le guide des coûts 2026 gratuit en PDF.",
+          "linkLabel": "Recevoir le guide des coûts gratuit →"
         },
         {
           "text": "Vous voulez une journée complète déjà organisée, avec parcours, tee time, coaching et tout règle avant votre arrivée ?",
@@ -4274,14 +4340,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "nl": {
       "metadata": {
         "title": "Wat kost golf op Mallorca? 2026",
-        "description": "Golf op Mallorca kost €55–€260, meestal €90–€150. Goedkoopste Pollença (€55), duurste Son Muntaner (€260). Verhuur vanaf €30."
+        "description": "Greenfees op Mallorca kosten €55–€260. Buggykosten, voordelige maanden, dynamische prijzen en wanneer je vroeg moet boeken, per baan."
       },
       "meta": {
         "badge": "Greenfees",
         "readTime": "5 min leestijd",
         "updated": "Maart 2026",
         "title": "Wat kost golf op Mallorca? Het complete overzicht voor 2026",
-        "intro": "Een ronde kan van ongeveer €55 in het waardeseizoen oplopen tot ongeveer €260 aan de top van de markt. Dit is het eerlijke overzicht voor 2026 van iemand die hier bijna elke week speelt.",
+        "intro": "Een openbare ronde van 18 holes op Mallorca kost van ongeveer 55 € aan de voordelige kant tot circa 260 € op Son Muntaner in het hoogseizoen. Dit is de eerlijke uitsplitsing voor 2026 van iemand die hier bijna elke week speelt.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4303,7 +4369,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Golf op Mallorca kan echt betaalbaar zijn of behoorlijk prijzig. Het verschil daartussen is groter dan de meeste bezoekers verwachten. Dit is het eerlijke kostenoverzicht voor 2026 van iemand die hier bijna elke week speelt. Vergeleken met Shanghai, waar ik elf jaar werkte, is Mallorca sterk geprijsd. Maar zonder planning lopen de extra kosten alsnog snel op."
+          "text": "Golf op Mallorca, het grootste van de Spaanse Balearen, loopt uiteen van echt betaalbaar tot flink duur, en het verschil is groter dan de meeste bezoekers verwachten. Hier is een eerlijke uitsplitsing voor 2026, van iemand die hier bijna elke week speelt. Voor een overzicht van elke baan op het eiland, zie de <a href='/nl/golf-courses'>gids met golfbanen op Mallorca</a>. Vergeleken met de golfprijzen in Shanghai, waar ik 11 jaar woonde, is het een geweldige prijs-kwaliteitverhouding, maar de kosten kunnen oplopen als je slecht plant."
         },
         {
           "text": "Greenfees"
@@ -4312,11 +4378,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Budget (negen holes, pitch and putt)"
         },
         {
-          "text": "Vanaf €17 voor 9 holes of €27-30 voor 18 holes (clubs huren is apart). De Palma Pitch & Putt is een echte korte baan aan de onderkant van de prijsschaal. Prima voor beginners, ontspannen van sfeer en handig dicht bij de grotere Arabella-banen."
+          "text": "Vanaf €17 voor 9 holes of €27-30 voor 18 holes bij Palma Pitch & Putt (clubhuur extra), of ongeveer €65-75 als je de goedkoopste volwaardige banen wilt, zoals Golf Pollença in de rustigere maanden. Palma Pitch & Putt is een echte korte baan: ideaal voor beginners, leuk voor gezinnen of gemengde groepen en een ontspannen manier om clubs in de hand te nemen zonder je aan een volledige ronde te verbinden."
         },
         {
           "alt": "Palma Pitch and Putt",
-          "caption": "Palma Pitch & Putt - ideaal voor beginners"
+          "caption": "Palma Pitch & Putt - een van de goedkopere manieren om te spelen"
         },
         {
           "text": "18-holesbanen in het middensegment"
@@ -4328,10 +4394,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Premiumbanen"
         },
         {
-          "text": "Son Gual loopt van ongeveer €115 in het laagseizoen tot €165 in de piekperiodes van maart tot mei en september tot november. Alcanada loopt van ongeveer €115 in het laagseizoen tot €220 in de piekperioden. Son Muntaner loopt op tot ongeveer €260 en zakt naar ongeveer €125 op de goedkoopste momenten. Dat zijn gepubliceerde tarieven voor 2026. Controleer Arabella-tarieven het best rechtstreeks via arabellagolfmallorca.com."
+          "text": "Son Gual zit rond €115-165. Alcanada loopt van ongeveer €115 tot €230. Son Muntaner haalt in het hoogseizoen zo'n €260 en zakt in de voordelige periode naar ongeveer €125. T Golf Calvià kan oplopen tot circa €210 en Son Vida tot circa €190. De top van de markt op Mallorca ligt hoger dan veel oudere gidsen suggereren."
         },
         {
-          "text": "Veel banen werken met dynamische prijzen. Wie op het laatste moment een starttijd op een populaire baan wil, betaalt meestal meer. Plan vroeg, bepaal je prioriteiten en bespaar geld. Het loont ook om te letten op Black Friday, kerstacties en combinatiedeals. Als je dat slim doet, bespaar je vaak 30-40 procent."
+          "text": "Ongeveer de helft van het eiland hanteert nu dynamische prijzen, waaronder de Arabella-banen, beide T Golf-locaties, Pula, Capdepera en Son Antem East en West. De vuistregel is simpel: hoe eerder je boekt, hoe groter de kans dat je het onderste deel van de prijsrange vastlegt. Black Friday, de winter en partneraanbiedingen voor meerdere rondes kunnen nog steeds echt geld besparen als je de timing goed kiest. Wil je dat de baankeuze en starttijden geregeld zijn voordat je aankomt, begin dan met de <a href='/nl/plan-your-trip'>reisplanning</a>."
         },
         {
           "caption": "Son Gual - premiumbaan, €115-165"
@@ -4343,7 +4409,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Beste maanden voor prijs-kwaliteit"
         },
         {
-          "text": "Januari, februari en november. Op de meeste banen dalen de greenfees dan 20-30 procent ten opzichte van de piekprijzen, terwijl de banen nog steeds in uitstekende staat zijn. De drukste en duurste periodes zijn maart-mei en september-november, en juist dan zijn de omstandigheden ook op hun best."
+          "text": "Juni-augustus en december-februari zijn meestal de voordelige periodes. De piekprijzen gelden normaal van half maart tot begin juni en van half september tot half november. Dat is belangrijk, omdat veel oudere Mallorca-golfadviezen oktober tot april nog steeds ten onrechte als goedkoop seizoen beschouwen."
         },
         {
           "text": "Clubhuur"
@@ -4352,7 +4418,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Huursets van de baan kosten meestal €35-50 in de pro shop. De kwaliteit wisselt."
         },
         {
-          "text": "Gespecialiseerde verhuurders leveren op je hotel, luchthaven of golfbaan. Basissets beginnen rond €25 per dag. Premiumsets van het huidige modeljaar starten rond €55 voor twee dagen en worden gunstiger bij langere verblijven, tot ongeveer €140 voor tien dagen. Weektarieven besparen vaak 20-30 procent. Boek minstens een week vooruit voor de beste kans op het juiste set en eventuele vroegboekkorting."
+          "text": "Gespecialiseerde verhuurbedrijven leveren aan je hotel, de luchthaven of de baan. Budgetsets kosten vanaf ongeveer €25 per dag; premiumopties van het huidige seizoen vanaf €55 voor 2 dagen, daarna loopt de korting op bij langere reizen, met ongeveer €140 voor 10 dagen. Weektarieven besparen 20-30 %. Boek minstens een week vooruit voor de beste beschikbaarheid, de juiste clubs en vroegboekkorting. Als clubhuur belangrijk is voor je reis, lees dan ook de volledige gids over clubhuur, want de bedrijven, prijsklassen en leveropties verschillen meer dan de meeste mensen verwachten."
         },
         {
           "text": "Buggys en trolleys"
@@ -4361,7 +4427,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Golfbuggys kosten €35-48 afhankelijk van de baan. Son Gual vraagt €45, Alcanada €48. De GPS-modellen geven afstanden en holekaarten. Trektrolley: €6-8. Elektrische trolley: €14-25."
         },
         {
-          "text": "Op heuvelachtige banen zoals Bendinat, Andratx of Son Vida verdient een buggy zichzelf terug. Op vlakkere banen zoals Son Antem, Maioris of Santa Ponsa is een trolley meestal genoeg."
+          "text": "Op heuvelachtigere banen als Bendinat, Andratx of Son Vida verdient een buggy zichzelf terug. Op de vlakkere banen (Son Antem, Maioris, Santa Ponsa en meer) is een trolley prima als je zin hebt in beweging."
         },
         {
           "caption": "Buggys kosten meestal €35-48 per ronde"
@@ -4402,8 +4468,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Vergeleken met het Verenigd Koninkrijk: nee. Er zijn hier veel goedkopere opties dan in andere Europese golfbestemmingen. Het middensegment biedt uitstekende waarde. Vergeleken met de Algarve: bovenin vergelijkbaar, in het midden iets goedkoper. Vergeleken met de Costa del Sol: op premiumniveau grotendeels gelijk."
         },
         {
-          "text": "Wil je een volledige premiumdag laten regelen met baan, begeleiding, lunch en alles eromheen?",
-          "linkLabel": "Bekijk de play-with-a-pro ervaring →"
+          "text": "Wil je alle greenfees, buggykosten en seizoensprijzen op één plek? Download de gratis kostengids 2026 als pdf.",
+          "linkLabel": "Ontvang de gratis kostengids →"
         },
         {
           "text": "Wil je dat de hele golfdag al geregeld is, met baan, starttijd, coaching en alles vast voordat je aankomt?",
@@ -4414,14 +4480,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "sv": {
       "metadata": {
         "title": "Hur mycket kostar golf på Mallorca? 2026",
-        "description": "Golf på Mallorca kostar €55–€260, mest €90–€150. Billigaste Pollença (€55), dyraste Son Muntaner (€260). Uthyrning från €30."
+        "description": "Greenfees på Mallorca kostar €55–€260. Buggykostnader, förmånliga månader, dynamiska priser och när du bör boka tidigt, bana för bana."
       },
       "meta": {
         "badge": "Greenfee",
         "readTime": "5 min läsning",
         "updated": "Mars 2026",
         "title": "Golfkostnader - Översikt 2026",
-        "intro": "En rond kan kosta från ungefär €55 under värdesäsongen upp till ungefär €260 på de högsta nivåerna. Här är den raka kostnadsbilden för 2026 från någon som spelar här nästan varje vecka.",
+        "intro": "En offentlig 18-hålsrunda på Mallorca kostar från ungefär 55 € i den prisvärda delen upp till runt 260 € på Son Muntaner under högsäsong. Här är den ärliga genomgången för 2026 från någon som spelar här nästan varje vecka.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4443,7 +4509,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Golf på Mallorca kan vara genuint prisvärt eller riktigt dyrt. Spannet mellan de två är större än många besökare tror. Här är den raka kostnadsbilden för 2026 från någon som spelar här nästan varje vecka. Jämfört med Shanghai, där jag arbetade i elva år, ger Mallorca mycket bättre värde. Men utan planering drar extrakostnaderna snabbt iväg."
+          "text": "Golf på Mallorca, den största av Spaniens Balearer, sträcker sig från riktigt prisvärt till ordentligt dyrt, och skillnaden är större än de flesta besökare väntar sig. Här är en ärlig genomgång för 2026 från någon som spelar här nästan varje vecka. För en genomgång av alla banor på ön, se <a href='/sv/golf-courses'>guiden till golfbanorna på Mallorca</a>. Det är fantastiskt prisvärt jämfört med golfpriserna i Shanghai, där jag tillbringade 11 år, men kostnaderna kan krypa uppåt om du planerar dåligt."
         },
         {
           "text": "Greenfee"
@@ -4452,11 +4518,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Budget (nio hål, pitch and putt)"
         },
         {
-          "text": "Från €17 för 9 hål eller €27-30 för 18 hål (klubbhyra tillkommer). Palma Pitch & Putt är en riktig kortbana i den lägre prisnivån. Bra för nybörjare, med låg press och dessutom praktiskt nära de större Arabella-banorna i samma område."
+          "text": "Från €17 för 9 hål eller €27-30 för 18 hål på Palma Pitch & Putt (klubbhyra extra), eller runt €65-75 om du vill ha de billigaste fullstora alternativen som Golf Pollença under de lugnare månaderna. Palma Pitch & Putt är ett riktigt korthålsalternativ: perfekt för nybörjare, roligt för familjer eller blandade grupper och ett lugnt sätt att komma igång med klubborna utan att förbinda sig till en full runda."
         },
         {
           "alt": "Palma Pitch and Putt",
-          "caption": "Palma Pitch & Putt - perfekt för nybörjare"
+          "caption": "Palma Pitch & Putt - ett av de billigare sätten att spela"
         },
         {
           "text": "18-halsbanor i mellansegmentet"
@@ -4468,10 +4534,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Premiumbanor"
         },
         {
-          "text": "Son Gual ligger mellan ungefär €115 i lågsäsong och €165 i toppperioderna mars till maj samt september till november. Alcanada går från ungefär €115 i lågsäsong till €220 när det är som dyrast. Son Muntaner går upp till ungefär €260 och ned till cirka €125 på de billigaste tiderna. Det här är publicerade 2026-priser. Kontrollera aktuella Arabella-priser på arabellagolfmallorca.com."
+          "text": "Son Gual ligger runt €115-165. Alcanada går från ungefär €115 till €230. Son Muntaner når omkring €260 under högsäsong och sjunker till omkring €125 under det förmånliga fönstret. T Golf Calvià kan gå upp till omkring €210 och Son Vida till omkring €190. Toppnivån på Mallorca ligger högre än många äldre guider antyder."
         },
         {
-          "text": "Många banor har dynamisk prissättning. Försöker man få en sen tee time på en populär bana betalar man oftast mer. Planera tidigt, välj vad som är viktigt och spara pengar. Det är också värt att hålla koll på Black Friday, julkampanjer och paketerbjudanden. Gör man det rätt går det ofta att spara 30-40 procent."
+          "text": "Ungefär hälften av öns banor använder numera dynamiska priser, bland annat Arabella-banorna, båda T Golf-anläggningarna, Pula, Capdepera samt Son Antem East och West. Den praktiska regeln är enkel: ju tidigare du bokar, desto större chans att låsa det lägre priset. Black Friday, vintern och partnererbjudanden för flera rundor kan fortfarande spara riktiga pengar om du väljer tidpunkt väl. Vill du ha banval och starttider ordnade innan du kommer, börja med <a href='/sv/plan-your-trip'>reseplaneringen</a>."
         },
         {
           "caption": "Son Gual - premiumbana, €115-165"
@@ -4483,7 +4549,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Månader med bäst värde"
         },
         {
-          "text": "Januari, februari och november. Greenfeen på de flesta banor ligger då 20-30 procent under toppnivåerna, och banorna är fortfarande i mycket gott skick. De stora perioderna är mars till maj och september till november - flest spelare, högst priser och bäst förhållanden."
+          "text": "Juni-augusti och december-februari är oftast de förmånliga perioderna. Högsäsongspriser gäller normalt från mitten av mars till början av juni och från mitten av september till mitten av november. Det spelar roll, eftersom många äldre råd om golf på Mallorca fortfarande felaktigt behandlar oktober till april som lågsäsong."
         },
         {
           "text": "Klubbhyra"
@@ -4492,7 +4558,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Hyresset direkt från banan kostar vanligtvis €35-50 i pro shopen. Kvaliteten varierar."
         },
         {
-          "text": "Specialiserade uthyrningsföretag levererar till hotell, flygplats eller bana. Enklare set börjar runt €25 per dag. Premiumset från aktuell säsong börjar runt €55 för två dagar och blir bättre prissatta vid laengre vistelser, ungefär €140 för tio dagar. Veckopriser sparar ofta 20-30 procent. Boka minst en vecka i förväg för bästa chans till rätt klubbor och tidig bokningsrabatt."
+          "text": "Specialiserade uthyrare levererar till ditt hotell, flygplatsen eller banan. Budgetset kostar från ungefär €25 per dag; premiumalternativ för innevarande säsong från €55 för 2 dagar, och sedan ger längre resor rabatt, med omkring €140 för 10 dagar. Veckopriser sparar 20-30 %. Boka minst en vecka i förväg för bäst tillgång, rätt klubbor och tidigbokningsrabatter. Om klubbhyra spelar roll för din resa, läs också den fullständiga guiden om klubbhyra, eftersom företagen, prisnivåerna och leveranslösningarna skiljer sig mer än de flesta tror."
         },
         {
           "text": "Buggy och trolley"
@@ -4501,7 +4567,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Golfbuggy kostar €35-48 beroende på bana. Son Gual tar €45, Alcanada €48. GPS-modellerna ger avstånd och hålkartor. Dragvagn: €6-8. Elektrisk trolley: €14-25."
         },
         {
-          "text": "På kuperade banor som Bendinat, Andratx eller Son Vida är buggy värd pengarna. På plattare banor som Son Antem, Maioris eller Santa Ponsa räcker en trolley gott."
+          "text": "På kuperade banor som Bendinat, Andratx eller Son Vida är en golfbil värd pengarna. På de plattare banorna (Son Antem, Maioris, Santa Ponsa med flera) funkar en vagn bra om du vill ha motion."
         },
         {
           "caption": "Buggy kostar vanligtvis €35-48 per rond"
@@ -4542,8 +4608,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Jämfört med Storbritannien: nej. Det finns många billigare alternativ här än på andra europeiska golfdestinationer. Mellanklassen ger starkt värde. Jämfört med Algarve: liknande i toppen, något billigare i mitten. Jämfört med Costa del Sol: på premiumnivå ganska likt."
         },
         {
-          "text": "Vill du ha en ordentligt arrangerad premiumdag med bana, coaching, lunch och allt runtomkring?",
-          "linkLabel": "Se play-with-a-pro upplevelsen →"
+          "text": "Vill du ha alla greenfees, buggykostnader och säsongspriser på ett ställe? Ladda ner den kostnadsfria kostnadsguiden 2026 som PDF.",
+          "linkLabel": "Hämta den kostnadsfria kostnadsguiden →"
         },
         {
           "text": "Vill du att hela golfdagen ska vara ordnad i förväg, med bana, starttid, coaching och allt klart innan du kommer fram?",
@@ -4554,14 +4620,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "zh": {
       "metadata": {
         "title": "马略卡高尔夫要花多少钱 2026",
-        "description": "马略卡高尔夫€55-€260，多数€90-€150。最便宜Pollença（€55），最贵Son Muntaner（€260）。租赁€30起。"
+        "description": "马略卡果岭费为 €55–€260。了解球车费用、性价比高的月份、动态定价，以及每座球场该何时提前预订。"
       },
       "meta": {
         "badge": "费用指南",
         "readTime": "5分钟阅读",
         "updated": "2026年3月",
         "title": "马略卡打高尔夫要花多少钱？2026完整费用解析",
-        "intro": "如果看标准18洞轮次，价格大致从€55到€260不等。下面这份2026年费用解析，来自一位几乎每周都在这里下场的教练。",
+        "intro": "马略卡对公众开放的 18 洞球场，果岭费从性价比端的约 55 欧元，到旺季 Son Muntaner 的约 260 欧元不等。这是一位几乎每周都在这里打球的人给出的 2026 年诚实费用解析。",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4583,7 +4649,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "马略卡打高尔夫，可以非常划算，也可以相当昂贵，价格差比大多数游客想象得更大。这是一份2026年的真实费用说明，来自一个几乎每周都在这里下场的人。和我过去工作了十一年的上海相比，这里的整体性价比其实相当不错，但如果不提前规划，附加成本会一项一项冒出来。"
+          "text": "马略卡是西班牙巴利阿里群岛中最大的岛屿，在这里打高尔夫，从真正实惠到相当昂贵都有，差距比大多数游客想象的更大。这是一份面向 2026 年的诚实费用解析，来自一个几乎每周都在这里打球的人。想了解岛上每一座球场，请看<a href='/zh/golf-courses'>马略卡高尔夫球场指南</a>。与我生活过 11 年的上海的球价相比，这里性价比惊人，但如果你不做好规划，费用也会悄悄涨上去。"
         },
         {
           "text": "果岭费"
@@ -4592,11 +4658,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "预算级选择：9洞短杆场 / Pitch & Putt"
         },
         {
-          "text": "9洞€17起，18洞€27-30（球杆租借另计）。Palma Pitch & Putt是真正意义上的短杆场，价格位于最低区间。对初学者很友好，压力小，而且离Arabella那几座大场很近。"
+          "text": "Palma Pitch & Putt 9 洞从 €17 起，18 洞 €27-30（球杆租赁另计）；如果想要最便宜的标准长度球场，比如淡季的 Golf Pollença，大约是 €65-75。Palma Pitch & Putt 是货真价实的短洞球场：非常适合初学者，也适合家庭或混合团队，是不必承诺完整一轮就能拿起球杆的轻松方式。"
         },
         {
           "alt": "Palma Pitch and Putt",
-          "caption": "Palma Pitch & Putt，适合刚开始打球的人"
+          "caption": "Palma Pitch & Putt：花费较低的打球方式之一"
         },
         {
           "text": "中档18洞球场"
@@ -4608,10 +4674,10 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "高端球场"
         },
         {
-          "text": "Son Gual淡季约€115（约¥860），高峰期€165（约¥1,290）；高峰期通常是3-5月以及9-11月。Alcanada淡季约€115，高峰期€220（约¥1,720）。Son Muntaner最高约€260，最低价位约€125。这些都是公开的2026年价格。Arabella旗下价格建议直接去arabellagolfmallorca.com确认。"
+          "text": "Son Gual 大约 €115-165。Alcanada 大约 €115-230。Son Muntaner 旺季约 €260，在性价比时段会降到约 €125。T Golf Calvià 最高可达约 €210，Son Vida 约 €190。马略卡的高端价位，比许多旧指南说的要高。"
         },
         {
-          "text": "很多球场采用动态定价。如果你在热门时段临时订热门球场，价格通常会更高。提前规划、先想清楚自己最看重什么，能省下一笔。Black Friday、圣诞节和多轮套餐有时很值得看，做得对的话，经常可以省下30%-40%。"
+          "text": "岛上大约一半的球场现在采用动态定价，包括 Arabella 旗下球场、两家 T Golf、Pula、Capdepera 以及 Son Antem East 和 West。实用规则很简单：订得越早，越有可能锁定价格区间的低端。黑色星期五、冬季以及合作伙伴的多轮优惠，只要时机选得好，仍然能省下真金白银。如果你希望在抵达前就把球场选择和开球时间安排好，可以从<a href='/zh/plan-your-trip'>行程规划</a>开始。"
         },
         {
           "caption": "Son Gual，高端球场，€115-165"
@@ -4623,7 +4689,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "最划算的月份"
         },
         {
-          "text": "1月、2月和11月通常最划算。多数球场的果岭费会比高峰期低20%-30%，而球场状态依旧很好。最旺的时间是3-5月和9-11月：价格最高、人也最多，但球场条件也最好。"
+          "text": "6 月至 8 月以及 12 月至 2 月，通常是性价比最高的时段。旺季价格一般出现在 3 月中旬到 6 月初，以及 9 月中旬到 11 月中旬。这一点很重要，因为很多关于马略卡高尔夫的旧建议，仍然错误地把 10 月到 4 月当作便宜的季节。"
         },
         {
           "text": "租杆"
@@ -4632,7 +4698,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "球场会所直接租杆，通常€35-50（约¥270-390）一套。质量不太稳定。"
         },
         {
-          "text": "专业租杆公司可以送到酒店、机场或球场。基础套杆大概€25/天起；当季高端套杆大约€55起租两天，打得天数越长越划算，10天大约€140左右。周租一般能省20%-30%。最好提前至少一周预订，这样更容易拿到适合自己的杆身和规格，也更容易拿到早订价格。"
+          "text": "专业租杆公司可以把球杆送到你的酒店、机场或球场。基础套杆每天约 €25 起；当季高端套杆 2 天 €55 起，租期更长还有折扣，10 天约 €140。按周租赁可省 20-30%。至少提前一周预订，才能有最好的库存、合适的球杆和早订折扣。如果租杆对你的行程很重要，也请读一下完整的租杆指南，因为各家公司、价格档位和送货方式的差别，比大多数人想象的要大。"
         },
         {
           "text": "球车与手推车"
@@ -4641,7 +4707,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "球车一般€35-48（约¥270-375）。Son Gual是€45，Alcanada是€48。带GPS的车型会给你距离和球洞地图。普通手推车€6-8，电动手推车€14-25。"
         },
         {
-          "text": "像Bendinat、Andratx、Son Vida这种起伏比较大的球场，坐球车是值得的。像Son Antem、Maioris、Santa Ponsa这些相对平一点的球场，手推车就够了。"
+          "text": "在 Bendinat、Andratx 或 Son Vida 这类起伏较大的球场，球车物有所值。在较平坦的球场（Son Antem、Maioris、Santa Ponsa 等），如果你想运动一下，手推车也完全够用。"
         },
         {
           "caption": "一轮球的球车费用通常在€35-48之间"
@@ -4679,11 +4745,11 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "马略卡算贵吗？"
         },
         {
-          "text": "和英国比：不算。这里有不少比欧洲其他高尔夫目的地更友好的价格。和阿尔加维比：高端段接近，中档段略便宜一点。和太阳海岸比：高端段整体差不多。"
+          "text": "和英国比：不算。这里有不少比欧洲其他高尔夫目的地更友好的价格，按英国的标准，这里的中档球场性价比尤其出色。和阿尔加维比：高端段接近，中档段略便宜一点。和太阳海岸比：高端段整体差不多。"
         },
         {
-          "text": "如果你想把球场、陪打、午餐和当天安排一起做好，我可以帮你把这一天安排得更顺。也欢迎直接加微信咨询：andygriffiths1。",
-          "linkLabel": "查看与职业球手同场体验 →"
+          "text": "想把所有果岭费、球车费用和季节价格集中在一处看？下载免费的 2026 费用指南 PDF。",
+          "linkLabel": "获取免费费用指南 →"
         },
         {
           "text": "如果你想在出发前就把整天安排好，包括球场、开球时间、陪打指导和所有细节，这里可以直接开始。",
@@ -4696,14 +4762,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "es": {
       "metadata": {
         "title": "Planificar tu viaje de golf a Mallorca",
-        "description": "¿Planificar un viaje de golf a Mallorca? Campos, tiempo, rondas, transporte, equipos y actividades. Por un profesional PGA en la isla."
+        "description": "Planifica tu viaje de golf a Mallorca: campos, salidas, dónde alojarte, cuántas rondas jugar y cuándo reservar. Consejos de un pro PGA en la isla."
       },
       "meta": {
         "badge": "Planificación",
         "readTime": "7 min de lectura",
-        "updated": "Marzo 2026",
+        "updated": "Septiembre 2026",
         "title": "Planificar viaje golf - Lo importante",
-        "intro": "Sin relleno turístico. Qué campos jugar, cuándo venir, cuántas vueltas hacer, cómo desplazarse y qué merece la pena fuera del campo.",
+        "intro": "Qué campos jugar, dónde alojarte, cuándo reservar las salidas y cómo evitar los errores más obvios en los huecos entre rondas.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4725,110 +4791,109 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Me mudé a Mallorca en marzo de 2025 y desde entonces juego aquí cada semana. Antes pasé once años en Shanghái, una ciudad donde un golfista paga €200 por una sola clase sin pestañear y donde el acceso al campo suele significar una membresía que cuesta más que el salario anual de mucha gente. Llegar aquí se sintió como descubrir uno de los secretos mejor guardados del golf europeo."
+          "text": "Me mudé a Mallorca en marzo de 2025 y juego al golf aquí cada semana desde entonces. Antes, once años en Shanghái, una ciudad donde los golfistas a menudo no dudan en gastar hasta €500 en una sola clase de una hora, y donde acceder a un campo suele significar una cuota de socio que cuesta más que el sueldo anual de la mayoría. Mallorca es un problema de golf distinto: mejor acceso, más variedad y más formas de equivocarse con el orden."
         },
         {
-          "text": "Esto es exactamente lo que le diría a un amigo que está organizando el viaje y quiere información útil, no copy turístico."
+          "text": "Esto es lo que le diría a un amigo que planea el golf antes de que los vuelos y los hoteles empiecen a forzar las decisiones."
         },
         {
-          "text": "Cuándo venir"
+          "text": "Cuándo ir"
         },
         {
-          "text": "Octubre-noviembre y febrero-abril son los mejores meses. Los campos están en gran estado, las temperaturas son cómodas, los green fees son más bajos que en verano y hay menos tráfico de grupos. Si yo tuviera que elegir un mes, elegiría octubre."
+          "text": "Si quieres las mejores condiciones, apunta a las ventanas pico de primavera y otoño. Si quieres mejor relación calidad-precio, fíjate más en junio-agosto y diciembre-febrero. Octubre sigue siendo uno de mis meses favoritos para jugar, pero ya no es la opción barata."
         },
         {
-          "text": "Mayo y junio también son muy buenos, pero los precios suben. Julio y agosto son calurosos, caros y mucho más concurridos. Las salidas tempranas son esenciales. Diciembre y enero son más baratos; el tiempo varía algo, pero a menudo se juega de maravilla. Un buen día claro de enero aquí es espectacular."
+          "text": "El final de la primavera es excelente pero caro. El verano es caluroso, pero también es cuando muchos campos rebajan los precios de forma notable, sobre todo si juegas temprano o al atardecer. El invierno es más tranquilo, más fresco y a menudo uno de los momentos con mejor relación calidad-precio para estar aquí."
         },
         {
-          "text": "¿Cuántas vueltas?"
+          "text": "¿Cuántas rondas?"
         },
         {
-          "text": "Una vuelta al día es lo normal para la mayoría. Los campos exigen y el calor del verano es real. En meses más frescos se pueden hacer 36 hoyos, pero la mayoría de los visitantes que vienen solo a jugar hacen cuatro o cinco vueltas en un viaje de cinco a siete días."
+          "text": "Una ronda al día es cómoda para la mayoría de los golfistas. Los campos plantean suficientes preguntas y el calor del verano es real. En los meses más frescos, 36 hoyos en un día son posibles si tienes tantas ganas, pero la mayoría de los visitantes solo de golf en un viaje de 5-7 días juegan 4-5 rondas. El orden importa: una ronda fácil de llegada, una prueba seria a mitad de viaje, un trayecto más largo cuando el grupo tenga tiempo y una ronda final lo bastante cerca como para que el aeropuerto sea sencillo."
         },
         {
           "text": "Qué campos priorizar"
         },
         {
-          "text": "Para un golfista serio con poco tiempo: Son Gual y Alcanada. Si yo tuviera una semana y solo dos vueltas, serían esos dos."
+          "text": "Golfistas serios con poco tiempo: Son Gual y Alcanada. Esos serían mis dos si tuviera una semana y dos rondas."
         },
         {
-          "caption": "Son Gual - campo imprescindible para el jugador serio"
+          "alt": "Campo de golf Son Gual",
+          "caption": "Son Gual: imprescindible para golfistas serios"
         },
         {
-          "text": "Para una sensación de DP World Tour: Son Muntaner, del grupo Arabella. A cinco minutos de Palma y Mejor Campo de España 2025."
+          "text": "Experiencia DP World Tour cerca de Palma: Son Muntaner. A cinco minutos de la ciudad, muy bien cuidado y elegido Mejor Campo de Golf de España en 2025."
         },
         {
-          "text": "Para la costa este y una vuelta bonita de verdad: Canyamel y Pula. Merece la pena combinarlo con una noche en Artà o Capdepera."
+          "text": "Costa este con paisaje: Canyamel y Pula. Merece la pena combinarlos con una noche en Artà o en la localidad de Capdepera."
         },
         {
           "text": "La prueba más dura: Golf de Andratx, en el suroeste."
         },
         {
-          "text": "Para principiantes o grupos mezclados: Son Quint, Son Antem East o recorridos más cortos."
+          "text": "Principiantes o grupos mixtos: Son Quint (Arabella), Son Antem East o campos más cortos."
         },
         {
-          "text": "Si yo solo tuviera una semana en la isla, jugaría Son Gual y Alcanada. El resto completa una segunda semana."
+          "text": "Con una semana en la isla, el error no suele ser no encontrar buenos campos. Es ponerlos en el orden equivocado."
         },
         {
           "text": "Cómo moverse"
         },
         {
-          "text": "Un coche de alquiler es la opción más práctica. La mayoría de los mejores campos están a 20-60 minutos de Palma y el transporte público no los cubre bien. Las carreteras son buenas y, fuera del pico de verano, el tráfico es manejable."
+          "text": "Un coche de alquiler es la opción más práctica. El transporte público no llega bien a muchos de los mejores campos. Las carreteras son buenas, pero la costa este sigue necesitando tiempo de verdad en el día. De Palma a Alcanada hay un buen trayecto, no un añadido casual antes de cenar. Si nadie del grupo quiere conducir, planéalo antes de elegir campos."
         },
         {
           "alt": "Alquiler de coche en Mallorca",
-          "caption": "Un coche de alquiler es lo más práctico para acceder a los mejores campos"
+          "caption": "Un coche de alquiler es la forma más sencilla de llegar a los mejores campos"
         },
         {
           "text": "Palos"
         },
         {
-          "text": "Si va a jugar tres o más vueltas en un viaje claramente de golf, traiga sus propios palos. Si es un viaje mixto con una o dos vueltas, alquilar suele tener más sentido. En la guía de alquiler explico qué empresas trabajan bien y le ahorran pasear una bolsa de viaje por el aeropuerto."
+          "text": "Lleva tus propios palos si vas a jugar tres rondas o más. Alquila si es unas vacaciones mixtas con una o dos rondas previstas. La guía de alquiler de palos recoge las empresas que yo miraría, lo que cobran y qué opciones merecen la pena. Reserva las salidas pronto para marzo-mayo y septiembre-octubre. Si solo necesitas el golf reservado, se puede organizar sin que yo asista."
         },
         {
-          "text": "Qué hacer además del golf"
+          "text": "Qué más hacer"
         },
         {
-          "text": "El casco antiguo de Palma merece la pena de verdad. La costa noroeste, con Valldemossa, Deià y Sóller, ofrece algunos de los paisajes más bonitos del Mediterráneo. El noreste es más tranquilo y más salvaje. Y la comida, el pescado local y el vino de la isla están a muy buen nivel."
+          "text": "El casco antiguo de Palma merece una tarde entera. La costa noroeste, sobre todo Valldemossa, Deià y Sóller, es el día obvio sin golf. El noreste es más tranquilo y salvaje. El marisco local y el vino de la isla pueden aportar más al viaje que otros nueve hoyos con prisas."
         },
         {
           "alt": "Casco antiguo de Palma",
-          "caption": "Palma merece un día fuera del campo"
+          "caption": "El casco antiguo de Palma: merece un día lejos del campo"
         },
         {
-          "text": "Un viaje de golf sin al menos una comida larga en un sitio inesperado solo hace la mitad del trabajo. Reserve una tarde sin salida y conozca un poco la isla. El golf es el motivo para venir; lo demás es lo que hace que quiera volver."
+          "text": "Un viaje de golf que no incluya al menos una comida larga en algún sitio inesperado solo hace la mitad del trabajo. Reserva al menos una tarde sin hora de salida. El golf es la razón para venir. Lo demás es por lo que el viaje sigue sabiendo bien cuando la tarjeta no acompaña."
         },
         {
           "items": [
             {
-              "src": "/images/blog-trip-planning/Valldemossa.avif",
               "alt": "Valldemossa",
-              "caption": "Valldemossa - buena escapada para una tarde sin golf"
+              "caption": "Valldemossa: espectacular costa noroeste"
             },
             {
-              "src": "/images/blog-trip-planning/Soller.webp",
-              "alt": "Deià",
-              "caption": "Deià: mejor esto que encadenar otra vuelta sin respirar"
+              "alt": "Sóller",
+              "caption": "Sóller: pueblo mediterráneo clásico"
             }
           ]
         },
         {
-          "text": "¿Quiere que la parte de golf quede bien organizada, con campos, orden de juego, salidas, buggies, alquileres y un presupuesto claro antes de reservar?",
-          "linkLabel": "Pedir a Andy que planifique el golf →"
+          "text": "¿Quieres que la parte de golf esté bien organizada: campos, ruta, salidas, buggies, alquileres y un presupuesto claro antes de reservar nada?",
+          "linkLabel": "Pídele a Andy que planifique el golf →"
         }
       ]
     },
     "de": {
       "metadata": {
         "title": "Planung einer Golftrip nach Mallorca",
-        "description": "Eine Golftrip nach Mallorca planen? Plätze, Zeit, Runden, Transport, Ausrüstung und Aktivitäten. Von einem PGA-Professional auf der Insel."
+        "description": "Golfreise nach Mallorca planen: Plätze, Startzeiten, wo Sie übernachten, wie viele Runden und wann buchen. Rat eines PGA-Pros von der Insel."
       },
       "meta": {
         "badge": "Reiseplanung",
         "readTime": "7 Min. Lesezeit",
-        "updated": "März 2026",
+        "updated": "September 2026",
         "title": "Golfreise planen - Essentials",
-        "intro": "Keine Tourismusfloskeln. Welche Plätze, welche Monate, wie viele Runden, wie man sich bewegt und was man außerhalb des Golfplatzes tun sollte.",
+        "intro": "Welche Plätze Sie spielen, wo Sie sich niederlassen, wann Sie Startzeiten buchen und wie Sie die naheliegenden Fehler zwischen den Runden vermeiden.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4850,109 +4915,109 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Ich bin im März 2025 nach Mallorca gezogen und spiele seitdem jede Woche hier. Davor elf Jahre in Shanghai, einer Stadt, in der Golfer ohne zu zögern 200 Euro für eine einzige Stunde ausgeben und der Zugang zum Platz oft Mitgliedschaften voraussetzt, die mehr kosten als viele Menschen im Jahr verdienen. Mallorca fühlte sich für mich an wie eines der am besten gehüteten Golfgeheimnisse Europas."
+          "text": "Im März 2025 bin ich nach Mallorca gezogen und spiele seitdem jede Woche hier Golf. Davor waren es elf Jahre in Shanghai, einer Stadt, in der Golfer oft nichts dabei finden, bis zu €500 für eine einzige Stunde Unterricht auszugeben, und in der der Zugang zu einem Platz oft eine Mitgliedschaft bedeutet, die mehr kostet als das Jahresgehalt der meisten Menschen. Mallorca ist ein anderes Golfproblem: besserer Zugang, mehr Auswahl und mehr Möglichkeiten, die Reihenfolge falsch zu wählen."
         },
         {
-          "text": "Das hier ist das, was ich einem Freund sagen würde, der eine Reise plant und keine Lust auf Füllmaterial hat."
+          "text": "Das würde ich einem Freund sagen, der das Golf plant, bevor Flüge und Hotels die Entscheidungen erzwingen."
         },
         {
-          "text": "Wann man kommen sollte"
+          "text": "Wann Sie kommen sollten"
         },
         {
-          "text": "Oktober bis November sowie Februar bis April sind die besten Monate. Die Plätze sind in sehr gutem Zustand, die Temperaturen angenehm bei etwa 18-24 Grad, die Greenfees niedriger als im Sommer und es sind weniger Gruppen auf dem Platz. Oktober wäre meine persönliche Wahl."
+          "text": "Wenn Sie die besten Bedingungen wollen, peilen Sie die Spitzenzeiten im Frühjahr und Herbst an. Wenn Sie mehr fürs Geld wollen, schauen Sie genauer auf Juni bis August und Dezember bis Februar. Oktober ist immer noch einer meiner liebsten Monate zum Spielen, aber er ist nicht mehr die günstige Option."
         },
         {
-          "text": "Mai und Juni sind ebenfalls sehr gut, aber die Preise steigen. Juli und August sind heiß, teuer und voll. Frühe Tee Times sind dann Pflicht. Dezember und Januar sind günstiger, das Wetter schwankt etwas, können aber trotzdem hervorragend sein. Ein klarer Januartag hier ist außergewöhnlich."
+          "text": "Das späte Frühjahr ist hervorragend, aber teuer. Der Sommer ist heiß, aber dann senken viele Plätze ihre Preise spürbar, besonders wenn Sie früh oder zur Dämmerung spielen. Der Winter ist ruhiger, kühler und oft eine der preislich besten Zeiten, hier zu sein."
         },
         {
           "text": "Wie viele Runden?"
         },
         {
-          "text": "Eine Runde pro Tag ist für die meisten Golfer angenehm. Die Plätze fordern, und die Sommerhitze ist real. In den kühleren Monaten sind 36 Löcher an einem Tag möglich, wenn man das wirklich will, aber die meisten reinen Golfreisenden spielen auf einer 5-7-Tage-Reise vier bis fünf Runden."
+          "text": "Eine Runde pro Tag ist für die meisten Golfer angenehm. Die Plätze stellen genug Fragen, und die Sommerhitze ist real. In kühleren Monaten sind 36 Löcher an einem Tag möglich, wenn Sie so begeistert sind, aber die meisten reinen Golfgäste spielen auf einer Reise von 5-7 Tagen 4-5 Runden. Die Reihenfolge zählt: eine leichte Ankunftsrunde, ein ernsthafter Test in der Mitte, eine längere Fahrt, wenn die Gruppe Zeit hat, und eine letzte Runde in Flughafennähe, damit die Abreise einfach bleibt."
         },
         {
-          "text": "Welche Plätze Priorität haben sollten"
+          "text": "Welche Plätze Priorität haben"
         },
         {
-          "text": "Für ambitionierte Golfer mit wenig Zeit: Son Gual und Alcanada. Wenn ich nur eine Woche und nur zwei Runden hätte, wären das meine beiden."
+          "text": "Ernsthafte Golfer mit wenig Zeit: Son Gual und Alcanada. Das wären meine zwei, wenn ich eine Woche und zwei Runden hätte."
         },
         {
-          "caption": "Son Gual - Pflichtplatz für ambitionierte Golfer"
+          "alt": "Golfplatz Son Gual",
+          "caption": "Son Gual - ein Muss für ernsthafte Golfer"
         },
         {
-          "text": "Für ein DP-World-Tour-Gefühl: Son Muntaner von Arabella. Fünf Minuten von Palma entfernt und 2025 als bester Golfplatz Spaniens ausgezeichnet."
+          "text": "DP-World-Tour-Erlebnis bei Palma: Son Muntaner. Fünf Minuten von der Stadt, hervorragend gepflegt und 2025 zum besten Golfplatz Spaniens gekürt."
         },
         {
-          "text": "Für die landschaftlich starke Ostküste: Canyamel und Pula. Am besten mit einer Nacht in Artà oder Capdepera kombinieren."
+          "text": "Landschaftlich schöne Ostküste: Canyamel und Pula. Lässt sich gut mit einer Übernachtung in Artà oder Capdepera verbinden."
         },
         {
           "text": "Die härteste Prüfung: Golf de Andratx im Südwesten."
         },
         {
-          "text": "Für Anfänger oder gemischte Gruppen: Son Quint, Son Antem East oder kürzere Plätze."
+          "text": "Anfänger oder gemischte Gruppen: Son Quint (Arabella), Son Antem East oder kürzere Plätze."
         },
         {
-          "text": "Wenn ich auf der Insel nur eine Woche hätte, würde ich Son Gual und Alcanada spielen. Der Rest füllt eine zweite Woche."
+          "text": "Mit einer Woche auf der Insel liegt der Fehler meist nicht darin, gute Plätze zu finden. Sondern darin, sie in die falsche Reihenfolge zu bringen."
         },
         {
-          "text": "Wie man sich bewegt"
+          "text": "Unterwegs auf der Insel"
         },
         {
-          "text": "Ein Mietwagen ist die praktikabelste Lösung. Die meisten der besten Plätze liegen 20 bis 60 Minuten von Palma entfernt, und der öffentliche Verkehr bringt Sie nicht sinnvoll hin. Die Straßen sind gut, und außerhalb des Hochsommers ist der Verkehr gut handhabbar."
+          "text": "Ein Mietwagen ist die praktischste Lösung. Der öffentliche Verkehr bedient viele der besten Plätze nicht gut. Die Straßen sind gut, aber an der Ostküste brauchen Sie trotzdem ehrlich Zeit am Tag. Von Palma nach Alcanada ist es eine richtige Fahrt, kein beiläufiger Abstecher vor dem Abendessen. Wenn niemand in der Gruppe fahren möchte, klären Sie das, bevor Sie die Plätze auswählen."
         },
         {
           "alt": "Mietwagen auf Mallorca",
-          "caption": "Ein Mietwagen ist für die besten Plätze praktisch unverzichtbar"
+          "caption": "Ein Mietwagen ist der einfachste Weg zu den besten Plätzen"
         },
         {
           "text": "Schläger"
         },
         {
-          "text": "Bei drei oder mehr Runden auf einer klaren Golfreise: eigene Schläger mitbringen. Bei einem gemischten Urlaub mit ein oder zwei Runden ist Leihe meist sinnvoller. Im Club-Hire-Guide nenne ich die Anbieter, die sauber liefern und Ihnen den Reisestress mit dem Travel Bag abnehmen."
+          "text": "Bringen Sie bei drei oder mehr Runden Ihre eigenen Schläger mit. Für einen gemischten Urlaub mit ein oder zwei geplanten Runden mieten Sie. Der Leihschläger-Guide nennt die Anbieter, die ich mir ansehen würde, was sie verlangen und welche Varianten sich lohnen. Buchen Sie Startzeiten für März bis Mai und September bis Oktober früh. Wenn Sie nur das Golf gebucht haben möchten, geht das auch ohne meine Anwesenheit."
         },
         {
-          "text": "Was man sonst noch tun sollte"
+          "text": "Was es sonst zu tun gibt"
         },
         {
-          "text": "Palmas Altstadt ist wirklich schön. Die Nordwestküste mit Valldemossa, Deià und Sóller gehört zu den eindrucksvollsten Landschaften im Mittelmeerraum. Dazu kommen sehr gutes Essen, lokaler Fisch und starke Inselweine. Der Nordosten ist ruhiger und wilder."
+          "text": "Die Altstadt von Palma ist einen ganzen Nachmittag wert. Die Nordwestküste, besonders Valldemossa, Deià und Sóller, ist der naheliegende Tag ohne Golf. Der Nordosten ist ruhiger und wilder. Lokaler Fisch und Inselwein können für die Reise mehr bewirken als weitere eilige neun Löcher."
         },
         {
-          "caption": "Palmas Altstadt lohnt einen Tag abseits des Platzes"
+          "alt": "Altstadt von Palma",
+          "caption": "Palmas Altstadt - einen Tag abseits des Platzes wert"
         },
         {
-          "text": "Eine Golfreise ohne mindestens ein langes Mittagessen an einem Ort, den man nicht eingeplant hatte, macht nur die halbe Arbeit. Lassen Sie einen Nachmittag ohne Tee Time frei und erkunden Sie die Insel. Das Golf bringt Sie her. Der Rest sorgt dafür, dass Sie wiederkommen wollen."
+          "text": "Eine Golfreise ohne mindestens ein langes Mittagessen an einem unerwarteten Ort erledigt nur die halbe Arbeit. Planen Sie mindestens einen Nachmittag ohne Startzeit ein. Das Golf ist der Grund zu kommen. Der Rest ist der Grund, warum sich die Reise auch dann gut anfühlt, wenn die Scorekarte es nicht tut."
         },
         {
           "items": [
             {
-              "src": "/images/blog-trip-planning/Valldemossa.avif",
               "alt": "Valldemossa",
-              "caption": "Valldemossa - ein starker Ausflug für einen golffreien Nachmittag"
+              "caption": "Valldemossa - dramatische Nordwestküste"
             },
             {
-              "src": "/images/blog-trip-planning/Soller.webp",
-              "alt": "Deià",
-              "caption": "Deià - Nordwestküste statt noch eine weitere Bucket-List-Runde"
+              "alt": "Sóller",
+              "caption": "Sóller - klassische Mittelmeerstadt"
             }
           ]
         },
         {
-          "text": "Wollen Sie den Golfteil sauber organisiert haben, mit Plätzen, Reihenfolge, Tee Times, Buggys, Leihschlägern und einem klaren Angebot vor der Buchung?",
-          "linkLabel": "Andy um Golfplanung bitten →"
+          "text": "Möchten Sie die Golfseite sauber organisiert haben: Plätze, Route, Startzeiten, Buggys, Leihschläger und ein klares Angebot, bevor etwas gebucht wird?",
+          "linkLabel": "Andy bitten, das Golf zu planen →"
         }
       ]
     },
     "fr": {
       "metadata": {
         "title": "Planification d'un voyage golf à Majorque",
-        "description": "Planifier un voyage golf à Majorque ? Parcours, dates, rondes, transport, équipement et activités. Par un professionnel PGA sur l'île."
+        "description": "Planifiez votre voyage de golf à Majorque : parcours, départs, où loger, combien de parties et quand réserver. Conseils d'un pro PGA sur l'île."
       },
       "meta": {
         "badge": "Planification",
         "readTime": "7 min de lecture",
-        "updated": "Mars 2026",
+        "updated": "Septembre 2026",
         "title": "Planifier voyage golf - L'essentiel",
-        "intro": "Pas de discours touristique. Quels parcours, quelles périodes, combien de parties, comment se déplacer et quoi faire en dehors du parcours.",
+        "intro": "Quels parcours jouer, où se loger, quand réserver les départs et comment éviter les erreurs évidentes entre les parties.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4974,91 +5039,94 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Je me suis installé à Majorque en mars 2025 et je joue ici chaque semaine depuis. Avant cela, j'ai passé onze années à Shanghai, une ville où un golfeur dépense €200 pour une seule leçon sans vraiment y penser et où l'accès au parcours suppose souvent une cotisation plus chère que le salaire annuel de beaucoup de gens. Arriver ici a donné l'impression de découvrir l'un des secrets les mieux gardés du golf européen."
+          "text": "Je me suis installé à Majorque en mars 2025 et j'y joue au golf chaque semaine depuis. Avant, onze ans à Shanghai, une ville où les golfeurs n'hésitent souvent pas à dépenser jusqu'à €500 pour une seule leçon d'une heure, et où l'accès à un parcours signifie souvent un abonnement qui coûte plus que le salaire annuel de la plupart des gens. Majorque est un autre problème de golf : un meilleur accès, plus de choix et plus de façons de se tromper dans l'ordre."
         },
         {
-          "text": "Ceci est exactement ce que je dirais à un ami qui prépare le voyage et veut de l'utile, pas du remplissage."
+          "text": "Voici ce que je dirais à un ami qui prépare le golf avant que les vols et les hôtels ne forcent les décisions."
         },
         {
           "text": "Quand venir"
         },
         {
-          "text": "Octobre-novembre et février-avril sont les meilleures périodes. Les parcours sont en excellent état, les températures confortables, les green fees plus bas qu'en été et il y à moins de groupes. Si je devais choisir un mois, je prendrais octobre."
+          "text": "Si vous voulez les meilleures conditions, visez les périodes de pointe du printemps et de l'automne. Si vous voulez un meilleur rapport qualité-prix, regardez de plus près juin-août et décembre-février. Octobre reste l'un de mes mois préférés pour jouer, mais ce n'est plus l'option bon marché."
         },
         {
-          "text": "Mai et juin sont également très bons, mais les prix montent. Juillet et août sont plus chauds, plus chers et nettement plus fréquentés. Les départs très tôt sont indispensables. Décembre et janvier sont moins chers ; la météo varie un peu, mais on peut y jouer de très belles parties. Une vraie journée claire de janvier ici est remarquable."
+          "text": "La fin du printemps est excellente mais chère. L'été est chaud, mais c'est aussi la période où de nombreux parcours baissent nettement leurs prix, surtout si vous jouez tôt ou en fin de journée. L'hiver est plus calme, plus frais, et souvent l'une des périodes au meilleur rapport qualité-prix pour être ici."
         },
         {
           "text": "Combien de parties ?"
         },
         {
-          "text": "Une partie par jour convient à la plupart des golfeurs. Les parcours demandent de l'énergie et la chaleur estivale est réelle. Sur les mois plus frais, 36 trous dans la journée sont possibles, mais la plupart des visiteurs venus uniquement pour le golf jouent quatre à cinq parties sur un séjour de cinq à sept jours."
+          "text": "Une partie par jour est confortable pour la plupart des golfeurs. Les parcours posent assez de questions, et la chaleur de l'été est réelle. Pendant les mois plus frais, 36 trous dans la journée sont possibles si vous êtes très motivé, mais la plupart des visiteurs purement golf en séjour de 5 à 7 jours jouent 4 à 5 parties. L'ordre compte : une partie facile à l'arrivée, un vrai test au milieu, un trajet plus long quand le groupe a le temps, et une dernière partie assez proche pour garder l'aéroport simple."
         },
         {
-          "text": "Quels parcours prioriser"
+          "text": "Quels parcours privilégier"
         },
         {
-          "text": "Pour un golfeur sérieux avec peu de temps : Son Gual et Alcanada. Si je n'avais qu'une semaine et seulement deux parties, ce seraient mes deux choix."
+          "text": "Golfeurs sérieux, temps limité : Son Gual et Alcanada. Ce sont mes deux choix si j'avais une semaine et deux parties."
         },
         {
-          "caption": "Son Gual - incontournable pour un golfeur exigeant"
+          "alt": "Parcours de golf de Son Gual",
+          "caption": "Son Gual - incontournable pour les golfeurs sérieux"
         },
         {
-          "text": "Pour une sensation DP World Tour : Son Muntaner du groupe Arabella. A cinq minutes de Palma et élu meilleur parcours d'Espagne en 2025."
+          "text": "L'expérience DP World Tour près de Palma : Son Muntaner. À cinq minutes de la ville, très bien entretenu, et élu meilleur parcours de golf d'Espagne en 2025."
         },
         {
-          "text": "Pour la côté est et un cadre fort : Canyamel et Pula. Idéal en le combinant avec une nuit à Arta ou à Capdepera."
+          "text": "Côte est pittoresque : Canyamel et Pula. À combiner avec une nuit à Artà ou à Capdepera."
         },
         {
           "text": "Le test le plus dur : Golf de Andratx, dans le sud-ouest."
         },
         {
-          "text": "Pour les débutants ou les groupes mixtes : Son Quint, Son Antem East ou des parcours plus courts."
+          "text": "Débutants ou groupes mixtes : Son Quint (Arabella), Son Antem East ou des parcours plus courts."
         },
         {
-          "text": "Si je n'avais qu'une semaine sur l'île, je jouerais Son Gual et Alcanada. Le reste remplit facilement une deuxième semaine."
+          "text": "Avec une semaine sur l'île, l'erreur n'est généralement pas de ne pas trouver de bons parcours. C'est de les mettre dans le mauvais ordre."
         },
         {
           "text": "Se déplacer"
         },
         {
-          "text": "Une voiture de location est l'option la plus pratique. La plupart des meilleurs parcours se trouvent à 20-60 minutes de Palma et les transports publics ne les desservent pas correctement. Les routes sont bonnes et, hors coeur d'été, la circulation reste raisonnable."
+          "text": "Une voiture de location est l'option la plus pratique. Les transports en commun ne desservent pas bien beaucoup des meilleurs parcours. Les routes sont bonnes, mais la côte est demande tout de même du temps dans la journée. De Palma à Alcanada, c'est un vrai trajet, pas un petit ajout avant le dîner. Si personne dans le groupe ne veut conduire, prévoyez-le avant de choisir les parcours."
         },
         {
-          "caption": "Une voiture est le moyen le plus simple d'accéder aux meilleurs parcours"
-        },
-        {},
-        {
-          "text": "Si vous jouez trois parties ou plus sur un vrai séjour golf, prenez vos propres clubs. Pour des vacances mixtes avec une ou deux parties, la location est souvent plus logique. Dans le guide dédié à la location, je donne les entreprises qui livrent correctement et vous évitent de traîner un travel bag dans tout l'aéroport."
+          "alt": "Location de voiture à Majorque",
+          "caption": "Une voiture de location est le moyen le plus simple d'atteindre les meilleurs parcours"
         },
         {
-          "text": "Que faire en dehors du golf"
+          "text": "Clubs"
         },
         {
-          "text": "La vieille ville de Palma vaut vraiment le temps. La côte nord-ouest avec Valldemossa, Deià et Sóller offre certains des paysages les plus frappants de Méditerranée. Le nord-est est plus calme et plus sauvage. Et entre la cuisine, les poissons locaux et les vins de l'île, on mange très bien."
+          "text": "Apportez vos propres clubs pour trois parties ou plus. Louez pour des vacances mixtes avec une ou deux parties prévues. Le guide de la location de clubs présente les loueurs que je regarderais, leurs tarifs et les formules qui valent la peine. Réservez tôt les départs pour mars-mai et septembre-octobre. Si vous n'avez besoin que du golf réservé, cela peut s'organiser sans que je sois présent."
         },
         {
-          "caption": "La vieille ville de Palma mérite une journée hors du parcours"
+          "text": "Que faire d'autre"
         },
         {
-          "text": "Un voyage golf sans au moins un long déjeuner dans un endroit inattendu ne fait que la moitié du travail. Laissez-vous un après-midi sans tee time et allez voir l'île. Le golf est la raison de venir ; le reste est ce qui donne envie de revenir."
+          "text": "La vieille ville de Palma vaut bien un après-midi entier. La côte nord-ouest, surtout Valldemossa, Deià et Sóller, est la journée évidente sans golf. Le nord-est est plus calme et plus sauvage. Les fruits de mer locaux et le vin de l'île peuvent apporter plus au séjour que neuf trous de plus expédiés."
+        },
+        {
+          "alt": "Vieille ville de Palma",
+          "caption": "La vieille ville de Palma - une journée loin du parcours qui en vaut la peine"
+        },
+        {
+          "text": "Un voyage de golf qui ne comprend pas au moins un long déjeuner dans un endroit inattendu ne fait que la moitié du travail. Prévoyez au moins un après-midi sans heure de départ. Le golf est la raison de venir. Le reste est ce qui rend le séjour agréable même quand la carte de score ne l'est pas."
         },
         {
           "items": [
             {
-              "src": "/images/blog-trip-planning/Valldemossa.avif",
               "alt": "Valldemossa",
-              "caption": "Valldemossa - bonne option pour un après-midi sans golf"
+              "caption": "Valldemossa - spectaculaire côte nord-ouest"
             },
             {
-              "src": "/images/blog-trip-planning/Soller.webp",
-              "alt": "Deià",
-              "caption": "Deià - parfois meilleur choix qu'une partie de plus"
+              "alt": "Sóller",
+              "caption": "Sóller - ville méditerranéenne classique"
             }
           ]
         },
         {
-          "text": "Vous voulez que la partie golf soit organisée correctement, avec parcours, ordre des parties, départs, voiturettes, locations et un devis clair avant toute réservation ?",
+          "text": "Vous voulez le volet golf organisé correctement : parcours, itinéraire, départs, voiturettes, locations et un devis clair avant toute réservation ?",
           "linkLabel": "Demander à Andy de planifier le golf →"
         }
       ]
@@ -5066,14 +5134,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "nl": {
       "metadata": {
         "title": "Planning van een golfreis naar Mallorca",
-        "description": "Een golfreis naar Mallorca plannen? Banen, dates, rondes, transport, uitrusting en activiteiten. Door een PGA-professional op het eiland."
+        "description": "Plan je golfreis naar Mallorca: banen, starttijden, waar je verblijft, hoeveel rondes en wanneer je boekt. Advies van een PGA-pro op het eiland."
       },
       "meta": {
         "badge": "Reisplanning",
         "readTime": "7 min leestijd",
-        "updated": "Maart 2026",
+        "updated": "September 2026",
         "title": "Golftrip plannen - Essentials",
-        "intro": "Geen toeristische opvulling. Welke banen je moet spelen, wanneer je komt, hoeveel rondes logisch zijn en wat de beste aanpak buiten de baan is.",
+        "intro": "Welke banen je speelt, waar je je baseert, wanneer je starttijden boekt en hoe je de voor de hand liggende fouten tussen de rondes vermijdt.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5095,106 +5163,109 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Ik verhuisde in maart 2025 naar Mallorca en speel hier sindsdien elke week. Daarvoor werkte ik elf jaar in Shanghai, een stad waar golfers zonder veel nadenken €200 betalen voor een enkele les en waar toegang tot een baan vaak een lidmaatschap vraagt dat duurder is dan het jaarinkomen van veel mensen. Hier aankomen voelde als het ontdekken van een van Europa's best bewaarde golfgeheimen."
+          "text": "Ik verhuisde in maart 2025 naar Mallorca en speel hier sindsdien elke week golf. Daarvoor elf jaar in Shanghai, een stad waar golfers het vaak normaal vinden om tot €500 uit te geven aan één les van een uur, en waar toegang tot een baan vaak een lidmaatschap betekent dat meer kost dan het jaarsalaris van de meeste mensen. Mallorca is een ander golfprobleem: betere toegang, meer keuze en meer manieren om de volgorde verkeerd te kiezen."
         },
         {
-          "text": "Dit is precies wat ik tegen een vriend zou zeggen die de reis plant en geen zin heeft in opgepoetste toeristische tekst."
+          "text": "Dit is wat ik een vriend zou vertellen die het golf plant voordat vluchten en hotels de beslissingen gaan afdwingen."
         },
         {
-          "text": "Wanneer gaan"
+          "text": "Wanneer je moet gaan"
         },
         {
-          "text": "Oktober-november en februari-april zijn de beste perioden. De banen zijn in sterke conditie, de temperaturen comfortabel, de greenfees lager dan in de zomer en het is rustiger op de baan. Als ik een maand moest kiezen, koos ik oktober."
+          "text": "Wil je de beste omstandigheden, richt je dan op de piekperiodes in het voorjaar en de herfst. Wil je betere prijs-kwaliteit, kijk dan beter naar juni-augustus en december-februari. Oktober is nog steeds een van mijn favoriete maanden om te spelen, maar het is niet langer de goedkope optie."
         },
         {
-          "text": "Mei en juni zijn ook uitstekend, maar de prijzen stijgen. Juli en augustus zijn heet, duur en drukker. Vroege tee times zijn dan essentieel. December en januari zijn goedkoper; het weer wisselt wat, maar kan alsnog prachtig zijn. Een heldere januaridag hier is echt bijzonder."
+          "text": "Het late voorjaar is uitstekend maar duur. De zomer is heet, maar dan verlagen veel banen hun prijzen merkbaar, vooral als je vroeg speelt of in de avondschemering. De winter is rustiger, koeler en vaak een van de beste momenten qua prijs-kwaliteit om hier te zijn."
         },
         {
           "text": "Hoeveel rondes?"
         },
         {
-          "text": "Een ronde per dag is voor de meeste golfers ideaal. De banen vragen wat van je en de zomerhitte is echt. In koelere maanden zijn 36 holes op een dag mogelijk, maar de meeste golfreizigers spelen vier tot vijf rondes tijdens een trip van vijf tot zeven dagen."
+          "text": "Eén ronde per dag is voor de meeste golfers comfortabel. De banen stellen genoeg vragen en de zomerhitte is echt. In koelere maanden zijn 36 holes op een dag mogelijk als je zo gretig bent, maar de meeste bezoekers die alleen voor golf komen spelen op een reis van 5-7 dagen 4-5 rondes. De volgorde telt: een makkelijke aankomstronde, een serieuze test in het midden, een langere rit als de groep tijd heeft en een laatste ronde dicht genoeg bij de luchthaven om het eenvoudig te houden."
         },
         {
-          "text": "Welke banen prioriteit hebben"
+          "text": "Welke banen voorrang krijgen"
         },
         {
-          "text": "Voor serieuze golfers met weinig tijd: Son Gual en Alcanada. Als ik maar een week en twee rondes had, waren dat mijn twee keuzes."
+          "text": "Serieuze golfers met weinig tijd: Son Gual en Alcanada. Dat zijn mijn twee als ik een week en twee rondes had."
         },
         {
-          "caption": "Son Gual - verplichte baan voor de serieuze golfer"
+          "alt": "Golfbaan Son Gual",
+          "caption": "Son Gual - een must voor serieuze golfers"
         },
         {
-          "text": "Voor een DP World Tour-gevoel: Son Muntaner van Arabella. Vijf minuten van Palma en in 2025 uitgeroepen tot beste golfbaan van Spanje."
+          "text": "DP World Tour-ervaring bij Palma: Son Muntaner. Vijf minuten van de stad, sterk onderhouden en in 2025 uitgeroepen tot beste golfbaan van Spanje."
         },
         {
-          "text": "Voor de mooie oostkust: Canyamel en Pula. Ideaal te combineren met een nacht in Arta of Capdepera."
+          "text": "Mooie oostkust: Canyamel en Pula. Goed te combineren met een overnachting in Artà of Capdepera."
         },
         {
-          "text": "De zwaarste test: Golf de Andratx in het zuidwesten."
+          "text": "De zwaarste test: Golf de Andratx, in het zuidwesten."
         },
         {
-          "text": "Voor beginners of gemengde groepen: Son Quint, Son Antem East of kortere banen."
+          "text": "Beginners of gemengde groepen: Son Quint (Arabella), Son Antem East of kortere banen."
         },
         {
-          "text": "Als ik maar een week op het eiland had, zou ik Son Gual en Alcanada spelen. De rest vult een tweede week."
+          "text": "Met een week op het eiland is de fout meestal niet dat je geen goede banen vindt. Het is dat je ze in de verkeerde volgorde zet."
         },
         {
-          "text": "Vervoer"
+          "text": "Je verplaatsen"
         },
         {
-          "text": "Een huurauto is de meest praktische keuze. De meeste topbanen liggen 20 tot 60 minuten van Palma en het openbaar vervoer brengt je er niet goed heen. De wegen zijn goed en buiten het hoogseizoen is het verkeer prima te doen."
+          "text": "Een huurauto is de meest praktische optie. Het openbaar vervoer bedient veel van de beste banen niet goed. De wegen zijn goed, maar de oostkust kost nog steeds echt tijd op de dag. Van Palma naar Alcanada is een flinke rit, geen vrijblijvende toevoeging voor het avondeten. Wil niemand in de groep rijden, regel dat dan voordat je banen kiest."
         },
         {
-          "caption": "Een huurauto is de simpelste manier om de beste banen te bereiken"
-        },
-        {},
-        {
-          "text": "Speel je drie rondes of meer op een echte golfreis, neem dan je eigen clubs mee. Voor een gemengde vakantie met een of twee rondes is huren vaak logischer. In de clubhuurgids noem ik de bedrijven die betrouwbaar leveren en je het gesjouw met een travel bag op de luchthaven besparen."
+          "alt": "Autohuur op Mallorca",
+          "caption": "Een huurauto is de eenvoudigste manier om de beste banen te bereiken"
         },
         {
-          "text": "Wat je verder moet doen"
+          "text": "Clubs"
         },
         {
-          "text": "De oude stad van Palma is echt de moeite waard. De noordwestkust met Valldemossa, Deià en Sóller heeft sommige van de mooiste landschappen van de Middellandse Zee. Het noordoosten is rustiger en ruiger. En qua eten, lokale vis en eilandwijnen zit Mallorca sterk in elkaar."
+          "text": "Neem je eigen clubs mee bij drie rondes of meer. Huur bij een gemengde vakantie met een of twee geplande rondes. De gids over clubhuur behandelt de bedrijven waar ik naar zou kijken, wat ze rekenen en welke opties de moeite waard zijn. Boek starttijden vroeg voor maart-mei en september-oktober. Als je alleen het golf geboekt wilt hebben, kan dat geregeld worden zonder dat ik erbij ben."
         },
         {
-          "caption": "Palma verdient een dag buiten de golfbaan"
+          "text": "Wat je verder kunt doen"
         },
         {
-          "text": "Een golfreis zonder minstens een lange lunch op een onverwachte plek doet maar de helft goed. Laat een middag open zonder tee time en verken het eiland. Golf is de reden om te komen; de rest is de reden waarom mensen terug willen."
+          "text": "De oude stad van Palma is een hele middag waard. De noordwestkust, vooral Valldemossa, Deià en Sóller, is de voor de hand liggende dag zonder golf. Het noordoosten is rustiger en wilder. Lokale zeevruchten en eilandwijn kunnen meer doen voor de reis dan nog eens negen holes in haast."
+        },
+        {
+          "alt": "Oude stad van Palma",
+          "caption": "De oude stad van Palma - een dag weg van de baan waard"
+        },
+        {
+          "text": "Een golfreis zonder minstens één lange lunch op een onverwachte plek doet maar het halve werk. Plan minstens één middag zonder starttijd in. Het golf is de reden om te komen. De rest is waarom de reis nog goed voelt als de scorekaart dat niet doet."
         },
         {
           "items": [
             {
-              "src": "/images/blog-trip-planning/Valldemossa.avif",
               "alt": "Valldemossa",
-              "caption": "Valldemossa - goede keuze voor een golfvrije middag"
+              "caption": "Valldemossa - dramatische noordwestkust"
             },
             {
-              "src": "/images/blog-trip-planning/Soller.webp",
-              "alt": "Deià",
-              "caption": "Deià - soms beter dan nog een extra ronde"
+              "alt": "Sóller",
+              "caption": "Sóller - klassiek mediterraan stadje"
             }
           ]
         },
         {
-          "text": "Wil je dat het golfdeel goed wordt geregeld, met banen, volgorde, tee times, buggies, huurclubs en een duidelijke prijs voordat er iets wordt geboekt?",
-          "linkLabel": "Vraag Andy om de golfplanning →"
+          "text": "Wil je de golfkant goed geregeld hebben: banen, route, starttijden, buggy's, huurmateriaal en een duidelijke offerte voordat er iets wordt geboekt?",
+          "linkLabel": "Vraag Andy om het golf te plannen →"
         }
       ]
     },
     "sv": {
       "metadata": {
         "title": "Planering av en golfresa till Mallorca",
-        "description": "Planera en golfresa till Mallorca? Banor, datum, omgångar, transport, utrustning och aktiviteter. Av en PGA-proffs på ön."
+        "description": "Planera din golfresa till Mallorca: banor, starttider, var du ska bo, hur många rundor och när du ska boka. Råd från en PGA-pro på ön."
       },
       "meta": {
         "badge": "Reseplanering",
         "readTime": "7 min läsning",
-        "updated": "Mars 2026",
+        "updated": "September 2026",
         "title": "Planera golfresa - Essentials",
-        "intro": "Ingen turisttext. Vilka banor man ska spela, när man ska komma, hur många rundor som är vettiga och vad som är värt att göra utanför golfen.",
+        "intro": "Vilka banor du ska spela, var du ska bo, när du ska boka starttider och hur du undviker de uppenbara misstagen mellan rundorna.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5216,93 +5287,94 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "Jag flyttade till Mallorca i mars 2025 och har spelat här varje vecka sedan dess. Innan dess tillbringade jag elva år i Shanghai, en stad där golfare utan att tveka betalar €200 för en enda lektion och där tillgången till bana ofta betyder ett medlemskap som kostar mer än vad många människor tjänar på ett år. Att komma hit kändes som att hitta ett av Europas bäst bevarade golfhemligheter."
+          "text": "Jag flyttade till Mallorca i mars 2025 och har spelat golf här varje vecka sedan dess. Innan dess elva år i Shanghai, en stad där golfare ofta inte tänker två gånger på att lägga upp till €500 på en enda timmes lektion, och där tillgång till en bana ofta innebär ett medlemskap som kostar mer än de flestas årslön. Mallorca är ett annat golfproblem: bättre tillgång, mer val och fler sätt att få ordningen fel."
         },
         {
-          "text": "Det här är exakt vad jag skulle säga till en vän som planerar resan och inte vill ha turistbroschyrer."
+          "text": "Det här är vad jag skulle säga till en vän som planerar golfen innan flyg och hotell börjar tvinga fram besluten."
         },
         {
-          "text": "När man ska åka"
+          "text": "När du ska åka"
         },
         {
-          "text": "Oktober-november och februari-april är de bästa perioderna. Banorna är i fint skick, temperaturerna bekväma, greenfeen lägre än på sommaren och det är lugnare på banan. Om jag måste välja en månad väljer jag oktober."
+          "text": "Vill du ha de bästa förhållandena, sikta på topperioderna på våren och hösten. Vill du ha bättre valuta för pengarna, titta närmare på juni-augusti och december-februari. Oktober är fortfarande en av mina favoritmånader att spela, men det är inte längre det billiga alternativet."
         },
         {
-          "text": "Maj och juni är också mycket bra, men priserna stiger. Juli och augusti är varma, dyra och betydligt mer intensiva. Tidiga tee times är då ett måste. December och januari är billigare; vädret varierar lite mer, men det kan fortfarande vara fantastiskt. En klar januaridag här är något speciellt."
+          "text": "Senvåren är utmärkt men dyr. Sommaren är het, men då sänker många banor priserna märkbart, särskilt om du spelar tidigt eller i skymningen. Vintern är lugnare, svalare och ofta en av de mest prisvärda tiderna att vara här."
         },
         {
           "text": "Hur många rundor?"
         },
         {
-          "text": "En rond per dag passar de flesta. Banorna kräver energi och sommarhettan är verklig. Under svalare månader kan man spela 36 hål på en dag, men de flesta rena golfresenärer spelar fyra till fem rundor under en resa på fem till sju dagar."
+          "text": "En runda per dag är bekvämt för de flesta golfare. Banorna ställer tillräckligt många frågor, och sommarvärmen är på riktigt. Under de svalare månaderna går det att spela 36 hål på en dag om du är så sugen, men de flesta besökare som bara spelar golf på en resa på 5-7 dagar spelar 4-5 rundor. Ordningen spelar roll: en lätt ankomstrunda, ett seriöst test i mitten, en längre bilresa när gruppen har tid och en sista runda nära nog för att hålla flygplatsen enkel."
         },
         {
-          "text": "Vilka banor man ska prioritera"
+          "text": "Vilka banor du ska prioritera"
         },
         {
-          "text": "För seriöst golfspel med begränsad tid: Son Gual och Alcanada. Om jag bara hade en vecka och två rundor skulle det vara de två."
+          "text": "Seriösa golfare med begränsad tid: Son Gual och Alcanada. Det är mina två om jag hade en vecka och två rundor."
         },
         {
-          "caption": "Son Gual - måste för den seriösa golfaren"
+          "alt": "Golfbanan Son Gual",
+          "caption": "Son Gual - en måste-bana för seriösa golfare"
         },
         {
-          "text": "För DP World Tour-känsla: Son Muntaner från Arabella. Fem minuter från Palma och utsedd till Spaniens bästa golfbana 2025."
+          "text": "DP World Tour-upplevelse nära Palma: Son Muntaner. Fem minuter från staden, mycket välskött och utsedd till Spaniens bästa golfbana 2025."
         },
         {
-          "text": "För ostkustens natur: Canyamel och Pula. Kombinera gärna med en natt i Artà eller Capdepera."
+          "text": "Natursköna östkusten: Canyamel och Pula. Värt att kombinera med en natt i Artà eller Capdepera."
         },
         {
-          "text": "Den tuffaste testen: Golf de Andratx i sydväst."
+          "text": "Det tuffaste testet: Golf de Andratx i sydväst."
         },
         {
-          "text": "För nybörjare eller blandade grupper: Son Quint, Son Antem East eller kortare banor."
+          "text": "Nybörjare eller blandade grupper: Son Quint (Arabella), Son Antem East eller kortare banor."
         },
         {
-          "text": "Om jag bara hade en vecka på ön skulle jag spela Son Gual och Alcanada. Resten fyller en andra vecka."
+          "text": "Med en vecka på ön är misstaget oftast inte att man inte hittar bra banor. Det är att man lägger dem i fel ordning."
         },
         {
-          "text": "Hur man tar sig runt"
+          "text": "Att ta sig runt"
         },
         {
-          "text": "Hyrbil är det mest praktiska valet. De flesta av de bästa banorna ligger 20 till 60 minuter från Palma och kollektivtrafiken tar dig inte smidigt dit. Vägstandarden är bra och utanför sommartoppen är trafiken hanterbar."
+          "text": "En hyrbil är det mest praktiska alternativet. Kollektivtrafiken når inte många av de bästa banorna bra. Vägarna är bra, men östkusten kräver ändå ärlig tid på dagen. Från Palma till Alcanada är en riktig bilresa, inte ett lätt tillägg före middagen. Om ingen i gruppen vill köra, planera det innan du väljer banor."
         },
         {
-          "caption": "Hyrbil är det enklaste sättet att nå de bästa banorna"
+          "alt": "Biluthyrning på Mallorca",
+          "caption": "En hyrbil är det enklaste sättet att nå de bästa banorna"
         },
         {
           "text": "Klubbor"
         },
         {
-          "text": "Spelar du tre rundor eller fler på en ren golfresa, ta med dina egna klubbor. För en blandad semester med en eller två rundor är hyrning ofta smartare. I min guide om klubbhyra pekar jag ut företag som levererar bra och sparar dig släpandet av en travel bag genom flygplatsen."
+          "text": "Ta med egna klubbor om du spelar tre rundor eller fler. Hyr om det är en blandad semester med en eller två rundor inplanerade. Guiden om klubbhyra går igenom företagen jag skulle titta på, vad de tar betalt och vilka upplägg som är värda att använda. Boka starttider tidigt för mars-maj och september-oktober. Om du bara behöver golfen bokad går det att ordna utan att jag är med."
         },
         {
-          "text": "Vad man ska göra utöver golfen"
+          "text": "Vad du kan göra utöver golfen"
         },
         {
-          "text": "Gamla stan i Palma är faktiskt riktigt bra. Nordvästkusten med Valldemossa, Deià och Sóller har några av Medelhavets starkaste landskap. Nordost är lugnare och vildare. Och maten, fisken och ö-vinerna håller genomgående hög nivå."
+          "text": "Palmas gamla stad är värd en hel eftermiddag. Nordvästkusten, särskilt Valldemossa, Deià och Sóller, är den självklara dagen utan golf. Nordost är lugnare och vildare. Lokala skaldjur och ö-vin kan göra mer för resan än ytterligare nio hål i all hast."
         },
         {
-          "caption": "Palma är värd en dag utan golf"
+          "alt": "Palmas gamla stad",
+          "caption": "Palmas gamla stad - värd en dag borta från banan"
         },
         {
-          "text": "En golfresa utan minst en lång lunch på en plats man inte hade planerat in gör bara halva jobbet. Lämna en eftermiddag utan tee time och se lite av ön. Golfen är anledningen att komma hit. Resten är anledningen att vilja komma tillbaka."
+          "text": "En golfresa som inte innehåller minst en lång lunch på ett oväntat ställe gör bara halva jobbet. Lägg in minst en eftermiddag utan starttid. Golfen är anledningen att komma. Resten är varför resan fortfarande känns bra när scorekortet inte gör det."
         },
         {
           "items": [
             {
-              "src": "/images/blog-trip-planning/Valldemossa.avif",
               "alt": "Valldemossa",
-              "caption": "Valldemossa - perfekt för en eftermiddag utan golf"
+              "caption": "Valldemossa - dramatisk nordvästkust"
             },
             {
-              "src": "/images/blog-trip-planning/Soller.webp",
-              "alt": "Deià",
-              "caption": "Deià - ibland ett bättre val än ännu en rond"
+              "alt": "Sóller",
+              "caption": "Sóller - klassisk medelhavsstad"
             }
           ]
         },
         {
-          "text": "Vill du att golfdelen ska bli ordentligt planerad, med banor, ordning, tee times, golfbilar, hyrklubbor och en tydlig offert innan något bokas?",
+          "text": "Vill du ha golfsidan ordentligt ordnad: banor, rutt, starttider, golfbilar, uthyrning och en tydlig offert innan något bokas?",
           "linkLabel": "Be Andy planera golfen →"
         }
       ]
@@ -5310,14 +5382,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "zh": {
       "metadata": {
         "title": "如何规划马略卡高尔夫之旅",
-        "description": "计划马略卡高尔夫之旅？球场、日期、轮次、交通、设备和活动。由岛上的PGA职业教练编写。"
+        "description": "规划你的马略卡高尔夫行程：球场、开球时间、住在哪里、打几轮以及何时预订。来自岛上 PGA 职业教练的建议。"
       },
       "meta": {
         "badge": "行程规划",
         "readTime": "7分钟阅读",
-        "updated": "2026年3月",
+        "updated": "2026年9月",
         "title": "如何规划马略卡高尔夫之旅",
-        "intro": "没有旅游套话。什么时候来，打哪些场，打几轮最合适，怎么移动，以及不打球时值得做什么。",
+        "intro": "该打哪些球场、住在哪里、何时预订开球时间，以及如何避开两轮球之间那些显而易见的错误。",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5339,94 +5411,95 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       },
       "blocks": [
         {
-          "text": "我在2025年3月搬来马略卡，从那以后几乎每周都在这里下场。在那之前，我在上海工作了11年。那是一座很多球手愿意花€200上一节课、进场往往还要靠高价会籍的城市。来到马略卡以后，我的感觉是：这里其实一直都是欧洲最被低估的高尔夫目的地之一。"
+          "text": "我在 2025 年 3 月搬到马略卡，从那以后每周都在这里打球。在那之前，我在上海生活了十一年，在那座城市，球手常常不觉得一节一小时的课花到 €500 有什么稀奇，想进一座球场往往意味着会籍费高过大多数人的年薪。马略卡是另一种高尔夫难题：进场更容易、选择更多，也有更多方式把顺序排错。"
         },
         {
-          "text": "如果是朋友问我怎么规划这趟球旅，我会直接这样说，不讲旅游宣传话术。"
+          "text": "这是我会对一位朋友说的话，趁航班和酒店还没把决定逼出来之前，先把球规划好。"
         },
         {
-          "text": "什么时候来最好"
+          "text": "什么时候去"
         },
         {
-          "text": "10-11月，以及2-4月，是最好的时间。球场状态很好，温度舒服，果岭费比夏天低，场上也没那么挤。如果只能选一个月，我会选10月。"
+          "text": "如果你想要最好的状态，就瞄准春季和秋季的旺季时段。如果你想要更高的性价比，就多看看 6 月至 8 月和 12 月至 2 月。10 月仍然是我最喜欢打球的月份之一，但它已经不再是便宜的选择。"
         },
         {
-          "text": "5月和6月也很好，但价格会上去。7月和8月又热又贵，而且更拥挤，必须尽量订早场。12月和1月更便宜，天气会有波动，但也经常能打得非常舒服。马略卡一个晴朗的1月天，体验是很特别的。"
+          "text": "晚春很棒但价格偏高。夏天炎热，但很多球场也会明显降价，尤其是如果你打早场或黄昏场。冬天更安静、更凉爽，往往也是来这里性价比最高的时段之一。"
         },
         {
-          "text": "打几轮最合理？"
+          "text": "打几轮？"
         },
         {
-          "text": "多数人一天打一轮最舒服。这里不少球场有强度，夏天的热也是真实存在的。天气凉的时候，一天36洞当然可以，但大多数纯高尔夫游客在5到7天的行程里会打4到5轮。"
+          "text": "对大多数球手来说，每天一轮最舒服。球场本身就够有挑战，而夏天的热也是真的。在较凉爽的月份，如果你足够热衷，一天打 36 洞是可以的，但大多数只为打球而来的访客，在 5-7 天的行程里会打 4-5 轮。顺序很重要：到达日打一轮轻松的，中间安排一场真正的考验，团队有空时安排一次更长的车程，最后一轮离机场够近，让离开变得简单。"
         },
         {
-          "text": "优先打哪些球场"
+          "text": "优先选哪些球场"
         },
         {
-          "text": "如果你球打得认真、时间又有限，优先Son Gual和Alcanada。如果我在岛上只有一周、只打两轮，我就选这两个。"
+          "text": "认真的球手、时间有限：Son Gual 和 Alcanada。如果我只有一周、两轮球，这就是我的两个选择。"
         },
         {
-          "caption": "Son Gual，认真打球的人基本都会排进去"
+          "alt": "Son Gual 高尔夫球场",
+          "caption": "Son Gual - 认真球手必打的球场"
         },
         {
-          "text": "如果想要DP World Tour那种比赛级体验，去Son Muntaner。离Palma只有几分钟车程，而且拿过2025年西班牙最佳球场。"
+          "text": "帕尔马附近的 DP World Tour 体验：Son Muntaner。距离市区五分钟，养护出色，并在 2025 年被评为西班牙最佳高尔夫球场。"
         },
         {
-          "text": "如果想打风景更强的东海岸球场，选Canyamel和Pula，最好顺便在Arta或Capdepera住一晚。"
+          "text": "风景优美的东海岸：Canyamel 和 Pula。值得搭配在 Artà 或 Capdepera 镇过一夜。"
         },
         {
-          "text": "如果你想找最硬的考试，去Golf de Andratx。"
+          "text": "最难的考验：西南部的 Golf de Andratx。"
         },
         {
-          "text": "如果是初学者或者水平混合的同行组合，Son Quint、Son Antem East或者更短一点的球场会更合适。"
+          "text": "初学者或混合团队：Son Quint（Arabella）、Son Antem East，或更短的球场。"
         },
         {
-          "text": "如果我在岛上只有一周，我会打Son Gual和Alcanada。其他球场更像是第二周的内容。"
+          "text": "在岛上待一周，错误通常不是找不到好球场，而是把它们排错了顺序。"
         },
         {
           "text": "怎么出行"
         },
         {
-          "text": "最实用的方式是租车。多数值得优先打的球场都离Palma有20到60分钟车程，公共交通并不真正适合这类球场。路况整体不错，只要不是盛夏高峰，交通压力也可控。"
+          "text": "租车是最实用的选择。公共交通到不了很多最好的球场。道路状况良好，但东海岸仍然需要在一天里留出实打实的时间。从帕尔马到 Alcanada 是一段真正的车程，不是晚饭前随手加的一站。如果团队里没人想开车，请在选球场之前先安排好。"
         },
         {
-          "caption": "想把好球场打顺，租车基本是标配"
+          "alt": "马略卡租车",
+          "caption": "租车是到达最好球场的最简单方式"
         },
         {
-          "text": "球杆怎么安排"
+          "text": "球杆"
         },
         {
-          "text": "如果是专门来打球，而且会打三轮以上，我建议带自己的杆。如果是混合型假期，只安排一两轮，租杆通常更省事。我在租杆指南里写了几家值得用的公司，能直接送到酒店或球场，比拖着球包过机场轻松得多。"
+          "text": "如果要打三轮或更多，带上自己的球杆。如果是混合型度假、只安排一两轮，就租杆。租杆指南介绍了我会考虑的公司、收费情况，以及哪些方案值得用。3 月至 5 月和 9 月至 10 月的开球时间要早点订。如果你只需要预订球位，也可以在我不到场的情况下安排。"
         },
         {
-          "text": "不打球的时候做什么"
+          "text": "还能做什么"
         },
         {
-          "text": "Palma老城值得认真花时间。西北海岸的Valldemossa、Deia、Soller属于地中海很有代表性的风景带。东北部更安静，也更野一点。再加上当地海鲜、岛上葡萄酒和整体餐饮水平，马略卡并不是只有球场。"
+          "text": "帕尔马老城值得花一整个下午。西北海岸，尤其是 Valldemossa、Deià 和 Sóller，是显而易见的不打球的一天。东北部更安静、更野性。当地海鲜和岛上的葡萄酒，对这趟旅行的贡献可能比再匆匆打九洞更大。"
         },
         {
-          "caption": "Palma老城值得安排出一个完整半天甚至一天"
+          "alt": "帕尔马老城",
+          "caption": "帕尔马老城 - 值得离开球场花一天"
         },
         {
-          "text": "一趟高尔夫旅行，如果没有至少一顿慢慢吃的午餐、没有留出一段不赶球场的时间，其实只做对了一半。高尔夫是你来这里的原因，但岛上其他部分会决定你想不想再回来。"
+          "text": "一次高尔夫行程如果没有至少一顿在意想不到的地方吃的长午餐，就只完成了一半的任务。至少留出一个没有开球时间的下午。高尔夫是来这里的理由，其余的则是让这趟行程在记分卡不给力时依然让人觉得美好的原因。"
         },
         {
           "items": [
             {
-              "src": "/images/blog-trip-planning/Valldemossa.avif",
               "alt": "Valldemossa",
-              "caption": "Valldemossa，很适合安排在不打球的下午"
+              "caption": "Valldemossa - 震撼的西北海岸"
             },
             {
-              "src": "/images/blog-trip-planning/Soller.webp",
-              "alt": "Deia",
-              "caption": "Deia，有时候比再多打一轮更值得"
+              "alt": "Sóller",
+              "caption": "Sóller - 经典的地中海小镇"
             }
           ]
         },
         {
-          "text": "如果你想把高尔夫部分安排清楚，包括球场、顺序、开球时间、球车、租杆和预订前的清晰报价，也可以直接咨询。",
-          "linkLabel": "请 Andy 规划高尔夫行程 →"
+          "text": "想让高尔夫这一部分安排妥当吗：球场、路线、开球时间、球车、租杆，以及预订前清晰的报价？",
+          "linkLabel": "请 Andy 来规划高尔夫 →"
         }
       ]
     }

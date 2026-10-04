@@ -5,10 +5,10 @@ export const GUIDES_LOCALIZED_CONTENT = {
   "es": {
     "locale": "es",
     "hero": {
-      "breadcrumbHome": "ES",
+      "breadcrumbHome": "Inicio",
       "breadcrumbCurrent": "Guías",
       "title": "Golf en Mallorca. Guías honestas.",
-      "lead": "Análisis de campos, planificación de viajes y green fees, escritos por un Profesional PGA que juega aquí cada semana.",
+      "lead": "Análisis de campos, planificación de viajes, green fees y cuándo visitar, escritos por un Profesional PGA que juega aquí cada semana.",
       "tags": [
         "Actualizado 2026",
         "Análisis de primera mano",
@@ -57,7 +57,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Análisis del campo",
         "badgeGold": true,
         "title": "Golf Son Muntaner, Mallorca — análisis honesto de un Profesional PGA (2026)",
-        "intro": "Mejor campo de España en los World Golf Awards 2025. A cinco minutos de Palma. Lo jugué con el tee sheet completo un sábado por la mañana — esto es lo que encontré.",
+        "intro": "Mejor campo de España en los World Golf Awards 2025. Lo jugué con el tee sheet completo un sábado por la mañana. Esto es lo que encontré.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy incluido"
       },
@@ -171,7 +171,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "golf-club-hire-mallorca",
         "badge": "Guía práctica",
         "title": "Alquiler de palos en Mallorca: todo lo que necesitas saber (2026)",
-        "intro": "¿Traer sus propios palos o alquilar en la isla? Está es la respuesta honesta y útil.",
+        "intro": "¿Traer sus propios palos? ¿Qué empresas de alquiler merecen la pena? ¿Cuánto hay que pagar? Respondido con honestidad.",
         "readTime": "6 min",
         "keywords": "Alquiler · Traer palos · Precios · Empresas"
       }
@@ -180,20 +180,20 @@ export const GUIDES_LOCALIZED_CONTENT = {
     "reviewsHeading": "Análisis de campos",
     "articlesHeading": "Guías y artículos",
     "finalCta": {
-      "eyebrow": "¿Listo para jugar?",
-      "title": "Una ronda privada en uno de estos campos, con un Profesional PGA a tu lado.",
-      "body": "Dime tus fechas y lo que buscas. Te respondo personalmente en 24 horas.",
-      "primaryCta": "Ver las experiencias →",
-      "secondaryCta": "Contactar"
+      "eyebrow": "¿Listo para hacerlo realidad?",
+      "title": "Los campos adecuados, reservados en el orden adecuado.",
+      "body": "Dígame sus fechas, el tamaño del grupo y lo que quiere del viaje. Le responderé personalmente en 24 horas con el siguiente paso más claro.",
+      "primaryCta": "Planifique su viaje",
+      "secondaryCta": "Play With A Pro"
     }
   },
   "de": {
     "locale": "de",
     "hero": {
-      "breadcrumbHome": "DE",
+      "breadcrumbHome": "Startseite",
       "breadcrumbCurrent": "Ratgeber",
       "title": "Mallorca Golf. Ehrliche Ratgeber.",
-      "lead": "Platz-Bewertungen, Reiseplanung und Greenfees - geschrieben von einem PGA Professional, der hier jede Woche spielt.",
+      "lead": "Platz-Bewertungen, Reiseplanung, Greenfees und die beste Reisezeit, geschrieben von einem PGA Professional, der hier jede Woche spielt.",
       "tags": [
         "Aktualisiert 2026",
         "Bewertungen aus erster Hand",
@@ -242,7 +242,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Platz-Bewertung",
         "badgeGold": true,
         "title": "Golf Son Muntaner, Mallorca — Ehrliche Bewertung eines PGA-Professionals (2026)",
-        "intro": "Bester Golfplatz Spaniens bei den World Golf Awards 2025. Fünf Minuten von Palma. Ich spielte ihn mit vollem Abschlagskalender an einem Samstagmorgen — das sind meine Eindrücke.",
+        "intro": "Bester Golfplatz Spaniens bei den World Golf Awards 2025. Ich habe ihn bei vollem Abschlagskalender an einem Samstagmorgen gespielt. Das ist mir aufgefallen.",
         "readTime": "6 Min.",
         "keywords": "Championship · Par 72 · €110-260 · Buggy inklusive"
       },
@@ -356,7 +356,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "golf-club-hire-mallorca",
         "badge": "Praktischer Ratgeber",
         "title": "Leihschläger auf Mallorca – alles, was Sie wissen müssen (2026)",
-        "intro": "Bringt man die eigenen Schläger mit oder leiht man vor Ort? Das ist die ehrliche, praktische Antwort.",
+        "intro": "Eigene Schläger mitbringen? Welche Verleiher lohnen sich? Was sollte man zahlen? Ehrlich beantwortet.",
         "readTime": "6 Min.",
         "keywords": "Leihschläger · Eigene Schläger · Preise · Anbieter"
       }
@@ -365,19 +365,19 @@ export const GUIDES_LOCALIZED_CONTENT = {
     "reviewsHeading": "Platz-Bewertungen",
     "articlesHeading": "Ratgeber & Artikel",
     "finalCta": {
-      "eyebrow": "Bereit zu spielen?",
-      "title": "Eine private Runde auf einem dieser Plätze, mit einem PGA Professional an Ihrer Seite.",
-      "body": "Teilen Sie mir Ihre Daten und Wünsche mit. Ich melde mich persönlich innerhalb von 24 Stunden.",
-      "primaryCta": "Erlebnisse entdecken →",
-      "secondaryCta": "Kontakt aufnehmen"
+      "eyebrow": "Bereit, es umzusetzen?",
+      "title": "Die richtigen Plätze, in der richtigen Reihenfolge gebucht.",
+      "body": "Nennen Sie mir Ihre Daten, die Gruppengröße und was Sie sich von der Reise wünschen. Ich antworte persönlich innerhalb von 24 Stunden mit dem klarsten nächsten Schritt.",
+      "primaryCta": "Reise planen",
+      "secondaryCta": "Play With A Pro"
     }
   },
   "fr": {
     "locale": "fr",
     "hero": {
-      "breadcrumbHome": "FR",
+      "breadcrumbHome": "Accueil",
       "title": "Golf à Majorque. Guides honnêtes.",
-      "lead": "Avis sur les parcours, planification de voyage et green fees - écrits par un Professionnel PGA qui joue ici chaque semaine.",
+      "lead": "Avis sur les parcours, planification de voyage, green fees et meilleure période pour venir, écrits par un Professionnel PGA qui joue ici chaque semaine.",
       "tags": [
         "Mis à jour 2026",
         "Avis de première main",
@@ -426,7 +426,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Avis parcours",
         "badgeGold": true,
         "title": "Golf Son Muntaner, Majorque — avis honnête d'un Professionnel PGA (2026)",
-        "intro": "Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. À cinq minutes de Palma. Je l'ai joué avec un départ complet un samedi matin — voici ce que j'y ai trouvé.",
+        "intro": "Meilleur parcours d'Espagne aux World Golf Awards 2025. Je l'ai joué avec un départ complet un samedi matin. Voici ce que j'y ai trouvé.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy inclus"
       },
@@ -540,7 +540,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "golf-club-hire-mallorca",
         "badge": "Guide pratique",
         "title": "Location de clubs à Majorque – tout ce que vous devez savoir (2026)",
-        "intro": "Apporter ses propres clubs ou louer sur place ? Voici la réponse honnête et utile.",
+        "intro": "Faut-il apporter ses propres clubs ? Quels loueurs valent la peine ? Combien faut-il payer ? Réponses honnêtes.",
         "readTime": "6 min",
         "keywords": "Location · Apporter ses clubs · Tarifs · Sociétés"
       }
@@ -549,20 +549,20 @@ export const GUIDES_LOCALIZED_CONTENT = {
     "reviewsHeading": "Avis parcours",
     "articlesHeading": "Guides & articles",
     "finalCta": {
-      "eyebrow": "Prêt à jouer ?",
-      "title": "Un tour privé sur l'un de ces parcours, avec un Professionnel PGA à vos côtés.",
-      "body": "Dites-moi vos dates et ce que vous recherchez. Je vous réponds personnellement sous 24 heures.",
-      "primaryCta": "Voir les expériences →",
-      "secondaryCta": "Prendre contact"
+      "eyebrow": "Prêt à passer à l'action ?",
+      "title": "Les bons parcours, réservés dans le bon ordre.",
+      "body": "Dites-moi vos dates, la taille du groupe et ce que vous attendez du séjour. Je vous réponds personnellement sous 24 heures avec la prochaine étape la plus claire.",
+      "primaryCta": "Planifiez votre voyage",
+      "secondaryCta": "Play With A Pro"
     }
   },
   "nl": {
     "locale": "nl",
     "hero": {
-      "breadcrumbHome": "NL",
+      "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Gidsen",
       "title": "Golf op Mallorca. Eerlijke gidsen.",
-      "lead": "Baanbeoordelingen, reisplanning en greenfees - geschreven door een PGA Professional die hier elke week speelt.",
+      "lead": "Baanbeoordelingen, reisplanning, greenfees en wanneer u het best kunt komen, geschreven door een PGA Professional die hier elke week speelt.",
       "tags": [
         "Bijgewerkt 2026",
         "Beoordelingen uit eerste hand",
@@ -611,7 +611,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Baanbeoordeling",
         "badgeGold": true,
         "title": "Golf Son Muntaner, Mallorca — eerlijke beoordeling van een PGA Professional (2026)",
-        "intro": "Beste golfbaan van Spanje bij de World Golf Awards 2025. Vijf minuten van Palma. Ik speelde het met een vol tee sheet op een zaterdagochtend — dit zijn mijn bevindingen.",
+        "intro": "Beste golfbaan van Spanje bij de World Golf Awards 2025. Ik speelde hem met een volle starttijdenlijst op een zaterdagochtend. Dit is wat ik vond.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy inbegrepen"
       },
@@ -725,7 +725,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "golf-club-hire-mallorca",
         "badge": "Praktische gids",
         "title": "Clubhuur op Mallorca – alles wat je moet weten (2026)",
-        "intro": "Eigen clubs meenemen of op het eiland huren? Dit is het eerlijke, bruikbare antwoord.",
+        "intro": "Eigen clubs meenemen? Welke verhuurbedrijven zijn de moeite waard? Wat is een redelijke prijs? Eerlijk beantwoord.",
         "readTime": "6 min",
         "keywords": "Clubhuur · Eigen clubs · Prijzen · Bedrijven"
       }
@@ -734,20 +734,20 @@ export const GUIDES_LOCALIZED_CONTENT = {
     "reviewsHeading": "Baanbeoordelingen",
     "articlesHeading": "Gidsen & artikelen",
     "finalCta": {
-      "eyebrow": "Klaar om te spelen?",
-      "title": "Een privéronde op één van deze banen, met een PGA Professional aan je zijde.",
-      "body": "Vertel me je data en wat je zoekt. Ik kom binnen 24 uur persoonlijk bij je terug.",
-      "primaryCta": "Bekijk de ervaringen →",
-      "secondaryCta": "Neem contact op"
+      "eyebrow": "Klaar om het concreet te maken?",
+      "title": "De juiste banen, in de juiste volgorde geboekt.",
+      "body": "Vertel me uw data, de groepsgrootte en wat u van de reis wilt. Ik antwoord persoonlijk binnen 24 uur met de duidelijkste volgende stap.",
+      "primaryCta": "Plan uw reis",
+      "secondaryCta": "Play With A Pro"
     }
   },
   "sv": {
     "locale": "sv",
     "hero": {
-      "breadcrumbHome": "SV",
+      "breadcrumbHome": "Hem",
       "breadcrumbCurrent": "Guider",
       "title": "Golf på Mallorca. Ärliga guider.",
-      "lead": "Banrecensioner, reseplanering och greenfee-priser - skrivna av en PGA Professional som spelar här varje vecka.",
+      "lead": "Banrecensioner, reseplanering, greenfees och när det är bäst att åka, skrivna av en PGA Professional som spelar här varje vecka.",
       "tags": [
         "Uppdaterad 2026",
         "Förstahandsrecensioner",
@@ -796,7 +796,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Banomdöme",
         "badgeGold": true,
         "title": "Golf Son Muntaner, Mallorca — ärlig recension av en PGA Professional (2026)",
-        "intro": "Bästa golfbana i Spanien vid World Golf Awards 2025. Fem minuter från Palma. Jag spelade den med fullbokat tee sheet en lördagsmorgon — här är vad jag hittade.",
+        "intro": "Bästa golfbana i Spanien vid World Golf Awards 2025. Jag spelade den med fullbokat tee sheet en lördagsmorgon. Här är vad jag hittade.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy ingår"
       },
@@ -910,7 +910,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "golf-club-hire-mallorca",
         "badge": "Praktisk guide",
         "title": "Klubbhyra på Mallorca – allt du behöver veta (2026)",
-        "intro": "Ta med egna klubbor eller hyra på plats? Här är det raka, användbara svaret.",
+        "intro": "Ska du ta med egna klubbor? Vilka uthyrare är värda att använda? Vad bör du betala? Ärligt besvarat.",
         "readTime": "6 min",
         "keywords": "Klubbhyra · Egna klubbor · Priser · Företag"
       }
@@ -919,20 +919,20 @@ export const GUIDES_LOCALIZED_CONTENT = {
     "reviewsHeading": "Banrecensioner",
     "articlesHeading": "Guider & artiklar",
     "finalCta": {
-      "eyebrow": "Redo att spela?",
-      "title": "En privat runda på en av dessa banor, med en PGA Professional vid din sida.",
-      "body": "Berätta dina datum och vad du söker så återkommer jag personligen inom 24 timmar.",
-      "primaryCta": "Se upplevelserna →",
-      "secondaryCta": "Ta kontakt"
+      "eyebrow": "Redo att göra det verkligt?",
+      "title": "De rätta banorna, bokade i rätt ordning.",
+      "body": "Berätta dina datum, gruppstorlek och vad du vill ha ut av resan. Jag svarar personligen inom 24 timmar med nästa tydligaste steg.",
+      "primaryCta": "Planera din resa",
+      "secondaryCta": "Play With A Pro"
     }
   },
   "zh": {
     "locale": "zh",
     "hero": {
-      "breadcrumbHome": "ZH",
+      "breadcrumbHome": "首页",
       "breadcrumbCurrent": "高尔夫指南",
       "title": "马略卡高尔夫。诚实指南。",
-      "lead": "球场评测、行程规划与果岭费信息，由每周都在这里打球的 PGA 职业教练撰写。",
+      "lead": "球场评测、行程规划、果岭费，以及最佳到访时间，由每周都在这里打球的 PGA 职业教练撰写。",
       "tags": [
         "2026 更新",
         "亲身评测",
@@ -981,7 +981,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "球场评测",
         "badgeGold": true,
         "title": "Son Muntaner 高尔夫球场，马略卡 — PGA 职业教练诚实评测（2026）",
-        "intro": "2025年世界高尔夫奖西班牙最佳球场。距巴尔马市中心五分钟。我在满员开球表的周六早晨打了一轮——以下是我的真实体验。",
+        "intro": "2025 年世界高尔夫奖西班牙最佳球场。我在周六早晨、开球表排满的情况下打了一轮。以下是我的发现。",
         "readTime": "6分钟",
         "keywords": "锦标赛级 · 标准杆72 · €110-260 · 含球车"
       },
@@ -1095,7 +1095,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "golf-club-hire-mallorca",
         "badge": "实用指南",
         "title": "马略卡租杆指南：实用版（2026）",
-        "intro": "自己的杆要不要带？当地租够不够好？这是不绕弯子的版本。",
+        "intro": "该不该自带球杆？哪些租杆公司值得选？价格多少算合理？诚实回答。",
         "readTime": "6分钟",
         "keywords": "租杆 · 自带球杆 · 价格 · 租杆公司"
       }
@@ -1104,11 +1104,11 @@ export const GUIDES_LOCALIZED_CONTENT = {
     "reviewsHeading": "球场评测",
     "articlesHeading": "指南与文章",
     "finalCta": {
-      "eyebrow": "准备好下场了吗？",
-      "title": "在 PGA 职业教练陪同下，私享这些球场中的一座。",
-      "body": "告诉我你的日期和需求，我会在 24 小时内亲自回复。",
-      "primaryCta": "查看体验 →",
-      "secondaryCta": "立即联系"
+      "eyebrow": "准备好把它变成现实了吗？",
+      "title": "合适的球场，按合适的顺序预订。",
+      "body": "请告诉我您的日期、人数以及您对这次行程的期望。我会在 24 小时内亲自回复，告诉您最清晰的下一步。",
+      "primaryCta": "规划行程",
+      "secondaryCta": "陪打体验"
     }
   }
 }

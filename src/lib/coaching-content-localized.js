@@ -15,7 +15,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "eyebrow": "Por qué la zona de práctica no basta",
       "title": "Hay una razón por la que su juego de práctica no aparece en el campo.",
       "paragraphs": [
-        "La zona de práctica es plana, controlada y sin consecuencias. Luego llega al primer tee y ve qué parte de eso se sostiene de verdad.",
+        "La zona de prácticas es plana, controlada y sin consecuencias. Luego llega al primer tee y nada de eso se traslada.",
         "El coaching en campo coloca la lección donde realmente importa: en la calle, en el rough, en el viento y cuando el resultado cuenta."
       ],
       "quote": "Golpear manoplas no es hacer sparring. Puede verse muy bien en las manoplas y descubrir muy rápido lo que realmente aguanta cuando tiene a alguien delante. En golf pasa algo parecido. La zona de práctica importa, pero el campo dice la verdad.",
@@ -54,7 +54,7 @@ export const COACHING_LOCALIZED_CONTENT = {
         },
         {
           "title": "Encontrar mejoras rápidas",
-          "text": "La mayoría mejora antes con uno o dos pequeños desbloqueos que con una reconstrucción completa."
+          "text": "La mayoría de los golfistas mejora más rápido con uno o dos pequeños desbloqueos que con una reconstrucción completa. Las bolas en situaciones reales, las calles y el rough le muestran lo que importa."
         }
       ]
     },
@@ -104,7 +104,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "title": "Contácteme para hablar de una sesión.",
       "body": "Dígame dónde está su juego ahora y qué quiere conseguir. Yo construiré la sesión alrededor de eso.",
       "primaryCta": "Ponerse en contacto →",
-      "secondaryCta": "Ver experiencias completas"
+      "secondaryCta": "Ver los días de golf"
     }
   },
   "de": {
@@ -120,7 +120,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "eyebrow": "Warum die Range nicht reicht",
       "title": "Es gibt einen Grund, warum sich Ihr Range-Spiel nicht auf den Platz überträgt.",
       "paragraphs": [
-        "Die Range ist flach, kontrolliert und ohne echte Konsequenzen. Dann stehen Sie am 1. Abschlag und merken, dass sich nicht alles übertragen hat.",
+        "Die Range ist flach, kontrolliert und ohne echte Konsequenzen. Dann stehen Sie am 1. Abschlag und nichts davon überträgt sich.",
         "Coaching auf dem Platz bringt die Lektion dorthin, wo sie wirklich hilft: aufs Fairway, ins Rough, in den Wind und in Situationen, in denen der Score zählt."
       ],
       "quote": "Pratzen schlagen ist nicht Sparring. Auf den Pratzen kann alles sauber aussehen, und trotzdem merkt man sehr schnell, was wirklich hält, sobald jemand vor einem steht. Im Golf ist es ähnlich. Die Range ist wichtig, aber der Platz sagt die Wahrheit.",
@@ -159,7 +159,7 @@ export const COACHING_LOCALIZED_CONTENT = {
         },
         {
           "title": "Die schnellen Hebel finden",
-          "text": "Die meisten Golfer verbessern sich am schnellsten über ein oder zwei kleine Durchbrüche und nicht über einen kompletten Neuaufbau."
+          "text": "Die meisten Golfer verbessern sich am schnellsten über ein oder zwei kleine Durchbrüche und nicht über einen kompletten Neuaufbau. Echte Lagen, Fairways und Rough zeigen Ihnen, worauf es ankommt."
         }
       ]
     },
@@ -209,7 +209,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "title": "Melden Sie sich, wenn Sie eine Session besprechen möchten.",
       "body": "Sagen Sie mir, wo Ihr Spiel gerade steht und was Sie daraus machen wollen. Ich baue die Session genau darum herum.",
       "primaryCta": "Kontakt aufnehmen →",
-      "secondaryCta": "Alle Erlebnisse ansehen"
+      "secondaryCta": "Die Golftage ansehen"
     }
   },
   "fr": {
@@ -225,7 +225,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "eyebrow": "Pourquoi le practice ne suffit pas",
       "title": "Il y a une raison pour laquelle votre jeu de practice ne se retrouve pas sur le parcours.",
       "paragraphs": [
-        "Le practice est plat, contrôlé et sans conséquence. Puis vous arrivez au 1er départ et vous voyez ce qui tient vraiment.",
+        "Le practice est plat, contrôlé et sans conséquence. Puis vous arrivez au 1er départ et rien de tout cela ne se transpose.",
         "Le coaching sur parcours place la leçon là où elle aide vraiment : sur le fairway, dans le rough, dans le vent et avec un score qui compte."
       ],
       "quote": "Frapper les pattes d’ours, ce n’est pas faire du sparring. On peut avoir l’air propre sur les pattes d’ours et découvrir très vite ce qui tient vraiment quand on a quelqu’un en face. Au golf, c’est pareil. Le practice compte, mais le parcours dit la vérité.",
@@ -264,7 +264,7 @@ export const COACHING_LOCALIZED_CONTENT = {
         },
         {
           "title": "Trouver les leviers rapides",
-          "text": "La plupart progressent plus vite grâce à un ou deux petits déblocages que grâce à une reconstruction complète."
+          "text": "La plupart des golfeurs progressent plus vite grâce à un ou deux petits déblocages que grâce à une reconstruction complète. Les vraies positions de balle, les fairways et le rough vous montrent ce qui compte."
         }
       ]
     },
@@ -314,7 +314,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "title": "Contactez-moi pour discuter d’une session.",
       "body": "Dites-moi où en est votre jeu aujourd’hui et ce que vous voulez en tirer. Je construirai la session autour de cela.",
       "primaryCta": "Prendre contact →",
-      "secondaryCta": "Voir les expériences complètes"
+      "secondaryCta": "Voir les journées de golf"
     }
   },
   "nl": {
@@ -329,7 +329,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "eyebrow": "Waarom de driving range niet genoeg is",
       "title": "Er is een reden waarom uw rangespel niet op de baan verschijnt.",
       "paragraphs": [
-        "De range is vlak, gecontroleerd en zonder echte gevolgen. Op de eerste tee blijkt wat er echt overeind blijft.",
+        "De range is vlak, gecontroleerd en zonder echte gevolgen. Dan staat u op de eerste tee en niets daarvan komt mee.",
         "Coaching op de baan zet de les waar die echt helpt: op de fairway, in het rough, in de wind en wanneer de score ertoe doet."
       ],
       "quote": "Pads slaan is geen sparren. Op de pads kan alles er scherp uitzien en toch merkt u heel snel wat werkelijk standhoudt zodra er iemand tegenover u staat. Golf werkt net zo. De range doet ertoe, maar de baan vertelt de waarheid.",
@@ -348,7 +348,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "items": [
         {
           "title": "Baanmanagement",
-          "text": "De meeste golfers verliezen meer slagen door verkeerde beslissingen dan door hun swing. Clubkeuze, doel en balvlucht maken hier vaak het verschil."
+          "text": "De meeste golfers verliezen meer slagen door verkeerde beslissingen dan door een slechte swing. Club, doel en balvlucht: deze keuzes maken het verschil tussen een 90 en een 80."
         },
         {
           "title": "Shotkeuze onder druk",
@@ -368,7 +368,7 @@ export const COACHING_LOCALIZED_CONTENT = {
         },
         {
           "title": "De snelste winst vinden",
-          "text": "De meeste golfers verbeteren sneller via één of twee kleine doorbraken dan via een complete rebuild."
+          "text": "De meeste golfers verbeteren het snelst via één of twee kleine doorbraken, niet via een complete rebuild. Echte lies, fairways en rough laten u zien waar het op aankomt."
         }
       ]
     },
@@ -418,7 +418,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "title": "Neem contact op om een sessie te bespreken.",
       "body": "Vertel me waar uw spel nu staat en wat u eruit wilt halen. Ik bouw de sessie daaromheen.",
       "primaryCta": "Neem contact op →",
-      "secondaryCta": "Bekijk alle ervaringen"
+      "secondaryCta": "Bekijk de golfdagen"
     }
   },
   "sv": {
@@ -434,7 +434,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "eyebrow": "Varför rangen inte räcker",
       "title": "Det finns en anledning till att ditt rangespel inte syns på banan.",
       "paragraphs": [
-        "Rangen är platt, kontrollerad och utan riktiga konsekvenser. På första tee märks det vad som verkligen håller.",
+        "Rangen är platt, kontrollerad och utan konsekvenser. Sedan står du på första tee och inget av det följer med.",
         "Coaching på banan placerar lektionen där den faktiskt hjälper: på fairway, i ruffen, i vinden och när score betyder något."
       ],
       "quote": "Att slå mitsar är inte sparring. Du kan se skarp ut på mitsarna och ändå märka väldigt snabbt vad som verkligen håller när någon står framför dig. Golf fungerar på ungefär samma sätt. Rangen betyder något, men banan säger sanningen.",
@@ -473,7 +473,7 @@ export const COACHING_LOCALIZED_CONTENT = {
         },
         {
           "title": "Hitta de snabbaste vinsterna",
-          "text": "De flesta förbättras snabbast genom en eller två små upplåsningar, inte genom en total ombyggnad."
+          "text": "De flesta golfare förbättras snabbast genom en eller två små upplåsningar, inte genom en total ombyggnad. Verkliga lägen, fairways och rough visar dig vad som är viktigt."
         }
       ]
     },
@@ -523,7 +523,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "title": "Hoer av dig om du vill prata om en session.",
       "body": "Berätta var ditt spel står i dag och vad du vill få ut av det. Jag bygger sessionen runt det.",
       "primaryCta": "Kontakta mig →",
-      "secondaryCta": "Se alla upplevelser"
+      "secondaryCta": "Se golfdagarna"
     }
   },
   "zh": {
@@ -539,7 +539,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "eyebrow": "为什么练习场不够",
       "title": "您的练习场状态上不了球场，是有原因的。",
       "paragraphs": [
-        "练习场是平的、可控的，也几乎没有后果。可一站上第 1 洞发球台，很多东西就不会自然转化了。",
+        "练习场平坦、可控，也没有后果。可一站上第 1 洞发球台，这一切都带不过来。",
         "场上指导把内容放到真正有意义的地方：球道、长草区、风里，以及计分真的重要的时候。"
       ],
       "quote": "打手靶不是实战对练。您在手靶上可以看起来很利落，但一旦真的有人站在您面前，什么东西真正靠得住，很快就会见分晓。高尔夫也一样。练习场有价值，但球场才会说真话。",
@@ -578,7 +578,7 @@ export const COACHING_LOCALIZED_CONTENT = {
         },
         {
           "title": "找到最容易见效的点",
-          "text": "大多数球手进步最快，靠的是一两个小突破，而不是一次彻底重建。"
+          "text": "大多数球手进步最快，靠的是一两个小突破，而不是一次彻底重建。真实的球位、球道和长草会让您看清真正重要的是什么。"
         }
       ]
     },
@@ -628,7 +628,7 @@ export const COACHING_LOCALIZED_CONTENT = {
       "title": "如果您想聊一场指导，欢迎联系我。",
       "body": "告诉我您现在的球打到什么程度，以及希望获得什么结果。我会围绕这个来安排 session。",
       "primaryCta": "联系我 →",
-      "secondaryCta": "查看完整体验"
+      "secondaryCta": "查看高尔夫日"
     }
   }
 }
