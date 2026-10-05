@@ -23,6 +23,7 @@ const GUIDE_DATES = {
   't-golf-palma-review': '2026-09-09',
   'son-quint-review': '2026-09-24',
   'where-to-stay-mallorca-golf': '2026-09-27',
+  'son-vida-review': '2026-10-05',
 }
 
 function escapeXml(str) {

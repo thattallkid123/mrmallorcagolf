@@ -32,6 +32,7 @@ const LAST_MODIFIED_BY_PATH = {
   '/guides/t-golf-palma-review': '2026-09-09',
   '/guides/son-quint-review': '2026-09-24',
   '/guides/where-to-stay-mallorca-golf': '2026-09-27',
+  '/guides/son-vida-review': '2026-10-05',
   '/play-with-a-pro': '2026-08-26',
   '/signature-day': '2026-09-26',
   '/about': '2026-04-01',

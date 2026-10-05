@@ -81,6 +81,11 @@ function FunnelCtaBlock({ locale, courseName }) {
 }
 
 const COURSE_REVIEW_DETAILS = {
+  'son-vida-review': {
+    name: 'Golf Son Vida',
+    ratingValue: 7,
+    addressLocality: 'Son Vida',
+  },
   'son-quint-review': {
     name: 'Golf Son Quint',
     ratingValue: 4,

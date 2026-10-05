@@ -22,6 +22,7 @@ const INDEXNOW_GUIDES = [
   '/guides/t-golf-palma-review',
   '/guides/son-quint-review',
   '/guides/where-to-stay-mallorca-golf',
+  '/guides/son-vida-review',
 ]
 
 const MAX_URLS_PER_REQUEST = 50

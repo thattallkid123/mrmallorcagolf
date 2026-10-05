@@ -46,6 +46,7 @@ export const REVIEW_POST_SLUGS = new Set([
 
 export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
   'on-course-coaching-mallorca',
+  'son-vida-review',
 ])
 
 export const ARTICLE_SLUGS = new Set([

@@ -1272,6 +1272,210 @@ export const GUIDE_POST_CONTENT = {
       ],
     },
   },
+  'son-vida-review': {
+    en: {
+      metadata: {
+        title: "Son Vida - Honest Review 2026",
+        description:
+          "Son Vida green fee €84-€190 (dynamic), par 70, 15 minutes from Palma. Mallorca's oldest course (1964), with two-tier greens and a stronger back six.",
+        imagePath: '/images/son-vida-blog/son-vida-6.webp',
+      },
+      meta: {
+        badge: 'Course Review',
+        badgeGold: true,
+        readTime: '6 min read',
+        updated: 'October 2026',
+        title: "Son Vida Golf, Mallorca: A PGA Professional's Honest Review (2026)",
+        intro:
+          "The oldest course in Mallorca, opened in 1964, and the venue where Seve Ballesteros won the 1990 Open de Baleares. It is short from the yellow tees at 5,470m, and the sloping greens and doglegs still make it a real test.",
+        related: [
+          { slug: 'son-quint-review', title: 'Son Quint Golf: Honest Review 2026' },
+          { slug: 'son-muntaner-review', title: 'Son Muntaner Golf: Best Golf Course in Spain 2025' },
+          { slug: 't-golf-palma-review', title: 'T Golf Palma - Honest Review 2026' },
+          { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+        ],
+      },
+      blocks: [
+        {
+          type: 'image',
+          src: '/images/son-vida-blog/son-vida-6.webp',
+          alt: 'Green and bunker at Son Vida golf course Mallorca with the hotel behind and the Son Vida lettering beside a fountain',
+          caption: 'A green below the hotel, with the Son Vida lettering beside the fountain.',
+          priority: true,
+          presentation: 'natural',
+          naturalWidth: 1600,
+          naturalHeight: 1200,
+        },
+        {
+          type: 'paragraph',
+          text: "We teed off at 8:16, one of the first times out, with rain from earlier in the morning still on the ground. My client was staying at the Sheraton and paid €88 for the round, the hotel guest rate. We walked, and we were paired with two UK golfers in a buggy who were good company. By the time we finished, a crowd was waiting around the 1st tee. An early tee time is the one to book here.",
+        },
+        { type: 'heading', text: "Mallorca's Oldest Course" },
+        {
+          type: 'paragraph',
+          text: "Son Vida opened in 1964 and is the oldest golf course on the island. It hosted the European Tour's Open de Baleares twice, in 1990 and 1994, and Seve Ballesteros won the first of them in a playoff. Tree-lined fairways run through classic parkland, with the Bay of Palma and the Tramuntana mountains behind. From the yellow tees, which I played, it measures 5,470m. That is short by modern standards, and it still asks plenty: the slopes, elevation changes, doglegs and heavily contoured greens all add difficulty.",
+        },
+        {
+          type: 'image',
+          src: '/images/son-vida-blog/son-vida-1.webp',
+          alt: 'Stone wall marked 1964 with the Son Vida crest, among trees at Son Vida golf course Mallorca',
+          caption: 'The 1964 marker by the 4th tee. Son Vida is the oldest course in Mallorca.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        { type: 'heading', text: 'How The Course Plays' },
+        {
+          type: 'paragraph',
+          text: "The greens carry the difficulty. There is a lot of slope and plenty of two-tier greens, so approach distance control matters: finish on the wrong tier and you face a very difficult putt. There is a lot of elevation change, mostly early in the round, and quite a few of the par 3s play downhill, where club selection depends on how much the drop takes off the yardage. We walked all 18 comfortably, though I would not call it an easy walk.",
+        },
+        {
+          type: 'paragraph',
+          text: "The course sits among the houses and the hotel, with little spare space, so many holes feel confined and defined by the properties around them. The doglegs and the way the land has been used create decisions from the tee and several memorable holes. The first 12 are the most enclosed, and at times the routing through the trees and houses feels boxed in. The final six open up and reminded me of Son Muntaner: more space, more interesting hole designs and clearer strategic choices. I preferred the last six.",
+        },
+        {
+          type: 'image',
+          src: '/images/son-vida-blog/son-vida-2.webp',
+          alt: 'Golfer in a navy polo hitting an iron towards a green with a wooded hillside and houses behind at Son Vida',
+          caption: 'My client at the par 3 8th, 132m from the yellow tees, with the hillside and houses behind.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        { type: 'heading', text: 'Holes Worth Mentioning' },
+        {
+          type: 'paragraph',
+          text: "The 4th was one of my favourites. It is the first downhill par 3 and played around 140 yards after allowing for the slope. From the elevated tee you see the whole flight of the ball and know straight away whether you judged the distance correctly.",
+        },
+        {
+          type: 'paragraph',
+          text: "The 7th is a dogleg right where the correct line off the tee is not obvious. I thought I had hit a good tee shot curving to the right, and I ended up on the right side of the fairway, not where I expected. That hole, like several others, would be easier the second time round, when you know the line and what sits beyond the visible landing area.",
+        },
+        {
+          type: 'image',
+          src: '/images/son-vida-blog/son-vida-3.webp',
+          alt: 'Yellow Son Vida crest tee marker and a green Son Vida 1964 marker on a tee box with the fairway stretching away',
+          caption: 'The Son Vida tee markers, with the fairway running away below.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'paragraph',
+          text: "The 11th is a 483m par 5, a dogleg left and uphill with houses down the right. I hit 3-iron followed by 3-iron onto the green. The tee shot feels open, and the angle into the green narrows depending on where it finishes.",
+        },
+        {
+          type: 'paragraph',
+          text: "The 14th is a 327m par 4 with a significant dogleg left and water just short of the green. The ideal landing area is hard to read from the tee. I hit driver and had 50 yards left. How aggressively to play it and which line to take are real decisions, which is why I found the closing stretch more interesting.",
+        },
+        {
+          type: 'paragraph',
+          text: "The 15th is a 368m par 4, a dogleg right, with the same kind of choice. The further left you play from the tee, the longer the approach. I took a more direct line towards the green and had 80 yards in. I liked having different options from the tee instead of one obvious way to play it.",
+        },
+        {
+          type: 'image',
+          src: '/images/son-vida-blog/son-vida-8.webp',
+          alt: 'Golfer in a red cap finishing an iron shot from the fairway towards bunkers and a green at Son Vida',
+          caption: 'Hitting from the fairway towards a bunkered green.',
+          presentation: 'natural',
+          naturalWidth: 900,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'paragraph',
+          text: "The 18th is a beautiful finishing hole. It is a 460m par 5 with water running up the right, the hotel as the backdrop, a fountain, and the clubhouse on the left. People around the clubhouse can watch the approach shots into the green, which gives the hole a proper finishing atmosphere.",
+        },
+        {
+          type: 'image',
+          src: '/images/son-vida-blog/son-vida-4.webp',
+          alt: 'Water and rock edging in front of the Son Vida clubhouse with hillside villas behind',
+          caption: 'Water in front of the clubhouse, with the hillside villas behind.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        {
+          type: 'image',
+          src: '/images/son-vida-blog/son-vida-5.webp',
+          alt: 'Fountain on a stone-edged lake with the Son Vida hotel behind and palm trees beyond a green',
+          caption: 'The fountain and the hotel, beside the closing green.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        { type: 'heading', text: 'Conditioning And Service' },
+        {
+          type: 'paragraph',
+          text: "The course had clearly been watered heavily, and with the morning rain that left some areas much wetter than normal. There were quite a few wet lies and muddy patches around the greens, and balls landing on the greens often plugged instead of releasing. The greens themselves were very pure but slightly slow. I do not think we saw the firmness Son Vida normally has.",
+        },
+        {
+          type: 'paragraph',
+          text: "The presentation was what I would expect from an Arabella course: tidy and carefully maintained. The greenkeepers were cutting the edges of the greens with scissors and tidying them by hand. The staff were warm and friendly all the way through, and the club cleaned my client's clubs for free after the round. The halfway hut is very good and the food after the round was good too.",
+        },
+        {
+          type: 'paragraph',
+          text: "There is a putting green and a practice net, and no full driving range. Son Muntaner's range is around a two-minute drive away, so it is easy to hit balls there for a proper warm-up and come back for your tee time.",
+        },
+        {
+          type: 'image',
+          src: '/images/son-vida-blog/son-vida-7.webp',
+          alt: 'Red and white Son Vida 1964 flag on the practice putting green with the practice net behind',
+          caption: 'The practice putting green, with the net behind.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
+        },
+        { type: 'heading', text: 'Practical Information' },
+        {
+          type: 'facts',
+          items: [
+            ['€88', 'Sheraton guest rate on the day we played'],
+            ['7/10', "Andy's rating"],
+            ['5,470m', 'Yellow tees (Par 70)'],
+            ['Buggy optional', 'We walked all 18'],
+          ],
+        },
+        {
+          type: 'paragraph',
+          text: "Green fees are dynamic, running from around €84 in low season up to €190 at peak, plus the standard €3 daily federation licence if you are not a federated player. My client paid €88 on the day as a Sheraton guest. Handicap limit is 54 with a certificate required, and Son Vida is about 15 minutes from Palma. Buggies are optional. Singles can book and will usually be paired with another group, as we were. Standard golf dress code applies, soft spikes are required, and club hire is available.",
+        },
+        {
+          type: 'paragraph',
+          text: "The one real negative from the day: the first 12 holes are closed in by houses, trees and the hotel, and the routing can feel boxed in. The rain made it worse, with wet lies and plugged balls that I would not expect on a normal day. In drier weather I would expect it to play firmer than it did for us.",
+        },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: "Handicap limit is 54, with a certificate required at booking. The course is walkable, with the most elevation early in the round, though it is not an easy walk. Son Vida suits golfers who like to think their way round: the course is short, and the sloping, two-tier greens punish a wrong-tier approach. One thing that surprises first-timers: several tee shots hide the best line, so a second visit is noticeably easier than the first. Local tip: book an early tee time, because the course was far busier by the time we finished.",
+        },
+        { type: 'heading', text: 'Verdict' },
+        {
+          type: 'paragraph',
+          text: "7/10. Son Vida is Mallorca's oldest course and it has the history to match, with a Seve Ballesteros win and two Open de Baleares behind it. Sloping, two-tier greens and plenty of doglegs make it a better test than 5,470m suggests, and the final six holes have the space and strategy that the enclosed first 12 lack. It suits golfers who enjoy position golf and want a convenient round from the Sheraton. If you want open space on every hole, you will like the closing stretch more than the start.",
+        },
+        {
+          type: 'notes',
+          title: 'Four things I would know before booking Son Vida',
+          items: [
+            ['Best tee time', 'We went out at 8:16 and the course was busy around the 1st tee by the time we finished. Go early.'],
+            ['Greens', 'Many are two-tier with a lot of slope. Check which tier the pin is on and aim to finish below the hole.'],
+            ['Second visit', 'Several tee shots, the 7th included, hide the best line. Expect the course to play easier the second time round.'],
+            ['Warm-up', 'There is a net and a putting green only. Son Muntaner has a full range around two minutes away.'],
+          ],
+        },
+        {
+          type: 'paragraph',
+          text: 'I enjoyed Son Vida and would play it again, particularly now that I know the lines off the tee. It works well alongside <a href="/guides/son-muntaner-review">Son Muntaner</a> and <a href="/guides/son-quint-review">Son Quint</a> if you are staying in the Son Vida area. If you are building out the wider trip, the <a href="/plan-your-trip">trip planning guide</a> covers how to sequence rounds like this.',
+        },
+        {
+          type: 'cta',
+          text: 'Thinking about Son Vida? I can tell you whether it fits your trip and which tee time to book.',
+          linkLabel: 'Get in touch →',
+          href: '/contact',
+        },
+      ],
+    },
+  },
   't-golf-calvia-review': {
     en: {
       metadata: {
