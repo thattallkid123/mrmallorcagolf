@@ -17,7 +17,6 @@ $MmgSkillsMap = @(
     @{Drive="MMG_SKILL_BLOG_WRITING.md"; Target="mmg-blog-writing"},
     @{Drive="MMG_SKILL_SEO_CONTENT.md"; Target="mmg-seo-content"},
     @{Drive="MMG_SKILL_SOCIAL_MEDIA.md"; Target="social-media-mmg"},
-    @{Drive="MMG_SKILL_CAROUSEL.md"; Target="mr-mallorca-golf-carousel"},
     @{Drive="MMG_SKILL_CHINESE_CONTENT.md"; Target="mmg-chinese-content"},
     @{Drive="MMG_SKILL_FRONTEND_DESIGN.md"; Target="frontend-design-mmg"},
     @{Drive="MMG_SKILL_NEXTJS.md"; Target="nextjs-mrmallorcagolf"},
@@ -29,5 +28,6 @@ $MmgSkillsMap = @(
     @{Drive="MMG_SKILL_AUTONOMO_FILING.md"; Target="mmg-autonomo-filing"},
     @{Drive="MMG_SKILL_CLIENT_DOCS.md"; Target="mmg-client-docs"},
     @{Drive="MMG_SKILL_HERMES_OPS.md"; Target="mmg-hermes-ops"},
-    @{Drive="MMG_SKILL_REPLY_LIBRARY.md"; Target="mmg-reply-library"}
+    @{Drive="MMG_SKILL_REPLY_LIBRARY.md"; Target="mmg-reply-library"},
+    @{Drive="MMG_SKILL_COURSE_CAROUSEL.md"; Target="mmg-course-carousel"}
 )
