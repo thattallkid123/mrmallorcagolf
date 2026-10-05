@@ -1313,7 +1313,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: "Mallorca's Oldest Course" },
         {
           type: 'paragraph',
-          text: "Son Vida opened in 1964 and is the oldest golf course on the island. It hosted the European Tour's Open de Baleares twice, in 1990 and 1994, and Seve Ballesteros won the first of them in a playoff. Tree-lined fairways run through classic parkland, with the Bay of Palma and the Tramuntana mountains behind. I played the yellow tees, 5,470m, which is short by modern standards. I did not find it easy. The greens slope, the holes dogleg and the ground rises and falls.",
+          text: "Son Vida opened in 1964 and is the oldest golf course on the island. It hosted the European Tour's Open de Baleares twice, in 1990 and 1994, and Seve Ballesteros won the first of them in a playoff. Tree-lined fairways run through classic parkland, with the Bay of Palma and the Tramuntana mountains behind. I played the yellow tees, 5,470m, which is short by modern standards. The greens slope, the holes dogleg and the ground rises and falls.",
         },
         {
           type: 'image',
@@ -1337,7 +1337,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/son-vida-blog/son-vida-2.webp',
           alt: 'Golfer in a navy polo hitting an iron towards a green with a wooded hillside and houses behind at Son Vida',
-          caption: 'My client at the par 3 8th, 132m from the yellow tees, with the hillside and houses behind.',
+          caption: 'The par 3 8th, 132m from the yellow tees.',
           presentation: 'natural',
           naturalWidth: 1200,
           naturalHeight: 1600,
@@ -1375,11 +1375,11 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "The 14th is a 327m par 4 with a significant dogleg left and water just short of the green. The ideal landing area is hard to read from the tee. I hit driver and had 50 yards left. How aggressively to play it and which line to take are real decisions, which is why I found the closing stretch more interesting.",
+          text: "The 14th is a 327m par 4 with a significant dogleg left and water just short of the green. You cannot easily see where the ideal landing area is. I hit driver and had 50 yards left. How aggressively to play it and which line to take are real decisions, which is why I found the closing stretch more interesting.",
         },
         {
           type: 'paragraph',
-          text: "The 15th is a 368m par 4, a dogleg right, with the same kind of choice. The further left you play from the tee, the longer the approach. I took a more direct line towards the green and had 80 yards in. I liked having different options from the tee instead of one obvious way to play it.",
+          text: "The 15th is a 368m par 4, a dogleg right, with the same kind of choice. The further left you play, the longer the approach. I took a more direct line towards the green and had 80 yards in. I liked having different options from the tee instead of one obvious way to play it.",
         },
         {
           type: 'paragraph',
@@ -1446,12 +1446,12 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Common Questions' },
         {
           type: 'paragraph',
-          text: "Handicap limit is 54, with a certificate required at booking. It is walkable, with most of the climbing early in the round, though I would not call it easy walking. It suits golfers who enjoy working out where to put the ball. One thing that surprises first-timers: several tee shots hide the best line, so a second visit is easier than the first. Local tip: on the two-tier greens, finish below the hole.",
+          text: "Handicap limit is 54, with a certificate required at booking. It is walkable, with most of the climbing early in the round. It suits golfers who enjoy working out where to put the ball. One thing that surprises first-timers: a few tee shots hide the best line, so a second visit is easier than the first. Local tip: on the two-tier greens, finish below the hole.",
         },
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "7/10. Son Vida is Mallorca's oldest course, and it hosted two Open de Baleares, one won by Seve Ballesteros in a playoff. Sloping two-tier greens mean every approach needs the right distance, the doglegs mean several tees need a plan, and the last six holes have the space and choices that the first 12 lack. It suits golfers who want history and an easy round from the Sheraton. It is a weaker fit for anyone who wants open space on every hole, since the first 12 are the tightest.",
+          text: "7/10. Son Vida is Mallorca's oldest course, and it hosted two Open de Baleares, one won by Seve Ballesteros in a playoff. Sloping two-tier greens mean every approach needs the right distance, the doglegs mean some tees need a plan, and the last six holes have the space and choices that the first 12 lack. It suits golfers who want history and an easy round from the Sheraton. It is a weaker fit for anyone who wants open space on every hole, since the first 12 are the tightest.",
         },
         {
           type: 'notes',
