@@ -1352,17 +1352,26 @@ export const GUIDE_POST_CONTENT = {
           text: "The 7th is a dogleg right where the correct line off the tee is not obvious. I thought I had hit a good tee shot curving to the right, and I ended up on the right side of the fairway, not where I expected. That hole, like several others, would be easier the second time round, when you know the line and what sits beyond the visible landing area.",
         },
         {
+          type: 'paragraph',
+          text: "The 11th is a 483m par 5, a dogleg left and uphill with houses down the right. I hit 3-iron followed by 3-iron onto the green. The tee shot feels open, and the angle into the green narrows depending on where it finishes.",
+        },
+        {
           type: 'image',
-          src: '/images/son-vida-blog/son-vida-3.webp',
-          alt: 'Yellow Son Vida crest tee marker and a green Son Vida 1964 marker on a tee box with the fairway stretching away',
-          caption: 'The Son Vida tee markers, with the fairway running away below.',
+          src: '/images/son-vida-blog/son-vida-8.webp',
+          alt: 'Golfer in a red cap finishing an iron shot from the fairway towards bunkers and the green on the par 5 11th at Son Vida',
+          caption: 'My second shot on the par 5 11th, with the bunkers short of the green.',
           presentation: 'natural',
-          naturalWidth: 1200,
+          naturalWidth: 900,
           naturalHeight: 1600,
         },
         {
-          type: 'paragraph',
-          text: "The 11th is a 483m par 5, a dogleg left and uphill with houses down the right. I hit 3-iron followed by 3-iron onto the green. The tee shot feels open, and the angle into the green narrows depending on where it finishes.",
+          type: 'image',
+          src: '/images/son-vida-blog/son-vida-3.webp',
+          alt: 'Yellow Son Vida crest tee marker and a green Son Vida 1964 marker on the 12th tee, with the fairway of the 11th stretching back below',
+          caption: 'The 12th tee marker, looking back down the 11th.',
+          presentation: 'natural',
+          naturalWidth: 1200,
+          naturalHeight: 1600,
         },
         {
           type: 'paragraph',
@@ -1371,15 +1380,6 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text: "The 15th is a 368m par 4, a dogleg right, with the same kind of choice. The further left you play from the tee, the longer the approach. I took a more direct line towards the green and had 80 yards in. I liked having different options from the tee instead of one obvious way to play it.",
-        },
-        {
-          type: 'image',
-          src: '/images/son-vida-blog/son-vida-8.webp',
-          alt: 'Golfer in a red cap finishing an iron shot from the fairway towards bunkers and a green at Son Vida',
-          caption: 'Hitting from the fairway towards a bunkered green.',
-          presentation: 'natural',
-          naturalWidth: 900,
-          naturalHeight: 1600,
         },
         {
           type: 'paragraph',
