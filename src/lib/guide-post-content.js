@@ -1287,7 +1287,7 @@ export const GUIDE_POST_CONTENT = {
         updated: 'October 2026',
         title: "Son Vida Golf, Mallorca: A PGA Professional's Honest Review (2026)",
         intro:
-          "The oldest course in Mallorca, opened in 1964, and the venue where Seve Ballesteros won the 1990 Open de Baleares. It is short from the yellow tees at 5,470m, and the sloping greens and doglegs still make it a real test.",
+          "The oldest course in Mallorca, opened in 1964, and the venue where Seve Ballesteros won the 1990 Open de Baleares. It plays 5,470m from the yellow tees, with sloping two-tier greens and plenty of doglegs.",
         related: [
           { slug: 'son-quint-review', title: 'Son Quint Golf: Honest Review 2026' },
           { slug: 'son-muntaner-review', title: 'Son Muntaner Golf: Best Golf Course in Spain 2025' },
@@ -1308,12 +1308,12 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "We teed off at 8:16, one of the first times out, with rain from earlier in the morning still on the ground. My client was staying at the Sheraton and paid €88 for the round, the hotel guest rate. We walked, and we were paired with two UK golfers in a buggy who were good company. By the time we finished, a crowd was waiting around the 1st tee. An early tee time is the one to book here.",
+          text: "We teed off at 8:16, one of the first times out, with rain from earlier in the morning still on the ground. My client was staying at the Sheraton and paid €88 for the round, the hotel guest rate. We walked, and we were paired with two UK golfers in a buggy who were great company. By the time we finished, a crowd was waiting around the 1st tee. An early tee time is the one to book here.",
         },
         { type: 'heading', text: "Mallorca's Oldest Course" },
         {
           type: 'paragraph',
-          text: "Son Vida opened in 1964 and is the oldest golf course on the island. It hosted the European Tour's Open de Baleares twice, in 1990 and 1994, and Seve Ballesteros won the first of them in a playoff. Tree-lined fairways run through classic parkland, with the Bay of Palma and the Tramuntana mountains behind. From the yellow tees, which I played, it measures 5,470m. That is short by modern standards, and it still asks plenty: the slopes, elevation changes, doglegs and heavily contoured greens all add difficulty.",
+          text: "Son Vida opened in 1964 and is the oldest golf course on the island. It hosted the European Tour's Open de Baleares twice, in 1990 and 1994, and Seve Ballesteros won the first of them in a playoff. Tree-lined fairways run through classic parkland, with the Bay of Palma and the Tramuntana mountains behind. I played the yellow tees, 5,470m, which is short by modern standards. I did not find it easy. The greens slope, the holes dogleg and the ground rises and falls.",
         },
         {
           type: 'image',
@@ -1327,11 +1327,11 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'How The Course Plays' },
         {
           type: 'paragraph',
-          text: "The greens carry the difficulty. There is a lot of slope and plenty of two-tier greens, so approach distance control matters: finish on the wrong tier and you face a very difficult putt. There is a lot of elevation change, mostly early in the round, and quite a few of the par 3s play downhill, where club selection depends on how much the drop takes off the yardage. We walked all 18 comfortably, though I would not call it an easy walk.",
+          text: "Most of the greens slope a lot, and several have two tiers. Land your approach on the wrong tier and you are left with a very difficult putt, so distance control into the green matters more than length off the tee. There is a lot of elevation change, mostly early in the round, and several par 3s play downhill, where the club you pick depends on how much the drop takes off the yardage. We walked all 18 comfortably, though I would not call it an easy walk.",
         },
         {
           type: 'paragraph',
-          text: "The course sits among the houses and the hotel, with little spare space, so many holes feel confined and defined by the properties around them. The doglegs and the way the land has been used create decisions from the tee and several memorable holes. The first 12 are the most enclosed, and at times the routing through the trees and houses feels boxed in. The final six open up and reminded me of Son Muntaner: more space, more interesting hole designs and clearer strategic choices. I preferred the last six.",
+          text: "The course is built among the houses and the hotel with very little spare land, and the buildings mark the edge of many holes. Doglegs and clever use of the ground give you decisions from the tee and a few holes you remember afterwards. The first 12 are the tightest. The last six open out and reminded me of Son Muntaner, with more space, better hole designs and clearer choices. I preferred them.",
         },
         {
           type: 'image',
@@ -1349,7 +1349,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "The 7th is a dogleg right where the correct line off the tee is not obvious. I thought I had hit a good tee shot curving to the right, and I ended up on the right side of the fairway, not where I expected. That hole, like several others, would be easier the second time round, when you know the line and what sits beyond the visible landing area.",
+          text: "The 7th is a dogleg right where the correct line off the tee is not obvious. I thought I had hit a good tee shot curving to the right, and I ended up on the right side of the fairway, not where I expected. Knowing the line, and what sits beyond the visible landing area, would make a big difference on a second visit.",
         },
         {
           type: 'paragraph',
@@ -1383,7 +1383,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "The 18th is a beautiful finishing hole. It is a 460m par 5 with water running up the right, the hotel as the backdrop, a fountain, and the clubhouse on the left. People around the clubhouse can watch the approach shots into the green, which gives the hole a proper finishing atmosphere.",
+          text: "The 18th is a beautiful finishing hole. It is a 460m par 5 with water running up the right, the hotel as the backdrop, a fountain, and the clubhouse on the left. People around the clubhouse can watch the approach shots into the green, which gives the hole an atmosphere to finish on.",
         },
         {
           type: 'image',
@@ -1410,7 +1410,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "The presentation was what I would expect from an Arabella course: tidy and carefully maintained. The greenkeepers were cutting the edges of the greens with scissors and tidying them by hand. The staff were warm and friendly all the way through, and the club cleaned my client's clubs for free after the round. The halfway hut is very good and the food after the round was good too.",
+          text: "The presentation was what I would expect from an Arabella course: tidy and carefully maintained. The greenkeepers were cutting the edges of the greens with scissors and raking them by hand. The staff were warm and friendly all the way through, and the club cleaned my client's clubs for free after the round. The halfway hut is very good, and so was the food after the round.",
         },
         {
           type: 'paragraph',
@@ -1441,25 +1441,25 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "The one real negative from the day: the first 12 holes are closed in by houses, trees and the hotel, and the routing can feel boxed in. The rain made it worse, with wet lies and plugged balls that I would not expect on a normal day. In drier weather I would expect it to play firmer than it did for us.",
+          text: "The one real negative from the day: on the first 12 holes you are rarely out of sight of a house or the hotel, and the routing felt cramped in places. The rain added wet lies and plugged balls that I would not expect on a normal day. In drier weather I would expect it to play firmer than it did for us.",
         },
         { type: 'heading', text: 'Common Questions' },
         {
           type: 'paragraph',
-          text: "Handicap limit is 54, with a certificate required at booking. The course is walkable, with the most elevation early in the round, though it is not an easy walk. Son Vida suits golfers who like to think their way round: the course is short, and the sloping, two-tier greens punish a wrong-tier approach. One thing that surprises first-timers: several tee shots hide the best line, so a second visit is noticeably easier than the first. Local tip: book an early tee time, because the course was far busier by the time we finished.",
+          text: "Handicap limit is 54, with a certificate required at booking. It is walkable, with most of the climbing early in the round, though I would not call it easy walking. It suits golfers who enjoy working out where to put the ball. One thing that surprises first-timers: several tee shots hide the best line, so a second visit is easier than the first. Local tip: on the two-tier greens, finish below the hole.",
         },
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "7/10. Son Vida is Mallorca's oldest course and it has the history to match, with a Seve Ballesteros win and two Open de Baleares behind it. Sloping, two-tier greens and plenty of doglegs make it a better test than 5,470m suggests, and the final six holes have the space and strategy that the enclosed first 12 lack. It suits golfers who enjoy position golf and want a convenient round from the Sheraton. If you want open space on every hole, you will like the closing stretch more than the start.",
+          text: "7/10. Son Vida is Mallorca's oldest course and it has the history to match, with a Seve Ballesteros win and two Open de Baleares behind it. The sloping greens, doglegs and elevation make 5,470m play harder than the card suggests, and the last six holes have the space and choices that the first 12 lack. It suits golfers who like thinking their way round and want a convenient round from the Sheraton. If you want open space on every hole, you will like the end of the round more than the start.",
         },
         {
           type: 'notes',
           title: 'Four things I would know before booking Son Vida',
           items: [
             ['Best tee time', 'We went out at 8:16 and the course was busy around the 1st tee by the time we finished. Go early.'],
-            ['Greens', 'Many are two-tier with a lot of slope. Check which tier the pin is on and aim to finish below the hole.'],
-            ['Second visit', 'Several tee shots, the 7th included, hide the best line. Expect the course to play easier the second time round.'],
+            ['Staying at the Sheraton', 'Hotel guests can get a lower rate than the public price. My client paid €88, and the course is easy to reach from the hotel.'],
+            ['Second visit', 'Several tee shots, the 7th included, hide the best line. Play it once, and the next round will go better.'],
             ['Warm-up', 'There is a net and a putting green only. Son Muntaner has a full range around two minutes away.'],
           ],
         },
