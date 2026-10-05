@@ -1331,7 +1331,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "The course is built among the houses and the hotel with very little spare land, and the buildings mark the edge of many holes. Doglegs and clever use of the ground give you decisions from the tee and a few holes you remember afterwards. The first 12 are the tightest. The last six open out and reminded me of Son Muntaner, with more space, better hole designs and clearer choices. I preferred them.",
+          text: "The course is built among the houses and the hotel with very little spare land, and the buildings mark the edge of many holes. There are plenty of doglegs, and each one gives you a decision to make on the tee. The first 12 are the tightest. The last six open out and reminded me of Son Muntaner, with more space, more interesting hole designs and more obvious decisions from the tee. I preferred them.",
         },
         {
           type: 'image',
@@ -1451,7 +1451,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "7/10. Son Vida is Mallorca's oldest course and it has the history to match, with a Seve Ballesteros win and two Open de Baleares behind it. The sloping greens, doglegs and elevation make 5,470m play harder than the card suggests, and the last six holes have the space and choices that the first 12 lack. It suits golfers who like thinking their way round and want a convenient round from the Sheraton. If you want open space on every hole, you will like the end of the round more than the start.",
+          text: "7/10. Son Vida is Mallorca's oldest course, and it hosted two Open de Baleares, one won by Seve Ballesteros in a playoff. Sloping two-tier greens mean every approach needs the right distance, the doglegs mean several tees need a plan, and the last six holes have the space and choices that the first 12 lack. It suits golfers who want history and an easy round from the Sheraton. It is a weaker fit for anyone who wants open space on every hole, since the first 12 are the tightest.",
         },
         {
           type: 'notes',
@@ -1459,7 +1459,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['Best tee time', 'We went out at 8:16 and the course was busy around the 1st tee by the time we finished. Go early.'],
             ['Staying at the Sheraton', 'Hotel guests can get a lower rate than the public price. My client paid €88, and the course is easy to reach from the hotel.'],
-            ['Second visit', 'Several tee shots, the 7th included, hide the best line. Play it once, and the next round will go better.'],
+            ['Second visit', 'Several tee shots, the 7th included, hide the best line, so note where you finished and why.'],
             ['Warm-up', 'There is a net and a putting green only. Son Muntaner has a full range around two minutes away.'],
           ],
         },
