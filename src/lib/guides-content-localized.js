@@ -71,6 +71,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Championship · Par 72 · €77-126 · Acceso público"
       },
       {
+        "slug": "son-vida-review",
+        "badge": "Análisis del campo",
+        "badgeGold": true,
+        "title": "Son Vida Golf, Mallorca - análisis honesto de un Profesional PGA (2026)",
+        "intro": "El campo más antiguo de Mallorca, abierto en 1964, donde Seve Ballesteros ganó el Open de Baleares de 1990. Greens inclinados de dos niveles y unos últimos seis hoyos más abiertos. Un 7 sobre 10.",
+        "readTime": "6 min",
+        "keywords": "Campo histórico · Par 70 · €84-190 · Son Vida, Palma"
+      },
+      {
         "slug": "golf-andratx-review",
         "badge": "Análisis del campo",
         "badgeGold": true,
@@ -256,6 +265,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Championship · Par 72 · €77-126 · Öffentlicher Zugang"
       },
       {
+        "slug": "son-vida-review",
+        "badge": "Platz-Bewertung",
+        "badgeGold": true,
+        "title": "Son Vida Golf, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
+        "intro": "Der älteste Platz Mallorcas, 1964 eröffnet, wo Seve Ballesteros 1990 die Open de Baleares gewann. Abschüssige Greens auf zwei Ebenen und ein offeneres Finale. Eine 7 von 10.",
+        "readTime": "6 Min.",
+        "keywords": "Traditionsplatz · Par 70 · €84-190 · Son Vida, Palma"
+      },
+      {
         "slug": "golf-andratx-review",
         "badge": "Platz-Bewertung",
         "badgeGold": true,
@@ -438,6 +456,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "L'un des parcours les plus longs d'Europe, une vraie histoire sur l'European Tour et un parcours qui redonne vraiment confiance avec le driver.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €77-126 · Accès public"
+      },
+      {
+        "slug": "son-vida-review",
+        "badge": "Avis parcours",
+        "badgeGold": true,
+        "title": "Son Vida Golf, Majorque - avis honnête d'un Professionnel PGA (2026)",
+        "intro": "Le plus ancien parcours de Majorque, ouvert en 1964, où Seve Ballesteros a remporté l'Open de Baleares en 1990. Des greens en pente à deux niveaux et des six derniers trous plus ouverts. Un 7 sur 10.",
+        "readTime": "6 min",
+        "keywords": "Parcours historique · Par 70 · €84-190 · Son Vida, Palma"
       },
       {
         "slug": "golf-andratx-review",
@@ -625,6 +652,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Championship · Par 72 · €77-126 · Toegankelijk voor bezoekers"
       },
       {
+        "slug": "son-vida-review",
+        "badge": "Baanbeoordeling",
+        "badgeGold": true,
+        "title": "Son Vida Golf, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
+        "intro": "De oudste baan van Mallorca, geopend in 1964, waar Seve Ballesteros in 1990 de Open de Baleares won. Hellende greens op twee niveaus en een opener slotgedeelte. Een 7 op 10.",
+        "readTime": "6 min",
+        "keywords": "Historische baan · Par 70 · €84-190 · Son Vida, Palma"
+      },
+      {
         "slug": "golf-andratx-review",
         "badge": "Baanbeoordeling",
         "badgeGold": true,
@@ -810,6 +846,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Championship · Par 72 · €77-126 · Öppen för besökare"
       },
       {
+        "slug": "son-vida-review",
+        "badge": "Banomdöme",
+        "badgeGold": true,
+        "title": "Son Vida Golf, Mallorca - ärlig recension av en PGA Professional (2026)",
+        "intro": "Mallorcas äldsta bana, öppnad 1964, där Seve Ballesteros vann Open de Baleares 1990. Sluttande greener på två nivåer och en öppnare slutsträcka. En 7 av 10.",
+        "readTime": "6 min",
+        "keywords": "Historisk bana · Par 70 · €84-190 · Son Vida, Palma"
+      },
+      {
         "slug": "golf-andratx-review",
         "badge": "Banomdöme",
         "badgeGold": true,
@@ -993,6 +1038,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "欧洲最长的球场之一，拥有真正的 European Tour 历史，也是真正能帮球手找回一号木信心的球场。",
         "readTime": "6分钟",
         "keywords": "锦标赛级 · 标准杆72 · €77-126 · 对外开放"
+      },
+      {
+        "slug": "son-vida-review",
+        "badge": "球场评测",
+        "badgeGold": true,
+        "title": "Son Vida 高尔夫球场 - PGA 职业教练诚实评测（2026）",
+        "intro": "马略卡最古老的球场，1964年开业，塞维·巴列斯特罗斯1990年在这里赢得巴利阿里公开赛。果岭有坡度且分两层，后六洞更开阔。评分7/10。",
+        "readTime": "6分钟",
+        "keywords": "历史名场 · 标准杆70 · €84-190 · Son Vida，帕尔马"
       },
       {
         "slug": "golf-andratx-review",

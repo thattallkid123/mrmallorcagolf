@@ -32,6 +32,7 @@ const LEGAL_BASE_PATHS = new Set(['/privacy-policy', '/terms'])
 const LEGAL_LOCALES = new Set(['en', 'es', 'de', 'fr'])
 
 export const REVIEW_POST_SLUGS = new Set([
+  'son-vida-review',
   'son-gual-review',
   'alcanada-review',
   'santa-ponsa-1-review',
@@ -46,7 +47,6 @@ export const REVIEW_POST_SLUGS = new Set([
 
 export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
   'on-course-coaching-mallorca',
-  'son-vida-review',
 ])
 
 export const ARTICLE_SLUGS = new Set([

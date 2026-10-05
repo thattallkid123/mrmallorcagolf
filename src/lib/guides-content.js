@@ -86,6 +86,17 @@ export const GUIDES_CONTENT = {
       "keywords": "Championship · Par 72 · €77-126 · Public access"
     },
     {
+      "slug": "son-vida-review",
+      "badge": "Course Review",
+      "badgeGold": true,
+      "img": "/images/son-vida-card.webp",
+      "imgPosition": "center 45%",
+      "title": "Son Vida Golf, Mallorca: A PGA Professional's Honest Review (2026)",
+      "intro": "The oldest course in Mallorca, opened in 1964, where Seve Ballesteros won the 1990 Open de Baleares. Sloping two-tier greens and a more open back six. A 7 out of 10.",
+      "readTime": "6 min read",
+      "keywords": "Historic course · Par 70 · €84-190 · Son Vida, Palma"
+    },
+    {
       "slug": "golf-andratx-review",
       "badge": "Course Review",
       "badgeGold": true,
