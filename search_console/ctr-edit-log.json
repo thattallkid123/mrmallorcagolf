@@ -51,6 +51,11 @@
           "date": "2026-09-02",
           "commit": "33492bb",
           "summary": "differentiated title from the other Andratx-adjacent review (had near-duplicate titles)"
+        },
+        {
+          "date": "2026-10-06",
+          "commit": "TBD",
+          "summary": "Title/description quoted €115-€140 and €125 (Andy's May fee), not the canonical €95-€170. Title now 'Golf de Andratx Review: 7.5/10 (2026)' to match the query words; description gives the canonical range, the 609m par 5 and the verdict. 6 locale descriptions mirrored."
         }
       ]
     },
@@ -129,6 +134,11 @@
           "date": "2026-09-14",
           "commit": "DIAGNOSIS-ONLY, no code change",
           "summary": "Title/description already good (57 char title with price+par+distance+verdict). All three top queries sit at pos 9.1-13.2, the bottom of page 1 / top of page 2, where 0-2 clicks on 20-50 impressions is normal CTR behaviour, not a copy defect. Ranking position is the lever here, not metadata."
+        },
+        {
+          "date": "2026-10-06",
+          "commit": "TBD",
+          "summary": "Par corrected from 72 to 70 (verified scorecard) in the EN description and facts block. Not a CTR rewrite; the description otherwise stays as it was."
         }
       ]
     },
@@ -174,6 +184,11 @@
           "date": "2026-09-14",
           "commit": "fcc8f2f",
           "summary": "Description was generic (mountain views, honest notes, fees - no numbers) unlike the EN version which leads with price/par/distance. Rewrote to match: green fee ~SEK-equivalent EUR90-110, par 72, 20 min from Palma, 6/10 verdict."
+        },
+        {
+          "date": "2026-10-06",
+          "commit": "TBD",
+          "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
         }
       ]
     },
@@ -201,6 +216,42 @@
           "date": "2026-09-14",
           "commit": "d99e1fc",
           "summary": "Description 184 chars, over budget. Trimmed to 112 chars, same facts."
+        }
+      ]
+    },
+    "/fr/guides/son-termes-review": {
+      "edits": [
+        {
+          "date": "2026-10-06",
+          "commit": "TBD",
+          "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
+        }
+      ]
+    },
+    "/es/guides/son-termes-review": {
+      "edits": [
+        {
+          "date": "2026-10-06",
+          "commit": "TBD",
+          "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
+        }
+      ]
+    },
+    "/de/guides/son-termes-review": {
+      "edits": [
+        {
+          "date": "2026-10-06",
+          "commit": "TBD",
+          "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
+        }
+      ]
+    },
+    "/nl/guides/son-termes-review": {
+      "edits": [
+        {
+          "date": "2026-10-06",
+          "commit": "TBD",
+          "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
         }
       ]
     }

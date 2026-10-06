@@ -93,6 +93,22 @@ Only one page out of seven had an actual metadata gap; the other six already fol
 
 Separately, from the same Search Console pull: `/de/golf-courses` ranks pos 50.5 (vs ~15 for the English hub) despite being indexed cleanly — this looks like a content-depth/authority gap for that locale, not a metadata issue, and isn't fixable by a copy edit. The URL-indexing sweep the same day found 64 of 232 checked URLs flagged for review, spread fairly evenly across all 6 non-English locales (nl highest at 17, expected since nl is deliberately unlinked from nav; fr next at 11) — this reads as normal selective indexing of lower-traffic locale/tool pages under the existing English-canonical-plus-overlay architecture, not a technical bug. Two English-locale pages were flagged too (`/guides/t-golf-palma-review`, `/guides/mallorca-course-map`) — checked their sitemap dates: T Golf Palma was published 2026-09-09 (5 days old at check time, normal "Discovered — not indexed" for a brand-new page); Mallorca Course Map was published 2026-07-23 (~2 months old, still undiscovered on EN — worth a content-depth/internal-linking look if it's still unindexed by mid-October, not urgent now).
 
+### 2026-10-06 CTR sweep (first run of the monthly Hermes job)
+
+The new monthly job (`Monthly Search Console CTR Review`, Hermes) flagged 10 pages. 2 (`/guides/golf-cost-mallorca`, `/guides/son-muntaner-review`) were inside the 21-day window and were not touched. Of the other 8, diagnosed before drafting:
+
+| Page | Finding |
+|------|---------|
+| `/guides/golf-andratx-review` (338 impr, 3 clicks, pos 8.9) | **Fixed.** Title said "€115-€140" and the description "€125", neither matching the listing's canonical Peak €170 / Low €95 (€125 was Andy's own May fee). Title now carries the query words ("Golf de Andratx Review") and the rating; description gives the canonical €95-€170 range, the 609m par 5 and the verdict. All 6 localized descriptions mirrored. Caveat: pos 8.9 with competitors showing star snippets (see the Son Gual diagnosis in `ctr-edit-log.json`) may cap what any rewrite can do. Judge after ~2026-10-27. |
+| `/fr/guides/son-termes-review` (129 impr, 0 clicks, pos 4.6) | **Fixed.** Same defect the Swedish page had on 14 Sep: generic description with no numbers. FR, ES, DE, NL now lead with green fee, par, distance and 6/10 like EN. Judge after ~2026-10-27. |
+| `/sv/guides/son-termes-review` | Description from 14 Sep was right except the par. See the par fix below. |
+| `/es/guides/golf-club-hire-mallorca` | Same as the 14 Sep finding: English query ("club rentals mallorca") ranking on the /es/ URL. Language mismatch, not copy. Not touched. |
+| `/tools/green-fees` | Top queries are "24courses", "29.9.26" and the brand name. Not a copy problem. Not touched. |
+| `/sv/guides/son-muntaner-review`, `/sv/guides/son-gual-review`, `/fr/guides/alcanada-review` | 50-67 impressions, expected 1-2 clicks. Descriptions already carry price and a specific. Too small a sample. Not touched. |
+
+**Factual fix found while checking:** the Son Termes review said "Par 72" in its facts block (EN and all 6 locales) and in the EN and SV descriptions, but the verified scorecard and the course listing say par 70. Corrected everywhere. The 14 Sep Swedish edit had copied the wrong par from the English description.
+
+
 ### 2026-09-14 meta-length checker coverage gap (found while investigating the pages above)
 
 While checking `/guides/mallorca-course-map`'s metadata for the indexing investigation above, found its title was 77 characters in the SERP (58 raw + 19-char brand suffix) — 17 over budget — despite `check:meta-length` passing clean. Root cause: the checker only ever scanned a fixed list of 5 files (`page-metadata.js` + the 4 guide-content files); any page defining its metadata inline in its own `page.jsx` (the pattern used by every `/tools/*` route and a few standalone pages like `/signature-day`) was invisible to it.

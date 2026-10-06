@@ -8,7 +8,7 @@
 
 export const HANDICAP_CHECKER_T = {
   en: {
-    hero: { eyebrow: 'Free tool', title: 'Can I Play It?', sub: 'Enter your handicap and see instantly which of Mallorca\'s courses you can book, which need a certificate, and where I can arrange access for you.', updated: 'Updated July 2026' },
+    hero: { eyebrow: 'Free tool', title: 'Can I Play It?', sub: 'Enter your handicap and see instantly which of Mallorca\'s courses you can book, which need a certificate, and where I can arrange access for you.' },
     panel: { title: 'Your details' },
     inputs: { handicap: 'Handicap index', handicapPlaceholder: 'e.g. 18.4', noHandicap: 'I don\'t have an official handicap', gender: 'Gender', male: 'Male', female: 'Female', cert: 'Handicap certificate', yes: 'Yes', digital: 'Digital (app)', no: 'No', groupSize: 'Group size', area: 'Where are you based or staying?', areaHint: '(optional, tailors your recommendation)', check: 'Check my access' },
     tiers: { new: 'a newer golfer', low: 'a low-handicap golfer', mid: 'a solid club golfer', improver: 'an improving golfer', relaxed: 'a relaxed, higher-handicap golfer' },
@@ -60,7 +60,7 @@ export const HANDICAP_CHECKER_T = {
     disclaimer: 'Handicap limits and certificate rules are set by each club and can change without notice, and are always confirmed at the time of booking. A daily Spanish Golf Federation licence (€3) applies at most member clubs for non-federated visitors. This checker is a planning guide, not a booking guarantee.'
   },
   de: {
-    hero: { eyebrow: 'Kostenloses Werkzeug', title: 'Kann ich es spielen?', sub: 'Geben Sie Ihr Handicap ein und sehen Sie sofort, welche Plätze auf Mallorca Sie buchen können, welche ein Zertifikat benötigen und wo ich Zugang für Sie arrangieren kann.', updated: 'Aktualisiert Juli 2026' },
+    hero: { eyebrow: 'Kostenloses Werkzeug', title: 'Kann ich es spielen?', sub: 'Geben Sie Ihr Handicap ein und sehen Sie sofort, welche Plätze auf Mallorca Sie buchen können, welche ein Zertifikat benötigen und wo ich Zugang für Sie arrangieren kann.' },
     panel: { title: 'Ihre Angaben' },
     inputs: { handicap: 'Handicap-Index', handicapPlaceholder: 'z. B. 18,4', noHandicap: 'Ich habe kein offizielles Handicap', gender: 'Geschlecht', male: 'Mann', female: 'Frau', cert: 'Handicap-Zertifikat', yes: 'Ja', digital: 'Digital (App)', no: 'Nein', groupSize: 'Gruppengröße', area: 'Wo befinden Sie sich oder übernachten Sie?', areaHint: '(optional – passt Ihre Empfehlung an)', check: 'Meinen Zugang überprüfen' },
     tiers: { new: 'Einsteiger', low: 'Spieler mit niedrigem Handicap', mid: 'solider Clubgolfer', improver: 'Golfer, der sich stetig verbessert', relaxed: 'entspannter Golfer mit höherem Handicap' },
@@ -112,7 +112,7 @@ export const HANDICAP_CHECKER_T = {
     disclaimer: 'Handicap-Grenzen und Zertifikatregeln werden von jedem Club festgelegt und können sich ohne Vorankündigung ändern – wird immer zum Zeitpunkt der Buchung bestätigt. Eine tägliche Lizenz des spanischen Golfverbands (€3) gilt bei den meisten Memberclubs für nicht-assoziierte Besucher. Dieser Checker ist ein Planungsleitfaden, keine Buchungsgarantie.'
   },
   es: {
-    hero: { eyebrow: 'Herramienta gratuita', title: '¿Puedo jugar?', sub: 'Introduzca su hándicap y vea al instante cuáles de los campos de Mallorca puede reservar, cuáles necesitan certificado y dónde puedo gestionar el acceso para usted.', updated: 'Actualizado julio 2026' },
+    hero: { eyebrow: 'Herramienta gratuita', title: '¿Puedo jugar?', sub: 'Introduzca su hándicap y vea al instante cuáles de los campos de Mallorca puede reservar, cuáles necesitan certificado y dónde puedo gestionar el acceso para usted.' },
     panel: { title: 'Sus datos' },
     inputs: { handicap: 'Índice de hándicap', handicapPlaceholder: 'p. ej. 18,4', noHandicap: 'No tengo un hándicap oficial', gender: 'Género', male: 'Hombre', female: 'Mujer', cert: 'Certificado de hándicap', yes: 'Sí', digital: 'Digital (app)', no: 'No', groupSize: 'Tamaño del grupo', area: '¿Dónde reside o se aloja?', areaHint: '(opcional — personaliza su recomendación)', check: 'Comprobar mi acceso' },
     tiers: { new: 'un golfista que empieza', low: 'un golfista de hándicap bajo', mid: 'un sólido golfista de club', improver: 'un golfista en progresión', relaxed: 'un golfista relajado de hándicap alto' },
@@ -164,7 +164,7 @@ export const HANDICAP_CHECKER_T = {
     disclaimer: 'Los límites de hándicap y las reglas de certificado son establecidos por cada club y pueden cambiar sin previo aviso — siempre se confirma al momento de la reserva. Se aplica una licencia diaria de la Federación Española de Golf (€3) en la mayoría de clubes de miembros para visitantes no federados. Este verificador es una guía de planificación, no una garantía de reserva.'
   },
   fr: {
-    hero: { eyebrow: 'Outil gratuit', title: 'Puis-je y jouer?', sub: 'Entrez votre handicap et voyez instantanément quels parcours de Mallorca vous pouvez réserver, lesquels ont besoin d\'un certificat et où je peux vous arranger un accès.', updated: 'Mis à jour juillet 2026' },
+    hero: { eyebrow: 'Outil gratuit', title: 'Puis-je y jouer?', sub: 'Entrez votre handicap et voyez instantanément quels parcours de Mallorca vous pouvez réserver, lesquels ont besoin d\'un certificat et où je peux vous arranger un accès.' },
     panel: { title: 'Vos informations' },
     inputs: { handicap: 'Index de handicap', handicapPlaceholder: 'ex. 18,4', noHandicap: 'Je n\'ai pas de handicap officiel', gender: 'Sexe', male: 'Homme', female: 'Femme', cert: 'Certificat de handicap', yes: 'Oui', digital: 'Numérique (app)', no: 'Non', groupSize: 'Taille du groupe', area: 'Où êtes-vous basé ou logé?', areaHint: '(optionnel — adapte votre recommandation)', check: 'Vérifier mon accès' },
     tiers: { new: 'golfeur débutant', low: 'golfeur à petit index', mid: 'solide golfeur de club', improver: 'golfeur en progression', relaxed: 'golfeur détendu à index élevé' },
@@ -216,7 +216,7 @@ export const HANDICAP_CHECKER_T = {
     disclaimer: 'Les limites de handicap et les règles de certificat sont définies par chaque club et peuvent changer sans préavis — toujours confirmées au moment de la réservation. Une licence quotidienne de la Fédération espagnole de golf (€3) s\'applique à la plupart des clubs de membres pour les visiteurs non fédérés. Ce vérificateur est un guide de planification, pas une garantie de réservation.'
   },
   nl: {
-    hero: { eyebrow: 'Gratis hulpmiddel', title: 'Kan ik het spelen?', sub: 'Voer uw handicap in en zie onmiddellijk welke Mallorca-banen u kunt reserveren, welke een certificaat nodig hebben en waar ik toegang voor u kan regelen.', updated: 'Bijgewerkt juli 2026' },
+    hero: { eyebrow: 'Gratis hulpmiddel', title: 'Kan ik het spelen?', sub: 'Voer uw handicap in en zie onmiddellijk welke Mallorca-banen u kunt reserveren, welke een certificaat nodig hebben en waar ik toegang voor u kan regelen.' },
     panel: { title: 'Uw gegevens' },
     inputs: { handicap: 'Handicap-index', handicapPlaceholder: 'bijv. 18,4', noHandicap: 'Ik heb geen officiële handicap', gender: 'Geslacht', male: 'Man', female: 'Vrouw', cert: 'Handicap-certificaat', yes: 'Ja', digital: 'Digitaal (app)', no: 'Nee', groupSize: 'Groepsgrootte', area: 'Waar bent u gebaseerd of verblijft u?', areaHint: '(optioneel — past uw aanbeveling aan)', check: 'Controleer mijn toegang' },
     tiers: { new: 'een beginnende golfer', low: 'een golfer met een lage handicap', mid: 'een degelijke clubgolfer', improver: 'een golfer die zich verbetert', relaxed: 'een ontspannen golfer met een hoger handicap' },
@@ -268,7 +268,7 @@ export const HANDICAP_CHECKER_T = {
     disclaimer: 'Handicap-limieten en certificaatregels worden ingesteld door elke club en kunnen zonder kennisgeving wijzigen — altijd bevestigd op het moment van boeking. Een dagelijkse licentie van de Spaanse Golfbond (€3) is van toepassing op de meeste leden-clubs voor niet-gefedereerde bezoekers. Deze checker is een planningsgids, geen boekingsgarantie.'
   },
   sv: {
-    hero: { eyebrow: 'Gratis verktyg', title: 'Kan jag spela det?', sub: 'Ange ditt handikapp och se omedelbar vilka Mallorca-banor du kan boka, vilka behöver ett certifikat och var jag kan ordna åtkomst för dig.', updated: 'Uppdaterad juli 2026' },
+    hero: { eyebrow: 'Gratis verktyg', title: 'Kan jag spela det?', sub: 'Ange ditt handikapp och se omedelbar vilka Mallorca-banor du kan boka, vilka behöver ett certifikat och var jag kan ordna åtkomst för dig.' },
     panel: { title: 'Dina uppgifter' },
     inputs: { handicap: 'Handicap-index', handicapPlaceholder: 't.ex. 18,4', noHandicap: 'Jag har inget officiellt handikapp', gender: 'Kön', male: 'Man', female: 'Kvinna', cert: 'Handicap-certifikat', yes: 'Ja', digital: 'Digital (app)', no: 'Nej', groupSize: 'Gruppstorlek', area: 'Var är du baserad eller bor?', areaHint: '(valfritt — skräddarsyr din rekommendation)', check: 'Kontrollera min åtkomst' },
     tiers: { new: 'en ny golfare', low: 'en golfare med lågt handikapp', mid: 'en stabil klubbgolfare', improver: 'en golfare som förbättras', relaxed: 'en avslappnad golfare med högre handikapp' },
@@ -320,7 +320,7 @@ export const HANDICAP_CHECKER_T = {
     disclaimer: 'Handicapgränser och certifikatregler ställs in av varje klubb och kan ändras utan meddelande — alltid bekräftade vid bokningsstillfället. En daglig licens från den spanska golfförbundet (€3) gäller för de flesta medlemsklubbar för icke-federerade besökare. Detta verktyg är en planeringsguide, inte en bokningsgaranti.'
   },
   zh: {
-    hero: { eyebrow: '免费工具', title: '我可以打吗？', sub: '输入您的差点，立即查看您可以预订马略卡哪些球场、需要证书的球场以及我可以为您安排入场的地方。', updated: '2026年7月更新' },
+    hero: { eyebrow: '免费工具', title: '我可以打吗？', sub: '输入您的差点，立即查看您可以预订马略卡哪些球场、需要证书的球场以及我可以为您安排入场的地方。' },
     panel: { title: '您的信息' },
     inputs: { handicap: '差点指数', handicapPlaceholder: '例如 18.4', noHandicap: '我没有官方差点', gender: '性别', male: '男性', female: '女性', cert: '差点证书', yes: '是', digital: '数字（应用）', no: '否', groupSize: '团队大小', area: '您在哪里或住在哪里？', areaHint: '（可选 - 定制您的建议）', check: '检查我的访问权限' },
     tiers: { new: '刚入门的球手', low: '低差点球手', mid: '稳健的俱乐部球手', improver: '正在进步的球手', relaxed: '心态放松的高差点球手' },

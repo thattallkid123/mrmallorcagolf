@@ -557,9 +557,9 @@ export const GUIDE_POST_CONTENT = {
   'golf-andratx-review': {
     en: {
       metadata: {
-        title: "Golf Andratx Review: €115-€140 (2026)",
+        title: "Golf de Andratx Review: 7.5/10 (2026)",
         description:
-          "7.5/10: €125, longest par 5 in Spain, mountain setting. Andy's honest verdict on Golf de Andratx.",
+          "Golf de Andratx: 7.5/10, green fees €95-€170 by date and tee time, and the longest par 5 in Spain (609m). Andy's honest verdict.",
         imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
@@ -737,7 +737,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Termes Golf - Honest Review 2026",
         description:
-          'Son Termes green fee around €90-110, par 72, 20 minutes from Palma. Mountain views, honest 6/10 verdict.',
+          'Son Termes green fee around €90-110, par 70, 20 minutes from Palma. Mountain views, honest 6/10 verdict.',
         imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
@@ -856,7 +856,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['~€110', 'In-season green fee'],
             ['6/10', 'Difficulty'],
-            ['Par 72', 'Mountain layout'],
+            ['Par 70', 'Mountain layout'],
             ['20 min', 'From central Palma'],
           ],
         },

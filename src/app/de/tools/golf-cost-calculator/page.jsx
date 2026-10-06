@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/golf-cost-calculator', 'de', {
 
   title: 'Mallorca-Golftrip-Kostenrechner',
-  description: 'Drei Schritte. Eine Kostenschätzung für Ihre Reise mit empfohlener Kursauswahl.',
+  description: 'Vier Schritte. Eine Kostenschätzung für Ihre Reise mit empfohlener Kursauswahl.',
   robots: { index: true, follow: true },
 })
 

@@ -293,9 +293,6 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
           font-size:clamp(1.9rem,4vw,2.8rem); margin:10px 0; }
         .hc-hero .sub { font-family:var(--font-sans); font-weight:300; font-size:.95rem;
           color:rgba(255,255,255,.85); max-width:620px; margin:0 auto; line-height:1.6; }
-        .hc-updated { display:inline-block; margin-top:18px; border:1px solid var(--gold); color:var(--gold);
-          font-family:var(--font-sans); font-size:.75rem; letter-spacing:.14em; text-transform:uppercase;
-          padding:6px 14px; border-radius:2px; }
         .hc-main { max-width:860px; margin:0 auto; padding:28px 20px 80px; font-family:var(--font-sans); }
         .hc-panel { background:#fff; border-radius:6px; padding:26px 24px; box-shadow:0 2px 12px rgba(45,74,62,.08); margin-bottom:26px; }
         .hc-panel h2 { font-family:var(--font-serif); font-weight:500; color:var(--pine); font-size:1.4rem; margin-bottom:18px; }
@@ -370,7 +367,6 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         <span className="hc-eyebrow">{t.hero.eyebrow}</span>
         <h1>{t.hero.title}</h1>
         <p className="sub">{t.hero.sub}</p>
-        <div><span className="hc-updated">{t.hero.updated}</span></div>
       </section>
 
       {lang === 'en' && <ToolTrustLine locale={lang} />}

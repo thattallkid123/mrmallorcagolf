@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/golf-cost-calculator', 'zh', {
 
   title: '马略卡高尔夫旅行成本计算器',
-  description: '三个步骤。对您的旅行进行成本估计。',
+  description: '四个步骤。对您的旅行进行成本估计。',
   robots: { index: true, follow: true },
 })
 

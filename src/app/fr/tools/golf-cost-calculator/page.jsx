@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/golf-cost-calculator', 'fr', {
 
   title: 'Calculatrice de Coûts Golf Mallorca',
-  description: 'Trois étapes. Une estimation de coût pour votre voyage.',
+  description: 'Quatre étapes. Une estimation de coût pour votre voyage.',
   robots: { index: true, follow: true },
 })
 

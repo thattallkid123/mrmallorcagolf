@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/golf-cost-calculator', 'sv', {
 
   title: 'Mallorca golfresa kostnadskalkylator',
-  description: 'Tre steg. En kostnadsuppskattning för din resa med föreslagna banor.',
+  description: 'Fyra steg. En kostnadsuppskattning för din resa med föreslagna banor.',
   robots: { index: true, follow: true },
 })
 

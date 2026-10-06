@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Son Termes - Reseña & Tarifas",
-      "description": "Son Termes Golf en Mallorca: vistas de montaña, green fee y tarifas."
+      "description": "Green fee de Son Termes de unos €90-110, par 70, a 20 minutos de Palma. Vistas de montaña y veredicto honesto: 6/10."
     },
     "meta": {
       "badge": "Reseña de campo",
@@ -110,7 +110,7 @@ const content = {
             "Dificultad"
           ],
           [
-            "Par 72",
+            "Par 70",
             "Recorrido de montaña"
           ],
           [
@@ -171,7 +171,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Son Termes - Review & Gebühren",
-      "description": "Son Termes Golf auf Mallorca: Bergpanorama, ehrliche Notizen, Greenfees."
+      "description": "Greenfee in Son Termes ca. €90-110, Par 70, 20 Minuten von Palma. Bergpanorama und ehrliches Urteil: 6/10."
     },
     "meta": {
       "badge": "Platz-Bewertung",
@@ -277,7 +277,7 @@ const content = {
             "Schwierigkeit"
           ],
           [
-            "Par 72",
+            "Par 70",
             "Berglayout"
           ],
           [
@@ -338,7 +338,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Son Termes - Avis & Tarifs",
-      "description": "Son Termes Golf à Majorque: vues de montagne, notes honnêtes, tarifs."
+      "description": "Green fee à Son Termes autour de €90-110, par 70, à 20 minutes de Palma. Vues sur la montagne, verdict honnête : 6/10."
     },
     "meta": {
       "badge": "Test de parcours",
@@ -445,7 +445,7 @@ const content = {
             "Difficulté"
           ],
           [
-            "Par 72",
+            "Par 70",
             "Parcours de montagne"
           ],
           [
@@ -504,7 +504,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Son Termes - Review & Tarief",
-      "description": "Son Termes Golf op Mallorca: bergzichten, eerlijke notities, tarief."
+      "description": "Greenfee Son Termes circa €90-110, par 70, 20 minuten van Palma. Bergzichten en eerlijk oordeel: 6/10."
     },
     "meta": {
       "badge": "Baanreview",
@@ -611,7 +611,7 @@ const content = {
             "Moeilijkheid"
           ],
           [
-            "Par 72",
+            "Par 70",
             "Bergbaan"
           ],
           [
@@ -672,7 +672,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Termes - Recension & Avgifter",
-      "description": "Green fee cirka €90-110, par 72, 20 minuter från Palma. Bergsvyer och ärligt betyg 6/10."
+      "description": "Green fee cirka €90-110, par 70, 20 minuter från Palma. Bergsvyer och ärligt betyg 6/10."
     },
     "meta": {
       "badge": "Banrecension",
@@ -779,7 +779,7 @@ const content = {
             "Svårighetsgrad"
           ],
           [
-            "Par 72",
+            "Par 70",
             "Bergsbana"
           ],
           [
@@ -947,7 +947,7 @@ const content = {
             "难度"
           ],
           [
-            "Par 72",
+            "Par 70",
             "山地布局"
           ],
           [

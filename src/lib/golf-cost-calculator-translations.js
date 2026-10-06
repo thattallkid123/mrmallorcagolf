@@ -2,7 +2,7 @@
 
 export const GOLF_COST_CALCULATOR_T = {
   en: {
-    hero: { title: 'Mallorca golf trip cost calculator', sub: 'Three steps. A cost estimate for your trip with a suggested course mix.' },
+    hero: { title: 'Mallorca golf trip cost calculator', sub: 'Four steps. A cost estimate for your trip with a suggested course mix.' },
     step1: { label: 'Step 1 of 4', heading: 'Your trip basics', sub: 'Tell us about the group and how much golf you want.' },
     step1Fields: { days: 'Trip length (days)', golfers: 'Number of golfers', rounds: 'Rounds of golf' },
     step2: { label: 'Step 2 of 4', heading: 'Your golf style', sub: 'This shapes the course mix we suggest.' },
@@ -118,7 +118,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   de: {
-    hero: { title: 'Mallorca-Golftrip-Kostenrechner', sub: 'Drei Schritte. Eine Kostenschätzung für Ihre Reise mit empfohlener Platzauswahl.' },
+    hero: { title: 'Mallorca-Golftrip-Kostenrechner', sub: 'Vier Schritte. Eine Kostenschätzung für Ihre Reise mit empfohlener Platzauswahl.' },
     step1: { label: 'Schritt 1 von 4', heading: 'Ihre Reisegrundlagen', sub: 'Erzählen Sie uns von der Gruppe und wie viel Golf Sie spielen möchten.' },
     step1Fields: { days: 'Reisedauer (Tage)', golfers: 'Anzahl der Golfer', rounds: 'Golfrunden' },
     step2: { label: 'Schritt 2 von 4', heading: 'Ihr Golfstil', sub: 'Dies gestaltet die empfohlene Platzauswahl.' },
@@ -235,7 +235,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   es: {
-    hero: { title: 'Calculadora de costos de viaje de golf Mallorca', sub: 'Tres pasos. Una estimación de costos para su viaje con una mezcla de campos sugerida.' },
+    hero: { title: 'Calculadora de costos de viaje de golf Mallorca', sub: 'Cuatro pasos. Una estimación de costos para su viaje con una mezcla de campos sugerida.' },
     step1: { label: 'Paso 1 de 4', heading: 'Lo básico de su viaje', sub: 'Cuéntenos sobre el grupo y cuánto golf quiere jugar.' },
     step1Fields: { days: 'Duración del viaje (días)', golfers: 'Número de golfistas', rounds: 'Rondas de golf' },
     step2: { label: 'Paso 2 de 4', heading: 'Su estilo de golf', sub: 'Esto forma la mezcla de campos que sugerimos.' },
@@ -351,7 +351,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   fr: {
-    hero: { title: 'Simulateur de coût pour un voyage de golf à Majorque', sub: 'Trois étapes. Une estimation de coût pour votre voyage avec une sélection de parcours suggérée.' },
+    hero: { title: 'Simulateur de coût pour un voyage de golf à Majorque', sub: 'Quatre étapes. Une estimation de coût pour votre voyage avec une sélection de parcours suggérée.' },
     step1: { label: 'Étape 1 sur 4', heading: 'Bases de votre voyage', sub: 'Parlez-nous du groupe et de la quantité de golf que vous voulez jouer.' },
     step1Fields: { days: 'Durée du voyage (jours)', golfers: 'Nombre de golfeurs', rounds: 'Parties de golf' },
     step2: { label: 'Étape 2 sur 4', heading: 'Votre style de golf', sub: 'Cela façonne le mélange de parcours que nous vous suggérons.' },
@@ -467,7 +467,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   nl: {
-    hero: { title: 'Mallorca golftrip kostencalculator', sub: 'Drie stappen. Een kostenraming voor uw reis met een voorgestelde baanmix.' },
+    hero: { title: 'Mallorca golftrip kostencalculator', sub: 'Vier stappen. Een kostenraming voor uw reis met een voorgestelde baanmix.' },
     step1: { label: 'Stap 1 van 4', heading: 'Basisgegevens van uw reis', sub: 'Vertel ons over de groep en hoeveel golf u wilt spelen.' },
     step1Fields: { days: 'Reisduur (dagen)', golfers: 'Aantal golfers', rounds: 'Golfrondes' },
     step2: { label: 'Stap 2 van 4', heading: 'Uw golfstijl', sub: 'Dit bepaalt de baanmix die wij voorstellen.' },
@@ -583,7 +583,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   sv: {
-    hero: { title: 'Mallorca golfresa kostnadskalkylator', sub: 'Tre steg. En kostnadsuppskattning för din resa med föreslagna banor.' },
+    hero: { title: 'Mallorca golfresa kostnadskalkylator', sub: 'Fyra steg. En kostnadsuppskattning för din resa med föreslagna banor.' },
     step1: { label: 'Steg 1 av 4', heading: 'Grunderna för din resa', sub: 'Berätta om gruppen och hur mycket golf du vill spela.' },
     step1Fields: { days: 'Resans längd (dagar)', golfers: 'Antal golfspelare', rounds: 'Golfrundor' },
     step2: { label: 'Steg 2 av 4', heading: 'Din golfstil', sub: 'Detta formar blandningen av banor vi föreslår.' },
@@ -699,7 +699,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   zh: {
-    hero: { title: '马略卡高尔夫旅行成本计算器', sub: '三个步骤。对您的旅行进行成本估计，包括建议的球场组合。' },
+    hero: { title: '马略卡高尔夫旅行成本计算器', sub: '四个步骤。对您的旅行进行成本估计，包括建议的球场组合。' },
     step1: { label: '第 1 步，共 4 步', heading: '您的旅行基础信息', sub: '告诉我们关于您的团体和您想打多少场高尔夫的信息。' },
     step1Fields: { days: '旅行时长（天）', golfers: '高尔夫球手数量', rounds: '高尔夫回合数' },
     step2: { label: '第 2 步，共 4 步', heading: '您的高尔夫风格', sub: '这决定了我们建议的球场组合。' },
