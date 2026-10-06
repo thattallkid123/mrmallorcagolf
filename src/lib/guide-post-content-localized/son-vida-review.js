@@ -138,7 +138,7 @@ const content = {
         ]
       },
       {
-        "text": "El green fee es dinámico: va desde unos 84 € en temporada baja hasta 190 € en temporada alta, más la licencia federativa diaria estándar de 3 € si no tienes licencia federada. Mi cliente pagó 88 € ese día como cliente del Sheraton. El límite de hándicap es 54 con certificado obligatorio, y Son Vida está a unos 15 minutos de Palma. El buggy es opcional. Los jugadores individuales pueden reservar y normalmente los emparejan con otro grupo, como nos pasó a nosotros. Se aplica el código de vestimenta habitual del golf, hay que llevar spikes blandos y se pueden alquilar palos."
+        "text": "El green fee es dinámico: va desde unos 84 € en temporada baja hasta 190 € en temporada alta, más la licencia federativa diaria estándar de 3 € si no tienes licencia federada. Mi cliente pagó 88 € ese día como cliente del Sheraton. El límite de hándicap es 54 con certificado obligatorio, y Son Vida está a unos 15 minutos de Palma. El buggy es opcional. Los jugadores individuales pueden reservar y normalmente los emparejan con otro grupo, como nos pasó a nosotros. Se aplica el código de vestimenta habitual del golf, hay que llevar spikes blandos y se pueden alquilar palos. La tarjeta muestra dos versiones del campo: par 70, con el 2 como un par 3 de 191 m, y par 71, con el 2 como un par 4 de 259 m. Nosotros jugamos el par 3."
       },
       {
         "text": "Lo único realmente negativo del día: en los primeros 12 hoyos casi nunca estás fuera de la vista de una casa o del hotel, y el recorrido se sintió apretado en algunos puntos. La lluvia añadió lies mojados y bolas clavadas que no esperaría en un día normal. Con tiempo más seco esperaría que jugara más firme que para nosotros."
@@ -323,7 +323,7 @@ const content = {
         ]
       },
       {
-        "text": "Das Greenfee ist dynamisch und reicht von etwa 84 € in der Nebensaison bis 190 € in der Hauptsaison, zuzüglich der üblichen Tageslizenz von 3 €, wenn Sie kein Verbandsmitglied sind. Mein Kunde zahlte am Spieltag 88 € als Sheraton-Gast. Das Handicap-Limit liegt bei 54, ein Handicap-Nachweis ist erforderlich, und Son Vida ist etwa 15 Minuten von Palma entfernt. Ein Buggy ist optional. Einzelspieler können buchen und werden in der Regel einer anderen Gruppe zugelost, so wie wir. Es gilt die übliche Golf-Kleiderordnung, Softspikes sind Pflicht, und Leihschläger sind verfügbar."
+        "text": "Das Greenfee ist dynamisch und reicht von etwa 84 € in der Nebensaison bis 190 € in der Hauptsaison, zuzüglich der üblichen Tageslizenz von 3 €, wenn Sie kein Verbandsmitglied sind. Mein Kunde zahlte am Spieltag 88 € als Sheraton-Gast. Das Handicap-Limit liegt bei 54, ein Handicap-Nachweis ist erforderlich, und Son Vida ist etwa 15 Minuten von Palma entfernt. Ein Buggy ist optional. Einzelspieler können buchen und werden in der Regel einer anderen Gruppe zugelost, so wie wir. Es gilt die übliche Golf-Kleiderordnung, Softspikes sind Pflicht, und Leihschläger sind verfügbar. Die Scorekarte zeigt zwei Varianten des Platzes: Par 70 mit Loch 2 als Par 3 über 191 m und Par 71 mit Loch 2 als Par 4 über 259 m. Wir haben das Par 3 gespielt."
       },
       {
         "text": "Das einzig wirklich Negative des Tages: Auf den ersten 12 Löchern sind Sie selten außer Sichtweite eines Hauses oder des Hotels, und die Routenführung wirkte stellenweise beengt. Der Regen brachte nasse Lagen und steckende Bälle, die ich an einem normalen Tag nicht erwarten würde. Bei trockenerem Wetter würde ich erwarten, dass der Platz fester spielt als bei uns."
@@ -508,7 +508,7 @@ const content = {
         ]
       },
       {
-        "text": "Le green fee est dynamique, d'environ 84 € en basse saison jusqu'à 190 € en haute saison, auquel s'ajoute la licence journalière standard de 3 € si vous n'êtes pas licencié. Mon client a payé 88 € ce jour-là en tant que client du Sheraton. La limite d'index est de 54 avec un certificat exigé, et Son Vida est à environ 15 minutes de Palma. La voiturette est en option. Les joueurs seuls peuvent réserver et sont généralement associés à un autre groupe, comme nous. La tenue de golf habituelle est de rigueur, les crampons souples sont obligatoires et la location de clubs est possible."
+        "text": "Le green fee est dynamique, d'environ 84 € en basse saison jusqu'à 190 € en haute saison, auquel s'ajoute la licence journalière standard de 3 € si vous n'êtes pas licencié. Mon client a payé 88 € ce jour-là en tant que client du Sheraton. La limite d'index est de 54 avec un certificat exigé, et Son Vida est à environ 15 minutes de Palma. La voiturette est en option. Les joueurs seuls peuvent réserver et sont généralement associés à un autre groupe, comme nous. La tenue de golf habituelle est de rigueur, les crampons souples sont obligatoires et la location de clubs est possible. La carte de score présente deux versions du parcours : par 70, avec le 2 en par 3 de 191 m, et par 71, avec le 2 en par 4 de 259 m. Nous avons joué le par 3."
       },
       {
         "text": "Le seul vrai point négatif de la journée : sur les 12 premiers trous, on est rarement hors de vue d'une maison ou de l'hôtel, et le tracé m'a paru à l'étroit par endroits. La pluie a ajouté des lies mouillés et des balles plantées que je n'attendrais pas un jour normal. Par temps plus sec, je m'attendrais à ce qu'il joue plus ferme que pour nous."
@@ -693,7 +693,7 @@ const content = {
         ]
       },
       {
-        "text": "De greenfee is dynamisch en loopt van ongeveer €84 in het laagseizoen tot €190 in het hoogseizoen, plus de standaard dagelijkse federatielicentie van €3 als je geen aangesloten speler bent. Mijn klant betaalde die dag €88 als Sheraton-gast. De handicaplimiet is 54 met een verplicht certificaat, en Son Vida ligt ongeveer 15 minuten van Palma. Een buggy is optioneel. Solospelers kunnen boeken en worden meestal bij een andere groep ingedeeld, zoals wij. De gebruikelijke golfkledingregels gelden, softspikes zijn verplicht en het huren van clubs kan."
+        "text": "De greenfee is dynamisch en loopt van ongeveer €84 in het laagseizoen tot €190 in het hoogseizoen, plus de standaard dagelijkse federatielicentie van €3 als je geen aangesloten speler bent. Mijn klant betaalde die dag €88 als Sheraton-gast. De handicaplimiet is 54 met een verplicht certificaat, en Son Vida ligt ongeveer 15 minuten van Palma. Een buggy is optioneel. Solospelers kunnen boeken en worden meestal bij een andere groep ingedeeld, zoals wij. De gebruikelijke golfkledingregels gelden, softspikes zijn verplicht en het huren van clubs kan. De scorekaart toont twee versies van de baan: par 70 met hole 2 als par 3 van 191m, en par 71 met hole 2 als par 4 van 259m. Wij speelden de par 3."
       },
       {
         "text": "Het enige echte minpunt van de dag: op de eerste 12 holes ben je zelden uit het zicht van een huis of het hotel, en de routing voelde op sommige plekken benauwd. De regen zorgde voor natte lies en ballen die bleven steken, wat ik op een normale dag niet zou verwachten. Bij droger weer zou ik verwachten dat hij steviger speelt dan bij ons."
@@ -878,7 +878,7 @@ const content = {
         ]
       },
       {
-        "text": "Greenfeen är dynamisk och ligger mellan cirka 84 € under lågsäsong och 190 € under högsäsong, plus den vanliga dagliga federationslicensen på 3 € om du inte är ansluten spelare. Min kund betalade 88 € den dagen som Sheraton-gäst. Handicapgränsen är 54 med intyg som krävs, och Son Vida ligger cirka 15 minuter från Palma. Buggy är valfritt. Singelspelare kan boka och blir oftast ihopkopplade med en annan grupp, som vi blev. Vanlig golfklädsel gäller, mjuka spikar krävs och det går att hyra klubbor."
+        "text": "Greenfeen är dynamisk och ligger mellan cirka 84 € under lågsäsong och 190 € under högsäsong, plus den vanliga dagliga federationslicensen på 3 € om du inte är ansluten spelare. Min kund betalade 88 € den dagen som Sheraton-gäst. Handicapgränsen är 54 med intyg som krävs, och Son Vida ligger cirka 15 minuter från Palma. Buggy är valfritt. Singelspelare kan boka och blir oftast ihopkopplade med en annan grupp, som vi blev. Vanlig golfklädsel gäller, mjuka spikar krävs och det går att hyra klubbor. Scorekortet visar två versioner av banan: par 70 med hål 2 som ett par 3 på 191 m, och par 71 med hål 2 som ett par 4 på 259 m. Vi spelade par 3-versionen."
       },
       {
         "text": "Det enda riktiga minuset från dagen: på de första 12 hålen är du sällan utom synhåll från ett hus eller hotellet, och bandragningen kändes trång på sina ställen. Regnet gav blöta lägen och bollar som fastnade, vilket jag inte skulle vänta mig en vanlig dag. Vid torrare väder skulle jag förvänta mig att banan spelar fastare än den gjorde för oss."
@@ -1063,7 +1063,7 @@ const content = {
         ]
       },
       {
-        "text": "果岭费是动态定价，淡季约84欧元，旺季最高190欧元，如果你没有注册会员，还要加每天3欧元的标准联合会执照费。我的客人当天以 Sheraton 住客身份付了88欧元。差点上限54杆，需要差点证书，Son Vida 距帕尔马约15分钟。球车可选。单人可以预订，通常会和其他组合并，就像我们这样。遵守常规高尔夫着装规定，必须穿软钉鞋，也可以租球杆。"
+        "text": "果岭费是动态定价，淡季约84欧元，旺季最高190欧元，如果你没有注册会员，还要加每天3欧元的标准联合会执照费。我的客人当天以 Sheraton 住客身份付了88欧元。差点上限54杆，需要差点证书，Son Vida 距帕尔马约15分钟。球车可选。单人可以预订，通常会和其他组合并，就像我们这样。遵守常规高尔夫着装规定，必须穿软钉鞋，也可以租球杆。记分卡上有两个版本的球场：标准杆70，第2洞是191米的3杆洞；标准杆71，第2洞是259米的4杆洞。我们打的是3杆洞版本。"
       },
       {
         "text": "那天唯一真正的缺点：前12洞里你很少能离开房子或酒店的视线，有些地方球道路线让人觉得局促。雨水带来了湿球位和扎进地里的球，这是我正常日子里不会预期的。天气干燥时，我预计它会比我们遇到的更硬。"

@@ -1437,7 +1437,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "Green fees are dynamic, running from around €84 in low season up to €190 at peak, plus the standard €3 daily federation licence if you are not a federated player. My client paid €88 on the day as a Sheraton guest. Handicap limit is 54 with a certificate required, and Son Vida is about 15 minutes from Palma. Buggies are optional. Singles can book and will usually be paired with another group, as we were. Standard golf dress code applies, soft spikes are required, and club hire is available.",
+          text: "Green fees are dynamic, running from around €84 in low season up to €190 at peak, plus the standard €3 daily federation licence if you are not a federated player. My client paid €88 on the day as a Sheraton guest. Handicap limit is 54 with a certificate required, and Son Vida is about 15 minutes from Palma. Buggies are optional. Singles can book and will usually be paired with another group, as we were. Standard golf dress code applies, soft spikes are required, and club hire is available. The scorecard shows two versions of the course: par 70 with the 2nd as a 191m par 3, and par 71 with it as a 259m par 4. We played the par 3.",
         },
         {
           type: 'paragraph',
