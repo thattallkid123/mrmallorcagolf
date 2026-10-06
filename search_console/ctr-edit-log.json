@@ -54,7 +54,7 @@
         },
         {
           "date": "2026-10-06",
-          "commit": "TBD",
+          "commit": "2f7cd7a",
           "summary": "Title/description quoted €115-€140 and €125 (Andy's May fee), not the canonical €95-€170. Title now 'Golf de Andratx Review: 7.5/10 (2026)' to match the query words; description gives the canonical range, the 609m par 5 and the verdict. 6 locale descriptions mirrored."
         }
       ]
@@ -137,7 +137,7 @@
         },
         {
           "date": "2026-10-06",
-          "commit": "TBD",
+          "commit": "2f7cd7a",
           "summary": "Par corrected from 72 to 70 (verified scorecard) in the EN description and facts block. Not a CTR rewrite; the description otherwise stays as it was."
         }
       ]
@@ -187,7 +187,7 @@
         },
         {
           "date": "2026-10-06",
-          "commit": "TBD",
+          "commit": "2f7cd7a",
           "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
         }
       ]
@@ -223,7 +223,7 @@
       "edits": [
         {
           "date": "2026-10-06",
-          "commit": "TBD",
+          "commit": "2f7cd7a",
           "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
         }
       ]
@@ -232,7 +232,7 @@
       "edits": [
         {
           "date": "2026-10-06",
-          "commit": "TBD",
+          "commit": "2f7cd7a",
           "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
         }
       ]
@@ -241,7 +241,7 @@
       "edits": [
         {
           "date": "2026-10-06",
-          "commit": "TBD",
+          "commit": "2f7cd7a",
           "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
         }
       ]
@@ -250,7 +250,7 @@
       "edits": [
         {
           "date": "2026-10-06",
-          "commit": "TBD",
+          "commit": "2f7cd7a",
           "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
         }
       ]
