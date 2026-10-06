@@ -1277,7 +1277,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Vida - Honest Review 2026",
         description:
-          "Son Vida green fee €84-€190 (dynamic), par 70, 15 minutes from Palma. Mallorca's oldest course (1964), with two-tier greens and a stronger back six.",
+          "Son Vida green fee €84-€190 (dynamic), par 70, 15 minutes from Palma. Mallorca's oldest course (1964), with two-tier greens.",
         imagePath: '/images/son-vida-blog/son-vida-6.webp',
       },
       meta: {
