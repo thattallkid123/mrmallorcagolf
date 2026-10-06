@@ -385,9 +385,9 @@ const data = {
    "pills": [
     "Auf der Klippe",
     "Spa",
-    "Restaurant VORO"
+    "Restaurant mit Meerblick"
    ],
-   "why": "Boutique-Fünf-Sterne-Hotel auf der Klippe mit ernsthaftem Spa und Capdepera Golf 5 Minuten entfernt. VORO (Mallorcas einziges Restaurant mit zwei Michelin-Sternen) befindet sich in der Anlage.",
+   "why": "Boutique-Fünf-Sterne-Hotel auf der Klippe mit ernsthaftem Spa und Capdepera Golf 5 Minuten entfernt. Das Hotel hat ein eigenes Restaurant mit Meerblick.",
    "andy": "Die ruhigste Option an der Ostküste. Passt zu Paaren, die Privatsphäre über Einrichtungen stellen.",
    "golf": "Capdepera Golf 5 Min. Canyamel Golf 10 Min. Club de Golf Pula 15 Min. Golf Club Son Servera 20 Min. Vall d'Or 25 Min.",
    "travelTime": "60 Min. vom Flughafen Palma",
@@ -398,10 +398,10 @@ const data = {
     "Öko-Luxus",
     "2 Infinity-Pools",
     "Privatstrand",
-    "VORO vor Ort"
+    "Restaurant Sa Pleta"
    ],
-   "why": "Strandluxus an der Ostküste. Zwei Infinity-Pools, privater Strandzugang und das Restaurant VORO (zwei Michelin-Sterne) vor Ort. Capdepera Golf 5 Minuten.",
-   "andy": "Der Osten wird unterschätzt. Weniger Andrang, besseres Wasser, hochwertige Plätze, die oft übersehen werden. VORO ist ein besonderes Abendessen wert, auch für Gäste, die nicht hier wohnen.",
+   "why": "Strandluxus an der Ostküste. Zwei Infinity-Pools, privater Strandzugang und das Restaurant Sa Pleta by Marc Fosh vor Ort. Capdepera Golf 5 Minuten.",
+   "andy": "Der Osten wird unterschätzt. Weniger Andrang, besseres Wasser, hochwertige Plätze, die oft übersehen werden. Sa Pleta by Marc Fosh ist das hoteleigene Restaurant.",
    "golf": "Capdepera Golf 5 Min. Canyamel Golf 10 Min. Club de Golf Pula 15 Min. Golf Club Son Servera 20 Min. Vall d'Or 25 Min.",
    "travelTime": "60 Min. vom Flughafen Palma",
    "subname": "Canyamel"

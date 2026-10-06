@@ -385,9 +385,9 @@ const data = {
    "pills": [
     "悬崖之上",
     "水疗",
-    "VORO餐厅"
+    "海景餐厅"
    ],
-   "why": "悬崖上的精品五星酒店，水疗完善，到 Capdepera Golf 5 分钟。VORO（马略卡唯一的两颗米其林星餐厅）就在园区内。",
+   "why": "悬崖上的精品五星酒店，水疗完善，到 Capdepera Golf 5 分钟。酒店有自己的海景餐厅。",
    "andy": "东海岸最安静的选择。适合重视隐私胜过设施的情侣。",
    "golf": "Capdepera Golf 5 分钟。Canyamel Golf 10 分钟。Club de Golf Pula 15 分钟。Golf Club Son Servera 20 分钟。Vall d'Or 25 分钟。",
    "travelTime": "距帕尔马机场 60 分钟",
@@ -398,10 +398,10 @@ const data = {
     "生态奢华",
     "2个无边泳池",
     "私人海滩",
-    "酒店内有VORO"
+    "酒店内有Sa Pleta餐厅"
    ],
-   "why": "东海岸的海滩奢华。两个无边泳池，私人海滩，园内有 VORO 餐厅（两颗米其林星）。到 Capdepera Golf 5 分钟。",
-   "andy": "东部被低估了。人更少，水更好，球场品质高却常被忽略。即使不住这里，VORO 也值得专程来一顿特别的晚餐。",
+   "why": "东海岸的海滩奢华。两个无边泳池，私人海滩，酒店内有 Sa Pleta by Marc Fosh 餐厅。到 Capdepera Golf 5 分钟。",
+   "andy": "东部被低估了。人更少，水更好，球场品质高却常被忽略。Sa Pleta by Marc Fosh 是酒店自己的餐厅。",
    "golf": "Capdepera Golf 5 分钟。Canyamel Golf 10 分钟。Club de Golf Pula 15 分钟。Golf Club Son Servera 20 分钟。Vall d'Or 25 分钟。",
    "travelTime": "距帕尔马机场 60 分钟",
    "subname": "Canyamel"

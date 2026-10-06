@@ -385,9 +385,9 @@ const data = {
    "pills": [
     "Sobre el acantilado",
     "Spa",
-    "Restaurante VORO"
+    "Restaurante con vistas al mar"
    ],
-   "why": "Cinco estrellas boutique sobre el acantilado con un spa serio y Capdepera Golf a 5 minutos. VORO (el único restaurante de Mallorca con dos estrellas Michelin) está en el complejo.",
+   "why": "Cinco estrellas boutique sobre el acantilado con un spa serio y Capdepera Golf a 5 minutos. El hotel tiene su propio restaurante con vistas al mar.",
    "andy": "La opción más tranquila de la costa este. Encaja con parejas que prefieren privacidad a instalaciones.",
    "golf": "Capdepera Golf 5 min. Canyamel Golf 10 min. Club de Golf Pula 15 min. Golf Club Son Servera 20 min. Vall d'Or 25 min.",
    "travelTime": "60 min del aeropuerto de Palma",
@@ -398,10 +398,10 @@ const data = {
     "Ecolujo",
     "2 piscinas infinitas",
     "Playa privada",
-    "VORO en el hotel"
+    "Restaurante Sa Pleta"
    ],
-   "why": "Lujo de playa en la costa este. Dos piscinas infinitas, acceso a una playa privada y el restaurante VORO (dos estrellas Michelin) en el hotel. Capdepera Golf a 5 minutos.",
-   "andy": "El este está infravalorado. Menos gente, mejor agua, campos de calidad que se pasan por alto. VORO merece una cena especial incluso para quienes no se alojan aquí.",
+   "why": "Lujo de playa en la costa este. Dos piscinas infinitas, acceso a una playa privada y el restaurante Sa Pleta by Marc Fosh en el hotel. Capdepera Golf a 5 minutos.",
+   "andy": "El este está infravalorado. Menos gente, mejor agua, campos de calidad que se pasan por alto. Sa Pleta by Marc Fosh es el restaurante del hotel.",
    "golf": "Capdepera Golf 5 min. Canyamel Golf 10 min. Club de Golf Pula 15 min. Golf Club Son Servera 20 min. Vall d'Or 25 min.",
    "travelTime": "60 min del aeropuerto de Palma",
    "subname": "Canyamel"
