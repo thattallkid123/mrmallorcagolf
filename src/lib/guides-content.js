@@ -172,6 +172,57 @@ export const GUIDES_CONTENT = {
       "keywords": "All levels · Green fees compared · Updated 2026"
     },
     {
+      "slug": "golf-cost-mallorca",
+      "badge": "Guide",
+      "img": "/images/blog-golf-cost/Alcanada.webp",
+      "imgPosition": "center 40%",
+      "title": "How Much Does Golf Cost in Mallorca? Green Fees, Hire, and Hidden Costs",
+      "intro": "The full picture on what a golf trip here actually costs - green fees, hire, caddies, and where you can save without compromising.",
+      "readTime": "5 min read",
+      "keywords": "€55-260 green fees · Hire · Caddies · 2026 prices"
+    },
+    {
+      "slug": "best-time-play-golf-mallorca",
+      "badge": "Guide",
+      "img": "/images/blog-best-time-play/Son Severa Sunny Golf.webp",
+      "imgPosition": "center 50%",
+      "title": "The Best Time to Play Golf in Mallorca - Month by Month",
+      "intro": "October is the month I would choose. Here is why, and what each month actually delivers in terms of weather, price, and crowds.",
+      "readTime": "6 min read",
+      "keywords": "Weather · Green fees by season · Crowds"
+    },
+    {
+      "slug": "where-to-stay-mallorca-golf",
+      "badge": "Trip Planning",
+      "img": "/images/blog-trip-planning/Old Town Palma.webp",
+      "imgPosition": "center 50%",
+      "title": "Where to Stay in Mallorca for Golf",
+      "intro": "Palma, the southwest, the north or the east. Choose the base by course order, drive time and tee times.",
+      "readTime": "6 min read",
+      "keywords": "Where to stay · Golf base · Trip planning"
+    },
+    {
+      "slug": "golf-trip-planning-mallorca",
+      "badge": "Guide",
+      "img": "/images/blog-trip-planning/Son Gual.webp",
+      "imgPosition": "center 50%",
+      "title": "Planning a Golf Trip to Mallorca - Everything You Need to Know",
+      "intro": "Flights, courses, staying near the golf, getting between venues. The practical guide I wish existed when I moved here.",
+      "readTime": "7 min read",
+      "keywords": "Trip planning · Where to stay · Getting around"
+    },
+    {
+      "slug": "5-day-mallorca-golf-itinerary",
+      "badge": "Itinerary",
+      "badgeGold": true,
+      "img": "/images/blog-trip-planning/Son Gual.webp",
+      "imgPosition": "center 48%",
+      "title": "5-Day Mallorca Golf Trip Itinerary - Five Rounds from a Palma Base",
+      "intro": "A specific five-day route with Son Quint, Santa Ponsa 1, Son Gual, Alcanada and T Golf Calvia, plus where the dinners and travel days fit.",
+      "readTime": "8 min read",
+      "keywords": "5 days · Palma base · Son Gual · Alcanada"
+    },
+    {
       "slug": "golf-courses-near-palma",
       "badge": "Palma Courses",
       "img": "/images/son-gual-card.webp",
@@ -180,6 +231,16 @@ export const GUIDES_CONTENT = {
       "intro": "Ten courses sit within 25 minutes of Palma Cathedral. Handicap limits, walking and which one to book first.",
       "readTime": "10 min read",
       "keywords": "Handicap limits · Walking · Palma base"
+    },
+    {
+      "slug": "is-mallorca-good-for-golf",
+      "badge": "Guide",
+      "img": "/images/blog-is-mallorca-good/Son Gual.webp",
+      "imgPosition": "center 40%",
+      "title": "Is Mallorca Good for Golf? An Honest Answer from Someone Who Lives Here",
+      "intro": "The honest version - what the island does better than Portugal, where it falls short, and who it suits.",
+      "readTime": "5 min read",
+      "keywords": "Mallorca vs Portugal · Course quality · For all levels"
     },
     {
       "slug": "southwest-mallorca-golf-courses-compared",
@@ -210,67 +271,6 @@ export const GUIDES_CONTENT = {
       "intro": "TrackMan, Toptracer and grass ranges compared: where to measure, where to warm up and where to work on the short game.",
       "readTime": "4 min read",
       "keywords": "TrackMan · Toptracer · Short game"
-    },
-    {
-      "slug": "is-mallorca-good-for-golf",
-      "badge": "Guide",
-      "img": "/images/blog-is-mallorca-good/Son Gual.webp",
-      "imgPosition": "center 40%",
-      "title": "Is Mallorca Good for Golf? An Honest Answer from Someone Who Lives Here",
-      "intro": "The honest version - what the island does better than Portugal, where it falls short, and who it suits.",
-      "readTime": "5 min read",
-      "keywords": "Mallorca vs Portugal · Course quality · For all levels"
-    },
-    {
-      "slug": "best-time-play-golf-mallorca",
-      "badge": "Guide",
-      "img": "/images/blog-best-time-play/Son Severa Sunny Golf.webp",
-      "imgPosition": "center 50%",
-      "title": "The Best Time to Play Golf in Mallorca - Month by Month",
-      "intro": "October is the month I would choose. Here is why, and what each month actually delivers in terms of weather, price, and crowds.",
-      "readTime": "6 min read",
-      "keywords": "Weather · Green fees by season · Crowds"
-    },
-    {
-      "slug": "5-day-mallorca-golf-itinerary",
-      "badge": "Itinerary",
-      "badgeGold": true,
-      "img": "/images/blog-trip-planning/Son Gual.webp",
-      "imgPosition": "center 48%",
-      "title": "5-Day Mallorca Golf Trip Itinerary - Five Rounds from a Palma Base",
-      "intro": "A specific five-day route with Son Quint, Santa Ponsa 1, Son Gual, Alcanada and T Golf Calvia, plus where the dinners and travel days fit.",
-      "readTime": "8 min read",
-      "keywords": "5 days · Palma base · Son Gual · Alcanada"
-    },
-    {
-      "slug": "golf-cost-mallorca",
-      "badge": "Guide",
-      "img": "/images/blog-golf-cost/Alcanada.webp",
-      "imgPosition": "center 40%",
-      "title": "How Much Does Golf Cost in Mallorca? Green Fees, Hire, and Hidden Costs",
-      "intro": "The full picture on what a golf trip here actually costs - green fees, hire, caddies, and where you can save without compromising.",
-      "readTime": "5 min read",
-      "keywords": "€55-260 green fees · Hire · Caddies · 2026 prices"
-    },
-    {
-      "slug": "golf-trip-planning-mallorca",
-      "badge": "Guide",
-      "img": "/images/blog-trip-planning/Son Gual.webp",
-      "imgPosition": "center 50%",
-      "title": "Planning a Golf Trip to Mallorca - Everything You Need to Know",
-      "intro": "Flights, courses, staying near the golf, getting between venues. The practical guide I wish existed when I moved here.",
-      "readTime": "7 min read",
-      "keywords": "Trip planning · Where to stay · Getting around"
-    },
-    {
-      "slug": "where-to-stay-mallorca-golf",
-      "badge": "Trip Planning",
-      "img": "/images/blog-trip-planning/Old Town Palma.webp",
-      "imgPosition": "center 50%",
-      "title": "Where to Stay in Mallorca for Golf",
-      "intro": "Palma, the southwest, the north or the east. Choose the base by course order, drive time and tee times.",
-      "readTime": "6 min read",
-      "keywords": "Where to stay · Golf base · Trip planning"
     },
     {
       "slug": "golf-club-hire-mallorca",
