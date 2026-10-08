@@ -29,5 +29,6 @@ $MmgSkillsMap = @(
     @{Drive="MMG_SKILL_CLIENT_DOCS.md"; Target="mmg-client-docs"},
     @{Drive="MMG_SKILL_HERMES_OPS.md"; Target="mmg-hermes-ops"},
     @{Drive="MMG_SKILL_REPLY_LIBRARY.md"; Target="mmg-reply-library"},
+    @{Drive="MMG_SKILL_EXPENSE_LOGGING.md"; Target="mmg-expense-logging"},
     @{Drive="MMG_SKILL_COURSE_CAROUSEL.md"; Target="mmg-course-carousel"}
 )
