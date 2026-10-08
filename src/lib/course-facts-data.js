@@ -629,7 +629,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": "John Harris",
     "opened": "1978 (renovated €10M)",
     "signatureHole": "10 (water hazard)",
-    "practiceFacilities": "Grass driving range with Toptracer | 40 stations | 7 target greens at varying distances protected by 10 bunkers | 2 putting greens | 2 chipping greens | 2 pitching / approach areas with practice bunkers"
+    "practiceFacilities": "Grass driving range (no Toptracer) | 40 stations | 7 target greens at varying distances protected by 10 bunkers | 2 putting greens | 2 chipping greens | 2 pitching / approach areas with practice bunkers"
   },
   "t_golf_palma": {
     "id": "t_golf_palma",

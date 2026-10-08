@@ -116,11 +116,11 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'subheading', text: 'Son Muntaner' },
       {
         type: 'paragraph',
-        text: 'Son Muntaner was named Best Golf Course in Spain at the 2025 World Golf Awards, and the greens are why I would back that. I played on a Saturday morning with a full tee sheet and they held their pace and surface all the way round. It is 15 minutes from the cathedral, and the climbs up to several tees are long, which is why the buggy comes with the green fee.',
+        text: 'Son Muntaner was named Best Golf Course in Spain at the 2025 World Golf Awards, and having played it, the title is earned. The greens are the clearest reason: on a Saturday morning with a full tee sheet they rolled pure and held their pace all the way round, with room to get quicker into summer. The service from arrival to the 18th green is at the same level, and the restaurant is worth staying for.',
       },
       {
         type: 'paragraph',
-        text: 'This is a positional course. The opening six holes are tight, with water and defined landing areas, and the layout does not show you everything from the tee. The back nine gives the driver more room, but the greens stay small and look bigger than they are from distance. The 7th is a short par 3 with a severe drop where most people come up short. The 15th has an olive tree of roughly a thousand years in the middle of the fairway, protected as a natural monument, and the hole was built around it.',
+        text: 'This is a positional course. The opening six holes are tight, with water and defined landing areas, and the layout does not show you everything from the tee. The back nine gives the driver more room, but the greens stay small and look bigger than they are from distance. The 7th is a short par 3 with a severe drop where most people come up short. The 15th has an olive tree of roughly a thousand years in the middle of the fairway, protected as a natural monument, and the hole was built around it. Once you see how the landing areas work, the design feels fair, and a good shot gets a clear reward.',
       },
       {
         type: 'image',
@@ -130,7 +130,7 @@ export const DRAFT_GUIDE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'Two things to know. Bunker sand was inconsistent when I played, firmer in some bunkers and softer in others. And it has dynamic pricing, from around €99 at quiet times to €260 at peak, so with flexible dates the same round can cost less than half as much. Full detail in the <a href=\'/guides/son-muntaner-review\'>Son Muntaner review</a>.',
+        text: 'It is 15 minutes from the cathedral, and the buggy comes with the green fee from March to late November, which you will want on the climbs to several tees. One thing to note: bunker sand was inconsistent when I played, firmer in some bunkers and softer in others. It has dynamic pricing, from around €99 at quiet times to €260 at peak, so with flexible dates the same round can cost less than half as much. Full detail in the <a href=\'/guides/son-muntaner-review\'>Son Muntaner review</a>.',
       },
       { type: 'subheading', text: 'Son Vida' },
       {
@@ -139,7 +139,7 @@ export const DRAFT_GUIDE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'The first 12 holes run between houses and the hotel with little spare ground, and the buildings mark the edge of many of them. The last six open out, with more space and clearer choices from the tee, and I preferred them. On the 14th, a 327m dogleg left with water short of the green, I hit driver and had 50 yards left. The 18th is a 460m par 5 with water up the right and the hotel behind the green.',
+        text: 'The first 12 holes run between houses and the hotel with little spare ground, and the buildings mark the edge of many of them. The last six open out, with more space and clearer choices from the tee, and they are the better holes. The 14th is a 327m dogleg left with water short of the green, where a good drive leaves a short pitch. The 18th is a 460m par 5 with water up the right and the hotel behind the green.',
       },
       {
         type: 'paragraph',
@@ -154,7 +154,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'subheading', text: 'Son Quint' },
       {
         type: 'paragraph',
-        text: 'Son Quint is the newest of the three and the one I would book for a group with a wide spread of handicaps. The limit is 54, there are four tee positions, and the front nine is flat and an easy walk. We walked all 18. Even from the white tees, hitting irons off the tee, there was plenty to think about. Several greens sit above the fairway and they are firm, so a short-sided chip runs away from you.',
+        text: 'Son Quint is the newest of the three and the one I would book for a group with a wide spread of handicaps. The limit is 54, there are four tee positions, and the front nine is flat and an easy walk. It is an easy course to walk, and even hitting irons off the back tees there is plenty to think about. Several greens sit above the fairway and they are firm, so a short-sided chip runs away from you.',
       },
       {
         type: 'paragraph',
@@ -174,7 +174,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'subheading', text: 'Which Arabella course first' },
       {
         type: 'paragraph',
-        text: 'If you are playing one Arabella round, book Son Muntaner. For two, play Son Quint first on its flat front nine, then Son Muntaner as the main round. Add Son Vida for the history or if you are staying at the Sheraton, and book an early tee time: when we finished, a crowd was waiting at the 1st.',
+        text: 'If you are playing one Arabella round, book Son Muntaner. For two, play Son Quint first on its flat front nine, then Son Muntaner as the main round. Son Vida is the third choice, for the history or if you are staying at the Sheraton. It gets busy around the 1st tee by mid-morning, so book early.',
       },
 
       { type: 'heading', text: 'T Golf Palma: the quiet one under the flight path' },
@@ -184,7 +184,7 @@ export const DRAFT_GUIDE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'The course makes you think from the tee. The 8th is 334m with water down the entire right side: I took a 4-iron left and still had a wedge into a narrow sliver of green. The 15th has water right, trees left and a second carry over water into the green. The 18th is the hardest tee shot to line up on the course. I hit what I thought was a good drive, never found the ball, and bogeyed for a 72.',
+        text: 'The course makes you think from the tee. The 8th is 334m with water down the entire right side, and even a safe iron left of it leaves a wedge into a narrow sliver of green. The 15th has water right, trees left and a second carry over water into the green. The 18th is the hardest tee shot to line up on the course: a drive that looks safe from the tee can still go missing.',
       },
       {
         type: 'image',
@@ -200,11 +200,11 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'heading', text: 'Son Termes: character at a lower price' },
       {
         type: 'paragraph',
-        text: 'Son Termes is par 70 and 5,285m, in the Tramuntana foothills near Bunyola, 25 minutes from the city, with green fees around €90 to €110. I played it with a friend on a 20 handicap who was running low on balls by the back nine. The rough is tight and several tee shots leave very little room. Some are blind: on the 13th I was in the middle of the fairway with close to 175 metres in and could not see the flag.',
+        text: 'Son Termes is par 70 and 5,285m, in the Tramuntana foothills near Bunyola, 25 minutes from the city, with green fees around €90 to €110. I played it with a friend on a 20 handicap who was running low on balls by the back nine. The rough is tight and several tee shots leave very little room. Some are blind: on the 13th, even from the middle of the fairway, you have close to 175 metres to a flag you cannot see.',
       },
       {
         type: 'paragraph',
-        text: 'Short holes give a good player chances. Several par 4s are driveable or close to it, and on the 6th, a par 5, I hit driver almost to the green. The back nine climbs steeply, so most players take a buggy, and on a clear morning the upper holes look across to Castell de Bellver and the cathedral. Expect goats.',
+        text: 'Short holes give a good player chances. Several par 4s are driveable or close to it, and the par 5 6th is reachable for a long hitter. The back nine climbs steeply, so most players take a buggy, and on a clear morning the upper holes look across to Castell de Bellver and the cathedral. Expect goats.',
       },
       {
         type: 'paragraph',
@@ -333,7 +333,7 @@ export const DRAFT_GUIDE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'I gave it 9/10. The limit is 28 for men and 34 for ladies, and I would not put a higher handicapper here as the first round of a holiday. Book a midweek twilight slot: the twilight rate starts at €150 against a peak fee of €210, and the light is at its best. The grass range has Toptracer, and with this many carries it is worth knowing your numbers before the 1st. Full detail in the <a href=\'/guides/t-golf-calvia-review\'>T Golf Calvià review</a>.',
+        text: 'I gave it 9/10. The limit is 28 for men and 34 for ladies, and I would not put a higher handicapper here as the first round of a holiday. Book a midweek twilight slot: the twilight rate starts at €150 against a peak fee of €210, and the light is at its best. The range is grass, which not every Mallorca club offers, and with this many carries it is worth hitting balls before the 1st. Full detail in the <a href=\'/guides/t-golf-calvia-review\'>T Golf Calvià review</a>.',
       },
 
       { type: 'heading', text: 'Golf de Andratx: the hardest test, and the views' },
@@ -384,6 +384,9 @@ export const DRAFT_GUIDE_CONTENT = {
       {
         type: 'image',
         src: '/images/courses/bendinat.webp',
+        presentation: 'natural',
+        naturalWidth: 900,
+        naturalHeight: 480,
         alt: 'Real Golf de Bendinat, Mallorca',
       },
 
@@ -438,6 +441,9 @@ export const DRAFT_GUIDE_CONTENT = {
       {
         type: 'image',
         src: '/images/son-quint-blog/son-quint-2.webp',
+        presentation: 'natural',
+        naturalWidth: 1200,
+        naturalHeight: 1600,
         alt: 'Olive tree branches framing a view over Palma from the Son Quint fairway',
         caption: 'Olive trees on the front nine, with Palma spread out beyond.',
       },
@@ -499,7 +505,7 @@ export const DRAFT_GUIDE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'The greens on West are small, and several are raised or slope away, so the ball runs much further after landing than it looks like it will. A low running chip is usually the safer shot. If your short game needs work, the academy at Son Antem is one of the largest in Europe and makes a lesson before the round easy to arrange.',
+        text: 'The greens on West are small, and several are raised or slope away, so the ball runs much further after landing than it looks like it will. A low running chip is usually the safer shot. If your short game needs work, Son Antem\'s practice ground is one of the largest in Europe, with an approach green and bunkers to warm up on.',
       },
       {
         type: 'image',
@@ -531,6 +537,9 @@ export const DRAFT_GUIDE_CONTENT = {
       {
         type: 'image',
         src: '/images/courses/palma-pitch-putt.webp',
+        presentation: 'natural',
+        naturalWidth: 900,
+        naturalHeight: 599,
         alt: 'Palma Pitch & Putt, Mallorca',
       },
 
@@ -574,7 +583,7 @@ export const DRAFT_GUIDE_CONTENT = {
     metadata: {
       title: 'Best Driving Ranges in Mallorca',
       description:
-        'TrackMan, Toptracer and grass ranges in Mallorca compared by a Trackman Master: where to measure, where to warm up and where to work on the short game.',
+        'TrackMan, Toptracer and grass ranges in Mallorca compared by a PGA professional: where to measure, where to warm up and where to work on the short game.',
       canonical: 'https://www.mrmallorcagolf.com/draft-guides/best-golf-practice-facilities-mallorca',
       image: '/images/t-golf-calvia-social.jpg',
       imageAlt: 'T Golf Calvià, Mallorca',
@@ -587,7 +596,7 @@ export const DRAFT_GUIDE_CONTENT = {
       updated: 'October 2026',
       title: 'Best Golf Practice Facilities in Mallorca',
       intro:
-        'Five Mallorca clubs have ball tracking built into the range bays, and several more let you hit off grass. Which one to use comes down to the job: measuring your numbers, warming up for a round, or working on the short game.',
+        'Four Mallorca clubs have ball tracking built into the range bays, and several more let you hit off grass. Which one to use comes down to the job: measuring your numbers, warming up for a round, or working on the short game.',
       sidebarPlanning: DRAFT_SIDEBAR,
       related: [
         { slug: 't-golf-calvia-review', title: 'T Golf Calvià - Review (2026)' },
@@ -600,12 +609,15 @@ export const DRAFT_GUIDE_CONTENT = {
       {
         type: 'image',
         src: '/images/son-quint-blog/son-quint-7.webp',
+        presentation: 'natural',
+        naturalWidth: 1200,
+        naturalHeight: 1600,
         alt: 'Putting green at Son Quint golf course with an orange Son Quint flag in the foreground',
         caption: 'The putting green at the Son Quint clubhouse.',
       },
       {
         type: 'paragraph',
-        text: 'I am a Trackman Master, and when I coach, a range session has one of three jobs. Measuring tells you your carry distances, the number that matters on courses with water and big drops such as T Golf Calvià and Andratx. Warming up gets the body ready for the 1st tee. Practising one shot, over and over, is how a weakness gets fixed. Each facility below is good at some of those jobs and weak at others.',
+        text: 'A range session before a Mallorca round has one of three jobs. Measuring tells you your carry distances, the number that matters on courses with water and big drops such as T Golf Calvià and Andratx. Warming up gets the body ready for the 1st tee. Short-game practice is where most strokes come back on a trip. Each facility below is good at some of those jobs and weak at others.',
       },
       { type: 'heading', text: 'Quick answer' },
       {
@@ -613,22 +625,22 @@ export const DRAFT_GUIDE_CONTENT = {
         headers: ['You want', 'Go to', 'What is there'],
         rows: [
           ['Numbers on every ball, open to the public', 'Golf de Andratx or Pula', 'TrackMan range'],
-          ['Ball tracking before a big round', 'T Golf Calvià, Son Muntaner or Alcanada', 'Toptracer range'],
-          ['A coached technical session', 'Son Gual Performance Academy', 'TrackMan, FlightScope and SAM PuttLab'],
+          ['Ball tracking before a big round', 'Son Muntaner or Alcanada', 'Toptracer range'],
+          ['Short-game work', 'T Golf Calvià or Golf de Andratx', 'Target greens, chipping areas and bunkers'],
           ['Hitting off grass', 'T Golf Calvià, Maioris, Son Antem or Son Termes', 'Grass tees'],
-          ['A lesson for a group', 'Son Antem', 'Circular range for 200+ players and an academy'],
+          ['The biggest practice ground', 'Son Antem', 'Circular range for 200+ players'],
           ['Practice near Palma', 'T Golf Palma', '42 bays, 14 covered, 250m long'],
         ],
       },
 
-      { type: 'heading', text: 'T Golf Calvià: the most complete practice ground' },
+      { type: 'heading', text: 'T Golf Calvià: the best grass practice ground' },
       {
         type: 'paragraph',
-        text: 'T Golf Calvià has 40 stations on a grass range with Toptracer, and seven target greens at different distances protected by ten bunkers. Around them are two putting greens, two chipping greens and two pitching areas with bunkers. Grass is not a given at Mallorca clubs, and here it comes with ball tracking on every station.',
+        text: 'T Golf Calvià has 40 stations on an all-grass range, and seven target greens at different distances protected by ten bunkers. Around them are two putting greens, two chipping greens and two pitching areas with bunkers. Grass is not a given at Mallorca clubs, and the target greens give every ball a real number to aim at.',
       },
       {
         type: 'paragraph',
-        text: 'The course is the reason to use it. Fifteen lakes force carries from the tee and several approaches hide the bottom of the flag, so you want a carry number you trust before the 1st. More in the <a href=\'/guides/t-golf-calvia-review\'>T Golf Calvià review</a>.',
+        text: 'The course is the reason to use it. Fifteen lakes force carries from the tee and several approaches hide the bottom of the flag, so hit enough balls to know your carries before the 1st. More in the <a href=\'/guides/t-golf-calvia-review\'>T Golf Calvià review</a>.',
       },
 
       { type: 'heading', text: 'Golf de Andratx: TrackMan above Camp de Mar' },
@@ -644,22 +656,25 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'heading', text: 'Pula: the TrackMan range in the east' },
       {
         type: 'paragraph',
-        text: 'I visited Pula\'s practice facilities. There is a two-level public TrackMan Range, two putting greens, a pitching green, and a short-game area with bunkers, and Miquel Tous is the head professional. It is about 70 minutes from Palma, so it makes most sense if you are staying on the east coast.',
+        text: 'I visited Pula\'s practice facilities. There is a two-level public TrackMan Range, two putting greens, a pitching green, and a short-game area with bunkers. It is about 70 minutes from Palma, so it makes most sense if you are staying on the east coast.',
       },
       {
         type: 'image',
         src: '/images/courses/pula.webp',
+        presentation: 'natural',
+        naturalWidth: 900,
+        naturalHeight: 599,
         alt: 'Pula Golf, Mallorca',
       },
 
-      { type: 'heading', text: 'Son Gual Performance Academy: for a coached session' },
+      { type: 'heading', text: 'Son Gual: range balls with your green fee' },
       {
         type: 'paragraph',
-        text: 'Son Gual\'s academy, run by Tim Holroyd, uses TrackMan, FlightScope and SAM PuttLab. There is no public Toptracer range here: the technology is for coached sessions. Paying green-fee guests can use the range with tokens at €4 for 24 balls, and a visitor range fee is €20 with 72 balls.',
+        text: 'Son Gual has no public ball-tracking range. Paying green-fee guests can use the range with tokens at €4 for 24 balls, and a visitor range fee is €20 with 72 balls.',
       },
       {
         type: 'paragraph',
-        text: 'Pair it with a round. Son Gual\'s greens are fast and raised, so a session on approach distances before you play goes straight onto the scorecard. More in the <a href=\'/guides/son-gual-review\'>Son Gual review</a>.',
+        text: 'Use it before you play. Son Gual\'s greens are fast and raised, so ten minutes on approach distances goes straight onto the scorecard. More in the <a href=\'/guides/son-gual-review\'>Son Gual review</a>.',
       },
 
       { type: 'heading', text: 'Son Muntaner and Alcanada: Toptracer before a big round' },
@@ -674,6 +689,9 @@ export const DRAFT_GUIDE_CONTENT = {
       {
         type: 'image',
         src: '/images/son-vida-blog/son-vida-7.webp',
+        presentation: 'natural',
+        naturalWidth: 1200,
+        naturalHeight: 1600,
         alt: 'Red and white Son Vida 1964 flag on the practice putting green with the practice net behind',
         caption: 'The practice putting green, with the net behind.',
       },
@@ -681,13 +699,13 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'heading', text: 'T Golf Palma: the biggest range near Palma' },
       {
         type: 'paragraph',
-        text: 'T Golf Palma has 42 bays, 14 of them covered, on a 250-metre range, with putting greens, a large short-game area and PGA coaches on site. If you are staying in the city and want a range session without a long drive, this is the first place I would look. More in the <a href=\'/guides/t-golf-palma-review\'>T Golf Palma review</a>.',
+        text: 'T Golf Palma has 42 bays, 14 of them covered, on a 250-metre range, with putting greens and a large short-game area. If you are staying in the city and want a range session without a long drive, this is the first place I would look. More in the <a href=\'/guides/t-golf-palma-review\'>T Golf Palma review</a>.',
       },
 
       { type: 'heading', text: 'Son Antem: the academy' },
       {
         type: 'paragraph',
-        text: 'I visited Son Antem\'s academy. The circular driving range is built for more than 200 players, with grass and artificial tees. There is an approach green with bunkers, a putting green of about 1,000m², and five PGA professionals. It is one of the largest golf academies in Europe, and FlightScope is used for teaching. For a group lesson, the scale is the reason to go.',
+        text: 'I visited Son Antem\'s academy. The circular driving range is built for more than 200 players, with grass and artificial tees, and there is an approach green with bunkers and a putting green of about 1,000m². It is one of the largest golf academies in Europe. If your group wants to practise together before a round, it has the space.',
       },
 
       { type: 'heading', text: 'Maioris and Son Termes: grass close to Palma' },
@@ -701,16 +719,16 @@ export const DRAFT_GUIDE_CONTENT = {
         type: 'list',
         items: [
           { label: 'The day you land:', text: 'an hour at T Golf Palma or Son Muntaner, finishing on the putting green.' },
-          { label: 'Before a water course:', text: 'Toptracer at T Golf Calvià, so you know your carries before the lakes do.' },
+          { label: 'Before a water course:', text: 'an hour on the grass at T Golf Calvià, so you know your carries before the lakes do.' },
           { label: 'Staying east:', text: 'Pula, for TrackMan on both levels.' },
-          { label: 'For a lesson:', text: 'the academy at Son Antem, or a range session with me before we take it onto the course.' },
+          { label: 'For numbers:', text: 'TrackMan at Andratx before the round there, or Toptracer at Son Muntaner.' },
         ],
       },
       {
         type: 'cta',
-        text: 'Want the practice to show up on the scorecard? I run range sessions and on-course coaching, and can build both into one day.',
+        text: 'The range tells you your numbers. Using them on the course is the part I coach, during a full round where the shots count.',
         href: '/coaching',
-        linkLabel: 'Coaching',
+        linkLabel: 'On-course coaching',
         internal: true,
       },
     ],
