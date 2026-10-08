@@ -134,6 +134,10 @@ const BANNED_CONSTRUCTIONS = [
   { label: 'brochure construction', re: /(?:\bthe best part\?|\bhere'?s the truth\b|\bhere is the truth\b|\bwhat people don'?t realise\b|\bmore than just\b|\bwhether you'?re\b|\bin the heart of\b|\bif you'?re looking for\b|\bsomething for everyone\b)/i },
   { label: 'placeholder left in copy', re: /\[(?:VERIFY|ANDY|TODO|TBC|CHECK|CAPTION)[^\]]*\]/ },
   { label: 'note to Andy left in copy (prose says "I", see first-person rule)', re: /\bAndy(?:'s)? notes?:/ },
+  // Andy's call 2026-10-08: write every course plainly, never disclaim it.
+  // "played for" is excluded so a client FAQ ("I haven't played for a long
+  // time") is not caught.
+  { label: '"I have not played" disclaimer (write the course plainly)', re: /\bI (?:have not|haven't|have never|never) (?:yet )?played (?!for\b)/i },
 ]
 
 // Published lines that already break a construction rule. Grandfathered so the

@@ -345,7 +345,7 @@ const data = {
     "Par 70 · Grupo Harris, 1998",
     "Bergblick auf Palma"
    ],
-   "blurb": "Berggolf in der Na Burguesa, 20 Minuten von Palma. Bei klarem Wetter sind von den oberen Löchern das Castell de Bellver und die Kathedrale zu sehen, dahinter das Mittelmeer."
+   "blurb": "Berggolf in den Ausläufern der Tramuntana, 25 Minuten von Palma. Bei klarem Wetter sind von den oberen Löchern das Castell de Bellver und die Kathedrale zu sehen, dahinter das Mittelmeer."
   },
   "t-golf-calvia": {
    "facts": [

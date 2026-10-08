@@ -345,7 +345,7 @@ const data = {
     "标准杆 70 · Grupo Harris，1998 年",
     "可眺望帕尔马的山景"
    ],
-   "blurb": "位于 Na Burguesa 的山地高尔夫，距帕尔马 20 分钟。晴天时，在较高的球洞上能看到 Castell de Bellver 和大教堂，背后是地中海。"
+   "blurb": "位于 Tramuntana 山麓的山地高尔夫，距帕尔马 25 分钟。晴天时，在较高的球洞上能看到 Castell de Bellver 和大教堂，背后是地中海。"
   },
   "t-golf-calvia": {
    "facts": [

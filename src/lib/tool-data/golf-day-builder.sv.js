@@ -345,7 +345,7 @@ const data = {
     "Par 70 · Grupo Harris, 1998",
     "Bergsutsikt över Palma"
    ],
-   "blurb": "Berggolf i Na Burguesa, 20 minuter från Palma. Klara dagar syns Castell de Bellver och katedralen från de övre hålen, med Medelhavet bakom."
+   "blurb": "Berggolf vid foten av Tramuntana, 25 minuter från Palma. Klara dagar syns Castell de Bellver och katedralen från de övre hålen, med Medelhavet bakom."
   },
   "t-golf-calvia": {
    "facts": [

@@ -134,10 +134,10 @@ const data = {
    "bestPlayer": "Principiante a jugador habitual"
   },
   "son-termes": {
-   "areaLabel": "Na Burguesa · Palma",
+   "areaLabel": "Bunyola · Palma",
    "buggyNote": "Primeros nueve se pueden caminar; los nueve finales son empinados. Buggy recomendado salvo que esté muy en forma",
    "bestFor": "Las mejores vistas más cercanas a Palma, a un precio razonable",
-   "why": "Situado en las montañas de Na Burguesa, a 20 minutos de Palma pero con la sensación de estar completamente apartado de la ciudad. En un día despejado se ven el Castell de Bellver y la catedral de Palma desde los hoyos altos, con el Mediterráneo detrás. No es un campo largo, pero las salidas ciegas, los dogleg cerrados y los cambios de nivel mantienen interesante cada hoyo.",
+   "why": "Situado en las estribaciones de la Tramuntana, cerca de Bunyola, a 25 minutos de Palma pero con la sensación de estar completamente apartado de la ciudad. En un día despejado se ven el Castell de Bellver y la catedral de Palma desde los hoyos altos, con el Mediterráneo detrás. No es un campo largo, pero las salidas ciegas, los dogleg cerrados y los cambios de nivel mantienen interesante cada hoyo.",
    "andy": "Más carácter que la mayoría de los campos de este nivel de precio. Las vistas desde los nueve finales son las mejores que hay tan cerca de Palma. Camine los primeros nueve y tome el buggy para los finales si aprecia sus rodillas.",
    "bestPlayer": "Jugador ocasional a jugador habitual"
   },

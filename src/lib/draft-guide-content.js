@@ -2,10 +2,14 @@ import { SITE_ORIGIN } from './site.js'
 
 // Hidden English drafts for Andy's read, served at /draft-guides (noindex,
 // unlinked). Rewritten 2026-10-08 from Andy's published reviews and the course
-// master. Held back from this file on purpose: the east Mallorca comparison
-// (waiting until Andy has played some of the east courses) and the solo-trip
-// guide (dropped). Their earlier text is in Drive Content\Unpublished Guide
-// Articles. The Arabella comparison was merged into golf-courses-near-palma.
+// master. The east Mallorca comparison is on hold (Andy's call) and its draft
+// is the only file left in Drive Content\Unpublished Guide Articles. The solo-
+// trip guide was dropped and the Arabella comparison merged into
+// golf-courses-near-palma; their old Drive drafts were deleted 2026-10-08.
+//
+// Drive times are from Palma Cathedral (La Seu), taken from the course master
+// (travelFromPalmaMinutes), so every guide quotes the same figure. Andy's call
+// 2026-10-08: no disclaimers about courses Andy has not played; courses are written plainly.
 //
 // When a guide goes live: move it to guide-article-content.js and follow
 // /publish-course-guide. Then link the near-Palma guide's "southwest Mallorca
@@ -23,7 +27,7 @@ export const DRAFT_GUIDE_CONTENT = {
     metadata: {
       title: 'Golf Courses Near Palma, Compared',
       description:
-        'Ten courses within about 30 minutes of Palma, compared by a PGA pro who has played seven: handicap limits, walking, and which to book first.',
+        'Ten courses within 25 minutes of Palma Cathedral, compared by a PGA pro: handicap limits, walking, and which one to book first.',
       canonical: 'https://www.mrmallorcagolf.com/draft-guides/golf-courses-near-palma',
       image: '/images/son-gual-blog/sg-hero.webp',
       imageAlt: 'Son Gual golf course near Palma, Mallorca',
@@ -36,7 +40,7 @@ export const DRAFT_GUIDE_CONTENT = {
       updated: 'October 2026',
       title: 'Golf Courses Near Palma: Which to Play',
       intro:
-        'Ten courses sit within about half an hour of Palma, and I have played seven of them. They run from a nine-hole pitch and putt with no handicap rule to Son Gual, where the limit is 28 for men and the greens punish a loose approach.',
+        'Ten courses sit within 25 minutes of Palma Cathedral. They run from a nine-hole pitch and putt with no handicap rule to Son Gual, where the limit is 28 for men and the greens punish a loose approach.',
       sidebarPlanning: DRAFT_SIDEBAR,
       related: [
         { slug: 'son-gual-review', title: 'Son Gual Golf - Worth It? (2026)' },
@@ -59,17 +63,17 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'heading', text: 'Quick answer' },
       {
         type: 'table',
-        headers: ['Course', 'From Palma', 'Max handicap (men / ladies)', 'Best for'],
+        headers: ['Course', 'From Palma Cathedral', 'Max handicap (men / ladies)', 'Best for'],
         rows: [
           ['Son Gual', '20 min', '28 / 36', 'A serious championship round'],
-          ['Son Muntaner', '5 min from the centre', '36 / 36', 'Premium conditioning, buggy included'],
+          ['Son Muntaner', '15 min', '36 / 36', 'Premium conditioning, buggy included'],
           ['Son Vida', '15 min', '54 / 54', 'History, a short and tight layout'],
           ['Son Quint', '15 min', '54 / 54', 'Groups with mixed handicaps'],
           ['Palma Pitch & Putt', '10 min', 'No certificate', 'New golfers, juniors, short-game practice'],
           ['T Golf Palma', '25 min', '28 / 34', 'Risk-reward holes and a quiet early start'],
-          ['Son Termes', '20 min', '36 / 36', 'Character and views at a lower price'],
-          ['Son Antem West', '15-20 min', '36 / 36', 'Relaxed resort golf, flat walking'],
-          ['Son Antem East', '15-20 min', '54 / 54', 'Higher handicappers'],
+          ['Son Termes', '25 min', '36 / 36', 'Character and views at a lower price'],
+          ['Son Antem West', '25 min', '36 / 36', 'Relaxed resort golf, flat walking'],
+          ['Son Antem East', '25 min', '54 / 54', 'Higher handicappers'],
           ['Maioris', '25 min', '54 / 54', 'A first or last round near the airport'],
         ],
       },
@@ -112,7 +116,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'subheading', text: 'Son Muntaner' },
       {
         type: 'paragraph',
-        text: 'Son Muntaner was named Best Golf Course in Spain at the 2025 World Golf Awards, and the greens are why I would back that. I played on a Saturday morning with a full tee sheet and they held their pace and surface all the way round. It is five minutes from central Palma, and the climbs up to several tees are long, which is why the buggy comes with the green fee.',
+        text: 'Son Muntaner was named Best Golf Course in Spain at the 2025 World Golf Awards, and the greens are why I would back that. I played on a Saturday morning with a full tee sheet and they held their pace and surface all the way round. It is 15 minutes from the cathedral, and the climbs up to several tees are long, which is why the buggy comes with the green fee.',
       },
       {
         type: 'paragraph',
@@ -165,7 +169,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'subheading', text: 'Palma Pitch & Putt' },
       {
         type: 'paragraph',
-        text: 'Palma Pitch & Putt is nine holes, par 27 and 638m in total, with no handicap certificate needed. It sits less than 100 metres from Son Quint\'s driving range. I have not played it. On those numbers it is an hour of wedges and putting, a first round for a new golfer or a junior, or a warm-up the evening before a full round.',
+        text: 'Palma Pitch & Putt is nine holes, par 27 and 638m in total, with no handicap certificate needed. It sits less than 100 metres from Son Quint\'s driving range. It is an hour of wedges and putting, a first round for a new golfer or a junior, or a warm-up the evening before a full round.',
       },
       { type: 'subheading', text: 'Which Arabella course first' },
       {
@@ -190,13 +194,13 @@ export const DRAFT_GUIDE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'The greens are fast, small and undulating, and the rough grabs the club, so a missed green usually leaves a harder chip than it looks. The limit is 28 for men and 34 for ladies. The range is one of the biggest near Palma, with 42 bays, 14 of them covered. We were out before most of the staff arrived, so I have not hit balls there myself. Full detail in the <a href=\'/guides/t-golf-palma-review\'>T Golf Palma review</a>.',
+        text: 'The greens are fast, small and undulating, and the rough grabs the club, so a missed green usually leaves a harder chip than it looks. The limit is 28 for men and 34 for ladies. The range is one of the biggest near Palma, with 42 bays, 14 of them covered. Full detail in the <a href=\'/guides/t-golf-palma-review\'>T Golf Palma review</a>.',
       },
 
       { type: 'heading', text: 'Son Termes: character at a lower price' },
       {
         type: 'paragraph',
-        text: 'Son Termes is par 70 and 5,285m, up in the hills about 20 minutes from the city, with green fees around €90 to €110. I played it with a friend on a 20 handicap who was running low on balls by the back nine. The rough is tight and several tee shots leave very little room. Some are blind: on the 13th I was in the middle of the fairway with close to 175 metres in and could not see the flag.',
+        text: 'Son Termes is par 70 and 5,285m, in the Tramuntana foothills near Bunyola, 25 minutes from the city, with green fees around €90 to €110. I played it with a friend on a 20 handicap who was running low on balls by the back nine. The rough is tight and several tee shots leave very little room. Some are blind: on the 13th I was in the middle of the fairway with close to 175 metres in and could not see the flag.',
       },
       {
         type: 'paragraph',
@@ -209,14 +213,14 @@ export const DRAFT_GUIDE_CONTENT = {
       {
         type: 'image',
         src: '/images/son-termes-blog/st-4.webp',
-        alt: 'Son Termes golf course Mallorca panoramic view over Na Burguesa mountains and Palma plain',
+        alt: 'Son Termes golf course Mallorca panoramic view over the Tramuntana foothills and the Palma plain',
         caption: 'The view from the upper holes. Castell de Bellver and the cathedral were visible on the skyline on a clear morning.',
       },
 
       { type: 'heading', text: 'Son Antem: two resort courses near Llucmajor' },
       {
         type: 'paragraph',
-        text: 'Son Antem is a resort with two courses, a hotel and one of the largest golf academies in Europe, 15 to 20 minutes south of Palma. I have played the West course and visited separately to look at the academy. West is par 72 and 6,293m, flat and easy to walk, in open countryside with no houses in view. The 16th is the best hole, an uphill dogleg-right par 5 through the trees to a small, protected green.',
+        text: 'Son Antem is a resort with two courses, a hotel and one of the largest golf academies in Europe, about 25 minutes south of Palma. West is par 72 and 6,293m, flat and easy to walk, in open countryside with no houses in view. The 16th is the best hole, an uphill dogleg-right par 5 through the trees to a small, protected green.',
       },
       {
         type: 'paragraph',
@@ -224,7 +228,7 @@ export const DRAFT_GUIDE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'I have not played East yet. It is the more open of the two, with wide fairways and five lakes, and its handicap limit is 54 against West\'s 36. For a higher handicapper, East is the Son Antem course I would book.',
+        text: 'East is the more open of the two, with wide fairways and five lakes, and its handicap limit is 54 against West\'s 36. For a higher handicapper, East is the Son Antem course I would book.',
       },
       {
         type: 'image',
@@ -236,7 +240,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'heading', text: 'Maioris: a first or last round near the airport' },
       {
         type: 'paragraph',
-        text: 'Maioris is about 25 minutes from Palma on the Llucmajor side, close enough to the airport to fit around a flight. I have not played it. On paper it is par 72 and 6,300m, with a handicap limit of 54, a driving range with grass as well as mats, and an all-grass chipping area. The last holes include two significant climbs, so take a buggy if your legs are tired from travelling.',
+        text: 'Maioris is about 25 minutes from Palma on the Llucmajor side, close enough to the airport to fit around a flight. It is par 72 and 6,300m, with a handicap limit of 54, a driving range with grass as well as mats, and an all-grass chipping area. The last holes include two significant climbs, so take a buggy if your legs are tired from travelling.',
       },
 
       { type: 'heading', text: 'How I would plan three rounds from Palma' },
@@ -375,7 +379,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'heading', text: 'Real Golf de Bendinat' },
       {
         type: 'paragraph',
-        text: 'Bendinat is the closest of the group to Palma, about 15 minutes, between Illetas and Portals. I have not played it. Martin Hawtree designed the original nine holes in 1986, and it became 18 in 1995. It is par 69, 5,660m and very hilly, with views over the Bay of Palma, Cabrera and Bendinat Castle. Visitor green fees are limited each day, so book ahead. If you are staying in Illetas or Portals and want a short round without a drive, this is the one to look at.',
+        text: 'Bendinat is the closest of the group to Palma, about 15 minutes, between Illetas and Portals. Martin Hawtree designed the original nine holes in 1986, and it became 18 in 1995. It is par 69, 5,660m and very hilly, with views over the Bay of Palma, Cabrera and Bendinat Castle. Visitor green fees are limited each day, so book ahead. If you are staying in Illetas or Portals and want a short round without a drive, this is the one to look at.',
       },
       {
         type: 'image',
@@ -491,7 +495,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'subheading', text: 'Son Antem East and West' },
       {
         type: 'paragraph',
-        text: 'I have not played East yet. It is the more open of the two Son Antem courses, with wide fairways, five lakes and a limit of 54, and it is flat enough to walk. West, which I have played, takes 36. Its open holes give you a wide landing area and a straightforward approach, so a higher handicapper can swing freely on most of the course.',
+        text: 'East is the more open of the two Son Antem courses, with wide fairways, five lakes and a limit of 54, and it is flat enough to walk. West takes 36. Its open holes give you a wide landing area and a straightforward approach, so a higher handicapper can swing freely on most of the course.',
       },
       {
         type: 'paragraph',
@@ -506,7 +510,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'subheading', text: 'Maioris' },
       {
         type: 'paragraph',
-        text: 'I have not played Maioris. It takes 54 and sits about 25 minutes from Palma. The range has grass tees and there is an all-grass chipping area, so you can warm up properly before the round. The last holes include two significant climbs, so take a buggy if you are not used to hills.',
+        text: 'Maioris takes 54 and sits about 25 minutes from Palma. The range has grass tees and there is an all-grass chipping area, so you can warm up properly before the round. The last holes include two significant climbs, so take a buggy if you are not used to hills.',
       },
       { type: 'subheading', text: 'Son Vida, if you hit it straight' },
       {
@@ -522,7 +526,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'heading', text: 'Shorter options' },
       {
         type: 'paragraph',
-        text: 'Palma Pitch & Putt is nine holes, par 27, 638m in total, with no certificate needed. Golf Pollença in the north is nine holes, par 35, with a limit of 36 and a golf school on site. It includes two of the longest holes in Mallorca, so it is a proper round in half the time. I have not played either.',
+        text: 'Palma Pitch & Putt is nine holes, par 27, 638m in total, with no certificate needed. Golf Pollença in the north is nine holes, par 35, with a limit of 36 and a golf school on site. It includes two of the longest holes in Mallorca, so it is a proper round in half the time.',
       },
       {
         type: 'image',
@@ -640,7 +644,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'heading', text: 'Pula: the TrackMan range in the east' },
       {
         type: 'paragraph',
-        text: 'I went to Pula to look at the practice set-up. It has a two-level public TrackMan Range, two putting greens, a pitching green, and a short-game area with bunkers, and Miquel Tous is the head professional. It is about an hour from Palma, so it makes most sense if you are staying on the east coast.',
+        text: 'I visited Pula\'s practice facilities. There is a two-level public TrackMan Range, two putting greens, a pitching green, and a short-game area with bunkers, and Miquel Tous is the head professional. It is about 70 minutes from Palma, so it makes most sense if you are staying on the east coast.',
       },
       {
         type: 'image',
@@ -677,13 +681,13 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'heading', text: 'T Golf Palma: the biggest range near Palma' },
       {
         type: 'paragraph',
-        text: 'T Golf Palma has 42 bays, 14 of them covered, on a 250-metre range, with putting greens, a large short-game area and PGA coaches on site. I teed off before most of the staff had arrived on the day I played, so I have not hit balls there myself. If you are staying in the city and want a range session without a long drive, this is the first place I would look. More in the <a href=\'/guides/t-golf-palma-review\'>T Golf Palma review</a>.',
+        text: 'T Golf Palma has 42 bays, 14 of them covered, on a 250-metre range, with putting greens, a large short-game area and PGA coaches on site. If you are staying in the city and want a range session without a long drive, this is the first place I would look. More in the <a href=\'/guides/t-golf-palma-review\'>T Golf Palma review</a>.',
       },
 
       { type: 'heading', text: 'Son Antem: the academy' },
       {
         type: 'paragraph',
-        text: 'I visited Son Antem to look at the practice facilities. The circular driving range is built for more than 200 players, with grass and artificial tees. There is an approach green with bunkers, a putting green of about 1,000m², and five PGA professionals. It is one of the largest golf academies in Europe, and FlightScope is used for teaching. For a group lesson, the scale is the reason to go.',
+        text: 'I visited Son Antem\'s academy. The circular driving range is built for more than 200 players, with grass and artificial tees. There is an approach green with bunkers, a putting green of about 1,000m², and five PGA professionals. It is one of the largest golf academies in Europe, and FlightScope is used for teaching. For a group lesson, the scale is the reason to go.',
       },
 
       { type: 'heading', text: 'Maioris and Son Termes: grass close to Palma' },
