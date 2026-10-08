@@ -79,7 +79,7 @@ export const DRAFT_GUIDE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'The handicap figures are each club\'s maximum, and every course except the pitch and putt asks to see a certificate at booking. Real Golf de Bendinat is also 15 minutes from the city, but it plays like the southwest courses, so it is in my southwest Mallorca comparison.',
+        text: 'The handicap figures are each club\'s maximum, and every course except the pitch and putt requires a handicap certificate. Real Golf de Bendinat is also 15 minutes from the city, but it plays like the southwest courses, so it is in my southwest Mallorca comparison.',
       },
 
       { type: 'heading', text: 'Son Gual: the strongest round near Palma' },
@@ -93,7 +93,7 @@ export const DRAFT_GUIDE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'One thing to check before booking: the limit is 28 for men and 36 for ladies, and the club checks your WHS certificate. If your game is rusty, I would not make this the first round of the trip. More detail in the <a href=\'/guides/son-gual-review\'>Son Gual review</a>.',
+        text: 'One thing to check before booking: the limit is 28 for men and 36 for ladies. If your game is rusty, I would not make this the first round of the trip. More detail in the <a href=\'/guides/son-gual-review\'>Son Gual review</a>.',
       },
 
       { type: 'heading', text: 'The Arabella courses: Son Muntaner, Son Vida and Son Quint' },
@@ -428,7 +428,7 @@ export const DRAFT_GUIDE_CONTENT = {
       updated: 'October 2026',
       title: 'Best Mallorca Golf Courses for Higher Handicappers',
       intro:
-        'Almost every course in Mallorca asks for a handicap certificate, and the limits run from 28 to 54. That number is the first filter. The second is the kind of trouble: water you can see from the tee costs a 25-handicapper far fewer shots than blind tee shots and raised greens.',
+        'Almost every course in Mallorca sets a handicap limit, and the limits run from 28 to 54. That number is the first filter. The second is the kind of trouble: water you can see from the tee costs a 25-handicapper far fewer shots than blind tee shots and raised greens.',
       sidebarPlanning: DRAFT_SIDEBAR,
       related: [
         { slug: 'son-quint-review', title: 'Son Quint Golf - Review (2026)' },
@@ -445,7 +445,7 @@ export const DRAFT_GUIDE_CONTENT = {
         naturalWidth: 1200,
         naturalHeight: 1600,
         alt: 'Olive tree branches framing a view over Palma from the Son Quint fairway',
-        caption: 'Olive trees on the front nine, with Palma spread out beyond.',
+        caption: 'Olive trees on the front nine at Son Quint, with Palma spread out beyond.',
       },
       {
         type: 'paragraph',
@@ -454,7 +454,7 @@ export const DRAFT_GUIDE_CONTENT = {
       { type: 'heading', text: 'Handicap limits at every Mallorca course' },
       {
         type: 'paragraph',
-        text: 'These are the maximums on file for 2026. Clubs check them against your WHS certificate at booking or at check-in, and Son Gual enforces it.',
+        text: 'These are the maximums on file for 2026.',
       },
       {
         type: 'table',
@@ -505,7 +505,7 @@ export const DRAFT_GUIDE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'The greens on West are small, and several are raised or slope away, so the ball runs much further after landing than it looks like it will. A low running chip is usually the safer shot. If your short game needs work, Son Antem\'s practice ground is one of the largest in Europe, with an approach green and bunkers to warm up on.',
+        text: 'If your short game needs work, Son Antem\'s practice ground is one of the largest in Europe, with an approach green and bunkers to warm up on.',
       },
       {
         type: 'image',
@@ -559,14 +559,12 @@ export const DRAFT_GUIDE_CONTENT = {
         ],
       },
 
-      { type: 'heading', text: 'Four things that save shots' },
+      { type: 'heading', text: 'Two things that save shots' },
       {
         type: 'list',
         items: [
-          { label: 'Carry your certificate.', text: 'Most clubs ask for it at booking, and some check it again at the desk.' },
           { label: 'Play the forward tees for the first round.', text: 'Son Quint has four tee positions. Use them.' },
           { label: 'Take a buggy on the hilly courses.', text: 'The back nine at Son Termes, the last holes at Maioris, and anywhere before 2pm at Andratx, where it is compulsory.' },
-          { label: 'Chip low on raised greens.', text: 'At Son Antem West the ball releases much further than it looks, so a running chip is the safer play.' },
         ],
       },
       {
@@ -613,7 +611,7 @@ export const DRAFT_GUIDE_CONTENT = {
         naturalWidth: 1200,
         naturalHeight: 1600,
         alt: 'Putting green at Son Quint golf course with an orange Son Quint flag in the foreground',
-        caption: 'The putting green at the Son Quint clubhouse.',
+        caption: 'The putting green at Son Quint.',
       },
       {
         type: 'paragraph',

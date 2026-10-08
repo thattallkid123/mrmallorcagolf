@@ -1207,7 +1207,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/son-quint-blog/son-quint-7.webp',
           alt: 'Putting green at Son Quint golf course with an orange Son Quint flag in the foreground',
-          caption: 'The putting green at the Son Quint clubhouse.',
+          caption: 'The putting green at Son Quint.',
           presentation: 'natural',
           naturalWidth: 1200,
           naturalHeight: 1600,

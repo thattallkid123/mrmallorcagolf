@@ -438,9 +438,21 @@ function JsonLd({ data }) {
   )
 }
 
+// The planning-tool box goes at the first section break from the fifth block
+// on, just before a heading, so it never splits a heading from its first
+// paragraph (Andy, 2026-10-08: it landed under "T Golf Calvià" on a draft).
+function findPlanningSlot(blocks) {
+  for (let i = 4; i < blocks.length - 1; i++) {
+    const here = blocks[i].type
+    if (here !== 'heading' && here !== 'subheading' && blocks[i + 1].type === 'heading') return i
+  }
+  return 4
+}
+
 export default function GuidePostView({ locale = 'en', meta, blocks }) {
   const pageLang = locale === 'en' ? undefined : locale
   let imageOrdinal = 0
+  const planningSlot = findPlanningSlot(blocks)
   const courseDetails = COURSE_REVIEW_DETAILS[meta.slug]
   const lastCtaIndex = blocks.length - 1
 
@@ -474,7 +486,7 @@ export default function GuidePostView({ locale = 'en', meta, blocks }) {
           const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
           const renderedBlock = renderBlock(block, index, locale, currentImageOrdinal)
 
-          if (locale === 'en' && index === 4) {
+          if (locale === 'en' && index === planningSlot) {
             return (
               <Fragment key={`post-block-with-planning-${index}`}>
                 {renderedBlock}
