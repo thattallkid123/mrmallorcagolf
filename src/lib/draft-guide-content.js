@@ -1,1306 +1,716 @@
 import { SITE_ORIGIN } from './site.js'
 
+// Hidden English drafts for Andy's read, served at /draft-guides (noindex,
+// unlinked). Rewritten 2026-10-08 from Andy's published reviews and the course
+// master. Held back from this file on purpose: the east Mallorca comparison
+// (waiting until Andy has played some of the east courses) and the solo-trip
+// guide (dropped). Their earlier text is in Drive Content\Unpublished Guide
+// Articles. The Arabella comparison was merged into golf-courses-near-palma.
+//
+// When a guide goes live: move it to guide-article-content.js and follow
+// /publish-course-guide. Then link the near-Palma guide's "southwest Mallorca
+// comparison" mention to /guides/southwest-mallorca-golf-courses-compared (plain
+// text for now, because the link checker rejects links to unpublished drafts).
+const DRAFT_SIDEBAR = {
+  title: 'Draft preview for Andy',
+  body: 'This page is hidden from the public guide index and blocked from indexing while the English is reviewed.',
+  primary: 'Plan Your Trip',
+  secondary: 'Play With A Pro',
+}
+
 export const DRAFT_GUIDE_CONTENT = {
-  "golf-courses-near-palma": {
-    "metadata": {
-      "title": "Golf Courses Near Palma",
-      "description": "Palma is a better golf base than many visitors realise. I moved here from Shanghai in March 2025, where the problem was simple: too many golfers and no...",
-      "canonical": "https://www.mrmallorcagolf.com/draft-guides/golf-courses-near-palma",
-      "image": "/images/golf-courses.jpg",
-      "imageAlt": "Golf Courses Near Palma: Which Ones Are Actually Worth Your Time"
+  'golf-courses-near-palma': {
+    metadata: {
+      title: 'Golf Courses Near Palma, Compared',
+      description:
+        'Ten courses within about 30 minutes of Palma, compared by a PGA pro who has played seven: handicap limits, walking, and which to book first.',
+      canonical: 'https://www.mrmallorcagolf.com/draft-guides/golf-courses-near-palma',
+      image: '/images/son-gual-blog/sg-hero.webp',
+      imageAlt: 'Son Gual golf course near Palma, Mallorca',
     },
-    "meta": {
-      "slug": "golf-courses-near-palma",
-      "badge": "Palma Courses",
-      "badgeGold": false,
-      "readTime": "Draft preview",
-      "updated": "September 2026",
-      "title": "Golf Courses Near Palma: Which Ones Are Actually Worth Your Time",
-      "intro": "Palma is a better golf base than many visitors realise. I moved here from Shanghai in March 2025, where the problem was simple: too many golfers and nowhere near enough good tee times. Mallorca is the opposite. From Palma, you can reach a proper spread of courses within 10 to 30 minutes, and the choice changes depending on what sort of round you want.",
-      "sidebarPlanning": {
-        "title": "Draft preview for Andy",
-        "body": "This page is hidden from the public guide index and blocked from indexing while the English is reviewed.",
-        "primary": "Plan Your Trip",
-        "secondary": "Play With A Pro"
-      },
-      "related": []
+    meta: {
+      slug: 'golf-courses-near-palma',
+      badge: 'Palma Courses',
+      badgeGold: false,
+      readTime: 'Draft preview',
+      updated: 'October 2026',
+      title: 'Golf Courses Near Palma: Which to Play',
+      intro:
+        'Ten courses sit within about half an hour of Palma, and I have played seven of them. They run from a nine-hole pitch and putt with no handicap rule to Son Gual, where the limit is 28 for men and the greens punish a loose approach.',
+      sidebarPlanning: DRAFT_SIDEBAR,
+      related: [
+        { slug: 'son-gual-review', title: 'Son Gual Golf - Worth It? (2026)' },
+        { slug: 'son-muntaner-review', title: 'Son Muntaner Golf - Best in Spain? (2026)' },
+        { slug: 't-golf-palma-review', title: 'T Golf Palma - Review (2026)' },
+        { slug: 'where-to-stay-mallorca-golf', title: 'Where to Stay in Mallorca for Golf' },
+      ],
     },
-    "blocks": [
+    blocks: [
       {
-        "type": "paragraph",
-        "text": "Palma is a better golf base than many visitors realise. I moved here from Shanghai in March 2025, where the problem was simple: too many golfers and nowhere near enough good tee times. Mallorca is the opposite. From Palma, you can reach a proper spread of courses within 10 to 30 minutes, and the choice changes depending on what sort of round you want."
+        type: 'image',
+        src: '/images/son-gual-blog/sg-hero.webp',
+        alt: 'Son Gual Golf Course, Mallorca',
+        caption: 'Son Gual. 11 km from Palma. Feels considerably further once the wind picks up on the first tee.',
       },
       {
-        "type": "paragraph",
-        "text": "The mistake is treating every course near Palma as interchangeable. Son Gual and T Golf Palma sit in a similar drive-time bracket, but they answer different questions. Son Gual is a serious premium round. T Golf Palma is a practical range-and-round day. Son Muntaner is the polished resort course. Son Quint is the easier Arabella entry point. The right answer depends on the golfer, not the map."
+        type: 'paragraph',
+        text: 'Staying in Palma gives you the widest choice of golf on the island without a long drive. The table is the short version. The sections after it are what I would tell you if you asked me which one to book.',
       },
+      { type: 'heading', text: 'Quick answer' },
       {
-        "type": "heading",
-        "text": "Quick answer"
-      },
-      {
-        "type": "table",
-        "headers": [
-          "You want",
-          "Start with"
+        type: 'table',
+        headers: ['Course', 'From Palma', 'Max handicap (men / ladies)', 'Best for'],
+        rows: [
+          ['Son Gual', '20 min', '28 / 36', 'A serious championship round'],
+          ['Son Muntaner', '5 min from the centre', '36 / 36', 'Premium conditioning, buggy included'],
+          ['Son Vida', '15 min', '54 / 54', 'History, a short and tight layout'],
+          ['Son Quint', '15 min', '54 / 54', 'Groups with mixed handicaps'],
+          ['Palma Pitch & Putt', '10 min', 'No certificate', 'New golfers, juniors, short-game practice'],
+          ['T Golf Palma', '25 min', '28 / 34', 'Risk-reward holes and a quiet early start'],
+          ['Son Termes', '20 min', '36 / 36', 'Character and views at a lower price'],
+          ['Son Antem West', '15-20 min', '36 / 36', 'Relaxed resort golf, flat walking'],
+          ['Son Antem East', '15-20 min', '54 / 54', 'Higher handicappers'],
+          ['Maioris', '25 min', '54 / 54', 'A first or last round near the airport'],
         ],
-        "rows": [
-          [
-            "Best premium round near Palma",
-            "Son Gual or Son Muntaner"
-          ],
-          [
-            "Strong range before the round",
-            "T Golf Palma or Son Muntaner"
-          ],
-          [
-            "Mixed ability group",
-            "Son Quint or Son Antem East"
-          ],
-          [
-            "Short session or very new golfer",
-            "Palma Pitch & Putt"
-          ],
-          [
-            "Good golf close to the airport side",
-            "Maioris or Son Antem East"
-          ],
-          [
-            "Extra drive for a higher-end day",
-            "T Golf Calvià"
-          ]
-        ]
       },
       {
-        "type": "heading",
-        "text": "Son Gual: best for a serious premium day"
+        type: 'paragraph',
+        text: 'The handicap figures are each club\'s maximum, and every course except the pitch and putt asks to see a certificate at booking. Real Golf de Bendinat is also 15 minutes from the city, but it plays like the southwest courses, so it is in my southwest Mallorca comparison.',
+      },
+
+      { type: 'heading', text: 'Son Gual: the strongest round near Palma' },
+      {
+        type: 'paragraph',
+        text: 'Son Gual is my most-played course and my favourite on the island. Thomas Himmel\'s 2007 design sits about 20 minutes from the city, and it seems to make its own weather. I can leave a calm morning at home in the southwest and find it blowing properly on the 1st tee. It stays that way for four hours.',
       },
       {
-        "type": "paragraph",
-        "text": "Son Gual is around 20 minutes from Palma and still feels separate from the city. That helps the day. You leave Palma quickly, then arrive somewhere that feels built around golf rather than tourism."
+        type: 'paragraph',
+        text: 'The greens are fast and raised. In January they were cut so tight that one of my playing partners reached for her putter with about 30 yards of fringe still to cover. The bunkers sit exactly where a slight mishit finishes, and a short-sided chip to a raised green is hard to stop. The closing stretch from the 15th is among the best four holes in European golf. The best views over the Bay of Palma come between the 8th and the 12th.',
       },
       {
-        "type": "paragraph",
-        "text": "This is one of the courses I would put in front of a good player first. The greens are fast and raised, so where you miss matters. The course asks for proper approach play, not just a decent drive and a wedge somewhere near the flag. It is also one of the places where a Play With A Pro day makes clear sense, because course management changes the score quickly here."
+        type: 'paragraph',
+        text: 'One thing to check before booking: the limit is 28 for men and 36 for ladies, and the club checks your WHS certificate. If your game is rusty, I would not make this the first round of the trip. More detail in the <a href=\'/guides/son-gual-review\'>Son Gual review</a>.',
+      },
+
+      { type: 'heading', text: 'The Arabella courses: Son Muntaner, Son Vida and Son Quint' },
+      {
+        type: 'paragraph',
+        text: 'Three 18-hole courses and a pitch and putt share one estate in the Son Vida area, a few minutes apart and booked through the same Arabella Golf Mallorca system. I have played all three full courses. The numbers show how differently they are set up: the handicap limit is 36 at Son Muntaner and 54 at the other two, and only Son Muntaner includes the buggy.',
       },
       {
-        "type": "paragraph",
-        "text": "The honest negative: it is not the easy option. Higher handicappers can play it if they are realistic, but I would not make it their first round of a holiday unless they specifically want a test. Handicap certificate rules and current green fees should be checked before publishing. [VERIFY BEFORE PUBLISHING]"
-      },
-      {
-        "type": "heading",
-        "text": "Son Muntaner: best for polished resort golf"
-      },
-      {
-        "type": "paragraph",
-        "text": "Son Muntaner is the headline Arabella course and sits only a short drive from central Palma. The conditioning is the selling point. It is the course in the Palma area for a player who wants a high-end resort feel, strong practice facilities, and a round that feels properly presented from start to finish."
-      },
-      {
-        "type": "paragraph",
-        "text": "From a trip-planning point of view, Son Muntaner works well on day two or three, once the player has settled into the island. It is close enough to Palma to avoid a long transfer, but premium enough that it still feels like a main golf day."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: the price can be in the same conversation as Son Gual, depending on the date. A visitor who wants the most memorable pure golf test may still prefer Son Gual. A visitor who wants resort polish and convenience may prefer Son Muntaner."
-      },
-      {
-        "type": "heading",
-        "text": "T Golf Palma: best practical range-and-round option"
-      },
-      {
-        "type": "paragraph",
-        "text": "T Golf Palma belongs in any Palma-based guide. It is close enough to the city to use properly and has one of the most useful practice setups in the area: a 42-bay range, covered bays, putting greens, and short-game space. I have not played the course yet, so this is a researched planning view rather than a full personal review. [ANDY TO VERIFY]"
-      },
-      {
-        "type": "paragraph",
-        "text": "The appeal is simple: arrive, practise properly, play 18 holes, and stay close to Palma. For a golfer who has flown in, wants to loosen up, and does not want their first round to be the most expensive round of the trip, it makes sense."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: do not treat it as the same type of day as Son Gual. Similar drive time does not mean similar purpose."
-      },
-      {
-        "type": "heading",
-        "text": "Son Quint and Son Vida: the Arabella alternatives"
-      },
-      {
-        "type": "paragraph",
-        "text": "Son Quint is the most accessible full-length Arabella course. It has a higher handicap limit than the most demanding courses, wider playing corridors, and enough views to feel like a proper Mallorca round. For mixed ability groups, it is often the sensible answer."
-      },
-      {
-        "type": "paragraph",
-        "text": "Son Vida is the historic Arabella course. It is shorter, tighter, and more awkward in places than many visitors expect. Five par 3s across the round change the rhythm. It is not the soft option just because it is older and shorter."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: if someone says they want to play Arabella without knowing which course, slow the decision down. These courses do different jobs."
-      },
-      {
-        "type": "heading",
-        "text": "Son Termes, Bendinat, Maioris and Son Antem East"
-      },
-      {
-        "type": "paragraph",
-        "text": "Son Termes is very close to Palma and has mountain character, but the terrain is part of the decision. It can be a good local-style round, but I would not put every visitor there automatically."
-      },
-      {
-        "type": "paragraph",
-        "text": "Bendinat is close, compact and hilly. It is useful for players staying southwest of Palma, especially when they want convenience, but access and availability should be checked before building a day around it. [VERIFY BEFORE PUBLISHING]"
-      },
-      {
-        "type": "paragraph",
-        "text": "Maioris is practical from Palma and works for players who want a more relaxed round. It has a decent practice setup and enough course to be useful without making the day feel heavy."
-      },
-      {
-        "type": "paragraph",
-        "text": "Son Antem East is one of the better answers for mixed ability groups. It is flatter, easier to walk, and supported by a large academy setup. For higher handicappers or a first full round on the island, it is much easier to recommend than the famous premium names."
-      },
-      {
-        "type": "heading",
-        "text": "T Golf Calvià: worth the extra drive for the right player"
-      },
-      {
-        "type": "paragraph",
-        "text": "T Golf Calvià is not really near Palma in the tightest sense, but it belongs in the decision. Around 30 minutes from Palma, it is close enough for a premium day and different enough to justify the drive."
-      },
-      {
-        "type": "paragraph",
-        "text": "I have played it, and the condition is one of the reasons I rate it so highly. The water changes decisions all day. The range setup is strong, and the day feels complete if the player wants a serious southwest round."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: I would not use it as the first round for a nervous higher handicapper. There are easier ways to start a trip."
-      },
-      {
-        "type": "heading",
-        "text": "My Palma-based sequence"
-      },
-      {
-        "type": "paragraph",
-        "text": "For a three-round Palma trip, I would usually build it like this:"
-      },
-      {
-        "type": "list",
-        "items": [
-          {
-            "text": "T Golf Palma, Son Quint, Maioris or Son Antem East as the first round, depending on level."
-          },
-          {
-            "text": "Son Gual or Son Muntaner as the premium day."
-          },
-          {
-            "text": "T Golf Calvià, Alcanada, Andratx or another bigger day if the player wants a stronger finish."
-          }
-        ]
-      },
-      {
-        "type": "paragraph",
-        "text": "Good planning matters here. The closest course is not always the best choice."
-      },
-      {
-        "type": "heading",
-        "text": "Need help choosing?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell me where you are staying, your handicap, and the type of round you want: relaxed, serious, or somewhere in between. I can help choose the right course, book tee times, or play the round with you as a Play With A Pro day."
-      }
-    ]
-  },
-  "best-mallorca-golf-courses-higher-handicappers": {
-    "metadata": {
-      "title": "Best Mallorca Golf Courses for Higher Handicappers",
-      "description": "A higher handicapper does not need a soft course. They need the right kind of challenge. That distinction matters in Mallorca, because some of the isla...",
-      "canonical": "https://www.mrmallorcagolf.com/draft-guides/best-mallorca-golf-courses-higher-handicappers",
-      "image": "/images/courses/son-antem-east.webp",
-      "imageAlt": "Best Mallorca Golf Courses for Higher Handicappers"
-    },
-    "meta": {
-      "slug": "best-mallorca-golf-courses-higher-handicappers",
-      "badge": "Course Choice",
-      "badgeGold": false,
-      "readTime": "Draft preview",
-      "updated": "September 2026",
-      "title": "Best Mallorca Golf Courses for Higher Handicappers",
-      "intro": "A higher handicapper does not need a soft course. They need the right kind of challenge. That distinction matters in Mallorca, because some of the island's best-known courses can punish a player before the round has settled.",
-      "sidebarPlanning": {
-        "title": "Draft preview for Andy",
-        "body": "This page is hidden from the public guide index and blocked from indexing while the English is reviewed.",
-        "primary": "Plan Your Trip",
-        "secondary": "Play With A Pro"
-      },
-      "related": []
-    },
-    "blocks": [
-      {
-        "type": "paragraph",
-        "text": "A higher handicapper does not need a soft course. They need the right kind of challenge. That distinction matters in Mallorca, because some of the island's best-known courses can punish a player before the round has settled."
-      },
-      {
-        "type": "paragraph",
-        "text": "I am not writing this for complete beginners. If you are brand new to golf, Palma Pitch & Putt or a lesson-first day is a better starting point. This guide is for established golfers who can play 18 holes, enjoy the game, and want a Mallorca course that gives them a fair chance to score, enjoy the views, and keep the same ball in play for more than three holes."
-      },
-      {
-        "type": "heading",
-        "text": "Quick answer"
-      },
-      {
-        "type": "table",
-        "headers": [
-          "Type of higher handicapper",
-          "Best fit"
+        type: 'table',
+        headers: ['', 'Son Muntaner', 'Son Vida', 'Son Quint'],
+        rows: [
+          ['Opened', '2000', '1964', '2007'],
+          ['Par', '72', '70 or 71', '71'],
+          ['Max handicap', '36', '54', '54'],
+          ['Buggy', 'Included, March to late November', 'Optional', 'Optional'],
+          ['Practice', 'Toptracer range', 'Net and putting green only', 'Separate driving range'],
+          ['2026 green fee', '€99-€260', '€84-€190', '€76-€172'],
         ],
-        "rows": [
-          [
-            "Wants the easiest full-round start",
-            "Son Antem East"
-          ],
-          [
-            "Wants Palma convenience and Arabella quality",
-            "Son Quint"
-          ],
-          [
-            "Wants a relaxed course close to Palma",
-            "Maioris"
-          ],
-          [
-            "Wants a shorter golf day",
-            "Pollensa or Palma Pitch & Putt"
-          ],
-          [
-            "Staying east",
-            "Son Servera or Pula"
-          ],
-          [
-            "Wants southwest but needs space",
-            "Santa Ponsa 1, with caveats"
-          ]
-        ]
+      },
+      { type: 'subheading', text: 'Son Muntaner' },
+      {
+        type: 'paragraph',
+        text: 'Son Muntaner was named Best Golf Course in Spain at the 2025 World Golf Awards, and the greens are why I would back that. I played on a Saturday morning with a full tee sheet and they held their pace and surface all the way round. It is five minutes from central Palma, and the climbs up to several tees are long, which is why the buggy comes with the green fee.',
       },
       {
-        "type": "heading",
-        "text": "Son Antem East: the safest full 18-hole start"
+        type: 'paragraph',
+        text: 'This is a positional course. The opening six holes are tight, with water and defined landing areas, and the layout does not show you everything from the tee. The back nine gives the driver more room, but the greens stay small and look bigger than they are from distance. The 7th is a short par 3 with a severe drop where most people come up short. The 15th has an olive tree of roughly a thousand years in the middle of the fairway, protected as a natural monument, and the hole was built around it.',
       },
       {
-        "type": "paragraph",
-        "text": "Son Antem East is one of the first courses I would consider for a higher handicapper in Mallorca. It is flatter than many island courses, easier to walk, and supported by a large academy and practice area. That matters, because a warm-up and a sensible first tee shot can change the tone of the day."
+        type: 'image',
+        src: '/images/son-muntaner-blog/sm-7.webp',
+        alt: 'Son Muntaner golf hole Mallorca tight par 3 with stone wall and bunker',
+        caption: 'The 7th. Short par 3, but the severe drop makes distance control harder than the yardage suggests. Most people come up short.',
       },
       {
-        "type": "paragraph",
-        "text": "The course still asks you to play golf. It is not a pitch-and-putt with long holes added. The advantage is that the layout gives more room for ordinary misses than the tighter premium courses."
+        type: 'paragraph',
+        text: 'Two things to know. Bunker sand was inconsistent when I played, firmer in some bunkers and softer in others. And it has dynamic pricing, from around €99 at quiet times to €260 at peak, so with flexible dates the same round can cost less than half as much. Full detail in the <a href=\'/guides/son-muntaner-review\'>Son Muntaner review</a>.',
+      },
+      { type: 'subheading', text: 'Son Vida' },
+      {
+        type: 'paragraph',
+        text: 'Son Vida opened in 1964, the first course on the island, and Seve Ballesteros won the 1990 Open de Baleares here in a playoff. From the yellow tees it measures 5,470m, short by modern standards, and that number misleads people. Most of the greens slope hard and several have two tiers, so an approach on the wrong tier leaves a very difficult putt.',
       },
       {
-        "type": "paragraph",
-        "text": "The honest negative: it does not have the same high-end feel as Son Gual, Alcanada or T Golf Calvià. If the main goal is a postcard premium day, choose somewhere else. If the goal is a good first round and a better scorecard, Son Antem East makes sense."
+        type: 'paragraph',
+        text: 'The first 12 holes run between houses and the hotel with little spare ground, and the buildings mark the edge of many of them. The last six open out, with more space and clearer choices from the tee, and I preferred them. On the 14th, a 327m dogleg left with water short of the green, I hit driver and had 50 yards left. The 18th is a 460m par 5 with water up the right and the hotel behind the green.',
       },
       {
-        "type": "heading",
-        "text": "Son Quint: the Arabella option for mixed ability groups"
+        type: 'paragraph',
+        text: 'There is no driving range, only a net and a putting green, so warm up at Son Muntaner\'s range two minutes away. The card has two versions of the course: par 70, with the 2nd as a 191m par 3, or par 71 with it as a 259m par 4. Sheraton guests get a lower rate, and my client paid €88. More in the <a href=\'/guides/son-vida-review\'>Son Vida review</a>.',
       },
       {
-        "type": "paragraph",
-        "text": "Son Quint is the most useful full-length Arabella course for a higher handicapper. The handicap limit is more generous, the course is more playable, and the setting still feels like a proper Palma golf day."
+        type: 'image',
+        src: '/images/son-vida-blog/son-vida-1.webp',
+        alt: 'Stone wall marked 1964 with the Son Vida crest, among trees at Son Vida golf course Mallorca',
+        caption: 'The 1964 marker by the 4th tee. Son Vida is the oldest course in Mallorca.',
+      },
+      { type: 'subheading', text: 'Son Quint' },
+      {
+        type: 'paragraph',
+        text: 'Son Quint is the newest of the three and the one I would book for a group with a wide spread of handicaps. The limit is 54, there are four tee positions, and the front nine is flat and an easy walk. We walked all 18. Even from the white tees, hitting irons off the tee, there was plenty to think about. Several greens sit above the fairway and they are firm, so a short-sided chip runs away from you.',
       },
       {
-        "type": "paragraph",
-        "text": "This is the course I would look at when one player in the group is strong and another is still finding the game. The better player gets enough course. The higher handicapper gets more space than they would at Son Muntaner."
+        type: 'paragraph',
+        text: 'The back nine plays like a different course, with more blind shots and tighter lines as the hills get closer. The 12th is a 195m par 3 almost entirely over water. The 13th is a dogleg-left par 5 off a narrow tee. If you walk, follow the buggy path between holes: the signage is not always clear, and twice we set off the wrong way for the next tee. More in the <a href=\'/guides/son-quint-review\'>Son Quint review</a>.',
       },
       {
-        "type": "paragraph",
-        "text": "The honest negative: it can still be expensive compared with simpler options. If the group only cares about value, Son Quint may not be the answer. If they want Arabella convenience without choosing the hardest course, it is a strong fit."
+        type: 'image',
+        src: '/images/son-quint-blog/son-quint-3.webp',
+        alt: 'The par 3 12th hole at Son Quint golf course Mallorca playing almost entirely over water',
+        caption: 'The 12th, almost entirely over water. Take your par and move on.',
+      },
+      { type: 'subheading', text: 'Palma Pitch & Putt' },
+      {
+        type: 'paragraph',
+        text: 'Palma Pitch & Putt is nine holes, par 27 and 638m in total, with no handicap certificate needed. It sits less than 100 metres from Son Quint\'s driving range. I have not played it. On those numbers it is an hour of wedges and putting, a first round for a new golfer or a junior, or a warm-up the evening before a full round.',
+      },
+      { type: 'subheading', text: 'Which Arabella course first' },
+      {
+        type: 'paragraph',
+        text: 'If you are playing one Arabella round, book Son Muntaner. For two, play Son Quint first on its flat front nine, then Son Muntaner as the main round. Add Son Vida for the history or if you are staying at the Sheraton, and book an early tee time: when we finished, a crowd was waiting at the 1st.',
+      },
+
+      { type: 'heading', text: 'T Golf Palma: the quiet one under the flight path' },
+      {
+        type: 'paragraph',
+        text: 'Jack Nicklaus designed T Golf Palma, his only course in Mallorca. It opened in 2006 and was fully renovated in 2022, and I gave it 9/10. We had the 7:30 first tee time and nobody in front of us. For most of the round there is no building in view, only the planes coming over from the airport.',
       },
       {
-        "type": "heading",
-        "text": "Maioris: practical, relaxed and close to Palma"
+        type: 'paragraph',
+        text: 'The course makes you think from the tee. The 8th is 334m with water down the entire right side: I took a 4-iron left and still had a wedge into a narrow sliver of green. The 15th has water right, trees left and a second carry over water into the green. The 18th is the hardest tee shot to line up on the course. I hit what I thought was a good drive, never found the ball, and bogeyed for a 72.',
       },
       {
-        "type": "paragraph",
-        "text": "Maioris is easy to underestimate. It is close to Palma, has a useful practice area, and gives a higher handicapper a round that feels manageable. The course is walkable if the player is fit, though the final holes climb enough to matter."
+        type: 'image',
+        src: '/images/t-golf-palma-blog/t-golf-palma-4.webp',
+        alt: 'The water hazard down the right of the 8th hole at T Golf Palma under a cloudy sky',
+        caption: 'The water down the right on 8. Even the safe route off the tee leaves a demanding second shot into a narrow green.',
       },
       {
-        "type": "paragraph",
-        "text": "For a player who wants golf without turning the whole day into a major production, Maioris is worth considering. It also works for a first or last round when flight times make the schedule tighter."
+        type: 'paragraph',
+        text: 'The greens are fast, small and undulating, and the rough grabs the club, so a missed green usually leaves a harder chip than it looks. The limit is 28 for men and 34 for ladies. The range is one of the biggest near Palma, with 42 bays, 14 of them covered. We were out before most of the staff arrived, so I have not hit balls there myself. Full detail in the <a href=\'/guides/t-golf-palma-review\'>T Golf Palma review</a>.',
+      },
+
+      { type: 'heading', text: 'Son Termes: character at a lower price' },
+      {
+        type: 'paragraph',
+        text: 'Son Termes is par 70 and 5,285m, up in the hills about 20 minutes from the city, with green fees around €90 to €110. I played it with a friend on a 20 handicap who was running low on balls by the back nine. The rough is tight and several tee shots leave very little room. Some are blind: on the 13th I was in the middle of the fairway with close to 175 metres in and could not see the flag.',
       },
       {
-        "type": "paragraph",
-        "text": "The honest negative: the setting is more practical than premium. I would not sell it as the showpiece round of a trip."
+        type: 'paragraph',
+        text: 'Short holes give a good player chances. Several par 4s are driveable or close to it, and on the 6th, a par 5, I hit driver almost to the green. The back nine climbs steeply, so most players take a buggy, and on a clear morning the upper holes look across to Castell de Bellver and the cathedral. Expect goats.',
       },
       {
-        "type": "heading",
-        "text": "Pollensa: a short round with proper golf decisions"
+        type: 'paragraph',
+        text: 'One thing to note: the greens are good but below the level of Son Gual or Alcanada. For the price, I think that is a fair trade. More in the <a href=\'/guides/son-termes-review\'>Son Termes review</a>.',
       },
       {
-        "type": "paragraph",
-        "text": "Pollensa is a 9-hole course in the north. That can be exactly right for some higher handicappers. You still play real golf, but the day is shorter, easier to manage, and less expensive than a full premium round."
+        type: 'image',
+        src: '/images/son-termes-blog/st-4.webp',
+        alt: 'Son Termes golf course Mallorca panoramic view over Na Burguesa mountains and Palma plain',
+        caption: 'The view from the upper holes. Castell de Bellver and the cathedral were visible on the skyline on a clear morning.',
+      },
+
+      { type: 'heading', text: 'Son Antem: two resort courses near Llucmajor' },
+      {
+        type: 'paragraph',
+        text: 'Son Antem is a resort with two courses, a hotel and one of the largest golf academies in Europe, 15 to 20 minutes south of Palma. I have played the West course and visited separately to look at the academy. West is par 72 and 6,293m, flat and easy to walk, in open countryside with no houses in view. The 16th is the best hole, an uphill dogleg-right par 5 through the trees to a small, protected green.',
       },
       {
-        "type": "paragraph",
-        "text": "It suits players staying north or golfers who want a confidence-building day before a bigger course. The course has some climbs and a couple of longer holes, so it is not just a gentle walk."
+        type: 'paragraph',
+        text: 'Where West falls short: a large part of it is flat and asks little from the tee, so you can play those holes on autopilot. The green fee, €109 to €145, is close to Son Gual\'s. On a Sunday at 7:50 there were already three or four groups waiting on the 1st, so book a weekday morning. More in the <a href=\'/guides/son-antem-west-review\'>Son Antem West review</a>.',
       },
       {
-        "type": "paragraph",
-        "text": "The honest negative: it is not worth driving from Palma purely to tick it off unless it fits the rest of the trip."
+        type: 'paragraph',
+        text: 'I have not played East yet. It is the more open of the two, with wide fairways and five lakes, and its handicap limit is 54 against West\'s 36. For a higher handicapper, East is the Son Antem course I would book.',
       },
       {
-        "type": "heading",
-        "text": "Son Servera: the east coast course to research seriously"
+        type: 'image',
+        src: '/images/son-antem-west-review-blog/son-antem-west-2.webp',
+        alt: '16th hole approach at Son Antem West, par 5 through the trees, Mallorca',
+        caption: 'Approaching the 16th. An uphill par 5 that winds through the trees before finishing at a small, protected green.',
       },
+
+      { type: 'heading', text: 'Maioris: a first or last round near the airport' },
       {
-        "type": "paragraph",
-        "text": "Son Servera is one I would include with a clear caveat: I have not played it yet. From the available information, it looks like one of the more suitable east coast options for higher handicappers: flatter, walkable, established, and supported by practice facilities and a golf school. [ANDY TO VERIFY]"
+        type: 'paragraph',
+        text: 'Maioris is about 25 minutes from Palma on the Llucmajor side, close enough to the airport to fit around a flight. I have not played it. On paper it is par 72 and 6,300m, with a handicap limit of 54, a driving range with grass as well as mats, and an all-grass chipping area. The last holes include two significant climbs, so take a buggy if your legs are tired from travelling.',
       },
+
+      { type: 'heading', text: 'How I would plan three rounds from Palma' },
       {
-        "type": "paragraph",
-        "text": "For a player staying near Cala Millor or Costa de los Pinos, it may be a better fit than forcing a harder course because the name is better known."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: until I have played it, I would keep the recommendation cautious. It belongs on the shortlist rather than at the top of the island-wide list."
-      },
-      {
-        "type": "heading",
-        "text": "Pula: good if practice is part of the day"
-      },
-      {
-        "type": "paragraph",
-        "text": "Pula can work well for a higher handicapper if the day includes practice. The TrackMan range, short-game areas and academy setup make it easier to prepare before going onto the course."
-      },
-      {
-        "type": "paragraph",
-        "text": "The course has enough quality to interest a better player too, which makes it useful for mixed groups staying east. A higher handicapper who wants to warm up properly and then play with realistic expectations could have a very good day here."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: it is not the easiest course in this guide. Choose it because the whole practice-and-play setup helps the day, not because it is the softest round."
-      },
-      {
-        "type": "heading",
-        "text": "Santa Ponsa 1: good only for the right higher handicapper"
-      },
-      {
-        "type": "paragraph",
-        "text": "Santa Ponsa 1 gives more width from the tee than many southwest courses. If a higher handicapper drives the ball reasonably well but loses shots around the green, that can work. The course lets them use driver without feeling trapped on every hole."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: the course is long, the par 3s are not gentle, and the handicap limits still matter. I would not send a slicer here without a proper conversation first."
-      },
-      {
-        "type": "heading",
-        "text": "Courses I would treat carefully"
-      },
-      {
-        "type": "paragraph",
-        "text": "Son Gual, T Golf Calvià, Alcanada and Andratx are excellent courses. They are also not the easiest answers for higher handicappers. A player can enjoy them with the right expectations, the right tees, and good course management, but they are poor choices if the goal is simply an easier holiday round."
-      },
-      {
-        "type": "paragraph",
-        "text": "Santa Ponsa 3 also needs care. It can be useful if access is arranged, but it is not a normal visitor green-fee recommendation. [VERIFY BEFORE PUBLISHING]"
-      },
-      {
-        "type": "heading",
-        "text": "My recommendation"
-      },
-      {
-        "type": "paragraph",
-        "text": "For most higher handicappers based near Palma, start with Son Antem East, Son Quint or Maioris. Add Pula or Son Servera if staying east. Use Santa Ponsa 1 only when the player's tee shot makes it sensible."
-      },
-      {
-        "type": "paragraph",
-        "text": "If you want help choosing the right round, send me your handicap, where you are staying, and what usually costs you shots. I can suggest the course, book the tee time, or join you for a Play With A Pro day."
-      }
-    ]
-  },
-  "best-golf-practice-facilities-mallorca": {
-    "metadata": {
-      "title": "Best Golf Practice Facilities in Mallorca",
-      "description": "Most visiting golfers treat the range as a place to hit fifteen balls before the first tee. That is usually a waste. After eleven years coaching in Sha...",
-      "canonical": "https://www.mrmallorcagolf.com/draft-guides/best-golf-practice-facilities-mallorca",
-      "image": "/images/t-golf-calvia-social.jpg",
-      "imageAlt": "Best Golf Practice Facilities in Mallorca"
-    },
-    "meta": {
-      "slug": "best-golf-practice-facilities-mallorca",
-      "badge": "Practice",
-      "badgeGold": false,
-      "readTime": "Draft preview",
-      "updated": "September 2026",
-      "title": "Best Golf Practice Facilities in Mallorca",
-      "intro": "Most visiting golfers treat the range as a place to hit fifteen balls before the first tee. That is usually a waste. After eleven years coaching in Shanghai and using ball-flight data every day, I look at a practice facility differently: can a golfer actually learn something there, warm up properly, and take better information to the course?",
-      "sidebarPlanning": {
-        "title": "Draft preview for Andy",
-        "body": "This page is hidden from the public guide index and blocked from indexing while the English is reviewed.",
-        "primary": "Plan Your Trip",
-        "secondary": "Play With A Pro"
-      },
-      "related": []
-    },
-    "blocks": [
-      {
-        "type": "paragraph",
-        "text": "Most visiting golfers treat the range as a place to hit fifteen balls before the first tee. That is usually a waste. After eleven years coaching in Shanghai and using ball-flight data every day, I look at a practice facility differently: can a golfer actually learn something there, warm up properly, and take better information to the course?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Mallorca has a better practice scene than many visitors expect. The trick is knowing which facility suits the job. Some are data-led. Some are strong warm-up ranges. Some are useful because they sit next to the right course."
-      },
-      {
-        "type": "heading",
-        "text": "Quick answer"
-      },
-      {
-        "type": "table",
-        "headers": [
-          "You want",
-          "Best options"
+        type: 'list',
+        items: [
+          { label: 'First round:', text: 'Son Quint, T Golf Palma or Son Antem West. Flat walking or a quiet early tee time, and room off the tee while you shake off the flight.' },
+          { label: 'Main round:', text: 'Son Gual if your game is in decent order, Son Muntaner if you want the buggy included and the shortest transfer.' },
+          { label: 'Third round:', text: 'Son Termes for something different at a lower price, or the drive north to <a href=\'/guides/alcanada-review\'>Alcanada</a> or west to <a href=\'/guides/t-golf-calvia-review\'>T Golf Calvià</a>.' },
         ],
-        "rows": [
-          [
-            "Full data-led practice",
-            "Son Gual Performance Academy"
-          ],
-          [
-            "Public TrackMan range before a round",
-            "Andratx or Pula"
-          ],
-          [
-            "Toptracer and premium course day",
-            "T Golf Calvià, Son Muntaner or Alcanada"
-          ],
-          [
-            "Strong range near Palma",
-            "T Golf Palma"
-          ],
-          [
-            "Large academy setup",
-            "Son Antem"
-          ],
-          [
-            "Short-game work",
-            "Andratx, T Golf Calvià, Pula, Maioris"
-          ]
-        ]
       },
       {
-        "type": "heading",
-        "text": "Son Gual Performance Academy: best technical setup"
+        type: 'paragraph',
+        text: 'Take the first tee time wherever you can get it. At T Golf Palma we had the course to ourselves at 7:30, and at Son Quint the early start meant a quiet course and freshly cut greens.',
       },
       {
-        "type": "paragraph",
-        "text": "Son Gual is the most complete technical setup in Mallorca from the information available: TrackMan, FlightScope and SAM PuttLab connected to a serious performance environment. That combination matters if the session is about measurement rather than simply warming up."
+        type: 'cta',
+        text: 'Staying in Palma? Send me your handicaps and dates and I will suggest the courses, book the tee times, or play the main round with you.',
+        href: '/play-with-a-pro',
+        linkLabel: 'Play With A Pro',
+        internal: true,
       },
-      {
-        "type": "paragraph",
-        "text": "For a player who wants proper coaching, carry numbers, swing information and putting data, Son Gual sits in its own category. It also pairs naturally with a premium round, because the course itself demands good distance control and clear approach-shot decisions."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: this is not the casual range choice for someone who just wants to hit a bucket close to Palma. Use it when the practice is part of the purpose of the day."
-      },
-      {
-        "type": "heading",
-        "text": "Golf de Andratx: best southwest practice-to-play day"
-      },
-      {
-        "type": "paragraph",
-        "text": "Andratx has a serious practice area: public TrackMan Range, covered and uncovered tees, bunkers, and short-game space. The course is hilly, dramatic and awkward in places, so a data-led warm-up is useful rather than decorative."
-      },
-      {
-        "type": "paragraph",
-        "text": "I would use Andratx when the golfer wants a full day: arrive early, check carry numbers, practise wedges and then play a course where those decisions matter. The setting and the range combine well."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: the course is not a gentle follow-up to a practice session. Most players need a buggy, and higher handicappers should know they are walking into a demanding day."
-      },
-      {
-        "type": "heading",
-        "text": "Pula Golf: best practice hub in the east"
-      },
-      {
-        "type": "paragraph",
-        "text": "Pula is the east coast practice facility that stands out. The public TrackMan range, putting greens, pitching area, short-game space and bunkers make it the most complete east-side answer for golfers who want more than a tee time."
-      },
-      {
-        "type": "paragraph",
-        "text": "Andy note: Pula is one I rate highly as a practice base. It is the kind of place that works well when someone is staying east and wants a proper golf day rather than a rushed round."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: if you are staying in Palma, the drive has to be part of the plan. Pula makes most sense when the east coast is already in your itinerary."
-      },
-      {
-        "type": "heading",
-        "text": "T Golf Calvià: best grass range with a premium course"
-      },
-      {
-        "type": "paragraph",
-        "text": "T Golf Calvià has one of the strongest practice setups attached to one of the strongest courses: grass range, Toptracer, target greens, putting, chipping, pitching and bunkers. That is rare. A lot of courses have a decent range. Far fewer have practice facilities that match the standard of the course."
-      },
-      {
-        "type": "paragraph",
-        "text": "I have played T Golf Calvià and rate the course highly. The water and wind mean carry distance is important, so using the range before playing is a practical decision."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: it is not the best first course for a nervous player. A practice session helps, but the course still asks questions all day."
-      },
-      {
-        "type": "heading",
-        "text": "Son Muntaner: best premium Palma practice option"
-      },
-      {
-        "type": "paragraph",
-        "text": "Son Muntaner is the Arabella course where the practice facility and the course quality align most clearly. Toptracer, chipping and putting areas support a premium day close to Palma."
-      },
-      {
-        "type": "paragraph",
-        "text": "For a visitor staying in Palma who wants resort polish, good preparation and a high-end round without a long transfer, this is one of the cleanest choices."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: it can be expensive. If the player only wants a range session, T Golf Palma may be more practical."
-      },
-      {
-        "type": "heading",
-        "text": "Alcanada: best north coast warm-up"
-      },
-      {
-        "type": "paragraph",
-        "text": "Alcanada has Toptracer and a serious practice setup, and that matters because most visitors have driven a fair way to get there. If you are playing one of Mallorca's biggest golf days, arriving early and using the facility properly is sensible."
-      },
-      {
-        "type": "paragraph",
-        "text": "The course itself is the main reason to go. The range helps you avoid wasting the first four holes finding your swing."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: it is a long way from Palma for practice alone. Go because you are playing Alcanada or staying north."
-      },
-      {
-        "type": "heading",
-        "text": "T Golf Palma: best practical range near Palma"
-      },
-      {
-        "type": "paragraph",
-        "text": "T Golf Palma is one of the most useful facilities near the city: 42 bays, covered options, a 250m range, putting greens and a strong short-game area. I have not played the course yet, so this is a facility and planning view rather than a course review. [ANDY TO VERIFY]"
-      },
-      {
-        "type": "paragraph",
-        "text": "For someone based in Palma, it solves a real problem. You can practise properly without turning the day into a long drive."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: it is not the same type of premium practice day as Son Gual or T Golf Calvià. It is practical, close and useful."
-      },
-      {
-        "type": "heading",
-        "text": "Son Antem and Maioris: strong practical options"
-      },
-      {
-        "type": "paragraph",
-        "text": "Son Antem has scale: a large circular range, grass and artificial tees, approach green, bunkers and a large putting green. For lessons, mixed ability groups and players who want a forgiving course attached to a proper academy, it is very useful."
-      },
-      {
-        "type": "paragraph",
-        "text": "Maioris is also better than many visitors might expect. Grass and mat range, large putting green, all-grass chipping and pitching, plus a bunker. It is a good practical option close to Palma."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: neither should be sold as the most advanced performance facility on the island. They are good answers for the right day."
-      },
-      {
-        "type": "heading",
-        "text": "How I would choose"
-      },
-      {
-        "type": "paragraph",
-        "text": "For technical measurement, start with Son Gual. For a southwest practice-and-play day, use Andratx or T Golf Calvià. For the east, use Pula. For Palma convenience, use T Golf Palma, Son Muntaner, Maioris or Son Antem depending on the golfer."
-      },
-      {
-        "type": "paragraph",
-        "text": "Want a practice session that turns into better golf on the course? Send me what you are working on and where you are staying. I can help choose the right facility, or build it into a Play With A Pro day."
-      }
-    ]
+    ],
   },
-  "solo-golf-trip-mallorca": {
-    "metadata": {
-      "title": "Solo Golf Trip to Mallorca: How to Do It Properly",
-      "description": "A solo golf trip can be one of the best ways to play Mallorca. No group vote on the tee time. No compromise between the person who wants Son Gual and t...",
-      "canonical": "https://www.mrmallorcagolf.com/draft-guides/solo-golf-trip-mallorca",
-      "image": "/images/plan-your-trip-hero.jpg",
-      "imageAlt": "Solo Golf Trip to Mallorca: How to Do It Properly"
+
+  'southwest-mallorca-golf-courses-compared': {
+    metadata: {
+      title: 'Southwest Mallorca Golf Courses Compared',
+      description:
+        'T Golf Calvià, Golf de Andratx and Santa Ponsa 1 compared by a PGA pro who has played all three, plus Bendinat and the members-only Santa Ponsa courses.',
+      canonical: 'https://www.mrmallorcagolf.com/draft-guides/southwest-mallorca-golf-courses-compared',
+      image: '/images/t-golf-calvia-social.jpg',
+      imageAlt: 'T Golf Calvià, southwest Mallorca',
     },
-    "meta": {
-      "slug": "solo-golf-trip-mallorca",
-      "badge": "Solo Golf",
-      "badgeGold": false,
-      "readTime": "Draft preview",
-      "updated": "September 2026",
-      "title": "Solo Golf Trip to Mallorca: How to Do It Properly",
-      "intro": "A solo golf trip can be one of the best ways to play Mallorca. No group vote on the tee time. No compromise between the person who wants Son Gual and the person who wants the beach. You can build the trip around your game, your pace, and the courses that actually suit you.",
-      "sidebarPlanning": {
-        "title": "Draft preview for Andy",
-        "body": "This page is hidden from the public guide index and blocked from indexing while the English is reviewed.",
-        "primary": "Plan Your Trip",
-        "secondary": "Play With A Pro"
-      },
-      "related": []
+    meta: {
+      slug: 'southwest-mallorca-golf-courses-compared',
+      badge: 'Southwest',
+      badgeGold: false,
+      readTime: 'Draft preview',
+      updated: 'October 2026',
+      title: 'Southwest Mallorca Golf Courses Compared',
+      intro:
+        'T Golf Calvià, Golf de Andratx and Santa Ponsa 1 are the three public courses to choose between in the southwest, and I have played all three. Each tests something different: carries and distance judgement at Calvià, elevation and blind shots at Andratx, length at Santa Ponsa 1.',
+      sidebarPlanning: DRAFT_SIDEBAR,
+      related: [
+        { slug: 't-golf-calvia-review', title: 'T Golf Calvià - Review (2026)' },
+        { slug: 'golf-andratx-review', title: 'Golf de Andratx - Review (2026)' },
+        { slug: 'santa-ponsa-1-review', title: 'Santa Ponsa 1 Golf - Review (2026)' },
+        { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca (2026)' },
+      ],
     },
-    "blocks": [
+    blocks: [
       {
-        "type": "paragraph",
-        "text": "A solo golf trip can be one of the best ways to play Mallorca. No group vote on the tee time. No compromise between the person who wants Son Gual and the person who wants the beach. You can build the trip around your game, your pace, and the courses that actually suit you."
+        type: 'image',
+        src: '/images/t-golf-calvia-blog/t-golf-calvia-4.webp',
+        alt: 'Fairway at T Golf Calvià with windmill and Tramuntana mountains in the background',
+        caption: 'The windmills and Tramuntana backdrop are a consistent feature throughout the round.',
       },
       {
-        "type": "paragraph",
-        "text": "I saw this a lot in Shanghai. Serious golfers often travelled alone because it gave them time to practise, play and think without managing a group. Mallorca suits that kind of trip, but only if the tee times and course choices are handled properly."
+        type: 'paragraph',
+        text: 'I live in the southwest, so these are the courses closest to home. Real Golf de Bendinat sits between them and Palma, and Santa Ponsa 2 and 3 are members-only. Here is how they compare.',
       },
+      { type: 'heading', text: 'Quick answer' },
       {
-        "type": "heading",
-        "text": "The honest reality of playing alone"
-      },
-      {
-        "type": "paragraph",
-        "text": "A solo golfer in Mallorca has two practical questions: can I book as a single, and will I be paired up? The answer changes by course, season and time of day. Online booking systems can block single-player slots even when the course may accept one by phone or email."
-      },
-      {
-        "type": "paragraph",
-        "text": "Morning tee times usually work best. A single stuck behind a slow group at 10:30 has nobody to talk to and nowhere to go. Early starts move better, and the light is better too."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: a solo trip gives freedom, but it needs more planning than a fourball. Do not assume every online booking system is showing the full picture."
-      },
-      {
-        "type": "heading",
-        "text": "Best base: Palma or close to Palma"
-      },
-      {
-        "type": "paragraph",
-        "text": "For most solo golfers, Palma is the easiest base. You can reach Son Gual, Son Muntaner, Son Quint, T Golf Palma, Maioris, Son Antem East and Son Termes without making the day complicated. You can also add one bigger day north, southwest or east."
-      },
-      {
-        "type": "paragraph",
-        "text": "Staying in Palma also keeps evenings simple. That matters more when travelling alone than most people expect. You do not want every meal and transfer to feel like another decision."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: if your trip is built only around Alcanada or the east coast, Palma may add unnecessary driving. Match the base to the course plan."
-      },
-      {
-        "type": "heading",
-        "text": "Best courses for a serious solo golfer"
-      },
-      {
-        "type": "paragraph",
-        "text": "Son Gual is the obvious premium choice near Palma. It suits a player who wants full attention on every shot and a course where decisions matter. A solo round here can be excellent, especially if the player enjoys managing their own yardages and strategy."
-      },
-      {
-        "type": "paragraph",
-        "text": "Alcanada is the bigger day. Leave early, play the lighthouse course, eat afterwards, and make the drive part of the experience. It is not a casual add-on."
-      },
-      {
-        "type": "paragraph",
-        "text": "T Golf Calvià and Andratx work well for a solo player who wants a full southwest day. T Golf Calvià is more about condition and shot control. Andratx is more about elevation, scenery and practice-to-play planning."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: these courses can be too much if the player is rusty. A solo trip should not become three expensive scorecard fights in a row."
-      },
-      {
-        "type": "heading",
-        "text": "Best courses for an easier solo start"
-      },
-      {
-        "type": "paragraph",
-        "text": "T Golf Palma is a sensible first-day choice because the practice setup helps a golfer get moving after travel. Son Quint works well if the player wants Arabella quality without choosing the hardest course. Maioris or Son Antem East can also be good when the trip needs a calmer first round."
-      },
-      {
-        "type": "paragraph",
-        "text": "This is where a lot of solo trips are won or lost. The first round should give information, not damage confidence. You can make the second day harder once you know how the body and swing have travelled."
-      },
-      {
-        "type": "heading",
-        "text": "A simple three-day solo plan"
-      },
-      {
-        "type": "subheading",
-        "text": "Day 1: settle in and play a practical round"
-      },
-      {
-        "type": "paragraph",
-        "text": "Use T Golf Palma, Son Quint, Maioris or Son Antem East. Arrive early enough to practise. The goal is to get into the trip, check distances, and avoid turning the first round into the hardest round."
-      },
-      {
-        "type": "subheading",
-        "text": "Day 2: play the premium day"
-      },
-      {
-        "type": "paragraph",
-        "text": "Choose Son Gual, Son Muntaner, Alcanada, T Golf Calvià or Andratx depending on your level and where you are staying. This is the round to protect in the schedule. Book it properly and give it the best part of the day."
-      },
-      {
-        "type": "subheading",
-        "text": "Day 3: choose based on what happened"
-      },
-      {
-        "type": "paragraph",
-        "text": "If the game is sharp, add another proper test. If the first two days were heavy, use a practice facility and a more playable course. Solo trips give you the flexibility to adjust, so use it."
-      },
-      {
-        "type": "heading",
-        "text": "Where Play With A Pro fits"
-      },
-      {
-        "type": "paragraph",
-        "text": "A solo golfer is often the best fit for Play With A Pro. One player, one course, one conversation. No group compromise. No need to balance four different handicaps. The day can be built around the player's game, tee shot patterns, course management and what they actually want from the trip."
-      },
-      {
-        "type": "paragraph",
-        "text": "This is a full day on a great course, not a golf lesson. The coaching happens inside the round: club choice, strategy, shot selection, recovery decisions, and what to do when the hole starts getting away from you."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: it is not needed for every round. It works best when used on the course where the player most wants guidance or the course that can teach them the most."
-      },
-      {
-        "type": "heading",
-        "text": "Solo trip checklist"
-      },
-      {
-        "type": "list",
-        "items": [
-          {
-            "text": "Confirm single-player booking by email or phone when the online system is unclear."
-          },
-          {
-            "text": "Book early tee times for pace and light."
-          },
-          {
-            "text": "Do one proper practice session, not just rushed warm-up balls."
-          },
-          {
-            "text": "Keep one flexible half day in the trip."
-          },
-          {
-            "text": "Choose the first course carefully."
-          },
-          {
-            "text": "Do not make every round the hardest possible test."
-          }
-        ]
-      },
-      {
-        "type": "heading",
-        "text": "Want help planning it?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Send me your dates, handicap, where you want to stay, and the type of golf you enjoy. I can plan the tee times, book them for you, or join you for the Play With A Pro day that makes the most sense."
-      }
-    ]
-  },
-  "arabella-golf-courses-mallorca-compared": {
-    "metadata": {
-      "title": "Arabella Golf Courses in Mallorca Compared",
-      "description": "The Arabella name can make the Palma courses sound like variations of the same thing. They are not. Son Muntaner, Son Vida, Son Quint and Palma Pitch &...",
-      "canonical": "https://www.mrmallorcagolf.com/draft-guides/arabella-golf-courses-mallorca-compared",
-      "image": "/images/son-muntaner.jpg",
-      "imageAlt": "Arabella Golf Courses in Mallorca Compared"
-    },
-    "meta": {
-      "slug": "arabella-golf-courses-mallorca-compared",
-      "badge": "Arabella",
-      "badgeGold": false,
-      "readTime": "Draft preview",
-      "updated": "September 2026",
-      "title": "Arabella Golf Courses in Mallorca Compared",
-      "intro": "The Arabella name can make the Palma courses sound like variations of the same thing. They are not. Son Muntaner, Son Vida, Son Quint and Palma Pitch & Putt share a location and booking ecosystem, but they suit very different golfers.",
-      "sidebarPlanning": {
-        "title": "Draft preview for Andy",
-        "body": "This page is hidden from the public guide index and blocked from indexing while the English is reviewed.",
-        "primary": "Plan Your Trip",
-        "secondary": "Play With A Pro"
-      },
-      "related": []
-    },
-    "blocks": [
-      {
-        "type": "paragraph",
-        "text": "The Arabella name can make the Palma courses sound like variations of the same thing. They are not. Son Muntaner, Son Vida, Son Quint and Palma Pitch & Putt share a location and booking ecosystem, but they suit very different golfers."
-      },
-      {
-        "type": "paragraph",
-        "text": "That is the real decision. Do you want the most polished course, the historic one, the playable one, or a short session? Once that is clear, the Arabella group becomes much easier to use."
-      },
-      {
-        "type": "heading",
-        "text": "Quick answer"
-      },
-      {
-        "type": "table",
-        "headers": [
-          "You want",
-          "Choose"
+        type: 'table',
+        headers: ['Course', 'Par', 'Max handicap (men / ladies)', 'Walking', 'Difficulty', 'Best for'],
+        rows: [
+          ['T Golf Calvià', '72', '28 / 34', 'Walkable, buggy more comfortable', '7/10', 'The best-conditioned round in the southwest'],
+          ['Golf de Andratx', '72', '28 / 36', 'Buggy compulsory before 2pm', '9/10', 'The hardest test, and the views'],
+          ['Santa Ponsa 1', '72', '36 / 36', 'Flat but long', '8/10', 'Hitting driver on wide fairways'],
+          ['Real Golf de Bendinat', '69', '36 / 36', 'Very hilly', '6/10', 'A short round near Illetas and Portals'],
+          ['Santa Ponsa 2 and 3', '72 and 30', 'Members only', 'Easy', '7/10 and 4/10', 'Only if you play with a member'],
         ],
-        "rows": [
-          [
-            "Best conditioned Arabella course",
-            "Son Muntaner"
-          ],
-          [
-            "Historic Mallorca course",
-            "Son Vida"
-          ],
-          [
-            "Most playable full course",
-            "Son Quint"
-          ],
-          [
-            "Short session, warm-up or new golfer",
-            "Palma Pitch & Putt"
-          ]
-        ]
+      },
+
+      { type: 'heading', text: 'T Golf Calvià: the best-conditioned course in the southwest' },
+      {
+        type: 'paragraph',
+        text: 'I teed off at 15:20 on a Tuesday and could hear the wind in the pines between shots. From most fairways there is no road or building in sight, only pine trees, water and the Tramuntana. John Harris designed the course in 1978, and a €10 million renovation rebuilt it. The conditioning is as good as anything I have played on the island, down to a bunker rake designed so the ball rarely rests against it.',
       },
       {
-        "type": "heading",
-        "text": "Son Muntaner: the premium choice"
+        type: 'paragraph',
+        text: 'Fifteen lakes line fairways and force carries from the tee, and several approaches hide the bottom of the flag, so work from your yardage instead of your eye. The 10th is the clearest decision on the course. It doglegs right with a windmill on the left and water on the right, and you choose how much of the water to cut off. The 18th is a tight par 5 that opens up as you go down it, and rewards you for committing to the narrow tee shot.',
       },
       {
-        "type": "paragraph",
-        "text": "Son Muntaner is the headline Arabella course. It has the strongest premium feel, the strongest practice setup, and the clearest claim as the best course in the group. It has also carried recent best in Spain recognition, which reflects how seriously the course is presented. [VERIFY BEFORE PUBLISHING]"
+        type: 'image',
+        src: '/images/t-golf-calvia-blog/t-golf-calvia-7.webp',
+        alt: 'Bunker at T Golf Calvià showing the distinctive rake design',
+        caption: 'The rake design means the ball rarely comes to rest against the face. A small detail that makes a real difference.',
       },
       {
-        "type": "paragraph",
-        "text": "For a visiting golfer who wants one high-end Arabella day, this is usually the starting point. It is close to Palma, well set up, and polished in a way that many resort golfers will recognise."
+        type: 'paragraph',
+        text: 'I gave it 9/10. The limit is 28 for men and 34 for ladies, and I would not put a higher handicapper here as the first round of a holiday. Book a midweek twilight slot: the twilight rate starts at €150 against a peak fee of €210, and the light is at its best. The grass range has Toptracer, and with this many carries it is worth knowing your numbers before the 1st. Full detail in the <a href=\'/guides/t-golf-calvia-review\'>T Golf Calvià review</a>.',
+      },
+
+      { type: 'heading', text: 'Golf de Andratx: the hardest test, and the views' },
+      {
+        type: 'paragraph',
+        text: 'Andratx sits in the hills above Camp de Mar and is one of the hardest courses on the island. I rated it 7.5/10. Creeks and water cut across the fairways instead of running alongside them, so being slightly off on your yardage puts you in trouble. Elevation change is constant. Tee shots disappear from view, approaches go to flags you cannot see, and the par 3s play very differently to the card because of the drops.',
       },
       {
-        "type": "paragraph",
-        "text": "The honest negative: it is not automatically the best course for every player. Higher handicappers, mixed groups and players who mainly want a relaxed round may be happier at Son Quint."
+        type: 'paragraph',
+        text: 'The 6th, the Green Monster, is the longest par 5 in Spain at 609 metres. We had the wind behind us and it still took everything. The 12th is a sharp dogleg right with Camp de Mar below you for the whole hole, one of the best holes I have played in Mallorca. The 15th, Hello Mrs Robinson, plays about 20 yards shorter from a high tee to a well-protected green.',
       },
       {
-        "type": "heading",
-        "text": "Son Vida: the historic one"
+        type: 'image',
+        src: '/images/golf-andratx-blog/andratx-hole-8.webp',
+        alt: 'View from hole 8 at Golf de Andratx looking down over the southwest of Mallorca',
+        caption: 'Hole 8, A Love of Mallorca. From one of the highest points on the course, looking down over the whole southwest of Mallorca.',
       },
       {
-        "type": "paragraph",
-        "text": "Son Vida is the oldest course in Mallorca and has a different rhythm from Son Muntaner. It is shorter, tighter, and has five par 3s. That changes the round. You do not just stand on every tee and swing driver."
+        type: 'paragraph',
+        text: 'Practical points: buggies are compulsory before 2pm, the limit is 28 for men and 36 for ladies, and the practice ground is across the road from the clubhouse. For all the height, the sea is only in view from the 2nd. Bring a GPS or course planner, because several approaches are semi-blind. More in the <a href=\'/guides/golf-andratx-review\'>Golf de Andratx review</a>.',
+      },
+
+      { type: 'heading', text: 'Santa Ponsa 1: the long, wide one' },
+      {
+        type: 'paragraph',
+        text: 'Santa Ponsa 1 hosted the 2021 European Tour Mallorca Golf Open, the first tour event on the island in ten years, and the winner, Jeff Winther, shot 62 twice. The fairways are wide and the opening holes are generous. After a round at Son Gual or Andratx, where driver often stays in the bag, this is the course that lets you hit it.',
       },
       {
-        "type": "paragraph",
-        "text": "The history matters if the player cares about playing the original Mallorca course. It also makes sense for golfers who like older resort layouts, changes in elevation and a round that asks for control rather than only power."
+        type: 'paragraph',
+        text: 'The length is the catch. The 10th is 590m, one of the longest par 5s in Europe. The par 3s are long with small greens, so they are about damage limitation more than birdie chances. On a calm day the course flatters you. The wind usually arrives by mid-morning, so book early. Holes 5, 6 and 7 have some of the best Tramuntana views on the island.',
       },
       {
-        "type": "paragraph",
-        "text": "The honest negative: some visitors may expect Son Vida to feel easier because it is shorter. That can be a mistake. Shorter does not mean simpler."
+        type: 'image',
+        src: '/images/santa-ponsa-blog/sp-1.webp',
+        alt: 'Santa Ponsa 1 fairway with mountains behind',
+        caption: 'The fairways are wide. This is a course that invites the driver.',
       },
       {
-        "type": "heading",
-        "text": "Son Quint: the most useful all-rounder"
+        type: 'paragraph',
+        text: 'It suits a confident driver of the ball, and it works as an easier round early in a trip before Andratx. The limit is 36, with a certificate required, and buggy hire is €43. More in the <a href=\'/guides/santa-ponsa-1-review\'>Santa Ponsa 1 review</a>.',
+      },
+
+      { type: 'heading', text: 'Real Golf de Bendinat' },
+      {
+        type: 'paragraph',
+        text: 'Bendinat is the closest of the group to Palma, about 15 minutes, between Illetas and Portals. I have not played it. Martin Hawtree designed the original nine holes in 1986, and it became 18 in 1995. It is par 69, 5,660m and very hilly, with views over the Bay of Palma, Cabrera and Bendinat Castle. Visitor green fees are limited each day, so book ahead. If you are staying in Illetas or Portals and want a short round without a drive, this is the one to look at.',
       },
       {
-        "type": "paragraph",
-        "text": "Son Quint is the Arabella course I would look at first for mixed ability groups. It is more playable than Son Muntaner, still close to Palma, and still has enough scenery and course quality to feel like a proper day."
+        type: 'image',
+        src: '/images/courses/bendinat.webp',
+        alt: 'Real Golf de Bendinat, Mallorca',
+      },
+
+      { type: 'heading', text: 'Santa Ponsa 2 and 3: members only' },
+      {
+        type: 'paragraph',
+        text: 'Both are members-only, and guests can play only with a member, so neither belongs in a trip plan unless you know one. Santa Ponsa 2 is an 18-hole course from 1991. Santa Ponsa 3 is nine short holes through a residential area.',
+      },
+
+      { type: 'heading', text: 'Which to book' },
+      {
+        type: 'paragraph',
+        text: 'For the best round in the southwest, book T Golf Calvià. For the hardest test and the best views, book Andratx, with a course planner and an early tee time. If you drive it well and want to enjoy that, book Santa Ponsa 1. Check the limits before you plan around Calvià or Andratx: at 28 for men, they rule out many higher handicappers before the course does.',
       },
       {
-        "type": "paragraph",
-        "text": "For higher handicappers, it gives more room. For stronger players, it still asks them to choose lines and manage the course. It is the course in the group that solves the most common trip-planning problem: one group, different levels."
+        type: 'cta',
+        text: 'Playing the southwest? Tell me where you are staying and your handicap, and I will book the right course or play it with you.',
+        href: '/play-with-a-pro',
+        linkLabel: 'Play With A Pro',
+        internal: true,
       },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: if a low-handicap player wants the strongest Arabella test, Son Quint may feel like the safe choice rather than the main event."
-      },
-      {
-        "type": "heading",
-        "text": "Palma Pitch & Putt: the short-format option"
-      },
-      {
-        "type": "paragraph",
-        "text": "Palma Pitch & Putt is not competing with the three full courses. It serves a different job: a short session, a warm-up, a new golfer's introduction, junior golf, or a low-pressure hour when 18 holes is too much."
-      },
-      {
-        "type": "paragraph",
-        "text": "It can also be useful for short-game work. A better player who treats it seriously can get value from wedges and putting, especially before a bigger round later in the trip."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: do not sell it as a substitute for a full golf day. It is useful because it is short."
-      },
-      {
-        "type": "heading",
-        "text": "How I would sequence them"
-      },
-      {
-        "type": "paragraph",
-        "text": "For a player staying in Palma who wants two Arabella rounds, I would usually pair Son Quint with Son Muntaner. Son Quint gives the more playable round. Son Muntaner gives the premium round."
-      },
-      {
-        "type": "paragraph",
-        "text": "For a player who values history, add Son Vida. For a family or mixed group with one newer golfer, Palma Pitch & Putt can make the trip feel more inclusive without forcing everyone onto a full course."
-      },
-      {
-        "type": "heading",
-        "text": "The decision"
-      },
-      {
-        "type": "paragraph",
-        "text": "Choose Son Muntaner for polish, Son Vida for history, Son Quint for playability, and Palma Pitch & Putt for a short session. If you are unsure, start with the golfer's level rather than the course's reputation."
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell me your handicap, where you are staying and who is in the group. I can help choose the right Arabella course, arrange tee times, or play the round with you."
-      }
-    ]
+    ],
   },
-  "southwest-mallorca-golf-courses-compared": {
-    "metadata": {
-      "title": "Southwest Mallorca Golf Courses Compared",
-      "description": "The southwest is the densest golf area in Mallorca. T Golf Calvià, Golf de Andratx, Santa Ponsa, Bendinat and the private Santa Ponsa courses all sit...",
-      "canonical": "https://www.mrmallorcagolf.com/draft-guides/southwest-mallorca-golf-courses-compared",
-      "image": "/images/t-golf-calvia-social.jpg",
-      "imageAlt": "Southwest Mallorca Golf Courses Compared"
+
+  'best-mallorca-golf-courses-higher-handicappers': {
+    metadata: {
+      title: 'Mallorca Golf for Higher Handicappers',
+      description:
+        'Every Mallorca course\'s handicap limit in one table, the courses I would book for a 20-plus handicapper, and the ones to leave until later in the trip.',
+      canonical: 'https://www.mrmallorcagolf.com/draft-guides/best-mallorca-golf-courses-higher-handicappers',
+      image: '/images/son-quint-blog/son-quint-2.webp',
+      imageAlt: 'Son Quint golf course with a view over Palma',
     },
-    "meta": {
-      "slug": "southwest-mallorca-golf-courses-compared",
-      "badge": "Southwest",
-      "badgeGold": false,
-      "readTime": "Draft preview",
-      "updated": "September 2026",
-      "title": "Southwest Mallorca Golf Courses Compared",
-      "intro": "The southwest is the densest golf area in Mallorca. T Golf Calvià, Golf de Andratx, Santa Ponsa, Bendinat and the private Santa Ponsa courses all sit within a workable drive from Palma. The problem is that they are not interchangeable.",
-      "sidebarPlanning": {
-        "title": "Draft preview for Andy",
-        "body": "This page is hidden from the public guide index and blocked from indexing while the English is reviewed.",
-        "primary": "Plan Your Trip",
-        "secondary": "Play With A Pro"
-      },
-      "related": []
+    meta: {
+      slug: 'best-mallorca-golf-courses-higher-handicappers',
+      badge: 'Course Choice',
+      badgeGold: false,
+      readTime: 'Draft preview',
+      updated: 'October 2026',
+      title: 'Best Mallorca Golf Courses for Higher Handicappers',
+      intro:
+        'Almost every course in Mallorca asks for a handicap certificate, and the limits run from 28 to 54. That number is the first filter. The second is the kind of trouble: water you can see from the tee costs a 25-handicapper far fewer shots than blind tee shots and raised greens.',
+      sidebarPlanning: DRAFT_SIDEBAR,
+      related: [
+        { slug: 'son-quint-review', title: 'Son Quint Golf - Review (2026)' },
+        { slug: 'son-antem-west-review', title: 'Son Antem West - Review (2026)' },
+        { slug: 'son-vida-review', title: 'Son Vida Golf - Review (2026)' },
+        { slug: 'santa-ponsa-1-review', title: 'Santa Ponsa 1 Golf - Review (2026)' },
+      ],
     },
-    "blocks": [
+    blocks: [
       {
-        "type": "paragraph",
-        "text": "The southwest is the densest golf area in Mallorca. T Golf Calvià, Golf de Andratx, Santa Ponsa, Bendinat and the private Santa Ponsa courses all sit within a workable drive from Palma. The problem is that they are not interchangeable."
+        type: 'image',
+        src: '/images/son-quint-blog/son-quint-2.webp',
+        alt: 'Olive tree branches framing a view over Palma from the Son Quint fairway',
+        caption: 'Olive trees on the front nine, with Palma spread out beyond.',
       },
       {
-        "type": "paragraph",
-        "text": "A player who should be at Santa Ponsa 1 may have a miserable day at Andratx. A player who wants the best condition may prefer T Golf Calvià. A visitor staying near Portals may only need Bendinat. The right course depends on the golfer and the day."
+        type: 'paragraph',
+        text: 'This guide is for golfers who play 18 holes regularly and carry a handicap somewhere above 20. If you are newer to the game than that, start at Palma Pitch & Putt, which needs no certificate.',
+      },
+      { type: 'heading', text: 'Handicap limits at every Mallorca course' },
+      {
+        type: 'paragraph',
+        text: 'These are the maximums on file for 2026. Clubs check them against your WHS certificate at booking or at check-in, and Son Gual enforces it.',
       },
       {
-        "type": "heading",
-        "text": "Quick answer"
-      },
-      {
-        "type": "table",
-        "headers": [
-          "You want",
-          "Choose"
+        type: 'table',
+        headers: ['Course', 'Area', 'Men', 'Ladies'],
+        rows: [
+          ['Son Quint', 'Palma', '54', '54'],
+          ['Son Vida', 'Palma', '54', '54'],
+          ['Son Antem East', 'South', '54', '54'],
+          ['Maioris', 'South', '54', '54'],
+          ['Canyamel', 'East', '36', '45'],
+          ['Son Muntaner', 'Palma', '36', '36'],
+          ['Son Termes', 'Palma', '36', '36'],
+          ['Son Antem West', 'South', '36', '36'],
+          ['Santa Ponsa 1', 'Southwest', '36', '36'],
+          ['Real Golf de Bendinat', 'Southwest', '36', '36'],
+          ['Golf Pollença (9 holes)', 'North', '36', '36'],
+          ['Pula', 'East', '36', '36'],
+          ['Capdepera', 'East', '36', '36'],
+          ['Son Servera', 'East', '36', '36'],
+          ['Vall d\'Or', 'East', '36', '36'],
+          ['Alcanada', 'North', '33', '35'],
+          ['Son Gual', 'Palma', '28', '36'],
+          ['Golf de Andratx', 'Southwest', '28', '36'],
+          ['T Golf Calvià', 'Southwest', '28', '34'],
+          ['T Golf Palma', 'Palma', '28', '34'],
+          ['Palma Pitch & Putt', 'Palma', 'No certificate', 'No certificate'],
         ],
-        "rows": [
-          [
-            "Best overall southwest test",
-            "T Golf Calvià"
-          ],
-          [
-            "Biggest scenery and practice-to-play day",
-            "Golf de Andratx"
-          ],
-          [
-            "Wider fairways and tour history",
-            "Santa Ponsa 1"
-          ],
-          [
-            "Close, compact, hilly option",
-            "Real Golf de Bendinat"
-          ],
-          [
-            "Private access round",
-            "Santa Ponsa 2 or 3, only if arranged"
-          ]
-        ]
       },
       {
-        "type": "heading",
-        "text": "T Golf Calvià: best overall southwest course"
+        type: 'paragraph',
+        text: 'Santa Ponsa 2 and 3 are members-only and Reserva Rotana is for hotel guests, so they are left out.',
+      },
+
+      { type: 'heading', text: 'The courses I would book first' },
+      { type: 'subheading', text: 'Son Quint' },
+      {
+        type: 'paragraph',
+        text: 'Son Quint takes a handicap of 54, has four tee positions and wide fairways, and the front nine is flat and an easy walk. It is the course I would book when one player in the group is strong and another is still finding the game. The back nine has enough blind shots and tight lines to keep the better player busy.',
       },
       {
-        "type": "paragraph",
-        "text": "I rate T Golf Calvià highly. The course condition is strong, the setting is good, and the water makes you think all day. It is a proper golf test, especially when the wind is up and the carry numbers matter."
+        type: 'paragraph',
+        text: 'Two things to know. The 12th is a 195m par 3 almost entirely over water, with bunkers covering most of the ground that is not water. And several greens sit above the fairway and they are firm, so take one more club into them than you think. More in the <a href=\'/guides/son-quint-review\'>Son Quint review</a>.',
+      },
+      { type: 'subheading', text: 'Son Antem East and West' },
+      {
+        type: 'paragraph',
+        text: 'I have not played East yet. It is the more open of the two Son Antem courses, with wide fairways, five lakes and a limit of 54, and it is flat enough to walk. West, which I have played, takes 36. Its open holes give you a wide landing area and a straightforward approach, so a higher handicapper can swing freely on most of the course.',
       },
       {
-        "type": "paragraph",
-        "text": "The practice setup helps too: grass range, Toptracer, target greens, short-game areas and bunkers. That is a serious advantage before a course where distance control can save shots."
+        type: 'paragraph',
+        text: 'The greens on West are small, and several are raised or slope away, so the ball runs much further after landing than it looks like it will. A low running chip is usually the safer shot. If your short game needs work, the academy at Son Antem is one of the largest in Europe and makes a lesson before the round easy to arrange.',
       },
       {
-        "type": "paragraph",
-        "text": "The honest negative: I would not choose it as the opening round for a nervous higher handicapper. There is too much water and too many decisions for someone who just wants an easy start."
+        type: 'image',
+        src: '/images/son-antem-west-review-blog/son-antem-west-4.webp',
+        alt: 'Andy Griffiths with clients on a play-with-a-pro day at Son Antem West, Mallorca',
+        caption: 'A play-with-a-pro day at Son Antem West. The layout is forgiving enough that guests can play freely.',
+      },
+      { type: 'subheading', text: 'Maioris' },
+      {
+        type: 'paragraph',
+        text: 'I have not played Maioris. It takes 54 and sits about 25 minutes from Palma. The range has grass tees and there is an all-grass chipping area, so you can warm up properly before the round. The last holes include two significant climbs, so take a buggy if you are not used to hills.',
+      },
+      { type: 'subheading', text: 'Son Vida, if you hit it straight' },
+      {
+        type: 'paragraph',
+        text: 'Son Vida also takes 54, and at 5,470m from the yellow tees it is short. The catch for a higher handicapper is the first 12 holes, which run tight between houses and the hotel. The greens have two tiers, and finishing on the wrong one leaves a very hard putt. A player who is short but straight will enjoy it. A player who sprays the driver will spend the morning near the boundary. More in the <a href=\'/guides/son-vida-review\'>Son Vida review</a>.',
+      },
+      { type: 'subheading', text: 'Santa Ponsa 1, if you hit it far' },
+      {
+        type: 'paragraph',
+        text: 'Santa Ponsa 1 takes 36, and the fairways are wide enough to use driver all day. The length is what costs shots: the 10th is 590m and the par 3s are long with small greens. A higher handicapper who hits it a long way will score better here than on most courses with this limit. One who does not will find the par 3s hard work. More in the <a href=\'/guides/santa-ponsa-1-review\'>Santa Ponsa 1 review</a>.',
+      },
+
+      { type: 'heading', text: 'Shorter options' },
+      {
+        type: 'paragraph',
+        text: 'Palma Pitch & Putt is nine holes, par 27, 638m in total, with no certificate needed. Golf Pollença in the north is nine holes, par 35, with a limit of 36 and a golf school on site. It includes two of the longest holes in Mallorca, so it is a proper round in half the time. I have not played either.',
       },
       {
-        "type": "heading",
-        "text": "Golf de Andratx: best for drama and a full day"
+        type: 'image',
+        src: '/images/courses/palma-pitch-putt.webp',
+        alt: 'Palma Pitch & Putt, Mallorca',
+      },
+
+      { type: 'heading', text: 'Courses to leave until later in the trip' },
+      {
+        type: 'paragraph',
+        text: 'Son Gual, T Golf Calvià, T Golf Palma and Golf de Andratx all cap men at 28, which rules many higher handicappers out before the course does. Within the limit, each has a specific problem for a player still building consistency:',
       },
       {
-        "type": "paragraph",
-        "text": "Andratx has the most dramatic southwest setting. The elevation, the famous long par 5, the TrackMan range and the Camp de Mar location make it feel like a full golf day before you even reach the back nine."
+        type: 'list',
+        items: [
+          { label: 'Son Gual:', text: 'fast, raised greens and bunkers placed where a slight mishit finishes.' },
+          { label: 'T Golf Calvià:', text: '15 lakes and carries from the tee, with approaches that hide the bottom of the flag. I would not make it a higher handicapper\'s first round of a holiday.' },
+          { label: 'T Golf Palma:', text: 'water down the whole right side of the 8th and 15th, and rough that grabs the club around small greens.' },
+          { label: 'Golf de Andratx:', text: 'blind tee shots, creeks across the fairways, and par 3s that play nothing like their yardage. Buggies are compulsory before 2pm.' },
+          { label: 'Alcanada:', text: 'a limit of 33 for men, 58 bunkers and severely undulating greens. Worth the drive once your game is warm.' },
+        ],
+      },
+
+      { type: 'heading', text: 'Four things that save shots' },
+      {
+        type: 'list',
+        items: [
+          { label: 'Carry your certificate.', text: 'Most clubs ask for it at booking, and some check it again at the desk.' },
+          { label: 'Play the forward tees for the first round.', text: 'Son Quint has four tee positions. Use them.' },
+          { label: 'Take a buggy on the hilly courses.', text: 'The back nine at Son Termes, the last holes at Maioris, and anywhere before 2pm at Andratx, where it is compulsory.' },
+          { label: 'Chip low on raised greens.', text: 'At Son Antem West the ball releases much further than it looks, so a running chip is the safer play.' },
+        ],
       },
       {
-        "type": "paragraph",
-        "text": "The practice area is a real strength. If you want to arrive early, get numbers, play a demanding round and stay for lunch, Andratx makes sense."
+        type: 'cta',
+        text: 'Not sure your handicap gets you onto the course you want? Send me your handicap and dates and I will tell you which courses take it, book them, or play the first round with you.',
+        href: '/play-with-a-pro',
+        linkLabel: 'Play With A Pro',
+        internal: true,
       },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: it is hilly and awkward in places. A buggy is usually part of the day, and the course can be too much for a player who struggles with uneven lies, forced carries or blind decisions."
-      },
-      {
-        "type": "heading",
-        "text": "Santa Ponsa 1: best for width from the tee"
-      },
-      {
-        "type": "paragraph",
-        "text": "Santa Ponsa 1 is the course in this group that gives many players the most breathing room from the tee. The fairways are wider than the tighter or more water-heavy alternatives, and that can help a golfer who drives it reasonably well but loses shots elsewhere."
-      },
-      {
-        "type": "paragraph",
-        "text": "It also has tournament history and scale. The long holes feel long, and the course has enough space to suit a confident driver."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: it is not a short or simple golf course. Higher handicappers who struggle from the tee may still find it hard, and the par 3s can be demanding."
-      },
-      {
-        "type": "heading",
-        "text": "Real Golf de Bendinat: best close option west of Palma"
-      },
-      {
-        "type": "paragraph",
-        "text": "Bendinat is close, compact and hillier than the scorecard suggests. It can be very useful for visitors staying near Portals, Illetas or Palma who want a convenient round without driving out to Calvià or Andratx."
-      },
-      {
-        "type": "paragraph",
-        "text": "The setting has character, and the course can be a good fit when availability or logistics matter as much as course ranking."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: limited access and hilly terrain need checking before recommending it as the main round of a trip. [VERIFY BEFORE PUBLISHING]"
-      },
-      {
-        "type": "heading",
-        "text": "Santa Ponsa 2 and 3: only if access is arranged"
-      },
-      {
-        "type": "paragraph",
-        "text": "Santa Ponsa 2 and Santa Ponsa 3 should not be treated like normal visitor green-fee options. If access is arranged through a member or professional route, they can be useful. If not, they should not sit in a public itinerary as if anyone can book them."
-      },
-      {
-        "type": "paragraph",
-        "text": "Santa Ponsa 2 offers a quieter private-club feel. Santa Ponsa 3 is short and can be useful in the right context. Both need clear access wording. [VERIFY BEFORE PUBLISHING]"
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: unclear access creates bad expectations. The public-facing guide should be precise here."
-      },
-      {
-        "type": "heading",
-        "text": "Which southwest course should you play?"
-      },
-      {
-        "type": "paragraph",
-        "text": "For the strongest overall public round, start with T Golf Calvià. For scenery, practice and a bigger day, choose Andratx. For a player who wants width and is comfortable with length, use Santa Ponsa 1. For convenience near Palma and Portals, consider Bendinat."
-      },
-      {
-        "type": "paragraph",
-        "text": "For higher handicappers, I would slow the decision down. The southwest has some great golf, but it also has several courses that can punish the wrong player."
-      },
-      {
-        "type": "heading",
-        "text": "Want help choosing?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell me where you are staying, your handicap and what usually costs you shots. I can recommend the right southwest course, book the tee time, or build it into a Play With A Pro day."
-      }
-    ]
+    ],
   },
-  "east-mallorca-golf-courses-compared": {
-    "metadata": {
-      "title": "East Mallorca Golf Courses Compared",
-      "description": "East Mallorca is worth separating from the rest of the island. Pula, Capdepera, Canyamel, Son Servera and Vall d'Or are not the obvious choices for a...",
-      "canonical": "https://www.mrmallorcagolf.com/draft-guides/east-mallorca-golf-courses-compared",
-      "image": "/images/courses/pula.webp",
-      "imageAlt": "East Mallorca Golf Courses Compared"
+
+  'best-golf-practice-facilities-mallorca': {
+    metadata: {
+      title: 'Best Driving Ranges in Mallorca',
+      description:
+        'TrackMan, Toptracer and grass ranges in Mallorca compared by a Trackman Master: where to measure, where to warm up and where to work on the short game.',
+      canonical: 'https://www.mrmallorcagolf.com/draft-guides/best-golf-practice-facilities-mallorca',
+      image: '/images/t-golf-calvia-social.jpg',
+      imageAlt: 'T Golf Calvià, Mallorca',
     },
-    "meta": {
-      "slug": "east-mallorca-golf-courses-compared",
-      "badge": "East Mallorca",
-      "badgeGold": false,
-      "readTime": "Draft preview",
-      "updated": "September 2026",
-      "title": "East Mallorca Golf Courses Compared",
-      "intro": "East Mallorca is worth separating from the rest of the island. Pula, Capdepera, Canyamel, Son Servera and Vall d'Or are not the obvious choices for a Palma-based first trip, but they become much more relevant if you are staying east or want a quieter golf itinerary.",
-      "sidebarPlanning": {
-        "title": "Draft preview for Andy",
-        "body": "This page is hidden from the public guide index and blocked from indexing while the English is reviewed.",
-        "primary": "Plan Your Trip",
-        "secondary": "Play With A Pro"
-      },
-      "related": []
+    meta: {
+      slug: 'best-golf-practice-facilities-mallorca',
+      badge: 'Practice',
+      badgeGold: false,
+      readTime: 'Draft preview',
+      updated: 'October 2026',
+      title: 'Best Golf Practice Facilities in Mallorca',
+      intro:
+        'Five Mallorca clubs have ball tracking built into the range bays, and several more let you hit off grass. Which one to use comes down to the job: measuring your numbers, warming up for a round, or working on the short game.',
+      sidebarPlanning: DRAFT_SIDEBAR,
+      related: [
+        { slug: 't-golf-calvia-review', title: 'T Golf Calvià - Review (2026)' },
+        { slug: 'golf-andratx-review', title: 'Golf de Andratx - Review (2026)' },
+        { slug: 'son-gual-review', title: 'Son Gual Golf - Worth It? (2026)' },
+        { slug: 'on-course-coaching-mallorca', title: 'On-Course Golf Coaching in Mallorca' },
+      ],
     },
-    "blocks": [
+    blocks: [
       {
-        "type": "paragraph",
-        "text": "East Mallorca is worth separating from the rest of the island. Pula, Capdepera, Canyamel, Son Servera and Vall d'Or are not the obvious choices for a Palma-based first trip, but they become much more relevant if you are staying east or want a quieter golf itinerary."
+        type: 'image',
+        src: '/images/son-quint-blog/son-quint-7.webp',
+        alt: 'Putting green at Son Quint golf course with an orange Son Quint flag in the foreground',
+        caption: 'The putting green at the Son Quint clubhouse.',
       },
       {
-        "type": "paragraph",
-        "text": "I have less first-hand playing history here than with some of the Palma and southwest courses, so this guide is deliberately cautious. It is a planning comparison based on known course information, facility details and trip fit. Specific playing verdicts need updating after visits. [ANDY TO VERIFY]"
+        type: 'paragraph',
+        text: 'I am a Trackman Master, and when I coach, a range session has one of three jobs. Measuring tells you your carry distances, the number that matters on courses with water and big drops such as T Golf Calvià and Andratx. Warming up gets the body ready for the 1st tee. Practising one shot, over and over, is how a weakness gets fixed. Each facility below is good at some of those jobs and weak at others.',
       },
+      { type: 'heading', text: 'Quick answer' },
       {
-        "type": "heading",
-        "text": "Quick answer"
-      },
-      {
-        "type": "table",
-        "headers": [
-          "You want",
-          "Choose"
+        type: 'table',
+        headers: ['You want', 'Go to', 'What is there'],
+        rows: [
+          ['Numbers on every ball, open to the public', 'Golf de Andratx or Pula', 'TrackMan range'],
+          ['Ball tracking before a big round', 'T Golf Calvià, Son Muntaner or Alcanada', 'Toptracer range'],
+          ['A coached technical session', 'Son Gual Performance Academy', 'TrackMan, FlightScope and SAM PuttLab'],
+          ['Hitting off grass', 'T Golf Calvià, Maioris, Son Antem or Son Termes', 'Grass tees'],
+          ['A lesson for a group', 'Son Antem', 'Circular range for 200+ players and an academy'],
+          ['Practice near Palma', 'T Golf Palma', '42 bays, 14 covered, 250m long'],
         ],
-        "rows": [
-          [
-            "Best practice-led east golf day",
-            "Pula"
-          ],
-          [
-            "Dramatic known feature and restaurant day",
-            "Capdepera"
-          ],
-          [
-            "Traditional walkable east option",
-            "Son Servera"
-          ],
-          [
-            "Contrasting nines and sea-view moments",
-            "Canyamel"
-          ],
-          [
-            "Views and a different east or southeast day",
-            "Vall d'Or"
-          ],
-          [
-            "Hotel-only special case",
-            "Reserva Rotana, only with access"
-          ]
-        ]
+      },
+
+      { type: 'heading', text: 'T Golf Calvià: the most complete practice ground' },
+      {
+        type: 'paragraph',
+        text: 'T Golf Calvià has 40 stations on a grass range with Toptracer, and seven target greens at different distances protected by ten bunkers. Around them are two putting greens, two chipping greens and two pitching areas with bunkers. Grass is not a given at Mallorca clubs, and here it comes with ball tracking on every station.',
       },
       {
-        "type": "heading",
-        "text": "Pula: best east practice-and-play option"
+        type: 'paragraph',
+        text: 'The course is the reason to use it. Fifteen lakes force carries from the tee and several approaches hide the bottom of the flag, so you want a carry number you trust before the 1st. More in the <a href=\'/guides/t-golf-calvia-review\'>T Golf Calvià review</a>.',
+      },
+
+      { type: 'heading', text: 'Golf de Andratx: TrackMan above Camp de Mar' },
+      {
+        type: 'paragraph',
+        text: 'Andratx has a public TrackMan Range with 21 tees, seven of them covered, plus a short-game area and three practice bunkers. It is across the road from the clubhouse, which makes the warm-up a little unusual. When I played, the short-game area was in great condition for any shot you could want to practise. The range sits on a steep slope, and it does the job of loosening you up.',
       },
       {
-        "type": "paragraph",
-        "text": "Pula is the east course I would put highest for a practice-led day. The TrackMan range, putting greens, pitching area, short-game space and bunkers make it much easier to prepare properly before playing."
+        type: 'paragraph',
+        text: 'The numbers matter here more than most places. The par 3s play very differently to the card because of the drops. Creeks cross the fairways, so knowing your carry is the difference between a par and a lost ball. Allow time to walk across the road and back. More in the <a href=\'/guides/golf-andratx-review\'>Golf de Andratx review</a>.',
+      },
+
+      { type: 'heading', text: 'Pula: the TrackMan range in the east' },
+      {
+        type: 'paragraph',
+        text: 'I went to Pula to look at the practice set-up. It has a two-level public TrackMan Range, two putting greens, a pitching green, and a short-game area with bunkers, and Miquel Tous is the head professional. It is about an hour from Palma, so it makes most sense if you are staying on the east coast.',
       },
       {
-        "type": "paragraph",
-        "text": "The course has also had serious design work over time, including José María Olazábal's involvement. That gives it a more considered feel than a simple resort layout."
+        type: 'image',
+        src: '/images/courses/pula.webp',
+        alt: 'Pula Golf, Mallorca',
+      },
+
+      { type: 'heading', text: 'Son Gual Performance Academy: for a coached session' },
+      {
+        type: 'paragraph',
+        text: 'Son Gual\'s academy, run by Tim Holroyd, uses TrackMan, FlightScope and SAM PuttLab. There is no public Toptracer range here: the technology is for coached sessions. Paying green-fee guests can use the range with tokens at €4 for 24 balls, and a visitor range fee is €20 with 72 balls.',
       },
       {
-        "type": "paragraph",
-        "text": "The honest negative: from Palma, the drive is long enough that Pula needs to be part of a clear east-coast plan. I would not send someone there casually when several good courses sit closer to Palma."
+        type: 'paragraph',
+        text: 'Pair it with a round. Son Gual\'s greens are fast and raised, so a session on approach distances before you play goes straight onto the scorecard. More in the <a href=\'/guides/son-gual-review\'>Son Gual review</a>.',
+      },
+
+      { type: 'heading', text: 'Son Muntaner and Alcanada: Toptracer before a big round' },
+      {
+        type: 'paragraph',
+        text: 'Son Muntaner has a Toptracer range, a chipping area and a putting green, and the practice facilities were at the level of the course when I played. It is also the range for Son Vida, which has only a net and a putting green and sits two minutes away.',
       },
       {
-        "type": "heading",
-        "text": "Capdepera: best for a memorable east day"
+        type: 'paragraph',
+        text: 'Alcanada has Toptracer, ten covered mats and ten outdoor ones, a natural-grass area in season, and a short-game area. It is about 50 minutes from Palma, so arrive early and use it before a round on greens that leave very few easy putts.',
       },
       {
-        "type": "paragraph",
-        "text": "Capdepera is often talked about because of its standout 15th hole and the setting around the closing stretch. It also has a strong restaurant reputation, which matters if the aim is a full east-coast golf day rather than only a scorecard."
+        type: 'image',
+        src: '/images/son-vida-blog/son-vida-7.webp',
+        alt: 'Red and white Son Vida 1964 flag on the practice putting green with the practice net behind',
+        caption: 'The practice putting green, with the net behind.',
+      },
+
+      { type: 'heading', text: 'T Golf Palma: the biggest range near Palma' },
+      {
+        type: 'paragraph',
+        text: 'T Golf Palma has 42 bays, 14 of them covered, on a 250-metre range, with putting greens, a large short-game area and PGA coaches on site. I teed off before most of the staff had arrived on the day I played, so I have not hit balls there myself. If you are staying in the city and want a range session without a long drive, this is the first place I would look. More in the <a href=\'/guides/t-golf-palma-review\'>T Golf Palma review</a>.',
+      },
+
+      { type: 'heading', text: 'Son Antem: the academy' },
+      {
+        type: 'paragraph',
+        text: 'I visited Son Antem to look at the practice facilities. The circular driving range is built for more than 200 players, with grass and artificial tees. There is an approach green with bunkers, a putting green of about 1,000m², and five PGA professionals. It is one of the largest golf academies in Europe, and FlightScope is used for teaching. For a group lesson, the scale is the reason to go.',
+      },
+
+      { type: 'heading', text: 'Maioris and Son Termes: grass close to Palma' },
+      {
+        type: 'paragraph',
+        text: 'Maioris has a range with grass and mat tees, a large putting green, an all-grass chipping and pitching area with slopes, and a bunker. Son Termes has grass and mat hitting areas, a chipping green and a putting green. Neither has ball tracking, so they suit a warm-up or short-game work more than a measured session.',
+      },
+
+      { type: 'heading', text: 'How I would use them on a trip' },
+      {
+        type: 'list',
+        items: [
+          { label: 'The day you land:', text: 'an hour at T Golf Palma or Son Muntaner, finishing on the putting green.' },
+          { label: 'Before a water course:', text: 'Toptracer at T Golf Calvià, so you know your carries before the lakes do.' },
+          { label: 'Staying east:', text: 'Pula, for TrackMan on both levels.' },
+          { label: 'For a lesson:', text: 'the academy at Son Antem, or a range session with me before we take it onto the course.' },
+        ],
       },
       {
-        "type": "paragraph",
-        "text": "For a golfer staying in the east, Capdepera should be on the shortlist. For a Palma-based visitor, it needs to beat closer options on purpose, not just curiosity."
+        type: 'cta',
+        text: 'Want the practice to show up on the scorecard? I run range sessions and on-course coaching, and can build both into one day.',
+        href: '/coaching',
+        linkLabel: 'Coaching',
+        internal: true,
       },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: one famous hole should not carry the whole decision. The full playing verdict needs confirming after a round. [ANDY TO VERIFY]"
-      },
-      {
-        "type": "heading",
-        "text": "Son Servera: best researched fit for traditional, playable golf"
-      },
-      {
-        "type": "paragraph",
-        "text": "Son Servera looks like one of the most sensible east options for a broad range of golfers. It is flatter than many Mallorca courses, walkable, established, and supported by practice facilities and a golf school."
-      },
-      {
-        "type": "paragraph",
-        "text": "That combination makes it interesting for higher handicappers and visiting golfers who want a calmer day. It may also work well for players staying near Cala Millor or Costa de los Pinos."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: I have not visited yet, so this should stay as a researched recommendation until the course has been checked in person. [ANDY TO VERIFY]"
-      },
-      {
-        "type": "heading",
-        "text": "Canyamel: best for a varied round"
-      },
-      {
-        "type": "paragraph",
-        "text": "Canyamel has a different structure from the other east courses, with a par 73 layout and two nines that appear to ask different questions. The course has recognisable details, including the old stone hut on the 9th and views toward the coast on clear days."
-      },
-      {
-        "type": "paragraph",
-        "text": "It suits a golfer who wants variety and is happy with a course that changes character during the round."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: the front nine may be less forgiving than some visitors expect. It needs a player who is ready for a proper round, not someone searching only for the easiest east option."
-      },
-      {
-        "type": "heading",
-        "text": "Vall d'Or: best for sea-view contrast"
-      },
-      {
-        "type": "paragraph",
-        "text": "Vall d'Or sits toward the southeast and has a different feel again: hillier elements, sea-view moments and a layout that can suit players staying around Cala d'Or or Portocolom."
-      },
-      {
-        "type": "paragraph",
-        "text": "For a trip based in that part of the island, it belongs in the conversation. From Palma, it is a more deliberate day out."
-      },
-      {
-        "type": "paragraph",
-        "text": "The honest negative: it should not be added to a Palma itinerary just because the name appears on a list. The drive and location need to fit the trip."
-      },
-      {
-        "type": "heading",
-        "text": "Reserva Rotana: special case, not a normal public recommendation"
-      },
-      {
-        "type": "paragraph",
-        "text": "Reserva Rotana is best treated separately. It is connected to the hotel and not a normal public green-fee recommendation in the same way as Pula, Capdepera or Son Servera. Mention it only when the traveller has the right accommodation or access context. [VERIFY BEFORE PUBLISHING]"
-      },
-      {
-        "type": "heading",
-        "text": "How I would plan the east"
-      },
-      {
-        "type": "paragraph",
-        "text": "If a golfer is staying in Palma for a first Mallorca trip, I would usually prioritise Son Gual, Son Muntaner, T Golf Calvià or Alcanada before sending them east. If they are staying east, the decision changes."
-      },
-      {
-        "type": "paragraph",
-        "text": "For a practice-heavy day, start with Pula. For a broader traditional option, look at Son Servera. For a more memorable course-and-lunch day, consider Capdepera. Use Canyamel or Vall d'Or when the accommodation and travel pattern make sense."
-      },
-      {
-        "type": "heading",
-        "text": "Need help choosing?"
-      },
-      {
-        "type": "paragraph",
-        "text": "Tell me where you are staying, how far you want to drive and the type of course you enjoy. I can help choose the right east Mallorca course, book the tee time, or build the day into a wider golf trip."
-      }
-    ]
-  }
+    ],
+  },
 }
 
 export const DRAFT_GUIDE_SLUGS = Object.keys(DRAFT_GUIDE_CONTENT)
@@ -1347,4 +757,3 @@ export function buildDraftGuideMetadata(slug) {
     },
   }
 }
-

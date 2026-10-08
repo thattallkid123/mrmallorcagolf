@@ -4,10 +4,11 @@
 
 Quick orientation:
 
-- Next.js 15 App Router site for mrmallorcagolf.com, deployed to Vercel from `main`. 7 locales (EN master + DE/ES/FR/NL/SV/ZH). No database, no auth.
+- Next.js 16 App Router site for mrmallorcagolf.com, deployed to Vercel from `main`. 7 locales (EN master + DE/ES/FR/NL/SV/ZH). No database, no auth.
 - Canonical domain is always `https://www.mrmallorcagolf.com` (www, never non-www).
 - Pre-deploy checks: `npm run check:content` always; add `npm run build` for structural changes and `npm run check:i18n-release` for locale-facing changes. A task is not done until the change is live on the site.
 - English is master content — never add localized content that isn't in English first.
+- Before writing or editing any public copy (guides, drafts, metadata, CTAs, emails), read `G:\My Drive\Mr Mallorca Golf\Systems & Planning\MMG_BRAND_VOICE_GUIDELINES.md`, then run the `mmg-voice-check` skill on the result. `npm run check:voice` passing is not a voice check. Never invent an anecdote or a first-hand experience.
 
 ## Skills
 

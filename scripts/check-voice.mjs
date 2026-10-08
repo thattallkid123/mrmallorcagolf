@@ -18,7 +18,7 @@
  */
 
 import { readFileSync, existsSync, readdirSync } from 'node:fs'
-import { fileURLToPath } from 'node:url'
+import { fileURLToPath, pathToFileURL } from 'node:url'
 import { dirname, join, resolve } from 'node:path'
 
 const __dirname = dirname(fileURLToPath(import.meta.url))
@@ -111,6 +111,36 @@ const BANNED_CLAIMS = [
     label: 'always secures the tee time (overclaims control Andy does not have)',
     re: /\balways\b[^.!?]{0,40}\b(secure|secures|securing|book|books|booking|get|gets|getting)\b[^.!?]{0,40}tee.?time/i,
   },
+]
+
+// Section 3 "Banned constructions" and section 4 "No dead metaphor", where the
+// construction has a fixed wording a regex can see.
+//
+// Added 2026-10-08 after seven draft guides passed this check while carrying
+// "The honest negative:" 38 times, "they answer different questions", "The
+// right answer depends on the golfer, not the map", "Shorter does not mean
+// simpler", 13 visible [VERIFY] tags and an "Andy note:". Every one is banned
+// in the voice guide; none is a banned *word*, so the check said nothing.
+// Antithesis in general ("X, not Y") cannot be caught by pattern without
+// flagging honest uses; that stays a judgement call for the mmg-voice-check
+// skill. These are the fixed formulas only.
+const BANNED_CONSTRUCTIONS = [
+  { label: 'labelled negative "The honest negative:" (state the negative in plain terms)', re: /\bthe honest negative:/i },
+  { label: 'comparison filler "answer different questions"', re: /\banswers? different questions\b/i },
+  { label: 'comparison filler "do different jobs"', re: /\b(?:do|does|doing) different jobs\b/i },
+  { label: 'antithesis "depends on the X, not the Y"', re: /\bdepends? on the [\w-]+(?: [\w-]+)?,? not (?:on )?the\b/i },
+  { label: 'antithesis "shorter does not mean simpler"', re: /\b(?:\w+er|similar [\w-]+(?: [\w-]+)?) does not mean (?:\w+er|similar)\b/i },
+  { label: 'dead metaphor (say the fact that made you believe it)', re: /\b(?:earns? its place|pays? for itself|punch(?:es)? above its weight|more than makes? up for|worth its weight|does the heavy lifting|ticks every box|well worth it|adds? another dimension)\b/i },
+  { label: 'brochure construction', re: /(?:\bthe best part\?|\bhere'?s the truth\b|\bhere is the truth\b|\bwhat people don'?t realise\b|\bmore than just\b|\bwhether you'?re\b|\bin the heart of\b|\bif you'?re looking for\b|\bsomething for everyone\b)/i },
+  { label: 'placeholder left in copy', re: /\[(?:VERIFY|ANDY|TODO|TBC|CHECK|CAPTION)[^\]]*\]/ },
+  { label: 'note to Andy left in copy (prose says "I", see first-person rule)', re: /\bAndy(?:'s)? notes?:/ },
+]
+
+// Published lines that already break a construction rule. Grandfathered so the
+// new rules could ship without rewriting live copy in seven languages; fix each
+// one the next time that page's English is edited, then delete its entry.
+const GRANDFATHERED_CONSTRUCTIONS = [
+  { file: 'src/lib/guide-post-content.js', snippet: 'it earns its place on the list' }, // Son Termes verdict
 ]
 
 // Legitimate phrases that contain a banned word but are not the banned filler
@@ -217,6 +247,13 @@ function checkFile(rel) {
       re.lastIndex = 0
       if (re.test(scan)) findings.push({ lineNo, rule: 'banned claim', detail: label })
     }
+    const grandfathered = GRANDFATHERED_CONSTRUCTIONS.some((g) => g.file === rel && scan.includes(g.snippet))
+    if (!grandfathered) {
+      for (const { label, re } of BANNED_CONSTRUCTIONS) {
+        const m = scan.match(re)
+        if (m) findings.push({ lineNo, rule: 'banned construction', detail: `${label}: …${excerpt(scan, m[0]).slice(1, -1)}…` })
+      }
+    }
   })
 
   return { rel, findings, missing: false }
@@ -229,8 +266,84 @@ function excerpt(line, marker) {
   return `…${line.slice(start, end).trim()}…`
 }
 
-function main() {
+// Guide-level checks that need the parsed content rather than its text.
+//
+// 1. Repeated standfirst. The guide templates print meta.intro under the H1, so
+//    a first paragraph block with the same text shows the reader the opening
+//    twice. All seven draft guides of 2026-09-28 did this.
+// 2. Stale "not played" claims. A guide saying "I have not played X yet" while
+//    X has a published review tells the reader something false. Two drafts
+//    said it about T Golf Palma after its review went live.
+const GUIDE_SOURCES = [
+  { rel: 'src/lib/guide-post-content.js', exportName: 'GUIDE_POST_CONTENT' },
+  { rel: 'src/lib/guide-article-content.js', exportName: 'GUIDE_ARTICLE_CONTENT' },
+  { rel: 'src/lib/draft-guide-content.js', exportName: 'DRAFT_GUIDE_CONTENT' },
+]
+const NOT_PLAYED_RE = /\b(?:have not|haven't|not yet|never)\s+(?:yet\s+)?(?:played|visited)\b|\bnot played\b/i
+
+const normalise = (s) => String(s || '').replace(/<[^>]+>/g, '').replace(/\s+/g, ' ').trim().toLowerCase()
+
+async function reviewedCourseAliases() {
+  const { GOLF_COURSE_DATA } = await import(pathToFileURL(join(REPO_ROOT, 'src/lib/golf-courses-data.js')).href)
+  const aliases = []
+  for (const region of GOLF_COURSE_DATA) {
+    for (const course of region.courses || []) {
+      const base = course.name.replace(/\s*\(.*?\)\s*/g, ' ').trim()
+      const short = base.replace(/^(?:Club de Golf|Real Golf de|Golf de|Golf)\s+/i, '').replace(/\s+Golf$/i, '')
+      for (const a of new Set([course.name, base, short])) {
+        aliases.push({ alias: a, slug: course.reviewSlug || null, re: new RegExp(`\\b${a.replace(/[.*+?^${}()|[\]\\]/g, '\\$&')}\\b`, 'i') })
+      }
+    }
+  }
+  return aliases
+}
+
+async function checkGuideStructure() {
+  const findings = []
+  const aliases = await reviewedCourseAliases()
+  for (const { rel, exportName } of GUIDE_SOURCES) {
+    const abs = join(REPO_ROOT, rel)
+    if (!existsSync(abs)) continue
+    const mod = await import(pathToFileURL(abs).href)
+    for (const [slug, entry] of Object.entries(mod[exportName] || {})) {
+      const en = entry.en || entry
+      const blocks = en.blocks || []
+      const first = blocks.find((b) => b.type === 'paragraph')
+      if (first && blocks.indexOf(first) === 0 && normalise(first.text) && normalise(first.text) === normalise(en.meta?.intro)) {
+        findings.push({ rel, slug, rule: 'repeated intro', detail: 'first paragraph repeats meta.intro, which the template already prints under the title' })
+      }
+      const texts = [en.meta?.intro, ...blocks.flatMap((b) => [b.text, ...(b.items || []).map((i) => i.text)])].filter(Boolean)
+      for (const text of texts) {
+        const sentences = String(text).split(/(?<=[.!?])\s+/)
+        sentences.forEach((sentence, i) => {
+          if (!NOT_PLAYED_RE.test(sentence)) return
+          // The course is either named in the sentence itself, or it is the
+          // paragraph's subject: "T Golf Palma belongs in any Palma guide. It
+          // has a 42-bay range. I have not played the course yet." The subject
+          // is taken as the first course the paragraph names, so a passing
+          // mention ("100 metres from Son Quint's range") does not count.
+          const reviewed = (a) => a.slug && a.slug !== slug
+          let hit = aliases.find((a) => reviewed(a) && a.re.test(sentence))
+          if (!hit && !aliases.some((a) => !a.slug && a.re.test(sentence))) {
+            const before = sentences.slice(0, i + 1).join(' ')
+            let first = null
+            for (const a of aliases) {
+              const at = before.search(a.re)
+              if (at >= 0 && (!first || at < first.at)) first = { at, a }
+            }
+            if (first && reviewed(first.a)) hit = first.a
+          }
+          if (hit) findings.push({ rel, slug, rule: 'stale "not played" claim', detail: `"${sentence.slice(0, 110)}" near "${hit.alias}", but /guides/${hit.slug} is published` })
+        })
+      }
+    }
+  }
+  return findings
+}
+
+async function main() {
   const results = FILES.map(checkFile)
+  const structureFindings = await checkGuideStructure()
   const missing = results.filter((r) => r.missing).map((r) => r.rel)
   if (missing.length) {
     console.error(`⚠️  check:voice — file(s) not found (update FILES): ${missing.join(', ')}`)
@@ -243,11 +356,11 @@ function main() {
   }
 
   const withFindings = results.filter((r) => r.findings.length > 0)
-  const total = withFindings.reduce((n, r) => n + r.findings.length, 0)
+  const total = withFindings.reduce((n, r) => n + r.findings.length, 0) + structureFindings.length
 
   if (total === 0) {
     console.log(
-      `✅ check:voice passed — no em dashes or banned words in ${FILES.length} English master file(s).`,
+      `✅ check:voice passed — no em dashes, banned words or banned constructions in ${FILES.length} English master file(s); guide structure clean.`,
     )
     return
   }
@@ -260,7 +373,12 @@ function main() {
     }
     console.error('')
   }
+  for (const { rel, slug, rule, detail } of structureFindings) {
+    console.error(`  ${rel} → ${slug} [${rule}]: ${detail}`)
+  }
+  if (structureFindings.length) console.error('')
   console.error('Fix per the Writing Guide section 3. Em dashes: replace with comma, colon, or full stop.')
+  console.error('Passing this check is not a voice check: run the mmg-voice-check skill on any new copy as well.')
   process.exitCode = 1
 }
 
