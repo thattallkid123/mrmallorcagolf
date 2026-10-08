@@ -24,6 +24,10 @@ const GUIDE_DATES = {
   'son-quint-review': '2026-09-24',
   'where-to-stay-mallorca-golf': '2026-09-27',
   'son-vida-review': '2026-10-05',
+  'golf-courses-near-palma': '2026-10-09',
+  'southwest-mallorca-golf-courses-compared': '2026-10-09',
+  'best-mallorca-golf-courses-higher-handicappers': '2026-10-09',
+  'best-golf-practice-facilities-mallorca': '2026-10-09',
 }
 
 function escapeXml(str) {

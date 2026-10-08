@@ -134,6 +134,38 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Todos los niveles · Comparativa de green fees · Actualizado 2026"
       },
       {
+        "slug": "golf-courses-near-palma",
+        "badge": "Campos de Palma",
+        "title": "Campos de golf cerca de Palma: cuál jugar",
+        "intro": "Diez campos a menos de 25 minutos de la catedral de Palma. Límites de hándicap, si se camina y cuál reservar primero.",
+        "readTime": "10 min",
+        "keywords": "Límites de hándicap · Caminar · Base en Palma"
+      },
+      {
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "Suroeste",
+        "title": "Campos de golf del suroeste de Mallorca comparados",
+        "intro": "T Golf Calvià, Golf de Andratx y Santa Ponsa 1 comparados por un pro PGA que ha jugado los tres.",
+        "readTime": "5 min",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
+      },
+      {
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "Elegir campo",
+        "title": "Los mejores campos de golf de Mallorca para hándicaps altos",
+        "intro": "Los límites van de 28 a 54. Todos en una tabla y los campos que reservaría para un hándicap 20 o más.",
+        "readTime": "4 min",
+        "keywords": "Límites de hándicap · Campos que perdonan · Para más adelante"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "Prácticas",
+        "title": "Las mejores instalaciones de prácticas de golf de Mallorca",
+        "intro": "Campos de prácticas con TrackMan, Toptracer y hierba comparados: dónde medir, calentar y trabajar el juego corto.",
+        "readTime": "4 min",
+        "keywords": "TrackMan · Toptracer · Juego corto"
+      },
+      {
         "slug": "is-mallorca-good-for-golf",
         "badge": "Guía",
         "title": "¿Es Mallorca buena para el golf? Una respuesta honesta de alguien que vive aquí",
@@ -328,6 +360,38 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Alle Level · Greenfees im Vergleich · Aktualisiert 2026"
       },
       {
+        "slug": "golf-courses-near-palma",
+        "badge": "Plätze bei Palma",
+        "title": "Golfplätze bei Palma: Welchen spielen",
+        "intro": "Zehn Plätze liegen innerhalb von 25 Minuten ab der Kathedrale von Palma. Handicap-Limits, Gehen und welchen Sie zuerst buchen.",
+        "readTime": "10 Min.",
+        "keywords": "Handicap-Limits · Gehen · Palma als Basis"
+      },
+      {
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "Südwesten",
+        "title": "Die Golfplätze im Südwesten Mallorcas im Vergleich",
+        "intro": "T Golf Calvià, Golf de Andratx und Santa Ponsa 1 im Vergleich, von einem PGA-Pro, der alle drei gespielt hat.",
+        "readTime": "5 Min.",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
+      },
+      {
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "Platzwahl",
+        "title": "Die besten Golfplätze auf Mallorca für höhere Handicaps",
+        "intro": "Die Limits reichen von 28 bis 54. Alle Limits in einer Tabelle und die Plätze, die ich ab Handicap 20 buchen würde.",
+        "readTime": "4 Min.",
+        "keywords": "Handicap-Limits · Verzeihende Plätze · Für später aufheben"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "Training",
+        "title": "Die besten Übungsanlagen für Golf auf Mallorca",
+        "intro": "TrackMan-, Toptracer- und Gras-Ranges im Vergleich: wo Sie messen, sich aufwärmen und das kurze Spiel trainieren.",
+        "readTime": "4 Min.",
+        "keywords": "TrackMan · Toptracer · Kurzes Spiel"
+      },
+      {
         "slug": "is-mallorca-good-for-golf",
         "badge": "Ratgeber",
         "title": "Ist Mallorca gut für Golf? Eine ehrliche Antwort von jemandem, der hier lebt",
@@ -519,6 +583,38 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Vingt-quatre parcours sur l'île. Voici comment je les classerais pour un visiteur avec peu de temps et des exigences élevées.",
         "readTime": "8 min",
         "keywords": "Tous niveaux · Comparatif green fees · Mis à jour 2026"
+      },
+      {
+        "slug": "golf-courses-near-palma",
+        "badge": "Parcours de Palma",
+        "title": "Golfs près de Palma : lequel jouer",
+        "intro": "Dix parcours à moins de 25 minutes de la cathédrale de Palma. Limites de handicap, marche et lequel réserver en premier.",
+        "readTime": "10 min",
+        "keywords": "Limites de handicap · Marche · Base à Palma"
+      },
+      {
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "Sud-ouest",
+        "title": "Les parcours de golf du sud-ouest de Majorque comparés",
+        "intro": "T Golf Calvià, Golf de Andratx et Santa Ponsa 1 comparés par un pro PGA qui les a tous joués.",
+        "readTime": "5 min",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
+      },
+      {
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "Choix du parcours",
+        "title": "Les meilleurs parcours de golf de Majorque pour handicaps élevés",
+        "intro": "Les limites vont de 28 à 54. Toutes en un tableau et les parcours que je réserverais à partir de 20 de handicap.",
+        "readTime": "4 min",
+        "keywords": "Limites de handicap · Parcours indulgents · À garder pour plus tard"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "Entraînement",
+        "title": "Les meilleures installations d'entraînement de golf à Majorque",
+        "intro": "Practices TrackMan, Toptracer et en herbe comparés : où mesurer, s'échauffer et travailler le petit jeu.",
+        "readTime": "4 min",
+        "keywords": "TrackMan · Toptracer · Petit jeu"
       },
       {
         "slug": "is-mallorca-good-for-golf",
@@ -715,6 +811,38 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Alle niveaus · Greenfees vergeleken · Bijgewerkt 2026"
       },
       {
+        "slug": "golf-courses-near-palma",
+        "badge": "Banen bij Palma",
+        "title": "Golfbanen bij Palma: welke spelen",
+        "intro": "Tien banen binnen 25 minuten van de kathedraal van Palma. Handicaplimieten, lopen en welke je als eerste boekt.",
+        "readTime": "10 min",
+        "keywords": "Handicaplimieten · Lopen · Basis in Palma"
+      },
+      {
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "Zuidwesten",
+        "title": "Golfbanen in het zuidwesten van Mallorca vergeleken",
+        "intro": "T Golf Calvià, Golf de Andratx en Santa Ponsa 1 vergeleken door een PGA-pro die alle drie speelde.",
+        "readTime": "5 min",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
+      },
+      {
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "Baankeuze",
+        "title": "De beste golfbanen op Mallorca voor hogere handicaps",
+        "intro": "De limieten lopen van 28 tot 54. Alle limieten in één tabel en de banen die ik zou boeken bij handicap 20 of hoger.",
+        "readTime": "4 min",
+        "keywords": "Handicaplimieten · Vergevingsgezinde banen · Bewaren voor later"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "Oefenen",
+        "title": "De beste oefenfaciliteiten voor golf op Mallorca",
+        "intro": "TrackMan-, Toptracer- en grasranges vergeleken: waar je meet, opwarmt en aan het korte spel werkt.",
+        "readTime": "4 min",
+        "keywords": "TrackMan · Toptracer · Kort spel"
+      },
+      {
         "slug": "is-mallorca-good-for-golf",
         "badge": "Gids",
         "title": "Is Mallorca goed voor golf? Een eerlijk antwoord van iemand die hier woont",
@@ -909,6 +1037,38 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Alla nivåer · Greenfees jämfört · Uppdaterad 2026"
       },
       {
+        "slug": "golf-courses-near-palma",
+        "badge": "Banor vid Palma",
+        "title": "Golfbanor nära Palma: vilken ska du spela",
+        "intro": "Tio banor inom 25 minuter från Palmas katedral. Handicapgränser, att gå och vilken du ska boka först.",
+        "readTime": "10 min",
+        "keywords": "Handicapgränser · Att gå · Bas i Palma"
+      },
+      {
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "Sydväst",
+        "title": "Golfbanorna i sydvästra Mallorca jämförda",
+        "intro": "T Golf Calvià, Golf de Andratx och Santa Ponsa 1 jämförda av en PGA-pro som spelat alla tre.",
+        "readTime": "5 min",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
+      },
+      {
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "Banval",
+        "title": "De bästa golfbanorna på Mallorca för högre handicap",
+        "intro": "Gränserna går från 28 till 54. Alla i en tabell och banorna jag skulle boka för handicap 20 eller högre.",
+        "readTime": "4 min",
+        "keywords": "Handicapgränser · Förlåtande banor · Spara till senare"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "Träning",
+        "title": "Mallorcas bästa träningsanläggningar för golf",
+        "intro": "TrackMan-, Toptracer- och gräsrangear jämförda: var du mäter, värmer upp och jobbar med närspelet.",
+        "readTime": "4 min",
+        "keywords": "TrackMan · Toptracer · Närspel"
+      },
+      {
         "slug": "is-mallorca-good-for-golf",
         "badge": "Guide",
         "title": "Är Mallorca bra för golf? Ett ärligt svar från någon som bor här",
@@ -1101,6 +1261,38 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "岛上共有二十四个球场，我会如何为时间有限、要求不低的访客逐一排序。",
         "readTime": "8分钟",
         "keywords": "适合各水平 · 果岭费对比 · 2026年更新"
+      },
+      {
+        "slug": "golf-courses-near-palma",
+        "badge": "帕尔马球场",
+        "title": "帕尔马附近的球场：该打哪一个",
+        "intro": "十个球场位于帕尔马大教堂 25 分钟车程以内。差点上限、步行情况，以及先订哪一个。",
+        "readTime": "10分钟",
+        "keywords": "差点上限 · 步行 · 以帕尔马为基地"
+      },
+      {
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "西南部",
+        "title": "马略卡西南部高尔夫球场对比",
+        "intro": "PGA 职业教练对比 T Golf Calvià、Golf de Andratx 和 Santa Ponsa 1，三家他都打过。",
+        "readTime": "5分钟",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
+      },
+      {
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "选场",
+        "title": "适合高差点球友的马略卡最佳球场",
+        "intro": "差点上限从 28 到 54。所有上限一表看清，以及差点 20 以上我会先订的球场。",
+        "readTime": "4分钟",
+        "keywords": "差点上限 · 容错球场 · 留到后面"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "练习",
+        "title": "马略卡最好的高尔夫练习设施",
+        "intro": "TrackMan、Toptracer 和草地练习场对比：哪里测数据，哪里热身，哪里练短杆。",
+        "readTime": "4分钟",
+        "keywords": "TrackMan · Toptracer · 短杆"
       },
       {
         "slug": "is-mallorca-good-for-golf",

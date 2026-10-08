@@ -172,6 +172,46 @@ export const GUIDES_CONTENT = {
       "keywords": "All levels · Green fees compared · Updated 2026"
     },
     {
+      "slug": "golf-courses-near-palma",
+      "badge": "Palma Courses",
+      "img": "/images/son-gual-card.webp",
+      "imgPosition": "center 40%",
+      "title": "Golf Courses Near Palma: Which to Play",
+      "intro": "Ten courses sit within 25 minutes of Palma Cathedral. Handicap limits, walking and which one to book first.",
+      "readTime": "10 min read",
+      "keywords": "Handicap limits · Walking · Palma base"
+    },
+    {
+      "slug": "southwest-mallorca-golf-courses-compared",
+      "badge": "Southwest",
+      "img": "/images/t-golf-calvia-card.webp",
+      "imgPosition": "center 40%",
+      "title": "Southwest Mallorca Golf Courses Compared",
+      "intro": "T Golf Calvià, Golf de Andratx and Santa Ponsa 1 compared by a PGA pro who has played all three.",
+      "readTime": "5 min read",
+      "keywords": "Calvià · Andratx · Santa Ponsa"
+    },
+    {
+      "slug": "best-mallorca-golf-courses-higher-handicappers",
+      "badge": "Course Choice",
+      "img": "/images/son-quint-card.webp",
+      "imgPosition": "center 40%",
+      "title": "Best Mallorca Golf Courses for Higher Handicappers",
+      "intro": "Handicap limits run from 28 to 54. Every limit in one table, and the courses I would book for a 20-plus handicapper.",
+      "readTime": "4 min read",
+      "keywords": "Handicap limits · Forgiving courses · Save for later"
+    },
+    {
+      "slug": "best-golf-practice-facilities-mallorca",
+      "badge": "Practice",
+      "img": "/images/andratx-card.webp",
+      "imgPosition": "center 40%",
+      "title": "Best Golf Practice Facilities in Mallorca",
+      "intro": "TrackMan, Toptracer and grass ranges compared: where to measure, where to warm up and where to work on the short game.",
+      "readTime": "4 min read",
+      "keywords": "TrackMan · Toptracer · Short game"
+    },
+    {
       "slug": "is-mallorca-good-for-golf",
       "badge": "Guide",
       "img": "/images/blog-is-mallorca-good/Son Gual.webp",
