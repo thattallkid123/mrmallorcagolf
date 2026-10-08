@@ -130,7 +130,7 @@ const content = {
         "text": "El precio público de 18 hoyos suele ir de €115 a €165. Las ventanas de mantenimiento de enero pueden bajar más, pero eso no debe usarse como la tarifa honesta de comparación. Los picos de primavera y otoño están en €165, y la mayoría de los precios estándar y públicos de verano quedan muy por encima de la antigua cifra de mantenimiento. El desglose completo por temporadas está en son-gual.com."
       },
       {
-        "text": "Alquiler de palos en la tienda: Callaway €35, Titleist €45 por ronda. Buggy €45, trolley eléctrico desde €15. Límite de hándicap: 33 para hombres, 35 para señoras. Al reservar se exige un certificado WHS válido. Se permite ir andando."
+        "text": "Alquiler de palos en la tienda: Callaway €35, Titleist €45 por ronda. Buggy €45, trolley eléctrico desde €15. Límite de hándicap: 28 para hombres, 36 para señoras. Al reservar se exige un certificado WHS válido. Se permite ir andando."
       },
       {
         "title": "Cuatro cosas que me habría gustado saber antes de reservar Son Gual",
@@ -301,7 +301,7 @@ const content = {
         "text": "Die öffentlichen 18-Loch-Preise liegen typischerweise zwischen €115 und €165. Wartungsfenster im Januar können tiefer liegen, sollten aber nicht als ehrlicher Vergleichspreis herangezogen werden. Die Spitzen im Frühjahr und Herbst liegen bei €165, und die meisten normalen öffentlichen Sommerpreise liegen deutlich über dem alten Wartungspreis. Die vollständige Saisonübersicht gibt es auf son-gual.com."
       },
       {
-        "text": "Leihschläger im Pro Shop: Callaway €35, Titleist €45 pro Runde. Buggy €45, Elektrotrolley ab €15. Handicap-Grenze: 33 für Herren, 35 für Damen. Bei der Buchung ist ein gültiger WHS-Nachweis erforderlich. Zu Fuß gehen ist erlaubt."
+        "text": "Leihschläger im Pro Shop: Callaway €35, Titleist €45 pro Runde. Buggy €45, Elektrotrolley ab €15. Handicap-Grenze: 28 für Herren, 36 für Damen. Bei der Buchung ist ein gültiger WHS-Nachweis erforderlich. Zu Fuß gehen ist erlaubt."
       },
       {
         "title": "Vier Dinge, die ich vor der Buchung von Son Gual wissen würde",
@@ -472,7 +472,7 @@ const content = {
         "text": "Le tarif public 18 trous va généralement de €115 à €165. Les périodes d'entretien de janvier peuvent descendre plus bas, mais cela ne doit pas servir de tarif de comparaison honnête. Les pointes du printemps et de l'automne sont à €165, et la plupart des tarifs standard publics d'été sont bien au-dessus de l'ancien chiffre d'entretien. Le détail complet par saison est sur son-gual.com."
       },
       {
-        "text": "Location de clubs au pro-shop : Callaway €35, Titleist €45 par partie. Buggy €45, chariot électrique à partir de €15. Limite d'index : 33 pour les hommes, 35 pour les dames. Un certificat WHS valide est exigé à la réservation. Il est permis de marcher."
+        "text": "Location de clubs au pro-shop : Callaway €35, Titleist €45 par partie. Buggy €45, chariot électrique à partir de €15. Limite d'index : 28 pour les hommes, 36 pour les dames. Un certificat WHS valide est exigé à la réservation. Il est permis de marcher."
       },
       {
         "title": "Quatre choses que je voudrais savoir avant de réserver Son Gual",
@@ -643,7 +643,7 @@ const content = {
         "text": "De openbare prijs voor 18 holes loopt doorgaans van €115 tot €165. Onderhoudsperiodes in januari kunnen lager uitvallen, maar dat moet niet als eerlijk vergelijkingstarief worden gebruikt. De pieken in voorjaar en herfst liggen op €165, en de meeste gewone openbare zomerprijzen liggen ruim boven het oude onderhoudsbedrag. Het volledige seizoensoverzicht staat op son-gual.com."
       },
       {
-        "text": "Clubhuur in de proshop: Callaway €35, Titleist €45 per ronde. Buggy €45, elektrische trolley vanaf €15. Handicaplimiet: 33 voor heren, 35 voor dames. Bij het boeken is een geldig WHS-bewijs vereist. Lopen is toegestaan."
+        "text": "Clubhuur in de proshop: Callaway €35, Titleist €45 per ronde. Buggy €45, elektrische trolley vanaf €15. Handicaplimiet: 28 voor heren, 36 voor dames. Bij het boeken is een geldig WHS-bewijs vereist. Lopen is toegestaan."
       },
       {
         "title": "Vier dingen die ik zou willen weten voor ik Son Gual boek",
@@ -814,7 +814,7 @@ const content = {
         "text": "Det offentliga priset för 18 hål ligger vanligtvis mellan €115 och €165. Underhållsperioder i januari kan ligga lägre, men det ska inte användas som ärligt jämförelsepris. Topparna på våren och hösten ligger på €165, och de flesta vanliga offentliga sommarpriser ligger långt över det gamla underhållspriset. Hela säsongsöversikten finns på son-gual.com."
       },
       {
-        "text": "Klubbhyra i proshopen: Callaway €35, Titleist €45 per runda. Buggy €45, elvagn från €15. Handicapgräns: 33 för herrar, 35 för damer. Ett giltigt WHS-intyg krävs vid bokning. Det är tillåtet att gå."
+        "text": "Klubbhyra i proshopen: Callaway €35, Titleist €45 per runda. Buggy €45, elvagn från €15. Handicapgräns: 28 för herrar, 36 för damer. Ett giltigt WHS-intyg krävs vid bokning. Det är tillåtet att gå."
       },
       {
         "title": "Fyra saker jag skulle vilja veta innan jag bokar Son Gual",
@@ -985,7 +985,7 @@ const content = {
         "text": "公共 18 洞价格通常在 €115 到 €165 之间。1 月的养护期价格可能更低，但不应把它当作诚实的对比价格。春秋旺季为 €165，大多数夏季标准公共价格远高于旧的养护价。完整的季节性明细见 son-gual.com。"
       },
       {
-        "text": "球房租杆：Callaway €35，Titleist €45 每轮。球车 €45，电动手推车 €15 起。差点限制：男士 33，女士 35。预订时需要有效的 WHS 证书。允许步行。"
+        "text": "球房租杆：Callaway €35，Titleist €45 每轮。球车 €45，电动手推车 €15 起。差点限制：男士 28，女士 36。预订时需要有效的 WHS 证书。允许步行。"
       },
       {
         "title": "预订 Son Gual 前我会先知道的四件事",
