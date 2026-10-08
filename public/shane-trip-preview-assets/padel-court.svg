@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Illustration of a padel court">
+  <defs><linearGradient id="sky" x2="0" y2="1"><stop stop-color="#8aaca7"/><stop offset="1" stop-color="#d9d6c5"/></linearGradient><linearGradient id="court" x2="0" y2="1"><stop stop-color="#325d6b"/><stop offset="1" stop-color="#1f4657"/></linearGradient></defs>
+  <path fill="url(#sky)" d="M0 0h900v600H0z"/><path fill="#aaab86" d="M0 343q236-70 440-24t460-14v295H0z"/><path fill="#375d4b" d="M0 355q180-53 343-13t557-13v271H0z"/>
+  <path fill="#223f49" stroke="#dee5de" stroke-width="5" d="m90 255 660-22 130 295-811 18z"/><path fill="url(#court)" stroke="#e7eee8" stroke-width="7" d="m117 269 612-20 112 244-731 16z"/>
+  <g fill="none" stroke="#eef2ea" stroke-width="6"><path d="m474 258 17 244M114 388l705-12M287 264l-9 128m370-138 15 120"/><path d="M99 449h740" stroke-width="3"/></g>
+  <g stroke="#263f3f" stroke-width="7" fill="none"><path d="M81 179v356M763 161v363M81 179l682-18M81 179l32 91m650-109-34 88"/><path d="M81 260l682-20M81 353l727-13M81 444l762-4" stroke-width="3"/></g>
+  <path d="M98 385q368-18 712-14" stroke="#1a3030" stroke-width="14" fill="none"/><path d="M98 383q368-18 712-14" stroke="#e9ebe5" stroke-width="3" fill="none"/>
+  <circle cx="651" cy="308" r="12" fill="#d2df5c"/><path d="M0 529q200-31 390 12t510-18v77H0z" fill="#223d35"/>
+</svg>
