@@ -1,0 +1,16 @@
+{
+  "use": "Illustrative planning images. These do not depict the named hotel, restaurant or supplier unless stated separately.",
+  "licence": "https://unsplash.com/license",
+  "photos": [
+    {"file":"hotel-pool.webp","creator":"Eric Soubeyrand de Saint Prix","source":"https://unsplash.com/photos/iLmcYA6eqJI"},
+    {"file":"villa-pool.webp","creator":"Eve Ji","source":"https://unsplash.com/photos/4Ysx7HlgLJw"},
+    {"file":"winery.webp","creator":"Alexis Presa","source":"https://unsplash.com/photos/2sdm9vIhHds"},
+    {"file":"boat.webp","creator":"Lucas Klein","source":"https://unsplash.com/photos/D9n2eD0NGg0"},
+    {"file":"beach.webp","creator":"Livvi Grant","source":"https://unsplash.com/photos/OCtU0hkiNjw"},
+    {"file":"balloon.webp","creator":"ActionVance","source":"https://unsplash.com/photos/qwKYc77r8KE"},
+    {"file":"olive.webp","creator":"Nate Holland","source":"https://unsplash.com/photos/WdBqlHYc0Mo"},
+    {"file":"cave.webp","creator":"Marian Florinel Condruz","source":"https://unsplash.com/photos/0XjbCfNLiso"},
+    {"file":"padel.webp","creator":"RETRATO DEPORTIVO","source":"https://unsplash.com/photos/4g8sZIUGB6M"},
+    {"file":"chef.webp","creator":"Ed Parker","source":"https://unsplash.com/photos/FYP9kmElhbA"}
+  ]
+}
