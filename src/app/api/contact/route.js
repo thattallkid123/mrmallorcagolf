@@ -13,6 +13,7 @@ import {
 } from '../../../lib/request-safety'
 import { getExperienceLabel, OFFER_IDS } from '../../../lib/offers-content.js'
 import { getContactContent } from '../../../lib/contact-content.js'
+import { buildEnquiryBrief } from '../../../lib/enquiry-brief.js'
 
 const SERVICE_TYPE_LABELS = {
   pwap: 'Play With A Pro',
@@ -41,7 +42,10 @@ function cleanTrackingValue(value, max = 80) {
   return /^[\w .-]*$/.test(cleaned) ? cleaned : ''
 }
 
+// Rows with nothing to show are left out instead of printing "Not recorded".
+// clients-sync.py reads rows by label and treats a missing row as empty.
 function renderRow(label, value) {
+  if (!value) return ''
   return `<tr><td style="padding:8px 0;border-bottom:1px solid #eee;color:#666;width:140px">${escapeHtml(label)}</td><td style="padding:8px 0;border-bottom:1px solid #eee">${escapeHtml(value)}</td></tr>`
 }
 
@@ -104,37 +108,62 @@ export async function POST(request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY)
     const serviceTypeLabel = SERVICE_TYPE_LABELS[serviceType] || serviceType || 'Not specified'
-    const pwapFormatLabel = EXPERIENCE_LABELS[pwapFormat] || pwapFormat || 'Not specified'
-    const experienceLabel = EXPERIENCE_LABELS[experience] || SERVICE_TYPE_LABELS[experience] || experience || 'Not specified'
+    const pwapFormatLabel = EXPERIENCE_LABELS[pwapFormat] || pwapFormat || ''
+    const experienceLabel = EXPERIENCE_LABELS[experience] || SERVICE_TYPE_LABELS[experience] || experience || ''
     const fullName = `${fname} ${lname}`.trim()
     const safeEmail = escapeHtml(email)
+
+    const brief = buildEnquiryBrief({
+      serviceType,
+      serviceTypeLabel,
+      dates,
+      handicap,
+      groupsize,
+      entryPage,
+      enquirySourcePage,
+      utmSource,
+      utmMedium,
+      utmCampaign,
+      referrerHost,
+    })
+    const isPwap = serviceType === 'pwap' || serviceType === 'both'
+    const subjectSuffix = brief.subjectSuffix ? ` - ${brief.subjectSuffix}` : ''
 
     const { error } = await resend.emails.send({
       from: 'Mr Mallorca Golf <enquiries@mrmallorcagolf.com>',
       to: 'andy@mrmallorcagolf.com',
       replyTo: email,
-      subject: `New enquiry from ${fullName}`,
+      subject: `New enquiry from ${fullName}${subjectSuffix}`,
       html: `
         <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
-          <h2 style="color:#2D4A3E;margin-bottom:24px">New enquiry - Mr Mallorca Golf</h2>
+          <h2 style="color:#2D4A3E;margin-bottom:16px">New enquiry - Mr Mallorca Golf</h2>
+          <div style="background:#f7f4ef;padding:16px;border-radius:4px;margin-bottom:24px">
+            <p style="margin:0 0 8px;font-size:16px;color:#2D4A3E"><strong>${escapeHtml(brief.headline || serviceTypeLabel)}</strong></p>
+            <p style="margin:0 0 8px;font-size:13px;color:#555">${escapeHtml(brief.received)}</p>
+            <p style="margin:0;font-size:13px;color:#555"><strong>How they found you:</strong> ${escapeHtml(brief.source)}</p>
+          </div>
           <table style="width:100%;border-collapse:collapse">
             ${renderRow('Name', fullName)}
             <tr><td style="padding:8px 0;border-bottom:1px solid #eee;color:#666">Email</td><td style="padding:8px 0;border-bottom:1px solid #eee"><a href="mailto:${safeEmail}">${safeEmail}</a></td></tr>
-            ${renderRow('Dates', dates || 'Not specified')}
-            ${renderRow('Handicap', handicap || 'Not specified')}
-            ${renderRow('Group size', groupsize || 'Not specified')}
+            ${renderRow('Dates', dates)}
+            ${renderRow('Handicap', handicap)}
+            ${renderRow('Group size', groupsize)}
             ${renderRow('Main enquiry', serviceTypeLabel)}
-            ${renderRow('Play With A Pro format', (serviceType === 'pwap' || serviceType === 'both') ? pwapFormatLabel : 'Not applicable')}
-            ${renderRow('Experience', experienceLabel)}
+            ${renderRow('Play With A Pro format', isPwap ? pwapFormatLabel : '')}
+            ${renderRow('Experience', experienceLabel && experienceLabel !== serviceTypeLabel ? experienceLabel : '')}
             ${renderRow('Language', lang)}
-            ${renderRow('Entry page', entryPage || 'Not recorded')}
-            ${renderRow('Page before enquiry', enquirySourcePage || 'Not recorded')}
-            ${renderRow('Campaign source', utmSource || 'Not recorded')}
-            ${renderRow('Campaign medium', utmMedium || 'Not recorded')}
-            ${renderRow('Campaign name', utmCampaign || 'Not recorded')}
-            ${renderRow('Referrer site', referrerHost || 'Not recorded')}
+            ${renderRow('Entry page', entryPage)}
+            ${renderRow('Page before enquiry', enquirySourcePage)}
+            ${renderRow('Campaign source', utmSource)}
+            ${renderRow('Campaign medium', utmMedium)}
+            ${renderRow('Campaign name', utmCampaign)}
+            ${renderRow('Referrer site', referrerHost)}
           </table>
           ${message ? `<div style="margin-top:24px"><p style="color:#666;margin-bottom:8px">Message:</p><p style="white-space:pre-wrap;background:#f7f4ef;padding:16px;border-radius:4px">${escapeHtml(message)}</p></div>` : ''}
+          <div style="margin-top:24px">
+            <p style="color:#666;margin:0 0 8px">Still to ask in your reply:</p>
+            <ul style="margin:0;padding-left:20px;color:#333;line-height:1.6">${brief.questions.map((question) => `<li>${escapeHtml(question)}</li>`).join('')}</ul>
+          </div>
           <p style="margin-top:32px;color:#999;font-size:12px">Reply directly to this email to respond to ${escapeHtml(fname)}.</p>
         </div>
       `,
