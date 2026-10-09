@@ -75,16 +75,27 @@ for (const area of AREA_ORDER) {
 const next = md.trimEnd() + '\n'
 const driveMounted = fs.existsSync(path.dirname(outPath))
 
+// The "Last generated" stamp changes every day, which made the check fail daily even when no hotel
+// had changed (it kept blocking commits and pushes). Compare everything except that line, and keep
+// the existing file (and its date) when nothing else differs.
+const withoutStamp = (t) => t.replace(/^Last generated: \d{4}-\d{2}-\d{2}/m, 'Last generated: -')
+const sameContent = (a, b) => withoutStamp(a) === withoutStamp(b)
+
 if (checkOnly) {
   if (!driveMounted) { console.log('Drive not mounted — skipping hotel reference check.'); process.exit(0) }
   const prev = fs.existsSync(outPath) ? fs.readFileSync(outPath, 'utf8') : ''
-  if (next === prev) { console.log('Hotel reference is up to date.'); process.exit(0) }
+  if (sameContent(next, prev)) { console.log('Hotel reference is up to date.'); process.exit(0) }
   console.error('MMG_HOTEL_REFERENCE.md is stale — run: node scripts/export-hotel-reference.mjs')
   process.exit(1)
 }
 
 if (!driveMounted) {
   console.error(`Drive not mounted at ${path.dirname(outPath)} — skipping write.`)
+  process.exit(0)
+}
+const existing = fs.existsSync(outPath) ? fs.readFileSync(outPath, 'utf8') : ''
+if (existing && sameContent(next, existing)) {
+  console.log(`Hotel reference already up to date (${HOTELS.length} hotels), left unchanged.`)
   process.exit(0)
 }
 fs.writeFileSync(outPath, next)
