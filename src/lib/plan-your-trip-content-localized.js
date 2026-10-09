@@ -85,6 +85,55 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         ]
       }
     },
+    "tripIdeas": {
+      "eyebrow": "Ideas para el viaje",
+      "title": "Cómo pueden ser los días alrededor del golf.",
+      "intro": "Algunos de los hoteles, mesas y excursiones que propongo a los grupos. Sus opciones se ajustan al grupo y a los campos, y mi socio de viajes comprueba disponibilidad y precios.",
+      "photoLabel": "Foto",
+      "cta": "Planificar el viaje completo",
+      "items": [
+        {
+          "tag": "Este · hotel de golf",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "En el valle de Canyamel, cerca de Canyamel Golf."
+        },
+        {
+          "tag": "Palma · hotel urbano",
+          "title": "Hotel Saratoga",
+          "text": "En el centro de Palma, con el casco antiguo y sus restaurantes a pie."
+        },
+        {
+          "tag": "Palma · estrella Michelin",
+          "title": "Marc Fosh",
+          "text": "Un menú degustación con estrella Michelin y una mesa privada para grupos pequeños."
+        },
+        {
+          "tag": "Palmanova · en la playa",
+          "title": "Siso Beach",
+          "text": "Una comida de entrega de premios junto a la playa tras la última vuelta en T Golf Calvià."
+        },
+        {
+          "tag": "Palmanova · vistas al mar",
+          "title": "Annabel",
+          "text": "Vistas al mar, música y un salón privado para una cena de grupo."
+        },
+        {
+          "tag": "En el mar",
+          "title": "Un barco privado",
+          "text": "Medio día por la costa con patrón, de vuelta a tiempo para cenar."
+        },
+        {
+          "tag": "Consell · vino",
+          "title": "Bodega Ribas",
+          "text": "Una cata en una tarde libre, con traslados para que nadie tenga que conducir."
+        },
+        {
+          "tag": "Día libre",
+          "title": "El tren de Sóller",
+          "text": "El tren de madera que cruza las montañas hasta Sóller, a una hora de Palma."
+        }
+      ]
+    },
     "addon": {
       "eyebrow": "Añadido disponible en cualquier nivel",
       "body": "Un día privado en el campo conmigo durante los 18 hoyos. Funciona como reserva independiente o como parte de un viaje planificado. Un solo campo, elegido para su juego, con gestión local y coaching integrado durante la vuelta.",
@@ -206,6 +255,55 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           "Sie entscheiden, und erst dann wird gebucht."
         ]
       }
+    },
+    "tripIdeas": {
+      "eyebrow": "Ideen für die Reise",
+      "title": "So können die Tage rund um das Golf aussehen.",
+      "intro": "Eine Auswahl der Hotels, Restaurants und Ausflüge, die ich Gruppen vorschlage. Ihre Optionen stimmen wir auf Gruppe und Plätze ab, und mein Reisepartner prüft Verfügbarkeit und Preise.",
+      "photoLabel": "Foto",
+      "cta": "Ganze Reise planen",
+      "items": [
+        {
+          "tag": "Osten · Golfhotel",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "Im Tal von Canyamel, nahe Canyamel Golf."
+        },
+        {
+          "tag": "Palma · Stadthotel",
+          "title": "Hotel Saratoga",
+          "text": "Im Zentrum von Palma, Altstadt und Restaurants zu Fuß erreichbar."
+        },
+        {
+          "tag": "Palma · Michelin-Stern",
+          "title": "Marc Fosh",
+          "text": "Ein Degustationsmenü mit Michelin-Stern und ein privater Tisch für kleinere Gruppen."
+        },
+        {
+          "tag": "Palmanova · am Strand",
+          "title": "Siso Beach",
+          "text": "Ein Mittagessen zur Siegerehrung am Strand nach der letzten Runde auf T Golf Calvià."
+        },
+        {
+          "tag": "Palmanova · Meerblick",
+          "title": "Annabel",
+          "text": "Meerblick, Musik und ein privater Raum für ein Gruppendinner."
+        },
+        {
+          "tag": "Auf dem Wasser",
+          "title": "Ein privates Boot",
+          "text": "Ein halber Tag entlang der Küste mit Skipper, zurück vor dem Abendessen."
+        },
+        {
+          "tag": "Consell · Wein",
+          "title": "Bodega Ribas",
+          "text": "Eine Weinprobe an einem freien Nachmittag, mit Transfer, damit niemand fahren muss."
+        },
+        {
+          "tag": "Freier Tag",
+          "title": "Der Sóller-Zug",
+          "text": "Der Holzzug durch die Berge nach Sóller, etwa eine Stunde ab Palma."
+        }
+      ]
     },
     "addon": {
       "eyebrow": "Zusatzoption auf jeder Stufe",
@@ -329,6 +427,55 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         ]
       }
     },
+    "tripIdeas": {
+      "eyebrow": "Idées de voyage",
+      "title": "À quoi peuvent ressembler les journées autour du golf.",
+      "intro": "Quelques-uns des hôtels, tables et sorties que je propose aux groupes. Vos options sont adaptées au groupe et aux parcours, et mon partenaire de voyage vérifie disponibilités et prix.",
+      "photoLabel": "Photo",
+      "cta": "Organiser tout le voyage",
+      "items": [
+        {
+          "tag": "Est · hôtel golf",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "Dans la vallée de Canyamel, près du Canyamel Golf."
+        },
+        {
+          "tag": "Palma · hôtel en ville",
+          "title": "Hotel Saratoga",
+          "text": "Au centre de Palma, la vieille ville et ses restaurants à pied."
+        },
+        {
+          "tag": "Palma · étoile Michelin",
+          "title": "Marc Fosh",
+          "text": "Un menu dégustation étoilé Michelin, avec une table privée pour un petit groupe."
+        },
+        {
+          "tag": "Palmanova · sur la plage",
+          "title": "Siso Beach",
+          "text": "Un déjeuner de remise des prix sur la plage après la dernière partie au T Golf Calvià."
+        },
+        {
+          "tag": "Palmanova · vue mer",
+          "title": "Annabel",
+          "text": "Vue sur la mer, musique et un salon privé pour un dîner de groupe."
+        },
+        {
+          "tag": "En mer",
+          "title": "Un bateau privé",
+          "text": "Une demi-journée le long de la côte avec skipper, retour à temps pour le dîner."
+        },
+        {
+          "tag": "Consell · vin",
+          "title": "Bodega Ribas",
+          "text": "Une dégustation un après-midi libre, avec transferts pour que personne ne conduise."
+        },
+        {
+          "tag": "Jour libre",
+          "title": "Le train de Sóller",
+          "text": "Le train en bois qui traverse les montagnes jusqu’à Sóller, à environ une heure de Palma."
+        }
+      ]
+    },
     "addon": {
       "eyebrow": "Option disponible à tout niveau",
       "body": "Une journée sur le parcours avec moi pendant les 18 trous. Fonctionne comme réservation autonome ou comme partie d’un voyage planifié. Un seul parcours, choisi pour votre jeu, avec gestion locale et coaching intégré pendant la partie.",
@@ -450,6 +597,55 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           "U beslist, en pas dan wordt er geboekt."
         ]
       }
+    },
+    "tripIdeas": {
+      "eyebrow": "Reisideeën",
+      "title": "Zo kunnen de dagen rond het golf eruitzien.",
+      "intro": "Een paar van de hotels, restaurants en uitstapjes die ik groepen voorstel. Uw opties stemmen we af op de groep en de banen, en mijn reispartner controleert beschikbaarheid en prijzen.",
+      "photoLabel": "Foto",
+      "cta": "Hele reis plannen",
+      "items": [
+        {
+          "tag": "Oosten · golfhotel",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "In de vallei van Canyamel, dicht bij Canyamel Golf."
+        },
+        {
+          "tag": "Palma · stadshotel",
+          "title": "Hotel Saratoga",
+          "text": "In het centrum van Palma, met de oude stad en de restaurants op loopafstand."
+        },
+        {
+          "tag": "Palma · Michelinster",
+          "title": "Marc Fosh",
+          "text": "Een proeverijmenu met een Michelinster, en een privétafel voor een kleinere groep."
+        },
+        {
+          "tag": "Palmanova · aan het strand",
+          "title": "Siso Beach",
+          "text": "Een prijsuitreiking met lunch aan het strand na de laatste ronde op T Golf Calvià."
+        },
+        {
+          "tag": "Palmanova · zeezicht",
+          "title": "Annabel",
+          "text": "Zeezicht, muziek en een privéruimte voor een groepsdiner."
+        },
+        {
+          "tag": "Op het water",
+          "title": "Een privéboot",
+          "text": "Een halve dag langs de kust met schipper, op tijd terug voor het diner."
+        },
+        {
+          "tag": "Consell · wijn",
+          "title": "Bodega Ribas",
+          "text": "Een proeverij op een vrije middag, met vervoer zodat niemand hoeft te rijden."
+        },
+        {
+          "tag": "Vrije dag",
+          "title": "De Sóller-trein",
+          "text": "De houten trein door de bergen naar Sóller, ongeveer een uur vanaf Palma."
+        }
+      ]
     },
     "addon": {
       "eyebrow": "Extra optie op elk niveau",
@@ -573,6 +769,55 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         ]
       }
     },
+    "tripIdeas": {
+      "eyebrow": "Residéer",
+      "title": "Så kan dagarna runt golfen se ut.",
+      "intro": "Några av de hotell, restauranger och utflykter jag föreslår för grupper. Alternativen anpassas efter gruppen och banorna, och min resepartner kontrollerar tillgänglighet och priser.",
+      "photoLabel": "Foto",
+      "cta": "Planera hela resan",
+      "items": [
+        {
+          "tag": "Öst · golfhotell",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "I Canyamel-dalen, nära Canyamel Golf."
+        },
+        {
+          "tag": "Palma · stadshotell",
+          "title": "Hotel Saratoga",
+          "text": "Centralt i Palma, med gamla stan och restaurangerna på gångavstånd."
+        },
+        {
+          "tag": "Palma · Michelinstjärna",
+          "title": "Marc Fosh",
+          "text": "En avsmakningsmeny med Michelinstjärna och ett privat bord för en mindre grupp."
+        },
+        {
+          "tag": "Palmanova · på stranden",
+          "title": "Siso Beach",
+          "text": "En prisutdelningslunch på stranden efter sista rundan på T Golf Calvià."
+        },
+        {
+          "tag": "Palmanova · havsutsikt",
+          "title": "Annabel",
+          "text": "Havsutsikt, musik och ett privat rum för en gruppmiddag."
+        },
+        {
+          "tag": "På vattnet",
+          "title": "En privat båt",
+          "text": "En halvdag längs kusten med skeppare, tillbaka i tid till middagen."
+        },
+        {
+          "tag": "Consell · vin",
+          "title": "Bodega Ribas",
+          "text": "En vinprovning en ledig eftermiddag, med transfer så att ingen behöver köra."
+        },
+        {
+          "tag": "Ledig dag",
+          "title": "Sóllertåget",
+          "text": "Trätåget genom bergen till Sóller, ungefär en timme från Palma."
+        }
+      ]
+    },
     "addon": {
       "eyebrow": "Tillägg på alla nivåer",
       "body": "En privat dag på banan med mig bredvid dig under alla 18 hål. Fungerar som en fristående bokning eller som del av en planerad resa. En bana vald för ditt spel, med lokal banstrategi och coaching invävd i rundan.",
@@ -694,6 +939,55 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           "由您决定，确认之后才会预订。"
         ]
       }
+    },
+    "tripIdeas": {
+      "eyebrow": "行程灵感",
+      "title": "球局之外的日子，可以这样安排。",
+      "intro": "这里是我常为团队推荐的一部分酒店、餐厅和出游安排。具体方案会根据团队和球场来定，由我的旅行合作伙伴确认空位和价格。",
+      "photoLabel": "图片",
+      "cta": "规划整趟行程",
+      "items": [
+        {
+          "tag": "东部 · 高尔夫度假酒店",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "位于 Canyamel 山谷，靠近 Canyamel 球场。"
+        },
+        {
+          "tag": "帕尔马 · 城市酒店",
+          "title": "Hotel Saratoga",
+          "text": "位于帕尔马市中心，步行即可到老城和餐厅。"
+        },
+        {
+          "tag": "帕尔马 · 米其林星级",
+          "title": "Marc Fosh",
+          "text": "米其林星级品鉴菜单，另有适合小团队的私人餐桌。"
+        },
+        {
+          "tag": "Palmanova · 海滩",
+          "title": "Siso Beach",
+          "text": "在 T Golf Calvià 打完最后一轮后，在海边办一场颁奖午餐。"
+        },
+        {
+          "tag": "Palmanova · 海景",
+          "title": "Annabel",
+          "text": "面朝大海，有音乐，也有适合团队晚宴的包间。"
+        },
+        {
+          "tag": "海上",
+          "title": "私人游艇",
+          "text": "在船长带领下沿海岸游玩半天，赶得上晚餐。"
+        },
+        {
+          "tag": "Consell · 葡萄酒",
+          "title": "Bodega Ribas",
+          "text": "在空闲的下午品酒，安排接送，无需自己开车。"
+        },
+        {
+          "tag": "休息日",
+          "title": "索列尔小火车",
+          "text": "乘坐木制小火车穿越山区前往 Sóller，从帕尔马出发约一小时。"
+        }
+      ]
     },
     "addon": {
       "eyebrow": "任何级别都可加购",

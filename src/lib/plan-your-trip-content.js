@@ -84,6 +84,71 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     "sendPrompt": "Best details to send: dates, group size, handicap range, hotel area, and any courses already on your shortlist.",
     "cta": "Enquire about trip planning"
   },
+  "tripIdeas": {
+    "eyebrow": "Trip ideas",
+    "title": "What the days around the golf can look like.",
+    "intro": "A few of the hotels, tables and days out I suggest to groups. Your options are matched to the group and the courses, and my travel partner checks availability and prices.",
+    "photoLabel": "Photo",
+    "cta": "Plan the whole trip",
+    "items": [
+      {
+        "image": "/images/trip-ideas/stay-golf.webp",
+        "photo": "Cap Vermell Grand Hotel",
+        "tag": "East · golf base",
+        "title": "Cap Vermell Grand Hotel",
+        "text": "In the Canyamel valley, close to Canyamel Golf."
+      },
+      {
+        "image": "/images/trip-ideas/stay-city.webp",
+        "photo": "Hotel Saratoga",
+        "tag": "Palma · city hotel",
+        "title": "Hotel Saratoga",
+        "text": "Central Palma, with the old town and its restaurants on foot."
+      },
+      {
+        "image": "/images/trip-ideas/dine-fosh.webp",
+        "photo": "Marc Fosh",
+        "tag": "Palma · Michelin star",
+        "title": "Marc Fosh",
+        "text": "A Michelin-starred tasting menu, with a private table for a smaller group."
+      },
+      {
+        "image": "/images/trip-ideas/dine-siso.webp",
+        "photo": "Siso Beach",
+        "tag": "Palmanova · on the beach",
+        "title": "Siso Beach",
+        "text": "A beachside prize-giving lunch after the last round at T Golf Calvià."
+      },
+      {
+        "image": "/images/trip-ideas/dine-annabel.webp",
+        "photo": "Annabel",
+        "tag": "Palmanova · sea view",
+        "title": "Annabel",
+        "text": "Sea views, music and a private room for a group dinner."
+      },
+      {
+        "image": "/images/trip-ideas/do-boat.webp",
+        "photo": "Can Simoneta",
+        "tag": "On the water",
+        "title": "A private boat",
+        "text": "Half a day along the coast with a skipper, back in time for dinner."
+      },
+      {
+        "image": "/images/trip-ideas/do-winery.webp",
+        "photo": "Bodega Ribas",
+        "tag": "Consell · wine",
+        "title": "Bodega Ribas",
+        "text": "A tasting on a free afternoon, with transfers so nobody drives back."
+      },
+      {
+        "image": "/images/trip-ideas/do-train.webp",
+        "photo": "Tren de Sóller",
+        "tag": "Day off",
+        "title": "The Sóller train",
+        "text": "The wooden train through the mountains to Sóller, about an hour from Palma."
+      }
+    ]
+  },
   "addon": {
     "eyebrow": "Add-on available at any level",
     "title": "Play With A Pro",

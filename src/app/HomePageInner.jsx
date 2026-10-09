@@ -119,7 +119,7 @@ export default function HomePageInner({ locale = 'en' }) {
               </>
             ) : null}
           </h1>
-          {home.hero.subline ? <p className="hero__subline">{home.hero.subline}</p> : null}
+          {home.hero.subline ? <p className="hero__sub">{home.hero.subline}</p> : null}
           <div className="hero__reviews">
             <ReviewBadge variant="text" theme="dark" locale={locale} />
           </div>

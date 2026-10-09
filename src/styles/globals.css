@@ -247,6 +247,76 @@
 .pyt-section--pine {
   background: var(--pine);
 }
+.pyt-section--white {
+  background: var(--white);
+}
+.pyt-trip-ideas__head {
+  max-width: 780px;
+  margin-bottom: 36px;
+}
+.pyt-trip-ideas {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.pyt-trip-idea {
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  border: 1px solid var(--sand);
+}
+.pyt-trip-idea__media {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: var(--linen);
+}
+.pyt-trip-idea__image {
+  object-fit: cover;
+}
+.pyt-trip-idea__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 18px 18px 16px;
+}
+.pyt-trip-idea__tag {
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+}
+.pyt-trip-idea h3 {
+  margin: 0 0 8px;
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--deep);
+}
+.pyt-trip-idea p {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--charcoal);
+}
+.pyt-trip-idea small {
+  margin-top: auto;
+  font-size: 12px;
+  color: var(--taupe-text);
+}
+.pyt-trip-ideas__cta {
+  margin-top: 32px;
+  text-align: center;
+}
+@media (max-width: 1100px) {
+  .pyt-trip-ideas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .pyt-trip-ideas { grid-template-columns: minmax(0, 1fr); }
+}
 
 .pyt-section__inner {
   max-width: var(--max-w);
@@ -2396,7 +2466,6 @@ body {
 .hero__title { font-family: var(--font-serif); font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 500; line-height: 1.05; color: var(--white); margin-bottom: 1.5rem; letter-spacing: -0.01em; text-wrap: balance; }
 .hero__title-line { display: inline; }
 .hero__title-emphasis { font-style: italic; font-weight: 400; opacity: 0.9; color: rgba(255,255,255,0.92); }
-.hero__subline { font-size: clamp(1.02rem, 1.5vw, 1.22rem); font-weight: 400; line-height: 1.5; color: rgba(255,255,255,0.88); max-width: 34rem; margin: 0 0 1.5rem; text-wrap: pretty; }
 .hero__sub { font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 2.25rem; max-width: 480px; }
 .hero__reviews { margin-bottom: 1.75rem; }
 .hero__reviews .review-text { align-items: flex-start; }

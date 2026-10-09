@@ -41,6 +41,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "Planificar mi viaje de golf"],
+        ["whole-trip", "Planificar todo el viaje"],
         ["tee-time-booking", "Reservar tee times para mi grupo"],
         ["both", "Ambos"],
         ["not-sure", "Aún no lo sé"]
@@ -162,6 +163,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "Meine Golfreise planen"],
+        ["whole-trip", "Die ganze Reise planen"],
         ["tee-time-booking", "Startzeiten für meine Gruppe buchen"],
         ["both", "Beides"],
         ["not-sure", "Noch nicht sicher"]
@@ -283,6 +285,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "Planifier mon voyage de golf"],
+        ["whole-trip", "Organiser tout le voyage"],
         ["tee-time-booking", "Réserver des départs pour mon groupe"],
         ["both", "Les deux"],
         ["not-sure", "Je ne suis pas sûr"]
@@ -404,6 +407,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "Mijn golfreis plannen"],
+        ["whole-trip", "De hele reis plannen"],
         ["tee-time-booking", "Starttijden voor mijn groep boeken"],
         ["both", "Beide"],
         ["not-sure", "Ik weet het nog niet"]
@@ -525,6 +529,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "Planera min golfresa"],
+        ["whole-trip", "Planera hela resan"],
         ["tee-time-booking", "Boka starttider för min grupp"],
         ["both", "Båda"],
         ["not-sure", "Jag är osäker"]
@@ -649,6 +654,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
         ["trip-planning", "规划我的高尔夫之旅"],
+        ["whole-trip", "规划整趟行程"],
         ["tee-time-booking", "为我的团队预订开球时间"],
         ["both", "两种都想"],
         ["not-sure", "还没有决定"]
