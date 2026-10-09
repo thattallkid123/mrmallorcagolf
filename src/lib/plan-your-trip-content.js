@@ -6,7 +6,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   en: {
   "heroEyebrow": "Plan Your Mallorca Golf Trip",
   "heroTitle": "The right Mallorca courses, in the right order.",
-  "heroBody": "I choose and book the courses and tee times for your group, with buggies and rentals arranged before you arrive. You play the rounds on your own schedule. If you want me alongside you for a day, add Play With A Pro.",
+  "heroBody": "I choose and book the courses and tee times for your group, with buggies and rentals arranged before you arrive. You play the rounds on your own schedule. For the whole trip, I also work with a trusted local travel partner on the hotel, transfers, restaurants and days off. If you want me alongside you for a day, add Play With A Pro.",
   "options": {
     "itineraryLabel": "Sample trip",
     "itineraryTitle": "See a real 5-day week",
@@ -38,7 +38,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     ],
     "workingModes": {
       "title": "Choose the level of help you need.",
-      "body": "Some groups only need tee times checked and booked. Others need the full golf plan built around flights, hotel area, handicap range and budget.",
+      "body": "Some groups only need tee times checked and booked. Others want the full golf plan, or the whole trip planned around it.",
       "items": [
         {
           "title": "Tee times only",
@@ -52,16 +52,31 @@ export const PLAN_YOUR_TRIP_CONTENT = {
           "cta": "Plan my golf trip",
           "target": "trip-planning"
         },
+        {
+          "title": "The whole trip",
+          "body": "Golf plus the hotel, transfers, restaurants and days off. I plan the golf, my local travel partner books the rest directly, and you get one plan.",
+          "cta": "Plan the whole trip",
+          "target": "whole-trip"
+        }
       ]
     },
     "possibilities": {
-      "title": "A golf trip can stay simple, or become something more complete.",
-      "body": "Depending on the group, I can shape the days around hotel choice, restaurants, spa time, coastal drives, wine tasting, private chef evenings, extra lessons, or quieter recovery time between rounds.",
+      "title": "The whole trip, planned around the golf.",
+      "body": "I work with a trusted local travel partner who arranges hotels, transfers, restaurants and activities across the island. We agree the plan with you, the partner books and invoices the non-golf side directly, and I look after the golf.",
       "items": [
         "Palma hotel, resort or quieter finca base",
         "Michelin-starred restaurant, local favourite or private chef",
         "Spa, recovery or quieter non-golf time between rounds",
         "Coastal drive, vineyard visit or a more memorable evening plan"
+      ]
+    },
+    "process": {
+      "title": "How it works",
+      "steps": [
+        "Send your dates, group size and what you want from the trip.",
+        "For a wider trip, we agree the golf, the base and the extras on a short call.",
+        "I send the golf plan; my travel partner sends the hotel, transfer and dining options.",
+        "You decide, and only then is anything booked."
       ]
     },
     "note": "No commitment at enquiry stage. I reply personally within 24 hours with the recommended next step and a clear quote before anything is booked.",

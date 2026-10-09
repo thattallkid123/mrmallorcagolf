@@ -11,6 +11,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "campos de Mallorca."
       ],
       "emphasis": "Con un profesional a su lado.",
+      "subline": "O deje que reserve sus horas de salida y planifique todo el viaje en torno a ellas.",
       "primaryCta": "Play With A Pro",
       "secondaryCta": "Planifique su viaje",
       "trust": [
@@ -22,10 +23,11 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "Lo que hago",
-      "title": "Un día de 18 hoyos conmigo. O un viaje entero planificado a su alrededor.",
+      "title": "Juegue una vuelta conmigo, o deje que reserve su golf y planifique el viaje a su alrededor.",
       "paragraphs": [
         "Play With A Pro es mi día en el campo con usted: un campo, 18 hoyos, gestión del campo, coaching integrado en la vuelta y el conocimiento local que convierte un buen día en un gran día.",
-        "La planificación del viaje es el servicio de diseño de ruta. Si quiere que me ocupe de los campos, la base, la ruta, las horas de salida, los buggies y las reservas antes de su llegada, también lo hago."
+        "Si prefiere jugar por su cuenta, reservo el golf: los campos adecuados, en el orden adecuado, con horas de salida y buggies confirmados antes de su llegada.",
+        "Para el viaje completo, planifico el golf y trabajo con un socio de viajes local de confianza para el hotel, los traslados, los restaurantes y los días libres. El socio reserva directamente todo lo que no es golf, y yo uno ambos planes."
       ],
       "stats": [
         {
@@ -42,13 +44,18 @@ export const HOME_LOCALIZED_CONTENT = {
       "services": [
         {
           "title": "Play With A Pro",
-          "text": "Un día de 18 hoyos conmigo. Independiente, o como eje de un viaje más amplio por Mallorca.",
+          "text": "Un día de 18 hoyos conmigo en el campo que elija, con coaching integrado en la vuelta.",
           "cta": "Ver Play With A Pro"
         },
         {
-          "title": "Planificación del viaje",
-          "text": "Campos, base, rutas, horas de salida, buggies, palos de alquiler y sugerencias de restaurantes.",
-          "cta": "Planifique su viaje"
+          "title": "Reserve su golf",
+          "text": "Campos, horas de salida, buggies y palos de alquiler, con las vueltas en un orden lógico.",
+          "cta": "Reservar el golf"
+        },
+        {
+          "title": "Planifique todo el viaje",
+          "text": "Golf más hotel, traslados, restaurantes y días libres, con un socio de viajes local de confianza.",
+          "cta": "Planificar el viaje completo"
         }
       ],
       "coursesBlurb": "Juego y reviso todos los campos de la isla: Son Gual, Alcanada, T Golf Calvià, Son Muntaner y el resto. Si quiere comparar campos antes de reservar,",
@@ -331,6 +338,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "beste Plätze."
       ],
       "emphasis": "Mit einem Profi an Ihrer Seite.",
+      "subline": "Oder ich buche Ihre Startzeiten und plane die ganze Reise darum herum.",
       "primaryCta": "Play With A Pro",
       "secondaryCta": "Reise planen",
       "trust": [
@@ -342,10 +350,11 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "Was ich mache",
-      "title": "Ein 18-Loch-Tag mit mir. Oder eine ganze Reise, die darum herum geplant ist.",
+      "title": "Spielen Sie eine Runde mit mir, oder ich buche Ihr Golf und plane die Reise darum herum.",
       "paragraphs": [
         "Play With A Pro ist mein Tag auf dem Platz mit Ihnen: ein Platz, 18 Löcher, Platzmanagement, Coaching mitten in der Runde und das lokale Wissen, das aus einem guten Tag einen großartigen macht.",
-        "Die Reiseplanung ist der Routenservice. Wenn ich Plätze, Standort, Route, Startzeiten, Buggys und Buchungen vor Ihrer Ankunft übernehmen soll, mache ich auch das."
+        "Wenn Sie lieber unter sich spielen, buche ich das Golf: die passenden Plätze in der richtigen Reihenfolge, mit Startzeiten und Buggys, die vor Ihrer Ankunft bestätigt sind.",
+        "Für die ganze Reise plane ich das Golf und arbeite für Hotel, Transfers, Restaurants und freie Tage mit einem bewährten lokalen Reisepartner zusammen. Der Partner bucht alles außerhalb des Golfs direkt, und ich führe beides zu einem Plan zusammen."
       ],
       "stats": [
         {
@@ -363,13 +372,18 @@ export const HOME_LOCALIZED_CONTENT = {
       "services": [
         {
           "title": "Play With A Pro",
-          "text": "Ein 18-Loch-Tag mit mir. Eigenständig oder als Anker für eine größere Mallorca-Reise.",
+          "text": "Ein 18-Loch-Tag mit mir auf dem Platz Ihrer Wahl, mit Coaching direkt in der Runde.",
           "cta": "Play With A Pro ansehen"
         },
         {
-          "title": "Reiseplanung",
-          "text": "Plätze, Standort, Routenplanung, Startzeiten, Buggys, Leihschläger und Restaurant-Empfehlungen.",
-          "cta": "Reise planen"
+          "title": "Golf buchen",
+          "text": "Plätze, Startzeiten, Buggys und Leihschläger, mit den Runden in einer sinnvollen Reihenfolge.",
+          "cta": "Golf buchen"
+        },
+        {
+          "title": "Die ganze Reise planen",
+          "text": "Golf plus Hotel, Transfers, Restaurants und freie Tage, mit einem bewährten lokalen Reisepartner.",
+          "cta": "Ganze Reise planen"
         }
       ],
       "coursesBlurb": "Ich spiele und bewerte jeden Platz auf der Insel: Son Gual, Alcanada, T Golf Calvià, Son Muntaner und den Rest. Wenn Sie Plätze vor der Buchung vergleichen möchten,",
@@ -652,6 +666,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "parcours de Majorque."
       ],
       "emphasis": "Avec un pro à vos côtés.",
+      "subline": "Ou laissez-moi réserver vos départs et organiser tout le voyage autour.",
       "primaryCta": "Play With A Pro",
       "secondaryCta": "Planifiez votre voyage",
       "trust": [
@@ -663,10 +678,11 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "Ce que je fais",
-      "title": "Une journée de 18 trous avec moi. Ou un séjour entier construit autour.",
+      "title": "Faites un parcours avec moi, ou laissez-moi réserver votre golf et organiser le voyage autour.",
       "paragraphs": [
         "Play With A Pro est ma journée sur le parcours avec vous : un parcours, 18 trous, gestion du parcours, coaching intégré à la partie et la connaissance locale qui transforme une bonne journée en excellente journée.",
-        "La planification du séjour est le service de construction d'itinéraire. Si vous voulez que je m'occupe des parcours, de la base, de l'itinéraire, des heures de départ, des voiturettes et des réservations avant votre arrivée, je le fais aussi."
+        "Si vous préférez jouer entre vous, je réserve le golf : les bons parcours, dans le bon ordre, avec départs et voiturettes confirmés avant votre arrivée.",
+        "Pour le voyage complet, je planifie le golf et je travaille avec un partenaire de voyage local de confiance pour l’hôtel, les transferts, les restaurants et les jours libres. Le partenaire réserve directement tout ce qui ne concerne pas le golf, et je réunis les deux plans."
       ],
       "stats": [
         {
@@ -684,13 +700,18 @@ export const HOME_LOCALIZED_CONTENT = {
       "services": [
         {
           "title": "Play With A Pro",
-          "text": "Une journée de 18 trous avec moi. Autonome, ou comme point d'ancrage d'un voyage plus large à Majorque.",
+          "text": "Une journée de 18 trous avec moi sur le parcours de votre choix, avec du coaching intégré à la partie.",
           "cta": "Voir Play With A Pro"
         },
         {
-          "title": "Planification du voyage",
-          "text": "Parcours, base, itinéraire, heures de départ, voiturettes, location de clubs et suggestions de restaurants.",
-          "cta": "Planifiez votre voyage"
+          "title": "Réservez votre golf",
+          "text": "Parcours, départs, voiturettes et clubs de location, avec les parties dans un ordre logique.",
+          "cta": "Réserver le golf"
+        },
+        {
+          "title": "Organisez tout le voyage",
+          "text": "Le golf, plus l’hôtel, les transferts, les restaurants et les jours libres, avec un partenaire de voyage local de confiance.",
+          "cta": "Organiser tout le voyage"
         }
       ],
       "coursesBlurb": "Je joue et évalue chaque parcours de l'île : Son Gual, Alcanada, T Golf Calvià, Son Muntaner et les autres. Si vous voulez comparer les parcours avant de réserver,",
@@ -973,6 +994,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "banen van Mallorca."
       ],
       "emphasis": "Met een professional aan uw zijde.",
+      "subline": "Of laat mij uw starttijden boeken en de hele reis eromheen plannen.",
       "primaryCta": "Play With A Pro",
       "secondaryCta": "Plan uw reis",
       "trust": [
@@ -984,10 +1006,11 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "Wat ik doe",
-      "title": "Een dag van 18 holes met mij. Of een hele reis die daaromheen is gebouwd.",
+      "title": "Speel een ronde met mij, of laat mij uw golf boeken en de reis eromheen plannen.",
       "paragraphs": [
         "Play With A Pro is mijn dag op de baan met u: één baan, 18 holes, baanmanagement, coaching verweven in de ronde en de lokale kennis die van een goede dag een geweldige dag maakt.",
-        "Reisplanning is de service voor routeplanning. Als u wilt dat ik de banen, uw verblijfslocatie, de route, starttijden, buggy's en boekingen regel voordat u aankomt, doe ik dat ook."
+        "Wilt u liever zelf spelen, dan boek ik het golf: de juiste banen, in de juiste volgorde, met starttijden en buggy's bevestigd voordat u aankomt.",
+        "Voor de hele reis plan ik het golf en werk ik voor het hotel, de transfers, restaurants en vrije dagen samen met een vertrouwde lokale reispartner. De partner boekt alles buiten het golf rechtstreeks, en ik breng beide plannen samen."
       ],
       "stats": [
         {
@@ -1005,13 +1028,18 @@ export const HOME_LOCALIZED_CONTENT = {
       "services": [
         {
           "title": "Play With A Pro",
-          "text": "Een 18-holes dag met mij. Op zichzelf staand, of als anker voor een bredere Mallorca-reis.",
+          "text": "Een dag van 18 holes met mij op de baan van uw keuze, met coaching verwerkt in de ronde.",
           "cta": "Bekijk Play With A Pro"
         },
         {
-          "title": "Reisplanning",
-          "text": "Banen, basis, route, starttijden, buggy's, huurclubs en restaurantsuggesties.",
-          "cta": "Plan uw reis"
+          "title": "Uw golf boeken",
+          "text": "Banen, starttijden, buggy's en huurclubs, met de rondes in een logische volgorde.",
+          "cta": "Golf boeken"
+        },
+        {
+          "title": "De hele reis plannen",
+          "text": "Golf plus hotel, transfers, restaurants en vrije dagen, met een vertrouwde lokale reispartner.",
+          "cta": "Hele reis plannen"
         }
       ],
       "coursesBlurb": "Ik speel en beoordeel elke baan op het eiland: Son Gual, Alcanada, T Golf Calvià, Son Muntaner en de rest. Wilt u banen vergelijken voordat u boekt,",
@@ -1294,6 +1322,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "bästa banor."
       ],
       "emphasis": "Med ett proffs vid din sida.",
+      "subline": "Eller låt mig boka starttiderna och planera hela resan runt dem.",
       "primaryCta": "Play With A Pro",
       "secondaryCta": "Planera din resa",
       "trust": [
@@ -1305,10 +1334,11 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "Vad jag gör",
-      "title": "En dag med 18 hål tillsammans med mig. Eller en hel resa byggd runt den.",
+      "title": "Spela en runda med mig, eller låt mig boka golfen och planera resan runt den.",
       "paragraphs": [
         "Play With A Pro är min dag på banan med dig: en bana, 18 hål, banstrategi, coaching invävd i rundan och den lokala kunskap som gör en bra dag till en riktigt bra dag.",
-        "Reseplanering är tjänsten för ruttplanering. Vill du att jag tar hand om banor, boendeplats, rutt, starttider, golfbilar och bokningar innan du kommer, gör jag det också."
+        "Vill du hellre spela på egen hand bokar jag golfen: rätt banor i rätt ordning, med starttider och golfbilar bekräftade innan du kommer.",
+        "För hela resan planerar jag golfen och samarbetar med en betrodd lokal resepartner kring hotell, transfer, restauranger och lediga dagar. Partnern bokar allt utanför golfen direkt, och jag sätter ihop de två planerna."
       ],
       "stats": [
         {
@@ -1326,13 +1356,18 @@ export const HOME_LOCALIZED_CONTENT = {
       "services": [
         {
           "title": "Play With A Pro",
-          "text": "En 18-håls dag med mig. Fristående, eller som ankare för en större Mallorcaresa.",
+          "text": "En 18-hålsdag med mig på den bana du väljer, med coachning inbyggd i rundan.",
           "cta": "Se Play With A Pro"
         },
         {
-          "title": "Reseplanering",
-          "text": "Banor, bas, rutt, starttider, golfbilar, hyrklubbor och restaurangförslag.",
-          "cta": "Planera din resa"
+          "title": "Boka golfen",
+          "text": "Banor, starttider, golfbilar och hyrklubbor, med rundorna i en ordning som hänger ihop.",
+          "cta": "Boka golfen"
+        },
+        {
+          "title": "Planera hela resan",
+          "text": "Golf plus hotell, transfer, restauranger och lediga dagar, med en betrodd lokal resepartner.",
+          "cta": "Planera hela resan"
         }
       ],
       "coursesBlurb": "Jag spelar och recenserar varje bana på ön: Son Gual, Alcanada, T Golf Calvià, Son Muntaner och resten. Vill du jämföra banor innan du bokar,",
@@ -1615,6 +1650,7 @@ export const HOME_LOCALIZED_CONTENT = {
         "高尔夫球场。"
       ],
       "emphasis": "由我全程陪同。",
+      "subline": "也可以由我预订开球时间，并围绕球局规划整趟行程。",
       "primaryCta": "Play With A Pro",
       "secondaryCta": "规划行程",
       "trust": [
@@ -1626,21 +1662,27 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "我做什么",
-      "title": "与我同打 18 洞的一天，或围绕这一天打造的整趟行程。",
+      "title": "与我同打一轮，或由我预订球场，并围绕球局规划行程。",
       "paragraphs": [
         "Play With A Pro 是我陪您在球场上度过的一天：一座球场、18 洞、球场管理、融入球局的指导，以及把好的一天变得更好的本地经验。",
-        "行程规划是路线规划服务。如果您希望我在您抵达前安排好球场、住宿区域、路线、开球时间、球车和预订，我也可以做到。"
+        "如果您想自己打球，由我负责预订：合适的球场、合理的顺序，开球时间和球车在您抵达前全部确认。",
+        "如需规划整趟行程，我负责高尔夫部分，并与一位可靠的本地旅行合作伙伴安排酒店、接送、餐厅和休息日。高尔夫以外的部分由合作伙伴直接预订，我把两边的安排整合成一份计划。"
       ],
       "services": [
         {
           "title": "与我同场",
-          "text": "一整天的私人陪打：一座球场、18 洞、球场管理指导贯穿全程。单人或小组均可。",
+          "text": "在您选择的球场与我同打 18 洞，指导融入整轮球局。",
           "cta": "了解陪打服务"
         },
         {
-          "title": "行程规划",
-          "text": "把球场、住宿基点、路线、开球时间、球车、球杆租赁和餐饮建议都交给我。",
-          "cta": "了解行程规划"
+          "title": "预订球场",
+          "text": "球场、开球时间、球车和租杆，按合理的顺序安排每一轮。",
+          "cta": "了解球场预订"
+        },
+        {
+          "title": "规划整趟行程",
+          "text": "高尔夫之外，还有酒店、接送、餐厅和休息日，与可靠的本地旅行合作伙伴一起安排。",
+          "cta": "了解整趟规划"
         }
       ],
       "coursesBlurb": "全岛 24 座球场，我都亲自打过并认真评价过——Son Gual、Alcanada、Son Muntaner 以及其余所有球场。如果您想在预订前比较球场，",

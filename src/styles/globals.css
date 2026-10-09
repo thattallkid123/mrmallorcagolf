@@ -379,6 +379,10 @@
   gap: 14px;
 }
 
+.pyt-working-modes__grid--three {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .pyt-working-mode {
   display: flex;
   flex-direction: column;
@@ -500,6 +504,33 @@
 
 .pyt-pro-cta__note:last-child {
   margin-bottom: 0;
+}
+
+.pyt-process {
+  margin: 0 0 20px;
+  padding: 0 0 18px;
+  border-bottom: 1px solid var(--sand);
+}
+
+.pyt-process h3 {
+  margin: 0 0 12px;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--deep);
+}
+
+.pyt-process ol {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.pyt-process li {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--charcoal);
 }
 
 .pyt-working-mode__link {
@@ -2365,6 +2396,7 @@ body {
 .hero__title { font-family: var(--font-serif); font-size: clamp(2.8rem, 6vw, 5rem); font-weight: 500; line-height: 1.05; color: var(--white); margin-bottom: 1.5rem; letter-spacing: -0.01em; text-wrap: balance; }
 .hero__title-line { display: inline; }
 .hero__title-emphasis { font-style: italic; font-weight: 400; opacity: 0.9; color: rgba(255,255,255,0.92); }
+.hero__subline { font-size: clamp(1.02rem, 1.5vw, 1.22rem); font-weight: 400; line-height: 1.5; color: rgba(255,255,255,0.88); max-width: 34rem; margin: 0 0 1.5rem; text-wrap: pretty; }
 .hero__sub { font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.72); line-height: 1.7; margin-bottom: 2.25rem; max-width: 480px; }
 .hero__reviews { margin-bottom: 1.75rem; }
 .hero__reviews .review-text { align-items: flex-start; }
@@ -2453,6 +2485,9 @@ body {
 .intro-service strong { font-family: var(--font-serif); font-size: 1.18rem; font-weight: 500; color: var(--deep); }
 .intro-service span { font-size: 0.92rem; line-height: 1.55; color: var(--taupe-text); }
 .intro-service em { margin-top: auto; font-style: normal; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--pine); }
+.intro__services--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.intro__services--three .intro-service { min-height: 0; }
+@media (max-width: 1300px) { .intro__services--three { grid-template-columns: minmax(0, 1fr); } }
 .intro__media { position: relative; min-height: 520px; align-self: stretch; overflow: hidden; background: var(--linen); box-shadow: var(--shadow-soft); }
 .intro__media::after { content: ''; position: absolute; inset: 0; border: 1px solid rgba(26,25,22,0.08); pointer-events: none; }
 .intro__stat { border-left: 1px solid rgba(184,151,60,0.28); padding-left: 22px; }

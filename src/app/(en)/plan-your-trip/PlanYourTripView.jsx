@@ -137,7 +137,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
                     <h3>{content.professional.workingModes.title}</h3>
                     <p>{content.professional.workingModes.body}</p>
                   </div>
-                  <div className="pyt-working-modes__grid">
+                  <div className={`pyt-working-modes__grid${content.professional.workingModes.items.length === 3 ? ' pyt-working-modes__grid--three' : ''}`}>
                     {content.professional.workingModes.items.map((item) => (
                       <article key={item.title} className="pyt-working-mode">
                         <h4>{item.title}</h4>
@@ -152,7 +152,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
               ) : null}
 
               {content.professional.possibilities ? (
-                <div className="pyt-possibilities">
+                <div className="pyt-possibilities" id="whole-trip">
                   <div className="pyt-possibilities__intro">
                     <h3>{content.professional.possibilities.title}</h3>
                     <p>{content.professional.possibilities.body}</p>
@@ -168,6 +168,16 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
 
             <aside className="pyt-planning-aside" aria-label={content.professional.cta}>
               <div className="pyt-pro-cta">
+                {content.professional.process ? (
+                  <div className="pyt-process">
+                    <h3>{content.professional.process.title}</h3>
+                    <ol>
+                      {content.professional.process.steps.map((step) => (
+                        <li key={step}>{step}</li>
+                      ))}
+                    </ol>
+                  </div>
+                ) : null}
                 <p className="pyt-pro-cta__note">{content.professional.note}</p>
                 {content.professional.feeNote ? (
                   <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
