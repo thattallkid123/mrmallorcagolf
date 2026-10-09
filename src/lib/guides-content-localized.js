@@ -134,6 +134,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Todos los niveles · Comparativa de green fees · Actualizado 2026"
       },
       {
+        "slug": "golf-club-hire-mallorca",
+        "badge": "Guía práctica",
+        "title": "Alquiler de palos en Mallorca: todo lo que necesitas saber (2026)",
+        "intro": "¿Traer sus propios palos? ¿Qué empresas de alquiler merecen la pena? ¿Cuánto hay que pagar? Respondido con honestidad.",
+        "readTime": "6 min",
+        "keywords": "Alquiler · Traer palos · Precios · Empresas"
+      },
+      {
         "slug": "golf-cost-mallorca",
         "badge": "Guía",
         "title": "¿Cuánto cuesta el golf en Mallorca? Green fees, alquiler y costes ocultos",
@@ -215,14 +223,6 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Campos de prácticas con TrackMan, Toptracer y hierba comparados: dónde medir, calentar y trabajar el juego corto.",
         "readTime": "4 min",
         "keywords": "TrackMan · Toptracer · Juego corto"
-      },
-      {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "Guía práctica",
-        "title": "Alquiler de palos en Mallorca: todo lo que necesitas saber (2026)",
-        "intro": "¿Traer sus propios palos? ¿Qué empresas de alquiler merecen la pena? ¿Cuánto hay que pagar? Respondido con honestidad.",
-        "readTime": "6 min",
-        "keywords": "Alquiler · Traer palos · Precios · Empresas"
       }
     ],
     "comingSoonLabel": "Próximamente",
@@ -368,6 +368,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Alle Level · Greenfees im Vergleich · Aktualisiert 2026"
       },
       {
+        "slug": "golf-club-hire-mallorca",
+        "badge": "Praktischer Ratgeber",
+        "title": "Leihschläger auf Mallorca – alles, was Sie wissen müssen (2026)",
+        "intro": "Eigene Schläger mitbringen? Welche Verleiher lohnen sich? Was sollte man zahlen? Ehrlich beantwortet.",
+        "readTime": "6 Min.",
+        "keywords": "Leihschläger · Eigene Schläger · Preise · Anbieter"
+      },
+      {
         "slug": "golf-cost-mallorca",
         "badge": "Ratgeber",
         "title": "Was kostet Golf auf Mallorca? Greenfees, Leihausrüstung und versteckte Kosten",
@@ -449,14 +457,6 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "TrackMan-, Toptracer- und Gras-Ranges im Vergleich: wo Sie messen, sich aufwärmen und das kurze Spiel trainieren.",
         "readTime": "4 Min.",
         "keywords": "TrackMan · Toptracer · Kurzes Spiel"
-      },
-      {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "Praktischer Ratgeber",
-        "title": "Leihschläger auf Mallorca – alles, was Sie wissen müssen (2026)",
-        "intro": "Eigene Schläger mitbringen? Welche Verleiher lohnen sich? Was sollte man zahlen? Ehrlich beantwortet.",
-        "readTime": "6 Min.",
-        "keywords": "Leihschläger · Eigene Schläger · Preise · Anbieter"
       }
     ],
     "comingSoonLabel": "Demnächst",
@@ -601,6 +601,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Tous niveaux · Comparatif green fees · Mis à jour 2026"
       },
       {
+        "slug": "golf-club-hire-mallorca",
+        "badge": "Guide pratique",
+        "title": "Location de clubs à Majorque – tout ce que vous devez savoir (2026)",
+        "intro": "Faut-il apporter ses propres clubs ? Quels loueurs valent la peine ? Combien faut-il payer ? Réponses honnêtes.",
+        "readTime": "6 min",
+        "keywords": "Location · Apporter ses clubs · Tarifs · Sociétés"
+      },
+      {
         "slug": "golf-cost-mallorca",
         "badge": "Guide",
         "title": "Combien coûte le golf à Majorque ? Green fees, location et coûts cachés",
@@ -682,14 +690,6 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Practices TrackMan, Toptracer et en herbe comparés : où mesurer, s'échauffer et travailler le petit jeu.",
         "readTime": "4 min",
         "keywords": "TrackMan · Toptracer · Petit jeu"
-      },
-      {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "Guide pratique",
-        "title": "Location de clubs à Majorque – tout ce que vous devez savoir (2026)",
-        "intro": "Faut-il apporter ses propres clubs ? Quels loueurs valent la peine ? Combien faut-il payer ? Réponses honnêtes.",
-        "readTime": "6 min",
-        "keywords": "Location · Apporter ses clubs · Tarifs · Sociétés"
       }
     ],
     "comingSoonLabel": "Bientôt",
@@ -835,6 +835,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Alle niveaus · Greenfees vergeleken · Bijgewerkt 2026"
       },
       {
+        "slug": "golf-club-hire-mallorca",
+        "badge": "Praktische gids",
+        "title": "Clubhuur op Mallorca – alles wat je moet weten (2026)",
+        "intro": "Eigen clubs meenemen? Welke verhuurbedrijven zijn de moeite waard? Wat is een redelijke prijs? Eerlijk beantwoord.",
+        "readTime": "6 min",
+        "keywords": "Clubhuur · Eigen clubs · Prijzen · Bedrijven"
+      },
+      {
         "slug": "golf-cost-mallorca",
         "badge": "Gids",
         "title": "Hoeveel kost golf op Mallorca? Greenfees, verhuur en verborgen kosten",
@@ -916,14 +924,6 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "TrackMan-, Toptracer- en grasranges vergeleken: waar je meet, opwarmt en aan het korte spel werkt.",
         "readTime": "4 min",
         "keywords": "TrackMan · Toptracer · Kort spel"
-      },
-      {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "Praktische gids",
-        "title": "Clubhuur op Mallorca – alles wat je moet weten (2026)",
-        "intro": "Eigen clubs meenemen? Welke verhuurbedrijven zijn de moeite waard? Wat is een redelijke prijs? Eerlijk beantwoord.",
-        "readTime": "6 min",
-        "keywords": "Clubhuur · Eigen clubs · Prijzen · Bedrijven"
       }
     ],
     "comingSoonLabel": "Binnenkort",
@@ -1069,6 +1069,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Alla nivåer · Greenfees jämfört · Uppdaterad 2026"
       },
       {
+        "slug": "golf-club-hire-mallorca",
+        "badge": "Praktisk guide",
+        "title": "Klubbhyra på Mallorca – allt du behöver veta (2026)",
+        "intro": "Ska du ta med egna klubbor? Vilka uthyrare är värda att använda? Vad bör du betala? Ärligt besvarat.",
+        "readTime": "6 min",
+        "keywords": "Klubbhyra · Egna klubbor · Priser · Företag"
+      },
+      {
         "slug": "golf-cost-mallorca",
         "badge": "Guide",
         "title": "Vad kostar golf på Mallorca? Greenfees, uthyrning och dolda kostnader",
@@ -1150,14 +1158,6 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "TrackMan-, Toptracer- och gräsrangear jämförda: var du mäter, värmer upp och jobbar med närspelet.",
         "readTime": "4 min",
         "keywords": "TrackMan · Toptracer · Närspel"
-      },
-      {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "Praktisk guide",
-        "title": "Klubbhyra på Mallorca – allt du behöver veta (2026)",
-        "intro": "Ska du ta med egna klubbor? Vilka uthyrare är värda att använda? Vad bör du betala? Ärligt besvarat.",
-        "readTime": "6 min",
-        "keywords": "Klubbhyra · Egna klubbor · Priser · Företag"
       }
     ],
     "comingSoonLabel": "Kommer snart",
@@ -1303,6 +1303,14 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "适合各水平 · 果岭费对比 · 2026年更新"
       },
       {
+        "slug": "golf-club-hire-mallorca",
+        "badge": "实用指南",
+        "title": "马略卡租杆指南：实用版（2026）",
+        "intro": "该不该自带球杆？哪些租杆公司值得选？价格多少算合理？诚实回答。",
+        "readTime": "6分钟",
+        "keywords": "租杆 · 自带球杆 · 价格 · 租杆公司"
+      },
+      {
         "slug": "golf-cost-mallorca",
         "badge": "指南",
         "title": "马略卡岛打高尔夫要多少钱？果岭费、租杆费及隐性费用全解析",
@@ -1384,14 +1392,6 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "TrackMan、Toptracer 和草地练习场对比：哪里测数据，哪里热身，哪里练短杆。",
         "readTime": "4分钟",
         "keywords": "TrackMan · Toptracer · 短杆"
-      },
-      {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "实用指南",
-        "title": "马略卡租杆指南：实用版（2026）",
-        "intro": "该不该自带球杆？哪些租杆公司值得选？价格多少算合理？诚实回答。",
-        "readTime": "6分钟",
-        "keywords": "租杆 · 自带球杆 · 价格 · 租杆公司"
       }
     ],
     "comingSoonLabel": "即将推出",

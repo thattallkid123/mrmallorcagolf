@@ -172,6 +172,16 @@ export const GUIDES_CONTENT = {
       "keywords": "All levels · Green fees compared · Updated 2026"
     },
     {
+      "slug": "golf-club-hire-mallorca",
+      "badge": "Practical Guide",
+      "img": "/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
+      "imgPosition": "center 50%",
+      "title": "Golf Club Hire in Mallorca - Everything You Need to Know (2026)",
+      "intro": "Should you bring your own clubs? Which hire companies are worth using? What should you pay? Answered honestly.",
+      "readTime": "6 min read",
+      "keywords": "Club hire · Bring your own · Prices · Companies"
+    },
+    {
       "slug": "golf-cost-mallorca",
       "badge": "Guide",
       "img": "/images/blog-golf-cost/Alcanada.webp",
@@ -271,16 +281,6 @@ export const GUIDES_CONTENT = {
       "intro": "TrackMan, Toptracer and grass ranges compared: where to measure, where to warm up and where to work on the short game.",
       "readTime": "4 min read",
       "keywords": "TrackMan · Toptracer · Short game"
-    },
-    {
-      "slug": "golf-club-hire-mallorca",
-      "badge": "Practical Guide",
-      "img": "/images/blog-golf-club-hire/Callaway Rogue ST Max.webp",
-      "imgPosition": "center 50%",
-      "title": "Golf Club Hire in Mallorca - Everything You Need to Know (2026)",
-      "intro": "Should you bring your own clubs? Which hire companies are worth using? What should you pay? Answered honestly.",
-      "readTime": "6 min read",
-      "keywords": "Club hire · Bring your own · Prices · Companies"
     }
   ],
   "comingSoonGuides": [],
