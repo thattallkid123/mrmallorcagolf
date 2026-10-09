@@ -46,6 +46,14 @@ describe('trip preferences submission', () => {
     expect(message.html).toContain('VORO')
   })
 
+  test('uses the first enquiry when dates are unchanged and includes stay help', async () => {
+    const response = await POST(requestFor({ ...validPayload, trip: {}, preferences: { stayHelp: 'booked', transfers: ['golf'] } }))
+    expect(response.status).toBe(200)
+    const html = send.mock.calls[0][0].html
+    expect(html).toContain('Use dates from first enquiry')
+    expect(html).toContain('Already arranged')
+  })
+
   test('requires a valid enquiry reference and email', async () => {
     const response = await POST(requestFor({ ...validPayload, enquiryRef: 'wrong' }))
     expect(response.status).toBe(400)

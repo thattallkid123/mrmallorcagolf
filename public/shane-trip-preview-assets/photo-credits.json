@@ -1,16 +1,211 @@
 {
-  "use": "Illustrative planning images. These do not depict the named hotel, restaurant or supplier unless stated separately.",
-  "licence": "https://unsplash.com/license",
+  "use": "Draft image references. Actual named venues and illustrative pictures are distinguished in the catalogue. Official website access does not grant publication rights; confirm approved photo use with Shane before production.",
   "photos": [
-    {"file":"hotel-pool.webp","creator":"Eric Soubeyrand de Saint Prix","source":"https://unsplash.com/photos/iLmcYA6eqJI"},
-    {"file":"villa-pool.webp","creator":"Eve Ji","source":"https://unsplash.com/photos/4Ysx7HlgLJw"},
-    {"file":"winery.webp","creator":"Alexis Presa","source":"https://unsplash.com/photos/2sdm9vIhHds"},
-    {"file":"boat.webp","creator":"Lucas Klein","source":"https://unsplash.com/photos/D9n2eD0NGg0"},
-    {"file":"beach.webp","creator":"Livvi Grant","source":"https://unsplash.com/photos/OCtU0hkiNjw"},
-    {"file":"balloon.webp","creator":"ActionVance","source":"https://unsplash.com/photos/qwKYc77r8KE"},
-    {"file":"olive.webp","creator":"Nate Holland","source":"https://unsplash.com/photos/WdBqlHYc0Mo"},
-    {"file":"cave.webp","creator":"Marian Florinel Condruz","source":"https://unsplash.com/photos/0XjbCfNLiso"},
-    {"file":"padel.webp","creator":"RETRATO DEPORTIVO","source":"https://unsplash.com/photos/4g8sZIUGB6M"},
-    {"file":"chef.webp","creator":"Ed Parker","source":"https://unsplash.com/photos/FYP9kmElhbA"}
+    {
+      "file": "venue-fosh.webp",
+      "venue": "Marc Fosh",
+      "source": "https://www.marcfosh.com/es/",
+      "imageSource": "https://www.marcfosh.com/wp-content/uploads/2026/07/marc-fosh-lubina-dish-1024x683.webp",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-fera.webp",
+      "venue": "Fera",
+      "source": "https://ferapalma.com/fera/fera-restaurant-bar-mallorca-gallery/",
+      "imageSource": "https://ferapalma.com/wp-content/uploads/2022/02/restaurant-fera-palma-comedor-03-1024x683.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-siso.webp",
+      "venue": "Siso Beach",
+      "source": "https://www.tripadvisor.co.uk/Restaurant_Review-g580306-d23478347-Reviews-Siso_Beach-Palmanova_Calvia_Majorca_Balearic_Islands.html",
+      "imageSource": "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/1d/59/ad/ce/siso-beach-mallorca.jpg?w=1200&h=-1&s=1",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-cova.webp",
+      "venue": "Cova Negra",
+      "source": "https://www.covanegra.com/",
+      "imageSource": "https://www.covanegra.com/img/arcos-1000.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-sapunta.webp",
+      "venue": "Sa Punta",
+      "source": "https://www.restaurantesapunta.com/en/",
+      "imageSource": "https://www.restaurantesapunta.com/wp-content/uploads/2025/01/RNA07374-copia.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-voro.webp",
+      "venue": "VORO",
+      "source": "https://vororestaurant.com/",
+      "imageSource": "https://vororestaurant.com/wp-content/uploads/2025/06/5_11zon-2.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-moltak.webp",
+      "venue": "Moltak",
+      "source": "https://moltak.com/",
+      "imageSource": "https://moltak.com/wp-content/uploads/2025/03/Cooking-class-Mallorca-MOLTAK1-1024x683.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "hotel-saratoga.webp",
+      "venue": "Hotel Saratoga",
+      "source": "https://www.hotelsaratoga.com/en/galeria",
+      "imageSource": "https://www.hotelsaratoga.com/dms/monoHotel-Hotel-Saratoga/galeria/imagenes-2026-hotel/hotel-saratoga-palma-mallorca-3-jpg/hotel-saratoga-palma-mallorca-3.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "hotel-songener.webp",
+      "venue": "Finca Son Gener",
+      "source": "https://www.songener.com/en/gallery/",
+      "imageSource": "https://www.songener.com/backoffice/uploadImages/14630617001400x93504.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "hotel-capvermell.webp",
+      "venue": "Cap Vermell Grand Hotel",
+      "source": "https://capvermellgrandhotel.com/en/",
+      "imageSource": "https://framerusercontent.com/images/5oYxCgQ0H8uppwraTZDpEJU9y2c.jpg?scale-down-to=2048&width=2500&height=1667",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-ribas.webp",
+      "venue": "Bodega Ribas",
+      "source": "https://bodegaribas.com/ca/visitin/",
+      "imageSource": "https://bodegaribas.com/wp-content/uploads/2021/07/mesa.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-balloon.webp",
+      "venue": "Mallorca Balloons",
+      "source": "https://www.mallorcaballoons.com/es/",
+      "imageSource": "https://www.mallorcaballoons.com/images/hero-video-poster.webp",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-annabel.webp",
+      "venue": "Annabel",
+      "source": "https://www.annabelmallorca.com/",
+      "imageSource": "https://www.annabelmallorca.com/wp-content/uploads/2025/07/ANNABEL_PALMANOVA_AMBIENTE-768x1152.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-eduardo.webp",
+      "venue": "Ca n’Eduardo",
+      "source": "https://www.caneduardo.com/en/about-ca-neduardo/",
+      "imageSource": "https://www.caneduardo.com/wp-content/uploads/2018/08/about-us-can-eduardo-restaurant-1024x683.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "venue-caves.webp",
+      "venue": "Coves d’Artà",
+      "source": "https://www.cuevasdearta.com/es/",
+      "imageSource": "https://cuevasdearta.com/backoffice/images/12-dsc8194.jpg",
+      "type": "actual venue",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "hotel-pool.webp",
+      "creator": "Eric Soubeyrand de Saint Prix",
+      "source": "https://unsplash.com/photos/iLmcYA6eqJI",
+      "type": "illustrative",
+      "licence": "https://unsplash.com/license"
+    },
+    {
+      "file": "villa-pool.webp",
+      "creator": "Eve Ji",
+      "source": "https://unsplash.com/photos/4Ysx7HlgLJw",
+      "type": "illustrative",
+      "licence": "https://unsplash.com/license"
+    },
+    {
+      "file": "winery.webp",
+      "creator": "Alexis Presa",
+      "source": "https://unsplash.com/photos/2sdm9vIhHds",
+      "type": "illustrative",
+      "licence": "https://unsplash.com/license"
+    },
+    {
+      "file": "boat.webp",
+      "creator": "Lucas Klein",
+      "source": "https://unsplash.com/photos/D9n2eD0NGg0",
+      "type": "illustrative",
+      "licence": "https://unsplash.com/license"
+    },
+    {
+      "file": "beach.webp",
+      "creator": "Livvi Grant",
+      "source": "https://unsplash.com/photos/OCtU0hkiNjw",
+      "type": "illustrative",
+      "licence": "https://unsplash.com/license"
+    },
+    {
+      "file": "balloon.webp",
+      "creator": "ActionVance",
+      "source": "https://unsplash.com/photos/qwKYc77r8KE",
+      "type": "illustrative",
+      "licence": "https://unsplash.com/license"
+    },
+    {
+      "file": "olive.webp",
+      "creator": "Nate Holland",
+      "source": "https://unsplash.com/photos/WdBqlHYc0Mo",
+      "type": "illustrative",
+      "licence": "https://unsplash.com/license"
+    },
+    {
+      "file": "cave.webp",
+      "creator": "Marian Florinel Condruz",
+      "source": "https://unsplash.com/photos/0XjbCfNLiso",
+      "type": "illustrative",
+      "licence": "https://unsplash.com/license"
+    },
+    {
+      "file": "padel.webp",
+      "creator": "RETRATO DEPORTIVO",
+      "source": "https://unsplash.com/photos/4g8sZIUGB6M",
+      "type": "illustrative",
+      "licence": "https://unsplash.com/license"
+    },
+    {
+      "file": "chef.webp",
+      "creator": "Ed Parker",
+      "source": "https://unsplash.com/photos/FYP9kmElhbA",
+      "type": "illustrative",
+      "licence": "https://unsplash.com/license"
+    },
+    {
+      "file": "hotel-simoneta.webp",
+      "venue": "Can Simoneta",
+      "source": "https://www.cansimoneta.com/en",
+      "imageSource": "https://www.cansimoneta.com/storage/app/uploads/public/69f/c69/336/thumb_865_1239_534_auto.jpg",
+      "type": "actual venue example",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    },
+    {
+      "file": "boat-simoneta.webp",
+      "venue": "Can Simoneta",
+      "source": "https://www.cansimoneta.com/en",
+      "imageSource": "https://www.cansimoneta.com/themes/cansimoneta/assets/images/676-barca.jpg",
+      "type": "actual venue example",
+      "rights": "Reference photo for draft review. Confirm approved use before production."
+    }
   ]
 }

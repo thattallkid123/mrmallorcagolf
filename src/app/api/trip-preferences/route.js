@@ -13,10 +13,11 @@ import {
 } from '../../../lib/request-safety'
 
 const OPTIONS = {
+  stayHelp: { quote: 'Find hotel or villa options', booked: 'Already arranged', open: 'Decide on the call' },
   dateFlex: { fixed: 'Fixed', 'few-days': 'A few days either way', open: 'Quite flexible' },
   golfFocus: { pro: 'Play with Andy', coaching: 'Coaching session' },
   area: { palma: 'Palma', southwest: 'South West', east: 'East Mallorca', open: 'Advice welcome' },
-  stayStyle: { city: 'City hotel', golf: 'Golf resort', coast: 'Coastal hotel', finca: 'Country finca', villa: 'Private villa' },
+  stayStyle: { city: 'City hotel', golf: 'Golf base', coast: 'Coastal hotel', finca: 'Country finca', villa: 'Private villa' },
   hotelBudget: { 'under-200': 'Under €200', '200-300': '€200–€300', '300-450': '€300–€450', '450-plus': '€450+', flexible: 'Flexible for the right stay' },
   transfers: { airport: 'Airport transfers', golf: 'Golf transfers', days: 'Other day trips', self: 'Arranging own transfers' },
   arrivalPattern: { together: 'Broadly together', separate: 'Different flights', unknown: 'Not sure yet' },
@@ -26,7 +27,7 @@ const OPTIONS = {
   dinnerHelp: { ideas: 'Recommendations only', arrange: 'Help arranging tables', none: 'No help needed' },
   experiences: { winery: 'Winery visit', boat: 'Private boat', cooking: 'Moltak cooking', padel: 'Padel session', beach: 'Beach club', chef: 'Chef at villa', balloon: 'Hot-air balloon', olive: 'Olive-oil estate', farm: 'Farm meal', caves: 'Coves d’Artà' },
   extraTiming: { 'after-golf': 'After golf', 'free-day': 'On a day without golf', evening: 'Evening', open: 'Open to suggestions' },
-  moreInterests: { spa: 'Spa or recovery', nightlife: 'Night out', kids: 'Family or kids activities', none: 'No plans beyond golf' },
+  moreInterests: { spa: 'Spa or recovery', nightlife: 'Night out', kids: 'Family or kids activities', none: 'No extra meals or experiences' },
 }
 
 const pick = (field, value) => typeof value === 'string' && Object.hasOwn(OPTIONS[field] || {}, value)
@@ -95,12 +96,12 @@ export async function POST(request) {
       <p>Pre-call interests only. Compare with the original enquiry using the reference below.</p>
       ${section('Match to the first enquiry', [row('Enquiry reference', enquiryRef), row('Name', name), row('Email', email)])}
       ${section('Group and golf', [
-        row('Dates', [arrival, departure].filter(Boolean).join(' to ')), row('Flexibility', pick('dateFlex', trip.dateFlex)),
+        row('Date update', [arrival, departure].filter(Boolean).join(' to ') || 'Use dates from first enquiry'), row('Flexibility', pick('dateFlex', trip.dateFlex)),
         row('Golfers', golfers), row('Non-golfing adults', nonGolfers), row('Children', children),
         row('Play or coaching', pickMany('golfFocus', trip.golfFocus)), row('Golf update', sanitizeMultilineText(trip.courseNotes, 600)),
       ])}
       ${section('Stay and travel', [
-        row('Area', pick('area', prefs.area)), row('Stay styles', pickMany('stayStyle', prefs.stayStyle)),
+        row('Stay help', pick('stayHelp', prefs.stayHelp)), row('Area', pick('area', prefs.area)), row('Stay styles', pickMany('stayStyle', prefs.stayStyle)),
         row('Named hotel or villa', sanitizeText(prefs.hotelName, 160)),
         row('Rooms: single / twin / double', `${single || '?'} / ${twin || '?'} / ${double || '?'}`),
         row('Budget per room per night', pick('hotelBudget', prefs.hotelBudget)),
