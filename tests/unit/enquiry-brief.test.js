@@ -11,9 +11,9 @@ describe('enquiry brief', () => {
       serviceTypeLabel: 'Plan the whole trip',
       dates: '10-14 May 2027',
       handicap: '12-20',
-      groupsize: '5+ - larger group / corporate',
+      groupsize: '9-12 - large group',
     }, now)
-    expect(brief.headline).toBe('Plan the whole trip · 5+ - larger group / corporate · 10-14 May 2027 · handicap 12-20')
+    expect(brief.headline).toBe('Plan the whole trip · 9-12 - large group · 10-14 May 2027 · handicap 12-20')
     expect(brief.received).toContain('18:30')
     expect(brief.received).toContain('Sat 10 Oct')
     expect(brief.subjectSuffix).toBe('Whole trip')
@@ -38,7 +38,7 @@ describe('enquiry brief', () => {
   })
 
   test('lists what is still missing, with extra questions for a whole trip', () => {
-    const text = stillToAsk({ serviceType: 'whole-trip', groupsize: '5+ - larger group / corporate' }).join(' | ')
+    const text = stillToAsk({ serviceType: 'whole-trip', groupsize: '13+ - very large group / corporate' }).join(' | ')
     expect(text).toContain('Dates: none given')
     expect(text).toContain('Exact number of golfers')
     expect(text).toContain('Handicap range')
@@ -53,5 +53,15 @@ describe('enquiry brief', () => {
     expect(text).not.toContain('Handicap')
     expect(text).not.toContain('Hotel')
     expect(text).toContain('Courses already in mind')
+  })
+
+  test('skips the hotel and course questions the form already answered', () => {
+    const covered = stillToAsk({ serviceType: 'whole-trip', dates: 'May', handicap: '10', groupsize: '3-4 - small group', courses: 'Son Gual', hotelHelp: 'booked' }).join(' | ')
+    expect(covered).toContain('they have it covered')
+    expect(covered).not.toContain('single, twin and double')
+    expect(covered).not.toContain('Courses they have in mind')
+    const open = stillToAsk({ serviceType: 'trip-planning', dates: 'May', handicap: '10', groupsize: '3-4 - small group', hotelHelp: 'help' }).join(' | ')
+    expect(open).toContain('single, twin and double')
+    expect(open).toContain('Courses they have in mind')
   })
 })

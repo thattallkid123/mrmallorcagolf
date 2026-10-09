@@ -29,7 +29,7 @@ export default function PrivacyPolicyDE() {
             <h2>2. Welche Daten wir erheben</h2>
             <p>Wir erheben personenbezogene Daten nur, wenn Sie sie uns freiwillig zur Verfügung stellen oder wenn Sie unsere Website besuchen. Dazu gehören:</p>
             <ul>
-              <li><strong>Kontaktformular:</strong> Ihr Name, Ihre E-Mail-Adresse, gewählter Service sowie gegebenenfalls Reisedaten, Gruppengröße, Handicap und Nachricht. Soweit verfügbar erfassen wir auch die Website-Seite und Kampagne, über die Sie zum Formular kamen.</li>
+              <li><strong>Kontaktformular:</strong> Ihr Name, Ihre E-Mail-Adresse, gewählter Service sowie gegebenenfalls Reisedaten, Gruppengröße, Handicap, gewünschte Plätze, Hotelwunsch und Nachricht. Soweit verfügbar erfassen wir auch die Website-Seite und Kampagne, über die Sie zum Formular kamen, sowie das Land, aus dem Ihre Verbindung zu stammen scheint (nur das Land, beim Absenden des Formulars ausgelesen und nur in der Anfrage-E-Mail gespeichert).</li>
               <li><strong>Fragebogen vor der Runde:</strong> Ihr Name, Ihre E-Mail-Adresse, Ihr Handicap und Ihre Antworten zu Ihrem Spiel, Ihrem Training und Ihren Zielen. Altersgruppe und Wohnort sind freiwillig. Die Antworten werden uns per E-Mail zugestellt und dienen der Planung Ihres Termins.</li>
               <li><strong>Anfragen per E-Mail und WhatsApp:</strong> Ihr Name und Ihre Kontaktdaten, wenn Sie sich direkt an uns wenden</li>
               <li><strong>Course Selector und E-Mail-Anmeldeformulare:</strong> Ihre E-Mail-Adresse und alle optionalen Angaben, die Sie beim Anfordern von Planungsnotizen oder Ergebnis-Follow-ups machen</li>

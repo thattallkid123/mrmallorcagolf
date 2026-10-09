@@ -36,7 +36,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "experience": "¿Qué opción le encaja mejor?",
         "serviceType": "¿Con qué necesita ayuda?",
         "pwapFormat": "Si Play With A Pro es parte de ello, ¿cuál le parece más cercano?",
-        "message": "Cualquier otra cosa que deba saber"
+        "message": "Cualquier otra cosa que deba saber",
+        "courses": "Campos que le gustaría jugar (opcional)",
+        "hotelHelp": "¿Necesita ayuda con el hotel?"
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
@@ -58,7 +60,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "juan@ejemplo.com",
         "dates": "p. ej. 15-22 octubre 2026",
         "handicap": "p. ej. 14 o \"principiante\"",
-        "message": "Zona del hotel, campos de los que haya oído hablar, presupuesto, composición del grupo o cualquier otra cosa que me ayude a entender el viaje."
+        "message": "Zona del hotel, campos de los que haya oído hablar, presupuesto, composición del grupo o cualquier otra cosa que me ayude a entender el viaje.",
+        "courses": "p. ej. Son Gual, Alcanada, o sugiérame usted"
       },
       "groupsizeOptions": [
         {
@@ -74,7 +77,30 @@ export const CONTACT_LOCALIZED_CONTENT = {
           "label": "3-4 - grupo pequeño"
         },
         {
-          "label": "5+ - grupo grande / empresa"
+          "label": "5-8 - grupo"
+        },
+        {
+          "label": "9-12 - grupo grande"
+        },
+        {
+          "label": "13+ - grupo muy grande / empresa"
+        }
+      ],
+      "hotelHelpOptions": [
+        {
+          "label": "Seleccione una opción"
+        },
+        {
+          "label": "Sí, sugiérame opciones"
+        },
+        {
+          "label": "No, el hotel ya está reservado"
+        },
+        {
+          "label": "No, lo organizaré yo"
+        },
+        {
+          "label": "Aún no lo sé"
         }
       ],
       "experiences": [
@@ -158,7 +184,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "experience": "Welche Option passt am besten?",
         "serviceType": "Wobei kann ich Ihnen helfen?",
         "pwapFormat": "Wenn Play With A Pro Teil davon ist, welches Format passt am besten?",
-        "message": "Was sollte ich sonst noch wissen?"
+        "message": "Was sollte ich sonst noch wissen?",
+        "courses": "Plätze, die Sie spielen möchten (optional)",
+        "hotelHelp": "Brauchen Sie Hilfe bei der Hotelwahl?"
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
@@ -180,7 +208,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "max@beispiel.de",
         "dates": "z. B. 15.-22. Oktober 2026",
         "handicap": "z. B. 14 oder 'Anfänger'",
-        "message": "Hotelregion, Plätze, die Sie schon kennen, Budget, Gruppenzusammensetzung oder alles andere, was mir hilft, die Reise zu verstehen."
+        "message": "Hotelregion, Plätze, die Sie schon kennen, Budget, Gruppenzusammensetzung oder alles andere, was mir hilft, die Reise zu verstehen.",
+        "courses": "z. B. Son Gual, Alcanada, oder machen Sie mir Vorschläge"
       },
       "groupsizeOptions": [
         {
@@ -196,7 +225,30 @@ export const CONTACT_LOCALIZED_CONTENT = {
           "label": "3-4 - kleine Gruppe"
         },
         {
-          "label": "5+ - größere Gruppe / Firma"
+          "label": "5-8 - Gruppe"
+        },
+        {
+          "label": "9-12 - große Gruppe"
+        },
+        {
+          "label": "13+ - sehr große Gruppe / Firma"
+        }
+      ],
+      "hotelHelpOptions": [
+        {
+          "label": "Bitte wählen"
+        },
+        {
+          "label": "Ja, bitte Optionen vorschlagen"
+        },
+        {
+          "label": "Nein, das Hotel ist schon gebucht"
+        },
+        {
+          "label": "Nein, ich kümmere mich selbst darum"
+        },
+        {
+          "label": "Noch unsicher"
         }
       ],
       "experiences": [
@@ -280,7 +332,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "experience": "Quelle formule vous convient le mieux ?",
         "serviceType": "Avec quoi puis-je vous aider ?",
         "pwapFormat": "Si Play With A Pro en fait partie, quelle formule vous convient le mieux ?",
-        "message": "Autre chose que je devrais savoir"
+        "message": "Autre chose que je devrais savoir",
+        "courses": "Parcours que vous aimeriez jouer (facultatif)",
+        "hotelHelp": "Avez-vous besoin d’aide pour l’hôtel ?"
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
@@ -302,7 +356,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "jean@exemple.com",
         "dates": "ex. 15-22 octobre 2026",
         "handicap": "ex. 14 ou 'débutant'",
-        "message": "Zone d'hôtel, parcours dont vous avez entendu parler, budget, composition du groupe ou tout ce qui m'aide à comprendre le séjour."
+        "message": "Zone d'hôtel, parcours dont vous avez entendu parler, budget, composition du groupe ou tout ce qui m'aide à comprendre le séjour.",
+        "courses": "p. ex. Son Gual, Alcanada, ou proposez-moi des idées"
       },
       "groupsizeOptions": [
         {
@@ -318,7 +373,30 @@ export const CONTACT_LOCALIZED_CONTENT = {
           "label": "3-4 - petit groupe"
         },
         {
-          "label": "5+ - grand groupe / entreprise"
+          "label": "5-8 - groupe"
+        },
+        {
+          "label": "9-12 - grand groupe"
+        },
+        {
+          "label": "13+ - très grand groupe / entreprise"
+        }
+      ],
+      "hotelHelpOptions": [
+        {
+          "label": "Choisissez une option"
+        },
+        {
+          "label": "Oui, proposez-moi des options"
+        },
+        {
+          "label": "Non, l’hôtel est déjà réservé"
+        },
+        {
+          "label": "Non, je m’en occupe moi-même"
+        },
+        {
+          "label": "Pas encore sûr"
         }
       ],
       "experiences": [
@@ -402,7 +480,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "experience": "Welke optie past het best?",
         "serviceType": "Waarmee kan ik u helpen?",
         "pwapFormat": "Als Play With A Pro ervan deel uitmaakt, welke optie past het best?",
-        "message": "Is er verder nog iets dat ik moet weten?"
+        "message": "Is er verder nog iets dat ik moet weten?",
+        "courses": "Banen die u wilt spelen (optioneel)",
+        "hotelHelp": "Wilt u hulp bij het hotel?"
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
@@ -424,7 +504,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "jan@voorbeeld.com",
         "dates": "bijv. 15-22 oktober 2026",
         "handicap": "bijv. 14 of 'beginner'",
-        "message": "Hotelregio, banen waarvan u gehoord heeft, budget, groepssamenstelling of alles wat me helpt de reis te begrijpen."
+        "message": "Hotelregio, banen waarvan u gehoord heeft, budget, groepssamenstelling of alles wat me helpt de reis te begrijpen.",
+        "courses": "bijv. Son Gual, Alcanada, of doe me een voorstel"
       },
       "groupsizeOptions": [
         {
@@ -440,7 +521,30 @@ export const CONTACT_LOCALIZED_CONTENT = {
           "label": "3-4 - kleine groep"
         },
         {
-          "label": "5+ - grotere groep / bedrijf"
+          "label": "5-8 - groep"
+        },
+        {
+          "label": "9-12 - grote groep"
+        },
+        {
+          "label": "13+ - zeer grote groep / bedrijf"
+        }
+      ],
+      "hotelHelpOptions": [
+        {
+          "label": "Kies een optie"
+        },
+        {
+          "label": "Ja, doe me graag een voorstel"
+        },
+        {
+          "label": "Nee, het hotel is al geboekt"
+        },
+        {
+          "label": "Nee, ik regel het zelf"
+        },
+        {
+          "label": "Nog niet zeker"
         }
       ],
       "experiences": [
@@ -524,7 +628,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "experience": "Vilket upplägg passar dig bäst?",
         "serviceType": "Vad kan jag hjälpa dig med?",
         "pwapFormat": "Om Play With A Pro är en del av det, vilket upplägg passar dig bäst?",
-        "message": "Något annat jag bör veta"
+        "message": "Något annat jag bör veta",
+        "courses": "Banor du vill spela (valfritt)",
+        "hotelHelp": "Behöver du hjälp med hotellet?"
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
@@ -546,7 +652,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "erik@exempel.se",
         "dates": "t.ex. 15-22 oktober 2026",
         "handicap": "t.ex. 14 eller 'nybörjare'",
-        "message": "Hotellområde, banor du har hört talas om, budget, gruppens sammansättning eller något annat som hjälper mig förstå resan."
+        "message": "Hotellområde, banor du har hört talas om, budget, gruppens sammansättning eller något annat som hjälper mig förstå resan.",
+        "courses": "t.ex. Son Gual, Alcanada, eller föreslå själv"
       },
       "groupsizeOptions": [
         {
@@ -562,7 +669,30 @@ export const CONTACT_LOCALIZED_CONTENT = {
           "label": "3-4 - liten grupp"
         },
         {
-          "label": "5+ - större grupp / företag"
+          "label": "5-8 - grupp"
+        },
+        {
+          "label": "9-12 - stor grupp"
+        },
+        {
+          "label": "13+ - mycket stor grupp / företag"
+        }
+      ],
+      "hotelHelpOptions": [
+        {
+          "label": "Välj ett alternativ"
+        },
+        {
+          "label": "Ja, föreslå gärna alternativ"
+        },
+        {
+          "label": "Nej, hotellet är redan bokat"
+        },
+        {
+          "label": "Nej, jag ordnar det själv"
+        },
+        {
+          "label": "Inte säker än"
         }
       ],
       "experiences": [
@@ -649,7 +779,9 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "experience": "您更想了解哪种安排？",
         "serviceType": "我可以为您提供什么帮助？",
         "pwapFormat": "如果 Play With A Pro 是您想要的一部分，哪种方式最适合您？",
-        "message": "还有什么我应该知道的？"
+        "message": "还有什么我应该知道的？",
+        "courses": "想打的球场（可选）",
+        "hotelHelp": "需要帮忙安排酒店吗？"
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
@@ -671,7 +803,8 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "email": "zhang@example.com",
         "dates": "例如 2026 年 10 月 15-22 日",
         "handicap": "例如 14 或 '初学者'",
-        "message": "住宿区域、您听说过的球场、预算、团队构成，或任何能帮助我了解行程的信息。"
+        "message": "住宿区域、您听说过的球场、预算、团队构成，或任何能帮助我了解行程的信息。",
+        "courses": "例如 Son Gual、Alcanada，或请您为我推荐"
       },
       "groupsizeOptions": [
         {
@@ -687,7 +820,30 @@ export const CONTACT_LOCALIZED_CONTENT = {
           "label": "3-4 人 - 小组"
         },
         {
-          "label": "5 人以上 - 团队 / 公司"
+          "label": "5-8 人 - 团队"
+        },
+        {
+          "label": "9-12 人 - 大团队"
+        },
+        {
+          "label": "13 人以上 - 超大团队 / 公司"
+        }
+      ],
+      "hotelHelpOptions": [
+        {
+          "label": "请选择"
+        },
+        {
+          "label": "需要，请推荐几个选择"
+        },
+        {
+          "label": "不需要，酒店已订好"
+        },
+        {
+          "label": "不需要，我自己安排"
+        },
+        {
+          "label": "还不确定"
         }
       ],
       "experiences": [

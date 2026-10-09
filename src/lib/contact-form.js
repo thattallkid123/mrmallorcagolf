@@ -11,6 +11,8 @@ const INITIAL_FORM = {
   dates: '',
   handicap: '',
   groupsize: '',
+  courses: '',
+  hotelHelp: '',
   serviceType: '',
   pwapFormat: '',
   experience: '',

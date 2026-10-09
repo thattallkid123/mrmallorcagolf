@@ -27,7 +27,7 @@ export default function PrivacyPolicyES() {
             <h2>2. Datos que recopilamos</h2>
             <p>Recopilamos datos personales únicamente cuando tú los facilitas voluntariamente o cuando visitas nuestro sitio web. Estos datos incluyen:</p>
             <ul>
-              <li><strong>Formulario de contacto:</strong> tu nombre, correo electrónico, servicio elegido y, si los facilitas, fechas, tamaño del grupo, hándicap y mensaje. También registramos la página y campaña que te llevaron al formulario, cuando estén disponibles.</li>
+              <li><strong>Formulario de contacto:</strong> tu nombre, correo electrónico, servicio elegido y, si los facilitas, fechas, tamaño del grupo, hándicap, campos que quieres jugar, si necesitas ayuda con el hotel y mensaje. También registramos la página y campaña que te llevaron al formulario, cuando estén disponibles, y el país desde el que parece proceder tu conexión (solo el país, que se lee al enviar el formulario y se conserva únicamente en el correo de la consulta).</li>
               <li><strong>Cuestionario previo a la ronda:</strong> tu nombre, correo electrónico, hándicap y tus respuestas sobre tu juego, tu práctica y tus objetivos. La franja de edad y dónde vives son opcionales. Las respuestas nos llegan por correo electrónico y las usamos para planificar tu sesión.</li>
               <li><strong>Consultas por correo electrónico y WhatsApp:</strong> tu nombre y datos de contacto cuando te comunicas con nosotros directamente</li>
               <li><strong>Course Selector y formularios de email:</strong> tu dirección de correo y cualquier dato opcional que facilites al pedir resultados o notas de planificación</li>

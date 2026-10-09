@@ -234,6 +234,33 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         </div>
 
         <div className="form-group">
+          <label htmlFor="courses">{content.form.labels.courses}</label>
+          <input
+            type="text"
+            id="courses"
+            name="courses"
+            className="form-control"
+            placeholder={content.form.placeholders.courses}
+            value={form.courses}
+            onChange={handleChange}
+            style={{ height: '42px' }}
+          />
+        </div>
+
+        {['pwap', 'tee-time-booking'].includes(form.serviceType) ? null : (
+          <div className="form-group">
+            <label htmlFor="hotelHelp">{content.form.labels.hotelHelp}</label>
+            <select id="hotelHelp" name="hotelHelp" className="form-control" value={form.hotelHelp} onChange={handleChange}>
+              {content.form.hotelHelpOptions.map((option) => (
+                <option key={option.label} value={option.value}>
+                  {option.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        )}
+
+        <div className="form-group">
           <label htmlFor="message">{content.form.labels.message}</label>
           <textarea
             id="message"

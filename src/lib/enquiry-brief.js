@@ -42,22 +42,25 @@ export function describeSource({ entryPage, enquirySourcePage, utmSource, utmMed
   return 'Direct visit: they typed the address, used a bookmark, or followed a link that hides its source (WhatsApp, Instagram and email apps often do).'
 }
 
-export function stillToAsk({ serviceType, dates, handicap, groupsize }) {
+export function stillToAsk({ serviceType, dates, handicap, groupsize, courses, hotelHelp }) {
   const questions = []
   if (!dates) questions.push('Dates: none given. Ask for them, and how flexible they are.')
   if (!groupsize) questions.push('Group size: not given.')
-  else if (groupsize.startsWith('5+')) questions.push('Exact number of golfers: they chose "5+", which could be five or twenty.')
+  else if (/^(5-8|9-12|13\+|5\+)/.test(groupsize)) questions.push(`Exact number of golfers and any non-golfers: they chose "${groupsize.split(' - ')[0]}".`)
   if (!handicap) questions.push('Handicap range: none given. It decides which courses are suitable.')
 
   if (WIDE_TRIP_TYPES.includes(serviceType)) {
-    questions.push('Hotel: area or base, how many single, twin and double rooms, and a budget per room per night.')
+    if (hotelHelp === 'booked' || hotelHelp === 'own') questions.push('Hotel: they have it covered. Ask where they are staying, so the golf and drives fit.')
+    else questions.push('Hotel: area or base, how many single, twin and double rooms, and a budget per room per night.')
     questions.push('Transfers: airport, golf, or both. Landing and departure times decide whether golf fits on the first and last day.')
   }
   if (serviceType === 'whole-trip') {
     questions.push('Occasion and what would make the trip a success. Offer a short call to agree the golf, the base and the extras.')
   }
   if (serviceType === 'tee-time-booking') {
-    questions.push('Courses already in mind, preferred tee-time window, and whether they want buggies.')
+    questions.push(courses ? 'Preferred tee-time window, and whether they want buggies.' : 'Courses already in mind, preferred tee-time window, and whether they want buggies.')
+  } else if (!courses && WIDE_TRIP_TYPES.includes(serviceType)) {
+    questions.push('Courses they have in mind, or whether they want a shortlist from you.')
   }
   if (serviceType === 'pwap' || serviceType === 'both') {
     questions.push('Preferred course or area for the Play With A Pro day, and whether it is solo or a group.')
@@ -69,14 +72,14 @@ export function stillToAsk({ serviceType, dates, handicap, groupsize }) {
 }
 
 export function buildEnquiryBrief(input, now = new Date()) {
-  const { serviceType, serviceTypeLabel, dates, handicap, groupsize } = input
+  const { serviceType, serviceTypeLabel, dates, handicap, groupsize, courses, hotelHelp } = input
   const headline = [serviceTypeLabel, groupsize, dates, handicap ? `handicap ${handicap}` : ''].filter(Boolean).join(' · ')
   const replyBy = new Date(now.getTime() + 24 * 60 * 60 * 1000)
   return {
     headline,
     received: `Received ${formatMallorca(now)} (Mallorca time). Your 24-hour reply promise ends ${formatMallorca(replyBy)}.`,
     source: describeSource(input),
-    questions: stillToAsk({ serviceType, dates, handicap, groupsize }),
+    questions: stillToAsk({ serviceType, dates, handicap, groupsize, courses, hotelHelp }),
     subjectSuffix: shortServiceLabel(serviceType),
   }
 }

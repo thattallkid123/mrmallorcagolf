@@ -24,6 +24,13 @@ const SERVICE_TYPE_LABELS = {
   'not-sure': 'Not Sure Yet',
 }
 
+const HOTEL_HELP_LABELS = {
+  help: 'Yes, please suggest options',
+  booked: 'No, the hotel is already booked',
+  own: 'No, will arrange it themselves',
+  unsure: 'Not sure yet',
+}
+
 const EXPERIENCE_LABELS = {
   [OFFER_IDS.solo]: getExperienceLabel(OFFER_IDS.solo),
   [OFFER_IDS.group]: getExperienceLabel(OFFER_IDS.group),
@@ -44,6 +51,18 @@ function cleanTrackingValue(value, max = 80) {
 
 // Rows with nothing to show are left out instead of printing "Not recorded".
 // clients-sync.py reads rows by label and treats a missing row as empty.
+// Vercel adds the visitor's country (two letters) from their connection; only the code is used.
+function describeCountry(request) {
+  const code = String(request.headers.get('x-vercel-ip-country') || '').toUpperCase()
+  if (!/^[A-Z]{2}$/.test(code)) return ''
+  try {
+    const name = new Intl.DisplayNames(['en'], { type: 'region' }).of(code)
+    return name && name !== code ? `${name} (${code})` : code
+  } catch {
+    return code
+  }
+}
+
 function renderRow(label, value) {
   if (!value) return ''
   return `<tr><td style="padding:8px 0;border-bottom:1px solid #eee;color:#666;width:140px">${escapeHtml(label)}</td><td style="padding:8px 0;border-bottom:1px solid #eee">${escapeHtml(value)}</td></tr>`
@@ -82,6 +101,9 @@ export async function POST(request) {
     const dates = sanitizeText(payload?.dates, 120)
     const handicap = sanitizeText(payload?.handicap, 120)
     const groupsize = sanitizeText(payload?.groupsize, 120)
+    const courses = sanitizeText(payload?.courses, 160)
+    const hotelHelpKey = sanitizeText(payload?.hotelHelp, 20)
+    const hotelHelp = Object.hasOwn(HOTEL_HELP_LABELS, hotelHelpKey) ? hotelHelpKey : ''
     const serviceType = sanitizeText(payload?.serviceType, 80)
     const pwapFormat = sanitizeText(payload?.pwapFormat, 80)
     const experience = sanitizeText(payload?.experience, 80)
@@ -113,12 +135,16 @@ export async function POST(request) {
     const fullName = `${fname} ${lname}`.trim()
     const safeEmail = escapeHtml(email)
 
+    const country = describeCountry(request)
     const brief = buildEnquiryBrief({
       serviceType,
       serviceTypeLabel,
       dates,
       handicap,
       groupsize,
+      courses,
+      hotelHelp,
+      country,
       entryPage,
       enquirySourcePage,
       utmSource,
@@ -140,6 +166,7 @@ export async function POST(request) {
           <div style="background:#f7f4ef;padding:16px;border-radius:4px;margin-bottom:24px">
             <p style="margin:0 0 8px;font-size:16px;color:#2D4A3E"><strong>${escapeHtml(brief.headline || serviceTypeLabel)}</strong></p>
             <p style="margin:0 0 8px;font-size:13px;color:#555">${escapeHtml(brief.received)}</p>
+            ${country ? `<p style="margin:0 0 8px;font-size:13px;color:#555"><strong>Visiting from:</strong> ${escapeHtml(country)} <span style="color:#999">(approximate, from their connection)</span></p>` : ''}
             <p style="margin:0;font-size:13px;color:#555"><strong>How they found you:</strong> ${escapeHtml(brief.source)}</p>
           </div>
           <table style="width:100%;border-collapse:collapse">
@@ -148,6 +175,9 @@ export async function POST(request) {
             ${renderRow('Dates', dates)}
             ${renderRow('Handicap', handicap)}
             ${renderRow('Group size', groupsize)}
+            ${renderRow('Courses in mind', courses)}
+            ${renderRow('Hotel help', HOTEL_HELP_LABELS[hotelHelp] || '')}
+            ${renderRow('Country', country)}
             ${renderRow('Main enquiry', serviceTypeLabel)}
             ${renderRow('Play With A Pro format', isPwap ? pwapFormatLabel : '')}
             ${renderRow('Experience', experienceLabel && experienceLabel !== serviceTypeLabel ? experienceLabel : '')}
