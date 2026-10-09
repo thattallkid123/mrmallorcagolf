@@ -46,7 +46,11 @@ function renderRow(label, value) {
 }
 
 export async function POST(request) {
-  if (!isAllowedOrigin(request)) {
+  // Preview deployments may post from their own URL; production stays on the default allowlist.
+  const previewOrigins = process.env.VERCEL_ENV === 'preview'
+    ? [process.env.VERCEL_URL, process.env.VERCEL_BRANCH_URL].filter(Boolean).map((host) => `https://${host}`)
+    : []
+  if (!isAllowedOrigin(request, previewOrigins)) {
     return Response.json({ ok: false, error: 'Origin not allowed.' }, { status: 403 })
   }
 
