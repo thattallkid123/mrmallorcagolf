@@ -3,14 +3,14 @@ const content = {
   "es": {
     "metadata": {
       "title": "Son Termes - Reseña & Tarifas",
-      "description": "Green fee de Son Termes de unos €90-110, par 70, a 20 minutos de Palma. Vistas de montaña y veredicto honesto: 6/10."
+      "description": "Green fee de Son Termes de unos €90-110, par 70, a 25 minutos de Palma. Vistas de montaña y veredicto honesto: 6/10."
     },
     "meta": {
       "badge": "Reseña de campo",
       "readTime": "5 min de lectura",
       "updated": "abril de 2026",
       "title": "Son Termes Golf, Mallorca: reseña sincera de un profesional de la PGA (2026)",
-      "intro": "A veinte minutos de Palma, en la sierra de Na Burguesa. Tiene más personalidad que la mayoría de campos en este rango de precio y mejores vistas que cualquier otro cerca de la ciudad.",
+      "intro": "A veinticinco minutos de Palma, en las estribaciones de la Tramuntana, cerca de Bunyola. Tiene más personalidad que la mayoría de campos en este rango de precio y mejores vistas que cualquier otro cerca de la ciudad.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -39,7 +39,7 @@ const content = {
         "text": "Jugué Son Termes un viernes por la mañana con un amigo de hándicap 20. Para cuando llegamos a los nueve de vuelta ya iba justo de bolas. El rough aprieta, en varias salidas hay muy poco margen y el campo penaliza los fallos de una manera que no se aprecia del todo en la tarjeta. Es un buen resumen de lo que es Son Termes."
       },
       {
-        "text": "Son Termes está en la sierra de Na Burguesa, por encima de Palma. A veinte minutos del centro y en un mundo aparte. En un día claro, desde los tees altos se ven el Castell de Bellver y la catedral recortados en el skyline de Palma, con el Mediterráneo detrás. Viniendo de Shanghái, donde un campo así de accesible y con este paisaje tendría una lista de espera de cinco años para hacerse socio, sigue llamando la atención."
+        "text": "Son Termes está en las estribaciones de la Tramuntana, cerca de Bunyola, con vistas sobre Palma. A veinticinco minutos del centro y en un mundo aparte. En un día claro, desde los tees altos se ven el Castell de Bellver y la catedral recortados en el skyline de Palma, con el Mediterráneo detrás. Viniendo de Shanghái, donde un campo así de accesible y con este paisaje tendría una lista de espera de cinco años para hacerse socio, sigue llamando la atención."
       },
       {
         "text": "El recorrido a pie"
@@ -49,7 +49,7 @@ const content = {
       },
       {
         "alt": "Salida en Son Termes Golf, Mallorca, con montañas al fondo",
-        "caption": "Salida en Son Termes, con la sierra de Na Burguesa detrás."
+        "caption": "Salida en Son Termes, con las estribaciones de la Tramuntana detrás."
       },
       {
         "text": "Cómo se juega el campo"
@@ -61,8 +61,8 @@ const content = {
         "text": "Lo que le falta de longitud lo compensa con carácter. Salidas ciegas, doglegs marcados, agua artificial colocada para atrapar precisamente el golpe que la mayoría de jugadores quiere pegar por instinto. En varios hoyos hay que comprometerse con una línea que no se ve del todo. Eso mantiene la vuelta interesante de principio a fin y hace que una segunda visita casi siempre se traduzca en una mejor tarjeta."
       },
       {
-        "alt": "Son Termes Golf, Mallorca, en la sierra de Na Burguesa",
-        "caption": "El campo se abre en los nueve de vuelta y aparece la vista de la sierra de Na Burguesa."
+        "alt": "Son Termes Golf, Mallorca, en las estribaciones de la Tramuntana",
+        "caption": "El campo se abre en los nueve de vuelta y aparece la vista de la sierra de Tramuntana."
       },
       {
         "text": "Algunos hoyos que merecen mención"
@@ -96,7 +96,7 @@ const content = {
         "text": "Respuesta sincera: no están al nivel de Son Gual o Alcanada. Las superficies estaban bien y el ritmo era sólido, pero si has jugado recientemente los mejores campos de la isla notarás la diferencia. Por el precio y por todo lo demás que ofrece la vuelta, es un intercambio razonable."
       },
       {
-        "alt": "Vista panorámica de Son Termes Golf, Mallorca, sobre la sierra de Na Burguesa y la llanura de Palma",
+        "alt": "Vista panorámica de Son Termes Golf, Mallorca, sobre las estribaciones de la Tramuntana y la llanura de Palma",
         "caption": "La vista desde los hoyos altos. En una mañana despejada se veían en el horizonte el Castell de Bellver y la catedral."
       },
       {
@@ -114,7 +114,7 @@ const content = {
             "Recorrido de montaña"
           ],
           [
-            "20 min",
+            "25 min",
             "Desde el centro de Palma"
           ]
         ]
@@ -123,7 +123,7 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "El precio completo en temporada ronda los €100. Comprueba las tarifas actuales directamente con Son Termes antes de reservar, ya que varían según la temporada. Hay una oferta de varias rondas que conviene conocer. Más detalles próximamente. El campo está a unos 20 minutos del centro de Palma, en lo alto de las montañas de Na Burguesa."
+        "text": "El precio completo en temporada ronda los €100. Comprueba las tarifas actuales directamente con Son Termes antes de reservar, ya que varían según la temporada. Hay una oferta de varias rondas que conviene conocer. Más detalles próximamente. El campo está a unos 25 minutos del centro de Palma, en las estribaciones de la Tramuntana, cerca de Bunyola."
       },
       {
         "alt": "Vista aérea de Son Termes Golf, Mallorca, sobre el recorrido con montañas",
@@ -171,13 +171,13 @@ const content = {
   "de": {
     "metadata": {
       "title": "Son Termes - Review & Gebühren",
-      "description": "Greenfee in Son Termes ca. €90-110, Par 70, 20 Minuten von Palma. Bergpanorama und ehrliches Urteil: 6/10."
+      "description": "Greenfee in Son Termes ca. €90-110, Par 70, 25 Minuten von Palma. Bergpanorama und ehrliches Urteil: 6/10."
     },
     "meta": {
       "badge": "Platz-Bewertung",
       "readTime": "5 Min. Lesezeit",
       "title": "Son Termes Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)",
-      "intro": "Zwanzig Minuten von Palma, oben in den Na-Burguesa-Bergen. Mehr Charakter als die meisten Plätze in dieser Preisklasse und bessere Ausblicke als irgendwo sonst so nah an der Stadt.",
+      "intro": "Fünfundzwanzig Minuten von Palma, in den Ausläufern der Tramuntana bei Bunyola. Mehr Charakter als die meisten Plätze in dieser Preisklasse und bessere Ausblicke als irgendwo sonst so nah an der Stadt.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -206,7 +206,7 @@ const content = {
         "text": "Ich habe Son Termes an einem Freitagvormittag mit einem Freund gespielt, der Hcp 20 hat. Auf den Back Nine gingen ihm langsam die Bälle aus. Das Rough ist dicht, bei mehreren Abschlägen ist der Korridor sehr eng, und der Platz sammelt Fehlschläge auf eine Weise ein, die man von der Karte aus nicht sofort erkennt. Das fasst Son Termes ziemlich gut zusammen."
       },
       {
-        "text": "Son Termes liegt in den Na-Burguesa-Bergen oberhalb von Palma. Zwanzig Minuten vom Stadtzentrum entfernt und doch eine andere Welt. An klaren Tagen sieht man von den höher gelegenen Abschlägen aus Castell de Bellver und die Kathedrale in der Skyline von Palma, dahinter das Mittelmeer. Wenn man aus Shanghai kommt, wo ein so gut erreichbarer und landschaftlich so starker Platz eine Warteliste von fünf Jahren für Mitgliedschaften hätte, bleibt das bemerkenswert."
+        "text": "Son Termes liegt in den Ausläufern der Tramuntana bei Bunyola, mit Blick über Palma. Fünfundzwanzig Minuten vom Stadtzentrum entfernt und doch eine andere Welt. An klaren Tagen sieht man von den höher gelegenen Abschlägen aus Castell de Bellver und die Kathedrale in der Skyline von Palma, dahinter das Mittelmeer. Wenn man aus Shanghai kommt, wo ein so gut erreichbarer und landschaftlich so starker Platz eine Warteliste von fünf Jahren für Mitgliedschaften hätte, bleibt das bemerkenswert."
       },
       {
         "text": "Der Fußmarsch"
@@ -216,7 +216,7 @@ const content = {
       },
       {
         "alt": "Abschlag auf dem Golfplatz Son Termes auf Mallorca mit Bergen im Hintergrund",
-        "caption": "Abschlag in Son Termes, dahinter die Na-Burguesa-Berge."
+        "caption": "Abschlag in Son Termes, dahinter die Ausläufer der Tramuntana."
       },
       {
         "text": "So spielt sich der Platz"
@@ -228,8 +228,8 @@ const content = {
         "text": "Was dem Platz an Länge fehlt, macht er mit Charakter wett. Blinde Abschläge, scharfe Doglegs, künstlich angelegte Wasserhindernisse genau dort, wo viele Golfer instinktiv hinspielen würden. Auf mehreren Löchern muss man sich auf ein Ziel festlegen, das man nicht vollständig sehen kann. Das hält die Runde von Anfang bis Ende interessant, und es bedeutet auch, dass ein zweiter Besuch fast immer einen besseren Score bringt."
       },
       {
-        "alt": "Golfplatz Son Termes auf Mallorca in den Na-Burguesa-Bergen",
-        "caption": "Auf den Back Nine öffnet sich der Platz, mit Blick auf die Na-Burguesa-Berge."
+        "alt": "Golfplatz Son Termes auf Mallorca in den Ausläufern der Tramuntana",
+        "caption": "Auf den Back Nine öffnet sich der Platz, mit Blick auf die Tramuntana."
       },
       {
         "text": "Ein paar erwähnenswerte Löcher"
@@ -263,7 +263,7 @@ const content = {
         "text": "Die ehrliche Antwort: Sie sind nicht auf dem Niveau von Son Gual oder Alcanada. Die Oberflächen waren gut und das Tempo solide, aber wer die Topplätze der Insel zuletzt gespielt hat, wird den Unterschied merken. Für den Preis und das, was der Rest der Runde bietet, ist das ein fairer Tausch."
       },
       {
-        "alt": "Panoramablick auf den Golfplatz Son Termes auf Mallorca über die Na-Burguesa-Berge und die Ebene von Palma",
+        "alt": "Panoramablick auf den Golfplatz Son Termes auf Mallorca über die Ausläufer der Tramuntana und die Ebene von Palma",
         "caption": "Der Blick von den oberen Löchern. An einem klaren Morgen waren Castell de Bellver und die Kathedrale am Horizont zu sehen."
       },
       {
@@ -281,7 +281,7 @@ const content = {
             "Berglayout"
           ],
           [
-            "20 min",
+            "25 min",
             "Von Palmas Zentrum"
           ]
         ]
@@ -290,7 +290,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Der volle Saisonpreis liegt bei rund €100. Prüfen Sie die aktuellen Preise vor der Buchung direkt bei Son Termes, da sie saisonal variieren. Es gibt ein Mehr-Runden-Angebot, das man kennen sollte. Mehr dazu in Kürze. Der Platz liegt etwa 20 Minuten vom Zentrum Palmas entfernt, oben in den Na-Burguesa-Bergen."
+        "text": "Der volle Saisonpreis liegt bei rund €100. Prüfen Sie die aktuellen Preise vor der Buchung direkt bei Son Termes, da sie saisonal variieren. Es gibt ein Mehr-Runden-Angebot, das man kennen sollte. Mehr dazu in Kürze. Der Platz liegt etwa 25 Minuten vom Zentrum Palmas entfernt, in den Ausläufern der Tramuntana bei Bunyola."
       },
       {
         "alt": "Luftaufnahme des Golfplatzes Son Termes auf Mallorca mit Bergen rund um das Layout",
@@ -338,14 +338,14 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Son Termes - Avis & Tarifs",
-      "description": "Green fee à Son Termes autour de €90-110, par 70, à 20 minutes de Palma. Vues sur la montagne, verdict honnête : 6/10."
+      "description": "Green fee à Son Termes autour de €90-110, par 70, à 25 minutes de Palma. Vues sur la montagne, verdict honnête : 6/10."
     },
     "meta": {
       "badge": "Test de parcours",
       "readTime": "5 min de lecture",
       "updated": "avril 2026",
       "title": "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
-      "intro": "À vingt minutes de Palma, dans les montagnes de Na Burguesa. Plus de caractère que la plupart des parcours à ce niveau de prix, et de meilleures vues que partout ailleurs aussi près de la ville.",
+      "intro": "À vingt-cinq minutes de Palma, dans les contreforts de la Tramuntana, près de Bunyola. Plus de caractère que la plupart des parcours à ce niveau de prix, et de meilleures vues que partout ailleurs aussi près de la ville.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -374,7 +374,7 @@ const content = {
         "text": "J'ai joué Son Termes un vendredi matin avec un ami classé 20 de handicap. Au retour, il commençait à manquer de balles. Le rough attrape vite, plusieurs mises en jeu laissent très peu de marge et le parcours sanctionne les erreurs d'une façon qui ne saute pas aux yeux sur la carte. C'est un résumé assez juste de ce qu'est Son Termes."
       },
       {
-        "text": "Son Termes se trouve dans les montagnes de Na Burguesa au-dessus de Palma. À vingt minutes du centre-ville, et pourtant dans un autre monde. Par temps clair, depuis les départs les plus hauts, on aperçoit le Castell de Bellver et la cathédrale sur l'horizon de Palma, avec la Méditerranée derrière. En venant de Shanghai, où un parcours aussi accessible et aussi spectaculaire aurait une liste d'attente de cinq ans pour devenir membre, cela reste marquant."
+        "text": "Son Termes se trouve dans les contreforts de la Tramuntana, près de Bunyola, avec vue sur Palma. À vingt-cinq minutes du centre-ville, et pourtant dans un autre monde. Par temps clair, depuis les départs les plus hauts, on aperçoit le Castell de Bellver et la cathédrale sur l'horizon de Palma, avec la Méditerranée derrière. En venant de Shanghai, où un parcours aussi accessible et aussi spectaculaire aurait une liste d'attente de cinq ans pour devenir membre, cela reste marquant."
       },
       {
         "text": "Le parcours à pied"
@@ -384,7 +384,7 @@ const content = {
       },
       {
         "alt": "Mise en jeu à Son Termes Golf, Majorque, avec les montagnes en arrière-plan",
-        "caption": "Mise en jeu à Son Termes, avec les montagnes de Na Burguesa derrière."
+        "caption": "Mise en jeu à Son Termes, avec les contreforts de la Tramuntana derrière."
       },
       {
         "text": "Comment le parcours se joue"
@@ -396,8 +396,8 @@ const content = {
         "text": "Ce qu'il n'a pas en longueur, il le compense par son caractère. Départs à l'aveugle, doglegs marqués, pièces d'eau artificielles placées pour cueillir précisément le coup que la plupart des golfeurs ont instinctivement envie de jouer. Sur plusieurs trous, il faut s'engager sur une ligne que l'on ne voit pas complètement. Cela rend la partie intéressante du début à la fin, et explique aussi pourquoi une deuxième visite donne presque toujours une meilleure carte."
       },
       {
-        "alt": "Parcours de golf Son Termes à Majorque dans les montagnes de Na Burguesa",
-        "caption": "Le parcours s'ouvre au retour avec la vue sur les montagnes de Na Burguesa."
+        "alt": "Parcours de golf Son Termes à Majorque dans les contreforts de la Tramuntana",
+        "caption": "Le parcours s'ouvre au retour avec la vue sur la Tramuntana."
       },
       {
         "text": "Quelques trous à signaler"
@@ -431,7 +431,7 @@ const content = {
         "text": "Réponse honnête : ils ne sont pas au niveau de Son Gual ou d'Alcanada. Les surfaces étaient bonnes et la vitesse correcte, mais si vous avez joué récemment les meilleurs parcours de l'île, vous verrez la différence. Vu le prix et tout ce que le reste de la partie apporte, le compromis reste logique."
       },
       {
-        "alt": "Vue panoramique de Son Termes Golf à Majorque sur les montagnes de Na Burguesa et la plaine de Palma",
+        "alt": "Vue panoramique de Son Termes Golf à Majorque sur les contreforts de la Tramuntana et la plaine de Palma",
         "caption": "La vue depuis les trous du haut. Par matin clair, on distinguait le Castell de Bellver et la cathédrale sur l'horizon."
       },
       {
@@ -449,7 +449,7 @@ const content = {
             "Parcours de montagne"
           ],
           [
-            "20 min",
+            "25 min",
             "Depuis le centre de Palma"
           ]
         ]
@@ -458,7 +458,7 @@ const content = {
         "text": "Green-fees 2026"
       },
       {
-        "text": "Le tarif complet en saison est d'environ €100. Vérifiez les tarifs actuels directement auprès de Son Termes avant de réserver, car ils varient selon la saison. Il existe une offre multi-parties à connaître. Plus de détails prochainement. Le parcours se trouve à environ 20 minutes du centre de Palma, en haut des montagnes de Na Burguesa."
+        "text": "Le tarif complet en saison est d'environ €100. Vérifiez les tarifs actuels directement auprès de Son Termes avant de réserver, car ils varient selon la saison. Il existe une offre multi-parties à connaître. Plus de détails prochainement. Le parcours se trouve à environ 25 minutes du centre de Palma, dans les contreforts de la Tramuntana, près de Bunyola."
       },
       {
         "alt": "Vue aérienne du golf Son Termes à Majorque sur le tracé avec les montagnes",
@@ -504,14 +504,14 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Son Termes - Review & Tarief",
-      "description": "Greenfee Son Termes circa €90-110, par 70, 20 minuten van Palma. Bergzichten en eerlijk oordeel: 6/10."
+      "description": "Greenfee Son Termes circa €90-110, par 70, 25 minuten van Palma. Bergzichten en eerlijk oordeel: 6/10."
     },
     "meta": {
       "badge": "Baanreview",
       "readTime": "5 min leestijd",
       "updated": "april 2026",
       "title": "Son Termes Golf, Mallorca: de eerlijke review van een PGA-professional (2026)",
-      "intro": "Twintig minuten van Palma, hoog in het Na Burguesa-gebergte. Meer karakter dan de meeste banen in deze prijsklasse en betere uitzichten dan waar ook zo dicht bij de stad.",
+      "intro": "Vijfentwintig minuten van Palma, in de uitlopers van de Tramuntana bij Bunyola. Meer karakter dan de meeste banen in deze prijsklasse en betere uitzichten dan waar ook zo dicht bij de stad.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -540,7 +540,7 @@ const content = {
         "text": "Ik speelde Son Termes op een vrijdagochtend met een vriend die handicap 20 speelt. Tegen de back nine begon hij door zijn ballen heen te raken. De rough is dicht, bij meerdere afslagen is de ruimte erg krap, en de baan straft missers op een manier die je vanaf de kaart niet direct ziet. Dat is eigenlijk een prima samenvatting van wat Son Termes is."
       },
       {
-        "text": "Son Termes ligt in het Na Burguesa-gebergte boven Palma. Twintig minuten van het stadscentrum en toch een compleet andere wereld. Op een heldere dag zie je vanaf de hoger gelegen tees Castell de Bellver en de kathedraal in de skyline van Palma, met daarachter de Middellandse Zee. Vanuit Shanghai bezien, waar een baan die zo bereikbaar en zo fraai is een wachtlijst van vijf jaar voor lidmaatschap zou hebben, blijft dat indrukwekkend."
+        "text": "Son Termes ligt in de uitlopers van de Tramuntana bij Bunyola, met uitzicht over Palma. Vijfentwintig minuten van het stadscentrum en toch een compleet andere wereld. Op een heldere dag zie je vanaf de hoger gelegen tees Castell de Bellver en de kathedraal in de skyline van Palma, met daarachter de Middellandse Zee. Vanuit Shanghai bezien, waar een baan die zo bereikbaar en zo fraai is een wachtlijst van vijf jaar voor lidmaatschap zou hebben, blijft dat indrukwekkend."
       },
       {
         "text": "Lopen of buggy?"
@@ -550,7 +550,7 @@ const content = {
       },
       {
         "alt": "Afslag op golfbaan Son Termes op Mallorca met bergen op de achtergrond",
-        "caption": "Afslag op Son Termes, met het Na Burguesa-gebergte erachter."
+        "caption": "Afslag op Son Termes, met de uitlopers van de Tramuntana erachter."
       },
       {
         "text": "Hoe de baan speelt"
@@ -562,8 +562,8 @@ const content = {
         "text": "Wat de baan aan lengte mist, maakt ze goed met karakter. Blinde afslagen, scherpe doglegs, kunstmatig water dat precies ligt om de slag te vangen die veel golfers instinctief willen spelen. Op meerdere holes moet je je vastleggen op een target dat je niet volledig kunt zien. Dat houdt de ronde van begin tot eind interessant, en het betekent ook dat een tweede ronde hier bijna altijd een betere score oplevert."
       },
       {
-        "alt": "Golfbaan Son Termes op Mallorca in het Na Burguesa-gebergte",
-        "caption": "Op de back nine opent de baan zich, met uitzicht op het Na Burguesa-gebergte."
+        "alt": "Golfbaan Son Termes op Mallorca in de uitlopers van de Tramuntana",
+        "caption": "Op de back nine opent de baan zich, met uitzicht op de Tramuntana."
       },
       {
         "text": "Een paar holes die opvallen"
@@ -597,7 +597,7 @@ const content = {
         "text": "Het eerlijke antwoord: ze halen het niveau van Son Gual of Alcanada niet. De oppervlakken waren goed en de snelheid was degelijk, maar als je onlangs de topbanen van het eiland hebt gespeeld, merk je het verschil. Voor deze prijs en voor wat de rest van de ronde biedt, is dat een prima afweging."
       },
       {
-        "alt": "Panoramisch uitzicht op golfbaan Son Termes op Mallorca over het Na Burguesa-gebergte en de vlakte van Palma",
+        "alt": "Panoramisch uitzicht op golfbaan Son Termes op Mallorca over de uitlopers van de Tramuntana en de vlakte van Palma",
         "caption": "Het uitzicht vanaf de bovenste holes. Op een heldere ochtend waren Castell de Bellver en de kathedraal zichtbaar aan de horizon."
       },
       {
@@ -615,7 +615,7 @@ const content = {
             "Bergbaan"
           ],
           [
-            "20 min",
+            "25 min",
             "Vanaf centrum Palma"
           ]
         ]
@@ -624,7 +624,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "De volledige prijs in het seizoen ligt rond €100. Controleer de actuele tarieven rechtstreeks bij Son Termes voordat je boekt, omdat de prijzen per seizoen variëren. Er is een aanbieding voor meerdere rondes die het kennen waard is. Binnenkort meer details. De baan ligt ongeveer 20 minuten van het centrum van Palma, hoog in de Na Burguesa-bergen."
+        "text": "De volledige prijs in het seizoen ligt rond €100. Controleer de actuele tarieven rechtstreeks bij Son Termes voordat je boekt, omdat de prijzen per seizoen variëren. Er is een aanbieding voor meerdere rondes die het kennen waard is. Binnenkort meer details. De baan ligt ongeveer 25 minuten van het centrum van Palma, in de uitlopers van de Tramuntana bij Bunyola."
       },
       {
         "alt": "Luchtfoto van golfbaan Son Termes op Mallorca met het banenverloop in de bergen",
@@ -672,14 +672,14 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Termes - Recension & Avgifter",
-      "description": "Green fee cirka €90-110, par 70, 20 minuter från Palma. Bergsvyer och ärligt betyg 6/10."
+      "description": "Green fee cirka €90-110, par 70, 25 minuter från Palma. Bergsvyer och ärligt betyg 6/10."
     },
     "meta": {
       "badge": "Banrecension",
       "readTime": "5 min läsning",
       "updated": "april 2026",
       "title": "Son Termes Golf, Mallorca: en ärlig recension av ett PGA-proffs (2026)",
-      "intro": "Tjugo minuter från Palma, uppe i Na Burguesa-bergen. Mer karaktär än de flesta banor i den här prisklassen och bättre utsikter än någon annanstans nära staden.",
+      "intro": "Tjugofem minuter från Palma, vid foten av Tramuntana nära Bunyola. Mer karaktär än de flesta banor i den här prisklassen och bättre utsikter än någon annanstans nära staden.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -708,7 +708,7 @@ const content = {
         "text": "Jag spelade Son Termes en fredag morgon med en vän som har 20 i handicap. När vi kom till back nine började bollarna ta slut för honom. Ruffen är tät, flera utslag ger dig väldigt lite utrymme och banan samlar upp missar på ett sätt som inte syns på scorekortet. Det är en ganska rättvis sammanfattning av vad Son Termes är."
       },
       {
-        "text": "Son Termes ligger i Na Burguesa-bergen ovanför Palma. Tjugo minuter från stadskärnan och ändå en helt annan värld. En klar dag ser man från de högre tees Castell de Bellver och katedralen i Palmas silhuett, med Medelhavet bakom. Kommer man från Shanghai, där en bana som är så här lättillgänglig och så här naturskön skulle ha fem års väntelista för medlemskap, så fastnar det fortfarande."
+        "text": "Son Termes ligger vid foten av Tramuntana nära Bunyola, med utsikt över Palma. Tjugofem minuter från stadskärnan och ändå en helt annan värld. En klar dag ser man från de högre tees Castell de Bellver och katedralen i Palmas silhuett, med Medelhavet bakom. Kommer man från Shanghai, där en bana som är så här lättillgänglig och så här naturskön skulle ha fem års väntelista för medlemskap, så fastnar det fortfarande."
       },
       {
         "text": "Att gå banan"
@@ -718,7 +718,7 @@ const content = {
       },
       {
         "alt": "Utslag på Son Termes golfbana på Mallorca med berg i bakgrunden",
-        "caption": "Utslag på Son Termes, med Na Burguesa-bergen bakom."
+        "caption": "Utslag på Son Termes, med Tramuntanas utlöpare bakom."
       },
       {
         "text": "Så spelar banan"
@@ -730,8 +730,8 @@ const content = {
         "text": "Det den saknar i längd tar den igen i karaktär. Blinda utslag, skarpa doglegs, konstgjorda vattenhinder placerade för att fånga slaget som de flesta golfare instinktivt vill slå. Flera hål kräver att du bestämmer dig för ett mål du inte ser fullt ut. Det håller rundan intressant från början till slut, och det gör att ett andra besök nästan alltid ger ett bättre resultat."
       },
       {
-        "alt": "Son Termes golfbana på Mallorca i Na Burguesa-bergen",
-        "caption": "Banan öppnar upp sig på back nine med utsikt över Na Burguesa-bergen."
+        "alt": "Son Termes golfbana på Mallorca vid foten av Tramuntana",
+        "caption": "Banan öppnar upp sig på back nine med utsikt över Tramuntana."
       },
       {
         "text": "Några hål värda att nämna"
@@ -765,7 +765,7 @@ const content = {
         "text": "Det ärliga svaret: de håller inte samma nivå som på Son Gual eller Alcanada. Ytorna var bra och farten var stabil, men har du spelat öns toppbanor nyligen kommer du att märka skillnaden. Med tanke på priset och vad resten av rundan levererar är det en rimlig avvägning."
       },
       {
-        "alt": "Panoramavy över Son Termes golfbana på Mallorca, Na Burguesa-bergen och slätten vid Palma",
+        "alt": "Panoramavy över Son Termes golfbana på Mallorca, Tramuntanas utlöpare och slätten vid Palma",
         "caption": "Utsikten från de övre hålen. Castell de Bellver och katedralen syntes i silhuetten en klar morgon."
       },
       {
@@ -783,7 +783,7 @@ const content = {
             "Bergsbana"
           ],
           [
-            "20 min",
+            "25 min",
             "Från centrala Palma"
           ]
         ]
@@ -792,7 +792,7 @@ const content = {
         "text": "Greenfee 2026"
       },
       {
-        "text": "Fullpriset i säsong ligger runt €100. Kontrollera aktuella priser direkt med Son Termes innan du bokar, eftersom priserna varierar med säsongen. Det finns ett erbjudande för flera rundor som är värt att känna till. Mer information kommer snart. Banan ligger cirka 20 minuter från centrala Palma, uppe i Na Burguesa-bergen."
+        "text": "Fullpriset i säsong ligger runt €100. Kontrollera aktuella priser direkt med Son Termes innan du bokar, eftersom priserna varierar med säsongen. Det finns ett erbjudande för flera rundor som är värt att känna till. Mer information kommer snart. Banan ligger cirka 25 minuter från centrala Palma, vid foten av Tramuntana nära Bunyola."
       },
       {
         "alt": "Flygvy över Son Termes golfbana på Mallorca med bansträckningen genom bergen",
@@ -847,7 +847,7 @@ const content = {
       "readTime": "5 分钟阅读",
       "updated": "2026年4月",
       "title": "马略卡 Son Termes Golf：PGA 职业球员的真实评测（2026）",
-      "intro": "从帕尔马出发 20 分钟，进入 Na Burguesa 山中。这座球场在这个价位里比大多数球场更有个性，而离市区这么近的范围内，景观也几乎无出其右。",
+      "intro": "从帕尔马出发 25 分钟，来到 Bunyola 附近的 Tramuntana 山麓。这座球场在这个价位里比大多数球场更有个性，而离市区这么近的范围内，景观也几乎无出其右。",
       "related": [
         {
           "slug": "son-gual-review",
@@ -876,7 +876,7 @@ const content = {
         "text": "我在一个周五早上打了 Son Termes，同组朋友差点 20。打到后九时，他的球已经快不够用了。这里的长草区很吃球，好几个发球台留给你的容错空间都很小，而且这座球场收集失误球的方式，并不是看记分卡就能看出来的。大致上，这就是 Son Termes。"
       },
       {
-        "text": "Son Termes 坐落在帕尔马上方的 Na Burguesa 山中。离市中心只要 20 分钟，却像到了另一个世界。天气晴朗时，从较高的发球台可以看到帕尔马天际线上的贝尔韦尔城堡和大教堂，背后是地中海。对我这个从上海来的人来说，一座这么方便到达、景色又这么好的球场，如果放在上海，会员排队等上五年都不夸张，这一点仍然很有冲击力。"
+        "text": "Son Termes 坐落在 Bunyola 附近的 Tramuntana 山麓，可以俯瞰帕尔马。离市中心只要 25 分钟，却像到了另一个世界。天气晴朗时，从较高的发球台可以看到帕尔马天际线上的贝尔韦尔城堡和大教堂，背后是地中海。对我这个从上海来的人来说，一座这么方便到达、景色又这么好的球场，如果放在上海，会员排队等上五年都不夸张，这一点仍然很有冲击力。"
       },
       {
         "text": "步行体验"
@@ -886,7 +886,7 @@ const content = {
       },
       {
         "alt": "马略卡 Son Termes 高尔夫球场发球，背景是群山",
-        "caption": "Son Termes 的开球，身后是 Na Burguesa 山脉。"
+        "caption": "Son Termes 的开球，身后是 Tramuntana 山麓。"
       },
       {
         "text": "球场打感"
@@ -898,8 +898,8 @@ const content = {
         "text": "它在长度上的不足，被球场个性很好地弥补了。盲打发球、急转狗腿洞、还有专门放在大多数球手本能会去打的线路上的人工水障碍。好几个洞都要求你对一个自己看不全的目标果断出手。这让整轮球从头到尾都很有意思，也意味着第二次来打，成绩几乎一定会更好。"
       },
       {
-        "alt": "马略卡 Son Termes 高尔夫球场与 Na Burguesa 山景",
-        "caption": "后九的视野更开阔，可以看到 Na Burguesa 山景。"
+        "alt": "马略卡 Son Termes 高尔夫球场与 Tramuntana 山麓",
+        "caption": "后九的视野更开阔，可以看到 Tramuntana 山景。"
       },
       {
         "text": "几个值得一提的球洞"
@@ -933,7 +933,7 @@ const content = {
         "text": "实话实说：果岭水平达不到 Son Gual 或 Alcanada 的档次。草面状态不错，速度也稳定，但如果你最近打过岛上那些顶级球场，差别还是会感觉出来。考虑到价格，以及这一轮其他部分带来的体验，这样的取舍是合理的。"
       },
       {
-        "alt": "马略卡 Son Termes 高尔夫球场全景，可见 Na Burguesa 山脉与帕尔马平原",
+        "alt": "马略卡 Son Termes 高尔夫球场全景，可见 Tramuntana 山麓与帕尔马平原",
         "caption": "从高处几个球洞望出去的景色。晴朗的早晨，可以在天际线上看到贝尔韦尔城堡和大教堂。"
       },
       {
@@ -951,7 +951,7 @@ const content = {
             "山地布局"
           ],
           [
-            "20 min",
+            "25 min",
             "距帕尔马市中心"
           ]
         ]
@@ -960,7 +960,7 @@ const content = {
         "text": "2026 果岭费"
       },
       {
-        "text": "旺季的完整价格约为 €100。预订前请直接向 Son Termes 确认当前价格，因为价格会随季节变化。有一个多轮优惠值得了解，更多详情稍后公布。球场距离帕尔马市中心大约 20 分钟车程，位于 Na Burguesa 山上。"
+        "text": "旺季的完整价格约为 €100。预订前请直接向 Son Termes 确认当前价格，因为价格会随季节变化。有一个多轮优惠值得了解，更多详情稍后公布。球场距离帕尔马市中心大约 25 分钟车程，位于 Bunyola 附近的 Tramuntana 山麓。"
       },
       {
         "alt": "马略卡 Son Termes 高尔夫球场航拍，可见球道穿行于群山之间",

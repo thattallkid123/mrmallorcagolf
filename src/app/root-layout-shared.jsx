@@ -36,6 +36,10 @@ const cormorantGaramond = localFont({
   ],
   variable: '--font-serif',
   display: 'swap',
+  // next/font/local sizes its stand-in from Arial by default, so serif headings
+  // flashed as a sans font until Cormorant arrived (seen on /plan-your-trip,
+  // 9 Oct 2026). A metric-matched Times New Roman keeps the stand-in a serif.
+  adjustFontFallback: 'Times New Roman',
   // Keep Cormorant available for brand headings and editorial italic text, but
   // avoid forcing every display-font variant into the critical route head.
   // Jost stays explicitly configured as the body/UI font; Cormorant can load

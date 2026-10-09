@@ -119,6 +119,7 @@ export default function HomePageInner({ locale = 'en' }) {
               </>
             ) : null}
           </h1>
+          {home.hero.subline ? <p className="hero__sub">{home.hero.subline}</p> : null}
           <div className="hero__reviews">
             <ReviewBadge variant="text" theme="dark" locale={locale} />
           </div>
@@ -167,7 +168,7 @@ export default function HomePageInner({ locale = 'en' }) {
             </p>
           ) : null}
           {home.intro.services ? (
-            <div className="intro__services">
+            <div className={`intro__services${home.intro.services.length === 3 ? ' intro__services--three' : ''}`}>
               {home.intro.services.map((service) => (
                 <a key={service.title} href={localizePath(service.href, locale)} className="intro-service">
                   <strong>{service.title}</strong>

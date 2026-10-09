@@ -23,6 +23,10 @@ const INDEXNOW_GUIDES = [
   '/guides/son-quint-review',
   '/guides/where-to-stay-mallorca-golf',
   '/guides/son-vida-review',
+  '/guides/golf-courses-near-palma',
+  '/guides/southwest-mallorca-golf-courses-compared',
+  '/guides/best-mallorca-golf-courses-higher-handicappers',
+  '/guides/best-golf-practice-facilities-mallorca',
 ]
 
 const MAX_URLS_PER_REQUEST = 50

@@ -1,5 +1,5 @@
-import { Resend } from 'resend'
 import { randomUUID } from 'node:crypto'
+import { Resend } from 'resend'
 
 import {
   checkRateLimit,
@@ -14,13 +14,22 @@ import {
 } from '../../../lib/request-safety'
 import { getExperienceLabel, OFFER_IDS } from '../../../lib/offers-content.js'
 import { getContactContent } from '../../../lib/contact-content.js'
+import { buildEnquiryBrief } from '../../../lib/enquiry-brief.js'
 
 const SERVICE_TYPE_LABELS = {
   pwap: 'Play With A Pro',
   'trip-planning': 'Plan My Golf Trip',
+  'whole-trip': 'Plan the whole trip (golf plus hotel, transfers, dining)',
   'tee-time-booking': 'Book tee times for my group',
   both: 'Both',
   'not-sure': 'Not Sure Yet',
+}
+
+const HOTEL_HELP_LABELS = {
+  help: 'Yes, please suggest options',
+  booked: 'No, the hotel is already booked',
+  own: 'No, will arrange it themselves',
+  unsure: 'Not sure yet',
 }
 
 const EXPERIENCE_LABELS = {
@@ -41,7 +50,22 @@ function cleanTrackingValue(value, max = 80) {
   return /^[\w .-]*$/.test(cleaned) ? cleaned : ''
 }
 
+// Rows with nothing to show are left out instead of printing "Not recorded".
+// clients-sync.py reads rows by label and treats a missing row as empty.
+// Vercel adds the visitor's country (two letters) from their connection; only the code is used.
+function describeCountry(request) {
+  const code = String(request.headers.get('x-vercel-ip-country') || '').toUpperCase()
+  if (!/^[A-Z]{2}$/.test(code)) return ''
+  try {
+    const name = new Intl.DisplayNames(['en'], { type: 'region' }).of(code)
+    return name && name !== code ? `${name} (${code})` : code
+  } catch {
+    return code
+  }
+}
+
 function renderRow(label, value) {
+  if (!value) return ''
   return `<tr><td style="padding:8px 0;border-bottom:1px solid #eee;color:#666;width:140px">${escapeHtml(label)}</td><td style="padding:8px 0;border-bottom:1px solid #eee">${escapeHtml(value)}</td></tr>`
 }
 
@@ -82,6 +106,9 @@ export async function POST(request) {
     const dates = sanitizeText(payload?.dates, 120)
     const handicap = sanitizeText(payload?.handicap, 120)
     const groupsize = sanitizeText(payload?.groupsize, 120)
+    const courses = sanitizeText(payload?.courses, 160)
+    const hotelHelpKey = sanitizeText(payload?.hotelHelp, 20)
+    const hotelHelp = Object.hasOwn(HOTEL_HELP_LABELS, hotelHelpKey) ? hotelHelpKey : ''
     const serviceType = sanitizeText(payload?.serviceType, 80)
     const pwapFormat = sanitizeText(payload?.pwapFormat, 80)
     const experience = sanitizeText(payload?.experience, 80)
@@ -108,43 +135,76 @@ export async function POST(request) {
 
     const resend = new Resend(process.env.RESEND_API_KEY)
     const serviceTypeLabel = SERVICE_TYPE_LABELS[serviceType] || serviceType || 'Not specified'
-    const pwapFormatLabel = EXPERIENCE_LABELS[pwapFormat] || pwapFormat || 'Not specified'
-    const experienceLabel = EXPERIENCE_LABELS[experience] || SERVICE_TYPE_LABELS[experience] || experience || 'Not specified'
+    const pwapFormatLabel = EXPERIENCE_LABELS[pwapFormat] || pwapFormat || ''
+    const experienceLabel = EXPERIENCE_LABELS[experience] || SERVICE_TYPE_LABELS[experience] || experience || ''
     const fullName = `${fname} ${lname}`.trim()
     const safeEmail = escapeHtml(email)
+
+    const country = describeCountry(request)
     const enquiryRef = randomUUID()
     const preferencesHost = process.env.VERCEL_ENV === 'production'
       ? 'www.mrmallorcagolf.com'
       : process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL || 'www.mrmallorcagolf.com'
     const preferencesUrl = `https://${preferencesHost}/shane-trip-preview.html?ref=${enquiryRef}`
+    const brief = buildEnquiryBrief({
+      serviceType,
+      serviceTypeLabel,
+      dates,
+      handicap,
+      groupsize,
+      courses,
+      hotelHelp,
+      country,
+      entryPage,
+      enquirySourcePage,
+      utmSource,
+      utmMedium,
+      utmCampaign,
+      referrerHost,
+    })
+    const isPwap = serviceType === 'pwap' || serviceType === 'both'
+    const subjectSuffix = brief.subjectSuffix ? ` - ${brief.subjectSuffix}` : ''
 
     const { error } = await resend.emails.send({
       from: 'Mr Mallorca Golf <enquiries@mrmallorcagolf.com>',
       to: 'andy@mrmallorcagolf.com',
       replyTo: email,
-      subject: `New enquiry from ${fullName} [${enquiryRef}]`,
+      subject: `New enquiry from ${fullName}${subjectSuffix} [${enquiryRef}]`,
       html: `
         <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
-          <h2 style="color:#2D4A3E;margin-bottom:24px">New enquiry - Mr Mallorca Golf</h2>
+          <h2 style="color:#2D4A3E;margin-bottom:16px">New enquiry - Mr Mallorca Golf</h2>
+          <div style="background:#f7f4ef;padding:16px;border-radius:4px;margin-bottom:24px">
+            <p style="margin:0 0 8px;font-size:16px;color:#2D4A3E"><strong>${escapeHtml(brief.headline || serviceTypeLabel)}</strong></p>
+            <p style="margin:0 0 8px;font-size:13px;color:#555">${escapeHtml(brief.received)}</p>
+            ${country ? `<p style="margin:0 0 8px;font-size:13px;color:#555"><strong>Visiting from:</strong> ${escapeHtml(country)} <span style="color:#999">(approximate, from their connection)</span></p>` : ''}
+            <p style="margin:0;font-size:13px;color:#555"><strong>How they found you:</strong> ${escapeHtml(brief.source)}</p>
+          </div>
           <table style="width:100%;border-collapse:collapse">
             ${renderRow('Enquiry reference', enquiryRef)}
             ${renderRow('Name', fullName)}
             <tr><td style="padding:8px 0;border-bottom:1px solid #eee;color:#666">Email</td><td style="padding:8px 0;border-bottom:1px solid #eee"><a href="mailto:${safeEmail}">${safeEmail}</a></td></tr>
-            ${renderRow('Dates', dates || 'Not specified')}
-            ${renderRow('Handicap', handicap || 'Not specified')}
-            ${renderRow('Group size', groupsize || 'Not specified')}
+            ${renderRow('Dates', dates)}
+            ${renderRow('Handicap', handicap)}
+            ${renderRow('Group size', groupsize)}
+            ${renderRow('Courses in mind', courses)}
+            ${renderRow('Hotel help', HOTEL_HELP_LABELS[hotelHelp] || '')}
+            ${renderRow('Country', country)}
             ${renderRow('Main enquiry', serviceTypeLabel)}
-            ${renderRow('Play With A Pro format', (serviceType === 'pwap' || serviceType === 'both') ? pwapFormatLabel : 'Not applicable')}
-            ${renderRow('Experience', experienceLabel)}
+            ${renderRow('Play With A Pro format', isPwap ? pwapFormatLabel : '')}
+            ${renderRow('Experience', experienceLabel && experienceLabel !== serviceTypeLabel ? experienceLabel : '')}
             ${renderRow('Language', lang)}
-            ${renderRow('Entry page', entryPage || 'Not recorded')}
-            ${renderRow('Page before enquiry', enquirySourcePage || 'Not recorded')}
-            ${renderRow('Campaign source', utmSource || 'Not recorded')}
-            ${renderRow('Campaign medium', utmMedium || 'Not recorded')}
-            ${renderRow('Campaign name', utmCampaign || 'Not recorded')}
-            ${renderRow('Referrer site', referrerHost || 'Not recorded')}
+            ${renderRow('Entry page', entryPage)}
+            ${renderRow('Page before enquiry', enquirySourcePage)}
+            ${renderRow('Campaign source', utmSource)}
+            ${renderRow('Campaign medium', utmMedium)}
+            ${renderRow('Campaign name', utmCampaign)}
+            ${renderRow('Referrer site', referrerHost)}
           </table>
           ${message ? `<div style="margin-top:24px"><p style="color:#666;margin-bottom:8px">Message:</p><p style="white-space:pre-wrap;background:#f7f4ef;padding:16px;border-radius:4px">${escapeHtml(message)}</p></div>` : ''}
+          <div style="margin-top:24px">
+            <p style="color:#666;margin:0 0 8px">Still to ask in your reply:</p>
+            <ul style="margin:0;padding-left:20px;color:#333;line-height:1.6">${brief.questions.map((question) => `<li>${escapeHtml(question)}</li>`).join('')}</ul>
+          </div>
           <p style="margin-top:24px;font-size:13px"><strong>Optional next step:</strong> After reviewing this enquiry, send the client this <a href="${escapeHtml(preferencesUrl)}">trip preferences link</a> before your call. It carries the enquiry reference so their answers can be matched here.</p>
           <p style="margin-top:32px;color:#999;font-size:12px">Reply directly to this email to respond to ${escapeHtml(fname)}.</p>
         </div>

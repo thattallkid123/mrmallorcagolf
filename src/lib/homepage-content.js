@@ -12,6 +12,7 @@ export const HOME_CONTENT = {
       "with a Pro by Your Side"
     ],
     "emphasis": "",
+    "subline": "Or let me book your tee times and plan the whole trip around them.",
     "primaryCta": "Play With A Pro",
     "primaryHref": "/play-with-a-pro",
     "secondaryCta": "Plan Your Trip",
@@ -24,23 +25,30 @@ export const HOME_CONTENT = {
   },
   "intro": {
     "eyebrow": "What I do",
-    "title": "An 18-hole day with me. Or a whole trip built around it.",
+    "title": "Play a round with me, or let me book your golf and plan the trip around it.",
     "paragraphs": [
       "Play With A Pro is my on-course day with you: one course, 18 holes, course management, coaching woven into the round, and the local knowledge that turns a good day into a great one.",
-      "Plan Your Trip is the route-planning service. If you want me to handle the courses, base, routing, tee times, buggies, and bookings before you arrive, I do that too."
+      "If you want to play on your own, I book the golf: the right courses, in the right order, with tee times and buggies confirmed before you arrive.",
+      "For the whole trip, I plan the golf and work with a trusted local travel partner on the hotel, transfers, restaurants and days off. The partner books the non-golf side directly, and I put the two plans together."
     ],
     "services": [
       {
         "title": "Play With A Pro",
-        "text": "An 18-hole day with me. Standalone, or the anchor for a wider Mallorca trip.",
+        "text": "An 18-hole day with me on the course you choose, with coaching built into the round.",
         "cta": "See Play With A Pro",
         "href": "/play-with-a-pro"
       },
       {
-        "title": "Plan Your Trip",
-        "text": "Courses, base, routing, tee times, buggies, rental clubs, and dining suggestions.",
-        "cta": "Plan Your Trip",
-        "href": "/plan-your-trip"
+        "title": "Book your golf",
+        "text": "Courses, tee times, buggies and rental clubs, with the rounds in an order that makes sense.",
+        "cta": "Book your golf",
+        "href": "/plan-your-trip#professional-planning"
+      },
+      {
+        "title": "Plan the whole trip",
+        "text": "Golf plus the hotel, transfers, restaurants and days off, with a trusted local travel partner.",
+        "cta": "Plan the whole trip",
+        "href": "/plan-your-trip#whole-trip"
       }
     ],
     "coursesBlurb": "I play and review every course on the island: Son Gual, Alcanada, T Golf Calvia, Son Muntaner, and the rest. If you want to compare courses before booking,",

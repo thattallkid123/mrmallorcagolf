@@ -134,12 +134,20 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Todos los niveles · Comparativa de green fees · Actualizado 2026"
       },
       {
-        "slug": "is-mallorca-good-for-golf",
+        "slug": "golf-club-hire-mallorca",
+        "badge": "Guía práctica",
+        "title": "Alquiler de palos en Mallorca: todo lo que necesitas saber (2026)",
+        "intro": "¿Traer sus propios palos? ¿Qué empresas de alquiler merecen la pena? ¿Cuánto hay que pagar? Respondido con honestidad.",
+        "readTime": "6 min",
+        "keywords": "Alquiler · Traer palos · Precios · Empresas"
+      },
+      {
+        "slug": "golf-cost-mallorca",
         "badge": "Guía",
-        "title": "¿Es Mallorca buena para el golf? Una respuesta honesta de alguien que vive aquí",
-        "intro": "La versión sin adornos: qué hace mejor la isla que Portugal, dónde se queda corta y a quién le conviene.",
+        "title": "¿Cuánto cuesta el golf en Mallorca? Green fees, alquiler y costes ocultos",
+        "intro": "La foto completa de lo que cuesta realmente un viaje de golf aquí: green fees, alquiler, caddies y dónde ahorrar sin sacrificar calidad.",
         "readTime": "5 min",
-        "keywords": "Mallorca vs. Portugal · Calidad de los campos · Para todos los niveles"
+        "keywords": "€55-260 green fees · Alquiler · Caddies · Precios 2026"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -148,6 +156,22 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Octubre es el mes que yo elegiría. Aquí explico por qué y qué ofrece cada mes en clima, precio y afluencia.",
         "readTime": "6 min",
         "keywords": "Clima · Green fees por temporada · Afluencia"
+      },
+      {
+        "slug": "where-to-stay-mallorca-golf",
+        "badge": "Planificación",
+        "title": "Dónde alojarse en Mallorca para jugar al golf",
+        "intro": "Palma, el suroeste, el norte o el este. Elige la base por orden de campos, tiempo de trayecto y horas de salida.",
+        "readTime": "6 min",
+        "keywords": "Dónde alojarse · Base de golf · Planificación"
+      },
+      {
+        "slug": "golf-trip-planning-mallorca",
+        "badge": "Guía",
+        "title": "Cómo planificar un viaje de golf a Mallorca - todo lo que necesita saber",
+        "intro": "Vuelos, campos, dónde alojarse cerca del golf y cómo moverse. La guía práctica que me habría gustado tener cuando llegué.",
+        "readTime": "7 min",
+        "keywords": "Planificación · Dónde alojarse · Cómo moverse"
       },
       {
         "slug": "5-day-mallorca-golf-itinerary",
@@ -161,28 +185,44 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "5 días · Base Palma · Son Gual · Alcanada"
       },
       {
-        "slug": "golf-cost-mallorca",
+        "slug": "golf-courses-near-palma",
+        "badge": "Campos de Palma",
+        "title": "Campos de golf cerca de Palma: cuál jugar",
+        "intro": "Diez campos a menos de 25 minutos de la catedral de Palma. Límites de hándicap, si se camina y cuál reservar primero.",
+        "readTime": "10 min",
+        "keywords": "Límites de hándicap · Caminar · Base en Palma"
+      },
+      {
+        "slug": "is-mallorca-good-for-golf",
         "badge": "Guía",
-        "title": "¿Cuánto cuesta el golf en Mallorca? Green fees, alquiler y costes ocultos",
-        "intro": "La foto completa de lo que cuesta realmente un viaje de golf aquí: green fees, alquiler, caddies y dónde ahorrar sin sacrificar calidad.",
+        "title": "¿Es Mallorca buena para el golf? Una respuesta honesta de alguien que vive aquí",
+        "intro": "La versión sin adornos: qué hace mejor la isla que Portugal, dónde se queda corta y a quién le conviene.",
         "readTime": "5 min",
-        "keywords": "€55-260 green fees · Alquiler · Caddies · Precios 2026"
+        "keywords": "Mallorca vs. Portugal · Calidad de los campos · Para todos los niveles"
       },
       {
-        "slug": "golf-trip-planning-mallorca",
-        "badge": "Guía",
-        "title": "Cómo planificar un viaje de golf a Mallorca - todo lo que necesita saber",
-        "intro": "Vuelos, campos, dónde alojarse cerca del golf y cómo moverse. La guía práctica que me habría gustado tener cuando llegué.",
-        "readTime": "7 min",
-        "keywords": "Planificación · Dónde alojarse · Cómo moverse"
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "Suroeste",
+        "title": "Campos de golf del suroeste de Mallorca comparados",
+        "intro": "T Golf Calvià, Golf de Andratx y Santa Ponsa 1 comparados por un pro PGA que ha jugado los tres.",
+        "readTime": "5 min",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
       },
       {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "Guía práctica",
-        "title": "Alquiler de palos en Mallorca: todo lo que necesitas saber (2026)",
-        "intro": "¿Traer sus propios palos? ¿Qué empresas de alquiler merecen la pena? ¿Cuánto hay que pagar? Respondido con honestidad.",
-        "readTime": "6 min",
-        "keywords": "Alquiler · Traer palos · Precios · Empresas"
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "Elegir campo",
+        "title": "Los mejores campos de golf de Mallorca para hándicaps altos",
+        "intro": "Los límites van de 28 a 54. Todos en una tabla y los campos que reservaría para un hándicap 20 o más.",
+        "readTime": "4 min",
+        "keywords": "Límites de hándicap · Campos que perdonan · Para más adelante"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "Prácticas",
+        "title": "Las mejores instalaciones de prácticas de golf de Mallorca",
+        "intro": "Campos de prácticas con TrackMan, Toptracer y hierba comparados: dónde medir, calentar y trabajar el juego corto.",
+        "readTime": "4 min",
+        "keywords": "TrackMan · Toptracer · Juego corto"
       }
     ],
     "comingSoonLabel": "Próximamente",
@@ -328,12 +368,20 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Alle Level · Greenfees im Vergleich · Aktualisiert 2026"
       },
       {
-        "slug": "is-mallorca-good-for-golf",
+        "slug": "golf-club-hire-mallorca",
+        "badge": "Praktischer Ratgeber",
+        "title": "Leihschläger auf Mallorca – alles, was Sie wissen müssen (2026)",
+        "intro": "Eigene Schläger mitbringen? Welche Verleiher lohnen sich? Was sollte man zahlen? Ehrlich beantwortet.",
+        "readTime": "6 Min.",
+        "keywords": "Leihschläger · Eigene Schläger · Preise · Anbieter"
+      },
+      {
+        "slug": "golf-cost-mallorca",
         "badge": "Ratgeber",
-        "title": "Ist Mallorca gut für Golf? Eine ehrliche Antwort von jemandem, der hier lebt",
-        "intro": "Die ehrliche Version: was die Insel besser macht als Portugal, wo sie zurückfällt und für wen sie geeignet ist.",
+        "title": "Was kostet Golf auf Mallorca? Greenfees, Leihausrüstung und versteckte Kosten",
+        "intro": "Das vollständige Bild, was ein Golftrip hier wirklich kostet: Greenfees, Leihausrüstung, Caddies und wo man sparen kann.",
         "readTime": "5 Min.",
-        "keywords": "Mallorca vs. Portugal · Platzqualität · Für alle Level"
+        "keywords": "€55-260 Greenfees · Leihausrüstung · Caddies · Preise 2026"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -342,6 +390,22 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Oktober wäre meine Wahl. Hier ist warum, und was jeder Monat tatsächlich in Bezug auf Wetter, Preise und Besucheraufkommen bietet.",
         "readTime": "6 Min.",
         "keywords": "Wetter · Greenfees nach Saison · Besucheraufkommen"
+      },
+      {
+        "slug": "where-to-stay-mallorca-golf",
+        "badge": "Reiseplanung",
+        "title": "Wo auf Mallorca für Golf übernachten",
+        "intro": "Palma, Südwesten, Norden oder Osten. Wählen Sie die Basis nach Platzfolge, Fahrzeit und Startzeiten.",
+        "readTime": "6 Min.",
+        "keywords": "Unterkunft · Golf-Basis · Reiseplanung"
+      },
+      {
+        "slug": "golf-trip-planning-mallorca",
+        "badge": "Ratgeber",
+        "title": "Einen Golftrip nach Mallorca planen - alles, was Sie wissen müssen",
+        "intro": "Flüge, Plätze, Unterkünfte in Platznähe, Transfers. Der praktische Reiseführer, den ich mir gewünscht hätte, als ich hierher zog.",
+        "readTime": "7 Min.",
+        "keywords": "Reiseplanung · Unterkunft · Anreise"
       },
       {
         "slug": "5-day-mallorca-golf-itinerary",
@@ -355,28 +419,44 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "5 Tage · Standort Palma · Son Gual · Alcanada"
       },
       {
-        "slug": "golf-cost-mallorca",
+        "slug": "golf-courses-near-palma",
+        "badge": "Plätze bei Palma",
+        "title": "Golfplätze bei Palma: Welchen spielen",
+        "intro": "Zehn Plätze liegen innerhalb von 25 Minuten ab der Kathedrale von Palma. Handicap-Limits, Gehen und welchen Sie zuerst buchen.",
+        "readTime": "10 Min.",
+        "keywords": "Handicap-Limits · Gehen · Palma als Basis"
+      },
+      {
+        "slug": "is-mallorca-good-for-golf",
         "badge": "Ratgeber",
-        "title": "Was kostet Golf auf Mallorca? Greenfees, Leihausrüstung und versteckte Kosten",
-        "intro": "Das vollständige Bild, was ein Golftrip hier wirklich kostet: Greenfees, Leihausrüstung, Caddies und wo man sparen kann.",
+        "title": "Ist Mallorca gut für Golf? Eine ehrliche Antwort von jemandem, der hier lebt",
+        "intro": "Die ehrliche Version: was die Insel besser macht als Portugal, wo sie zurückfällt und für wen sie geeignet ist.",
         "readTime": "5 Min.",
-        "keywords": "€55-260 Greenfees · Leihausrüstung · Caddies · Preise 2026"
+        "keywords": "Mallorca vs. Portugal · Platzqualität · Für alle Level"
       },
       {
-        "slug": "golf-trip-planning-mallorca",
-        "badge": "Ratgeber",
-        "title": "Einen Golftrip nach Mallorca planen - alles, was Sie wissen müssen",
-        "intro": "Flüge, Plätze, Unterkünfte in Platznähe, Transfers. Der praktische Reiseführer, den ich mir gewünscht hätte, als ich hierher zog.",
-        "readTime": "7 Min.",
-        "keywords": "Reiseplanung · Unterkunft · Anreise"
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "Südwesten",
+        "title": "Die Golfplätze im Südwesten Mallorcas im Vergleich",
+        "intro": "T Golf Calvià, Golf de Andratx und Santa Ponsa 1 im Vergleich, von einem PGA-Pro, der alle drei gespielt hat.",
+        "readTime": "5 Min.",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
       },
       {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "Praktischer Ratgeber",
-        "title": "Leihschläger auf Mallorca – alles, was Sie wissen müssen (2026)",
-        "intro": "Eigene Schläger mitbringen? Welche Verleiher lohnen sich? Was sollte man zahlen? Ehrlich beantwortet.",
-        "readTime": "6 Min.",
-        "keywords": "Leihschläger · Eigene Schläger · Preise · Anbieter"
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "Platzwahl",
+        "title": "Die besten Golfplätze auf Mallorca für höhere Handicaps",
+        "intro": "Die Limits reichen von 28 bis 54. Alle Limits in einer Tabelle und die Plätze, die ich ab Handicap 20 buchen würde.",
+        "readTime": "4 Min.",
+        "keywords": "Handicap-Limits · Verzeihende Plätze · Für später aufheben"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "Training",
+        "title": "Die besten Übungsanlagen für Golf auf Mallorca",
+        "intro": "TrackMan-, Toptracer- und Gras-Ranges im Vergleich: wo Sie messen, sich aufwärmen und das kurze Spiel trainieren.",
+        "readTime": "4 Min.",
+        "keywords": "TrackMan · Toptracer · Kurzes Spiel"
       }
     ],
     "comingSoonLabel": "Demnächst",
@@ -521,12 +601,20 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Tous niveaux · Comparatif green fees · Mis à jour 2026"
       },
       {
-        "slug": "is-mallorca-good-for-golf",
+        "slug": "golf-club-hire-mallorca",
+        "badge": "Guide pratique",
+        "title": "Location de clubs à Majorque – tout ce que vous devez savoir (2026)",
+        "intro": "Faut-il apporter ses propres clubs ? Quels loueurs valent la peine ? Combien faut-il payer ? Réponses honnêtes.",
+        "readTime": "6 min",
+        "keywords": "Location · Apporter ses clubs · Tarifs · Sociétés"
+      },
+      {
+        "slug": "golf-cost-mallorca",
         "badge": "Guide",
-        "title": "Majorque est-elle bonne pour le golf ? Une réponse honnête par quelqu'un qui y vit",
-        "intro": "La version sans filtre: ce que l'île fait mieux que le Portugal, ses lacunes, et à qui elle convient vraiment.",
+        "title": "Combien coûte le golf à Majorque ? Green fees, location et coûts cachés",
+        "intro": "Le tableau complet de ce que coûte réellement un séjour golf ici: green fees, location, caddies et où économiser sans compromis.",
         "readTime": "5 min",
-        "keywords": "Majorque vs Portugal · Qualité des parcours · Tous niveaux"
+        "keywords": "€55-260 green fees · Location · Caddies · Tarifs 2026"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -535,6 +623,22 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Octobre est le mois que je choisirais. Voici pourquoi, et ce que chaque mois offre réellement en termes de météo, de prix et de fréquentation.",
         "readTime": "6 min",
         "keywords": "Météo · Green fees par saison · Fréquentation"
+      },
+      {
+        "slug": "where-to-stay-mallorca-golf",
+        "badge": "Planification",
+        "title": "Où loger à Majorque pour le golf",
+        "intro": "Palma, le sud-ouest, le nord ou l'est. Choisissez la base selon l'ordre des parcours, les trajets et les départs.",
+        "readTime": "6 min",
+        "keywords": "Où loger · Base golf · Planification"
+      },
+      {
+        "slug": "golf-trip-planning-mallorca",
+        "badge": "Guide",
+        "title": "Planifier un voyage golf à Majorque - tout ce que vous devez savoir",
+        "intro": "Vols, parcours, hébergement près du golf, comment se déplacer. Le guide pratique que j'aurais aimé avoir en arrivant ici.",
+        "readTime": "7 min",
+        "keywords": "Planification · Hébergement · Se déplacer"
       },
       {
         "slug": "5-day-mallorca-golf-itinerary",
@@ -548,28 +652,44 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "5 jours · Base Palma · Son Gual · Alcanada"
       },
       {
-        "slug": "golf-cost-mallorca",
+        "slug": "golf-courses-near-palma",
+        "badge": "Parcours de Palma",
+        "title": "Golfs près de Palma : lequel jouer",
+        "intro": "Dix parcours à moins de 25 minutes de la cathédrale de Palma. Limites de handicap, marche et lequel réserver en premier.",
+        "readTime": "10 min",
+        "keywords": "Limites de handicap · Marche · Base à Palma"
+      },
+      {
+        "slug": "is-mallorca-good-for-golf",
         "badge": "Guide",
-        "title": "Combien coûte le golf à Majorque ? Green fees, location et coûts cachés",
-        "intro": "Le tableau complet de ce que coûte réellement un séjour golf ici: green fees, location, caddies et où économiser sans compromis.",
+        "title": "Majorque est-elle bonne pour le golf ? Une réponse honnête par quelqu'un qui y vit",
+        "intro": "La version sans filtre: ce que l'île fait mieux que le Portugal, ses lacunes, et à qui elle convient vraiment.",
         "readTime": "5 min",
-        "keywords": "€55-260 green fees · Location · Caddies · Tarifs 2026"
+        "keywords": "Majorque vs Portugal · Qualité des parcours · Tous niveaux"
       },
       {
-        "slug": "golf-trip-planning-mallorca",
-        "badge": "Guide",
-        "title": "Planifier un voyage golf à Majorque - tout ce que vous devez savoir",
-        "intro": "Vols, parcours, hébergement près du golf, comment se déplacer. Le guide pratique que j'aurais aimé avoir en arrivant ici.",
-        "readTime": "7 min",
-        "keywords": "Planification · Hébergement · Se déplacer"
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "Sud-ouest",
+        "title": "Les parcours de golf du sud-ouest de Majorque comparés",
+        "intro": "T Golf Calvià, Golf de Andratx et Santa Ponsa 1 comparés par un pro PGA qui les a tous joués.",
+        "readTime": "5 min",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
       },
       {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "Guide pratique",
-        "title": "Location de clubs à Majorque – tout ce que vous devez savoir (2026)",
-        "intro": "Faut-il apporter ses propres clubs ? Quels loueurs valent la peine ? Combien faut-il payer ? Réponses honnêtes.",
-        "readTime": "6 min",
-        "keywords": "Location · Apporter ses clubs · Tarifs · Sociétés"
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "Choix du parcours",
+        "title": "Les meilleurs parcours de golf de Majorque pour handicaps élevés",
+        "intro": "Les limites vont de 28 à 54. Toutes en un tableau et les parcours que je réserverais à partir de 20 de handicap.",
+        "readTime": "4 min",
+        "keywords": "Limites de handicap · Parcours indulgents · À garder pour plus tard"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "Entraînement",
+        "title": "Les meilleures installations d'entraînement de golf à Majorque",
+        "intro": "Practices TrackMan, Toptracer et en herbe comparés : où mesurer, s'échauffer et travailler le petit jeu.",
+        "readTime": "4 min",
+        "keywords": "TrackMan · Toptracer · Petit jeu"
       }
     ],
     "comingSoonLabel": "Bientôt",
@@ -715,12 +835,20 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Alle niveaus · Greenfees vergeleken · Bijgewerkt 2026"
       },
       {
-        "slug": "is-mallorca-good-for-golf",
+        "slug": "golf-club-hire-mallorca",
+        "badge": "Praktische gids",
+        "title": "Clubhuur op Mallorca – alles wat je moet weten (2026)",
+        "intro": "Eigen clubs meenemen? Welke verhuurbedrijven zijn de moeite waard? Wat is een redelijke prijs? Eerlijk beantwoord.",
+        "readTime": "6 min",
+        "keywords": "Clubhuur · Eigen clubs · Prijzen · Bedrijven"
+      },
+      {
+        "slug": "golf-cost-mallorca",
         "badge": "Gids",
-        "title": "Is Mallorca goed voor golf? Een eerlijk antwoord van iemand die hier woont",
-        "intro": "De ongefilterde versie: wat het eiland beter doet dan Portugal, waar het tekortschiet en voor wie het geschikt is.",
+        "title": "Hoeveel kost golf op Mallorca? Greenfees, verhuur en verborgen kosten",
+        "intro": "Het volledige beeld van wat een golfreis hier werkelijk kost: greenfees, verhuur, caddies en waar je kunt besparen zonder in te leveren.",
         "readTime": "5 min",
-        "keywords": "Mallorca vs Portugal · Kwaliteit van banen · Alle niveaus"
+        "keywords": "€55-260 greenfees · Verhuur · Caddies · Prijzen 2026"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -729,6 +857,22 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Oktober is de maand die ik zou kiezen. Dit is waarom, en wat elke maand werkelijk biedt qua weer, prijs en drukte.",
         "readTime": "6 min",
         "keywords": "Weer · Greenfees per seizoen · Drukte"
+      },
+      {
+        "slug": "where-to-stay-mallorca-golf",
+        "badge": "Reisplanning",
+        "title": "Waar verblijven op Mallorca voor golf",
+        "intro": "Palma, het zuidwesten, het noorden of het oosten. Kies de basis op baanvolgorde, rijtijd en starttijden.",
+        "readTime": "6 min",
+        "keywords": "Waar verblijven · Golfbasis · Reisplanning"
+      },
+      {
+        "slug": "golf-trip-planning-mallorca",
+        "badge": "Gids",
+        "title": "Een golfreis naar Mallorca plannen - alles wat je moet weten",
+        "intro": "Vluchten, banen, verblijf bij de golf, hoe je je verplaatst. De praktische gids die ik had willen hebben toen ik hier aankwam.",
+        "readTime": "7 min",
+        "keywords": "Reisplanning · Verblijf · Vervoer"
       },
       {
         "slug": "5-day-mallorca-golf-itinerary",
@@ -742,28 +886,44 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "5 dagen · Palma-basis · Son Gual · Alcanada"
       },
       {
-        "slug": "golf-cost-mallorca",
+        "slug": "golf-courses-near-palma",
+        "badge": "Banen bij Palma",
+        "title": "Golfbanen bij Palma: welke spelen",
+        "intro": "Tien banen binnen 25 minuten van de kathedraal van Palma. Handicaplimieten, lopen en welke je als eerste boekt.",
+        "readTime": "10 min",
+        "keywords": "Handicaplimieten · Lopen · Basis in Palma"
+      },
+      {
+        "slug": "is-mallorca-good-for-golf",
         "badge": "Gids",
-        "title": "Hoeveel kost golf op Mallorca? Greenfees, verhuur en verborgen kosten",
-        "intro": "Het volledige beeld van wat een golfreis hier werkelijk kost: greenfees, verhuur, caddies en waar je kunt besparen zonder in te leveren.",
+        "title": "Is Mallorca goed voor golf? Een eerlijk antwoord van iemand die hier woont",
+        "intro": "De ongefilterde versie: wat het eiland beter doet dan Portugal, waar het tekortschiet en voor wie het geschikt is.",
         "readTime": "5 min",
-        "keywords": "€55-260 greenfees · Verhuur · Caddies · Prijzen 2026"
+        "keywords": "Mallorca vs Portugal · Kwaliteit van banen · Alle niveaus"
       },
       {
-        "slug": "golf-trip-planning-mallorca",
-        "badge": "Gids",
-        "title": "Een golfreis naar Mallorca plannen - alles wat je moet weten",
-        "intro": "Vluchten, banen, verblijf bij de golf, hoe je je verplaatst. De praktische gids die ik had willen hebben toen ik hier aankwam.",
-        "readTime": "7 min",
-        "keywords": "Reisplanning · Verblijf · Vervoer"
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "Zuidwesten",
+        "title": "Golfbanen in het zuidwesten van Mallorca vergeleken",
+        "intro": "T Golf Calvià, Golf de Andratx en Santa Ponsa 1 vergeleken door een PGA-pro die alle drie speelde.",
+        "readTime": "5 min",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
       },
       {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "Praktische gids",
-        "title": "Clubhuur op Mallorca – alles wat je moet weten (2026)",
-        "intro": "Eigen clubs meenemen? Welke verhuurbedrijven zijn de moeite waard? Wat is een redelijke prijs? Eerlijk beantwoord.",
-        "readTime": "6 min",
-        "keywords": "Clubhuur · Eigen clubs · Prijzen · Bedrijven"
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "Baankeuze",
+        "title": "De beste golfbanen op Mallorca voor hogere handicaps",
+        "intro": "De limieten lopen van 28 tot 54. Alle limieten in één tabel en de banen die ik zou boeken bij handicap 20 of hoger.",
+        "readTime": "4 min",
+        "keywords": "Handicaplimieten · Vergevingsgezinde banen · Bewaren voor later"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "Oefenen",
+        "title": "De beste oefenfaciliteiten voor golf op Mallorca",
+        "intro": "TrackMan-, Toptracer- en grasranges vergeleken: waar je meet, opwarmt en aan het korte spel werkt.",
+        "readTime": "4 min",
+        "keywords": "TrackMan · Toptracer · Kort spel"
       }
     ],
     "comingSoonLabel": "Binnenkort",
@@ -909,12 +1069,20 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Alla nivåer · Greenfees jämfört · Uppdaterad 2026"
       },
       {
-        "slug": "is-mallorca-good-for-golf",
+        "slug": "golf-club-hire-mallorca",
+        "badge": "Praktisk guide",
+        "title": "Klubbhyra på Mallorca – allt du behöver veta (2026)",
+        "intro": "Ska du ta med egna klubbor? Vilka uthyrare är värda att använda? Vad bör du betala? Ärligt besvarat.",
+        "readTime": "6 min",
+        "keywords": "Klubbhyra · Egna klubbor · Priser · Företag"
+      },
+      {
+        "slug": "golf-cost-mallorca",
         "badge": "Guide",
-        "title": "Är Mallorca bra för golf? Ett ärligt svar från någon som bor här",
-        "intro": "Den ofiltrerade versionen: vad ön gör bättre än Portugal, var den faller kort och vem den passar.",
+        "title": "Vad kostar golf på Mallorca? Greenfees, uthyrning och dolda kostnader",
+        "intro": "Den fullständiga bilden av vad en golfresa hit faktiskt kostar: greenfees, uthyrning, caddies och var du kan spara utan att kompromissa.",
         "readTime": "5 min",
-        "keywords": "Mallorca vs Portugal · Banornas kvalitet · Alla nivåer"
+        "keywords": "€55-260 greenfees · Uthyrning · Caddies · Priser 2026"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -923,6 +1091,22 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Oktober är den månad jag skulle välja. Här är varför, och vad varje månad faktiskt levererar när det gäller väder, pris och trängsel.",
         "readTime": "6 min",
         "keywords": "Väder · Greenfees per säsong · Trängsel"
+      },
+      {
+        "slug": "where-to-stay-mallorca-golf",
+        "badge": "Reseplanering",
+        "title": "Var du ska bo på Mallorca för golf",
+        "intro": "Palma, sydväst, norr eller öster. Välj bas efter banornas ordning, restid och starttider.",
+        "readTime": "6 min",
+        "keywords": "Var du ska bo · Golfbas · Reseplanering"
+      },
+      {
+        "slug": "golf-trip-planning-mallorca",
+        "badge": "Guide",
+        "title": "Planera en golfresa till Mallorca - allt du behöver veta",
+        "intro": "Flyg, banor, boende nära golfen, hur du tar dig runt. Den praktiska guiden jag önskade att det funnits när jag flyttade hit.",
+        "readTime": "7 min",
+        "keywords": "Reseplanering · Boende · Transport"
       },
       {
         "slug": "5-day-mallorca-golf-itinerary",
@@ -936,28 +1120,44 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "5 dagar · Palma-bas · Son Gual · Alcanada"
       },
       {
-        "slug": "golf-cost-mallorca",
+        "slug": "golf-courses-near-palma",
+        "badge": "Banor vid Palma",
+        "title": "Golfbanor nära Palma: vilken ska du spela",
+        "intro": "Tio banor inom 25 minuter från Palmas katedral. Handicapgränser, att gå och vilken du ska boka först.",
+        "readTime": "10 min",
+        "keywords": "Handicapgränser · Att gå · Bas i Palma"
+      },
+      {
+        "slug": "is-mallorca-good-for-golf",
         "badge": "Guide",
-        "title": "Vad kostar golf på Mallorca? Greenfees, uthyrning och dolda kostnader",
-        "intro": "Den fullständiga bilden av vad en golfresa hit faktiskt kostar: greenfees, uthyrning, caddies och var du kan spara utan att kompromissa.",
+        "title": "Är Mallorca bra för golf? Ett ärligt svar från någon som bor här",
+        "intro": "Den ofiltrerade versionen: vad ön gör bättre än Portugal, var den faller kort och vem den passar.",
         "readTime": "5 min",
-        "keywords": "€55-260 greenfees · Uthyrning · Caddies · Priser 2026"
+        "keywords": "Mallorca vs Portugal · Banornas kvalitet · Alla nivåer"
       },
       {
-        "slug": "golf-trip-planning-mallorca",
-        "badge": "Guide",
-        "title": "Planera en golfresa till Mallorca - allt du behöver veta",
-        "intro": "Flyg, banor, boende nära golfen, hur du tar dig runt. Den praktiska guiden jag önskade att det funnits när jag flyttade hit.",
-        "readTime": "7 min",
-        "keywords": "Reseplanering · Boende · Transport"
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "Sydväst",
+        "title": "Golfbanorna i sydvästra Mallorca jämförda",
+        "intro": "T Golf Calvià, Golf de Andratx och Santa Ponsa 1 jämförda av en PGA-pro som spelat alla tre.",
+        "readTime": "5 min",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
       },
       {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "Praktisk guide",
-        "title": "Klubbhyra på Mallorca – allt du behöver veta (2026)",
-        "intro": "Ska du ta med egna klubbor? Vilka uthyrare är värda att använda? Vad bör du betala? Ärligt besvarat.",
-        "readTime": "6 min",
-        "keywords": "Klubbhyra · Egna klubbor · Priser · Företag"
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "Banval",
+        "title": "De bästa golfbanorna på Mallorca för högre handicap",
+        "intro": "Gränserna går från 28 till 54. Alla i en tabell och banorna jag skulle boka för handicap 20 eller högre.",
+        "readTime": "4 min",
+        "keywords": "Handicapgränser · Förlåtande banor · Spara till senare"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "Träning",
+        "title": "Mallorcas bästa träningsanläggningar för golf",
+        "intro": "TrackMan-, Toptracer- och gräsrangear jämförda: var du mäter, värmer upp och jobbar med närspelet.",
+        "readTime": "4 min",
+        "keywords": "TrackMan · Toptracer · Närspel"
       }
     ],
     "comingSoonLabel": "Kommer snart",
@@ -1103,12 +1303,20 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "适合各水平 · 果岭费对比 · 2026年更新"
       },
       {
-        "slug": "is-mallorca-good-for-golf",
+        "slug": "golf-club-hire-mallorca",
+        "badge": "实用指南",
+        "title": "马略卡租杆指南：实用版（2026）",
+        "intro": "该不该自带球杆？哪些租杆公司值得选？价格多少算合理？诚实回答。",
+        "readTime": "6分钟",
+        "keywords": "租杆 · 自带球杆 · 价格 · 租杆公司"
+      },
+      {
+        "slug": "golf-cost-mallorca",
         "badge": "指南",
-        "title": "马略卡岛适合打高尔夫吗？一位住在这里的人给出的诚实答案",
-        "intro": "不加滤镜的真实版本：这座岛在哪些方面胜过葡萄牙，哪些方面有所不足，以及它适合哪类球手。",
+        "title": "马略卡岛打高尔夫要多少钱？果岭费、租杆费及隐性费用全解析",
+        "intro": "一次马略卡高尔夫之旅的真实花销：果岭费、租杆、球童，以及在哪里可以省钱而不降低体验。",
         "readTime": "5分钟",
-        "keywords": "马略卡 vs 葡萄牙 · 球场品质 · 适合各水平"
+        "keywords": "€55-260果岭费 · 租杆 · 球童 · 2026年价格"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -1117,6 +1325,22 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "如果只能选一个月，我会选十月。原因在此，以及每个月在天气、价格和人流方面的真实表现。",
         "readTime": "6分钟",
         "keywords": "天气 · 按季节果岭费 · 人流量"
+      },
+      {
+        "slug": "where-to-stay-mallorca-golf",
+        "badge": "行程规划",
+        "title": "马略卡打高尔夫住哪里",
+        "intro": "帕尔马、西南部、北部还是东部。按球场顺序、车程和开球时间选择大本营。",
+        "readTime": "6分钟",
+        "keywords": "住宿 · 高尔夫大本营 · 行程规划"
+      },
+      {
+        "slug": "golf-trip-planning-mallorca",
+        "badge": "指南",
+        "title": "规划马略卡高尔夫之旅 - 你需要了解的一切",
+        "intro": "机票、球场、住宿选择、如何在景点之间穿梭。这是我搬来这里时希望早已存在的实用指南。",
+        "readTime": "7分钟",
+        "keywords": "行程规划 · 住宿 · 交通"
       },
       {
         "slug": "5-day-mallorca-golf-itinerary",
@@ -1130,28 +1354,44 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "5天 · 帕尔马基地 · Son Gual · Alcanada"
       },
       {
-        "slug": "golf-cost-mallorca",
+        "slug": "golf-courses-near-palma",
+        "badge": "帕尔马球场",
+        "title": "帕尔马附近的球场：该打哪一个",
+        "intro": "十个球场位于帕尔马大教堂 25 分钟车程以内。差点上限、步行情况，以及先订哪一个。",
+        "readTime": "10分钟",
+        "keywords": "差点上限 · 步行 · 以帕尔马为基地"
+      },
+      {
+        "slug": "is-mallorca-good-for-golf",
         "badge": "指南",
-        "title": "马略卡岛打高尔夫要多少钱？果岭费、租杆费及隐性费用全解析",
-        "intro": "一次马略卡高尔夫之旅的真实花销：果岭费、租杆、球童，以及在哪里可以省钱而不降低体验。",
+        "title": "马略卡岛适合打高尔夫吗？一位住在这里的人给出的诚实答案",
+        "intro": "不加滤镜的真实版本：这座岛在哪些方面胜过葡萄牙，哪些方面有所不足，以及它适合哪类球手。",
         "readTime": "5分钟",
-        "keywords": "€55-260果岭费 · 租杆 · 球童 · 2026年价格"
+        "keywords": "马略卡 vs 葡萄牙 · 球场品质 · 适合各水平"
       },
       {
-        "slug": "golf-trip-planning-mallorca",
-        "badge": "指南",
-        "title": "规划马略卡高尔夫之旅 - 你需要了解的一切",
-        "intro": "机票、球场、住宿选择、如何在景点之间穿梭。这是我搬来这里时希望早已存在的实用指南。",
-        "readTime": "7分钟",
-        "keywords": "行程规划 · 住宿 · 交通"
+        "slug": "southwest-mallorca-golf-courses-compared",
+        "badge": "西南部",
+        "title": "马略卡西南部高尔夫球场对比",
+        "intro": "PGA 职业教练对比 T Golf Calvià、Golf de Andratx 和 Santa Ponsa 1，三家他都打过。",
+        "readTime": "5分钟",
+        "keywords": "Calvià · Andratx · Santa Ponsa"
       },
       {
-        "slug": "golf-club-hire-mallorca",
-        "badge": "实用指南",
-        "title": "马略卡租杆指南：实用版（2026）",
-        "intro": "该不该自带球杆？哪些租杆公司值得选？价格多少算合理？诚实回答。",
-        "readTime": "6分钟",
-        "keywords": "租杆 · 自带球杆 · 价格 · 租杆公司"
+        "slug": "best-mallorca-golf-courses-higher-handicappers",
+        "badge": "选场",
+        "title": "适合高差点球友的马略卡最佳球场",
+        "intro": "差点上限从 28 到 54。所有上限一表看清，以及差点 20 以上我会先订的球场。",
+        "readTime": "4分钟",
+        "keywords": "差点上限 · 容错球场 · 留到后面"
+      },
+      {
+        "slug": "best-golf-practice-facilities-mallorca",
+        "badge": "练习",
+        "title": "马略卡最好的高尔夫练习设施",
+        "intro": "TrackMan、Toptracer 和草地练习场对比：哪里测数据，哪里热身，哪里练短杆。",
+        "readTime": "4分钟",
+        "keywords": "TrackMan · Toptracer · 短杆"
       }
     ],
     "comingSoonLabel": "即将推出",

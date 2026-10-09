@@ -98,7 +98,7 @@ const content = {
       },
       {
         "alt": "Green de prácticas en Son Quint con una bandera naranja de Son Quint en primer plano",
-        "caption": "El green de prácticas junto a la casa club de Son Quint."
+        "caption": "El green de prácticas de Son Quint."
       },
       {
         "text": "Información práctica"
@@ -273,7 +273,7 @@ const content = {
       },
       {
         "alt": "Puttinggrün im Son Quint mit einer orangefarbenen Son-Quint-Fahne im Vordergrund",
-        "caption": "Das Puttinggrün am Clubhaus des Son Quint."
+        "caption": "Das Puttinggrün in Son Quint."
       },
       {
         "text": "Praktische Informationen"
@@ -448,7 +448,7 @@ const content = {
       },
       {
         "alt": "Putting green de Son Quint avec un drapeau orange Son Quint au premier plan",
-        "caption": "Le putting green au club-house de Son Quint."
+        "caption": "Le putting green de Son Quint."
       },
       {
         "text": "Informations pratiques"
@@ -623,7 +623,7 @@ const content = {
       },
       {
         "alt": "Puttinggreen bij Son Quint met een oranje Son Quint-vlag op de voorgrond",
-        "caption": "De puttinggreen bij het clubhuis van Son Quint."
+        "caption": "De puttinggreen van Son Quint."
       },
       {
         "text": "Praktische informatie"
@@ -798,7 +798,7 @@ const content = {
       },
       {
         "alt": "Puttinggreen på Son Quint med en orange Son Quint-flagga i förgrunden",
-        "caption": "Puttinggreenen vid klubbhuset på Son Quint."
+        "caption": "Puttinggreenen på Son Quint."
       },
       {
         "text": "Praktisk information"
@@ -973,7 +973,7 @@ const content = {
       },
       {
         "alt": "Son Quint 的练习果岭，前景是一面橙色的 Son Quint 旗",
-        "caption": "Son Quint 会所旁的练习果岭。"
+        "caption": "Son Quint 的练习果岭。"
       },
       {
         "text": "实用信息"

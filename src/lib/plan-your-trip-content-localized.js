@@ -10,7 +10,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "es": {
     "heroEyebrow": "Planifique su viaje de golf en Mallorca",
     "heroTitle": "Los campos adecuados de Mallorca, en el orden adecuado.",
-    "heroBody": "Elijo y reservo los campos y las horas de salida para su grupo, con buggies y alquileres organizados antes de su llegada. Usted juega las rondas a su propio ritmo. Si quiere que le acompañe un día, añada Play With A Pro.",
+    "heroBody": "Elijo y reservo los campos y las horas de salida para su grupo, con buggies y alquileres organizados antes de su llegada. Usted juega las rondas a su propio ritmo. Para el viaje completo, también trabajo con un socio de viajes local de confianza para el hotel, los traslados, los restaurantes y los días libres. Si quiere que le acompañe un día, añada Play With A Pro.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Buscador de campos",
@@ -46,7 +46,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "cta": "Consultar sobre la planificación",
       "workingModes": {
         "title": "Elija el nivel de ayuda que necesita.",
-        "body": "Algunos grupos solo necesitan que se comprueben y reserven los tee times. Otros necesitan el plan de golf completo, construido según los vuelos, la zona del hotel, el hándicap y el presupuesto.",
+        "body": "Algunos grupos solo necesitan que se comprueben y reserven los tee times. Otros quieren el plan de golf completo, o todo el viaje planificado a su alrededor.",
         "items": [
           {
             "title": "Solo tee times",
@@ -57,19 +57,82 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "title": "Plan de golf completo",
             "body": "Para grupos que juegan varias rondas, ordeno los campos de la mejor manera, planifico los trayectos y me ocupo de buggies, alquileres y sugerencias para comer.",
             "cta": "Planificar mi viaje"
+          },
+          {
+            "title": "El viaje completo",
+            "body": "Golf más hotel, traslados, restaurantes y días libres. Yo planifico el golf, mi socio de viajes local reserva el resto directamente y usted recibe un único plan.",
+            "cta": "Planificar el viaje completo"
           }
         ]
       },
       "possibilities": {
-        "title": "Un viaje de golf puede ser sencillo o algo más completo.",
-        "body": "Según el grupo, puedo construir los días alrededor del hotel, restaurantes, spa, rutas por la costa, bodegas, chef privado, clases extra o tiempo tranquilo entre rondas.",
+        "title": "Todo el viaje, planificado en torno al golf.",
+        "body": "Trabajo con un socio de viajes local de confianza que organiza hoteles, traslados, restaurantes y actividades en toda la isla. Acordamos el plan con usted, el socio reserva y factura directamente todo lo que no es golf, y yo me ocupo del golf.",
         "items": [
           "Hotel en Palma, resort o finca más tranquila",
           "Restaurante con estrella Michelin, favorito local o chef privado",
           "Spa, recuperación o tiempo sin golf entre rondas",
           "Ruta costera, visita a una bodega o una cena más memorable"
         ]
+      },
+      "process": {
+        "title": "Cómo funciona",
+        "steps": [
+          "Envíeme sus fechas, el tamaño del grupo y lo que quiere del viaje.",
+          "Para un viaje más amplio, acordamos el golf, la base y los extras en una llamada breve.",
+          "Le envío el plan de golf, y mi socio de viajes, las opciones de hotel, traslados y restaurantes.",
+          "Usted decide, y solo entonces se reserva."
+        ]
       }
+    },
+    "tripIdeas": {
+      "eyebrow": "Ideas para el viaje",
+      "title": "Cómo pueden ser los días alrededor del golf.",
+      "intro": "Algunos de los hoteles, mesas y excursiones que propongo a los grupos. Sus opciones se ajustan al grupo y a los campos, y mi socio de viajes comprueba disponibilidad y precios.",
+      "photoLabel": "Foto",
+      "cta": "Planificar el viaje completo",
+      "items": [
+        {
+          "tag": "Este · hotel de golf",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "En el valle de Canyamel, cerca de Canyamel Golf."
+        },
+        {
+          "tag": "Palma · hotel urbano",
+          "title": "Hotel Saratoga",
+          "text": "En el centro de Palma, con el casco antiguo y sus restaurantes a pie."
+        },
+        {
+          "tag": "Palma · estrella Michelin",
+          "title": "Marc Fosh",
+          "text": "Un menú degustación con estrella Michelin y una mesa privada para grupos pequeños."
+        },
+        {
+          "tag": "Palmanova · en la playa",
+          "title": "Siso Beach",
+          "text": "Una comida de entrega de premios junto a la playa tras la última vuelta en T Golf Calvià."
+        },
+        {
+          "tag": "Palmanova · vistas al mar",
+          "title": "Annabel",
+          "text": "Vistas al mar, música y un salón privado para una cena de grupo."
+        },
+        {
+          "tag": "En el mar",
+          "title": "Un barco privado",
+          "text": "Medio día por la costa con patrón, de vuelta a tiempo para cenar."
+        },
+        {
+          "tag": "Consell · vino",
+          "title": "Bodega Ribas",
+          "text": "Una cata en una tarde libre, con traslados para que nadie tenga que conducir."
+        },
+        {
+          "tag": "Día libre",
+          "title": "El tren de Sóller",
+          "text": "El tren de madera que cruza las montañas hasta Sóller, a una hora de Palma."
+        }
+      ]
     },
     "addon": {
       "eyebrow": "Añadido disponible en cualquier nivel",
@@ -118,7 +181,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "de": {
     "heroEyebrow": "Planen Sie Ihren Mallorca-Golftrip",
     "heroTitle": "Die richtigen Plätze Mallorcas, in der richtigen Reihenfolge.",
-    "heroBody": "Ich wähle die Plätze und Startzeiten für Ihre Gruppe aus und buche sie, Buggys und Leihschläger organisiere ich vor Ihrer Anreise. Sie spielen die Runden nach Ihrem eigenen Zeitplan. Wenn Sie mich für einen Tag an Ihrer Seite möchten, fügen Sie Play With A Pro hinzu.",
+    "heroBody": "Ich wähle die Plätze und Startzeiten für Ihre Gruppe aus und buche sie, Buggys und Leihschläger organisiere ich vor Ihrer Anreise. Sie spielen die Runden nach Ihrem eigenen Zeitplan. Für die ganze Reise arbeite ich außerdem mit einem bewährten lokalen Reisepartner für Hotel, Transfers, Restaurants und freie Tage zusammen. Wenn Sie mich für einen Tag an Ihrer Seite möchten, fügen Sie Play With A Pro hinzu.",
     "options": {
       "basicLabel": "Kostenlos",
       "basicTitle": "Kostenloser Platzfinder",
@@ -154,7 +217,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "cta": "Reiseplanung anfragen",
       "workingModes": {
         "title": "Wählen Sie, wie viel Unterstützung Sie brauchen.",
-        "body": "Manche Gruppen brauchen nur geprüfte und gebuchte Startzeiten. Andere brauchen den vollständigen Golfplan rund um Flüge, Hotelregion, Handicap-Bereich und Budget.",
+        "body": "Manche Gruppen brauchen nur geprüfte und gebuchte Startzeiten. Andere möchten den vollständigen Golfplan oder die ganze Reise darum herum geplant.",
         "items": [
           {
             "title": "Nur Startzeiten",
@@ -165,19 +228,82 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "title": "Kompletter Golfplan",
             "body": "Für Gruppen mit mehreren Runden bringe ich die Plätze in die richtige Reihenfolge, plane die Fahrten und kümmere mich um Buggies, Leihausrüstung und passende Restaurantvorschläge.",
             "cta": "Reise planen"
+          },
+          {
+            "title": "Die ganze Reise",
+            "body": "Golf plus Hotel, Transfers, Restaurants und freie Tage. Ich plane das Golf, mein lokaler Reisepartner bucht den Rest direkt, und Sie erhalten einen Plan.",
+            "cta": "Ganze Reise planen"
           }
         ]
       },
       "possibilities": {
-        "title": "Ein Golftrip kann einfach bleiben oder deutlich vollständiger werden.",
-        "body": "Je nach Gruppe kann ich die Tage rund um Hotelwahl, Restaurants, Spa-Zeit, Küstenfahrten, Weinprobe, privaten Koch, zusätzliche Stunden oder ruhigere Erholung zwischen den Runden planen.",
+        "title": "Die ganze Reise, rund um das Golf geplant.",
+        "body": "Ich arbeite mit einem bewährten lokalen Reisepartner zusammen, der Hotels, Transfers, Restaurants und Aktivitäten auf der ganzen Insel organisiert. Wir stimmen den Plan mit Ihnen ab, der Partner bucht und berechnet alles außerhalb des Golfs direkt, und ich kümmere mich um das Golf.",
         "items": [
           "Hotel in Palma, Resort oder ruhigere Finca",
           "Michelin-Restaurant, lokaler Favorit oder privater Koch",
           "Spa und ruhige Zeit ohne Golf zwischen den Runden",
           "Küstenfahrt, Weingut oder ein besonderer Abend"
         ]
+      },
+      "process": {
+        "title": "So läuft es ab",
+        "steps": [
+          "Senden Sie mir Ihre Daten, die Gruppengröße und was Sie sich von der Reise wünschen.",
+          "Bei einer größeren Reise stimmen wir Golf, Standort und Extras in einem kurzen Gespräch ab.",
+          "Ich schicke den Golfplan, mein Reisepartner die Optionen für Hotel, Transfers und Restaurants.",
+          "Sie entscheiden, und erst dann wird gebucht."
+        ]
       }
+    },
+    "tripIdeas": {
+      "eyebrow": "Ideen für die Reise",
+      "title": "So können die Tage rund um das Golf aussehen.",
+      "intro": "Eine Auswahl der Hotels, Restaurants und Ausflüge, die ich Gruppen vorschlage. Ihre Optionen stimmen wir auf Gruppe und Plätze ab, und mein Reisepartner prüft Verfügbarkeit und Preise.",
+      "photoLabel": "Foto",
+      "cta": "Ganze Reise planen",
+      "items": [
+        {
+          "tag": "Osten · Golfhotel",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "Im Tal von Canyamel, nahe Canyamel Golf."
+        },
+        {
+          "tag": "Palma · Stadthotel",
+          "title": "Hotel Saratoga",
+          "text": "Im Zentrum von Palma, Altstadt und Restaurants zu Fuß erreichbar."
+        },
+        {
+          "tag": "Palma · Michelin-Stern",
+          "title": "Marc Fosh",
+          "text": "Ein Degustationsmenü mit Michelin-Stern und ein privater Tisch für kleinere Gruppen."
+        },
+        {
+          "tag": "Palmanova · am Strand",
+          "title": "Siso Beach",
+          "text": "Ein Mittagessen zur Siegerehrung am Strand nach der letzten Runde auf T Golf Calvià."
+        },
+        {
+          "tag": "Palmanova · Meerblick",
+          "title": "Annabel",
+          "text": "Meerblick, Musik und ein privater Raum für ein Gruppendinner."
+        },
+        {
+          "tag": "Auf dem Wasser",
+          "title": "Ein privates Boot",
+          "text": "Ein halber Tag entlang der Küste mit Skipper, zurück vor dem Abendessen."
+        },
+        {
+          "tag": "Consell · Wein",
+          "title": "Bodega Ribas",
+          "text": "Eine Weinprobe an einem freien Nachmittag, mit Transfer, damit niemand fahren muss."
+        },
+        {
+          "tag": "Freier Tag",
+          "title": "Der Sóller-Zug",
+          "text": "Der Holzzug durch die Berge nach Sóller, etwa eine Stunde ab Palma."
+        }
+      ]
     },
     "addon": {
       "eyebrow": "Zusatzoption auf jeder Stufe",
@@ -226,7 +352,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "fr": {
     "heroEyebrow": "Planifiez votre séjour golf à Majorque",
     "heroTitle": "Les bons parcours de Majorque, dans le bon ordre.",
-    "heroBody": "Je choisis et je réserve les parcours et les heures de départ pour votre groupe, avec voiturettes et locations organisées avant votre arrivée. Vous jouez les parties à votre rythme. Si vous voulez que je sois à vos côtés pendant une journée, ajoutez Play With A Pro.",
+    "heroBody": "Je choisis et je réserve les parcours et les heures de départ pour votre groupe, avec voiturettes et locations organisées avant votre arrivée. Vous jouez les parties à votre rythme. Pour le voyage complet, je travaille aussi avec un partenaire de voyage local de confiance pour l’hôtel, les transferts, les restaurants et les jours libres. Si vous voulez que je sois à vos côtés pendant une journée, ajoutez Play With A Pro.",
     "options": {
       "basicLabel": "Gratuit",
       "basicTitle": "Sélecteur de parcours",
@@ -262,7 +388,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "cta": "Demander la planification",
       "workingModes": {
         "title": "Choisissez le niveau d’aide dont vous avez besoin.",
-        "body": "Certains groupes ont seulement besoin que les départs soient vérifiés et réservés. D’autres veulent le plan golf complet, construit autour des vols, de la zone d’hôtel, du niveau de handicap et du budget.",
+        "body": "Certains groupes ont seulement besoin que les départs soient vérifiés et réservés. D’autres veulent le plan golf complet, ou tout le voyage organisé autour.",
         "items": [
           {
             "title": "Départs seulement",
@@ -273,19 +399,82 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "title": "Plan golf complet",
             "body": "Pour les groupes qui jouent plusieurs parcours, je mets les parcours dans le bon ordre, je planifie les trajets et je m’occupe des buggies, des locations et des suggestions de restaurants.",
             "cta": "Planifier mon séjour"
+          },
+          {
+            "title": "Le voyage complet",
+            "body": "Le golf, plus l’hôtel, les transferts, les restaurants et les jours libres. Je planifie le golf, mon partenaire de voyage local réserve le reste directement, et vous recevez un seul plan.",
+            "cta": "Organiser tout le voyage"
           }
         ]
       },
       "possibilities": {
-        "title": "Un séjour golf peut rester simple ou devenir plus complet.",
-        "body": "Selon le groupe, je peux organiser les journées autour du choix de l’hôtel, des restaurants, du spa, de trajets côtiers, d’une dégustation de vin, d’un chef privé, de leçons supplémentaires ou de temps plus calme entre les parties.",
+        "title": "Tout le voyage, organisé autour du golf.",
+        "body": "Je travaille avec un partenaire de voyage local de confiance qui organise hôtels, transferts, restaurants et activités dans toute l’île. Nous convenons du plan avec vous, le partenaire réserve et facture directement tout ce qui ne concerne pas le golf, et je m’occupe du golf.",
         "items": [
           "Hôtel à Palma, resort ou finca plus calme",
           "Restaurant étoilé Michelin, adresse locale ou chef privé",
           "Spa, récupération ou temps sans golf entre les parties",
           "Route côtière, visite d’un domaine ou soirée plus marquante"
         ]
+      },
+      "process": {
+        "title": "Comment ça se passe",
+        "steps": [
+          "Envoyez-moi vos dates, la taille du groupe et ce que vous attendez du voyage.",
+          "Pour un voyage plus large, nous convenons du golf, du lieu de séjour et des extras lors d’un court appel.",
+          "Je vous envoie le plan golf, et mon partenaire de voyage les options d’hôtel, de transferts et de restaurants.",
+          "Vous décidez, et ce n’est qu’alors que l’on réserve."
+        ]
       }
+    },
+    "tripIdeas": {
+      "eyebrow": "Idées de voyage",
+      "title": "À quoi peuvent ressembler les journées autour du golf.",
+      "intro": "Quelques-uns des hôtels, tables et sorties que je propose aux groupes. Vos options sont adaptées au groupe et aux parcours, et mon partenaire de voyage vérifie disponibilités et prix.",
+      "photoLabel": "Photo",
+      "cta": "Organiser tout le voyage",
+      "items": [
+        {
+          "tag": "Est · hôtel golf",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "Dans la vallée de Canyamel, près du Canyamel Golf."
+        },
+        {
+          "tag": "Palma · hôtel en ville",
+          "title": "Hotel Saratoga",
+          "text": "Au centre de Palma, la vieille ville et ses restaurants à pied."
+        },
+        {
+          "tag": "Palma · étoile Michelin",
+          "title": "Marc Fosh",
+          "text": "Un menu dégustation étoilé Michelin, avec une table privée pour un petit groupe."
+        },
+        {
+          "tag": "Palmanova · sur la plage",
+          "title": "Siso Beach",
+          "text": "Un déjeuner de remise des prix sur la plage après la dernière partie au T Golf Calvià."
+        },
+        {
+          "tag": "Palmanova · vue mer",
+          "title": "Annabel",
+          "text": "Vue sur la mer, musique et un salon privé pour un dîner de groupe."
+        },
+        {
+          "tag": "En mer",
+          "title": "Un bateau privé",
+          "text": "Une demi-journée le long de la côte avec skipper, retour à temps pour le dîner."
+        },
+        {
+          "tag": "Consell · vin",
+          "title": "Bodega Ribas",
+          "text": "Une dégustation un après-midi libre, avec transferts pour que personne ne conduise."
+        },
+        {
+          "tag": "Jour libre",
+          "title": "Le train de Sóller",
+          "text": "Le train en bois qui traverse les montagnes jusqu’à Sóller, à environ une heure de Palma."
+        }
+      ]
     },
     "addon": {
       "eyebrow": "Option disponible à tout niveau",
@@ -334,7 +523,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "nl": {
     "heroEyebrow": "Plan uw golfreis naar Mallorca",
     "heroTitle": "De juiste banen op Mallorca, in de juiste volgorde.",
-    "heroBody": "Ik kies en boek de banen en starttijden voor uw groep, met buggy's en huurmateriaal geregeld voordat u aankomt. U speelt de rondes in uw eigen tempo. Wilt u dat ik een dag aan uw zijde sta, voeg dan Play With A Pro toe.",
+    "heroBody": "Ik kies en boek de banen en starttijden voor uw groep, met buggy's en huurmateriaal geregeld voordat u aankomt. U speelt de rondes in uw eigen tempo. Voor de hele reis werk ik ook samen met een vertrouwde lokale reispartner voor het hotel, de transfers, restaurants en vrije dagen. Wilt u dat ik een dag aan uw zijde sta, voeg dan Play With A Pro toe.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Gratis banenzoeker",
@@ -370,7 +559,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "cta": "Reisplanning aanvragen",
       "workingModes": {
         "title": "Kies hoeveel hulp u nodig heeft.",
-        "body": "Sommige groepen hebben alleen starttijden nodig die gecontroleerd en geboekt worden. Andere hebben het volledige golfplan nodig, opgebouwd rond vluchten, hotelregio, handicapniveau en budget.",
+        "body": "Sommige groepen hebben alleen starttijden nodig die gecontroleerd en geboekt worden. Andere willen het volledige golfplan, of de hele reis eromheen gepland.",
         "items": [
           {
             "title": "Alleen starttijden",
@@ -381,19 +570,82 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "title": "Volledig golfplan",
             "body": "Voor groepen die meerdere rondes spelen zet ik de banen in de juiste volgorde, plan ik de ritten en regel ik buggy’s, verhuur en goede eettips.",
             "cta": "Mijn reis plannen"
+          },
+          {
+            "title": "De hele reis",
+            "body": "Golf plus hotel, transfers, restaurants en vrije dagen. Ik plan het golf, mijn lokale reispartner boekt de rest rechtstreeks, en u krijgt één plan.",
+            "cta": "Hele reis plannen"
           }
         ]
       },
       "possibilities": {
-        "title": "Een golfreis kan eenvoudig blijven, of vollediger worden.",
-        "body": "Afhankelijk van de groep kan ik de dagen bouwen rond hotelkeuze, restaurants, spa, kustritten, wijnproeven, een privékok, extra lessen of rustigere hersteltijd tussen rondes.",
+        "title": "De hele reis, gepland rond het golf.",
+        "body": "Ik werk samen met een vertrouwde lokale reispartner die hotels, transfers, restaurants en activiteiten op het hele eiland regelt. We stemmen het plan met u af, de partner boekt en factureert alles buiten het golf rechtstreeks, en ik zorg voor het golf.",
         "items": [
           "Hotel in Palma, resort of rustigere finca",
           "Michelinrestaurant, lokale favoriet of privékok",
           "Spa, herstel of rustige tijd zonder golf tussen rondes",
           "Kustrit, wijngaardbezoek of een sterkere avondplanning"
         ]
+      },
+      "process": {
+        "title": "Zo werkt het",
+        "steps": [
+          "Stuur uw data, groepsgrootte en wat u van de reis wilt.",
+          "Voor een bredere reis stemmen we het golf, de verblijfsplek en de extra's af in een kort gesprek.",
+          "Ik stuur het golfplan, mijn reispartner de opties voor hotel, transfers en restaurants.",
+          "U beslist, en pas dan wordt er geboekt."
+        ]
       }
+    },
+    "tripIdeas": {
+      "eyebrow": "Reisideeën",
+      "title": "Zo kunnen de dagen rond het golf eruitzien.",
+      "intro": "Een paar van de hotels, restaurants en uitstapjes die ik groepen voorstel. Uw opties stemmen we af op de groep en de banen, en mijn reispartner controleert beschikbaarheid en prijzen.",
+      "photoLabel": "Foto",
+      "cta": "Hele reis plannen",
+      "items": [
+        {
+          "tag": "Oosten · golfhotel",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "In de vallei van Canyamel, dicht bij Canyamel Golf."
+        },
+        {
+          "tag": "Palma · stadshotel",
+          "title": "Hotel Saratoga",
+          "text": "In het centrum van Palma, met de oude stad en de restaurants op loopafstand."
+        },
+        {
+          "tag": "Palma · Michelinster",
+          "title": "Marc Fosh",
+          "text": "Een proeverijmenu met een Michelinster, en een privétafel voor een kleinere groep."
+        },
+        {
+          "tag": "Palmanova · aan het strand",
+          "title": "Siso Beach",
+          "text": "Een prijsuitreiking met lunch aan het strand na de laatste ronde op T Golf Calvià."
+        },
+        {
+          "tag": "Palmanova · zeezicht",
+          "title": "Annabel",
+          "text": "Zeezicht, muziek en een privéruimte voor een groepsdiner."
+        },
+        {
+          "tag": "Op het water",
+          "title": "Een privéboot",
+          "text": "Een halve dag langs de kust met schipper, op tijd terug voor het diner."
+        },
+        {
+          "tag": "Consell · wijn",
+          "title": "Bodega Ribas",
+          "text": "Een proeverij op een vrije middag, met vervoer zodat niemand hoeft te rijden."
+        },
+        {
+          "tag": "Vrije dag",
+          "title": "De Sóller-trein",
+          "text": "De houten trein door de bergen naar Sóller, ongeveer een uur vanaf Palma."
+        }
+      ]
     },
     "addon": {
       "eyebrow": "Extra optie op elk niveau",
@@ -442,7 +694,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "sv": {
     "heroEyebrow": "Planera din golfresa till Mallorca",
     "heroTitle": "Rätt banor på Mallorca, i rätt ordning.",
-    "heroBody": "Jag väljer och bokar banorna och starttiderna åt din grupp, med golfbilar och uthyrning ordnat innan du kommer. Du spelar rundorna i din egen takt. Vill du ha mig vid din sida en dag, lägg till Play With A Pro.",
+    "heroBody": "Jag väljer och bokar banorna och starttiderna åt din grupp, med golfbilar och uthyrning ordnat innan du kommer. Du spelar rundorna i din egen takt. För hela resan samarbetar jag också med en betrodd lokal resepartner kring hotell, transfer, restauranger och lediga dagar. Vill du ha mig vid din sida en dag, lägg till Play With A Pro.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Gratis banfinder",
@@ -478,7 +730,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "cta": "Fråga om reseplanering",
       "workingModes": {
         "title": "Välj hur mycket hjälp du behöver.",
-        "body": "Vissa grupper behöver bara få starttider kontrollerade och bokade. Andra behöver hela golfplanen, byggd kring flyg, hotellområde, handicapnivå och budget.",
+        "body": "Vissa grupper behöver bara få starttider kontrollerade och bokade. Andra vill ha hela golfplanen, eller hela resan planerad runt den.",
         "items": [
           {
             "title": "Endast starttider",
@@ -489,19 +741,82 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "title": "Hela golfplanen",
             "body": "För grupper som spelar flera ronder lägger jag banorna i rätt ordning, planerar färderna och ordnar buggies, uthyrning och bra matförslag.",
             "cta": "Planera min resa"
+          },
+          {
+            "title": "Hela resan",
+            "body": "Golf plus hotell, transfer, restauranger och lediga dagar. Jag planerar golfen, min lokala resepartner bokar resten direkt, och du får en enda plan.",
+            "cta": "Planera hela resan"
           }
         ]
       },
       "possibilities": {
-        "title": "En golfresa kan vara enkel eller bli mer komplett.",
-        "body": "Beroende på gruppen kan jag forma dagarna runt hotellval, restauranger, spa, kustvägar, vinprovning, privat kock, extra lektioner eller lugnare återhämtning mellan ronderna.",
+        "title": "Hela resan, planerad runt golfen.",
+        "body": "Jag samarbetar med en betrodd lokal resepartner som ordnar hotell, transfer, restauranger och aktiviteter på hela ön. Vi kommer överens om planen med dig, partnern bokar och fakturerar allt utanför golfen direkt, och jag tar hand om golfen.",
         "items": [
           "Hotell i Palma, resort eller lugnare finca",
           "Michelinrestaurang, lokal favorit eller privat kock",
           "Spa, återhämtning eller lugnare tid utan golf mellan ronderna",
           "Kustväg, vingårdsbesök eller en mer minnesvärd kvällsplan"
         ]
+      },
+      "process": {
+        "title": "Så går det till",
+        "steps": [
+          "Skicka datum, gruppens storlek och vad du vill få ut av resan.",
+          "För en större resa går vi igenom golfen, boendet och extra aktiviteter i ett kort samtal.",
+          "Jag skickar golfplanen och min resepartner alternativen för hotell, transfer och restauranger.",
+          "Du bestämmer, och först då bokas något."
+        ]
       }
+    },
+    "tripIdeas": {
+      "eyebrow": "Residéer",
+      "title": "Så kan dagarna runt golfen se ut.",
+      "intro": "Några av de hotell, restauranger och utflykter jag föreslår för grupper. Alternativen anpassas efter gruppen och banorna, och min resepartner kontrollerar tillgänglighet och priser.",
+      "photoLabel": "Foto",
+      "cta": "Planera hela resan",
+      "items": [
+        {
+          "tag": "Öst · golfhotell",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "I Canyamel-dalen, nära Canyamel Golf."
+        },
+        {
+          "tag": "Palma · stadshotell",
+          "title": "Hotel Saratoga",
+          "text": "Centralt i Palma, med gamla stan och restaurangerna på gångavstånd."
+        },
+        {
+          "tag": "Palma · Michelinstjärna",
+          "title": "Marc Fosh",
+          "text": "En avsmakningsmeny med Michelinstjärna och ett privat bord för en mindre grupp."
+        },
+        {
+          "tag": "Palmanova · på stranden",
+          "title": "Siso Beach",
+          "text": "En prisutdelningslunch på stranden efter sista rundan på T Golf Calvià."
+        },
+        {
+          "tag": "Palmanova · havsutsikt",
+          "title": "Annabel",
+          "text": "Havsutsikt, musik och ett privat rum för en gruppmiddag."
+        },
+        {
+          "tag": "På vattnet",
+          "title": "En privat båt",
+          "text": "En halvdag längs kusten med skeppare, tillbaka i tid till middagen."
+        },
+        {
+          "tag": "Consell · vin",
+          "title": "Bodega Ribas",
+          "text": "En vinprovning en ledig eftermiddag, med transfer så att ingen behöver köra."
+        },
+        {
+          "tag": "Ledig dag",
+          "title": "Sóllertåget",
+          "text": "Trätåget genom bergen till Sóller, ungefär en timme från Palma."
+        }
+      ]
     },
     "addon": {
       "eyebrow": "Tillägg på alla nivåer",
@@ -550,7 +865,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "zh": {
     "heroEyebrow": "规划您的马略卡高尔夫之旅",
     "heroTitle": "合适的马略卡球场，按合适的顺序。",
-    "heroBody": "我为您的团队挑选并预订球场和开球时间，并在您抵达前安排好球车和租借球具。您按自己的时间安排打球。如果您想让我陪您打一天，可以加选 Play With A Pro。",
+    "heroBody": "我为您的团队挑选并预订球场和开球时间，并在您抵达前安排好球车和租借球具。您按自己的时间安排打球。如需规划整趟行程，我还会与一位可靠的本地旅行合作伙伴一起安排酒店、接送、餐厅和休息日。如果您想让我陪您打一天，可以加选 Play With A Pro。",
     "options": {
       "basicLabel": "免费",
       "basicTitle": "免费球场筛选",
@@ -586,7 +901,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "cta": "咨询行程规划",
       "workingModes": {
         "title": "选择您需要的协助程度。",
-        "body": "有些团队只需要核对并预订开球时间，有些则需要围绕航班、酒店区域、差点范围和预算做出完整的球场计划。",
+        "body": "有些团队只需要核对并预订开球时间，有些需要完整的球场计划，或围绕球局规划整趟行程。",
         "items": [
           {
             "title": "只订开球时间",
@@ -597,19 +912,82 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "title": "完整球场计划",
             "body": "如果您打多轮，我会安排球场的先后顺序、规划路程，并负责球车、租杆和用餐建议。",
             "cta": "规划我的行程"
+          },
+          {
+            "title": "整趟行程",
+            "body": "高尔夫之外，还有酒店、接送、餐厅和休息日。我负责高尔夫，本地旅行合作伙伴直接预订其余部分，您拿到的是一份完整计划。",
+            "cta": "规划整趟行程"
           }
         ]
       },
       "possibilities": {
-        "title": "一趟高尔夫旅行可以很简单，也可以安排得更完整。",
-        "body": "根据同行的人，我可以把行程围绕酒店选择、餐厅、spa、海岸线自驾、酒庄品酒、私人厨师、额外课程，或两轮之间更安静的恢复时间来安排。",
+        "title": "整趟行程，围绕高尔夫来规划。",
+        "body": "我与一位可靠的本地旅行合作伙伴合作，由其负责全岛的酒店、接送、餐厅和活动安排。我们和您一起确定计划，高尔夫以外的部分由合作伙伴直接预订并开具发票，高尔夫由我负责。",
         "items": [
           "帕尔马酒店、度假村，或更安静的 finca",
           "米其林餐厅、本地常去的餐厅，或私人厨师",
           "两轮之间的 spa、恢复时间，或非高尔夫安排",
           "海岸线自驾、酒庄参观，或更有记忆点的晚餐计划"
         ]
+      },
+      "process": {
+        "title": "流程",
+        "steps": [
+          "发来您的日期、人数，以及您对这趟行程的期待。",
+          "如果是更完整的行程，我们会通过简短通话确定球场、住宿区域和其他安排。",
+          "我发送高尔夫方案，旅行合作伙伴发送酒店、接送和餐厅的选项。",
+          "由您决定，确认之后才会预订。"
+        ]
       }
+    },
+    "tripIdeas": {
+      "eyebrow": "行程灵感",
+      "title": "球局之外的日子，可以这样安排。",
+      "intro": "这里是我常为团队推荐的一部分酒店、餐厅和出游安排。具体方案会根据团队和球场来定，由我的旅行合作伙伴确认空位和价格。",
+      "photoLabel": "图片",
+      "cta": "规划整趟行程",
+      "items": [
+        {
+          "tag": "东部 · 高尔夫度假酒店",
+          "title": "Cap Vermell Grand Hotel",
+          "text": "位于 Canyamel 山谷，靠近 Canyamel 球场。"
+        },
+        {
+          "tag": "帕尔马 · 城市酒店",
+          "title": "Hotel Saratoga",
+          "text": "位于帕尔马市中心，步行即可到老城和餐厅。"
+        },
+        {
+          "tag": "帕尔马 · 米其林星级",
+          "title": "Marc Fosh",
+          "text": "米其林星级品鉴菜单，另有适合小团队的私人餐桌。"
+        },
+        {
+          "tag": "Palmanova · 海滩",
+          "title": "Siso Beach",
+          "text": "在 T Golf Calvià 打完最后一轮后，在海边办一场颁奖午餐。"
+        },
+        {
+          "tag": "Palmanova · 海景",
+          "title": "Annabel",
+          "text": "面朝大海，有音乐，也有适合团队晚宴的包间。"
+        },
+        {
+          "tag": "海上",
+          "title": "私人游艇",
+          "text": "在船长带领下沿海岸游玩半天，赶得上晚餐。"
+        },
+        {
+          "tag": "Consell · 葡萄酒",
+          "title": "Bodega Ribas",
+          "text": "在空闲的下午品酒，安排接送，无需自己开车。"
+        },
+        {
+          "tag": "休息日",
+          "title": "索列尔小火车",
+          "text": "乘坐木制小火车穿越山区前往 Sóller，从帕尔马出发约一小时。"
+        }
+      ]
     },
     "addon": {
       "eyebrow": "任何级别都可加购",

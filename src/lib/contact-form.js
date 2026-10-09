@@ -11,6 +11,8 @@ const INITIAL_FORM = {
   dates: '',
   handicap: '',
   groupsize: '',
+  courses: '',
+  hotelHelp: '',
   serviceType: '',
   pwapFormat: '',
   experience: '',
@@ -27,7 +29,7 @@ export function useContactFormSubmission(lang = 'en') {
 
   useEffect(() => {
     const requestedService = new URLSearchParams(window.location.search).get('service')
-    if (['pwap', 'trip-planning', 'tee-time-booking', 'both'].includes(requestedService)) {
+    if (['pwap', 'trip-planning', 'whole-trip', 'tee-time-booking', 'both'].includes(requestedService)) {
       setForm((current) => ({ ...current, serviceType: requestedService, experience: requestedService }))
     }
   }, [])

@@ -345,7 +345,7 @@ const data = {
     "Par 70 · Grupo Harris, 1998",
     "Vues sur les montagnes et Palma"
    ],
-   "blurb": "Du golf de montagne à Na Burguesa, à 20 minutes de Palma. Par temps clair, le Castell de Bellver et la cathédrale sont visibles depuis les trous du haut, avec la Méditerranée derrière."
+   "blurb": "Du golf de montagne dans les contreforts de la Tramuntana, à 25 minutes de Palma. Par temps clair, le Castell de Bellver et la cathédrale sont visibles depuis les trous du haut, avec la Méditerranée derrière."
   },
   "t-golf-calvia": {
    "facts": [

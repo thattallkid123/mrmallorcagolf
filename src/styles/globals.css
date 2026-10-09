@@ -247,6 +247,76 @@
 .pyt-section--pine {
   background: var(--pine);
 }
+.pyt-section--white {
+  background: var(--white);
+}
+.pyt-trip-ideas__head {
+  max-width: 780px;
+  margin-bottom: 36px;
+}
+.pyt-trip-ideas {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+}
+.pyt-trip-idea {
+  display: flex;
+  flex-direction: column;
+  background: var(--cream);
+  border: 1px solid var(--sand);
+}
+.pyt-trip-idea__media {
+  position: relative;
+  aspect-ratio: 3 / 2;
+  overflow: hidden;
+  background: var(--linen);
+}
+.pyt-trip-idea__image {
+  object-fit: cover;
+}
+.pyt-trip-idea__body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  padding: 18px 18px 16px;
+}
+.pyt-trip-idea__tag {
+  margin-bottom: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gold-text);
+}
+.pyt-trip-idea h3 {
+  margin: 0 0 8px;
+  font-family: var(--font-serif);
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 1.15;
+  color: var(--deep);
+}
+.pyt-trip-idea p {
+  margin: 0 0 12px;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--charcoal);
+}
+.pyt-trip-idea small {
+  margin-top: auto;
+  font-size: 12px;
+  color: var(--taupe-text);
+}
+.pyt-trip-ideas__cta {
+  margin-top: 32px;
+  text-align: center;
+}
+@media (max-width: 1100px) {
+  .pyt-trip-ideas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 520px) {
+  .pyt-trip-ideas { grid-template-columns: minmax(0, 1fr); }
+}
 
 .pyt-section__inner {
   max-width: var(--max-w);
@@ -379,6 +449,10 @@
   gap: 14px;
 }
 
+.pyt-working-modes__grid--three {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .pyt-working-mode {
   display: flex;
   flex-direction: column;
@@ -500,6 +574,33 @@
 
 .pyt-pro-cta__note:last-child {
   margin-bottom: 0;
+}
+
+.pyt-process {
+  margin: 0 0 20px;
+  padding: 0 0 18px;
+  border-bottom: 1px solid var(--sand);
+}
+
+.pyt-process h3 {
+  margin: 0 0 12px;
+  font-family: var(--font-serif);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--deep);
+}
+
+.pyt-process ol {
+  display: grid;
+  gap: 8px;
+  margin: 0;
+  padding-left: 1.2rem;
+}
+
+.pyt-process li {
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: var(--charcoal);
 }
 
 .pyt-working-mode__link {
@@ -2453,6 +2554,9 @@ body {
 .intro-service strong { font-family: var(--font-serif); font-size: 1.18rem; font-weight: 500; color: var(--deep); }
 .intro-service span { font-size: 0.92rem; line-height: 1.55; color: var(--taupe-text); }
 .intro-service em { margin-top: auto; font-style: normal; font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--pine); }
+.intro__services--three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.intro__services--three .intro-service { min-height: 0; }
+@media (max-width: 1300px) { .intro__services--three { grid-template-columns: minmax(0, 1fr); } }
 .intro__media { position: relative; min-height: 520px; align-self: stretch; overflow: hidden; background: var(--linen); box-shadow: var(--shadow-soft); }
 .intro__media::after { content: ''; position: absolute; inset: 0; border: 1px solid rgba(26,25,22,0.08); pointer-events: none; }
 .intro__stat { border-left: 1px solid rgba(184,151,60,0.28); padding-left: 22px; }
@@ -3840,8 +3944,24 @@ select.form-control { cursor: pointer; }
   margin: 0;
 }
 
+.post-media__natural-img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* A portrait photo at full column width stands over 1,200px tall; keep it
+   narrower and centred, with the caption matching the photo's width. */
+.post-media.post-media--portrait {
+  max-width: 560px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Captions run the full width of their image (Andy, 2026-10-08: a 62ch cap
+   left them stopping halfway across wide photos). */
 .post-media__caption {
-  max-width: 62ch;
+  max-width: none;
   margin: 0.5rem 0 0;
   font-size: 0.78rem;
   line-height: 1.65;
@@ -3908,6 +4028,13 @@ select.form-control { cursor: pointer; }
 .post-cta__secondary { max-width: 58ch; margin: 0 !important; color: rgba(255,255,255,0.74) !important; font-family: var(--font-sans); font-size: 0.86rem !important; font-style: normal !important; font-weight: 300; line-height: 1.7 !important; }
 .post-cta__secondary-link { color: var(--gold-light); font: inherit; text-decoration: underline; text-underline-offset: 3px; }
 .post-cta__secondary-link:hover { color: #fff; }
+/* `.post-article a` (0,1,1) outranked the two rules above and below, so the
+   Plan Your Trip link and the tool button text rendered dark gold on the dark
+   green box. These restate them at article specificity. */
+.post-article a.post-cta__secondary-link { color: var(--gold-light); }
+.post-article a.post-cta__secondary-link:hover { color: #fff; }
+.post-article a.tool-placement-cta__button,
+.post-article a.tool-placement-cta__button:hover { color: var(--white); text-decoration: none; }
 
 @media (max-width: 640px) {
   .post-cta { padding: 24px 22px; }

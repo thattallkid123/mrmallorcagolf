@@ -24,6 +24,10 @@ const IGNORE_DIRS = new Set([
   'outputs',
   'dist',
   'build',
+  // .claude/worktrees holds whole checkouts made for background Claude
+  // sessions; scanning them re-scans the repo, including this script's own
+  // example bad strings, and failed check:content on 2026-10-08.
+  'worktrees',
 ])
 
 const IGNORE_FILES = new Set([

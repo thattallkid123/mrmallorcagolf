@@ -29,7 +29,7 @@ export default function PrivacyPolicy() {
             <h2>2. What Data We Collect</h2>
             <p>We collect personal data only when you voluntarily provide it or when you visit our website. This includes:</p>
             <ul>
-              <li><strong>Contact form submissions:</strong> your name, email address, chosen service, dates, group size, handicap and message where provided. We also record the site page and campaign that led to the form, when available.</li>
+              <li><strong>Contact form submissions:</strong> your name, email address, chosen service, dates, group size, handicap, courses you would like to play, whether you want help with a hotel, and message where provided. We also record the site page and campaign that led to the form, when available, and the country your connection appears to come from (country only, read when you send the form and kept only in the enquiry email).</li>
               <li><strong>Trip preferences:</strong> when you use a follow-up link, we collect your name, email address, enquiry reference and any group, date, flight time, hotel, room, transfer, dining, activity and practical requirements (such as children&rsquo;s ages) you choose to share, and what you hope to get from the trip. Your answers are emailed to us to prepare for your call and plan suitable options.</li>
               <li><strong>Pre-round questionnaire:</strong> your name, email address, handicap and your answers about your game, practice and goals. Age range and where you live are optional. The answers are emailed to us and used to plan your session.</li>
               <li><strong>Email and WhatsApp enquiries:</strong> your name and contact details when you reach out directly</li>

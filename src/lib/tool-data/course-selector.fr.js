@@ -134,10 +134,10 @@ const data = {
    "bestPlayer": "Débutant à joueur confirmé"
   },
   "son-termes": {
-   "areaLabel": "Na Burguesa · Palma",
+   "areaLabel": "Bunyola · Palma",
    "buggyNote": "Neuf premiers trous faisables à pied ; neuf derniers raides. Voiturette conseillée sauf si l'on est très en forme",
    "bestFor": "Les plus belles vues les plus proches de Palma, à un prix raisonnable",
-   "why": "Situé dans les montagnes de Na Burguesa, à 20 minutes de Palma mais complètement à l'écart de la ville. Par temps clair, le Castell de Bellver et la cathédrale de Palma sont visibles depuis les trous du haut, avec la Méditerranée derrière. Pas un parcours long, mais les départs aveugles, les doglegs serrés et les variations de dénivelé rendent chaque trou intéressant.",
+   "why": "Situé dans les contreforts de la Tramuntana, près de Bunyola, à 25 minutes de Palma mais complètement à l'écart de la ville. Par temps clair, le Castell de Bellver et la cathédrale de Palma sont visibles depuis les trous du haut, avec la Méditerranée derrière. Pas un parcours long, mais les départs aveugles, les doglegs serrés et les variations de dénivelé rendent chaque trou intéressant.",
    "andy": "Plus de caractère que la plupart des parcours de cette gamme de prix. Les vues depuis les neuf derniers sont les meilleures que l'on trouve si près de Palma. Faites les neuf premiers à pied et prenez la voiturette pour les derniers si vous tenez à vos genoux.",
    "bestPlayer": "Golfeur occasionnel à joueur confirmé"
   },

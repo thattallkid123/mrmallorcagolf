@@ -33,16 +33,20 @@ const HAND_LISTED_GUIDE_SLUGS = [
   // deleted, since removing a directory wasn't part of the font-audit ask.
   'beginners-guide',
   'best-golf-courses-mallorca',
+  'best-mallorca-golf-courses-higher-handicappers',
+  'best-golf-practice-facilities-mallorca',
   'best-time-play-golf-mallorca',
   'cost-guide',
   'course-comparison',
   'golf-club-hire-mallorca',
   'golf-cost-mallorca',
+  'golf-courses-near-palma',
   'golf-trip-planning-mallorca',
   'is-mallorca-good-for-golf',
   'mallorca-course-map',
   'on-course-coaching-mallorca',
   'play-with-a-pro-explained',
+  'southwest-mallorca-golf-courses-compared',
   'trip-planner',
 ]
 

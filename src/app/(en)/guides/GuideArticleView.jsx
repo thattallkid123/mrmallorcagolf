@@ -121,6 +121,28 @@ function renderBlock(block, index, locale, imageOrdinal, articleSlug) {
 
   if (block.type === 'image') {
     const presentation = getImagePresentation(block, imageOrdinal)
+
+    // 'natural': the image keeps its own aspect ratio, no cropping. Same
+    // contract as GuidePostView, so a portrait review photo reused in a guide
+    // is not cut down to the 5/4 frame.
+    if (presentation === 'natural') {
+      const portrait = (block.naturalHeight || 0) > (block.naturalWidth || 0)
+      return (
+        <figure key={`${index}-${block.src}`} className={`post-media${block.caption ? '' : ' post-media--plain'}${portrait ? ' post-media--portrait' : ''}`}>
+          <Image
+            src={block.src}
+            alt={localizeAlt(block.alt, locale)}
+            width={block.naturalWidth || 1200}
+            height={block.naturalHeight || 900}
+            priority={Boolean(block.priority || imageOrdinal === 0)}
+            sizes="(max-width: 768px) 100vw, 720px"
+            className="post-media__natural-img"
+          />
+          {block.caption ? <figcaption className="post-media__caption">{block.caption}</figcaption> : null}
+        </figure>
+      )
+    }
+
     const defaultStyle =
       block.fit === 'contain'
         ? { borderRadius: 2, aspectRatio: '5/4', background: '#f5f5f5' }
@@ -382,8 +404,20 @@ const ARTICLE_CTA_LABELS = {
   zh: { plan: '规划行程', play: '与 Andy 同场' },
 }
 
+// The planning-tool box goes at the first section break from the fifth block
+// on, just before a heading, so it never splits a heading from its first
+// paragraph (Andy, 2026-10-08: it landed under "T Golf Calvià" on a draft).
+function findPlanningSlot(blocks) {
+  for (let i = 4; i < blocks.length - 1; i++) {
+    const here = blocks[i].type
+    if (here !== 'heading' && here !== 'subheading' && blocks[i + 1].type === 'heading') return i
+  }
+  return 4
+}
+
 export default function GuideArticleView({ meta, blocks, locale = 'en', children = null }) {
   let imageOrdinal = 0
+  const planningSlot = findPlanningSlot(blocks)
   const contextualTool = ARTICLE_TOOL_PLACEMENTS[meta.slug] || 'courseSelector'
   const stickyLabels = ARTICLE_CTA_LABELS[locale] || ARTICLE_CTA_LABELS.en
   const stickyPlanHref = joinHref(locale, '/plan-your-trip')
@@ -405,7 +439,7 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
             const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
             const renderedBlock = renderBlock(block, index, locale, currentImageOrdinal, meta.slug)
 
-            if (locale === 'en' && index === 4) {
+            if (locale === 'en' && index === planningSlot) {
               return (
                 <Fragment key={`article-block-with-planning-${index}`}>
                   {renderedBlock}

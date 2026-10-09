@@ -143,6 +143,16 @@ The two `mmg-tools` rows are only checked when `../mmg-tools` is checked out (CI
 
 Use the `ship` skill: `npm run check:content` → `npm run build` → commit → push → confirm Vercel deployment READY. Then, after deploy is live: `npm run indexnow`. It needs the slug: `npm run indexnow -- guides/<slug>`; with no argument it reports "No guide changes detected" and pings nothing.
 
+## Guide ARTICLES (comparisons, planning pages), not reviews
+
+None of the steps above lists these; found publishing four on 2026-10-09. An article lives in `guide-article-content.js` (not `guide-post-content.js`) and needs:
+
+- slug in `ARTICLE_SLUGS` (`site.js`); a `src/app/(en)/guides/<slug>/page.jsx` (copy `is-mallorca-good-for-golf`); locale routes come from the `[slug]` factory, nothing to add. `EN_ONLY_ARTICLE_SLUGS` is Andy's decision per page.
+- Translations: one overlay file per guide `src/lib/guide-article-content-localized-<name>.js` exporting `{de,es,fr,nl,sv,zh}`, imported into the map in `guide-article-content-localized.js` (already covered by the sync check, no `overlay-configs.cjs` entry). Blocks are positional. A custom `meta.sidebarPlanning` needs title/body/primary/secondary in every locale.
+- Hub card in `guides-content.js` (en) and all six locales in `guides-content-localized.js` at the same position, plus a `GUIDE_IMAGES` entry in `GuidesIndexView.jsx`: translated cards take their image from that lookup by slug, so without it the card has no photo in six languages (missed first time, found 2026-10-09).
+- Also by hand: `GuidesFilterSection.jsx` category, `public/llms.txt`, `tests/font-consistency.spec.js` slug list; `sync-discovery.mjs --add` covers the four discovery lists; `npm run indexnow -- guides/<slug>` after deploy.
+- Raw `metadata.title` is 40 characters or fewer in every locale; `check:locale-sync` flags `Play-with-a-Pro` style hyphenations and identical-to-English alt text ("Pula Golf, Mallorca" needs "auf/en/op/på Mallorca"). Convert "2pm" to 14:00 style and keep yards as yards.
+
 ## Brand-voice gate
 
 **This is a mandatory self-read before Andy ever sees the draft, not just a reminder to run `npm run check:voice`.** `check:voice` only catches em dashes and the fixed banned-word list; it does not catch vague enthusiasm, repetition, or internal logic errors, and none of those failure modes will show up again as a passing check giving false confidence (found 2026-09-24, Son Quint draft: `check:voice` was green the whole time while the draft had "genuinely" used twice — banned as filler — plus vague claims and 6x repetition of "tight/tighter" that a human caught on first read and the tooling never would).

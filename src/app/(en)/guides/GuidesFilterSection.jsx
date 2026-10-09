@@ -11,6 +11,10 @@ const GUIDE_CATEGORY_BY_SLUG = {
   'is-mallorca-good-for-golf': 'planning',
   'best-time-play-golf-mallorca': 'planning',
   'golf-trip-planning-mallorca': 'planning',
+  'golf-courses-near-palma': 'planning',
+  'southwest-mallorca-golf-courses-compared': 'planning',
+  'best-mallorca-golf-courses-higher-handicappers': 'planning',
+  'best-golf-practice-facilities-mallorca': 'planning',
   'golf-cost-mallorca': 'costs',
   'golf-club-hire-mallorca': 'costs',
 }

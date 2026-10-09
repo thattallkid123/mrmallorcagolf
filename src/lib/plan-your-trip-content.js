@@ -6,7 +6,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   en: {
   "heroEyebrow": "Plan Your Mallorca Golf Trip",
   "heroTitle": "The right Mallorca courses, in the right order.",
-  "heroBody": "I choose and book the courses and tee times for your group, with buggies and rentals arranged before you arrive. You play the rounds on your own schedule. If you want me alongside you for a day, add Play With A Pro.",
+  "heroBody": "I choose and book the courses and tee times for your group, with buggies and rentals arranged before you arrive. You play the rounds on your own schedule. For the whole trip, I also work with a trusted local travel partner on the hotel, transfers, restaurants and days off. If you want me alongside you for a day, add Play With A Pro.",
   "options": {
     "itineraryLabel": "Sample trip",
     "itineraryTitle": "See a real 5-day week",
@@ -38,7 +38,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     ],
     "workingModes": {
       "title": "Choose the level of help you need.",
-      "body": "Some groups only need tee times checked and booked. Others need the full golf plan built around flights, hotel area, handicap range and budget.",
+      "body": "Some groups only need tee times checked and booked. Others want the full golf plan, or the whole trip planned around it.",
       "items": [
         {
           "title": "Tee times only",
@@ -52,11 +52,17 @@ export const PLAN_YOUR_TRIP_CONTENT = {
           "cta": "Plan my golf trip",
           "target": "trip-planning"
         },
+        {
+          "title": "The whole trip",
+          "body": "Golf plus the hotel, transfers, restaurants and days off. I plan the golf, my local travel partner books the rest directly, and you get one plan.",
+          "cta": "Plan the whole trip",
+          "target": "whole-trip"
+        }
       ]
     },
     "possibilities": {
-      "title": "A golf trip can stay simple, or become something more complete.",
-      "body": "Depending on the group, I can shape the days around hotel choice, restaurants, spa time, coastal drives, wine tasting, private chef evenings, extra lessons, or quieter recovery time between rounds.",
+      "title": "The whole trip, planned around the golf.",
+      "body": "I work with a trusted local travel partner who arranges hotels, transfers, restaurants and activities across the island. We agree the plan with you, the partner books and invoices the non-golf side directly, and I look after the golf.",
       "items": [
         "Palma hotel, resort or quieter finca base",
         "Michelin-starred restaurant, local favourite or private chef",
@@ -64,10 +70,84 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         "Coastal drive, vineyard visit or a more memorable evening plan"
       ]
     },
+    "process": {
+      "title": "How it works",
+      "steps": [
+        "Send your dates, group size and what you want from the trip.",
+        "For a wider trip, we agree the golf, the base and the extras on a short call.",
+        "I send the golf plan; my travel partner sends the hotel, transfer and dining options.",
+        "You decide, and only then is anything booked."
+      ]
+    },
     "note": "No commitment at enquiry stage. I reply personally within 24 hours with the recommended next step and a clear quote before anything is booked.",
     "feeNote": "The management fee is 5% of the green fees. I show the full cost and booking terms before you commit.",
     "sendPrompt": "Best details to send: dates, group size, handicap range, hotel area, and any courses already on your shortlist.",
     "cta": "Enquire about trip planning"
+  },
+  "tripIdeas": {
+    "eyebrow": "Trip ideas",
+    "title": "What the days around the golf can look like.",
+    "intro": "A few of the hotels, tables and days out I suggest to groups. Your options are matched to the group and the courses, and my travel partner checks availability and prices.",
+    "photoLabel": "Photo",
+    "cta": "Plan the whole trip",
+    "items": [
+      {
+        "image": "/images/trip-ideas/stay-golf.webp",
+        "photo": "Cap Vermell Grand Hotel",
+        "tag": "East · golf base",
+        "title": "Cap Vermell Grand Hotel",
+        "text": "In the Canyamel valley, close to Canyamel Golf."
+      },
+      {
+        "image": "/images/trip-ideas/stay-city.webp",
+        "photo": "Hotel Saratoga",
+        "tag": "Palma · city hotel",
+        "title": "Hotel Saratoga",
+        "text": "Central Palma, with the old town and its restaurants on foot."
+      },
+      {
+        "image": "/images/trip-ideas/dine-fosh.webp",
+        "photo": "Marc Fosh",
+        "tag": "Palma · Michelin star",
+        "title": "Marc Fosh",
+        "text": "A Michelin-starred tasting menu, with a private table for a smaller group."
+      },
+      {
+        "image": "/images/trip-ideas/dine-siso.webp",
+        "photo": "Siso Beach",
+        "tag": "Palmanova · on the beach",
+        "title": "Siso Beach",
+        "text": "A beachside prize-giving lunch after the last round at T Golf Calvià."
+      },
+      {
+        "image": "/images/trip-ideas/dine-annabel.webp",
+        "photo": "Annabel",
+        "tag": "Palmanova · sea view",
+        "title": "Annabel",
+        "text": "Sea views, music and a private room for a group dinner."
+      },
+      {
+        "image": "/images/trip-ideas/do-boat.webp",
+        "photo": "Can Simoneta",
+        "tag": "On the water",
+        "title": "A private boat",
+        "text": "Half a day along the coast with a skipper, back in time for dinner."
+      },
+      {
+        "image": "/images/trip-ideas/do-winery.webp",
+        "photo": "Bodega Ribas",
+        "tag": "Consell · wine",
+        "title": "Bodega Ribas",
+        "text": "A tasting on a free afternoon, with transfers so nobody drives back."
+      },
+      {
+        "image": "/images/trip-ideas/do-train.webp",
+        "photo": "Tren de Sóller",
+        "tag": "Day off",
+        "title": "The Sóller train",
+        "text": "The wooden train through the mountains to Sóller, about an hour from Palma."
+      }
+    ]
   },
   "addon": {
     "eyebrow": "Add-on available at any level",

@@ -55,12 +55,14 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
   const hotelRecommenderHref = buildLocalePath('/tools/hotel-recommender', locale)
   const tripPlanningHref = `${contactHref}?service=trip-planning`
   const teeTimeHref = `${contactHref}?service=tee-time-booking`
+  const wholeTripHref = `${contactHref}?service=whole-trip`
   const messageHref = locale === 'zh'
     ? `${contactHref}#wechat`
     : `https://wa.me/34624466702?text=${encodeURIComponent(WA_TRIP_MESSAGES[locale] || WA_TRIP_MESSAGES.en)}`
   const messageLabel = locale === 'zh' ? '微信联系' : (WA_TRIP_LABELS[locale] || WA_TRIP_LABELS.en)
   const getWorkingModeHref = (target) => {
     if (target === 'tee-time-booking') return teeTimeHref
+    if (target === 'whole-trip') return wholeTripHref
     return tripPlanningHref
   }
 
@@ -137,7 +139,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
                     <h3>{content.professional.workingModes.title}</h3>
                     <p>{content.professional.workingModes.body}</p>
                   </div>
-                  <div className="pyt-working-modes__grid">
+                  <div className={`pyt-working-modes__grid${content.professional.workingModes.items.length === 3 ? ' pyt-working-modes__grid--three' : ''}`}>
                     {content.professional.workingModes.items.map((item) => (
                       <article key={item.title} className="pyt-working-mode">
                         <h4>{item.title}</h4>
@@ -152,7 +154,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
               ) : null}
 
               {content.professional.possibilities ? (
-                <div className="pyt-possibilities">
+                <div className="pyt-possibilities" id="whole-trip">
                   <div className="pyt-possibilities__intro">
                     <h3>{content.professional.possibilities.title}</h3>
                     <p>{content.professional.possibilities.body}</p>
@@ -168,6 +170,16 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
 
             <aside className="pyt-planning-aside" aria-label={content.professional.cta}>
               <div className="pyt-pro-cta">
+                {content.professional.process ? (
+                  <div className="pyt-process">
+                    <h3>{content.professional.process.title}</h3>
+                    <ol>
+                      {content.professional.process.steps.map((step) => (
+                        <li key={step}>{step}</li>
+                      ))}
+                    </ol>
+                  </div>
+                ) : null}
                 <p className="pyt-pro-cta__note">{content.professional.note}</p>
                 {content.professional.feeNote ? (
                   <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
@@ -184,6 +196,44 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
           </div>
         </div>
       </section>
+
+      {content.tripIdeas ? (
+        <section className="pyt-section pyt-section--white" id="trip-ideas">
+          <div className="pyt-section__inner pyt-section__inner--wide">
+            <div className="pyt-trip-ideas__head">
+              <span className="pyt-tier-badge">{content.tripIdeas.eyebrow}</span>
+              <h2 className="pyt-tier-title">{content.tripIdeas.title}</h2>
+              <p className="pyt-tier-body">{content.tripIdeas.intro}</p>
+            </div>
+            <div className="pyt-trip-ideas">
+              {content.tripIdeas.items.map((item) => (
+                <article key={item.image} className="pyt-trip-idea">
+                  <div className="pyt-trip-idea__media">
+                    <Image
+                      src={item.image}
+                      alt={item.title}
+                      fill
+                      sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 25vw"
+                      className="pyt-trip-idea__image"
+                    />
+                  </div>
+                  <div className="pyt-trip-idea__body">
+                    <span className="pyt-trip-idea__tag">{item.tag}</span>
+                    <h3>{item.title}</h3>
+                    <p>{item.text}</p>
+                    <small>{content.tripIdeas.photoLabel}: {item.photo}</small>
+                  </div>
+                </article>
+              ))}
+            </div>
+            <div className="pyt-trip-ideas__cta">
+              <Link href={wholeTripHref} className="pyt-hero__btn">
+                {content.tripIdeas.cta}
+              </Link>
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       {content.sampleItinerary && (
         <section className="pyt-section pyt-section--light" id="sample-itinerary">

@@ -134,10 +134,10 @@ const data = {
    "bestPlayer": "Anfänger bis erfahrener Spieler"
   },
   "son-termes": {
-   "areaLabel": "Na Burguesa · Palma",
+   "areaLabel": "Bunyola · Palma",
    "buggyNote": "Vordere Neun zu Fuß machbar; hintere Neun steil. Buggy empfohlen, wenn Sie nicht sehr fit sind",
    "bestFor": "Die besten Aussichten nahe Palma, zu einem vernünftigen Preis",
-   "why": "In den Bergen der Na Burguesa gelegen, 20 Minuten von Palma entfernt, aber völlig abgetrennt von der Stadt. Bei klarer Sicht sind von den oberen Löchern aus das Castell de Bellver und die Kathedrale von Palma zu sehen, dahinter das Mittelmeer. Kein langer Platz, aber blinde Abschläge, scharfe Doglegs und Höhenwechsel halten jedes Loch interessant.",
+   "why": "In den Ausläufern der Tramuntana bei Bunyola gelegen, 25 Minuten von Palma entfernt, aber völlig abgetrennt von der Stadt. Bei klarer Sicht sind von den oberen Löchern aus das Castell de Bellver und die Kathedrale von Palma zu sehen, dahinter das Mittelmeer. Kein langer Platz, aber blinde Abschläge, scharfe Doglegs und Höhenwechsel halten jedes Loch interessant.",
    "andy": "Mehr Charakter als die meisten Plätze in dieser Preisklasse. Die Aussicht von der hinteren Neun ist die beste, die man so nah an Palma bekommt. Gehen Sie die vordere Neun zu Fuß und nehmen Sie für die hintere den Buggy, wenn Ihnen Ihre Knie lieb sind.",
    "bestPlayer": "Gelegenheitsgolfer bis erfahrener Spieler"
   },

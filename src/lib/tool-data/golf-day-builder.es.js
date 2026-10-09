@@ -345,7 +345,7 @@ const data = {
     "Par 70 · Grupo Harris, 1998",
     "Vistas de montaña sobre Palma"
    ],
-   "blurb": "Golf de montaña en Na Burguesa, a 20 minutos de Palma. En días despejados se ven desde los hoyos altos el Castell de Bellver y la catedral, con el Mediterráneo detrás."
+   "blurb": "Golf de montaña en las estribaciones de la Tramuntana, a 25 minutos de Palma. En días despejados se ven desde los hoyos altos el Castell de Bellver y la catedral, con el Mediterráneo detrás."
   },
   "t-golf-calvia": {
    "facts": [

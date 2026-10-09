@@ -22,6 +22,9 @@ const LOCALIZED_OVERLAY_KEYS = new Set([
   'href',
   'internal',
   'external',
+  'body',
+  'primary',
+  'secondary',
 ])
 
 export function mergeLocalizedContent(baseValue, localizedValue) {

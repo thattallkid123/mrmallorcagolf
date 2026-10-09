@@ -149,7 +149,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'paragraph',
           text:
-            "Club hire at the pro shop: Callaway €35, Titleist €45 per round. Buggy €45, electric trolley from €15. Handicap limit: 33 for men, 35 for ladies. A valid WHS certificate is required at booking. Walking is permitted.",
+            "Club hire at the pro shop: Callaway €35, Titleist €45 per round. Buggy €45, electric trolley from €15. Handicap limit: 28 for men, 36 for ladies. A valid WHS certificate is required at booking. Walking is permitted.",
         },
         {
           type: 'notes',
@@ -737,7 +737,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Termes Golf - Honest Review 2026",
         description:
-          'Son Termes green fee around €90-110, par 70, 20 minutes from Palma. Mountain views, honest 6/10 verdict.',
+          'Son Termes green fee around €90-110, par 70, 25 minutes from Palma. Mountain views, honest 6/10 verdict.',
         imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
@@ -747,7 +747,7 @@ export const GUIDE_POST_CONTENT = {
         updated: 'April 2026',
         title: "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",
         intro:
-          'Twenty minutes from Palma, up in the Na Burguesa mountains. More character than most courses at this price level, and better views than anywhere else close to the city.',
+          'Twenty-five minutes from Palma, in the Tramuntana foothills near Bunyola. More character than most courses at this price level, and better views than anywhere else close to the city.',
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf: Honest Review 2026' },
           { slug: 'golf-andratx-review', title: 'Golf de Andratx - Honest Review 2026' },
@@ -772,7 +772,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Son Termes sits in the Na Burguesa mountains above Palma. Twenty minutes from the city centre and a different world. On a clear day from the higher tees you can see Castell de Bellver and the cathedral on the Palma skyline, with the Mediterranean behind them. Coming from Shanghai, where a course this accessible and this scenic would have a five-year waiting list for membership, that still registers.',
+          text: 'Son Termes sits in the Tramuntana foothills near Bunyola, looking out over Palma. Twenty-five minutes from the city centre and a different world. On a clear day from the higher tees you can see Castell de Bellver and the cathedral on the Palma skyline, with the Mediterranean behind them. Coming from Shanghai, where a course this accessible and this scenic would have a five-year waiting list for membership, that still registers.',
         },
         { type: 'heading', text: 'The Walk' },
         {
@@ -783,7 +783,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/son-termes-blog/st-1.webp',
           alt: 'Tee shot at Son Termes golf course Mallorca with mountains behind',
-          caption: 'Tee shot at Son Termes, Na Burguesa mountains behind.',
+          caption: 'Tee shot at Son Termes, Tramuntana foothills behind.',
           presentation: 'natural',
           naturalWidth: 1284,
           naturalHeight: 2103,
@@ -800,8 +800,8 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'image',
           src: '/images/son-termes-blog/st-6.webp',
-          alt: 'Son Termes golf course Mallorca Na Burguesa mountains',
-          caption: 'The course opens up on the back nine and view of the Na Burguesa mountains.',
+          alt: 'Son Termes golf course Mallorca, Tramuntana foothills',
+          caption: 'The course opens up on the back nine and view of the Tramuntana mountains.',
           presentation: 'natural',
           naturalWidth: 5120,
           naturalHeight: 1198,
@@ -845,7 +845,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'image',
           src: '/images/son-termes-blog/st-4.webp',
-          alt: 'Son Termes golf course Mallorca panoramic view over Na Burguesa mountains and Palma plain',
+          alt: 'Son Termes golf course Mallorca panoramic view over the Tramuntana foothills and the Palma plain',
           caption: 'The view from the upper holes. Castell de Bellver and the cathedral were visible on the skyline on a clear morning.',
           presentation: 'natural',
           naturalWidth: 4032,
@@ -857,13 +857,13 @@ export const GUIDE_POST_CONTENT = {
             ['~€110', 'In-season green fee'],
             ['6/10', 'Difficulty'],
             ['Par 70', 'Mountain layout'],
-            ['20 min', 'From central Palma'],
+            ['25 min', 'From central Palma'],
           ],
         },
         { type: 'heading', text: '2026 Green Fees' },
         {
           type: 'paragraph',
-          text: 'Full in-season pricing is around €100. Check current rates directly with Son Termes before booking as pricing varies seasonally. There is a multi-round deal worth knowing about. More details on that coming soon. The course is approximately 20 minutes from central Palma, up in the Na Burguesa mountains.',
+          text: 'Full in-season pricing is around €100. Check current rates directly with Son Termes before booking as pricing varies seasonally. There is a multi-round deal worth knowing about. More details on that coming soon. The course is approximately 25 minutes from central Palma, in the Tramuntana foothills near Bunyola.',
         },
         {
           type: 'image',
@@ -1207,7 +1207,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/son-quint-blog/son-quint-7.webp',
           alt: 'Putting green at Son Quint golf course with an orange Son Quint flag in the foreground',
-          caption: 'The putting green at the Son Quint clubhouse.',
+          caption: 'The putting green at Son Quint.',
           presentation: 'natural',
           naturalWidth: 1200,
           naturalHeight: 1600,

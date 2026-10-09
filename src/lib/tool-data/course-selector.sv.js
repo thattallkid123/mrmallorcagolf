@@ -134,10 +134,10 @@ const data = {
    "bestPlayer": "Nybörjare till van golfare"
   },
   "son-termes": {
-   "areaLabel": "Na Burguesa · Palma",
+   "areaLabel": "Bunyola · Palma",
    "buggyNote": "De första nio går att gå; de sista nio är branta. Golfbil rekommenderas om du inte är mycket vältränad",
    "bestFor": "Den bästa utsikten närmast Palma, till ett rimligt pris",
-   "why": "Belägen i Na Burguesa-bergen, 20 minuter från Palma men helt avskild från staden. En klar dag syns Castell de Bellver och katedralen i Palma från de övre hålen, med Medelhavet bakom. Ingen lång bana, men blinda utslag, skarpa doglegs och höjdskillnader gör varje hål intressant.",
+   "why": "Belägen vid foten av Tramuntana nära Bunyola, 25 minuter från Palma men helt avskild från staden. En klar dag syns Castell de Bellver och katedralen i Palma från de övre hålen, med Medelhavet bakom. Ingen lång bana, men blinda utslag, skarpa doglegs och höjdskillnader gör varje hål intressant.",
    "andy": "Mer karaktär än de flesta banor i den här prisklassen. Utsikten från de sista nio är den bästa man får så nära Palma. Gå de första nio och ta golfbil på de sista om du bryr dig om dina knän.",
    "bestPlayer": "Hobbygolfare till van golfare"
   },
