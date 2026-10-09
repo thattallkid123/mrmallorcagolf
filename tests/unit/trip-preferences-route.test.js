@@ -46,6 +46,24 @@ describe('trip preferences submission', () => {
     expect(message.html).toContain('VORO')
   })
 
+  test('leads with what would make the trip a success and keeps valid flight times only', async () => {
+    const payload = {
+      ...validPayload,
+      trip: { ...validPayload.trip, success: 'Dad’s 60th <b>', landingTime: '10:30', departureTime: '25:99' },
+      preferences: { ...validPayload.preferences, carHire: 'maybe', lovedHotel: 'Castell Son Claret', experiences: ['train', 'nadal', 'padel'] },
+    }
+    const response = await POST(requestFor(payload))
+    expect(response.status).toBe(200)
+    const html = send.mock.calls[0][0].html
+    expect(html.indexOf('What would make it a success')).toBeLessThan(html.indexOf('Match to the first enquiry'))
+    expect(html).toContain('Dad’s 60th &lt;b&gt;')
+    expect(html).toContain('10:30')
+    expect(html).not.toContain('25:99')
+    expect(html).toContain('Castell Son Claret')
+    expect(html).toContain('Sóller train, Rafa Nadal Museum')
+    expect(html).not.toContain('Padel')
+  })
+
   test('uses the first enquiry when dates are unchanged and includes stay help', async () => {
     const response = await POST(requestFor({ ...validPayload, trip: {}, preferences: { stayHelp: 'booked', transfers: ['golf'] } }))
     expect(response.status).toBe(200)

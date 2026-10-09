@@ -48,9 +48,19 @@ describe('call and partner briefs', () => {
     expect(handoff(sensitive).text).not.toContain('example@example.com')
   })
 
-  test('flags timing and villa conflicts as specific questions', () => {
-    const conflicting = { ...data, preferences: { ...data.preferences, experiences: ['chef', 'balloon'], extraTiming: 'after-golf' } }
+  test('flags a balloon booked after golf as a timing question', () => {
+    const conflicting = { ...data, preferences: { ...data.preferences, experiences: ['balloon'], extraTiming: 'after-golf' } }
     expect(agenda(conflicting, {}).join(' ')).toContain('free morning')
-    expect(agenda(conflicting, {}).join(' ')).toContain('villa stay')
+  })
+
+  test('leads with what would make the trip a success and carries flight times to Shane', () => {
+    expect(agenda(data, {})[0]).toContain('what would make the trip a success')
+    const withSuccess = { ...data, trip: { success: 'Dad’s 60th', landingTime: '10:30', departureTime: '18:15' }, preferences: { ...data.preferences, carHire: 'no', lovedHotel: 'Castell Son Claret' } }
+    expect(agenda(withSuccess, {}).join(' ')).not.toContain('what would make the trip a success')
+    expect(call(withSuccess)).toContain('Dad’s 60th')
+    const brief = handoff(withSuccess, {}, { carHire: 'No' }).text
+    expect(brief).toContain('Lands 10:30 on day one; Flies 18:15 on the last day')
+    expect(brief).toContain('Castell Son Claret')
+    expect(brief).not.toContain('Dad’s 60th')
   })
 })

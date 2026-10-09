@@ -1,33 +1,43 @@
 // Draft shortlist. Replace venue choices and photos after Shane's review.
+// `note` is Andy's planning line (his voice, drafted for him to edit), `facts` is a
+// short practical line, `price` is a rough level for restaurants only.
+// Photo rule: landscape 3:2, daylight or golden hour, the room / terrace / place rather
+// than a plate close-up. Process new photos to the card-*.webp pattern (1200x800 max).
 window.MMGTripCatalog = {
   "areas": [
     {
       "id": "palma",
       "tag": "City base",
       "title": "Palma",
-      "detail": "Restaurants close by and transfers out to the courses.",
-      "image": "palma-area.webp"
+      "detail": "Restaurants within walking distance, with transfers out to the courses.",
+      "note": "The best base if the group wants a different restaurant every night. Son Gual, Son Muntaner and Son Vida are all close.",
+      "image": "card-area-palma.webp"
     },
     {
       "id": "southwest",
       "tag": "Coastal base",
       "title": "South West",
-      "detail": "Beach or marina evenings around Calvià and Andratx.",
-      "image": "camp-de-mar-area.webp"
+      "detail": "Marina and beach evenings around Calvià and Andratx.",
+      "note": "Bendinat, Santa Ponsa, T Golf Calvià and Golf de Andratx are all on this side of the island.",
+      "image": "card-area-southwest.webp",
+      "alt": "Port Adriano marina from above",
+      "photoLabel": "Photo: Port Adriano"
     },
     {
       "id": "east",
       "tag": "Quieter coast",
       "title": "East Mallorca",
       "detail": "Canyamel, Capdepera and Son Servera golf nearby.",
-      "image": "east-canyamel-golf.webp"
+      "note": "Quieter, and Palma's courses are about an hour away. Pick it if most of the golf is on the east coast.",
+      "image": "card-area-east.webp"
     },
     {
       "id": "open",
       "tag": "Advice welcome",
       "title": "You choose",
-      "detail": "Tell me the golf and group style; I will suggest an area.",
-      "image": "foothills-area.webp"
+      "detail": "Tell me the golf and the group; I will suggest an area.",
+      "note": "Send me the courses you want to play and I will match the base to the driving.",
+      "image": "card-area-open.webp"
     }
   ],
   "stays": [
@@ -35,10 +45,11 @@ window.MMGTripCatalog = {
       "id": "city",
       "tag": "Easy evenings",
       "title": "City hotel",
-      "detail": "Walk to dinner and return after golf.",
-      "image": "hotel-saratoga.webp",
-      "source": "https://www.hotelsaratoga.com/en/galeria",
-      "alt": "Hotel Saratoga",
+      "detail": "Walk to dinner and back after golf.",
+      "note": "The trade-off is a drive to every round. Fine for Son Gual or Son Vida, longer for Alcanada.",
+      "image": "card-stay-city.webp",
+      "source": "https://www.hotelsaratoga.com/en/",
+      "alt": "Hotel Saratoga rooftop view over Palma towards the cathedral",
       "photoLabel": "Example photo: Hotel Saratoga",
       "photoType": "venue"
     },
@@ -46,10 +57,11 @@ window.MMGTripCatalog = {
       "id": "golf",
       "tag": "Golf first",
       "title": "Golf base",
-      "detail": "A resort base within reach of several courses.",
-      "image": "hotel-capvermell.webp",
+      "detail": "A resort close to the first tee.",
+      "note": "Short drives to golf, fewer restaurants within walking distance.",
+      "image": "card-stay-golf.webp",
       "source": "https://capvermellgrandhotel.com/en/",
-      "alt": "Cap Vermell Grand Hotel",
+      "alt": "Cap Vermell Grand Hotel pool and terraces",
       "photoLabel": "Example photo: Cap Vermell Grand Hotel",
       "photoType": "venue"
     },
@@ -57,32 +69,35 @@ window.MMGTripCatalog = {
       "id": "coast",
       "tag": "By the water",
       "title": "Coastal hotel",
-      "detail": "Beach or marina nearby, depending on the area.",
-      "image": "hotel-simoneta.webp",
+      "detail": "Beach or sea views, depending on the area.",
+      "note": "Pick the coast that matches the courses, or the evenings cost you an hour in the car.",
+      "image": "card-stay-coast.webp",
       "source": "https://www.cansimoneta.com/en",
       "photoType": "venue",
       "photoLabel": "Example photo: Can Simoneta",
-      "alt": "Can Simoneta coastal terrace"
+      "alt": "Can Simoneta pool and sea view"
     },
     {
       "id": "finca",
       "tag": "Smaller stay",
       "title": "Country finca",
       "detail": "A quieter base with space between rounds.",
-      "image": "hotel-songener.webp",
+      "note": "Quiet and spacious. Plan on transfers or hire cars for every meal out.",
+      "image": "card-stay-finca.webp",
       "source": "https://www.songener.com/en/gallery/",
-      "alt": "Finca Son Gener",
-      "photoLabel": "Example photo: Finca Son Gener",
+      "alt": "Finca Son Gener in the countryside",
+      "photoLabel": "Example photo: Son Gener",
       "photoType": "venue"
     },
     {
       "id": "villa",
       "tag": "Your own space",
       "title": "Private villa",
-      "detail": "Useful for a group that wants shared evenings.",
-      "image": "villa-pool.webp",
+      "detail": "Shared evenings and your own pool.",
+      "note": "Best for a group that wants to eat together. Ask me about a private chef for one night.",
+      "image": "card-stay-villa.webp",
       "photoType": "illustrative",
-      "alt": "Illustrative private villa photograph"
+      "alt": "Villa pool looking over the Mallorca countryside"
     }
   ],
   "dinners": [
@@ -90,81 +105,97 @@ window.MMGTripCatalog = {
       "id": "can-eduardo",
       "tag": "Palma · seafood",
       "title": "Ca n’Eduardo",
-      "detail": "Fish and rice dishes by Palma’s fishing port.",
-      "image": "venue-eduardo.webp",
+      "detail": "Fish and rice above Palma’s fishing port.",
+      "note": "Upstairs from the fish market, looking across the port. An easy first night after an afternoon arrival.",
+      "price": "€€€",
+      "image": "card-dine-eduardo.webp",
       "source": "https://www.caneduardo.com/en/about-ca-neduardo/",
       "photoType": "venue",
-      "alt": "Ca n’Eduardo in Mallorca"
+      "alt": "Ca n’Eduardo dining room with a view over Palma port"
     },
     {
       "id": "marc-fosh",
       "tag": "Palma · occasion",
       "title": "Marc Fosh",
-      "detail": "A tasting-menu dinner; ask about a private table.",
-      "image": "venue-fosh.webp",
+      "detail": "Tasting menu in the old town, with a private table.",
+      "note": "The private table suits a prize-giving dinner for a smaller group. Book well ahead in summer.",
+      "price": "€€€€",
+      "image": "card-dine-fosh.webp",
       "source": "https://www.marcfosh.com/es/",
       "photoType": "venue",
-      "alt": "Marc Fosh in Mallorca"
+      "alt": "Marc Fosh private dining table"
     },
     {
       "id": "fera",
       "tag": "Palma · occasion",
       "title": "Fera",
-      "detail": "A Palma tasting-menu evening, with group arrangements to discuss.",
-      "image": "venue-fera.webp",
+      "detail": "A Palma tasting-menu evening.",
+      "note": "One proper food night in the old town. Ask about group arrangements early.",
+      "price": "€€€€",
+      "image": "card-dine-fera.webp",
       "source": "https://ferapalma.com/fera/fera-restaurant-bar-mallorca-gallery/",
       "photoType": "venue",
-      "alt": "Fera in Mallorca"
+      "alt": "Fera dining room in Palma"
     },
     {
       "id": "siso",
       "tag": "Palmanova · sea view",
       "title": "Siso Beach",
-      "detail": "A beachfront lunch or dinner on a golf day.",
-      "image": "venue-siso.webp",
+      "detail": "Beachfront lunch or dinner.",
+      "note": "A few minutes from Bendinat. Book a late lunch after a morning round.",
+      "price": "€€€",
+      "image": "card-dine-siso.webp",
       "source": "https://sisobeachmallorca.com/",
       "photoType": "venue",
-      "alt": "Siso Beach in Mallorca"
+      "alt": "Siso Beach terrace in Palmanova"
     },
     {
       "id": "annabel",
       "tag": "Palmanova · lively",
       "title": "Annabel",
       "detail": "A later dinner with music and cocktails.",
-      "image": "venue-annabel.webp",
+      "note": "In Palmanova, close to Siso. The louder night of the trip.",
+      "price": "€€€",
+      "image": "card-dine-annabel.webp",
       "source": "https://www.annabelmallorca.com/",
       "photoType": "venue",
-      "alt": "Annabel in Mallorca"
+      "alt": "Annabel terrace in Palmanova"
     },
     {
       "id": "cova-negra",
       "tag": "Capdepera · East",
       "title": "Cova Negra",
-      "detail": "Mediterranean dinner beneath stone arches. Private room for up to eight.",
-      "image": "venue-cova.webp",
+      "detail": "Dinner beneath stone arches.",
+      "note": "The private room seats eight. Close to Capdepera and Canyamel golf.",
+      "price": "€€€",
+      "image": "card-dine-cova.webp",
       "source": "https://www.covanegra.com/",
       "photoType": "venue",
-      "alt": "Cova Negra in Mallorca"
+      "alt": "Cova Negra dining room under stone arches"
     },
     {
       "id": "sa-punta",
       "tag": "Port Verd · East",
       "title": "Sa Punta",
       "detail": "A longer lunch or dinner beside the water.",
-      "image": "venue-sapunta.webp",
+      "note": "A short drive from Son Servera golf. Good for a long lunch on the last day.",
+      "price": "€€€",
+      "image": "card-dine-sapunta.webp",
       "source": "https://www.restaurantesapunta.com/en/",
       "photoType": "venue",
-      "alt": "Sa Punta in Mallorca"
+      "alt": "Sa Punta terrace by the sea at sunset"
     },
     {
       "id": "voro",
       "tag": "Canyamel · East",
       "title": "VORO",
-      "detail": "A fine-dining evening at Cap Vermell Grand Hotel.",
-      "image": "venue-voro.webp",
+      "detail": "Fine dining at Cap Vermell Grand Hotel.",
+      "note": "In the same valley as Canyamel Golf. The one to book for a milestone.",
+      "price": "€€€€",
+      "image": "card-dine-voro.webp",
       "source": "https://vororestaurant.com/",
       "photoType": "venue",
-      "alt": "VORO in Mallorca"
+      "alt": "Garden terrace at VORO, Cap Vermell"
     }
   ],
   "extras": [
@@ -173,98 +204,128 @@ window.MMGTripCatalog = {
       "tag": "Food & drink",
       "title": "Winery visit",
       "detail": "A tasting on a free afternoon.",
-      "image": "venue-ribas.webp",
+      "facts": "Consell · about 25 minutes from Palma",
+      "note": "Book transfers so nobody drives back.",
+      "image": "card-do-winery.webp",
       "source": "https://bodegaribas.com/ca/visitin/",
       "photoType": "venue",
-      "alt": "Winery visit in Mallorca",
+      "alt": "Bodega Ribas courtyard set for a tasting",
       "photoLabel": "Photo: Bodega Ribas"
     },
     {
       "id": "boat",
       "tag": "On the water",
       "title": "Private boat",
-      "detail": "A half-day with route and boat matched to the group.",
-      "image": "boat-simoneta.webp",
+      "detail": "Half a day with a skipper, matched to the group.",
+      "facts": "Half day · skipper",
+      "note": "Back in time for dinner. Mornings are usually calmer.",
+      "image": "card-do-boat.webp",
       "source": "https://www.cansimoneta.com/en",
       "photoType": "venue",
       "photoLabel": "Example photo: Can Simoneta boat",
-      "alt": "Can Simoneta motorboat off the Mallorca coast"
+      "alt": "Motorboat off the Mallorca coast"
     },
     {
       "id": "cooking",
       "tag": "Palma",
       "title": "Moltak cooking",
-      "detail": "Cook and eat together in its windmill kitchen.",
-      "image": "venue-moltak.webp",
+      "detail": "Cook and eat together in a windmill kitchen.",
+      "facts": "Palma · evening",
+      "note": "Works well on an arrival day with no golf.",
+      "image": "card-do-cooking.webp",
       "source": "https://moltak.com/",
       "photoType": "venue",
-      "alt": "Moltak cooking in Mallorca"
-    },
-    {
-      "id": "padel",
-      "tag": "After golf",
-      "title": "Padel session",
-      "detail": "Court time and a coach if the group wants to play.",
-      "image": "padel.webp",
-      "photoType": "illustrative",
-      "alt": "Illustrative photograph for padel session"
+      "alt": "Cooking class at Moltak in Palma"
     },
     {
       "id": "beach",
       "tag": "Free afternoon",
       "title": "Beach club",
-      "detail": "Lunch and time by the water.",
-      "image": "beach.webp",
-      "photoType": "illustrative",
-      "alt": "Illustrative photograph for beach club"
-    },
-    {
-      "id": "chef",
-      "tag": "Villa stay",
-      "title": "Chef at your villa",
-      "detail": "A group dinner at the property.",
-      "image": "chef.webp",
-      "photoType": "illustrative",
-      "alt": "Illustrative photograph for chef at your villa"
+      "detail": "Sunbeds, a pool and a long lunch.",
+      "facts": "Calvià · April to September",
+      "note": "After a morning round, or on a day off. Book sunbeds ahead in summer.",
+      "image": "card-do-beach.webp",
+      "source": "https://www.nikkibeach.com/mallorca/",
+      "photoType": "venue",
+      "photoLabel": "Example photo: Nikki Beach Mallorca",
+      "alt": "Nikki Beach Mallorca pool terrace"
     },
     {
       "id": "balloon",
       "tag": "Free morning",
       "title": "Hot-air balloon",
-      "detail": "A sunrise flight needs a morning without golf.",
-      "image": "venue-balloon.webp",
+      "detail": "A sunrise flight over the plain.",
+      "facts": "Sunrise · weather dependent",
+      "note": "Pick a morning with no golf booked.",
+      "image": "card-do-balloon.webp",
       "source": "https://www.mallorcaballoons.com/es/",
       "photoType": "venue",
-      "alt": "Hot-air balloon in Mallorca",
+      "alt": "Hot-air balloons over Mallorca at sunrise",
       "photoLabel": "Photo: Mallorca Balloons"
     },
     {
       "id": "olive",
       "tag": "Food & drink",
-      "title": "Olive-oil estate",
-      "detail": "A visit and tasting in the countryside.",
-      "image": "olive.webp",
-      "photoType": "illustrative",
-      "alt": "Illustrative photograph for olive-oil estate"
+      "title": "Olive-oil tasting",
+      "detail": "Son Moragues organic oil, bread and cheese.",
+      "facts": "Valldemossa · 1 hour · minimum 6 people",
+      "note": "Pair it with lunch in Valldemossa on a day off.",
+      "image": "card-do-olive.webp",
+      "source": "https://sonmo.es/en/products/valldemossa-catas-de-aceite",
+      "photoType": "venue",
+      "photoLabel": "Photo: Son Moragues, Valldemossa",
+      "alt": "Son Moragues shop in Valldemossa"
     },
     {
-      "id": "farm",
-      "tag": "Manacor · East",
-      "title": "Farm meal",
-      "detail": "A field-to-table meal; group format to check.",
-      "image": "market-food.jpg",
-      "photoType": "illustrative",
-      "alt": "Illustrative photograph for farm meal"
+      "id": "salt",
+      "tag": "South coast",
+      "title": "Es Trenc salt flats",
+      "detail": "A guided walk round the salt pans, with a tasting.",
+      "facts": "Campos · 45 minutes",
+      "note": "Short and easy. Add a swim at Es Trenc beach. Not suitable for reduced mobility.",
+      "image": "card-do-salt.webp",
+      "source": "https://www.flordesal.com/",
+      "photoType": "venue",
+      "photoLabel": "Photo: Flor de Sal d’Es Trenc",
+      "alt": "Salt pans at Es Trenc"
     },
     {
       "id": "caves",
       "tag": "Canyamel · East",
       "title": "Coves d’Artà",
-      "detail": "A guided cave visit near the coast.",
-      "image": "venue-caves.webp",
+      "detail": "A guided cave visit above the sea.",
+      "facts": "Canyamel · guided visit",
+      "note": "Close to Canyamel Golf. Fits around an afternoon tee time.",
+      "image": "card-do-caves.webp",
       "source": "https://www.cuevasdearta.com/es/",
       "photoType": "venue",
-      "alt": "Coves d’Artà in Mallorca"
+      "alt": "Entrance to the Coves d’Artà above the coast"
+    },
+    {
+      "id": "train",
+      "tag": "Day off",
+      "title": "Sóller train",
+      "detail": "The wooden train through the mountains to Sóller.",
+      "facts": "Palma to Sóller · about 1 hour",
+      "note": "A day without clubs. Lunch in Port de Sóller, then the tram back up.",
+      "image": "card-do-train.webp",
+      "source": "https://trendesoller.com/en/",
+      "photoType": "venue",
+      "photoLabel": "Photo: Tren de Sóller",
+      "alt": "Sóller train crossing a stone viaduct"
+    },
+    {
+      "id": "nadal",
+      "tag": "Manacor · East",
+      "title": "Rafa Nadal Museum",
+      "detail": "Trophies and sports simulators at the Rafa Nadal Academy.",
+      "facts": "Manacor · Rafa Nadal Academy",
+      "note": "A good rainy-day option, close to the eastern courses.",
+      "image": "card-do-nadal.webp",
+      "source": "https://www.rafanadalmuseum.com/en",
+      "photoType": "venue",
+      "photoLabel": "Photo: Rafa Nadal Museum Xperience",
+      "alt": "Visitors at the Rafa Nadal Academy"
     }
   ]
 };

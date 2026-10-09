@@ -27,7 +27,8 @@ const OPTIONS = {
   diningStyle: { relaxed: 'Relaxed group meals', mix: 'One special dinner and casual meals', fine: 'Fine dining' },
   presentation: { yes: 'Yes', maybe: 'Maybe', no: 'No' },
   dinnerHelp: { ideas: 'Recommendations only', arrange: 'Help arranging tables', none: 'No help needed' },
-  experiences: { winery: 'Winery visit', boat: 'Private boat', cooking: 'Moltak cooking', padel: 'Padel session', beach: 'Beach club', chef: 'Chef at villa', balloon: 'Hot-air balloon', olive: 'Olive-oil estate', farm: 'Farm meal', caves: 'Coves d’Artà' },
+  experiences: { winery: 'Winery visit', boat: 'Private boat', cooking: 'Moltak cooking', beach: 'Beach club', balloon: 'Hot-air balloon', olive: 'Olive-oil tasting', salt: 'Es Trenc salt flats', caves: 'Coves d’Artà', train: 'Sóller train', nadal: 'Rafa Nadal Museum' },
+  carHire: { yes: 'Yes', no: 'No', maybe: 'Maybe' },
   extraTiming: { 'after-golf': 'After golf', 'free-day': 'On a day without golf', evening: 'Evening', open: 'Open to suggestions' },
   moreInterests: { spa: 'Spa or recovery', nightlife: 'Night out', kids: 'Family or kids activities', none: 'No extra meals or experiences' },
 }
@@ -44,6 +45,7 @@ const cleanDate = (value) => {
   const date = new Date(`${value}T00:00:00Z`)
   return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value ? value : ''
 }
+const cleanTime = (value) => typeof value === 'string' && /^(?:[01]\d|2[0-3]):[0-5]\d$/.test(value) ? value : ''
 const row = (label, value) => `<tr><td style="padding:8px 10px 8px 0;color:#666;vertical-align:top;width:175px">${escapeHtml(label)}</td><td style="padding:8px 0;white-space:pre-wrap">${escapeHtml(value || 'Not specified')}</td></tr>`
 const section = (title, rows) => `<h3 style="color:#2d4a3e;margin:24px 0 8px">${escapeHtml(title)}</h3><table style="width:100%;border-collapse:collapse">${rows.join('')}</table>`
 
@@ -94,6 +96,10 @@ export async function POST(request) {
     const double = cleanCount(rooms.double)
     const questions = ['Match the original enquiry: carry forward dates, exact group numbers, golf route, tee-time and buggy requests.']
     if ((arrival || departure) && (!arrival || !departure || departure <= arrival)) questions.push('Resolve the incomplete or conflicting date update.')
+    const success = sanitizeMultilineText(trip.success, 1000)
+    const landingTime = cleanTime(trip.landingTime)
+    const departureTime = cleanTime(trip.departureTime)
+    if (!success) questions.push('Ask what would make the trip a success: the occasion and what matters most.')
     if (!pick('stayHelp', prefs.stayHelp) || prefs.stayHelp === 'open') questions.push('Decide whether accommodation help is needed.')
     if (prefs.stayHelp === 'quote') {
       if (!pick('area', prefs.area) || prefs.area === 'open') questions.push('Agree the base around the golf route and evenings.')
@@ -101,7 +107,7 @@ export async function POST(request) {
       if (!pick('hotelBudget', prefs.hotelBudget)) questions.push('Agree the accommodation budget per room, per night.')
     }
     if (!pickMany('transfers', prefs.transfers)) questions.push('Confirm transport requirements.')
-    if (Array.isArray(prefs.transfers) && prefs.transfers.includes('airport')) questions.push('Confirm flight groups, timings and luggage, or provisional transfer assumptions.')
+    if (Array.isArray(prefs.transfers) && prefs.transfers.includes('airport') && !(landingTime && departureTime)) questions.push('Confirm flight groups, timings and luggage, or provisional transfer assumptions.')
     if (pickMany('restaurants', prefs.restaurants) && !pick('dinnerHelp', prefs.dinnerHelp)) questions.push('Decide whether restaurant recommendations or reservation help are wanted.')
     if (pickMany('experiences', prefs.experiences) && !pick('experienceHelp', prefs.experienceHelp)) questions.push('Separate experience ideas from requests for options and prices.')
     if (Array.isArray(prefs.experiences) && prefs.experiences.includes('balloon') && prefs.extraTiming === 'after-golf') questions.push('A balloon needs a free morning; check the golf schedule.')
@@ -111,6 +117,7 @@ export async function POST(request) {
       <h2 style="color:#2d4a3e">Trip preferences from ${escapeHtml(name)}</h2>
       <p>Call preparation for Andy. Read alongside the first enquiry using the reference below. The original record is not loaded by this questionnaire.</p>
       <p>These are client preferences. Confirm the shortlist on the call before asking Shane to check options and prices.</p>
+      ${section('What would make it a success', [row('In their words', success || 'Not added; ask first on the call')])}
       ${section('Match to the first enquiry', [row('Enquiry reference', enquiryRef), row('Name', name), row('Email', email)])}
       ${section('Group and golf updates', [
         row('Trip type', pick('tripType', trip.tripType)),
@@ -120,17 +127,17 @@ export async function POST(request) {
       ])}
       ${section('Stay and travel', [
         row('Stay help', pick('stayHelp', prefs.stayHelp)), row('Area', pick('area', prefs.area)), row('Stay styles', pickMany('stayStyle', prefs.stayStyle)),
-        row('Named hotel or villa', sanitizeText(prefs.hotelName, 160)),
+        row('Named hotel or villa', sanitizeText(prefs.hotelName, 160)), row('A hotel they have loved', sanitizeText(prefs.lovedHotel, 200)),
         row('Single occupancy rooms', single || 'Not decided yet'), row('Twin rooms', twin || 'Not decided yet'), row('Double rooms', double || 'Not decided yet'),
         row('Budget per room per night', pick('hotelBudget', prefs.hotelBudget)),
-        row('Transfers', pickMany('transfers', prefs.transfers)), row('Flight pattern', pick('arrivalPattern', prefs.arrivalPattern)),
+        row('Transfers', pickMany('transfers', prefs.transfers)), row('Landing time, day one', landingTime || 'Not known yet'), row('Flight time, last day', departureTime || 'Not known yet'), row('Hiring a car', pick('carHire', prefs.carHire)), row('Flight pattern', pick('arrivalPattern', prefs.arrivalPattern)),
       ])}
       ${section('Dining and experiences', [
         row('Restaurant interests', pickMany('restaurants', prefs.restaurants)), row('Dining style', pick('diningStyle', prefs.diningStyle)),
         row('Private room or prizes', pick('presentation', prefs.presentation)), row('Dinner help', pick('dinnerHelp', prefs.dinnerHelp)),
         row('Experience interests', pickMany('experiences', prefs.experiences)), row('Experience help', pick('experienceHelp', prefs.experienceHelp)), row('Best time', pick('extraTiming', prefs.extraTiming)),
         row('Other interests', pickMany('moreInterests', prefs.moreInterests)),
-        row('Access, dietary or practical needs', sanitizeMultilineText(prefs.specialNeeds, 1000)),
+        row('Ages, access, dietary or practical needs', sanitizeMultilineText(prefs.specialNeeds, 1000)),
         row('Other notes', sanitizeMultilineText(prefs.notes, 2000)),
       ])}
       <h3 style="color:#2d4a3e;margin:24px 0 8px">Call agenda: facts and decisions to confirm</h3>
