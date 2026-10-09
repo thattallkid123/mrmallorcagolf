@@ -60,6 +60,24 @@ describe('trip preferences submission', () => {
     expect(send).not.toHaveBeenCalled()
   })
 
+  test('separates interests from booking help and preserves zero room and traveller counts', async () => {
+    const response = await POST(requestFor({
+      ...validPayload,
+      trip: { tripType: 'friends', nonGolfers: '0', children: '0' },
+      preferences: { ...validPayload.preferences, stayHelp: 'quote', rooms: { single: '6', twin: '0' }, experienceHelp: 'ideas' },
+    }))
+    expect(response.status).toBe(200)
+    const html = send.mock.calls[0][0].html
+    expect(html).toContain('Friends / golf group')
+    expect(html).toContain('Ideas to discuss')
+    expect(html).toContain('Restaurant interests')
+    expect(html).toContain('Call agenda: facts and decisions to confirm')
+    expect(html).toContain('blank room counts are undecided, not zero')
+    expect(html).toMatch(/Twin rooms<\/td><td[^>]*>0<\/td>/)
+    expect(html).toMatch(/Updated children<\/td><td[^>]*>0<\/td>/)
+    expect(html).not.toContain('? / ?')
+  })
+
   test('escapes free text and ignores unknown choices', async () => {
     const response = await POST(requestFor({
       ...validPayload,
