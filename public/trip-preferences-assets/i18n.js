@@ -376,6 +376,9 @@
     ["Worth considering for anyone who enjoys sport. Add an Academy tour if the group wants to see the training facilities too.", "Eine Option für alle, die Sport mögen. Ergänzen Sie eine Academy-Tour, wenn die Gruppe auch die Trainingsanlagen sehen möchte.", "Una opción para cualquiera que disfrute del deporte. Añada una visita a la Academy si el grupo también quiere ver las instalaciones de entrenamiento.", "À envisager pour tous ceux qui aiment le sport. Ajoutez une visite de l’Academy si le groupe veut aussi voir les installations d’entraînement.", "Een optie voor iedereen die van sport houdt. Voeg een Academy-rondleiding toe als de groep ook de trainingsfaciliteiten wil zien.", "Ett alternativ för alla som gillar sport. Lägg till en Academy-tur om gruppen också vill se träningsanläggningen.", "适合喜欢体育的同行者。如果团队也想看看训练设施，可以加上 Academy 参观。"],
     ["Weather dependent", "Wetterabhängig", "Según el tiempo", "Selon la météo", "Weersafhankelijk", "Väderberoende", "视天气而定"],
     ["The balloon needs a slot with no golf booked.", "Für die Ballonfahrt brauchen Sie einen Zeitraum ohne gebuchtes Golf.", "El globo necesita un horario sin golf reservado.", "Prévoyez un créneau sans golf pour le ballon.", "Houd voor de ballonvaart een moment zonder golf vrij.", "Ballongen behöver en tid utan bokad golf.", "热气球需要安排在没有球局的时段。"],
+    ["Scroll to see all options", "Scrollen, um alle Optionen zu sehen", "Desliza para ver todas las opciones", "Faites défiler pour voir toutes les options", "Scroll om alle opties te zien", "Bläddra för att se alla alternativ", "滑动查看所有选项"],
+    ["Previous options", "Vorherige Optionen", "Opciones anteriores", "Options précédentes", "Vorige opties", "Föregående alternativ", "上一组选项"],
+    ["Next options", "Weitere Optionen", "Opciones siguientes", "Options suivantes", "Volgende opties", "Nästa alternativ", "下一组选项"],
   ];
 
   const DICT = {};

@@ -1,7 +1,7 @@
 const { expect, test } = require('@playwright/test')
 
 test('planning, playing and Signature Day have clear routes into enquiry', async ({ page }) => {
-  await page.goto('/plan-your-trip', { waitUntil: 'domcontentloaded' })
+  await page.goto('/plan-your-trip', { waitUntil: 'networkidle' })
   await expect(page.locator('.pyt-hero__body')).toContainText('You play the rounds on your own schedule')
   await page.getByRole('link', { name: /^Plan my golf trip/ }).click()
   await expect(page).toHaveURL(/\/contact\?service=trip-planning$/)
@@ -9,7 +9,7 @@ test('planning, playing and Signature Day have clear routes into enquiry', async
   await page.getByRole('radio', { name: 'Book tee times for my group' }).check()
   await expect(page.getByRole('radio', { name: 'Book tee times for my group' })).toBeChecked()
 
-  await page.goto('/play-with-a-pro', { waitUntil: 'domcontentloaded' })
+  await page.goto('/play-with-a-pro', { waitUntil: 'networkidle' })
   const signatureLink = page.locator('.pwap-summary__signature a')
   await expect(signatureLink).toHaveAttribute('href', '/signature-day')
   await signatureLink.click()
