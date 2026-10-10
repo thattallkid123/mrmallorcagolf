@@ -32,7 +32,7 @@ const content = {
     },
     "blocks": [
       {
-        "alt": "El green protegido por agua en uno de los par 4 del noveno de vuelta en T Golf Palma",
+        "alt": "El green protegido por agua en los segundos nueve de T Golf Palma, rodeado de pinos",
         "caption": "Agua y búnkeres protegen el green en uno de los par 4 del noveno de vuelta en T Golf Palma."
       },
       {
@@ -54,7 +54,7 @@ const content = {
         "text": "El hoyo 5 es el más difícil de la tarjeta, un par 4 de 364 m con un tee shot estrecho y un green angosto para terminar. No hay mucho margen de error en ningún extremo."
       },
       {
-        "text": "El hoyo 8, de 334 m, es el mejor ejemplo del carácter del campo. El agua corre por todo el lado derecho y el tee shot tienta a sacar el driver. Yo jugué seguro con un hierro 4 a la izquierda, lo que aun así dejó un wedge a una franja de green muy estrecha, nada fácil de acertar. Quedarse corto no significa que el problema haya terminado."
+        "text": "El hoyo 8, de 334 m, es el mejor ejemplo del carácter del campo. El agua corre por todo el lado derecho y la salida tienta a sacar el driver. Yo jugué seguro con un hierro 4 a la izquierda, lo que aun así dejó un wedge a una franja de green muy estrecha, nada fácil de acertar. Quedarse corto no significa que el problema haya terminado."
       },
       {
         "alt": "El obstáculo de agua a la derecha del hoyo 8 en T Golf Palma bajo un cielo nublado",
@@ -174,7 +174,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "T Golf Palma - Bewertung & Gebühren",
-      "description": "T Golf Palma auf Mallorca: Jack-Nicklaus-Design, 6.027 m, 9/10 Zustand."
+      "description": "Hochsaison 150 €, Nebensaison 80 €. Design von Jack Nicklaus, 6.027 m von Weiß, Zustand 9/10."
     },
     "meta": {
       "badge": "Platz-Bewertung",
@@ -216,7 +216,7 @@ const content = {
         "text": "T Golf Palma hat im März 2022 den Besitzer gewechselt, als T Club den Platz kaufte und umbenannte, und einen Teil seines Rufs davon, dass er sich den Namen mit T Golf Calvià teilt. Ich bin mit der Frage hingefahren, ob das einen Teil der Arbeit übernimmt. Das ist nicht der Fall. Jack Nicklaus hat den Platz entworfen, der einzige von ihm auf Mallorca, eröffnet 2006 vor einer kompletten Renovierung 2022."
       },
       {
-        "text": "Er liegt abseits von fast allem anderen auf der Insel. Flugzeuge fliegen vom Flughafen Palma aus darüber, aber auf fast der gesamten Runde ist kein Gebäude zu sehen. Isoliert, aber unter einer Einflugschneise, ist eine merkwürdige Kombination."
+        "text": "Er liegt abseits von fast allem anderen auf der Insel. Flugzeuge fliegen vom Flughafen Palma aus darüber, aber auf fast der gesamten Runde ist kein Gebäude zu sehen. Abgelegen und trotzdem unter einer Einflugschneise: eine merkwürdige Kombination."
       },
       {
         "text": "Löcher, die man kennen sollte"
@@ -246,7 +246,7 @@ const content = {
       },
       {
         "alt": "Das Fairway auf dem 18. Loch bei T Golf Palma, das Richtung Clubhaus schwenkt",
-        "caption": "Blick auf Loch 18. Der Abschlag ist schwerer zu treffen, als er von hier aussieht."
+        "caption": "Blick auf Loch 18. Der Abschlag ist schwerer auszurichten, als es von hier aussieht."
       },
       {
         "text": "Platzzustand"
@@ -262,7 +262,7 @@ const content = {
         "text": "Service Und Einrichtungen"
       },
       {
-        "text": "Der Service war eine Stärke. Jemand fährt mit Getränken über den Platz, und derselbe Mitarbeiter wartete am Grün von Loch 18, um uns zum Abschluss zu begrüßen. Wir kamen vor den meisten Mitarbeitern zur ersten Startzeit an, daher kann ich zu Pitching Green, Putting Green oder Driving Range aus eigener Erfahrung nichts sagen, aber der Proshop war gut sortiert. Die Übungsanlagen laut Datenlage sind eine 42-Stationen-Range mit 14 überdachten Plätzen und PGA-Trainern vor Ort. Die Terrasse mit Blick auf Loch 18 ist ein guter Ort zum Abschluss, mit freier Sicht auf das Schlussloch."
+        "text": "Der Service war eine Stärke. Jemand fährt mit Getränken über den Platz, und derselbe Mitarbeiter wartete am Grün von Loch 18, um uns zum Abschluss zu begrüßen. Wir kamen vor den meisten Mitarbeitern zur ersten Startzeit an, daher kann ich zu Pitching Green, Putting Green oder Driving Range aus eigener Erfahrung nichts sagen, aber der Proshop war gut sortiert. Die Übungsanlagen laut Clubangaben sind eine 42-Stationen-Range mit 14 überdachten Plätzen und PGA-Trainern vor Ort. Die Terrasse mit Blick auf Loch 18 ist ein guter Ort zum Abschluss, mit freier Sicht auf das Schlussloch."
       },
       {
         "alt": "Der Eingang und der Proshop bei T Golf Palma im Abendlicht",
@@ -310,7 +310,7 @@ const content = {
         "text": "9/10. T Golf Palma verdankte, wie ich finde, einen Teil seines frühen Rufs dem geteilten Namen mit T Golf Calvià. Die Runde selbst bewies das Gegenteil: Der Platzzustand, die Risiko-Belohnung-Löcher und der Schluss auf 15 und 18 machen ihn aus eigener Kraft zu einer genauso guten Runde. Er passt zu einem Spieler, der vom Abschlag aus mitdenken will, statt nur fest zu schwingen, mit mehreren Löchern, bei denen Distanzkontrolle wichtiger ist als Distanz."
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung von T Golf Palma wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von T Golf Palma klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -345,7 +345,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "T Golf Palma - Avis & Tarifs",
-      "description": "T Golf Palma à Majorque : design Jack Nicklaus, 6 027 m, état 9/10."
+      "description": "Haute saison 150 €, basse saison 80 €. Tracé Jack Nicklaus, 6 027 m des départs blancs, état 9/10."
     },
     "meta": {
       "badge": "Avis Parcours",
@@ -516,7 +516,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "T Golf Palma - Review & Tarief",
-      "description": "T Golf Palma op Mallorca: Jack Nicklaus-ontwerp, 6.027m, 9/10 conditie."
+      "description": "Piek €150, laag €80. Ontwerp van Jack Nicklaus, 6.027m vanaf wit, conditie 9/10."
     },
     "meta": {
       "badge": "Baanreview",
@@ -607,7 +607,7 @@ const content = {
         "text": "Service was een sterk punt. Iemand rijdt met drankjes over de baan, en dezelfde medewerker stond bij de green van hole 18 om ons te begroeten toen we klaar waren. We kwamen voor de eerste starttijd aan vóór de meeste medewerkers, dus ik kan uit eigen ervaring niets zeggen over de chipping green, putting green of driving range, maar de pro shop was goed gevuld. De oefenfaciliteiten volgens de gegevens zijn een range met 42 plekken waarvan 14 overdekt, met PGA-coaches aanwezig. Het terras met uitzicht op hole 18 is een goede plek om af te sluiten, met vrij zicht op de slothole."
       },
       {
-        "alt": "De entree en pro shop bij T Golf Palma in de avondschemering",
+        "alt": "De entree en pro shop bij T Golf Palma in het avondlicht",
         "caption": "De pro shop bij T Golf Palma, goed gevuld, met een optreden van de vaste kat van de club."
       },
       {
@@ -687,7 +687,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "T Golf Palma - Recension & Avgifter",
-      "description": "T Golf Palma på Mallorca: Jack Nicklaus-design, 6 027 m, 9/10 skick."
+      "description": "Högsäsong 150 €, lågsäsong 80 €. Jack Nicklaus-design, 6 027 m från vit tee, skick 9/10."
     },
     "meta": {
       "badge": "Banrecension",
@@ -765,11 +765,11 @@ const content = {
         "text": "Banans Skick"
       },
       {
-        "text": "Skicket var genomgående utmärkt, i klass med Calvià. Greenerna var snabba och små, och roughen håller fast klubban tillräckligt för att en missad fairway straffas, och nära greenen blir en svår chip ännu svårare av hur mycket greenerna kuperar sig. Vi spelade en mjuk dag eftersom sprinklerna hade kört mycket; när marken hårdnar blir några av de där chiparna ännu svårare."
+        "text": "Skicket var genomgående utmärkt, i klass med Calvià. Greenerna var snabba och små, och roughen håller fast klubban tillräckligt för att en missad fairway straffas, och nära greenen blir en svår chip ännu svårare av hur kuperade greenerna är. Vi spelade en mjuk dag eftersom sprinklerna hade kört mycket; när marken hårdnar blir några av de där chiparna ännu svårare."
       },
       {
         "alt": "Ett flygplan flyger över fairwayn och bunkrarna hos T Golf Palma, tallar i bakgrunden",
-        "caption": "Lugna fairways med ett flygplan ovanför. Banan ligger avskild från nästan allt annat på ön, så trots inflygningsrutten känns den aldrig nedbyggd."
+        "caption": "Lugna fairways med ett flygplan ovanför. Banan ligger avskild från nästan allt annat på ön, så trots inflygningsrutten känns den aldrig bebyggd."
       },
       {
         "text": "Service Och Anläggningar"
@@ -994,7 +994,7 @@ const content = {
         "text": "9/10。在我看来，T Golf Palma早期的名气有一部分来自和T Golf Calvià同名。而这一轮球本身证明并非如此：球场状态、风险与回报并存的球洞设计，加上第15洞和第18洞的收尾，凭自身实力就让这轮球同样精彩。这座球场适合愿意在发球台多动脑筋而不是一味用力挥杆的球手，有好几个洞距离控制比距离本身更重要。"
       },
       {
-        "title": "预订T Golf Palma前我会先知道的四件事",
+        "title": "预订 T Golf Palma 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",

@@ -61,7 +61,7 @@ const content = {
         "text": "Francisco Lopez Segalés diseñó Son Antem West, que abrió en 1995. Es par 72 y mide 6.293 metros desde las barras de atrás. El diseño es abierto, las calles son generosas y muchos golpes de salida no castigan demasiado si te sales un poco de línea. Eso lo hace accesible para grupos de nivel mixto y golfistas de vacaciones. Claramente fue pensado para eso."
       },
       {
-        "text": "Los hoyos que más destacan son los que van entre árboles. En esos, el golpe de salida es más estrecho, la línea importa más y el approach cambia según el lado de la calle en el que acabes. Las zonas más abiertas son agradables, pero no te obligan a pensar mucho desde el tee. Escoges un objetivo y pegas."
+        "text": "Los hoyos que más destacan son los que van entre árboles. En esos, el golpe de salida es más estrecho, la línea importa más y la aproximación cambia según el lado de la calle en el que acabes. Las zonas más abiertas son agradables, pero no te obligan a pensar mucho desde el tee. Escoges un objetivo y pegas."
       },
       {
         "alt": "Andy Griffiths observando a un cliente pegar un hierro en un hoyo arbolado de Son Antem West",
@@ -139,7 +139,7 @@ const content = {
         "text": "Preguntas frecuentes"
       },
       {
-        "text": "Caminar es sencillo aquí: el recorrido es llano y fácil a pie, y también hay buggy disponible. Son Antem West es ideal para golfistas de vacaciones y grupos de nivel mixto que buscan una vuelta agradable y accesible cerca de Palma; no es el campo a elegir si buscas específicamente un trazado que te ponga a prueba de principio a fin. Lo que sorprende a los visitantes: varios greens están elevados o inclinados en contra del jugador, y la bola se desliza bastante más después de aterrizar de lo que parece, así que un golpe bajo y rodado suele ser la opción más segura. La mejor hora de salida es entre semana por la mañana; los domingos pueden llenarse pronto porque el campo es popular entre los golfistas del resort."
+        "text": "Caminar es sencillo aquí: el recorrido es llano y fácil a pie, y también hay buggy disponible. Son Antem West es ideal para golfistas de vacaciones y grupos de nivel mixto que buscan una vuelta agradable y accesible cerca de Palma; no es el campo a elegir si buscas específicamente un trazado que te ponga a prueba de principio a fin. Lo que sorprende a los visitantes: varios greens están elevados o caen alejándose del jugador, y la bola se desliza bastante más después de aterrizar de lo que parece, así que un golpe bajo y rodado suele ser la opción más segura. La mejor hora de salida es entre semana por la mañana; los domingos pueden llenarse pronto porque el campo es popular entre los golfistas del resort."
       },
       {
         "text": "Veredicto"
@@ -319,7 +319,7 @@ const content = {
         "text": "Fazit"
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung von Son Antem West wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von Son Antem West klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -568,7 +568,7 @@ const content = {
         "text": "Bij het binnenrijden van het resort is de schaal meteen duidelijk. Woningen, veel groen, een golfacademy, padelbanen en een hotel. Het voelt als een volledige golfbestemming. De check-in was georganiseerd, het personeel behulpzaam en een klein winkeltje bij de ingang maakte koffie en een snack voor de ronde makkelijk. Om 7:45 is dat nuttig."
       },
       {
-        "text": "Op de baan opent de omgeving zich. De West Course ligt in het Mallorcaanse landschap bij Llucmajor, 15 tot 20 minuten van Palma. Vanaf de fairways zie je geen huizen, de Randa-berg ligt op de back nine in de achtergrond, en dieren zijn constant aanwezig. Konijnen kruisen regelmatig de fairways. Reigers en andere vogels zitten rond de waterholes. Het voelt niet als een suburbane golfbaan, en dat helpt."
+        "text": "Op de baan opent de omgeving zich. De West Course ligt in het Mallorcaanse landschap bij Llucmajor, 15 tot 20 minuten van Palma. Vanaf de fairways zie je geen huizen, de Randa-berg ligt op de back nine in de achtergrond, en dieren zijn constant aanwezig. Konijnen kruisen regelmatig de fairways. Reigers en andere vogels zitten rond de waterholes. Het voelt niet als een golfbaan in een buitenwijk, en dat helpt."
       },
       {
         "alt": "Vogels op de fairway van Son Antem West met water en green erachter, Mallorca",
@@ -592,7 +592,7 @@ const content = {
       },
       {
         "alt": "Approach naar hole 16 van Son Antem West, par 5 door de bomen, Mallorca",
-        "caption": "Naar de 16e. Een uphill par 5 die door de bomen slingert en eindigt bij een kleine, beschermde green."
+        "caption": "Naar de 16e. Een oplopende par 5 die door de bomen slingert en eindigt bij een kleine, beschermde green."
       },
       {
         "alt": "Hole 18 van Son Antem West met water links van de fairway, Mallorca",
@@ -739,7 +739,7 @@ const content = {
         "text": "Första intrycket"
       },
       {
-        "text": "När man kör in i resorten märks skalan direkt. Bostäder, stora grönytor, golfakademi, padelbanor och hotell. Det känns som en komplett golfdestination. Incheckningen var organiserad, personalen hjälpsam, och en liten butik nära ingången gjorde kaffe och snack före rundan enkelt. En bra detalj 7:45 på morgonen."
+        "text": "När man kör in i resorten märks skalan direkt. Bostäder, stora grönytor, golfakademi, padelbanor och hotell. Det känns som en komplett golfdestination. Incheckningen var organiserad, personalen hjälpsam, och en liten butik nära ingången gjorde kaffe och snack före rundan enkelt. En bra detalj 7.45 på morgonen."
       },
       {
         "text": "Ute på banan öppnar landskapet sig. West Course ligger i mallorkinsk landsbygd nära Llucmajor, 15 till 20 minuter från Palma. Inga hus syns från fairways, Randa-berget ligger i bakgrunden på back nine, och djurlivet finns där hela rundan. Kaniner korsar fairways regelbundet. Hagrar och andra fåglar syns runt vattenhålen. Det känns inte som en förortsbana, och det hjälper."
@@ -904,7 +904,7 @@ const content = {
         "caption": "West Course其中一个有水的球洞。球场位于Llucmajor，距离帕尔马约15-20分钟，四周开阔，看不到住宅。"
       },
       {
-        "text": "周日早上7:50到达时，1号洞发球台已经有三四组人在排队。我们特意订了早场，就是想避开度假村球场常见的慢节奏。但没有避开。"
+        "text": "周日早上7:50到达时，1号洞发球台已经有三四组人在排队。我们特意订了早场，就是想避开度假村球场常见的慢节奏。结果还是没避开。"
       },
       {
         "text": "这是你在Son Antem West开球前就应该知道的事。它是一个受欢迎、运营成熟、离帕尔马很近的度假村球场。带着这个预期来，你会享受这一轮。如果期待非常安静、完全不等的体验，可能会失望。"
@@ -1013,7 +1013,7 @@ const content = {
         "text": "结论"
       },
       {
-        "title": "预订 Son Antem West 前我会先知道的四件事",
+        "title": "预订 Son Antem West 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",

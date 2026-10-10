@@ -73,7 +73,7 @@ const data = {
     ],
     "unbooked": [
      "Nog niet geboekt",
-     "Wij stellen de beste golfbasis voor u voor"
+     "Wij stellen de beste uitvalsbasis voor golf voor u voor"
     ]
    }
   },
@@ -289,7 +289,7 @@ const data = {
     "Par 72 · David Kidd, 1999",
     "Langste par 5 van Spanje (609 m)"
    ],
-   "blurb": "Dramatische hoogteverschillen door de heuvels boven Camp de Mar. Het uitzicht is de kop, maar de strakke lijnen en hellende lies maken hem zwaarder dan de kaart doet vermoeden."
+   "blurb": "Dramatische hoogteverschillen door de heuvels boven Camp de Mar. Het uitzicht valt het meest op, maar de strakke lijnen en hellende lies maken hem zwaarder dan de kaart doet vermoeden."
   },
   "son-vida": {
    "facts": [

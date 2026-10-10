@@ -363,7 +363,7 @@ const data = {
     "可直达海滩"
    ],
    "why": "位于美丽的 Cala de Sant Vicenç 的中档酒店，与五星的 El Vicenç 在同一个小海湾。价格只是一小部分，海滩相同，到 Alcanada 20 分钟。",
-   "andy": "Cala de Sant Vicenç 是北部最美的地方之一。La Goleta 给您这个位置，却没有奢华价格。",
+   "andy": "Cala de Sant Vicenç 是北部最美的地方之一。La Goleta 让您住在同样的位置，价格却不奢华。",
    "golf": "Club de Golf Alcanada 20 分钟。Golf Pollença 10 分钟。",
    "travelTime": "距帕尔马机场 52 分钟",
    "subname": "Cala de Sant Vicenç"
@@ -584,7 +584,7 @@ const data = {
     "安静"
    ],
    "why": "Portixol 的村庄氛围，拥有马略卡一些最好的海鲜餐厅。步行 5 分钟到 Es Mollet。去球场需要开车。",
-   "andy": "帕尔马较安静的选择。可作为晚上的基地。到 Son Gual 25 分钟，适合早晨一轮。",
+   "andy": "帕尔马较安静的选择。晚上可以在这一带吃饭休闲。到 Son Gual 25 分钟，适合早晨一轮。",
    "golf": "Son Gual 25 分钟。Son Vida / Son Quint 20 分钟。T Golf Palma (Puntiró) 20 分钟。Real Golf de Bendinat 20 分钟。",
    "travelTime": "距帕尔马机场 15 分钟",
    "subname": "Portixol, 帕尔马"
@@ -644,7 +644,7 @@ const data = {
     "经典四星"
    ],
    "why": "帕尔马市中心的经典四星酒店，屋顶泳池可俯瞰海湾。到老城和主干道都方便。适合企业团队的好选择。",
-   "andy": "可靠、居中、务实。是高尔夫团队在帕尔马最常用的基地之一。到 Son Gual 20 分钟。",
+   "andy": "可靠、位置居中、务实。是高尔夫团队在帕尔马最常用的基地之一。到 Son Gual 20 分钟。",
    "golf": "Son Gual 20 分钟。T Golf Palma (Puntiró) 18 分钟。Son Vida / Son Quint 16 分钟。Real Golf de Bendinat 20 分钟。",
    "travelTime": "距帕尔马机场 18 分钟",
    "subname": "帕尔马市中心"
@@ -778,7 +778,7 @@ const data = {
     "经济型",
     "可直达海滩"
    ],
-   "why": "Port de Sóller 海湾边的三星经济型酒店。从索列尔镇出发的橙园电车是马略卡最令人愉快的体验之一。打球是一日游，而不是附近有球场群。",
+   "why": "Port de Sóller 海湾边的三星经济型酒店。从索列尔镇出发的橙园电车是马略卡最令人愉快的体验之一。打球需要专程一日往返，附近没有球场。",
    "andy": "西北部实惠的选择。Port de Sóller 是一个醒来就能面对的美丽海湾。把一两个有计划的打球日与在特拉蒙塔纳的真正时光结合起来。",
    "golf": "请把打球安排为从 Port de Sóller 出发的一日游。最佳球场取决于当天是朝帕尔马、西南部还是北部。",
    "travelTime": "距帕尔马机场 45 分钟",

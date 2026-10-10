@@ -61,7 +61,7 @@ const content = {
         "text": "Algunos hoyos que merecen jugarse dos veces"
       },
       {
-        "text": "El hoyo 6, el Green Monster, es el par 5 más largo de España. Cuando lo jugamos, el fairway estaba siendo mantenido por robots de mantenimiento que cortaban la hierba, y se podía apreciar realmente lo uniforme que es la superficie a esa escala. Teníamos el viento a favor en este hoyo y aun así requirió todo."
+        "text": "El hoyo 6, el Green Monster, es el par 5 más largo de España. Cuando lo jugamos, el fairway estaba siendo mantenido por robots de mantenimiento que cortaban la hierba, y se podía apreciar realmente lo uniforme que es la superficie a esa escala. Teníamos el viento a favor en este hoyo y aun así nos exigió todo."
       },
       {
         "alt": "Salida en el hoyo 7 de Golf de Andratx con muros de piedra frente al green",
@@ -85,7 +85,7 @@ const content = {
         "text": "Greens y condiciones"
       },
       {
-        "text": "Los greens estaban bien mantenidos y a buen ritmo. Bastante pendiente en varios de los hoyos más cortos, algo que se convertirá en un reto mayor a medida que los greens se aceleren en verano. Los búnkeres estaban en excelentes condiciones. Arena uniforme, bien rastrillada. El equipo de mantenimiento trabajaba en varias zonas durante la ronda, y los búnkeres mostraban dónde había estado el esfuerzo."
+        "text": "Los greens estaban bien mantenidos y a buena velocidad. Bastante pendiente en varios de los hoyos más cortos, algo que se convertirá en un reto mayor a medida que los greens se aceleren en verano. Los búnkeres estaban en excelentes condiciones. Arena uniforme, bien rastrillada. El equipo de mantenimiento trabajaba en varias zonas durante la vuelta, y los búnkeres mostraban dónde había estado el esfuerzo."
       },
       {
         "text": "Los buggies son modernos y están bien equipados. Vale la pena mencionarlo: alrededor del hoyo 16 noté que la pantalla del buggy parecía mostrar dónde había quedado nuestra bola en el green. No estoy del todo seguro de que eso fuera exactamente lo que hacía, pero a partir de ese momento pareció seguir la posición de la bola con cierta precisión. Un detalle pequeño, pero útil."
@@ -287,7 +287,7 @@ const content = {
         "text": "Fazit"
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung von Golf de Andratx wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von Golf de Andratx klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -669,13 +669,13 @@ const content = {
         "text": "Vi slog av strax efter klockan 8 som ett av de första sällskapen. En lite ovanlig start: underhållet hade stängt de två första hålen, så vi började på det tredje. Träningsanläggningen ligger på andra sidan vägen från klubbhuset, vilket gör uppvärmningen lite annorlunda, men det finns ett riktigt bra område för alla tänkbara kortspelsslag i utmärkt skick och en driving range på en brant sluttning som gör sitt jobb att lösa upp kroppen inför en runda."
       },
       {
-        "text": "Golfbilar är obligatoriska före klockan 14 och banan var välbesökt tidigt på morgonen. Speltempot var bra, men morgonen hade tidvis en lite stressad känsla. Under högsäsong är det vanligt överallt, särskilt på en av de bästa och mest efterfrågade banorna i sydväst, och det märktes. Det var en bra morgon ute, även om ett par saker kunde ha flutit lite smidigare."
+        "text": "Golfbilar är obligatoriska före klockan 14 och banan var välbesökt tidigt på morgonen. Speltempot var bra, men morgonen hade tidvis en lite stressad känsla. När säsongen drar igång är det vanligt överallt, särskilt på en av de bästa och mest efterfrågade banorna i sydväst, och det märktes. Det var en bra morgon ute, även om ett par saker kunde ha flutit lite smidigare."
       },
       {
         "text": "Hur banan spelar"
       },
       {
-        "text": "Golf Andratx förtjänar sitt rykte som en av de svårare banorna på ön. Flera kortare par 4 ser enkla ut tills man ser var hindren är placerade. Bäckar och vatten korsar fairways i stället för att löpa längs dem, så distanskontrollen från avslagsplatsen väger tyngre än längden. Att vara lite fel på yardaget innebär ofta vatten eller problem."
+        "text": "Golf Andratx förtjänar sitt rykte som en av de svårare banorna på ön. Flera kortare par 4 ser enkla ut tills man ser var hindren är placerade. Bäckar och vatten korsar fairways i stället för att löpa längs dem, så distanskontrollen från avslagsplatsen väger tyngre än längden. En liten miss i längd innebär ofta vatten eller problem."
       },
       {
         "text": "Höjdskillnaderna är ständigt närvarande. Avslag där bollen försvinner ur sikte, inslag där man förbinder sig till en siffra utan att se flaggan. Par 3-hålen spelar i synnerhet väldigt annorlunda mot vad som står på scorekortet, på grund av de fall som är inblandade. En GPS eller banplan är verkligt värdefull här."
@@ -694,7 +694,7 @@ const content = {
         "text": "Hål 6, Green Monster, är det längsta par 5-hålet i Spanien. När vi spelade sköttes fairway av greenkeeperrobotar som klippte gräset, och man kunde verkligen se hur jämnt ytorna är på den skalan. Vi hade vinden i ryggen på det här hålet och det tog ändå allt vi hade."
       },
       {
-        "alt": "Avslag på hål 7 vid Golf de Andratx med stenväggar framför greenen",
+        "alt": "Utslag på hål 7 vid Golf de Andratx med stenmurar framför greenen",
         "caption": "Hål 7. Stenväggarna blockerar sikten mot greenen från avslagsplatsen. Man väljer en linje och genomför slaget utan att se vart man är på väg."
       },
       {
@@ -753,7 +753,7 @@ const content = {
         "text": "Vanliga frågor"
       },
       {
-        "text": "Handicapgränsen är 28 för herrar och 36 för damer, kontrolleras vid bokning. Buggy är obligatoriskt före klockan 14; att gå är tillåtet efter det. En daglig förbundsavgift (3 €) gäller om du inte är medlem i det spanska förbundet. Denna bana passar självsäkra golfare som uppskattar en strategisk utmaning mer än längd: avståndskontroll från tee betyder mer än kraft. Vad som överraskar förstagångsbesökare: trots att större delen av rundan spelas högt uppe i bergen syns havsutsikten över Camp de Mar bara från hål 2, så bygg inte dina förväntningar kring vattenutsikt. Lokalt tips: ta med GPS eller en banplan, eftersom flera inspel är delvis blinda."
+        "text": "Handicapgränsen är 28 för herrar och 36 för damer, kontrolleras vid bokning. Buggy är obligatorisk före klockan 14; att gå är tillåtet efter det. En daglig förbundsavgift (3 €) gäller om du inte är medlem i det spanska förbundet. Denna bana passar självsäkra golfare som uppskattar en strategisk utmaning mer än längd: avståndskontroll från tee betyder mer än kraft. Vad som överraskar förstagångsbesökare: trots att större delen av rundan spelas högt uppe i bergen syns havsutsikten över Camp de Mar bara från hål 2, så bygg inte dina förväntningar kring vattenutsikt. Lokalt tips: ta med GPS eller en banplan, eftersom flera inspel är delvis blinda."
       },
       {
         "text": "Omdöme"
@@ -824,7 +824,7 @@ const content = {
         "caption": "第 8 洞，A Love of Mallorca。站在球场最高点之一，俯瞰马略卡西南部的全貌。"
       },
       {
-        "text": "我们在早上 8 点刚过就出发，是最早一批球队之一。开局有点特别：场地维护把前两洞关闭了，所以我们从第 3 洞开始。练习设施在会所对面的马路另一侧，热身动线有些绕，但短杆练习区的条件很好，什么样的短杆击球都能练到，陡坡上的练习场也能帮你在开球前把身体打开。"
+        "text": "我们在早上 8 点刚过就出发，是最早出发的几组之一。开局有点特别：场地维护把前两洞关闭了，所以我们从第 3 洞开始。练习设施在会所对面的马路另一侧，热身动线有些绕，但短杆练习区的条件很好，什么样的短杆击球都能练到，陡坡上的练习场也能帮你在开球前把身体打开。"
       },
       {
         "text": "下午 2 点前必须乘坐球车，球场从一早就相当繁忙。整体节奏还算流畅，但上午偶尔有些赶的感觉。进入旺季之后这在哪里都很常见，在西南部最好、最受欢迎的球场之一尤其如此，当天也不例外。总体是愉快的一个上午，只是有些环节可以再顺一点。"
@@ -867,7 +867,7 @@ const content = {
       },
       {
         "alt": "Golf de Andratx 第 2 洞，背景可见 Camp del Mar",
-        "caption": "第 2 洞。尽管大部分球洞都在高山之中，这是整轮比赛第一次看到海。Camp del Mar 在远处。一个很好的收尾画面。"
+        "caption": "第 2 洞。尽管大部分球洞都在高山之中，这是整轮球第一次看到海。Camp del Mar 在远处。一个很好的收尾画面。"
       },
       {
         "text": "果岭与场地状态"
@@ -917,7 +917,7 @@ const content = {
         "text": "总评"
       },
       {
-        "title": "预订 Golf de Andratx 前我会先知道的四件事",
+        "title": "预订 Golf de Andratx 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",

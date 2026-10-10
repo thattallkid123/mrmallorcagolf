@@ -72,7 +72,7 @@ const data = {
     "Familjeresort",
     "Golf de Andratx 5 min"
    ],
-   "why": "Femstjärnigt resort fem minuter från Golf de Andratx. Stranden går att promenera till. Bra värde om hälften av gruppen spelar golf och hälften inte.",
+   "why": "Femstjärnigt resort fem minuter från Golf de Andratx. Stranden går att promenera till. Prisvärt om hälften av gruppen spelar golf och hälften inte.",
    "andy": "En sak att planera runt: Golf de Andratx är öns svåraste bana, med en handicapgräns på 28. Kombinera med de enklare rundorna i Santa Ponsa för svagare spelare.",
    "golf": "Golf de Andratx 5 min. T Golf Calvià 20 min. Santa Ponsa-området 25 min.",
    "travelTime": "30 min från Palmas flygplats",
@@ -413,7 +413,7 @@ const data = {
     "Capdepera Golf 5 min"
    ],
    "why": "Restaurerad lantegendom 5 minuter från Capdepera Golf. Privat pool, lokala produkter, en genuin känsla av att vara utanför de upptrampade stigarna med bra golf utanför dörren.",
-   "andy": "Finca-alternativet i öster. Ingen strand, men en fantastisk pool, total tystnad och en utmärkt golfbas. Kombinera med en kväll på VORO i närheten.",
+   "andy": "Finca-alternativet i öster. Ingen strand, men en fantastisk pool, total tystnad och ett utmärkt läge för golf. Kombinera med en kväll på VORO i närheten.",
    "golf": "Capdepera Golf 5 min. Canyamel Golf 15 min. Club de Golf Pula 15 min.",
    "travelTime": "60 min från Palmas flygplats",
    "subname": "Capdepera"
@@ -424,7 +424,7 @@ const data = {
     "Trackman-range",
     "Golfpaket"
    ],
-   "why": "Hotell precis på Pula Golf, med fullständiga träningsanläggningar inklusive Trackman-teknik. Åtta European Tour-tävlingar har arrangerats här. En okomplicerad golfbas.",
+   "why": "Hotell precis på Pula Golf, med fullständiga träningsanläggningar inklusive Trackman-teknik. Åtta European Tour-tävlingar har arrangerats här. Ett okomplicerat golfboende.",
    "andy": "Om Pula står på schemat och gruppen vill ha allt på ett ställe är det här svaret. Träningsanläggningarna är bland de bästa på Mallorca.",
    "golf": "Pula Golf på plats. Golf Club Son Servera 10 min. Capdepera Golf 15 min. Canyamel Golf 20 min.",
    "travelTime": "60 min från Palmas flygplats",
@@ -548,7 +548,7 @@ const data = {
     "Gamla stan"
    ],
    "why": "Ett palats från 1800-talet på Carrer Born, Palmas modernaste gata. Utsmyckad innergård, utmärkt läge för gamla stan, katedralen och restaurangerna.",
-   "andy": "Born placerar dig mitt i Palmas kvällar. Son Gual 20 minuter för en tidig morgonrunda, sedan tillbaka för en lång lunch.",
+   "andy": "Från Born har du Palmas kvällsliv runt hörnet. Son Gual 20 minuter för en tidig morgonrunda, sedan tillbaka för en lång lunch.",
    "golf": "Son Gual 20 min. T Golf Palma (Puntiró) 20 min. Son Vida / Son Quint / Son Muntaner 18 min. Real Golf de Bendinat 20 min.",
    "travelTime": "20 min från Palmas flygplats",
    "subname": "Palmas gamla stan"
@@ -731,7 +731,7 @@ const data = {
    ],
    "why": "Fyrstjärnigt hotell i centrala Sóller, en av Mallorcas mest charmiga städer. Apelsinmarknaden, den historiska spårvagnen till Port de Sóller och bra restauranger utanför dörren.",
    "andy": "En mer tillgänglig prisnivå för nordväst. För grupper som vill ha Sóller-upplevelsen utan Jumeirahs priser. Golfen måste planeras kring körningen.",
-   "golf": "Golf är en dagsutflykt från Sóller, inte en uppsättning banor i närheten. Son Termes, Golf de Andratx, Alcanada eller Pollença kan passa beroende på den bredare reseplanen.",
+   "golf": "Golf blir en dagsutflykt från Sóller, det finns inga banor i närheten. Son Termes, Golf de Andratx, Alcanada eller Pollença kan passa beroende på den bredare reseplanen.",
    "travelTime": "35 min från Palmas flygplats",
    "subname": "Sóller"
   },
@@ -778,7 +778,7 @@ const data = {
     "Budget",
     "Tillgång till stranden"
    ],
-   "why": "Trestjärnigt budgethotell vid viken i Port de Sóller. Apelsinlundsspårvagnen från Sóller är en av de roligaste upplevelserna på Mallorca. Golf är en dagsutflykt och inte en uppsättning banor i närheten.",
+   "why": "Trestjärnigt budgethotell vid viken i Port de Sóller. Apelsinlundsspårvagnen från Sóller är en av de roligaste upplevelserna på Mallorca. Golf blir en dagsutflykt, det finns inga banor i närheten.",
    "andy": "Det prisvärda svaret för nordväst. Port de Sóller är en vacker vik att vakna vid. Kombinera en eller två planerade golfdagar med riktig tid i Tramuntana.",
    "golf": "Planera golf som en dagsutflykt från Port de Sóller. Det bästa banvalet beror på om dagen går mot Palma, sydväst eller norr.",
    "travelTime": "45 min från Palmas flygplats",

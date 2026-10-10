@@ -105,6 +105,7 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 
 - English idioms translated word for word: "the course flatters you" (it plays easier than it is, not "schmeichelt Ihnen" / "vous flatte" / 讨好你), "play on autopilot" (zh: 几乎不用动脑, not 自动驾驶), "a fair trade" (a fair compromise, not "Tausch" / "ruil" / 交换), "shake off the flight" (recover from it), "once your game is warm" (once you have played yourself in).
 - Golf words that do not carry over: "the greens rolled pure" (de "rollten sauber", es "rodaban muy bien", not "rein" / "puros" / 纯净), "the halfway hut" (es "parada a mitad de vuelta", fr "pause à mi-parcours"), "a long hitter" (de Longhitter, nl lange hitter, not "weiter Schläger" / "lange slager"), "reachable" on a par 5 means in two.
+- More idioms seen in the course reviews: "earns every metre of its length" (you feel every metre), "not an afterthought" (Swedish "ingen eftertanke" means "no reflection"; use "ingen bisak"), "the tee sheet" (es "hoja de salidas", nl "startlijst", sv "startlista"), "a full tee sheet" (fr "une feuille de départs complète", not "un départ complet").
 - Short headings that drop the noun: "T Golf Palma: the quiet one" needs the noun back ("el campo tranquilo", "le parcours calme", "de rustige baan", "den lugna banan").
 
 - de "Woran würden Sie den Erfolg dieser Reise messen?" for "What would make this trip a success?": use "Was würde diese Reise für Sie zu einem Erfolg machen?"
@@ -119,7 +120,13 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 - Spanish "Conforma tu par" (shape your par) for "Take your par": "Confórmate con el par".
 - Swedish: score par is neuter ("nöj dig med par"), tee forms without the plural article ("från gul tee", "från främre tee"), times written 8.16 not 8:16, players are "lottade" not "ihopkopplade".
 
-### 8. Typography
+### 8. Text that no longer matches the English
+
+- A translation can be marked as checked and still carry an older English version. In October 2026 the Son Gual review intro said "why Obama and Nadal keep coming back" in all six languages, a line the English had dropped (and an overstatement: Obama played once). When you read a page, compare each translation with today's English, not with what the sentence is about.
+- Search descriptions (`metadata.description`) were shortened in several languages and lost the price, which is the number the English leads with for click-through. Keep the numbers.
+- Recurring headings read the same on every page in a language ("Vier Dinge, die ich vor der Buchung von … klären würde", "预订 … 前值得先知道的四件事"). If you change one, change them all.
+
+### 9. Typography
 
 - French: a space before ? ! : ; and « guillemets » around quoted labels; apostrophes as ’.
 - German quotation marks „…“; Dutch ‘…’ for quoted labels.
@@ -134,7 +141,7 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 5. Form of address matches the table, all the way through the page.
 6. Golf terms match the vocabulary table.
 7. Names, accents and place spellings are intact.
-8. Typography follows section 8.
+8. Typography follows section 9.
 9. The checks pass (including `check:translation-mistakes`), then add a row to the Review Log in `docs/translation-workflow.md` with the model that wrote it and the model that read it.
 
 Translations written by a model other than Opus get a full Opus read before they go live (see the Review Log for why).

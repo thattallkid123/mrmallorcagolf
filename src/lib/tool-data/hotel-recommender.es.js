@@ -72,7 +72,7 @@ const data = {
     "Resort familiar",
     "Golf de Andratx a 5 min"
    ],
-   "why": "Resort de cinco estrellas a cinco minutos del Golf de Andratx. La playa se puede recorrer a pie. Buena relación calidad-precio si la mitad del grupo juega y la otra mitad no.",
+   "why": "Resort de cinco estrellas a cinco minutos del Golf de Andratx. Se puede ir a la playa a pie. Buena relación calidad-precio si la mitad del grupo juega y la otra mitad no.",
    "andy": "Una cosa que conviene planificar: el Golf de Andratx es el campo más difícil de la isla, con un límite de hándicap de 28. Para los jugadores menos expertos, combine con las rondas más fáciles de Santa Ponsa.",
    "golf": "Golf de Andratx 5 min. T Golf Calvià 20 min. grupo de Santa Ponsa 25 min.",
    "travelTime": "30 min del aeropuerto de Palma",

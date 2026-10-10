@@ -1,38 +1,270 @@
 {
   "_about": "Translation mistakes found in review that a pattern can catch. Read by scripts/check-translation-mistakes.mjs, which fails on any match in site code. Each pattern must only match the wrong form in its own language (it is matched against every file, not per locale). When a review finds a new mechanical mistake, add it here and to docs/translation-style-guide.md.",
   "rules": [
-    { "lang": "de", "pattern": "\\b(Stadtbasis|Küstenbasis|Golf-?[Bb]asis)\\b", "fix": "In der Stadt / An der Küste / Golfhotel (\"base\" is not Basis)" },
-    { "lang": "de", "pattern": "\\bJenseits des Golfs\\b", "fix": "Neben dem Golf" },
-    { "lang": "de", "pattern": "schmeichelt (Ihnen|dir) der Platz|der Platz schmeichelt", "fix": "der Platz wirkt leichter, als er ist" },
-    { "lang": "de", "pattern": "\\bim Autopiloten\\b", "fix": "auf Autopilot" },
-    { "lang": "de", "pattern": "\\bdrumherum\\b", "fix": "rundherum / darum herum (Sie register)" },
-    { "lang": "de", "pattern": "\\bweiten Schläger\\b", "fix": "Longhitter" },
-    { "lang": "de", "pattern": "Grüns? (waren|war) sehr rein", "fix": "rollten sehr sauber" },
-    { "lang": "es", "pattern": "\\bConforma tu par\\b", "fix": "Confórmate con el par" },
-    { "lang": "es", "pattern": "\\bcomer junto\\b", "fix": "comer juntos" },
-    { "lang": "es", "pattern": "\\bpracticar junto\\b", "fix": "practicar juntos" },
-    { "lang": "es", "pattern": "\\bBase (en la ciudad|de golf)\\b", "fix": "En la ciudad / Hotel de golf" },
-    { "lang": "es", "pattern": "\\bPatrón de vuelos\\b", "fix": "Llegada del grupo" },
-    { "lang": "es", "pattern": "greens eran muy puros", "fix": "rodaban muy bien" },
-    { "lang": "fr", "pattern": "\\bBase (en ville|côtière|golf)\\b", "fix": "En ville / Sur la côte / Hôtel de golf" },
-    { "lang": "fr", "pattern": "parcours vous flatte", "fix": "le parcours paraît plus facile qu'il ne l'est" },
-    { "lang": "fr", "pattern": "étaient très purs", "fix": "roulaient très bien" },
-    { "lang": "nl", "pattern": "\\bBasis in de stad\\b", "fix": "In de stad (Golfbasis is caught by the de rule)" },
-    { "lang": "nl", "pattern": "\\bVluchtpatroon\\b", "fix": "Aankomst van de groep" },
-    { "lang": "nl", "pattern": "vleit de baan", "fix": "lijkt de baan makkelijker dan hij is" },
-    { "lang": "nl", "pattern": "\\blange slager\\b", "fix": "lange hitter" },
-    { "lang": "nl", "pattern": "plezier aan (zou )?beleven", "fix": "van genieten" },
-    { "lang": "sv", "pattern": "\\bronder\\b", "fix": "rundor (\"ronder\" is Norwegian/Danish)" },
-    { "lang": "sv", "pattern": "\\bfrån de (gula|vita|röda|blå|bakre|främre) tee\\b", "fix": "från gul tee / från bakre tee" },
-    { "lang": "sv", "pattern": "\\bihopkopplade\\b", "fix": "ihoplottade" },
-    { "lang": "sv", "pattern": "\\bert samtal\\b", "fix": "vårt samtal / ditt (du register)" },
-    { "lang": "sv", "pattern": "\\bBas i staden\\b|\\bGolfbas\\b", "fix": "I staden / Golfhotell" },
-    { "lang": "sv", "pattern": "smickrar banan", "fix": "ser banan lättare ut än den är" },
-    { "lang": "sv", "pattern": "\\bTa din par\\b", "fix": "Nöj dig med par" },
-    { "lang": "zh", "pattern": "据点", "fix": "市中心 / 高尔夫度假酒店 (据点 sounds military)" },
-    { "lang": "zh", "pattern": "自动驾驶", "fix": "几乎不用动脑" },
-    { "lang": "zh", "pattern": "讨好你", "fix": "显得比实际容易" },
-    { "lang": "zh", "pattern": "夜生活之夜", "fix": "夜间外出" },
-    { "lang": "zh", "pattern": "滚动纯净|果岭本身很纯", "fix": "滚动顺畅" }
+    {
+      "lang": "de",
+      "pattern": "\\b(Stadtbasis|Küstenbasis|[Gg]olf-?[Bb]asis)\\b",
+      "fix": "In der Stadt / Golfhotel / Standort für Golf (de); uitvalsbasis voor golf (nl). \"base\" is not Basis"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\bJenseits des Golfs\\b",
+      "fix": "Neben dem Golf"
+    },
+    {
+      "lang": "de",
+      "pattern": "schmeichelt (Ihnen|dir) der Platz|der Platz schmeichelt",
+      "fix": "der Platz wirkt leichter, als er ist"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\bim Autopiloten\\b",
+      "fix": "auf Autopilot"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\bdrumherum\\b",
+      "fix": "rundherum / darum herum (Sie register)"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\bweiten Schläger\\b",
+      "fix": "Longhitter"
+    },
+    {
+      "lang": "de",
+      "pattern": "Grüns? (waren|war) sehr rein",
+      "fix": "rollten sehr sauber"
+    },
+    {
+      "lang": "es",
+      "pattern": "\\bConforma tu par\\b",
+      "fix": "Confórmate con el par"
+    },
+    {
+      "lang": "es",
+      "pattern": "\\bcomer junto\\b",
+      "fix": "comer juntos"
+    },
+    {
+      "lang": "es",
+      "pattern": "\\bpracticar junto\\b",
+      "fix": "practicar juntos"
+    },
+    {
+      "lang": "es",
+      "pattern": "\\bBase (en la ciudad|de golf)\\b",
+      "fix": "En la ciudad / Hotel de golf"
+    },
+    {
+      "lang": "es",
+      "pattern": "\\bPatrón de vuelos\\b",
+      "fix": "Llegada del grupo"
+    },
+    {
+      "lang": "es",
+      "pattern": "greens eran muy puros",
+      "fix": "rodaban muy bien"
+    },
+    {
+      "lang": "fr",
+      "pattern": "\\bBase (en ville|côtière|golf)\\b",
+      "fix": "En ville / Sur la côte / Hôtel de golf"
+    },
+    {
+      "lang": "fr",
+      "pattern": "parcours vous flatte",
+      "fix": "le parcours paraît plus facile qu'il ne l'est"
+    },
+    {
+      "lang": "fr",
+      "pattern": "étaient très purs",
+      "fix": "roulaient très bien"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\\bBasis in de stad\\b",
+      "fix": "In de stad (Golfbasis is caught by the de rule)"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\\bVluchtpatroon\\b",
+      "fix": "Aankomst van de groep"
+    },
+    {
+      "lang": "nl",
+      "pattern": "vleit de baan",
+      "fix": "lijkt de baan makkelijker dan hij is"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\\blange slager\\b",
+      "fix": "lange hitter"
+    },
+    {
+      "lang": "nl",
+      "pattern": "plezier aan (zou )?beleven",
+      "fix": "van genieten"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bronder\\b",
+      "fix": "rundor (\"ronder\" is Norwegian/Danish)"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bfrån de (gula|vita|röda|blå|bakre|främre) tee\\b",
+      "fix": "från gul tee / från bakre tee"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bihopkopplade\\b",
+      "fix": "ihoplottade"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bert samtal\\b",
+      "fix": "vårt samtal / ditt (du register)"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bBas i staden\\b|\\bGolfbas\\b",
+      "fix": "I staden / Golfhotell"
+    },
+    {
+      "lang": "sv",
+      "pattern": "smickrar banan",
+      "fix": "ser banan lättare ut än den är"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bTa din par\\b",
+      "fix": "Nöj dig med par"
+    },
+    {
+      "lang": "zh",
+      "pattern": "据点",
+      "fix": "市中心 / 高尔夫度假酒店 (据点 sounds military)"
+    },
+    {
+      "lang": "zh",
+      "pattern": "自动驾驶",
+      "fix": "几乎不用动脑"
+    },
+    {
+      "lang": "zh",
+      "pattern": "讨好你",
+      "fix": "显得比实际容易"
+    },
+    {
+      "lang": "zh",
+      "pattern": "夜生活之夜",
+      "fix": "夜间外出"
+    },
+    {
+      "lang": "zh",
+      "pattern": "滚动纯净|果岭本身很纯",
+      "fix": "滚动顺畅"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\bschmeichelt (dieser|der) Platz\\b",
+      "fix": "wirkt leichter, als er ist"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\bfairer Tausch\\b",
+      "fix": "fairer Kompromiss"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\bverdient (er )?jeden seiner Meter\\b",
+      "fix": "Sie spüren jeden Meter (\"earns every metre\" is an idiom)"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\blaut Datenlage\\b",
+      "fix": "laut Clubangaben"
+    },
+    {
+      "lang": "es",
+      "pattern": "\\b(este )?campo te halaga\\b",
+      "fix": "parece más fácil de lo que es"
+    },
+    {
+      "lang": "es",
+      "pattern": "\\bse gana cada metro\\b",
+      "fix": "notas cada metro"
+    },
+    {
+      "lang": "es",
+      "pattern": "\\bse llene el tee sheet\\b",
+      "fix": "la hoja de salidas"
+    },
+    {
+      "lang": "fr",
+      "pattern": "\\bmérite chaque mètre\\b",
+      "fix": "chaque mètre se fait sentir"
+    },
+    {
+      "lang": "fr",
+      "pattern": "\\bun départ complet\\b",
+      "fix": "une feuille de départs complète"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\\bverdient (hij )?elke meter\\b",
+      "fix": "voel je elke meter"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\\bhet tee sheet\\b",
+      "fix": "de startlijst"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\\bsuburbane\\b",
+      "fix": "in een buitenwijk"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bförtjänar (den )?varje meter\\b",
+      "fix": "känner du varje meter"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bIngen eftertanke\\b",
+      "fix": "ingen bisak (\"not an afterthought\")"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bnaturmonument\\b",
+      "fix": "naturminne"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\b(kl\\.|klockan) \\d{1,2}:\\d{2}\\b",
+      "fix": "Swedish writes times 8.16, not 8:16"
+    },
+    {
+      "lang": "zh",
+      "pattern": "另一种对话",
+      "fix": "感觉完全不同"
+    },
+    {
+      "lang": "zh",
+      "pattern": "提出真正的问题",
+      "fix": "足以考验"
+    },
+    {
+      "lang": "zh",
+      "pattern": "值得每一码",
+      "fix": "每一米都能感受到"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bgolfbas(en)?\\b",
+      "fix": "området för golfen / boende nära banorna"
+    }
   ]
 }

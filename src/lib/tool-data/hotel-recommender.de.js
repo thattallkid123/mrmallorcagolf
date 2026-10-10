@@ -97,7 +97,7 @@ const data = {
     "Puerto Portals in der Nähe"
    ],
    "why": "Designorientiertes Boutique-Hotel neben einer privaten Bucht in Portals Nous. Themensuiten, Day Club, Blumenpool. Abends bietet der Yachthafen von Puerto Portals Abwechslung.",
-   "andy": "T Golf Calvià liegt 10 Minuten landeinwärts, die Platzgruppe von Santa Ponsa 15 Minuten. Port Adriano eignet sich gut als Abendessen-Basis unter der Woche.",
+   "andy": "T Golf Calvià liegt 10 Minuten landeinwärts, die Platzgruppe von Santa Ponsa 15 Minuten. Port Adriano ist unter der Woche eine gute Adresse zum Abendessen.",
    "golf": "Real Golf de Bendinat 10 Min. T Golf Calvià 10 Min. Son Vida 18 Min.",
    "travelTime": "15 Min. vom Flughafen Palma",
    "subname": "Portals Nous"
@@ -682,7 +682,7 @@ const data = {
     "Historisches Herrenhaus"
    ],
    "why": "Zwei Herrenhäuser aus Stein aus dem 16. Jahrhundert oberhalb von Deià. Das berühmteste Boutique-Hotel der Insel. David Bowie, Robert Graves und Prinzessin Diana waren hier zu Gast.",
-   "andy": "Keine Basis für eine Golfreise. Eines der besten Hotels Spaniens. Funktioniert gut als 2 Nächte im Nordwesten, bevor es für die Runden in den Südwesten weitergeht.",
+   "andy": "Keine Basis für eine Golfreise. Eines der besten Hotels Spaniens. Gut für 2 Nächte im Nordwesten, bevor es für die Runden in den Südwesten weitergeht.",
    "golf": "Golfrunden müssen als ganztägige Ausflüge geplant werden. Son Termes, Golf de Andratx, Alcanada und Pollença können je nach genauer Route alle sinnvoll sein.",
    "travelTime": "60 Min. vom Flughafen Palma",
    "subname": "Ein Belmond Hotel, Deià"
@@ -778,7 +778,7 @@ const data = {
     "Günstig",
     "Strandzugang"
    ],
-   "why": "Drei-Sterne-Budgethotel an der Bucht von Port de Sóller. Die Orangenhain-Straßenbahn von Sóller ist eines der schönsten Erlebnisse auf Mallorca. Golf ist ein Tagesausflug und keine Platzgruppe in der Nähe.",
+   "why": "Drei-Sterne-Budgethotel an der Bucht von Port de Sóller. Die Orangenhain-Straßenbahn von Sóller ist eines der schönsten Erlebnisse auf Mallorca. Golf bedeutet hier einen Tagesausflug, Plätze in der Nähe gibt es nicht.",
    "andy": "Die erschwingliche Antwort für den Nordwesten. Port de Sóller ist eine wunderschöne Bucht zum Aufwachen. Verbinden Sie ein oder zwei geplante Golftage mit echter Zeit in der Tramuntana.",
    "golf": "Planen Sie Golf als Tagesausflug von Port de Sóller aus. Die beste Platzwahl hängt davon ab, ob der Tag Richtung Palma, Südwesten oder Norden führt.",
    "travelTime": "45 Min. vom Flughafen Palma",

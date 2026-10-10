@@ -73,7 +73,7 @@ const data = {
     ],
     "unbooked": [
      "Inte bokat än",
-     "Vi föreslår den bästa golfbasen åt dig"
+     "Vi föreslår det bästa området för golfen åt dig"
     ]
    }
   },

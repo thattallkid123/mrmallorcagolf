@@ -526,7 +526,7 @@ const content = {
         "text": "7/10. Son Vida est le plus ancien parcours de Majorque et il a accueilli deux Open de Baleares, dont l'un a été remporté par Seve Ballesteros en play-off. Des greens en pente à deux niveaux exigent la bonne distance à chaque approche, les dogleg demandent un plan à certains départs, et les six derniers trous offrent l'espace et les choix qui manquent aux 12 premiers. Il convient aux golfeurs qui veulent de l'histoire et une partie pratique depuis le Sheraton. Il convient moins à ceux qui veulent de l'espace ouvert sur chaque trou, car les 12 premiers sont les plus serrés."
       },
       {
-        "title": "Quatre choses que je vérifierais avant de réserver Son Vida",
+        "title": "Quatre choses que je voudrais savoir avant de réserver Son Vida",
         "items": [
           [
             "Meilleure heure de départ",
@@ -1081,7 +1081,7 @@ const content = {
         "text": "7/10。Son Vida 是马略卡最古老的球场，承办过两届巴利阿里公开赛，其中一届由塞维·巴列斯特罗斯在加洞赛中夺冠。有坡度的双层果岭让每一次进攻杆都需要准确的距离，狗腿洞要求你在某些发球台上做好规划，而后六洞拥有前12洞缺少的空间和选择。它适合想要历史感、又想从 Sheraton 出发打一场方便球局的球手。对想要每个洞都开阔的人来说就不太合适，因为前12洞是最窄的。"
       },
       {
-        "title": "预订 Son Vida 之前我会想知道的四件事",
+        "title": "预订 Son Vida 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",

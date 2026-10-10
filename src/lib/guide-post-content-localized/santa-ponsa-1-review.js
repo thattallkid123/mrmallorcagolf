@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Santa Ponsa 1 - Reseña & Tarifas",
-      "description": "Santa Ponsa 1 en Mallorca: historia de Tour, fairways amplios y tarifas."
+      "description": "Santa Ponsa 1: 77-126 €, par 72, uno de los campos más largos de Europa. Sede del DP World Tour en 2021."
     },
     "meta": {
       "badge": "Análisis del campo",
@@ -56,7 +56,7 @@ const content = {
         "text": "Con 590 metros, el 10 es uno de los pares 5 más largos de Europa. Jugado contra el viento se siente todavía más largo. Hay una versión muy satisfactoria de este hoyo - driver, híbrido, wedge - y otra bastante menos agradable si uno de esos tres golpes falla. Los pares 3 son el extremo opuesto: largos y con greens pequeños. Aquí se trata más de limitar daños que de buscar birdies."
       },
       {
-        "caption": "El trazado. En un día tranquilo, este campo te halaga. Añade viento y se gana cada metro de su longitud."
+        "caption": "El trazado. En un día tranquilo, este campo parece más fácil de lo que es. Con viento, notas cada metro de su longitud."
       },
       {
         "text": "La conexión con el Tour europeo"
@@ -147,7 +147,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Santa Ponsa 1 - Review & Gebühren",
-      "description": "Santa Ponsa 1 auf Mallorca: Tour-Geschichte, breite Fairways, Gebühren."
+      "description": "Santa Ponsa 1: 77-126 €, Par 72, einer der längsten Plätze Europas. 2021 Austragungsort der DP World Tour."
     },
     "meta": {
       "badge": "Platzbewertung",
@@ -200,7 +200,7 @@ const content = {
         "text": "Mit 590 Metern ist die 10 eines der längsten Par 5 Europas. Gegen den Wind spielt es sich noch länger. Es gibt eine sehr befriedigende Version dieses Lochs - Driver, Hybrid, Wedge - und eine deutlich weniger befriedigende Version, bei der einer dieser drei Schläge misslingt. Die Par 3s sind das andere Extrem: lang und mit kleinen Grüns. Hier geht es eher um Schadensbegrenzung als um Birdiechancen."
       },
       {
-        "caption": "Das Layout. An einem ruhigen Tag schmeichelt dieser Platz. Mit Wind verdient er jeden seiner Meter."
+        "caption": "Das Layout. An einem ruhigen Tag wirkt dieser Platz leichter, als er ist. Mit Wind spüren Sie jeden seiner Meter."
       },
       {
         "text": "Die Verbindung zur European Tour"
@@ -218,7 +218,7 @@ const content = {
         "text": "Die Löcher 5, 6 und 7 auf den Front Nine bieten einige der schönsten Blicke auf das Tramuntana-Gebirge auf ganz Mallorca. Hohes Gras, alte Bäume, Wildblumen und dahinter die Berge als Kulisse. Das ist die Art Panorama, die selbst einen schlechten Schlag ein kleines bisschen verzeihbarer macht. Ein kleines bisschen."
       },
       {
-        "caption": "Früher Start. Bis zum späten Vormittag findet der Wind normalerweise seinen Weg auf den Platz."
+        "caption": "Früher Start. Bis zum mittleren Vormittag findet der Wind normalerweise seinen Weg auf den Platz."
       },
       {
         "items": [
@@ -253,13 +253,13 @@ const content = {
         "text": "Häufige Fragen"
       },
       {
-        "text": "Ein gültiger WHS-Handicapnachweis ist bei der Buchung erforderlich; die Buggy-Miete kostet 43 € für 18 Löcher. Santa Ponsa 1 eignet sich für selbstbewusste Golfer, die den Driver auf breiten Fairways genießen wollen, und funktioniert gut als leichtere Runde früh in einer Reise vor einem anspruchsvolleren Platz wie Son Gual oder Golf Andratx. Was Besucher überrascht: An einem ruhigen Tag schmeichelt der Platz, aber bei Wind fordern die langen Par 3 und das 590-Meter-Loch 10 jeden Meter ihrer Länge ein. Die beste Startzeit ist früh, bevor die übliche Brise am späten Vormittag aufkommt."
+        "text": "Ein gültiger WHS-Handicapnachweis ist bei der Buchung erforderlich; die Buggy-Miete kostet 43 € für 18 Löcher. Santa Ponsa 1 eignet sich für selbstbewusste Golfer, die den Driver auf breiten Fairways genießen wollen, und funktioniert gut als leichtere Runde früh in einer Reise vor einem anspruchsvolleren Platz wie Son Gual oder Golf Andratx. Was Besucher überrascht: An einem ruhigen Tag wirkt der Platz leichter, als er ist, aber bei Wind fordern die langen Par 3 und das 590-Meter-Loch 10 jeden Meter ihrer Länge ein. Die beste Startzeit ist früh, bevor die übliche Brise am späten Vormittag aufkommt."
       },
       {
         "text": "Fazit"
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung von Santa Ponsa 1 wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von Santa Ponsa 1 klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -291,7 +291,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Santa Ponsa 1 - Avis & Tarifs",
-      "description": "Santa Ponsa 1 à Majorque: histoire du Tour, fairways généreux, tarifs."
+      "description": "Santa Ponsa 1 : 77-126 €, par 72, l'un des plus longs parcours d'Europe. A accueilli le DP World Tour en 2021."
     },
     "meta": {
       "badge": "Avis parcours",
@@ -344,13 +344,13 @@ const content = {
         "text": "Avec ses 590 mètres, le 10 est l'un des par 5 les plus longs d'Europe. Face au vent, il paraît encore plus long. Il existe une version très satisfaisante de ce trou - driver, hybride, wedge - et une version beaucoup moins agréable si l'un de ces trois coups dérape. Les par 3 sont l'autre extrême : longs, avec de petits greens. Ici, il s'agit davantage de limiter les dégâts que de chercher le birdie."
       },
       {
-        "caption": "Le tracé. Par temps calme, ce parcours paraît facile. Ajoutez du vent et il mérite chaque mètre de sa longueur."
+        "caption": "Le tracé. Par temps calme, ce parcours paraît facile. Avec du vent, chaque mètre de sa longueur se fait sentir."
       },
       {
         "text": "Le lien avec le Tour européen"
       },
       {
-        "text": "L'accueil du Mallorca Golf Open 2021 a compté pour l'île. C'était le premier événement du Tour européen ici depuis dix ans, et Santa Ponsa 1 a répondu présent. L'état du parcours pendant la semaine du tournoi, le tracé sous pression, les scores possibles sans que le parcours ne soit abandonné - tout a fonctionné. Cette crédibilité est réelle, et elle se ressent quand on découvre le parcours en tant que visiteur."
+        "text": "L'accueil du Mallorca Golf Open 2021 a compté pour l'île. C'était le premier événement du Tour européen ici depuis dix ans, et Santa Ponsa 1 a répondu présent. L'état du parcours pendant la semaine du tournoi, le tracé sous pression, les scores possibles sans que le parcours soit réglé en mode facile : tout a fonctionné. Cette crédibilité est réelle, et elle se ressent quand on découvre le parcours en tant que visiteur."
       },
       {
         "caption": "Les montagnes de la Tramuntana en arrière-plan. Les trous 5, 6 et 7 offrent les meilleures vues sur les montagnes."
@@ -433,7 +433,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Santa Ponsa 1 - Review & Tarief",
-      "description": "Santa Ponsa 1 op Mallorca: tourgeschiedenis, brede fairways, tarief."
+      "description": "Santa Ponsa 1: €77-€126, par 72, een van de langste banen van Europa. Gastheer van de DP World Tour in 2021."
     },
     "meta": {
       "badge": "Baanreview",
@@ -486,7 +486,7 @@ const content = {
         "text": "Met 590 meter is hole 10 een van de langste par 5's van Europa. Tegen de wind in voelt hij nog langer. Er is een heel bevredigende versie van deze hole - driver, hybride, wedge - en een veel minder leuke versie waarbij een van die drie slagen misgaat. De par 3's zijn het andere uiterste: lang en met kleine greens. Hier draait het meer om schade beperken dan om birdiekansen."
       },
       {
-        "caption": "De lay-out. Op een rustige dag vleit deze baan je. Voeg wind toe en hij verdient elke meter van zijn lengte."
+        "caption": "De lay-out. Op een rustige dag lijkt deze baan makkelijker dan hij is. Met wind voel je elke meter van zijn lengte."
       },
       {
         "text": "De band met de European Tour"
@@ -504,7 +504,7 @@ const content = {
         "text": "Holes 5, 6 en 7 op de eerste negen bieden een van de mooiste uitzichten op de Tramuntana van het hele eiland. Hoog gras, volwassen bomen, wilde bloemen en daarachter de bergen als decor. Het is het soort achtergrond dat een slechte slag net iets draaglijker maakt. Net iets."
       },
       {
-        "caption": "Vroeg begin. Tegen de late ochtend vindt de wind meestal zijn weg naar de baan."
+        "caption": "Vroeg begin. Halverwege de ochtend vindt de wind meestal zijn weg naar de baan."
       },
       {
         "items": [
@@ -577,7 +577,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Santa Ponsa 1 - Recension & Avgifter",
-      "description": "Santa Ponsa 1 på Mallorca: tourhistoria, generösa fairways, avgifter."
+      "description": "Santa Ponsa 1: 77-126 €, par 72, en av Europas längsta banor. Värd för DP World Tour 2021."
     },
     "meta": {
       "badge": "Banrecension",
@@ -630,7 +630,7 @@ const content = {
         "text": "Med sina 590 meter är 10:e ett av Europas längsta par 5-hål. Spelat rakt in i vinden känns det ännu längre. Det finns en mycket tillfredsställande version av hålet - driver, hybrid, wedge - och en betydligt mindre trevlig version där ett av de tre slagen går fel. Par 3-hålen är den andra ytterligheten: långa, med små greener. Här handlar det mer om att begränsa skadan än att jaga birdies."
       },
       {
-        "caption": "Banlayouten. En lugn dag smickrar den här banan dig. Lägg till vind och den förtjänar varje meter av sin längd."
+        "caption": "Banlayouten. En lugn dag ser banan lättare ut än den är. Med vind känner du varje meter av dess längd."
       },
       {
         "text": "Kopplingen till European Tour"
@@ -759,7 +759,7 @@ const content = {
         "text": "为什么它适合我的球风 - 也大概率适合你的"
       },
       {
-        "text": "我想直接说一点：这座球场让我重新找回了一号木的信心。在Son Gual或Alcanada，经常需要通过球场管理把一号木留在包里，而Santa Ponsa 1完全是另一种对话。这里的球道很宽，前几个洞也很友善，球场确实会奖励你在开球台上更积极的打法。"
+        "text": "我想直接说一点：这座球场让我重新找回了一号木的信心。在Son Gual或Alcanada，经常需要通过球场管理把一号木留在包里，而Santa Ponsa 1的感觉完全不同。这里的球道很宽，前几个洞也很友善，球场确实会奖励你在开球台上更积极的打法。"
       },
       {
         "text": "以我的距离来说，一个好开球之后，很多四杆洞只剩下一支挖起杆进攻果岭。对于距离更常规的球手来说，一旦起风，它仍然是一场真正的考验，但那是会建立信心，而不是磨掉信心的那种挑战。"
@@ -774,7 +774,7 @@ const content = {
         "text": "第10洞长590米，是欧洲最长的五杆洞之一。逆风打时会显得更长。这个洞有一种很让人满足的打法 - 一号木、混合杆、挖起杆 - 也有一种完全相反的版本，只要这三杆里有一杆失误，结果就会很难受。至于这里的三杆洞，则是另一种极端：距离长、果岭小。与其期待抓鸟，不如先想着控制损失。"
       },
       {
-        "caption": "球场布局。平静的天气里这个球场会让你发挥得很好。加上风，它就值得每一码的长度。"
+        "caption": "球场布局。无风的日子里，球场显得比实际容易；一起风，每一米的长度你都会感受到。"
       },
       {
         "text": "它与欧洲巡回赛的关系"
@@ -833,7 +833,7 @@ const content = {
         "text": "结论"
       },
       {
-        "title": "预订 Santa Ponsa 1 前我会先知道的四件事",
+        "title": "预订 Santa Ponsa 1 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",

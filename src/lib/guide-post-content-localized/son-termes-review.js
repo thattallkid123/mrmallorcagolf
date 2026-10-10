@@ -75,7 +75,7 @@ const content = {
       },
       {
         "alt": "Green del hoyo 12, par 3 de Son Termes Golf, Mallorca, con árboles detrás",
-        "caption": "El 12. La bandera costaba más verla de lo que aquí parece."
+        "caption": "El 12. Costaba más ver la bandera de lo que parece aquí."
       },
       {
         "text": "El hoyo 13 se juega distinto de lo que sugiere la tarjeta. Dogleg muy marcado, hierro 9 desde el tee para dejarla en juego y luego cerca de 175 metros de aproximación con visibilidad limitada a bandera. Yo estaba en mitad de calle y aun así me quedó un golpe de entrada prácticamente ciego. Buen hoyo. El campo tiene varios así, de esos en los que te comprometes con un número y descubres después si acertaste."
@@ -260,7 +260,7 @@ const content = {
         "text": "Die Grüns"
       },
       {
-        "text": "Die ehrliche Antwort: Sie sind nicht auf dem Niveau von Son Gual oder Alcanada. Die Oberflächen waren gut und das Tempo solide, aber wer die Topplätze der Insel zuletzt gespielt hat, wird den Unterschied merken. Für den Preis und das, was der Rest der Runde bietet, ist das ein fairer Tausch."
+        "text": "Die ehrliche Antwort: Sie sind nicht auf dem Niveau von Son Gual oder Alcanada. Die Oberflächen waren gut und das Tempo solide, aber wer die Topplätze der Insel zuletzt gespielt hat, wird den Unterschied merken. Für den Preis und das, was der Rest der Runde bietet, ist das ein fairer Kompromiss."
       },
       {
         "alt": "Panoramablick auf den Golfplatz Son Termes auf Mallorca über die Ausläufer der Tramuntana und die Ebene von Palma",
@@ -306,7 +306,7 @@ const content = {
         "text": "Fazit"
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung von Son Termes wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von Son Termes klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -644,7 +644,7 @@ const content = {
         "items": [
           [
             "Beste starttijd",
-            "Vroeger starten is de veiligere keuze, vooral als je in warmere maanden wilt lopen. De back nine klimt, de wind bouwt vaak op, en hoe later je vertrekt, hoe taaier de baan wordt."
+            "Vroeger starten is de veiligere keuze, vooral als je in warmere maanden wilt lopen. De back nine klimt, de wind neemt vaak toe, en hoe later je vertrekt, hoe taaier de baan wordt."
           ],
           [
             "Windtip",
@@ -820,7 +820,7 @@ const content = {
           ],
           [
             "Där besökare tappar slag",
-            "Många tappade slag kommer från antagandet att en kort bana måste vara enkel. Blinda doglegs, vatten som kommer in i spelet, seg ruff och dolda mål straffar den som stänger av."
+            "Många tappade slag kommer från antagandet att en kort bana måste vara enkel. Blinda doglegs, vatten som kommer in i spelet, seg ruff och dolda mål straffar den som tappar koncentrationen."
           ],
           [
             "Klubbhustips",
@@ -918,7 +918,7 @@ const content = {
         "text": "第 13 洞打起来和记分卡上看起来很不一样。一个急转狗腿洞，发球台上要用 9 号铁把球放进可打位置，之后还要面对接近 175 米、且看旗不清楚的攻果岭。我当时在球道正中，结果进攻果岭那一杆依然基本属于盲打。好洞。这样的洞这座球场上还有几个，你只能先相信自己选的距离，打完再看判断是否正确。"
       },
       {
-        "text": "第 18 洞以一个向左狗腿、一路下坡回到会所的收官洞结束。它是一个很不错的收尾洞。打完坐在露台上，看别人怎么应付那些上坡，是结束这一轮非常舒服的方式。"
+        "text": "第 18 洞是向左的狗腿洞，一路下坡回到会所，是个不错的收官洞。打完坐在露台上，看别人怎么应付那些上坡，是结束这一轮非常舒服的方式。"
       },
       {
         "text": "山羊"
@@ -976,7 +976,7 @@ const content = {
         "text": "结论"
       },
       {
-        "title": "预订 Son Termes 前我会先知道的四件事",
+        "title": "预订 Son Termes 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",

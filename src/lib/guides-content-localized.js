@@ -524,7 +524,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Avis parcours",
         "badgeGold": true,
         "title": "Golf Son Muntaner, Majorque — avis honnête d'un Professionnel PGA (2026)",
-        "intro": "Meilleur parcours d'Espagne aux World Golf Awards 2025. Je l'ai joué avec un départ complet un samedi matin. Voici ce que j'y ai trouvé.",
+        "intro": "Meilleur parcours d'Espagne aux World Golf Awards 2025. Je l'ai joué un samedi matin, avec une feuille de départs complète. Voici ce que j'y ai trouvé.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy inclus"
       },

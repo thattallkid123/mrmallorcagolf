@@ -297,7 +297,7 @@ const content = {
         "text": "9/10. T Golf Calvià ist einer der bestgepflegten Plätze, die ich in Mallorca gespielt habe. Die Grüns sind ausgezeichnet, die Fairways in sehr gutem Zustand, und das Layout testet einen ernsthaft, besonders bei der Distanzbeurteilung und im Umgang mit Wasser, ohne dabei ungerecht zu sein."
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung von T Golf Calvia wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von T Golf Calvià klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -372,7 +372,7 @@ const content = {
         "caption": "Le design du râteau fait que la balle se retrouve rarement contre le bord. Un petit détail qui fait une vraie différence."
       },
       {
-        "text": "Les greens sont grands et, le jour où j'ai joué, purs. Aucune excuse pour manquer des putts. Sur plusieurs trous, il faut aussi faire entièrement confiance à sa distance car on ne peut pas voir le bas du drapeau depuis l'approche. Les joueurs qui s'appuient sur la position du drapeau plutôt que sur le métrage seront pris en défaut."
+        "text": "Les greens sont grands et, le jour où j'ai joué, impeccables. Aucune excuse pour manquer des putts. Sur plusieurs trous, il faut aussi faire entièrement confiance à sa distance car on ne peut pas voir le bas du drapeau depuis l'approche. Les joueurs qui s'appuient sur la position du drapeau plutôt que sur le métrage seront pris en défaut."
       },
       {
         "text": "Le parcours fait un peu moins de 6 500 mètres depuis les départs arrière où j'ai joué, avec 15 lacs et des carries depuis le départ sur plusieurs trous. Des moulins à vent sont répartis sur tout le parcours, ce qui est inhabituel et lui donne son propre caractère. Les pins méditerranéens et les montagnes de la Tramuntana sont omniprésents de l'aller au retour."
@@ -447,7 +447,7 @@ const content = {
         "text": "Questions fréquentes"
       },
       {
-        "text": "Limite d'index : 28 pour les hommes, 34 pour les dames. On peut marcher ici, mais avec les distances et l'exposition au vent, la voiturette est le choix le plus confortable pour la plupart. Les 15 lacs ne sont pas un simple décor. Ils bordent les fairways et imposent des carries sur plusieurs trous. Les greens surélevés et les franges rapides font du jeu d'approche le principal défi ; c'est un parcours qui convient plutôt au meilleur golfeur qu'à quelqu'un de nouveau sur l'île."
+        "text": "Limite d'index : 28 pour les hommes, 34 pour les dames. On peut marcher ici, mais avec les distances et l'exposition au vent, la voiturette est le choix le plus confortable pour la plupart. Les 15 lacs ne sont pas un simple décor. Ils bordent les fairways et imposent des carries sur plusieurs trous. Les greens surélevés et les franges rapides font du jeu d'approche le principal défi ; c'est un parcours qui convient plutôt aux bons golfeurs qu'à quelqu'un qui découvre l'île."
       },
       {
         "alt": "Pins encadrant le fairway sur le T Golf Calvià avec de l'eau et des montagnes visibles au-delà",
@@ -686,7 +686,7 @@ const content = {
         "caption": "Väderkvarnarna är ett utmärkande inslag på T Golf Calvià."
       },
       {
-        "text": "Jag slog ut klockan 15:20 en tisdagseftermiddag och banan var tillräckligt lugn för att höra vinden röra sig genom tallarna mellan slagen. Från de flesta fairways syns varken väg eller byggnad, bara tallar, vatten och berg. För en bana i sydvästra hörnet av Mallorca förvånade det mig."
+        "text": "Jag slog ut klockan 15.20 en tisdagseftermiddag och banan var tillräckligt lugn för att höra vinden röra sig genom tallarna mellan slagen. Från de flesta fairways syns varken väg eller byggnad, bara tallar, vatten och berg. För en bana i sydvästra hörnet av Mallorca förvånade det mig."
       },
       {
         "text": "Skicket är lika bra som något jag spelat på ön. Mycket tätt klippta fairways och fringe, perfekt räfsade bunkrar, och en enkel men ovanlig räfsdesign som gör att bollen sällan hamnar mot räfsan. Det är en liten detalj, men en som verkligen uppskattas."
@@ -712,7 +712,7 @@ const content = {
         "text": "Hål 7 är ett dogleg genom träden. Kort på kortet men approachavståndet är svårare att läsa än det ser ut och spelare tenderar att ta för kort klubba."
       },
       {
-        "text": "Hål 8 är ett nedförslöpande par 4 med ett smalt landningsområde från tee. Approachen är en hanterbar wedge om du hittar fairway, men missar du den kompliceras en främre flagga snabbt. Sluttningen gör det svårt att stoppa bollen."
+        "text": "Hål 8 är ett nedförslöpande par 4 med ett smalt landningsområde från tee. Approachen är en hanterbar wedge om du hittar fairway, men missar du den blir en främre flaggplacering snabbt besvärlig. Sluttningen gör det svårt att stoppa bollen."
       },
       {
         "alt": "Hål 8 på T Golf Calvià med palmträd och Tramuntana-bergen bakom greenen",
@@ -823,7 +823,7 @@ const content = {
       "readTime": "6分钟",
       "updated": "2026年5月",
       "title": "T Golf Calvià 评测 — PGA职业球员的真实评价（2026）",
-      "intro": "十五个湖泊，风车遍布全场，果岭纯净如我在马略卡岛所打过的最好水平。综合评分9/10，岛上维护最佳的球场之一。",
+      "intro": "十五个湖泊，风车遍布全场，果岭是我在马略卡打过滚动最顺的之一。综合评分9/10，岛上维护最佳的球场之一。",
       "related": [
         {
           "slug": "son-gual-review",
@@ -947,7 +947,7 @@ const content = {
         "text": "9/10。T Golf Calvià是我在马略卡岛打过的维护最好的球场之一。果岭出色，球道状态优良，赛道设计真实考验球手，尤其在距离判断和水障碍处理上，但不失公平。"
       },
       {
-        "title": "预订 T Golf Calvia 前我会先知道的四件事",
+        "title": "预订 T Golf Calvià 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",

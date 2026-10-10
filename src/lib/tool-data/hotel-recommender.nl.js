@@ -412,8 +412,8 @@ const data = {
     "Privézwembad",
     "Capdepera Golf 5 min"
    ],
-   "why": "Gerestaureerd landgoed op 5 minuten van Capdepera Golf. Privézwembad, lokale producten, een echt ongebaand-pad-gevoel met goed golf voor de deur.",
-   "andy": "De finca-optie in het oosten. Geen strand, maar een geweldig zwembad, totale rust en een uitstekende golfbasis. Combineer met een avond bij VORO in de buurt.",
+   "why": "Gerestaureerd landgoed op 5 minuten van Capdepera Golf. Privézwembad, lokale producten, echt weg van de gebaande paden, met goed golf voor de deur.",
+   "andy": "De finca-optie in het oosten. Geen strand, maar een geweldig zwembad, totale rust en een uitstekende uitvalsbasis voor golf. Combineer met een avond bij VORO in de buurt.",
    "golf": "Capdepera Golf 5 min. Canyamel Golf 15 min. Club de Golf Pula 15 min.",
    "travelTime": "60 min van de luchthaven van Palma",
    "subname": "Capdepera"
@@ -424,7 +424,7 @@ const data = {
     "Trackman-range",
     "Golfpakketten"
    ],
-   "why": "Hotel direct op Pula Golf, met volledige oefenfaciliteiten, waaronder Trackman-technologie. Acht toernooien van de European Tour zijn hier gehouden. Een rechttoe-rechtaan golfbasis.",
+   "why": "Hotel direct op Pula Golf, met volledige oefenfaciliteiten, waaronder Trackman-technologie. Acht toernooien van de European Tour zijn hier gehouden. Een rechttoe-rechtaan uitvalsbasis voor golf.",
    "andy": "Als Pula op het programma staat en de groep alles op één plek wil, is dit het antwoord. De oefenfaciliteiten behoren tot de beste van Mallorca.",
    "golf": "Pula Golf op locatie. Golf Club Son Servera 10 min. Capdepera Golf 15 min. Canyamel Golf 20 min.",
    "travelTime": "60 min van de luchthaven van Palma",
@@ -499,7 +499,7 @@ const data = {
     "Volwassenenzone"
    ],
    "why": "Groot premiumresort aan het strand van Sa Coma met een eigen volwassenenzone en een gezinszone. Goede spa en meerdere zwembaden. Pula Golf op 10 minuten.",
-   "andy": "Een van de capabelere resorts aan de oostkust voor groepen waarin sommigen willen golfen en anderen de hele dag strand en zwembaden willen.",
+   "andy": "Een van de geschiktere resorts aan de oostkust voor groepen waarin sommigen willen golfen en anderen de hele dag strand en zwembaden willen.",
    "golf": "Club de Golf Pula 10 min. Golf Club Son Servera 12 min. Capdepera Golf 20 min.",
    "travelTime": "58 min van de luchthaven van Palma",
    "subname": "Sa Coma"
@@ -524,7 +524,7 @@ const data = {
     "Dakzwembad"
    ],
    "why": "Designkamers, dakzwembad en Santi Taura (één Michelinster). Voor golf moet u rijden, maar de avonden in Palma maken dat ruimschoots goed.",
-   "andy": "Het dakzwembad bij schemering en daarna een diner is een sterke avond in Palma. Son Gual is 20 minuten voor een ochtendronde.",
+   "andy": "Het dakzwembad bij schemering en daarna een diner: een mooie avond in Palma. Son Gual is 20 minuten voor een ochtendronde.",
    "golf": "Son Gual 20 min. Son Vida / Son Quint / Son Muntaner 15 min. T Golf Palma (Puntiró) 20 min. Real Golf de Bendinat 20 min. Golf Maioris 30 min.",
    "travelTime": "20 min van de luchthaven van Palma",
    "subname": "Oude stad van Palma"
@@ -778,7 +778,7 @@ const data = {
     "Budget",
     "Toegang tot het strand"
    ],
-   "why": "Driesterren-budgethotel aan de baai van Port de Sóller. De sinaasappeltram vanuit Sóller is een van de leukste ervaringen op Mallorca. Golf is een dagtrip en geen banengroep in de buurt.",
+   "why": "Driesterren-budgethotel aan de baai van Port de Sóller. De sinaasappeltram vanuit Sóller is een van de leukste ervaringen op Mallorca. Golf betekent hier een dagtrip, er liggen geen banen in de buurt.",
    "andy": "Het betaalbare antwoord voor het noordwesten. Port de Sóller is een prachtige baai om naast wakker te worden. Combineer een of twee geplande golfdagen met echte tijd in de Tramuntana.",
    "golf": "Plan golf als dagtrip vanuit Port de Sóller. De beste baankeuze hangt ervan af of de dag richting Palma, het zuidwesten of het noorden gaat.",
    "travelTime": "45 min van de luchthaven van Palma",

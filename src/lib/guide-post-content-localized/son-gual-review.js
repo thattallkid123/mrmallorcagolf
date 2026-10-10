@@ -10,7 +10,7 @@ const content = {
       "readTime": "7 min de lectura",
       "updated": "Marzo 2026",
       "title": "Son Gual Golf Mallorca - Reseña honesta de un profesional PGA (2026)",
-      "intro": "Mi campo más jugado en la isla. El viento, los greens, los últimos hoyos y por qué Obama y Nadal siguen volviendo.",
+      "intro": "Mi campo más jugado en la isla. El viento es caprichoso, los greens son rápidos y el tramo final está a la altura de lo mejor de Mallorca.",
       "related": [
         {
           "slug": "alcanada-review",
@@ -181,7 +181,7 @@ const content = {
       "readTime": "7 Min. Lesezeit",
       "updated": "März 2026",
       "title": "Son Gual Golf Mallorca - Ehrliche Bewertung eines PGA-Professionals (2026)",
-      "intro": "Mein meistgespielter Platz auf der Insel. Der Wind, die Grüns, die Schlusslöcher - und warum Obama und Nadal immer wiederkommen.",
+      "intro": "Mein meistgespielter Platz auf der Insel. Der Wind ist launisch, die Grüns sind schnell, und die Schlussphase ist so gut wie alles auf Mallorca.",
       "related": [
         {
           "slug": "alcanada-review",
@@ -304,7 +304,7 @@ const content = {
         "text": "Leihschläger im Pro Shop: Callaway €35, Titleist €45 pro Runde. Buggy €45, Elektrotrolley ab €15. Handicap-Grenze: 28 für Herren, 36 für Damen. Bei der Buchung ist ein gültiger WHS-Nachweis erforderlich. Zu Fuß gehen ist erlaubt."
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung von Son Gual wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von Son Gual klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -352,7 +352,7 @@ const content = {
       "readTime": "7 min de lecture",
       "updated": "Mars 2026",
       "title": "Son Gual Golf Majorque - Avis honnête d'un professionnel PGA (2026)",
-      "intro": "Mon parcours le plus joué sur l'île. Le vent, les greens, les trous de fin et pourquoi Obama et Nadal y reviennent encore.",
+      "intro": "Mon parcours le plus joué sur l'île. Le vent est capricieux, les greens sont rapides et la fin de parcours vaut ce qui se fait de mieux à Majorque.",
       "related": [
         {
           "slug": "alcanada-review",
@@ -407,7 +407,7 @@ const content = {
         "text": "Son Gual semble avoir son propre écosystème. Je pars de chez moi dans le sud-ouest de l'île par un matin calme et j'arrive au premier tee avec un vrai vent. Et il reste quatre heures. Vent dans le dos, c'est un plaisir. Face au vent, sur un long par 4 qui devient soudain très long, c'est autre chose."
       },
       {
-        "caption": "Il y a suffisamment de trous où le driver sort. Avec le vent dans le dos, c'est aussi bien que ça peut être. Sans lui, on planifie autrement."
+        "caption": "Il y a beaucoup de trous où le driver sort du sac. Vent dans le dos, c'est un vrai plaisir. Vent contraire, on planifie autrement."
       },
       {
         "text": "Les greens"
@@ -508,7 +508,7 @@ const content = {
         "text": "Son Gual est mon parcours préféré à Majorque. L'entretien est superbe, le dessin pose les bonnes questions, et le cadre est fort sans avoir besoin de s'en vanter. Si votre jeu est en bon état et que vous voulez une partie sérieuse, commencez ici. Voyez comment il se compare sur la <a href='/golf-courses'>page complète des parcours de golf de Majorque</a>. Si Son Gual s'inscrit dans un voyage plus long, le <a href='/plan-your-trip'>guide de planification du voyage</a> couvre les heures de départ, la logistique et la façon d'intégrer d'autres parcours autour."
       },
       {
-        "text": "Vous jouez Son Gual ? J'accompagne régulièrement des parties ici et je peux vous aider à tracer un bon chemin dès le premier départ.",
+        "text": "Vous jouez Son Gual ? J'accompagne régulièrement des parties ici et je peux vous aider à construire une vraie stratégie dès le premier départ.",
         "linkLabel": "Réserver une journée Play With A Pro à Majorque →"
       }
     ]
@@ -523,7 +523,7 @@ const content = {
       "readTime": "7 min leestijd",
       "updated": "Maart 2026",
       "title": "Son Gual Golf Mallorca - eerlijke recensie van een PGA-professional (2026)",
-      "intro": "Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes: en waarom Obama en Nadal blijven terugkomen.",
+      "intro": "Mijn meest gespeelde baan op het eiland. De wind is grillig, de greens zijn snel en de slotholes zijn zo goed als alles op Mallorca.",
       "related": [
         {
           "slug": "alcanada-review",
@@ -670,7 +670,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "Kunnen alleen spelende golfers boeken? Ja. Individuele boekingen worden geaccepteerd, al word je in het hoogseizoen waarschijnlijk met anderen gekoppeld. Betekent de handicapeis echt wat hij zegt? Ja. De club handhaaft hem bij het inchecken met een geldig WHS-bewijs."
+        "text": "Kunnen alleen spelende golfers boeken? Ja. Individuele boekingen worden geaccepteerd, al word je in het hoogseizoen waarschijnlijk bij anderen ingedeeld. Betekent de handicapeis echt wat hij zegt? Ja. De club handhaaft hem bij het inchecken met een geldig WHS-bewijs."
       },
       {
         "text": "Oordeel"
@@ -694,7 +694,7 @@ const content = {
       "readTime": "7 min läsning",
       "updated": "Mars 2026",
       "title": "Son Gual Golf Mallorca - ärlig recension från ett PGA-proffs (2026)",
-      "intro": "Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen: och varför Obama och Nadal fortsätter att återvända.",
+      "intro": "Min mest spelade bana på ön. Vinden är nyckfull, greenerna är snabba och avslutningshålen håller samma klass som det bästa på Mallorca.",
       "related": [
         {
           "slug": "alcanada-review",
@@ -821,7 +821,7 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Tidigt på morgonen eller sent på eftermiddagen. Son Gual känns lugnt när man ser ut över Palma och banan är stilla. Ljuset över anläggningen är också som bäst då."
+            "Tidigt på morgonen eller sent på eftermiddagen. Son Gual känns lugnt när man ser ut över Palma och banan är tyst. Ljuset över anläggningen är också som bäst då."
           ],
           [
             "Vindtips",
@@ -865,7 +865,7 @@ const content = {
       "readTime": "7分钟阅读",
       "updated": "2026年3月",
       "title": "Son Gual高尔夫球场马略卡岛 - PGA职业球手诚实点评（2026）",
-      "intro": "岛上我打球最多的球场。风的特性、果岭难度、收关几洞： 以及奥巴马和纳达尔为何一再回访。",
+      "intro": "岛上我打球最多的球场。风向多变，果岭很快，收官几洞不输马略卡任何球场。",
       "related": [
         {
           "slug": "alcanada-review",
@@ -988,7 +988,7 @@ const content = {
         "text": "球房租杆：Callaway €35，Titleist €45 每轮。球车 €45，电动手推车 €15 起。差点限制：男士 28，女士 36。预订时需要有效的 WHS 证书。允许步行。"
       },
       {
-        "title": "预订 Son Gual 前我会先知道的四件事",
+        "title": "预订 Son Gual 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",

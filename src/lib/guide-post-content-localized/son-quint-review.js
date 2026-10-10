@@ -65,7 +65,7 @@ const content = {
       },
       {
         "alt": "El hoyo 12, par 3, en el campo de golf Son Quint en Mallorca, jugado casi por completo sobre el agua",
-        "caption": "El 12, casi entero sobre el agua. Coges tu par y sigues."
+        "caption": "El 12, casi entero sobre el agua. Apúntate el par y sigue."
       },
       {
         "text": "El 13 fue otro de mis favoritos, un par 5 con dogleg a la izquierda y una salida estrecha. El segundo golpe también es más cerrado de lo que parece, con las montañas justo detrás del green."
@@ -321,7 +321,7 @@ const content = {
         "text": "8/10. Der Son Quint ist der zugänglichste Platz der Arabella Golf Gruppe, ohne leicht zu sein. Breite Fairways, vier Abschlagspositionen und eine herzliche, gesellige Atmosphäre machen ihn zu einer guten Wahl für Golfer jedes Niveaus, während feste, gut verteidigte Greens und anspruchsvolle Back Nine auch einem besseren Spieler echte Fragen stellen. Der Zustand war für September ausgezeichnet, und der Empfang, von der Rezeption über den Caddiemaster bis zum Servicepersonal, gehörte zu den besten, die ich auf Mallorca erlebt habe."
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung des Son Quint wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von Son Quint klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -496,7 +496,7 @@ const content = {
         "text": "8/10. Son Quint est le parcours le plus accessible du groupe Arabella Golf sans être facile pour autant. Des fairways larges, quatre positions de départ et une ambiance chaleureuse et conviviale en font un bon choix pour les golfeurs de tous niveaux, tandis que des greens fermes et bien défendus et des neuf derniers exigeants posent de vraies questions à un meilleur joueur aussi. L'état du parcours était excellent pour septembre, et l'accueil, de la réception au caddie master en passant par le personnel de salle, était parmi les meilleurs que j'ai connus à Majorque."
       },
       {
-        "title": "Quatre choses que je saurais avant de réserver Son Quint",
+        "title": "Quatre choses que je voudrais savoir avant de réserver Son Quint",
         "items": [
           [
             "Meilleure heure de départ",
@@ -736,7 +736,7 @@ const content = {
         "caption": "Ingången till Son Quint, en del av Arabella Golf-gruppen."
       },
       {
-        "text": "Vi hade dagens första starttid på Son Quint, kl. 7:40. Det var tillräckligt kallt de första hålen för att jag skulle ha jackan på, med dagg kvar på marken och några av greenerna ännu inte klippta. Min kund stod redan och pratade med receptionspersonalen innan vi hade börjat, och caddiemastern skämtade med oss på väg till första tee."
+        "text": "Vi hade dagens första starttid på Son Quint, kl. 7.40. Det var tillräckligt kallt de första hålen för att jag skulle ha jackan på, med dagg kvar på marken och några av greenerna ännu inte klippta. Min kund stod redan och pratade med receptionspersonalen innan vi hade börjat, och caddiemastern skämtade med oss på väg till första tee."
       },
       {
         "text": "Så spelar sig banan"
@@ -1018,14 +1018,14 @@ const content = {
         "text": "总结"
       },
       {
-        "text": "8/10。Son Quint 是 Arabella Golf 集团里最容易上手的球场，但并不简单。宽阔的球道、四个发球位置，以及温暖、爱社交的氛围，让它适合各种水平的球手，而偏硬、防守到位的果岭和有挑战的后九洞，也会给更好的球手提出真正的问题。以九月来说，球场状况极佳，而从前台到球童主管再到服务员，这里的接待是我在马略卡（Mallorca）遇到过的最好的之一。"
+        "text": "8/10。Son Quint 是 Arabella Golf 集团里最容易上手的球场，但并不简单。宽阔的球道、四个发球位置，以及热闹友好的氛围，让它适合各种水平的球手，而偏硬、防守到位的果岭和有挑战的后九洞，也足以考验水平更高的球手。以九月来说，球场状况极佳，而从前台到球童主管再到服务员，这里的接待是我在马略卡（Mallorca）遇到过的最好的之一。"
       },
       {
-        "title": "预订 Son Quint 之前我会想知道的四件事",
+        "title": "预订 Son Quint 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",
-            "早开球意味着球场安静，果岭刚修剪过，不过修剪完成之前明显更慢。无论如何都值得了解。"
+            "早开球意味着球场安静，果岭刚修剪过，不过修剪完成之前明显更慢。值得提前知道。"
           ],
           [
             "指示牌",

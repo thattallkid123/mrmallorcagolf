@@ -56,7 +56,7 @@ const content = {
         "text": "Estar en los tees elevados del fondo es una experiencia en sí misma. Te sientes intocable, tan lejos de todo lo demás que la gente abajo parece un punto diminuto. El faro delante, la bahía que se extiende, y un driver a punto de salir hacia el vacío. Esa es la sensación."
       },
       {
-        "text": "Estar en los tees de atrás de Alcanada es increíble. Te sientes intocable. Muy lejos del resto del mundo. Todo el mundo parece un punto pequeño y tú estás ahí arriba, listo para lanzar el driver al vacío."
+        "text": "Estar en los tees de atrás de Alcanada es increíble. Te sientes intocable. Muy lejos del resto del mundo. Todo el mundo parece un punto pequeño y tú estás ahí arriba, listo para pegar el driver hacia el vacío."
       },
       {
         "caption": "En una mañana despejada se pueden ver las montañas de la Tramuntana al otro lado de la bahía."
@@ -295,7 +295,7 @@ const content = {
         "text": "Lage: Port d'Alcúdia, etwa 50 Minuten nördlich von Palma. Planen Sie Zeit ein und hetzen Sie nach der Runde nicht sofort zurück."
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung von Alcanada wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von Alcanada klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -457,7 +457,7 @@ const content = {
         "text": "Infos pratiques"
       },
       {
-        "text": "Green fees 2026 : €115 en basse saison (janvier, décembre) et jusqu'à €230 pendant les périodes fortes de mars à mai puis de septembre à octobre. Le détail complet est disponible sur golf-alcanada.com. Une licence journalière de golf de €3 par personne s'applique aux joueurs non affiliés à la fédération espagnole."
+        "text": "Green fees 2026 : 115 € en basse saison (janvier, décembre) et jusqu'à 230 € pendant les périodes fortes de mars à mai puis de septembre à octobre. Le détail complet est disponible sur golf-alcanada.com. Une licence journalière de golf de 3 € par personne s'applique aux joueurs non affiliés à la fédération espagnole."
       },
       {
         "text": "Location de clubs : ensembles TaylorMade à €38 pour 18 trous. Buggy €48, chariot électrique €20. Le practice Toptracer est excellent pour bien se mettre en route - profitez-en."
@@ -668,7 +668,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "Lopen kan met een elektrische trolley (€20) naast de buggy (€48), en er geldt een dagelijkse federatielicentie (€3) voor niet-leden. Alcanada is geschikt voor zelfverzekerde golfers die een echte, gedenkwaardige uitdaging zoeken in plaats van een makkelijke ronde: de greens zijn ondanks de spectaculaire omgeving sterk glooiend en snel. Wat beginners verrast: het uitzicht kan de afslag makkelijker doen lijken dan hij is, kies dus je lijn voordat je van het landschap geniet. De beste starttijd is de ochtend, voor de rustigste bries en het beste licht, en het is de moeite waard om daarna tijd in te plannen voor lunch op het terras met uitzicht op de vuurtoren."
+        "text": "Lopen kan met een elektrische trolley (€20) naast de buggy (€48), en er geldt een dagelijkse federatielicentie (€3) voor niet-leden. Alcanada is geschikt voor zelfverzekerde golfers die een echte, gedenkwaardige uitdaging zoeken in plaats van een makkelijke ronde: de greens zijn ondanks de spectaculaire omgeving sterk glooiend en snel. Wat nieuwe bezoekers verrast: het uitzicht kan de afslag makkelijker doen lijken dan hij is, kies dus je lijn voordat je van het landschap geniet. De beste starttijd is de ochtend, voor de rustigste bries en het beste licht, en het is de moeite waard om daarna tijd in te plannen voor lunch op het terras met uitzicht op de vuurtoren."
       },
       {
         "text": "Oordeel"
@@ -977,7 +977,7 @@ const content = {
         "text": "位置：位于Port d'Alcúdia，距帕尔马以北约50分钟车程。建议留出充足时间，不要打完就匆匆离开。"
       },
       {
-        "title": "预订 Alcanada 前我会先知道的四件事",
+        "title": "预订 Alcanada 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",

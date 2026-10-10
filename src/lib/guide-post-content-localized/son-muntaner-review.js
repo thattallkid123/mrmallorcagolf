@@ -69,7 +69,7 @@ const content = {
         "text": "Cómo llegar"
       },
       {
-        "text": "A cinco minutos del centro de Palma. Eso solo ya lo sitúa en una categoría diferente a la mayoría de los campos que merecen la pena en la isla. Son Gual está a veinte minutos, Alcanada a cincuenta. Si tienes la base en la ciudad y quieres una ronda seria sin organizar media jornada en torno al trayecto, Son Muntaner es la respuesta."
+        "text": "A cinco minutos del centro de Palma. Eso solo ya lo sitúa en una categoría diferente a la mayoría de los campos que merecen la pena en la isla. Son Gual está a veinte minutos, Alcanada a cincuenta. Si te alojas en la ciudad y quieres una vuelta seria sin organizar media jornada en torno al trayecto, Son Muntaner es la respuesta."
       },
       {
         "text": "El servicio desde la llegada hasta la ronda fue impecable. El equipo es atento sin resultar intrusivo. Las pelotas para el campo de prácticas, las instalaciones de entrenamiento y el funcionamiento general están al nivel que cabe esperar con la reputación del campo."
@@ -95,7 +95,7 @@ const content = {
         "text": "Mi tramo inicial fue errático. Elegí salidas conservadoras y aun así no logré leer bien el trazado desde el principio. No es una crítica. Es lo que hace el diseño. Son Muntaner no te lo muestra todo desde el tee. El campo se descubre durante el juego de aproximación."
       },
       {
-        "text": "Es difícil sostener los greens desde el ángulo equivocado. Hay tramos estrechos y objetivos sutiles que exigen una posición precisa, no solo acercar la bola a la bandera. Las zonas de aterrizaje definen el campo. Los golpes de salida y los layups requieren compromiso con zonas estrechas que no resultan evidentes hasta llegar a ellas. Una vez que lo entiendes, el diseño empieza a parecer justo. Los golpes fuertes se recompensan claramente."
+        "text": "Desde el ángulo equivocado es difícil dejar la bola en el green. Hay tramos estrechos y objetivos sutiles que exigen una posición precisa, no solo acercar la bola a la bandera. Las zonas de aterrizaje definen el campo. Los golpes de salida y los layups requieren compromiso con zonas estrechas que no resultan evidentes hasta llegar a ellas. Una vez que lo entiendes, el diseño empieza a parecer justo. Los buenos golpes reciben una recompensa clara."
       },
       {
         "alt": "Hoyo de golf Son Muntaner Mallorca par 3 estrecho con muro de piedra y búnker",
@@ -196,7 +196,7 @@ const content = {
         "items": [
           [
             "Mejor hora de salida",
-            "Si te alojas en Palma, aprovecha la cercanía y sal temprano. Tienes el traslado fácil, greens más frescos y un inicio algo más calmado antes de que se llene el tee sheet."
+            "Si te alojas en Palma, aprovecha la cercanía y sal temprano. Tienes el traslado fácil, greens más frescos y un inicio algo más calmado antes de que se llene la hoja de salidas."
           ],
           [
             "Consejo con el viento",
@@ -321,7 +321,7 @@ const content = {
         "text": "Mein Start war unbeständig. Ich wählte konservative Abschlagspositionen und konnte das Layout dennoch nicht vollständig einschätzen. Das ist kein Kritikpunkt – das macht das Design so. Son Muntaner zeigt nicht alles vom Abschlag aus. Der Platz erschließt sich beim Zuspiel."
       },
       {
-        "text": "Greens aus dem falschen Winkel zu halten, ist schwierig. Es gibt enge Passagen und subtile Zielbereiche, die präzise Positionierung erfordern – nicht nur einen Ball irgendwo in Fahnenähe zu schlagen. Landeflächen bestimmen den Platz. Abschläge und Layups erfordern oft das Commitment zu engen Zonen, die sich erst beim Erreichen erschließen. Wer das versteht, erkennt die Fairness im Design. Starke Schläge werden klar belohnt."
+        "text": "Greens aus dem falschen Winkel zu halten, ist schwierig. Es gibt enge Passagen und subtile Zielbereiche, die präzise Positionierung erfordern – nicht nur einen Ball irgendwo in Fahnenähe zu schlagen. Landeflächen bestimmen den Platz. Abschläge und Layups erfordern oft eine klare Entscheidung für enge Zonen, die sich erst beim Erreichen erschließen. Wer das versteht, erkennt die Fairness im Design. Starke Schläge werden klar belohnt."
       },
       {
         "alt": "Son Muntaner Golfloch Mallorca – enges Par 3 mit Steinmauer und Bunker",
@@ -374,7 +374,7 @@ const content = {
       },
       {
         "alt": "Uralter Olivenbaum am 15. Loch von Son Muntaner Mallorca mit den Na-Burguesa-Bergen im Hintergrund",
-        "caption": "Loch 15. Dieser Olivenbaum steht seit ungefähr tausend Jahren hier. Die Balearen-Regierung hat ihn zum Naturdenkmal erklärt. Jemand beschloss, ein Golfloch darum herum zu bauen – zu Recht."
+        "caption": "Loch 15. Dieser Olivenbaum steht seit ungefähr tausend Jahren hier. Die Balearen-Regierung hat ihn zum Naturdenkmal erklärt. Jemand beschloss, ein Golfloch darum herum zu bauen, und ich bin froh darüber."
       },
       {
         "text": "Das Restaurant"
@@ -418,7 +418,7 @@ const content = {
         "text": "Son Muntaner gehört zur Arabella Golf Mallorca Gruppe, zusammen mit Son Vida und Son Quint. Alle drei Plätze sind vom selben Resort-Komplex aus zugänglich."
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung von Son Muntaner wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von Son Muntaner klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -464,7 +464,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Avril 2026",
       "title": "Golf Son Muntaner, Majorque - avis honnête d'un Professionnel PGA (2026)",
-      "intro": "À cinq minutes de Palma. Voiturette incluse la plupart de la saison. Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. Je l'ai joué avec un départ complet un samedi matin. Voici ce que j'y ai trouvé.",
+      "intro": "À cinq minutes de Palma. Voiturette incluse la plupart de la saison. Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. Je l'ai joué un samedi matin, avec une feuille de départs complète. Voici ce que j'y ai trouvé.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -490,7 +490,7 @@ const content = {
         "caption": "Meilleur parcours de golf d'Espagne 2025. J'ai réussi à sourire malgré les nombreux fairways manqués."
       },
       {
-        "text": "Son Muntaner a été nommé Meilleur Parcours de Golf d'Espagne aux World Golf Awards 2025. Je l'ai joué un samedi matin la semaine dernière, avec un départ complet et des handicaps variés dans le groupe. Voici ce que j'y ai trouvé."
+        "text": "Son Muntaner a été nommé Meilleur Parcours de Golf d'Espagne aux World Golf Awards 2025. Je l'ai joué un samedi matin la semaine dernière, avec une feuille de départs complète et des handicaps variés dans le groupe. Voici ce que j'y ai trouvé."
       },
       {
         "text": "Réponse rapide : qui devrait réserver Son Muntaner ?"
@@ -875,7 +875,7 @@ const content = {
         "items": [
           [
             "Beste starttijd",
-            "Als je in Palma verblijft, gebruik dan die nabijheid en ga vroeg op pad. Je hebt de makkelijke transfer, frissere greens en een iets rustigere start voordat het tee sheet volloopt."
+            "Als je in Palma verblijft, gebruik dan die nabijheid en ga vroeg op pad. Je hebt de makkelijke transfer, frissere greens en een iets rustigere start voordat de startlijst volloopt."
           ],
           [
             "Windtip",
@@ -1000,7 +1000,7 @@ const content = {
         "text": "Mitt öppningsspel var oregelbundet. Jag gjorde konservativa utslagsval och kunde ändå inte läsa layouten ordentligt tidigt. Det är inte kritik. Det är vad designen gör. Son Muntaner visar dig inte allt från utslaget. Banan avslöjar sig genom inflygningsspelet."
       },
       {
-        "text": "Att hålla greener från fel vinkel är svårt. Det finns smala sektioner och subtila mål som kräver exakt positionering snarare än att bara få bollen någonstans nära flaggan. Landningszoner definierar banan. Utslag och layups kräver ofta engagemang för tajta zoner som inte är uppenbara förrän du når dem. När du förstår det börjar designen kännas rättvis. Starka slag får tydlig belöning."
+        "text": "Från fel vinkel är det svårt att få bollen att stanna på greenen. Det finns smala sektioner och subtila mål som kräver exakt positionering snarare än att bara få bollen någonstans nära flaggan. Landningszoner definierar banan. Utslag och layups kräver ofta att du bestämmer dig för smala zoner som inte är uppenbara förrän du når dem. När du förstår det börjar designen kännas rättvis. Bra slag får en tydlig belöning."
       },
       {
         "alt": "Golfhål Son Muntaner Mallorca smalt par 3 med stenmur och bunker",
@@ -1036,7 +1036,7 @@ const content = {
         "text": "Rullande rent i ett solidt tempo, med tydlig potential att bli snabbare in i sommaren. Den kvaliteten belönade bra puttning, särskilt på avstånd. Det är här titeln Bästa i Spanien börjar ge mening. Greenerna är konsekvent utmärkta och höll takten och ytkvaliteten hela den travla lördagen."
       },
       {
-        "alt": "Son Muntaner 9e green Mallorca med klubbhuset bakom",
+        "alt": "Greenen på hål 9 på Son Muntaner, Mallorca, med klubbhuset bakom",
         "caption": "Green 9, klubbhuset bakom. Halvvägs och redan klart: den här banan belönar tålamod framför kraft."
       },
       {
@@ -1049,17 +1049,17 @@ const content = {
         "text": "Olivträdet"
       },
       {
-        "text": "Hål 15. Det gamla olivträdet som står mitt i fairwayen har stått där i ungefär tusen år. Balearernas regering förklarade det ett naturmonument. Banan designades runt det."
+        "text": "Hål 15. Det gamla olivträdet som står mitt i fairwayen har stått där i ungefär tusen år. Balearernas regering förklarade det som naturminne. Banan designades runt det."
       },
       {
         "alt": "Gammalt olivträd på hål 15 på golfbanan Son Muntaner Mallorca med Na Burguesa-bergen bakom",
-        "caption": "Hål 15. Det där olivträdet har stått här i ungefär tusen år. Balearernas regering förklarade det ett naturmonument. Någon bestämde sig för att bygga ett golfhål runt det. Jag är glad att de gjorde det."
+        "caption": "Hål 15. Det där olivträdet har stått här i ungefär tusen år. Balearernas regering förklarade det som naturminne. Någon bestämde sig för att bygga ett golfhål runt det. Jag är glad att de gjorde det."
       },
       {
         "text": "Restaurangen"
       },
       {
-        "text": "Ingen eftertanke. Maten matchar banans standard. Värt att stanna kvar efter rundan snarare än att åka tillbaka till Palma direkt."
+        "text": "Restaurangen är ingen bisak. Maten håller banans standard. Värt att stanna kvar efter rundan snarare än att åka tillbaka till Palma direkt."
       },
       {
         "items": [
@@ -1101,7 +1101,7 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Om du bor i Palma, utnyttja närheten och gå ut tidigt. Du får enkel transfer, fräschare greener och en lite lugnare start innan tee sheet fylls upp."
+            "Om du bor i Palma, utnyttja närheten och gå ut tidigt. Du får enkel transfer, fräschare greener och en lite lugnare start innan startlistan fylls."
           ],
           [
             "Vindtips",
@@ -1231,7 +1231,7 @@ const content = {
       },
       {
         "alt": "马略卡Son Muntaner高尔夫球洞，紧凑的标准杆3洞，左侧石墙，右侧沙坑",
-        "caption": "第7洞。短打标准杆3，但陡峭的落差使距离控制远比码数所示的更难。大多数人都打不到位。"
+        "caption": "第7洞。短三杆洞，但陡峭的落差让距离控制比码数显示的更难。多数人打短。"
       },
       {
         "text": "标准杆3洞"
@@ -1240,7 +1240,7 @@ const content = {
         "text": "它们全程都很好地利用了地势起伏。防守来自球洞的形状和角度，而不只是长度，不过从后发球台打的较长球洞超过 200 码，需要认真选杆。第 13 洞是那天难得清醒的一刻。"
       },
       {
-        "alt": "Andy Griffiths在马略卡Son Muntaner第13洞标准杆3洞开球",
+        "alt": "Andy Griffiths在马略卡Son Muntaner第13洞（三杆洞）开球",
         "caption": "第13洞。标准杆3。今天一个轻松的小鸟！"
       },
       {
@@ -1324,7 +1324,7 @@ const content = {
         "text": "Son Muntaner隶属于Arabella高尔夫马略卡集团，与Son Vida和Son Quint同属一家。三个球场均可从同一度假村建筑群进入。"
       },
       {
-        "title": "预订 Son Muntaner 前我会先知道的四件事",
+        "title": "预订 Son Muntaner 前值得先知道的四件事",
         "items": [
           [
             "最佳开球时间",
@@ -1348,7 +1348,7 @@ const content = {
         "text": "总结"
       },
       {
-        "text": "西班牙最佳高尔夫球场这个称号不是营销。Son Muntaner 提供的是一座从第一洞到最后一洞都考验站位、纪律和决策清晰度的球场。它奖励控制而非力量，通过精准创造成绩机会。距帕尔马五分钟，后勤很简单。仅果岭本身就值得这趟旅程。想比较所有球场，请看<a href='/golf-courses'>马略卡高尔夫球场</a>页面。"
+        "text": "西班牙最佳高尔夫球场这个称号不是营销。Son Muntaner 提供的是一座从第一洞到最后一洞都考验站位、纪律和决策清晰度的球场。它奖励控制而非力量，通过精准创造成绩机会。距帕尔马五分钟，交通安排很简单。仅果岭本身就值得这趟旅程。想比较所有球场，请看<a href='/golf-courses'>马略卡高尔夫球场</a>页面。"
       },
       {
         "text": "带着更多找到球道的经历再次造访，将解锁对球道布局更深层的理解。这正是一个值得回头再打的球场所具备的特质。如果 Son Muntaner 是更长行程的核心，<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了时间安排和后勤事项。"
