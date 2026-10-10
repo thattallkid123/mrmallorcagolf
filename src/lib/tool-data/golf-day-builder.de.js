@@ -73,7 +73,7 @@ const data = {
     ],
     "unbooked": [
      "Noch nicht gebucht",
-     "Wir schlagen Ihnen den besten Standort für Ihr Golf vor"
+     "Ich schlage Ihnen den besten Standort für Ihr Golf vor"
     ]
    }
   },

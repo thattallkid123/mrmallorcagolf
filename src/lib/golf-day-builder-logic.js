@@ -84,7 +84,7 @@ export const QUESTIONS = [
     {v:'north',     t:'North', d:'Alcúdia, Pollença, the bays'},
     {v:'east',      t:'East', d:'Cala Millor, Canyamel, Artà'},
     {v:'south',     t:'South', d:'Llucmajor, airport area, Son Antem'},
-    {v:'unbooked',  t:'Not booked yet', d:'We will suggest the best golf base for you'},
+    {v:'unbooked',  t:'Not booked yet', d:'I will suggest the best golf base for you'},
   ]},
   { key:'dayStyle', label:'Step 2 of 8 · Day style', title:'What kind of day are you after?', sub:'Pick the one that sounds most like you.', multi:false, opts:[
     {v:'serious',  t:'Serious golf',  d:'The round is the main event'},

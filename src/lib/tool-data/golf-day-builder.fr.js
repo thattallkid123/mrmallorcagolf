@@ -73,7 +73,7 @@ const data = {
     ],
     "unbooked": [
      "Pas encore réservé",
-     "Nous vous proposerons la meilleure base pour le golf"
+     "Je vous proposerai la meilleure base pour le golf"
     ]
    }
   },

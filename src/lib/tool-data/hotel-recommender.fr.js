@@ -12,7 +12,7 @@ const data = {
     "Table Michelin"
    ],
    "why": "Son Vida, Son Quint et Son Muntaner (meilleur parcours d'Espagne 2025) sont tous sur le domaine. T Golf Calvià est à 10 minutes. On se réveille, on joue, on dîne, on récupère.",
-   "andy": "La réponse par défaut pour un groupe centré sur le golf qui veut que tout soit géré. Es Fum, une étoile Michelin, se trouve dans l'hôtel. Puerto Portals se rejoint à pied le soir.",
+   "andy": "La réponse par défaut pour un groupe centré sur le golf qui veut que tout soit géré. Es Fum, une étoile Michelin, se trouve dans l'hôtel. Puerto Portals est à environ 15 minutes en voiture pour la soirée.",
    "golf": "Sur le domaine : Son Vida, Son Quint, Son Muntaner (meilleur d'Espagne 2025). T Golf Calvià 10 min. Real Golf de Bendinat 15 min. groupe de Santa Ponsa 20 min.",
    "travelTime": "15 min de l'aéroport de Palma",
    "subname": "Sheraton Collection"

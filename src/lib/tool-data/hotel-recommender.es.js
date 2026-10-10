@@ -12,7 +12,7 @@ const data = {
     "Cocina Michelin"
    ],
    "why": "Son Vida, Son Quint y Son Muntaner (mejor campo de golf de España 2025) están dentro de la finca. T Golf Calvià está a 10 minutos. Despertarse, jugar, comer, recuperarse.",
-   "andy": "La respuesta por defecto para un grupo centrado en el golf que quiere tenerlo todo resuelto. Es Fum, con una estrella Michelin, está en el propio hotel. Puerto Portals queda a pie para las noches.",
+   "andy": "La respuesta por defecto para un grupo centrado en el golf que quiere tenerlo todo resuelto. Es Fum, con una estrella Michelin, está en el propio hotel. Puerto Portals queda a unos 15 minutos en coche para salir por la noche.",
    "golf": "En la finca: Son Vida, Son Quint, Son Muntaner (mejor de España 2025). T Golf Calvià 10 min. Real Golf de Bendinat 15 min. grupo de Santa Ponsa 20 min.",
    "travelTime": "15 min del aeropuerto de Palma",
    "subname": "Sheraton Collection"

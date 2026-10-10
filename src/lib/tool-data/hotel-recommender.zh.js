@@ -12,7 +12,7 @@ const data = {
     "米其林餐厅"
    ],
    "why": "Son Vida、Son Quint 和 Son Muntaner（2025 年西班牙最佳球场）都在庄园内。T Golf Calvià 距离 10 分钟。醒来、打球、用餐、恢复，一气呵成。",
-   "andy": "适合以高尔夫为主、希望一切都由别人安排好的团队的默认之选。酒店里的 Es Fum 拥有一颗米其林星。晚上可以步行前往 Puerto Portals。",
+   "andy": "适合以高尔夫为主、希望一切都由别人安排好的团队的默认之选。酒店里的 Es Fum 拥有一颗米其林星。晚上去 Puerto Portals 开车约 15 分钟。",
    "golf": "庄园内：Son Vida、Son Quint、Son Muntaner（2025 年西班牙最佳）。T Golf Calvià 10 分钟。Real Golf de Bendinat 15 分钟。Santa Ponsa 球场群 20 分钟。",
    "travelTime": "距帕尔马机场 15 分钟",
    "subname": "Sheraton Collection"

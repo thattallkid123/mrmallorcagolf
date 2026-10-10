@@ -73,7 +73,7 @@ const data = {
     ],
     "unbooked": [
      "Nog niet geboekt",
-     "Wij stellen de beste uitvalsbasis voor golf voor u voor"
+     "Ik stel de beste uitvalsbasis voor golf voor u voor"
     ]
    }
   },
