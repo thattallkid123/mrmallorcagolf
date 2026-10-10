@@ -661,7 +661,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 25,
     "designer": "Jack Nicklaus",
     "opened": "2006",
-    "signatureHole": "12th - island green, widely cited as one of Mallorca's most photographed golf holes [unconfirmed - published-review candidate, Andy has not played this course]",
+    "signatureHole": "15th - water down the whole right side and trees left, then a second shot that carries the water again to the green (Andy's pick from his review)",
     "practiceFacilities": "42-bay driving range (14 covered bays) | 250-metre distance | Putting greens | Generous short game training area | PGA-certified coaches available (multiple languages) | Academy coaches: Coque Insua, Marc Urpi, Moritz Beyer"
   },
   "vall_dor": {
