@@ -16,7 +16,7 @@ const data = {
   "Santa Ponsa I": "De open fairways hier gaven me mijn eigen vertrouwen in de driver terug. De 10e van 590 m is een van de langste par 5's van Europa.",
   "Santa Ponsa II": "Rustiger en strategischer dan Santa Ponsa 1. De 18e green heeft de vorm van Mallorca zelf.",
   "Santa Ponsa III": "De meeste holes zijn kort, maar de tweede vraagt nog steeds een precieze afslag. Het best voor beginners, approachoefening of een snelle extra negen.",
-  "Golf de Andratx": "Thuisbasis van de langste par 5 van Spanje en het mooiste zeezicht van het eiland. Neem ruim voldoende ballen mee.",
+  "Golf de Andratx": "Hier ligt de langste par 5 van Spanje, met het mooiste zeezicht van het eiland. Neem ruim voldoende ballen mee.",
   "Bendinat": "Uitzicht op het kasteel en echte heuvels. Neem de buggy en geniet.",
   "Maioris": "Minder druk dan veel banen bij Palma, met twee flinke klimmen op de slotholes.",
   "Son Antem East": "Brede, royale fairways maken dit de vriendelijkere Antem-baan, terwijl vijf meren de ronde interessant houden.",

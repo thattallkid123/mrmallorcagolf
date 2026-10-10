@@ -10,7 +10,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Mayo 2026",
       "title": "T Golf Calvià - Análisis & Tarifas",
-      "intro": "Quince lagos, molinos de viento por todo el campo y algunos de los greens más puros que he jugado en Mallorca. Un 9 sobre 10 y uno de los campos mejor cuidados de la isla.",
+      "intro": "Quince lagos, molinos de viento por todo el campo y algunos de los greens que mejor ruedan de Mallorca. Un 9 sobre 10 y uno de los campos mejor cuidados de la isla.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -173,7 +173,7 @@ const content = {
       "readTime": "6 Min.",
       "updated": "Mai 2026",
       "title": "T Golf Calvià - Bewertung & Gebühren",
-      "intro": "Fünfzehn Seen, Windmühlen auf dem gesamten Platz und einige der reinsten Grüns, die ich in Mallorca gespielt habe. 9 von 10 und einer der bestgepflegten Plätze der Insel.",
+      "intro": "Fünfzehn Seen, Windmühlen auf dem gesamten Platz und Grüns, die so sauber rollen wie kaum andere auf Mallorca. 9 von 10 und einer der bestgepflegten Plätze der Insel.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -336,7 +336,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Mai 2026",
       "title": "T Golf Calvià - Avis & Tarifs",
-      "intro": "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens les plus purs que j'aie joués à Majorque. Un 9 sur 10 et l'un des parcours les mieux entretenus de l'île.",
+      "intro": "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens qui roulent le mieux de Majorque. Un 9 sur 10 et l'un des parcours les mieux entretenus de l'île.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -497,7 +497,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Mei 2026",
       "title": "T Golf Calvià - Review & Tarief",
-      "intro": "Vijftien meren, windmolens door de hele baan en enkele van de zuiverste greens die ik op Mallorca heb gespeeld. Een 9 uit 10 en een van de best onderhouden banen op het eiland.",
+      "intro": "Vijftien meren, windmolens door de hele baan en enkele van de zuiverst rollende greens van Mallorca. Een 9 uit 10 en een van de best onderhouden banen op het eiland.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -660,7 +660,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Maj 2026",
       "title": "T Golf Calvià - Recension & Avgifter",
-      "intro": "Femton sjöar, väderkvarnar på hela banan och några av de renaste greenerna jag spelat på Mallorca. En 9 av 10 och en av de bäst skötta banorna på ön.",
+      "intro": "Femton sjöar, väderkvarnar på hela banan och några av de greener som rullar bäst på Mallorca. En 9 av 10 och en av de bäst skötta banorna på ön.",
       "related": [
         {
           "slug": "son-gual-review",

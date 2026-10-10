@@ -9,7 +9,7 @@ const data = {
    "areaLabel": "Palma",
    "buggyNote": "Buggys verfügbar; für Fitte auch zu Fuß machbar",
    "bestFor": "Eine ernsthafte Runde auf dem vollständigsten Test der Insel",
-   "why": "Thomas Himmels Design von 2007 hat sein eigenes Windsystem: Durch die erhöhte Lage verhält sich der Wind auf jedem Loch anders. Die Grüns sind schnell und erhöht, daher zählt mehr, wo Sie danebenliegen, als wie Sie schwingen. Der Schlussabschnitt von Loch 15 bis 18 gehört zu den besten vier Löchern im europäischen Golf. Entsprechend ist der Preis.",
+   "why": "Thomas Himmels Design von 2007 hat sein eigenes Windsystem: Durch die erhöhte Lage verhält sich der Wind auf jedem Loch anders. Die Grüns sind schnell und erhöht, daher zählt mehr, wo Sie danebenliegen, als wie Sie schwingen. Der Schlussabschnitt von Loch 15 bis 18 gehört zu den besten vier Löchern im europäischen Golf. Der Preis ist entsprechend.",
    "andy": "Der Wind auf der 16 ist eine andere Herausforderung als der Wind auf der 7. Das macht den Platz so reizvoll zum Wiederspielen.",
    "bestPlayer": "Erfahrener Spieler bis Niedrig-Handicapper"
   },
@@ -170,7 +170,7 @@ const data = {
    "buggyNote": "Buggys verfügbar; ruhiger Platz. Selten überfüllt",
    "bestFor": "Eine ruhige Runde in Mitglieder-Qualität in Santa Ponsa (Zugang für meine Kunden arrangierbar)",
    "why": "Nur für Mitglieder und meist der am wenigsten überlaufene Platz der Südwest-Gruppe. Viele Abschläge belohnen einen Hybrid statt eines Drivers: Die Baumeinfassung ist dicht, und ein Ball an der falschen Stelle bedeutet, zurück aufs Fairway zu chippen. Das 18. Grün hat die Form der Insel Mallorca. Ein Detail, das man vor dem Spielen kennen sollte.",
-   "andy": "Das 18. Grün hat die Form von Mallorca selbst. Eines dieser Details, die man vor der Ankunft wissen möchte. Ich arrange den Zugang für Kunden. Erwähnen Sie es bei Ihrer Anfrage.",
+   "andy": "Das 18. Grün hat die Form von Mallorca selbst. Eines dieser Details, die man vor der Ankunft wissen möchte. Ich organisiere den Zugang für Kunden. Erwähnen Sie es bei Ihrer Anfrage.",
    "bestPlayer": "Gelegenheitsgolfer bis erfahrener Spieler"
   },
   "santa-ponsa-3": {
@@ -233,7 +233,7 @@ const data = {
    "hotelGuests": "Nur Hotelgäste",
    "unknown": "Unbekannt"
   },
-  "members": "Platz nur für Mitglieder. Ich arrange den Zugang für Kunden: Erwähnen Sie es bei Ihrer Anfrage.",
+  "members": "Platz nur für Mitglieder. Ich organisiere den Zugang für Kunden: Erwähnen Sie es bei Ihrer Anfrage.",
   "compare": {
    "holes": "Löcher",
    "par": "Par",

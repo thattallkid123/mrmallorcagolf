@@ -25,7 +25,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Guía de campos",
         "readTime": "8 min de lectura",
         "updated": "Marzo 2026",
-        "title": "Mejores campos - Clasificación honesta",
+        "title": "Los mejores campos de golf de Mallorca (2026)",
         "intro": "Mallorca tiene más golf sobresaliente de lo que la mayoría de los visitantes imagina. Veinticuatro campos, varios de ellos capaces de acoger torneos del European Tour. Esto es lo que sé de jugarlos.",
         "related": [
           {
@@ -841,7 +841,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Guide des parcours",
         "readTime": "8 min de lecture",
         "updated": "Mars 2026",
-        "title": "Meilleurs parcours - Classement honnête",
+        "title": "Les meilleurs parcours de golf de Majorque (2026)",
         "intro": "Majorque offre plus de golf d'exception que la plupart des visiteurs ne l'imaginent. Vingt-quatre parcours, plusieurs capables d'accueillir des épreuves du circuit européen. Voici ce que je sais pour les avoir joués.",
         "related": [
           {
@@ -1249,7 +1249,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Baangids",
         "readTime": "8 min leestijd",
         "updated": "Maart 2026",
-        "title": "De beste golfbanen van Mallorca - eerlijke prioritering",
+        "title": "De beste golfbanen van Mallorca (2026)",
         "intro": "Mallorca heeft meer uitstekend golf dan de meeste bezoekers beseffen. Vierentwintig banen, waarvan meerdere in staat zijn om European Tour-toernooien te organiseren. Dit is wat ik weet doordat ik ze gespeeld heb.",
         "related": [
           {
@@ -1948,7 +1948,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Alcanada är banan jag väljer när någon ber om en dag som ska stanna kvar. Utsikten är spektakulär från start till mål, men det här är inte bara en vacker runda. Det är en seriös mästerskapsbana av Robert Trent Jones Jr. med snabba, kuperade greener och strategiska bunkrar som ställer bra frågor hela dagen."
         },
         {
-          "text": "Att stå på de upphöjda bakre tee-platserna är en upplevelse i sig. Du känner dig oåtkomlig - så långt från allt att alla därnere ser ut som små prickar. Fyren framför dig, viken som breder ut sig, och du är på väg att slå driver någonstans ut i avgrunden. Det är känslan."
+          "text": "Att stå på de upphöjda bakre tee-platserna är en upplevelse i sig. Du känner dig orörbar - så långt från allt att alla därnere ser ut som små prickar. Fyren framför dig, viken som breder ut sig, och du är på väg att slå driver någonstans ut i avgrunden. Det är känslan."
         },
         {
           "text": "För en överraskning på östkusten: Capdepera"
@@ -2066,7 +2066,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "8分钟阅读",
         "updated": "2026年3月",
         "title": "马略卡最佳高尔夫球场：职业视角的诚实排序",
-        "intro": "马略卡拥有的杰出高尔夫，比大多数游客意识到的要多。二十四座球场，其中几座有能力承办欧巡赛。这是我亲自打过之后的了解。",
+        "intro": "马略卡的好球场，比大多数游客想象的要多。二十四座球场，其中几座有能力承办欧巡赛。这是我亲自打过之后的了解。",
         "related": [
           {
             "slug": "son-gual-review",
@@ -2362,7 +2362,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "想要东海岸的惊喜：Capdepera"
         },
         {
-          "text": "Capdepera 比许多游客预期的要好。前九洞开阔好打，后九洞则爬入山丘，变成更讲究战术的考验。第 15 洞的 3 杆洞是岛上最好的球洞之一，高处的山景让这趟车程在推杆之前就已经值得。"
+          "text": "Capdepera 比许多游客预期的要好。前九洞开阔好打，后九洞则爬入山丘，变成更讲究战术的考验。三杆的第 15 洞是岛上最好的球洞之一，高处的山景让这趟车程在推杆之前就已经值得。"
         },
         {
           "text": "想要 DP World Tour 体验：Son Muntaner"
@@ -2442,7 +2442,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "值得知道的名人渊源"
         },
         {
-          "text": "Son Gual：奥巴马 2024 年来这里打过球。Son Quint（Arabella）：老虎伍兹和儿子查理在 2022 年 7 月来过，就在圣安德鲁斯英国公开赛的下一周。Pula（东部）：费德勒和纳达尔在岛上时会一起打球，纳达尔经常去。Son Vida：塞维·巴列斯特罗斯 1990 年在那里赢得欧巡赛。Santa Ponsa：承办过六场欧巡赛，以及当时所有的大牌球星，包括西班牙传奇塞维·巴列斯特罗斯和何塞·玛丽亚·奥拉萨巴尔，还有伊恩·伍斯南、伯恩哈德·朗格等。"
+          "text": "Son Gual：奥巴马 2024 年来这里打过球。Son Quint（Arabella）：老虎伍兹和儿子查理在 2022 年 7 月来过，就在圣安德鲁斯英国公开赛的下一周。Pula（东部）：费德勒和纳达尔在岛上时会一起打球，纳达尔经常去。Son Vida：塞维·巴列斯特罗斯 1990 年在那里赢得欧巡赛。Santa Ponsa：承办过六场欧巡赛，当时的大牌球星都来过，包括西班牙传奇塞维·巴列斯特罗斯和何塞·玛丽亚·奥拉萨巴尔，还有伊恩·伍斯南、伯恩哈德·朗格等。"
         },
         {
           "text": "诚实的总结"
@@ -2709,7 +2709,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Quand venir",
         "readTime": "4 min de lecture",
         "updated": "Mars 2026",
-        "title": "Meilleure période - Mois par mois",
+        "title": "Quand jouer au golf à Majorque : mois par mois (2026)",
         "intro": "Réponse courte : pour les meilleures conditions, la fin du printemps et l'automne. Pour le meilleur rapport qualité-prix, les matinées d'été, le crépuscule et l'hiver. L'île se joue mieux toute l'année que la plupart ne le pensent.",
         "related": [
           {
@@ -2826,8 +2826,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Wanneer bezoeken",
         "readTime": "4 min leestijd",
         "updated": "Maart 2026",
-        "title": "Beste tijd - Maand voor maand",
-        "intro": "Kort antwoord: voor pure omstandigheden het late voorjaar en de herfst. Voor de beste prijs-kwaliteit zomerochtenden, de schemering en de winter. Het eiland speelt het hele jaar beter dan de meeste mensen verwachten.",
+        "title": "De beste tijd voor golf op Mallorca, maand voor maand (2026)",
+        "intro": "Kort antwoord: voor de beste omstandigheden het late voorjaar en de herfst. Voor de beste prijs-kwaliteit zomerochtenden, de schemering en de winter. Het eiland speelt het hele jaar beter dan de meeste mensen verwachten.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2891,7 +2891,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Mei-juni"
         },
         {
-          "text": "Uitstekend golfweer en een deel van de beste baanconditie van het jaar. Dit zijn onmiskenbaar hoogseizoenprijzen. Wil je deze maanden, boek dan vroeg en reken op de topprijzen, vooral op de bekendere banen."
+          "text": "Uitstekend golfweer en de beste baanconditie van het jaar. Dit zijn onmiskenbaar hoogseizoenprijzen. Wil je deze maanden, boek dan vroeg en reken op de topprijzen, vooral op de bekendere banen."
         },
         {
           "text": "Juli-augustus"
@@ -2944,7 +2944,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "readTime": "4 min läsning",
         "updated": "Mars 2026",
         "title": "Bästa tiden att spela golf på Mallorca - månad för månad",
-        "intro": "Kort svar: för rena förhållanden senvåren och hösten. För bäst valuta sommarmorgnar, skymning och vintern. Ön spelar bättre året runt än de flesta tror.",
+        "intro": "Kort svar: för bästa förhållanden senvåren och hösten. För bäst valuta sommarmorgnar, skymning och vintern. Ön spelar bättre året runt än de flesta tror.",
         "related": [
           {
             "slug": "golf-trip-planning-mallorca",
@@ -2998,7 +2998,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Mars-april"
         },
         {
-          "text": "16-20 °C, banorna i mycket gott skick och fortfarande lättare att hantera än på senvåren. Priserna stiger redan här, och i mitten av mars är många klubbar i praktiken i högsäsongsläge. Fantastisk golf, men inte det kuppfönster många tror."
+          "text": "16-20 °C, banorna i mycket gott skick och fortfarande lättare att hantera än på senvåren. Priserna stiger redan här, och i mitten av mars är många klubbar i praktiken i högsäsongsläge. Fantastisk golf, men inte den fyndperiod många tror."
         },
         {
           "alt": "Vårgolf på Mallorca",
@@ -3045,7 +3045,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "För de bästa förhållandena pekar jag fortfarande folk mot senvåren och hösten. För bättre valuta skulle jag nu titta mycket hårdare på juni-augusti och december-februari. Vill du ha lugn golf och lägre priser är vintern och sommarskymningen båda intressantare än äldre Mallorca-råd antyder."
         },
         {
-          "text": "Planerar du en resa? Hör av dig - jag hjälper dig att välja rätt tid och rätta banor.",
+          "text": "Planerar du en resa? Hör av dig - jag hjälper dig att välja rätt tid och rätt banor.",
           "linkLabel": "Planera din resa →"
         }
       ]
@@ -3294,7 +3294,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           ]
         },
         {
-          "text": "¿Vas a alquilar palos y quieres hacer un día de verdad en Son Gual o Alcanada?",
+          "text": "¿Vas a alquilar palos y quieres aprovechar de verdad el día en Son Gual o Alcanada?",
           "linkLabel": "Mira cómo es un día completo →"
         }
       ]
@@ -3561,8 +3561,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "nl": {
       "metadata": {
-        "title": "Golfspelenset verhuur op Mallorca 2026",
-        "description": "Golfspelenset verhuur op Mallorca kost €25–€65 per dag. Beste bedrijven, kwaliteit en waar je de beste deal in 2026 krijgt."
+        "title": "Golfclubs huren op Mallorca 2026",
+        "description": "Golfclubs huren op Mallorca kost €25–€65 per dag. Bedrijven vergeleken, kwaliteit en waar je in 2026 de beste prijs krijgt."
       },
       "meta": {
         "badge": "Praktische gids",
@@ -3782,7 +3782,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Flexibel avbokning och enkel onlinebokning. Priserna är per vecka, så det kan fungera särskilt bra för längre hyra. Modellen Callaway Quantum Max 2026 kostar runt €100 för 2 dagar men bara cirka €120 för 10 dagar, och billigare modeller finns om du vill hålla kostnaden nere."
         },
         {
-          "text": "På många banor behöver du väga in att hyra utrustning för innevarande säsong från ett specialistföretag i stället för att använda det som står i stället i golfshopen. I många fall är klubborna på banan också från innevarande säsong, men det varierar och måste bekräftas."
+          "text": "På många banor behöver du väga in att hyra utrustning för innevarande säsong från ett specialistföretag i stället för att använda det som står i hyrstället i golfshopen. I många fall är klubborna på banan också från innevarande säsong, men det varierar och måste bekräftas."
         },
         {
           "text": "Hyrset på banan"
@@ -3960,7 +3960,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Greenfees",
         "readTime": "5 min de lectura",
         "updated": "Marzo 2026",
-        "title": "Cuánto cuesta golf - Desglose 2026",
+        "title": "Cuánto cuesta el golf en Mallorca (2026)",
         "intro": "Una ronda pública de 18 hoyos en Mallorca va desde unos 55 € en el extremo económico hasta unos 260 € en Son Muntaner en temporada alta. Este es el desglose honesto para 2026 de alguien que juega aquí casi cada semana.",
         "related": [
           {
@@ -4100,7 +4100,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Greenfees",
         "readTime": "5 Min. Lesezeit",
         "updated": "März 2026",
-        "title": "Golf Kosten - Preisüberblick 2026",
+        "title": "Was Golf auf Mallorca kostet (2026)",
         "intro": "Eine öffentliche 18-Loch-Runde auf Mallorca kostet von rund 55 € im günstigen Bereich bis zu etwa 260 € in Son Muntaner in der Hochsaison. Hier ist der ehrliche Überblick für 2026 von jemandem, der hier fast jede Woche spielt.",
         "related": [
           {
@@ -4291,7 +4291,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Son Gual tourne autour de €115-165. Alcanada va d'environ €115 à €230. Son Muntaner atteint environ €260 en pointe et descend autour de €125 pendant la période la moins chère. T Golf Calvià peut grimper jusqu'à environ €210, et Son Vida jusqu'à environ €190. Le haut de la fourchette à Majorque est plus élevé que ne le laissent penser beaucoup de guides anciens."
         },
         {
-          "text": "Environ la moitié de l'île applique désormais des tarifs dynamiques, dont les parcours Arabella, les deux T Golf, Pula, Capdepera et Son Antem East et West. La règle pratique est simple : plus vous réservez tôt, plus vous avez de chances de décrocher le bas de la fourchette. Le Black Friday, l'hiver et les offres multi-parties avec nos partenaires peuvent encore faire économiser de l'argent si vous choisissez bien le moment. Si vous voulez que le choix des parcours et les départs soient réglés avant votre arrivée, commencez par la <a href='/plan-your-trip'>planification du voyage</a>."
+          "text": "Environ la moitié de l'île applique désormais des tarifs dynamiques, dont les parcours Arabella, les deux T Golf, Pula, Capdepera et Son Antem East et West. La règle pratique est simple : plus vous réservez tôt, plus vous avez de chances de décrocher le bas de la fourchette. Le Black Friday, l'hiver et les offres multi-parties des clubs partenaires peuvent encore faire économiser de l'argent si vous choisissez bien le moment. Si vous voulez que le choix des parcours et les départs soient réglés avant votre arrivée, commencez par la <a href='/plan-your-trip'>planification du voyage</a>."
         },
         {
           "caption": "Son Gual - parcours premium, €115-165"
@@ -4520,7 +4520,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Greenfee",
         "readTime": "5 min läsning",
         "updated": "Mars 2026",
-        "title": "Golfkostnader - Översikt 2026",
+        "title": "Vad golf kostar på Mallorca (2026)",
         "intro": "En offentlig 18-hålsrunda på Mallorca kostar från ungefär 55 € i den prisvärda delen upp till runt 260 € på Son Muntaner under högsäsong. Här är den ärliga genomgången för 2026 från någon som spelar här nästan varje vecka.",
         "related": [
           {
@@ -4802,7 +4802,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Planificación",
         "readTime": "7 min de lectura",
         "updated": "Septiembre 2026",
-        "title": "Planificar viaje golf - Lo importante",
+        "title": "Cómo planificar un viaje de golf a Mallorca: campos, alojamiento y salidas",
         "intro": "Qué campos jugar, dónde alojarte, cuándo reservar las salidas y cómo evitar los errores más obvios en los huecos entre rondas.",
         "related": [
           {
@@ -4843,7 +4843,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "¿Cuántas rondas?"
         },
         {
-          "text": "Una ronda al día es cómoda para la mayoría de los golfistas. Los campos plantean suficientes preguntas y el calor del verano es real. En los meses más frescos, 36 hoyos en un día son posibles si tienes tantas ganas, pero la mayoría de los visitantes solo de golf en un viaje de 5-7 días juegan 4-5 rondas. El orden importa: una ronda fácil de llegada, una prueba seria a mitad de viaje, un trayecto más largo cuando el grupo tenga tiempo y una ronda final lo bastante cerca como para que el aeropuerto sea sencillo."
+          "text": "Una ronda al día es cómoda para la mayoría de los golfistas. Los campos plantean suficientes preguntas y el calor del verano es real. En los meses más frescos, 36 hoyos en un día son posibles si tienes tantas ganas, pero la mayoría de los visitantes solo de golf en un viaje de 5-7 días juegan 4-5 rondas. El orden importa: una ronda fácil de llegada, una prueba seria a mitad de viaje, un trayecto más largo cuando el grupo tenga tiempo y una vuelta final lo bastante cerca del aeropuerto como para que la salida sea sencilla."
         },
         {
           "text": "Qué campos priorizar"
@@ -4919,15 +4919,15 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "de": {
       "metadata": {
-        "title": "Planung einer Golftrip nach Mallorca",
+        "title": "Golfreise nach Mallorca planen (2026)",
         "description": "Golfreise nach Mallorca planen: Plätze, Startzeiten, wo Sie übernachten, wie viele Runden und wann buchen. Rat eines PGA-Pros von der Insel."
       },
       "meta": {
         "badge": "Reiseplanung",
         "readTime": "7 Min. Lesezeit",
         "updated": "September 2026",
-        "title": "Golfreise planen - Essentials",
-        "intro": "Welche Plätze Sie spielen, wo Sie sich niederlassen, wann Sie Startzeiten buchen und wie Sie die naheliegenden Fehler zwischen den Runden vermeiden.",
+        "title": "So planen Sie eine Golfreise nach Mallorca: Plätze, Standort, Startzeiten",
+        "intro": "Welche Plätze Sie spielen, wo Sie übernachten, wann Sie Startzeiten buchen und wie Sie die naheliegenden Fehler zwischen den Runden vermeiden.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5050,7 +5050,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Planification",
         "readTime": "7 min de lecture",
         "updated": "Septembre 2026",
-        "title": "Planifier voyage golf - L'essentiel",
+        "title": "Organiser un séjour golf à Majorque : parcours, hébergement, départs",
         "intro": "Quels parcours jouer, où se loger, quand réserver les départs et comment éviter les erreurs évidentes entre les parties.",
         "related": [
           {
@@ -5091,7 +5091,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Combien de parties ?"
         },
         {
-          "text": "Une partie par jour est confortable pour la plupart des golfeurs. Les parcours posent assez de questions, et la chaleur de l'été est réelle. Pendant les mois plus frais, 36 trous dans la journée sont possibles si vous êtes très motivé, mais la plupart des visiteurs purement golf en séjour de 5 à 7 jours jouent 4 à 5 parties. L'ordre compte : une partie facile à l'arrivée, un vrai test au milieu, un trajet plus long quand le groupe a le temps, et une dernière partie assez proche pour garder l'aéroport simple."
+          "text": "Une partie par jour est confortable pour la plupart des golfeurs. Les parcours posent assez de questions, et la chaleur de l'été est réelle. Pendant les mois plus frais, 36 trous dans la journée sont possibles si vous êtes très motivé, mais la plupart des visiteurs purement golf en séjour de 5 à 7 jours jouent 4 à 5 parties. L'ordre compte : une partie facile à l'arrivée, un vrai test au milieu, un trajet plus long quand le groupe a le temps, et une dernière partie assez proche de l'aéroport pour que le départ reste simple."
         },
         {
           "text": "Quels parcours privilégier"
@@ -5174,8 +5174,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Reisplanning",
         "readTime": "7 min leestijd",
         "updated": "September 2026",
-        "title": "Golftrip plannen - Essentials",
-        "intro": "Welke banen je speelt, waar je je baseert, wanneer je starttijden boekt en hoe je de voor de hand liggende fouten tussen de rondes vermijdt.",
+        "title": "Een golfreis naar Mallorca plannen: banen, uitvalsbasis en starttijden",
+        "intro": "Welke banen je speelt, waar je verblijft, wanneer je starttijden boekt en hoe je de voor de hand liggende fouten tussen de rondes vermijdt.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -5215,7 +5215,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Hoeveel rondes?"
         },
         {
-          "text": "Eén ronde per dag is voor de meeste golfers comfortabel. De banen stellen genoeg vragen en de zomerhitte is echt. In koelere maanden zijn 36 holes op een dag mogelijk als je zo gretig bent, maar de meeste bezoekers die alleen voor golf komen spelen op een reis van 5-7 dagen 4-5 rondes. De volgorde telt: een makkelijke aankomstronde, een serieuze test in het midden, een langere rit als de groep tijd heeft en een laatste ronde dicht genoeg bij de luchthaven om het eenvoudig te houden."
+          "text": "Eén ronde per dag is voor de meeste golfers comfortabel. De banen stellen genoeg vragen en de zomerhitte is echt. In koelere maanden zijn 36 holes op een dag mogelijk als je zo gretig bent, maar de meeste bezoekers die alleen voor golf komen spelen op een reis van 5-7 dagen 4-5 rondes. De volgorde telt: een makkelijke aankomstronde, een serieuze test in het midden, een langere rit als de groep tijd heeft en een laatste ronde dicht genoeg bij de luchthaven om het vertrek eenvoudig te houden."
         },
         {
           "text": "Welke banen voorrang krijgen"
@@ -5298,7 +5298,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Reseplanering",
         "readTime": "7 min läsning",
         "updated": "September 2026",
-        "title": "Planera golfresa - Essentials",
+        "title": "Planera en golfresa till Mallorca: banor, boende och starttider",
         "intro": "Vilka banor du ska spela, var du ska bo, när du ska boka starttider och hur du undviker de uppenbara misstagen mellan rundorna.",
         "related": [
           {
@@ -5339,7 +5339,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Hur många rundor?"
         },
         {
-          "text": "En runda per dag är bekvämt för de flesta golfare. Banorna ställer tillräckligt många frågor, och sommarvärmen är på riktigt. Under de svalare månaderna går det att spela 36 hål på en dag om du är så sugen, men de flesta besökare som bara spelar golf på en resa på 5-7 dagar spelar 4-5 rundor. Ordningen spelar roll: en lätt ankomstrunda, ett seriöst test i mitten, en längre bilresa när gruppen har tid och en sista runda nära nog för att hålla flygplatsen enkel."
+          "text": "En runda per dag är bekvämt för de flesta golfare. Banorna ställer tillräckligt många frågor, och sommarvärmen är på riktigt. Under de svalare månaderna går det att spela 36 hål på en dag om du är så sugen, men de flesta besökare som bara spelar golf på en resa på 5-7 dagar spelar 4-5 rundor. Ordningen spelar roll: en lätt ankomstrunda, ett seriöst test i mitten, en längre bilresa när gruppen har tid och en sista runda tillräckligt nära flygplatsen för att avresan ska bli enkel."
         },
         {
           "text": "Vilka banor du ska prioritera"
@@ -5370,7 +5370,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Att ta sig runt"
         },
         {
-          "text": "En hyrbil är det mest praktiska alternativet. Kollektivtrafiken når inte många av de bästa banorna bra. Vägarna är bra, men östkusten kräver ändå ärlig tid på dagen. Från Palma till Alcanada är en riktig bilresa, inte ett lätt tillägg före middagen. Om ingen i gruppen vill köra, planera det innan du väljer banor."
+          "text": "En hyrbil är det mest praktiska alternativet. Kollektivtrafiken når inte många av de bästa banorna bra. Vägarna är bra, men östkusten kräver ändå gott om tid. Resan från Palma till Alcanada är en riktig bilfärd, inte ett lätt tillägg före middagen. Om ingen i gruppen vill köra, planera det innan du väljer banor."
         },
         {
           "alt": "Biluthyrning på Mallorca",
@@ -5393,7 +5393,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Palmas gamla stad - värd en dag borta från banan"
         },
         {
-          "text": "En golfresa som inte innehåller minst en lång lunch på ett oväntat ställe gör bara halva jobbet. Lägg in minst en eftermiddag utan starttid. Golfen är anledningen att komma. Resten är varför resan fortfarande känns bra när scorekortet inte gör det."
+          "text": "En golfresa som inte innehåller minst en lång lunch på ett oväntat ställe gör bara halva jobbet. Lägg in minst en eftermiddag utan starttid. Golfen är anledningen att komma. Resten är det som gör att resan känns bra även när scorekortet inte gör det."
         },
         {
           "items": [
@@ -5549,7 +5549,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Visión general",
         "readTime": "6 min de lectura",
         "updated": "Marzo 2026",
-        "title": "¿Mallorca buena para golf? Respuesta honesta",
+        "title": "¿Es Mallorca buena para el golf? La respuesta de un profesional PGA",
         "intro": "Sí. Pero aquí tienes la respuesta completa, porque Mallorca es buena para el golf de maneras que no resultan evidentes desde fuera.",
         "related": [
           {
@@ -5677,7 +5677,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Überblick",
         "readTime": "6 Min. Lesezeit",
         "updated": "März 2026",
-        "title": "Mallorca für Golf? Die ehrliche Antwort",
+        "title": "Ist Mallorca gut für Golf? Die Antwort eines PGA-Professionals",
         "intro": "Ja. Aber hier ist die richtige Antwort, denn Mallorca ist auf Arten gut für Golf, die von außen nicht offensichtlich sind.",
         "related": [
           {
@@ -5805,7 +5805,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Vue d'ensemble",
         "readTime": "6 min de lecture",
         "updated": "Mars 2026",
-        "title": "Majorque pour golf? La réponse honnête",
+        "title": "Majorque est-elle bonne pour le golf ? La réponse d'un pro PGA",
         "intro": "Oui. Mais voici la vraie réponse, car Majorque est bonne pour le golf de manières qui ne sont pas évidentes de l'extérieur.",
         "related": [
           {
@@ -5933,7 +5933,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Overzicht",
         "readTime": "6 min leestijd",
         "updated": "Maart 2026",
-        "title": "Mallorca voor golf? Het eerlijke antwoord",
+        "title": "Is Mallorca goed voor golf? Het antwoord van een PGA-professional",
         "intro": "Ja. Maar hier is het echte antwoord, want Mallorca is goed voor golf op manieren die van buitenaf niet voor de hand liggen.",
         "related": [
           {
@@ -6061,7 +6061,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Översikt",
         "readTime": "6 min läsning",
         "updated": "Mars 2026",
-        "title": "Mallorca för golf? Det ärliga svaret",
+        "title": "Är Mallorca bra för golf? En PGA-professionals svar",
         "intro": "Ja. Men här är det riktiga svaret, för Mallorca är bra för golf på sätt som inte är uppenbara utifrån.",
         "related": [
           {
@@ -6319,7 +6319,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Referenz",
         "readTime": "2 min",
         "updated": "Juli 2026",
-        "title": "Mallorca Golfplätze-Karte",
+        "title": "Karte der Golfplätze auf Mallorca",
         "intro": "Alle 24 Plätze auf einer Karte. Finden Sie sie nach Ort, Entfernung von Palma oder Platzname."
       },
       "blocks": [
@@ -6370,7 +6370,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Referentie",
         "readTime": "2 min",
         "updated": "Juli 2026",
-        "title": "Golfbanen kaart Mallorca",
+        "title": "Kaart van de golfbanen op Mallorca",
         "intro": "Alle 24 banen op één kaart. Zoek op locatie, afstand van Palma of baannaam."
       },
       "blocks": [
@@ -6387,7 +6387,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         "badge": "Referens",
         "readTime": "2 min",
         "updated": "Juli 2026",
-        "title": "Golfbanor på Mallorca karta",
+        "title": "Karta över golfbanorna på Mallorca",
         "intro": "Alla 24 banor på en karta. Hitta dem efter plats, avstånd från Palma eller banans namn."
       },
       "blocks": [

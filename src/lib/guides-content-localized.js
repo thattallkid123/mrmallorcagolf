@@ -38,8 +38,8 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "t-golf-calvia-review",
         "badge": "Análisis de Campo",
         "badgeGold": true,
-        "title": "T Golf Calvià Análisis - La Opinión Honesta de un Profesional PGA (2026)",
-        "intro": "Quince lagos, molinos de viento por todo el campo y algunos de los greens más puros que he jugado en Mallorca. Uno de los campos mejor cuidados de la isla. Un 9 sobre 10.",
+        "title": "T Golf Calvià: la opinión honesta de un profesional PGA (2026)",
+        "intro": "Quince lagos, molinos de viento por todo el campo y algunos de los greens que mejor ruedan de la isla. Uno de los campos mejor cuidados de Mallorca. Un 9 sobre 10.",
         "readTime": "6 min",
         "keywords": "Par 72 · €80-210 · Suroeste de Mallorca · 15 lagos"
       },
@@ -47,7 +47,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "t-golf-palma-review",
         "badge": "Análisis de Campo",
         "badgeGold": true,
-        "title": "T Golf Palma Análisis - La Opinión Honesta de un Profesional PGA (2026)",
+        "title": "T Golf Palma: la opinión honesta de un profesional PGA (2026)",
         "intro": "Greens rápidos y pequeños y hoyos de riesgo y recompensa que te hacen pensar desde el tee. Un 9 sobre 10 que merece su propia reputación, no solo la de T Golf Calvià.",
         "readTime": "6 min",
         "keywords": "Par 71 · €80-150 · Palma · Diseño de Jack Nicklaus"
@@ -66,7 +66,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Análisis del campo",
         "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Mallorca - análisis honesto de un Profesional PGA (2026)",
-        "intro": "Uno de los campos más largos de Europa, historia real en el European Tour y uno de los lugares más fáciles de la isla para disfrutar pegando driver.",
+        "intro": "Uno de los campos más largos de Europa, historia real en el DP World Tour y uno de los sitios de la isla donde más se disfruta pegando el driver.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €77-126 · Acceso público"
       },
@@ -273,7 +273,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Platz-Bewertung",
         "badgeGold": true,
         "title": "T Golf Calvià Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)",
-        "intro": "Fünfzehn Seen, Windmühlen auf dem gesamten Platz und einige der reinsten Grüns, die ich in Mallorca gespielt habe. Einer der bestgepflegten Plätze der Insel. 9 von 10.",
+        "intro": "Fünfzehn Seen, Windmühlen auf dem gesamten Platz und Grüns, die so sauber rollen wie kaum andere auf der Insel. Einer der bestgepflegten Plätze Mallorcas. 9 von 10.",
         "readTime": "6 Min.",
         "keywords": "Par 72 · €80-210 · Südwesten Mallorcas · 15 Seen"
       },
@@ -300,7 +300,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Platz-Bewertung",
         "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
-        "intro": "Einer der längsten Plätze Europas, echte European-Tour-Geschichte und ein Platz, der das Vertrauen mit dem Driver wirklich zurückgibt.",
+        "intro": "Einer der längsten Plätze Europas, echte Geschichte auf der DP World Tour und einer der Orte auf der Insel, an denen der Driver am meisten Spaß macht.",
         "readTime": "6 Min.",
         "keywords": "Championship · Par 72 · €77-126 · Öffentlicher Zugang"
       },
@@ -387,7 +387,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "best-time-play-golf-mallorca",
         "badge": "Ratgeber",
         "title": "Die beste Reisezeit für Golf auf Mallorca - Monat für Monat",
-        "intro": "Oktober wäre meine Wahl. Hier ist warum, und was jeder Monat tatsächlich in Bezug auf Wetter, Preise und Besucheraufkommen bietet.",
+        "intro": "Oktober wäre meine Wahl. Hier erkläre ich, warum, und was jeder Monat tatsächlich in Bezug auf Wetter, Preise und Besucheraufkommen bietet.",
         "readTime": "6 Min.",
         "keywords": "Wetter · Greenfees nach Saison · Besucheraufkommen"
       },
@@ -505,8 +505,8 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "t-golf-calvia-review",
         "badge": "Avis Parcours",
         "badgeGold": true,
-        "title": "T Golf Calvià Avis - L'Avis Honnête d'un Professionnel PGA (2026)",
-        "intro": "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens les plus purs que j'aie joués à Majorque. L'un des parcours les mieux entretenus de l'île. Un 9 sur 10.",
+        "title": "T Golf Calvià : l'avis honnête d'un professionnel PGA (2026)",
+        "intro": "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens qui roulent le mieux de l'île. L'un des parcours les mieux entretenus de Majorque. Un 9 sur 10.",
         "readTime": "6 min",
         "keywords": "Par 72 · €80-210 · Sud-ouest de Majorque · 15 lacs"
       },
@@ -514,7 +514,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "t-golf-palma-review",
         "badge": "Avis Parcours",
         "badgeGold": true,
-        "title": "T Golf Palma Avis - L'Avis Honnête d'un Professionnel PGA (2026)",
+        "title": "T Golf Palma : l'avis honnête d'un professionnel PGA (2026)",
         "intro": "Des greens rapides et petits et des trous à risque-récompense qui vous font réfléchir dès le départ. Un 9 sur 10 qui mérite sa propre réputation, pas seulement celle de T Golf Calvià.",
         "readTime": "6 min",
         "keywords": "Par 71 · €80-150 · Palma · Design Jack Nicklaus"
@@ -533,7 +533,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Avis parcours",
         "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Majorque - avis honnête d'un Professionnel PGA (2026)",
-        "intro": "L'un des parcours les plus longs d'Europe, une vraie histoire sur l'European Tour et un parcours qui redonne vraiment confiance avec le driver.",
+        "intro": "L'un des plus longs parcours d'Europe, une vraie histoire sur le DP World Tour et l'un des endroits de l'île où l'on prend le plus de plaisir au driver.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €77-126 · Accès public"
       },
@@ -739,8 +739,8 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "t-golf-calvia-review",
         "badge": "Baanreview",
         "badgeGold": true,
-        "title": "T Golf Calvià Review - De Eerlijke Mening van een PGA Professional (2026)",
-        "intro": "Vijftien meren, windmolens door de hele baan en enkele van de zuiverste greens die ik op Mallorca heb gespeeld. Een van de best onderhouden banen op het eiland. Een 9 uit 10.",
+        "title": "T Golf Calvià: de eerlijke mening van een PGA-professional (2026)",
+        "intro": "Vijftien meren, windmolens door de hele baan en enkele van de zuiverst rollende greens van het eiland. Een van de best onderhouden banen van Mallorca. Een 9 uit 10.",
         "readTime": "6 min",
         "keywords": "Par 72 · €80-210 · Zuidwest Mallorca · 15 meren"
       },
@@ -748,7 +748,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "t-golf-palma-review",
         "badge": "Baanreview",
         "badgeGold": true,
-        "title": "T Golf Palma Review - De Eerlijke Mening van een PGA Professional (2026)",
+        "title": "T Golf Palma: de eerlijke mening van een PGA-professional (2026)",
         "intro": "Snelle, kleine greens en risk-reward holes die je vanaf de tee aan het denken zetten. Een 9 uit 10 die zijn eigen reputatie verdient, niet alleen die van T Golf Calvià.",
         "readTime": "6 min",
         "keywords": "Par 71 · €80-150 · Palma · Jack Nicklaus-ontwerp"
@@ -767,7 +767,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Baanbeoordeling",
         "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
-        "intro": "Een van de langste banen in Europa, echte European-Tour-geschiedenis en een baan die je vertrouwen met de driver echt teruggeeft.",
+        "intro": "Een van de langste banen van Europa, echte DP World Tour-geschiedenis en een van de plekken op het eiland waar de driver het meeste plezier geeft.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €77-126 · Toegankelijk voor bezoekers"
       },
@@ -854,7 +854,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "best-time-play-golf-mallorca",
         "badge": "Gids",
         "title": "De beste tijd om golf te spelen op Mallorca - maand voor maand",
-        "intro": "Oktober is de maand die ik zou kiezen. Dit is waarom, en wat elke maand werkelijk biedt qua weer, prijs en drukte.",
+        "intro": "Oktober is de maand die ik zou kiezen. Hier lees je waarom, en wat elke maand werkelijk biedt qua weer, prijs en drukte.",
         "readTime": "6 min",
         "keywords": "Weer · Greenfees per seizoen · Drukte"
       },
@@ -973,8 +973,8 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "t-golf-calvia-review",
         "badge": "Banrecension",
         "badgeGold": true,
-        "title": "T Golf Calvià Recension - En PGA-Professionals Ärliga Omdöme (2026)",
-        "intro": "Femton sjöar, väderkvarnar på hela banan och några av de renaste greenerna jag spelat på Mallorca. En av de bäst skötta banorna på ön. En 9 av 10.",
+        "title": "T Golf Calvià: en PGA-professionals ärliga omdöme (2026)",
+        "intro": "Femton sjöar, väderkvarnar på hela banan och några av de greener som rullar bäst på ön. En av de bäst skötta banorna på Mallorca. En 9 av 10.",
         "readTime": "6 min",
         "keywords": "Par 72 · €80-210 · Sydvästra Mallorca · 15 sjöar"
       },
@@ -982,7 +982,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "t-golf-palma-review",
         "badge": "Banrecension",
         "badgeGold": true,
-        "title": "T Golf Palma Recension - En PGA-Professionals Ärliga Omdöme (2026)",
+        "title": "T Golf Palma: en PGA-professionals ärliga omdöme (2026)",
         "intro": "Snabba, små greener och risk-reward-hål som får en att tänka från tee. En 9 av 10 som förtjänar sitt eget rykte, inte bara T Golf Calviàs.",
         "readTime": "6 min",
         "keywords": "Par 71 · €80-150 · Palma · Jack Nicklaus-design"
@@ -1001,7 +1001,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Banomdöme",
         "badgeGold": true,
         "title": "Golf Santa Ponsa 1, Mallorca - ärlig recension av en PGA Professional (2026)",
-        "intro": "En av Europas längsta banor, riktig European-Tour-historia och en bana som verkligen återger självförtroendet med drivern.",
+        "intro": "En av Europas längsta banor, riktig historia på DP World Tour och ett av de ställen på ön där det är roligast att slå driver.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €77-126 · Öppen för besökare"
       },
@@ -1088,7 +1088,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "best-time-play-golf-mallorca",
         "badge": "Guide",
         "title": "Bästa tiden att spela golf på Mallorca - månad för månad",
-        "intro": "Oktober är den månad jag skulle välja. Här är varför, och vad varje månad faktiskt levererar när det gäller väder, pris och trängsel.",
+        "intro": "Oktober är den månad jag skulle välja. Här förklarar jag varför, och vad varje månad faktiskt levererar när det gäller väder, pris och trängsel.",
         "readTime": "6 min",
         "keywords": "Väder · Greenfees per säsong · Trängsel"
       },
@@ -1131,7 +1131,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "is-mallorca-good-for-golf",
         "badge": "Guide",
         "title": "Är Mallorca bra för golf? Ett ärligt svar från någon som bor här",
-        "intro": "Den ofiltrerade versionen: vad ön gör bättre än Portugal, var den faller kort och vem den passar.",
+        "intro": "Den ofiltrerade versionen: vad ön gör bättre än Portugal, var den inte räcker till och vem den passar.",
         "readTime": "5 min",
         "keywords": "Mallorca vs Portugal · Banornas kvalitet · Alla nivåer"
       },
@@ -1165,8 +1165,8 @@ export const GUIDES_LOCALIZED_CONTENT = {
     "articlesHeading": "Guider & artiklar",
     "finalCta": {
       "eyebrow": "Redo att göra det verkligt?",
-      "title": "De rätta banorna, bokade i rätt ordning.",
-      "body": "Berätta dina datum, gruppstorlek och vad du vill ha ut av resan. Jag svarar personligen inom 24 timmar med nästa tydligaste steg.",
+      "title": "Rätt banor, bokade i rätt ordning.",
+      "body": "Berätta dina datum, gruppstorlek och vad du vill ha ut av resan. Jag svarar personligen inom 24 timmar med det tydligaste nästa steget.",
       "primaryCta": "Planera din resa",
       "secondaryCta": "Play With A Pro"
     }
@@ -1208,7 +1208,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "球场评测",
         "badgeGold": true,
         "title": "T Golf Calvià 评测 — PGA职业球员的真实评价（2026）",
-        "intro": "十五个湖泊，风车遍布全场，果岭纯净如我在马略卡岛所打过的最好水平。岛上维护最佳的球场之一。综合评分9/10。",
+        "intro": "十五个湖泊，风车遍布全场，果岭是岛上滚动最顺的之一。马略卡维护最佳的球场之一。综合评分9/10。",
         "readTime": "6分钟",
         "keywords": "标准杆72 · €80-210 · 马略卡岛西南部 · 15座湖泊"
       },
@@ -1235,7 +1235,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "球场评测",
         "badgeGold": true,
         "title": "圣蓬萨1号高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
-        "intro": "欧洲最长的球场之一，拥有真正的 European Tour 历史，也是真正能帮球手找回一号木信心的球场。",
+        "intro": "欧洲最长的球场之一，有真正的 DP World Tour 历史，也是岛上打一号木最痛快的地方之一。",
         "readTime": "6分钟",
         "keywords": "锦标赛级 · 标准杆72 · €77-126 · 对外开放"
       },
@@ -1298,7 +1298,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "best-golf-courses-mallorca",
         "badge": "指南",
         "title": "马略卡岛最佳高尔夫球场 - PGA 职业球手诚实排名",
-        "intro": "岛上共有二十四个球场，我会如何为时间有限、要求不低的访客逐一排序。",
+        "intro": "岛上共有二十四个球场。下面是我为时间有限、要求又高的访客做的排序。",
         "readTime": "8分钟",
         "keywords": "适合各水平 · 果岭费对比 · 2026年更新"
       },
@@ -1338,7 +1338,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "golf-trip-planning-mallorca",
         "badge": "指南",
         "title": "规划马略卡高尔夫之旅 - 你需要了解的一切",
-        "intro": "机票、球场、住宿选择、如何在景点之间穿梭。这是我搬来这里时希望早已存在的实用指南。",
+        "intro": "机票、球场、住在球场附近、如何往返各个球场。这是我搬来这里时希望早已存在的实用指南。",
         "readTime": "7分钟",
         "keywords": "行程规划 · 住宿 · 交通"
       },

@@ -18,7 +18,7 @@ const data = {
   "Santa Ponsa III": "De flesta hålen är korta, men det andra kräver ändå ett exakt utslag. Bäst för nybörjare, approachträning eller en snabb extra nio.",
   "Golf de Andratx": "Hem för Spaniens längsta par 5 och öns bästa havsutsikt. Ta med gott om bollar.",
   "Bendinat": "Slottsutsikt och riktiga kullar. Ta golfbilen och njut.",
-  "Maioris": "Mindre trångt än många Palmabanor, med två rejäla uppförsbackar på slutspelet.",
+  "Maioris": "Mindre trångt än många Palmabanor, med två rejäla uppförsbackar på de sista hålen.",
   "Son Antem East": "Breda, generösa fairways gör den till den vänligare av Antem-banorna, medan fem sjöar håller rundan intressant.",
   "Son Antem West": "Platt och förlåtande, och den trädkantade 16:an är värd rundan i sig. Räkna med köer vid hektiska tider.",
   "Son Termes": "De sista nio har öns bästa bergsutsikt så nära Palma, men backarna gör den till en mycket tuffare promenad än de första nio.",

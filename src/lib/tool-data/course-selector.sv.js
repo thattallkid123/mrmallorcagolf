@@ -104,7 +104,7 @@ const data = {
   "son-servera": {
    "areaLabel": "Costa de los Pinos · Öst",
    "buggyNote": "För det mesta platt och lätt att gå",
-   "bestFor": "Kustnära parkland-golf på gamla goda sätt",
+   "bestFor": "Klassisk parkbana vid kusten",
    "why": "Grundad 1967, en av öns äldsta banor. En parklandbana längs Costa de los Pinos med generösa fairways och lätt ruff. Hål 3 till 7 är undantaget: smala, trädkantade, uppför i kullarna och mellan sjöar. Vatten kommer i spel på sex hål, så det är inte riktigt det lätta spel som de första hålen antyder.",
    "andy": "De generösa fairways passar en avslappnad semesterrunda, men behandla hål 3 till 7 med respekt.",
    "bestPlayer": "Nybörjare till van golfare"
@@ -113,7 +113,7 @@ const data = {
    "areaLabel": "Llucmajor · Syd",
    "buggyNote": "För det mesta platt; lätt att gå",
    "bestFor": "Rundor första eller sista dagen nära flygplatsen",
-   "why": "De första nio och de sista nio hålen känns som två olika designfilosofier: de första skotska och kuperade, de sista mer amerikanska och planare. Mindre trångt än banorna runt Palma och ett underskattat alternativ för en runda på ankomst- eller avresedagen. Den har också en av öns få allmänna gräsrangar.",
+   "why": "De första nio och de sista nio hålen känns som två olika designfilosofier: de första skotska och kuperade, de sista mer amerikanska och flackare. Mindre trångt än banorna runt Palma och ett underskattat alternativ för en runda på ankomst- eller avresedagen. Den har också en av öns få allmänna gräsrangar.",
    "andy": "Tips för dagen du landar: klubborna från bagagebandet och på tee inom en timme. Gräsrangen är en sällsynthet på ön.",
    "bestPlayer": "Hobbygolfare till lågt handicap"
   },

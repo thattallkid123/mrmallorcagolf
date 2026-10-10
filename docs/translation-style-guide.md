@@ -124,6 +124,9 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 
 - A translation can be marked as checked and still carry an older English version. In October 2026 the Son Gual review intro said "why Obama and Nadal keep coming back" in all six languages, a line the English had dropped (and an overstatement: Obama played once). When you read a page, compare each translation with today's English, not with what the sentence is about.
 - Search descriptions (`metadata.description`) were shortened in several languages and lost the price, which is the number the English leads with for click-through. Keep the numbers.
+- The page heading (`meta.title`, the H1) must be a full translation of the English heading. Several guide pages had SEO stubs as their visible heading ("Golfreise planen - Essentials", "Mejores campos - Clasificación honesta"), English words included. Only `metadata.title` (the search result) is held to 40 characters.
+- Titles take sentence case outside English: "T Golf Calvià : l'avis honnête d'un professionnel PGA", not "L'Avis Honnête d'un Professionnel PGA".
+- English working phrases translated literally: "keep the airport simple" (the drive to the airport stays simple), "a fair trade", "earns its keep".
 - Recurring headings read the same on every page in a language ("Vier Dinge, die ich vor der Buchung von … klären würde", "预订 … 前值得先知道的四件事"). If you change one, change them all.
 
 ### 9. Typography

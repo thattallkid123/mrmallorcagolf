@@ -315,6 +315,116 @@
       "lang": "sv",
       "pattern": "\\bfullbokat tee sheet\\b",
       "fix": "full startlista"
+    },
+    {
+      "lang": "all",
+      "pattern": " - (?:Essentials|Lo importante|L'essentiel)\"",
+      "fix": "a page heading left as a stub: translate the full English title"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\\bGolfspelenset\\b",
+      "fix": "golfclubs (huren)"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bkuppfönster\\b",
+      "fix": "fyndperiod"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\boåtkomlig\\b",
+      "fix": "orörbar (\"untouchable\"; oåtkomlig means out of reach)"
+    },
+    {
+      "lang": "fr",
+      "pattern": "garder l'aéroport simple",
+      "fix": "pour que le trajet vers l'aéroport reste simple"
+    },
+    {
+      "lang": "sv",
+      "pattern": "hålla flygplatsen enkel",
+      "fix": "så att resan till flygplatsen blir enkel"
+    },
+    {
+      "lang": "es",
+      "pattern": "(?:mantener sencillo el aeropuerto|que el aeropuerto sea sencillo)",
+      "fix": "que el traslado al aeropuerto sea sencillo"
+    },
+    {
+      "lang": "nl",
+      "pattern": "de luchthaven eenvoudig houden",
+      "fix": "de rit naar de luchthaven eenvoudig houden"
+    },
+    {
+      "lang": "es",
+      "pattern": "simplificar el aeropuerto",
+      "fix": "dejar fácil el traslado al aeropuerto"
+    },
+    {
+      "lang": "fr",
+      "pattern": "simplifier l['’]aéroport",
+      "fix": "laisser un trajet simple vers l'aéroport"
+    },
+    {
+      "lang": "sv",
+      "pattern": "göra flygplatsen enkel",
+      "fix": "ge en enkel resa till flygplatsen"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bSista ronden\\b",
+      "fix": "Sista rundan (\"ronde/ronder\" is Norwegian/Danish)"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\b(?:Ich|ich) arrange\\b",
+      "fix": "organisiere (English verb left in German)"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\\bThuisbasis van\\b",
+      "fix": "Hier ligt (\"home to\")"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bIngen eftertanke\\b|\\bpå gamla goda sätt\\b",
+      "fix": "klassisk"
+    },
+    {
+      "lang": "zh",
+      "pattern": "尽管篇幅短",
+      "fix": "虽然只有九洞 (篇幅 means the length of a text)"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\breinsten Grüns\\b",
+      "fix": "Grüns, die sauber rollen (\"pure greens\")"
+    },
+    {
+      "lang": "es",
+      "pattern": "\\bgreens más puros\\b",
+      "fix": "greens que mejor ruedan"
+    },
+    {
+      "lang": "fr",
+      "pattern": "\\bgreens les plus purs\\b",
+      "fix": "greens qui roulent le mieux"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\brenaste greenerna\\b",
+      "fix": "greener som rullar bäst"
+    },
+    {
+      "lang": "zh",
+      "pattern": "果岭纯净",
+      "fix": "果岭滚动顺畅"
+    },
+    {
+      "lang": "all",
+      "pattern": "(?:La Opinión Honesta|L'Avis Honnête|De Eerlijke Mening|Ärliga Omdöme)",
+      "fix": "English-style Title Case in a translated title: only the first word and names take capitals"
     }
   ]
 }

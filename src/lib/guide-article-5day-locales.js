@@ -206,7 +206,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Rolle auf der Reise: starker Abschluss, vernünftiger Flughafentag"
       },
       {
-        "text": "Der letzte Tag sollte die Abreise einfach halten. T Golf Calvià bietet einen starken Abschluss, ohne die Gruppe über die Insel zu schicken. Es liegt etwa dreißig Minuten von Palma und gut zwanzig Minuten vom Flughafen auf der Autobahn."
+        "text": "Am letzten Tag sollte der Weg zum Flughafen einfach bleiben. T Golf Calvià bietet einen starken Abschluss, ohne die Gruppe über die Insel zu schicken. Es liegt etwa dreißig Minuten von Palma und gut zwanzig Minuten vom Flughafen auf der Autobahn."
       },
       {
         "alt": "T Golf Calvià auf Mallorca",
@@ -378,7 +378,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Papel en el viaje: un paso adelante"
       },
       {
-        "text": "Santa Ponsa 1 es una segunda ronda sensata. Tiene más escala que Son Quint, con historia del European Tour y un par 5 de 590 metros en el diez, pero es manejable si eliges las salidas adecuadas. Algunos golpes de salida son parcialmente ciegos, así que ayuda conocer las líneas."
+        "text": "Santa Ponsa 1 es una segunda vuelta sensata. Tiene más escala que Son Quint, con historia del European Tour y un par 5 de 590 metros en el diez, pero es manejable si eliges las salidas adecuadas. Algunos golpes de salida son parcialmente ciegos, así que ayuda conocer las líneas."
       },
       {
         "alt": "Golf Santa Ponsa 1 en Mallorca",
@@ -480,7 +480,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Papel en el viaje: un buen final y un día de aeropuerto razonable"
       },
       {
-        "text": "El último día debería mantener sencillo el aeropuerto. T Golf Calvià ofrece un buen final sin enviar al grupo al otro lado de la isla. Está a unos treinta minutos de Palma y a poco más de veinte minutos del aeropuerto por la autopista."
+        "text": "El último día conviene que el traslado al aeropuerto sea sencillo. T Golf Calvià ofrece un buen final sin enviar al grupo al otro lado de la isla. Está a unos treinta minutos de Palma y a poco más de veinte minutos del aeropuerto por la autopista."
       },
       {
         "alt": "T Golf Calvià en Mallorca",
@@ -754,7 +754,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Rôle dans le séjour : une belle fin et un jour de départ raisonnable"
       },
       {
-        "text": "Le dernier jour doit garder l'aéroport simple. T Golf Calvià offre une belle fin sans envoyer le groupe à l'autre bout de l'île. Il est à environ trente minutes de Palma et à un peu plus de vingt minutes de l'aéroport par l'autoroute."
+        "text": "Le dernier jour, le trajet vers l'aéroport doit rester simple. T Golf Calvià offre une belle fin sans envoyer le groupe à l'autre bout de l'île. Il est à environ trente minutes de Palma et à un peu plus de vingt minutes de l'aéroport par l'autoroute."
       },
       {
         "alt": "T Golf Calvià à Majorque",
@@ -797,7 +797,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "items": [
           {
             "label": "Golfeurs très forts :",
-            "text": "ajoutez Son Muntaner ou Andratx et durcissez le golf."
+            "text": "ajoutez Son Muntaner ou Andratx pour corser le programme."
           },
           {
             "label": "Handicaps mélangés :",
@@ -1028,7 +1028,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Rol in de reis: sterke afsluiting, verstandige luchthavendag"
       },
       {
-        "text": "De laatste dag moet de luchthaven eenvoudig houden. T Golf Calvià geeft je een sterke afsluiting zonder de groep over het eiland te sturen. Het ligt ongeveer dertig minuten van Palma en iets meer dan twintig minuten van de luchthaven via de snelweg."
+        "text": "Op de laatste dag moet de rit naar de luchthaven eenvoudig blijven. T Golf Calvià geeft je een sterke afsluiting zonder de groep over het eiland te sturen. Het ligt ongeveer dertig minuten van Palma en iets meer dan twintig minuten van de luchthaven via de snelweg."
       },
       {
         "alt": "T Golf Calvià op Mallorca",
@@ -1042,7 +1042,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Beste starttijd:",
-            "text": "de eerste slot die je kunt krijgen als je later die dag vliegt."
+            "text": "de eerste starttijd die je kunt krijgen als je later die dag vliegt."
           },
           {
             "label": "Wissel bij een vroege vlucht:",
@@ -1302,7 +1302,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Roll i resan: stark avslutning, förnuftig flygplatsdag"
       },
       {
-        "text": "Sista dagen bör hålla flygplatsen enkel. T Golf Calvià ger dig en stark avslutning utan att skicka gruppen över ön. Den ligger cirka trettio minuter från Palma och drygt tjugo minuter från flygplatsen på motorvägen."
+        "text": "Sista dagen ska resan till flygplatsen vara enkel. T Golf Calvià ger dig en stark avslutning utan att skicka gruppen över ön. Den ligger cirka trettio minuter från Palma och drygt tjugo minuter från flygplatsen på motorvägen."
       },
       {
         "alt": "T Golf Calvià på Mallorca",
@@ -1455,7 +1455,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "最佳开球时间：",
-            "text": "上午中段。飞行之后不需要黎明就开球。"
+            "text": "上午中段。下飞机后不必天一亮就开球。"
           },
           {
             "label": "晚餐建议：",
@@ -1576,7 +1576,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "在行程中的角色：强劲的收尾，合理的机场日"
       },
       {
-        "text": "最后一天应该让机场环节保持简单。T Golf Calvià 给你一个强劲的收尾，又不用让团队横穿全岛。它离帕尔马大约三十分钟，走高速到机场只要二十多分钟。"
+        "text": "最后一天，去机场的路要尽量简单。T Golf Calvià 给你一个强劲的收尾，又不用让团队横穿全岛。它离帕尔马大约三十分钟，走高速到机场只要二十多分钟。"
       },
       {
         "alt": "马略卡 T Golf Calvià",
@@ -1636,7 +1636,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         ]
       },
       {
-        "text": "合适的行程并不只是五个最大的名字。而是适合你团队的五座球场，按合理的顺序排列。"
+        "text": "合适的行程并不只是五个最响亮的名字。而是适合你团队的五座球场，按合理的顺序排列。"
       },
       {
         "text": "想让这份行程按你的日期、团队、差点、酒店区域和预算来量身调整吗？",

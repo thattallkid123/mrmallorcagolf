@@ -87,7 +87,7 @@ export const TOOLS_INDEX_CONTENT = {
     timePrefix: 'Dauert',
     trust: {
       label: 'Andy Griffiths · UK PGA Advanced Professional',
-      text: 'Diese Tools geben Ihnen einen Ausgangspunkt: eine Liste, eine Schätzung, einen Plan. Wenn Sie bereit sind, es in die Realität umzusetzen, bestätige ich Startzeiten, arrangiere Zugang bei Plätzen nur für Mitglieder und baue die Reise um Ihr Golf herum auf. Nichts zu bezahlen, bis Sie sich zum Buchen entscheiden.',
+      text: 'Diese Tools geben Ihnen einen Ausgangspunkt: eine Liste, eine Schätzung, einen Plan. Wenn Sie bereit sind, es in die Realität umzusetzen, bestätige ich Startzeiten, organisiere den Zugang zu Plätzen nur für Mitglieder und baue die Reise um Ihr Golf herum auf. Nichts zu bezahlen, bis Sie sich zum Buchen entscheiden.',
     },
     tools: [
       {
@@ -221,7 +221,7 @@ export const TOOLS_INDEX_CONTENT = {
     timePrefix: 'Prend',
     trust: {
       label: 'Andy Griffiths · UK PGA Advanced Professional',
-      text: "Ces outils vous donnent un point de départ : une liste, une estimation, un plan. Quand vous êtes prêt à le concrétiser, je confirme les heures de départ, j'arrange l'accès aux parcours privés et je construis le voyage autour de votre golf. Rien à payer jusqu'à ce que vous décidiez de réserver.",
+      text: "Ces outils vous donnent un point de départ : une liste, une estimation, un plan. Quand vous êtes prêt à le concrétiser, je confirme les heures de départ, j'organise l'accès aux parcours privés et je construis le voyage autour de votre golf. Rien à payer jusqu'à ce que vous décidiez de réserver.",
     },
     tools: [
       {

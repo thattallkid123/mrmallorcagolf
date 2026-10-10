@@ -169,7 +169,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Terminar corto y cerca del aeropuerto",
-            "body": "La última ronda debería simplificar el aeropuerto. Un pequeño retraso debería costar la comida, no el vuelo."
+            "body": "La última vuelta debería dejar fácil el traslado al aeropuerto. Un pequeño retraso debería costar la comida, no el vuelo."
           }
         ]
       },
@@ -509,7 +509,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Finir court et près de l’aéroport",
-            "body": "La dernière partie doit simplifier l’aéroport. Un petit retard devrait coûter le déjeuner, pas le vol."
+            "body": "La dernière partie doit laisser un trajet simple vers l’aéroport. Un petit retard devrait coûter le déjeuner, pas le vol."
           }
         ]
       },
@@ -679,7 +679,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Eindig kort en dicht bij de luchthaven",
-            "body": "De laatste ronde moet de luchthaven eenvoudig houden. Een kleine vertraging mag lunch kosten, niet de vlucht."
+            "body": "Bij de laatste ronde moet de rit naar de luchthaven eenvoudig blijven. Een kleine vertraging mag de lunch kosten, niet de vlucht."
           }
         ]
       },
@@ -849,7 +849,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Avsluta kort och nära flygplatsen",
-            "body": "Sista ronden ska göra flygplatsen enkel. En liten försening ska kosta lunch, inte flyget."
+            "body": "Sista rundan ska ge en enkel resa till flygplatsen. En liten försening får kosta lunchen, inte flyget."
           }
         ]
       },

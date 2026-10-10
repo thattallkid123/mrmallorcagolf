@@ -17,7 +17,7 @@ const data = {
    "areaLabel": "Port d'Alcúdia · Nord",
    "buggyNote": "La voiturette est prisée ; par endroits vallonné",
    "bestFor": "La partie de championnat la plus pittoresque de Majorque",
-   "why": "Dessin de Robert Trent Jones Jr., hôte de la Grande Finale du Rolex Challenge Tour. Le phare d'Alcanada est visible depuis 16 des 18 trous et les 58 bunkers exigent de l'attention à chaque approche. Les greens sont très ondulés et extrêmement rapides, ce qui piège les golfeurs en vacances qui n'ont jamais putté sur quelque chose de similaire. La terrasse du restaurant après la partie est l'une des meilleures de l'île.",
+   "why": "Tracé signé Robert Trent Jones Jr., hôte de la Grande Finale du Rolex Challenge Tour. Le phare d'Alcanada est visible depuis 16 des 18 trous et les 58 bunkers exigent de l'attention à chaque approche. Les greens sont très ondulés et extrêmement rapides, ce qui piège les golfeurs en vacances qui n'ont jamais putté sur quelque chose de similaire. La terrasse du restaurant après la partie est l'une des meilleures de l'île.",
    "andy": "L'une des plus belles parties que vous jouerez en Europe. La vue sur le phare au 17 vous reste longtemps après que la carte de score a fini à la poubelle.",
    "bestPlayer": "Golfeur occasionnel à faible handicap"
   },
@@ -42,7 +42,7 @@ const data = {
    "buggyNote": "Plutôt faisable à pied ; voiturettes disponibles",
    "bestFor": "Du golf de l'European Tour au prix d'un parcours public",
    "why": "Hôte de l'Open de Majorque de l'European Tour 2021 et seul parcours public du groupe de Santa Ponsa. L'un des parcours les plus longs de l'île : le 10, avec 590 m, est l'un des plus longs par 5 d'Europe. Les trous 5, 6 et 7 offrent certaines des plus belles vues sur la Tramuntana de l'île. Plusieurs coups de départ sont en partie aveugles, un carnet de parcours est donc utile ici.",
-   "andy": "Les longs frappeurs peuvent y ouvrir les épaules, et le green fee est correct pour un parcours de ce pedigree. Comptez perdre une balle ou deux sur les départs aveugles la première fois.",
+   "andy": "Les longs frappeurs peuvent s'y lâcher, et le green fee est correct pour un parcours de ce pedigree. Comptez perdre une balle ou deux sur les départs aveugles la première fois.",
    "bestPlayer": "Golfeur occasionnel à faible handicap"
   },
   "andratx": {
@@ -58,7 +58,7 @@ const data = {
    "buggyNote": "Voiturettes disponibles ; tracé serré avec du dénivelé",
    "bestFor": "De l'histoire et du caractère à dix minutes de Palma",
    "why": "Le plus ancien parcours de Majorque, ouvert en 1964. Seve Ballesteros y a gagné un barrage de l'European Tour en 1990. Le tracé serpente dans le quartier de Son Vida, avec un parcours serré et des changements de niveau constants. Le 18 est un par 5 avec un carry d'eau sur le deuxième coup, qui pousse beaucoup de joueurs à une décision qu'ils regrettent ensuite.",
-   "andy": "Plus court que les parcours modernes sur le papier, mais les doglegs serrés vous font réfléchir à chaque départ. Prenez un club de moins et restez dans le jeu.",
+   "andy": "Plus court que les parcours modernes sur le papier, mais les doglegs serrés vous font réfléchir à chaque départ. Prenez un club de moins et restez en jeu.",
    "bestPlayer": "Golfeur occasionnel à faible handicap"
   },
   "son-quint": {

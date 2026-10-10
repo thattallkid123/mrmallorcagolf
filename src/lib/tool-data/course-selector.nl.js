@@ -57,7 +57,7 @@ const data = {
    "areaLabel": "Son Vida · Palma",
    "buggyNote": "Buggy's beschikbaar; krappe routing met hoogteverschillen",
    "bestFor": "Geschiedenis en karakter tien minuten van Palma",
-   "why": "De oudste baan van Mallorca, geopend in 1964. Seve Ballesteros won hier in 1990 een play-off van de European Tour. De lay-out kronkelt door de wijk Son Vida met krappe routing en voortdurende hoogteverschillen. De 18e is een par 5 met een waterpartij bij de tweede slag, die veel spelers tot een beslissing verleidt waar ze later spijt van krijgen.",
+   "why": "De oudste baan van Mallorca, geopend in 1964. Seve Ballesteros won hier in 1990 een play-off van de European Tour. De lay-out kronkelt door de wijk Son Vida met krappe routing en voortdurende hoogteverschillen. De 18e is een par 5 met een carry over water bij de tweede slag, die veel spelers tot een beslissing verleidt waar ze later spijt van krijgen.",
    "andy": "Op papier korter dan de moderne banen, maar de strakke doglegs dwingen u op elke tee na te denken. Neem een club minder en blijf in het spel.",
    "bestPlayer": "Recreatiegolfer tot laag handicap"
   },
