@@ -41,6 +41,9 @@ if (-not (Test-Path $gdrive)) {
     exit 1
 }
 
+# The mmg-voice-check skill is generated from the Drive voice guide so the two can never drift.
+try { node (Join-Path $PSScriptRoot "scripts\build-voice-skill.mjs") } catch { Write-Host "  build-voice-skill failed: $_" -ForegroundColor Red }
+
 foreach ($skill in $skills) {
     Write-Host "Syncing: $($skill.Drive)" -ForegroundColor Cyan
 

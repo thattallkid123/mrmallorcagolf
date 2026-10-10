@@ -39,6 +39,7 @@
     "check:trip-preferences-i18n": "node --no-warnings scripts/check-trip-preferences-i18n.mjs",
     "check:translation-mistakes": "node --no-warnings scripts/check-translation-mistakes.mjs",
     "voice:draft": "node --no-warnings scripts/voice-draft.mjs",
+    "build:voice-skill": "node --no-warnings scripts/build-voice-skill.mjs",
     "check:tool-prices": "node scripts/check-tool-price-sync.mjs",
     "check:tool-green-fees": "node --no-warnings scripts/check-tool-green-fees.mjs",
     "check:tool-data": "node --no-warnings scripts/check-tool-data-localized.mjs",
