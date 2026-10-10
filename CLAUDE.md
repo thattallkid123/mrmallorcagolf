@@ -106,6 +106,7 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 |------|---------|
 | Build locally | `npm run dev` |
 | Content checks | `npm run check:content` |
+| Voice check on a draft | `npm run voice:draft -- <file>`: any draft in Andy's voice (blog, review, email, caption) before Andy sees it; then the `mmg-voice-check` skill |
 | CSS hygiene ratchet | `npm run check:css-hygiene` — freezes the count of inline layout `style={{}}`, `!important`, and `@media` breakpoints (baseline in `scripts/css-hygiene-baseline.json`); fails on any increase and on any inline negative margin. Runs inside `check:content`. When you legitimately reduce a number, `node scripts/check-css-hygiene.mjs --update` to lock the win in. |
 | Locale parity check | `npm run check:locale-parity` — verifies 6-language consistency; runs automatically as part of `check:content` |
 | Unit tests | `npm test` — Vitest, currently covers the golf-cost-calculator pricing logic in `src/lib/`; runs in CI |
