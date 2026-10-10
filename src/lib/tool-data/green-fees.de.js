@@ -23,7 +23,7 @@ const data = {
   "Son Antem West": "Flach und verzeihend, und die von Bäumen gesäumte 16 ist allein die Runde wert. Rechnen Sie zu stark besuchten Zeiten mit Warteschlangen.",
   "Son Termes": "Die hintere Neun bietet die besten Bergblicke so nah an Palma, aber die Anstiege machen sie zu einem deutlich härteren Spaziergang als die vordere.",
   "Pollensa": "Eine kompakte Neun-Loch-Option unter den Tramuntana-Bergen, mit ein paar richtigen Anstiegen trotz des kurzen Formats.",
-  "Capdepera": "Die 15 ist Stroke Index 1 und wurde zum besten Loch der Insel gewählt. Rafa Nadal spielt hier regelmäßig.",
+  "Capdepera": "Die 15 ist Stroke Index 1 und wurde vom Mallorca Magazin zum besten Loch der Insel gewählt.",
   "Canyamel": "Ein Entwurf von José Gancedo mit Seen auf der ganzen Runde. Wer vor 8:50 Uhr abschlägt, spart mit dem Frühbuchertarif einiges.",
   "Pula": "Ein Olazábal-Redesign mit zweistöckiger Range und starken Kurzspiel-Anlagen. Eine gute Wahl für einen übungslastigen Golftag.",
   "Son Servera": "Der zweitälteste Club der Insel. Flach, gut zu gehen, und das Menü des Tages für 21 € ist ehrlich gutes Preis-Leistungs-Verhältnis.",

@@ -30,7 +30,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Análisis del campo",
         "badgeGold": true,
         "title": "Son Gual Golf Mallorca - análisis honesto de un Profesional PGA (2026)",
-        "intro": "Mi campo más jugado en la isla. El viento, los greens, el tramo final y por qué Obama y Nadal siguen volviendo.",
+        "intro": "Mi campo más jugado en la isla. El viento es caprichoso, los greens son rápidos y el tramo final está a la altura de lo mejor de Mallorca.",
         "readTime": "7 min",
         "keywords": "Championship · Par 72 · €115-165 · Hándicap requerido"
       },
@@ -264,7 +264,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Platz-Bewertung",
         "badgeGold": true,
         "title": "Son Gual Golf Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
-        "intro": "Mein meistgespielter Platz auf der Insel. Der Wind, die Greens, die Schlusslöcher und warum Obama und Nadal immer wiederkommen.",
+        "intro": "Mein meistgespielter Platz auf der Insel. Der Wind ist launisch, die Grüns sind schnell, und die Schlussphase ist so gut wie alles auf Mallorca.",
         "readTime": "7 Min.",
         "keywords": "Championship · Par 72 · €115-165 · Handicap erforderlich"
       },
@@ -497,7 +497,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Avis parcours",
         "badgeGold": true,
         "title": "Son Gual Golf Majorque - avis honnête d'un Professionnel PGA (2026)",
-        "intro": "Mon parcours le plus joué sur l'île. Le vent, les greens, la fin de parcours et pourquoi Obama et Nadal reviennent toujours.",
+        "intro": "Mon parcours le plus joué sur l'île. Le vent est capricieux, les greens sont rapides et la fin de parcours vaut ce qui se fait de mieux à Majorque.",
         "readTime": "7 min",
         "keywords": "Championship · Par 72 · €115-165 · Handicap requis"
       },
@@ -731,7 +731,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Baanbeoordeling",
         "badgeGold": true,
         "title": "Son Gual Golf Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
-        "intro": "Mijn meest gespeelde baan op het eiland. De wind, de greens, de slotholes en waarom Obama en Nadal blijven terugkomen.",
+        "intro": "Mijn meest gespeelde baan op het eiland. De wind is grillig, de greens zijn snel en de slotholes zijn zo goed als alles op Mallorca.",
         "readTime": "7 min",
         "keywords": "Championship · Par 72 · €115-165 · Handicap vereist"
       },
@@ -965,7 +965,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Banomdöme",
         "badgeGold": true,
         "title": "Son Gual Golf Mallorca - ärlig recension av en PGA Professional (2026)",
-        "intro": "Min mest spelade bana på ön. Vinden, greenerna, avslutningshålen och varför Obama och Nadal alltid kommer tillbaka.",
+        "intro": "Min mest spelade bana på ön. Vinden är nyckfull, greenerna är snabba och avslutningshålen håller samma klass som det bästa på Mallorca.",
         "readTime": "7 min",
         "keywords": "Championship · Par 72 · €115-165 · Handicap krävs"
       },
@@ -1199,7 +1199,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "球场评测",
         "badgeGold": true,
         "title": "Son Gual 高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
-        "intro": "我在岛上打得最多的球场。风、果岭、收官几洞，以及奥巴马和纳达尔一再回来的原因。",
+        "intro": "岛上我打球最多的球场。风向多变，果岭很快，收官几洞不输马略卡任何球场。",
         "readTime": "7分钟",
         "keywords": "锦标赛级 · 标准杆72 · €115-165 · 需要差点证明"
       },

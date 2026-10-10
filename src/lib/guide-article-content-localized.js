@@ -4041,7 +4041,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Los buggies cuestan entre 35 y 48 € según el campo. Son Gual cobra 45 €, Alcanada 48 €; los modelos con GPS aportan distancias y mapas de hoyo. Trolley manual: 6-8 €. Trolley eléctrico: 14-25 €."
         },
         {
-          "text": "En campos más montañosos como Bendinat, Andratx o Son Vida, el buggy compensa. En los más llanos (Son Antem, Maioris, Santa Ponsa y otros), un trolley puede bastar si te apetece hacer ejercicio."
+          "text": "En campos más montañosos como Bendinat, Andratx o Son Vida, coge buggy: las subidas entre hoyos son fuertes y en Andratx es obligatorio antes de las 14:00 de todos modos. En los más llanos (Son Antem, Maioris, Santa Ponsa y otros), un trolley puede bastar si te apetece hacer ejercicio."
         },
         {
           "caption": "Los buggies suelen costar 35-48 € por vuelta"
@@ -4181,7 +4181,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Golfbuggies kosten je nach Platz 35-48 €. Son Gual verlangt 45 €, Alcanada 48 € - die GPS-Modelle liefern Yardages und Lochübersichten. Zieh-Trolleys 6-8 €. Elektro-Trolleys 14-25 €."
         },
         {
-          "text": "Auf hügeligeren Plätzen wie Bendinat, Andratx oder Son Vida lohnt sich ein Buggy. Auf den flacheren Plätzen (Son Antem, Maioris, Santa Ponsa und weitere) reicht ein Trolley, wenn Sie gern Bewegung haben."
+          "text": "Auf hügeligeren Plätzen wie Bendinat, Andratx oder Son Vida nehmen Sie einen Buggy: Die Anstiege zwischen den Löchern sind steil, und in Andratx ist er vor 14 Uhr ohnehin Pflicht. Auf den flacheren Plätzen (Son Antem, Maioris, Santa Ponsa und weitere) reicht ein Trolley, wenn Sie gern Bewegung haben."
         },
         {
           "caption": "Buggies kosten pro Runde meist 35-48 €"
@@ -4321,7 +4321,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Les voiturettes coûtent entre 35 et €48 selon le parcours. Son Gual facture €45, Alcanada €48 ; les modèles GPS donnent les distances et le plan du trou. Chariot manuel : €6-8. Chariot électrique : €14-25."
         },
         {
-          "text": "Sur les parcours vallonnés comme Bendinat, Andratx ou Son Vida, la voiturette vaut son prix. Sur les parcours plus plats (Son Antem, Maioris, Santa Ponsa et d'autres), un chariot suffit si vous aimez marcher."
+          "text": "Sur les parcours vallonnés comme Bendinat, Andratx ou Son Vida, prenez une voiturette : les montées entre les trous sont raides, et à Andratx elle est de toute façon obligatoire avant 14 h. Sur les parcours plus plats (Son Antem, Maioris, Santa Ponsa et d'autres), un chariot suffit si vous aimez marcher."
         },
         {
           "caption": "Les voiturettes coûtent en général €35-48 par partie"
@@ -4461,7 +4461,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Golfbuggys kosten €35-48 afhankelijk van de baan. Son Gual vraagt €45, Alcanada €48. De GPS-modellen geven afstanden en holekaarten. Trektrolley: €6-8. Elektrische trolley: €14-25."
         },
         {
-          "text": "Op heuvelachtigere banen als Bendinat, Andratx of Son Vida verdient een buggy zichzelf terug. Op de vlakkere banen (Son Antem, Maioris, Santa Ponsa en meer) is een trolley prima als je zin hebt in beweging."
+          "text": "Op heuvelachtigere banen als Bendinat, Andratx of Son Vida neem je een buggy: de klimmen tussen de holes zijn steil, en op Andratx is hij voor 14.00 uur sowieso verplicht. Op de vlakkere banen (Son Antem, Maioris, Santa Ponsa en meer) is een trolley prima als je zin hebt in beweging."
         },
         {
           "caption": "Buggys kosten meestal €35-48 per ronde"
@@ -4601,7 +4601,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Golfbuggy kostar €35-48 beroende på bana. Son Gual tar €45, Alcanada €48. GPS-modellerna ger avstånd och hålkartor. Dragvagn: €6-8. Elektrisk trolley: €14-25."
         },
         {
-          "text": "På kuperade banor som Bendinat, Andratx eller Son Vida är en golfbil värd pengarna. På de plattare banorna (Son Antem, Maioris, Santa Ponsa med flera) funkar en vagn bra om du vill ha motion."
+          "text": "På kuperade banor som Bendinat, Andratx eller Son Vida, ta en golfbil: backarna mellan hålen är branta, och på Andratx är den ändå obligatorisk före 14.00. På de plattare banorna (Son Antem, Maioris, Santa Ponsa med flera) funkar en vagn bra om du vill ha motion."
         },
         {
           "caption": "Buggy kostar vanligtvis €35-48 per rond"
@@ -4741,7 +4741,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "球车一般€35-48（约¥270-375）。Son Gual是€45，Alcanada是€48。带GPS的车型会给你距离和球洞地图。普通手推车€6-8，电动手推车€14-25。"
         },
         {
-          "text": "在 Bendinat、Andratx 或 Son Vida 这类起伏较大的球场，球车物有所值。在较平坦的球场（Son Antem、Maioris、Santa Ponsa 等），如果你想运动一下，手推车也完全够用。"
+          "text": "在 Bendinat、Andratx 或 Son Vida 这类起伏较大的球场，建议用球车：洞与洞之间的上坡很陡，而 Andratx 下午 2 点前本来就必须用球车。在较平坦的球场（Son Antem、Maioris、Santa Ponsa 等），如果你想运动一下，手推车也完全够用。"
         },
         {
           "caption": "一轮球的球车费用通常在€35-48之间"
@@ -5645,7 +5645,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Algo que los visitantes suelen subestimar: Mallorca es una isla seria más allá del golf, por eso tantos famosos, deportistas y otras personas la eligen como hogar o vuelven año tras año. Los campos son el ancla, pero los días entre rondas, o la tarde tras un final temprano, son lo que hace el viaje."
         },
         {
-          "text": "Los restaurantes de los clubes de muchos campos son algo más que un añadido, pero la isla ofrece muchas opciones, desde estrellas Michelin y favoritos locales hasta experiencias gastronómicas con chef privado. El casco antiguo de Palma tiene una escena gastronómica que va mucho más allá de su tamaño. La costa noroeste, con Valldemossa, Deià y Sóller, es Patrimonio de la Humanidad de la UNESCO y no se parece a nada más en el Mediterráneo. La costa noreste y el trayecto a Alcanada te llevan por algunos de los mejores paisajes de la isla. La carretera de montaña Ma-10 de Andratx a Pollença es una de las rutas más espectaculares de Europa. Reserva al menos una tarde en la que no tengas hora de salida."
+          "text": "Los restaurantes de los clubes de muchos campos son algo más que un añadido, y más allá de ellos la isla tiene cocina con estrella Michelin, sitios favoritos de los locales y cenas con chef privado. El casco antiguo de Palma tiene sitios buenos para comer de sobra para llenar una semana de noches. La costa noroeste, con Valldemossa, Deià y Sóller, es Patrimonio de la Humanidad de la UNESCO y no se parece a nada más en el Mediterráneo. La costa noreste y el trayecto a Alcanada te llevan por algunos de los mejores paisajes de la isla. La carretera de montaña Ma-10 de Andratx a Pollença es una de las rutas más espectaculares de Europa. Reserva al menos una tarde en la que no tengas hora de salida."
         },
         {
           "alt": "Alcanada y su faro",
@@ -5773,7 +5773,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Etwas, das Besucher oft unterschätzen: Mallorca ist abseits des Golfs eine ernstzunehmende Insel, weshalb so viele Prominente, Sportstars und andere sie als Zuhause wählen oder Jahr für Jahr zurückkehren. Die Plätze sind der Anker, aber die Tage zwischen den Runden oder der Nachmittag nach einem frühen Ende machen die Reise aus."
         },
         {
-          "text": "Die Clubhaus-Restaurants vieler Plätze sind mehr als ein Nachgedanke, doch die Insel bietet viele Optionen, von Michelin-Sternen über Lieblingslokale der Einheimischen bis zu Privatkoch-Erlebnissen. Palmas Altstadt hat eine Gastroszene, die weit über ihre Größe hinausreicht. Die Nordwestküste - Valldemossa, Deià, Sóller - ist UNESCO-Welterbe und sieht aus wie nichts sonst im Mittelmeer. Die Nordostküste und die Fahrt nach Alcanada führen durch einige der besten Landschaften der Insel. Die Bergstraße Ma-10 von Andratx nach Pollença ist eine der dramatischsten Strecken Europas. Planen Sie mindestens einen Nachmittag ein, an dem Sie keine Startzeit haben."
+          "text": "Die Clubhaus-Restaurants vieler Plätze sind mehr als ein Nachgedanke, und darüber hinaus hat die Insel Sterneküche, Lieblingslokale der Einheimischen und Abende mit Privatkoch. In Palmas Altstadt gibt es genug gute Lokale für eine ganze Woche voller Abende. Die Nordwestküste - Valldemossa, Deià, Sóller - ist UNESCO-Welterbe und sieht aus wie nichts sonst im Mittelmeer. Die Nordostküste und die Fahrt nach Alcanada führen durch einige der besten Landschaften der Insel. Die Bergstraße Ma-10 von Andratx nach Pollença ist eine der dramatischsten Strecken Europas. Planen Sie mindestens einen Nachmittag ein, an dem Sie keine Startzeit haben."
         },
         {
           "alt": "Alcanada und Leuchtturm",
@@ -5901,7 +5901,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Une chose que les visiteurs sous-estiment souvent : Majorque est une vraie île au-delà du golf, c'est pourquoi tant de célébrités, de sportifs et d'autres en font leur maison ou reviennent année après année. Les parcours sont l'ancre, mais les jours entre les parties, ou l'après-midi après une fin matinale, font le voyage."
         },
         {
-          "text": "Les restaurants des clubs-houses de nombreux parcours sont bien plus qu'un à-côté, mais l'île offre beaucoup d'options, des étoiles Michelin aux adresses préférées des habitants et aux expériences avec chef privé. La vieille ville de Palma a une scène gastronomique qui dépasse largement sa taille. La côte nord-ouest - Valldemossa, Deià, Sóller - est classée au patrimoine mondial de l'UNESCO et ne ressemble à rien d'autre en Méditerranée. La côte nord-est et la route vers Alcanada traversent certains des plus beaux paysages de l'île. La route de montagne Ma-10 d'Andratx à Pollença est l'un des trajets les plus spectaculaires d'Europe. Prévoyez au moins un après-midi sans heure de départ."
+          "text": "Les restaurants des clubs-houses de nombreux parcours sont bien plus qu'un à-côté, et au-delà, l'île compte des tables étoilées, les adresses préférées des habitants et des dîners avec chef privé. La vieille ville de Palma a assez de bonnes adresses pour remplir une semaine de soirées. La côte nord-ouest - Valldemossa, Deià, Sóller - est classée au patrimoine mondial de l'UNESCO et ne ressemble à rien d'autre en Méditerranée. La côte nord-est et la route vers Alcanada traversent certains des plus beaux paysages de l'île. La route de montagne Ma-10 d'Andratx à Pollença est l'un des trajets les plus spectaculaires d'Europe. Prévoyez au moins un après-midi sans heure de départ."
         },
         {
           "alt": "Alcanada et son phare",
@@ -6029,7 +6029,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Iets wat bezoekers vaak onderschatten: Mallorca is buiten het golf een serieus eiland, en daarom noemen zoveel beroemdheden, sporters en anderen het thuis of komen ze jaar na jaar terug. De banen vormen het anker, maar de dagen tussen de rondes, of de middag na een vroeg einde, maken de reis."
         },
         {
-          "text": "De clubhuisrestaurants van veel banen zijn meer dan een bijzaak, maar het eiland biedt veel opties, van Michelinsterren en lokale favorieten tot dineren met een privékok. De oude stad van Palma heeft een eetscene die ver boven haar formaat uitsteekt. De noordwestkust - Valldemossa, Deià, Sóller - is UNESCO-werelderfgoed en lijkt op niets anders in de Middellandse Zee. De noordoostkust en de rit naar Alcanada voeren door een deel van het mooiste landschap van het eiland. De bergweg Ma-10 van Andratx naar Pollença is een van de spectaculairste ritten van Europa. Plan minstens één middag in waarop je geen starttijd hebt."
+          "text": "De clubhuisrestaurants van veel banen zijn meer dan een bijzaak, en daarnaast heeft het eiland sterrenrestaurants, favorieten van de locals en diners met een privékok. In de oude stad van Palma zijn genoeg goede plekken om een week aan avonden te vullen. De noordwestkust - Valldemossa, Deià, Sóller - is UNESCO-werelderfgoed en lijkt op niets anders in de Middellandse Zee. De noordoostkust en de rit naar Alcanada voeren door een deel van het mooiste landschap van het eiland. De bergweg Ma-10 van Andratx naar Pollença is een van de spectaculairste ritten van Europa. Plan minstens één middag in waarop je geen starttijd hebt."
         },
         {
           "alt": "Alcanada en de vuurtoren",
@@ -6157,7 +6157,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Något som besökare ofta underskattar: Mallorca är en seriös ö även bortom golfen, och därför har så många kändisar, idrottsstjärnor och andra den som hem eller återvänder år efter år. Banorna är ankaret, men dagarna mellan rundorna, eller eftermiddagen efter ett tidigt slut, är det som gör resan."
         },
         {
-          "text": "Klubbhusrestaurangerna på många banor är mer än en eftertanke, men ön har många alternativ, från Michelinstjärnor och lokala favoriter till middagar med privatkock. Palmas gamla stad har en matscen som slår långt över sin storlek. Nordvästkusten - Valldemossa, Deià, Sóller - är UNESCO-världsarv och ser ut som ingenting annat i Medelhavet. Nordostkusten och resan till Alcanada tar dig genom en del av öns bästa landskap. Bergsvägen Ma-10 från Andratx till Pollença är en av Europas mest dramatiska bilresor. Lägg in minst en eftermiddag då du inte har någon starttid."
+          "text": "Klubbhusrestaurangerna på många banor är mer än en eftertanke, och utöver dem har ön stjärnkrogar, lokala favoriter och middagar med privatkock. I Palmas gamla stad finns tillräckligt många bra ställen att äta på för att fylla en veckas kvällar. Nordvästkusten - Valldemossa, Deià, Sóller - är UNESCO-världsarv och ser ut som ingenting annat i Medelhavet. Nordostkusten och resan till Alcanada tar dig genom en del av öns bästa landskap. Bergsvägen Ma-10 från Andratx till Pollença är en av Europas mest dramatiska bilresor. Lägg in minst en eftermiddag då du inte har någon starttid."
         },
         {
           "alt": "Alcanada och fyren",
@@ -6285,7 +6285,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "游客常常低估的一点：除了高尔夫，马略卡本身也是一座了不起的岛，这也是为什么有那么多名人、体育明星和其他人把这里当作家，或年复一年回来。球场是锚点，但两轮球之间的日子，或是提前打完后的那个下午，才是让整趟旅行难忘的部分。"
         },
         {
-          "text": "许多球场的会所餐厅不只是附带的，但岛上有很多选择，从米其林星级、本地人最爱，到私人厨师用餐体验。帕尔马老城的餐饮氛围远超它的规模。西北海岸的 Valldemossa、Deià 和 Sóller 是联合国教科文组织世界遗产，在地中海上独一无二。东北海岸以及前往 Alcanada 的路上，会经过岛上一些最美的风景。从 Andratx 到 Pollença 的 Ma-10 山路，是欧洲最惊险壮观的公路之一。至少留出一个没有开球时间的下午。"
+          "text": "许多球场的会所餐厅不只是附带的，除此之外，岛上还有米其林星级餐厅、本地人常去的小馆和私人厨师晚餐。帕尔马老城的好餐厅多到够你吃上一整个星期的晚饭。西北海岸的 Valldemossa、Deià 和 Sóller 是联合国教科文组织世界遗产，在地中海上独一无二。东北海岸以及前往 Alcanada 的路上，会经过岛上一些最美的风景。从 Andratx 到 Pollença 的 Ma-10 山路，是欧洲最惊险壮观的公路之一。至少留出一个没有开球时间的下午。"
         },
         {
           "alt": "Alcanada 与灯塔",

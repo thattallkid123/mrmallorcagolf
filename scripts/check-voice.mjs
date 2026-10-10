@@ -74,11 +74,6 @@ const FILES = discoverFiles()
 // new rules could ship without rewriting live copy in seven languages; fix each
 // one the next time that page's English is edited, then delete its entry.
 const GRANDFATHERED_CONSTRUCTIONS = [
-  { file: 'src/lib/guide-post-content.js', snippet: 'it earns its place on the list' }, // Son Termes verdict
-  { file: 'src/lib/guide-article-content.js', snippet: 'there is plenty to think about' }, // near-Palma guide, Son Quint
-  { file: 'src/lib/guide-post-content.js', snippet: 'It is a good fit for anyone' }, // T Golf Palma verdict
-  { file: 'src/lib/guide-post-content.js', snippet: 'there was still plenty to think about' }, // Son Quint opening
-  { file: 'src/lib/guide-post-content.js', snippet: 'make it a good fit for golfers' }, // Son Quint verdict
 ]
 
 

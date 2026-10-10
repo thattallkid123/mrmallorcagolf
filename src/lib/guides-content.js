@@ -37,7 +37,7 @@ export const GUIDES_CONTENT = {
       "img": "/images/son-gual-card.webp",
       "imgPosition": "center 40%",
       "title": "Son Gual Golf Mallorca - A PGA Professional's Honest Review (2026)",
-      "intro": "My most-played course on the island. The wind, the greens, the closing stretch, and why Obama and Nadal both keep coming back.",
+      "intro": "My most-played course on the island. The wind is fickle, the greens are quick, and the closing stretch is as good as anything in Mallorca.",
       "readTime": "7 min read",
       "keywords": "Championship · Par 72 · €115-165 · Handicap required"
     },

@@ -23,7 +23,7 @@ const data = {
   "Son Antem West": "Vlak en vergevingsgezind, en de met bomen omzoomde 16e is alleen al de ronde waard. Reken op wachttijden op drukke momenten.",
   "Son Termes": "De achterste negen heeft het beste bergzicht zo dicht bij Palma, maar de klimmen maken het een veel zwaardere wandeling dan de voorste.",
   "Pollensa": "Een compacte negenholesoptie onder de Tramuntana, met een paar echte klimmen ondanks het korte formaat.",
-  "Capdepera": "De 15e is stroke index 1 en werd gekozen tot beste hole van het eiland. Rafa Nadal speelt hier regelmatig.",
+  "Capdepera": "De 15e is stroke index 1 en werd door Mallorca Magazin gekozen tot beste hole van het eiland.",
   "Canyamel": "Een José Gancedo-ontwerp met meren over de hele baan. Sla voor 8:50 uur af en het vroegevogeltarief bespaart een flink bedrag.",
   "Pula": "Een Olazábal-herontwerp met een range op twee niveaus en sterke korte-spelfaciliteiten. Een goede keuze voor een oefenintensieve golfdag.",
   "Son Servera": "De op één na oudste club van het eiland. Vlak, goed te belopen, en het menu del día van € 21 is eerlijke prijs-kwaliteit.",

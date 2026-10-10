@@ -42,7 +42,7 @@ const content = {
         "text": "Cómo se juega el campo"
       },
       {
-        "text": "Hicimos los 18 hoyos andando. Los primeros nueve son mucho más llanos y se caminan con facilidad. Yo pegaba muchos hierros desde el tee para que la vuelta fuera sociable con mi cliente, pero incluso así, jugando desde los tees blancos (los de atrás) y pegando un hierro de salida a unas 230 yardas, había mucho en lo que pensar. Son Quint es el campo más nuevo del grupo Arabella Golf y en general se considera el más amable de los cuatro. Esa fama no debe confundirse con que sea fácil."
+        "text": "Hicimos los 18 hoyos andando. Los primeros nueve son mucho más llanos y se caminan con facilidad. Yo pegaba muchos hierros desde el tee para que la vuelta fuera sociable con mi cliente, pero incluso así, jugando desde los tees blancos (los de atrás) y pegando un hierro de salida a unas 230 yardas, seguía habiendo líneas ciegas y greens elevados que calcular. Son Quint es el campo más nuevo del grupo Arabella Golf y en general se considera el más amable de los cuatro. Esa fama no debe confundirse con que sea fácil."
       },
       {
         "text": "Varios greens están elevados sobre la calle, así que el juego corto tiene que ser preciso. Eso importa más de lo normal aquí porque los greens son duros y bastantes banderas de hoy estaban cerca de los bordes. Los greens en sí estaban notablemente más lentos en los primeros hoyos, con el rocío todavía puesto, y muy rápidos en cuanto el equipo de mantenimiento pasó a cortarlos."
@@ -143,7 +143,7 @@ const content = {
         "text": "Veredicto"
       },
       {
-        "text": "8/10. Son Quint es el campo más accesible del grupo Arabella Golf sin dejar de ser exigente. Calles anchas, cuatro posiciones de salida y un ambiente cercano y sociable lo hacen apto para golfistas de cualquier nivel, mientras que los greens firmes y bien defendidos, junto con unos segundos nueve exigentes, plantean preguntas de verdad a un jugador mejor también. El mantenimiento fue excelente para septiembre, y la acogida, desde recepción hasta el jefe de caddies y el personal de sala, fue de las mejores que he tenido en Mallorca."
+        "text": "8/10. Son Quint es el campo más accesible del grupo Arabella Golf sin dejar de ser exigente. Calles anchas, cuatro posiciones de salida y un ambiente cercano y sociable lo hacen apto para golfistas de cualquier nivel, mientras que los greens firmes y bien defendidos y los golpes a ciegas de los segundos nueve obligan también a un jugador mejor a trabajarse el resultado. El mantenimiento fue excelente para septiembre, y la acogida, desde recepción hasta el jefe de caddies y el personal de sala, fue de las mejores que he tenido en Mallorca."
       },
       {
         "title": "Cuatro cosas que me habría gustado saber antes de reservar Son Quint",
@@ -217,7 +217,7 @@ const content = {
         "text": "So spielt sich der Platz"
       },
       {
-        "text": "Wir sind alle 18 Löcher gelaufen. Die Front Nine sind deutlich flacher und leicht zu gehen. Ich habe viele Eisen vom Abschlag gespielt, damit die Runde mit meinem Kunden gesellig blieb, aber selbst dann gab es von den weißen (hinteren) Abschlägen aus, mit einem Eisen um die 230 Yards vom Tee, noch genug zu bedenken. Der Son Quint ist der neueste Platz der Arabella Golf Gruppe und gilt allgemein als der freundlichste der vier. Dieser Ruf sollte nicht mit „einfach“ verwechselt werden."
+        "text": "Wir sind alle 18 Löcher gelaufen. Die Front Nine sind deutlich flacher und leicht zu gehen. Ich habe viele Eisen vom Abschlag gespielt, damit die Runde mit meinem Kunden gesellig blieb, aber selbst dann gab es von den weißen (hinteren) Abschlägen aus, mit einem Eisen um die 230 Yards vom Tee, noch blinde Linien und erhöhte Grüns einzuschätzen. Der Son Quint ist der neueste Platz der Arabella Golf Gruppe und gilt allgemein als der freundlichste der vier. Dieser Ruf sollte nicht mit „einfach“ verwechselt werden."
       },
       {
         "text": "Mehrere Greens liegen über dem Fairway, deshalb muss das kurze Spiel präzise sein. Das zählt hier mehr als sonst, weil die Greens fest sind und ziemlich viele der heutigen Fahnen nah am Rand steckten. Die Greens selbst waren auf den ersten Löchern spürbar langsamer, mit dem Tau noch darauf, und wurden richtig schnell, sobald das Greenkeeping-Team durch war und gemäht hatte."
@@ -318,7 +318,7 @@ const content = {
         "text": "Fazit"
       },
       {
-        "text": "8/10. Der Son Quint ist der zugänglichste Platz der Arabella Golf Gruppe, ohne leicht zu sein. Breite Fairways, vier Abschlagspositionen und eine herzliche, gesellige Atmosphäre machen ihn zu einer guten Wahl für Golfer jedes Niveaus, während feste, gut verteidigte Greens und anspruchsvolle Back Nine auch einem besseren Spieler echte Fragen stellen. Der Zustand war für September ausgezeichnet, und der Empfang, von der Rezeption über den Caddiemaster bis zum Servicepersonal, gehörte zu den besten, die ich auf Mallorca erlebt habe."
+        "text": "8/10. Der Son Quint ist der zugänglichste Platz der Arabella Golf Gruppe, ohne leicht zu sein. Breite Fairways, vier Abschlagspositionen und eine herzliche, gesellige Atmosphäre machen ihn für Golfer jedes Niveaus passend, während feste, gut verteidigte Grüns und die blinden Schläge auf den Back Nine auch einen besseren Spieler für seinen Score arbeiten lassen. Der Zustand war für September ausgezeichnet, und der Empfang, von der Rezeption über den Caddiemaster bis zum Servicepersonal, gehörte zu den besten, die ich auf Mallorca erlebt habe."
       },
       {
         "title": "Vier Dinge, die ich vor der Buchung von Son Quint klären würde",
@@ -392,7 +392,7 @@ const content = {
         "text": "Comment le parcours se joue"
       },
       {
-        "text": "Nous avons fait les 18 trous à pied. Les neuf premiers sont bien plus plats et se marchent facilement. Je jouais beaucoup de fers depuis le départ pour garder la partie conviviale avec mon client, mais même ainsi, depuis les départs blancs (ceux du fond) et avec un fer d'environ 230 yards au départ, il y avait largement de quoi réfléchir. Son Quint est le parcours le plus récent du groupe Arabella Golf et il est généralement considéré comme le plus accueillant des quatre. Cette réputation ne doit pas être confondue avec facile."
+        "text": "Nous avons fait les 18 trous à pied. Les neuf premiers sont bien plus plats et se marchent facilement. Je jouais beaucoup de fers depuis le départ pour garder la partie conviviale avec mon client, mais même ainsi, depuis les départs blancs (ceux du fond) et avec un fer d'environ 230 yards au départ, il restait des lignes aveugles et des greens surélevés à jauger. Son Quint est le parcours le plus récent du groupe Arabella Golf et il est généralement considéré comme le plus accueillant des quatre. Cette réputation ne doit pas être confondue avec facile."
       },
       {
         "text": "Plusieurs greens sont surélevés par rapport au fairway, le petit jeu doit donc être précis. Cela compte plus qu'ailleurs ici parce que les greens sont fermes et que pas mal de drapeaux du jour étaient proches des bords. Les greens étaient nettement plus lents sur les premiers trous, avec la rosée encore présente, puis vraiment rapides une fois que l'équipe était passée les tondre."
@@ -493,7 +493,7 @@ const content = {
         "text": "Verdict"
       },
       {
-        "text": "8/10. Son Quint est le parcours le plus accessible du groupe Arabella Golf sans être facile pour autant. Des fairways larges, quatre positions de départ et une ambiance chaleureuse et conviviale en font un bon choix pour les golfeurs de tous niveaux, tandis que des greens fermes et bien défendus et des neuf derniers exigeants posent de vraies questions à un meilleur joueur aussi. L'état du parcours était excellent pour septembre, et l'accueil, de la réception au caddie master en passant par le personnel de salle, était parmi les meilleurs que j'ai connus à Majorque."
+        "text": "8/10. Son Quint est le parcours le plus accessible du groupe Arabella Golf sans être facile pour autant. Des fairways larges, quatre positions de départ et une ambiance chaleureuse et conviviale le rendent adapté aux golfeurs de tous niveaux, tandis que des greens fermes et bien défendus et les coups aveugles du retour obligent aussi un meilleur joueur à aller chercher son score. L'état du parcours était excellent pour septembre, et l'accueil, de la réception au caddie master en passant par le personnel de salle, était parmi les meilleurs que j'ai connus à Majorque."
       },
       {
         "title": "Quatre choses que je voudrais savoir avant de réserver Son Quint",
@@ -567,7 +567,7 @@ const content = {
         "text": "Hoe de baan speelt"
       },
       {
-        "text": "We hebben alle 18 holes gelopen. De front nine zijn veel vlakker en makkelijk te lopen. Ik sloeg veel ijzers vanaf de tee om de ronde gezellig te houden met mijn klant, maar zelfs dan, vanaf de witte (achterste) tees en met een ijzer van zo'n 230 yards van de tee, was er nog genoeg om over na te denken. Son Quint is de nieuwste baan van de Arabella Golf-groep en wordt over het algemeen gezien als de vriendelijkste van de vier. Die reputatie moet niet verward worden met makkelijk."
+        "text": "We hebben alle 18 holes gelopen. De front nine zijn veel vlakker en makkelijk te lopen. Ik sloeg veel ijzers vanaf de tee om de ronde gezellig te houden met mijn klant, maar zelfs dan, vanaf de witte (achterste) tees en met een ijzer van zo'n 230 yards van de tee, waren er nog steeds blinde lijnen en verhoogde greens om in te schatten. Son Quint is de nieuwste baan van de Arabella Golf-groep en wordt over het algemeen gezien als de vriendelijkste van de vier. Die reputatie moet niet verward worden met makkelijk."
       },
       {
         "text": "Meerdere greens liggen boven de fairway, dus het korte spel moet nauwkeurig zijn. Dat telt hier zwaarder dan normaal omdat de greens hard zijn en nogal wat van de vlaggen van vandaag dicht bij de randen stonden. De greens zelf waren de eerste holes merkbaar langzamer met de dauw er nog op, en echt snel zodra het team was langsgeweest om te maaien."
@@ -668,7 +668,7 @@ const content = {
         "text": "Oordeel"
       },
       {
-        "text": "8/10. Son Quint is de meest toegankelijke baan van de Arabella Golf-groep zonder makkelijk te zijn. Brede fairways, vier teeposities en een warme, gezellige sfeer maken hem geschikt voor golfers van elk niveau, terwijl stevige, goed verdedigde greens en een uitdagende back nine ook een betere speler echte vragen stellen. De conditie was uitstekend voor september, en de ontvangst, van de receptie tot de caddiemaster en het bedienend personeel, was een van de beste die ik op Mallorca heb meegemaakt."
+        "text": "8/10. Son Quint is de meest toegankelijke baan van de Arabella Golf-groep zonder makkelijk te zijn. Brede fairways, vier teeposities en een warme, gezellige sfeer maken hem geschikt voor golfers van elk niveau, terwijl stevige, goed verdedigde greens en de blinde slagen op de back nine ook een betere speler voor zijn score laten werken. De conditie was uitstekend voor september, en de ontvangst, van de receptie tot de caddiemaster en het bedienend personeel, was een van de beste die ik op Mallorca heb meegemaakt."
       },
       {
         "title": "Vier dingen die ik zou willen weten voordat ik Son Quint boek",
@@ -742,7 +742,7 @@ const content = {
         "text": "Så spelar sig banan"
       },
       {
-        "text": "Vi gick alla 18 hål. Front nine är mycket plattare och lätt att gå. Jag slog många järn från tee för att hålla rundan sällskaplig med min kund, men även då, från de vita (bakre) tee och med ett järn på ungefär 230 yards från tee, fanns det gott om att tänka på. Son Quint är den nyaste banan i Arabella Golf-gruppen och anses allmänt vara den vänligaste av de fyra. Det ryktet ska inte förväxlas med lätt."
+        "text": "Vi gick alla 18 hål. Front nine är mycket plattare och lätt att gå. Jag slog många järn från tee för att hålla rundan sällskaplig med min kund, men även då, från de vita (bakre) tee och med ett järn på ungefär 230 yards från tee, fanns det fortfarande blinda linjer och upphöjda greener att räkna ut. Son Quint är den nyaste banan i Arabella Golf-gruppen och anses allmänt vara den vänligaste av de fyra. Det ryktet ska inte förväxlas med lätt."
       },
       {
         "text": "Flera greener ligger högre än fairway, så det korta spelet måste vara exakt. Det spelar större roll här än vanligt eftersom greenerna är hårda och ganska många av dagens flaggor stod nära kanterna. Greenerna själva var märkbart långsammare de första hålen med daggen kvar, och riktigt snabba när banpersonalen hade varit förbi och klippt dem."
@@ -843,7 +843,7 @@ const content = {
         "text": "Omdöme"
       },
       {
-        "text": "8/10. Son Quint är den mest lättillgängliga banan i Arabella Golf-gruppen utan att vara lätt. Breda fairwayer, fyra tee-positioner och en varm, sällskaplig stämning gör den lämplig för golfare på alla nivåer, medan fasta, väl försvarade greener och en utmanande back nine ställer verkliga frågor även till en bättre spelare. Skicket var utmärkt för september, och välkomnandet, från receptionen via caddiemastern till serveringspersonalen, var bland de bästa jag har fått på Mallorca."
+        "text": "8/10. Son Quint är den mest lättillgängliga banan i Arabella Golf-gruppen utan att vara lätt. Breda fairwayer, fyra tee-positioner och en varm, sällskaplig stämning gör den lämplig för golfare på alla nivåer, medan fasta, väl försvarade greener och de blinda slagen på bakre nio får även en bättre spelare att slita för sin score. Skicket var utmärkt för september, och välkomnandet, från receptionen via caddiemastern till serveringspersonalen, var bland de bästa jag har fått på Mallorca."
       },
       {
         "title": "Fyra saker jag skulle vilja veta innan jag bokar Son Quint",
@@ -917,7 +917,7 @@ const content = {
         "text": "球场打起来怎么样"
       },
       {
-        "text": "我们走完了全部18洞。前九洞平坦得多，走起来很轻松。为了让这一轮和客人打得轻松愉快，我开球用了很多铁杆，但即使这样，从白色（最后方）发球台出发、开球用一支铁杆打大约230码，仍然有不少需要动脑的地方。Son Quint 是 Arabella Golf 集团里最新的球场，一般被认为是四座球场里最友好的一座。这个口碑不该被理解成简单。"
+        "text": "我们走完了全部18洞。前九洞平坦得多，走起来很轻松。为了让这一轮和客人打得轻松愉快，我开球用了很多铁杆，但即使这样，从白色（最后方）发球台出发、开球用一支铁杆打大约230码，仍然要判断盲打线路和抬高的果岭。Son Quint 是 Arabella Golf 集团里最新的球场，一般被认为是四座球场里最友好的一座。这个口碑不该被理解成简单。"
       },
       {
         "text": "好几个果岭高于球道，所以近距离球技必须准确。这里这一点比平时更重要，因为果岭偏硬，今天不少旗杆位置都靠近果岭边缘。果岭本身在前几个洞明显更慢，露水还在，等球场工作人员修剪完之后就变得非常快。"
@@ -1018,7 +1018,7 @@ const content = {
         "text": "总结"
       },
       {
-        "text": "8/10。Son Quint 是 Arabella Golf 集团里最容易上手的球场，但并不简单。宽阔的球道、四个发球位置，以及热闹友好的氛围，让它适合各种水平的球手，而偏硬、防守到位的果岭和有挑战的后九洞，也足以考验水平更高的球手。以九月来说，球场状况极佳，而从前台到球童主管再到服务员，这里的接待是我在马略卡（Mallorca）遇到过的最好的之一。"
+        "text": "8/10。Son Quint 是 Arabella Golf 集团里最容易上手的球场，但并不简单。宽阔的球道、四个发球位置，以及热闹友好的氛围，让它适合各种水平的球手，而偏硬、防守到位的果岭和后九洞的盲打，也会让水平更高的球手为成绩下一番功夫。以九月来说，球场状况极佳，而从前台到球童主管再到服务员，这里的接待是我在马略卡（Mallorca）遇到过的最好的之一。"
       },
       {
         "title": "预订 Son Quint 前值得先知道的四件事",

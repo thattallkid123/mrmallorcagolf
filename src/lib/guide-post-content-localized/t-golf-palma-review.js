@@ -160,7 +160,7 @@ const content = {
         ]
       },
       {
-        "text": "Es una buena opción para quien juegue varias vueltas por la zona de Palma y quiera una prueba seria sin necesitar un día entero. Si estás organizando un viaje más amplio, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> explica cómo encajar campos como este junto a <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
+        "text": "Resérvalo si juegas varias vueltas por la zona de Palma y quieres una prueba seria sin renunciar a un día entero. Si estás organizando un viaje más amplio, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> explica cómo encajar campos como este junto a <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
       },
       {
         "alt": "Andy Griffiths con su compañero de juego antes de la vuelta en T Golf Palma"
@@ -331,7 +331,7 @@ const content = {
         ]
       },
       {
-        "text": "Er passt gut zu allen, die mehrere Runden im Raum Palma spielen und einen richtigen Test wollen, ohne einen ganzen Tag zu brauchen. Wenn Sie eine größere Reise planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> ab, wie man Plätze wie diesen neben <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a> einplant."
+        "text": "Buchen Sie ihn, wenn Sie mehrere Runden rund um Palma spielen und einen richtigen Test wollen, ohne dafür einen ganzen Tag herzugeben. Wenn Sie eine größere Reise planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> ab, wie man Plätze wie diesen neben <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a> einplant."
       },
       {
         "alt": "Andy Griffiths mit seinem Mitspieler vor der Runde bei T Golf Palma"
@@ -502,7 +502,7 @@ const content = {
         ]
       },
       {
-        "text": "C'est un bon choix pour qui joue plusieurs parcours dans la région de Palma et veut un vrai test sans avoir besoin d'une journée entière. Si vous organisez un voyage plus large, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> explique comment enchaîner des parcours comme celui-ci avec <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
+        "text": "Réservez-le si vous jouez plusieurs parties autour de Palma et voulez un vrai test sans y consacrer une journée entière. Si vous organisez un voyage plus large, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> explique comment enchaîner des parcours comme celui-ci avec <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
       },
       {
         "alt": "Andy Griffiths avec son partenaire de jeu avant la partie à T Golf Palma"
@@ -673,7 +673,7 @@ const content = {
         ]
       },
       {
-        "text": "Het is een goede optie voor wie meerdere ronden in de omgeving van Palma speelt en een serieuze test wil zonder een hele dag nodig te hebben. Ben je een grotere reis aan het plannen, dan behandelt de <a href=\"/plan-your-trip\">reisplanningsgids</a> hoe je banen als deze combineert met <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
+        "text": "Boek hem als je meerdere rondes rond Palma speelt en een serieuze test wilt zonder er een hele dag aan kwijt te zijn. Ben je een grotere reis aan het plannen, dan behandelt de <a href=\"/plan-your-trip\">reisplanningsgids</a> hoe je banen als deze combineert met <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
       },
       {
         "alt": "Andy Griffiths met zijn speelpartner voor de ronde bij T Golf Palma"
@@ -844,7 +844,7 @@ const content = {
         ]
       },
       {
-        "text": "Den passar bra för den som spelar flera rundor i Palma-området och vill ha ett rejält test utan att behöva en hel dag. Om du planerar en större resa täcker <a href=\"/plan-your-trip\">reseplaneringsguiden</a> hur man lägger in banor som denna tillsammans med <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
+        "text": "Boka den om du spelar flera rundor runt Palma och vill ha ett rejält test utan att offra en hel dag. Om du planerar en större resa täcker <a href=\"/plan-your-trip\">reseplaneringsguiden</a> hur man lägger in banor som denna tillsammans med <a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>."
       },
       {
         "alt": "Andy Griffiths med sin spelpartner före rundan hos T Golf Palma"
@@ -1015,7 +1015,7 @@ const content = {
         ]
       },
       {
-        "text": "如果你打算在帕尔马地区打几轮球，又想要一次真正的考验而不需要花上一整天，这座球场是不错的选择。如果你在规划更长的行程，<a href=\"/plan-your-trip\">行程规划指南</a>介绍了如何把这样的球场和<a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>安排在一起。"
+        "text": "如果你在帕尔马周边要打几轮球，想要一次真正的考验，又不想花掉一整天，就订这座球场。如果你在规划更长的行程，<a href=\"/plan-your-trip\">行程规划指南</a>介绍了如何把这样的球场和<a href=\"/guides/t-golf-calvia-review\">T Golf Calvià</a>安排在一起。"
       },
       {
         "alt": "Andy Griffiths在T Golf Palma与球伴合影，赛前拍摄"

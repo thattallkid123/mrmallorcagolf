@@ -102,7 +102,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'At hillier courses like Bendinat, Andratx or Son Vida, a buggy earns its cost. At the flatter courses (Son Antem, Maioris, Santa Ponsa and more), a trolley can be fine if you fancy the exercise.',
+          'At hillier courses like Bendinat, Andratx or Son Vida, take a buggy: the climbs between holes are steep, and at Andratx it is compulsory before 2pm anyway. At the flatter courses (Son Antem, Maioris, Santa Ponsa and more), a trolley can be fine if you fancy the exercise.',
       },
       {
         type: 'image',
@@ -1217,7 +1217,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "The clubhouse restaurants at many of the courses are more than an after-thought, but the island boasts many options from Michelin stars, local favourites and private chef dining experiences. Old town Palma has a dining scene that punches well above its size. The northwest coast - Valldemossa, Deià, Sóller - is UNESCO World Heritage and looks like nothing else in the Mediterranean. The northeast coast and the drive to Alcanada takes you through some of the best scenery on the island. The Ma-10 mountain road from Andratx to Pollença is one of the most dramatic drives in Europe. Build in at least one afternoon where you do not have a tee time.",
+          "The clubhouse restaurants at many of the courses are more than an after-thought, and beyond them the island has Michelin-starred dining, local favourites and private chef dinners. Old town Palma has enough good places to eat to fill a week of evenings. The northwest coast - Valldemossa, Deià, Sóller - is UNESCO World Heritage and looks like nothing else in the Mediterranean. The northeast coast and the drive to Alcanada takes you through some of the best scenery on the island. The Ma-10 mountain road from Andratx to Pollença is one of the most dramatic drives in Europe. Build in at least one afternoon where you do not have a tee time.",
       },
       {
         type: 'image',
@@ -1376,7 +1376,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       { type: 'subheading', text: 'Son Quint' },
       {
         type: 'paragraph',
-        text: 'Son Quint is the newest of the three and the one I would book for a group with a wide spread of handicaps. The limit is 54, there are four tee positions, and the front nine is flat and an easy walk. It is an easy course to walk, and even hitting irons off the back tees there is plenty to think about. Several greens sit above the fairway and they are firm, so a short-sided chip runs away from you.',
+        text: 'Son Quint is the newest of the three and the one I would book for a group with a wide spread of handicaps. The limit is 54, there are four tee positions, and the front nine is flat and an easy walk. It is an easy course to walk, and even hitting irons off the back tees, I had blind tee shots to plan on the back nine. Several greens sit above the fairway and they are firm, so a short-sided chip runs away from you.',
       },
       {
         type: 'paragraph',

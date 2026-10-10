@@ -23,7 +23,7 @@ const data = {
   "Son Antem West": "Plat et tolérant, et le 16, bordé d'arbres, vaut la partie à lui seul. Attendez-vous à des files d'attente aux heures de pointe.",
   "Son Termes": "Les neuf derniers offrent les plus belles vues de montagne si près de Palma, mais les montées en font une marche bien plus dure que les neuf premiers.",
   "Pollensa": "Une option compacte de neuf trous sous la Tramuntana, avec quelques vraies montées malgré le format court.",
-  "Capdepera": "Le 15 est l'index 1 et a été élu meilleur trou de l'île. Rafa Nadal y joue régulièrement.",
+  "Capdepera": "Le 15 est l'index 1 et a été élu meilleur trou de l'île par Mallorca Magazin.",
   "Canyamel": "Un dessin de José Gancedo avec des lacs sur tout le parcours. Partez avant 8 h 50 et le tarif lève-tôt économise une somme appréciable.",
   "Pula": "Un redessin d'Olazábal avec un practice sur deux niveaux et de solides installations de petit jeu. Un bon choix pour une journée de golf axée sur l'entraînement.",
   "Son Servera": "Le deuxième plus ancien club de l'île. Plat, facile à parcourir à pied, et le menu del día à 21 € offre un rapport qualité-prix honnête.",

@@ -892,7 +892,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Son Termes delivers more character than most courses at this price level. The views from the back nine are the best available anywhere this close to Palma. The layout keeps you thinking throughout, and a second visit would unlock a better score. For a visiting golfer who wants something different from the premium courses, or a resident looking for a course with genuine personality at a sensible price, it earns its place on the list. If you\'re still working out the wider itinerary, the <a href="/plan-your-trip">trip planning guide</a> covers logistics and timing.',
+          text: 'Son Termes delivers more character than most courses at this price level. The views from the back nine are the best available anywhere this close to Palma. The layout keeps you thinking throughout, and a second visit would unlock a better score. For a visiting golfer who wants something different from the premium courses, or a resident looking for a course with genuine personality at a sensible price, it is worth one of your rounds, at around €90-110 against €165 at Son Gual. If you\'re still working out the wider itinerary, the <a href="/plan-your-trip">trip planning guide</a> covers logistics and timing.',
         },
         {
           type: 'cta',
@@ -1063,7 +1063,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'It is a good fit for anyone playing multiple rounds in the Palma area who wants a proper test without needing a full day. If you are building out a wider trip, the <a href="/plan-your-trip">trip planning guide</a> covers how to sequence courses like this alongside <a href="/guides/t-golf-calvia-review">T Golf Calvià</a>.',
+          text: 'Book it if you are playing several rounds around Palma and want a proper test without giving up a full day. If you are building out a wider trip, the <a href="/plan-your-trip">trip planning guide</a> covers how to sequence courses like this alongside <a href="/guides/t-golf-calvia-review">T Golf Calvià</a>.',
         },
         {
           type: 'image',
@@ -1123,7 +1123,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'How The Course Plays' },
         {
           type: 'paragraph',
-          text: "We walked all 18. The front nine is much flatter and an easy walk. I was hitting a lot of irons off the tee to keep the round sociable with my client, but even then, playing the white (back) tees and hitting an iron off the tee around 230 yards, there was still plenty to think about. Son Quint is the newest course in the Arabella Golf group and generally considered the friendliest of the four. That reputation should not be mistaken for easy.",
+          text: "We walked all 18. The front nine is much flatter and an easy walk. I was hitting a lot of irons off the tee to keep the round sociable with my client, but even then, playing the white (back) tees and hitting an iron off the tee around 230 yards, there were still blind lines and raised greens to work out. Son Quint is the newest course in the Arabella Golf group and generally considered the friendliest of the four. That reputation should not be mistaken for easy.",
         },
         {
           type: 'paragraph',
@@ -1247,7 +1247,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Verdict' },
         {
           type: 'paragraph',
-          text: "8/10. Son Quint is the most accessible course in the Arabella Golf group without being an easy one. Wide fairways, four tee positions and a warm, sociable atmosphere make it a good fit for golfers of any level, while firm, well-defended greens and a testing back nine ask real questions of a better player too. Conditioning was excellent for September, and the welcome, from reception through to the caddie master and the waiting staff, was some of the best I have had in Mallorca.",
+          text: "8/10. Son Quint is the most accessible course in the Arabella Golf group without being an easy one. Wide fairways, four tee positions and a warm, sociable atmosphere make it suit golfers of any level, while firm, well-defended greens and the blind shots on the back nine still make a better player work for a score. Conditioning was excellent for September, and the welcome, from reception through to the caddie master and the waiting staff, was some of the best I have had in Mallorca.",
         },
         {
           type: 'notes',

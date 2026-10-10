@@ -241,7 +241,7 @@ const COURSES = [
     played:false,
     bestPlayer:'Casual to low handicap',
     designer:'Dan Maples',
-    signatureHole:'Hole 15: voted best hole in Mallorca by Mallorca Magazin. Rafa Nadal plays Capdepera regularly. SI 1 (the island\'s hardest-rated hole).',
+    signatureHole:'Hole 15: voted best hole in Mallorca by Mallorca Magazin. SI 1 (the island\'s hardest-rated hole).',
     michelin:'Cap Vermell Grand Hotel has fine dining (15 minutes), good for a special evening.',
     pairsWith:'Pair with Canyamel Golf, 15 minutes away, for the best two-round day on the east coast.',
     tags:{ability:['casual','confident','low'],style:['relaxed','scenic','serious'],budget:['value','mid'],group:['family','friends','couple']}

@@ -23,7 +23,7 @@ const data = {
   "Son Antem West": "Platt och förlåtande, och den trädkantade 16:an är värd rundan i sig. Räkna med köer vid hektiska tider.",
   "Son Termes": "De sista nio har öns bästa bergsutsikt så nära Palma, men backarna gör den till en mycket tuffare promenad än de första nio.",
   "Pollensa": "Ett kompakt niohålsalternativ under Tramuntana, med några riktiga backar trots det korta formatet.",
-  "Capdepera": "15:an är index 1 och röstades fram som öns bästa hål. Rafa Nadal spelar här regelbundet.",
+  "Capdepera": "15:an är index 1 och röstades fram som öns bästa hål av Mallorca Magazin.",
   "Canyamel": "En José Gancedo-design med sjöar hela vägen. Slå ut före 8:50 så sparar tidigbokningspriset en rejäl summa.",
   "Pula": "En Olazábal-omdesign med range på två nivåer och starka närspelsanläggningar. Ett bra val för en träningstung golfdag.",
   "Son Servera": "Öns näst äldsta klubb. Platt, lätt att gå, och dagens meny för 21 € är ärligt prisvärd.",
