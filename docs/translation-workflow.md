@@ -211,6 +211,25 @@ The release standard is:
 - preview review is for quality and presentation polish
 - preview review is not the primary tool for finding untranslated copy
 
+## Review Log
+
+Which model wrote or read each body of translated copy, how deeply, and what is still open. Add a row whenever translations are written or proofread. "Read in full" means every string was read against the English; "sample" means a spot check. Nothing below has been read by a native speaker.
+
+| Date | Surface | Written by | Read by | Depth | Commits | Notes |
+|---|---|---|---|---|---|---|
+| 2026-10-02 to 04 | All pages re-aligned to the current English; register, accents, terminology | Sonnet 5.5 | Sonnet 5.5 | Read in full | 588b996f, 8a861644, 1f9d8f0b, 43b80ded, 0e960552, 1ca5f17a, 2c15bd2f, fcfe8bc9 | The big audit. Opus sample 2026-10-10 (about 35 shown strings, all six languages): good quality, two systematic slips fixed (below). |
+| 2026-10-02 to 04 | Tools (hotel recommender, course selector, day builder, green-fees verdicts) | Sonnet 5.5 | Sonnet 5.5 | Read in full, then 10% sample | 23b945ec, e7652f01, a2c054a3, 2dfc845f | Not yet sampled by Opus. Emails sent by the tools are still English. |
+| 2026-10-04 | Course reviews | Sonnet 5.5 | Sonnet 5.5 | German read in full; fr/es/sv/nl/zh proofread in full | 14fdeb09, f80c4050 | Not yet sampled by Opus. |
+| 2026-10-05 | Son Vida review | Sonnet 5.5 | Sonnet 5.5 | Written and checked in one pass | e855ab94 | Not yet read by Opus. |
+| 2026-10-09 | Four new guides, where-to-stay guide, guides hub order | Sonnet 5.5 | Sonnet 5.5 | Written and checked in one pass | b10f493e, ef36c246, b310d11a | Not yet read by Opus. Highest-priority gap: new, long, never re-read. |
+| 2026-10-09 | Homepage three services, Plan Your Trip whole-trip level and Trip Ideas, contact "Plan the whole trip" option | Opus 5.5 | Opus 5.5 | Read in full 2026-10-10 | 235d0087, 128efe13, 5b8064c8 | One Spanish phrase and the Sóller train name (de, nl) tidied on re-read. |
+| 2026-10-09 to 10 | Contact form fields (group sizes, courses, hotel help), privacy policy additions (de/es/fr), trip preferences questionnaire (300 rows) | Sonnet 5.5 | Opus 5.5 | Read in full 2026-10-10 | 48f8f5c3, 7eabff45, 5b8064c8 | Opus found 135 questionnaire fixes (calques such as "Stadtbasis" / "Base golf" / 据点, room types left half in English, a Swedish ni-slip) and a placeholder that said "you suggest to me" instead of "ask me to suggest" in five languages. |
+| 2026-10-10 | Fixes from the Opus sample of the October audit | Opus 5.5 | Opus 5.5 | Targeted | this commit | "Routing" left in English in the Play With A Pro packages (de/es/nl/sv); Swedish "ronder" made "rundor" in 6 places. Two more "ronder" sit inside a client testimonial on Play With A Pro and its explained page and were left for Andy's approval. |
+
+**What the comparison showed.** A Sonnet first draft read in full by Opus needed changes in roughly one string in ten, mostly naturalness rather than meaning, plus the occasional real error in meaning (the reversed placeholder). The October audit, which was itself a proofreading pass, held up much better in the Opus sample. So the risk is highest where Sonnet wrote and checked in the same pass.
+
+**Standard from here.** Any new or changed translation is either written by Opus, or written by another model and then read in full by Opus before it ships; add a row here either way. Open gaps, in order: the four new guides and the where-to-stay guide (2026-10-09), the Son Vida review, then an Opus sample of the reviews and tools. A native read of German and French (the biggest non-English markets) and of the Chinese pages would catch what no model review can.
+
 ## Repo Cleanup
 
 The following one-off migration scripts were removed because they do not affect the running site and only added confusion:

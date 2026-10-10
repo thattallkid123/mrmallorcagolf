@@ -272,13 +272,13 @@ export const WHERE_TO_STAY_LOCALIZED = {
       },
       related: [
         { slug: 'golf-trip-planning-mallorca', title: 'Planera en golfresa till Mallorca' },
-        { slug: '5-day-mallorca-golf-itinerary', title: '5 dagar golf på Mallorca: fem ronder från Palma' },
+        { slug: '5-day-mallorca-golf-itinerary', title: '5 dagar golf på Mallorca: fem rundor från Palma' },
         { slug: 'best-golf-courses-mallorca', title: 'Bästa golfbanorna på Mallorca 2026' },
         { slug: 'golf-cost-mallorca', title: 'Vad kostar golf på Mallorca?' },
       ],
     },
     blocks: [
-      p('Hotellet är inte det första golfbeslutet. Banornas ordning är det. När du vet vilka ronder som betyder mest blir det mycket lättare att välja rätt bas.'),
+      p('Hotellet är inte det första golfbeslutet. Banornas ordning är det. När du vet vilka rundor som betyder mest blir det mycket lättare att välja rätt bas.'),
       p('Mallorca ser litet ut på en karta, men golfdagar sker inte bara på kartan. De sker efter frukost, i hyrbilar, med starttider, buggyar, klubbhyra, trafik runt Palma och en person i sällskapet som alltid vill ha en lugnare morgon.'),
       p('Jag skulle välja bas genom att först ställa en fråga: vilken bana vill du inte kompromissa med? Om svaret är Son Gual, Alcanada, T Golf Calvià eller Son Muntaner börjar hotellbeslutet där.'),
       p('Palma: den enklaste basen för de flesta golfresor'),

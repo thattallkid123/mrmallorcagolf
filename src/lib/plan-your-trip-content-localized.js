@@ -739,7 +739,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Hela golfplanen",
-            "body": "För grupper som spelar flera ronder lägger jag banorna i rätt ordning, planerar färderna och ordnar buggies, uthyrning och bra matförslag.",
+            "body": "För grupper som spelar flera rundor lägger jag banorna i rätt ordning, planerar färderna och ordnar buggies, uthyrning och bra matförslag.",
             "cta": "Planera min resa"
           },
           {
@@ -755,7 +755,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "items": [
           "Hotell i Palma, resort eller lugnare finca",
           "Michelinrestaurang, lokal favorit eller privat kock",
-          "Spa, återhämtning eller lugnare tid utan golf mellan ronderna",
+          "Spa, återhämtning eller lugnare tid utan golf mellan rundorna",
           "Kustväg, vingårdsbesök eller en mer minnesvärd kvällsplan"
         ]
       },
@@ -833,7 +833,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelCta": "Använd hotellrekommendationen",
       "eyebrow": "Exempelresa",
       "title": "Fem banor, fem dagar. Bas i Palma.",
-      "intro": "Ett Palma-baserat exempel för en grupp klubbgolfare: fem ronder, en längre dag norrut och en tydlig anledning till ordningen.",
+      "intro": "Ett Palma-baserat exempel för en grupp klubbgolfare: fem rundor, en längre dag norrut och en tydlig anledning till ordningen.",
       "routeLabel": "Ruttförhandsvisning",
       "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {

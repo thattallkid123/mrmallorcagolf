@@ -1114,7 +1114,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badgeGold": true,
         "img": "/images/blog-trip-planning/Son Gual.webp",
         "imgPosition": "center 48%",
-        "title": "5 dagar golf på Mallorca: fem ronder från Palma",
+        "title": "5 dagar golf på Mallorca: fem rundor från Palma",
         "intro": "En konkret femdagarsrutt med Son Quint, Santa Ponsa 1, Son Gual, Alcanada och T Golf Calvià, plus hur middagar och resdagar passar.",
         "readTime": "8 min",
         "keywords": "5 dagar · Palma-bas · Son Gual · Alcanada"

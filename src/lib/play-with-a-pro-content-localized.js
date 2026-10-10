@@ -201,7 +201,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "features": [
             "Sin búsqueda en aplicaciones o sitios web: nosotros gestionamos las horas de salida",
             "Campos elegidos para adaptarse a su grupo, nivel y presupuesto",
-            "Routing y número de rondas planificados según su horario",
+            "Ruta y número de vueltas planificados según su calendario",
             "Buggies, alquiler de palos y traslados organizados",
             "Sugerencias de restaurantes y dining incluidas",
             "Una persona a contactar para todo el viaje"
@@ -485,7 +485,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "features": [
             "Keine App-Recherche: Die Startzeiten werden für Sie organisiert",
             "Plätze, die zu Ihrer Gruppe, Ihrem Level und Budget passen",
-            "Routing und Rundenanzahl um Ihren Zeitplan herum geplant",
+            "Route und Rundenzahl passend zu Ihrem Zeitplan",
             "Buggys, Schlägerverleih und Transfers organisiert",
             "Restaurantempfehlungen und Dining-Vorschläge enthalten",
             "Eine Ansprechperson für die gesamte Reise"
@@ -1052,7 +1052,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "features": [
             "Geen zoeken in apps of websites: starttijden geregeld door ons",
             "Banen gekozen om aan uw groep, niveau en budget te voldoen",
-            "Routing en aantal rondes gepland rond uw schema",
+            "Route en aantal rondes afgestemd op uw schema",
             "Buggys, clubverhuur en transfers geregeld",
             "Restaurantaanbevelingen en diningopstellingen inbegrepen",
             "Eén contactpersoon voor de hele reis"
@@ -1336,7 +1336,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "features": [
             "Ingen sökning i appar eller webbplatser: starttider arrangerade av oss",
             "Banor valda för att matcha din grupp, nivå och budget",
-            "Routing och antal rundor planerade omkring ditt schema",
+            "Rutt och antal rundor planerade efter ditt schema",
             "Buggys, klubbuthyrning och transfers arrangerade",
             "Restaurangförslag och matningsalternativ ingår",
             "En kontaktperson för hela resan"
