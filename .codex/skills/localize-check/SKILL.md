@@ -7,6 +7,10 @@ description: Verification pass for any copy change on locale pages or shared con
 
 English is master — never add localized content that doesn't exist in English, and never modify English master copy when only fixing a language page.
 
+## 0. Read the style guide first
+
+Before writing or proofreading any translated text, read `docs/translation-style-guide.md` (register per language, golf vocabulary, common mistakes with fixes) and work through its checklist. The automated checks cannot tell a natural sentence from a calque.
+
 ## 1. Structure rule (no English-only gaps)
 
 If you added a new key to shared content used across locales, add it for **de/es/fr/nl/sv/zh in the same edit** or provide an explicit getter fallback. Locale content files typically hold all 7 locales in one file (e.g. `homepage-content.js`) — edit them together.

@@ -383,7 +383,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: 'Tre veckor senare hade jag gått från att hacka mig runt banan då och då till att slå ronder i låga nittiotalet, spelar med självförtroende och älskar golf igen. Jag kan inte rekommendera Andy nog — särskilt om du vill förbättra ditt spel, inte bara din swing.',
+      text: 'Tre veckor senare hade jag gått från att hacka mig runt banan då och då till att slå rundor i låga nittiotalet, spelar med självförtroende och älskar golf igen. Jag kan inte rekommendera Andy nog — särskilt om du vill förbättra ditt spel, inte bara din swing.',
       credit: 'Jannie',
     },
     afterRound: {

@@ -14,6 +14,7 @@ Anything added here should be a **live reference**, not a session log. Dated che
 | `content-architecture.md` | How content flows through the site's shared components |
 | `multilingual-content-architecture.md` | English-canonical-plus-locale-overlay pattern for site-wide (non-guide) content |
 | `translation-workflow.md` | Single source of truth for multilingual release readiness |
+| `translation-style-guide.md` | Register, golf vocabulary per language, and common translation mistakes with fixes; read before translating |
 | `LOCALE_PARITY_CHECKLIST.md` | 7-language structure checklist |
 | `STALE_ENGLISH_PREVENTION.md` | How to ensure de/es/fr/nl/sv/zh pages have no hardcoded English text |
 | `FONT_LOADING_RULE.md` | Why fonts must use `var(--font-sans)`/`var(--font-serif)`, never a hardcoded font-family name |
