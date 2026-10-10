@@ -185,7 +185,7 @@ const content = {
       "readTime": "6 Min.",
       "updated": "September 2026",
       "title": "Son Quint Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)",
-      "intro": "Der neueste Platz der Arabella Golf Gruppe und allgemein als der freundlichste geltend. Dieser Ruf ist berechtigt, aber er heißt nicht, dass der Platz leicht ist, besonders mit den Fahnen, wo sie heute standen.",
+      "intro": "Der neueste Platz der Arabella-Golf-Gruppe, der allgemein als der freundlichste gilt. Dieser Ruf ist berechtigt, aber er heißt nicht, dass der Platz leicht ist, besonders mit den Fahnen, wo sie heute standen.",
       "related": [
         {
           "slug": "son-muntaner-review",

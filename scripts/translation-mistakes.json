@@ -265,6 +265,56 @@
       "lang": "sv",
       "pattern": "\\bgolfbas(en)?\\b",
       "fix": "området för golfen / boende nära banorna"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\bKursplaner\\b",
+      "fix": "Platzplaner (\"course\" is Platz, never Kurs)"
+    },
+    {
+      "lang": "de",
+      "pattern": "\\bAbschlagskalender\\b",
+      "fix": "Startliste"
+    },
+    {
+      "lang": "es",
+      "pattern": "\\bel tee sheet\\b",
+      "fix": "la hoja de salidas"
+    },
+    {
+      "lang": "fr",
+      "pattern": "\\bles back tees\\b",
+      "fix": "les départs arrière"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\\b(de|verhoogde) back tees\\b",
+      "fix": "de achterste tees"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\\bWat beginners verrast\\b",
+      "fix": "Wat nieuwe bezoekers verrast (\"first-timers\" are first-time visitors)"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\b[Aa]vslag(splats\\w*|ningstid\\w*)?\\b",
+      "fix": "utslag / utslagsplats / starttid (\"avslag\" means a refusal)"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bhalvhjartad\\w*",
+      "fix": "halvhjärtade"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bde upphöjda (back )?tees\\b",
+      "fix": "de upphöjda utslagsplatserna"
+    },
+    {
+      "lang": "sv",
+      "pattern": "\\bfullbokat tee sheet\\b",
+      "fix": "full startlista"
     }
   ]
 }

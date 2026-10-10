@@ -677,10 +677,10 @@ export const GOLF_COST_CALCULATOR_T = {
     tools: { label: 'Fler planeringsverktyg', selector: 'Hitta dina banor', hotelRecommender: 'Hitta hotell', golfDay: 'Bygg en golfdag' },
     disclaimer: 'Green fees, hotelpriser och matpriser på Mallorca varierar beroende på säsong och tillgänglighet. Alla siffror här är ungefärliga intervall endast för planering.',
     packages: {
-      value: 'Banval & Bokningshjälp. Jag bekräftar din banmix, bokar avslagningstider till rätt priser och delar mina bananteckningar för varje rond.',
+      value: 'Banval & Bokningshjälp. Jag bekräftar din banmix, bokar starttider till rätt priser och delar mina anteckningar om varje bana inför varje runda.',
       balanced: 'Reseplanering + En rond med coaching. Jag planerar resan från början till slut och ansluter till dig för en Play With A Pro-rond på en av dina banor.',
-      premium: 'Signature Golfdag + Fullständig Reseplanering. En Signature Day med mig som värd, plus fullständig planering av banor, avslagningstider och transport.',
-      luxury: 'Fullständig Concierge-resa. Varje rond, transfer, bord och avslagningstid arrangerad, med mig som värd för din mest framträdande golfdag.',
+      premium: 'Signature Golfdag + Fullständig Reseplanering. En Signature Day med mig som värd, plus fullständig planering av banor, starttider och transport.',
+      luxury: 'Fullständig Concierge-resa. Varje runda, transfer, bordsbokning och starttid ordnad, med mig som värd för din mest framträdande golfdag.',
     },
     prefNotes: {
       scenic: 'Du frågade efter vackra banor. Jag viktar blandningen mot banor med de bästa vyerna och miljöerna.',

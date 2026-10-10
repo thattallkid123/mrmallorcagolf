@@ -57,7 +57,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Análisis del campo",
         "badgeGold": true,
         "title": "Golf Son Muntaner, Mallorca — análisis honesto de un Profesional PGA (2026)",
-        "intro": "Mejor campo de España en los World Golf Awards 2025. Lo jugué con el tee sheet completo un sábado por la mañana. Esto es lo que encontré.",
+        "intro": "Mejor campo de España en los World Golf Awards 2025. Lo jugué un sábado por la mañana con la hoja de salidas completa. Esto es lo que encontré.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy incluido"
       },
@@ -291,7 +291,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Platz-Bewertung",
         "badgeGold": true,
         "title": "Golf Son Muntaner, Mallorca — Ehrliche Bewertung eines PGA-Professionals (2026)",
-        "intro": "Bester Golfplatz Spaniens bei den World Golf Awards 2025. Ich habe ihn bei vollem Abschlagskalender an einem Samstagmorgen gespielt. Das ist mir aufgefallen.",
+        "intro": "Bester Golfplatz Spaniens bei den World Golf Awards 2025. Ich habe ihn an einem Samstagmorgen bei voller Startliste gespielt. Das ist mir aufgefallen.",
         "readTime": "6 Min.",
         "keywords": "Championship · Par 72 · €110-260 · Buggy inklusive"
       },
@@ -992,7 +992,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "badge": "Banomdöme",
         "badgeGold": true,
         "title": "Golf Son Muntaner, Mallorca — ärlig recension av en PGA Professional (2026)",
-        "intro": "Bästa golfbana i Spanien vid World Golf Awards 2025. Jag spelade den med fullbokat tee sheet en lördagsmorgon. Här är vad jag hittade.",
+        "intro": "Bästa golfbana i Spanien vid World Golf Awards 2025. Jag spelade den en lördagsmorgon med full startlista. Här är vad jag hittade.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy ingår"
       },

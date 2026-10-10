@@ -10,7 +10,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Marzo 2026",
       "title": "Golf Santa Ponsa 1, Mallorca - Análisis honesto de un Profesional PGA",
-      "intro": "Uno de los campos más largos de la isla. Historia real de Tour europeo. Y fairways lo bastante amplios para sacar el driver.",
+      "intro": "Uno de los campos más largos de Europa, historia real en el DP World Tour y uno de los sitios de la isla donde más se disfruta pegando el driver.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -62,7 +62,7 @@ const content = {
         "text": "La conexión con el Tour europeo"
       },
       {
-        "text": "Ser sede del Mallorca Golf Open de 2021 fue importante para la isla. Era el primer evento del Tour europeo aquí en diez años, y Santa Ponsa 1 respondió. El estado del campo en semana de torneo, el recorrido bajo presión y los resultados posibles sin regalar nada funcionaron. Ese nivel se nota en cómo se presenta el campo al visitante."
+        "text": "Ser sede del Mallorca Golf Open de 2021 fue importante para la isla. Era el primer evento del Tour europeo aquí en diez años, y Santa Ponsa 1 respondió. El estado del campo en la semana del torneo y los resultados que fueron posibles sin que el campo se preparara fácil: todo funcionó. Ese nivel se nota en cómo se presenta el campo al visitante."
       },
       {
         "caption": "Las montañas de la Tramuntana al fondo. Los hoyos 5, 6 y 7 tienen las mejores vistas a la montaña."
@@ -154,7 +154,7 @@ const content = {
       "readTime": "6 Min. Lesezeit",
       "updated": "März 2026",
       "title": "Golf Santa Ponsa 1, Mallorca - ehrliche Bewertung eines PGA-Professionals",
-      "intro": "Einer der längsten Plätze der Insel. European-Tour-Geschichte. Und Fairways, die weit genug für den Driver sind.",
+      "intro": "Einer der längsten Plätze Europas, echte Geschichte auf der DP World Tour und einer der Orte auf der Insel, an denen der Driver am meisten Spaß macht.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -206,7 +206,7 @@ const content = {
         "text": "Die Verbindung zur European Tour"
       },
       {
-        "text": "Die Austragung der Mallorca Golf Open 2021 war für die Insel bedeutend. Es war das erste European-Tour-Event hier seit zehn Jahren, und Santa Ponsa 1 hielt diesem Blick stand. Der Platzzustand in der Turnierwoche, das Routing unter Druck, die möglichen Scores, ohne dass der Platz kapitulierte - all das funktionierte. Diese sportliche Qualität ist real, und man merkt sie sofort, wenn man den Platz selbst spielt."
+        "text": "Die Austragung der Mallorca Golf Open 2021 war für die Insel bedeutend. Es war das erste European-Tour-Event hier seit zehn Jahren, und Santa Ponsa 1 hielt diesem Blick stand. Der Platzzustand in der Turnierwoche und die Scores, die möglich waren, ohne dass der Platz leicht gesteckt wurde: Das alles hat funktioniert. Diese Qualität ist echt, und man merkt sie als Besucher."
       },
       {
         "caption": "Das Tramuntana-Gebirge dahinter. Die Löcher 5, 6 und 7 bieten die besten Bergblicke."
@@ -298,7 +298,7 @@ const content = {
       "readTime": "6 min de lecture",
       "updated": "Mars 2026",
       "title": "Golf Santa Ponsa 1, Majorque - Avis honnête d'un professionnel PGA",
-      "intro": "L'un des parcours les plus longs de l'île. Une vraie histoire de Tour européen. Et des fairways assez larges pour sortir le driver.",
+      "intro": "L'un des plus longs parcours d'Europe, une vraie histoire sur le DP World Tour et l'un des endroits de l'île où l'on prend le plus de plaisir au driver.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -350,7 +350,7 @@ const content = {
         "text": "Le lien avec le Tour européen"
       },
       {
-        "text": "L'accueil du Mallorca Golf Open 2021 a compté pour l'île. C'était le premier événement du Tour européen ici depuis dix ans, et Santa Ponsa 1 a répondu présent. L'état du parcours pendant la semaine du tournoi, le tracé sous pression, les scores possibles sans que le parcours soit réglé en mode facile : tout a fonctionné. Cette crédibilité est réelle, et elle se ressent quand on découvre le parcours en tant que visiteur."
+        "text": "L'accueil du Mallorca Golf Open 2021 a compté pour l'île. C'était le premier événement du Tour européen ici depuis dix ans, et Santa Ponsa 1 a répondu présent. L'état du parcours pendant la semaine du tournoi et les scores possibles sans que le parcours soit réglé en mode facile : tout a fonctionné. Cette crédibilité est réelle, et elle se ressent quand on découvre le parcours en tant que visiteur."
       },
       {
         "caption": "Les montagnes de la Tramuntana en arrière-plan. Les trous 5, 6 et 7 offrent les meilleures vues sur les montagnes."
@@ -440,7 +440,7 @@ const content = {
       "readTime": "6 min leestijd",
       "updated": "Maart 2026",
       "title": "Golf Santa Ponsa 1, Mallorca - eerlijke review van een PGA-professional",
-      "intro": "Een van de langste banen van het eiland. Echte European Tour-geschiedenis. En fairways die breed genoeg zijn voor de driver.",
+      "intro": "Een van de langste banen van Europa, echte DP World Tour-geschiedenis en een van de plekken op het eiland waar de driver het meeste plezier geeft.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -492,7 +492,7 @@ const content = {
         "text": "De band met de European Tour"
       },
       {
-        "text": "Het hosten van het Mallorca Golf Open 2021 was belangrijk voor het eiland. Het was het eerste European Tour-evenement hier in tien jaar, en Santa Ponsa 1 hield prima stand. De conditie van de baan tijdens de toernooiweek, de routing onder druk en de scores die mogelijk waren zonder dat de baan zich overgaf - het werkte allemaal. Dat niveau is echt, en je voelt het als bezoeker meteen."
+        "text": "Het hosten van het Mallorca Golf Open 2021 was belangrijk voor het eiland. Het was het eerste European Tour-evenement hier in tien jaar, en Santa Ponsa 1 hield prima stand. De conditie van de baan tijdens de toernooiweek en de scores die mogelijk waren zonder dat de baan makkelijk was neergezet: het werkte allemaal. Dat niveau is echt, en je voelt het als bezoeker meteen."
       },
       {
         "caption": "De Tramuntana-bergen op de achtergrond. Holes 5, 6 en 7 hebben de beste bergzichten."
@@ -584,7 +584,7 @@ const content = {
       "readTime": "6 min läsning",
       "updated": "Mars 2026",
       "title": "Golf Santa Ponsa 1, Mallorca - ärlig recension från ett PGA-proffs",
-      "intro": "En av öns längsta banor. Riktig European Tour-historia. Och fairways som är breda nog för drivern.",
+      "intro": "En av Europas längsta banor, riktig historia på DP World Tour och ett av de ställen på ön där det är roligast att slå driver.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -636,7 +636,7 @@ const content = {
         "text": "Kopplingen till European Tour"
       },
       {
-        "text": "Att vara värd för Mallorca Golf Open 2021 var viktigt för ön. Det var det första European Tour-evenemanget här på tio år, och Santa Ponsa 1 klarade uppgiften. Banskicket under tävlingsveckan, routingen under press och de scorer som var möjliga utan att banan gav upp - allt fungerade. Den här kvaliteten är äkta, och den märks direkt när man spelar banan som besökare."
+        "text": "Att vara värd för Mallorca Golf Open 2021 var viktigt för ön. Det var det första European Tour-evenemanget här på tio år, och Santa Ponsa 1 klarade uppgiften. Banskicket under tävlingsveckan och de scorer som var möjliga utan att banan sattes upp lätt: allt fungerade. Den här kvaliteten är äkta, och den märks direkt när man spelar banan som besökare."
       },
       {
         "caption": "Tramuntana-bergen bakom. Hål 5, 6 och 7 har de bästa bergsvyerna."
@@ -721,14 +721,14 @@ const content = {
   "zh": {
     "metadata": {
       "title": "圣蓬萨1号高尔夫球场 - PGA职业教练诚实评测",
-      "description": "从一位PGA职业教练视角看Santa Ponsa 1。欧巡历史、宽阔球道，以及重新找回一号木信心的球场。"
+      "description": "Santa Ponsa 1：77-126 欧元，标准杆 72，欧洲最长的球场之一，2021 年举办过 DP World Tour。"
     },
     "meta": {
       "badge": "球场评测",
       "readTime": "6分钟",
       "updated": "2026年3月",
       "title": "圣蓬萨1号高尔夫球场 - PGA职业教练诚实评测",
-      "intro": "这是岛上最长的球场之一。有真正的欧巡历史。球道也足够宽，让你放心掏出一号木。",
+      "intro": "欧洲最长的球场之一，有真正的 DP World Tour 历史，也是岛上打一号木最痛快的地方之一。",
       "related": [
         {
           "slug": "son-gual-review",
@@ -780,7 +780,7 @@ const content = {
         "text": "它与欧洲巡回赛的关系"
       },
       {
-        "text": "举办2021年Mallorca Golf Open，对整座岛都很重要。这是这里十年来第一次迎来欧洲巡回赛，而Santa Ponsa 1经受住了考验。比赛周的场地状态、在压力下的路线表现，以及既能出低杆又不会让球场失去尊严的难度平衡 - 一切都很到位。这种资历是真实的，访客到了现场就能感受到。"
+        "text": "举办2021年Mallorca Golf Open，对整座岛都很重要。这是这里十年来第一次迎来欧洲巡回赛，而Santa Ponsa 1经受住了考验。比赛周的场地状态，以及在球场没有刻意降低难度的情况下仍能打出的低杆成绩，一切都很到位。这种资历是真实的，访客到了现场就能感受到。"
       },
       {
         "caption": "身后是特拉蒙塔纳山脉。第5、6、7洞有最好的山景。"

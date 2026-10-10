@@ -11,7 +11,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Abril 2026",
       "title": "Golf Son Muntaner, Mallorca - análisis honesto de un Profesional PGA (2026)",
-      "intro": "A cinco minutos de Palma. Buggy incluido durante la mayor parte de la temporada. Mejor Campo de Golf de España en los World Golf Awards 2025. Lo jugué con el tee sheet completo un sábado por la mañana. Esto es lo que encontré.",
+      "intro": "A cinco minutos de Palma. Buggy incluido durante la mayor parte de la temporada. Mejor Campo de Golf de España en los World Golf Awards 2025. Lo jugué un sábado por la mañana con la hoja de salidas completa. Esto es lo que encontré.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -37,7 +37,7 @@ const content = {
         "caption": "Mejor campo de España 2025. Conseguí sonreír pese a los numerosos fairways perdidos."
       },
       {
-        "text": "Son Muntaner fue elegido Mejor Campo de Golf de España en los World Golf Awards 2025. Lo jugué el sábado pasado con el tee sheet completo y hándicaps variados en el grupo. Esto es lo que encontré."
+        "text": "Son Muntaner fue elegido Mejor Campo de Golf de España en los World Golf Awards 2025. Lo jugué el sábado pasado con la hoja de salidas completa y hándicaps variados en el grupo. Esto es lo que encontré."
       },
       {
         "text": "Respuesta rápida: ¿quién debería reservar Son Muntaner?"
@@ -128,7 +128,7 @@ const content = {
         "text": "Los greens"
       },
       {
-        "text": "Rodando puro a un ritmo sólido, con potencial claro para acelerarse con la llegada del verano. Esa calidad recompensó el buen putting, especialmente desde lejos. Aquí es donde el título de Mejor de España empieza a tener sentido. Los greens son consistentemente excelentes y mantuvieron el ritmo y la calidad de la superficie durante toda la jornada de sábado con el tee sheet completo."
+        "text": "Rodando puro a un ritmo sólido, con potencial claro para acelerarse con la llegada del verano. Esa calidad recompensó el buen putting, especialmente desde lejos. Aquí es donde el título de Mejor de España empieza a tener sentido. Los greens son consistentemente excelentes y mantuvieron el ritmo y la calidad de la superficie durante toda la jornada de sábado con la hoja de salidas completa."
       },
       {
         "alt": "Green del hoyo 9 de Son Muntaner Mallorca con el club house detrás",
@@ -237,7 +237,7 @@ const content = {
       "badge": "Platz-Bewertung",
       "readTime": "6 Min.",
       "title": "Golf Son Muntaner, Mallorca - Ehrliche Bewertung eines PGA-Professionals (2026)",
-      "intro": "Fünf Minuten von Palma. Buggy in den meisten Monaten der Saison inklusive. Bester Golfplatz Spaniens bei den World Golf Awards 2025. Ich habe ihn bei vollem Abschlagskalender an einem Samstagmorgen gespielt. Das ist mir aufgefallen.",
+      "intro": "Fünf Minuten von Palma. Buggy in den meisten Monaten der Saison inklusive. Bester Golfplatz Spaniens bei den World Golf Awards 2025. Ich habe ihn an einem Samstagmorgen bei voller Startliste gespielt. Das ist mir aufgefallen.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -263,7 +263,7 @@ const content = {
         "caption": "Bester Golfplatz Spaniens 2025. Trotz zahlreicher Fairway-Verfehler ein Lächeln im Gesicht."
       },
       {
-        "text": "Son Muntaner wurde bei den World Golf Awards 2025 zum besten Golfplatz Spaniens gekürt. Ich spielte ihn vergangenen Samstag mit einem vollen Abschlagskalender und gemischten Handicaps in der Gruppe. Das sind meine Eindrücke."
+        "text": "Son Muntaner wurde bei den World Golf Awards 2025 zum besten Golfplatz Spaniens gekürt. Ich spielte ihn vergangenen Samstag bei voller Startliste und gemischten Handicaps in der Gruppe. Das sind meine Eindrücke."
       },
       {
         "text": "Kurzantwort: Für wen lohnt sich Son Muntaner?"
@@ -916,7 +916,7 @@ const content = {
       "badge": "Banomdöme",
       "readTime": "6 min",
       "title": "Golf Son Muntaner, Mallorca - ärlig recension av en PGA Professional (2026)",
-      "intro": "Fem minuter från Palma. Buggy ingår större delen av säsongen. Spaniens bästa golfbana vid World Golf Awards 2025. Jag spelade den med fullbokat tee sheet en lördagsmorgon. Här är vad jag hittade.",
+      "intro": "Fem minuter från Palma. Buggy ingår större delen av säsongen. Spaniens bästa golfbana vid World Golf Awards 2025. Jag spelade den en lördagsmorgon med full startlista. Här är vad jag hittade.",
       "related": [
         {
           "slug": "son-gual-review",

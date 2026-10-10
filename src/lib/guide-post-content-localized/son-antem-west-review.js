@@ -578,7 +578,7 @@ const content = {
         "text": "De baan"
       },
       {
-        "text": "Francisco Lopez Segalés ontwierp Son Antem West, geopend in 1995. Het is een par 72 en meet 6.293 meter vanaf de back tees. De lay-out is overwegend open, de fairways zijn royaal, en veel tee shots straffen een kleine afwijking niet zwaar. Daardoor werkt de baan goed voor gemengde groepen en vakantiegolfers. Daar is hij duidelijk voor gemaakt."
+        "text": "Francisco Lopez Segalés ontwierp Son Antem West, geopend in 1995. Het is een par 72 en meet 6.293 meter vanaf de achterste tees. De lay-out is overwegend open, de fairways zijn royaal, en veel tee shots straffen een kleine afwijking niet zwaar. Daardoor werkt de baan goed voor gemengde groepen en vakantiegolfers. Daar is hij duidelijk voor gemaakt."
       },
       {
         "text": "De holes die opvallen zijn de holes tussen de bomen. Daar is de tee shot strakker, de lijn belangrijker, en de approach verandert afhankelijk van welke kant van de fairway je vindt. De open gedeeltes zijn prettig, maar vragen minder denkwerk vanaf de tee. Je kiest een doel en slaat."
@@ -608,7 +608,7 @@ const content = {
         "text": "Conditie"
       },
       {
-        "text": "Heel goed voor de hoeveelheid spel die de baan verwerkte. De fairways waren stevig, de greens rolden consistent en de presentatie bleef de hele ronde goed. Er was weinig wind, dus de omstandigheden waren zo eenvoudig als ze hier worden. Vanaf de back tees voelde de baan bij rustige lucht niet bijzonder lang."
+        "text": "Heel goed voor de hoeveelheid spel die de baan verwerkte. De fairways waren stevig, de greens rolden consistent en de presentatie bleef de hele ronde goed. Er was weinig wind, dus de omstandigheden waren zo eenvoudig als ze hier worden. Vanaf de achterste tees voelde de baan bij rustige lucht niet bijzonder lang."
       },
       {
         "text": "Loopbaarheid"

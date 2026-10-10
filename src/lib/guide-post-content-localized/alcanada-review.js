@@ -10,7 +10,7 @@ const content = {
       "readTime": "7 min de lectura",
       "updated": "Marzo 2026",
       "title": "Club de Golf Alcanada - Análisis honesto de un Profesional PGA",
-      "intro": "El campo al que llevo a la gente cuando quiero que vuelvan a casa con una historia real. El faro cambia todo.",
+      "intro": "Si quiero que alguien vuelva a casa hablando de una vuelta, lo llevo a Alcanada. El faro ayuda, pero el campo se sostiene por sí solo.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -181,7 +181,7 @@ const content = {
       "readTime": "7 Min. Lesezeit",
       "updated": "März 2026",
       "title": "Club de Golf Alcanada - ehrliche Bewertung eines PGA-Professionals",
-      "intro": "Der Platz, zu dem ich Menschen mitnehme, wenn sie sich nach einer Runde ganz besonders erinnern sollen. Der Leuchtturm hilft, aber der Platz steht auch allein stark da.",
+      "intro": "Wenn jemand nach Hause fahren und von einer Runde erzählen soll, nehme ich ihn mit nach Alcanada. Der Leuchtturm hilft, aber der Platz überzeugt auch ohne ihn.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -352,7 +352,7 @@ const content = {
       "readTime": "7 min de lecture",
       "updated": "Mars 2026",
       "title": "Club de Golf Alcanada - Avis honnête d'un professionnel PGA",
-      "intro": "Le parcours où j'emmène les gens quand je veux qu'ils repartent avec une vraie histoire. Le phare change tout.",
+      "intro": "Si je veux que quelqu'un rentre chez lui en parlant d'une partie, je l'emmène à Alcanada. Le phare aide, mais le parcours tient très bien sans lui.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -395,7 +395,7 @@ const content = {
         "text": "Les départs arrière"
       },
       {
-        "text": "Se tenir sur les back tees est une expérience à part entière. On se sent intouchable, si loin de tout le reste que les gens en contrebas ressemblent à de minuscules points. Le phare devant vous, la baie qui s'étend, et un driver à lancer quelque part dans l'immensité. C'est exactement cette sensation."
+        "text": "Se tenir sur les départs arrière surélevés est une expérience à part entière. On se sent intouchable, si loin de tout le reste que les gens en contrebas ressemblent à de minuscules points. Le phare devant vous, la baie qui s'étend, et un driver à lancer quelque part dans l'immensité. C'est exactement cette sensation."
       },
       {
         "text": "Se tenir sur les départs arrière d'Alcanada, c'est incroyable. On se sent intouchable. Si loin du reste du monde. Tout le monde ressemble à un petit point, et vous êtes là-haut, prêt à envoyer le driver dans le vide."
@@ -521,7 +521,7 @@ const content = {
       "readTime": "7 min leestijd",
       "updated": "Maart 2026",
       "title": "Club de Golf Alcanada - eerlijke review van een PGA-professional",
-      "intro": "De baan waar ik mensen mee naartoe neem als ik wil dat ze met een echt verhaal naar huis gaan. De vuurtoren verandert alles.",
+      "intro": "Wil ik dat iemand naar huis gaat en over één ronde blijft praten, dan neem ik hem mee naar Alcanada. De vuurtoren helpt, maar de baan staat ook zonder op eigen benen.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -564,7 +564,7 @@ const content = {
         "text": "De achterste tees"
       },
       {
-        "text": "Op de verhoogde back tees staan is een ervaring op zich. Je voelt je onaantastbaar, zo ver weg van alles dat iedereen beneden eruitziet als een stipje. De vuurtoren voor je, de baai die zich uitstrekt, en jij staat op het punt ergens de diepte in te slaan met een driver. Dat is precies het gevoel."
+        "text": "Op de verhoogde achterste tees staan is een ervaring op zich. Je voelt je onaantastbaar, zo ver weg van alles dat iedereen beneden eruitziet als een stipje. De vuurtoren voor je, de baai die zich uitstrekt, en jij staat op het punt ergens de diepte in te slaan met een driver. Dat is precies het gevoel."
       },
       {
         "text": "Op de achterste tees van Alcanada staan is geweldig. Je voelt je onaantastbaar. Zo ver van de rest van de wereld. Iedereen lijkt een stipje en jij staat daar boven, klaar om de driver ergens de leegte in te slaan."
@@ -692,7 +692,7 @@ const content = {
       "readTime": "7 min läsning",
       "updated": "Mars 2026",
       "title": "Club de Golf Alcanada - ärlig recension från ett PGA-proffs",
-      "intro": "Banan jag tar folk till när jag vill att de ska åka hem med en riktig historia. Fyren förändrar allt.",
+      "intro": "Vill jag att någon ska åka hem och prata om en enda runda tar jag med dem till Alcanada. Fyren hjälper, men banan står stadigt på egna ben.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -735,7 +735,7 @@ const content = {
         "text": "De bakre tees"
       },
       {
-        "text": "Att stå på de upphöjda back tees är en upplevelse i sig. Man känner sig nästan oberörbar, så långt från allt annat att människorna där nere ser ut som små prickar. Fyren framför dig, bukten som breder ut sig och så en driver som ska skickas ut i tomrummet. Det är känslan."
+        "text": "Att stå på de upphöjda bakre utslagsplatserna är en upplevelse i sig. Man känner sig nästan oberörbar, så långt från allt annat att människorna där nere ser ut som små prickar. Fyren framför dig, bukten som breder ut sig och så en driver som ska skickas ut i tomrummet. Det är känslan."
       },
       {
         "text": "Att stå på de bakre tees på Alcanada är otroligt. Man känner sig oberörbar. Så långt bort från resten av världen. Alla ser ut som små prickar och du står där uppe, redo att slå en driver ut i intet."
@@ -818,7 +818,7 @@ const content = {
           ],
           [
             "Där besökare tappar slag",
-            "Utsikten kan få utslaget att kännas enklare än det är. Välj linjen först, särskilt från de upphöjda tees, och var sedan redo för snabba greener med väldigt få enkla puttar."
+            "Utsikten kan få utslaget att kännas enklare än det är. Välj linjen först, särskilt från de upphöjda utslagsplatserna, och var sedan redo för snabba greener med väldigt få enkla puttar."
           ],
           [
             "Klubbhustips",
@@ -863,7 +863,7 @@ const content = {
       "readTime": "7分钟阅读",
       "updated": "2026年3月",
       "title": "阿尔卡纳达高尔夫球场 - PGA职业教练诚实评测",
-      "intro": "这是我想让客人带着故事回家的时候会带他们去的球场。灯塔改变了一切。",
+      "intro": "如果我想让客人回家后一直聊起某一轮球，我会带他们来 Alcanada。灯塔是加分项，但球场本身就足够出色。",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",

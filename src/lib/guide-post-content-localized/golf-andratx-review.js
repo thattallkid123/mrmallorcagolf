@@ -206,7 +206,7 @@ const content = {
         "text": "Golf Andratx verdient seinen Ruf als einer der anspruchsvolleren Plätze der Insel. Mehrere kürzere Par 4 wirken simpel, bis man sieht, wo die Hindernisse platziert sind. Bäche und Wasser queren die Fairways, statt parallel zu verlaufen, daher zählt Distanzkontrolle vom Abschlag mehr als Weite. Wer mit der Schlagweite daneben liegt, landet oft im Wasser oder in der Bredouille."
       },
       {
-        "text": "Die Höhenunterschiede sind konstant. Abschläge, bei denen der Ball aus dem Blickfeld verschwindet, Annäherungen, bei denen man sich auf eine Zahl festlegen muss, ohne die Fahne zu sehen. Die Par 3 spielen wegen der Gefälle deutlich anders als auf der Karte angegeben. Ein GPS oder Kursplaner ist hier wirklich empfehlenswert."
+        "text": "Die Höhenunterschiede sind konstant. Abschläge, bei denen der Ball aus dem Blickfeld verschwindet, Annäherungen, bei denen man sich auf eine Zahl festlegen muss, ohne die Fahne zu sehen. Die Par 3 spielen wegen der Gefälle deutlich anders als auf der Karte angegeben. Ein GPS oder Platzplaner ist hier wirklich empfehlenswert."
       },
       {
         "alt": "Loch 4, Pine Valley, Golf de Andratx, Wasser umgibt das Green",
@@ -308,7 +308,7 @@ const content = {
         ]
       },
       {
-        "text": "Golf Andratx ist eine 7,5 von 10. Die Aussichten von den höheren Löchern sind die besten, die ich im Südwesten der Insel gesehen habe. Das Layout ist eine echte Prüfung, der Green Monster ist das längste Par 5 Spaniens und spielt jeden Meter davon, und Loch 12 über Camp del Mar ist eines der besten Löcher, die ich auf Mallorca gespielt habe. Die Pflichtbuggys vor 14 Uhr und ein belebter Morgen ließen es gemanagter als entspannt wirken, aber das ist die Realität eines Platzes mit dieser Nachfrage. Lohnt sich zu spielen, und es lohnt sich, mit einem Kursplaner in der Hand wiederzukommen. Für Hilfe bei der Reihenfolge mit anderen Plätzen, siehe den <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a>."
+        "text": "Golf Andratx ist eine 7,5 von 10. Die Aussichten von den höheren Löchern sind die besten, die ich im Südwesten der Insel gesehen habe. Das Layout ist eine echte Prüfung, der Green Monster ist das längste Par 5 Spaniens und spielt jeden Meter davon, und Loch 12 über Camp del Mar ist eines der besten Löcher, die ich auf Mallorca gespielt habe. Die Pflichtbuggys vor 14 Uhr und ein belebter Morgen ließen es gemanagter als entspannt wirken, aber das ist die Realität eines Platzes mit dieser Nachfrage. Lohnt sich zu spielen, und es lohnt sich, mit einem Platzplaner in der Hand wiederzukommen. Für Hilfe bei der Reihenfolge mit anderen Plätzen, siehe den <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a>."
       },
       {
         "text": "Sie spielen Golf Andratx? Ich kann bei der Strategie, der Schlägerwahl und den Gefahrenzonen helfen, die auf diesem Layout am meisten zählen.",
@@ -361,7 +361,7 @@ const content = {
         "text": "Comment le parcours se joue"
       },
       {
-        "text": "Golf Andratx mérite sa réputation de l'un des parcours les plus difficiles de l'île. Plusieurs par 4 courts semblent accessibles jusqu'à ce qu'on voie où les obstacles sont placés. Des ruisseaux et des points d'eau traversent les fairways plutôt que de les longer, ce qui fait que le contrôle des distances au départ compte plus que la longueur. Se tromper légèrement de métrage signifie souvent l'eau ou des ennuis."
+        "text": "Golf Andratx mérite sa réputation d'être l'un des parcours les plus difficiles de l'île. Plusieurs par 4 courts semblent accessibles jusqu'à ce qu'on voie où les obstacles sont placés. Des ruisseaux et des points d'eau traversent les fairways plutôt que de les longer, ce qui fait que le contrôle des distances au départ compte plus que la longueur. Se tromper légèrement de métrage signifie souvent l'eau ou des ennuis."
       },
       {
         "text": "Le dénivelé est permanent. Des drives où la balle disparaît de la vue, des approches où l'on s'engage sur un chiffre sans pouvoir voir le drapeau. Les par 3 en particulier se jouent très différemment de ce qui est indiqué sur la carte, à cause des chutes de terrain. Un GPS ou un planificateur de parcours est vraiment utile ici."
@@ -595,7 +595,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "De handicaplimiet is 28 voor heren en 36 voor dames, gecontroleerd bij het boeken. Buggy's zijn verplicht voor 14:00 uur; lopen is daarna toegestaan. Een dagelijkse federatielicentie (€3) geldt als je geen lid bent van de Spaanse federatie. Deze baan is geschikt voor zelfverzekerde golfers die een strategische uitdaging meer waarderen dan lengte: afstandscontrole vanaf de tee telt meer dan kracht. Wat beginners verrast: hoewel het grootste deel van de ronde hoog in de bergen speelt, is het zeezicht over Camp de Mar alleen zichtbaar vanaf hole 2, bouw je verwachtingen dus niet op rond het waterzicht. Lokale tip: neem een GPS of baanplanner mee, want verschillende aanspelen zijn deels blind."
+        "text": "De handicaplimiet is 28 voor heren en 36 voor dames, gecontroleerd bij het boeken. Buggy's zijn verplicht voor 14:00 uur; lopen is daarna toegestaan. Een dagelijkse federatielicentie (€3) geldt als je geen lid bent van de Spaanse federatie. Deze baan is geschikt voor zelfverzekerde golfers die een strategische uitdaging meer waarderen dan lengte: afstandscontrole vanaf de tee telt meer dan kracht. Wat nieuwe bezoekers verrast: hoewel het grootste deel van de ronde hoog in de bergen speelt, is het zeezicht over Camp de Mar alleen zichtbaar vanaf hole 2, bouw je verwachtingen dus niet op rond het waterzicht. Lokale tip: neem een GPS of baanplanner mee, want verschillende aanspelen zijn deels blind."
       },
       {
         "text": "Oordeel"
@@ -666,7 +666,7 @@ const content = {
         "caption": "Hål 8, A Love of Mallorca. Från en av banans högsta punkter, med utsikt över hela sydvästra Mallorca."
       },
       {
-        "text": "Vi slog av strax efter klockan 8 som ett av de första sällskapen. En lite ovanlig start: underhållet hade stängt de två första hålen, så vi började på det tredje. Träningsanläggningen ligger på andra sidan vägen från klubbhuset, vilket gör uppvärmningen lite annorlunda, men det finns ett riktigt bra område för alla tänkbara kortspelsslag i utmärkt skick och en driving range på en brant sluttning som gör sitt jobb att lösa upp kroppen inför en runda."
+        "text": "Vi slog ut strax efter klockan 8 som ett av de första sällskapen. En lite ovanlig start: underhållet hade stängt de två första hålen, så vi började på det tredje. Träningsanläggningen ligger på andra sidan vägen från klubbhuset, vilket gör uppvärmningen lite annorlunda, men det finns ett riktigt bra område för alla tänkbara kortspelsslag i utmärkt skick och en driving range på en brant sluttning som gör sitt jobb att lösa upp kroppen inför en runda."
       },
       {
         "text": "Golfbilar är obligatoriska före klockan 14 och banan var välbesökt tidigt på morgonen. Speltempot var bra, men morgonen hade tidvis en lite stressad känsla. När säsongen drar igång är det vanligt överallt, särskilt på en av de bästa och mest efterfrågade banorna i sydväst, och det märktes. Det var en bra morgon ute, även om ett par saker kunde ha flutit lite smidigare."
@@ -675,14 +675,14 @@ const content = {
         "text": "Hur banan spelar"
       },
       {
-        "text": "Golf Andratx förtjänar sitt rykte som en av de svårare banorna på ön. Flera kortare par 4 ser enkla ut tills man ser var hindren är placerade. Bäckar och vatten korsar fairways i stället för att löpa längs dem, så distanskontrollen från avslagsplatsen väger tyngre än längden. En liten miss i längd innebär ofta vatten eller problem."
+        "text": "Golf Andratx förtjänar sitt rykte som en av de svårare banorna på ön. Flera kortare par 4 ser enkla ut tills man ser var hindren är placerade. Bäckar och vatten korsar fairways i stället för att löpa längs dem, så distanskontrollen från utslagsplatsen väger tyngre än längden. En liten miss i längd innebär ofta vatten eller problem."
       },
       {
-        "text": "Höjdskillnaderna är ständigt närvarande. Avslag där bollen försvinner ur sikte, inslag där man förbinder sig till en siffra utan att se flaggan. Par 3-hålen spelar i synnerhet väldigt annorlunda mot vad som står på scorekortet, på grund av de fall som är inblandade. En GPS eller banplan är verkligt värdefull här."
+        "text": "Höjdskillnaderna är ständigt närvarande. Utslag där bollen försvinner ur sikte, inspel där man bestämmer sig för en siffra utan att se flaggan. Par 3-hålen spelar i synnerhet väldigt annorlunda mot vad som står på scorekortet, på grund av höjdskillnaderna. En GPS eller banplan är verkligt värdefull här."
       },
       {
         "alt": "Hål 4, Pine Valley, Golf de Andratx, vatten som omger greenen",
-        "caption": "Hål 4, Pine Valley. Vattnet kantar inte bara det här hålet, det omsluter det. Greenen lutar på ett sätt som gör att rätt distans vid inslaget är det som gäller."
+        "caption": "Hål 4, Pine Valley. Vattnet kantar inte bara det här hålet, det omsluter det. Greenen lutar på ett sätt som gör att rätt distans vid inspelet är det som gäller."
       },
       {
         "text": "Vinden lägger till ett extra lager. Banan ligger uppe i bergen ovanför Andratx och Camp del Mar, och när den tar i blir distansbedömningen på par 3-hålen den huvudsakliga utmaningen. Vi spelade i goda förhållanden tidigt men kände vindbyar på de högre liggande hålen senare i rundan."
@@ -695,14 +695,14 @@ const content = {
       },
       {
         "alt": "Utslag på hål 7 vid Golf de Andratx med stenmurar framför greenen",
-        "caption": "Hål 7. Stenväggarna blockerar sikten mot greenen från avslagsplatsen. Man väljer en linje och genomför slaget utan att se vart man är på väg."
+        "caption": "Hål 7. Stenväggarna blockerar sikten mot greenen från utslagsplatsen. Man väljer en linje och genomför slaget utan att se vart man är på väg."
       },
       {
-        "text": "Hål 12 har en skarp dogleg höger och erbjuder utsikt ned mot Camp del Mar under hela hålet. Ett av banans mest minnesvärda. Hål 15, Hello Mrs Robinson, spelar ungefär 20 yards kortare från en högt belägen avslagsplats, vilket låter som en fördel tills man inser att greenen är välskyddad och att hitta rätt distans i den situationen är svårare än det ser ut."
+        "text": "Hål 12 har en skarp dogleg höger och erbjuder utsikt ned mot Camp del Mar under hela hålet. Ett av banans mest minnesvärda. Hål 15, Hello Mrs Robinson, spelar ungefär 20 yards kortare från en högt belägen utslagsplats, vilket låter som en fördel tills man inser att greenen är välskyddad och att hitta rätt distans i den situationen är svårare än det ser ut."
       },
       {
-        "alt": "Förhöjt avslag på hål 15, Hello Mrs Robinson, vid Golf de Andratx",
-        "caption": "Hål 15, Hello Mrs Robinson. Fallet från avslagsplatsen gör att hålet spelar ungefär 20 yards kortare. Distanskontrollen är hela utmaningen här."
+        "alt": "Förhöjt utslag på hål 15, Hello Mrs Robinson, vid Golf de Andratx",
+        "caption": "Hål 15, Hello Mrs Robinson. Fallet från utslagsplatsen gör att hålet spelar ungefär 20 yards kortare. Distanskontrollen är hela utmaningen här."
       },
       {
         "text": "Hål 18 avslutas med vatten som gör par 5 svårt att nå i två, och bunkrar som skyddar väl därifrån. Ett starkt avslutningshål."
@@ -767,7 +767,7 @@ const content = {
           ],
           [
             "Vindtips",
-            "Använd GPS eller en riktig banbok och lita på den. Den här banan straffar halvhjartade beslut över carries och på öppna par 3-hål mycket mer än ett medvetet konservativt val."
+            "Använd GPS eller en riktig banbok och lita på den. Den här banan straffar halvhjärtade beslut över carries och på öppna par 3-hål mycket mer än ett medvetet konservativt val."
           ],
           [
             "Där besökare tappar slag",
@@ -863,7 +863,7 @@ const content = {
         "caption": "第 15 洞，Hello Mrs Robinson。从开球台的落差让实际距离约短 20 码。距离控制是这个洞的全部挑战。"
       },
       {
-        "text": "第 18 洞以水障碍收尾，让五杆洞两杆上很难，两边沙坑也保护得很好。是一个有分量的收官洞。"
+        "text": "第 18 洞以水障碍收尾，让这个五杆洞很难两杆攻上果岭，沙坑也保护得很好。是一个有分量的收官洞。"
       },
       {
         "alt": "Golf de Andratx 第 2 洞，背景可见 Camp del Mar",
