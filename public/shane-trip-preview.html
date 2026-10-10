@@ -48,6 +48,12 @@
     @media(max-width:1100px){.staff-grid{grid-template-columns:1fr}.staff-grid>div:last-child{position:static}.brief-output{max-height:650px}}@media(max-width:580px){.staff-tabs{gap:7px}.staff-tabs button{font-size:14px}.review-card{padding:17px}.brief-output{padding:16px}.review-title h3{font-size:25px}}
     .card__body{display:flex;flex-direction:column}.card__body .card__meta{margin-top:7px;font-size:12px;color:var(--pine);font-weight:500;letter-spacing:.01em}.card__body .card__note{margin-top:10px;padding-top:9px;border-top:1px solid var(--sand);font:italic 400 16px/1.38 var(--serif);color:var(--ink)}.card__body .card__note:before{content:'Andy’s note';display:block;font:600 9px/1 var(--sans);font-style:normal;letter-spacing:.11em;text-transform:uppercase;color:#8f6c19;margin-bottom:5px}.card__body .card-photo{margin-top:auto;padding-top:9px}
     .lead-question textarea{min-height:92px}.lead-question>span{font:500 26px/1.15 var(--serif);color:var(--deep);margin-bottom:4px}
+    /* Stay styles: one row of five on wide screens, a snap-scrolling row (next card peeking) on narrower ones. */
+    .cards.cards--stayStyle{display:grid;grid-template-columns:none;justify-content:start;grid-auto-flow:column;grid-auto-columns:minmax(236px,1fr);gap:14px;overflow-x:auto;scroll-snap-type:x proximity;padding-bottom:12px;scrollbar-width:thin;scrollbar-color:var(--gold) var(--sand)}
+    .cards.cards--stayStyle .card{scroll-snap-align:start;min-width:0}
+    .cards.cards--stayStyle .card img{height:auto;aspect-ratio:3/2}
+    .cards.cards--stayStyle .card__body b{font-size:22px}
+    @media(min-width:1180px){.cards.cards--stayStyle{grid-auto-columns:minmax(0,1fr);overflow:visible;padding-bottom:0}.cards.cards--stayStyle .card__body{padding:12px}.cards.cards--stayStyle .card__body b{font-size:21px}}
   </style>
 </head>
 <body>
