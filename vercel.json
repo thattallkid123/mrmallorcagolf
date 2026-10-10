@@ -9,9 +9,16 @@
       "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
     },
     {
+      "source": "/trip-planning-preview",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
+    },
+    {
       "source": "/trip-preferences-assets/(.*)",
       "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
     }
+  ],
+  "rewrites": [
+    { "source": "/trip-planning-preview", "destination": "/trip-preferences.html" }
   ],
   "redirects": [
     {

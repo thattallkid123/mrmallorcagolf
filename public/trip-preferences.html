@@ -59,7 +59,7 @@
   </style>
 </head>
 <body>
-  <script>(function(){var ref=new URLSearchParams(location.search).get('ref')||'';var ok=/^[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}$/i.test(ref);if(/(^|\.)mrmallorcagolf\.com$/i.test(location.hostname)&&!ok)document.documentElement.setAttribute('data-gated','1')})()</script>
+  <script>(function(){var ref=new URLSearchParams(location.search).get('ref')||'';var ok=/^[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}$/i.test(ref);var staff=/^\/trip-planning-preview\/?$/.test(location.pathname);if(/(^|\.)mrmallorcagolf\.com$/i.test(location.hostname)&&!ok&&!staff)document.documentElement.setAttribute('data-gated','1')})()</script>
   <section class="gate" role="main"><div><img src="logo-white-96.webp" alt="" width="64" height="64"><h1>This page opens from a personal link</h1><p>Andy sends it by email after your enquiry, so your choices reach him with your enquiry reference.</p><p><a href="/contact">Send an enquiry</a> or <a href="/">visit the website</a>.</p></div></section>
   <div class="preview" id="page-mode"><strong>Planning preview for Andy and Shane</strong> · no answers are sent from this draft</div>
   <header class="topbar"><a class="brand" href="https://www.mrmallorcagolf.com" aria-label="Mr Mallorca Golf home"><img src="logo-white-96.webp" alt="" width="48" height="48"><span class="brand-name">Mr Mallorca Golf</span></a><span>Plan your Mallorca golf trip</span></header>
@@ -86,6 +86,7 @@
     const clientMode=/^[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}$/i.test(enquiryRef);
     let state=initial(),step=0,status='',statusError=false,submitting=false,submitted=false,website='';
     if(clientMode){document.title='Plan your Mallorca golf trip | Mr Mallorca Golf';document.getElementById('page-mode').innerHTML='<strong>Your trip preferences</strong> · choose what interests the group before your call with Andy';document.querySelector('.aside>a').remove();document.querySelector('.footer').innerHTML='Photos show venue or stay-style examples. Selections are ideas to discuss, with availability and prices checked later.'}
+    if(!clientMode&&/(^|\.)mrmallorcagolf\.com$/i.test(location.hostname)){const journey=document.querySelector('.aside>a');if(journey)journey.remove();document.querySelector('.footer').textContent='Named venues use venue photographs. Other images are labelled as examples or illustrations. Choices and approved photo use will be confirmed with Shane.'}
     const panel=document.getElementById('panel');
     if(uiLang!=='en'){document.documentElement.lang=uiLang==='zh'?'zh-Hans':uiLang;document.title=I18N.t(document.title);I18N.apply(document.body)}
     const escapeHtml=v=>String(v??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
