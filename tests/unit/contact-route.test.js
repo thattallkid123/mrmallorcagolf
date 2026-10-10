@@ -28,7 +28,8 @@ describe('contact enquiry email', () => {
   test('shows courses, hotel help and the visitor country, and tags the subject', async () => {
     expect((await post(body, { 'x-vercel-ip-country': 'GB' })).status).toBe(200)
     const mail = andyMail()
-    expect(mail.subject).toBe('New enquiry from Sam Example - Whole trip')
+    expect(mail.subject).toMatch(/^New enquiry from Sam Example - Whole trip \[[0-9a-f-]{36}\]$/)
+    expect(mail.html).toContain('/trip-preferences.html?ref=')
     expect(mail.html).toContain('Visiting from:</strong> United Kingdom (GB)')
     expect(mail.html).toContain('Son Gual, Alcanada')
     expect(mail.html).toContain('Yes, please suggest options')

@@ -1,3 +1,4 @@
+import { randomUUID } from 'node:crypto'
 import { Resend } from 'resend'
 
 import {
@@ -136,6 +137,11 @@ export async function POST(request) {
     const safeEmail = escapeHtml(email)
 
     const country = describeCountry(request)
+    const enquiryRef = randomUUID()
+    const preferencesHost = process.env.VERCEL_ENV === 'production'
+      ? 'www.mrmallorcagolf.com'
+      : process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL || 'www.mrmallorcagolf.com'
+    const preferencesUrl = `https://${preferencesHost}/trip-preferences.html?ref=${enquiryRef}`
     const brief = buildEnquiryBrief({
       serviceType,
       serviceTypeLabel,
@@ -159,7 +165,7 @@ export async function POST(request) {
       from: 'Mr Mallorca Golf <enquiries@mrmallorcagolf.com>',
       to: 'andy@mrmallorcagolf.com',
       replyTo: email,
-      subject: `New enquiry from ${fullName}${subjectSuffix}`,
+      subject: `New enquiry from ${fullName}${subjectSuffix} [${enquiryRef}]`,
       html: `
         <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
           <h2 style="color:#2D4A3E;margin-bottom:16px">New enquiry - Mr Mallorca Golf</h2>
@@ -170,6 +176,7 @@ export async function POST(request) {
             <p style="margin:0;font-size:13px;color:#555"><strong>How they found you:</strong> ${escapeHtml(brief.source)}</p>
           </div>
           <table style="width:100%;border-collapse:collapse">
+            ${renderRow('Enquiry reference', enquiryRef)}
             ${renderRow('Name', fullName)}
             <tr><td style="padding:8px 0;border-bottom:1px solid #eee;color:#666">Email</td><td style="padding:8px 0;border-bottom:1px solid #eee"><a href="mailto:${safeEmail}">${safeEmail}</a></td></tr>
             ${renderRow('Dates', dates)}
@@ -194,6 +201,7 @@ export async function POST(request) {
             <p style="color:#666;margin:0 0 8px">Still to ask in your reply:</p>
             <ul style="margin:0;padding-left:20px;color:#333;line-height:1.6">${brief.questions.map((question) => `<li>${escapeHtml(question)}</li>`).join('')}</ul>
           </div>
+          <p style="margin-top:24px;font-size:13px"><strong>Optional next step:</strong> After reviewing this enquiry, send the client this <a href="${escapeHtml(preferencesUrl)}">trip preferences link</a> before your call. It carries the enquiry reference so their answers can be matched here.</p>
           <p style="margin-top:32px;color:#999;font-size:12px">Reply directly to this email to respond to ${escapeHtml(fname)}.</p>
         </div>
       `,
@@ -227,7 +235,7 @@ export async function POST(request) {
       console.error('Resend confirmation email error:', confirmError)
     }
 
-    return Response.json({ ok: true })
+    return Response.json({ ok: true, enquiryRef })
   } catch (err) {
     console.error('Resend error:', err)
     return Response.json({ ok: false, error: 'Failed to send' }, { status: 500 })

@@ -3,6 +3,16 @@
   "crons": [
     { "path": "/api/cron/indexnow", "schedule": "0 6 * * *" }
   ],
+  "headers": [
+    {
+      "source": "/trip-preferences.html",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
+    },
+    {
+      "source": "/trip-preferences-assets/(.*)",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
+    }
+  ],
   "redirects": [
     {
       "source": "/handicap-checker.html",
