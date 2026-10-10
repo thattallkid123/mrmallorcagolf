@@ -221,7 +221,6 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
                     <span className="pyt-trip-idea__tag">{item.tag}</span>
                     <h3>{item.title}</h3>
                     <p>{item.text}</p>
-                    <small>{content.tripIdeas.photoLabel}: {item.photo}</small>
                   </div>
                 </article>
               ))}

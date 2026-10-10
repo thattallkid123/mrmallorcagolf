@@ -29,11 +29,10 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     "body": "Send me your dates, group size, and what you want from the trip. I will recommend the right courses for your group, work out the routing and number of rounds, book and confirm the tee times, arrange buggies and club rentals, and shape the golf days so the trip runs cleanly from start to finish.",
     "includes": [
       "Course recommendations matched to your game, group, and budget",
-      "Where to base yourself and why",
+      "The best area to stay for your golf itinerary",
       "Trip routing and number of rounds",
       "Tee times booked and confirmed",
       "Buggies and club rentals arranged",
-      "Dining suggestions built around the schedule",
       "Play With A Pro available as an add-on at any stage"
     ],
     "workingModes": {
@@ -48,7 +47,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         },
         {
           "title": "Full golf plan",
-          "body": "For groups playing several rounds, I put the courses in the right order, plan the drives, and handle buggies, rentals and useful dining suggestions.",
+          "body": "For groups playing several rounds, I put the courses in the right order, plan the drives, and arrange buggies and club rentals.",
           "cta": "Plan my golf trip",
           "target": "trip-planning"
         },

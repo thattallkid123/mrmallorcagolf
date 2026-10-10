@@ -33,11 +33,10 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "body": "Envíeme sus fechas, el tamaño del grupo y lo que quiere del viaje. Recomendaré los campos adecuados para su grupo, calcularé la ruta y el número de rondas, reservaré y confirmaré las horas de salida, organizaré buggies y alquiler de palos, y daré forma a los días de golf para que el viaje salga redondo de principio a fin.",
       "includes": [
         "Campos recomendados según su juego, grupo y presupuesto",
-        "Dónde alojarse y por qué",
+        "La mejor zona donde alojarse para su itinerario de golf",
         "Ruta del viaje y número de vueltas",
         "Tee times reservados y confirmados",
         "Buggies y alquiler de palos organizados",
-        "Sugerencias de comida y restaurantes según el plan",
         "Play With A Pro disponible como añadido en cualquier momento"
       ],
       "note": "Sin compromiso al consultar. Le respondo personalmente en 24 horas con el siguiente paso recomendado y un presupuesto claro antes de reservar nada.",
@@ -55,7 +54,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Plan de golf completo",
-            "body": "Para grupos que juegan varias rondas, ordeno los campos de la mejor manera, planifico los trayectos y me ocupo de buggies, alquileres y sugerencias para comer.",
+            "body": "Para grupos que juegan varias rondas, ordeno los campos de la mejor manera, planifico los trayectos y organizo buggies y alquiler de palos.",
             "cta": "Planificar mi viaje"
           },
           {
@@ -204,11 +203,10 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "body": "Schicken Sie mir Ihre Daten, die Gruppengröße und was Sie sich von der Reise wünschen. Ich empfehle die passenden Plätze für Ihre Gruppe, erarbeite Route und Rundenzahl, buche und bestätige die Startzeiten, organisiere Buggys und Leihschläger und gestalte die Golftage so, dass die Reise von Anfang bis Ende reibungslos läuft.",
       "includes": [
         "Platzempfehlungen passend zu Spiel, Gruppe und Budget",
-        "Wo Sie wohnen sollten und warum",
+        "Die beste Gegend zum Übernachten für Ihren Golfreiseplan",
         "Reiseroute und Rundenzahl",
         "Gebuchte und bestätigte Startzeiten",
         "Organisierte Buggys und Leihschläger",
-        "Essensempfehlungen passend zum Ablauf",
         "Play With A Pro jederzeit als Zusatz möglich"
       ],
       "note": "Keine Verpflichtung bei der Anfrage. Ich antworte persönlich innerhalb von 24 Stunden mit dem empfohlenen nächsten Schritt und einem klaren Angebot, bevor irgendetwas gebucht wird.",
@@ -226,7 +224,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Kompletter Golfplan",
-            "body": "Für Gruppen mit mehreren Runden bringe ich die Plätze in die richtige Reihenfolge, plane die Fahrten und kümmere mich um Buggies, Leihausrüstung und passende Restaurantvorschläge.",
+            "body": "Für Gruppen mit mehreren Runden bringe ich die Plätze in die richtige Reihenfolge, plane die Fahrten und organisiere Buggys und Leihschläger.",
             "cta": "Reise planen"
           },
           {
@@ -375,11 +373,10 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "body": "Envoyez-moi vos dates, la taille du groupe et ce que vous attendez du séjour. Je vous recommande les bons parcours pour votre groupe, j'établis l'itinéraire et le nombre de parties, je réserve et je confirme les heures de départ, j'organise voiturettes et location de clubs, et je construis les journées de golf pour que le séjour se déroule sans accroc du début à la fin.",
       "includes": [
         "Parcours recommandés selon votre jeu, votre groupe et votre budget",
-        "Où loger et pourquoi",
+        "Le meilleur secteur où séjourner pour votre itinéraire de golf",
         "Itinéraire et nombre de parties",
         "Heures de départ réservées et confirmées",
         "Buggys et location de clubs organisés",
-        "Suggestions de repas et restaurants selon le programme",
         "Play With A Pro disponible en option à tout moment"
       ],
       "note": "Aucun engagement au stade de la demande. Je réponds personnellement sous 24 heures avec la prochaine étape recommandée et un devis clair avant toute réservation.",
@@ -397,7 +394,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Plan golf complet",
-            "body": "Pour les groupes qui jouent plusieurs parcours, je mets les parcours dans le bon ordre, je planifie les trajets et je m’occupe des buggies, des locations et des suggestions de restaurants.",
+            "body": "Pour les groupes qui jouent plusieurs parcours, je mets les parcours dans le bon ordre, je planifie les trajets et j’organise les voiturettes et la location de clubs.",
             "cta": "Planifier mon séjour"
           },
           {
@@ -546,11 +543,10 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "body": "Stuur me uw data, groepsgrootte en wat u van de reis wilt. Ik adviseer de juiste banen voor uw groep, werk de route en het aantal rondes uit, boek en bevestig de starttijden, regel buggy's en huurclubs en geef de golfdagen vorm zodat de reis van begin tot eind soepel verloopt.",
       "includes": [
         "Baanaanbevelingen afgestemd op uw spel, groep en budget",
-        "Waar u het best kunt verblijven en waarom",
+        "De beste uitvalsbasis voor uw golfreis",
         "Reisroute en aantal rondes",
         "Starttijden geboekt en bevestigd",
         "Buggy’s en clubhuur geregeld",
-        "Eet- en restauranttips passend bij het schema",
         "Play With A Pro als extra optie op elk moment"
       ],
       "note": "Geen verplichting bij aanvraag. Ik reageer persoonlijk binnen 24 uur met de aanbevolen volgende stap en een duidelijke prijsopgave voordat er iets wordt geboekt.",
@@ -568,7 +564,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Volledig golfplan",
-            "body": "Voor groepen die meerdere rondes spelen zet ik de banen in de juiste volgorde, plan ik de ritten en regel ik buggy’s, verhuur en goede eettips.",
+            "body": "Voor groepen die meerdere rondes spelen zet ik de banen in de juiste volgorde, plan ik de ritten en regel ik buggy’s en huurclubs.",
             "cta": "Mijn reis plannen"
           },
           {
@@ -717,11 +713,10 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "body": "Skicka mig dina datum, gruppstorlek och vad du vill ha ut av resan. Jag rekommenderar rätt banor för din grupp, räknar ut rutten och antalet rundor, bokar och bekräftar starttiderna, ordnar golfbilar och klubbhyra och formar golfdagarna så att resan löper smidigt från start till mål.",
       "includes": [
         "Banrekommendationer anpassade efter spel, grupp och budget",
-        "Var du bör bo och varför",
+        "Det bästa området att bo i för din golfresa",
         "Resrutt och antal rundor",
         "Starttider bokade och bekräftade",
         "Golfbilar och klubbor ordnade",
-        "Matrekommendationer anpassade till schemat",
         "Play With A Pro som tillägg när som helst"
       ],
       "note": "Inget åtagande vid förfrågan. Jag svarar personligen inom 24 timmar med rekommenderat nästa steg och en tydlig offert innan något bokas.",
@@ -739,7 +734,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Hela golfplanen",
-            "body": "För grupper som spelar flera rundor lägger jag banorna i rätt ordning, planerar färderna och ordnar buggies, uthyrning och bra matförslag.",
+            "body": "För grupper som spelar flera rundor lägger jag banorna i rätt ordning, planerar färderna och ordnar golfbilar och hyrklubbor.",
             "cta": "Planera min resa"
           },
           {
@@ -888,11 +883,10 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "body": "请发给我您的日期、人数以及您对这次行程的期望。我会为您的团队推荐合适的球场，安排路线和打球轮数，预订并确认开球时间，安排球车和球具租借，并设计好每个高尔夫日，让整趟行程从头到尾顺畅进行。",
       "includes": [
         "根据您的水平、团队和预算推荐球场",
-        "建议住在哪里以及原因",
+        "根据高尔夫行程建议最合适的住宿区域",
         "旅程路线和轮次安排",
         "开球时间预订并确认",
         "球车和球杆租赁安排",
-        "配合行程的餐饮建议",
         "任何时候都可加购同场陪打服务"
       ],
       "note": "咨询阶段不涉及任何承诺。我会在24小时内亲自回复，给出建议的下一步和明确报价，之后才会预订任何内容。",
@@ -910,7 +904,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "完整球场计划",
-            "body": "如果您打多轮，我会安排球场的先后顺序、规划路程，并负责球车、租杆和用餐建议。",
+            "body": "如果您打多轮，我会安排球场的先后顺序、规划路程，并安排球车和球杆租赁。",
             "cta": "规划我的行程"
           },
           {

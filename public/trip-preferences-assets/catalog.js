@@ -282,7 +282,7 @@ window.MMGTripCatalog = {
       "title": "Es Trenc salt flats",
       "detail": "A guided walk round the salt pans, with a tasting.",
       "facts": "Campos · 45 minutes",
-      "note": "Short and easy. Add a swim at Es Trenc beach. Not suitable for reduced mobility.",
+      "note": "Short and easy. Add a swim at Es Trenc beach.",
       "image": "card-do-salt.webp",
       "source": "https://www.flordesal.com/",
       "photoType": "venue",
