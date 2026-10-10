@@ -84,6 +84,8 @@ export async function POST(request) {
     }
 
     const trip = payload?.trip || {}
+    const langCode = String(payload?.lang || '').toLowerCase()
+    const questionnaireLang = /^(de|es|fr|nl|sv|zh)$/.test(langCode) ? langCode.toUpperCase() : 'EN'
     const prefs = payload?.preferences || {}
     const rooms = prefs.rooms || {}
     const arrival = cleanDate(trip.arrival)
@@ -118,7 +120,7 @@ export async function POST(request) {
       <p>Call preparation for Andy. Read alongside the first enquiry using the reference below. The original record is not loaded by this questionnaire.</p>
       <p>These are client preferences. Confirm the shortlist on the call before asking Shane to check options and prices.</p>
       ${section('What would make it a success', [row('In their words', success || 'Not added; ask first on the call')])}
-      ${section('Match to the first enquiry', [row('Enquiry reference', enquiryRef), row('Name', name), row('Email', email)])}
+      ${section('Match to the first enquiry', [row('Enquiry reference', enquiryRef), row('Name', name), row('Email', email), row('Questionnaire language', questionnaireLang)])}
       ${section('Group and golf updates', [
         row('Trip type', pick('tripType', trip.tripType)),
         row('Date update', [arrival, departure].filter(Boolean).join(' to ') || 'Use dates from first enquiry'), row('Flexibility', pick('dateFlex', trip.dateFlex)),

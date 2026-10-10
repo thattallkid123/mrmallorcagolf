@@ -54,6 +54,7 @@ const CHECKS = [
   { name: 'check:links', script: 'check-internal-links.mjs' },
   { name: 'check:voice', script: 'check-voice.mjs' },
   { name: 'check:api-safety', script: 'check-api-safety.mjs' },
+  { name: 'check:trip-preferences-i18n', script: 'check-trip-preferences-i18n.mjs' },
   { name: 'check:tool-prices', script: 'check-tool-price-sync.mjs' },
   { name: 'check:tool-green-fees', script: 'check-tool-green-fees.mjs' },
   { name: 'check:tool-data', script: 'check-tool-data-localized.mjs' },

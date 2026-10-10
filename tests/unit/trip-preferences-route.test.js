@@ -135,3 +135,18 @@ test('first enquiry email includes the matching follow-up link for Andy', async 
   delete process.env.VERCEL_URL
   delete process.env.VERCEL_ENV
 })
+
+test('records which language the client used, and ignores an unknown one', async () => {
+  process.env.RESEND_API_KEY = 'test-key'
+  send.mockReset().mockResolvedValue({ data: { id: 'email-id' }, error: null })
+  const fresh = (payload) => new Request('http://localhost:3000/api/trip-preferences', {
+    method: 'POST',
+    headers: { origin: 'http://localhost:3000', 'content-type': 'application/json', 'x-forwarded-for': '198.51.100.77' },
+    body: JSON.stringify(payload),
+  })
+  await POST(fresh({ ...validPayload, lang: 'zh' }))
+  expect(send.mock.calls[0][0].html).toMatch(/Questionnaire language<\/td><td[^>]*>ZH</)
+  send.mockClear()
+  await POST(fresh({ ...validPayload, lang: '<b>xx</b>' }))
+  expect(send.mock.calls[0][0].html).toMatch(/Questionnaire language<\/td><td[^>]*>EN</)
+})

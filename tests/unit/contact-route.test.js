@@ -44,4 +44,12 @@ describe('contact enquiry email', () => {
     expect(mail.html).not.toContain('Hotel help')
     expect(mail.html).not.toContain('<script>')
   })
+
+  test('the follow-up link carries the visitor language so the questionnaire opens in it', async () => {
+    await post({ ...body, lang: 'de' })
+    expect(andyMail().html).toMatch(/trip-preferences\.html\?ref=[0-9a-f-]{36}&amp;lang=de/)
+    send.mockClear()
+    await post({ ...body, lang: 'en' })
+    expect(andyMail().html).not.toContain('lang=')
+  })
 })

@@ -141,7 +141,7 @@ export async function POST(request) {
     const preferencesHost = process.env.VERCEL_ENV === 'production'
       ? 'www.mrmallorcagolf.com'
       : process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL || 'www.mrmallorcagolf.com'
-    const preferencesUrl = `https://${preferencesHost}/trip-preferences.html?ref=${enquiryRef}`
+    const preferencesUrl = `https://${preferencesHost}/trip-preferences.html?ref=${enquiryRef}${/^(DE|ES|FR|NL|SV|ZH)$/.test(lang) ? `&lang=${lang.toLowerCase()}` : ''}`
     const brief = buildEnquiryBrief({
       serviceType,
       serviceTypeLabel,
