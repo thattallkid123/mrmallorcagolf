@@ -27,7 +27,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "paragraphs": [
         "Play With A Pro es mi día en el campo con usted: un campo, 18 hoyos, gestión del campo, coaching integrado en la vuelta y el conocimiento local que convierte un buen día en un gran día.",
         "Si prefiere jugar por su cuenta, reservo el golf: los campos adecuados, en el orden adecuado, con horas de salida y buggies confirmados antes de su llegada.",
-        "Para el viaje completo, planifico el golf y trabajo con un socio de viajes local de confianza para el hotel, los traslados, los restaurantes y los días libres. El socio reserva directamente todo lo que no es golf, y yo uno ambos planes."
+        "Para el viaje completo, planifico el golf y trabajo con un socio de viajes local de confianza para el hotel, los traslados, los restaurantes y los días libres. El socio reserva directamente todo lo que no es golf, y yo reúno ambos planes en uno."
       ],
       "stats": [
         {

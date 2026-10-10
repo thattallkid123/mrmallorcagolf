@@ -61,7 +61,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "dates": "p. ej. 15-22 octubre 2026",
         "handicap": "p. ej. 14 o \"principiante\"",
         "message": "Zona del hotel, campos de los que haya oído hablar, presupuesto, composición del grupo o cualquier otra cosa que me ayude a entender el viaje.",
-        "courses": "p. ej. Son Gual, Alcanada, o sugiérame usted"
+        "courses": "p. ej. Son Gual, Alcanada, o pídame sugerencias"
       },
       "groupsizeOptions": [
         {
@@ -209,7 +209,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "dates": "z. B. 15.-22. Oktober 2026",
         "handicap": "z. B. 14 oder 'Anfänger'",
         "message": "Hotelregion, Plätze, die Sie schon kennen, Budget, Gruppenzusammensetzung oder alles andere, was mir hilft, die Reise zu verstehen.",
-        "courses": "z. B. Son Gual, Alcanada, oder machen Sie mir Vorschläge"
+        "courses": "z. B. Son Gual, Alcanada, oder lassen Sie sich Vorschläge machen"
       },
       "groupsizeOptions": [
         {
@@ -357,7 +357,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "dates": "ex. 15-22 octobre 2026",
         "handicap": "ex. 14 ou 'débutant'",
         "message": "Zone d'hôtel, parcours dont vous avez entendu parler, budget, composition du groupe ou tout ce qui m'aide à comprendre le séjour.",
-        "courses": "p. ex. Son Gual, Alcanada, ou proposez-moi des idées"
+        "courses": "p. ex. Son Gual, Alcanada, ou demandez-moi des suggestions"
       },
       "groupsizeOptions": [
         {
@@ -505,7 +505,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "dates": "bijv. 15-22 oktober 2026",
         "handicap": "bijv. 14 of 'beginner'",
         "message": "Hotelregio, banen waarvan u gehoord heeft, budget, groepssamenstelling of alles wat me helpt de reis te begrijpen.",
-        "courses": "bijv. Son Gual, Alcanada, of doe me een voorstel"
+        "courses": "bijv. Son Gual, Alcanada, of vraag mij om een voorstel"
       },
       "groupsizeOptions": [
         {
@@ -653,7 +653,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
         "dates": "t.ex. 15-22 oktober 2026",
         "handicap": "t.ex. 14 eller 'nybörjare'",
         "message": "Hotellområde, banor du har hört talas om, budget, gruppens sammansättning eller något annat som hjälper mig förstå resan.",
-        "courses": "t.ex. Son Gual, Alcanada, eller föreslå själv"
+        "courses": "t.ex. Son Gual, Alcanada, eller be mig föreslå några"
       },
       "groupsizeOptions": [
         {

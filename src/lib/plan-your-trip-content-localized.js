@@ -300,7 +300,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         },
         {
           "tag": "Freier Tag",
-          "title": "Der Sóller-Zug",
+          "title": "Der Zug nach Sóller",
           "text": "Der Holzzug durch die Berge nach Sóller, etwa eine Stunde ab Palma."
         }
       ]
@@ -642,7 +642,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         },
         {
           "tag": "Vrije dag",
-          "title": "De Sóller-trein",
+          "title": "De trein naar Sóller",
           "text": "De houten trein door de bergen naar Sóller, ongeveer een uur vanaf Palma."
         }
       ]
