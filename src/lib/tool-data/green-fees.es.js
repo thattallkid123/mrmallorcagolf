@@ -22,7 +22,7 @@ const data = {
   "Son Antem East": "Las calles anchas y generosas lo convierten en el más amable de los campos de Antem, mientras que cinco lagos mantienen la ronda interesante.",
   "Son Antem West": "Llano y tolerante, y el 16, bordeado de árboles, vale la ronda por sí solo. Cuente con colas en horas de mucha afluencia.",
   "Son Termes": "Los nueve finales tienen las mejores vistas de montaña tan cerca de Palma, pero las subidas hacen que se camine mucho peor que los primeros nueve.",
-  "Pollensa": "Una opción compacta de nueve hoyos bajo la Tramuntana, con algunas subidas de verdad a pesar del formato corto.",
+  "Pollença": "Una opción compacta de nueve hoyos bajo la Tramuntana, con algunas subidas de verdad a pesar del formato corto.",
   "Capdepera": "El 15 es hándicap 1 y Mallorca Magazin lo eligió el mejor hoyo de la isla.",
   "Canyamel": "Un diseño de José Gancedo con lagos por todo el recorrido. Salga antes de las 8:50 y la tarifa madrugadora ahorra una cantidad considerable.",
   "Pula": "Un rediseño de Olazábal con campo de prácticas de dos niveles e instalaciones de juego corto muy buenas. Una buena elección para un día de golf con mucha práctica.",

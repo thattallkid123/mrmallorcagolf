@@ -55,7 +55,7 @@ const BASE_COURSES = [
   { name: 'Son Antem East',     area: 'Palma',     peak: 140, low: 105, buggy: '€48',                           walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '54', certRequired: false, nineHoles: false, verdict: 'Wide, generous fairways make this the friendlier Antem course, while five lakes keep the round interesting.' },
   { name: 'Son Antem West',     area: 'Palma',     peak: 145, low: 109, buggy: '€48',                           walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '27M / 35L', certRequired: true, nineHoles: false, verdict: 'Flat and forgiving, and the tree-lined 16th is worth the round alone. Expect queues at busy times.' },
   { name: 'Son Termes',         area: 'Palma',     peak: 110, low: 90,  buggy: 'Bundled',                       walking: 'restricted', walkingNote: 'Front flat, back steep', handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: false, verdict: 'The back nine has the best mountain views this close to Palma, but the climbs make it a much tougher walk than the front.' },
-  { name: 'Pollensa',           area: 'North',     peak: 75,  low: 65,  buggy: '€25–€35',                       walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: true,  verdict: 'A compact nine-hole option under the Tramuntana mountains, with a few proper climbs despite the short format.' },
+  { name: 'Pollença',           area: 'North',     peak: 75,  low: 65,  buggy: '€25–€35',                       walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: true,  verdict: 'A compact nine-hole option under the Tramuntana mountains, with a few proper climbs despite the short format.' },
   { name: 'Capdepera',          area: 'East',      peak: 149, low: 79,  buggy: '€35–€45',                       walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '36', certRequired: true, nineHoles: false, verdict: 'The 15th is stroke index 1 and was voted the best hole on the island by Mallorca Magazin.' },
   { name: 'Canyamel',           area: 'East',      peak: 145, low: 85,  buggy: '€30–€45',                       walking: 'restricted', walkingNote: 'Front hilly', handicap: 'yes', handicapNote: '36M / 45L', certRequired: true, nineHoles: false, verdict: 'A José Gancedo design with lakes throughout. Tee off before 8:50am and the early-bird rate saves a decent amount.' },
   { name: 'Pula',               area: 'East',      peak: 145, low: 69,  buggy: '€45',                           walking: 'yes',        walkingNote: '',                            handicap: 'yes', handicapNote: '34M / 36L', certRequired: true, nineHoles: false, verdict: 'An Olazábal redesign with a two-level range and strong short-game facilities. A good choice for a practice-heavy golf day.' },
@@ -99,12 +99,12 @@ function buggyDisplay(data, t) {
 }
 
 // findCourseByName is fuzzy but can't bridge Roman-vs-Arabic numerals or the
-// Pollensa/Pollença spelling. Map those few to their canonical data names.
+// Pollença spelling. Map those few to their canonical data names.
 const COMPARE_NAME_FIX = {
   'Santa Ponsa I': 'Golf Santa Ponsa 1',
   'Santa Ponsa II': 'Golf Santa Ponsa 2',
   'Santa Ponsa III': 'Golf Santa Ponsa 3',
-  Pollensa: 'Golf Pollença',
+  'Pollença': 'Golf Pollença',
 }
 
 const AREA_KEY_MAP = { Southwest: 'southwest', Palma: 'palma', North: 'north', East: 'east' }

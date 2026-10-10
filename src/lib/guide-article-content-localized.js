@@ -257,8 +257,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "El más fotografiado, costa este"
             ],
             [
-              "Golf Pollensa",
-              "Pollensa",
+              "Golf Pollença",
+              "Pollença",
               "35 (9H)",
               "€65-75",
               "4/10",
@@ -665,8 +665,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Meistfotografiert, Ostküste"
             ],
             [
-              "Golf Pollensa",
-              "Pollensa",
+              "Golf Pollença",
+              "Pollença",
               "35 (9H)",
               "€65-75",
               "4/10",
@@ -1073,8 +1073,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Le plus photographié, côte est"
             ],
             [
-              "Golf Pollensa",
-              "Pollensa",
+              "Golf Pollença",
+              "Pollença",
               "35 (9H)",
               "€65-75",
               "4/10",
@@ -1481,8 +1481,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Meest gefotografeerd, oostkust"
             ],
             [
-              "Golf Pollensa",
-              "Pollensa",
+              "Golf Pollença",
+              "Pollença",
               "35 (9H)",
               "€65-75",
               "4/10",
@@ -1889,8 +1889,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Mest fotograferad, östkusten"
             ],
             [
-              "Golf Pollensa",
-              "Pollensa",
+              "Golf Pollença",
+              "Pollença",
               "35 (9H)",
               "€65-75",
               "4/10",
@@ -2297,8 +2297,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "最上镜，东海岸"
             ],
             [
-              "Golf Pollensa",
-              "Pollensa",
+              "Golf Pollença",
+              "Pollença",
               "35 (9H)",
               "€65-75",
               "4/10",

@@ -22,7 +22,7 @@ const data = {
   "Son Antem East": "Breda, generösa fairways gör den till den vänligare av Antem-banorna, medan fem sjöar håller rundan intressant.",
   "Son Antem West": "Platt och förlåtande, och den trädkantade 16:an är värd rundan i sig. Räkna med köer vid hektiska tider.",
   "Son Termes": "De sista nio har öns bästa bergsutsikt så nära Palma, men backarna gör den till en mycket tuffare promenad än de första nio.",
-  "Pollensa": "Ett kompakt niohålsalternativ under Tramuntana, med några riktiga backar trots det korta formatet.",
+  "Pollença": "Ett kompakt niohålsalternativ under Tramuntana, med några riktiga backar trots det korta formatet.",
   "Capdepera": "15:an är index 1 och röstades fram som öns bästa hål av Mallorca Magazin.",
   "Canyamel": "En José Gancedo-design med sjöar hela vägen. Slå ut före 8:50 så sparar tidigbokningspriset en rejäl summa.",
   "Pula": "En Olazábal-omdesign med range på två nivåer och starka närspelsanläggningar. Ett bra val för en träningstung golfdag.",

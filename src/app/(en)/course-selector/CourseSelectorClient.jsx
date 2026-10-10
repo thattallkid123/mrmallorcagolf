@@ -114,8 +114,8 @@ const COURSES = [
     take: 'One of the more approachable full courses near Palma. A sensible first round for newer golfers or mixed-ability groups.',
   },
   {
-    name: 'Golf Pollensa',
-    location: 'Pollensa',
+    name: 'Golf Pollença',
+    location: 'Pollença',
     fees: 'Peak €75 / Low €65 (9 holes)',
     href: '/golf-courses',
     bestFor: ['beginner', 'value', 'walkability', 'one'],

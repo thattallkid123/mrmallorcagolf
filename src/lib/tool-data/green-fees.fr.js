@@ -22,7 +22,7 @@ const data = {
   "Son Antem East": "Des fairways larges et généreux en font le plus accueillant des parcours d'Antem, tandis que cinq lacs gardent la partie intéressante.",
   "Son Antem West": "Plat et tolérant, et le 16, bordé d'arbres, vaut la partie à lui seul. Attendez-vous à des files d'attente aux heures de pointe.",
   "Son Termes": "Les neuf derniers offrent les plus belles vues de montagne si près de Palma, mais les montées en font une marche bien plus dure que les neuf premiers.",
-  "Pollensa": "Une option compacte de neuf trous sous la Tramuntana, avec quelques vraies montées malgré le format court.",
+  "Pollença": "Une option compacte de neuf trous sous la Tramuntana, avec quelques vraies montées malgré le format court.",
   "Capdepera": "Le 15 est l'index 1 et a été élu meilleur trou de l'île par Mallorca Magazin.",
   "Canyamel": "Un dessin de José Gancedo avec des lacs sur tout le parcours. Partez avant 8 h 50 et le tarif lève-tôt économise une somme appréciable.",
   "Pula": "Un redessin d'Olazábal avec un practice sur deux niveaux et de solides installations de petit jeu. Un bon choix pour une journée de golf axée sur l'entraînement.",
