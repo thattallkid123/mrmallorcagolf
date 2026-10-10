@@ -755,7 +755,7 @@ const content = {
         "caption": "Inspelet på hål 15. Vatten till höger och ännu en carry mot greenen."
       },
       {
-        "text": "Hål 18 var dagens svåraste utslag att sikta, spelat från de bakre tee på 379 m. Jag slog vad jag trodde var ett bra utslag i position A och vi hittade aldrig bollen. Det kostade mig chansen att avsluta under par, och jag stängde med en bogey för en 72."
+        "text": "Hål 18 var dagens svåraste utslag att sikta, spelat från bakre tee på 379 m. Jag slog vad jag trodde var ett bra utslag i position A och vi hittade aldrig bollen. Det kostade mig chansen att avsluta under par, och jag stängde med en bogey för en 72."
       },
       {
         "alt": "Fairwayn på hål 18 hos T Golf Palma som svänger mot klubbhuset",

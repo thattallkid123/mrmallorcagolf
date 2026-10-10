@@ -413,7 +413,7 @@ const data = {
     "Capdepera Golf 5 Min."
    ],
    "why": "Restauriertes ländliches Anwesen 5 Minuten von Capdepera Golf. Privater Pool, regionale Produkte, ein wirklich abgelegenes Gefühl mit gutem Golf vor der Tür.",
-   "andy": "Die Finca-Option im Osten. Kein Strand, dafür ein toller Pool, völlige Ruhe und eine ausgezeichnete Golfbasis. Kombinieren Sie sie mit einem Abend im nahen VORO.",
+   "andy": "Die Finca-Option im Osten. Kein Strand, dafür ein toller Pool, völlige Ruhe und ein ausgezeichneter Standort für Golf. Kombinieren Sie sie mit einem Abend im nahen VORO.",
    "golf": "Capdepera Golf 5 Min. Canyamel Golf 15 Min. Club de Golf Pula 15 Min.",
    "travelTime": "60 Min. vom Flughafen Palma",
    "subname": "Capdepera"
@@ -424,7 +424,7 @@ const data = {
     "Trackman-Range",
     "Golfpakete"
    ],
-   "why": "Hotel direkt auf dem Pula Golf, mit vollständigen Übungsanlagen einschließlich Trackman-Technik. Hier wurden acht Turniere der European Tour ausgetragen. Eine unkomplizierte Golfbasis.",
+   "why": "Hotel direkt auf dem Pula Golf, mit vollständigen Übungsanlagen einschließlich Trackman-Technik. Hier wurden acht Turniere der European Tour ausgetragen. Ein unkomplizierter Standort für Golf.",
    "andy": "Wenn Pula auf dem Programm steht und die Gruppe alles an einem Ort haben möchte, ist das die Antwort. Die Übungsanlagen gehören zu den besten Mallorcas.",
    "golf": "Pula Golf vor Ort. Golf Club Son Servera 10 Min. Capdepera Golf 15 Min. Canyamel Golf 20 Min.",
    "travelTime": "60 Min. vom Flughafen Palma",
@@ -607,7 +607,7 @@ const data = {
     "Blick auf die Bucht",
     "Gutes Preis-Leistungs-Verhältnis"
    ],
-   "why": "Modernes Vier-Sterne-Haus mit Blick auf die Bucht und guter zentraler Lage in Palma. Ohne Extras über das Nötigste hinaus, aber preiswert und praktisch für Gruppen, die die Stadtbasis ohne Boutique-Preise wollen.",
+   "why": "Modernes Vier-Sterne-Haus mit Blick auf die Bucht und guter zentraler Lage in Palma. Ohne Extras über das Nötigste hinaus, aber preiswert und praktisch für Gruppen, die in der Stadt wohnen wollen, ohne Boutique-Preise zu zahlen.",
    "andy": "Eine sachliche Basis in Palma. Gut für Firmengruppen. Son Gual 20 Minuten für die Runden.",
    "golf": "Son Gual 20 Min. T Golf Palma (Puntiró) 18 Min. Son Vida / Son Quint 15 Min.",
    "travelTime": "15 Min. vom Flughafen Palma",

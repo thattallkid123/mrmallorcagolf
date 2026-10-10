@@ -344,7 +344,7 @@ const content = {
         "text": "Avec ses 590 mètres, le 10 est l'un des par 5 les plus longs d'Europe. Face au vent, il paraît encore plus long. Il existe une version très satisfaisante de ce trou - driver, hybride, wedge - et une version beaucoup moins agréable si l'un de ces trois coups dérape. Les par 3 sont l'autre extrême : longs, avec de petits greens. Ici, il s'agit davantage de limiter les dégâts que de chercher le birdie."
       },
       {
-        "caption": "Le tracé. Par temps calme, ce parcours vous flatte. Ajoutez du vent et il mérite chaque mètre de sa longueur."
+        "caption": "Le tracé. Par temps calme, ce parcours paraît facile. Ajoutez du vent et il mérite chaque mètre de sa longueur."
       },
       {
         "text": "Le lien avec le Tour européen"
@@ -539,7 +539,7 @@ const content = {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "Een geldig WHS-handicapbewijs is vereist bij het boeken; buggyverhuur kost €43 voor 18 holes. Santa Ponsa 1 is geschikt voor zelfverzekerde golfers die willen genieten van de driver op brede fairways, en werkt goed als makkelijkere ronde vroeg in een reis, voor een zwaarder parcours zoals Son Gual of Golf Andratx. Wat bezoekers verrast: op een rustige dag vleit de baan je, maar met wind eisen de lange par 3's en de 590 meter lange hole 10 elke meter van hun lengte op. De beste starttijd is vroeg, voordat de gebruikelijke bries later in de ochtend opsteekt."
+        "text": "Een geldig WHS-handicapbewijs is vereist bij het boeken; buggyverhuur kost €43 voor 18 holes. Santa Ponsa 1 is geschikt voor zelfverzekerde golfers die willen genieten van de driver op brede fairways, en werkt goed als makkelijkere ronde vroeg in een reis, voor een zwaarder parcours zoals Son Gual of Golf Andratx. Wat bezoekers verrast: op een rustige dag lijkt de baan makkelijk, maar met wind eisen de lange par 3's en de 590 meter lange hole 10 elke meter van hun lengte op. De beste starttijd is vroeg, voordat de gebruikelijke bries later in de ochtend opsteekt."
       },
       {
         "text": "Oordeel"
@@ -683,7 +683,7 @@ const content = {
         "text": "Vanliga frågor"
       },
       {
-        "text": "Ett giltigt WHS-handicapbevis krävs vid bokning; buggyhyra kostar 43 € för 18 hål. Santa Ponsa 1 passar självsäkra golfare som vill njuta av drivern på breda fairways, och fungerar bra som en lättare runda tidigt i en resa innan en tuffare bana som Son Gual eller Golf Andratx. Vad som överraskar besökare: på en lugn dag smickrar banan dig, men med vind kräver de långa par 3-hålen och det 590 meter långa hål 10 varje meter av sin längd. Bästa starttiden är tidigt, innan den vanliga förmiddagsbrisen kommer."
+        "text": "Ett giltigt WHS-handicapbevis krävs vid bokning; buggyhyra kostar 43 € för 18 hål. Santa Ponsa 1 passar självsäkra golfare som vill njuta av drivern på breda fairways, och fungerar bra som en lättare runda tidigt i en resa innan en tuffare bana som Son Gual eller Golf Andratx. Vad som överraskar besökare: på en lugn dag ser banan lätt ut, men med vind kräver de långa par 3-hålen och det 590 meter långa hål 10 varje meter av sin längd. Bästa starttiden är tidigt, innan den vanliga förmiddagsbrisen kommer."
       },
       {
         "text": "Omdöme"

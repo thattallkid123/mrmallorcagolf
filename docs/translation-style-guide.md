@@ -2,13 +2,27 @@
 
 Read this before writing or proofreading any de, es, fr, nl, sv or zh copy on mrmallorcagolf.com, whichever model you are. It collects the rules the site already follows and the mistakes that have actually been found in review, with the fix. When a review finds a new kind of mistake, add it here; when it finds who read what, log it in `docs/translation-workflow.md` (Review Log).
 
-The tone rules for English live in the Drive voice guide (`Systems & Planning\MMG_BRAND_VOICE_GUIDELINES.md`). This file is only about the other six languages.
+This is separate from the Drive voice guide (`Systems & Planning\MMG_BRAND_VOICE_GUIDELINES.md`), which owns the English: tone, banned words, punctuation. The English master is written to that guide first; this file only covers carrying it into the other six languages, so do not copy voice rules in here.
 
 ## How to use it
 
 1. Translate the meaning and the job of the sentence, not the English word order. A good test: would a golfer who only speaks that language write this sentence?
 2. Then go through the checklist at the end of this file, one item at a time.
 3. Run the checks (`npm run check:content`, `npm run check:i18n-release`), but treat a green run as the floor. None of the checks can tell a natural sentence from a calque.
+
+## Working method (any model, including Sonnet)
+
+Most mistakes so far came from translating and checking in one pass. Split it:
+
+1. **Translate** one page or guide at a time, with this file loaded. Before writing, look at how the same page already says recurring things (course names, "tee time", the closing call to action) and reuse that wording.
+2. **Review in a separate pass**, ideally a fresh session. The job of this pass is to find problems, not to restyle: read each translated string against its English and go through the checklist below. Swap in a second model only if the first one wrote it.
+3. **Run the checks.** `check:translation-mistakes` fails on every mistake in this file that a pattern can catch (rules in `scripts/translation-mistakes.json`); it runs inside `check:content`, so pre-commit, pre-push and CI.
+4. **Opus reads.** A new long page gets a full Opus read. Once the Review Log shows a surface coming back with few fixes, an Opus sample of about 1 in 5 strings is enough.
+5. **Feed back.** Every fix that is a pattern goes into this file with the before and after. If a regex can catch it without matching correct text in any language, add a rule to `scripts/translation-mistakes.json` too, run `node scripts/check-translation-mistakes.mjs` to see it pass, and plant a test string once to see it fail. This is how the same mistake stops coming back.
+
+Prompt to start a translation run (paste, then add the file and keys):
+
+> Translate the English strings below into de, es, fr, nl, sv and zh for mrmallorcagolf.com. First read docs/translation-style-guide.md and follow it: the register table, the golf vocabulary, and the common mistakes. Translate meaning, not word order; keep every number, price and name exactly; first person "I". Then, as a separate step, re-read each translation against its English using the checklist at the end of the guide and list anything you changed. Finish by running npm run check:content.
 
 ## Rules for every language
 
@@ -121,6 +135,6 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 6. Golf terms match the vocabulary table.
 7. Names, accents and place spellings are intact.
 8. Typography follows section 8.
-9. The checks pass, then add a row to the Review Log in `docs/translation-workflow.md` with the model that wrote it and the model that read it.
+9. The checks pass (including `check:translation-mistakes`), then add a row to the Review Log in `docs/translation-workflow.md` with the model that wrote it and the model that read it.
 
 Translations written by a model other than Opus get a full Opus read before they go live (see the Review Log for why).

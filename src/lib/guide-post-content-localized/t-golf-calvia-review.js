@@ -699,7 +699,7 @@ const content = {
         "text": "Greenerna är stora och var, den dag jag spelade, perfekta. Inga ursäkter för missade puttar. På flera hål måste man också lita helt på sitt avstånd eftersom man inte kan se nederkanten av flaggan från approachen. Spelare som förlitar sig på flaggpositionen snarare än att arbeta från yardage blir tagna på sängen."
       },
       {
-        "text": "Banan sträcker sig till knappt 6 500 meter från de bakre tee där jag spelade, med 15 sjöar och carries från tee på flera hål. Väderkvarnar är utspridda över hela banan, vilket är ovanligt och ger banan sin egen karaktär. Medelhavstallar och Tramuntana-bergen är ett konstant inslag från front nine till back nine."
+        "text": "Banan sträcker sig till knappt 6 500 meter från bakre tee, där jag spelade, med 15 sjöar och carries från tee på flera hål. Väderkvarnar är utspridda över hela banan, vilket är ovanligt och ger banan sin egen karaktär. Medelhavstallar och Tramuntana-bergen är ett konstant inslag från front nine till back nine."
       },
       {
         "alt": "Fairway på T Golf Calvià med väderkvarn och Tramuntana-bergen i bakgrunden",

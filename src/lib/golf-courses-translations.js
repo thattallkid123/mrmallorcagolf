@@ -79,7 +79,7 @@ export const GOLF_COURSE_TRANSLATIONS = {
     },
     'Golf Son Antem West': {
       location: 'Llucmajor',
-      text: 'Der anspruchsvollere der beiden Son-Antem-Plätze und Austragungsort der meisten Resort-Turniere. Engere Fairways, weniger nachsichtige Roughs, wellige Greens mit Bunkern drumherum. Führt durch eine traditionelle mallorquinische Finca mit Blick auf den Randa-Berg.',
+      text: 'Der anspruchsvollere der beiden Son-Antem-Plätze und Austragungsort der meisten Resort-Turniere. Engere Fairways, weniger nachsichtige Roughs, wellige Greens, rundum von Bunkern geschützt. Führt durch eine traditionelle mallorquinische Finca mit Blick auf den Randa-Berg.',
       footer: 'Anspruchsvoller als East · Turnieranlage',
     },
     'Capdepera Golf': {

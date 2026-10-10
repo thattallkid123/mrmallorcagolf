@@ -703,7 +703,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Quint - Ärlig recension 2026",
-      "description": "Son Quint: greenfee 76-172 € (dynamisk), par 71, 15 minuter från Palma. Vänlig för alla nivåer och ett bra test från de vita tee med flaggor bak."
+      "description": "Son Quint: greenfee 76-172 € (dynamisk), par 71, 15 minuter från Palma. Vänlig för alla nivåer och ett bra test från vit tee med flaggorna längst bak."
     },
     "meta": {
       "badge": "Banrecension",

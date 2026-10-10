@@ -163,7 +163,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Dónde alojarse en Mallorca para jugar al golf",
         "intro": "Palma, el suroeste, el norte o el este. Elige la base por orden de campos, tiempo de trayecto y horas de salida.",
         "readTime": "6 min",
-        "keywords": "Dónde alojarse · Base de golf · Planificación"
+        "keywords": "Dónde alojarse · Elegir zona · Planificación"
       },
       {
         "slug": "golf-trip-planning-mallorca",
@@ -395,9 +395,9 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "where-to-stay-mallorca-golf",
         "badge": "Reiseplanung",
         "title": "Wo auf Mallorca für Golf übernachten",
-        "intro": "Palma, Südwesten, Norden oder Osten. Wählen Sie die Basis nach Platzfolge, Fahrzeit und Startzeiten.",
+        "intro": "Palma, Südwesten, Norden oder Osten. Wählen Sie den Standort nach Platzfolge, Fahrzeit und Startzeiten.",
         "readTime": "6 Min.",
-        "keywords": "Unterkunft · Golf-Basis · Reiseplanung"
+        "keywords": "Unterkunft · Standortwahl · Reiseplanung"
       },
       {
         "slug": "golf-trip-planning-mallorca",
@@ -630,7 +630,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Où loger à Majorque pour le golf",
         "intro": "Palma, le sud-ouest, le nord ou l'est. Choisissez la base selon l'ordre des parcours, les trajets et les départs.",
         "readTime": "6 min",
-        "keywords": "Où loger · Base golf · Planification"
+        "keywords": "Où loger · Choisir sa zone · Planification"
       },
       {
         "slug": "golf-trip-planning-mallorca",
@@ -862,9 +862,9 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "where-to-stay-mallorca-golf",
         "badge": "Reisplanning",
         "title": "Waar verblijven op Mallorca voor golf",
-        "intro": "Palma, het zuidwesten, het noorden of het oosten. Kies de basis op baanvolgorde, rijtijd en starttijden.",
+        "intro": "Palma, het zuidwesten, het noorden of het oosten. Kies je uitvalsbasis op baanvolgorde, rijtijd en starttijden.",
         "readTime": "6 min",
-        "keywords": "Waar verblijven · Golfbasis · Reisplanning"
+        "keywords": "Waar verblijven · Uitvalsbasis · Reisplanning"
       },
       {
         "slug": "golf-trip-planning-mallorca",
@@ -1098,7 +1098,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Var du ska bo på Mallorca för golf",
         "intro": "Palma, sydväst, norr eller öster. Välj bas efter banornas ordning, restid och starttider.",
         "readTime": "6 min",
-        "keywords": "Var du ska bo · Golfbas · Reseplanering"
+        "keywords": "Var du ska bo · Boende · Reseplanering"
       },
       {
         "slug": "golf-trip-planning-mallorca",
