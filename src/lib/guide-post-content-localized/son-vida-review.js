@@ -88,7 +88,7 @@ const content = {
         "text": "El 15 es un par 4 de 368 m, dogleg a la derecha, con el mismo tipo de elección. Cuanto más a la izquierda juegas, más larga es la aproximación. Yo tomé una línea más directa hacia el green y me quedaron 80 yardas. Me gustó tener distintas opciones desde el tee en lugar de una única forma evidente de jugarlo."
       },
       {
-        "text": "El 18 es un final precioso. Es un par 5 de 460 m con agua a lo largo de la derecha, el hotel de fondo, una fuente y la casa club a la izquierda. La gente de la casa club puede ver las aproximaciones al green, lo que da al hoyo un ambiente para cerrar la vuelta."
+        "text": "El 18 es un final precioso. Es un par 5 de 460 m con agua a lo largo de la derecha, el hotel de fondo, una fuente y la casa club a la izquierda. La gente de la casa club puede ver las aproximaciones al green, lo que le da al hoyo un ambiente especial para cerrar la vuelta."
       },
       {
         "alt": "Agua y borde de piedra delante de la casa club de Son Vida, con villas en la ladera detrás",
@@ -102,10 +102,10 @@ const content = {
         "text": "Estado del campo y servicio"
       },
       {
-        "text": "El campo se había regado mucho y, con la lluvia de la mañana, algunas zonas estaban mucho más mojadas de lo normal. Había bastantes lies mojados y zonas embarradas alrededor de los greens, y las bolas que caían en los greens solían quedarse clavadas en vez de rodar. Los greens eran muy puros, pero algo lentos. No creo que viéramos la firmeza que Son Vida tiene normalmente."
+        "text": "El campo se había regado mucho y, con la lluvia de la mañana, algunas zonas estaban mucho más mojadas de lo normal. Había bastantes lies mojados y zonas embarradas alrededor de los greens, y las bolas que caían en los greens solían quedarse clavadas en vez de rodar. Los greens rodaban muy bien, pero algo lentos. No creo que viéramos la firmeza que Son Vida tiene normalmente."
       },
       {
-        "text": "La presentación era la que cabe esperar de un campo Arabella: ordenada y bien cuidada. Los greenkeepers cortaban los bordes de los greens con tijeras y los rastrillaban a mano. El personal fue cercano y amable en todo momento, y el club limpió gratis los palos de mi cliente después de la vuelta. El halfway es muy bueno, y la comida después de la vuelta también."
+        "text": "La presentación era la que cabe esperar de un campo Arabella: ordenada y bien cuidada. Los greenkeepers cortaban los bordes de los greens con tijeras y los rastrillaban a mano. El personal fue cercano y amable en todo momento, y el club limpió gratis los palos de mi cliente después de la vuelta. La parada a mitad de vuelta es muy buena, y la comida después de la vuelta también."
       },
       {
         "text": "Hay un putting green y una red de prácticas, pero no un campo de prácticas completo. El campo de prácticas de Son Muntaner está a unos dos minutos en coche, así que es fácil pegar bolas allí para un buen calentamiento y volver para tu hora de salida."
@@ -141,7 +141,7 @@ const content = {
         "text": "El green fee es dinámico: va desde unos 84 € en temporada baja hasta 190 € en temporada alta, más la licencia federativa diaria estándar de 3 € si no tienes licencia federada. Mi cliente pagó 88 € ese día como cliente del Sheraton. El límite de hándicap es 54 con certificado obligatorio, y Son Vida está a unos 15 minutos de Palma. El buggy es opcional. Los jugadores individuales pueden reservar y normalmente los emparejan con otro grupo, como nos pasó a nosotros. Se aplica el código de vestimenta habitual del golf, hay que llevar spikes blandos y se pueden alquilar palos. La tarjeta muestra dos versiones del campo: par 70, con el 2 como un par 3 de 191 m, y par 71, con el 2 como un par 4 de 259 m. Nosotros jugamos el par 3."
       },
       {
-        "text": "Lo único realmente negativo del día: en los primeros 12 hoyos casi nunca estás fuera de la vista de una casa o del hotel, y el recorrido se sintió apretado en algunos puntos. La lluvia añadió lies mojados y bolas clavadas que no esperaría en un día normal. Con tiempo más seco esperaría que jugara más firme que para nosotros."
+        "text": "Lo único realmente negativo del día: en los primeros 12 hoyos casi nunca estás fuera de la vista de una casa o del hotel, y en algunos puntos el recorrido resultaba apretado. La lluvia añadió lies mojados y bolas clavadas que no esperaría en un día normal. Con tiempo más seco, espero que juegue más firme que el día que fuimos."
       },
       {
         "text": "Preguntas frecuentes"
@@ -221,7 +221,7 @@ const content = {
         "caption": "Ein Green unterhalb des Hotels, mit dem Son-Vida-Schriftzug neben dem Springbrunnen."
       },
       {
-        "text": "Wir sind um 8:16 Uhr gestartet, eine der ersten Startzeiten des Tages, mit dem Regen vom frühen Morgen noch auf dem Boden. Mein Kunde wohnte im Sheraton und zahlte 88 € für die Runde, den Tarif für Hotelgäste. Wir sind gelaufen und wurden mit zwei britischen Golfern zusammengelost, die im Buggy fuhren und tolle Gesellschaft waren. Als wir fertig waren, wartete eine Menschenmenge rund um den ersten Abschlag. Hier lohnt sich eine frühe Startzeit."
+        "text": "Wir sind um 8:16 Uhr gestartet, eine der ersten Startzeiten des Tages, mit dem Regen vom frühen Morgen noch auf dem Boden. Mein Kunde wohnte im Sheraton und zahlte 88 € für die Runde, den Tarif für Hotelgäste. Wir sind zu Fuß gegangen und wurden mit zwei britischen Golfern zusammengelost, die im Buggy fuhren und tolle Gesellschaft waren. Als wir fertig waren, wartete eine Menschenmenge rund um den ersten Abschlag. Hier lohnt sich eine frühe Startzeit."
       },
       {
         "text": "Mallorcas ältester Platz"
@@ -237,10 +237,10 @@ const content = {
         "text": "So spielt sich der Platz"
       },
       {
-        "text": "Die meisten Greens haben viel Gefälle, und mehrere sind zweistufig. Landet Ihr Annäherungsschlag auf der falschen Ebene, bleibt ein sehr schwieriger Putt, deshalb zählt die Distanzkontrolle zum Green mehr als die Länge vom Abschlag. Es gibt viele Höhenunterschiede, vor allem früh in der Runde, und mehrere Par 3 gehen bergab, wo der gewählte Schläger davon abhängt, wie viele Meter das Gefälle wegnimmt. Wir sind alle 18 Löcher bequem gelaufen, auch wenn ich es nicht als leichten Spaziergang bezeichnen würde."
+        "text": "Die meisten Greens haben viel Gefälle, und mehrere sind zweistufig. Landet Ihr Annäherungsschlag auf der falschen Ebene, bleibt ein sehr schwieriger Putt, deshalb zählt die Distanzkontrolle zum Green mehr als die Länge vom Abschlag. Es gibt viele Höhenunterschiede, vor allem früh in der Runde, und mehrere Par 3 gehen bergab, wo der gewählte Schläger davon abhängt, wie viele Meter das Gefälle wegnimmt. Wir haben alle 18 Löcher problemlos zu Fuß gespielt, auch wenn ich es nicht als leichten Spaziergang bezeichnen würde."
       },
       {
-        "text": "Der Platz ist zwischen Häusern und Hotel angelegt, mit sehr wenig Reserveland, und die Gebäude begrenzen viele Löcher. Es gibt viele Doglegs, und jedes verlangt eine Entscheidung vom Abschlag. Die ersten 12 Löcher sind die engsten. Die letzten sechs öffnen sich und erinnerten mich an Son Muntaner, mit mehr Platz, interessanteren Lochdesigns und deutlicheren Entscheidungen vom Abschlag. Sie haben mir besser gefallen."
+        "text": "Der Platz ist zwischen Häusern und Hotel angelegt, mit sehr wenig freiem Gelände, und die Gebäude begrenzen viele Löcher. Es gibt viele Doglegs, und jedes verlangt eine Entscheidung vom Abschlag. Die ersten 12 Löcher sind die engsten. Die letzten sechs öffnen sich und erinnerten mich an Son Muntaner, mit mehr Platz, interessanteren Lochdesigns und deutlicheren Entscheidungen vom Abschlag. Sie haben mir besser gefallen."
       },
       {
         "alt": "Golfer im marineblauen Poloshirt schlägt ein Eisen auf ein Green zu, dahinter bewaldeter Hang und Häuser auf Son Vida",
@@ -273,7 +273,7 @@ const content = {
         "text": "Loch 15 ist ein Par 4 über 368 m, ein Dogleg nach rechts, mit der gleichen Art von Wahl. Je weiter links Sie spielen, desto länger wird der Annäherungsschlag. Ich nahm eine direktere Linie zum Green und hatte noch 80 Yards. Mir hat gefallen, dass es verschiedene Optionen vom Abschlag gab, statt nur einen offensichtlichen Weg."
       },
       {
-        "text": "Loch 18 ist ein wunderschönes Schlussloch. Es ist ein Par 5 über 460 m mit Wasser entlang der rechten Seite, dem Hotel als Kulisse, einem Springbrunnen und dem Clubhaus links. Rund ums Clubhaus kann man die Annäherungsschläge zum Green beobachten, was dem Loch eine Atmosphäre für den Abschluss der Runde gibt."
+        "text": "Loch 18 ist ein wunderschönes Schlussloch. Es ist ein Par 5 über 460 m mit Wasser entlang der rechten Seite, dem Hotel als Kulisse, einem Springbrunnen und dem Clubhaus links. Rund ums Clubhaus kann man die Annäherungsschläge zum Green beobachten, was dem Schlussloch eine besondere Atmosphäre gibt."
       },
       {
         "alt": "Wasser und Steineinfassung vor dem Clubhaus von Son Vida, dahinter Villen am Hang",
@@ -287,7 +287,7 @@ const content = {
         "text": "Platzzustand und Service"
       },
       {
-        "text": "Der Platz war offenbar stark bewässert worden, und mit dem Regen am Morgen waren manche Bereiche viel nasser als normal. Rund um die Greens gab es etliche nasse Lagen und matschige Stellen, und Bälle, die auf den Greens landeten, blieben oft stecken, statt auszurollen. Die Greens selbst waren sehr rein, aber etwas langsam. Ich glaube nicht, dass wir die Festigkeit erlebt haben, die Son Vida normalerweise hat."
+        "text": "Der Platz war offenbar stark bewässert worden, und mit dem Regen am Morgen waren manche Bereiche viel nasser als normal. Rund um die Greens gab es etliche nasse Lagen und matschige Stellen, und Bälle, die auf den Greens landeten, blieben oft stecken, statt auszurollen. Die Greens selbst rollten sehr sauber, aber etwas langsam. Ich glaube nicht, dass wir die Festigkeit erlebt haben, die Son Vida normalerweise hat."
       },
       {
         "text": "Die Pflege war das, was ich von einem Arabella-Platz erwarte: ordentlich und sorgfältig gepflegt. Die Greenkeeper schnitten die Ränder der Greens mit Scheren und harkten sie von Hand. Das Personal war die ganze Zeit herzlich und freundlich, und der Club hat die Schläger meines Kunden nach der Runde kostenlos gereinigt. Die Halfway-Hütte ist sehr gut, und das Essen nach der Runde ebenso."
@@ -318,7 +318,7 @@ const content = {
           ],
           [
             "Buggy optional",
-            "Wir sind alle 18 Löcher gelaufen"
+            "Wir haben alle 18 Löcher zu Fuß gespielt"
           ]
         ]
       },
@@ -341,7 +341,7 @@ const content = {
         "text": "7/10. Son Vida ist der älteste Platz Mallorcas und war Schauplatz von zwei Open de Baleares, eine davon von Seve Ballesteros im Playoff gewonnen. Abschüssige Greens auf zwei Ebenen verlangen bei jedem Annäherungsschlag die richtige Distanz, die Doglegs verlangen an manchen Abschlägen einen Plan, und die letzten sechs Löcher bieten den Platz und die Optionen, die den ersten 12 fehlen. Er passt zu Golfern, die Geschichte und eine bequeme Runde vom Sheraton aus suchen. Weniger geeignet ist er für alle, die auf jedem Loch offenen Raum wollen, denn die ersten 12 sind die engsten."
       },
       {
-        "title": "Vier Dinge, die ich vor der Buchung von Son Vida wissen würde",
+        "title": "Vier Dinge, die ich vor der Buchung von Son Vida klären würde",
         "items": [
           [
             "Beste Startzeit",
@@ -425,7 +425,7 @@ const content = {
         "text": "La plupart des greens ont beaucoup de pente et plusieurs sont à deux niveaux. Si votre approche atterrit sur le mauvais niveau, il vous reste un putt très difficile, si bien que le contrôle de la distance vers le green compte plus que la longueur au départ. Il y a beaucoup de dénivelé, surtout en début de partie, et plusieurs par 3 descendent, où le club choisi dépend de ce que la descente retire à la distance. Nous avons fait les 18 trous à pied sans difficulté, même si je ne dirais pas que c'est une promenade facile."
       },
       {
-        "text": "Le parcours est construit entre les maisons et l'hôtel, avec très peu de terrain en plus, et les bâtiments marquent la limite de nombreux trous. Il y a beaucoup de dogleg, et chacun vous impose une décision au départ. Les 12 premiers sont les plus serrés. Les six derniers s'ouvrent et m'ont rappelé Son Muntaner, avec plus d'espace, des dessins de trous plus intéressants et des décisions plus évidentes au départ. Ce sont ceux que j'ai préférés."
+        "text": "Le parcours est construit entre les maisons et l'hôtel, avec très peu de marge, et les bâtiments marquent la limite de nombreux trous. Il y a beaucoup de dogleg, et chacun vous impose une décision au départ. Les 12 premiers sont les plus serrés. Les six derniers s'ouvrent et m'ont rappelé Son Muntaner, avec plus d'espace, des dessins de trous plus intéressants et des décisions plus évidentes au départ. Ce sont ceux que j'ai préférés."
       },
       {
         "alt": "Golfeur en polo bleu marine jouant un fer vers un green, avec une colline boisée et des maisons derrière à Son Vida",
@@ -458,7 +458,7 @@ const content = {
         "text": "Le 15 est un par 4 de 368 m, dogleg à droite, avec le même type de choix. Plus vous jouez vers la gauche, plus l'approche est longue. J'ai pris une ligne plus directe vers le green et il me restait 80 yards. J'ai aimé avoir plusieurs options au départ plutôt qu'une seule manière évidente de jouer le trou."
       },
       {
-        "text": "Le 18 est un magnifique trou de clôture. C'est un par 5 de 460 m avec de l'eau tout le long de la droite, l'hôtel en toile de fond, une fontaine et le clubhouse à gauche. Les gens autour du clubhouse peuvent voir les approches vers le green, ce qui donne au trou une atmosphère de fin de partie."
+        "text": "Le 18 est un magnifique trou de clôture. C'est un par 5 de 460 m avec de l'eau tout le long de la droite, l'hôtel en toile de fond, une fontaine et le clubhouse à gauche. Les gens autour du clubhouse peuvent voir les approches vers le green, ce qui donne au dernier trou une vraie ambiance de fin de partie."
       },
       {
         "alt": "Eau et bordure de pierre devant le clubhouse de Son Vida, avec des villas sur la colline derrière",
@@ -472,10 +472,10 @@ const content = {
         "text": "État du parcours et service"
       },
       {
-        "text": "Le parcours avait manifestement été beaucoup arrosé, et avec la pluie du matin, certaines zones étaient bien plus humides que d'habitude. Il y avait pas mal de lies mouillés et de zones boueuses autour des greens, et les balles qui tombaient sur les greens se plantaient souvent au lieu de rouler. Les greens eux-mêmes étaient très purs mais un peu lents. Je ne pense pas que nous ayons vu la fermeté que Son Vida a normalement."
+        "text": "Le parcours avait manifestement été beaucoup arrosé, et avec la pluie du matin, certaines zones étaient bien plus humides que d'habitude. Il y avait pas mal de lies mouillés et de zones boueuses autour des greens, et les balles qui tombaient sur les greens se plantaient souvent au lieu de rouler. Les greens eux-mêmes roulaient très bien mais étaient un peu lents. Je ne pense pas que nous ayons vu la fermeté que Son Vida a normalement."
       },
       {
-        "text": "La présentation était celle que j'attends d'un parcours Arabella : propre et soigneusement entretenue. Les greenkeepers coupaient les bords des greens aux ciseaux et les ratissaient à la main. Le personnel a été chaleureux et aimable du début à la fin, et le club a nettoyé gratuitement les clubs de mon client après la partie. Le halfway est très bien, et le repas après la partie aussi."
+        "text": "La présentation était celle que j'attends d'un parcours Arabella : propre et soigneusement entretenue. Les greenkeepers coupaient les bords des greens aux ciseaux et les ratissaient à la main. Le personnel a été chaleureux et aimable du début à la fin, et le club a nettoyé gratuitement les clubs de mon client après la partie. La pause à mi-parcours est très bien, et le repas après la partie aussi."
       },
       {
         "text": "Il y a un putting green et un filet d'entraînement, mais pas de practice complet. Le practice de Son Muntaner est à environ deux minutes en voiture, ce qui permet d'y frapper des balles pour un vrai échauffement avant de revenir pour votre heure de départ."
@@ -526,7 +526,7 @@ const content = {
         "text": "7/10. Son Vida est le plus ancien parcours de Majorque et il a accueilli deux Open de Baleares, dont l'un a été remporté par Seve Ballesteros en play-off. Des greens en pente à deux niveaux exigent la bonne distance à chaque approche, les dogleg demandent un plan à certains départs, et les six derniers trous offrent l'espace et les choix qui manquent aux 12 premiers. Il convient aux golfeurs qui veulent de l'histoire et une partie pratique depuis le Sheraton. Il convient moins à ceux qui veulent de l'espace ouvert sur chaque trou, car les 12 premiers sont les plus serrés."
       },
       {
-        "title": "Quatre choses que je saurais avant de réserver Son Vida",
+        "title": "Quatre choses que je vérifierais avant de réserver Son Vida",
         "items": [
           [
             "Meilleure heure de départ",
@@ -591,7 +591,7 @@ const content = {
         "caption": "Een green onder het hotel, met de Son Vida-letters naast de fontein."
       },
       {
-        "text": "We sloegen af om 8:16, een van de eerste starttijden van de dag, met de regen van eerder die ochtend nog op de grond. Mijn klant verbleef in het Sheraton en betaalde €88 voor de ronde, het tarief voor hotelgasten. We liepen, en we werden ingedeeld bij twee Britse golfers in een buggy die geweldig gezelschap waren. Toen we klaar waren, stond er een hele groep te wachten rond de eerste tee. Hier is een vroege starttijd de moeite van het boeken waard."
+        "text": "We sloegen af om 8:16, een van de eerste starttijden van de dag, met de regen van eerder die ochtend nog op de grond. Mijn klant verbleef in het Sheraton en betaalde €88 voor de ronde, het tarief voor hotelgasten. We liepen, en we werden ingedeeld bij twee Britse golfers in een buggy die geweldig gezelschap waren. Toen we klaar waren, stond er een hele groep te wachten rond de eerste tee. Boek hier een vroege starttijd."
       },
       {
         "text": "De oudste baan van Mallorca"
@@ -610,7 +610,7 @@ const content = {
         "text": "De meeste greens hellen sterk en verschillende hebben twee niveaus. Komt je approach op het verkeerde niveau terecht, dan houd je een heel lastige putt over, dus afstandscontrole naar de green telt zwaarder dan lengte vanaf de tee. Er zijn veel hoogteverschillen, vooral vroeg in de ronde, en verschillende par 3's spelen bergafwaarts, waar de club die je pakt afhangt van hoeveel meters de daling wegneemt. We liepen alle 18 holes zonder moeite, al zou ik het geen makkelijke wandeling noemen."
       },
       {
-        "text": "De baan ligt tussen de huizen en het hotel met heel weinig overtollige ruimte, en de gebouwen vormen de rand van veel holes. Er zijn veel doglegs, en elke dogleg vraagt een keuze op de tee. De eerste 12 holes zijn het smalst. De laatste zes openen zich en deden me denken aan Son Muntaner, met meer ruimte, interessantere holeontwerpen en duidelijkere keuzes vanaf de tee. Die vond ik het mooist."
+        "text": "De baan ligt tussen de huizen en het hotel met heel weinig ruimte over, en de gebouwen vormen de rand van veel holes. Er zijn veel doglegs, en elke dogleg vraagt een keuze op de tee. De eerste 12 holes zijn het smalst. De laatste zes openen zich en deden me denken aan Son Muntaner, met meer ruimte, interessantere holeontwerpen en duidelijkere keuzes vanaf de tee. Die vond ik het mooist."
       },
       {
         "alt": "Golfer in een marineblauw poloshirt slaat een ijzer richting een green met een beboste heuvel en huizen erachter bij Son Vida",
@@ -643,7 +643,7 @@ const content = {
         "text": "Hole 15 is een par 4 van 368m, een dogleg naar rechts, met dezelfde soort keuze. Hoe verder naar links je speelt, hoe langer de approach. Ik nam een directere lijn richting de green en had nog 80 yards. Ik vond het fijn dat er verschillende opties vanaf de tee waren in plaats van één duidelijke manier om de hole te spelen."
       },
       {
-        "text": "Hole 18 is een prachtige slothole. Het is een par 5 van 460m met water langs de rechterkant, het hotel als decor, een fontein en het clubhuis links. Mensen rond het clubhuis kunnen de approaches naar de green zien, wat de hole een sfeer geeft om de ronde mee af te sluiten."
+        "text": "Hole 18 is een prachtige slothole. Het is een par 5 van 460m met water langs de rechterkant, het hotel als decor, een fontein en het clubhuis links. Mensen rond het clubhuis kunnen de approaches naar de green zien, wat de slothole extra sfeer geeft."
       },
       {
         "alt": "Water en stenen rand voor het clubhuis van Son Vida, met villa's op de heuvel erachter",
@@ -657,7 +657,7 @@ const content = {
         "text": "Conditie en service"
       },
       {
-        "text": "De baan was duidelijk flink besproeid, en samen met de regen van die ochtend waren sommige delen veel natter dan normaal. Rond de greens lagen heel wat natte lies en modderige plekken, en ballen die op de greens landden bleven vaak steken in plaats van door te rollen. De greens zelf waren heel zuiver maar iets langzaam. Ik denk niet dat we de hardheid hebben gezien die Son Vida normaal heeft."
+        "text": "De baan was duidelijk flink besproeid, en samen met de regen van die ochtend waren sommige delen veel natter dan normaal. Rond de greens lagen heel wat natte lies en modderige plekken, en ballen die op de greens landden bleven vaak steken in plaats van door te rollen. De greens zelf rolden heel zuiver maar iets langzaam. Ik denk niet dat we de hardheid hebben gezien die Son Vida normaal heeft."
       },
       {
         "text": "De uitstraling was wat ik van een Arabella-baan verwacht: netjes en zorgvuldig onderhouden. De greenkeepers knipten de randen van de greens met scharen en harkten ze met de hand. Het personeel was de hele tijd warm en vriendelijk, en de club maakte de clubs van mijn klant na de ronde gratis schoon. De halfwayhut is heel goed, en het eten na de ronde ook."
@@ -750,7 +750,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Oktober 2026",
       "title": "Son Vida Golf, Mallorca: En PGA-professionals ärliga syn (2026)",
-      "intro": "Mallorcas äldsta bana, öppnad 1964, och platsen där Seve Ballesteros vann Open de Baleares 1990. Från de gula tee är den 5 470 m, med sluttande greener på två nivåer och många doglegs.",
+      "intro": "Mallorcas äldsta bana, öppnad 1964, och platsen där Seve Ballesteros vann Open de Baleares 1990. Från gul tee är den 5 470 m, med sluttande greener på två nivåer och många doglegs.",
       "related": [
         {
           "slug": "son-quint-review",
@@ -776,13 +776,13 @@ const content = {
         "caption": "En green nedanför hotellet, med Son Vida-bokstäverna intill fontänen."
       },
       {
-        "text": "Vi slog ut klockan 8:16, en av de första starttiderna på dagen, med regnet från tidigare på morgonen fortfarande på marken. Min kund bodde på Sheraton och betalade 88 € för rundan, hotellgästernas pris. Vi gick, och vi blev ihopkopplade med två brittiska golfare i buggy som var fantastiskt trevligt sällskap. När vi var klara stod det ett gäng människor och väntade kring första tee. Här är en tidig starttid värd att boka."
+        "text": "Vi slog ut klockan 8.16, en av de första starttiderna på dagen, med regnet från tidigare på morgonen fortfarande på marken. Min kund bodde på Sheraton och betalade 88 € för rundan, hotellgästernas pris. Vi gick, och vi blev ihoplottade med två brittiska golfare i buggy som var fantastiskt trevligt sällskap. När vi var klara stod det ett gäng människor och väntade kring första tee. Här är en tidig starttid värd att boka."
       },
       {
         "text": "Mallorcas äldsta bana"
       },
       {
-        "text": "Son Vida öppnade 1964 och är öns äldsta golfbana. Den var värd för European Tours Open de Baleares två gånger, 1990 och 1994, och Seve Ballesteros vann den första i särspel. Trädkantade fairwayer löper genom klassisk parkbana, med Palmabukten och Tramuntanabergen bakom. Jag spelade från de gula tee, 5 470 m, vilket är kort med dagens mått. Greenerna sluttar, hålen har doglegs och marken går upp och ner."
+        "text": "Son Vida öppnade 1964 och är öns äldsta golfbana. Den var värd för European Tours Open de Baleares två gånger, 1990 och 1994, och Seve Ballesteros vann den första i särspel. Trädkantade fairwayer löper genom klassisk parkbana, med Palmabukten och Tramuntanabergen bakom. Jag spelade från gul tee, 5 470 m, vilket är kort med dagens mått. Greenerna sluttar, hålen har doglegs och marken går upp och ner."
       },
       {
         "alt": "Stenmur med årtalet 1964 och Son Vida-emblemet bland träden på golfbanan Son Vida på Mallorca",
@@ -795,11 +795,11 @@ const content = {
         "text": "De flesta greenerna sluttar mycket och flera har två nivåer. Landar ditt inspel på fel nivå har du en mycket svår putt kvar, så avståndskontroll in mot green är viktigare än längd från tee. Det är stora höjdskillnader, framför allt tidigt i rundan, och flera par 3-hål går nedför, där klubbvalet beror på hur många meter nedförsbacken tar bort. Vi gick alla 18 hålen utan problem, även om jag inte skulle kalla det en lätt promenad."
       },
       {
-        "text": "Banan är byggd bland husen och hotellet med mycket lite över yta, och byggnaderna markerar kanten på många hål. Det finns många doglegs, och varje dogleg ger dig ett beslut att fatta på tee. De första 12 är de trängsta. De sista sex öppnar sig och påminde mig om Son Muntaner, med mer utrymme, mer intressanta hålutformningar och tydligare beslut från tee. Dem tyckte jag bäst om."
+        "text": "Banan är byggd bland husen och hotellet med mycket lite yta över, och byggnaderna markerar kanten på många hål. Det finns många doglegs, och varje dogleg ger dig ett beslut att fatta på tee. De första 12 är de trängsta. De sista sex öppnar sig och påminde mig om Son Muntaner, med mer utrymme, mer intressanta hålutformningar och tydligare beslut från tee. Dem tyckte jag bäst om."
       },
       {
         "alt": "Golfare i marinblå pikétröja slår ett järn mot en green med en skogsklädd sluttning och hus bakom på Son Vida",
-        "caption": "Par 3-hålet på hål 8, 132 m från de gula tee."
+        "caption": "Hål 8, en par 3 på 132 m från gul tee."
       },
       {
         "text": "Hål värda att nämna"
@@ -828,7 +828,7 @@ const content = {
         "text": "Hål 15 är ett par 4 på 368 m, dogleg höger, med samma sorts val. Ju längre till vänster du spelar, desto längre blir inspelet. Jag tog en rakare linje mot green och hade 80 yards kvar. Jag gillade att det fanns olika alternativ från tee i stället för ett enda uppenbart sätt att spela hålet."
       },
       {
-        "text": "Hål 18 är ett vackert avslutningshål. Det är ett par 5 på 460 m med vatten längs högersidan, hotellet som fond, en fontän och klubbhuset till vänster. Folk kring klubbhuset kan se inspelen in mot green, vilket ger hålet en stämning att avsluta rundan på."
+        "text": "Hål 18 är ett vackert avslutningshål. Det är ett par 5 på 460 m med vatten längs högersidan, hotellet som fond, en fontän och klubbhuset till vänster. Folk kring klubbhuset kan se inspelen in mot green, vilket ger avslutningshålet en speciell stämning."
       },
       {
         "alt": "Vatten och stenkant framför klubbhuset på Son Vida, med villor i sluttningen bakom",
@@ -842,7 +842,7 @@ const content = {
         "text": "Skick och service"
       },
       {
-        "text": "Banan hade tydligt vattnats rejält, och tillsammans med morgonens regn var vissa delar mycket blötare än vanligt. Det fanns en hel del blöta lägen och leriga ställen kring greenerna, och bollar som landade på greenerna fastnade ofta i stället för att rulla vidare. Greenerna i sig var mycket rena men något långsamma. Jag tror inte att vi fick se den fasthet som Son Vida normalt har."
+        "text": "Banan hade tydligt vattnats rejält, och tillsammans med morgonens regn var vissa delar mycket blötare än vanligt. Det fanns en hel del blöta lägen och leriga ställen kring greenerna, och bollar som landade på greenerna fastnade ofta i stället för att rulla vidare. Greenerna i sig rullade mycket rent men var något långsamma. Jag tror inte att vi fick se den fasthet som Son Vida normalt har."
       },
       {
         "text": "Skötseln var vad jag förväntar mig av en Arabella-bana: snygg och noggrant underhållen. Greenkeeperna klippte kanterna på greenerna med sax och krattade dem för hand. Personalen var varm och vänlig hela vägen, och klubben rengjorde min kunds klubbor gratis efter rundan. Halfwaykiosken är mycket bra, och det var maten efter rundan också."
@@ -878,7 +878,7 @@ const content = {
         ]
       },
       {
-        "text": "Greenfeen är dynamisk och ligger mellan cirka 84 € under lågsäsong och 190 € under högsäsong, plus den vanliga dagliga federationslicensen på 3 € om du inte är ansluten spelare. Min kund betalade 88 € den dagen som Sheraton-gäst. Handicapgränsen är 54 med intyg som krävs, och Son Vida ligger cirka 15 minuter från Palma. Buggy är valfritt. Singelspelare kan boka och blir oftast ihopkopplade med en annan grupp, som vi blev. Vanlig golfklädsel gäller, mjuka spikar krävs och det går att hyra klubbor. Scorekortet visar två versioner av banan: par 70 med hål 2 som ett par 3 på 191 m, och par 71 med hål 2 som ett par 4 på 259 m. Vi spelade par 3-versionen."
+        "text": "Greenfeen är dynamisk och ligger mellan cirka 84 € under lågsäsong och 190 € under högsäsong, plus den vanliga dagliga federationslicensen på 3 € om du inte är ansluten spelare. Min kund betalade 88 € den dagen som Sheraton-gäst. Handicapgränsen är 54 och intyg krävs, och Son Vida ligger cirka 15 minuter från Palma. Buggy är valfritt. Singelspelare kan boka och blir oftast ihoplottade med ett annat sällskap, som vi blev. Vanlig golfklädsel gäller, mjuka spikar krävs och det går att hyra klubbor. Scorekortet visar två versioner av banan: par 70 med hål 2 som ett par 3 på 191 m, och par 71 med hål 2 som ett par 4 på 259 m. Vi spelade par 3-versionen."
       },
       {
         "text": "Det enda riktiga minuset från dagen: på de första 12 hålen är du sällan utom synhåll från ett hus eller hotellet, och bandragningen kändes trång på sina ställen. Regnet gav blöta lägen och bollar som fastnade, vilket jag inte skulle vänta mig en vanlig dag. Vid torrare väder skulle jag förvänta mig att banan spelar fastare än den gjorde för oss."
@@ -887,7 +887,7 @@ const content = {
         "text": "Vanliga frågor"
       },
       {
-        "text": "Handicapgränsen är 54, med intyg som krävs vid bokning. Banan går att gå, med det mesta av stigningen tidigt i rundan. Den passar golfare som gillar att fundera över var de ska placera bollen. Det som överraskar förstagångsbesökare: några utslag döljer den bästa linjen, så ett andra besök är lättare än det första. Lokalt tips: på greenerna med två nivåer, sikta på att hamna under hålet."
+        "text": "Handicapgränsen är 54, och intyg krävs vid bokning. Banan går att gå, med det mesta av stigningen tidigt i rundan. Den passar golfare som gillar att fundera över var de ska placera bollen. Det som överraskar förstagångsbesökare: några utslag döljer den bästa linjen, så ett andra besök är lättare än det första. Lokalt tips: på greenerna med två nivåer, sikta på att hamna under hålet."
       },
       {
         "text": "Omdöme"
@@ -900,11 +900,11 @@ const content = {
         "items": [
           [
             "Bästa starttid",
-            "Vi startade 8:16 och när vi var klara var det rörigt kring första tee. Starta tidigt."
+            "Vi startade 8.16 och när vi var klara var det fullt kring första tee. Starta tidigt."
           ],
           [
             "Bo på Sheraton",
-            "Hotellgäster kan få ett lägre pris än det publika. Min kund betalade 88 €, och banan är lätt att nå från hotellet."
+            "Hotellgäster kan få ett lägre pris än det officiella. Min kund betalade 88 €, och banan är lätt att nå från hotellet."
           ],
           [
             "Andra besöket",
@@ -1013,7 +1013,7 @@ const content = {
         "text": "第15洞是368米的4杆洞，右转弯，同样需要做选择。你越往左打，进攻杆就越长。我选了一条更直接朝向果岭的线，还剩80码。我喜欢开球时有不同的选择，而不是只有一种明显的打法。"
       },
       {
-        "text": "第18洞是一个很漂亮的收官洞。这是460米的5杆洞，右侧一路有水，酒店作为背景，还有一座喷泉，会所在左边。会所周围的人可以看到进攻果岭的球，给这个洞带来了收尾的氛围。"
+        "text": "第18洞是一个很漂亮的收官洞。这是460米的5杆洞，右侧一路有水，酒店作为背景，还有一座喷泉，会所在左边。会所周围的人可以看到进攻果岭的球，让这个收官洞很有氛围。"
       },
       {
         "alt": "Son Vida 会所前的水面和石头边缘，背后山坡上是别墅",
@@ -1027,7 +1027,7 @@ const content = {
         "text": "球场状况与服务"
       },
       {
-        "text": "球场明显浇了很多水，再加上早晨的雨，有些区域比平时湿得多。果岭周围有不少湿的球位和泥泞的地方，落在果岭上的球经常扎在里面，没有滚动。果岭本身很纯，但略慢。我觉得我们没有看到 Son Vida 平时应有的硬度。"
+        "text": "球场明显浇了很多水，再加上早晨的雨，有些区域比平时湿得多。果岭周围有不少湿的球位和泥泞的地方，落在果岭上的球经常扎在里面，没有滚动。果岭本身滚动很顺，但略慢。我觉得我们没有看到 Son Vida 平时应有的硬度。"
       },
       {
         "text": "整体维护水准是我对 Arabella 球场的预期：整洁，用心。球场工作人员用剪刀修剪果岭边缘，再用手耙平。工作人员从头到尾都热情友好，打完后球会还免费帮我的客人清洁了球杆。中途休息站很不错，打完后的餐食也一样。"
@@ -1063,7 +1063,7 @@ const content = {
         ]
       },
       {
-        "text": "果岭费是动态定价，淡季约84欧元，旺季最高190欧元，如果你没有注册会员，还要加每天3欧元的标准联合会执照费。我的客人当天以 Sheraton 住客身份付了88欧元。差点上限54杆，需要差点证书，Son Vida 距帕尔马约15分钟。球车可选。单人可以预订，通常会和其他组合并，就像我们这样。遵守常规高尔夫着装规定，必须穿软钉鞋，也可以租球杆。记分卡上有两个版本的球场：标准杆70，第2洞是191米的3杆洞；标准杆71，第2洞是259米的4杆洞。我们打的是3杆洞版本。"
+        "text": "果岭费是动态定价，淡季约84欧元，旺季最高190欧元，如果你不是注册的协会球员，还要加每天3欧元的标准联合会执照费。我的客人当天以 Sheraton 住客身份付了88欧元。差点上限54杆，需要差点证书，Son Vida 距帕尔马约15分钟。球车可选。单人可以预订，通常会和其他组合并，就像我们这样。遵守常规高尔夫着装规定，必须穿软钉鞋，也可以租球杆。记分卡上有两个版本的球场：标准杆70，第2洞是191米的3杆洞；标准杆71，第2洞是259米的4杆洞。我们打的是3杆洞版本。"
       },
       {
         "text": "那天唯一真正的缺点：前12洞里你很少能离开房子或酒店的视线，有些地方球道路线让人觉得局促。雨水带来了湿球位和扎进地里的球，这是我正常日子里不会预期的。天气干燥时，我预计它会比我们遇到的更硬。"

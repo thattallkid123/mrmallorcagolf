@@ -60,6 +60,8 @@ The English uses "base", "golf base", "city base" loosely. Translating the word 
 | sv | Bas i staden, Golfbas | I staden, Golfhotell |
 | zh | 城市据点, 高尔夫据点 | 市中心, 高尔夫度假酒店 (据点 sounds military) |
 
+In the where-to-stay guide the hotel area is the "base": German says Standort (not Basis), Dutch uitvalsbasis (not basis); Spanish and French "base" and Chinese 大本营 are fine.
+
 Same family: German "Jenseits des Golfs" for "Beyond golf" (use "Neben dem Golf"), "Der Preis ist eine Fahrt" for "The trade-off is a drive" (use "Der Nachteil: …"), Spanish "Patrón de vuelos" and Dutch "Vluchtpatroon" for "Flight pattern" (say what it means: "Llegada del grupo", "Aankomst van de groep").
 
 ### 2. English left inside a translated sentence
@@ -87,12 +89,23 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 
 ### 6. Stiff or literal phrasing
 
+- English idioms translated word for word: "the course flatters you" (it plays easier than it is, not "schmeichelt Ihnen" / "vous flatte" / 讨好你), "play on autopilot" (zh: 几乎不用动脑, not 自动驾驶), "a fair trade" (a fair compromise, not "Tausch" / "ruil" / 交换), "shake off the flight" (recover from it), "once your game is warm" (once you have played yourself in).
+- Golf words that do not carry over: "the greens rolled pure" (de "rollten sauber", es "rodaban muy bien", not "rein" / "puros" / 纯净), "the halfway hut" (es "parada a mitad de vuelta", fr "pause à mi-parcours"), "a long hitter" (de Longhitter, nl lange hitter, not "weiter Schläger" / "lange slager"), "reachable" on a par 5 means in two.
+- Short headings that drop the noun: "T Golf Palma: the quiet one" needs the noun back ("el campo tranquilo", "le parcours calme", "de rustige baan", "den lugna banan").
+
 - de "Woran würden Sie den Erfolg dieser Reise messen?" for "What would make this trip a success?": use "Was würde diese Reise für Sie zu einem Erfolg machen?"
 - nl "waar uw groep plezier aan zou beleven": use "waar uw groep van zou genieten".
 - es "comer junto": "comer juntos" (agreement).
 - A note card that ends "The one to book for a milestone" needs a natural local closing, not a literal one (de "Das Restaurant für einen besonderen Anlass", nl "Hier boekt u voor een bijzondere gelegenheid").
 
-### 7. Typography
+### 7. Meaning drift in small words
+
+- Times of day: English "by mid-morning" became "until late morning" in German, Dutch, Swedish and Chinese in one guide, which changes the advice. Check every time, day and number word.
+- "Despite" read as "because": "For all the height, the sea is only in view from the 2nd" means despite the height (es "Pese a", not "Con tanta altura").
+- Spanish "Conforma tu par" (shape your par) for "Take your par": "Confórmate con el par".
+- Swedish: score par is neuter ("nöj dig med par"), tee forms without the plural article ("från gul tee", "från främre tee"), times written 8.16 not 8:16, players are "lottade" not "ihopkopplade".
+
+### 8. Typography
 
 - French: a space before ? ! : ; and « guillemets » around quoted labels; apostrophes as ’.
 - German quotation marks „…“; Dutch ‘…’ for quoted labels.
@@ -107,7 +120,7 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 5. Form of address matches the table, all the way through the page.
 6. Golf terms match the vocabulary table.
 7. Names, accents and place spellings are intact.
-8. Typography follows section 7.
+8. Typography follows section 8.
 9. The checks pass, then add a row to the Review Log in `docs/translation-workflow.md` with the model that wrote it and the model that read it.
 
 Translations written by a model other than Opus get a full Opus read before they go live (see the Review Log for why).
