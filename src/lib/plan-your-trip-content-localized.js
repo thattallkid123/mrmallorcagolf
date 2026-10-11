@@ -157,7 +157,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "points": [
           {
             "title": "El día de llegada se mantiene fácil",
-            "body": "Después de un vuelo y la cola del coche de alquiler, la primera ronda debería ser cercana, abierta y tranquila. Nadie necesita la tarjeta más dura de la semana el primer día."
+            "body": "Después de un vuelo y la cola del coche de alquiler, la primera vuelta debería ser cercana, abierta y tranquila, con una hora de salida a primera hora de la tarde y no al amanecer. Nadie necesita la tarjeta más dura de la semana el primer día."
           },
           {
             "title": "La dificultad sube a mitad de semana",
@@ -169,7 +169,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Terminar corto y cerca del aeropuerto",
-            "body": "La última vuelta debería dejar fácil el traslado al aeropuerto. Un pequeño retraso debería costar la comida, no el vuelo."
+            "body": "La última vuelta debería dejar fácil el traslado al aeropuerto. T Golf Calvià está a unos 25 minutos del aeropuerto por autopista, así que el grupo no cruza la isla de camino a casa, y un pequeño retraso debería costar la comida, no el vuelo."
           }
         ]
       },
@@ -327,7 +327,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "points": [
           {
             "title": "Der Anreisetag bleibt leicht",
-            "body": "Nach Flug und Mietwagenschlange sollte die erste Runde nah, offen und ruhig sein. Niemand braucht am ersten Tag die schwerste Scorekarte der Woche."
+            "body": "Nach Flug und Mietwagenschlange sollte die erste Runde nah, offen und ruhig sein, mit einer Startzeit am frühen Nachmittag statt eines Starts im Morgengrauen. Niemand braucht am ersten Tag die schwerste Scorekarte der Woche."
           },
           {
             "title": "Die Schwierigkeit steigt zur Wochenmitte",
@@ -339,7 +339,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Kurz und flughafennah abschließen",
-            "body": "Die letzte Runde sollte den Flughafen einfach halten. Eine kleine Verzögerung sollte das Mittagessen kosten, nicht den Flug."
+            "body": "Die letzte Runde sollte den Flughafen einfach halten. T Golf Calvià liegt auf der Autobahn etwa 25 Minuten vom Flughafen entfernt, die Gruppe muss also auf dem Heimweg nicht quer über die Insel fahren, und eine kleine Verzögerung sollte das Mittagessen kosten, nicht den Flug."
           }
         ]
       },
@@ -497,7 +497,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "points": [
           {
             "title": "Le jour d’arrivée reste facile",
-            "body": "Après un vol et l’attente pour la voiture de location, la première partie devrait être proche, ouverte et calme. Personne n’a besoin de la carte la plus dure de la semaine le premier jour."
+            "body": "Après un vol et l’attente pour la voiture de location, la première partie devrait être proche, ouverte et calme, avec un départ en début d’après-midi plutôt qu’à l’aube. Personne n’a besoin de la carte la plus dure de la semaine le premier jour."
           },
           {
             "title": "La difficulté monte au milieu",
@@ -509,7 +509,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Finir court et près de l’aéroport",
-            "body": "La dernière partie doit laisser un trajet simple vers l’aéroport. Un petit retard devrait coûter le déjeuner, pas le vol."
+            "body": "La dernière partie doit laisser un trajet simple vers l’aéroport. T Golf Calvià est à environ 25 minutes de l’aéroport par l’autoroute : le groupe ne traverse pas l’île au retour, et un petit retard devrait coûter le déjeuner, pas le vol."
           }
         ]
       },
@@ -667,7 +667,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "points": [
           {
             "title": "De aankomstdag blijft makkelijk",
-            "body": "Na een vlucht en de rij bij de huurauto moet de eerste ronde dichtbij, open en rustig zijn. Niemand heeft op dag één de zwaarste scorekaart van de week nodig."
+            "body": "Na een vlucht en de rij bij de huurauto moet de eerste ronde dichtbij, open en rustig zijn, met een starttijd aan het begin van de middag in plaats van bij zonsopgang. Niemand heeft op dag één de zwaarste scorekaart van de week nodig."
           },
           {
             "title": "De moeilijkheid loopt op in het midden",
@@ -679,7 +679,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Eindig kort en dicht bij de luchthaven",
-            "body": "Bij de laatste ronde moet de rit naar de luchthaven eenvoudig blijven. Een kleine vertraging mag de lunch kosten, niet de vlucht."
+            "body": "Bij de laatste ronde moet de rit naar de luchthaven eenvoudig blijven. T Golf Calvià ligt ongeveer 25 minuten van de luchthaven aan de snelweg, dus de groep hoeft op de terugweg niet over het eiland te rijden, en een kleine vertraging mag de lunch kosten, niet de vlucht."
           }
         ]
       },
@@ -837,7 +837,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "points": [
           {
             "title": "Ankomstdagen hålls enkel",
-            "body": "Efter flyg och hyrbilskö ska första ronden vara nära, öppen och lugn. Ingen behöver veckans svåraste scorekort dag ett."
+            "body": "Efter flyg och hyrbilskö ska första rundan vara nära, öppen och lugn, med en starttid tidigt på eftermiddagen i stället för i gryningen. Ingen behöver veckans svåraste scorekort dag ett."
           },
           {
             "title": "Svårigheten byggs upp i mitten",
@@ -849,7 +849,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Avsluta kort och nära flygplatsen",
-            "body": "Sista rundan ska ge en enkel resa till flygplatsen. En liten försening får kosta lunchen, inte flyget."
+            "body": "Sista rundan ska ge en enkel resa till flygplatsen. T Golf Calvià ligger cirka 25 minuter från flygplatsen på motorvägen, så gruppen behöver inte åka över ön på hemvägen, och en liten försening får kosta lunchen, inte flyget."
           }
         ]
       },
@@ -1008,7 +1008,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "points": [
           {
             "title": "抵达当天保持简单",
-            "body": "下飞机、排队取车之后，第一轮应该近、开阔、轻松。没人需要在第一天就面对全周最难的记分卡。"
+            "body": "下飞机、排队取车之后，第一轮应该近、开阔、轻松，开球时间放在下午早些时候，而不是天一亮就出发。没人需要在第一天就面对全周最难的记分卡。"
           },
           {
             "title": "难度放在中段",
@@ -1020,7 +1020,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "最后一轮短一些，靠近机场",
-            "body": "最后一轮应该让去机场这件事简单。小延误最多影响午餐，不应该影响航班。"
+            "body": "最后一轮应该让去机场这件事简单。T Golf Calvià 走高速离机场大约 25 分钟，团队回程不用横穿全岛，小延误最多影响午餐，不应该影响航班。"
           }
         ]
       },

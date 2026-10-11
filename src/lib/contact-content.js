@@ -72,11 +72,11 @@ export const CONTACT_CONTENT = {
       ],
       serviceTypes: [
         ['pwap', 'Play With A Pro'],
-        ['trip-planning', 'Plan My Golf Trip'],
-        ['whole-trip', 'Plan the whole trip'],
         ['tee-time-booking', 'Book tee times for my group'],
-        ['both', 'Both'],
-        ['not-sure', 'Not Sure Yet'],
+        ['trip-planning', 'Plan my golf trip'],
+        ['whole-trip', 'Plan the whole trip'],
+        ['both', 'Play With A Pro and trip planning'],
+        ['not-sure', 'Not sure yet'],
       ],
       experiences: [
         ['pwap-solo', 'Solo', '€795'],

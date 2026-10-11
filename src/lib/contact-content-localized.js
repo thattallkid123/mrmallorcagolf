@@ -42,10 +42,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
+        ["tee-time-booking", "Reservar horas de salida para mi grupo"],
         ["trip-planning", "Planificar mi viaje de golf"],
         ["whole-trip", "Planificar todo el viaje"],
-        ["tee-time-booking", "Reservar tee times para mi grupo"],
-        ["both", "Ambos"],
+        ["both", "Play With A Pro y planificación del viaje"],
         ["not-sure", "Aún no lo sé"]
       ],
       "pwapFormats": [
@@ -190,10 +190,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
+        ["tee-time-booking", "Startzeiten für meine Gruppe buchen"],
         ["trip-planning", "Meine Golfreise planen"],
         ["whole-trip", "Die ganze Reise planen"],
-        ["tee-time-booking", "Startzeiten für meine Gruppe buchen"],
-        ["both", "Beides"],
+        ["both", "Play With A Pro und Reiseplanung"],
         ["not-sure", "Noch nicht sicher"]
       ],
       "pwapFormats": [
@@ -338,10 +338,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
+        ["tee-time-booking", "Réserver des départs pour mon groupe"],
         ["trip-planning", "Planifier mon voyage de golf"],
         ["whole-trip", "Organiser tout le voyage"],
-        ["tee-time-booking", "Réserver des départs pour mon groupe"],
-        ["both", "Les deux"],
+        ["both", "Play With A Pro et planification du voyage"],
         ["not-sure", "Je ne suis pas sûr"]
       ],
       "pwapFormats": [
@@ -486,10 +486,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
+        ["tee-time-booking", "Starttijden voor mijn groep boeken"],
         ["trip-planning", "Mijn golfreis plannen"],
         ["whole-trip", "De hele reis plannen"],
-        ["tee-time-booking", "Starttijden voor mijn groep boeken"],
-        ["both", "Beide"],
+        ["both", "Play With A Pro en reisplanning"],
         ["not-sure", "Ik weet het nog niet"]
       ],
       "pwapFormats": [
@@ -634,10 +634,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
+        ["tee-time-booking", "Boka starttider för min grupp"],
         ["trip-planning", "Planera min golfresa"],
         ["whole-trip", "Planera hela resan"],
-        ["tee-time-booking", "Boka starttider för min grupp"],
-        ["both", "Båda"],
+        ["both", "Play With A Pro och reseplanering"],
         ["not-sure", "Jag är osäker"]
       ],
       "pwapFormats": [
@@ -785,10 +785,10 @@ export const CONTACT_LOCALIZED_CONTENT = {
       },
       "serviceTypes": [
         ["pwap", "Play With A Pro"],
+        ["tee-time-booking", "为我的团队预订开球时间"],
         ["trip-planning", "规划我的高尔夫之旅"],
         ["whole-trip", "规划整趟行程"],
-        ["tee-time-booking", "为我的团队预订开球时间"],
-        ["both", "两种都想"],
+        ["both", "Play With A Pro 和行程规划都要"],
         ["not-sure", "还没有决定"]
       ],
       "pwapFormats": [

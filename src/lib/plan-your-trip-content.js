@@ -171,7 +171,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       "points": [
         {
           "title": "Arrival day stays easy",
-          "body": "After a flight and a hire-car queue, the first round should be close, open and calm. Nobody needs the hardest scorecard of the week on day one."
+          "body": "After a flight and a hire-car queue, the first round should be close, open and calm, with an early-afternoon tee time rather than a dawn start. Nobody needs the hardest scorecard of the week on day one."
         },
         {
           "title": "Difficulty builds in the middle",
@@ -183,7 +183,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         },
         {
           "title": "Finish short and near the airport",
-          "body": "The final round should keep the airport simple. A small delay should cost lunch, not the flight."
+          "body": "The final round should keep the airport simple. T Golf Calvià is about 25 minutes from the airport on the motorway, so the group does not cross the island on the way home, and a small delay should cost lunch, not the flight."
         }
       ]
     },

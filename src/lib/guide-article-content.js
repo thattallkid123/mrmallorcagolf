@@ -458,7 +458,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       badge: 'Itinerary',
       badgeGold: true,
       readTime: '8 min read',
-      updated: 'August 2026',
+      updated: 'October 2026',
       title: '5-Day Mallorca Golf Trip Itinerary from Palma',
       intro:
         'A Palma-based week for club golfers: Son Quint, Santa Ponsa 1, Son Gual, Alcanada and T Golf Calvià, with the long drive kept to one day.',
@@ -513,7 +513,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         type: 'list',
         items: [
           { label: 'Drive from Palma:', text: 'around 15 minutes.' },
-          { label: 'Best tee time:', text: 'mid-morning. No need for a dawn start after a flight.' },
+          { label: 'Best tee time:', text: 'early afternoon on arrival day, so nobody rushes from the airport. If you land the night before, mid-morning is fine.' },
           { label: 'Dinner idea:', text: 'El Camino in Palma if you want a lively first evening.' },
           { label: 'Easy swap:', text: 'Palma Pitch and Putt if one player is very new to the game.' },
         ],
@@ -565,7 +565,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         items: [
           { label: 'Drive from Palma:', text: 'around 20 minutes.' },
           { label: 'Best tee time:', text: 'early, before the afternoon wind becomes a bigger factor.' },
-          { label: 'Worth knowing:', text: 'handicap certificates are commonly required at Son Gual and Alcanada.' },
+          { label: 'Worth knowing:', text: 'every course on this route asks for a handicap certificate on paper, and not every club checks it. Son Gual and T Golf Calvià cap men at 28 and Alcanada at 33, so bring yours.' },
           { label: 'Dinner idea:', text: 'Marc Fosh or Zaranda back in Palma for a higher-end evening.' },
         ],
       },
@@ -589,7 +589,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         items: [
           { label: 'Drive from Palma:', text: 'around 50 minutes.' },
           { label: 'Best tee time:', text: 'early for light, pace and calmer wind.' },
-          { label: 'Dinner idea:', text: 'Maca de Castro in Port d\'Alcúdia, or return to Palma if the group wants a simpler evening.' },
+          { label: 'Dinner idea:', text: 'Maca de Castro in Port d\'Alcúdia, or return to Palma if the group wants a simpler evening. If you stay for dinner, book a driver for the drive back.' },
           { label: 'Read more:', text: '<a href="/guides/alcanada-review">Club de Golf Alcanada review</a>.' },
         ],
       },
@@ -598,7 +598,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'The final day should keep the airport simple. T Golf Calvià gives you a strong finish without sending the group across the island. It is around thirty minutes from Palma and a little over twenty minutes from the airport on the motorway.',
+          'The final day should keep the airport simple. T Golf Calvià gives you a strong finish and the group never crosses the island: it is around thirty minutes from Palma and about 25 minutes from the airport, all on the motorway.',
       },
       {
         type: 'image',
@@ -612,7 +612,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         items: [
           { label: 'Drive from Palma:', text: 'around 30 minutes.' },
           { label: 'Best tee time:', text: 'the first slot you can get if flying later that day.' },
-          { label: 'Early flight swap:', text: 'Son Termes for a shorter, scenic round close to Palma.' },
+          { label: 'Early flight swap:', text: 'Son Antem East, about 20 minutes from the airport, with a handicap limit of 54 so the whole group can play.' },
           { label: 'Read more:', text: '<a href="/guides/t-golf-calvia-review">T Golf Calvià review</a>.' },
         ],
       },
@@ -620,7 +620,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'The golf is the spine of the trip. Around it, you can add a private chef evening, a proper Palma dinner, a vineyard visit, spa time, a coastal drive through Tramuntana, or a quiet afternoon between the harder rounds. I would add those where they help the rhythm of the week.',
+          'The golf is the spine of the trip. Around it, you can add a private chef evening, a long dinner in Palma, a vineyard visit, spa time, a coastal drive through Tramuntana, or a quiet afternoon between the harder rounds. I would add those where they help the rhythm of the week. If you want a rest day, I would put it after Son Gual, before the long drive north. The Sóller train, half a day on a boat or a tasting at Bodega Ribas all fit there, and there are more in the <a href="/plan-your-trip#trip-ideas">trip ideas</a>. My local travel partner books those directly.',
       },
       {
         type: 'image',

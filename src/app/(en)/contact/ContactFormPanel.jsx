@@ -8,11 +8,11 @@ export default function ContactFormPanel({ locale = 'en', content }) {
   const { error, form, handleChange, handleSubmit, setForm, submitted, submitting } = useContactFormSubmission(locale)
   const serviceTypes = content.form.serviceTypes || [
     ['pwap', 'Play With A Pro'],
-    ['trip-planning', 'Plan My Golf Trip'],
-    ['whole-trip', 'Plan the whole trip'],
     ['tee-time-booking', 'Book tee times for my group'],
-    ['both', 'Both'],
-    ['not-sure', 'Not Sure Yet'],
+    ['trip-planning', 'Plan my golf trip'],
+    ['whole-trip', 'Plan the whole trip'],
+    ['both', 'Play With A Pro and trip planning'],
+    ['not-sure', 'Not sure yet'],
   ]
   const pwapFormats = content.form.pwapFormats || [
     ['pwap-solo', 'Solo', '€795'],

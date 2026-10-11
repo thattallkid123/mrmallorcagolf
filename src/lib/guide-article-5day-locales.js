@@ -9,7 +9,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
     "meta": {
       "badge": "Reiseroute",
       "readTime": "8 Min. Lesezeit",
-      "updated": "August 2026",
+      "updated": "Oktober 2026",
       "title": "5-Tage-Golfreise auf Mallorca ab Palma",
       "intro": "Eine Woche mit Basis in Palma für Clubgolfer: Son Quint, Santa Ponsa 1, Son Gual, Alcanada und T Golf Calvià, mit der langen Fahrt auf einen Tag beschränkt.",
       "related": [
@@ -85,7 +85,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Beste Startzeit:",
-            "text": "später Vormittag. Nach einem Flug braucht es keinen Start im Morgengrauen."
+            "text": "früher Nachmittag am Anreisetag, damit niemand vom Flughafen hetzen muss. Wer schon am Abend davor landet, startet bequem am Vormittag."
           },
           {
             "label": "Abendessen-Tipp:",
@@ -158,7 +158,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Gut zu wissen:",
-            "text": "Handicap-Nachweise werden in Son Gual und Alcanada häufig verlangt."
+            "text": "Auf dem Papier verlangen alle Plätze dieser Route einen Handicap-Nachweis, auch wenn nicht jeder Club ihn kontrolliert. Son Gual und T Golf Calvià setzen die Grenze für Herren bei 28, Alcanada bei 33. Bringen Sie Ihren Nachweis also mit."
           },
           {
             "label": "Abendessen-Tipp:",
@@ -191,7 +191,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Abendessen-Tipp:",
-            "text": "Maca de Castro in Port d'Alcúdia, oder zurück nach Palma, wenn die Gruppe einen einfacheren Abend möchte."
+            "text": "Maca de Castro in Port d'Alcúdia, oder zurück nach Palma, wenn die Gruppe einen einfacheren Abend möchte. Wenn Sie zum Abendessen bleiben, buchen Sie einen Fahrer für die Rückfahrt."
           },
           {
             "label": "Mehr dazu:",
@@ -206,7 +206,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Rolle auf der Reise: starker Abschluss, vernünftiger Flughafentag"
       },
       {
-        "text": "Am letzten Tag sollte der Weg zum Flughafen einfach bleiben. T Golf Calvià bietet einen starken Abschluss, ohne die Gruppe über die Insel zu schicken. Es liegt etwa dreißig Minuten von Palma und gut zwanzig Minuten vom Flughafen auf der Autobahn."
+        "text": "Am letzten Tag sollte der Weg zum Flughafen einfach bleiben. T Golf Calvià bietet einen starken Abschluss, und die Gruppe muss nie über die Insel fahren: Es liegt etwa dreißig Minuten von Palma und rund 25 Minuten vom Flughafen entfernt, alles auf der Autobahn."
       },
       {
         "alt": "T Golf Calvià auf Mallorca",
@@ -224,7 +224,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Tausch bei frühem Flug:",
-            "text": "Son Termes für eine kürzere, landschaftlich schöne Runde nahe Palma."
+            "text": "Son Antem East, etwa 20 Minuten vom Flughafen, mit Handicap-Grenze 54, damit die ganze Gruppe spielen kann."
           },
           {
             "label": "Mehr dazu:",
@@ -236,7 +236,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Wo der Luxus-Teil hineinpasst"
       },
       {
-        "text": "Das Golf ist das Rückgrat der Reise. Drumherum können Sie einen Abend mit Privatkoch, ein richtiges Abendessen in Palma, einen Weinbergbesuch, Spa-Zeit, eine Küstenfahrt durch die Tramuntana oder einen ruhigen Nachmittag zwischen den härteren Runden einbauen. Ich würde das dort einplanen, wo es dem Rhythmus der Woche hilft."
+        "text": "Das Golf ist das Rückgrat der Reise. Rund um das Golf können Sie einen Abend mit Privatkoch, ein langes Abendessen in Palma, einen Weinbergbesuch, Spa-Zeit, eine Küstenfahrt durch die Tramuntana oder einen ruhigen Nachmittag zwischen den härteren Runden einbauen. Ich würde das dort einplanen, wo es dem Rhythmus der Woche hilft. Wenn Sie einen Ruhetag möchten, würde ich ihn nach Son Gual legen, vor die lange Fahrt in den Norden. Der Zug nach Sóller, ein halber Tag auf einem Boot oder eine Weinprobe bei Bodega Ribas passen dort gut hinein, und weitere Möglichkeiten finden Sie unter <a href=\"/plan-your-trip#trip-ideas\">Ideen für die Reise</a>. Das alles bucht mein lokaler Reisepartner direkt."
       },
       {
         "alt": "Gehobenes Essen in Palma während einer Golfreise auf Mallorca",
@@ -283,7 +283,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
     "meta": {
       "badge": "Itinerario",
       "readTime": "8 min de lectura",
-      "updated": "Agosto 2026",
+      "updated": "Octubre 2026",
       "title": "Itinerario de golf de 5 días en Mallorca desde Palma",
       "intro": "Una semana con base en Palma para golfistas de club: Son Quint, Santa Ponsa 1, Son Gual, Alcanada y T Golf Calvià, con el trayecto largo limitado a un solo día.",
       "related": [
@@ -359,7 +359,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Mejor hora de salida:",
-            "text": "a media mañana. No hace falta madrugar tras un vuelo."
+            "text": "primera hora de la tarde el día de llegada, para que nadie tenga que salir corriendo del aeropuerto. Si aterrizáis la noche anterior, a media mañana va bien."
           },
           {
             "label": "Idea para cenar:",
@@ -432,7 +432,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Conviene saber:",
-            "text": "en Son Gual y Alcanada se suele pedir el certificado de hándicap."
+            "text": "sobre el papel, todos los campos de esta ruta piden certificado de hándicap, aunque no todos los clubes lo comprueban. Son Gual y T Golf Calvià ponen el máximo en 28 para hombres y Alcanada en 33, así que lleva el tuyo."
           },
           {
             "label": "Idea para cenar:",
@@ -465,7 +465,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Idea para cenar:",
-            "text": "Maca de Castro en Port d'Alcúdia, o volver a Palma si el grupo quiere una noche más sencilla."
+            "text": "Maca de Castro en Port d'Alcúdia, o volver a Palma si el grupo quiere una noche más sencilla. Si te quedas a cenar, reserva un conductor para el viaje de vuelta."
           },
           {
             "label": "Más información:",
@@ -480,7 +480,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Papel en el viaje: un buen final y un día de aeropuerto razonable"
       },
       {
-        "text": "El último día conviene que el traslado al aeropuerto sea sencillo. T Golf Calvià ofrece un buen final sin enviar al grupo al otro lado de la isla. Está a unos treinta minutos de Palma y a poco más de veinte minutos del aeropuerto por la autopista."
+        "text": "El último día conviene que el traslado al aeropuerto sea sencillo. T Golf Calvià ofrece un buen final y el grupo no tiene que cruzar la isla: está a unos treinta minutos de Palma y a unos 25 minutos del aeropuerto, todo por autopista."
       },
       {
         "alt": "T Golf Calvià en Mallorca",
@@ -498,7 +498,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Cambio si el vuelo es temprano:",
-            "text": "Son Termes, una ronda más corta y con vistas cerca de Palma."
+            "text": "Son Antem East, a unos 20 minutos del aeropuerto, con un hándicap máximo de 54 para que pueda jugar todo el grupo."
           },
           {
             "label": "Más información:",
@@ -510,7 +510,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Dónde encaja la parte de lujo"
       },
       {
-        "text": "El golf es la columna vertebral del viaje. A su alrededor puedes añadir una noche con chef privado, una buena cena en Palma, una visita a una bodega, tiempo de spa, un recorrido costero por la Tramuntana o una tarde tranquila entre las rondas más duras. Los añadiría donde ayuden al ritmo de la semana."
+        "text": "El golf es la columna vertebral del viaje. A su alrededor puedes añadir una noche con chef privado, una cena larga en Palma, una visita a una bodega, tiempo de spa, un recorrido costero por la Tramuntana o una tarde tranquila entre las rondas más duras. Los añadiría donde ayuden al ritmo de la semana. Si quieres un día de descanso, lo pondría después de Son Gual, antes del largo trayecto al norte. El tren de Sóller, medio día en barco o una cata en Bodega Ribas encajan ahí, y hay más en las <a href=\"/plan-your-trip#trip-ideas\">ideas para el viaje</a>. Mi socio de viajes local reserva todo eso directamente."
       },
       {
         "alt": "Cena de alto nivel en Palma durante un viaje de golf a Mallorca",
@@ -557,7 +557,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
     "meta": {
       "badge": "Itinéraire",
       "readTime": "8 min de lecture",
-      "updated": "Août 2026",
+      "updated": "Octobre 2026",
       "title": "Itinéraire golf de 5 jours à Majorque depuis Palma",
       "intro": "Une semaine basée à Palma pour golfeurs de club : Son Quint, Santa Ponsa 1, Son Gual, Alcanada et T Golf Calvià, avec le long trajet limité à une seule journée.",
       "related": [
@@ -633,7 +633,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Meilleur horaire de départ :",
-            "text": "milieu de matinée. Inutile de partir à l'aube après un vol."
+            "text": "début d'après-midi le jour d'arrivée, pour que personne ne coure depuis l'aéroport. Si vous atterrissez la veille au soir, le milieu de matinée convient très bien."
           },
           {
             "label": "Idée de dîner :",
@@ -706,7 +706,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Bon à savoir :",
-            "text": "les certificats de handicap sont couramment exigés à Son Gual et à Alcanada."
+            "text": "sur le papier, tous les parcours de cet itinéraire exigent un certificat de handicap, même si tous les clubs ne le contrôlent pas. Son Gual et T Golf Calvià plafonnent le handicap des hommes à 28, Alcanada à 33 : apportez le vôtre."
           },
           {
             "label": "Idée de dîner :",
@@ -739,7 +739,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Idée de dîner :",
-            "text": "Maca de Castro à Port d'Alcúdia, ou retour à Palma si le groupe veut une soirée plus simple."
+            "text": "Maca de Castro à Port d'Alcúdia, ou retour à Palma si le groupe veut une soirée plus simple. Si vous restez dîner, réservez un chauffeur pour le retour."
           },
           {
             "label": "Pour en savoir plus :",
@@ -754,7 +754,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Rôle dans le séjour : une belle fin et un jour de départ raisonnable"
       },
       {
-        "text": "Le dernier jour, le trajet vers l'aéroport doit rester simple. T Golf Calvià offre une belle fin sans envoyer le groupe à l'autre bout de l'île. Il est à environ trente minutes de Palma et à un peu plus de vingt minutes de l'aéroport par l'autoroute."
+        "text": "Le dernier jour, le trajet vers l'aéroport doit rester simple. T Golf Calvià offre une belle fin et le groupe n'a jamais à traverser l'île : il est à environ trente minutes de Palma et à 25 minutes environ de l'aéroport, le tout par l'autoroute."
       },
       {
         "alt": "T Golf Calvià à Majorque",
@@ -772,7 +772,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Échange en cas de vol matinal :",
-            "text": "Son Termes pour une partie plus courte et pittoresque près de Palma."
+            "text": "Son Antem East, à environ 20 minutes de l'aéroport, avec un handicap maximum de 54 : tout le groupe peut y jouer."
           },
           {
             "label": "Pour en savoir plus :",
@@ -784,7 +784,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Où se place la partie luxe"
       },
       {
-        "text": "Le golf est la colonne vertébrale du séjour. Autour, vous pouvez ajouter une soirée avec chef privé, un vrai dîner à Palma, une visite de vignoble, un moment au spa, une route côtière dans la Tramuntana ou un après-midi tranquille entre les parties les plus dures. Je les ajouterais là où ils aident le rythme de la semaine."
+        "text": "Le golf est la colonne vertébrale du séjour. Autour, vous pouvez ajouter une soirée avec chef privé, un long dîner à Palma, une visite de vignoble, un moment au spa, une route côtière dans la Tramuntana ou un après-midi tranquille entre les parties les plus dures. Je les ajouterais là où ils aident le rythme de la semaine. Si vous voulez une journée de repos, je la placerais après Son Gual, avant le long trajet vers le nord. Le train de Sóller, une demi-journée en bateau ou une dégustation à Bodega Ribas s'y prêtent bien, et vous en trouverez d'autres dans les <a href=\"/plan-your-trip#trip-ideas\">idées de voyage</a>. Mon partenaire de voyage local réserve tout cela directement."
       },
       {
         "alt": "Dîner haut de gamme à Palma pendant un voyage de golf à Majorque",
@@ -831,7 +831,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
     "meta": {
       "badge": "Reisroute",
       "readTime": "8 min leestijd",
-      "updated": "Augustus 2026",
+      "updated": "Oktober 2026",
       "title": "Golfreis van 5 dagen op Mallorca vanuit Palma",
       "intro": "Een week vanuit Palma voor clubgolfers: Son Quint, Santa Ponsa 1, Son Gual, Alcanada en T Golf Calvià, met de lange rit beperkt tot één dag.",
       "related": [
@@ -907,7 +907,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Beste starttijd:",
-            "text": "halverwege de ochtend. Na een vlucht hoef je niet bij zonsopgang te starten."
+            "text": "vroeg in de middag op de aankomstdag, zodat niemand zich van de luchthaven naar de baan hoeft te haasten. Land je de avond ervoor, dan is halverwege de ochtend prima."
           },
           {
             "label": "Etenstip:",
@@ -980,7 +980,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Goed om te weten:",
-            "text": "handicapbewijzen worden op Son Gual en Alcanada vaak gevraagd."
+            "text": "op papier vragen alle banen op deze route om een handicapbewijs, ook al controleert niet elke club het. Son Gual en T Golf Calvià stellen de grens voor mannen op 28, Alcanada op 33, dus neem het jouwe mee."
           },
           {
             "label": "Etenstip:",
@@ -1013,7 +1013,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Etenstip:",
-            "text": "Maca de Castro in Port d'Alcúdia, of terug naar Palma als de groep een eenvoudiger avond wil."
+            "text": "Maca de Castro in Port d'Alcúdia, of terug naar Palma als de groep een eenvoudiger avond wil. Blijf je eten, boek dan een chauffeur voor de terugrit."
           },
           {
             "label": "Meer lezen:",
@@ -1028,7 +1028,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Rol in de reis: sterke afsluiting, verstandige luchthavendag"
       },
       {
-        "text": "Op de laatste dag moet de rit naar de luchthaven eenvoudig blijven. T Golf Calvià geeft je een sterke afsluiting zonder de groep over het eiland te sturen. Het ligt ongeveer dertig minuten van Palma en iets meer dan twintig minuten van de luchthaven via de snelweg."
+        "text": "Op de laatste dag moet de rit naar de luchthaven eenvoudig blijven. T Golf Calvià geeft je een sterke afsluiting en de groep hoeft nooit het eiland over te steken: het ligt ongeveer dertig minuten van Palma en zo'n 25 minuten van de luchthaven, allemaal via de snelweg."
       },
       {
         "alt": "T Golf Calvià op Mallorca",
@@ -1046,7 +1046,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Wissel bij een vroege vlucht:",
-            "text": "Son Termes voor een kortere, schilderachtige ronde dicht bij Palma."
+            "text": "Son Antem East, ongeveer 20 minuten van de luchthaven, met een handicaplimiet van 54, zodat de hele groep kan spelen."
           },
           {
             "label": "Meer lezen:",
@@ -1058,7 +1058,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Waar het luxe deel past"
       },
       {
-        "text": "Het golf is de ruggengraat van de reis. Eromheen kun je een avond met een privékok toevoegen, een echt diner in Palma, een wijngaardbezoek, spatijd, een kustrit door de Tramuntana of een rustige middag tussen de zwaardere rondes. Ik zou die toevoegen waar ze het ritme van de week helpen."
+        "text": "Het golf is de ruggengraat van de reis. Eromheen kun je een avond met een privékok toevoegen, een lang diner in Palma, een wijngaardbezoek, spatijd, een kustrit door de Tramuntana of een rustige middag tussen de zwaardere rondes. Ik zou die toevoegen waar ze het ritme van de week helpen. Wil je een rustdag, dan zou ik die na Son Gual plaatsen, vóór de lange rit naar het noorden. De trein naar Sóller, een halve dag op een boot of een proeverij bij Bodega Ribas passen daar goed, en er zijn meer opties bij de <a href=\"/plan-your-trip#trip-ideas\">reisideeën</a>. Mijn lokale reispartner boekt dat allemaal rechtstreeks."
       },
       {
         "alt": "Luxe dineren in Palma tijdens een golfreis naar Mallorca",
@@ -1105,7 +1105,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
     "meta": {
       "badge": "Reseplan",
       "readTime": "8 min läsning",
-      "updated": "Augusti 2026",
+      "updated": "Oktober 2026",
       "title": "Golfresa på 5 dagar på Mallorca från Palma",
       "intro": "En vecka med Palma som bas för klubbgolfare: Son Quint, Santa Ponsa 1, Son Gual, Alcanada och T Golf Calvià, med den långa körningen begränsad till en dag.",
       "related": [
@@ -1181,7 +1181,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Bästa starttid:",
-            "text": "mitt på förmiddagen. Ingen anledning att starta i gryningen efter en flygning."
+            "text": "tidig eftermiddag på ankomstdagen, så att ingen behöver skynda från flygplatsen. Landar du kvällen innan går det bra att starta mitt på förmiddagen."
           },
           {
             "label": "Middagstips:",
@@ -1254,7 +1254,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Bra att veta:",
-            "text": "handicapintyg krävs ofta på Son Gual och Alcanada."
+            "text": "på pappret kräver alla banor på den här rutten handicapintyg, även om inte alla klubbar kontrollerar det. Son Gual och T Golf Calvià har handicapgräns 28 för herrar och Alcanada 33, så ta med ditt."
           },
           {
             "label": "Middagstips:",
@@ -1287,7 +1287,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Middagstips:",
-            "text": "Maca de Castro i Port d'Alcúdia, eller tillbaka till Palma om gruppen vill ha en enklare kväll."
+            "text": "Maca de Castro i Port d'Alcúdia, eller tillbaka till Palma om gruppen vill ha en enklare kväll. Stannar du kvar på middag, boka en chaufför för hemresan."
           },
           {
             "label": "Läs mer:",
@@ -1302,7 +1302,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Roll i resan: stark avslutning, förnuftig flygplatsdag"
       },
       {
-        "text": "Sista dagen ska resan till flygplatsen vara enkel. T Golf Calvià ger dig en stark avslutning utan att skicka gruppen över ön. Den ligger cirka trettio minuter från Palma och drygt tjugo minuter från flygplatsen på motorvägen."
+        "text": "Sista dagen ska resan till flygplatsen vara enkel. T Golf Calvià ger dig en stark avslutning och gruppen behöver aldrig åka över ön: den ligger cirka trettio minuter från Palma och cirka 25 minuter från flygplatsen, hela vägen på motorvägen."
       },
       {
         "alt": "T Golf Calvià på Mallorca",
@@ -1320,7 +1320,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Byte vid tidig flygning:",
-            "text": "Son Termes för en kortare, natursköna runda nära Palma."
+            "text": "Son Antem East, cirka 20 minuter från flygplatsen, med handicapgräns 54 så att hela gruppen kan spela."
           },
           {
             "label": "Läs mer:",
@@ -1332,7 +1332,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Var lyxdelen passar in"
       },
       {
-        "text": "Golfen är ryggraden i resan. Runt den kan du lägga till en kväll med privatkock, en ordentlig middag i Palma, ett vingårdsbesök, spatid, en kustresa genom Tramuntana eller en lugn eftermiddag mellan de tuffare rundorna. Jag skulle lägga in dem där de hjälper veckans rytm."
+        "text": "Golfen är ryggraden i resan. Runt den kan du lägga till en kväll med privatkock, en lång middag i Palma, ett vingårdsbesök, spatid, en kustresa genom Tramuntana eller en lugn eftermiddag mellan de tuffare rundorna. Jag skulle lägga in dem där de hjälper veckans rytm. Vill du ha en vilodag skulle jag lägga den efter Son Gual, före den långa resan norrut. Sóllertåget, en halv dag på en båt eller en provsmakning på Bodega Ribas passar där, och fler idéer finns bland <a href=\"/plan-your-trip#trip-ideas\">residéerna</a>. Min lokala resepartner bokar allt det direkt."
       },
       {
         "alt": "Exklusiv middag i Palma under en golfresa på Mallorca",
@@ -1379,7 +1379,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
     "meta": {
       "badge": "行程",
       "readTime": "8分钟阅读",
-      "updated": "2026年8月",
+      "updated": "2026年10月",
       "title": "从帕尔马出发的马略卡 5 天高尔夫行程",
       "intro": "为俱乐部球手设计的帕尔马基地一周行程：Son Quint、Santa Ponsa 1、Son Gual、Alcanada 和 T Golf Calvià，长途驾车只安排在一天。",
       "related": [
@@ -1455,7 +1455,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "最佳开球时间：",
-            "text": "上午中段。下飞机后不必天一亮就开球。"
+            "text": "到达当天的下午早些时候，这样没人要从机场赶着去球场。如果你们前一晚就到，上午中段开球也可以。"
           },
           {
             "label": "晚餐建议：",
@@ -1528,7 +1528,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "值得知道：",
-            "text": "Son Gual 和 Alcanada 通常需要差点证明。"
+            "text": "按规定，这条路线上的球场都要求差点证明，不过并非每家俱乐部都会查验。Son Gual 和 T Golf Calvià 对男士的差点上限是 28，Alcanada 是 33，所以请带上你的差点证明。"
           },
           {
             "label": "晚餐建议：",
@@ -1561,7 +1561,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "晚餐建议：",
-            "text": "Port d'Alcúdia 的 Maca de Castro；如果团队想要简单一点的夜晚，也可以回帕尔马。"
+            "text": "Port d'Alcúdia 的 Maca de Castro；如果团队想要简单一点的夜晚，也可以回帕尔马。如果留下来吃晚餐，请订一位司机负责回程。"
           },
           {
             "label": "延伸阅读：",
@@ -1576,7 +1576,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "在行程中的角色：强劲的收尾，合理的机场日"
       },
       {
-        "text": "最后一天，去机场的路要尽量简单。T Golf Calvià 给你一个强劲的收尾，又不用让团队横穿全岛。它离帕尔马大约三十分钟，走高速到机场只要二十多分钟。"
+        "text": "最后一天，去机场的路要尽量简单。T Golf Calvià 给你一个强劲的收尾，团队也完全不用横穿全岛：它离帕尔马大约三十分钟，离机场大约 25 分钟，全程走高速。"
       },
       {
         "alt": "马略卡 T Golf Calvià",
@@ -1594,7 +1594,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "航班较早时的替换：",
-            "text": "Son Termes，一座离帕尔马很近、较短且风景优美的球场。"
+            "text": "Son Antem East，离机场大约 20 分钟，差点上限 54，全组人都能打。"
           },
           {
             "label": "延伸阅读：",
@@ -1606,7 +1606,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "奢华的部分放在哪里"
       },
       {
-        "text": "高尔夫是整趟行程的主干。围绕它，你可以加入一晚私人厨师晚宴、一顿像样的帕尔马晚餐、一次酒庄参观、水疗时光、一段穿越特拉蒙塔纳山的海岸驾驶，或者在两轮较难的球之间安排一个安静的下午。我会把这些放在能帮助一周节奏的位置。"
+        "text": "高尔夫是整趟行程的主干。围绕它，你可以加入一晚私人厨师晚宴、一顿不赶时间的帕尔马晚餐、一次酒庄参观、水疗时光、一段穿越特拉蒙塔纳山的海岸驾驶，或者在两轮较难的球之间安排一个安静的下午。我会把这些放在能帮助一周节奏的位置。如果你想要一个休息日，我会放在 Son Gual 之后、北上长途驾驶之前。Sóller 小火车、半天出海，或者在 Bodega Ribas 的一次品酒都很合适，更多想法见<a href=\"/plan-your-trip#trip-ideas\">行程灵感</a>。这些由我的本地旅行合作伙伴直接预订。"
       },
       {
         "alt": "马略卡高尔夫行程中在帕尔马的高端晚餐",

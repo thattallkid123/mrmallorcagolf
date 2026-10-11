@@ -120,7 +120,9 @@ const DEAD_COPY = [
   {
     label: 'HOME', ident: 'home',
     files: ['src/app/HomePageInner.jsx', 'src/app/(en)/about/AboutView.jsx', 'src/components/WinnersProofStrip.jsx'],
-    keys: ['how', 'whyMallorca', 'courses', 'ui', 'packages.multiDay', 'packages.intro', 'winners.testimonial'],
+    keys: ['how', 'whyMallorca', 'courses', 'ui', 'packages.multiDay', 'packages.intro', 'winners.testimonial',
+      // 'Choose your route' section removed 2026-10-11; only journey.items[2].cta is still read (hero link)
+      'journey.eyebrow', 'journey.title', 'journey.items[0]', 'journey.items[1]', 'journey.items[2].title', 'journey.items[2].text', 'journey.items[2].href'],
   },
   {
     label: 'CONTACT', ident: 'content',

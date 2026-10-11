@@ -85,7 +85,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "Grupos que quieren que todo esté organizado",
-          "text": "Familias, grupos corporativos y ejecutivos que visitan la isla y quieren un día premium, totalmente organizado, en el que cada detalle esté resuelto. Una tarifa diaria fija, un ritmo más tranquilo y alguien que ya lo ha hecho antes."
+          "text": "Familias y grupos de amigos que quieren un día premium, totalmente organizado, en el que cada detalle esté resuelto, y de vez en cuando un grupo de empresa. Una tarifa diaria fija, un ritmo más tranquilo y alguien que ya lo ha hecho antes."
         },
         {
           "title": "Un regalo que se va a usar de verdad",
@@ -202,9 +202,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Sin búsqueda en aplicaciones o sitios web: nosotros gestionamos las horas de salida",
             "Campos elegidos para adaptarse a su grupo, nivel y presupuesto",
             "Ruta y número de vueltas planificados según su calendario",
-            "Buggies, alquiler de palos y traslados organizados",
-            "Sugerencias de restaurantes y dining incluidas",
-            "Una persona a contactar para todo el viaje"
+            "Buggies y palos de alquiler organizados por mí",
+            "Hotel, traslados y restaurantes planificados con mi socio de viajes local, que los reserva directamente",
+            "Un solo plan, conmigo como su contacto para todo"
           ],
           "button": "Planifique su viaje →",
           "href": "/es/plan-your-trip"
@@ -369,7 +369,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "Gruppen, die alles organisiert haben wollen",
-          "text": "Familien, Firmengruppen und Führungskräfte zu Besuch auf der Insel, die einen hochwertigen, komplett organisierten Tag wollen, an dem jedes Detail erledigt ist. Ein fester Tagessatz, ein ruhigerer Rhythmus und jemand, der das schon einmal gemacht hat."
+          "text": "Familien und Freundesgruppen, die einen hochwertigen, komplett organisierten Tag wollen, an dem jedes Detail erledigt ist, und gelegentlich eine Firmengruppe. Ein fester Tagessatz, ein ruhigerer Rhythmus und jemand, der das schon einmal gemacht hat."
         },
         {
           "title": "Ein Geschenk, das wirklich genutzt wird",
@@ -486,9 +486,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Keine App-Recherche: Die Startzeiten werden für Sie organisiert",
             "Plätze, die zu Ihrer Gruppe, Ihrem Level und Budget passen",
             "Route und Rundenzahl passend zu Ihrem Zeitplan",
-            "Buggys, Schlägerverleih und Transfers organisiert",
-            "Restaurantempfehlungen und Dining-Vorschläge enthalten",
-            "Eine Ansprechperson für die gesamte Reise"
+            "Buggys und Leihschläger von mir organisiert",
+            "Hotel, Transfers und Restaurants plane ich mit meinem lokalen Reisepartner, der sie direkt bucht",
+            "Ein Plan, mit mir als Ansprechperson für alles"
           ],
           "button": "Reise planen →",
           "href": "/de/plan-your-trip"
@@ -653,7 +653,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "Des groupes qui veulent que tout soit pris en charge",
-          "text": "Familles, groupes d'entreprise et dirigeants en visite sur l'île qui veulent une journée premium, entièrement organisée, où chaque détail est réglé. Un tarif journalier fixe, un rythme plus serein et quelqu'un qui l'a déjà fait."
+          "text": "Des familles et des groupes d'amis qui veulent une journée premium, entièrement organisée, où chaque détail est réglé, et parfois un groupe d'entreprise. Un tarif journalier fixe, un rythme plus serein et quelqu'un qui l'a déjà fait."
         },
         {
           "title": "Un cadeau qui sera vraiment utilisé",
@@ -770,9 +770,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Pas de recherche sur des apps ou des sites: heures de départ gérées par nous",
             "Parcours choisis pour correspondre à votre groupe, votre niveau et votre budget",
             "Itinéraire et nombre de parties planifiés autour de votre emploi du temps",
-            "Buggys, location de clubs et transferts organisés",
-            "Suggestions de restaurants et de dining incluses",
-            "Une personne à contacter pour tout le voyage"
+            "Buggys et location de clubs organisés par mes soins",
+            "Hôtel, transferts et restaurants planifiés avec mon partenaire de voyage local, qui les réserve directement",
+            "Un seul plan, et moi comme point de contact pour tout"
           ],
           "button": "Planifiez votre voyage →",
           "href": "/fr/plan-your-trip"
@@ -936,7 +936,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "Groepen die willen dat alles geregeld is",
-          "text": "Gezinnen, bedrijfsgroepen en leidinggevenden die het eiland bezoeken en een premium, volledig geregelde dag willen waarin elk detail is afgehandeld. Eén vast dagtarief, een rustiger tempo en iemand die het eerder heeft gedaan."
+          "text": "Gezinnen en vriendengroepen die een premium, volledig geregelde dag willen waarin elk detail is afgehandeld, en af en toe een bedrijfsgroep. Eén vast dagtarief, een rustiger tempo en iemand die het eerder heeft gedaan."
         },
         {
           "title": "Een cadeau dat echt gebruikt wordt",
@@ -1053,9 +1053,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Geen zoeken in apps of websites: starttijden geregeld door ons",
             "Banen gekozen om aan uw groep, niveau en budget te voldoen",
             "Route en aantal rondes afgestemd op uw schema",
-            "Buggys, clubverhuur en transfers geregeld",
-            "Restaurantaanbevelingen en diningopstellingen inbegrepen",
-            "Eén contactpersoon voor de hele reis"
+            "Buggy's en huurclubs door mij geregeld",
+            "Hotel, transfers en restaurants gepland met mijn lokale reispartner, die ze rechtstreeks boekt",
+            "Eén plan, met mij als uw aanspreekpunt voor alles"
           ],
           "button": "Plan uw reis →",
           "href": "/nl/plan-your-trip"
@@ -1220,7 +1220,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "Grupper som vill att allt ska vara ordnat",
-          "text": "Familjer, företagsgrupper och chefer som besöker ön och vill ha en premiumdag där allt är ordnat och varje detalj är hanterad. Ett fast dagspris, ett lugnare tempo och någon som har gjort det förut."
+          "text": "Familjer och vängrupper som vill ha en premiumdag där allt är ordnat och varje detalj är hanterad, och ibland en företagsgrupp. Ett fast dagspris, ett lugnare tempo och någon som har gjort det förut."
         },
         {
           "title": "En present som faktiskt blir använd",
@@ -1337,9 +1337,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Ingen sökning i appar eller webbplatser: starttider arrangerade av oss",
             "Banor valda för att matcha din grupp, nivå och budget",
             "Rutt och antal rundor planerade efter ditt schema",
-            "Buggys, klubbuthyrning och transfers arrangerade",
-            "Restaurangförslag och matningsalternativ ingår",
-            "En kontaktperson för hela resan"
+            "Golfbil och hyrklubbor ordnade av mig",
+            "Hotell, transfers och restauranger planerade med min lokala resepartner, som bokar dem direkt",
+            "En plan, med mig som din kontaktperson för allt"
           ],
           "button": "Planera din resa →",
           "href": "/sv/plan-your-trip"
@@ -1504,7 +1504,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "title": "希望一切都有人安排妥当的小团体",
-          "text": "来岛上游玩的家庭、企业团体和高管，想要一个高品质、全程安排好、每个细节都已处理的一天。固定日费、更从容的节奏，以及一位做过很多次的人。"
+          "text": "想要一个高品质、全程安排好、每个细节都已处理的一天的家庭和朋友团体，偶尔也有企业团队。固定日费、更从容的节奏，以及一位做过很多次的人。"
         },
         {
           "title": "一份真正会被使用的礼物",
@@ -1621,9 +1621,9 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "无需在应用或网站上搜索：我们为您安排开球时间",
             "精选球场以适配您的小组、水平及预算",
             "根据您的日程安排行程与轮数",
-            "球车、租借球具及接送全部妥妥安排",
-            "包含餐厅建议与用餐方案",
-            "全程一位联系人服务您的整个行程"
+            "球车和租杆由我来安排",
+            "酒店、接送和餐厅由我与本地旅行合作伙伴一起规划，由合作伙伴直接预订",
+            "一份计划，由我作为您的唯一联系人负责全部事项"
           ],
           "button": "了解行程规划 →",
           "href": "/zh/plan-your-trip"

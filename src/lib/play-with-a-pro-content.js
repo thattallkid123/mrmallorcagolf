@@ -101,7 +101,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       {
         "num": "02",
         "title": "Groups who want everything arranged",
-        "text": "Families, corporate groups, and executives visiting the island who want a premium, fully arranged day where every detail is handled. One fixed day rate, a calmer rhythm, and someone who has done it before."
+        "text": "Families and groups of friends who want a premium, fully arranged day where every detail is handled, and the occasional company group. One fixed day rate, a calmer rhythm, and someone who has done it before."
       },
       {
         "num": "03",
@@ -240,9 +240,9 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           "No searching apps or websites: tee times handled for you",
           "Courses picked to match your group, level, and budget",
           "Routing and number of rounds planned around your schedule",
-          "Buggies, club hire, and transfers all arranged",
-          "Restaurant and dining suggestions included",
-          "One person to contact for the whole trip"
+          "Buggies and club hire arranged by me",
+          "Hotel, transfers and dining planned with my local travel partner, who books them directly",
+          "One plan, with me as your contact for all of it"
         ],
         "button": "Plan Your Trip →",
         "href": "/plan-your-trip",

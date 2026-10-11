@@ -363,9 +363,9 @@ export const HOME_CONTENT = {
           "No searching apps or websites - tee times handled for you",
           "Courses picked to match your group, level, and budget",
           "Routing and number of rounds planned around your schedule",
-          "Buggies, club hire, and transfers all arranged",
-          "Restaurant and dining suggestions included",
-          "One person to contact for the whole trip"
+          "Buggies and club hire arranged by me",
+          "Hotel, transfers and dining planned with my local travel partner, who books them directly",
+          "One plan, with me as your contact for all of it"
         ],
         "note": "5% management fee applies to green fees only. Confirmed after your first conversation.",
         "cta": "Plan Your Trip",
@@ -396,11 +396,11 @@ export const HOME_CONTENT = {
       },
       {
         "q": "How do I book?",
-        "a": "Start with the itinerary planner if you are still planning. If you already know your dates and want me involved, send an enquiry and I will come back personally within 24 hours."
+        "a": "Send an enquiry with your dates, group size and handicap range and I will come back personally within 24 hours. If you are still deciding on courses, the course finder gives you a shortlist first."
       },
       {
         "q": "Is this suitable for a group?",
-        "a": "Yes. The experiences work for solos, pairs, groups of friends, and corporate days. Trip planning is especially well suited to business groups and executives visiting the island."
+        "a": "Yes. Play With A Pro covers up to 3 players on one day rate. For a bigger group, trip planning is the better fit: I choose the courses and book the tee times, and Play With A Pro can be added for one of the rounds if you want me alongside up to 3 of you. It suits friends' trips and the odd company group."
       },
       {
         "q": "When is the best time of year to visit?",
@@ -417,8 +417,8 @@ export const HOME_CONTENT = {
     ]
   },
   "finalCta": {
-    "eyebrow": "Ready to plan it properly?",
-    "title": "Tell me the trip you want. I'll help build it properly.",
+    "eyebrow": "Ready to plan your trip?",
+    "title": "Tell me the trip you want. I'll build the plan around it.",
     "body": "Start with your dates, group size, handicap range, budget, and the kind of golf you want. I will help you turn that into a Mallorca golf plan that works on the ground.",
     "quote": "The right course on the right day beats a famous name in the wrong slot.",
     "primaryCta": "Plan Your Trip",
