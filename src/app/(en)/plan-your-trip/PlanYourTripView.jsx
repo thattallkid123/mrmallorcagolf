@@ -213,6 +213,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
                       src={item.image}
                       alt={item.title}
                       fill
+                      unoptimized
                       sizes="(max-width: 640px) 100vw, (max-width: 1100px) 50vw, 25vw"
                       className="pyt-trip-idea__image"
                     />
