@@ -312,7 +312,7 @@ export const HOME_CONTENT = {
         ],
         "note": "My day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",
         "cta": "Enquire",
-        "href": "/contact",
+        "href": "/contact?service=pwap",
         "price": "€795"
       },
       {
@@ -330,7 +330,7 @@ export const HOME_CONTENT = {
         ],
         "note": "My fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",
         "cta": "Enquire",
-        "href": "/contact",
+        "href": "/contact?service=pwap",
         "price": "€950 total"
       },
       {
@@ -349,7 +349,7 @@ export const HOME_CONTENT = {
         ],
         "note": "Personalised from the ground up. Private transfers and a post-round recovery and sports-performance session form part of the core plan; caddies, a private chef, and professional coverage can be added where suitable.",
         "cta": "Enquire",
-        "href": "/contact",
+        "href": "/contact?service=pwap",
         "detailHref": "/signature-day",
         "detailLabel": "See full details"
       },

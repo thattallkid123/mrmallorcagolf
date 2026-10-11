@@ -1,14 +1,6 @@
 'use client'
 
-import { useEffect } from 'react'
-import { useRouter, usePathname } from 'next/navigation'
-
-export default function ScrollToTop() {
-  const pathname = usePathname()
-
-  useEffect(() => {
-    window.scrollTo(0, 0)
-  }, [pathname])
-
-  return null
-}
+// Same behaviour as PageLayout's ScrollToTopOnRouteChange: top of the page on a
+// route change, or the #section when the URL has one. This used to scroll to 0
+// unconditionally, which overrode every #section link on the site.
+export { default } from '../components/ScrollToTopOnRouteChange'

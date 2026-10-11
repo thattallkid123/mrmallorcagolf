@@ -213,7 +213,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Mi tarifa del día. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
           "cta": "Consultar",
-          "href": "/es/contact"
+          "href": "/es/contact?service=pwap"
         },
         {
           "eyebrow": "Un día con Andy",
@@ -229,7 +229,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Mi tarifa fija del día para 2 o 3 golfistas. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
           "cta": "Consultar",
-          "href": "/es/contact",
+          "href": "/es/contact?service=pwap",
           "price": "€950 en total"
         },
         {
@@ -247,7 +247,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "Bajo consulta",
           "note": "Personalizado desde cero. Los traslados privados y una sesión de recuperación y rendimiento deportivo después de la vuelta forman parte del plan central; se pueden añadir caddy, chef privado y cobertura profesional cuando encaje.",
           "cta": "Consultar",
-          "href": "/es/contact",
+          "href": "/es/contact?service=pwap",
           "detailHref": "/signature-day",
           "detailLabel": "Ver todos los detalles"
         },
@@ -541,7 +541,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Mein Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger sind als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
           "cta": "Anfragen",
-          "href": "/de/contact"
+          "href": "/de/contact?service=pwap"
         },
         {
           "eyebrow": "Ein Tag mit Andy",
@@ -557,7 +557,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Mein fester Tagessatz für 2 oder 3 Golfer. Greenfee und Mittagessen sind separat. Buggy und Leihschläger sind als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
           "cta": "Anfragen",
-          "href": "/de/contact",
+          "href": "/de/contact?service=pwap",
           "price": "€950 insgesamt"
         },
         {
@@ -575,7 +575,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "Auf Anfrage",
           "note": "Von Grund auf individuell gestaltet. Private Transfers und eine Recovery- und Sports-Performance-Session nach der Runde gehören zum Kernplan; Caddie, Privatkoch und professionelle Begleitung können ergänzt werden, wo es passt.",
           "cta": "Anfragen",
-          "href": "/de/contact",
+          "href": "/de/contact?service=pwap",
           "detailHref": "/signature-day",
           "detailLabel": "Alle Details ansehen"
         },
@@ -869,7 +869,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Mon tarif journée. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, je peux vous aider à organiser.",
           "cta": "Demander",
-          "href": "/fr/contact"
+          "href": "/fr/contact?service=pwap"
         },
         {
           "eyebrow": "Une journée avec Andy",
@@ -885,7 +885,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Mon tarif journalier fixe pour 2 ou 3 golfeurs. Le green fee et le déjeuner sont en sus. Voiturette et clubs de location disponibles en option, avec plaisir pour aider à les organiser.",
           "cta": "Demander",
-          "href": "/fr/contact",
+          "href": "/fr/contact?service=pwap",
           "price": "€950 au total"
         },
         {
@@ -903,7 +903,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "Sur demande",
           "note": "Personnalisé de A à Z. Les transferts privés et une session de récupération et de performance sportive après la partie font partie du plan de base ; caddie, chef privé et couverture professionnelle peuvent être ajoutés si cela convient.",
           "cta": "Demander",
-          "href": "/fr/contact",
+          "href": "/fr/contact?service=pwap",
           "detailHref": "/signature-day",
           "detailLabel": "Voir tous les détails"
         },
@@ -1197,7 +1197,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Mijn dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, ik help graag bij de organisatie.",
           "cta": "Aanvragen",
-          "href": "/nl/contact"
+          "href": "/nl/contact?service=pwap"
         },
         {
           "eyebrow": "Een dag met Andy",
@@ -1213,7 +1213,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Mijn vaste dagtarief voor 2 of 3 golfers. Greenfee en lunch zijn apart. Buggy en huurclubs zijn beschikbaar als optionele extra's, ik help graag bij de organisatie.",
           "cta": "Aanvragen",
-          "href": "/nl/contact",
+          "href": "/nl/contact?service=pwap",
           "price": "€950 totaal"
         },
         {
@@ -1231,7 +1231,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "Op aanvraag",
           "note": "Volledig op maat. Privé transfers en een herstel- en sportprestatiesessie na de ronde horen bij het kernplan; caddie, privéchef en professionele vastlegging kunnen worden toegevoegd waar passend.",
           "cta": "Aanvragen",
-          "href": "/nl/contact",
+          "href": "/nl/contact?service=pwap",
           "detailHref": "/signature-day",
           "detailLabel": "Alle details bekijken"
         },
@@ -1525,7 +1525,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Mitt dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, jag hjälper gärna till att ordna.",
           "cta": "Förfrågan",
-          "href": "/sv/contact"
+          "href": "/sv/contact?service=pwap"
         },
         {
           "eyebrow": "En dag med Andy",
@@ -1541,7 +1541,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "Mitt fasta dagspris för 2 eller 3 golfare. Green fee och lunch är separat. Golfbil och hyrklubbor finns som tillval, jag hjälper gärna till att ordna det.",
           "cta": "Förfrågan",
-          "href": "/sv/contact",
+          "href": "/sv/contact?service=pwap",
           "price": "€950 totalt"
         },
         {
@@ -1559,7 +1559,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "På förfrågan",
           "note": "Skräddarsytt från grunden. Privata transfers och en återhämtnings- och sportprestationssession efter rundan ingår i kärnplanen; caddie, privat kock och professionell dokumentation kan läggas till där det passar.",
           "cta": "Förfrågan",
-          "href": "/sv/contact",
+          "href": "/sv/contact?service=pwap",
           "detailHref": "/signature-day",
           "detailLabel": "Se alla detaljer"
         },
@@ -1860,7 +1860,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "我的日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，我很乐意帮您安排。",
           "cta": "立即咨询",
-          "href": "/zh/contact"
+          "href": "/zh/contact?service=pwap"
         },
         {
           "tier": "小组",
@@ -1876,7 +1876,7 @@ export const HOME_LOCALIZED_CONTENT = {
           ],
           "note": "我针对 2 或 3 位球手的固定日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，我很乐意帮您安排。",
           "cta": "立即咨询",
-          "href": "/zh/contact",
+          "href": "/zh/contact?service=pwap",
           "price": "€950 总计"
         },
         {
@@ -1894,7 +1894,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "price": "按需询价",
           "note": "从头开始为您量身定制。私人接送以及球后的恢复与运动表现环节属于核心方案；球童、私人厨师和专业拍摄可在合适时加入。",
           "cta": "立即咨询",
-          "href": "/zh/contact",
+          "href": "/zh/contact?service=pwap",
           "detailHref": "/signature-day",
           "detailLabel": "\u67e5\u770b\u5b8c\u6574\u8be6\u60c5"
         },
