@@ -178,7 +178,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
         .hr-progress-wrap { background:#2D4A3E; padding:0 32px 28px; }
         .hr-progress-bar { height:2px; background:rgba(247,244,239,0.15); max-width:480px; margin:0 auto; border-radius:2px; overflow:hidden; }
         .hr-progress-fill { height:100%; background:#B8973C; border-radius:2px; transition:width 0.4s ease; }
-        .hr-quiz-wrap { max-width:640px; margin:0 auto; padding:48px 24px 60px; }
+        .hr-quiz-wrap { max-width:880px; margin:0 auto; padding:48px 24px 60px; }
         .hr-step-num { font-size:0.72rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:#B8973C; margin-bottom:10px; }
         .hr-step h2 { font-family:var(--font-serif); font-size:clamp(1.5rem,3.5vw,2rem); font-weight:400; color:#1A1916; line-height:1.25; margin-bottom:8px; text-align:center; }
         .hr-step-sub { font-size:0.88rem; color:#8A7F74; line-height:1.65; margin-bottom:28px; text-align:center; }
@@ -386,7 +386,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
             )}
 
             {/* EMAIL */}
-            <div className="hr-email-section">
+            <div className="hr-email-section tool-save-panel">
               <h3>{t.email.title}</h3>
               <p>{t.email.sub}</p>
               {emailSent ? (

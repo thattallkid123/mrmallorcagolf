@@ -35,7 +35,7 @@ function WhatsAppCta({ label }) {
     trackLead('message_intent', { contact_method: 'whatsapp', page_path: currentPagePath(), tool: 'course-selector' })
   }
   return (
-    <a className="cst-btn wa" data-analytics-manual="true" href={WA_HREF} target="_blank" rel="noopener noreferrer" onClick={handleClick}>
+    <a className="tool-whatsapp-link" data-analytics-manual="true" href={WA_HREF} target="_blank" rel="noopener noreferrer" onClick={handleClick}>
       <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: 17, height: 17, flexShrink: 0 }} aria-hidden="true">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
       </svg>
@@ -716,7 +716,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         .cst-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
         .cst-h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
         .cst-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
-        .cst-wrap { max-width:680px; margin:0 auto; padding:0 18px 90px; }
+        .cst-wrap { max-width:800px; margin:0 auto; padding:0 18px 90px; }
         /* Progress */
         .cst-progress { margin:32px auto 28px; max-width:560px; }
         .cst-progress-track { height:3px; background:#EDE9E1; border-radius:99px; overflow:hidden; }
@@ -745,8 +745,6 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         .cst-btn.gold:hover { background:#D4B068; border-color:#D4B068; }
         .cst-btn.outline { background:transparent; border:1px solid #2D4A3E; color:#2D4A3E; }
         .cst-btn.outline:hover { background:#2D4A3E; color:#F7F4EF; }
-        .cst-btn.wa { background:#25D366; border-color:#25D366; color:#fff; display:inline-flex; align-items:center; justify-content:center; gap:9px; }
-        .cst-btn.wa:hover { background:#1eb858; border-color:#1eb858; }
         /* Results */
         .cst-results-head { text-align:center; margin:10px 0 32px; }
         .cst-results-head h2 { font-family:var(--font-serif); font-size:clamp(1.7rem,4.5vw,2.4rem); color:#1A1916; font-weight:500; }
@@ -827,7 +825,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
             <h2 className="cst-q-title">{t.questions[q.id]?.title || q.title}</h2>
             {(t.questions[q.id]?.sub || q.sub) && <p className="cst-q-sub">{t.questions[q.id]?.sub || q.sub}</p>}
 
-            <div className={`cst-opts${q.cols ? ' cols-2' : ''}`}>
+            <div className={`cst-opts${q.cols ? ' cols-2' : ''}${q.options.length === 5 ? ' tool-options--five' : ''}`}>
               {q.options.map(opt => {
                 const isSelected = q.multi
                   ? (answers[q.id] || []).includes(opt.value)
@@ -982,7 +980,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
             })()}
 
             {/* FINAL CTA / EMAIL */}
-            <div className="cst-final-cta">
+            <div className="cst-final-cta tool-save-panel">
               <span className="cst-eyebrow-sm" style={{ color:'#D4B068', display:'block', marginBottom:'10px' }}>{t.results.email.eyebrow}</span>
               <h2>{t.results.email.h2}</h2>
               <p>{t.results.email.p}</p>

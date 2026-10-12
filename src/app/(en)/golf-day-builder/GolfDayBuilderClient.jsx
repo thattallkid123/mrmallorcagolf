@@ -380,7 +380,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         .gdb-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
         .gdb-h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
         .gdb-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
-        .gdb-wrap { max-width:680px; margin:0 auto; padding:0 22px 90px; }
+        .gdb-wrap { max-width:800px; margin:0 auto; padding:0 22px 90px; }
         /* Intro */
         .gdb-intro { text-align:center; padding-top:40px; }
         .gdb-lead { font-size:1rem; max-width:440px; margin:0 auto 30px; color:#2C2A27; line-height:1.85; }
@@ -504,7 +504,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
               <h2>{q.title}</h2>
               {q.sub && <p className="sub">{q.sub}</p>}
               {q.multi && <div className="gdb-multi-note">{t.quiz.selectAny}</div>}
-              <div className="gdb-opts">
+              <div className={`gdb-opts${q.opts.length === 5 ? ' tool-options--five' : ''}`}>
                 {q.opts.map(o => (
                   <button
                     key={o.v}
@@ -605,7 +605,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
 
             <p className="gdb-estimate-note">{t.results.estimate}</p>
 
-            <div className="gdb-cta-block">
+            <div className="gdb-cta-block tool-save-panel">
               <span className="eyebrow">{t.cta.eyebrow}</span>
               <h3>{t.cta.title}</h3>
               <p className="gdb-cta-copy">{t.cta.copy}</p>
@@ -655,13 +655,16 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
                   </div>
                 )}
 
-                <div style={{ borderTop:'1px solid rgba(255,255,255,.14)', margin:'6px 0 2px' }} />
-                <p style={{ fontFamily:'var(--font-sans)', fontSize:'.82rem', color:'rgba(255,255,255,.7)', margin:'2px 0 4px', lineHeight:'1.6' }}>{t.cta.footer}</p>
-                <p style={{ fontFamily:'var(--font-sans)', fontSize:'.72rem', color:'rgba(255,255,255,.5)', margin:'0 0 4px' }}><a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
+                <p className="tool-save-privacy"><a href={getLegalPath('privacy-policy', lang)}>{getPrivacyLinkLabel(lang)}</a></p>
+              </div>
+            </div>
+            <div className="gdb-booking-panel">
+              <p>{t.cta.footer}</p>
+              <div className="gdb-cta-grid">
                 <button className="gdb-btn-gold" onClick={() => window.open(`https://www.mrmallorcagolf.com${buildLocalePath('/plan-your-trip', lang)}`, '_blank', 'noopener')}>{t.cta.askAndy}</button>
-                <button className="gdb-btn-pine" style={{ borderRadius:'2px' }} onClick={() => window.open('https://www.mrmallorcagolf.com/play-with-a-pro', '_blank', 'noopener')}>{t.cta.explorePro}</button>
+                <button className="gdb-btn-pine" style={{ borderRadius:'2px' }} onClick={() => window.open(`https://www.mrmallorcagolf.com${buildLocalePath('/play-with-a-pro', lang)}`, '_blank', 'noopener')}>{t.cta.explorePro}</button>
                 <div className="gdb-cta-secondary">
-                  <button className="gdb-btn-secondary" onClick={() => { trackDayWhatsApp(); window.open(WA_DAY_HREF, '_blank', 'noopener') }}>{t.cta.whatsapp}</button>
+                  <button className="gdb-btn-secondary tool-whatsapp-link" onClick={() => { trackDayWhatsApp(); window.open(WA_DAY_HREF, '_blank', 'noopener') }}>{t.cta.whatsapp}</button>
                 </div>
               </div>
             </div>

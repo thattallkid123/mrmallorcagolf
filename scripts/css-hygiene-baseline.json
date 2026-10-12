@@ -5,7 +5,7 @@
     "src/app/(en)/contact/ContactFormPanel.jsx": 8,
     "src/app/(en)/golf-courses/GolfCoursesClient.jsx": 1,
     "src/app/(en)/golf-courses/GolfCoursesView.jsx": 6,
-    "src/app/(en)/golf-day-builder/GolfDayBuilderClient.jsx": 11,
+    "src/app/(en)/golf-day-builder/GolfDayBuilderClient.jsx": 8,
     "src/app/(en)/golf-trip-calculator/GolfTripCalculatorClient.jsx": 1,
     "src/app/(en)/guides/GuideArticleView.jsx": 6,
     "src/app/(en)/guides/GuidesHeroAnchors.jsx": 1,

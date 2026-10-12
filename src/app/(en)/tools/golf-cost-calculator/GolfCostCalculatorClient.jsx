@@ -571,7 +571,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                 </div>
               </div>
 
-              <div className="gcc-cta-box">
+              <div className="gcc-cta-box tool-save-panel">
                 <h3>{t.email.title}</h3>
                 <p>{t.email.sub}</p>
 
