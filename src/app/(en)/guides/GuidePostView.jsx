@@ -80,10 +80,12 @@ function FunnelCtaBlock({ locale, courseName }) {
   )
 }
 
+// ratingValue is on the 1-5 scale (bestRating 5 below). The reviews state Andy's rating out of 10:
+// halve it (9/10 = 5, 8/10 = 4, 7/10 = 3.5). check:review-schema fails on a value outside 1-5.
 const COURSE_REVIEW_DETAILS = {
   'son-vida-review': {
     name: 'Golf Son Vida',
-    ratingValue: 7,
+    ratingValue: 3.5, // Andy's 7/10 on the 1-5 scale; was 7, which Search Console flagged as out of range (2026-10-12)
     addressLocality: 'Son Vida',
   },
   'son-quint-review': {

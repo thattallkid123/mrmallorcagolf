@@ -72,6 +72,7 @@ const CHECKS = [
   { name: 'check:guide-review-keywords', script: 'check-guide-review-keywords.js' },
   { name: 'check:guide-surfaces', script: 'check-guide-surfaces.mjs' },
   { name: 'check:course-facts-reviewed', script: 'check-course-facts-reviewed.mjs' },
+  { name: 'check:review-schema', script: 'check-review-schema.mjs' },
   { name: 'check:hotel-reference', script: 'export-hotel-reference.mjs', args: ['--check'] },
 ]
 

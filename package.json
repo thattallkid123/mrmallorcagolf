@@ -53,6 +53,7 @@
     "check:discovery": "node --no-warnings scripts/sync-discovery.mjs --check",
     "check:guide-surfaces": "node --no-warnings scripts/check-guide-surfaces.mjs",
     "check:course-facts-reviewed": "node --no-warnings scripts/check-course-facts-reviewed.mjs",
+    "check:review-schema": "node --no-warnings scripts/check-review-schema.mjs",
     "check:meta-length": "node --no-warnings scripts/check-meta-length.mjs",
     "check:css-hygiene": "node --no-warnings scripts/check-css-hygiene.mjs",
     "sync:discovery": "node --no-warnings scripts/sync-discovery.mjs",
