@@ -5843,7 +5843,7 @@ div.tool-options--five > button:nth-child(n) { flex: 0 1 calc((100% - 24px) / 3)
 .tool-whatsapp-link { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm, 10px); min-height: 48px; padding: var(--space-sm, 14px) var(--space-md, 20px); border: 1px solid var(--pine); border-radius: 2px; background: transparent; color: var(--pine); font-family: var(--font-sans); font-size: .8rem; font-weight: 500; letter-spacing: .08em; text-decoration: none; text-align: center; cursor: pointer; }
 .tool-whatsapp-link:hover { background: var(--pine-pale); }
 .tool-whatsapp-link:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
-.tool-save-panel.tool-save-panel { background: var(--pine); color: var(--cream); border-radius: 2px; padding: var(--space-xl, 40px) var(--space-md, 24px); text-align: center; box-shadow: none; }
+.tool-save-panel.tool-save-panel.tool-save-panel { background: var(--pine); color: var(--cream); border-radius: 2px; padding: var(--space-xl, 40px) var(--space-md, 24px); text-align: center; box-shadow: none; }
 .tool-save-panel.tool-save-panel h2, .tool-save-panel.tool-save-panel h3 { color: var(--cream); }
 .tool-save-panel.tool-save-panel > p { color: rgba(247,244,239,.8); }
 .tool-save-panel.tool-save-panel input[type=email] { background: var(--cream); color: var(--charcoal); border: 1px solid var(--stone); border-radius: 2px; min-height: 48px; }
@@ -5853,8 +5853,8 @@ div.tool-options--five > button:nth-child(n) { flex: 0 1 calc((100% - 24px) / 3)
 .tool-save-privacy a { color: inherit; }
 .gdb-booking-panel { background: var(--white); border: 1px solid var(--sand); padding: var(--space-xl, 36px) var(--space-md, 24px); margin-top: var(--space-md, 20px); text-align: center; }
 .gdb-booking-panel > p { max-width: 470px; margin: 0 auto var(--space-md, 24px); color: var(--charcoal); line-height: 1.7; }
-.gdb-booking-panel .gdb-cta-secondary .tool-whatsapp-link { border-color: var(--pine); color: var(--pine); font-size: .8rem; }
-.gdb-booking-panel .gdb-cta-secondary .tool-whatsapp-link:hover { color: var(--pine); background: var(--pine-pale); }
+.gdb-booking-panel .gdb-cta-secondary button.gdb-btn-secondary.tool-whatsapp-link { border-color: var(--pine); color: var(--pine); font-size: .8rem; }
+.gdb-booking-panel .gdb-cta-secondary button.gdb-btn-secondary.tool-whatsapp-link:hover { color: var(--pine); background: var(--pine-pale); }
 
 .tool-whatsapp-link--dark { border-color: var(--stone); color: var(--cream); }
 .tool-whatsapp-link--dark:hover { background: var(--pine-mid); }
