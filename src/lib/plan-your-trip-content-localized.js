@@ -157,7 +157,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "points": [
           {
             "title": "El día de llegada se mantiene fácil",
-            "body": "Después de un vuelo y la cola del coche de alquiler, la primera vuelta debería ser cercana, abierta y tranquila, con una hora de salida a primera hora de la tarde y no al amanecer. Nadie necesita la tarjeta más dura de la semana el primer día."
+            "body": "Después de un vuelo y la cola del coche de alquiler, la primera vuelta debería ser cercana, abierta y tranquila, con salida a primera hora de la tarde y no al amanecer. Nadie necesita la tarjeta más dura de la semana el primer día."
           },
           {
             "title": "La dificultad sube a mitad de semana",
@@ -679,7 +679,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Eindig kort en dicht bij de luchthaven",
-            "body": "Bij de laatste ronde moet de rit naar de luchthaven eenvoudig blijven. T Golf Calvià ligt ongeveer 25 minuten van de luchthaven aan de snelweg, dus de groep hoeft op de terugweg niet over het eiland te rijden, en een kleine vertraging mag de lunch kosten, niet de vlucht."
+            "body": "Bij de laatste ronde moet de rit naar de luchthaven eenvoudig blijven. T Golf Calvià ligt via de snelweg ongeveer 25 minuten van de luchthaven, dus de groep hoeft op de terugweg niet over het eiland te rijden, en een kleine vertraging mag de lunch kosten, niet de vlucht."
           }
         ]
       },
@@ -849,7 +849,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Avsluta kort och nära flygplatsen",
-            "body": "Sista rundan ska ge en enkel resa till flygplatsen. T Golf Calvià ligger cirka 25 minuter från flygplatsen på motorvägen, så gruppen behöver inte åka över ön på hemvägen, och en liten försening får kosta lunchen, inte flyget."
+            "body": "Sista rundan ska ge en enkel resa till flygplatsen. T Golf Calvià ligger cirka 25 minuter från flygplatsen via motorvägen, så gruppen behöver inte åka över ön på hemvägen, och en liten försening får kosta lunchen, inte flyget."
           }
         ]
       },

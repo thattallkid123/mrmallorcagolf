@@ -295,11 +295,11 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Cómo se reserva?",
-          "a": "Envíe una consulta con sus fechas, el tamaño del grupo y el rango de hándicap, y le responderé personalmente en 24 horas. Si aún está decidiendo los campos, el buscador de campos le da primero una preselección."
+          "a": "Envíe una consulta con sus fechas, el tamaño del grupo y el rango de hándicap, y le responderé personalmente en 24 horas. Si aún no ha decidido los campos, el buscador de campos le da primero una preselección."
         },
         {
           "q": "¿Sirve para grupos?",
-          "a": "Sí. Play With A Pro cubre hasta 3 jugadores con una tarifa diaria. Para un grupo más grande, lo que mejor encaja es la planificación del viaje: yo elijo los campos y reservo las horas de salida, y Play With A Pro se puede añadir en una de las vueltas si quiere que juegue con hasta 3 de ustedes. Va bien para viajes de amigos y, de vez en cuando, para un grupo de empresa."
+          "a": "Sí. Play With A Pro cubre hasta 3 jugadores con una sola tarifa diaria. Para un grupo más grande, lo que mejor encaja es la planificación del viaje: yo elijo los campos y reservo las horas de salida, y Play With A Pro se puede añadir en una de las vueltas si quiere que juegue con hasta 3 de ustedes. Va bien para viajes de amigos y, de vez en cuando, para un grupo de empresa."
         },
         {
           "q": "¿Cuál es la mejor época del año?",
@@ -317,7 +317,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "eyebrow": "¿Listo para planificar su viaje?",
-      "title": "Cuénteme el viaje que quiere. Yo armo el plan en torno a él.",
+      "title": "Cuénteme el viaje que quiere. Yo preparo el plan a partir de ahí.",
       "body": "Empiece con sus fechas, el tamaño del grupo, el rango de hándicap, el presupuesto y el tipo de golf que quiere. Le ayudaré a convertirlo en un plan de golf para Mallorca que funcione sobre el terreno.",
       "quote": "El campo adecuado en el día adecuado vale más que un nombre famoso en el horario equivocado.",
       "primaryCta": "Planifique su viaje"
@@ -623,11 +623,11 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Wie buche ich?",
-          "a": "Schicken Sie eine Anfrage mit Ihren Daten, der Gruppengröße und der Handicap-Spanne, und ich melde mich persönlich innerhalb von 24 Stunden. Wenn Sie noch bei der Platzwahl sind, gibt Ihnen der Platzfinder vorab eine Auswahl."
+          "a": "Schicken Sie eine Anfrage mit Ihren Reisedaten, der Gruppengröße und der Handicap-Spanne, und ich melde mich persönlich innerhalb von 24 Stunden. Wenn Sie sich bei den Plätzen noch nicht entschieden haben, gibt Ihnen der Platzfinder vorab eine Auswahl."
         },
         {
           "q": "Ist das für Gruppen geeignet?",
-          "a": "Ja. Play With A Pro gilt für bis zu 3 Spieler zu einem Tagessatz. Für eine größere Gruppe passt die Reiseplanung besser: Ich wähle die Plätze aus und buche die Startzeiten, und Play With A Pro lässt sich für eine der Runden dazubuchen, wenn Sie mich an der Seite von bis zu 3 Personen aus Ihrer Gruppe wünschen. Es passt zu Freundesreisen und gelegentlich zu einer Firmengruppe."
+          "a": "Ja. Play With A Pro gilt für bis zu 3 Spieler zu einem Tagessatz. Für eine größere Gruppe passt die Reiseplanung besser: Ich wähle die Plätze aus und buche die Startzeiten, und Play With A Pro lässt sich für eine der Runden dazubuchen, wenn bis zu 3 Personen aus Ihrer Gruppe mit mir spielen möchten. Das passt für Reisen unter Freunden und hin und wieder für eine Firmengruppe."
         },
         {
           "q": "Wann ist die beste Jahreszeit?",
@@ -918,7 +918,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Itinéraire et nombre de tours pensés selon votre planning",
             "Buggies et location de clubs organisés par mes soins",
             "Hôtel, transferts et restaurants planifiés avec mon partenaire de voyage local, qui les réserve directement",
-            "Un seul plan, et moi comme point de contact pour tout"
+            "Un seul plan, avec moi comme point de contact pour tout"
           ],
           "note": "Frais de gestion de 5 %, uniquement sur les green fees. Confirmé après votre premier échange.",
           "cta": "Planifiez votre voyage",
@@ -974,7 +974,7 @@ export const HOME_LOCALIZED_CONTENT = {
     "finalCta": {
       "quote": "Le bon parcours le bon jour vaut mieux qu'un nom célèbre au mauvais créneau.",
       "eyebrow": "Prêt à planifier votre séjour ?",
-      "title": "Dites-moi le séjour que vous voulez. Je construis le plan autour.",
+      "title": "Dites-moi le séjour que vous voulez. Je construis le plan à partir de là.",
       "body": "Commencez par vos dates, la taille du groupe, votre fourchette de handicap, votre budget et le type de golf que vous souhaitez. Je vous aiderai à en faire un plan de golf pour Majorque qui fonctionne sur le terrain.",
       "primaryCta": "Planifiez votre voyage"
     },
@@ -1279,7 +1279,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Hoe boek ik?",
-          "a": "Stuur een aanvraag met uw data, groepsgrootte en handicapbereik, dan kom ik binnen 24 uur persoonlijk bij u terug. Twijfelt u nog over de banen, dan geeft de Baanzoeker u eerst een voorselectie."
+          "a": "Stuur een aanvraag met uw reisdata, groepsgrootte en handicapbereik, dan kom ik binnen 24 uur persoonlijk bij u terug. Twijfelt u nog over de banen, dan geeft de Baanzoeker u eerst een voorselectie."
         },
         {
           "q": "Is dit geschikt voor groepen?",
@@ -1572,7 +1572,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Inga appar eller webbplatser att leta i - tee times ordnas åt dig",
             "Banor valda efter grupp, nivå och budget",
             "Rutt och antal rundor planerade efter ditt schema",
-            "Golfbil och hyrklubbor ordnade av mig",
+            "Golfbilar och hyrklubbor ordnade av mig",
             "Hotell, transfers och restauranger planerade med min lokala resepartner, som bokar dem direkt",
             "En plan, med mig som din kontaktperson för allt"
           ],
@@ -1611,7 +1611,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "q": "Passar det här grupper?",
-          "a": "Ja. Play With A Pro gäller upp till 3 spelare på ett dagspris. För en större grupp passar reseplanering bättre: jag väljer banorna och bokar starttiderna, och Play With A Pro kan läggas till för en av rundorna om du vill ha mig vid sidan av upp till 3 av er. Det passar vänresor och ibland en företagsgrupp."
+          "a": "Ja. Play With A Pro gäller upp till 3 spelare på ett dagspris. För en större grupp passar reseplanering bättre: jag väljer banorna och bokar starttiderna, och Play With A Pro kan läggas till för en av rundorna om du vill att jag spelar med upp till 3 av er. Det passar resor med vänner och ibland en företagsgrupp."
         },
         {
           "q": "När är bästa tiden på året?",
@@ -1908,7 +1908,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "根据您的团队、水平和预算挑选球场",
             "按您的行程安排路线和打球轮次",
             "球车和租杆由我来安排",
-            "酒店、接送和餐厅由我与本地旅行合作伙伴一起规划，由合作伙伴直接预订",
+            "酒店、接送和餐厅由我和本地旅行合作伙伴一起规划，并由合作伙伴直接预订",
             "一份计划，由我作为您的唯一联系人负责全部事项"
           ],
           "note": "管理费仅按果岭费的 5% 收取。第一次沟通后确认。",

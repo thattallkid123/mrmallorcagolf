@@ -92,6 +92,7 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 
 - Swedish copy is written with "du", but "ert samtal" (ni form) slipped in. Use "vårt samtal" / "ditt".
 - Spanish pages use usted: watch for "quieres", "tu" in page and form copy (fine in reviews).
+- Spanish guides use tú in the singular. Vosotros forms ("si aterrizáis") slipped into a guide written to a group: use "si aterrizas".
 - German: "drumherum" is too casual for Sie copy; use "darum herum" or "rund um".
 
 ### 5. Words that look right but are not the local word
@@ -100,6 +101,9 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 - Swedish "Fin middag" for "fine dining": use "finare restauranger" or "finare matupplevelse".
 - Chinese "一个夜生活之夜" for "a night out": use 夜间外出.
 - Accented words that are also valid without the accent (sv saker/säker, fr ou/où, joue/joué, es esta/está): no word list catches these; read them.
+- Swedish "vid sidan av" for "alongside you": in "om du vill ha mig vid sidan av upp till 3 av er" it reads as "besides / apart from", which changes the meaning. Say what happens: "om du vill att jag spelar med upp till 3 av er".
+- German "Ihre Daten" for "your dates" reads as "your data" (it is the privacy-policy word). Use "Reisedaten" or "Termine". Dutch "uw data" is correct but "reisdata" is clearer.
+- "About 25 minutes from the airport on the motorway" means by motorway: nl "via de snelweg", sv "via motorvägen", not "aan de snelweg" / "på motorvägen" (located on it).
 
 ### 6. Stiff or literal phrasing
 
@@ -134,6 +138,7 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 - French: a space before ? ! : ; and « guillemets » around quoted labels; apostrophes as ’.
 - German quotation marks „…“; Dutch ‘…’ for quoted labels.
 - Chinese: full-width punctuation （），。？！：, no space between Chinese characters, a space either side of a Latin name or number (在 Son Gual 打球, 约 1 小时).
+- List items after a label ("Best tee time: early afternoon …") continue the label, so they start in lower case in every language, as the English does. German nouns keep their capital, but "Auf dem Papier …" after "Gut zu wissen:" should be "auf dem Papier …".
 
 ## Checklist before a translation ships
 

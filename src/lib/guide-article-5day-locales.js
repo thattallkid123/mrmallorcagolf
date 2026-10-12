@@ -158,7 +158,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Gut zu wissen:",
-            "text": "Auf dem Papier verlangen alle Plätze dieser Route einen Handicap-Nachweis, auch wenn nicht jeder Club ihn kontrolliert. Son Gual und T Golf Calvià setzen die Grenze für Herren bei 28, Alcanada bei 33. Bringen Sie Ihren Nachweis also mit."
+            "text": "auf dem Papier verlangen alle Plätze dieser Route einen Handicap-Nachweis, auch wenn nicht jeder Club ihn kontrolliert. Son Gual und T Golf Calvià setzen die Grenze für Herren bei 28, Alcanada bei 33. Bringen Sie Ihren Nachweis also mit."
           },
           {
             "label": "Abendessen-Tipp:",
@@ -236,7 +236,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Wo der Luxus-Teil hineinpasst"
       },
       {
-        "text": "Das Golf ist das Rückgrat der Reise. Rund um das Golf können Sie einen Abend mit Privatkoch, ein langes Abendessen in Palma, einen Weinbergbesuch, Spa-Zeit, eine Küstenfahrt durch die Tramuntana oder einen ruhigen Nachmittag zwischen den härteren Runden einbauen. Ich würde das dort einplanen, wo es dem Rhythmus der Woche hilft. Wenn Sie einen Ruhetag möchten, würde ich ihn nach Son Gual legen, vor die lange Fahrt in den Norden. Der Zug nach Sóller, ein halber Tag auf einem Boot oder eine Weinprobe bei Bodega Ribas passen dort gut hinein, und weitere Möglichkeiten finden Sie unter <a href=\"/plan-your-trip#trip-ideas\">Ideen für die Reise</a>. Das alles bucht mein lokaler Reisepartner direkt."
+        "text": "Das Golf ist das Rückgrat der Reise. Darum herum können Sie einen Abend mit Privatkoch, ein langes Abendessen in Palma, einen Weinbergbesuch, Spa-Zeit, eine Küstenfahrt durch die Tramuntana oder einen ruhigen Nachmittag zwischen den härteren Runden einbauen. Ich würde das dort einplanen, wo es dem Rhythmus der Woche hilft. Wenn Sie einen Ruhetag möchten, würde ich ihn nach Son Gual legen, vor die lange Fahrt in den Norden. Der Zug nach Sóller, ein halber Tag auf einem Boot oder eine Weinprobe bei Bodega Ribas passen dort gut hinein, und weitere Möglichkeiten finden Sie unter <a href=\"/plan-your-trip#trip-ideas\">Ideen für die Reise</a>. Das alles bucht mein lokaler Reisepartner direkt."
       },
       {
         "alt": "Gehobenes Essen in Palma während einer Golfreise auf Mallorca",
@@ -359,7 +359,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Mejor hora de salida:",
-            "text": "primera hora de la tarde el día de llegada, para que nadie tenga que salir corriendo del aeropuerto. Si aterrizáis la noche anterior, a media mañana va bien."
+            "text": "primera hora de la tarde el día de llegada, para que nadie tenga que salir corriendo del aeropuerto. Si aterrizas la noche anterior, a media mañana va bien."
           },
           {
             "label": "Idea para cenar:",
@@ -510,7 +510,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Dónde encaja la parte de lujo"
       },
       {
-        "text": "El golf es la columna vertebral del viaje. A su alrededor puedes añadir una noche con chef privado, una cena larga en Palma, una visita a una bodega, tiempo de spa, un recorrido costero por la Tramuntana o una tarde tranquila entre las rondas más duras. Los añadiría donde ayuden al ritmo de la semana. Si quieres un día de descanso, lo pondría después de Son Gual, antes del largo trayecto al norte. El tren de Sóller, medio día en barco o una cata en Bodega Ribas encajan ahí, y hay más en las <a href=\"/plan-your-trip#trip-ideas\">ideas para el viaje</a>. Mi socio de viajes local reserva todo eso directamente."
+        "text": "El golf es la columna vertebral del viaje. A su alrededor puedes añadir una noche con chef privado, una cena larga en Palma, una visita a una bodega, tiempo de spa, un recorrido costero por la Tramuntana o una tarde tranquila entre las vueltas más duras. Los añadiría donde ayuden al ritmo de la semana. Si quieres un día de descanso, lo pondría después de Son Gual, antes del largo trayecto al norte. El tren de Sóller, medio día en barco o una cata en Bodega Ribas encajan ahí, y hay más en las <a href=\"/plan-your-trip#trip-ideas\">ideas para el viaje</a>. Mi socio de viajes local reserva todo eso directamente."
       },
       {
         "alt": "Cena de alto nivel en Palma durante un viaje de golf a Mallorca",
@@ -633,7 +633,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
           },
           {
             "label": "Meilleur horaire de départ :",
-            "text": "début d'après-midi le jour d'arrivée, pour que personne ne coure depuis l'aéroport. Si vous atterrissez la veille au soir, le milieu de matinée convient très bien."
+            "text": "début d'après-midi le jour d'arrivée, pour que personne n'ait à se presser en sortant de l'aéroport. Si vous atterrissez la veille au soir, le milieu de matinée convient très bien."
           },
           {
             "label": "Idée de dîner :",
