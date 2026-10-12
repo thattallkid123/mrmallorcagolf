@@ -1,5 +1,8 @@
 'use client'
 
+import ToolPhoto from '../../../../components/ToolPhoto'
+import { planningImageText } from '../../../../lib/planning-image-labels'
+
 import { useRef, useState } from 'react'
 import { getCanonicalCourseDataByName } from '@lib/course-catalog'
 import { resolveCourseAccessName } from '@lib/course-access-data'
@@ -877,7 +880,8 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
 
             {topCourses.map(loc).map((c, i) => (
               <div key={c.id} className="cst-course-card">
-                <div className="cst-cc-banner" style={COURSE_IMGS[c.id] ? { backgroundImage: `linear-gradient(120deg, rgba(26,25,22,0.82), rgba(45,74,62,0.75)), url(${COURSE_IMGS[c.id]})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}>
+                <ToolPhoto src={COURSE_IMGS[c.id]} alt={planningImageText('course', lang, c.displayName || c.name)} />
+                <div className="cst-cc-banner">
                   <div className="cst-cc-rank">{t.results.ranks[i]}</div>
                   <h3>{c.displayName || c.name}</h3>
                   <div className="cst-cc-match-line">{personalMatchLine(c, i, answers, t)}</div>

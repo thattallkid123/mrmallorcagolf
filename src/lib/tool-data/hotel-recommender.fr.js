@@ -154,14 +154,14 @@ const data = {
   "melia-calvia-beach": {
    "pills": [
     "Resort en bord de mer",
-    "Santa Ponsa",
-    "Golf à proximité"
+    "Magaluf",
+    "Golf dans le sud-ouest"
    ],
-   "why": "Grand resort de plage en plein Santa Ponsa, à quelques pas du Golf Santa Ponsa 1. De bons équipements pour les grands groupes qui veulent la plage et plusieurs parcours.",
-   "andy": "Les parcours de Santa Ponsa sont tout autour. Le Golf Santa Ponsa 1 est à 10 minutes à pied. Une base solide pour un groupe, sans le prix d'un boutique-hôtel.",
-   "golf": "Golf Santa Ponsa 1 à pied. Golf Santa Ponsa 2 et 3 à proximité. T Golf Calvià 15 min. Golf de Andratx 20 min.",
-   "travelTime": "25 min de l'aéroport de Palma",
-   "subname": "Santa Ponsa"
+   "why": "Resort quatre étoiles sur la plage de Magaluf, avec piscines et spa. Un séjour dans le sud-ouest pour les groupes qui souhaitent profiter de la plage entre les parties de golf.",
+   "andy": "Je le choisirais pour un séjour dans le sud-ouest. Prévoyez des trajets vers les parcours plutôt que de marcher jusqu’à Santa Ponsa.",
+   "golf": "T Golf Calvià, Real Golf de Bendinat et Golf Santa Ponsa 1.",
+   "travelTime": "Transfert depuis l’aéroport vers Magaluf",
+   "subname": "Magaluf"
   },
   "barcelo-illetas": {
    "pills": [
@@ -213,36 +213,24 @@ const data = {
   },
   "hipotels-flamenco": {
    "pills": [
-    "Resort en bord de mer",
-    "Paguera",
-    "Économique"
+    "En bord de mer",
+    "Cala Millor",
+    "Golf sur la côte est"
    ],
-   "why": "Trois étoiles fiable sur la plage de Paguera. L'une des options de plage les plus abordables du Sud-Ouest, avec Golf de Andratx à 15 minutes et Santa Ponsa à 20.",
-   "andy": "Sans fioritures, bien situé pour le golf. La plage et la piscine font le travail pour les non-golfeurs du groupe.",
-   "golf": "Golf de Andratx 15 min. T Golf Calvià 20 min. Golf Santa Ponsa 1 environ 20 min.",
-   "travelTime": "28 min de l'aéroport de Palma",
-   "subname": "Paguera"
-  },
-  "cala-vinyes": {
-   "pills": [
-    "Crique tranquille",
-    "Gamme intermédiaire",
-    "Golf de Andratx à proximité"
-   ],
-   "why": "Petit hôtel au-dessus d'une crique tranquille à Cala Vinyes. Moins fréquenté que Paguera ou Santa Ponsa, avec le Golf de Andratx à 10 minutes. Un coin plus calme du Sud-Ouest.",
-   "andy": "Bien pour les couples qui veulent une base plus tranquille que les grands resorts du Sud-Ouest. La crique est l'une des plus jolies du secteur.",
-   "golf": "Golf de Andratx 10 min. T Golf Calvià 18 min. Golf Santa Ponsa 1 environ 20 min.",
-   "travelTime": "28 min de l'aéroport de Palma",
-   "subname": "Cala Vinyes"
+   "why": "Hôtel quatre étoiles sur la plage de Cala Millor. Une option sur la côte est pour les groupes qui combinent golf et plage.",
+   "andy": "En séjournant ici, je garderais les parties de golf dans l’est. Palma et le sud-ouest impliquent des trajets plus longs.",
+   "golf": "Son Servera, Pula, Canyamel et Capdepera.",
+   "travelTime": "Transfert depuis l’aéroport vers Cala Millor",
+   "subname": "Cala Millor"
   },
   "riu-bonanza": {
    "pills": [
-    "Formule tout compris possible",
-    "Plage d'Illetas",
+    "En bord de mer",
+    "Illetas",
     "Spa"
    ],
-   "why": "Quatre étoiles RIU sur le front de mer d'Illetas. Formule tout compris possible, spa complet et l'une des meilleures positions de plage du secteur. Golf de Bendinat à 10 minutes.",
-   "andy": "Une option pratique pour les grands groupes si certains joueurs veulent le tout compris et d'autres se déplacent vers les parcours chaque jour.",
+   "why": "Hôtel quatre étoiles en bord de mer à Illetas, avec spa et piscine intérieure.",
+   "andy": "Une option pour un séjour dans le sud-ouest avec accès à Palma. Vérifiez la formule de repas en choisissant les chambres.",
    "golf": "Real Golf de Bendinat 10 min. T Golf Calvià 15 min. Son Vida 18 min.",
    "travelTime": "12 min de l'aéroport de Palma",
    "subname": "Illetas"
@@ -295,18 +283,6 @@ const data = {
    "travelTime": "50 min de l'aéroport de Palma",
    "subname": "Port de Pollença"
   },
-  "can-cuarassa": {
-   "pills": [
-    "Boutique",
-    "Jardins privés",
-    "En bord de plage"
-   ],
-   "why": "Petit boutique-hôtel avec des jardins privés qui descendent jusqu'à la plage de Port de Pollença. De belles chambres, une atmosphère tranquille et une bonne scène gastronomique à proximité.",
-   "andy": "Un cran au-dessus de l'Illa d'Or pour le caractère. Alcanada à 20 minutes, la vieille ville de Pollença à 10. Une base vraiment détendue dans le nord.",
-   "golf": "Club de Golf Alcanada 20 min. Golf Pollença 8 min.",
-   "travelTime": "50 min de l'aéroport de Palma",
-   "subname": "Port de Pollença"
-  },
   "hotel-sis-pins": {
    "pills": [
     "Petit budget",
@@ -343,18 +319,6 @@ const data = {
    "travelTime": "50 min de l'aéroport de Palma",
    "subname": "Secteur Pollença / Alcúdia",
    "name": "Villa de luxe, Nord de Majorque"
-  },
-  "bocchoris": {
-   "pills": [
-    "En bord de promenade",
-    "Petit budget",
-    "Classique"
-   ],
-   "why": "Hôtel simple et propre directement sur la promenade de Port de Pollença. Le meilleur rapport qualité-prix de la baie. Alcanada à 20 minutes, la vieille ville de Pollença à 10.",
-   "andy": "Rien de spectaculaire, tout est pratique. La promenade est ravissante le soir. Bonne option pour les groupes qui surveillent les coûts.",
-   "golf": "Club de Golf Alcanada 20 min. Golf Pollença 10 min.",
-   "travelTime": "50 min de l'aéroport de Palma",
-   "subname": "Port de Pollença"
   },
   "la-goleta": {
    "pills": [
@@ -479,18 +443,6 @@ const data = {
    "travelTime": "60 min de l'aéroport de Palma",
    "subname": "Capdepera"
   },
-  "hotel-cala-ratjada": {
-   "pills": [
-    "Resort en bord de mer",
-    "Cala Ratjada",
-    "Gamme intermédiaire"
-   ],
-   "why": "Hôtel solide de gamme intermédiaire dans le village de pêcheurs de Cala Ratjada, l'une des localités les plus pleines de caractère de la côte est. Capdepera Golf à 10 minutes, bons restaurants de poisson sur le port.",
-   "andy": "Cala Ratjada a une vraie atmosphère de bourg qui manque aux grandes zones de resorts. Promenades le soir le long du port, bons bars locaux. Le golf ne domine pas tout.",
-   "golf": "Capdepera Golf 10 min. Canyamel Golf 15 min. Club de Golf Pula 20 min.",
-   "travelTime": "62 min de l'aéroport de Palma",
-   "subname": "Cala Ratjada"
-  },
   "protur-biomar": {
    "pills": [
     "Grand resort",
@@ -603,11 +555,11 @@ const data = {
   },
   "innside-palma": {
    "pills": [
-    "Quatre étoiles moderne",
-    "Vue sur la baie",
-    "Bon rapport qualité-prix"
+    "Hôtel quatre étoiles",
+    "Piscine sur le toit",
+    "Centre de Palma"
    ],
-   "why": "Quatre étoiles moderne avec vue sur la baie et une bonne situation centrale à Palma. Rien au-delà de l'essentiel, mais bien placé en prix et pratique pour les groupes qui veulent une base en ville sans les tarifs d'un boutique-hôtel.",
+   "why": "Hôtel quatre étoiles près de la vieille ville de Palma, avec piscine sur le toit et espace bien-être. Une base en ville pour les restaurants et les soirées entre les parties de golf.",
    "andy": "Une base palmesane sans chichis. Bien pour les groupes d'entreprise. Son Gual à 20 minutes pour les parties.",
    "golf": "Son Gual 20 min. T Golf Palma (Puntiró) 18 min. Son Vida / Son Quint 15 min.",
    "travelTime": "15 min de l'aéroport de Palma",
@@ -783,6 +735,18 @@ const data = {
    "golf": "Prévoyez le golf comme une excursion d'une journée depuis Port de Sóller. Le meilleur choix de parcours dépend de la direction de la journée : Palma, Sud-Ouest ou nord.",
    "travelTime": "45 min de l'aéroport de Palma",
    "subname": "Port de Sóller"
+  },
+  "cap-vermell": {
+   "subname": "Vallée de Canyamel",
+   "pills": [
+    "Spa",
+    "Piscines",
+    "Golf sur la côte est"
+   ],
+   "why": "Un resort dans la vallée de Canyamel avec des piscines et un spa. Canyamel, Capdepera, Pula et Son Servera permettent de combiner les parcours de la côte est.",
+   "andy": "Je le choisirais pour un séjour basé dans l’est. Les parties près de Palma et dans le sud-ouest impliquent des trajets plus longs.",
+   "golf": "Canyamel, Capdepera, Pula et Son Servera.",
+   "travelTime": "Transfert depuis l’aéroport vers Canyamel"
   }
  },
  "questions": {

@@ -154,14 +154,14 @@ const data = {
   "melia-calvia-beach": {
    "pills": [
     "Strandresort",
-    "Santa Ponsa",
-    "Golf nära"
+    "Magaluf",
+    "Golf i sydväst"
    ],
-   "why": "Stort strandresort mitt i Santa Ponsa, en kort promenad från Golf Santa Ponsa 1. Bra faciliteter för större grupper som vill ha strand och flera banor.",
-   "andy": "Banorna vid Santa Ponsa ligger runt omkring. Golf Santa Ponsa 1 är en promenad på 10 minuter. En stabil gruppbas utan boutiquepris.",
-   "golf": "Golf Santa Ponsa 1 på gångavstånd. Golf Santa Ponsa 2 och 3 i närheten. T Golf Calvià 15 min. Golf de Andratx 20 min.",
-   "travelTime": "25 min från Palmas flygplats",
-   "subname": "Santa Ponsa"
+   "why": "Fyrstjärnig resort vid Magalufstranden, med pooler och spa. Ett boende i sydväst för grupper som vill ha tid på stranden mellan golfrundorna.",
+   "andy": "Jag skulle välja det för en resa i sydväst. Ordna transport till banorna i stället för att planera att gå till Santa Ponsa.",
+   "golf": "T Golf Calvià, Real Golf de Bendinat och Golf Santa Ponsa 1.",
+   "travelTime": "Transfer från flygplatsen till Magaluf",
+   "subname": "Magaluf"
   },
   "barcelo-illetas": {
    "pills": [
@@ -213,36 +213,24 @@ const data = {
   },
   "hipotels-flamenco": {
    "pills": [
-    "Strandresort",
-    "Paguera",
-    "Budget"
+    "Vid stranden",
+    "Cala Millor",
+    "Golf på östkusten"
    ],
-   "why": "Pålitligt trestjärnigt hotell vid Pagueras strand. Ett av de mer prisvärda strandalternativen i sydväst, med Golf de Andratx 15 minuter bort och Santa Ponsa 20.",
-   "andy": "Utan krusiduller, bra läge för golf. Strand och pool gör jobbet för icke-golfarna i gruppen.",
-   "golf": "Golf de Andratx 15 min. T Golf Calvià 20 min. Golf Santa Ponsa 1 ca 20 min.",
-   "travelTime": "28 min från Palmas flygplats",
-   "subname": "Paguera"
-  },
-  "cala-vinyes": {
-   "pills": [
-    "Lugn vik",
-    "Mellanklass",
-    "Golf de Andratx nära"
-   ],
-   "why": "Litet hotell ovanför en lugn vik i Cala Vinyes. Mindre trångt än Paguera eller Santa Ponsa, och Golf de Andratx är 10 minuter bort. Ett lugnare hörn av sydväst.",
-   "andy": "Bra för par som vill ha en lugnare bas än de stora resorterna i sydväst. Viken är en av de finaste i området.",
-   "golf": "Golf de Andratx 10 min. T Golf Calvià 18 min. Golf Santa Ponsa 1 ca 20 min.",
-   "travelTime": "28 min från Palmas flygplats",
-   "subname": "Cala Vinyes"
+   "why": "Fyrstjärnigt hotell vid Cala Millor-stranden. Ett alternativ på östkusten för grupper som kombinerar golf med strandtid.",
+   "andy": "Om du bor här skulle jag hålla golfrundorna i öst. Palma och sydväst innebär längre bilresor.",
+   "golf": "Son Servera, Pula, Canyamel och Capdepera.",
+   "travelTime": "Transfer från flygplatsen till Cala Millor",
+   "subname": "Cala Millor"
   },
   "riu-bonanza": {
    "pills": [
-    "Allt-inkluderat som alternativ",
-    "Illetas strand",
+    "Vid havet",
+    "Illetas",
     "Spa"
    ],
-   "why": "Fyrstjärnigt RIU-hotell vid strandpromenaden i Illetas. Allt-inkluderat som alternativ, fullt spa och ett av de bästa strandlägena i området. Golf i Bendinat 10 minuter bort.",
-   "andy": "Ett praktiskt alternativ för stora grupper om några spelare vill ha allt-inkluderat och andra kör till banorna varje dag.",
+   "why": "Fyrstjärnigt hotell vid havet i Illetas, med spa och inomhuspool.",
+   "andy": "Ett alternativ för ett boende i sydväst med tillgång till Palma. Kontrollera måltidsalternativet när du väljer rum.",
    "golf": "Real Golf de Bendinat 10 min. T Golf Calvià 15 min. Son Vida 18 min.",
    "travelTime": "12 min från Palmas flygplats",
    "subname": "Illetas"
@@ -295,18 +283,6 @@ const data = {
    "travelTime": "50 min från Palmas flygplats",
    "subname": "Port de Pollença"
   },
-  "can-cuarassa": {
-   "pills": [
-    "Boutique",
-    "Privata trädgårdar",
-    "Direkt vid stranden"
-   ],
-   "why": "Litet boutiquehotell med privata trädgårdar som sträcker sig ner till stranden i Port de Pollença. Bra rum, lugn atmosfär, en stark matscen i närheten.",
-   "andy": "Ett steg upp från Illa d'Or när det gäller karaktär. Alcanada 20 minuter, Pollença gamla stan 10. En genuint avslappnad bas i norr.",
-   "golf": "Club de Golf Alcanada 20 min. Golf Pollença 8 min.",
-   "travelTime": "50 min från Palmas flygplats",
-   "subname": "Port de Pollença"
-  },
   "hotel-sis-pins": {
    "pills": [
     "Prisvärt",
@@ -343,18 +319,6 @@ const data = {
    "travelTime": "50 min från Palmas flygplats",
    "subname": "Området Pollença / Alcúdia",
    "name": "Lyxvilla, norra Mallorca"
-  },
-  "bocchoris": {
-   "pills": [
-    "Läge vid strandpromenaden",
-    "Prisvärt",
-    "Klassiskt"
-   ],
-   "why": "Enkelt, rent hotell precis vid strandpromenaden i Port de Pollença. Bäst värde vid viken. Alcanada 20 minuter, Pollença gamla stan 10.",
-   "andy": "Inget märkvärdigt, allt praktiskt. Promenaden är underbar på kvällarna. Bra alternativ för grupper som håller koll på kostnaderna.",
-   "golf": "Club de Golf Alcanada 20 min. Golf Pollença 10 min.",
-   "travelTime": "50 min från Palmas flygplats",
-   "subname": "Port de Pollença"
   },
   "la-goleta": {
    "pills": [
@@ -479,18 +443,6 @@ const data = {
    "travelTime": "60 min från Palmas flygplats",
    "subname": "Capdepera"
   },
-  "hotel-cala-ratjada": {
-   "pills": [
-    "Strandresort",
-    "Cala Ratjada",
-    "Mellanklass"
-   ],
-   "why": "Stabilt hotell i mellanklassen i fiskestaden Cala Ratjada, en av östkustens mest karaktärsfulla städer. Capdepera Golf 10 minuter, bra fiskrestauranger vid hamnen.",
-   "andy": "Cala Ratjada har en äkta stadskänsla som de större resortområdena saknar. Kvällspromenader längs hamnen, bra lokala barer. Golfen dominerar inte allt.",
-   "golf": "Capdepera Golf 10 min. Canyamel Golf 15 min. Club de Golf Pula 20 min.",
-   "travelTime": "62 min från Palmas flygplats",
-   "subname": "Cala Ratjada"
-  },
   "protur-biomar": {
    "pills": [
     "Stort resort",
@@ -603,11 +555,11 @@ const data = {
   },
   "innside-palma": {
    "pills": [
-    "Modernt fyrstjärnigt",
-    "Utsikt över viken",
-    "Bra värde"
+    "Fyrstjärnigt hotell",
+    "Takpool",
+    "Centrala Palma"
    ],
-   "why": "Modernt fyrstjärnigt hotell med utsikt över viken och ett bra centralt läge i Palma. Inga extra finesser utöver grunderna, men prisvärt och praktiskt för grupper som vill ha en stadsbas utan boutiquepriser.",
+   "why": "Fyrstjärnigt hotell nära Palmas gamla stad, med takpool och wellnessavdelning. En bas i staden för restauranger och kvällar ute mellan golfrundorna.",
    "andy": "En rakt på sak-bas i Palma. Bra för företagsgrupper. Son Gual 20 minuter för rundorna.",
    "golf": "Son Gual 20 min. T Golf Palma (Puntiró) 18 min. Son Vida / Son Quint 15 min.",
    "travelTime": "15 min från Palmas flygplats",
@@ -783,6 +735,18 @@ const data = {
    "golf": "Planera golf som en dagsutflykt från Port de Sóller. Det bästa banvalet beror på om dagen går mot Palma, sydväst eller norr.",
    "travelTime": "45 min från Palmas flygplats",
    "subname": "Port de Sóller"
+  },
+  "cap-vermell": {
+   "subname": "Canyameldalen",
+   "pills": [
+    "Spa",
+    "Pooler",
+    "Golf på östkusten"
+   ],
+   "why": "En resort i Canyameldalen med pooler och spa. Canyamel, Capdepera, Pula och Son Servera ger en kombination av banor på östkusten.",
+   "andy": "Jag skulle välja den för en resa med bas i öster. Rundor nära Palma och i sydväst innebär längre bilresor.",
+   "golf": "Canyamel, Capdepera, Pula och Son Servera.",
+   "travelTime": "Flygplatstransfer till Canyamel"
   }
  },
  "questions": {

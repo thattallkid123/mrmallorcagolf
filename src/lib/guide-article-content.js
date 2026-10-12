@@ -223,6 +223,14 @@ export const GUIDE_ARTICLE_CONTENT = {
         text:
           'This is a good base when the golf is part of a wider holiday, because the drives stay sensible and the non-golf parts of the trip still work. The trade-off is that Alcanada becomes a long day and the east of the island starts to feel detached from the plan.',
       },
+      {
+        "type": "image",
+        "src": "/trip-preferences-assets/card-area-southwest.webp",
+        "alt": "Port Adriano marina in southwest Mallorca",
+        "presentation": "natural",
+        "naturalWidth": 800,
+        "naturalHeight": 533
+      },
       { type: 'heading', text: 'North Mallorca: choose it for Alcanada, not by accident' },
       {
         type: 'paragraph',
@@ -252,6 +260,14 @@ export const GUIDE_ARTICLE_CONTENT = {
         type: 'paragraph',
         text:
           'I would not base a first-time, high-end golf trip in the east if the group mostly wants Son Gual, Alcanada and the southwest. Too many drives start to dictate the week.',
+      },
+      {
+        "type": "image",
+        "src": "/images/areas/canyamel-beach.webp",
+        "alt": "Canyamel beach on the east coast of Mallorca",
+        "presentation": "natural",
+        "naturalWidth": 1200,
+        "naturalHeight": 675
       },
       { type: 'heading', text: 'What about staying at a golf resort?' },
       {

@@ -153,15 +153,15 @@ const data = {
   },
   "melia-calvia-beach": {
    "pills": [
-    "海滩度假村",
-    "Santa Ponsa",
-    "靠近球场"
+    "海滨度假酒店",
+    "Magaluf",
+    "西南部高尔夫"
    ],
-   "why": "位于 Santa Ponsa 中心的大型海滩度假村，步行即可到 Golf Santa Ponsa 1。适合想要海滩和多座球场的大团队，设施齐全。",
-   "andy": "Santa Ponsa 的球场就在周围。步行 10 分钟即到 Golf Santa Ponsa 1。不需要精品酒店价格的可靠团队基地。",
-   "golf": "Golf Santa Ponsa 1 步行可达。Golf Santa Ponsa 2 和 3 就在附近。T Golf Calvià 15 分钟。Golf de Andratx 20 分钟。",
-   "travelTime": "距帕尔马机场 25 分钟",
-   "subname": "Santa Ponsa"
+   "why": "位于 Magaluf 海滩的四星级度假酒店，设有泳池和水疗中心。适合以西南部为住宿区域、想在打球之余享受海滩的同行团体。",
+   "andy": "我会为西南部行程选择这里。前往球场需要安排交通，不宜计划步行到 Santa Ponsa。",
+   "golf": "T Golf Calvià, Real Golf de Bendinat 和 Golf Santa Ponsa 1.",
+   "travelTime": "机场至 Magaluf 的接送",
+   "subname": "Magaluf"
   },
   "barcelo-illetas": {
    "pills": [
@@ -213,36 +213,24 @@ const data = {
   },
   "hipotels-flamenco": {
    "pills": [
-    "海滩度假村",
-    "帕格拉",
-    "经济型"
+    "海滨酒店",
+    "Cala Millor",
+    "东海岸高尔夫"
    ],
-   "why": "位于帕格拉海滩的可靠三星酒店。西南部较实惠的海滩选择之一，到 Golf de Andratx 15 分钟，到 Santa Ponsa 20 分钟。",
-   "andy": "没有多余装饰，高尔夫位置好。海滩和泳池能满足团队里不打球的人。",
-   "golf": "Golf de Andratx 15 分钟。T Golf Calvià 20 分钟。Golf Santa Ponsa 1 约 20 分钟。",
-   "travelTime": "距帕尔马机场 28 分钟",
-   "subname": "Paguera"
-  },
-  "cala-vinyes": {
-   "pills": [
-    "安静海湾",
-    "中档",
-    "靠近Golf de Andratx"
-   ],
-   "why": "Cala Vinyes 安静海湾上方的小酒店。比帕格拉或 Santa Ponsa 人少，到 Golf de Andratx 10 分钟。西南部较平静的一角。",
-   "andy": "适合想要比西南部大型度假村更安静基地的情侣。这个海湾是这一带最美的之一。",
-   "golf": "Golf de Andratx 10 分钟。T Golf Calvià 18 分钟。Golf Santa Ponsa 1 约 20 分钟。",
-   "travelTime": "距帕尔马机场 28 分钟",
-   "subname": "Cala Vinyes"
+   "why": "位于 Cala Millor 海滩的四星级酒店。适合将高尔夫与海滩时间结合的同行团体，作为东海岸住宿选择。",
+   "andy": "住在这里，我会把打球安排在东部。前往帕尔马和西南部需要更长的车程。",
+   "golf": "Son Servera, Pula, Canyamel 和 Capdepera.",
+   "travelTime": "机场至 Cala Millor 的接送",
+   "subname": "Cala Millor"
   },
   "riu-bonanza": {
    "pills": [
-    "可选全包",
-    "伊列塔斯海滩",
+    "海滨",
+    "Illetas",
     "水疗"
    ],
-   "why": "位于 Illetas 海滨的 RIU 四星酒店。可选全包，设有完整水疗，海滩位置是这一带最好的之一。到 Bendinat 球场 10 分钟。",
-   "andy": "适合大团队的实用选择：有人想要全包，有人每天开车去球场。",
+   "why": "位于 Illetas 海滨的四星级酒店，设有水疗中心和室内泳池。",
+   "andy": "适合作为西南部的住宿地点，同时方便前往帕尔马。选择房间时请确认包含的餐饮安排。",
    "golf": "Real Golf de Bendinat 10 分钟。T Golf Calvià 15 分钟。Son Vida 18 分钟。",
    "travelTime": "距帕尔马机场 12 分钟",
    "subname": "Illetas"
@@ -295,18 +283,6 @@ const data = {
    "travelTime": "距帕尔马机场 50 分钟",
    "subname": "Port de Pollença"
   },
-  "can-cuarassa": {
-   "pills": [
-    "精品酒店",
-    "私人花园",
-    "海滩前"
-   ],
-   "why": "小型精品酒店，私人花园一直延伸到 Port de Pollença 的海滩。客房不错，氛围安静，附近餐饮丰富。",
-   "andy": "在个性上比 Illa d'Or 高一档。到 Alcanada 20 分钟，到波连萨老城 10 分钟。真正放松的北部基地。",
-   "golf": "Club de Golf Alcanada 20 分钟。Golf Pollença 8 分钟。",
-   "travelTime": "距帕尔马机场 50 分钟",
-   "subname": "Port de Pollença"
-  },
   "hotel-sis-pins": {
    "pills": [
     "经济实惠",
@@ -343,18 +319,6 @@ const data = {
    "travelTime": "距帕尔马机场 50 分钟",
    "subname": "波连萨 / Alcúdia一带",
    "name": "奢华别墅，马略卡北部"
-  },
-  "bocchoris": {
-   "pills": [
-    "海滨步道旁",
-    "经济实惠",
-    "经典"
-   ],
-   "why": "位于 Port de Pollença 海滨步道上的简单、干净的酒店。海湾边性价比最高。到 Alcanada 20 分钟，到波连萨老城 10 分钟。",
-   "andy": "没有花哨，一切实用。晚上的海滨步道很美。适合在意费用的团队。",
-   "golf": "Club de Golf Alcanada 20 分钟。Golf Pollença 10 分钟。",
-   "travelTime": "距帕尔马机场 50 分钟",
-   "subname": "Port de Pollença"
   },
   "la-goleta": {
    "pills": [
@@ -479,18 +443,6 @@ const data = {
    "travelTime": "距帕尔马机场 60 分钟",
    "subname": "Capdepera"
   },
-  "hotel-cala-ratjada": {
-   "pills": [
-    "海滩度假村",
-    "Cala Ratjada",
-    "中档"
-   ],
-   "why": "位于渔镇 Cala Ratjada 的稳妥中档酒店，这是东海岸最有个性的小镇之一。到 Capdepera Golf 10 分钟，港口有不错的海鲜餐厅。",
-   "andy": "Cala Ratjada 有真正的小镇感，是大型度假区所缺少的。晚上沿港口散步，本地酒吧不错。高尔夫并不主导一切。",
-   "golf": "Capdepera Golf 10 分钟。Canyamel Golf 15 分钟。Club de Golf Pula 20 分钟。",
-   "travelTime": "距帕尔马机场 62 分钟",
-   "subname": "Cala Ratjada"
-  },
   "protur-biomar": {
    "pills": [
     "大型度假村",
@@ -603,11 +555,11 @@ const data = {
   },
   "innside-palma": {
    "pills": [
-    "现代四星",
-    "海湾景观",
-    "性价比高"
+    "四星级酒店",
+    "屋顶泳池",
+    "帕尔马市中心"
    ],
-   "why": "现代四星酒店，海湾景观，位于帕尔马中心。除基本设施外没有多余的，但价格合理，适合想要城市基地又不想支付精品酒店价格的团队。",
+   "why": "位于帕尔马老城附近的四星级酒店，设有屋顶泳池和康体区。适合以市区为基地，在打球之余享用餐厅和晚间活动。",
    "andy": "帕尔马务实的基地。适合企业团队。到 Son Gual 20 分钟，打球很方便。",
    "golf": "Son Gual 20 分钟。T Golf Palma (Puntiró) 18 分钟。Son Vida / Son Quint 15 分钟。",
    "travelTime": "距帕尔马机场 15 分钟",
@@ -783,6 +735,18 @@ const data = {
    "golf": "请把打球安排为从 Port de Sóller 出发的一日游。最佳球场取决于当天是朝帕尔马、西南部还是北部。",
    "travelTime": "距帕尔马机场 45 分钟",
    "subname": "Port de Sóller"
+  },
+  "cap-vermell": {
+   "subname": "Canyamel 山谷",
+   "pills": [
+    "水疗",
+    "泳池",
+    "东海岸高尔夫"
+   ],
+   "why": "位于 Canyamel 山谷的度假酒店，设有泳池和水疗中心。Canyamel、Capdepera、Pula 和 Son Servera 可组成东海岸的球场安排。",
+   "andy": "我会把它用于以东部为大本营的行程。如果要去帕尔马附近或西南部打球，车程会更长。",
+   "golf": "Canyamel、Capdepera、Pula 和 Son Servera。",
+   "travelTime": "从机场接送至 Canyamel"
   }
  },
  "questions": {

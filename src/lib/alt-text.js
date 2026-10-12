@@ -2,6 +2,8 @@
 // Keyed by the exact English string; a missing entry falls back to the English alt and is caught by
 // check:rendered-english (the alt/aria ratchet), so an edited English alt cannot drift silently.
 export const ALT_TEXT = {
+  "Port Adriano marina in southwest Mallorca": {"de":"Der Yachthafen Port Adriano im Südwesten Mallorcas","es":"Puerto deportivo de Port Adriano en el suroeste de Mallorca","fr":"La marina de Port Adriano dans le sud-ouest de Majorque","nl":"De jachthaven Port Adriano in het zuidwesten van Mallorca","sv":"Port Adriano marina på sydvästra Mallorca","zh":"马略卡西南部的 Port Adriano 码头"},
+  "Canyamel beach on the east coast of Mallorca": {"de":"Der Strand von Canyamel an der Ostküste Mallorcas","es":"Playa de Canyamel en la costa este de Mallorca","fr":"La plage de Canyamel sur la côte est de Majorque","nl":"Het strand van Canyamel aan de oostkust van Mallorca","sv":"Canyamelstranden på Mallorcas östkust","zh":"马略卡东海岸的 Canyamel 海滩"},
   "Andy with Amanda at T Golf Calvia during a Play With A Pro day": {
     "de": "Andy mit Amanda in T Golf Calvià bei einem Play-With-A-Pro-Tag",
     "es": "Andy con Amanda en T Golf Calvià durante un día Play With A Pro",

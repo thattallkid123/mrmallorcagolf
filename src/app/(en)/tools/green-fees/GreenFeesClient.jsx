@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from 'react'
 import Link from 'next/link'
+import ToolPhoto from '../../../../components/ToolPhoto'
+import { planningImageText } from '../../../../lib/planning-image-labels'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
 import { getCourseAccessByName } from '../../../../lib/course-access-data'
@@ -235,6 +237,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
       byName[c.name] = {
         ...c,
         location: listing?.location || c.area,
+        image: listing?.img || null,
         par: scorecard?.par ?? null,
         diffScore: listing?.diffScore ?? null,
       }
@@ -557,6 +560,10 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
                     </tr>
                   </thead>
                   <tbody>
+                    <tr className="gf-compare__photos">
+                      <td className="gf-compare__label" aria-hidden="true" />
+                      {compared.map((c, i) => <td key={`photo-${i}`}><ToolPhoto src={c.image} alt={planningImageText('course', lang, displayCourseName(c.name))} sizes="(max-width: 768px) 320px, 465px" /></td>)}
+                    </tr>
                     {compareRows.map((row) => (
                       <tr key={row.label}>
                         <td className="gf-compare__label">{row.label}</td>

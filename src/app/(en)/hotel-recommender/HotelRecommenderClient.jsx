@@ -1,6 +1,9 @@
 'use client'
 
 import { useRef, useState } from 'react'
+import ToolPhoto from '../../../components/ToolPhoto'
+import { getHotelPhoto, getHotelChoicePhoto } from '../../../lib/hotel-images'
+import { planningImageText } from '../../../lib/planning-image-labels'
 import ToolTrustLine from '../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
 import { getHotelRecommenderT } from '../../../lib/hotel-recommender-translations'
@@ -281,16 +284,25 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
             <h2>{currentQ.title}</h2>
             <p className="hr-step-sub">{currentQ.sub}</p>
 
-            <div className={currentQ.grid ? 'hr-options-grid' : 'hr-options'}>
+            <div className={['area', 'style'].includes(currentQ.key) ? 'hr-options hr-options--photos' : currentQ.grid ? 'hr-options-grid' : 'hr-options'}>
               {currentQ.opts.map(opt => (
                 <button
                   key={opt.val}
-                  className={`hr-opt${(Array.isArray(answers[currentQ.key]) ? answers[currentQ.key].includes(opt.val) : answers[currentQ.key] === opt.val) ? ' selected' : ''}`}
+                  className={`hr-opt${['area', 'style'].includes(currentQ.key) ? ' hr-opt--photo' : ''}${(Array.isArray(answers[currentQ.key]) ? answers[currentQ.key].includes(opt.val) : answers[currentQ.key] === opt.val) ? ' selected' : ''}`}
+                  aria-pressed={Array.isArray(answers[currentQ.key]) ? answers[currentQ.key].includes(opt.val) : answers[currentQ.key] === opt.val}
                   onClick={() => selectAnswer(currentQ.key, opt.val)}
                 >
+                  {['area', 'style'].includes(currentQ.key) && (() => {
+                    const photo = getHotelChoicePhoto(currentQ.key, opt.val)
+                    return photo ? <ToolPhoto src={photo.image} alt={planningImageText(photo.kind, lang, photo.name)} sizes="(max-width: 540px) 100vw, 300px" /> : null
+                  })()}
                   <div className="hr-opt-body">
                     <div className="hr-opt-label">{opt.label}</div>
                     {opt.desc && <div className="hr-opt-desc">{opt.desc}</div>}
+                    {currentQ.key === 'style' && (() => {
+                      const photo = getHotelChoicePhoto('style', opt.val)
+                      return photo ? <span className="hr-photo-caption">{photo.kind === 'villa' ? planningImageText('villa', lang) : planningImageText('example', lang, photo.name)}</span> : null
+                    })()}
                   </div>
                 </button>
               ))}
@@ -334,11 +346,14 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
             ) : (
               results.map((x, i) => {
                 const h = localizeHotel(x.hotel, localData)
+                const photo = getHotelPhoto(h)
                 const rankLabels = t.results.rankLabels
                 const typeLabel = h.type === 'villa' ? (t.villaLabel || 'Private villa') : (t.tierLabels[h.luxury] || '')
                 return (
                   <div key={h.id} className={`hr-hotel-card${i === 0 ? ' top' : ''}`}>
                     <div className={`hr-card-rank${i === 0 ? ' gold' : ''}`}>{rankLabels[i]}</div>
+                    <ToolPhoto src={photo.image} alt={planningImageText(photo.kind, lang, photo.kind === 'area' ? t.areaLabels[h.area] : h.name)} />
+                    {photo.kind !== 'property' && <p className="hr-photo-caption hr-photo-caption--result">{planningImageText(photo.kind === 'villa' ? 'villaNote' : 'areaNote', lang)}</p>}
                     <div className="hr-card-body">
                       <div className="hr-card-meta">
                         <span className="hr-card-area">{t.areaShort[h.area] || h.area}</span>

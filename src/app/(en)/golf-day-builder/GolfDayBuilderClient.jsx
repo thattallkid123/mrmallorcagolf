@@ -1,5 +1,8 @@
 'use client'
 
+import ToolPhoto from '../../../components/ToolPhoto'
+import { planningImageText } from '../../../lib/planning-image-labels'
+
 import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
@@ -565,7 +568,8 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
 
             {itins.map((it, i) => (
               <div key={i} className={`gdb-itin${activeItin === i ? ' active' : ''}`}>
-                <div className="gdb-course-card" style={COURSE_IMGS[it.course.id] ? { backgroundImage: `linear-gradient(165deg, rgba(45,74,62,0.88) 0%, rgba(26,25,22,0.92) 120%), url(${COURSE_IMGS[it.course.id]})`, backgroundSize: 'cover', backgroundPosition: 'center' } : undefined}>
+                <ToolPhoto src={COURSE_IMGS[it.course.id]} alt={planningImageText('course', lang, displayCourseName(it.course.name, localData))} />
+                <div className="gdb-course-card">
                   <span className="tag">{it.name}</span>
                   <h3>{displayCourseName(it.course.name, localData)}</h3>
                   <div className="where">{t.timeline.aroundMin} {it.drive} {t.timeline.minFrom}</div>

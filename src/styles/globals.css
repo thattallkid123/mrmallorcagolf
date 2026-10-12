@@ -5809,3 +5809,20 @@ select.form-control { cursor: pointer; }
   .signature-dining-grid { gap: 7px; }
   .signature-extras { grid-template-columns: 1fr; }
 }
+
+/* Planning-tool photography: separate media from practical details. */
+.tool-photo { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: var(--linen); }
+.tool-photo__image { object-fit: cover; }
+div.hr-options.hr-options--photos { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); align-items: stretch; }
+button.hr-opt.hr-opt--photo { display: block; padding: 0; overflow: hidden; min-height: 0; }
+.hr-opt--photo .hr-opt-body { padding: var(--space-md, 20px); }
+.hr-photo-caption { display: block; margin-top: var(--space-sm, 12px); color: var(--taupe); font-size: .72rem; line-height: 1.5; font-weight: 300; }
+.hr-photo-caption--result { padding-inline: var(--space-md, 20px); }
+.gf .gf-compare__table thead th:nth-child(n) { width: auto; top: 0; }
+.gf .gf-compare__table thead th:first-child { width: 130px; }
+.gf .gf-compare__photos td { padding: 0; vertical-align: top; }
+.gf-compare__photos .tool-photo { min-width: 190px; }
+.tool-card { display: grid; grid-template-columns: 1fr auto; column-gap: var(--space-sm, 16px); }
+.tool-card > :not(.tool-photo) { grid-column: 1; }
+.tool-card .tool-photo--directory { grid-column: 2; grid-row: 1 / span 3; width: clamp(68px, 8vw, 104px); align-self: start; aspect-ratio: 1; border-radius: 2px; }
+.tool-card .tool-card__footer { grid-column: 1 / -1; align-self: end; }

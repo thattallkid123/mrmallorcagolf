@@ -1,5 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import ToolPhoto from './ToolPhoto'
+import { toolDirectoryPhoto } from '../lib/hotel-images'
 import PageLayout from './PageLayout'
 import ReviewBadge from './ReviewBadge'
 import { SITE_ORIGIN, buildLocalePath } from '../lib/site'
@@ -101,6 +103,7 @@ export default function ToolsIndexView({ locale = 'en', heroImage = null }) {
               href={tool.href}
               className={`tool-card${isZh ? ' tool-card--zh' : ''}`}
             >
+              <ToolPhoto src={toolDirectoryPhoto(tool.href)} alt="" className="tool-photo--directory" sizes="128px" />
               <span className="tool-card__eyebrow">{tool.eyebrow}</span>
               <h2 className="tool-card__title">{tool.title}</h2>
               <p className="tool-card__desc">{tool.desc}</p>

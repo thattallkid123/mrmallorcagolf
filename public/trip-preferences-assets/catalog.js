@@ -97,7 +97,9 @@ window.MMGTripCatalog = {
       "note": "Good for keeping the group together after golf. Ask me about a private chef so everyone can enjoy dinner without organising it.",
       "image": "card-stay-villa.webp",
       "photoType": "illustrative",
-      "alt": "Villa pool looking over the Mallorca countryside"
+      "alt": "Villa Jade pool at Cap Vermell Estate in Mallorca",
+      "source": "https://www.capvermellestate.com/en/villas/",
+      "photoLabel": "Style example: Villa Jade, Cap Vermell Estate"
     }
   ],
   "dinners": [
