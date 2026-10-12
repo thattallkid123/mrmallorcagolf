@@ -9,7 +9,7 @@ const AREAS = {
 }
 const VILLA = { image: '/trip-preferences-assets/card-stay-villa.webp', kind: 'villa' }
 const STYLES = {
-  boutique: { image: '/images/hotels/born-hotel.webp', name: 'Hotel Born', kind: 'property' },
+  boutique: { image: '/images/hotels/born-hotel-courtyard.webp', name: 'Hotel Born', kind: 'property' },
   resort: { image: '/images/trip-ideas/stay-golf.webp', name: 'Cap Vermell Grand Hotel', kind: 'property' },
   classic: { image: '/images/trip-ideas/stay-city.webp', name: 'Hotel Saratoga', kind: 'property' },
   villa: VILLA,
