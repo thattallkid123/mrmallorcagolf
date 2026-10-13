@@ -5957,3 +5957,5 @@ div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(200px, calc((100% 
 .tool-empty-result__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-5); }
 .tool-empty-result button { font-family: var(--font-sans); }
 .tool-empty-result a { display: inline-block; color: var(--pine); margin-left: var(--space-3); text-underline-offset: 4px; }
+.tool-empty-result .tool-empty-result__actions button.hr-btn-retry { background: var(--white); color: var(--pine); border: 1px solid var(--pine); margin-top: 0; }
+.tool-empty-result .tool-empty-result__actions button.hr-btn-retry:hover { background: var(--pine); color: var(--white); border-color: var(--pine); }
