@@ -155,7 +155,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Synøve"
       },
       {
-        "text": "I visited Mallorca with my wife and we spent two brilliant days with Andy. He gave us some easy tips to put in to action on the golf course straight away and taught us how to think our way around 18 holes much better. It was very cool to watch Andy play too! Would recommend Andy for anyone looking to upgrade their golfing experience while on the island. We will be booking for next year.",
+        "text": "I visited Mallorca with my wife and we spent two brilliant days with Andy. He gave us some easy tips to put into action on the golf course straight away and taught us how to think our way around 18 holes much better. It was very cool to watch Andy play too! Would recommend Andy for anyone looking to upgrade their golfing experience while on the island. We will be booking for next year.",
         "author": "Sam"
       },
       {

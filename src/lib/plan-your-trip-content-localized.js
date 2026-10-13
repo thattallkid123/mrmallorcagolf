@@ -146,7 +146,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "text": "Visité Mallorca con mi esposa y pasamos dos días magníficos con Andy. Nos dio algunos consejos sencillos para poner en práctica en el campo de inmediato y nos enseñó a pensar mucho mejor cómo afrontar los 18 hoyos. ¡Fue genial ver jugar a Andy también! Recomiendo a Andy a cualquiera que quiera mejorar su experiencia de golf en la isla. Reservaremos para el año que viene."
           },
           {
-            "text": "Hace poco pasé dos días con Andy en Mallorca y tuve el placer de jugar dos vueltas con él en Santa Ponsa 1 y Alcanada. Recomiendo muchísimo pasar un día completo (o más) con Andy: ¡tiene una sabiduría que ofrecer que va mucho más allá del golf! Gracias de nuevo, Andy — ¡volveré a por más!"
+            "text": "Hace poco pasé dos días con Andy en Mallorca y tuve el placer de jugar dos vueltas con él en Santa Ponsa 1 y Alcanada. Recomiendo muchísimo pasar un día completo (o más) con Andy: ¡tiene una sabiduría que ofrecer que va mucho más allá del golf! Gracias de nuevo, Andy. ¡Volveré a por más!"
           },
           {
             "text": "Mr Mallorca Golf valió totalmente la pena. Reservé una vuelta con Andy y fue un anfitrión excelente. Me dio consejos de golf buenísimos y me corrigió el slice, que llevaba años siendo un problema en mi juego. Además, fue una compañía estupenda. Lo recomiendo a cualquiera que quiera reservar un viaje de golf en Mallorca."
@@ -337,7 +337,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "text": "Ich war mit meiner Frau auf Mallorca, und wir haben zwei großartige Tage mit Andy verbracht. Er gab uns einfache Tipps, die wir sofort auf dem Platz umsetzen konnten, und hat uns beigebracht, die 18 Löcher viel klüger anzugehen. Es war richtig toll, Andy auch spielen zu sehen! Ich würde Andy jedem empfehlen, der sein Golferlebnis auf der Insel aufwerten möchte. Wir werden für nächstes Jahr buchen."
           },
           {
-            "text": "Ich habe kürzlich zwei Tage mit Andy auf Mallorca verbracht und hatte das Vergnügen, zwei Runden mit ihm in Santa Ponsa 1 und Alcanada zu spielen. Ich empfehle uneingeschränkt, einen ganzen Tag (oder mehr) mit Andy zu verbringen: Er hat eine Weisheit zu vermitteln, die weit über das Golfspiel hinausgeht! Nochmals danke, Andy — ich komme bestimmt wieder!"
+            "text": "Ich habe kürzlich zwei Tage mit Andy auf Mallorca verbracht und hatte das Vergnügen, zwei Runden mit ihm in Santa Ponsa 1 und Alcanada zu spielen. Ich empfehle uneingeschränkt, einen ganzen Tag (oder mehr) mit Andy zu verbringen: Er hat eine Weisheit zu vermitteln, die weit über das Golfspiel hinausgeht! Nochmals danke, Andy. Ich komme bestimmt wieder!"
           },
           {
             "text": "Mr Mallorca Golf hat sich absolut gelohnt. Ich habe eine Runde mit Andy gebucht, und er war ein hervorragender Gastgeber. Er hat mir großartige Golftipps gegeben und meinen Slice korrigiert, der seit Jahren ein Problem in meinem Spiel war. Außerdem war er richtig angenehme Gesellschaft. Ich würde ihn jedem empfehlen, der eine Golfreise nach Mallorca buchen möchte."
@@ -528,7 +528,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "text": "Je suis venu à Majorque avec ma femme et nous avons passé deux jours formidables avec Andy. Il nous a donné quelques conseils simples à appliquer tout de suite sur le parcours et nous a appris à réfléchir beaucoup mieux à notre façon de jouer les 18 trous. C'était vraiment sympa de voir Andy jouer aussi ! Je recommande Andy à tous ceux qui veulent améliorer leur expérience du golf sur l'île. Nous réserverons pour l'année prochaine."
           },
           {
-            "text": "J'ai récemment passé deux jours avec Andy à Majorque et j'ai eu le plaisir de faire deux parties avec lui à Santa Ponsa 1 et à Alcanada. Je recommande vivement de passer une journée complète (ou plus) avec Andy : il a une sagesse à transmettre qui va bien au-delà du golf ! Merci encore, Andy — je reviendrai, j'en redemande !"
+            "text": "J'ai récemment passé deux jours avec Andy à Majorque et j'ai eu le plaisir de faire deux parties avec lui à Santa Ponsa 1 et à Alcanada. Je recommande vivement de passer une journée complète (ou plus) avec Andy : il a une sagesse à transmettre qui va bien au-delà du golf ! Merci encore, Andy. Je reviendrai, j'en redemande !"
           },
           {
             "text": "Mr Mallorca Golf valait vraiment le coup. J'ai réservé une partie avec Andy et il a été un excellent hôte. Il m'a donné des conseils de golf formidables et a corrigé mon slice, qui était un problème dans mon jeu depuis des années. En plus, il a été d'excellente compagnie. Je le recommande à quiconque souhaite réserver un séjour de golf à Majorque."
@@ -719,7 +719,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "text": "Ik bezocht Mallorca met mijn vrouw en we brachten twee geweldige dagen door met Andy. Hij gaf ons een paar eenvoudige tips die we meteen op de baan konden toepassen en leerde ons veel beter na te denken over hoe we 18 holes spelen. Het was ook erg gaaf om Andy te zien spelen! Ik zou Andy aanbevelen aan iedereen die zijn golfervaring op het eiland wil verbeteren. We gaan voor volgend jaar boeken."
           },
           {
-            "text": "Ik heb onlangs twee dagen met Andy doorgebracht op Mallorca en had het genoegen twee rondes met hem te spelen op Santa Ponsa 1 en Alcanada. Ik raad het ten zeerste aan om een hele dag (of meer) met Andy door te brengen: hij heeft wijsheid te delen die veel verder gaat dan het golfspel! Nogmaals bedankt, Andy — ik kom zeker nog eens terug!"
+            "text": "Ik heb onlangs twee dagen met Andy doorgebracht op Mallorca en had het genoegen twee rondes met hem te spelen op Santa Ponsa 1 en Alcanada. Ik raad het ten zeerste aan om een hele dag (of meer) met Andy door te brengen: hij heeft wijsheid te delen die veel verder gaat dan het golfspel! Nogmaals bedankt, Andy. Ik kom zeker nog eens terug!"
           },
           {
             "text": "Mr Mallorca Golf was absoluut de moeite waard. Ik boekte een ronde met Andy en hij was een uitstekende gastheer. Hij gaf me geweldige golftips en haalde mijn slice eruit, die al jaren een probleem in mijn spel was. Daarnaast was hij prettig gezelschap. Ik zou hem aanraden aan iedereen die een golfreis naar Mallorca wil boeken."
@@ -910,7 +910,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "text": "Jag besökte Mallorca med min fru och vi tillbringade två fantastiska dagar med Andy. Han gav oss några enkla tips som vi kunde använda på banan direkt och lärde oss att spela 18 hål mycket klokare. Det var riktigt häftigt att se Andy spela också! Jag rekommenderar Andy till alla som vill lyfta sin golfupplevelse på ön. Vi kommer att boka för nästa år."
           },
           {
-            "text": "Jag tillbringade nyligen två dagar med Andy på Mallorca och hade nöjet att spela två rundor med honom på Santa Ponsa 1 och Alcanada. Jag rekommenderar varmt att spendera en hel dag (eller mer) med Andy: han delar med sig av en visdom som sträcker sig långt bortom golfen! Tack igen, Andy — jag kommer garanterat tillbaka!"
+            "text": "Jag tillbringade nyligen två dagar med Andy på Mallorca och hade nöjet att spela två rundor med honom på Santa Ponsa 1 och Alcanada. Jag rekommenderar varmt att spendera en hel dag (eller mer) med Andy: han delar med sig av en visdom som sträcker sig långt bortom golfen! Tack igen, Andy. Jag kommer garanterat tillbaka!"
           },
           {
             "text": "Mr Mallorca Golf var absolut värt det. Jag bokade en runda med Andy och han var en utmärkt värd. Han gav mig fantastiska golftips och rätade ut min slice, som varit ett problem i mitt spel i flera år. Dessutom var han ett trevligt sällskap. Jag rekommenderar honom till alla som vill boka en golfresa till Mallorca."
@@ -1101,7 +1101,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
             "text": "我和妻子来马略卡游玩，与 Andy 一起度过了两天非常棒的时光。他给了我们一些简单的小建议，在球场上马上就能用上，也教会了我们如何更好地规划 18 洞的打法。看 Andy 打球也非常酷！我会向任何想在岛上提升高尔夫体验的人推荐 Andy。我们会再预订明年的行程。"
           },
           {
-            "text": "我最近和 Andy 在马略卡度过了两天，有幸和他在 Santa Ponsa 1 和 Alcanada 打了两场球。我强烈推荐花一整天（或更多时间）和 Andy 在一起：他能传授的智慧远远超出了高尔夫本身！再次感谢 Andy——我还会再来！"
+            "text": "我最近和 Andy 在马略卡度过了两天，有幸和他在 Santa Ponsa 1 和 Alcanada 打了两场球。我强烈推荐花一整天（或更多时间）和 Andy 在一起：他能传授的智慧远远超出了高尔夫本身！再次感谢 Andy，我还会再来！"
           },
           {
             "text": "Mr Mallorca Golf 完全物有所值。我订了一场和 Andy 的球，他是一位出色的东道主。他给了我很棒的高尔夫建议，还纠正了困扰我多年的右曲球。除此之外，他也是很好的球伴。我会向任何想在马略卡订高尔夫行程的人推荐他。"

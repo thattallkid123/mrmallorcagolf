@@ -10,7 +10,7 @@ export const ALT_TEXT = {
     "fr": "Andy avec Amanda à T Golf Calvià lors d'une journée Play With A Pro",
     "nl": "Andy met Amanda op T Golf Calvià tijdens een Play With A Pro-dag",
     "sv": "Andy med Amanda på T Golf Calvià under en Play With A Pro-dag",
-    "zh": "Andy 与Amanda在 T Golf Calvià 的 Play With A Pro 体验日"
+    "zh": "Andy 与 Amanda 在 T Golf Calvià 的 Play With A Pro 体验日"
   },
   "Andy with Jannie at Son Gual during a Play With A Pro day": {
     "de": "Andy mit Jannie in Son Gual bei einem Play-With-A-Pro-Tag",
@@ -18,7 +18,7 @@ export const ALT_TEXT = {
     "fr": "Andy avec Jannie à Son Gual lors d'une journée Play With A Pro",
     "nl": "Andy met Jannie op Son Gual tijdens een Play With A Pro-dag",
     "sv": "Andy med Jannie på Son Gual under en Play With A Pro-dag",
-    "zh": "Andy 与Jannie在 Son Gual 的 Play With A Pro 体验日"
+    "zh": "Andy 与 Jannie 在 Son Gual 的 Play With A Pro 体验日"
   },
   "Andy with John at Son Gual during a Play With A Pro day": {
     "de": "Andy mit John in Son Gual bei einem Play-With-A-Pro-Tag",
@@ -42,7 +42,7 @@ export const ALT_TEXT = {
     "fr": "Andy avec Paul à Son Termes lors d'une journée Play With A Pro",
     "nl": "Andy met Paul op Son Termes tijdens een Play With A Pro-dag",
     "sv": "Andy med Paul på Son Termes under en Play With A Pro-dag",
-    "zh": "Andy 与Paul在 Son Termes 的 Play With A Pro 体验日"
+    "zh": "Andy 与 Paul 在 Son Termes 的 Play With A Pro 体验日"
   },
   "Andy with a client at Santa Ponsa during a Play With A Pro day": {
     "de": "Andy mit einem Kunden in Santa Ponsa bei einem Play-With-A-Pro-Tag",
@@ -58,7 +58,7 @@ export const ALT_TEXT = {
     "fr": "Andy avec Mark à Santa Ponsa lors d'une journée Play With A Pro",
     "nl": "Andy met Mark op Santa Ponsa tijdens een Play With A Pro-dag",
     "sv": "Andy med Mark på Santa Ponsa under en Play With A Pro-dag",
-    "zh": "Andy 与Mark在 Santa Ponsa 的 Play With A Pro 体验日"
+    "zh": "Andy 与 Mark 在 Santa Ponsa 的 Play With A Pro 体验日"
   },
   "Andy with Julien and Jo at Son Antem West during a Play With A Pro day": {
     "de": "Andy mit Julien und Jo in Son Antem West bei einem Play-With-A-Pro-Tag",
@@ -66,7 +66,7 @@ export const ALT_TEXT = {
     "fr": "Andy avec Julien et Jo à Son Antem West lors d'une journée Play With A Pro",
     "nl": "Andy met Julien en Jo op Son Antem West tijdens een Play With A Pro-dag",
     "sv": "Andy med Julien och Jo på Son Antem West under en Play With A Pro-dag",
-    "zh": "Andy 与Julien 和 Jo在 Son Antem West 的 Play With A Pro 体验日"
+    "zh": "Andy 与 Julien 和 Jo 在 Son Antem West 的 Play With A Pro 体验日"
   },
   "Play With A Pro round photos": {
     "de": "Fotos von Play-With-A-Pro-Runden",
