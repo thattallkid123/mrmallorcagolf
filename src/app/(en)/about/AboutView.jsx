@@ -163,7 +163,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
 
         <header className="page-hero about-hero">
           <div className="about-hero__media" aria-hidden="true">
-            <Image src="/images/hero-main.webp" alt="" fill priority quality={88} sizes="100vw" className="about-hero__image" />
+            <Image src="/images/hero-main.webp" alt="" fill loading="eager" fetchPriority="high" quality={88} sizes="100vw" className="about-hero__image" />
           </div>
           <div className="page-hero__inner">
             <p className="breadcrumb">

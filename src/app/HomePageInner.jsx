@@ -97,7 +97,7 @@ export default function HomePageInner({ locale = 'en' }) {
             src="/images/home-hero-mandarin.webp"
             alt={localizeAlt('Golf day in Mallorca with PGA Advanced Professional Andy Griffiths', locale)}
             fill
-            priority
+            loading="eager" fetchPriority="high"
             sizes="100vw"
             style={{ objectFit: 'cover', objectPosition: 'center 50%' }}
           />

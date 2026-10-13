@@ -21,7 +21,7 @@ export default function LocalizedSignatureDayPage({ locale, content }) {
               src="/images/andy-walking-course.webp"
               alt={content.heroImageAlt}
               fill
-              priority
+              loading="eager" fetchPriority="high"
               quality={88}
               sizes="100vw"
               className="pwap-hero__image"

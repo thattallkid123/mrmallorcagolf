@@ -98,7 +98,7 @@ export default function ContactForm({ locale = 'en' }) {
         <div className="contact-left">
           <div className="contact-left__hero">
             <div className="contact-hero__media" aria-hidden="true">
-              <Image src="/images/contact.webp" alt="" fill priority quality={88} sizes="(max-width: 768px) 100vw, 60vw" className="contact-hero__image" />
+              <Image src="/images/contact.webp" alt="" fill loading="eager" fetchPriority="high" quality={88} sizes="(max-width: 768px) 100vw, 60vw" className="contact-hero__image" />
             </div>
             <p className="contact-left__eyebrow">
               {content.hero.eyebrow}

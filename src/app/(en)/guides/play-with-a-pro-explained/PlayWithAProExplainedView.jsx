@@ -1,7 +1,6 @@
-'use client'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useEffect, useRef } from 'react'
+import { PwapPhotoStrip } from '../../../../components/PwapCarousels'
 import PageLayout from '../../../../components/PageLayout'
 import StickyMobileCta from '../../../../components/StickyMobileCta'
 import { getOfferById, OFFER_IDS } from '../../../../lib/offers-content.js'
@@ -71,85 +70,12 @@ function buildBreadcrumbSchema(locale) {
 export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
   const soloOffer = getOfferById(OFFER_IDS.solo, locale)
   const groupOffer = getOfferById(OFFER_IDS.group, locale)
-  const stripViewportRef = useRef(null)
-  const stripTrackRef = useRef(null)
   const pre = locale === 'en' ? '' : `/${locale}`
 
   const dayPhotos = PWAP_PHOTOS
   const dayPhotosLoop = [...dayPhotos, ...dayPhotos]
 
-  useEffect(() => {
-    const viewport = stripViewportRef.current
-    const track = stripTrackRef.current
-    if (!viewport || !track) return
 
-    const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches
-    if (prefersReducedMotion) return
-
-    let pausedUntil = 0
-    const dprStepCache = { dpr: 0, step: 1 }
-    let target = 0
-    let lastCommitted = 0
-    let raf
-    let halfWidth = 0
-
-    const setHalfWidth = () => {
-      halfWidth = track.scrollWidth / 2
-    }
-
-    const pauseBriefly = () => {
-      pausedUntil = performance.now() + 1800
-    }
-
-    const normalizeLoopPosition = () => {
-      if (!halfWidth) return
-      if (viewport.scrollLeft >= halfWidth) viewport.scrollLeft -= halfWidth
-      if (viewport.scrollLeft < 0) viewport.scrollLeft += halfWidth
-    }
-
-    // Same dpr-safe stepping as the Play With A Pro page's own version of this
-    // strip (PlayWithAProView.jsx) - see the comment there for why a naive
-    // Math.round(scrollLeft + 1) produces a dark seam at fractional display
-    // scaling. This copy had drifted out of sync with that fix. (2026-09-14)
-    const tick = () => {
-      if (performance.now() > pausedUntil) {
-        if (viewport.scrollLeft !== lastCommitted) target = viewport.scrollLeft
-        target += 1
-        const dpr = window.devicePixelRatio || 1
-        if (dpr !== dprStepCache.dpr) {
-          dprStepCache.dpr = dpr
-          dprStepCache.step = 1
-          for (let n = 1; n <= 200; n++) {
-            if (Math.abs(n * dpr - Math.round(n * dpr)) < 0.02) { dprStepCache.step = n; break }
-          }
-        }
-        const step = dprStepCache.step
-        const committed = Math.round(target / step) * step
-        viewport.scrollLeft = committed
-        normalizeLoopPosition()
-        lastCommitted = viewport.scrollLeft
-      }
-      raf = requestAnimationFrame(tick)
-    }
-
-    setHalfWidth()
-    window.addEventListener('resize', setHalfWidth)
-
-    viewport.addEventListener('pointerdown', pauseBriefly)
-    viewport.addEventListener('wheel', pauseBriefly, { passive: true })
-    viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
-    viewport.addEventListener('scroll', normalizeLoopPosition, { passive: true })
-    raf = requestAnimationFrame(tick)
-
-    return () => {
-      cancelAnimationFrame(raf)
-      window.removeEventListener('resize', setHalfWidth)
-      viewport.removeEventListener('pointerdown', pauseBriefly)
-      viewport.removeEventListener('wheel', pauseBriefly)
-      viewport.removeEventListener('touchstart', pauseBriefly)
-      viewport.removeEventListener('scroll', normalizeLoopPosition)
-    }
-  }, [])
 
   return (
     <PageLayout lang={locale === 'en' ? undefined : locale} trackScrollDepth>
@@ -212,8 +138,7 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
         </section>
 
         {/* GOLFER CAROUSEL */}
-        <div className="pwap-day-strip" aria-label={localizeAlt('Play With A Pro round photos', locale)} ref={stripViewportRef} tabIndex={0}>
-          <div className="pwap-day-strip__track" ref={stripTrackRef}>
+        <PwapPhotoStrip label={localizeAlt('Play With A Pro round photos', locale)}>
             {dayPhotosLoop.map((photo, index) => (
               <figure
                 key={`${photo.src}-${index}`}
@@ -228,8 +153,7 @@ export default function PlayWithAProExplainedView({ content, locale = 'en' }) {
                 />
               </figure>
             ))}
-          </div>
-        </div>
+                  </PwapPhotoStrip>
 
         {/* THE COURSE AND DECISIONS */}
         <section className="pwap-explained-section pwap-explained-section--white">

@@ -153,7 +153,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
               src="/images/golf-courses.webp"
               alt=""
               fill
-              priority
+              loading="eager"
               fetchPriority="high"
               sizes="100vw"
               style={{ objectFit: 'cover', objectPosition: 'center 40%' }}

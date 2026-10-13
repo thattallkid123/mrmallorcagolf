@@ -1,4 +1,5 @@
 'use client'
+import { animateWhenVisible } from '../lib/animate-when-visible'
 import Image from 'next/image'
 import { useRef, useEffect } from 'react'
 
@@ -30,7 +31,6 @@ export default function CareerStrip({ label = "Where I've been", heading = 'Buil
     const dprStepCache = { dpr: 0, step: 1 }
     let target = 0
     let lastCommitted = 0
-    let raf
 
     const pauseBriefly = () => {
       pausedUntil = performance.now() + 1800
@@ -79,15 +79,14 @@ export default function CareerStrip({ label = "Where I've been", heading = 'Buil
           lastCommitted = 0
         }
       }
-      raf = requestAnimationFrame(tick)
     }
 
     viewport.addEventListener('pointerdown', pauseBriefly)
     viewport.addEventListener('wheel', pauseBriefly, { passive: true })
     viewport.addEventListener('touchstart', pauseBriefly, { passive: true })
-    raf = requestAnimationFrame(tick)
+    const stopAnimation = animateWhenVisible(viewport, tick)
     return () => {
-      cancelAnimationFrame(raf)
+      stopAnimation()
       viewport.removeEventListener('pointerdown', pauseBriefly)
       viewport.removeEventListener('wheel', pauseBriefly)
       viewport.removeEventListener('touchstart', pauseBriefly)

@@ -19,7 +19,7 @@
 // dynamic classNames), which a static regex can't reliably resolve. See
 // tests/font-consistency.spec.js for the runtime version of that check.
 
-import { readFileSync } from 'node:fs'
+import { readFileSync, readdirSync } from 'node:fs'
 import { join, resolve, dirname } from 'node:path'
 import { fileURLToPath } from 'node:url'
 
@@ -49,7 +49,10 @@ function classBodyMap(rules) {
   return map
 }
 
-const globalsCss = readFileSync(join(srcRoot, 'styles', 'globals.css'), 'utf8')
+// Route styles carry the same typography rules as the shared stylesheet.
+const stylesRoot = join(srcRoot, 'styles')
+const globalsCss = readdirSync(stylesRoot).filter(name => name.endsWith('.css')).sort()
+  .map(name => readFileSync(join(stylesRoot, name), 'utf8')).join('\n')
 const globalRules = parseRules(globalsCss)
 const globalClassBodies = classBodyMap(globalRules)
 
@@ -65,7 +68,7 @@ for (const [cls, bodies] of globalClassBodies) {
   const hasWeight = bodies.some((b) => /font-weight\s*:/.test(b))
   if (!hasWeight) {
     errors.push(
-      `src/styles/globals.css: .${cls} is named like a label/eyebrow and is uppercase/tracked, but never declares font-weight anywhere. It will silently inherit the ambient weight (often 300/thin) instead of the site's bold-label convention. Add font-weight explicitly (500 to match .eyebrow, or a different value if it's deliberately not eyebrow-styled).`
+      `src/styles/*.css: .${cls} is named like a label/eyebrow and is uppercase/tracked, but never declares font-weight anywhere. It will silently inherit the ambient weight (often 300/thin) instead of the site's bold-label convention. Add font-weight explicitly (500 to match .eyebrow, or a different value if it's deliberately not eyebrow-styled).`
     )
   }
 }

@@ -141,7 +141,7 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
             src="/images/guide.webp"
             alt=""
             fill
-            priority
+            loading="eager"
             fetchPriority="high"
             sizes="100vw"
             className="page-hero__image page-hero__image--guides"

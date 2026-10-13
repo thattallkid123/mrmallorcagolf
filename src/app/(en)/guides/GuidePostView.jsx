@@ -12,7 +12,7 @@ import InlineRichText from '../guides/InlineRichText'
 function FillImageFrame({ src, alt, sizes = '(max-width: 768px) 100vw, 720px', priority = false, containerStyle, imageStyle }) {
   return (
     <div style={{ position: 'relative', overflow: 'hidden', ...containerStyle }}>
-      <Image src={src} alt={alt} fill priority={priority} quality={88} sizes={sizes} style={{ objectFit: 'cover', objectPosition: 'center 24%', ...imageStyle }} />
+      <Image src={src} alt={alt} fill loading={priority ? 'eager' : 'lazy'} fetchPriority={priority ? 'high' : undefined} quality={88} sizes={sizes} style={{ objectFit: 'cover', objectPosition: 'center 24%', ...imageStyle }} />
     </div>
   )
 }
@@ -192,7 +192,7 @@ function renderBlock(block, index, locale, imageOrdinal) {
             alt={localizeAlt(block.alt, locale)}
             width={block.naturalWidth || 1200}
             height={block.naturalHeight || 900}
-            priority={block.priority}
+            loading={block.priority ? 'eager' : 'lazy'} fetchPriority={block.priority ? 'high' : undefined}
             sizes="(max-width: 768px) 100vw, 720px"
             style={{ width: '100%', height: 'auto', display: 'block' }}
           />

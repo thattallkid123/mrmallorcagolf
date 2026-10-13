@@ -1,3 +1,4 @@
+import '../../../styles/trip-planning.css'
 import Link from 'next/link'
 import Image from 'next/image'
 import ToolChoices from '../../../components/ToolChoices'
@@ -69,7 +70,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
             src="/images/plan-your-trip-hero.webp"
             alt=""
             fill
-            priority
+            loading="eager" fetchPriority="high"
             quality={88}
             sizes="100vw"
             className="pyt-hero__image"
