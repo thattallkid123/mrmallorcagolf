@@ -88,17 +88,11 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
             </a>
           </div>
           <nav className="pyt-hero__links" aria-label={content.heroEyebrow}>
-            <a href="#sample-itinerary">
-              <span className="pyt-hero__link-label">{content.options.itineraryTitle}</span>
-              <svg className="pyt-hero__link-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
-                <path d="M10 3v14m-5-5 5 5 5-5" />
-              </svg>
+            <a href="#sample-itinerary" className="btn btn--outline-white">
+              {content.options.itineraryTitle}
             </a>
-            <Link prefetch={false} href={courseFinderHref}>
-              <span className="pyt-hero__link-label">{content.options.basicTitle}</span>
-              <svg className="pyt-hero__link-arrow" viewBox="0 0 20 20" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true" focusable="false">
-                <path d="M3 10h14m-5-5 5 5-5 5" />
-              </svg>
+            <Link prefetch={false} href={courseFinderHref} className="btn btn--outline-white">
+              {content.options.basicTitle}
             </Link>
           </nav>
         </div>
