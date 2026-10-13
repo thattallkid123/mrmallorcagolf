@@ -119,7 +119,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Jo"
       },
       {
-        "text": "After years of playing only once or twice a year, I decided it was time to get back to the game I loved growing up in South Africa. Andy's on-course lesson taught me what a driving range never could. Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s, playing with confidence and loving golf again. I can't recommend Andy highly enough — especially if you want to improve your game, not just your swing.",
+        "text": "I chose an on-course lesson with Andy because hitting the same shot over and over at a driving range wasn't teaching me how to play golf. Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s. I'm still learning, but now I'm thinking my way around the course, playing with confidence and loving golf again. I can't recommend Andy highly enough—especially if you want to improve your game, not just your swing.",
         "author": "Jannie"
       },
       {
@@ -139,7 +139,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Finlay"
       },
       {
-        "text": "Andy is amazing at what he does. A fun round with great company and genuinely valuable tips that improved my game by the end. Learning from a pro like him out on the course, in real situations, beats a driving range lesson every time.",
+        "text": "Andy is amazing at what he does! Fun round with great company and amazingly valuable tips and improved golf game in the end! It's amazing to play with a Pro like him and he teaches you the real game, real situations and how to improve your own game. I'm not a fan of driving range lessons so to learn from a pro like him out on the course is exactly what I think everyone needs. Highly recommend.",
         "author": "Amanda"
       },
       {
@@ -151,7 +151,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Julien"
       },
       {
-        "text": "He gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot. I will continue to use Andy as my pro.",
+        "text": "I found that he gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot. Andy is a pleasant person who is easy to understand, and I will continue to use him as my pro.",
         "author": "Synøve"
       },
       {
@@ -159,7 +159,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Sam"
       },
       {
-        "text": "An amazing experience. Andy evaluated all aspects of my golf game — physical swing, course management, and the mental side — adjusting as we went. I left with a big variety of things to work on.",
+        "text": "An amazing experience! Andy evaluated all aspects of my golf game from physical swing, thoughts and management of the course based on my ability. Making small adjustments as we went round. Leaving me with a big variety of improvements to work on. He is also a very nice and intelligent chap to share the time with.",
         "author": "John"
       },
       {

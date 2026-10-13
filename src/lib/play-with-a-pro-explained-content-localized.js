@@ -43,7 +43,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: 'Drei Wochen später hatte ich es von gelegentlichem Herumschlagen zu Runden in den niedrigen 90ern geschafft, spiele mit Selbstvertrauen und liebe Golf wieder. Ich kann Andy nicht genug empfehlen, besonders wenn Sie nicht nur Ihren Schwung, sondern Ihr ganzes Spiel verbessern wollen.',
+      text: 'Drei Wochen später hackte ich nicht mehr ein paar Mal im Jahr über den Platz, sondern spielte Runden im unteren 90er-Bereich. Ich lerne noch, aber inzwischen gehe ich den Platz mit Köpfchen an, spiele mit Selbstvertrauen und liebe Golf wieder. Ich kann Andy nicht genug empfehlen, vor allem, wenn Sie Ihr Spiel verbessern wollen und nicht nur Ihren Schwung.',
       credit: 'Jannie',
     },
     afterRound: {
@@ -52,7 +52,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraph:
         'Wenn die Runde vorbei ist, haben Sie bereits klares Feedback dazu erhalten, was gut lief, was nicht und woran Sie weiterarbeiten sollten. Danach schicke ich Ihnen außerdem eine schriftliche Zusammenfassung, damit die Details des Tages nicht verloren gehen. Sie gehen mit einem klaren Bild nach Hause, nicht mit einer langen Liste, sondern mit den Dingen, die wirklich einen Unterschied machen.',
       quoteText:
-        'Er hat mir klares und gezieltes Feedback gegeben, das mir geholfen hat, mehrere Fehler zu korrigieren. Besonders mein Putten, womit ich schon lange kämpfe, hat sich stark verbessert.',
+        'Ich fand, dass er mir klares und konkretes Feedback gab, das mir half, mehrere meiner Fehler zu korrigieren. Vor allem mein Putten, mit dem ich mich schwergetan habe, hat sich sehr verbessert.',
       quoteCredit: 'Synøve',
     },
     whatChanges: {
@@ -128,7 +128,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: 'Tres semanas más tarde, había pasado de jugar de vez en cuando a hacer vueltas en los noventa bajos, jugando con confianza y disfrutando de nuevo del golf. No puedo recomendar a Andy lo suficiente, sobre todo si quiere mejorar su juego, no solo su swing.',
+      text: 'Tres semanas después, había pasado de jugar a trancas y barrancas un par de veces al año a hacer vueltas de noventa y pocos. Sigo aprendiendo, pero ahora pienso cómo jugar cada hoyo, juego con confianza y me vuelve a encantar el golf. No me canso de recomendar a Andy, sobre todo si quiere mejorar su juego, no solo su swing.',
       credit: 'Jannie',
     },
     afterRound: {
@@ -137,7 +137,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraph:
         'Al terminar la vuelta, ya habrá recibido comentarios claros sobre qué funcionó bien, qué no y en qué debe seguir trabajando. Después también le envío un resumen por escrito para que no se le olviden los detalles del día. Termina con una imagen clara, no con una lista larga, solo con lo que realmente marcará la diferencia.',
       quoteText:
-        'Me dio un feedback claro y específico que me ayudó a corregir varios errores. Especialmente el putting, con el que siempre he tenido dificultades, ha mejorado mucho.',
+        'Me pareció que me daba indicaciones claras y concretas que me ayudaron a corregir varios de mis errores. Sobre todo mi putt, con el que he tenido dificultades, ha mejorado mucho.',
       quoteCredit: 'Synøve',
     },
     whatChanges: {
@@ -213,7 +213,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: "Trois semaines plus tard, j'étais passé de parties occasionnelles à des scores dans les 90 petits, jouant avec confiance et retrouvant le plaisir du golf. Je ne peux que recommander Andy, surtout si vous voulez améliorer votre jeu, pas seulement votre swing.",
+      text: "Trois semaines plus tard, moi qui tapais la balle n'importe comment deux ou trois fois par an, je rendais des cartes à 90 et quelques. J'apprends encore, mais maintenant je réfléchis à ma façon de jouer le parcours, je joue avec confiance et j'adore à nouveau le golf. Je ne recommanderai jamais assez Andy, surtout si vous voulez améliorer votre jeu, pas seulement votre swing.",
       credit: 'Jannie',
     },
     afterRound: {
@@ -222,7 +222,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraph:
         "À la fin du parcours, vous avez déjà reçu des retours clairs sur ce qui a bien fonctionné, ce qui n'a pas marché et ce que vous devez continuer à travailler. Je vous envoie ensuite un compte rendu écrit pour que les détails de la journée ne s'effacent pas. Vous repartez avec une vision claire, pas une longue liste, juste ce qui fera vraiment la différence.",
       quoteText:
-        "Il m'a donné un retour clair et précis qui m'a permis de corriger plusieurs erreurs. Mon putting en particulier, avec lequel j'ai toujours eu du mal, s'est vraiment amélioré.",
+        "J'ai trouvé qu'il me donnait des retours clairs et précis qui m'ont permis de corriger plusieurs de mes erreurs. Mon putting surtout, avec lequel j'ai eu du mal, s'est beaucoup amélioré.",
       quoteCredit: 'Synøve',
     },
     whatChanges: {
@@ -298,7 +298,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: 'Drie weken later was ik gegaan van af en toe wat rondjes hakken naar scores in de lage negentig, speel ik met vertrouwen en geniet ik weer volop van golf. Ik kan Andy niet genoeg aanbevelen, zeker als u niet alleen uw swing, maar uw hele spel wilt verbeteren.',
+      text: 'Drie weken later was ik van een paar keer per jaar wat rondhakken naar rondes in de lage negentig gegaan. Ik ben nog aan het leren, maar nu denk ik na over hoe ik de baan speel, speel ik met vertrouwen en ben ik weer gek op golf. Ik kan Andy niet genoeg aanbevelen, zeker als u uw spel wilt verbeteren, niet alleen uw swing.',
       credit: 'Jannie',
     },
     afterRound: {
@@ -307,7 +307,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraph:
         'Wanneer de ronde voorbij is, hebt u al duidelijke feedback gekregen over wat goed ging, wat niet en waaraan u verder moet werken. Daarna stuur ik u ook een schriftelijke samenvatting, zodat de details van de dag niet verloren gaan. U sluit af met een helder beeld, geen lange lijst, alleen de dingen die echt verschil maken.',
       quoteText:
-        'Hij gaf me duidelijke en specifieke feedback waarmee ik meerdere fouten kon corrigeren. Vooral mijn putting, waar ik altijd mee worstelde, is sterk verbeterd.',
+        'Ik vond dat hij me duidelijke en specifieke feedback gaf die me hielp meerdere van mijn fouten te corrigeren. Vooral mijn putting, waar ik moeite mee heb gehad, is flink verbeterd.',
       quoteCredit: 'Synøve',
     },
     whatChanges: {
@@ -383,7 +383,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: 'Tre veckor senare hade jag gått från att hacka mig runt banan då och då till att slå rundor i låga nittiotalet, spelar med självförtroende och älskar golf igen. Jag kan inte rekommendera Andy nog, särskilt om du vill förbättra ditt spel, inte bara din swing.',
+      text: 'Tre veckor senare hade jag gått från att hacka mig runt banan ett par gånger om året till att spela rundor på låga 90. Jag lär mig fortfarande, men nu använder jag huvudet på banan, spelar med självförtroende och älskar golf igen. Jag kan inte nog rekommendera Andy, särskilt om du vill förbättra ditt spel och inte bara din swing.',
       credit: 'Jannie',
     },
     afterRound: {
@@ -392,7 +392,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraph:
         'När rundan är klar har du redan fått tydlig återkoppling om vad som fungerade bra, vad som inte gjorde det och vad du bör fortsätta arbeta med. Efteråt skickar jag också en skriftlig sammanfattning så att du inte glömmer detaljerna från dagen. Du går därifrån med en tydlig bild, inte en lång lista, bara det som faktiskt gör skillnad.',
       quoteText:
-        'Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag länge kämpat med, har förbättrats mycket.',
+        'Jag tyckte att han gav mig tydlig och konkret feedback som hjälpte mig att rätta till flera av mina misstag. Framför allt min puttning, som jag har kämpat med, har blivit mycket bättre.',
       quoteCredit: 'Synøve',
     },
     whatChanges: {
@@ -468,7 +468,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       ],
     },
     quote2: {
-      text: '三周之后，我从偶尔打几次，进步到能打出接近 90 杆的成绩，打球更自信，也重新爱上了高尔夫。我极力推荐 Andy，尤其是如果你想提升的不只是挥杆，而是整体球技。',
+      text: '三周后，我从一年随便乱打两三次，变成了能打出 90 出头的成绩。我还在学习，但现在我会动脑子去打每一洞，打得有信心，也重新爱上了高尔夫。我怎么推荐 Andy 都不为过，尤其是如果你想提升的是整体球技，而不只是挥杆。',
       credit: 'Jannie',
     },
     afterRound: {
@@ -477,7 +477,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       paragraph:
         '比赛结束时，您已经清楚知道哪些方面做得好、哪些需要改进，以及接下来该继续练什么。之后我还会给您发一份书面总结，让这一天的重要细节不至于遗忘。您带走的是清晰的方向，不是一长串清单，而是真正能带来改变的重点。',
       quoteText:
-        '他给了我清晰具体的反馈，帮我纠正了好几个问题。尤其是推杆——我一直在这方面挣扎——进步很大。',
+        '我觉得他给了我清晰具体的反馈，帮我纠正了好几个错误。尤其是让我头疼的推杆，进步了很多。',
       quoteCredit: 'Synøve',
     },
     whatChanges: {

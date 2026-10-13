@@ -45,7 +45,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_CONTENT = {
       ],
     },
     quote2: {
-      text: "Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s, playing with confidence and loving golf again. I can't recommend Andy highly enough — especially if you want to improve your game, not just your swing.",
+      text: "Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s. I'm still learning, but now I'm thinking my way around the course, playing with confidence and loving golf again. I can't recommend Andy highly enough—especially if you want to improve your game, not just your swing.",
       credit: 'Jannie',
     },
     afterRound: {
@@ -54,7 +54,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_CONTENT = {
       paragraph:
         'When the round is done, you will already have had clear feedback on what worked well, what did not, and what to keep working on. I also send you a written summary afterwards so you do not forget the detail from the day. You finish with a clear picture, not a long list, just the things that will actually make a difference.',
       quoteText:
-        'He gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot.',
+        'I found that he gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot.',
       quoteCredit: 'Synøve',
     },
     whatChanges: {
