@@ -156,22 +156,15 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
 
   return (
     <>
-      <link rel="preload" as="image" href="/images/hero-main.webp" />
       <PageLayout lang={locale}>
         <JsonLd data={buildAboutPageSchema(locale, content)} />
         <JsonLd data={buildBreadcrumbSchema(locale)} />
         <RevealObserver />
 
-        <header
-          className="page-hero about-hero"
-          style={{
-            minHeight: '100svh',
-            backgroundImage:
-              'linear-gradient(to top, rgba(12,11,9,0.72) 0%, rgba(12,11,9,0.22) 48%, transparent 74%), linear-gradient(to right, rgba(12,11,9,0.78) 0%, rgba(12,11,9,0.46) 42%, rgba(12,11,9,0.08) 78%), url(/images/hero-main.webp)',
-            backgroundSize: 'auto, auto, cover',
-            backgroundPosition: 'center, center, center 80%',
-          }}
-        >
+        <header className="page-hero about-hero">
+          <div className="about-hero__media" aria-hidden="true">
+            <Image src="/images/hero-main.webp" alt="" fill priority quality={88} sizes="100vw" className="about-hero__image" />
+          </div>
           <div className="page-hero__inner">
             <p className="breadcrumb">
               <Link href={content.hero.homeHref}>{content.hero.breadcrumbHome}</Link> &nbsp;/&nbsp;{' '}

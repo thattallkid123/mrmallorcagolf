@@ -140,10 +140,10 @@ export default function LocalizedSignatureDayPage({ locale, content }) {
           <div className="signature-inner signature-split signature-split--feature signature-split--media-first">
             <div className="signature-course-media reveal">
               <div className="signature-media">
-                <Image src="/images/son-gual.jpg" alt={localizeAlt('Son Gual golf course Mallorca', locale)} fill unoptimized sizes="(max-width: 768px) 50vw, 260px" />
+                <Image src="/images/son-gual.jpg" alt={localizeAlt('Son Gual golf course Mallorca', locale)} fill quality={88} sizes="(max-width: 768px) 50vw, 260px" />
               </div>
               <div className="signature-media">
-                <Image src="/images/alcanada.jpg" alt={localizeAlt('Alcanada golf course Mallorca', locale)} fill unoptimized sizes="(max-width: 768px) 50vw, 260px" />
+                <Image src="/images/alcanada.jpg" alt={localizeAlt('Alcanada golf course Mallorca', locale)} fill quality={88} sizes="(max-width: 768px) 50vw, 260px" />
               </div>
             </div>
             <div className="signature-copy reveal">
@@ -175,7 +175,7 @@ export default function LocalizedSignatureDayPage({ locale, content }) {
             <div className="signature-dining-grid reveal">
               {content.diningImages.map((item) => (
                 <div key={item.src} className={'signature-media' + (item.featured ? ' signature-media--dining-feature' : '')}>
-                  <Image src={item.src} alt={item.alt} fill unoptimized sizes="(max-width: 768px) 100vw, 520px" />
+                  <Image src={item.src} alt={item.alt} fill quality={88} sizes="(max-width: 768px) 100vw, 520px" />
                 </div>
               ))}
             </div>

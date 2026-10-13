@@ -116,9 +116,9 @@
 .pyt-option-strip {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 12px;
-  max-width: 1080px;
-  margin-top: 34px;
+  gap: var(--space-3);
+  width: 100%;
+  margin-top: var(--space-6);
 }
 
 .pyt-option-card {
@@ -183,49 +183,6 @@
   background: var(--cream);
 }
 
-/* The embedded course selector carries its own bottom padding */
-#free-course-finder .cst-wrap {
-  padding-bottom: 0 !important;
-}
-
-/* "View all courses" fallback link, sits under the embedded selector */
-.pyt-free__browse {
-  margin-top: 1.6rem;
-  text-align: center;
-}
-
-.pyt-free__browse-link {
-  color: var(--gold-text);
-  text-decoration: none;
-  border-bottom: 1px solid currentColor;
-  padding-bottom: 3px;
-}
-
-.pyt-tool-shell .cst-wrap {
-  background: transparent;
-}
-
-.pyt-tool-shell .cst-hero {
-  min-height: 0;
-  padding-top: 0;
-}
-
-.pyt-tool-shell .cst-btn {
-  border-radius: 2px;
-  box-shadow: none;
-}
-
-.pyt-tool-shell .cst-btn:hover {
-  box-shadow: none;
-}
-
-.pyt-tool-shell .cst-card,
-.pyt-tool-shell .cst-result-card,
-.pyt-tool-shell .cst-course-card {
-  border-radius: 3px;
-  box-shadow: none;
-}
-
 /* Mobile: tighten spacing around Sample Trip */
 @media (max-width: 640px) {
   .pyt-section {
@@ -264,19 +221,19 @@
 }
 .pyt-proof__feature {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  grid-template-columns: minmax(0, 300px) minmax(0, 1fr);
   gap: clamp(20px, 3vw, 36px);
   align-items: center;
   margin-bottom: clamp(20px, 3vw, 36px);
 }
 .pyt-proof__photos {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 12px;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--space-3);
 }
 .pyt-proof__photo {
   position: relative;
-  aspect-ratio: 4 / 5;
+  aspect-ratio: 1513 / 1600;
   margin: 0;
   overflow: hidden;
   border-radius: 6px;
@@ -303,11 +260,17 @@
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
   gap: 20px;
 }
-.pyt-trip-ideas {
+.pyt-trip-ideas.tool-choice-track {
   display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 16px;
+  grid-template-columns: none;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(240px, calc((100% - 3 * var(--space-4)) / 4));
+  gap: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  padding-bottom: var(--space-3);
 }
+.pyt-trip-ideas > article { scroll-snap-align: start; }
 .pyt-trip-idea {
   display: flex;
   flex-direction: column;
@@ -361,10 +324,10 @@
   text-align: center;
 }
 @media (max-width: 1100px) {
-  .pyt-trip-ideas { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .pyt-trip-ideas.tool-choice-track { grid-auto-columns: minmax(240px, calc((100% - var(--space-4)) / 2)); }
 }
 @media (max-width: 520px) {
-  .pyt-trip-ideas { grid-template-columns: minmax(0, 1fr); }
+  .pyt-trip-ideas.tool-choice-track { grid-auto-columns: 85%; }
 }
 
 .pyt-section__inner {
@@ -463,15 +426,12 @@
 }
 
 .pyt-working-modes {
-  margin-top: clamp(34px, 5vw, 52px);
-  padding: clamp(24px, 3vw, 34px);
-  border: 1px solid rgba(26,25,22,0.1);
-  border-radius: 3px;
-  background: rgba(247,244,239,0.52);
+  margin: 0 0 var(--space-7);
+  padding: 0;
 }
 
 .pyt-working-modes__intro {
-  max-width: 760px;
+  max-width: none;
   margin-bottom: clamp(22px, 3vw, 30px);
 }
 
@@ -499,7 +459,7 @@
 }
 
 .pyt-working-modes__grid--three {
-  grid-template-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .pyt-working-mode {
@@ -551,7 +511,7 @@
   background: transparent;
 }
 
-.pyt-possibilities__intro h3 {
+.pyt-possibilities__intro h3, .pyt-possibilities__intro h2 {
   margin: 0 0 12px;
   color: var(--deep);
   font-family: var(--font-serif);
@@ -1687,17 +1647,11 @@
   margin-top: 18px;
 }
 
-@media (max-width: 1180px) {
-  .pyt-option-strip {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    max-width: 860px;
-  }
-}
-
 @media (max-width: 900px) {
+  .pyt-working-modes__grid--three { grid-template-columns: minmax(0, 1fr); }
   .pyt-option-strip {
     grid-template-columns: 1fr;
-    max-width: 640px;
+    max-width: none;
   }
 
   .itinerary-tool {
@@ -1731,8 +1685,12 @@
 
   .pyt-option-card {
     min-height: 0;
-    padding: 20px;
+    padding: var(--space-3) var(--space-4);
   }
+
+  .pyt-option-card span { margin-bottom: var(--space-1); }
+  .pyt-option-card strong { margin-bottom: var(--space-1); }
+  .pyt-option-card em { font-size: 0.85rem; }
 
   .pyt-option-strip {
     grid-template-columns: 1fr;
@@ -2849,8 +2807,8 @@ body {
 .chapter__label::before { content: ''; display: block; width: 20px; height: 1px; background: var(--gold); flex-shrink: 0; }
 .chapter h2 { font-family: var(--font-serif); font-size: clamp(1.55rem, 2.4vw, 2.15rem); font-weight: 500; color: var(--deep); margin-bottom: 1rem; line-height: 1.12; text-wrap: balance; max-width: 780px; }
 .chapter p { font-size: 1rem; font-weight: 300; color: var(--charcoal); line-height: 1.78; margin-bottom: 1rem; max-width: 86ch; }
-.pull-quote { border-left: 2px solid var(--gold); padding: 14px 20px; margin: 1.35rem 0; background: var(--gold-pale); max-width: 86ch; }
-.pull-quote p { font-family: var(--font-serif); font-style: italic; font-size: 1.15rem; color: var(--pine); line-height: 1.6; }
+.pull-quote { border-left: 2px solid var(--gold); padding: 14px 20px; margin: 1.35rem 0; background: var(--gold-pale); max-width: 100%; }
+.pull-quote p { font-family: var(--font-serif); font-style: italic; font-size: 1.15rem; color: var(--pine); line-height: 1.6; text-wrap: pretty; }
 .pull-quote cite { display: block; margin-top: 8px; font-family: var(--font-sans); font-size: 10px; font-style: normal; font-weight: 500; letter-spacing: 0.13em; text-transform: uppercase; color: var(--gold-text); }
 .creds { padding: 40px 32px; }
 .creds__label { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--taupe-text); margin-bottom: 1.5rem; padding-bottom: 0.75rem; border-bottom: 1px solid var(--linen); }
@@ -2901,7 +2859,7 @@ body {
 .pwap-summary__label { margin: 0 0 0.65rem; font-size: 10px; font-weight: 500; letter-spacing: 0.22em; text-transform: uppercase; color: var(--gold-text); font-family: var(--font-sans); }
 .pwap-summary__text { margin: 0; font-size: 1rem; line-height: 1.72; color: var(--charcoal); }
 .pwap-summary__signature { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px 24px; margin-top: 24px; padding-top: 20px; border-top: 1px solid rgba(26,25,22,0.1); }
-.pwap-summary__signature p { margin: 0; max-width: 760px; font-size: 0.92rem; line-height: 1.65; color: var(--charcoal); }
+.pwap-summary__signature p { margin: 0; flex: 1 1 44ch; min-width: 0; max-width: none; text-wrap: pretty; font-size: 0.92rem; line-height: 1.65; color: var(--charcoal); }
 .pwap-summary__signature a { color: var(--pine); font: 500 0.8rem var(--font-sans); text-decoration-thickness: 1px; text-underline-offset: 4px; white-space: nowrap; }
 
 .pwap-day { background: linear-gradient(180deg, #f7f3eb 0%, #fbfaf7 100%); padding: 104px 40px; width: min(1200px, 100%); margin: 0 auto; border-left: 1px solid var(--linen); border-right: 1px solid var(--linen); }
@@ -3133,7 +3091,7 @@ body {
 
 /* ─── CONTACT PAGE ───────────────────────────────────────── */
 .contact-wrap { margin-top: var(--nav-h); display: grid; grid-template-columns: 1fr 460px; min-height: calc(100vh - var(--nav-h)); }
-.contact-left { background: var(--deep); padding: 70px 60px; display: flex; flex-direction: column; justify-content: flex-start; gap: 2.5rem; position: relative; overflow: hidden; background-image: linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.55) 50%, rgba(26,25,22,0.8) 100%), url(/images/contact.webp); background-size: cover; background-position: center 30%; }
+.contact-left { background: var(--deep); padding: 70px 60px; display: flex; flex-direction: column; justify-content: flex-start; gap: 2.5rem; position: relative; overflow: hidden;  }
 .contact-left::before { content: 'M'; font-family: var(--font-serif); font-size: 30rem; font-weight: 400; color: rgba(255,255,255,0.02); position: absolute; right: -60px; bottom: -80px; line-height: 1; pointer-events: none; }
 .contact-left__eyebrow { font-size: 10px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.72); margin-bottom: 1.5rem; }
 .contact-left__title { font-size: clamp(2rem,4vw,3.2rem); color: #fff; line-height: 1.08; margin-bottom: 1.5rem; }
@@ -3844,7 +3802,7 @@ select.form-control { cursor: pointer; }
   .contact-wrap { grid-template-columns: 1fr; display: flex; flex-direction: column; background: var(--deep); }
   .contact-left { display: contents; }
   .contact-left::before { display: none; }
-  .contact-left > div:first-child { order: 1; padding: 50px 24px; background-image: linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.58) 60%, rgba(26,25,22,0.82) 100%), url(/images/contact.webp); background-position: center 30%; background-size: cover; margin: 0; }
+  .contact-left__hero { order: 1; padding: 50px 24px; position: relative; overflow: hidden; margin: 0; }
   .contact-right { order: 2; padding: 40px 24px 50px; }
   /* Keep inner padding here: the block carries a 2px gold border-left, and at
      padding: 0 the quote text sat flush against it, reading as the line
@@ -5961,3 +5919,49 @@ div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(200px, calc((100% 
 .tool-empty-result .tool-empty-result__actions button.hr-btn-retry:hover { background: var(--pine); color: var(--white); border-color: var(--pine); }
 
 @media (max-width: 768px) { .tool-empty-result__actions { grid-template-columns: 1fr; } }
+
+/* Shared editorial clarity: preserve copy while making supporting detail optional. */
+.pyt-hero__title, .pyt-tier-title, .pwap-section-title, .contact-left__title { text-wrap: balance; }
+.pyt-section__inner--wide { max-width: var(--max-w); }
+.pyt-itin-why summary, .pyt-proof__review summary { cursor: pointer; min-height: 44px; padding-block: var(--space-3); color: var(--pine); }
+.pyt-itin-why summary { font-family: var(--font-serif); font-size: 1.4rem; margin: 0; }
+.pyt-itin-why[open] summary { margin-bottom: var(--space-4); }
+.pyt-proof__review { border-block: 1px solid var(--sand); }
+.pyt-proof__review summary { font-family: var(--font-sans); font-weight: 500; }
+.pyt-proof__review[open] .pyt-proof__quote { margin-bottom: var(--space-4); }
+.pyt-support { padding-block: var(--space-6); }
+.pyt-support .pyt-addon__title, .pyt-support .pyt-addon__body, .pyt-support .pyt-addon__price { color: var(--pine); }
+.pyt-support .pyt-addon__btn { color: var(--pine); border-color: var(--pine); }
+.pyt-support .pyt-eyebrow { color: var(--gold-text); }
+.pyt-enquiry__body { max-width: 62ch; color: var(--cream); line-height: 1.7; }
+.pyt-enquiry__tool { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); color: var(--cream); }
+.pyt-enquiry__tool a { color: var(--gold-light); text-underline-offset: 4px; }
+.pwap-booking-terms { max-width: var(--max-w); margin-inline: auto; padding: var(--space-4) var(--space-5); }
+.booking-terms-link { color: var(--pine); font-family: var(--font-sans); font-size: 0.9rem; text-underline-offset: 4px; }
+.footer__bottom { flex-wrap: wrap; gap: var(--space-4); }
+.footer__bottom p { flex: 1 1 650px; line-height: 1.8; }
+.about-hero { min-height: 100svh; position: relative; overflow: hidden; }
+.about-hero__media, .contact-hero__media { position: absolute; inset: 0; pointer-events: none; }
+.about-hero__image { object-fit: cover; object-position: center 80%; }
+.about-hero__media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,11,9,0.72) 0%, rgba(12,11,9,0.22) 48%, transparent 74%), linear-gradient(to right, rgba(12,11,9,0.78) 0%, rgba(12,11,9,0.46) 42%, rgba(12,11,9,0.08) 78%); }
+.about-hero .page-hero__inner { position: relative; z-index: 1; }
+.contact-hero__image { object-fit: cover; object-position: center 30%; }
+.contact-hero__media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.55) 50%, rgba(26,25,22,0.8) 100%); }
+.contact-left__hero > :not(.contact-hero__media), .contact-left .promise-block, .contact-left .contact-cards, .contact-left .contact-trust { position: relative; z-index: 1; }
+@media (max-width: 700px) {
+  .pyt-proof__feature { grid-template-columns: minmax(0, 1fr); }
+  .pyt-proof__photos { max-width: 260px; margin-inline: auto; width: 100%; }
+  .pyt-enquiry__tool { flex-direction: column; }
+}
+
+.guide-section-nav { margin-block: var(--space-5); padding: var(--space-3) var(--space-5); border: 1px solid var(--sand); background: var(--cream); }
+.guide-section-nav summary, .course__more summary { min-height: 44px; cursor: pointer; font-family: var(--font-sans); color: var(--pine); font-weight: 500; line-height: 1.7; padding-block: var(--space-3); }
+.guide-section-nav ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr)); gap: var(--space-2) var(--space-5); list-style: none; padding: 0; margin-block: var(--space-4); }
+.guide-section-nav a { display: block; padding-block: var(--space-2); color: var(--pine); text-underline-offset: 4px; }
+h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)); }
+.course__more { margin-top: var(--space-3); border-top: 1px solid var(--sand); }
+.course__more summary { font-size: 0.85rem; }
+@media (max-width: 768px) {
+  .contact-service-choices .radio-group { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--space-2); }
+  .contact-service-choices .radio-option { min-width: 0; align-items: flex-start; padding: var(--space-3); }
+}

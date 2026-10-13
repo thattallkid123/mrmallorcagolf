@@ -2,7 +2,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { useEffect, useRef } from 'react'
-import BookingPolicyNotice from '../../../components/BookingPolicyNotice'
+import { BookingTermsLink } from '../../../components/BookingPolicyNotice'
 import ReviewBadge from '../../../components/ReviewBadge'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import PageLayout from '../../../components/PageLayout'
@@ -444,7 +444,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                 ))}
               </ul>
             </div>
-            <BookingPolicyNotice locale={locale} />
           </div>
         </section>
 
@@ -558,6 +557,8 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             </div>
           ) : null}
         </section>
+
+        <div className="pwap-booking-terms"><BookingTermsLink locale={locale} /></div>
 
         <div className="pwap-trust-band">
           <ReviewBadge variant="text" theme="light" locale={locale} />

@@ -95,10 +95,9 @@ export function createPlanYourTripMetadata(locale) {
 
 export function createPlanYourTripPage(locale) {
   return async function LocalePlanYourTripPage() {
-    const courseSelectorData = await loadCourseSelectorData(locale)
     return (
       <PageLayout lang={locale} navTransparent={false}>
-        <PlanYourTripView locale={locale} content={getPlanYourTripContent(locale)} courseSelectorData={courseSelectorData} />
+        <PlanYourTripView locale={locale} content={getPlanYourTripContent(locale)} />
       </PageLayout>
     )
   }

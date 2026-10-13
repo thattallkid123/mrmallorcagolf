@@ -97,7 +97,6 @@ export default function WinnersProofStrip({ images, locale = 'en' }) {
                 src={image.src}
                 alt={localizeAlt(image.alt, locale)}
                 fill
-                priority={index < 4}
                 quality={90}
                 sizes="(max-width: 700px) 44vw, 260px"
                 className="winners-proof__img winners-proof__img--fg"

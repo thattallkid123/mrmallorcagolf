@@ -597,6 +597,11 @@ function translateCourseText(value, lang) {
   )
 }
 
+const COURSE_DETAILS_LABELS = {
+  en: 'Course details', de: 'Platzdetails', es: 'Detalles del campo', fr: 'Détails du parcours',
+  nl: 'Details van de baan', sv: 'Information om banan', zh: '球场详情',
+}
+
 function CourseCard({ c, lang = 'en' }) {
   const translated = lang !== 'en' ? GOLF_COURSE_TRANSLATIONS[lang]?.[c.name] || {} : {}
   const badgeMap = COURSE_BADGE_TRANSLATIONS[lang] || {}
@@ -657,8 +662,13 @@ function CourseCard({ c, lang = 'en' }) {
             })()}
           </div>
           <p className="course__text">{bodyText}</p>
-          {(c.text2 || translated.text2) && <p className="course__text course__text--spaced">{bodyText2}</p>}
-          {(c.note || translated.note) && <div className="course__note"><p>{noteText}</p></div>}
+          {(c.text2 || translated.text2 || c.note || translated.note) && (
+            <details className="course__more">
+              <summary>{COURSE_DETAILS_LABELS[lang] || COURSE_DETAILS_LABELS.en}</summary>
+              {(c.text2 || translated.text2) && <p className="course__text course__text--spaced">{bodyText2}</p>}
+              {(c.note || translated.note) && <div className="course__note"><p>{noteText}</p></div>}
+            </details>
+          )}
         </div>
         {c.img && (
           <div className="course__img-desktop course__img-frame">

@@ -87,7 +87,7 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           value={form.website}
           onChange={handleChange}
         />
-        <fieldset className="form-group" style={{ border: 'none', padding: 0, margin: 0, marginBottom: '20px' }}>
+        <fieldset className="form-group contact-service-choices" style={{ border: 'none', padding: 0, margin: 0, marginBottom: '20px' }}>
           <legend style={{ display: 'block', fontSize: '10px', fontWeight: 500, letterSpacing: '0.15em', textTransform: 'uppercase', color: 'var(--taupe)', marginBottom: '8px', padding: 0 }}>
             {content.form.labels.serviceType || 'What would you like help with?'}
           </legend>

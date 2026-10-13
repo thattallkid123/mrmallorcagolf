@@ -102,6 +102,13 @@ function getBookingPolicyCopy(locale = 'en') {
   return BOOKING_POLICY_COPY[locale] || BOOKING_POLICY_COPY.en
 }
 
+export function BookingTermsLink({ locale = 'en', footer = false }) {
+  const copy = getBookingPolicyCopy(locale)
+  return <Link prefetch={false} href={getLegalPath('terms', locale)} className={footer ? 'footer__legal-link' : 'booking-terms-link'} title={copy.title}>
+    {footer ? copy.eyebrow : copy.linkLabel}
+  </Link>
+}
+
 export default function BookingPolicyNotice({ locale = 'en' }) {
   const [isOpen, setIsOpen] = useState(false)
   const copy = getBookingPolicyCopy(locale)

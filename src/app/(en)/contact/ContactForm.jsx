@@ -70,14 +70,11 @@ export default function ContactForm({ locale = 'en' }) {
           .contact-left {
             display: contents;
           }
-          .contact-left > div:first-child {
+          .contact-left__hero {
             order: 1;
             padding: 50px 24px;
-            background-image:
-              linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.58) 60%, rgba(26,25,22,0.82) 100%),
-              url(/images/contact.webp);
-            background-position: center 30%;
-            background-size: cover;
+            position: relative;
+            overflow: hidden;
           }
           .contact-right {
             order: 2;
@@ -99,7 +96,10 @@ export default function ContactForm({ locale = 'en' }) {
       `}</style>
       <div className="contact-wrap">
         <div className="contact-left">
-          <div>
+          <div className="contact-left__hero">
+            <div className="contact-hero__media" aria-hidden="true">
+              <Image src="/images/contact.webp" alt="" fill priority quality={88} sizes="(max-width: 768px) 100vw, 60vw" className="contact-hero__image" />
+            </div>
             <p className="contact-left__eyebrow">
               {content.hero.eyebrow}
             </p>

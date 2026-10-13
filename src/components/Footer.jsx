@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { NAV_LOCALES, getLegalPath, hasLocaleRoute, buildLocalePath } from '../lib/site'
 import ReviewBadge from './ReviewBadge'
+import { BookingTermsLink } from './BookingPolicyNotice'
 
 const FOOTER_COPY = {
   en: {
@@ -274,7 +275,8 @@ export default function Footer({ lang }) {
           {'\u00b7'}{' '}
           <Link href={getLegalPath('terms', locale)} prefetch={false} className="footer__legal-link">
             {copy.terms}
-          </Link>
+          </Link>{' '}{'\u00b7'}{' '}
+          <BookingTermsLink locale={locale} footer />
         </p>
         <div className="footer__lang">
           {NAV_LOCALES.map((code) => (

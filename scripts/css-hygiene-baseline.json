@@ -13,7 +13,7 @@
     "src/app/(en)/guides/PostLayout.jsx": 4,
     "src/app/(en)/guides/mallorca-course-map/page.jsx": 3,
     "src/app/(en)/guides/play-with-a-pro-explained/PlayWithAProExplainedView.jsx": 5,
-    "src/app/(en)/hotel-recommender/HotelRecommenderClient.jsx": 4,
+    "src/app/(en)/hotel-recommender/HotelRecommenderClient.jsx": 3,
     "src/app/(en)/play-with-a-pro/PlayWithAProView.jsx": 1,
     "src/app/(en)/privacy-policy/page.jsx": 2,
     "src/app/(en)/subscribe/SubscribeClient.jsx": 35,
@@ -42,7 +42,7 @@
     "src/components/ToolsIndexView.jsx": 1
   },
   "cssImportant": {
-    "src/styles/globals.css": 67
+    "src/styles/globals.css": 66
   },
   "mediaBreakpoints": [
     480,
