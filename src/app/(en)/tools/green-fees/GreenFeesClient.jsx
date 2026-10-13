@@ -1,4 +1,5 @@
 'use client'
+import { getToolRecoveryT } from '../../../../lib/tool-recovery-content'
 
 import { useMemo, useState } from 'react'
 import Link from 'next/link'
@@ -220,6 +221,7 @@ function FeeCell({ course, season, t }) {
 
 export default function GreenFeesClient({ lang = 'en', localData = null }) {
   const t = getGreenFeesT(lang)
+  const recovery = getToolRecoveryT(lang)
   const COURSES = useMemo(() => ALL_COURSES.map((c) => localizeGreenFeesCourse(c, localData)), [localData])
   const [area, setArea] = useState('')
   const [budget, setBudget] = useState('')
@@ -461,7 +463,12 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
           <span className="gf-count">{t.filters.showing} {rows.length} {t.filters.of} {COURSES.length} {t.filters.courses}</span>
         </div>
 
-        <div className="gf-table-wrap">
+        {rows.length === 0 && <section className="tool-empty-result" role="status">
+          <h2>{recovery.filterTitle}</h2>
+          <p>{recovery.filterCopy}</p>
+          <button className="gf-reset" onClick={() => { setArea(''); setBudget(''); setWalking(''); setSort('name'); setDir(1) }}>{t.filters.reset}</button>
+        </section>}
+        {rows.length > 0 && <><div className="gf-table-wrap">
           <table aria-label={t.table.course}>
             <thead>
               <tr>
@@ -522,6 +529,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
             )
           })}
         </div>
+        </>}
         <p className="gf-footnote">{t.table.certificateNote}</p>
         </>
         )}

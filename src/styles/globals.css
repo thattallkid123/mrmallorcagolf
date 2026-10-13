@@ -5950,3 +5950,10 @@ div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(200px, calc((100% 
 .tool-choice-track--8 { --choice-count: 8; }
 
 .gf-compare__heading .tool-photo { max-height: 240px; }
+
+.tool-empty-result { padding: var(--space-6); margin-block: var(--space-5); border: 1px solid var(--sand); background: var(--cream); }
+.tool-empty-result h2 { font-family: var(--font-serif); font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 500; line-height: 1.2; }
+.tool-empty-result p { font-family: var(--font-sans); line-height: 1.7; margin-block: var(--space-3); }
+.tool-empty-result__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-5); }
+.tool-empty-result button { font-family: var(--font-sans); }
+.tool-empty-result a { display: inline-block; color: var(--pine); margin-left: var(--space-3); text-underline-offset: 4px; }

@@ -1,4 +1,5 @@
 'use client'
+import { getToolRecoveryT } from '../../../../lib/tool-recovery-content'
 import ToolChoices from '../../../../components/ToolChoices'
 
 import ToolPhoto from '../../../../components/ToolPhoto'
@@ -519,6 +520,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   const L = localData?.labels
   const loc = c => (c ? localizeCourse(c, localData) : c)
   const HeroHeading = heroHeadingLevel === 2 ? 'h2' : 'h1'
+  const recovery = getToolRecoveryT(lang)
   const [phase, setPhase] = useState('quiz')
   const [qIndex, setQIndex] = useState(0)
   const [answers, setAnswers] = useState({})
@@ -860,6 +862,12 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         )}
 
         {/* RESULTS */}
+        {phase === 'results' && topCourses.length === 0 && <section className="tool-empty-result">
+          <h2>{recovery.courseTitle}</h2>
+          <p>{recovery.courseCopy}</p>
+          <button className="cst-restart" onClick={() => { setPhase('quiz'); setQIndex(0); scrollToTop() }}>{t.results.adjust}</button>
+          <a className="cst-link" href={buildLocalePath('/tools/green-fees',lang)}>{t.results.compare}</a>
+        </section>}
         {phase === 'results' && topCourses.length > 0 && (
           <div>
             <div className="cst-results-head">

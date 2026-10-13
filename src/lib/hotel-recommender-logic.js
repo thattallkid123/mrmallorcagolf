@@ -161,3 +161,10 @@ export function pillClass(p) {
   if (pl.includes('famil')) return 'pill--family'
   return ''
 }
+
+export function rankHotels(hotels, answers) {
+  return hotels.map(hotel => ({ hotel, score: scoreHotel(hotel, answers) }))
+    .filter(item => item.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 3)
+}

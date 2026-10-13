@@ -1,4 +1,5 @@
 'use client'
+import { getToolRecoveryT } from '../../../lib/tool-recovery-content'
 import ToolChoices from '../../../components/ToolChoices'
 
 import { useRef, useState } from 'react'
@@ -10,7 +11,7 @@ import { trackEvent, trackLead, currentPagePath } from '../../../lib/analytics'
 import { getHotelRecommenderT } from '../../../lib/hotel-recommender-translations'
 import { buildLocalePath, getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
-import { HOTELS, QUESTIONS_DATA, scoreHotel, pillClass } from '../../../lib/hotel-recommender-logic'
+import { HOTELS, QUESTIONS_DATA, rankHotels, pillClass } from '../../../lib/hotel-recommender-logic'
 import { localizeHotel, localizeQuestions } from '../../../lib/hotel-recommender-localize'
 
 const WA_HOTEL_MESSAGE = 'Hi Andy, I used the hotel recommender on your site and I’d like help matching where I stay to the courses I want to play.'
@@ -26,6 +27,7 @@ function trackHotelWhatsApp() {
 
 export default function HotelRecommenderClient({ lang = 'en', localData = null }) {
   const t = getHotelRecommenderT(lang)
+  const recovery = getToolRecoveryT(lang)
   const [step, setStep] = useState(1)
   const [answers, setAnswers] = useState({})
   const [results, setResults] = useState(null)
@@ -58,10 +60,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
       setAnswers(newAnswers)
       setTimeout(() => {
         if (step === TOTAL) {
-          const allScored = HOTELS.map(h => ({ hotel: h, score: scoreHotel(h, newAnswers) }))
-            .filter(x => x.score > -999)
-            .sort((a, b) => b.score - a.score)
-          setResults(allScored.slice(0, 3).filter(x => x.score > 0))
+          setResults(rankHotels(HOTELS, newAnswers))
           scrollToTop()
         } else {
           setStep(s => s + 1)
@@ -86,11 +85,15 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   }
 
   function buildResults() {
-    const allScored = HOTELS.map(h => ({ hotel: h, score: scoreHotel(h, answers) }))
-      .filter(x => x.score > -999)
-      .sort((a, b) => b.score - a.score)
-    const top = allScored.slice(0, 3).filter(x => x.score > 0)
-    setResults(top)
+    setResults(rankHotels(HOTELS, answers))
+    scrollToTop()
+  }
+
+  function editAnswer(key) {
+    setResults(null)
+    setStep(QUESTIONS.findIndex(question => question.key === key) + 1)
+    setEmailSent(false)
+    setEmailError(false)
     scrollToTop()
   }
 
@@ -325,12 +328,12 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
       {results && (
         <>
           <div className="hr-results-hero">
-            <h2>{t.results.hero}</h2>
-            <p>{t.results.heroSub
+            <h2>{results.length ? t.results.hero : recovery.hotelTitle}</h2>
+            {results.length > 0 && <p>{t.results.heroSub
               .replace('{group}', t.groupLabel[answers.group] || 'your group')
               .replace('{priority}', t.priorityLabel[answers.priority] || '')
               .replace('{area}', t.areaLabels[answers.area] || answers.area)}
-            </p>
+            </p>}
           </div>
 
           <div className="hr-results-wrap">
@@ -340,10 +343,16 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
               </div>
             )}
 
-            <p className="hr-results-label">{t.results.label.replace('{area}', t.areaLabels[answers.area] || answers.area)}</p>
+            {results.length > 0 && <p className="hr-results-label">{t.results.label.replace('{area}', t.areaLabels[answers.area] || answers.area)}</p>}
 
             {results.length === 0 ? (
-              <p style={{ color:'#8A7F74', lineHeight:'1.7', fontSize:'0.9rem' }}>{t.results.noMatches}</p>
+              <section className="tool-empty-result" aria-label={recovery.hotelTitle}>
+                <p>{recovery.hotelCopy}</p>
+                <p>{recovery.hotelTip}</p>
+                <div className="tool-empty-result__actions">
+                  {['area','style','budget'].map(key => <button className="hr-btn-retry" key={key} onClick={() => editAnswer(key)}>{recovery[key]}</button>)}
+                </div>
+              </section>
             ) : (
               results.map((x, i) => {
                 const h = localizeHotel(x.hotel, localData)
@@ -387,7 +396,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
             )}
 
             {/* EMAIL */}
-            <div className="hr-email-section tool-save-panel">
+            {results.length > 0 && <div className="hr-email-section tool-save-panel">
               <h3>{t.email.title}</h3>
               <p>{t.email.sub}</p>
               {emailSent ? (
@@ -412,7 +421,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
                   {emailError && <p className="hr-email-success">{t.email.error}</p>}
                 </>
               )}
-            </div>
+            </div>}
 
             {/* ANDY CTA */}
             <div className="hr-andy-cta">
