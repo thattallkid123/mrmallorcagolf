@@ -1546,7 +1546,11 @@
 
 /* A direct enquiry followed by supporting links, without a second set of offer cards. */
 .pyt-hero__links { display: flex; flex-wrap: wrap; gap: 12px 28px; margin-top: 24px; }
-.pyt-hero__links a { display: inline-flex; align-items: center; gap: 10px; min-height: 44px; color: var(--cream); text-underline-offset: 5px; }
+.pyt-hero__links a { display: inline-flex; align-items: center; gap: var(--space-2); min-height: 44px; color: var(--cream); text-decoration: none; }
+.pyt-hero__link-label { font-weight: 400; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 4px; text-decoration-color: rgba(247,244,239,0.65); }
+.pyt-hero__link-arrow { flex: 0 0 1rem; width: 1rem; height: 1rem; }
+.pyt-hero__links a:hover .pyt-hero__link-label { text-decoration-color: currentColor; }
+.pyt-hero__links a:focus-visible { outline: 2px solid var(--gold-light); outline-offset: 4px; }
 .pyt-hero .pyt-eyebrow { color: var(--gold-light); }
 .pyt-planning-layout { gap: 32px; }
 .pyt-includes { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; }
