@@ -435,10 +435,32 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         )}
 
         {phase === 'results' && itins?.length === 0 && <section className="gdb-no-match">
-          <h2>{t.results.noMatchTitle}</h2>
-          <p>{t.results.noMatch}</p>
-          <a className="gdb-btn-pine" href={buildLocalePath('/plan-your-trip',lang)}>{t.cta.askAndy}</a>
-          <button className="gdb-btn-ghost" onClick={() => { setPhase('quiz'); setStepIdx(0) }}>{t.adjust.adjust}</button>
+          <div className="gdb-result-head">
+            <h2>{t.results.accessHelp.title}</h2>
+            <p>{t.results.accessHelp[!['low','mid','high'].includes(answers.handicap) ? 'certificate' : answers.courseType === 'close' ? 'area' : 'requirements']}</p>
+          </div>
+          <div className="gdb-access-checks">
+            <h3>{t.results.accessHelp.next}</h3>
+            <ol>
+              {['player','course','confirm'].map(key => <li key={key}>
+                <h4>{t.results.accessHelp[key + 'Title']}</h4>
+                <p>{t.results.accessHelp[key + 'Copy']}</p>
+              </li>)}
+            </ol>
+            <div className="gdb-access-actions">
+              <a className="gdb-btn-pine" href={buildLocalePath('/tools/handicap-checker',lang)}>{t.results.accessHelp.accessLink}</a>
+              <a className="gdb-btn-ghost" href={buildLocalePath('/tools/green-fees',lang)}>{t.results.accessHelp.compareLink}</a>
+            </div>
+          </div>
+          <div className="gdb-access-actions">
+            <button className="gdb-btn-ghost" onClick={() => { setPhase('quiz'); setStepIdx(QUESTIONS.findIndex(q => q.key === 'handicap')) }}>{t.results.accessHelp.editHandicap}</button>
+            <button className="gdb-btn-ghost" onClick={() => { setPhase('quiz'); setStepIdx(QUESTIONS.findIndex(q => q.key === 'region')) }}>{t.results.accessHelp.editArea}</button>
+          </div>
+          <aside className="gdb-access-help">
+            <h3>{t.results.accessHelp.helpTitle}</h3>
+            <p>{t.results.accessHelp.helpCopy}</p>
+            <a href={buildLocalePath('/plan-your-trip',lang)}>{t.results.accessHelp.helpLink}</a>
+          </aside>
         </section>}
         {/* RESULTS */}
         {phase === 'results' && itins?.length > 0 && (

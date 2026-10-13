@@ -5924,7 +5924,19 @@ div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(200px, calc((100% 
 .tool-choice-track > button:focus-visible, .tool-choices__nav button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
 
 .gdb-result-note { font-size: .85rem; line-height: 1.65; color: var(--taupe); text-align: center; margin-block: var(--space-md, 20px); }
-.gdb-no-match { text-align: center; padding-block: var(--space-xl, 40px); }
+.gdb-no-match { max-width: 780px; margin-inline: auto; padding-bottom: var(--space-7); }
+.gdb-no-match .gdb-result-head { margin-bottom: var(--space-6); }
+.gdb-access-checks { padding: var(--space-6); background: var(--cream); border: 1px solid var(--sand); }
+.gdb-no-match h3 { font-family: var(--font-serif); font-size: 1.6rem; font-weight: 500; line-height: 1.2; }
+.gdb-access-checks ol { padding-left: var(--space-5); margin-block: var(--space-5); }
+.gdb-access-checks li { padding-left: var(--space-2); margin-bottom: var(--space-5); }
+.gdb-access-checks li::marker { color: var(--gold); }
+.gdb-access-checks h4 { font-family: var(--font-sans); font-size: 1rem; font-weight: 500; }
+.gdb-access-checks p, .gdb-access-help p { font-family: var(--font-sans); line-height: 1.7; margin-top: var(--space-2); }
+.gdb-access-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-3); margin-top: var(--space-5); }
+.gdb-access-actions a { display: inline-flex; align-items: center; justify-content: center; text-align: center; text-decoration: none; }
+.gdb-access-help { text-align: center; margin-top: var(--space-6); padding-top: var(--space-6); border-top: 1px solid var(--sand); }
+.gdb-access-help a { display: inline-block; font-family: var(--font-sans); color: var(--pine); margin-top: var(--space-3); text-underline-offset: 4px; }
 
 .tool-choices__nav button:disabled, .tool-choice-track > button:disabled { opacity: .4; cursor: default; }
 

@@ -39,9 +39,27 @@ export const GOLF_DAY_BUILDER_T = {
         "lunch": "Golf & long lunch",
         "experience": "Full experience"
       },
-      "noMatchTitle": "Let me check the course access",
-      "noMatch": "These answers need a course access check before I suggest a day. Send me your hotel, dates and handicap details.",
-      "routeNote": "Hotel, route and travel time to be confirmed."
+      "routeNote": "Hotel, route and travel time to be confirmed.",
+      "accessHelp": {
+        "title": "Check access before choosing a course",
+        "certificate": "The tool cannot suggest a course while one or more players’ certificate or handicap details are unconfirmed. This does not mean your group cannot play.",
+        "area": "No course in your selected area matches all these answers. You can check courses in other areas or review the handicap details.",
+        "requirements": "No course matches all these answers. Your selected handicap range may exceed a course limit, so check each player’s exact handicap before booking.",
+        "next": "What to check next",
+        "playerTitle": "Check every player’s details",
+        "playerCopy": "Confirm each player’s current handicap and whether they can show a current certificate. Do not use a lower range just to get a result.",
+        "courseTitle": "Read the course requirements",
+        "courseCopy": "Compare the highest handicap in your group with the course limits. Requirements vary by course; a certificate alone does not confirm access.",
+        "confirmTitle": "Confirm before booking",
+        "confirmCopy": "Ask the chosen course to confirm that everyone in your group can play. Check tee-time availability separately.",
+        "accessLink": "Check course access",
+        "compareLink": "Compare course requirements",
+        "editHandicap": "Edit handicap details",
+        "editArea": "Change area or course preference",
+        "helpTitle": "Want help checking the golf?",
+        "helpCopy": "Send your dates, preferred course and each player’s handicap and certificate status.",
+        "helpLink": "Ask me to check access"
+      }
     },
     "timeline": {
       "aroundMin": "Around",
@@ -117,9 +135,27 @@ export const GOLF_DAY_BUILDER_T = {
         "lunch": "Golf & langes Mittagessen",
         "experience": "Vollständiges Erlebnis"
       },
-      "noMatchTitle": "Ich prüfe den Platzzugang",
-      "noMatch": "Ich muss den Platzzugang für diese Angaben prüfen, bevor ich einen Tag vorschlage. Senden Sie mir Hotel, Reisedaten und Handicap-Angaben.",
-      "routeNote": "Hotel, Route und Fahrzeit werden noch bestätigt."
+      "routeNote": "Hotel, Route und Fahrzeit werden noch bestätigt.",
+      "accessHelp": {
+        "title": "Zugang prüfen, bevor Sie einen Platz wählen",
+        "certificate": "Das Tool kann keinen Platz vorschlagen, solange die Handicap- oder Nachweisangaben einzelner Spieler ungeklärt sind. Das bedeutet nicht, dass Ihre Gruppe nicht spielen kann.",
+        "area": "Kein Platz in der gewählten Region passt zu allen Angaben. Prüfen Sie Plätze in anderen Regionen oder Ihre Handicap-Angaben.",
+        "requirements": "Kein Platz passt zu allen Angaben. Ihr gewählter Handicap-Bereich kann eine Platzgrenze überschreiten. Prüfen Sie vor der Buchung das genaue Handicap jedes Spielers.",
+        "next": "Was Sie als Nächstes prüfen können",
+        "playerTitle": "Angaben aller Spieler prüfen",
+        "playerCopy": "Klären Sie das aktuelle Handicap jedes Spielers und ob ein aktueller Nachweis vorliegt. Wählen Sie keinen niedrigeren Bereich, nur um ein Ergebnis zu erhalten.",
+        "courseTitle": "Platzanforderungen lesen",
+        "courseCopy": "Vergleichen Sie das höchste Handicap Ihrer Gruppe mit den Platzgrenzen. Die Anforderungen unterscheiden sich; ein Nachweis allein bestätigt den Zugang nicht.",
+        "confirmTitle": "Vor der Buchung bestätigen lassen",
+        "confirmCopy": "Lassen Sie den gewählten Platz bestätigen, dass alle Spieler Ihrer Gruppe spielen dürfen. Prüfen Sie die Verfügbarkeit von Startzeiten separat.",
+        "accessLink": "Platzzugang prüfen",
+        "compareLink": "Platzanforderungen vergleichen",
+        "editHandicap": "Handicap-Angaben ändern",
+        "editArea": "Region oder Platzwunsch ändern",
+        "helpTitle": "Möchten Sie Hilfe bei der Prüfung?",
+        "helpCopy": "Senden Sie Ihre Reisedaten, den gewünschten Platz sowie Handicap und Nachweisstatus jedes Spielers.",
+        "helpLink": "Zugangsprüfung anfragen"
+      }
     },
     "timeline": {
       "aroundMin": "Etwa",
@@ -195,9 +231,27 @@ export const GOLF_DAY_BUILDER_T = {
         "lunch": "Golf y largo almuerzo",
         "experience": "Experiencia completa"
       },
-      "noMatchTitle": "Déjeme comprobar el acceso",
-      "noMatch": "Debo comprobar el acceso a los campos antes de proponer un día con estas respuestas. Envíeme su hotel, fechas y datos de hándicap.",
-      "routeNote": "Hotel, ruta y tiempo de viaje pendientes de confirmar."
+      "routeNote": "Hotel, ruta y tiempo de viaje pendientes de confirmar.",
+      "accessHelp": {
+        "title": "Compruebe el acceso antes de elegir un campo",
+        "certificate": "La herramienta no puede proponer un campo mientras falten datos de hándicap o certificados de algún jugador. Esto no significa que su grupo no pueda jugar.",
+        "area": "Ningún campo de la zona elegida coincide con todas sus respuestas. Puede consultar otras zonas o revisar los datos de hándicap.",
+        "requirements": "Ningún campo coincide con todas sus respuestas. El rango de hándicap elegido puede superar el límite de un campo. Compruebe el hándicap exacto de cada jugador antes de reservar.",
+        "next": "Qué comprobar ahora",
+        "playerTitle": "Revise los datos de cada jugador",
+        "playerCopy": "Confirme el hándicap actual de cada jugador y si puede presentar un certificado vigente. No elija un rango inferior solo para obtener un resultado.",
+        "courseTitle": "Consulte los requisitos del campo",
+        "courseCopy": "Compare el hándicap más alto del grupo con los límites del campo. Los requisitos varían; tener un certificado no confirma por sí solo el acceso.",
+        "confirmTitle": "Confirme antes de reservar",
+        "confirmCopy": "Pida al campo elegido que confirme que todos los miembros del grupo pueden jugar. Compruebe por separado la disponibilidad de horas de salida.",
+        "accessLink": "Comprobar acceso a campos",
+        "compareLink": "Comparar requisitos de los campos",
+        "editHandicap": "Cambiar datos de hándicap",
+        "editArea": "Cambiar zona o preferencia de campo",
+        "helpTitle": "¿Quiere ayuda para comprobar el acceso?",
+        "helpCopy": "Envíeme sus fechas, el campo preferido y el hándicap y estado del certificado de cada jugador.",
+        "helpLink": "Solicitar comprobación de acceso"
+      }
     },
     "timeline": {
       "aroundMin": "Unos",
@@ -273,9 +327,27 @@ export const GOLF_DAY_BUILDER_T = {
         "lunch": "Golf et long déjeuner",
         "experience": "Expérience complète"
       },
-      "noMatchTitle": "Je dois vérifier l’accès au parcours",
-      "noMatch": "Je dois vérifier l’accès aux parcours avant de proposer une journée avec ces réponses. Envoyez-moi votre hôtel, vos dates et vos handicaps.",
-      "routeNote": "Hôtel, itinéraire et temps de trajet à confirmer."
+      "routeNote": "Hôtel, itinéraire et temps de trajet à confirmer.",
+      "accessHelp": {
+        "title": "Vérifiez l’accès avant de choisir un parcours",
+        "certificate": "L’outil ne peut pas proposer de parcours tant que le handicap ou le certificat de certains joueurs reste à confirmer. Cela ne signifie pas que votre groupe ne peut pas jouer.",
+        "area": "Aucun parcours de la zone choisie ne correspond à toutes vos réponses. Consultez d’autres zones ou vérifiez les handicaps indiqués.",
+        "requirements": "Aucun parcours ne correspond à toutes vos réponses. La tranche de handicap choisie peut dépasser une limite du parcours. Vérifiez le handicap exact de chaque joueur avant de réserver.",
+        "next": "Les prochaines vérifications",
+        "playerTitle": "Vérifiez les informations de chaque joueur",
+        "playerCopy": "Confirmez le handicap actuel de chaque joueur et s’il peut présenter un certificat à jour. Ne choisissez pas une tranche inférieure uniquement pour obtenir un résultat.",
+        "courseTitle": "Consultez les conditions du parcours",
+        "courseCopy": "Comparez le handicap le plus élevé du groupe aux limites du parcours. Les conditions varient ; un certificat seul ne confirme pas l’accès.",
+        "confirmTitle": "Faites confirmer l’accès avant de réserver",
+        "confirmCopy": "Demandez au parcours choisi de confirmer que chaque membre du groupe peut jouer. Vérifiez séparément les départs disponibles.",
+        "accessLink": "Vérifier l’accès aux parcours",
+        "compareLink": "Comparer les conditions des parcours",
+        "editHandicap": "Modifier les handicaps",
+        "editArea": "Changer de zone ou de préférence",
+        "helpTitle": "Besoin d’aide pour vérifier l’accès ?",
+        "helpCopy": "Envoyez-moi vos dates, le parcours souhaité, le handicap et la situation du certificat de chaque joueur.",
+        "helpLink": "Demander une vérification de l’accès"
+      }
     },
     "timeline": {
       "aroundMin": "Environ",
@@ -351,9 +423,27 @@ export const GOLF_DAY_BUILDER_T = {
         "lunch": "Golf en lange lunch",
         "experience": "Volledige ervaring"
       },
-      "noMatchTitle": "Ik controleer eerst de toegang",
-      "noMatch": "Ik moet de toegang tot de banen controleren voordat ik op basis van deze antwoorden een dag voorstel. Stuur mij uw hotel, data en handicapgegevens.",
-      "routeNote": "Hotel, route en reistijd worden nog bevestigd."
+      "routeNote": "Hotel, route en reistijd worden nog bevestigd.",
+      "accessHelp": {
+        "title": "Controleer de toegang voordat u een baan kiest",
+        "certificate": "De tool kan geen baan voorstellen zolang het handicap of certificaat van een of meer spelers nog niet bevestigd is. Dit betekent niet dat uw groep niet kan spelen.",
+        "area": "Geen baan in het gekozen gebied past bij alle antwoorden. Bekijk andere gebieden of controleer de handicapgegevens.",
+        "requirements": "Geen baan past bij alle antwoorden. Uw gekozen handicapbereik kan boven een baanlimiet liggen. Controleer het exacte handicap van elke speler voordat u boekt.",
+        "next": "Wat u nu kunt controleren",
+        "playerTitle": "Controleer de gegevens van elke speler",
+        "playerCopy": "Bevestig het huidige handicap van elke speler en of die een geldig certificaat kan tonen. Kies geen lager bereik alleen om een resultaat te krijgen.",
+        "courseTitle": "Lees de baaneisen",
+        "courseCopy": "Vergelijk het hoogste handicap in uw groep met de baanlimieten. Eisen verschillen per baan; een certificaat alleen bevestigt de toegang niet.",
+        "confirmTitle": "Laat toegang bevestigen voordat u boekt",
+        "confirmCopy": "Vraag de gekozen baan te bevestigen dat iedereen in uw groep mag spelen. Controleer beschikbare starttijden afzonderlijk.",
+        "accessLink": "Toegang tot banen controleren",
+        "compareLink": "Baaneisen vergelijken",
+        "editHandicap": "Handicapgegevens aanpassen",
+        "editArea": "Gebied of baanvoorkeur wijzigen",
+        "helpTitle": "Wilt u hulp bij het controleren van de toegang?",
+        "helpCopy": "Stuur uw data, gewenste baan en het handicap en de certificaatstatus van elke speler.",
+        "helpLink": "Toegangscontrole aanvragen"
+      }
     },
     "timeline": {
       "aroundMin": "Ongeveer",
@@ -429,9 +519,27 @@ export const GOLF_DAY_BUILDER_T = {
         "lunch": "Golf och långlunch",
         "experience": "Full upplevelse"
       },
-      "noMatchTitle": "Jag kontrollerar tillträdet till banan",
-      "noMatch": "Jag behöver kontrollera tillträdet till banorna innan jag föreslår en dag utifrån dessa svar. Skicka mig hotell, datum och handicapuppgifter.",
-      "routeNote": "Hotell, färdväg och restid ska bekräftas."
+      "routeNote": "Hotell, färdväg och restid ska bekräftas.",
+      "accessHelp": {
+        "title": "Kontrollera tillträdet innan du väljer bana",
+        "certificate": "Verktyget kan inte föreslå en bana så länge någon spelares handicap eller intyg inte är bekräftat. Det betyder inte att gruppen inte kan spela.",
+        "area": "Ingen bana i det valda området matchar alla svar. Titta på andra områden eller kontrollera handicapuppgifterna.",
+        "requirements": "Ingen bana matchar alla svar. Det valda handicapintervallet kan ligga över en banas gräns. Kontrollera varje spelares exakta handicap innan du bokar.",
+        "next": "Det här kan du kontrollera nu",
+        "playerTitle": "Kontrollera varje spelares uppgifter",
+        "playerCopy": "Bekräfta varje spelares aktuella handicap och om de kan visa ett giltigt intyg. Välj inte ett lägre intervall bara för att få ett resultat.",
+        "courseTitle": "Läs banans krav",
+        "courseCopy": "Jämför gruppens högsta handicap med banans gränser. Kraven varierar; ett intyg i sig bekräftar inte tillträdet.",
+        "confirmTitle": "Få tillträdet bekräftat innan du bokar",
+        "confirmCopy": "Be den valda banan bekräfta att alla i gruppen får spela. Kontrollera tillgängliga starttider separat.",
+        "accessLink": "Kontrollera tillträde till banor",
+        "compareLink": "Jämför banornas krav",
+        "editHandicap": "Ändra handicapuppgifter",
+        "editArea": "Ändra område eller banpreferens",
+        "helpTitle": "Vill du ha hjälp att kontrollera tillträdet?",
+        "helpCopy": "Skicka dina datum, önskad bana samt varje spelares handicap och intygsstatus.",
+        "helpLink": "Be om kontroll av tillträdet"
+      }
     },
     "timeline": {
       "aroundMin": "Omkring",
@@ -507,9 +615,27 @@ export const GOLF_DAY_BUILDER_T = {
         "lunch": "高尔夫和长午餐",
         "experience": "完整体验"
       },
-      "noMatchTitle": "我需要先核实球场准入条件",
-      "noMatch": "根据这些回答，我需要先核实球场准入条件，再建议行程。请告诉我您的酒店、日期和差点情况。",
-      "routeNote": "酒店、路线和车程有待确认。"
+      "routeNote": "酒店、路线和车程有待确认。",
+      "accessHelp": {
+        "title": "选球场前，先核实准入条件",
+        "certificate": "一位或多位球员的差点或证明情况尚未确认，因此工具暂时无法推荐球场。这并不代表您的团队不能打球。",
+        "area": "所选区域内没有球场符合所有回答。您可以查看其他区域的球场，或重新核对差点信息。",
+        "requirements": "没有球场符合所有回答。所选差点范围可能超过某些球场的上限；预订前，请核实每位球员的准确差点。",
+        "next": "接下来可以核实什么",
+        "playerTitle": "核对每位球员的信息",
+        "playerCopy": "确认每位球员的当前差点，以及能否出示有效证明。请勿为了获得推荐结果而选择较低的差点范围。",
+        "courseTitle": "查看球场准入要求",
+        "courseCopy": "将团队中最高的差点与球场上限比较。各球场要求不同，持有证明本身并不代表一定获准打球。",
+        "confirmTitle": "预订前向球场确认",
+        "confirmCopy": "请所选球场确认团队中每位球员均可入场打球。开球时间是否可订需另外核实。",
+        "accessLink": "查看差点准入条件",
+        "compareLink": "比较球场要求",
+        "editHandicap": "修改差点信息",
+        "editArea": "更改区域或球场偏好",
+        "helpTitle": "需要帮助核实准入条件吗？",
+        "helpCopy": "请提供日期、希望打的球场，以及每位球员的差点和证明情况。",
+        "helpLink": "请帮我核实准入条件"
+      }
     },
     "timeline": {
       "aroundMin": "约",
