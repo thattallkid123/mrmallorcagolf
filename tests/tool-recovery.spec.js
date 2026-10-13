@@ -1,6 +1,6 @@
 const {test,expect} = require('@playwright/test')
 
-test('an empty hotel shortlist offers targeted editing and never offers to email an empty list', async ({page}) => {
+test('an empty hotel shortlist offers targeted editing and never offers to email an empty list', async ({page}, info) => {
   await page.goto('/tools/hotel-recommender',{waitUntil:'networkidle'})
   await page.getByRole('button',{name:/Northwest: Tramuntana/}).click()
   await page.getByRole('button',{name:/Be as close to the courses/}).click()
@@ -13,6 +13,11 @@ test('an empty hotel shortlist offers targeted editing and never offers to email
   await expect(page.getByRole('button',{name:/Email my shortlist/})).toHaveCount(0)
   await expect(page.locator('.hr-email-section')).toHaveCount(0)
   await expect(page.locator('.tool-empty-result button')).toHaveCount(3)
+  const buttonBounds = await page.locator('.tool-empty-result button').evaluateAll(buttons => buttons.map(button => ({top: Math.round(button.getBoundingClientRect().top),width: Math.round(button.getBoundingClientRect().width),height: Math.round(button.getBoundingClientRect().height)})))
+  expect(new Set(buttonBounds.map(b=>b.width)).size).toBe(1)
+  expect(new Set(buttonBounds.map(b=>b.height)).size).toBe(1)
+  if(info.project.name === 'desktop-chrome') expect(new Set(buttonBounds.map(b=>b.top)).size).toBe(1)
+  else expect(new Set(buttonBounds.map(b=>b.top)).size).toBe(3)
   const contrast = await page.locator('.tool-empty-result button').evaluateAll(buttons => {
     const rgb = value => value.match(/[0-9.]+/g).map(Number)
     const lum = channels => channels.slice(0,3).map(v => { const n=v/255; return n<=.04045 ? n/12.92 : ((n+.055)/1.055)**2.4 }).reduce((n,v,i)=>n+v*[.2126,.7152,.0722][i],0)
@@ -28,7 +33,7 @@ test('an empty hotel shortlist offers targeted editing and never offers to email
   })
   for(const ratio of contrast) expect(ratio).toBeGreaterThanOrEqual(4.5)
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
-  await page.getByRole('button',{name:'Change accommodation style',exact:true}).click()
+  await page.getByRole('button',{name:'Change style',exact:true}).click()
   await expect(page.getByRole('button',{name:/Private villa/})).toHaveClass(/selected/)
   await page.getByRole('button',{name:/Full resort with all facilities/}).click()
   await expect(page.getByRole('button',{name:/Up to €250/})).toHaveClass(/selected/)
@@ -51,3 +56,25 @@ test('zero comparison filters explain the result and reset to all 24 courses',as
   await expect(page.locator('#f-budget')).toHaveValue('')
   await expect(page.locator('#f-walking')).toHaveValue('')
 })
+for (const lang of ['de','es','fr','nl','sv','zh']) {
+  test(`translated recovery actions remain balanced: ${lang}`, async ({page}, info) => {
+    await page.goto(`/${lang}/tools/hotel-recommender`,{waitUntil:'networkidle'})
+    const choices=[4,0,4,0,3,0]
+    for(let i=0;i<choices.length;i++) {
+      await expect.poll(async()=>Number((await page.locator('.hr-step-num').textContent()).match(/[0-9]+/)[0])).toBe(i+1)
+      await page.locator('.hr-opt').nth(choices[i]).click()
+      if(i===1) {
+        await expect(page.locator('.hr-opt').first()).toHaveAttribute('aria-pressed','true')
+        await page.locator('.hr-btn-next').click()
+      }
+    }
+    const buttons=page.locator('.tool-empty-result__actions button')
+    await expect(buttons).toHaveCount(3)
+    const bounds=await buttons.evaluateAll(elements=>elements.map(e=>({top:Math.round(e.getBoundingClientRect().top),width:Math.round(e.getBoundingClientRect().width),height:Math.round(e.getBoundingClientRect().height),overflow:e.scrollWidth-e.clientWidth})))
+    expect(new Set(bounds.map(b=>b.width)).size).toBe(1)
+    expect(new Set(bounds.map(b=>b.height)).size).toBe(1)
+    expect(new Set(bounds.map(b=>b.top)).size).toBe(info.project.name==='desktop-chrome'?1:3)
+    expect(bounds.every(b=>b.height>=44 && b.overflow<=1)).toBe(true)
+    expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
+  })
+}
