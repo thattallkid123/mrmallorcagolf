@@ -127,7 +127,7 @@ export default function ToolsIndexView({ locale = 'en', heroImage = null }) {
             <ReviewBadge variant="text" theme="light" locale={locale} />
           </div>
           {content.trust.primaryCta ? (
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '24px' }}>
+            <div className="tools-trust__actions">
               <Link href={content.trust.primaryHref} className="btn btn--gold">
                 {content.trust.primaryCta}
               </Link>

@@ -5,7 +5,6 @@ import ToolChoices from '../../../components/ToolChoices'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import { buildLocalePath } from '../../../lib/site'
 import { getPlanYourTripContent } from '../../../lib/plan-your-trip-content'
-import { localizeAlt } from '../../../lib/alt-text'
 
 const WA_TRIP_LABELS = {
   en: 'Message on WhatsApp',
@@ -35,12 +34,6 @@ const SAMPLE_IMAGE_ALTS = {
   zh: '马略卡 Son Gual 球场开球的球手',
 }
 
-// One photograph paired with John’s own lead client quote. The alt strings are the English keys
-// in src/lib/alt-text.js; localizeAlt() swaps in the translation per locale.
-const PROOF_PHOTOS = [
-  { src: '/images/client-son-gual-john.webp', alt: 'Andy with John at Son Gual during a Play With A Pro day', modifier: 'gual' },
-]
-
 export default function PlanYourTripView({ locale = 'en', content: rawContent }) {
   const content = rawContent || getPlanYourTripContent(locale)
   const courseFinderHref = buildLocalePath('/tools/course-selector', locale)
@@ -60,7 +53,8 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
     return tripPlanningHref
   }
 
-  const proofItems = content.clientProof?.testimonials?.items || []
+  // These original reviews describe golf holidays and rounds with me, not whole-trip bookings.
+  const proofItems = (content.clientProof?.testimonials?.items || []).filter(item => ['John H.', 'Adam'].includes(item.author))
 
   return (
     <div className="pyt-page">
@@ -93,23 +87,10 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               {messageLabel}
             </a>
           </div>
-          <div className="pyt-option-strip" aria-label={content.heroEyebrow}>
-            <a href="#professional-planning" className="pyt-option-card pyt-option-card--gold">
-              <span>{content.options.proLabel}</span>
-              <strong>{content.options.proTitle}</strong>
-              <em>{content.options.proNote}</em>
-            </a>
-            <a href="#sample-itinerary" className="pyt-option-card">
-              <span>{content.options.itineraryLabel}</span>
-              <strong>{content.options.itineraryTitle}</strong>
-              <em>{content.options.itineraryNote}</em>
-            </a>
-            <Link prefetch={false} href={courseFinderHref} className="pyt-option-card">
-              <span>{content.options.basicLabel}</span>
-              <strong>{content.options.basicTitle}</strong>
-              <em>{content.options.basicNote}</em>
-            </Link>
-          </div>
+          <nav className="pyt-hero__links" aria-label={content.heroEyebrow}>
+            <a href="#sample-itinerary">{content.options.itineraryTitle} <span aria-hidden="true">↓</span></a>
+            <Link prefetch={false} href={courseFinderHref}>{content.options.basicTitle} <span aria-hidden="true">→</span></Link>
+          </nav>
         </div>
       </section>
 
@@ -142,113 +123,38 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
           ) : null}
 
           <div className="pyt-planning-layout">
-            <div className="pyt-planning-main">
-              <ul className="pyt-includes">
-                {content.professional.includes.map((item) => (
-                  <li key={item}>{item}</li>
-                ))}
-              </ul>
+            <ul className="pyt-includes">
+              {content.professional.includes.map((item) => (
+                <li key={item}>{item}</li>
+              ))}
+            </ul>
 
+            <div className="pyt-pro-cta">
+              {content.professional.process ? (
+                <div className="pyt-process">
+                  <h3>{content.professional.process.title}</h3>
+                  <ol>
+                    {content.professional.process.steps.map((step) => (
+                      <li key={step}>{step}</li>
+                    ))}
+                  </ol>
+                </div>
+              ) : null}
+              <p className="pyt-pro-cta__note">{content.professional.note}</p>
+              {content.professional.feeNote ? (
+                <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
+                  {content.professional.feeNote}
+                </p>
+              ) : null}
+              {content.professional.sendPrompt ? (
+                <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
+                  {content.professional.sendPrompt}
+                </p>
+              ) : null}
             </div>
-
-            <aside className="pyt-planning-aside" aria-label={content.professional.cta}>
-              <div className="pyt-pro-cta">
-                {content.professional.process ? (
-                  <div className="pyt-process">
-                    <h3>{content.professional.process.title}</h3>
-                    <ol>
-                      {content.professional.process.steps.map((step) => (
-                        <li key={step}>{step}</li>
-                      ))}
-                    </ol>
-                  </div>
-                ) : null}
-                <p className="pyt-pro-cta__note">{content.professional.note}</p>
-                {content.professional.feeNote ? (
-                  <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
-                    {content.professional.feeNote}
-                  </p>
-                ) : null}
-                {content.professional.sendPrompt ? (
-                  <p className="pyt-pro-cta__note pyt-pro-cta__note--muted">
-                    {content.professional.sendPrompt}
-                  </p>
-                ) : null}
-              </div>
-            </aside>
           </div>
         </div>
       </section>
-
-      {content.sampleItinerary && (
-        <section className="pyt-section pyt-section--light" id="sample-itinerary">
-          <div className="pyt-section__inner pyt-section__inner--wide">
-            <div className="pyt-sample-layout">
-              <div>
-                <div className="pyt-itin-invite">
-                  <div className="pyt-itin-invite__text">
-                    <span className="pyt-tier-badge">{content.sampleItinerary.eyebrow}</span>
-                    <h2 className="pyt-itin-invite__title">{content.sampleItinerary.title}</h2>
-                    <p className="pyt-itin-invite__body">{content.sampleItinerary.intro}</p>
-                  </div>
-                  {locale === 'en' && content.sampleItinerary.fullGuideLink ? (
-                    <Link href={content.sampleItinerary.fullGuideLink} className="pyt-itin-invite__btn">
-                      {content.sampleItinerary.fullGuideLabel}
-                    </Link>
-                  ) : null}
-                </div>
-
-                {content.sampleItinerary.route ? (
-                  <div className="pyt-route-line">
-                    <span>{content.sampleItinerary.routeLabel}</span>
-                    <strong>{content.sampleItinerary.route}</strong>
-                  </div>
-                ) : null}
-              </div>
-              <div className="pyt-sample-media">
-                <Image
-                  src="/images/plan-your-trip-sample-son-gual.webp"
-                  alt={SAMPLE_IMAGE_ALTS[locale] || SAMPLE_IMAGE_ALTS.en}
-                  fill
-                  sizes="(max-width: 860px) 100vw, 38vw"
-                  className="pyt-sample-media__img"
-                />
-              </div>
-            </div>
-
-            {content.sampleItinerary.whyThisShape ? (
-              <details className="pyt-itin-why pyt-itin-why--teaser">
-                <summary className="pyt-itin-why__title">{content.sampleItinerary.whyThisShape.title}</summary>
-                <p className="pyt-itin-why__lead">{content.sampleItinerary.whyThisShape.lead}</p>
-                <ul className="pyt-itin-why__list">
-                  {content.sampleItinerary.whyThisShape.points.map((point) => (
-                    <li key={point.title} className="pyt-itin-why__item">
-                      <strong className="pyt-itin-why__item-title">{point.title}</strong>
-                      <span className="pyt-itin-why__item-body">{point.body}</span>
-                    </li>
-                  ))}
-                </ul>
-              </details>
-            ) : null}
-
-            <div className="pyt-itin__footer pyt-itin__footer--teaser">
-              <p className="pyt-itin__summary">{content.sampleItinerary.summary}</p>
-              <p>
-                {content.sampleItinerary.feesNote}{' '}
-                <Link href={buildLocalePath(content.sampleItinerary.feesLink, locale)} className="pyt-itin__hotel-link">
-                  {content.sampleItinerary.feesCta}
-                </Link>
-              </p>
-              <p>
-                {content.sampleItinerary.hotelEyebrow}:{' '}
-                <Link href={hotelRecommenderHref} className="pyt-itin__hotel-link">
-                  {content.sampleItinerary.hotelCta}
-                </Link>
-              </p>
-            </div>
-          </div>
-        </section>
-      )}
 
       {content.tripIdeas ? (
         <section className="pyt-section pyt-section--white" id="trip-ideas">
@@ -301,46 +207,75 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
         </section>
       ) : null}
 
-      {content.clientProof && proofItems.length > 0 ? (
-        <section className="pyt-section pyt-section--white" id="client-proof">
+      {content.sampleItinerary && (
+        <section className="pyt-section pyt-section--light" id="sample-itinerary">
           <div className="pyt-section__inner pyt-section__inner--wide">
-            <div className="pyt-proof__head">
-              <h2 className="pyt-tier-title">{content.clientProof.title}</h2>
-              <p className="pyt-tier-body">{content.clientProof.intro}</p>
-            </div>
-            <div className="pyt-proof__feature">
-              <div className="pyt-proof__photos">
-                {PROOF_PHOTOS.map((photo) => (
-                  <figure key={photo.src} className="pyt-proof__photo">
-                    <Image
-                      src={photo.src}
-                      alt={localizeAlt(photo.alt, locale)}
-                      fill
-                      sizes="(max-width: 700px) 260px, 300px"
-                      className={`pyt-proof__photo-img pyt-proof__photo-img--${photo.modifier}`}
-                    />
-                  </figure>
-                ))}
+            <div className="pyt-sample-layout">
+              <div>
+                <div className="pyt-itin-invite">
+                  <div className="pyt-itin-invite__text">
+                    <span className="pyt-tier-badge">{content.sampleItinerary.eyebrow}</span>
+                    <h2 className="pyt-itin-invite__title">{content.sampleItinerary.title}</h2>
+                    <p className="pyt-itin-invite__body">{content.sampleItinerary.intro}</p>
+                  </div>
+                  {locale === 'en' && content.sampleItinerary.fullGuideLink ? (
+                    <Link href={content.sampleItinerary.fullGuideLink} className="pyt-itin-invite__btn">
+                      {content.sampleItinerary.fullGuideLabel}
+                    </Link>
+                  ) : null}
+                </div>
+
+                {content.sampleItinerary.route ? (
+                  <div className="pyt-route-line">
+                    <span>{content.sampleItinerary.routeLabel}</span>
+                    <strong>{content.sampleItinerary.route}</strong>
+                  </div>
+                ) : null}
               </div>
-              <blockquote className="pull-quote pyt-proof__quote pyt-proof__quote--lead">
-                <p>&ldquo;{proofItems[0].text}&rdquo;</p>
-                <cite>{proofItems[0].author}</cite>
-              </blockquote>
+              <div className="pyt-sample-media">
+                <Image
+                  src="/images/plan-your-trip-sample-son-gual.webp"
+                  alt={SAMPLE_IMAGE_ALTS[locale] || SAMPLE_IMAGE_ALTS.en}
+                  fill
+                  sizes="(max-width: 860px) 100vw, 38vw"
+                  className="pyt-sample-media__img"
+                />
+              </div>
             </div>
-            <div className="pyt-proof__quotes">
-              {proofItems.slice(1).map((item) => (
-                <details key={item.author} className="pyt-proof__review">
-                  <summary>{item.author}</summary>
-                  <blockquote className="pull-quote pyt-proof__quote">
-                    <p>&ldquo;{item.text}&rdquo;</p>
-                    <cite>{item.author}</cite>
-                  </blockquote>
-                </details>
-              ))}
+
+            {content.sampleItinerary.whyThisShape ? (
+              <div className="pyt-itin-why pyt-itin-why--teaser">
+                <h3 className="pyt-itin-why__title">{content.sampleItinerary.whyThisShape.title}</h3>
+                <p className="pyt-itin-why__lead">{content.sampleItinerary.whyThisShape.lead}</p>
+                <ul className="pyt-itin-why__list">
+                  {content.sampleItinerary.whyThisShape.points.map((point) => (
+                    <li key={point.title} className="pyt-itin-why__item">
+                      <strong className="pyt-itin-why__item-title">{point.title}</strong>
+                      <span className="pyt-itin-why__item-body">{point.body}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ) : null}
+
+            <div className="pyt-itin__footer pyt-itin__footer--teaser">
+              <p className="pyt-itin__summary">{content.sampleItinerary.summary}</p>
+              <p>
+                {content.sampleItinerary.feesNote}{' '}
+                <Link href={buildLocalePath(content.sampleItinerary.feesLink, locale)} className="pyt-itin__hotel-link">
+                  {content.sampleItinerary.feesCta}
+                </Link>
+              </p>
+              <p>
+                {content.sampleItinerary.hotelEyebrow}:{' '}
+                <Link href={hotelRecommenderHref} className="pyt-itin__hotel-link">
+                  {content.sampleItinerary.hotelCta}
+                </Link>
+              </p>
             </div>
           </div>
         </section>
-      ) : null}
+      )}
 
       <section className="pyt-section pyt-section--light pyt-support">
         <div className="pyt-section__inner pyt-addon">
@@ -361,6 +296,24 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
           </div>
         </div>
       </section>
+
+      {content.clientProof && proofItems.length > 0 ? (
+        <section className="testimonials pyt-client-reviews" id="client-proof">
+          <div className="pyt-section__inner">
+            <div className="testimonials__header">
+              <h2 className="pyt-tier-title">{content.clientProof.title}</h2>
+            </div>
+            <div className="pyt-client-reviews__grid">
+              {proofItems.map(item => (
+                <blockquote key={item.author} className="testimonial">
+                  <p>&ldquo;{item.text}&rdquo;</p>
+                  <cite className="testimonial__author">{item.author}</cite>
+                </blockquote>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="pyt-section pyt-section--pine pyt-enquiry">
         <div className="pyt-section__inner">
