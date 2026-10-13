@@ -104,7 +104,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Después de años jugando solo una o dos veces al año, decidí que era hora de volver al juego que amaba de niño en Sudáfrica. La clase de Andy sobre el campo me enseñó lo que el driving range nunca pudo. Tres semanas más tarde, había pasado de jugar de vez en cuando a hacer rondas en los noventa bajos, jugando con confianza y disfrutando de nuevo del golf. No puedo recomendar a Andy lo suficiente — sobre todo si quiere mejorar su juego, no solo su swing."
         },
         {
-          "text": "Hace poco pasé dos días con Andy en Santa Ponsa 1 y Alcanada. Desde el punto de vista del golpeo, la enseñanza de Andy fue brillante. Ya en los últimos nueve hoyos de la primera ronda golpeaba más limpio y con más precisión. Hablamos mucho sobre el enfoque mental de una ronda real de golf desde la perspectiva de un profesional — algo que una sesión en el driving range no puede ofrecer. Recomiendo pasar un día completo (o más) con Andy. Gracias de nuevo, Andy — ¡volveré a por más!"
+          "text": "Hace poco pasé dos días con Andy en Mallorca y tuve el placer de jugar dos vueltas con él en Santa Ponsa 1 y Alcanada. Desde el punto de vista del golpeo, la enseñanza de Andy fue brillante. Ya en los últimos nueve hoyos de la primera vuelta golpeaba más limpio y con más precisión. Hablamos mucho sobre el enfoque mental de una vuelta de golf real desde la perspectiva de un profesional — algo que una sesión en el driving range no puede ofrecer. Recomiendo muchísimo pasar un día completo (o más) con Andy: ¡tiene una sabiduría que ofrecer que va mucho más allá del golf! Gracias de nuevo, Andy — ¡volveré a por más!"
         },
         {
           "text": "Juego al golf desde los cinco años. Pensaba que tenía los fundamentos claros y que solo necesitaba más repeticiones, no un entrenador. Entonces alguien me regaló una clase con Andy y decidí probar. Me alegro de haberlo hecho. Trabajamos los detalles finos de mi swing: contacto sólido con la bola, mejor transferencia de peso y mecánica. Incluso los ajustes más pequeños dieron resultados consistentes, y estoy convencido de que me quitarán entre 5 y 10 golpes con solo una sesión. Andy fue un auténtico profesional. No puedo agradecérselo lo suficiente."
@@ -128,7 +128,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Me dio un feedback claro y específico que me ayudó a corregir varios errores. Especialmente el putting, con el que siempre he tenido dificultades, ha mejorado mucho. Seguiré contando con Andy como mi pro."
         },
         {
-          "text": "Mi esposa y yo pasamos dos días magníficos con Andy. Nos dio consejos sencillos que pudimos aplicar de inmediato en el campo y nos enseñó a pensar mejor durante los 18 hoyos. Genial verlo jugar también — volveremos a reservar el año que viene."
+          "text": "Visité Mallorca con mi esposa y pasamos dos días magníficos con Andy. Nos dio algunos consejos sencillos para poner en práctica en el campo de inmediato y nos enseñó a pensar mucho mejor cómo afrontar los 18 hoyos. ¡Fue genial ver jugar a Andy también! Recomiendo a Andy a cualquiera que quiera mejorar su experiencia de golf en la isla. Reservaremos para el año que viene."
         },
         {
           "text": "Una experiencia increíble. Andy evaluó todos los aspectos de mi juego — el swing, la gestión del campo y la parte mental — haciendo ajustes a medida que avanzábamos. Me fui con muchas cosas concretas en las que trabajar."
@@ -388,7 +388,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Nach Jahren, in denen ich nur ein- oder zweimal im Jahr gespielt habe, wurde es Zeit, zu dem Spiel zurückzukehren, das ich als Kind in Südafrika lieben gelernt hatte. Andys Golfstunde auf dem Platz hat mir beigebracht, was mir die Driving Range nie beibringen konnte. Drei Wochen später hatte ich es von gelegentlichem Herumschlagen zu Runden in den niedrigen 90ern geschafft, spiele mit Selbstvertrauen und liebe Golf wieder. Ich kann Andy nicht genug empfehlen — besonders wenn Sie nicht nur Ihren Schwung, sondern Ihr ganzes Spiel verbessern wollen."
         },
         {
-          "text": "Ich habe kürzlich zwei Tage mit Andy auf Santa Ponsa 1 und Alcanada verbracht. Rein vom Ballstriking her war Andys Unterricht brillant. Schon auf den zweiten neun der ersten Runde traf ich sauberer und genauer. Wir haben viel über die mentale Herangehensweise an eine echte Golfrunde aus Sicht eines Profis gesprochen — das kann eine Einheit auf der Driving Range nicht leisten. Ich empfehle uneingeschränkt, einen ganzen Tag (oder mehr) mit Andy zu verbringen. Nochmals danke, Andy — ich komme gern wieder!"
+          "text": "Ich habe kürzlich zwei Tage mit Andy auf Mallorca verbracht und hatte das Vergnügen, zwei Runden mit ihm in Santa Ponsa 1 und Alcanada zu spielen. Rein vom Ballstriking her war Andys Unterricht brillant. Schon auf den zweiten Neun der ersten Runde traf ich sauberer und genauer. Wir haben viel über die mentale Herangehensweise an eine echte Golfrunde aus Sicht eines Profis gesprochen — das kann eine Einheit auf der Driving Range nicht leisten. Ich empfehle uneingeschränkt, einen ganzen Tag (oder mehr) mit Andy zu verbringen: Er hat eine Weisheit zu vermitteln, die weit über das Golfspiel hinausgeht! Nochmals danke, Andy — ich komme bestimmt wieder!"
         },
         {
           "text": "Ich spiele Golf, seit ich fünf war. Ich dachte, die Grundlagen sitzen und ich brauche einfach mehr Wiederholungen, keinen Coach. Dann schenkte mir jemand eine Stunde bei Andy, und ich dachte, ich probiere es. Gut, dass ich es getan habe. Wir haben die Feinheiten meines Schwungs durchgearbeitet: sauberer Ballkontakt, besserer Gewichtstransfer und Mechanik. Selbst die kleinsten Anpassungen brachten konstante Ergebnisse, und ich bin überzeugt, dass sie mir 5-10 Schläge von einer einzigen Session abnehmen werden. Andy war absolut professionell. Kann ihm gar nicht genug danken."
@@ -412,7 +412,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Er hat mir klares und gezieltes Feedback gegeben, das mir geholfen hat, mehrere Fehler zu korrigieren. Besonders mein Putten, womit ich schon lange kämpfe, hat sich stark verbessert. Ich werde Andy weiterhin als meinen Pro nutzen."
         },
         {
-          "text": "Meine Frau und ich haben zwei großartige Tage mit Andy verbracht. Er gab uns einfache Tipps, die wir sofort auf dem Platz umsetzen konnten, und brachte uns bei, strategischer über 18 Löcher nachzudenken. Toll, ihn auch spielen zu sehen — wir werden nächstes Jahr wieder buchen."
+          "text": "Ich war mit meiner Frau auf Mallorca, und wir haben zwei großartige Tage mit Andy verbracht. Er gab uns einfache Tipps, die wir sofort auf dem Platz umsetzen konnten, und hat uns beigebracht, die 18 Löcher viel klüger anzugehen. Es war richtig toll, Andy auch spielen zu sehen! Ich würde Andy jedem empfehlen, der sein Golferlebnis auf der Insel aufwerten möchte. Wir werden für nächstes Jahr buchen."
         },
         {
           "text": "Eine tolle Erfahrung. Andy hat alle Aspekte meines Spiels bewertet — Schwungtechnik, Platzmanagement und die mentale Seite — und dabei laufend Anpassungen vorgenommen. Ich habe eine Menge Verbesserungspunkte mitgenommen."
@@ -672,7 +672,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Après des années à ne jouer qu'une ou deux fois par an, j'ai décidé qu'il était temps de retrouver le jeu que j'aimais en grandissant en Afrique du Sud. Le cours d'Andy sur le parcours m'a appris ce qu'un practice n'aurait jamais pu m'apprendre. Trois semaines plus tard, j'étais passé de parties occasionnelles à des scores dans les 90 petits, jouant avec confiance et retrouvant le plaisir du golf. Je ne peux que recommander Andy — surtout si vous voulez améliorer votre jeu, pas seulement votre swing."
         },
         {
-          "text": "J'ai récemment passé deux jours avec Andy à Santa Ponsa 1 et à Alcanada. Sur le plan du geste, l'enseignement d'Andy a été brillant. Dès les neuf derniers trous du premier parcours, je frappais plus proprement et avec plus de précision. Nous avons beaucoup parlé de l'approche mentale d'une vraie partie de golf du point de vue d'un professionnel — ce qu'une séance au practice ne peut pas offrir. Je recommande vivement de passer une journée complète (ou plus) avec Andy. Merci encore, Andy — je reviendrai !"
+          "text": "J'ai récemment passé deux jours avec Andy à Majorque et j'ai eu le plaisir de faire deux parties avec lui à Santa Ponsa 1 et à Alcanada. Sur le plan de la frappe pure, l'enseignement d'Andy a été brillant. Dès les neuf derniers trous de la première partie, je frappais plus proprement et avec plus de précision. Nous avons beaucoup parlé de l'approche mentale d'une vraie partie de golf du point de vue d'un professionnel — ce qu'une séance au practice ne peut pas offrir. Je recommande vivement de passer une journée complète (ou plus) avec Andy : il a une sagesse à transmettre qui va bien au-delà du golf ! Merci encore, Andy — je reviendrai, j'en redemande !"
         },
         {
           "text": "Je joue au golf depuis l'âge de cinq ans. Je pensais avoir les fondamentaux et n'avoir besoin que de plus de répétitions, pas d'un coach. Puis quelqu'un m'a offert une leçon avec Andy, et j'ai décidé de tenter. J'ai bien fait. Nous avons travaillé les détails fins de mon swing : contact de balle solide, meilleur transfert de poids et mécanique. Même les plus petits ajustements ont donné des résultats constants, et je suis convaincu qu'ils me feront gagner 5 à 10 coups dès une seule session. Andy était un vrai professionnel. Je ne le remercierai jamais assez."
@@ -696,7 +696,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Il m'a donné un retour clair et précis qui m'a permis de corriger plusieurs erreurs. Mon putting en particulier, avec lequel j'ai toujours eu du mal, s'est vraiment amélioré. Je continuerai à faire appel à Andy comme mon pro."
         },
         {
-          "text": "Ma femme et moi avons passé deux jours formidables avec Andy. Il nous a donné des conseils simples à appliquer immédiatement sur le parcours et nous a appris à mieux réfléchir sur 18 trous. C'était aussi très sympa de le voir jouer — nous réserverons à nouveau l'année prochaine."
+          "text": "Je suis venu à Majorque avec ma femme et nous avons passé deux jours formidables avec Andy. Il nous a donné quelques conseils simples à appliquer tout de suite sur le parcours et nous a appris à réfléchir beaucoup mieux à notre façon de jouer les 18 trous. C'était vraiment sympa de voir Andy jouer aussi ! Je recommande Andy à tous ceux qui veulent améliorer leur expérience du golf sur l'île. Nous réserverons pour l'année prochaine."
         },
         {
           "text": "Une expérience formidable. Andy a évalué tous les aspects de mon jeu — le swing, la gestion du parcours et le mental — en faisant des ajustements au fil de la partie. Je suis reparti avec beaucoup de points concrets à travailler."
@@ -955,7 +955,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Na jaren waarin ik maar één of twee keer per jaar speelde, besloot ik dat het tijd was om terug te gaan naar het spel waar ik als kind in Zuid-Afrika van hield. Andy's les op de baan leerde me wat een driving range nooit had gekund. Drie weken later was ik gegaan van af en toe wat rondjes hakken naar scores in de lage negentig, speel ik met vertrouwen en geniet ik weer volop van golf. Ik kan Andy niet genoeg aanbevelen — zeker als u niet alleen uw swing, maar uw hele spel wilt verbeteren."
         },
         {
-          "text": "Ik heb onlangs twee dagen met Andy doorgebracht op Santa Ponsa 1 en Alcanada. Puur qua balcontact was Andy's begeleiding briljant. Op de back nine van de eerste ronde sloeg ik al zuiverder en nauwkeuriger. We spraken veel over de mentale aanpak van een echte ronde golf vanuit het perspectief van een professional — iets wat een sessie op de driving range niet kan bieden. Ik raad het ten zeerste aan om een hele dag (of meer) met Andy door te brengen. Nogmaals bedankt, Andy — ik kom terug voor meer!"
+          "text": "Ik heb onlangs twee dagen met Andy doorgebracht op Mallorca en had het genoegen twee rondes met hem te spelen op Santa Ponsa 1 en Alcanada. Puur qua balcontact was Andy's begeleiding briljant. Op de back nine van de eerste ronde sloeg ik al zuiverder en nauwkeuriger. We spraken veel over de mentale aanpak van een echte ronde golf vanuit het perspectief van een professional — iets wat een sessie op de driving range niet kan bieden. Ik raad het ten zeerste aan om een hele dag (of meer) met Andy door te brengen: hij heeft wijsheid te delen die veel verder gaat dan het golfspel! Nogmaals bedankt, Andy — ik kom zeker nog eens terug!"
         },
         {
           "text": "Ik golf al sinds mijn vijfde. Ik dacht dat ik de basis onder de knie had en gewoon meer herhaling nodig had, geen coach. Toen kreeg ik een les bij Andy cadeau en besloot het te proberen. Goed dat ik dat deed. We werkten de fijnere details van mijn swing uit: solide balcontact, betere gewichtsverplaatsing en mechaniek. Zelfs de kleinste aanpassingen leverden consistente resultaten op, en ik ben ervan overtuigd dat ze me 5 tot 10 slagen gaan schelen na maar één sessie. Andy was een echte professional. Kan hem niet genoeg bedanken."
@@ -979,7 +979,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Hij gaf me duidelijke en specifieke feedback waarmee ik meerdere fouten kon corrigeren. Vooral mijn putting, waar ik altijd mee worstelde, is sterk verbeterd. Ik blijf Andy gebruiken als mijn pro."
         },
         {
-          "text": "Mijn vrouw en ik brachten twee geweldige dagen door met Andy. Hij gaf ons eenvoudige tips die we meteen op de baan konden toepassen en leerde ons beter na te denken over 18 holes. Ook leuk om hem zelf te zien spelen — we boeken volgend jaar weer."
+          "text": "Ik bezocht Mallorca met mijn vrouw en we brachten twee geweldige dagen door met Andy. Hij gaf ons een paar eenvoudige tips die we meteen op de baan konden toepassen en leerde ons veel beter na te denken over hoe we 18 holes spelen. Het was ook erg gaaf om Andy te zien spelen! Ik zou Andy aanbevelen aan iedereen die zijn golfervaring op het eiland wil verbeteren. We gaan voor volgend jaar boeken."
         },
         {
           "text": "Een geweldige ervaring. Andy beoordeelde alle aspecten van mijn spel — swing, baanmanagement en het mentale deel — en paste onderweg dingen aan. Ik ging weg met veel concrete punten om aan te werken."
@@ -1239,7 +1239,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Efter år av att bara spela en eller två gånger om året bestämde jag mig för att det var dags att komma tillbaka till spelet jag älskade som barn i Sydafrika. Andys lektion ute på banan lärde mig det en driving range aldrig hade kunnat. Tre veckor senare hade jag gått från att hacka mig runt banan då och då till att slå rundor i låga nittiotalet, spelar med självförtroende och älskar golf igen. Jag kan inte rekommendera Andy nog — särskilt om du vill förbättra ditt spel, inte bara din swing."
         },
         {
-          "text": "Jag tillbringade nyligen två dagar med Andy på Santa Ponsa 1 och Alcanada. Rent slagmässigt var Andys undervisning briljant. Redan på de sista nio hålen av första ronden slog jag renare och med bättre precision. Vi pratade mycket om det mentala förhållningssättet till en riktig golfrunda ur en professionells perspektiv — något en session på rangen inte kan ge. Jag rekommenderar varmt att spendera en hel dag (eller mer) med Andy. Tack igen, Andy — jag kommer tillbaka för mer!"
+          "text": "Jag tillbringade nyligen två dagar med Andy på Mallorca och hade nöjet att spela två rundor med honom på Santa Ponsa 1 och Alcanada. Rent slagmässigt var Andys undervisning briljant. Redan på de sista nio hålen av första rundan slog jag renare och med bättre precision. Vi pratade mycket om det mentala förhållningssättet till en riktig golfrunda ur ett proffs perspektiv — något en session på rangen inte kan ge. Jag rekommenderar varmt att spendera en hel dag (eller mer) med Andy: han delar med sig av en visdom som sträcker sig långt bortom golfen! Tack igen, Andy — jag kommer garanterat tillbaka!"
         },
         {
           "text": "Jag har spelat golf sedan jag var fem. Jag trodde att jag hade grunderna klara och bara behövde fler repetitioner, inte en coach. Sedan fick jag en lektion med Andy i present och bestämde mig för att prova. Bra att jag gjorde det. Vi jobbade igenom de finare detaljerna i min sving: fast bollkontakt, bättre viktöverföring och mekanik. Även de minsta justeringarna gav konsekventa resultat, och jag är övertygad om att de kommer ta bort 5-10 slag från mitt spel efter bara en session. Andy var helt professionell. Kan inte tacka honom nog."
@@ -1263,7 +1263,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "Han gav mig tydlig och specifik feedback som hjälpte mig rätta till flera misstag. Framför allt mitt puttande, som jag länge kämpat med, har förbättrats mycket. Jag kommer fortsätta använda Andy som min pro."
         },
         {
-          "text": "Min fru och jag tillbringade två fantastiska dagar med Andy. Han gav oss enkla tips som vi kunde använda direkt på banan och lärde oss att tänka bättre över 18 hål. Kul att se honom spela också — vi bokar igen nästa år."
+          "text": "Jag besökte Mallorca med min fru och vi tillbringade två fantastiska dagar med Andy. Han gav oss några enkla tips som vi kunde använda på banan direkt och lärde oss att spela 18 hål mycket klokare. Det var riktigt häftigt att se Andy spela också! Jag rekommenderar Andy till alla som vill lyfta sin golfupplevelse på ön. Vi kommer att boka för nästa år."
         },
         {
           "text": "En fantastisk upplevelse. Andy utvärderade alla delar av mitt spel — swingen, banstrategin och det mentala — och justerade längs vägen. Jag åkte hem med massor av konkreta saker att jobba med."
@@ -1523,7 +1523,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "多年来我每年只打一两次高尔夫，我决定该回到小时候在南非就喜爱的这项运动。和 Andy 在球场上的实战课，教会了我练习场永远教不会的东西。三周之后，我从偶尔打几次，进步到能打出接近 90 杆的成绩，打球更自信，也重新爱上了高尔夫。我极力推荐 Andy——尤其是如果你想提升的不只是挥杆，而是整体球技。"
         },
         {
-          "text": "我最近和 Andy 在 Santa Ponsa 1 和 Alcanada 度过了两天。单从击球角度来说，Andy 的指导非常出色。第一场的后九洞，我的击球已经更干净、更准确。我们聊了很多以职业球手的视角看待一场真实球赛的心理策略——这是练习场课程给不了的。我强烈推荐花一整天（或更多时间）和 Andy 在一起。再次感谢 Andy——我还会再来！"
+          "text": "我最近和 Andy 在马略卡度过了两天，有幸和他在 Santa Ponsa 1 和 Alcanada 打了两场球。单从击球角度来说，Andy 的指导非常出色。打到第一场的后九洞时，我的击球就已经更扎实、更准确了。我们聊了很多职业球手如何从心理上应对一场真实的球局——这是练习场课程给不了的。我强烈推荐花一整天（或更多时间）和 Andy 在一起：他能传授的智慧远远超出了高尔夫本身！再次感谢 Andy——我还会再来！"
         },
         {
           "text": "我从五岁就开始打高尔夫。原以为自己基本功已经扎实，只需要多练习，不需要教练。后来有人送了我一节Andy的课程，我决定试一试。很庆幸我去了。我们细致打磨了挥杆的细节：扎实的击球、更好的重心转移，以及动作机制。即使是最小的调整也带来了稳定的效果，我相信仅这一节课就能帮我在成绩上减少5到10杆。Andy非常专业，怎么感谢都不为过。"
@@ -1547,7 +1547,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "text": "他给了我清晰具体的反馈，帮我纠正了好几个问题。尤其是推杆——我一直在这方面挣扎——进步很大。我会继续让 Andy 做我的教练。"
         },
         {
-          "text": "我和妻子与 Andy 一起度过了两天非常棒的时光。他给了我们一些简单实用的建议，在球场上马上就能用上，也教会了我们如何更好地规划 18 洞的思路。看他打球也很精彩——明年我们还会再预订。"
+          "text": "我和妻子来马略卡游玩，与 Andy 一起度过了两天非常棒的时光。他给了我们一些简单的小建议，在球场上马上就能用上，也教会了我们如何更好地规划 18 洞的打法。看 Andy 打球也非常酷！我会向任何想在岛上提升高尔夫体验的人推荐 Andy。我们会再预订明年的行程。"
         },
         {
           "text": "非常棒的体验。Andy 对我高尔夫的各个方面进行了评估——挥杆技术、球场管理和心理状态——并在过程中不断调整。我带走了很多具体可以改进的地方。"

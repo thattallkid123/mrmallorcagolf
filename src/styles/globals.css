@@ -254,6 +254,55 @@
   max-width: 780px;
   margin-bottom: 36px;
 }
+
+/* Client proof strip: lead quote beside two client photos, then three more quotes.
+   Auto-fit grids, so no breakpoint is needed. .pull-quote is defined later in the
+   file, hence the compound selectors to win on specificity. */
+.pyt-proof__head {
+  max-width: 780px;
+  margin-bottom: 36px;
+}
+.pyt-proof__feature {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr));
+  gap: clamp(20px, 3vw, 36px);
+  align-items: center;
+  margin-bottom: clamp(20px, 3vw, 36px);
+}
+.pyt-proof__photos {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+}
+.pyt-proof__photo {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  background: var(--sand);
+}
+.pyt-proof__photo-img {
+  object-fit: cover;
+}
+.pyt-proof__photo-img--gual {
+  object-position: center 70%;
+}
+.pyt-proof__photo-img--quint {
+  object-position: center 30%;
+}
+.pull-quote.pyt-proof__quote {
+  margin: 0;
+  max-width: none;
+}
+.pull-quote.pyt-proof__quote--lead p {
+  font-size: clamp(1.15rem, 1.8vw, 1.4rem);
+}
+.pyt-proof__quotes {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+  gap: 20px;
+}
 .pyt-trip-ideas {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));

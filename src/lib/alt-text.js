@@ -20,6 +20,22 @@ export const ALT_TEXT = {
     "sv": "Andy med Jannie på Son Gual under en Play With A Pro-dag",
     "zh": "Andy 与Jannie在 Son Gual 的 Play With A Pro 体验日"
   },
+  "Andy with John at Son Gual during a Play With A Pro day": {
+    "de": "Andy mit John in Son Gual bei einem Play-With-A-Pro-Tag",
+    "es": "Andy con John en Son Gual durante un día Play With A Pro",
+    "fr": "Andy avec John à Son Gual lors d'une journée Play With A Pro",
+    "nl": "Andy met John op Son Gual tijdens een Play With A Pro-dag",
+    "sv": "Andy med John på Son Gual under en Play With A Pro-dag",
+    "zh": "Andy 与 John 在 Son Gual 的 Play With A Pro 体验日"
+  },
+  "Andy with John at Son Quint during a Play With A Pro day": {
+    "de": "Andy mit John in Son Quint bei einem Play-With-A-Pro-Tag",
+    "es": "Andy con John en Son Quint durante un día Play With A Pro",
+    "fr": "Andy avec John à Son Quint lors d'une journée Play With A Pro",
+    "nl": "Andy met John op Son Quint tijdens een Play With A Pro-dag",
+    "sv": "Andy med John på Son Quint under en Play With A Pro-dag",
+    "zh": "Andy 与 John 在 Son Quint 的 Play With A Pro 体验日"
+  },
   "Andy with Paul at Son Termes during a Play With A Pro day": {
     "de": "Andy mit Paul in Son Termes bei einem Play-With-A-Pro-Tag",
     "es": "Andy con Paul en Son Termes durante un día Play With A Pro",

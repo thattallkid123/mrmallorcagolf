@@ -148,6 +148,31 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       }
     ]
   },
+  "clientProof": {
+    "eyebrow": "In their words",
+    "title": "Golfers who came to Mallorca to play.",
+    "intro": "What visiting golfers wrote after their time on the course with me.",
+    "testimonials": {
+      "items": [
+        {
+          "text": "The most enjoyable golf imaginable. Andy brings such easy affability and deep wisdom, playing with him is an absolute privilege. I was on an extended golf vacation and my rounds with Andy were the best part of my trip. He's really great, and the ultimate resource for golf on Mallorca!!",
+          "author": "John H."
+        },
+        {
+          "text": "I visited Mallorca with my wife and we spent two brilliant days with Andy. He gave us some easy tips to put in to action on the golf course straight away and taught us how to think our way around 18 holes much better. It was very cool to watch Andy play too! Would recommend Andy for anyone looking to upgrade their golfing experience while on the island. We will be booking for next year.",
+          "author": "Sam"
+        },
+        {
+          "text": "I recently spent two days with Andy in Mallorca and had the pleasure of playing two rounds with him at Santa Ponsa 1 and Alcanada. I would highly recommend spending a full day (or more) with Andy - he has wisdom far beyond the game of golf to impart! Thank you again, Andy - I'll be back for more!",
+          "author": "Mark P."
+        },
+        {
+          "text": "Mr Mallorca Golf was totally worth it. I booked a round with Andy and he was an excellent host. He gave me amazing golf tips, straightened out my slice which has been a problem for my game for years. Beyond that he was great company. Would recommend to anyone looking to book a Golf Trip in Mallorca.",
+          "author": "Adam"
+        }
+      ]
+    }
+  },
   "addon": {
     "eyebrow": "Add-on available at any level",
     "title": "Play With A Pro",

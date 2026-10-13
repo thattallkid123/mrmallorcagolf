@@ -123,7 +123,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Jannie"
       },
       {
-        "text": "I recently spent two days with Andy at Santa Ponsa 1 and Alcanada. From a pure ball striking perspective, Andy's tuition was brilliant. Come the back 9 of the first round I was already hitting cleaner shots with better accuracy. We talked a lot about the mental approach to a real round of golf from a professional's perspective - this is something a session at a driving range cannot deliver. I would highly recommend spending a full day (or more) with Andy. Thank you again, Andy - I'll be back for more!",
+        "text": "I recently spent two days with Andy in Mallorca and had the pleasure of playing two rounds with him at Santa Ponsa 1 and Alcanada. From a pure ball striking perspective, Andy's tuition was brilliant. Come the back 9 of the first round I was already hitting cleaner shots with better accuracy. We talked a lot about the mental approach to a real round of golf from a professional's perspective - this is something a session at a driving range cannot deliver. I would highly recommend spending a full day (or more) with Andy - he has wisdom far beyond the game of golf to impart! Thank you again, Andy - I'll be back for more!",
         "author": "Mark P."
       },
       {
@@ -155,7 +155,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Synøve"
       },
       {
-        "text": "My wife and I spent two brilliant days with Andy. He gave us easy tips to put into action on the course straight away and taught us how to think our way around 18 holes. Great to watch him play too — we'll be booking again next year.",
+        "text": "I visited Mallorca with my wife and we spent two brilliant days with Andy. He gave us some easy tips to put in to action on the golf course straight away and taught us how to think our way around 18 holes much better. It was very cool to watch Andy play too! Would recommend Andy for anyone looking to upgrade their golfing experience while on the island. We will be booking for next year.",
         "author": "Sam"
       },
       {

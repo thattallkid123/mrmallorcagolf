@@ -63,8 +63,8 @@ export const ABOUT_CONTENT = {
         "credit": "Finlay"
       },
       {
-        "text": "Down to earth guy explained everything with ease and made me feel so relaxed.",
-        "credit": "Mark"
+        "text": "Andy brings such easy affability and deep wisdom, playing with him is an absolute privilege.",
+        "credit": "John H."
       }
     ]
   },

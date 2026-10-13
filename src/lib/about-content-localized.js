@@ -62,7 +62,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "text": "Lo que más disfruté fue lo cómodo que me hizo sentir en el campo."
         },
         {
-          "text": "Un tipo con los pies en la tierra que explicó todo con facilidad y me hizo sentir muy relajado."
+          "text": "Andy combina una afabilidad muy natural con una sabiduría profunda; jugar con él es un auténtico privilegio."
         }
       ]
     },
@@ -187,7 +187,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "text": "Am meisten hat mir gefallen, wie wohl ich mich mit ihm auf dem Platz gefühlt habe."
         },
         {
-          "text": "Ein bodenständiger Typ, der alles mit Leichtigkeit erklärt und mich so entspannt hat."
+          "text": "Andy bringt so viel unkomplizierte Umgänglichkeit und tiefe Weisheit mit, dass es ein echtes Privileg ist, mit ihm zu spielen."
         }
       ]
     },
@@ -314,7 +314,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "text": "Ce que j'ai le plus apprécié, c'est le confort qu'il m'a donné sur le parcours."
         },
         {
-          "text": "Un gars accessible qui a tout expliqué avec facilité et m'a mis très à l'aise."
+          "text": "Andy allie une affabilité si naturelle à une sagesse profonde ; jouer avec lui est un véritable privilège."
         }
       ]
     },
@@ -440,7 +440,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "text": "Wat ik het meest waardeerde, was hoe comfortabel hij me op de baan liet voelen."
         },
         {
-          "text": "Een nuchter persoon die alles gemakkelijk uitlegde en me zo ontspannen liet voelen."
+          "text": "Andy straalt zo'n ongedwongen vriendelijkheid en diepe wijsheid uit; met hem spelen is een echt voorrecht."
         }
       ]
     },
@@ -563,7 +563,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "text": "Det jag uppskattade mest var hur bekväm han fick mig att känna mig ute på banan."
         },
         {
-          "text": "En jordnära kille som förklarade allt med lätthet och fick mig att känna mig helt avslappnad."
+          "text": "Andy har en så lättsam vänlighet och en djup visdom; att spela med honom är ett riktigt privilegium."
         }
       ]
     },
@@ -681,7 +681,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "text": "我最喜欢的是，他让我在球场上始终感觉很自在。"
         },
         {
-          "text": "他是个很接地气的人，用轻松的方式解释了一切，让我完全放松下来。"
+          "text": "Andy 平易近人，又有深厚的智慧，和他一起打球是一种真正的荣幸。"
         }
       ]
     },

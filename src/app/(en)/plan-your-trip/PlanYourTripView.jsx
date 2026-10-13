@@ -7,6 +7,7 @@ import ZhCourseSelectorClient from '../../zh/course-selector/ZhCourseSelectorCli
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import { buildLocalePath } from '../../../lib/site'
 import { getPlanYourTripContent } from '../../../lib/plan-your-trip-content'
+import { localizeAlt } from '../../../lib/alt-text'
 
 const COURSE_LINK_LABELS = {
   en: 'View all Mallorca golf courses',
@@ -46,6 +47,13 @@ const SAMPLE_IMAGE_ALTS = {
   zh: '马略卡 Son Gual 球场开球的球手',
 }
 
+// Photos shown beside the lead client quote. The alt strings are the English keys
+// in src/lib/alt-text.js; localizeAlt() swaps in the translation per locale.
+const PROOF_PHOTOS = [
+  { src: '/images/client-son-gual-john.webp', alt: 'Andy with John at Son Gual during a Play With A Pro day', modifier: 'gual' },
+  { src: '/images/client-son-quint-john.webp', alt: 'Andy with John at Son Quint during a Play With A Pro day', modifier: 'quint' },
+]
+
 export default function PlanYourTripView({ locale = 'en', content: rawContent, courseSelectorData = null }) {
   const content = rawContent || getPlanYourTripContent(locale)
   const courseLinkLabel = COURSE_LINK_LABELS[locale] || COURSE_LINK_LABELS.en
@@ -65,6 +73,8 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
     if (target === 'whole-trip') return wholeTripHref
     return tripPlanningHref
   }
+
+  const proofItems = content.clientProof?.testimonials?.items || []
 
   return (
     <main>
@@ -304,6 +314,45 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent, c
           </div>
         </section>
       )}
+
+      {content.clientProof && proofItems.length > 0 ? (
+        <section className="pyt-section pyt-section--white" id="client-proof">
+          <div className="pyt-section__inner pyt-section__inner--wide">
+            <div className="pyt-proof__head">
+              <span className="pyt-tier-badge">{content.clientProof.eyebrow}</span>
+              <h2 className="pyt-tier-title">{content.clientProof.title}</h2>
+              <p className="pyt-tier-body">{content.clientProof.intro}</p>
+            </div>
+            <div className="pyt-proof__feature">
+              <div className="pyt-proof__photos">
+                {PROOF_PHOTOS.map((photo) => (
+                  <figure key={photo.src} className="pyt-proof__photo">
+                    <Image
+                      src={photo.src}
+                      alt={localizeAlt(photo.alt, locale)}
+                      fill
+                      sizes="(max-width: 700px) 45vw, 360px"
+                      className={`pyt-proof__photo-img pyt-proof__photo-img--${photo.modifier}`}
+                    />
+                  </figure>
+                ))}
+              </div>
+              <blockquote className="pull-quote pyt-proof__quote pyt-proof__quote--lead">
+                <p>&ldquo;{proofItems[0].text}&rdquo;</p>
+                <cite>{proofItems[0].author}</cite>
+              </blockquote>
+            </div>
+            <div className="pyt-proof__quotes">
+              {proofItems.slice(1).map((item) => (
+                <blockquote key={item.author} className="pull-quote pyt-proof__quote">
+                  <p>&ldquo;{item.text}&rdquo;</p>
+                  <cite>{item.author}</cite>
+                </blockquote>
+              ))}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="pyt-section pyt-section--pine">
         <div className="pyt-section__inner pyt-addon">
