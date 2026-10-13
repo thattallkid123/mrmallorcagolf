@@ -5867,18 +5867,26 @@ button.hr-opt.hr-opt--photo { display: flex; flex-direction: column; justify-con
 .hr-opt--photo .hr-opt-body { padding: var(--space-md, 20px); }
 .hr-photo-caption { display: block; margin-top: var(--space-sm, 12px); color: var(--taupe); font-size: .72rem; line-height: 1.5; font-weight: 300; }
 .hr-photo-caption--result { padding-inline: var(--space-md, 20px); }
-.gf-compare__content { min-width: max(760px, calc(130px + var(--compare-count) * 200px)); }
-.gf-compare__content--1 { --compare-count: 1; }
-.gf-compare__content--2 { --compare-count: 2; }
-.gf-compare__content--3 { --compare-count: 3; }
-.gf-compare__content--4 { --compare-count: 4; }
-.gf-compare__content--5 { --compare-count: 5; }
-.gf-compare__courses { display: grid; grid-template-columns: repeat(var(--compare-count), minmax(0, 1fr)); }
-.gf-compare__course { display: flex; flex-direction: column; min-width: 0; }
-.gf-compare__course h3 { background: var(--pine); color: var(--cream); padding: var(--space-sm, 16px); margin: 0; font-family: var(--font-serif); font-size: 1.35rem; line-height: 1.25; flex: 1; }
-.gf-compare__label-col { width: 130px; }
-.gf .gf-compare__table tbody th { text-align: left; padding: 13px 10px; font-size: .86rem; border-bottom: 1px solid rgba(45,74,62,.1); }
-.gf .gf-compare__table tbody tr:nth-child(odd) th { background: var(--linen); }
+/* Labels sit outside the course columns; subgrid keeps every metric aligned. */
+.gf .gf-main:has(.gf-compare) { max-width: 1600px; }
+.gf-compare__scroll { overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--gold) var(--linen); }
+.gf-compare__matrix { display: grid; grid-template-columns: 145px repeat(var(--compare-count), minmax(220px, 1fr)); column-gap: 16px; min-width: max(720px, calc(145px + var(--compare-count) * 236px)); }
+.gf-compare__matrix--1 { --compare-count: 1; }
+.gf-compare__matrix--2 { --compare-count: 2; }
+.gf-compare__matrix--3 { --compare-count: 3; }
+.gf-compare__matrix--4 { --compare-count: 4; }
+.gf-compare__matrix--5 { --compare-count: 5; }
+.gf-compare__labels, .gf-compare__column { display: grid; grid-template-rows: subgrid; grid-row: 1 / span 13; min-width: 0; }
+.gf-compare__labels { position: sticky; left: 0; z-index: 2; color: var(--pine); font-family: var(--font-sans); font-weight: 500; font-size: .85rem; background: var(--cream); }
+.gf-compare__labels > span { display: flex; align-items: flex-start; padding: var(--space-sm, 14px) 8px; }
+.gf-compare__labels > span:first-child { padding: 0; }
+.gf-compare__heading { display: flex; flex-direction: column; justify-content: flex-end; }
+.gf-compare__heading h3 { font-family: var(--font-serif); color: var(--pine); font-size: 1.4rem; line-height: 1.2; margin: 0; padding: var(--space-sm, 16px) 0; flex: 1; }
+.gf-compare__value { position: relative; margin: 0; padding: var(--space-sm, 14px); background: var(--white); border-bottom: 1px solid var(--sand); font-size: .9rem; line-height: 1.65; }
+.gf-compare__value:nth-child(odd) { background: var(--linen); }
+.gf-compare__value dd { margin: 0; overflow-wrap: anywhere; }
+.gf .gf-compare__pickers > .gf-fg { flex: 1 1 220px; min-width: 0; }
+.gf .gf-compare__pickers select { width: 100%; min-width: 0; }
 .tool-card { display: grid; grid-template-columns: 1fr auto; column-gap: var(--space-sm, 16px); }
 .tool-card > :not(.tool-photo) { grid-column: 1; }
 .tool-card .tool-photo--directory { grid-column: 2; grid-row: 1 / span 3; width: clamp(68px, 8vw, 104px); align-self: start; aspect-ratio: 1; border-radius: 2px; }
@@ -5905,18 +5913,28 @@ button.hr-opt.hr-opt--photo { display: flex; flex-direction: column; justify-con
 .tool-whatsapp-link--dark:hover { background: var(--pine-mid); }
 
 /* Shared single-row choices. Safe centring falls back to the start when scrolling. */
-.cst-wrap.cst-wrap:has(.cst-opts), .gdb-wrap.gdb-wrap:has(.gdb-opts), div.hr-quiz-wrap.hr-quiz-wrap { max-width: 1280px; }
+.cst-wrap.cst-wrap:has(.cst-opts), .gdb-wrap.gdb-wrap:has(.gdb-opts), div.hr-quiz-wrap.hr-quiz-wrap { max-width: 1600px; }
 .tool-choices { min-width: 0; }
 .tool-choices__nav { display: flex; align-items: center; justify-content: flex-end; gap: var(--space-sm, 10px); margin-bottom: var(--space-sm, 12px); }
 .tool-choices__nav span { margin-right: auto; color: var(--taupe); font-size: .8rem; }
 .tool-choices__nav button { font-family: var(--font-sans); width: 44px; height: 44px; border: 1px solid var(--sand); background: transparent; color: var(--pine); font-size: 1.2rem; cursor: pointer; }
 div.tool-choice-track { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: safe center; align-items: stretch; gap: 14px; max-width: none; overflow-x: auto; scroll-snap-type: x proximity; scroll-padding: 4px; padding: 4px 4px 12px; scrollbar-width: thin; scrollbar-color: var(--gold) var(--linen); }
-div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(220px, calc((100% - 56px) / 5), 280px); min-width: 0; width: auto; max-width: none; scroll-snap-align: start; }
-div.tool-choice-track.hr-options--photos > button:nth-child(n) { flex-basis: clamp(220px, calc((100% - 56px) / 5), 300px); }
+div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(200px, calc((100% - (var(--choice-count) - 1) * 14px) / var(--choice-count)), 300px); min-width: 0; width: auto; max-width: none; scroll-snap-align: start; }
+
 .tool-choice-track > button:focus-visible, .tool-choices__nav button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
-.gf .gf-compare__table thead th:nth-child(n) { width: auto; position: static; }
-.gf .gf-compare__table thead th:first-child { width: 130px; }
+
 .gdb-result-note { font-size: .85rem; line-height: 1.65; color: var(--taupe); text-align: center; margin-block: var(--space-md, 20px); }
 .gdb-no-match { text-align: center; padding-block: var(--space-xl, 40px); }
 
 .tool-choices__nav button:disabled, .tool-choice-track > button:disabled { opacity: .4; cursor: default; }
+
+.tool-choice-track--1 { --choice-count: 1; }
+.tool-choice-track--2 { --choice-count: 2; }
+.tool-choice-track--3 { --choice-count: 3; }
+.tool-choice-track--4 { --choice-count: 4; }
+.tool-choice-track--5 { --choice-count: 5; }
+.tool-choice-track--6 { --choice-count: 6; }
+.tool-choice-track--7 { --choice-count: 7; }
+.tool-choice-track--8 { --choice-count: 8; }
+
+.gf-compare__heading .tool-photo { max-height: 240px; }

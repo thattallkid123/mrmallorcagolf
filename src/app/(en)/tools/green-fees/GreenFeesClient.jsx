@@ -386,12 +386,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
         .gf-compare__intro { font-size:.9rem; color:var(--muted); line-height:1.6; margin-bottom:20px; }
         .gf-compare__pickers { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px; }
         .gf-compare__pickers .gf-fg select { min-width:200px; }
-        .gf-compare__table { overflow-x:auto; }
-        .gf-compare__table table { table-layout:fixed; }
-        .gf-compare__table thead th { position:sticky; top:var(--nav-h); z-index:3; width:auto; }
-        .gf-compare__table thead th:first-child { left:0; z-index:4; width:130px; }
-        .gf-compare__label { position:sticky; left:0; z-index:2; width:130px; font-weight:500; color:var(--pine); background:var(--cream); white-space:nowrap; box-shadow:1px 0 rgba(45,74,62,.12); }
-        @media (max-width:820px){ .gf-table-wrap { display:none; } .gf-cards { display:block; } .gf-count { width:100%; margin-left:0; } .gf-fg select { min-width:130px; } .gf-compare .gf-table-wrap { display:block; } .gf-compare__pickers .gf-fg select { min-width:140px; } }
+        @media (max-width:820px){ .gf-table-wrap { display:none; } .gf-cards { display:block; } .gf-count { width:100%; margin-left:0; } .gf-fg select { min-width:130px; } .gf-compare__pickers .gf-fg select { min-width:140px; } }
       `}</style>
 
       <section className="gf-hero">
@@ -549,38 +544,26 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
             </div>
 
             {compared.length > 0 && (
-              <div className="gf-table-wrap gf-compare__table" role="region" aria-label={t.compare.intro} tabIndex="0">
-                <div className={`gf-compare__content gf-compare__content--${compared.length}`}>
-                  <div className="gf-compare__courses">
-                    {compared.map((c, i) => (
-                      <div className="gf-compare__course" key={`course-${i}`}>
-                        <h3>{displayCourseName(c.name)}</h3>
-                        <ToolPhoto src={c.image} alt={planningImageText('course', lang, displayCourseName(c.name))} sizes="(max-width: 768px) 320px, 465px" />
-                      </div>
-                    ))}
+              <div className="gf-compare__scroll" role="region" aria-label={t.compare.intro} tabIndex="0">
+                <div className={`gf-compare__matrix gf-compare__matrix--${compared.length}`}>
+                  <div className="gf-compare__labels" aria-hidden="true">
+                    <span />
+                    {compareRows.map(row => <span key={row.label}>{row.label}</span>)}
                   </div>
-                <table aria-label={t.modebar.headToHead} aria-describedby="gf-compare-note">
-                  <colgroup>
-                    <col className="gf-compare__label-col" />
-                    {compared.map((c, i) => <col key={`col-${i}`} />)}
-                  </colgroup>
-                  <thead>
-                    <tr>
-                      <th scope="col">{t.table.course}</th>
-                      {compared.map((c, i) => <th scope="col" key={`ch-${i}`}>{displayCourseName(c.name)}</th>)}
-                    </tr>
-                  </thead>
-                  <tbody>
-                    {compareRows.map((row) => (
-                      <tr key={row.label}>
-                        <th scope="row" className="gf-compare__label">{row.label}</th>
-                        {compared.map((c, i) => (
-                          <td key={`${row.label}-${i}`} className={row.label === t.table.andyVerdic ? 'gf-verdict' : ''}>{row.get(c)}</td>
-                        ))}
-                      </tr>
-                    ))}
-                  </tbody>
-                </table>
+                  {compared.map((c, i) => (
+                    <section className="gf-compare__column" key={c.name} aria-labelledby={`gf-course-${i}`}>
+                      <header className="gf-compare__heading">
+                        <h3 id={`gf-course-${i}`}>{displayCourseName(c.name)}</h3>
+                        <ToolPhoto src={c.image} alt={planningImageText('course', lang, displayCourseName(c.name))} sizes="(max-width: 768px) 240px, 480px" />
+                      </header>
+                      {compareRows.map(row => (
+                        <dl key={row.label} className={`gf-compare__value${row.label === t.table.andyVerdic ? ' gf-verdict' : ''}`}>
+                          <dt className="sr-only">{row.label}</dt>
+                          <dd>{row.get(c)}</dd>
+                        </dl>
+                      ))}
+                    </section>
+                  ))}
                 </div>
               </div>
             )}

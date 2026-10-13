@@ -73,6 +73,8 @@ export const EN_PLAN = {
     "experiencePlain": "{course}"
   },
   "whyCourse": {
+    "facts": "{holes} holes, par {par}.",
+    "area": "In the area you selected.",
     "courseType": {
       "famous": "it is one of the island's best-known courses",
       "scenic": "it has the views you asked for",

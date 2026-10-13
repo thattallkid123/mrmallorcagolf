@@ -102,67 +102,302 @@ export const START_WINDOWS = {
 }
 
 export const QUESTIONS = [
-  { key:'region', label:'Step 1 of 8 · Location', title:'Where are you staying?', sub:'The plan is built around your base.', multi:false, opts:[
-    {v:'southwest', t:'Southwest', d:'Santa Ponsa, Andratx, Bendinat, Calvià'},
-    {v:'palma',     t:'Palma and around', d:'Palma city, Son Vida, central island'},
-    {v:'north',     t:'North', d:'Alcúdia, Pollença, the bays'},
-    {v:'east',      t:'East', d:'Cala Millor, Canyamel, Artà'},
-    {v:'south',     t:'South', d:'Llucmajor, airport area, Son Antem'},
-    {v:'unbooked',  t:'Not booked yet', d:'I will suggest the best golf base for you'},
-  ]},
-  { key:'dayStyle', label:'Step 2 of 8 · Day style', title:'What kind of day are you after?', sub:'Pick the one that sounds most like you.', multi:false, opts:[
-    {v:'serious',  t:'Serious golf',  d:'The round is the main event'},
-    {v:'relaxed',  t:'Relaxed golf',  d:'Good golf without pressure'},
-    {v:'luxury',   t:'Luxury',        d:'The best of everything, handled'},
-    {v:'family',   t:'Family day',    d:'Golf plus something for everyone'},
-    {v:'scenic',   t:'Scenic',        d:'Views first, score second'},
-    {v:'food',     t:'Food first',    d:'Golf built around a great lunch'},
-  ]},
-  { key:'level', label:'Step 3 of 8 · Golf level', title:'How would you describe your golf?', sub:'Honest answers make better days.', multi:false, opts:[
-    {v:'beginner',  t:'Beginner',      d:'New to the game or returning to it'},
-    {v:'casual',    t:'Casual',        d:'A few rounds a year'},
-    {v:'confident', t:'Confident',     d:'Regular golfer, mid handicap'},
-    {v:'low',       t:'Low handicap',  d:'Single figures, bring the test'},
-  ]},
-  { key:'handicap', label:'Handicap', title:'What is the highest handicap in your group?', sub:'Choose a range only if everyone has a current handicap certificate.', multi:false, opts:[
-    {v:'low', t:'Up to 28', d:'Current certificates for everyone'},
-    {v:'mid', t:'29 to 36', d:'Current certificates for everyone'},
-    {v:'high', t:'37 to 54', d:'Current certificates for everyone'},
-    {v:'none', t:'No current certificates', d:'Course access needs checking'},
-    {v:'unknown', t:'Not sure yet', d:'Course access needs checking'},
-  ]},
-  { key:'start', label:'Step 4 of 8 · Start time', title:'When do you like to start?', sub:'', multi:false, opts:[
-    {v:'early', t:'Early morning', d:'First off, the day is yours after'},
-    {v:'mid',   t:'Mid-morning',   d:'A civilised start with a full day shape'},
-    {v:'pm',    t:'Afternoon',     d:'Slow morning, late-light golf'},
-  ]},
-  { key:'courseType', label:'Step 5 of 8 · Course type', title:'What matters most in the course?', sub:'', multi:false, opts:[
-    {v:'famous',      t:'A known name',      d:'The courses people ask about'},
-    {v:'scenic',      t:'Scenery',           d:'Sea views, mountains, elevation'},
-    {v:'challenging', t:'A real test',       d:'A course that asks questions'},
-    {v:'forgiving',   t:'Forgiving',         d:'Wide, friendly, and fun'},
-    {v:'close',       t:'Close to my hotel', d:'Minimum time in the car'},
-  ]},
-  { key:'addons', label:'Step 6 of 8 · Beyond the golf', title:'What would round out the day?', sub:"Choose up to two extras, or none", multi:true, opts:[
-    {v:'lunch',    t:'Long lunch',        d:'A proper Mallorcan table'},
-    {v:'beach',    t:'Beach',             d:'A swim after the round'},
-    {v:'spa',      t:'Spa',               d:'Recovery done well'},
-    {v:'village',  t:'Local village',     d:'An hour in a historic town'},
-    {v:'wine',     t:'Wine',              d:'A bodega visit or tasting'},
-    {v:'family',   t:'Family activity',   d:'Something for the non-golfers'},
-    {v:'coaching', t:'Coaching with me', d:'PGA Advanced Professional session'},
-  ]},
-  { key:'transport', label:'Step 7 of 8 · Transport', title:'Do you need transport arranged?', sub:'', multi:false, opts:[
-    {v:'yes', t:'Yes, arrange it', d:'Driver or transfers, door to door'},
-    {v:'no',  t:'No, we will drive', d:'Hire car or own wheels'},
-  ]},
-  { key:'group', label:'Step 8 of 8 · Your group', title:'Who is coming?', sub:'', multi:false, opts:[
-    {v:'solo',     t:'Just me',          d:'Solo golf, full focus'},
-    {v:'couple',   t:'A couple',         d:'Two of you'},
-    {v:'friends',  t:'Friends',          d:'A small group trip'},
-    {v:'family',   t:'Family',           d:'Mixed ages and interests'},
-    {v:'vip',      t:'VIP or corporate', d:'Hosting clients or marking an occasion'},
-  ]},
+  {
+    "key": "region",
+    "label": "Step 1 of 8 · Location",
+    "title": "Where are you staying?",
+    "sub": "Choose your accommodation area, or select ‘Not booked yet’.",
+    "multi": false,
+    "opts": [
+      {
+        "v": "southwest",
+        "t": "Southwest",
+        "d": "Santa Ponsa, Andratx, Bendinat, Calvià"
+      },
+      {
+        "v": "palma",
+        "t": "Palma and around",
+        "d": "Palma city, Son Vida, central island"
+      },
+      {
+        "v": "north",
+        "t": "North",
+        "d": "Alcúdia, Pollença, the bays"
+      },
+      {
+        "v": "east",
+        "t": "East",
+        "d": "Cala Millor, Canyamel, Artà"
+      },
+      {
+        "v": "south",
+        "t": "South",
+        "d": "Llucmajor, airport area, Son Antem"
+      },
+      {
+        "v": "unbooked",
+        "t": "Not booked yet",
+        "d": "Suggest an area for the courses I want"
+      }
+    ]
+  },
+  {
+    "key": "dayStyle",
+    "label": "Step 2 of 8 · Day style",
+    "title": "What kind of day are you after?",
+    "sub": "Pick the one that sounds most like you.",
+    "multi": false,
+    "opts": [
+      {
+        "v": "serious",
+        "t": "Golf only",
+        "d": "An 18-hole round with time to warm up"
+      },
+      {
+        "v": "relaxed",
+        "t": "Relaxed golf",
+        "d": "Wider fairways and less emphasis on score"
+      },
+      {
+        "v": "luxury",
+        "t": "Premium clubs",
+        "d": "Prioritise course condition and club facilities"
+      },
+      {
+        "v": "family",
+        "t": "Family day",
+        "d": "Include time for activities away from golf"
+      },
+      {
+        "v": "scenic",
+        "t": "Course views",
+        "d": "Sea views or Tramuntana mountains"
+      },
+      {
+        "v": "food",
+        "t": "Golf and lunch",
+        "d": "Include a restaurant stop"
+      }
+    ]
+  },
+  {
+    "key": "level",
+    "label": "Step 3 of 8 · Golf level",
+    "title": "How would you describe your golf?",
+    "sub": "This helps match the course to the group.",
+    "multi": false,
+    "opts": [
+      {
+        "v": "beginner",
+        "t": "Beginner",
+        "d": "New to the game or returning to it"
+      },
+      {
+        "v": "casual",
+        "t": "Casual",
+        "d": "A few rounds a year"
+      },
+      {
+        "v": "confident",
+        "t": "Confident",
+        "d": "Regular golfer, mid handicap"
+      },
+      {
+        "v": "low",
+        "t": "Low handicap",
+        "d": "Single-figure handicap"
+      }
+    ]
+  },
+  {
+    "key": "handicap",
+    "label": "Handicap",
+    "title": "What is the highest handicap in your group?",
+    "sub": "Use the highest handicap in your group. Choose a number only if every player can show a current handicap certificate. Otherwise, select one of the last two options.",
+    "multi": false,
+    "opts": [
+      {
+        "v": "low",
+        "t": "Up to 28",
+        "d": ""
+      },
+      {
+        "v": "mid",
+        "t": "29 to 36",
+        "d": ""
+      },
+      {
+        "v": "high",
+        "t": "37 to 54",
+        "d": ""
+      },
+      {
+        "v": "none",
+        "t": "Missing a certificate",
+        "d": "One or more players cannot show a current handicap certificate"
+      },
+      {
+        "v": "unknown",
+        "t": "Not confirmed yet",
+        "d": "I do not know everyone’s handicap or certificate status"
+      }
+    ]
+  },
+  {
+    "key": "start",
+    "label": "Step 4 of 8 · Start time",
+    "title": "When do you like to start?",
+    "sub": "",
+    "multi": false,
+    "opts": [
+      {
+        "v": "early",
+        "t": "Early morning",
+        "d": "More time for lunch or activities after golf"
+      },
+      {
+        "v": "mid",
+        "t": "Mid-morning",
+        "d": "Start after breakfast"
+      },
+      {
+        "v": "pm",
+        "t": "Afternoon",
+        "d": "Leave the morning free; daylight must be checked"
+      }
+    ]
+  },
+  {
+    "key": "courseType",
+    "label": "Step 5 of 8 · Course type",
+    "title": "What matters most in the course?",
+    "sub": "",
+    "multi": false,
+    "opts": [
+      {
+        "v": "famous",
+        "t": "A known name",
+        "d": "Prioritise the island’s better-known clubs"
+      },
+      {
+        "v": "scenic",
+        "t": "Scenery",
+        "d": "Sea views, mountains, elevation"
+      },
+      {
+        "v": "challenging",
+        "t": "More difficult golf",
+        "d": "Longer holes, water hazards or narrow landing areas"
+      },
+      {
+        "v": "forgiving",
+        "t": "Wider fairways",
+        "d": "More room for tee shots"
+      },
+      {
+        "v": "close",
+        "t": "In my area",
+        "d": "A course in the area selected above"
+      }
+    ]
+  },
+  {
+    "key": "addons",
+    "label": "Step 6 of 8 · Beyond the golf",
+    "title": "What would round out the day?",
+    "sub": "Choose up to two extras, or none",
+    "multi": true,
+    "opts": [
+      {
+        "v": "lunch",
+        "t": "Lunch",
+        "d": "A restaurant stop near the course"
+      },
+      {
+        "v": "beach",
+        "t": "Beach",
+        "d": "A swim or time by the sea"
+      },
+      {
+        "v": "spa",
+        "t": "Spa",
+        "d": "A spa visit near the course"
+      },
+      {
+        "v": "village",
+        "t": "Local village",
+        "d": "Coffee or a walk through town"
+      },
+      {
+        "v": "wine",
+        "t": "Wine",
+        "d": "A bodega visit or tasting"
+      },
+      {
+        "v": "family",
+        "t": "Family activity",
+        "d": "An activity for players and non-golfers"
+      },
+      {
+        "v": "coaching",
+        "t": "Coaching with me",
+        "d": "Warm-up, lesson or on-course coaching"
+      }
+    ]
+  },
+  {
+    "key": "transport",
+    "label": "Step 7 of 8 · Transport",
+    "title": "Do you need transport arranged?",
+    "sub": "",
+    "multi": false,
+    "opts": [
+      {
+        "v": "yes",
+        "t": "Ask about transfers",
+        "d": "Arranged through a local travel partner"
+      },
+      {
+        "v": "no",
+        "t": "We will drive",
+        "d": "Own car or hire car"
+      }
+    ]
+  },
+  {
+    "key": "group",
+    "label": "Step 8 of 8 · Your group",
+    "title": "Who is coming?",
+    "sub": "",
+    "multi": false,
+    "opts": [
+      {
+        "v": "solo",
+        "t": "Just me",
+        "d": "One player"
+      },
+      {
+        "v": "couple",
+        "t": "A couple",
+        "d": "Two of you"
+      },
+      {
+        "v": "friends",
+        "t": "Friends",
+        "d": "A small group trip"
+      },
+      {
+        "v": "family",
+        "t": "Family",
+        "d": "Mixed ages and interests"
+      },
+      {
+        "v": "vip",
+        "t": "VIP or corporate",
+        "d": "Hosting clients or marking an occasion"
+      }
+    ]
+  }
 ]
 
 export const LEVEL_RANK = { beginner:0, casual:1, confident:2, low:3 }
@@ -212,18 +447,8 @@ export function lunchFor(region, answers, premium, restaurants = RESTAURANTS) {
 }
 
 export function whyCourseChosen(course, answers, text = EN_WHY) {
-  const reasons = []
-  if (course.tags.includes(answers.courseType)) {
-    const p = text.courseType[answers.courseType]
-    if (p) reasons.push(p)
-  }
-  if (course.tags.includes(answers.dayStyle) && answers.dayStyle !== answers.courseType) {
-    const p = text.dayStyle[answers.dayStyle]
-    if (p) reasons.push(p)
-  }
-  const lvl = LEVEL_RANK[answers.level]
-  if (lvl >= LEVEL_REQ[course.level]) reasons.push(text.matched)
-  if (!reasons.length) return text.fallback
-  const first = text.capitalise === false ? reasons[0] : reasons[0].charAt(0).toUpperCase() + reasons[0].slice(1)
-  return [first, ...reasons.slice(1)].join(text.separator) + text.end
+  const canonical = getCanonicalCourseDataByName(course.name)
+  if (!canonical) return text.fallback
+  const facts = text.facts.replace('{holes}', canonical.holeCount).replace('{par}', canonical.par)
+  return course.region === answers.region ? facts + ' ' + text.area : facts
 }

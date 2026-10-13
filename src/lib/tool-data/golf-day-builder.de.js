@@ -45,7 +45,7 @@ const data = {
  "questions": {
   "region": {
    "title": "Wo übernachten Sie?",
-   "sub": "Der Plan wird um Ihren Standort herum aufgebaut.",
+   "sub": "Wählen Sie die Region Ihrer Unterkunft oder „Noch nicht gebucht“.",
    "opts": {
     "southwest": [
      "Südwesten",
@@ -69,7 +69,7 @@ const data = {
     ],
     "unbooked": [
      "Noch nicht gebucht",
-     "Ich schlage Ihnen den besten Standort für Ihr Golf vor"
+     "Eine Region passend zu meinen Wunschplätzen empfehlen"
     ]
    }
   },
@@ -78,34 +78,34 @@ const data = {
    "sub": "Wählen Sie, was am ehesten zu Ihnen passt.",
    "opts": {
     "serious": [
-     "Ernsthaftes Golf",
-     "Die Runde ist das Hauptereignis"
+     "Nur Golf",
+     "18 Löcher mit Zeit zum Aufwärmen"
     ],
     "relaxed": [
      "Entspanntes Golf",
-     "Gutes Golf ohne Druck"
+     "Breitere Fairways, weniger Fokus auf den Score"
     ],
     "luxury": [
-     "Luxus",
-     "Das Beste von allem, alles erledigt"
+     "Premium-Clubs",
+     "Platzpflege und Clubausstattung haben Vorrang"
     ],
     "family": [
      "Familientag",
-     "Golf plus etwas für alle"
+     "Zeit für Aktivitäten neben dem Golf einplanen"
     ],
     "scenic": [
-     "Landschaftlich",
-     "Erst die Aussicht, dann das Ergebnis"
+     "Ausblicke",
+     "Meerblick oder Tramuntana-Gebirge"
     ],
     "food": [
-     "Essen zuerst",
-     "Golf rund um ein großartiges Mittagessen"
+     "Golf und Mittagessen",
+     "Einen Restaurantbesuch einplanen"
     ]
    }
   },
   "level": {
    "title": "Wie würden Sie Ihr Golf beschreiben?",
-   "sub": "Ehrliche Antworten ergeben bessere Tage.",
+   "sub": "So kann der Platz zum Spielniveau Ihrer Gruppe passen.",
    "opts": {
     "beginner": [
      "Anfänger",
@@ -121,7 +121,7 @@ const data = {
     ],
     "low": [
      "Niedriges Handicap",
-     "Einstellig, gern mit einem echten Test"
+     "Einstelliges Handicap"
     ]
    }
   },
@@ -130,16 +130,16 @@ const data = {
    "sub": "",
    "opts": {
     "early": [
-     "Frühmorgens",
-     "Als Erster raus, danach gehört der Tag Ihnen"
+     "Früher Morgen",
+     "Mehr Zeit für Mittagessen oder Aktivitäten nach dem Golf"
     ],
     "mid": [
-     "Vormittags",
-     "Ein gemütlicher Start mit einem vollen Tag danach"
+     "Vormittag",
+     "Nach dem Frühstück starten"
     ],
     "pm": [
-     "Nachmittags",
-     "Langsamer Morgen, Golf im späten Licht"
+     "Nachmittag",
+     "Der Morgen bleibt frei; das Tageslicht muss geprüft werden"
     ]
    }
   },
@@ -148,24 +148,24 @@ const data = {
    "sub": "",
    "opts": {
     "famous": [
-     "Ein bekannter Name",
-     "Die Plätze, nach denen alle fragen"
+     "Bekannter Name",
+     "Die bekannteren Clubs der Insel bevorzugen"
     ],
     "scenic": [
      "Landschaft",
      "Meerblick, Berge, Höhenunterschiede"
     ],
     "challenging": [
-     "Ein echter Test",
-     "Ein Platz, der Fragen stellt"
+     "Schwierigerer Platz",
+     "Längere Löcher, Wasserhindernisse oder schmale Landezonen"
     ],
     "forgiving": [
-     "Verzeihend",
-     "Breit, freundlich und unterhaltsam"
+     "Breitere Fairways",
+     "Mehr Platz für Abschläge"
     ],
     "close": [
-     "Nah an meinem Hotel",
-     "Möglichst wenig Zeit im Auto"
+     "In meiner Region",
+     "Ein Platz in der oben gewählten Region"
     ]
    }
   },
@@ -174,20 +174,20 @@ const data = {
    "sub": "Wählen Sie bis zu zwei Extras oder keines",
    "opts": {
     "lunch": [
-     "Langes Mittagessen",
-     "Ein richtiger mallorquinischer Tisch"
+     "Mittagessen",
+     "Ein Restaurantbesuch in Platznähe"
     ],
     "beach": [
      "Strand",
-     "Ein Bad nach der Runde"
+     "Schwimmen oder Zeit am Meer"
     ],
     "spa": [
      "Spa",
-     "Erholung, gut gemacht"
+     "Ein Spa-Besuch in Platznähe"
     ],
     "village": [
-     "Dorf vor Ort",
-     "Eine Stunde in einer historischen Stadt"
+     "Dorfbesuch",
+     "Kaffee oder ein Spaziergang durch den Ort"
     ],
     "wine": [
      "Wein",
@@ -195,11 +195,11 @@ const data = {
     ],
     "family": [
      "Familienaktivität",
-     "Etwas für die Nicht-Golfer"
+     "Eine Aktivität für Golfer und Nichtgolfer"
     ],
     "coaching": [
      "Coaching mit mir",
-     "Session mit einem PGA Advanced Professional"
+     "Aufwärmen, Unterricht oder Coaching auf dem Platz"
     ]
    }
   },
@@ -208,12 +208,12 @@ const data = {
    "sub": "",
    "opts": {
     "yes": [
-     "Ja, bitte organisieren",
-     "Fahrer oder Transfers, von Tür zu Tür"
+     "Transfers anfragen",
+     "Über einen lokalen Reisepartner organisiert"
     ],
     "no": [
-     "Nein, wir fahren selbst",
-     "Mietwagen oder eigenes Auto"
+     "Wir fahren selbst",
+     "Eigenes Auto oder Mietwagen"
     ]
    }
   },
@@ -223,7 +223,7 @@ const data = {
    "opts": {
     "solo": [
      "Nur ich",
-     "Golf allein, volle Konzentration"
+     "Eine Person"
     ],
     "couple": [
      "Ein Paar",
@@ -245,27 +245,27 @@ const data = {
   },
   "handicap": {
    "title": "Was ist das höchste Handicap in Ihrer Gruppe?",
-   "sub": "Wählen Sie nur einen Bereich, wenn alle einen aktuellen Handicap-Nachweis haben.",
+   "sub": "Maßgeblich ist das höchste Handicap Ihrer Gruppe. Wählen Sie eine Zahl nur, wenn alle einen aktuellen Handicapnachweis vorlegen können. Andernfalls wählen Sie eine der letzten beiden Optionen.",
    "opts": {
     "low": [
      "Bis 28",
-     "Aktuelle Nachweise für alle"
+     ""
     ],
     "mid": [
      "29 bis 36",
-     "Aktuelle Nachweise für alle"
+     ""
     ],
     "high": [
      "37 bis 54",
-     "Aktuelle Nachweise für alle"
+     ""
     ],
     "none": [
-     "Keine aktuellen Nachweise",
-     "Der Platzzugang muss geprüft werden"
+     "Nachweis fehlt",
+     "Mindestens eine Person kann keinen aktuellen Handicapnachweis vorlegen"
     ],
     "unknown": [
-     "Noch nicht sicher",
-     "Der Platzzugang muss geprüft werden"
+     "Noch nicht bestätigt",
+     "Handicaps oder Nachweise der Gruppe sind noch nicht bekannt"
     ]
    }
   }
@@ -592,7 +592,9 @@ const data = {
    "fallback": "Die beste verfügbare Übereinstimmung mit Ihren Antworten in dieser Gegend.",
    "separator": ", ",
    "end": ".",
-   "capitalise": true
+   "capitalise": true,
+   "facts": "{holes} Löcher, Par {par}.",
+   "area": "In der von Ihnen gewählten Region."
   },
   "handles": {
    "tee": "Ich bestätige und buche das Golf",

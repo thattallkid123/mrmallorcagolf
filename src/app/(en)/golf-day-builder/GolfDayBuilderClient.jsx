@@ -398,7 +398,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
             <div className="gdb-step-label">{stepIdx + 1} / {QUESTIONS.length}</div>
             <div className="gdb-qcard">
               <h2>{q.title}</h2>
-              {q.sub && <p className="sub">{q.sub}</p>}
+              {q.sub && !q.multi && <p className="sub">{q.sub}</p>}
               {q.multi && <div className="gdb-multi-note">{t.quiz.selectAny}</div>}
               <ToolChoices locale={lang} className="gdb-opts">
                 {q.opts.map(o => (

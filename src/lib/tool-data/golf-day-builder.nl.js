@@ -45,7 +45,7 @@ const data = {
  "questions": {
   "region": {
    "title": "Waar verblijft u?",
-   "sub": "Het plan wordt rond uw uitvalsbasis opgebouwd.",
+   "sub": "Kies de regio van uw verblijf of ‘Nog niet geboekt’.",
    "opts": {
     "southwest": [
      "Zuidwesten",
@@ -69,7 +69,7 @@ const data = {
     ],
     "unbooked": [
      "Nog niet geboekt",
-     "Ik stel de beste uitvalsbasis voor golf voor u voor"
+     "Een regio voorstellen voor de banen die ik wil spelen"
     ]
    }
   },
@@ -78,34 +78,34 @@ const data = {
    "sub": "Kies wat het meest bij u past.",
    "opts": {
     "serious": [
-     "Serieus golf",
-     "De ronde is het hoofdevenement"
+     "Alleen golf",
+     "18 holes met tijd om op te warmen"
     ],
     "relaxed": [
      "Ontspannen golf",
-     "Goed golf zonder druk"
+     "Bredere fairways en minder nadruk op de score"
     ],
     "luxury": [
-     "Luxe",
-     "Het beste van alles, geregeld"
+     "Premiumclubs",
+     "Baanconditie en clubfaciliteiten hebben voorrang"
     ],
     "family": [
      "Gezinsdag",
-     "Golf plus iets voor iedereen"
+     "Tijd voor activiteiten buiten het golf inplannen"
     ],
     "scenic": [
-     "Landschappelijk",
-     "Eerst het uitzicht, dan de score"
+     "Uitzicht op de baan",
+     "Zeezicht of de Tramuntana-bergen"
     ],
     "food": [
-     "Eerst het eten",
-     "Golf rond een geweldige lunch"
+     "Golf en lunch",
+     "Een restaurantbezoek inplannen"
     ]
    }
   },
   "level": {
    "title": "Hoe zou u uw golf omschrijven?",
-   "sub": "Eerlijke antwoorden geven betere dagen.",
+   "sub": "Dit helpt een baan te kiezen die past bij het niveau van de groep.",
    "opts": {
     "beginner": [
      "Beginner",
@@ -120,8 +120,8 @@ const data = {
      "Vaste golfer, gemiddeld handicap"
     ],
     "low": [
-     "Laag handicap",
-     "Enkele cijfers, met zin in een echte test"
+     "Lage handicap",
+     "Handicap onder de 10"
     ]
    }
   },
@@ -130,16 +130,16 @@ const data = {
    "sub": "",
    "opts": {
     "early": [
-     "Vroeg in de ochtend",
-     "Als een van de eersten weg, daarna is de dag van u"
+     "Vroege ochtend",
+     "Meer tijd voor lunch of activiteiten na het golf"
     ],
     "mid": [
      "Halverwege de ochtend",
-     "Een beschaafde start met een volle dag erna"
+     "Na het ontbijt starten"
     ],
     "pm": [
      "Middag",
-     "Rustige ochtend, golf in het late licht"
+     "De ochtend blijft vrij; daglicht moet worden gecontroleerd"
     ]
    }
   },
@@ -149,23 +149,23 @@ const data = {
    "opts": {
     "famous": [
      "Een bekende naam",
-     "De banen waar iedereen naar vraagt"
+     "Voorrang voor de bekendere clubs op het eiland"
     ],
     "scenic": [
      "Landschap",
      "Uitzicht op zee, bergen, hoogteverschillen"
     ],
     "challenging": [
-     "Een echte test",
-     "Een baan die vragen stelt"
+     "Moeilijker golf",
+     "Langere holes, waterhindernissen of smalle landingszones"
     ],
     "forgiving": [
-     "Vergevingsgezind",
-     "Breed, vriendelijk en leuk"
+     "Bredere fairways",
+     "Meer ruimte voor afslagen"
     ],
     "close": [
-     "Dicht bij mijn hotel",
-     "Zo weinig mogelijk tijd in de auto"
+     "In mijn regio",
+     "Een baan in de hierboven gekozen regio"
     ]
    }
   },
@@ -174,20 +174,20 @@ const data = {
    "sub": "Kies maximaal twee extra’s, of geen",
    "opts": {
     "lunch": [
-     "Lange lunch",
-     "Een echte Mallorcaanse tafel"
+     "Lunch",
+     "Een restaurantbezoek bij de baan"
     ],
     "beach": [
      "Strand",
-     "Een duik na de ronde"
+     "Zwemmen of tijd aan zee"
     ],
     "spa": [
      "Spa",
-     "Herstel goed gedaan"
+     "Een spabezoek bij de baan"
     ],
     "village": [
-     "Lokaal dorp",
-     "Een uur in een historische stad"
+     "Plaatselijk dorp",
+     "Koffie of een wandeling door het dorp"
     ],
     "wine": [
      "Wijn",
@@ -195,11 +195,11 @@ const data = {
     ],
     "family": [
      "Gezinsactiviteit",
-     "Iets voor de niet-golfers"
+     "Een activiteit voor golfers en niet-golfers"
     ],
     "coaching": [
      "Coaching met mij",
-     "Sessie met een PGA Advanced Professional"
+     "Warming-up, les of coaching op de baan"
     ]
    }
   },
@@ -208,12 +208,12 @@ const data = {
    "sub": "",
    "opts": {
     "yes": [
-     "Ja, regel het",
-     "Chauffeur of transfers, van deur tot deur"
+     "Transfers aanvragen",
+     "Geregeld via een lokale reispartner"
     ],
     "no": [
-     "Nee, we rijden zelf",
-     "Huurauto of eigen auto"
+     "We rijden zelf",
+     "Eigen auto of huurauto"
     ]
    }
   },
@@ -223,7 +223,7 @@ const data = {
    "opts": {
     "solo": [
      "Alleen ik",
-     "Solo golf, volle focus"
+     "Eén speler"
     ],
     "couple": [
      "Een stel",
@@ -245,27 +245,27 @@ const data = {
   },
   "handicap": {
    "title": "Wat is de hoogste handicap in uw groep?",
-   "sub": "Kies alleen een bereik als iedereen een geldig handicapbewijs heeft.",
+   "sub": "Ga uit van de hoogste handicap in uw groep. Kies alleen een getal als iedere speler een actueel handicapbewijs kan tonen. Kies anders een van de laatste twee opties.",
    "opts": {
     "low": [
      "Tot en met 28",
-     "Geldige bewijzen voor iedereen"
+     ""
     ],
     "mid": [
      "29 tot 36",
-     "Geldige bewijzen voor iedereen"
+     ""
     ],
     "high": [
      "37 tot 54",
-     "Geldige bewijzen voor iedereen"
+     ""
     ],
     "none": [
-     "Geen geldige bewijzen",
-     "Toegang tot de baan moet worden gecontroleerd"
+     "Bewijs ontbreekt",
+     "Een of meer spelers kunnen geen actueel handicapbewijs tonen"
     ],
     "unknown": [
-     "Nog niet zeker",
-     "Toegang tot de baan moet worden gecontroleerd"
+     "Nog niet bevestigd",
+     "Niet alle handicaps of handicapbewijzen zijn bekend"
     ]
    }
   }
@@ -592,7 +592,9 @@ const data = {
    "fallback": "De beste beschikbare match voor uw antwoorden in dit gebied.",
    "separator": ", ",
    "end": ".",
-   "capitalise": true
+   "capitalise": true,
+   "facts": "{holes} holes, par {par}.",
+   "area": "In de regio die u hebt gekozen."
   },
   "handles": {
    "tee": "Ik bevestig en boek het golf",

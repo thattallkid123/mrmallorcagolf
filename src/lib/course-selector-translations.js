@@ -28,7 +28,7 @@ export const COURSE_SELECTOR_T = {
           beginner: { label: 'Beginner', desc: 'New to the game, or play rarely' },
           casual: { label: 'Casual golfer', desc: 'A few rounds a year, here to enjoy it' },
           confident: { label: 'Confident player', desc: 'Regular golfer, mid handicap' },
-          low: { label: 'Low handicap', desc: 'Single figures, want a proper test' },
+          low: { label: 'Low handicap', desc: "Single-figure handicap" },
         },
       },
       group: {
@@ -39,19 +39,19 @@ export const COURSE_SELECTOR_T = {
           couple: { label: 'A couple', desc: 'Golf plus time together' },
           friends: { label: 'Friends group', desc: '3 to 8 players' },
           family: { label: 'Family', desc: 'Mixed ages and abilities' },
-          corporate: { label: 'Corporate or VIP', desc: 'Client golf, done properly' },
+          corporate: { label: 'Corporate or VIP', desc: "Golf with clients or colleagues" },
         },
       },
       style: {
         title: 'What kind of trip is this?',
         sub: 'Pick what matters most.',
         options: {
-          luxury: { label: 'Luxury', desc: 'The best of everything' },
+          luxury: { label: 'Luxury', desc: "Prioritise course condition and club facilities" },
           scenic: { label: 'Scenic', desc: 'Views first, score second' },
           relaxed: { label: 'Relaxed', desc: 'Easy-going holiday golf' },
-          serious: { label: 'Serious golf', desc: 'The golf is the point' },
-          family: { label: 'Family-friendly', desc: 'Everyone gets a good day' },
-          'bucket-list': { label: 'Bucket list', desc: 'The famous ones, played properly' },
+          serious: { label: 'Serious golf', desc: "18-hole rounds as the main activity" },
+          family: { label: 'Family-friendly', desc: "Golf alongside family activities" },
+          'bucket-list': { label: 'Bucket list', desc: "Play the island’s better-known courses" },
         },
       },
       area: {
@@ -69,9 +69,9 @@ export const COURSE_SELECTOR_T = {
         title: 'How do you think about green fees?',
         sub: 'Fees shown later are seasonal indications, confirmed at booking.',
         options: {
-          value: { label: 'Best value', desc: 'Good golf at sensible money' },
-          mid: { label: 'Mid-range', desc: 'Happy to pay for quality' },
-          premium: { label: 'Premium', desc: 'The best courses, whatever the fee' },
+          value: { label: 'Best value', desc: "Keep green fees down" },
+          mid: { label: 'Mid-range', desc: "Compare fees and course facilities" },
+          premium: { label: 'Premium', desc: "Choose the course before considering the fee" },
         },
       },
       difficulty: {
@@ -79,8 +79,8 @@ export const COURSE_SELECTOR_T = {
         sub: '',
         options: {
           forgiving: { label: 'Forgiving', desc: 'Wide fairways, keep the ball in play' },
-          balanced: { label: 'Balanced', desc: 'A fair test without punishment' },
-          challenging: { label: 'Challenging', desc: 'Bring it on' },
+          balanced: { label: 'Balanced', desc: "A mix of wider and narrower holes" },
+          challenging: { label: 'Challenging', desc: "Longer holes, water hazards or narrow landing areas" },
         },
       },
       walking: {
@@ -200,7 +200,7 @@ export const COURSE_SELECTOR_T = {
           beginner: { label: 'Anfänger', desc: 'Neu im Spiel oder spiele selten' },
           casual: { label: 'Gelegenheitsgolfer', desc: 'Ein paar Runden im Jahr, hier zum Genießen' },
           confident: { label: 'Erfahrener Spieler', desc: 'Regelmäßig, mittleres Handicap' },
-          low: { label: 'Niedrig-Handicapper', desc: 'Einstellig, suche einen echten Test' },
+          low: { label: 'Niedrig-Handicapper', desc: "Einstelliges Handicap" },
         },
       },
       group: {
@@ -211,19 +211,19 @@ export const COURSE_SELECTOR_T = {
           couple: { label: 'Ein Pärchen', desc: 'Golf und Zeit zu zweit' },
           friends: { label: 'Freundesgruppe', desc: '3 bis 8 Spieler' },
           family: { label: 'Familie', desc: 'Verschiedene Altersgruppen und Niveaus' },
-          corporate: { label: 'Geschäftlich oder VIP', desc: 'Kundengolf, professionell organisiert' },
+          corporate: { label: 'Geschäftlich oder VIP', desc: "Golf mit Kunden oder Kollegen" },
         },
       },
       style: {
         title: 'Was für eine Reise soll das sein?',
         sub: 'Wählen Sie, was am meisten zählt.',
         options: {
-          luxury: { label: 'Luxus', desc: 'Das Beste von allem' },
+          luxury: { label: 'Luxus', desc: "Platzpflege und Clubausstattung priorisieren" },
           scenic: { label: 'Landschaftlich', desc: 'Aussicht zuerst, Score danach' },
           relaxed: { label: 'Entspannt', desc: 'Lockerer Urlaubsgolf' },
-          serious: { label: 'Ernsthafter Golf', desc: 'Golf steht im Mittelpunkt' },
-          family: { label: 'Familienfreundlich', desc: 'Alle haben einen schönen Tag' },
-          'bucket-list': { label: 'Bucket List', desc: 'Die berühmten Plätze, richtig gespielt' },
+          serious: { label: 'Ernsthafter Golf', desc: "18-Loch-Runden als Hauptaktivität" },
+          family: { label: 'Familienfreundlich', desc: "Golf und Familienaktivitäten kombinieren" },
+          'bucket-list': { label: 'Bucket List', desc: "Die bekannteren Plätze der Insel spielen" },
         },
       },
       area: {
@@ -241,9 +241,9 @@ export const COURSE_SELECTOR_T = {
         title: 'Wie denken Sie über Greenfees?',
         sub: 'Angezeigte Preise sind Saisonhinweise, die beim Buchen bestätigt werden.',
         options: {
-          value: { label: 'Bestes Preis-Leistungs-Verhältnis', desc: 'Guter Golf zu vernünftigen Preisen' },
-          mid: { label: 'Mittleres Segment', desc: 'Bereit, für Qualität zu zahlen' },
-          premium: { label: 'Premium', desc: 'Die besten Plätze, egal was es kostet' },
+          value: { label: 'Bestes Preis-Leistungs-Verhältnis', desc: "Niedrigere Greenfees priorisieren" },
+          mid: { label: 'Mittleres Segment', desc: "Greenfees und Platzangebote vergleichen" },
+          premium: { label: 'Premium', desc: "Der Platz hat Vorrang vor dem Greenfee" },
         },
       },
       difficulty: {
@@ -251,8 +251,8 @@ export const COURSE_SELECTOR_T = {
         sub: '',
         options: {
           forgiving: { label: 'Verzeihend', desc: 'Breite Fairways, Ball im Spiel halten' },
-          balanced: { label: 'Ausgewogen', desc: 'Ein fairer Test ohne Bestrafung' },
-          challenging: { label: 'Herausfordernd', desc: 'Ich freue mich darauf' },
+          balanced: { label: 'Ausgewogen', desc: "Eine Mischung aus breiteren und schmaleren Löchern" },
+          challenging: { label: 'Herausfordernd', desc: "Längere Löcher, Wasserhindernisse oder schmale Landezonen" },
         },
       },
       walking: {
@@ -372,7 +372,7 @@ export const COURSE_SELECTOR_T = {
           beginner: { label: 'Débutant', desc: 'Nouveau dans le jeu ou je joue rarement' },
           casual: { label: 'Golfeur occasionnel', desc: 'Quelques rondes par an, ici pour en profiter' },
           confident: { label: 'Joueur confirmé', desc: 'Golfeur régulier, handicap moyen' },
-          low: { label: 'Faible handicap', desc: 'En chiffres simples, je veux un vrai test' },
+          low: { label: 'Faible handicap', desc: "Handicap inférieur à 10" },
         },
       },
       group: {
@@ -383,19 +383,19 @@ export const COURSE_SELECTOR_T = {
           couple: { label: 'Un couple', desc: 'Golf et moments ensemble' },
           friends: { label: "Groupe d'amis", desc: '3 à 8 joueurs' },
           family: { label: 'Famille', desc: 'Âges et niveaux variés' },
-          corporate: { label: 'Entreprise ou VIP', desc: 'Golf clients, organisé professionnellement' },
+          corporate: { label: 'Entreprise ou VIP', desc: "Golf avec des clients ou des collègues" },
         },
       },
       style: {
         title: 'Quel type de voyage est-ce?',
         sub: 'Choisissez ce qui compte le plus.',
         options: {
-          luxury: { label: 'Luxe', desc: 'Le meilleur de tout' },
+          luxury: { label: 'Luxe', desc: "Privilégier l’état du parcours et les installations du club" },
           scenic: { label: 'Panoramique', desc: 'Les vues avant le score' },
           relaxed: { label: 'Détendu', desc: 'Golf de vacances tranquille' },
-          serious: { label: 'Golf sérieux', desc: "Le golf est l'essentiel" },
-          family: { label: 'Familial', desc: 'Tout le monde passe une bonne journée' },
-          'bucket-list': { label: 'Bucket list', desc: 'Les grands noms, joués comme il se doit' },
+          serious: { label: 'Golf sérieux', desc: "Des parties de 18 trous comme activité principale" },
+          family: { label: 'Familial', desc: "Du golf et des activités en famille" },
+          'bucket-list': { label: 'Bucket list', desc: "Jouer les parcours les plus connus de l’île" },
         },
       },
       area: {
@@ -413,9 +413,9 @@ export const COURSE_SELECTOR_T = {
         title: 'Comment envisagez-vous les green fees?',
         sub: 'Les tarifs affichés sont des indications saisonnières, confirmés à la réservation.',
         options: {
-          value: { label: 'Meilleur rapport qualité-prix', desc: 'Bon golf à un prix raisonnable' },
-          mid: { label: 'Milieu de gamme', desc: 'Prêt à payer pour la qualité' },
-          premium: { label: 'Premium', desc: 'Les meilleurs parcours, quel que soit le tarif' },
+          value: { label: 'Meilleur rapport qualité-prix', desc: "Privilégier les green fees moins élevés" },
+          mid: { label: 'Milieu de gamme', desc: "Comparer les tarifs et les installations" },
+          premium: { label: 'Premium', desc: "Privilégier le parcours plutôt que le tarif" },
         },
       },
       difficulty: {
@@ -423,8 +423,8 @@ export const COURSE_SELECTOR_T = {
         sub: '',
         options: {
           forgiving: { label: 'Clément', desc: 'Fairways larges, garder la balle en jeu' },
-          balanced: { label: 'Équilibré', desc: 'Un test équitable sans punition' },
-          challenging: { label: 'Exigeant', desc: 'Je suis prêt' },
+          balanced: { label: 'Équilibré', desc: "Un mélange de trous plus larges et plus étroits" },
+          challenging: { label: 'Exigeant', desc: "Trous plus longs, obstacles d’eau ou zones d’atterrissage étroites" },
         },
       },
       walking: {
@@ -544,7 +544,7 @@ export const COURSE_SELECTOR_T = {
           beginner: { label: 'Principiante', desc: 'Nuevo en el juego o juego raramente' },
           casual: { label: 'Jugador ocasional', desc: 'Unas pocas vueltas al año, aquí para disfrutar' },
           confident: { label: 'Jugador habitual', desc: 'Juego regularmente, hándicap medio' },
-          low: { label: 'Hándicap bajo', desc: 'Un dígito, quiero una prueba real' },
+          low: { label: 'Hándicap bajo', desc: "Hándicap de una cifra" },
         },
       },
       group: {
@@ -555,19 +555,19 @@ export const COURSE_SELECTOR_T = {
           couple: { label: 'Una pareja', desc: 'Golf y tiempo juntos' },
           friends: { label: 'Grupo de amigos', desc: '3 a 8 jugadores' },
           family: { label: 'Familia', desc: 'Edades y niveles mezclados' },
-          corporate: { label: 'Empresarial o VIP', desc: 'Golf de clientes, bien organizado' },
+          corporate: { label: 'Empresarial o VIP', desc: "Golf con clientes o compañeros" },
         },
       },
       style: {
         title: '¿Qué tipo de viaje es este?',
         sub: 'Elija lo que más importa.',
         options: {
-          luxury: { label: 'Lujo', desc: 'Lo mejor de todo' },
+          luxury: { label: 'Lujo', desc: "Priorizar el estado del campo y las instalaciones del club" },
           scenic: { label: 'Paisajístico', desc: 'Las vistas primero, el score después' },
           relaxed: { label: 'Relajado', desc: 'Golf de vacaciones tranquilo' },
-          serious: { label: 'Golf serio', desc: 'El golf es el objetivo' },
-          family: { label: 'Familiar', desc: 'Todos tienen un buen día' },
-          'bucket-list': { label: 'Lista de deseos', desc: 'Los campos famosos, bien jugados' },
+          serious: { label: 'Golf serio', desc: "Rondas de 18 hoyos como actividad principal" },
+          family: { label: 'Familiar', desc: "Combinar golf con actividades familiares" },
+          'bucket-list': { label: 'Lista de deseos', desc: "Jugar los campos más conocidos de la isla" },
         },
       },
       area: {
@@ -585,9 +585,9 @@ export const COURSE_SELECTOR_T = {
         title: '¿Cómo piensa en las green fees?',
         sub: 'Las tarifas mostradas son indicaciones de temporada, confirmadas al reservar.',
         options: {
-          value: { label: 'Mejor relación calidad-precio', desc: 'Buen golf a un precio razonable' },
-          mid: { label: 'Gama media', desc: 'Dispuesto a pagar por calidad' },
-          premium: { label: 'Premium', desc: 'Los mejores campos, sea cual sea la tarifa' },
+          value: { label: 'Mejor relación calidad-precio', desc: "Priorizar green fees más bajos" },
+          mid: { label: 'Gama media', desc: "Comparar precios e instalaciones" },
+          premium: { label: 'Premium', desc: "Priorizar el campo sobre el precio" },
         },
       },
       difficulty: {
@@ -595,8 +595,8 @@ export const COURSE_SELECTOR_T = {
         sub: '',
         options: {
           forgiving: { label: 'Permisivo', desc: 'Calles anchas, mantener la bola en juego' },
-          balanced: { label: 'Equilibrado', desc: 'Una prueba justa sin castigo' },
-          challenging: { label: 'Desafiante', desc: 'A por ello' },
+          balanced: { label: 'Equilibrado', desc: "Una mezcla de hoyos más anchos y más estrechos" },
+          challenging: { label: 'Desafiante', desc: "Hoyos más largos, obstáculos de agua o zonas de caída estrechas" },
         },
       },
       walking: {
@@ -716,7 +716,7 @@ export const COURSE_SELECTOR_T = {
           beginner: { label: 'Beginner', desc: 'Nieuw in het spel of speel zelden' },
           casual: { label: 'Recreatiegolfer', desc: 'Een paar rondes per jaar, hier om te genieten' },
           confident: { label: 'Vaste golfer', desc: 'Regelmatige golfer, gemiddeld handicap' },
-          low: { label: 'Laag handicap', desc: 'Enkelvoudig, wil een echte test' },
+          low: { label: 'Laag handicap', desc: "Handicap onder de 10" },
         },
       },
       group: {
@@ -727,19 +727,19 @@ export const COURSE_SELECTOR_T = {
           couple: { label: 'Een stel', desc: 'Golf en tijd samen' },
           friends: { label: 'Vriendengroep', desc: '3 tot 8 spelers' },
           family: { label: 'Familie', desc: 'Gemengde leeftijden en niveaus' },
-          corporate: { label: 'Zakelijk of VIP', desc: 'Klantgolf, professioneel georganiseerd' },
+          corporate: { label: 'Zakelijk of VIP', desc: "Golf met klanten of collega’s" },
         },
       },
       style: {
         title: 'Wat voor reis is dit?',
         sub: 'Kies wat het meest telt.',
         options: {
-          luxury: { label: 'Luxe', desc: 'Het beste van alles' },
+          luxury: { label: 'Luxe', desc: "Baanconditie en clubfaciliteiten prioriteren" },
           scenic: { label: 'Schilderachtig', desc: 'Uitzicht eerst, score daarna' },
           relaxed: { label: 'Ontspannen', desc: 'Relaxte vakantiegolf' },
-          serious: { label: 'Serieus golf', desc: 'Het golf is het doel' },
-          family: { label: 'Gezinsvriendelijk', desc: 'Iedereen heeft een goede dag' },
-          'bucket-list': { label: 'Bucket list', desc: 'De beroemde banen, goed gespeeld' },
+          serious: { label: 'Serieus golf', desc: "18-holesrondes als hoofdactiviteit" },
+          family: { label: 'Gezinsvriendelijk', desc: "Golf combineren met gezinsactiviteiten" },
+          'bucket-list': { label: 'Bucket list', desc: "De bekendere banen op het eiland spelen" },
         },
       },
       area: {
@@ -757,9 +757,9 @@ export const COURSE_SELECTOR_T = {
         title: 'Hoe denkt u over greenfees?',
         sub: 'Getoonde tarieven zijn seizoensaanduidingen, bevestigd bij boeking.',
         options: {
-          value: { label: 'Beste prijs-kwaliteit', desc: 'Goed golf voor een redelijke prijs' },
-          mid: { label: 'Middensegment', desc: 'Bereid te betalen voor kwaliteit' },
-          premium: { label: 'Premium', desc: 'De beste banen, ongeacht de prijs' },
+          value: { label: 'Beste prijs-kwaliteit', desc: "Lagere greenfees prioriteren" },
+          mid: { label: 'Middensegment', desc: "Tarieven en baanfaciliteiten vergelijken" },
+          premium: { label: 'Premium', desc: "De baan is belangrijker dan de prijs" },
         },
       },
       difficulty: {
@@ -767,8 +767,8 @@ export const COURSE_SELECTOR_T = {
         sub: '',
         options: {
           forgiving: { label: 'Vergevingsgezind', desc: 'Brede fairways, bal in het spel houden' },
-          balanced: { label: 'Uitgebalanceerd', desc: 'Een eerlijke test zonder bestraffing' },
-          challenging: { label: 'Uitdagend', desc: 'Breng het maar op' },
+          balanced: { label: 'Uitgebalanceerd', desc: "Een mix van bredere en smallere holes" },
+          challenging: { label: 'Uitdagend', desc: "Langere holes, waterhindernissen of smalle landingszones" },
         },
       },
       walking: {
@@ -888,7 +888,7 @@ export const COURSE_SELECTOR_T = {
           beginner: { label: 'Nybörjare', desc: 'Ny i spelet eller spelar sällan' },
           casual: { label: 'Hobbygolfare', desc: 'Några rundor om året, här för att njuta' },
           confident: { label: 'Van golfare', desc: 'Regelbunden golfare, medelhandicap' },
-          low: { label: 'Lågt handicap', desc: 'Enkelsiffrigt, vill ha ett riktigt test' },
+          low: { label: 'Lågt handicap', desc: "En ensiffrig handicap" },
         },
       },
       group: {
@@ -899,19 +899,19 @@ export const COURSE_SELECTOR_T = {
           couple: { label: 'Ett par', desc: 'Golf och tid tillsammans' },
           friends: { label: 'Vännergrupp', desc: '3 till 8 spelare' },
           family: { label: 'Familj', desc: 'Blandade åldrar och nivåer' },
-          corporate: { label: 'Företag eller VIP', desc: 'Kundgolf, professionellt organiserat' },
+          corporate: { label: 'Företag eller VIP', desc: "Golf med kunder eller kollegor" },
         },
       },
       style: {
         title: 'Vilken typ av resa är detta?',
         sub: 'Välj det som är viktigast.',
         options: {
-          luxury: { label: 'Lyx', desc: 'Det bästa av allt' },
+          luxury: { label: 'Lyx', desc: "Prioritera banskötsel och klubbens faciliteter" },
           scenic: { label: 'Naturskön', desc: 'Utsikten först, poängen sedan' },
           relaxed: { label: 'Avslappnad', desc: 'Lugn semestergolf' },
-          serious: { label: 'Seriöst golf', desc: 'Golfen är poängen' },
-          family: { label: 'Familjevänlig', desc: 'Alla får en bra dag' },
-          'bucket-list': { label: 'Bucket list', desc: 'De berömda banorna, spelade på rätt sätt' },
+          serious: { label: 'Seriöst golf', desc: "18-hålsrundor som huvudaktivitet" },
+          family: { label: 'Familjevänlig', desc: "Kombinera golf med familjeaktiviteter" },
+          'bucket-list': { label: 'Bucket list', desc: "Spela öns mer välkända banor" },
         },
       },
       area: {
@@ -929,9 +929,9 @@ export const COURSE_SELECTOR_T = {
         title: 'Hur tänker du kring green fees?',
         sub: 'Visade avgifter är säsongsindikationer, bekräftade vid bokning.',
         options: {
-          value: { label: 'Bästa värde', desc: 'Bra golf till rimliga pengar' },
-          mid: { label: 'Mellanpris', desc: 'Villig att betala för kvalitet' },
-          premium: { label: 'Premium', desc: 'De bästa banorna, oavsett avgift' },
+          value: { label: 'Bästa värde', desc: "Prioritera lägre greenfee" },
+          mid: { label: 'Mellanpris', desc: "Jämföra priser och banornas faciliteter" },
+          premium: { label: 'Premium', desc: "Prioritera banan framför priset" },
         },
       },
       difficulty: {
@@ -939,8 +939,8 @@ export const COURSE_SELECTOR_T = {
         sub: '',
         options: {
           forgiving: { label: 'Förlåtande', desc: 'Breda fairways, håll bollen i spel' },
-          balanced: { label: 'Balanserat', desc: 'Ett rättvist test utan bestraffning' },
-          challenging: { label: 'Utmanande', desc: 'Kör på' },
+          balanced: { label: 'Balanserat', desc: "En blandning av bredare och smalare hål" },
+          challenging: { label: 'Utmanande', desc: "Längre hål, vattenhinder eller smala landningsytor" },
         },
       },
       walking: {

@@ -9,7 +9,7 @@ export const QUESTIONS = [
       {value:'beginner',label:'Beginner',desc:'New to the game, or play rarely'},
       {value:'casual',label:'Casual golfer',desc:'A few rounds a year, here to enjoy it'},
       {value:'confident',label:'Confident player',desc:'Regular golfer, mid handicap'},
-      {value:'low',label:'Low handicap',desc:'Single figures, want a proper test'},
+      {value:'low',label:'Low handicap',desc:"Single-figure handicap"},
     ]
   },
   {
@@ -20,19 +20,19 @@ export const QUESTIONS = [
       {value:'couple',label:'A couple',desc:'Golf plus time together'},
       {value:'friends',label:'Friends group',desc:'3 to 8 players'},
       {value:'family',label:'Family',desc:'Mixed ages and abilities'},
-      {value:'corporate',label:'Corporate or VIP',desc:'Client golf, done properly'},
+      {value:'corporate',label:'Corporate or VIP',desc:"Golf with clients or colleagues"},
     ]
   },
   {
     id:'style', title:'What kind of trip is this?',
     sub:'Pick all that apply.', cols:true, multi:true,
     options:[
-      {value:'luxury',label:'Luxury',desc:'The best of everything'},
+      {value:'luxury',label:'Luxury',desc:"Prioritise course condition and club facilities"},
       {value:'scenic',label:'Scenic',desc:'Views first, score second'},
       {value:'relaxed',label:'Relaxed',desc:'Easy-going holiday golf'},
-      {value:'serious',label:'Serious golf',desc:'The golf is the point'},
-      {value:'family',label:'Family-friendly',desc:'Everyone gets a good day'},
-      {value:'bucket-list',label:'Bucket list',desc:'The famous ones, played properly'},
+      {value:'serious',label:'Serious golf',desc:"18-hole rounds as the main activity"},
+      {value:'family',label:'Family-friendly',desc:"Golf alongside family activities"},
+      {value:'bucket-list',label:'Bucket list',desc:"Play the island’s better-known courses"},
     ]
   },
   {
@@ -52,9 +52,9 @@ export const QUESTIONS = [
     skipIf:(a) => Array.isArray(a.style) ? a.style.includes('luxury') : a.style === 'luxury',
     autoValue:'premium',
     options:[
-      {value:'value',label:'Best value',desc:'Good golf at sensible money'},
-      {value:'mid',label:'Mid-range',desc:'Happy to pay for quality'},
-      {value:'premium',label:'Premium',desc:'The best courses, whatever the fee'},
+      {value:'value',label:'Best value',desc:"Keep green fees down"},
+      {value:'mid',label:'Mid-range',desc:"Compare fees and course facilities"},
+      {value:'premium',label:'Premium',desc:"Choose the course before considering the fee"},
     ]
   },
   {
@@ -64,8 +64,8 @@ export const QUESTIONS = [
     autoValue:'forgiving',
     options:[
       {value:'forgiving',label:'Forgiving',desc:'Wide fairways, keep the ball in play'},
-      {value:'balanced',label:'Balanced',desc:'A fair test without punishment'},
-      {value:'challenging',label:'Challenging',desc:'Bring it on'},
+      {value:'balanced',label:'Balanced',desc:"A mix of wider and narrower holes"},
+      {value:'challenging',label:'Challenging',desc:"Longer holes, water hazards or narrow landing areas"},
     ]
   },
   {

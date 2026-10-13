@@ -45,7 +45,7 @@ const data = {
  "questions": {
   "region": {
    "title": "Var bor du?",
-   "sub": "Planen byggs runt din bas.",
+   "sub": "Välj området där du bor eller ”Inte bokat än”.",
    "opts": {
     "southwest": [
      "Sydväst",
@@ -69,7 +69,7 @@ const data = {
     ],
     "unbooked": [
      "Inte bokat än",
-     "Jag föreslår det bästa området för golfen åt dig"
+     "Föreslå ett område för banorna jag vill spela"
     ]
    }
   },
@@ -78,34 +78,34 @@ const data = {
    "sub": "Välj det som låter mest som du.",
    "opts": {
     "serious": [
-     "Seriös golf",
-     "Rundan är huvudnumret"
+     "Bara golf",
+     "18 hål med tid för uppvärmning"
     ],
     "relaxed": [
      "Avslappnad golf",
-     "Bra golf utan press"
+     "Bredare fairways och mindre fokus på resultatet"
     ],
     "luxury": [
-     "Lyx",
-     "Det bästa av allt, ordnat"
+     "Premiumklubbar",
+     "Prioritera banskötsel och klubbens faciliteter"
     ],
     "family": [
      "Familjedag",
-     "Golf plus något för alla"
+     "Planera in tid för aktiviteter utanför golfen"
     ],
     "scenic": [
-     "Naturskönt",
-     "Utsikten först, resultatet sedan"
+     "Utsikt på banan",
+     "Havsutsikt eller Tramuntana-bergen"
     ],
     "food": [
-     "Maten först",
-     "Golf byggd runt en riktigt bra lunch"
+     "Golf och lunch",
+     "Planera in ett restaurangbesök"
     ]
    }
   },
   "level": {
    "title": "Hur skulle du beskriva ditt golfspel?",
-   "sub": "Ärliga svar ger bättre dagar.",
+   "sub": "Det hjälper till att välja en bana som passar gruppens spelnivå.",
    "opts": {
     "beginner": [
      "Nybörjare",
@@ -120,8 +120,8 @@ const data = {
      "Regelbunden golfare, mellanhandicap"
     ],
     "low": [
-     "Lågt handicap",
-     "Ensiffrigt, ta fram den riktiga utmaningen"
+     "Låg handicap",
+     "En ensiffrig handicap"
     ]
    }
   },
@@ -130,16 +130,16 @@ const data = {
    "sub": "",
    "opts": {
     "early": [
-     "Tidigt på morgonen",
-     "Först ut, och dagen är din efteråt"
+     "Tidig morgon",
+     "Mer tid för lunch eller aktiviteter efter golfen"
     ],
     "mid": [
      "Förmiddag",
-     "En civiliserad start med en hel dag efter"
+     "Start efter frukost"
     ],
     "pm": [
      "Eftermiddag",
-     "Lugn morgon, golf i kvällsljus"
+     "Morgonen är fri; dagsljuset måste kontrolleras"
     ]
    }
   },
@@ -149,23 +149,23 @@ const data = {
    "opts": {
     "famous": [
      "Ett känt namn",
-     "Banorna som alla frågar efter"
+     "Prioritera öns mer välkända klubbar"
     ],
     "scenic": [
      "Natur",
      "Havsutsikt, berg, höjdskillnader"
     ],
     "challenging": [
-     "Ett riktigt test",
-     "En bana som ställer frågor"
+     "Svårare golf",
+     "Längre hål, vattenhinder eller smala landningsytor"
     ],
     "forgiving": [
-     "Förlåtande",
-     "Bred, vänlig och rolig"
+     "Bredare fairways",
+     "Mer plats för utslagen"
     ],
     "close": [
-     "Nära mitt hotell",
-     "Så lite tid i bilen som möjligt"
+     "I mitt område",
+     "En bana i området som valts ovan"
     ]
    }
   },
@@ -174,20 +174,20 @@ const data = {
    "sub": "Välj upp till två extra aktiviteter, eller inga",
    "opts": {
     "lunch": [
-     "Lång lunch",
-     "Ett riktigt mallorkinskt bord"
+     "Lunch",
+     "Ett restaurangbesök nära banan"
     ],
     "beach": [
      "Strand",
-     "Ett dopp efter rundan"
+     "Ett dopp eller tid vid havet"
     ],
     "spa": [
      "Spa",
-     "Återhämtning på riktigt"
+     "Ett spabesök nära banan"
     ],
     "village": [
      "Lokal by",
-     "En timme i en historisk stad"
+     "Kaffe eller en promenad genom byn"
     ],
     "wine": [
      "Vin",
@@ -195,11 +195,11 @@ const data = {
     ],
     "family": [
      "Familjeaktivitet",
-     "Något för dem som inte spelar"
+     "En aktivitet för golfare och medföljande"
     ],
     "coaching": [
      "Coaching med mig",
-     "Pass med en PGA Advanced Professional"
+     "Uppvärmning, lektion eller coaching på banan"
     ]
    }
   },
@@ -208,12 +208,12 @@ const data = {
    "sub": "",
    "opts": {
     "yes": [
-     "Ja, ordna det",
-     "Chaufför eller transfers, dörr till dörr"
+     "Fråga om transfer",
+     "Ordnas genom en lokal resepartner"
     ],
     "no": [
-     "Nej, vi kör själva",
-     "Hyrbil eller egen bil"
+     "Vi kör själva",
+     "Egen bil eller hyrbil"
     ]
    }
   },
@@ -223,7 +223,7 @@ const data = {
    "opts": {
     "solo": [
      "Bara jag",
-     "Solo golf, full fokus"
+     "En spelare"
     ],
     "couple": [
      "Ett par",
@@ -245,27 +245,27 @@ const data = {
   },
   "handicap": {
    "title": "Vilket är det högsta handicapet i din grupp?",
-   "sub": "Välj ett intervall bara om alla har ett aktuellt handicapintyg.",
+   "sub": "Utgå från gruppens högsta handicap. Välj ett tal bara om alla spelare kan visa ett aktuellt handicapintyg. Välj annars ett av de två sista alternativen.",
    "opts": {
     "low": [
      "Upp till 28",
-     "Aktuella intyg för alla"
+     ""
     ],
     "mid": [
      "29 till 36",
-     "Aktuella intyg för alla"
+     ""
     ],
     "high": [
      "37 till 54",
-     "Aktuella intyg för alla"
+     ""
     ],
     "none": [
-     "Inga aktuella intyg",
-     "Tillträdet till banan måste kontrolleras"
+     "Intyg saknas",
+     "En eller flera spelare kan inte visa ett aktuellt handicapintyg"
     ],
     "unknown": [
-     "Inte säker ännu",
-     "Tillträdet till banan måste kontrolleras"
+     "Inte bekräftat än",
+     "Jag känner inte till allas handicap eller intygsstatus"
     ]
    }
   }
@@ -592,7 +592,9 @@ const data = {
    "fallback": "Den bästa tillgängliga matchningen för dina svar i det här området.",
    "separator": ", ",
    "end": ".",
-   "capitalise": true
+   "capitalise": true,
+   "facts": "{holes} hål, par {par}.",
+   "area": "I området du har valt."
   },
   "handles": {
    "tee": "Jag bekräftar och bokar golfen",

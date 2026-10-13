@@ -87,29 +87,14 @@ describe('lunchFor', () => {
 })
 
 describe('whyCourseChosen', () => {
-  const course = COURSES.find(c => c.id === 'santa-ponsa') // tags: forgiving, relaxed, family; level: beginner+
-
-  test('cites the courseType match reason when tags include it', () => {
+  const course = COURSES.find(c => c.id === 'santa-ponsa')
+  test('uses course facts instead of unspecific review claims', () => {
     const line = whyCourseChosen(course, { ...baseAnswers, courseType: 'forgiving' })
-    expect(line).toMatch(/wide and forgiving/i)
+    expect(line).toContain('18 holes, par 72.')
+    expect(line).not.toMatch(/wide and forgiving|suits your game|best available/i)
   })
-
-  test('does not duplicate the reason when dayStyle equals courseType', () => {
-    const line = whyCourseChosen(course, { ...baseAnswers, courseType: 'relaxed', dayStyle: 'relaxed' })
-    // relaxed reason should appear once, from courseType's branch, not twice
-    const occurrences = (line.match(/relaxed/gi) || []).length
-    expect(occurrences).toBeLessThanOrEqual(1)
-  })
-
-  test('falls back to a generic line when nothing matches, including the level requirement', () => {
-    // son-gual requires 'confident+' (rank 2); a 'beginner' (rank 0) answer misses every branch
-    const hardCourse = COURSES.find(c => c.id === 'son-gual')
-    const line = whyCourseChosen(hardCourse, { ...baseAnswers, courseType: 'nomatch', dayStyle: 'nomatch', level: 'beginner' })
-    expect(line).toBe('The best available match for your answers in this area.')
-  })
-
-  test('adds "well-matched to your game" when the level requirement is met', () => {
-    const line = whyCourseChosen(course, { ...baseAnswers, courseType: 'nomatch', dayStyle: 'nomatch', level: 'confident' })
-    expect(line).toMatch(/golf level you selected/i)
+  test('only claims the selected area when the course is in that area', () => {
+    expect(whyCourseChosen(course, { ...baseAnswers, region: 'southwest' })).toContain('In the area you selected.')
+    expect(whyCourseChosen(course, { ...baseAnswers, region: 'north' })).not.toContain('In the area you selected.')
   })
 })

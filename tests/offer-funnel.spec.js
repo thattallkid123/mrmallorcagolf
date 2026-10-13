@@ -28,8 +28,9 @@ test('guide enquiry keeps booking choice and campaign source through submission'
     await route.fulfill({ status: 200, contentType: 'application/json', body: JSON.stringify({ ok: true }) })
   })
 
-  await page.goto('/guides/best-golf-courses-mallorca?utm_source=hotel&utm_medium=referral&utm_campaign=autumn', { waitUntil: 'domcontentloaded' })
+  await page.goto('/guides/best-golf-courses-mallorca?utm_source=hotel&utm_medium=referral&utm_campaign=autumn', { waitUntil: 'networkidle' })
   await page.locator('a[href="/contact?service=tee-time-booking"]').click()
+  await page.waitForURL(/\/contact\?service=tee-time-booking$/, { waitUntil: 'networkidle' })
   await expect(page.getByRole('radio', { name: 'Book tee times for my group' })).toBeChecked()
   await page.getByLabel('First name').fill('Test')
   await page.getByLabel('Email address').fill('test@example.com')
@@ -49,14 +50,14 @@ test('guide enquiry keeps booking choice and campaign source through submission'
 })
 
 test('contact navigation has one visible enquiry button and fits the viewport', async ({ page }) => {
-  await page.goto('/contact', { waitUntil: 'domcontentloaded' })
+  await page.goto('/contact', { waitUntil: 'networkidle' })
   await expect(page.locator('nav .nav__cta:visible')).toHaveCount(1)
   const hasOverflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 2)
   expect(hasOverflow).toBe(false)
 })
 
 test('beginner shortlist excludes courses needing a handicap or member access', async ({ page }) => {
-  await page.goto('/tools/course-selector', { waitUntil: 'domcontentloaded' })
+  await page.goto('/tools/course-selector', { waitUntil: 'networkidle' })
   await page.getByRole('button', { name: /Beginner/ }).click()
   await page.getByRole('button', { name: /Just me/ }).click()
   await page.getByRole('button', { name: /Luxury/ }).click()

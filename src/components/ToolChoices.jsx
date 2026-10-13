@@ -1,5 +1,5 @@
 'use client'
-import { useEffect, useId, useRef, useState } from 'react'
+import { Children, useEffect, useId, useRef, useState } from 'react'
 import { getToolChoiceLabels } from '../lib/tool-choice-labels'
 
 export default function ToolChoices({ children, locale = 'en', className = '' }) {
@@ -30,6 +30,6 @@ export default function ToolChoices({ children, locale = 'en', className = '' })
       <button type="button" aria-label={previous} aria-controls={id} disabled={!edges.previous} onClick={() => scroll(-1)}>←</button>
       <button type="button" aria-label={next} aria-controls={id} disabled={!edges.next} onClick={() => scroll(1)}>→</button>
     </div>}
-    <div id={id} ref={track} className={`tool-choice-track ${className}`.trim()}>{children}</div>
+    <div id={id} ref={track} className={`tool-choice-track tool-choice-track--${Children.count(children)} ${className}`.trim()}>{children}</div>
   </div>
 }

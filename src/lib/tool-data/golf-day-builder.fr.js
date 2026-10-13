@@ -45,7 +45,7 @@ const data = {
  "questions": {
   "region": {
    "title": "Où logez-vous ?",
-   "sub": "Le programme est construit autour de votre base.",
+   "sub": "Choisissez la zone de votre hébergement ou « Pas encore réservé ».",
    "opts": {
     "southwest": [
      "Sud-Ouest",
@@ -69,7 +69,7 @@ const data = {
     ],
     "unbooked": [
      "Pas encore réservé",
-     "Je vous proposerai la meilleure base pour le golf"
+     "Proposer une zone pour les parcours que je souhaite jouer"
     ]
    }
   },
@@ -78,34 +78,34 @@ const data = {
    "sub": "Choisissez celle qui vous ressemble le plus.",
    "opts": {
     "serious": [
-     "Golf sérieux",
-     "La partie est le moment fort"
+     "Golf uniquement",
+     "18 trous avec du temps pour s’échauffer"
     ],
     "relaxed": [
      "Golf détendu",
-     "Du bon golf sans pression"
+     "Fairways plus larges, moins d’importance au score"
     ],
     "luxury": [
-     "Luxe",
-     "Le meilleur de tout, pris en charge"
+     "Clubs haut de gamme",
+     "Privilégier l’état du parcours et les installations du club"
     ],
     "family": [
      "Journée en famille",
-     "Du golf et quelque chose pour tous"
+     "Prévoir du temps pour des activités hors golf"
     ],
     "scenic": [
-     "Paysages",
-     "D'abord la vue, ensuite le score"
+     "Vues du parcours",
+     "Vues sur la mer ou les montagnes de Tramuntana"
     ],
     "food": [
-     "La table d'abord",
-     "Un golf construit autour d'un excellent déjeuner"
+     "Golf et déjeuner",
+     "Prévoir un arrêt au restaurant"
     ]
    }
   },
   "level": {
    "title": "Comment décririez-vous votre golf ?",
-   "sub": "Des réponses honnêtes donnent de meilleures journées.",
+   "sub": "Cela aide à choisir un parcours adapté au niveau du groupe.",
    "opts": {
     "beginner": [
      "Débutant",
@@ -121,7 +121,7 @@ const data = {
     ],
     "low": [
      "Faible handicap",
-     "Un seul chiffre, avec envie d'un vrai test"
+     "Handicap inférieur à 10"
     ]
    }
   },
@@ -131,15 +131,15 @@ const data = {
    "opts": {
     "early": [
      "Tôt le matin",
-     "Parmi les premiers, et la journée est à vous ensuite"
+     "Plus de temps pour déjeuner ou faire des activités après le golf"
     ],
     "mid": [
      "Milieu de matinée",
-     "Un départ civilisé avec une journée bien remplie"
+     "Partir après le petit-déjeuner"
     ],
     "pm": [
      "Après-midi",
-     "Matinée tranquille, golf à la lumière du soir"
+     "Matinée libre ; les heures de jour sont à vérifier"
     ]
    }
   },
@@ -149,23 +149,23 @@ const data = {
    "opts": {
     "famous": [
      "Un nom connu",
-     "Les parcours dont tout le monde parle"
+     "Privilégier les clubs les plus connus de l’île"
     ],
     "scenic": [
      "Paysages",
      "Vues sur la mer, montagnes, dénivelés"
     ],
     "challenging": [
-     "Un vrai test",
-     "Un parcours qui pose des questions"
+     "Golf plus difficile",
+     "Trous plus longs, obstacles d’eau ou zones d’atterrissage étroites"
     ],
     "forgiving": [
-     "Tolérant",
-     "Large, accueillant et amusant"
+     "Fairways plus larges",
+     "Plus de place pour les coups de départ"
     ],
     "close": [
-     "Près de mon hôtel",
-     "Le moins de temps possible en voiture"
+     "Dans ma zone",
+     "Un parcours dans la zone choisie ci-dessus"
     ]
    }
   },
@@ -174,20 +174,20 @@ const data = {
    "sub": "Choisissez jusqu’à deux extras, ou aucun",
    "opts": {
     "lunch": [
-     "Long déjeuner",
-     "Une vraie table majorquine"
+     "Déjeuner",
+     "Un arrêt au restaurant près du parcours"
     ],
     "beach": [
      "Plage",
-     "Une baignade après la partie"
+     "Une baignade ou du temps au bord de la mer"
     ],
     "spa": [
      "Spa",
-     "Une récupération bien faite"
+     "Une visite au spa près du parcours"
     ],
     "village": [
      "Village local",
-     "Une heure dans une ville historique"
+     "Un café ou une promenade en ville"
     ],
     "wine": [
      "Vin",
@@ -195,11 +195,11 @@ const data = {
     ],
     "family": [
      "Activité en famille",
-     "Quelque chose pour ceux qui ne jouent pas"
+     "Une activité pour les joueurs et les non-golfeurs"
     ],
     "coaching": [
      "Coaching avec moi",
-     "Séance avec un PGA Advanced Professional"
+     "Échauffement, cours ou coaching sur le parcours"
     ]
    }
   },
@@ -208,12 +208,12 @@ const data = {
    "sub": "",
    "opts": {
     "yes": [
-     "Oui, organisez-le",
-     "Chauffeur ou transferts, de porte à porte"
+     "Demander un transfert",
+     "Organisé par un partenaire local du voyage"
     ],
     "no": [
-     "Non, nous conduirons",
-     "Voiture de location ou personnelle"
+     "Nous conduirons",
+     "Voiture personnelle ou de location"
     ]
    }
   },
@@ -222,8 +222,8 @@ const data = {
    "sub": "",
    "opts": {
     "solo": [
-     "Juste moi",
-     "Golf en solo, concentration totale"
+     "Moi seul",
+     "Un joueur"
     ],
     "couple": [
      "Un couple",
@@ -245,27 +245,27 @@ const data = {
   },
   "handicap": {
    "title": "Quel est le handicap le plus élevé de votre groupe ?",
-   "sub": "Choisissez une tranche seulement si chacun possède un certificat de handicap à jour.",
+   "sub": "Retenez le handicap le plus élevé du groupe. Choisissez un chiffre uniquement si chaque joueur peut présenter un certificat de handicap à jour. Sinon, choisissez l’une des deux dernières options.",
    "opts": {
     "low": [
      "Jusqu’à 28",
-     "Certificats à jour pour tous"
+     ""
     ],
     "mid": [
-     "De 29 à 36",
-     "Certificats à jour pour tous"
+     "29 à 36",
+     ""
     ],
     "high": [
-     "De 37 à 54",
-     "Certificats à jour pour tous"
+     "37 à 54",
+     ""
     ],
     "none": [
-     "Pas de certificats à jour",
-     "L’accès au parcours doit être vérifié"
+     "Certificat manquant",
+     "Au moins un joueur ne peut pas présenter de certificat à jour"
     ],
     "unknown": [
-     "Je ne sais pas encore",
-     "L’accès au parcours doit être vérifié"
+     "Pas encore confirmé",
+     "Je ne connais pas le handicap ou le statut du certificat de chacun"
     ]
    }
   }
@@ -592,7 +592,9 @@ const data = {
    "fallback": "La meilleure correspondance disponible avec vos réponses dans ce secteur.",
    "separator": ", ",
    "end": ".",
-   "capitalise": true
+   "capitalise": true,
+   "facts": "{holes} trous, par {par}.",
+   "area": "Dans la zone que vous avez choisie."
   },
   "handles": {
    "tee": "Je confirme et réserve le golf",
