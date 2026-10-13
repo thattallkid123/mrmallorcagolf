@@ -30,6 +30,15 @@ Before editing, grep `testimonial` across `src/` — surfaces may have been adde
 
 **Quote boxes are deliberately indented** (gold left border plus padding, so the quote text sits ~22px right of the body text around it — `.pull-quote`, `.promise-block`, `.course__note`, `.post-pull`). Andy chose this style; a flush-left version was tried and rejected 2026-09-14. Don't "fix" the indent.
 
+## What counts as an acceptable edit
+
+Loosened by Andy on 13 Oct 2026 (it used to be strictly word for word). The test is whether the reviewer would say "yes, that's what I said" and a reader who finds the Google original sees the same meaning.
+
+- **Fine:** cutting to whole sentences or clauses; fixing punctuation, an obvious typo or grammar; joining fragments; dropping a course name or a name. Translations follow the same rule and carry no dashes.
+- **Not fine:** adding a word the reviewer did not write, making a claim stronger ("never could", "every time"), swapping in a paraphrase, or splicing sentences so they say something new.
+- **Approval:** Andy approves the final wording of anything beyond a straight whole-sentence cut, and `check:testimonial-integrity -- --accept` runs only after that.
+- **The Drive master keeps the full original** and notes each shortened site version on its own line. Copy from the master, never from another page's live copy.
+
 ## Adding or replacing a testimonial
 
 1. **Long reviews (over ~100 words) need Andy's trim before they go on the carousel** — a 180-word card was flagged as "way too long" next to the others. Propose a shortened version that keeps his words and the close, and ask before publishing. Keep any lines about Andy as a person for the master's "About Andy" section rather than losing them. **Get the exact wording from Andy** — real client words, real first name (or initial) for attribution. Never invent, embellish, or "improve" a client quote. Trim only with Andy's approval.
