@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/golf-day-builder', 'sv', {
 
   title: 'Planera din golfdag på Mallorca',
-  description: 'Åtta frågor. En komplett dagplan med bana, lunch och tillval, byggd kring din grupp.',
+  description: "Nio frågor. Förslag på golfdagar anpassade till din grupp.",
   robots: { index: true, follow: true },
 })
 

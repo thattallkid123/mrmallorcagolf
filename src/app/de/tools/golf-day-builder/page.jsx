@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/golf-day-builder', 'de', {
 
   title: 'Golftag auf Mallorca planen',
-  description: 'Acht Fragen. Ein kompletter Tagesplan mit Platz, Mittagessen und Zusatzoptionen, der auf Ihre Gruppe zugeschnitten ist.',
+  description: "Neun Fragen. Vorschläge für einen Golftag, abgestimmt auf Ihre Gruppe.",
   robots: { index: true, follow: true },
 })
 

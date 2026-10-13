@@ -1,8 +1,3 @@
-// golf-day-builder copy for 'nl'. Generated overlay: the English master is in
-// golf-day-builder-logic.js (COURSES, RESTAURANTS, ADDONS, QUESTIONS) and EN_PLAN in golf-day-builder-localize.js.
-// A key missing here falls back to English, so a new item needs adding for
-// every language. It only changes what the visitor sees; matching and
-// scoring never read it.
 const data = {
  "stepFmt": "Stap {n} van {total} · {section}",
  "sections": {
@@ -13,7 +8,8 @@ const data = {
   "courseType": "Baantype",
   "addons": "Naast het golf",
   "transport": "Vervoer",
-  "group": "Uw gezelschap"
+  "group": "Uw gezelschap",
+  "handicap": "Handicap"
  },
  "teeWindows": {
   "early": "8:00 tot 9:00",
@@ -175,7 +171,7 @@ const data = {
   },
   "addons": {
    "title": "Wat zou de dag compleet maken?",
-   "sub": "Selecteer wat u aanspreekt, of niets",
+   "sub": "Kies maximaal twee extra’s, of geen",
    "opts": {
     "lunch": [
      "Lange lunch",
@@ -244,6 +240,32 @@ const data = {
     "vip": [
      "Vip of zakelijk",
      "Klanten ontvangen of een gelegenheid vieren"
+    ]
+   }
+  },
+  "handicap": {
+   "title": "Wat is de hoogste handicap in uw groep?",
+   "sub": "Kies alleen een bereik als iedereen een geldig handicapbewijs heeft.",
+   "opts": {
+    "low": [
+     "Tot en met 28",
+     "Geldige bewijzen voor iedereen"
+    ],
+    "mid": [
+     "29 tot 36",
+     "Geldige bewijzen voor iedereen"
+    ],
+    "high": [
+     "37 tot 54",
+     "Geldige bewijzen voor iedereen"
+    ],
+    "none": [
+     "Geen geldige bewijzen",
+     "Toegang tot de baan moet worden gecontroleerd"
+    ],
+    "unknown": [
+     "Nog niet zeker",
+     "Toegang tot de baan moet worden gecontroleerd"
     ]
    }
   }
@@ -423,64 +445,64 @@ const data = {
  },
  "restaurants": {
   "southwest": {
-   "casual": "Restaurant Campino bij Golf de Andratx: Italiaans en mediterraan op het terras, geboekt rond het einde van uw ronde",
-   "premium": "Sa Clastra (1 Michelinster) in Castell Son Claret, Es Capdellà (ongeveer 15 minuten van de meeste banen in het zuidwesten). Een van de beste lunchtafels van het eiland",
-   "village": "Lunch in het dorp Calvià: een rustig bergstadje met lokale restaurants die zelden toeristen zien. Ik boek de juiste tafel",
-   "michelin": "Sa Clastra (1★) in Castell Son Claret, Es Capdellà, of Es Fum (1★) in het St. Regis Mardavall: twee van de beste tafels van het eiland, beide in het zuidwesten"
+   "casual": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "premium": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "village": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "michelin": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt."
   },
   "palma": {
-   "casual": "Na Capitana bij Son Muntaner: betrouwbare mediterrane lunch op het terras met uitzicht over de baan, of een korte rit naar de markt van Santa Catalina voor tapas",
-   "premium": "DINS Santi Taura (1 Michelinster) in het centrum van Palma, of Marc Fosh (1 Michelinster) in de oude stad. Ik stem de boeking af op uw ronde",
-   "village": "Markt van Santa Catalina: de beste eetbuurt van Palma, 10 minuten van de meeste banen. Ik kies de juiste plek voor de groep",
-   "michelin": "DINS Santi Taura (1★), Marc Fosh (1★) en Zaranda (1★) zitten allemaal in Palma: de sterkste Michelin-concentratie van het eiland, allemaal binnen 15 minuten van de banen bij Palma"
+   "casual": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "premium": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "village": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "michelin": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt."
   },
   "north": {
-   "casual": "Lunch aan het strand in Port de Pollença: de boulevard heeft meerdere goede vis- en zeevruchtenopties. In het hoogseizoen boek ik vooruit",
-   "premium": "Maca de Castro (1 Michelinster + Green Star) in Port d'Alcúdia: seizoensgebonden proefmenu's met lokale producten. Ongeveer 10 minuten van Alcanada",
-   "village": "Oude stad van Pollença: een rustig bergstadje met een mooi marktplein, betrouwbare lokale restaurants en een zondagsmarkt. De korte omweg waard",
-   "michelin": "Maca de Castro (1★ + Green Star) in Port d'Alcúdia: een van de interessantste chefsrestaurants van het eiland, dicht bij de golfbaan Alcanada"
+   "casual": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "premium": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "village": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "michelin": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt."
   },
   "east": {
-   "casual": "Restaurant Roca Viva bij Capdepera Golf: mediterraan en Mallorcaans, met eigen moestuin en terras bij de 18e. Een van de betere clubhuislunches van het eiland",
-   "premium": "VORO (2 Michelinsterren) in het Cap Vermell Grand Hotel, Canyamel: het enige tweesterrenrestaurant van Mallorca, chef Álvaro Salazar. Proefmenu van 18 of 22 gangen",
-   "village": "Oude stad van Artà: een van de meest karaktervolle steden in het oosten van Mallorca. Een goede stop voor koffie en lunch voor of na de ronde",
-   "michelin": "VORO (2★) in Cap Vermell, Canyamel: het sterkste Michelin-argument voor een nacht aan de oostkust"
+   "casual": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "premium": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "village": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "michelin": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt."
   },
   "south": {
-   "casual": "T19 Restobar bij Golf Maioris: buitenterras, Duits en mediterraan clubhuiseten, een handige stop bij de luchthaven",
-   "premium": "Andreu Genestra (1 Michelinster + Green Star) bij Llucmajor: seizoensproefmenu's, duurzaamheidsgerichte keuken. Ongeveer 10 minuten van Golf Maioris en Son Antem. Boek ruim van tevoren",
-   "village": "Oude stad van Llucmajor: een rustig marktstadje 20 minuten van Palma met goede lokale restaurants en een zaterdagmarkt",
-   "michelin": "Andreu Genestra (1★ + Green Star) bij Llucmajor: een van de interessantste chefsrestaurants van Mallorca, dicht bij de banengroep in het zuiden"
+   "casual": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "premium": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "village": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "michelin": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt."
   }
  },
  "addons": {
   "beach": [
    "Strandmoment",
-   "Een nabije baai voor een duik en een rustig uur in de schaduw. Het strand wordt per regio gekozen zodra het plan is bevestigd."
+   "Een optionele stop bij de baan. Locatie, openingstijden en reistijd worden gecontroleerd bij het afspreken van het plan."
   ],
   "spa": [
    "Spa en herstel",
-   "Een behandeling na de ronde in een resortspa in de buurt. Opties zijn onder meer Arabella Son Vida, Secrets Paguera en Bendinat. Ik bevestig de locatie bij het boeken."
+   "Een optionele stop bij de baan. Locatie, openingstijden en reistijd worden gecontroleerd bij het afspreken van het plan."
   ],
   "village": [
    "Uurtje in een dorp",
-   "Een uur in een van de historische steden van het eiland: koffie, zijstraatjes en een uitkijkpunt of twee."
+   "Een optionele stop bij de baan. Locatie, openingstijden en reistijd worden gecontroleerd bij het afspreken van het plan."
   ],
   "wine": [
    "Wijnproeverij",
-   "Een begeleide proeverij bij een lokale bodega. Mallorca heeft een kleine maar serieuze wijnscène: José L. Ferrer in Binissalem en Macià Batle zijn allebei een omweg waard. Ik plan dit rond de ronde."
+   "Een optionele stop bij de baan. Locatie, openingstijden en reistijd worden gecontroleerd bij het afspreken van het plan."
   ],
   "family": [
    "Gezinsactiviteit",
-   "Een boottocht, de grotten of een waterpark, afhankelijk van regio en leeftijden. Bevestigd bij de boeking."
+   "Een optionele stop bij de baan. Locatie, openingstijden en reistijd worden gecontroleerd bij het afspreken van het plan."
   ],
   "coaching": [
    "Coaching met mij",
-   "Een gerichte sessie met mij, een UK PGA Advanced Professional: warming-up, techniek of baanstrategie."
+   "Een warming-up of coaching met mij, afhankelijk van de datum en de faciliteiten van de baan."
   ],
   "lunch": [
    "Lange lunch",
-   "Een echte Mallorcaanse tafel, geboekt en getimed rond uw ronde."
+   "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt."
   ]
  },
  "plan": {
@@ -490,9 +512,9 @@ const data = {
    "experience": "Volledige ervaring"
   },
   "taglines": {
-   "efficient": "De ronde is de dag. Goed gespeeld, en de middag is vrij.",
-   "lunch": "Een serieuze ronde gevolgd door een serieuze tafel.",
-   "experience": "Het golf is het middelpunt. Het eiland vult de rest van het programma."
+   "efficient": "Golf met tijd om in te checken, te spelen en terug te gaan.",
+   "lunch": "Golf en een voorgestelde lunch bij de baan.",
+   "experience": "Golf en de extra activiteiten die u heeft gekozen."
   },
   "time": {
    "depart": "{depart} (schatting)",
@@ -504,16 +526,20 @@ const data = {
    "lateAfternoon": "Late middag",
    "lunch": "Lunch",
    "afternoon": "Middag",
-   "evening": "Avond"
+   "evening": "Avond",
+   "earlyStart": "Golf in de ochtend",
+   "midStart": "Golf later in de ochtend",
+   "pmStart": "Golf in de middag",
+   "afterActivities": "Na de activiteiten"
   },
   "title": {
    "depart": "Vertrek vanaf uw accommodatie",
    "unhurried": "Een onhaastig vertrek",
    "clubhouse": "Een drankje in het clubhuis",
    "return": "Terugreis",
-   "longLunch": "Een lange Mallorcaanse lunch",
+   "longLunch": "Voorgestelde lunch",
    "relaxedReturn": "Een ontspannen terugreis",
-   "lunchBooked": "Lunch, geboekt en getimed",
+   "lunchBooked": "Voorgestelde lunch",
    "beachOrVillage": "Strand- of dorpsuurtje",
    "lastLight": "Terug in het laatste licht",
    "warmupCoach": "Warming-up met coaching van mij",
@@ -522,56 +548,61 @@ const data = {
    "holes9": "9 holes op {course}"
   },
   "desc": {
-   "transfer": "Een privétransfer haalt u op bij uw accommodatie. Ongeveer {drive} minuten naar de baan (schatting).",
-   "selfDrive": "Zelf rijden naar de baan, ongeveer {drive} minuten (schatting). Parkeerinformatie volgt met het bevestigde plan.",
-   "warmupCoach": "Een sessie van 45 minuten met mij: warming-up op de range, kort spel en een plan voor de holes die voor u liggen.",
-   "warmupCoffee": "Rangeballen, de puttinggreen en een koffie op het terras. Kom 45 minuten voor uw starttijd aan.",
+   "transfer": "Een lokale reispartner kan het vervoer boeken en factureren zodra de route en tijden zijn afgesproken.",
+   "selfDrive": "Bevestig het hotel en de route voordat de vertrektijd wordt gepland.",
+   "warmupCoach": "Een warming-up of coaching met mij, afhankelijk van de datum en de faciliteiten van de baan.",
+   "warmupCoffee": "Tijd om in te checken, op te warmen en u op de ronde voor te bereiden. De faciliteiten verschillen per baan.",
    "holeNote": " Let op: {note}",
    "clubhouse": "Een ontspannen drankje op het terras terwijl over de scorekaarten wordt gediscussieerd.",
-   "returnEfficient": "Terug op uw uitvalsbasis met de rest van de dag onaangeroerd. Ongeveer {drive} minuten (schatting).",
-   "longLunch": "{lunch}. De tafel is geboekt en getimed zodat u van de laatste hole direct aan tafel gaat.",
-   "relaxedReturn": "Een rustige terugrit, ongeveer {drive} minuten (schatting).",
-   "lunchBooked": "{lunch}. Ik boek de juiste tafel voor uw groep.",
-   "beachOrVillage": "Een nabije baai of een historische stad, gekozen per regio zodra het plan is bevestigd.",
-   "lastLight": "Terug naar uw uitvalsbasis, ongeveer {drive} minuten (schatting), met een volle Mallorca-dag achter u."
+   "returnEfficient": "Terug naar uw accommodatie na de activiteiten. De route en reistijd hangen af van uw hotel.",
+   "longLunch": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "relaxedReturn": "Terug naar uw accommodatie na de activiteiten. De route en reistijd hangen af van uw hotel.",
+   "lunchBooked": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "beachOrVillage": "Een optionele stop bij de baan. Locatie, openingstijden en reistijd worden gecontroleerd bij het afspreken van het plan.",
+   "lastLight": "Terug naar uw accommodatie na de activiteiten. De route en reistijd hangen af van uw hotel.",
+   "round18": "Reken op ongeveer 4–5 uur voor 18 holes, plus inchecken en opwarmen. Speeltempo en daglicht worden voor uw datum gecontroleerd.",
+   "round9": "Reken op ongeveer 1½–2 uur voor 9 holes, plus inchecken en opwarmen.",
+   "shortNote": "Dit is een korte golfsessie. Een volledige golfdag vraagt om een geschikte langere baan en bevestigde toegang.",
+   "pmNote": "Golf in de middag laat weinig tijd over daarna. Extra activiteiten en lunch komen vóór de ronde; ik controleer het daglicht voordat ik een starttijd bevestig.",
+   "accessNote": "Handicaplimieten, beschikbaarheid en route worden vóór het boeken gecontroleerd."
   },
   "why": {
-   "efficient": "Het golf komt eerst en de tijden blijven strak. {course} Niets in het programma dat u niet hebt gevraagd.",
-   "lunch": "Goed golf en goed eten zijn de twee dingen die dit eiland het betrouwbaarst levert. {course} Deze dag geeft beide echt de tijd.",
-   "experienceAddons": "{course} De extra's die u koos verdienen echte tijd in het programma, dus dit plan bouwt de hele dag eromheen.",
-   "experiencePlain": "{course} Dit plan voegt het eiland toe rond de ronde zonder die te overvullen."
+   "efficient": "{course}",
+   "lunch": "{course}",
+   "experienceAddons": "{course}",
+   "experiencePlain": "{course}"
   },
   "whyCourse": {
    "courseType": {
     "famous": "het is een van de bekendste banen van het eiland",
     "scenic": "het heeft het uitzicht waar u om vroeg",
-    "challenging": "het is de meest veeleisende baan binnen bereik van uw uitvalsbasis",
+    "challenging": "hij biedt een uitdagendere ronde",
     "forgiving": "de lay-out is breed en vergevingsgezind",
-    "close": "het is de dichtstbijzijnde kwaliteitsbaan bij uw accommodatie"
+    "close": "hij ligt in de door u gekozen omgeving"
    },
    "dayStyle": {
     "serious": "het biedt een serieuze ronde",
     "relaxed": "het tempo en de lay-out passen bij een ontspannen dag",
-    "luxury": "het is de premiumoptie in uw omgeving",
-    "family": "het werkt voor alle niveaus in de groep",
+    "luxury": "hij biedt een hoogwaardige clubervaring",
+    "family": "hij past bij het golfniveau dat u heeft aangegeven",
     "scenic": "de omgeving is het hoogtepunt",
-    "food": "het ligt dicht bij de beste restaurants in de omgeving"
+    "food": "hij past bij het golfniveau dat u heeft aangegeven"
    },
-   "matched": "het past goed bij uw spel",
+   "matched": "hij past bij het golfniveau dat u heeft aangegeven",
    "fallback": "De beste beschikbare match voor uw antwoorden in dit gebied.",
    "separator": ", ",
    "end": ".",
    "capitalise": true
   },
   "handles": {
-   "tee": "Starttijd geregeld tegen het juiste tarief",
-   "table": "Restauranttafel geboekt en getimed rond uw ronde",
-   "transportYes": "Vervoer van deur tot deur geregeld",
-   "transportNo": "Route- en parkeeradvies voor uw rit",
-   "buggies": "Buggy's, clubs en verhuur geregeld indien nodig",
-   "coachingYes": "Uw coachingsessie met mij bevestigd",
-   "coachingNo": "Optionele warming-up of coaching op de baan met mij",
-   "whatsapp": "Eén WhatsApp-contact voor de hele dag"
+   "tee": "Ik bevestig en boek het golf",
+   "table": "Restaurants worden geboekt en gefactureerd door een lokale reispartner",
+   "transportYes": "Vervoer wordt geboekt en gefactureerd door een lokale reispartner",
+   "transportNo": "Route gecontroleerd met uw hoteladres",
+   "buggies": "Club- en buggyhuur afgestemd met de baan",
+   "coachingYes": "Coaching met mij, afhankelijk van beschikbaarheid",
+   "coachingNo": "Coaching met mij, afhankelijk van beschikbaarheid",
+   "whatsapp": "Neem contact met mij op om het golfplan af te spreken"
   }
  },
  "phrases": {

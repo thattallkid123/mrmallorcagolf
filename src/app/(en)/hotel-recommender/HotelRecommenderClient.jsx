@@ -1,4 +1,5 @@
 'use client'
+import ToolChoices from '../../../components/ToolChoices'
 
 import { useRef, useState } from 'react'
 import ToolPhoto from '../../../components/ToolPhoto'
@@ -284,7 +285,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
             <h2>{currentQ.title}</h2>
             <p className="hr-step-sub">{currentQ.sub}</p>
 
-            <div className={['area', 'style'].includes(currentQ.key) ? 'hr-options hr-options--photos' : currentQ.grid ? 'hr-options-grid' : 'hr-options'}>
+            <ToolChoices locale={lang} className={['area', 'style'].includes(currentQ.key) ? 'hr-options--photos' : ''}>
               {currentQ.opts.map(opt => (
                 <button
                   key={opt.val}
@@ -306,7 +307,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
                   </div>
                 </button>
               ))}
-            </div>
+            </ToolChoices>
 
             <div className="hr-nav">
               <button className="hr-btn-next" onClick={next} disabled={!canContinue}>

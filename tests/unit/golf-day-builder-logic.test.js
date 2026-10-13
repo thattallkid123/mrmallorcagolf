@@ -11,6 +11,7 @@ const baseAnswers = {
   region: 'southwest',
   dayStyle: 'relaxed',
   level: 'confident',
+  handicap: 'low',
   courseType: 'forgiving',
   addons: [],
 }
@@ -19,13 +20,13 @@ describe('scoreAllCourses', () => {
   test('excludes hotel-only courses entirely', () => {
     const ranked = scoreAllCourses(baseAnswers)
     expect(ranked.some(r => r.c.id === 'reserva-rotana')).toBe(false)
-    expect(ranked.length).toBe(COURSES.filter(c => !c.hotelOnly).length)
+    expect(ranked.some(r => r.c.id.startsWith('santa-ponsa-2') || r.c.id.startsWith('santa-ponsa-3'))).toBe(false)
   })
 
-  test('"unbooked" region falls back to southwest for scoring purposes', () => {
-    const unbooked = scoreAllCourses({ ...baseAnswers, region: 'unbooked' })
-    const southwest = scoreAllCourses({ ...baseAnswers, region: 'southwest' })
-    expect(unbooked.map(r => r.c.id)).toEqual(southwest.map(r => r.c.id))
+  test('unbooked does not silently force a southwest base', () => {
+    const ranked = scoreAllCourses({ ...baseAnswers, region: 'unbooked', dayStyle:'scenic', courseType:'scenic' })
+    expect(ranked.some(r => r.c.region === 'north')).toBe(true)
+    expect(ranked.some(r => r.c.region === 'east')).toBe(true)
   })
 
   test('a course in the requested region scores higher than one that is not, all else equal', () => {
@@ -42,22 +43,15 @@ describe('scoreAllCourses', () => {
     }
   })
 
-  test('courseType "close" weights driving distance more heavily than the default', () => {
-    const closeAnswers = { ...baseAnswers, courseType: 'close' }
-    const closeRanked = scoreAllCourses(closeAnswers)
-    const defaultRanked = scoreAllCourses(baseAnswers)
-    // bendinat is close (10 min) to southwest; the close-weighted score for it should beat its default-weighted score
-    const closeBendinat = closeRanked.find(r => r.c.id === 'bendinat')
-    const defaultBendinat = defaultRanked.find(r => r.c.id === 'bendinat')
-    expect(closeBendinat.s).toBeGreaterThan(defaultBendinat.s)
+  test('close only recommends the selected area', () => {
+    const ranked = scoreAllCourses({ ...baseAnswers, courseType:'close' })
+    expect(ranked.length).toBeGreaterThan(0)
+    expect(ranked.every(r => r.c.region === 'southwest')).toBe(true)
   })
 
-  test('a course below the requested skill level is penalised relative to a matching one', () => {
-    const lowLevelAnswers = { ...baseAnswers, level: 'beginner', courseType: 'nomatch', dayStyle: 'nomatch' }
-    const ranked = scoreAllCourses(lowLevelAnswers)
-    const beginnerFriendly = ranked.find(r => r.c.id === 'santa-ponsa') // level: beginner+
-    const confidentOnly = ranked.find(r => r.c.id === 'son-gual') // level: confident+
-    expect(beginnerFriendly.s).toBeGreaterThan(confidentOnly.s)
+  test('a beginner is not sent to a course requiring a more advanced level', () => {
+    const ranked = scoreAllCourses({ ...baseAnswers, level:'beginner' })
+    expect(ranked.some(r => r.c.id === 'son-gual')).toBe(false)
   })
 
   test('dayStyle "family" gives an extra bonus to courses tagged family', () => {
@@ -116,6 +110,6 @@ describe('whyCourseChosen', () => {
 
   test('adds "well-matched to your game" when the level requirement is met', () => {
     const line = whyCourseChosen(course, { ...baseAnswers, courseType: 'nomatch', dayStyle: 'nomatch', level: 'confident' })
-    expect(line).toMatch(/well-matched to your game/i)
+    expect(line).toMatch(/golf level you selected/i)
   })
 })

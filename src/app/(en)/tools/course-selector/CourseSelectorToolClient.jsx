@@ -1,4 +1,5 @@
 'use client'
+import ToolChoices from '../../../../components/ToolChoices'
 
 import ToolPhoto from '../../../../components/ToolPhoto'
 import { planningImageText } from '../../../../lib/planning-image-labels'
@@ -825,7 +826,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
             <h2 className="cst-q-title">{t.questions[q.id]?.title || q.title}</h2>
             {(t.questions[q.id]?.sub || q.sub) && <p className="cst-q-sub">{t.questions[q.id]?.sub || q.sub}</p>}
 
-            <div className={`cst-opts${q.cols ? ' cols-2' : ''}${q.options.length === 5 ? ' tool-options--five' : ''}`}>
+            <ToolChoices locale={lang} className="cst-opts">
               {q.options.map(opt => {
                 const isSelected = q.multi
                   ? (answers[q.id] || []).includes(opt.value)
@@ -843,16 +844,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
                   </button>
                 )
               })}
-              {q.multi && (
-                <button
-                  className="cst-btn gold"
-                  style={{ gridColumn:'1 / -1', marginTop:'14px', justifySelf:'center', minWidth:'240px' }}
-                  onClick={continueMulti}
-                >
-                  {t.progress.showCourses}
-                </button>
-              )}
-            </div>
+            </ToolChoices>
 
             <div className="cst-nav-row">
               <button
@@ -862,7 +854,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
               >
                 {t.progress.back}
               </button>
-              <span />
+              {q.multi && <button className="cst-btn gold" onClick={continueMulti}>{t.progress.showCourses}</button>}
             </div>
           </div>
         )}

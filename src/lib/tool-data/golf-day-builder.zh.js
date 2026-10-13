@@ -1,8 +1,3 @@
-// golf-day-builder copy for 'zh'. Generated overlay: the English master is in
-// golf-day-builder-logic.js (COURSES, RESTAURANTS, ADDONS, QUESTIONS) and EN_PLAN in golf-day-builder-localize.js.
-// A key missing here falls back to English, so a new item needs adding for
-// every language. It only changes what the visitor sees; matching and
-// scoring never read it.
 const data = {
  "stepFmt": "第 {n} 步，共 {total} 步 · {section}",
  "sections": {
@@ -13,7 +8,8 @@ const data = {
   "courseType": "球场类型",
   "addons": "打球之外",
   "transport": "交通",
-  "group": "您的团队"
+  "group": "您的团队",
+  "handicap": "差点"
  },
  "teeWindows": {
   "early": "8:00 至 9:00",
@@ -175,7 +171,7 @@ const data = {
   },
   "addons": {
    "title": "什么能让这一天更完整？",
-   "sub": "选择吸引您的任何选项，或都不选",
+   "sub": "最多选择两项活动，也可不选",
    "opts": {
     "lunch": [
      "悠长午餐",
@@ -244,6 +240,32 @@ const data = {
     "vip": [
      "贵宾或企业",
      "接待客户或庆祝特殊场合"
+    ]
+   }
+  },
+  "handicap": {
+   "title": "您同行球友中最高的差点是多少？",
+   "sub": "仅在所有球友都持有有效差点证明时选择差点范围。",
+   "opts": {
+    "low": [
+     "28及以下",
+     "所有球友均有有效证明"
+    ],
+    "mid": [
+     "29至36",
+     "所有球友均有有效证明"
+    ],
+    "high": [
+     "37至54",
+     "所有球友均有有效证明"
+    ],
+    "none": [
+     "没有有效差点证明",
+     "需要核实球场准入要求"
+    ],
+    "unknown": [
+     "暂不确定",
+     "需要核实球场准入要求"
     ]
    }
   }
@@ -423,64 +445,64 @@ const data = {
  },
  "restaurants": {
   "southwest": {
-   "casual": "Golf de Andratx 的 Campino 餐厅：露台上的意大利和地中海菜，按您打完球的时间预订",
-   "premium": "Castell Son Claret 的 Sa Clastra（1 颗米其林星），位于 Es Capdellà（距西南部大多数球场约 15 分钟）。岛上最好的午餐餐桌之一",
-   "village": "在 Calvià 村吃午餐：一座安静的山顶小镇，本地餐厅很少见到游客。我来订合适的餐桌",
-   "michelin": "Castell Son Claret 的 Sa Clastra（1★），位于 Es Capdellà，或 St. Regis Mardavall 的 Es Fum（1★）：岛上最好的两张餐桌，都在西南部"
+   "casual": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "premium": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "village": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "michelin": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。"
   },
   "palma": {
-   "casual": "Son Muntaner 的 Na Capitana：露台上可眺望球场的可靠地中海午餐，或开车一小段到 Santa Catalina 市场吃 tapas",
-   "premium": "帕尔马市中心的 DINS Santi Taura（1 颗米其林星），或老城的 Marc Fosh（1 颗米其林星）。我会根据您的球局安排订位时间",
-   "village": "Santa Catalina 市场：帕尔马最好的美食街区，距大多数球场 10 分钟。我来为团队选合适的地方",
-   "michelin": "DINS Santi Taura（1★）、Marc Fosh（1★）和 Zaranda（1★）都在帕尔马：岛上最集中的米其林群，都在帕尔马各球场 15 分钟之内"
+   "casual": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "premium": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "village": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "michelin": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。"
   },
   "north": {
-   "casual": "Port de Pollença 海滩边的午餐：海滨步道上有好几处不错的鱼和海鲜选择。旺季我会提前订位",
-   "premium": "Port d'Alcúdia 的 Maca de Castro（1 颗米其林星 + 绿星）：以本地食材做成的应季品鉴菜单。距 Alcanada 约 10 分钟",
-   "village": "波连萨老城：一座安静的山顶小镇，有漂亮的市场广场、可靠的本地餐厅和周日市集。值得绕这一小段路",
-   "michelin": "Port d'Alcúdia 的 Maca de Castro（1★ + 绿星）：岛上最有意思的主厨餐厅之一，离 Alcanada 球场很近"
+   "casual": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "premium": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "village": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "michelin": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。"
   },
   "east": {
-   "casual": "Capdepera Golf 的 Roca Viva 餐厅：地中海和马略卡菜，有自家菜园和 18 洞旁的露台。岛上较好的俱乐部午餐之一",
-   "premium": "Canyamel 的 Cap Vermell Grand Hotel 里的 VORO（2 颗米其林星）：马略卡唯一的两星餐厅，主厨 Álvaro Salazar。18 道或 22 道品鉴菜单",
-   "village": "Artà 老城：马略卡东部最有个性的小镇之一。打球前后喝咖啡、吃午餐的好去处",
-   "michelin": "Canyamel Cap Vermell 的 VORO（2★）：在东海岸住一晚最有力的米其林理由"
+   "casual": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "premium": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "village": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "michelin": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。"
   },
   "south": {
-   "casual": "Golf Maioris 的 T19 Restobar：室外露台，德式和地中海俱乐部餐，靠近机场的实用一站",
-   "premium": "Llucmajor 附近的 Andreu Genestra（1 颗米其林星 + 绿星）：应季品鉴菜单，以可持续为导向的烹饪。距 Golf Maioris 和 Son Antem 约 10 分钟。请提前很久预订",
-   "village": "Llucmajor 老城：距帕尔马 20 分钟的安静集镇，有不错的本地餐厅和周六市集",
-   "michelin": "Llucmajor 附近的 Andreu Genestra（1★ + 绿星）：马略卡最有意思的主厨餐厅之一，离南部球场群很近"
+   "casual": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "premium": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "village": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "michelin": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。"
   }
  },
  "addons": {
   "beach": [
    "海滩时光",
-   "附近的一处小海湾，游个泳，在树荫下慢慢待一小时。计划确认后，按所在区域选择海滩。"
+   "可选的球场周边活动。地点、营业时间和车程在商定行程时核实。"
   ],
   "spa": [
    "水疗与恢复",
-   "打完球后在当地度假村水疗做一次护理。可选的包括 Arabella Son Vida、Secrets Paguera 和 Bendinat。预订时我来确认场地。"
+   "可选的球场周边活动。地点、营业时间和车程在商定行程时核实。"
   ],
   "village": [
    "小镇一小时",
-   "在岛上一座历史小镇待一小时：咖啡、小巷，以及一两个观景点。"
+   "可选的球场周边活动。地点、营业时间和车程在商定行程时核实。"
   ],
   "wine": [
    "品酒",
-   "在本地酒庄的导览品酒。马略卡的葡萄酒产业虽小但认真：Binissalem 的 José L. Ferrer 和 Macià Batle 都值得绕路。我会把它安排在球局前后。"
+   "可选的球场周边活动。地点、营业时间和车程在商定行程时核实。"
   ],
   "family": [
    "家庭活动",
-   "根据区域和年龄，可以是乘船、参观洞穴或水上乐园。随预订一并确认。"
+   "可选的球场周边活动。地点、营业时间和车程在商定行程时核实。"
   ],
   "coaching": [
    "与我同练",
-   "与我这位 UK PGA 高级职业教练的一堂专项课：热身、技术或球场策略。"
+   "与我进行热身或教学，需根据日期和球场设施确认。"
   ],
   "lunch": [
    "悠长午餐",
-   "一顿真正的马略卡式餐桌，预订好并按您的球局安排时间。"
+   "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。"
   ]
  },
  "plan": {
@@ -490,9 +512,9 @@ const data = {
    "experience": "完整体验"
   },
   "taglines": {
-   "efficient": "这一轮球就是这一天。打得好，下午就是自由的。",
-   "lunch": "一轮认真的球，接着是一顿认真的饭。",
-   "experience": "高尔夫是核心。岛上的其余体验填满剩下的日程。"
+   "efficient": "预留报到、打球和返程时间的高尔夫安排。",
+   "lunch": "高尔夫与球场附近的午餐建议。",
+   "experience": "高尔夫与您选择的其他活动。"
   },
   "time": {
    "depart": "{depart}（估计）",
@@ -504,16 +526,20 @@ const data = {
    "lateAfternoon": "傍晚前",
    "lunch": "午餐",
    "afternoon": "下午",
-   "evening": "晚上"
+   "evening": "晚上",
+   "earlyStart": "早晨打球",
+   "midStart": "上午稍晚打球",
+   "pmStart": "下午打球",
+   "afterActivities": "活动结束后"
   },
   "title": {
    "depart": "从住处出发",
    "unhurried": "从容出发",
    "clubhouse": "会所喝一杯",
    "return": "返程",
-   "longLunch": "一顿悠长的马略卡午餐",
+   "longLunch": "午餐建议",
    "relaxedReturn": "轻松返程",
-   "lunchBooked": "午餐，已订好并安排好时间",
+   "lunchBooked": "午餐建议",
    "beachOrVillage": "海滩或小镇一小时",
    "lastLight": "在最后的日光中返程",
    "warmupCoach": "与我一起的指导热身",
@@ -522,56 +548,61 @@ const data = {
    "holes9": "在 {course} 打 9 洞"
   },
   "desc": {
-   "transfer": "专车从您的住处接您。到球场大约 {drive} 分钟（估计）。",
-   "selfDrive": "自驾前往球场，大约 {drive} 分钟（估计）。停车说明会随确认后的行程一并发送。",
-   "warmupCoach": "与我一起的 45 分钟课程：练习场热身、短杆，以及接下来球洞的打法计划。",
-   "warmupCoffee": "练习球、推杆果岭，以及露台上的一杯咖啡。请在开球前 45 分钟到达。",
+   "transfer": "路线和时间商定后，当地旅游合作方可预订接送服务并开具账单。",
+   "selfDrive": "确定酒店和路线后，再安排出发时间。",
+   "warmupCoach": "与我进行热身或教学，需根据日期和球场设施确认。",
+   "warmupCoffee": "预留报到、热身和准备打球的时间。练习设施因球场而异。",
    "holeNote": " 注意：{note}",
    "clubhouse": "在露台上轻松喝一杯，一边争论记分卡。",
-   "returnEfficient": "回到您的住处，一天剩下的时间原封不动。大约 {drive} 分钟（估计）。",
-   "longLunch": "{lunch}。餐桌已订好并安排好时间，您打完最后一洞就能直接入座。",
-   "relaxedReturn": "悠闲地开车回去，大约 {drive} 分钟（估计）。",
-   "lunchBooked": "{lunch}。我会为您的团队订合适的餐桌。",
-   "beachOrVillage": "附近的一处小海湾或历史小镇，计划确认后按区域选择。",
-   "lastLight": "回到您的住处，大约 {drive} 分钟（估计），带着完整的一天马略卡时光。"
+   "returnEfficient": "活动结束后返回住宿地点。路线和车程取决于您的酒店。",
+   "longLunch": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "relaxedReturn": "活动结束后返回住宿地点。路线和车程取决于您的酒店。",
+   "lunchBooked": "根据开球时间选择球场附近的餐厅。当地合作方在预订前核实营业时间、空位和路线。",
+   "beachOrVillage": "可选的球场周边活动。地点、营业时间和车程在商定行程时核实。",
+   "lastLight": "活动结束后返回住宿地点。路线和车程取决于您的酒店。",
+   "round18": "18洞通常需预留约4至5小时，另加报到和热身时间。打球节奏和日照时间需按出行日期核实。",
+   "round9": "9洞通常需预留约1.5至2小时，另加报到和热身时间。",
+   "shortNote": "这是一次短时高尔夫活动。完整高尔夫日需要合适的较长球场，并确认准入条件。",
+   "pmNote": "下午打球后剩余时间有限。其他活动和午餐安排在打球前；我会在确认开球时间前核实日照时间。",
+   "accessNote": "预订前会核实球场差点限制、空位和路线。"
   },
   "why": {
-   "efficient": "高尔夫放在第一位，时间安排紧凑。{course} 日程里没有任何您没要求的内容。",
-   "lunch": "好球场和好美食是这座岛最稳定的两样东西。{course} 这一天给了两者充足的时间。",
-   "experienceAddons": "{course} 您选的附加项目值得在日程里占有真正的时间，所以这份行程围绕它们来安排整天。",
-   "experiencePlain": "{course} 这份行程在球局周围加入了岛上的体验，但不显得拥挤。"
+   "efficient": "{course}",
+   "lunch": "{course}",
+   "experienceAddons": "{course}",
+   "experiencePlain": "{course}"
   },
   "whyCourse": {
    "courseType": {
     "famous": "它是岛上最知名的球场之一",
     "scenic": "它有您想要的风景",
-    "challenging": "它是您住处附近最有挑战的球场",
+    "challenging": "球场更具挑战性",
     "forgiving": "布局宽阔而宽容",
-    "close": "它是离您住处最近的优质球场"
+    "close": "球场位于您选择的区域"
    },
    "dayStyle": {
     "serious": "它能带来一轮认真的球",
     "relaxed": "节奏和布局适合轻松的一天",
-    "luxury": "它是您所在区域的高端选择",
-    "family": "它适合团队中各种水平的人",
+    "luxury": "球场提供高品质的俱乐部体验",
+    "family": "球场适合您所选的高尔夫水平",
     "scenic": "环境是最大的亮点",
-    "food": "它离当地最好的餐厅很近"
+    "food": "球场适合您所选的高尔夫水平"
    },
-   "matched": "它与您的球技很匹配",
+   "matched": "球场适合您所选的高尔夫水平",
    "fallback": "这个区域里与您的回答最匹配的选择。",
    "separator": "，",
    "end": "。",
    "capitalise": false
   },
   "handles": {
-   "tee": "以合适的价格锁定开球时间",
-   "table": "已订好餐厅餐桌，并按您的球局安排时间",
-   "transportYes": "已安排门到门交通",
-   "transportNo": "为您的自驾提供路线和停车指引",
-   "buggies": "需要时安排球车、球杆和租借装备",
-   "coachingYes": "与我的指导课程已确认",
-   "coachingNo": "可选的热身或与我一起的球场指导",
-   "whatsapp": "全天只有一个 WhatsApp 联系人"
+   "tee": "由我确认并预订高尔夫",
+   "table": "餐厅由当地旅游合作方预订并开具账单",
+   "transportYes": "接送由当地旅游合作方预订并开具账单",
+   "transportNo": "根据您的酒店地址核实路线",
+   "buggies": "向球场核实球杆和球车租赁",
+   "coachingYes": "与我进行教学，需确认时间",
+   "coachingNo": "与我进行教学，需确认时间",
+   "whatsapp": "联系我商定高尔夫行程"
   }
  },
  "phrases": {

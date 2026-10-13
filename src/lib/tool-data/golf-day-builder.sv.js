@@ -1,8 +1,3 @@
-// golf-day-builder copy for 'sv'. Generated overlay: the English master is in
-// golf-day-builder-logic.js (COURSES, RESTAURANTS, ADDONS, QUESTIONS) and EN_PLAN in golf-day-builder-localize.js.
-// A key missing here falls back to English, so a new item needs adding for
-// every language. It only changes what the visitor sees; matching and
-// scoring never read it.
 const data = {
  "stepFmt": "Steg {n} av {total} · {section}",
  "sections": {
@@ -13,7 +8,8 @@ const data = {
   "courseType": "Banans typ",
   "addons": "Utöver golfen",
   "transport": "Transport",
-  "group": "Ditt sällskap"
+  "group": "Ditt sällskap",
+  "handicap": "Handicap"
  },
  "teeWindows": {
   "early": "8:00 till 9:00",
@@ -175,7 +171,7 @@ const data = {
   },
   "addons": {
    "title": "Vad skulle avrunda dagen?",
-   "sub": "Välj det som lockar, eller inget",
+   "sub": "Välj upp till två extra aktiviteter, eller inga",
    "opts": {
     "lunch": [
      "Lång lunch",
@@ -244,6 +240,32 @@ const data = {
     "vip": [
      "Vip eller företag",
      "Ta emot kunder eller fira ett tillfälle"
+    ]
+   }
+  },
+  "handicap": {
+   "title": "Vilket är det högsta handicapet i din grupp?",
+   "sub": "Välj ett intervall bara om alla har ett aktuellt handicapintyg.",
+   "opts": {
+    "low": [
+     "Upp till 28",
+     "Aktuella intyg för alla"
+    ],
+    "mid": [
+     "29 till 36",
+     "Aktuella intyg för alla"
+    ],
+    "high": [
+     "37 till 54",
+     "Aktuella intyg för alla"
+    ],
+    "none": [
+     "Inga aktuella intyg",
+     "Tillträdet till banan måste kontrolleras"
+    ],
+    "unknown": [
+     "Inte säker ännu",
+     "Tillträdet till banan måste kontrolleras"
     ]
    }
   }
@@ -423,64 +445,64 @@ const data = {
  },
  "restaurants": {
   "southwest": {
-   "casual": "Restaurang Campino på Golf de Andratx: italienskt och medelhavsmat på terrassen, bokad runt tiden då din runda är klar",
-   "premium": "Sa Clastra (1 Michelinstjärna) på Castell Son Claret, Es Capdellà (cirka 15 minuter från de flesta banorna i sydväst). Ett av öns bästa lunchbord",
-   "village": "Lunch i byn Calvià: en lugn bergsstad med lokala restauranger som sällan ser turister. Jag bokar rätt bord",
-   "michelin": "Sa Clastra (1★) på Castell Son Claret, Es Capdellà, eller Es Fum (1★) på St. Regis Mardavall: två av öns finaste bord, båda i sydväst"
+   "casual": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "premium": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "village": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "michelin": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning."
   },
   "palma": {
-   "casual": "Na Capitana på Son Muntaner: pålitlig medelhavslunch på terrassen med utsikt över banan, eller en kort bilresa till Santa Catalina-marknaden för tapas",
-   "premium": "DINS Santi Taura (1 Michelinstjärna) i centrala Palma, eller Marc Fosh (1 Michelinstjärna) i gamla stan. Jag lägger bokningen runt din runda",
-   "village": "Santa Catalina-marknaden: Palmas bästa matkvarter, 10 minuter från de flesta banor. Jag väljer rätt ställe för sällskapet",
-   "michelin": "DINS Santi Taura (1★), Marc Fosh (1★) och Zaranda (1★) ligger alla i Palma: öns starkaste Michelinkluster, alla inom 15 minuter från Palmabanorna"
+   "casual": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "premium": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "village": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "michelin": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning."
   },
   "north": {
-   "casual": "Lunch vid stranden i Port de Pollença: strandpromenaden har flera bra fisk- och skaldjursalternativ. Under högsäsong bokar jag i förväg",
-   "premium": "Maca de Castro (1 Michelinstjärna + Green Star) i Port d'Alcúdia: säsongsbetonade provmenyer av lokala råvaror. Cirka 10 minuter från Alcanada",
-   "village": "Pollenças gamla stad: en lugn bergsstad med ett fint marknadstorg, pålitliga lokala restauranger och söndagsmarknad. Värd den korta omvägen",
-   "michelin": "Maca de Castro (1★ + Green Star) i Port d'Alcúdia: en av öns mest intressanta kockdrivna restauranger, nära golfbanan Alcanada"
+   "casual": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "premium": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "village": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "michelin": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning."
   },
   "east": {
-   "casual": "Restaurang Roca Viva på Capdepera Golf: medelhavs- och mallorkinsk mat, med egen grönsaksodling och terrass vid 18:an. En av öns bättre klubbhuslunchar",
-   "premium": "VORO (2 Michelinstjärnor) på Cap Vermell Grand Hotel, Canyamel: Mallorcas enda tvåstjärniga restaurang, kocken Álvaro Salazar. Provmeny på 18 eller 22 rätter",
-   "village": "Artàs gamla stad: en av de mest karaktärsfulla städerna i östra Mallorca. Ett bra stopp för kaffe och lunch före eller efter rundan",
-   "michelin": "VORO (2★) på Cap Vermell, Canyamel: det starkaste Michelinargumentet för en natt på östkusten"
+   "casual": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "premium": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "village": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "michelin": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning."
   },
   "south": {
-   "casual": "T19 Restobar på Golf Maioris: uteterrass, tysk och medelhavsinspirerad klubbhusmat, ett användbart stopp nära flygplatsen",
-   "premium": "Andreu Genestra (1 Michelinstjärna + Green Star) nära Llucmajor: säsongsbetonade provmenyer, hållbarhetsdriven matlagning. Cirka 10 minuter från Golf Maioris och Son Antem. Boka långt i förväg",
-   "village": "Llucmajors gamla stad: en lugn marknadsstad 20 minuter från Palma med bra lokala restauranger och lördagsmarknad",
-   "michelin": "Andreu Genestra (1★ + Green Star) nära Llucmajor: en av Mallorcas mest intressanta kockdrivna restauranger, nära banorna i söder"
+   "casual": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "premium": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "village": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "michelin": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning."
   }
  },
  "addons": {
   "beach": [
    "Strandtimme",
-   "En närliggande vik för ett dopp och en lugn timme i skuggan. Stranden väljs efter region när planen är bekräftad."
+   "Ett valfritt stopp nära banan. Plats, öppettider och restid kontrolleras när planen avtalas."
   ],
   "spa": [
    "Spa och återhämtning",
-   "Ett pass efter rundan på ett resortspa i området. Alternativen inkluderar Arabella Son Vida, Secrets Paguera och Bendinat. Jag bekräftar stället när du bokar."
+   "Ett valfritt stopp nära banan. Plats, öppettider och restid kontrolleras när planen avtalas."
   ],
   "village": [
    "Bytimme",
-   "En timme i en av öns historiska städer: kaffe, gränder och en utsiktsplats eller två."
+   "Ett valfritt stopp nära banan. Plats, öppettider och restid kontrolleras när planen avtalas."
   ],
   "wine": [
    "Vinprovning",
-   "En guidad provning på en lokal bodega. Mallorca har en liten men seriös vinscen: José L. Ferrer i Binissalem och Macià Batle är båda värda omvägen. Jag lägger det runt rundan."
+   "Ett valfritt stopp nära banan. Plats, öppettider och restid kontrolleras när planen avtalas."
   ],
   "family": [
    "Familjeaktivitet",
-   "En båttur, grottorna eller en vattenpark beroende på region och åldrar. Bekräftas med bokningen."
+   "Ett valfritt stopp nära banan. Plats, öppettider och restid kontrolleras när planen avtalas."
   ],
   "coaching": [
    "Coaching med mig",
-   "Ett fokuserat pass med mig, en UK PGA Advanced Professional: uppvärmning, teknik eller banstrategi."
+   "Uppvärmning eller coaching med mig, beroende på datum och banans faciliteter."
   ],
   "lunch": [
    "Lång lunch",
-   "Ett riktigt mallorkinskt bord, bokat och tidsatt runt din runda."
+   "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning."
   ]
  },
  "plan": {
@@ -490,9 +512,9 @@ const data = {
    "experience": "Hela upplevelsen"
   },
   "taglines": {
-   "efficient": "Rundan är dagen. Väl spelad, och eftermiddagen är fri.",
-   "lunch": "En seriös runda följd av ett seriöst bord.",
-   "experience": "Golfen är mittpunkten. Ön fyller resten av schemat."
+   "efficient": "Golf med tid för incheckning, spel och hemresa.",
+   "lunch": "Golf och ett föreslaget lunchstopp nära banan.",
+   "experience": "Golf och de extra aktiviteter du har valt."
   },
   "time": {
    "depart": "{depart} (uppskattning)",
@@ -504,16 +526,20 @@ const data = {
    "lateAfternoon": "Sen eftermiddag",
    "lunch": "Lunch",
    "afternoon": "Eftermiddag",
-   "evening": "Kväll"
+   "evening": "Kväll",
+   "earlyStart": "Golf på morgonen",
+   "midStart": "Golf på förmiddagen",
+   "pmStart": "Golf på eftermiddagen",
+   "afterActivities": "Efter aktiviteterna"
   },
   "title": {
    "depart": "Avfärd från ditt boende",
    "unhurried": "En lugn avfärd",
    "clubhouse": "En drink i klubbhuset",
    "return": "Hemfärd",
-   "longLunch": "En lång mallorkinsk lunch",
+   "longLunch": "Föreslagen lunch",
    "relaxedReturn": "En avslappnad hemfärd",
-   "lunchBooked": "Lunch, bokad och tidsatt",
+   "lunchBooked": "Föreslagen lunch",
    "beachOrVillage": "Strand- eller bytimme",
    "lastLight": "Hem i det sista ljuset",
    "warmupCoach": "Uppvärmning med coaching av mig",
@@ -522,56 +548,61 @@ const data = {
    "holes9": "9 hål på {course}"
   },
   "desc": {
-   "transfer": "En privat transfer hämtar dig vid ditt boende. Cirka {drive} minuter till banan (uppskattning).",
-   "selfDrive": "Du kör själv till banan, cirka {drive} minuter (uppskattning). Parkeringsinformation kommer med den bekräftade planen.",
-   "warmupCoach": "Ett 45 minuters pass med mig: uppvärmning på rangen, korta spelet och en plan för hålen framför dig.",
-   "warmupCoffee": "Rangebollar, puttinggreenen och en kaffe på terrassen. Kom 45 minuter före din starttid.",
+   "transfer": "En lokal resepartner kan boka och fakturera transporten när färdväg och tider har avtalats.",
+   "selfDrive": "Bekräfta hotellet och färdvägen innan avresetiden planeras.",
+   "warmupCoach": "Uppvärmning eller coaching med mig, beroende på datum och banans faciliteter.",
+   "warmupCoffee": "Tid för incheckning, uppvärmning och förberedelse inför rundan. Faciliteterna beror på banan.",
    "holeNote": " Observera: {note}",
    "clubhouse": "En avslappnad drink på terrassen medan scorekorten diskuteras.",
-   "returnEfficient": "Tillbaka vid din bas med resten av dagen orörd. Cirka {drive} minuter (uppskattning).",
-   "longLunch": "{lunch}. Bordet är bokat och tidsatt så att du går från sista hålet direkt till bordet.",
-   "relaxedReturn": "En lugn hemresa, cirka {drive} minuter (uppskattning).",
-   "lunchBooked": "{lunch}. Jag bokar rätt bord för ditt sällskap.",
-   "beachOrVillage": "En närliggande vik eller en historisk stad, vald efter region när planen är bekräftad.",
-   "lastLight": "Tillbaka till din bas, cirka {drive} minuter (uppskattning), med en hel Mallorcadag bakom dig."
+   "returnEfficient": "Tillbaka till ditt boende efter aktiviteterna. Färdväg och restid beror på ditt hotell.",
+   "longLunch": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "relaxedReturn": "Tillbaka till ditt boende efter aktiviteterna. Färdväg och restid beror på ditt hotell.",
+   "lunchBooked": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "beachOrVillage": "Ett valfritt stopp nära banan. Plats, öppettider och restid kontrolleras när planen avtalas.",
+   "lastLight": "Tillbaka till ditt boende efter aktiviteterna. Färdväg och restid beror på ditt hotell.",
+   "round18": "Räkna med cirka 4–5 timmar för 18 hål, plus incheckning och uppvärmning. Speltempo och dagsljus kontrolleras för ditt datum.",
+   "round9": "Räkna med cirka 1½–2 timmar för 9 hål, plus incheckning och uppvärmning.",
+   "shortNote": "Detta är ett kort golfpass. En hel golfdag kräver en lämplig längre bana och bekräftat tillträde.",
+   "pmNote": "Eftermiddagsgolf lämnar lite tid efteråt. Extra aktiviteter och lunch sker före rundan; jag kontrollerar dagsljuset innan en starttid bekräftas.",
+   "accessNote": "Banans handicapgränser, tillgänglighet och färdväg kontrolleras före bokning."
   },
   "why": {
-   "efficient": "Golfen kommer först och tiderna hålls snäva. {course} Inget i schemat som du inte bett om.",
-   "lunch": "Bra golf och bra mat är de två saker den här ön levererar mest pålitligt. {course} Den här dagen ger båda riktig tid.",
-   "experienceAddons": "{course} Tilläggen du valde förtjänar riktig tid i schemat, så den här planen bygger hela dagen runt dem.",
-   "experiencePlain": "{course} Den här planen lägger till ön runt rundan utan att trycka ihop den."
+   "efficient": "{course}",
+   "lunch": "{course}",
+   "experienceAddons": "{course}",
+   "experiencePlain": "{course}"
   },
   "whyCourse": {
    "courseType": {
     "famous": "den är en av öns mest kända banor",
     "scenic": "den har den utsikt du bad om",
-    "challenging": "den är den mest krävande banan inom räckhåll från din bas",
+    "challenging": "den erbjuder en mer krävande runda",
     "forgiving": "banan är bred och förlåtande",
-    "close": "den är den närmaste kvalitetsbanan till där du bor"
+    "close": "den ligger i området du har valt"
    },
    "dayStyle": {
     "serious": "den ger en seriös runda",
     "relaxed": "tempot och banan passar en avslappnad dag",
-    "luxury": "den är premiumalternativet i ditt område",
-    "family": "den fungerar för alla nivåer i sällskapet",
+    "luxury": "den erbjuder en klubbupplevelse på hög nivå",
+    "family": "den passar golfnivån du har angett",
     "scenic": "miljön är höjdpunkten",
-    "food": "den ligger nära de bästa restaurangerna i området"
+    "food": "den passar golfnivån du har angett"
    },
-   "matched": "den passar ditt spel väl",
+   "matched": "den passar golfnivån du har angett",
    "fallback": "Den bästa tillgängliga matchningen för dina svar i det här området.",
    "separator": ", ",
    "end": ".",
    "capitalise": true
   },
   "handles": {
-   "tee": "Starttid säkrad till rätt pris",
-   "table": "Restaurangbord bokat och tidsatt runt din runda",
-   "transportYes": "Transport dörr till dörr ordnad",
-   "transportNo": "Rutt- och parkeringsvägledning för din bilresa",
-   "buggies": "Golfbilar, klubbor och uthyrning ordnat vid behov",
-   "coachingYes": "Ditt coachingpass med mig bekräftat",
-   "coachingNo": "Valfri uppvärmning eller coaching på banan med mig",
-   "whatsapp": "En WhatsApp-kontakt för hela dagen"
+   "tee": "Jag bekräftar och bokar golfen",
+   "table": "Restauranger bokas och faktureras av en lokal resepartner",
+   "transportYes": "Transporter bokas och faktureras av en lokal resepartner",
+   "transportNo": "Färdväg kontrollerad med din hotelladress",
+   "buggies": "Klubb- och buggyhyra kontrollerad med banan",
+   "coachingYes": "Coaching med mig, beroende på tillgänglighet",
+   "coachingNo": "Coaching med mig, beroende på tillgänglighet",
+   "whatsapp": "Kontakta mig för att komma överens om golfplanen"
   }
  },
  "phrases": {

@@ -60,10 +60,10 @@ test('beginner shortlist excludes courses needing a handicap or member access', 
   await page.getByRole('button', { name: /Beginner/ }).click()
   await page.getByRole('button', { name: /Just me/ }).click()
   await page.getByRole('button', { name: /Luxury/ }).click()
-  await page.locator('.cst-opts .cst-btn.gold').click()
+  await page.locator('.cst-nav-row .cst-btn.gold').click()
   await page.getByRole('button', { name: /Southwest/ }).click()
   await page.getByRole('button', { name: /I like to walk/ }).click()
-  await page.locator('.cst-opts .cst-btn.gold').click()
+  await page.locator('.cst-nav-row .cst-btn.gold').click()
 
   await expect(page.locator('.cst-course-card')).toHaveCount(1)
   await expect(page.locator('.cst-course-card h3')).toContainText('Palma Pitch & Putt')

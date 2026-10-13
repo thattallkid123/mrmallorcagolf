@@ -1,4 +1,6 @@
 'use client'
+import { buildItineraries } from '../../../lib/golf-day-planner'
+import ToolChoices from '../../../components/ToolChoices'
 
 import ToolPhoto from '../../../components/ToolPhoto'
 import { planningImageText } from '../../../lib/planning-image-labels'
@@ -12,26 +14,14 @@ import { getGolfDayBuilderT } from '../../../lib/golf-day-builder-translations'
 import { buildLocalePath, getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 import {
-  COURSES,
-  RESTAURANTS,
-  ADDONS,
-  START_WINDOWS,
   QUESTIONS,
-  LEVEL_RANK,
-  LEVEL_REQ,
   GROUP_LABEL,
   REGION_LABEL,
-  scoreAllCourses,
-  lunchFor,
   whyCourseChosen,
 } from '../../../lib/golf-day-builder-logic'
 import {
   localizeQuestions,
-  localizeCourse,
-  getRestaurants,
-  getAddons,
   planText,
-  fmt,
   localizeFact,
   builtLine,
   applyPhrases,
@@ -105,104 +95,9 @@ function getCourseFacts(course, data) {
     }
   }
 
-  if (canonical.facts?.designer) {
-    facts.push(`${canonical.facts.designer}${canonical.facts.opened ? ` · ${canonical.facts.opened}` : ''}`)
-  }
 
-  if (canonical.facts?.practiceFacilities && !data) {
-    facts.push(canonical.facts.practiceFacilities)
-  }
-
-  for (const fact of course.facts || []) {
-    if (!facts.includes(fact)) facts.push(fact)
-  }
 
   return facts.map(f => localizeFact(f, F, data?.phrases)).slice(0, 3)
-}
-
-function buildItineraries(answers, data) {
-  const region = answers.region === 'unbooked' ? 'southwest' : answers.region
-  const ranked = scoreAllCourses(answers)
-  // Use top 3 distinct courses. One per plan
-  const top3 = ranked.slice(0, 3).map(r => ({ ...r, c: localizeCourse(r.c, data) }))
-  const P = planText(data)
-  const restaurants = getRestaurants(RESTAURANTS, data)
-  const addons = getAddons(ADDONS, data)
-  const sw = { ...START_WINDOWS[answers.start], tee: data?.teeWindows?.[answers.start] || START_WINDOWS[answers.start].tee }
-  const wantsCoaching = answers.addons?.includes('coaching')
-  const transport = answers.transport === 'yes'
-  const addonKeys = (answers.addons || []).filter(a => !['lunch','coaching'].includes(a))
-  const firstAddon = addonKeys.length ? addons[addonKeys[0]] : null
-  const secondAddon = addonKeys.length > 1 ? addons[addonKeys[1]] : null
-
-  function makePlan(picked, planName, planTagline, planStepsFn, planWhy) {
-    const course = picked.c
-    const drive = picked.drive
-    const holeCount = getCourseHoleCount(course)
-    const isNineHole = holeCount === 9
-    const holesLabel = fmt(isNineHole ? P.title.holes9 : P.title.holes18, { course: displayCourseName(course.name, data) })
-    const holeNote = isNineHole ? fmt(P.desc.holeNote, { note: course.note }) : ''
-    const travelDesc = fmt(transport ? P.desc.transfer : P.desc.selfDrive, { drive })
-    const warmup = wantsCoaching
-      ? { time: P.time.beforeRound, title: P.title.warmupCoach, desc: P.desc.warmupCoach }
-      : { time: P.time.beforeRound, title: P.title.warmupCoffee, desc: P.desc.warmupCoffee }
-    return {
-      name: planName,
-      tagline: planTagline,
-      course, drive,
-      steps: planStepsFn({ course, drive, holesLabel, holeNote, travelDesc, warmup }),
-      why: planWhy(course, drive),
-    }
-  }
-
-  const [p1, p2, p3] = top3
-
-  const itins = [
-    makePlan(p1,
-      P.names.efficient,
-      P.taglines.efficient,
-      ({ holesLabel, holeNote, travelDesc, warmup }) => [
-        { time: fmt(P.time.depart, { depart: sw.depart }), title: P.title.depart, desc: travelDesc },
-        { time: P.time.onArrival, title: warmup.title, desc: warmup.desc },
-        { time: fmt(P.time.teeWindow, { tee: sw.tee }), title: holesLabel, desc: p1.c.blurb + holeNote },
-        { time: P.time.afterRound, title: P.title.clubhouse, desc: P.desc.clubhouse },
-        { time: P.time.earlyAfternoon, title: P.title.return, desc: fmt(P.desc.returnEfficient, { drive: p1.drive }) },
-      ],
-      (course) => fmt(P.why.efficient, { course: whyCourseChosen(course, answers, P.whyCourse) })
-    ),
-    makePlan(p2,
-      P.names.lunch,
-      P.taglines.lunch,
-      ({ holesLabel, holeNote, travelDesc, warmup }) => [
-        { time: fmt(P.time.depart, { depart: sw.depart }), title: P.title.unhurried, desc: travelDesc },
-        { time: P.time.onArrival, title: warmup.title, desc: warmup.desc },
-        { time: fmt(P.time.teeWindow, { tee: sw.tee }), title: holesLabel, desc: p2.c.blurb + holeNote },
-        { time: P.time.afterRound, title: P.title.longLunch, desc: fmt(P.desc.longLunch, { lunch: lunchFor(region, answers, true, restaurants) }) },
-        { time: P.time.lateAfternoon, title: P.title.relaxedReturn, desc: fmt(P.desc.relaxedReturn, { drive: p2.drive }) },
-      ],
-      (course) => fmt(P.why.lunch, { course: whyCourseChosen(course, answers, P.whyCourse) })
-    ),
-    makePlan(p3,
-      P.names.experience,
-      P.taglines.experience,
-      ({ holesLabel, holeNote, travelDesc, warmup }) => {
-        const steps = [
-          { time: fmt(P.time.depart, { depart: sw.depart }), title: P.title.depart, desc: travelDesc },
-          { time: P.time.onArrival, title: warmup.title, desc: warmup.desc },
-          { time: fmt(P.time.teeWindow, { tee: sw.tee }), title: holesLabel, desc: p3.c.blurb + holeNote },
-          { time: P.time.lunch, title: P.title.lunchBooked, desc: fmt(P.desc.lunchBooked, { lunch: lunchFor(region, answers, answers.dayStyle === 'luxury', restaurants) }) },
-        ]
-        if (firstAddon) steps.push({ time: P.time.afternoon, title: firstAddon.title, desc: firstAddon.desc })
-        else steps.push({ time: P.time.afternoon, title: P.title.beachOrVillage, desc: P.desc.beachOrVillage })
-        if (secondAddon) steps.push({ time: P.time.lateAfternoon, title: secondAddon.title, desc: secondAddon.desc })
-        steps.push({ time: P.time.evening, title: P.title.lastLight, desc: fmt(P.desc.lastLight, { drive: p3.drive }) })
-        return steps
-      },
-      (course) => fmt(answers.addons?.length ? P.why.experienceAddons : P.why.experiencePlain, { course: whyCourseChosen(course, answers, P.whyCourse) })
-    ),
-  ]
-
-  return itins
 }
 
 const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
@@ -241,7 +136,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
     if (multi) {
       const curr = answers[key] || []
       const idx = curr.indexOf(val)
-      const next = idx >= 0 ? curr.filter(v => v !== val) : [...curr, val]
+      const next = idx >= 0 ? curr.filter(v => v !== val) : curr.length < 2 ? [...curr, val] : curr
       setAnswers(prev => ({ ...prev, [key]: next }))
     } else {
       const newAnswers = { ...answers, [key]: val }
@@ -341,12 +236,13 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: mlBody.toString(),
     }).catch(() => {})
-    const builtItins = buildItineraries(answers, null)
+    const builtItins = buildItineraries(answers, localData)
     const itineraries = builtItins.map(it => ({
       name: it.name,
-      courseName: displayCourseName(it.course.name),
+      courseName: displayCourseName(it.course.name, localData),
+      note: it.note,
       tagline: it.tagline,
-      steps: it.steps.map(s => ({ time: s.time, title: s.title })),
+      steps: it.steps.map(s => ({ time: s.time, title: s.title, desc: s.desc })),
     }))
     try {
       const res = await fetch('/api/send-itinerary', {
@@ -499,16 +395,18 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
                 <span key={i} className={i <= stepIdx ? 'done' : ''} />
               ))}
             </div>
-            <div className="gdb-step-label">{q.label}</div>
+            <div className="gdb-step-label">{stepIdx + 1} / {QUESTIONS.length}</div>
             <div className="gdb-qcard">
               <h2>{q.title}</h2>
               {q.sub && <p className="sub">{q.sub}</p>}
               {q.multi && <div className="gdb-multi-note">{t.quiz.selectAny}</div>}
-              <div className={`gdb-opts${q.opts.length === 5 ? ' tool-options--five' : ''}`}>
+              <ToolChoices locale={lang} className="gdb-opts">
                 {q.opts.map(o => (
                   <button
                     key={o.v}
                     className={`gdb-opt${isSelected(q.key, o.v, q.multi) ? ' selected' : ''}`}
+                    aria-pressed={isSelected(q.key, o.v, q.multi)}
+                    disabled={q.multi && (answers[q.key] || []).length >= 2 && !isSelected(q.key, o.v, q.multi)}
                     onClick={() => pick(q.key, o.v, q.multi)}
                   >
                     <span>
@@ -517,7 +415,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
                     </span>
                   </button>
                 ))}
-              </div>
+              </ToolChoices>
             </div>
             <div className="gdb-nav-row">
               <button
@@ -536,8 +434,14 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
           </section>
         )}
 
+        {phase === 'results' && itins?.length === 0 && <section className="gdb-no-match">
+          <h2>{t.results.noMatchTitle}</h2>
+          <p>{t.results.noMatch}</p>
+          <a className="gdb-btn-pine" href={buildLocalePath('/plan-your-trip',lang)}>{t.cta.askAndy}</a>
+          <button className="gdb-btn-ghost" onClick={() => { setPhase('quiz'); setStepIdx(0) }}>{t.adjust.adjust}</button>
+        </section>}
         {/* RESULTS */}
-        {phase === 'results' && itins && (
+        {phase === 'results' && itins?.length > 0 && (
           <section>
             <div className="gdb-result-head">
               <span className="eyebrow">{t.results.eyebrow}</span>
@@ -551,17 +455,13 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
             </div>
 
             <div className="gdb-tabs">
-              {[
-                { label: t.results.tabs.efficient, full: `${t.results.tabs.efficient}` },
-                { label: t.results.tabs.lunch, full: `${t.results.tabs.lunch}` },
-                { label: t.results.tabs.experience, full: `${t.results.tabs.experience}` },
-              ].map((item, i) => (
+              {itins.map((item, i) => (
                 <button
                   key={i}
                   className={`gdb-tab${activeItin === i ? ' active' : ''}`}
                   onClick={() => setActiveItin(i)}
                 >
-                  {item.full.split(' ').slice(0,2).join(' ')}<br/>{item.full.split(' ').slice(2).join(' ')}
+                  {item.name}
                 </button>
               ))}
             </div>
@@ -572,7 +472,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
                 <div className="gdb-course-card">
                   <span className="tag">{it.name}</span>
                   <h3>{displayCourseName(it.course.name, localData)}</h3>
-                  <div className="where">{t.timeline.aroundMin} {it.drive} {t.timeline.minFrom}</div>
+                  <div className="where">{t.results.routeNote}</div>
                   <p className="blurb">{it.tagline}</p>
                   <div className="gdb-pills">
                     {getCourseFacts(it.course, localData).map(f => <span key={f} className="gdb-pill">{f}</span>)}
@@ -603,6 +503,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
               </div>
             ))}
 
+            <p className="gdb-result-note">{itins[activeItin].note}</p>
             <p className="gdb-estimate-note">{t.results.estimate}</p>
 
             <div className="gdb-cta-block tool-save-panel">

@@ -1,3 +1,6 @@
+// Legacy descriptions and travel estimates are retained for data compatibility.
+// Displayed plans use confirmed scorecards/access and do not render those estimates.
+import { getCanonicalCourseDataByName } from './course-catalog.js'
 import { EN_PLAN } from './golf-day-builder-localize.js'
 const EN_WHY = EN_PLAN.whyCourse
 
@@ -29,46 +32,67 @@ export const COURSES = [
 ]
 
 export const RESTAURANTS = {
-  southwest: {
-    casual: "Campino Restaurant at Golf de Andratx: Italian and Mediterranean on the terrace, booked around your round finish time",
-    premium: "Sa Clastra (1 Michelin star) at Castell Son Claret, Es Capdellà (around 15 minutes from most Southwest courses). One of the best lunch tables on the island",
-    village: "Lunch in Calvià village: a quiet hilltop town with local restaurants that rarely see tourists. I book the right table",
-    michelin: "Sa Clastra (1★) at Castell Son Claret, Es Capdellà, or Es Fum (1★) at the St. Regis Mardavall: two of the island's finest tables, both in the Southwest"
+  "southwest": {
+    "casual": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "premium": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "village": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "michelin": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking."
   },
-  palma: {
-    casual: "Na Capitana at Son Muntaner: reliable Mediterranean lunch on the terrace overlooking the course, or a short drive to Santa Catalina market for tapas",
-    premium: "DINS Santi Taura (1 Michelin star) in central Palma, or Marc Fosh (1 Michelin star) in the old town. I time the booking around your round",
-    village: "Santa Catalina market: the best food neighbourhood in Palma, 10 minutes from most courses. I pick the right spot for the group",
-    michelin: "DINS Santi Taura (1★), Marc Fosh (1★) and Zaranda (1★) are all in Palma: the strongest Michelin cluster on the island, all within 15 minutes of the Palma courses"
+  "palma": {
+    "casual": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "premium": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "village": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "michelin": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking."
   },
-  north: {
-    casual: "Beachfront lunch in Port de Pollença: the promenade has several good fish and seafood options. I book ahead in high season",
-    premium: "Maca de Castro (1 Michelin star + Green Star) in Port d'Alcúdia: seasonal tasting menus built on local produce. Around 10 minutes from Alcanada",
-    village: "Pollença old town: a quiet hilltop town with a good market square, reliable local restaurants, and a Sunday market. Worth the short detour",
-    michelin: "Maca de Castro (1★ + Green Star) in Port d'Alcúdia: one of the island's most interesting chef-driven restaurants, close to Alcanada golf"
+  "north": {
+    "casual": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "premium": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "village": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "michelin": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking."
   },
-  east: {
-    casual: "Roca Viva restaurant at Capdepera Golf: Mediterranean and Mallorcan, with an on-site vegetable garden and terrace by the 18th. One of the better clubhouse lunches on the island",
-    premium: "VORO (2 Michelin stars) at Cap Vermell Grand Hotel, Canyamel: Mallorca's only two-star restaurant, chef Álvaro Salazar. 18 or 22-course tasting menu",
-    village: "Artà old town: one of the most characterful towns in eastern Mallorca. A good stop for coffee and lunch before or after the round",
-    michelin: "VORO (2★) at Cap Vermell, Canyamel: the strongest Michelin argument for a night on the east coast"
+  "east": {
+    "casual": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "premium": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "village": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "michelin": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking."
   },
-  south: {
-    casual: "T19 Restobar at Golf Maioris: outdoor terrace, German and Mediterranean clubhouse food, useful stop near the airport",
-    premium: "Andreu Genestra (1 Michelin star + Green Star) near Llucmajor: seasonal tasting menus, sustainability-led cooking. Around 10 minutes from Golf Maioris and Son Antem. Book well ahead",
-    village: "Llucmajor old town: a quiet market town 20 minutes from Palma with good local restaurants and a Saturday market",
-    michelin: "Andreu Genestra (1★ + Green Star) near Llucmajor: one of Mallorca's most interesting chef-driven restaurants, close to the south course cluster"
-  },
+  "south": {
+    "casual": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "premium": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "village": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "michelin": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking."
+  }
 }
 
 export const ADDONS = {
-  beach:    { title:'Beach hour',           desc:'A nearby cove for a swim and a slow hour in the shade. Beach chosen by region when the plan is confirmed.' },
-  spa:      { title:'Spa and recovery',     desc:'A post-round session at a resort spa in the area. Options include Arabella Son Vida, Secrets Paguera, and Bendinat. I confirm the venue when you book.' },
-  village:  { title:'Local village hour',   desc:"An hour in one of the island's historic towns: coffee, side streets, and a viewpoint or two." },
-  wine:     { title:'Wine tasting',         desc:"A guided tasting at a local bodega. Mallorca has a small but serious wine scene: José L. Ferrer in Binissalem and Macià Batle are both worth the detour. I time this around the round." },
-  family:   { title:'Family activity',      desc:'A boat trip, the caves, or a waterpark depending on the region and ages. Confirmed with the booking.' },
-  coaching: { title:'Coaching with me',   desc:'A focused session with me, a UK PGA Advanced Professional: warm-up, technique, or on-course strategy.' },
-  lunch:    { title:'Long lunch',           desc:'A proper Mallorcan table, booked and timed around your round.' },
+  "beach": {
+    "title": "Beach stop",
+    "desc": "An optional stop near the course. Venue, opening hours and travel time are checked when the plan is agreed."
+  },
+  "spa": {
+    "title": "Spa",
+    "desc": "An optional stop near the course. Venue, opening hours and travel time are checked when the plan is agreed."
+  },
+  "village": {
+    "title": "Village visit",
+    "desc": "An optional stop near the course. Venue, opening hours and travel time are checked when the plan is agreed."
+  },
+  "wine": {
+    "title": "Wine tasting",
+    "desc": "An optional stop near the course. Venue, opening hours and travel time are checked when the plan is agreed."
+  },
+  "family": {
+    "title": "Family activity",
+    "desc": "An optional stop near the course. Venue, opening hours and travel time are checked when the plan is agreed."
+  },
+  "coaching": {
+    "title": "Coaching with me",
+    "desc": "A warm-up or coaching session with me, subject to the date and course facilities."
+  },
+  "lunch": {
+    "title": "Lunch",
+    "desc": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking."
+  }
 }
 
 export const START_WINDOWS = {
@@ -100,6 +124,13 @@ export const QUESTIONS = [
     {v:'confident', t:'Confident',     d:'Regular golfer, mid handicap'},
     {v:'low',       t:'Low handicap',  d:'Single figures, bring the test'},
   ]},
+  { key:'handicap', label:'Handicap', title:'What is the highest handicap in your group?', sub:'Choose a range only if everyone has a current handicap certificate.', multi:false, opts:[
+    {v:'low', t:'Up to 28', d:'Current certificates for everyone'},
+    {v:'mid', t:'29 to 36', d:'Current certificates for everyone'},
+    {v:'high', t:'37 to 54', d:'Current certificates for everyone'},
+    {v:'none', t:'No current certificates', d:'Course access needs checking'},
+    {v:'unknown', t:'Not sure yet', d:'Course access needs checking'},
+  ]},
   { key:'start', label:'Step 4 of 8 · Start time', title:'When do you like to start?', sub:'', multi:false, opts:[
     {v:'early', t:'Early morning', d:'First off, the day is yours after'},
     {v:'mid',   t:'Mid-morning',   d:'A civilised start with a full day shape'},
@@ -112,7 +143,7 @@ export const QUESTIONS = [
     {v:'forgiving',   t:'Forgiving',         d:'Wide, friendly, and fun'},
     {v:'close',       t:'Close to my hotel', d:'Minimum time in the car'},
   ]},
-  { key:'addons', label:'Step 6 of 8 · Beyond the golf', title:'What would round out the day?', sub:'Select any that appeal, or none', multi:true, opts:[
+  { key:'addons', label:'Step 6 of 8 · Beyond the golf', title:'What would round out the day?', sub:"Choose up to two extras, or none", multi:true, opts:[
     {v:'lunch',    t:'Long lunch',        d:'A proper Mallorcan table'},
     {v:'beach',    t:'Beach',             d:'A swim after the round'},
     {v:'spa',      t:'Spa',               d:'Recovery done well'},
@@ -139,22 +170,38 @@ export const LEVEL_REQ  = { 'beginner+':0, 'casual+':1, 'confident+':2 }
 export const GROUP_LABEL = { solo:'a solo golfer', couple:'a couple', friends:'a group of friends', family:'a family', vip:'a VIP or corporate group' }
 export const REGION_LABEL = { southwest:'in the southwest', palma:'in or near Palma', north:'in the north', east:'in the east', south:'in the south', unbooked:'wherever suits the golf best' }
 
+// A band is usable only when every player has a current certificate.
+export const HANDICAP_BANDS = { low: 28, mid: 36, high: 54 }
+export function isCourseEligible(course, answers) {
+  const canonical = getCanonicalCourseDataByName(course.name)
+  const access = canonical?.access
+  if (!canonical || !access || access.accessType !== 'public') return false
+  if (LEVEL_RANK[answers.level] < LEVEL_REQ[course.level]) return false
+  if (canonical.holeCount < 18 && answers.level !== 'beginner' && !answers.addons?.includes('coaching')) return false
+  if (access.handicapRequired || access.certificateRequired) {
+    const highest = HANDICAP_BANDS[answers.handicap]
+    const limits = [access.handicapMen, access.handicapWomen].filter(Number.isFinite)
+    if (!highest || !limits.length || highest > Math.min(...limits)) return false
+  }
+  // A broad area answer cannot support a cross-island "close to my hotel" claim.
+  if (answers.courseType === 'close' && answers.region !== 'unbooked' && course.region !== answers.region) return false
+  return true
+}
+
 export function scoreAllCourses(answers) {
-  const region = answers.region === 'unbooked' ? 'southwest' : answers.region
-  const lvl = LEVEL_RANK[answers.level]
-  const wantClose = answers.courseType === 'close'
-  return COURSES.filter(c => !c.hotelOnly).map(c => {
+  const region = answers.region === 'unbooked' ? null : answers.region
+  return COURSES.filter(c => isCourseEligible(c, answers)).map(c => {
     let s = 0
     if (c.tags.includes(answers.courseType)) s += 5
     if (c.tags.includes(answers.dayStyle)) s += 3
-    const drive = c.driveMins[region] || 30
-    if (c.region === region) s += 10
-    if (wantClose) s += Math.max(0, 6 - drive / 10)
-    else s += Math.max(0, 4 - drive / 20)
-    if (lvl >= LEVEL_REQ[c.level]) s += 2; else s -= 4
+    if (region && c.region === region) s += 10
+    if (answers.group === 'vip' && c.tags.includes('luxury')) s += 8
+    if (answers.group === 'family' && c.tags.includes('family')) s += 2
     if (answers.dayStyle === 'family' && c.tags.includes('family')) s += 2
-    return { c, s, drive }
-  }).sort((a, b) => b.s - a.s)
+    if (LEVEL_RANK[answers.level] >= LEVEL_REQ[c.level]) s += 2
+    else s -= 4
+    return { c, s }
+  }).sort((a,b) => b.s-a.s || a.c.name.localeCompare(b.c.name))
 }
 
 export function lunchFor(region, answers, premium, restaurants = RESTAURANTS) {

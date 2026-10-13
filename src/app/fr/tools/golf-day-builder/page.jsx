@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/golf-day-builder', 'fr', {
 
   title: 'Organisez votre journée golf à Majorque',
-  description: 'Huit questions. Un plan de jour complet avec parcours, déjeuner et compléments, conçu autour de votre groupe.',
+  description: "Neuf questions. Des propositions de journées de golf adaptées à votre groupe.",
   robots: { index: true, follow: true },
 })
 

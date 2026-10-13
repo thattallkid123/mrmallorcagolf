@@ -260,7 +260,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
 
   const compareRows = [
     { label: t.compare.location, get: (c) => c.location || "-" },
-    { label: t.compare.par, get: (c) => (c.par ? `${t.compare.par} ${c.par}` : "-") },
+    { label: t.compare.par, get: (c) => (c.par ? c.par : "-") },
     { label: t.compare.difficulty, get: (c) => c.diffScore || "-" },
     { label: t.compare.holes, get: (c) => (c.nineHoles ? "9" : "18") },
     { label: t.table.peakSeasonFee, get: (c) => `${feeDisplay(c, 'peak', t).text}${feeDisplay(c, 'peak', t).note ? ` · ${feeDisplay(c, 'peak', t).note}` : ''}` },
@@ -552,7 +552,6 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
               <div className="gf-table-wrap gf-compare__table" role="region" aria-label={t.compare.intro} tabIndex="0">
                 <div className={`gf-compare__content gf-compare__content--${compared.length}`}>
                   <div className="gf-compare__courses">
-                    <div aria-hidden="true" />
                     {compared.map((c, i) => (
                       <div className="gf-compare__course" key={`course-${i}`}>
                         <h3>{displayCourseName(c.name)}</h3>
@@ -565,9 +564,9 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
                     <col className="gf-compare__label-col" />
                     {compared.map((c, i) => <col key={`col-${i}`} />)}
                   </colgroup>
-                  <thead className="sr-only">
+                  <thead>
                     <tr>
-                      <th scope="col" />
+                      <th scope="col">{t.table.course}</th>
                       {compared.map((c, i) => <th scope="col" key={`ch-${i}`}>{displayCourseName(c.name)}</th>)}
                     </tr>
                   </thead>

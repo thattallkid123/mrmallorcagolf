@@ -1,8 +1,3 @@
-// golf-day-builder copy for 'fr'. Generated overlay: the English master is in
-// golf-day-builder-logic.js (COURSES, RESTAURANTS, ADDONS, QUESTIONS) and EN_PLAN in golf-day-builder-localize.js.
-// A key missing here falls back to English, so a new item needs adding for
-// every language. It only changes what the visitor sees; matching and
-// scoring never read it.
 const data = {
  "stepFmt": "Étape {n} sur {total} · {section}",
  "sections": {
@@ -13,7 +8,8 @@ const data = {
   "courseType": "Type de parcours",
   "addons": "Au-delà du golf",
   "transport": "Transport",
-  "group": "Votre groupe"
+  "group": "Votre groupe",
+  "handicap": "Handicap"
  },
  "teeWindows": {
   "early": "8 h 00 à 9 h 00",
@@ -175,7 +171,7 @@ const data = {
   },
   "addons": {
    "title": "Que faudrait-il pour compléter la journée ?",
-   "sub": "Sélectionnez ce qui vous plaît, ou rien",
+   "sub": "Choisissez jusqu’à deux extras, ou aucun",
    "opts": {
     "lunch": [
      "Long déjeuner",
@@ -244,6 +240,32 @@ const data = {
     "vip": [
      "VIP ou professionnel",
      "Recevoir des clients ou marquer une occasion"
+    ]
+   }
+  },
+  "handicap": {
+   "title": "Quel est le handicap le plus élevé de votre groupe ?",
+   "sub": "Choisissez une tranche seulement si chacun possède un certificat de handicap à jour.",
+   "opts": {
+    "low": [
+     "Jusqu’à 28",
+     "Certificats à jour pour tous"
+    ],
+    "mid": [
+     "De 29 à 36",
+     "Certificats à jour pour tous"
+    ],
+    "high": [
+     "De 37 à 54",
+     "Certificats à jour pour tous"
+    ],
+    "none": [
+     "Pas de certificats à jour",
+     "L’accès au parcours doit être vérifié"
+    ],
+    "unknown": [
+     "Je ne sais pas encore",
+     "L’accès au parcours doit être vérifié"
     ]
    }
   }
@@ -423,64 +445,64 @@ const data = {
  },
  "restaurants": {
   "southwest": {
-   "casual": "Restaurant Campino au Golf de Andratx : cuisine italienne et méditerranéenne en terrasse, réservé selon l'heure de fin de votre partie",
-   "premium": "Sa Clastra (1 étoile Michelin) au Castell Son Claret, Es Capdellà (à environ 15 minutes de la plupart des parcours du Sud-Ouest). L'une des meilleures tables de déjeuner de l'île",
-   "village": "Déjeuner dans le village de Calvià : une petite ville perchée tranquille avec des restaurants locaux que les touristes voient rarement. Je réserve la bonne table",
-   "michelin": "Sa Clastra (1★) au Castell Son Claret, Es Capdellà, ou Es Fum (1★) au St. Regis Mardavall : deux des plus belles tables de l'île, toutes deux dans le Sud-Ouest"
+   "casual": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "premium": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "village": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "michelin": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver."
   },
   "palma": {
-   "casual": "Na Capitana à Son Muntaner : un déjeuner méditerranéen fiable en terrasse avec vue sur le parcours, ou un court trajet jusqu'au marché de Santa Catalina pour des tapas",
-   "premium": "DINS Santi Taura (1 étoile Michelin) au centre de Palma, ou Marc Fosh (1 étoile Michelin) dans la vieille ville. J'ajuste la réservation à votre partie",
-   "village": "Marché de Santa Catalina : le meilleur quartier gastronomique de Palma, à 10 minutes de la plupart des parcours. Je choisis la bonne adresse pour le groupe",
-   "michelin": "DINS Santi Taura (1★), Marc Fosh (1★) et Zaranda (1★) sont tous à Palma : le plus fort regroupement Michelin de l'île, tous à moins de 15 minutes des parcours de Palma"
+   "casual": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "premium": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "village": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "michelin": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver."
   },
   "north": {
-   "casual": "Déjeuner en bord de mer à Port de Pollença : la promenade offre plusieurs bonnes options de poisson et de fruits de mer. Je réserve à l'avance en haute saison",
-   "premium": "Maca de Castro (1 étoile Michelin + Étoile Verte) à Port d'Alcúdia : menus dégustation de saison à base de produits locaux. À environ 10 minutes d'Alcanada",
-   "village": "Vieille ville de Pollença : une petite ville perchée tranquille avec une belle place de marché, des restaurants locaux fiables et un marché le dimanche. Le petit détour en vaut la peine",
-   "michelin": "Maca de Castro (1★ + Étoile Verte) à Port d'Alcúdia : l'un des restaurants de chef les plus intéressants de l'île, près du golf d'Alcanada"
+   "casual": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "premium": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "village": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "michelin": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver."
   },
   "east": {
-   "casual": "Restaurant Roca Viva au Capdepera Golf : méditerranéen et majorquin, avec potager sur place et terrasse au 18. L'un des meilleurs déjeuners de club-house de l'île",
-   "premium": "VORO (2 étoiles Michelin) au Cap Vermell Grand Hotel, Canyamel : le seul restaurant deux étoiles de Majorque, du chef Álvaro Salazar. Menu dégustation de 18 ou 22 services",
-   "village": "Vieille ville d'Artà : l'une des villes les plus pleines de caractère de l'est de Majorque. Une bonne halte pour un café et un déjeuner avant ou après la partie",
-   "michelin": "VORO (2★) au Cap Vermell, Canyamel : l'argument Michelin le plus fort pour une nuit sur la côte est"
+   "casual": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "premium": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "village": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "michelin": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver."
   },
   "south": {
-   "casual": "T19 Restobar au Golf Maioris : terrasse extérieure, cuisine de club allemande et méditerranéenne, une halte utile près de l'aéroport",
-   "premium": "Andreu Genestra (1 étoile Michelin + Étoile Verte) près de Llucmajor : menus dégustation de saison, cuisine guidée par la durabilité. À environ 10 minutes de Golf Maioris et Son Antem. Réservez bien à l'avance",
-   "village": "Vieille ville de Llucmajor : une ville de marché tranquille à 20 minutes de Palma avec de bons restaurants locaux et un marché le samedi",
-   "michelin": "Andreu Genestra (1★ + Étoile Verte) près de Llucmajor : l'un des restaurants de chef les plus intéressants de Majorque, près du groupe de parcours du sud"
+   "casual": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "premium": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "village": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "michelin": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver."
   }
  },
  "addons": {
   "beach": [
    "Heure de plage",
-   "Une crique proche pour se baigner et une heure tranquille à l'ombre. La plage est choisie selon la région une fois le programme confirmé."
+   "Une étape facultative près du parcours. Le lieu, les horaires et le trajet sont vérifiés lors de la préparation du programme."
   ],
   "spa": [
    "Spa et récupération",
-   "Une séance après la partie dans un spa de resort de la région. Parmi les options : Arabella Son Vida, Secrets Paguera et Bendinat. Je confirme le lieu à la réservation."
+   "Une étape facultative près du parcours. Le lieu, les horaires et le trajet sont vérifiés lors de la préparation du programme."
   ],
   "village": [
    "Heure dans un village",
-   "Une heure dans l'une des villes historiques de l'île : café, ruelles et un point de vue ou deux."
+   "Une étape facultative près du parcours. Le lieu, les horaires et le trajet sont vérifiés lors de la préparation du programme."
   ],
   "wine": [
    "Dégustation de vins",
-   "Une dégustation guidée dans une bodega locale. Majorque a une scène viticole petite mais sérieuse : José L. Ferrer à Binissalem et Macià Batle valent tous deux le détour. Je cale cela autour de la partie."
+   "Une étape facultative près du parcours. Le lieu, les horaires et le trajet sont vérifiés lors de la préparation du programme."
   ],
   "family": [
    "Activité en famille",
-   "Une sortie en bateau, les grottes ou un parc aquatique selon la région et les âges. Confirmé avec la réservation."
+   "Une étape facultative près du parcours. Le lieu, les horaires et le trajet sont vérifiés lors de la préparation du programme."
   ],
   "coaching": [
    "Coaching avec moi",
-   "Une séance ciblée avec moi, UK PGA Advanced Professional : échauffement, technique ou stratégie sur le parcours."
+   "Une séance d’échauffement ou de coaching avec moi, selon la date et les installations du parcours."
   ],
   "lunch": [
    "Long déjeuner",
-   "Une vraie table majorquine, réservée et calée autour de votre partie."
+   "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver."
   ]
  },
  "plan": {
@@ -490,9 +512,9 @@ const data = {
    "experience": "Expérience complète"
   },
   "taglines": {
-   "efficient": "La partie est la journée. Bien jouée, avec l'après-midi libre.",
-   "lunch": "Une partie sérieuse suivie d'une table sérieuse.",
-   "experience": "Le golf est la pièce maîtresse. L'île remplit le reste du programme."
+   "efficient": "Du golf avec du temps pour l’accueil, la partie et le retour.",
+   "lunch": "Du golf et une proposition de déjeuner près du parcours.",
+   "experience": "Du golf et les activités supplémentaires que vous avez choisies."
   },
   "time": {
    "depart": "{depart} (estimation)",
@@ -504,16 +526,20 @@ const data = {
    "lateAfternoon": "Fin d'après-midi",
    "lunch": "Déjeuner",
    "afternoon": "Après-midi",
-   "evening": "Soirée"
+   "evening": "Soirée",
+   "earlyStart": "Golf le matin",
+   "midStart": "Golf en milieu de matinée",
+   "pmStart": "Golf l’après-midi",
+   "afterActivities": "Après les activités"
   },
   "title": {
    "depart": "Départ de votre hébergement",
    "unhurried": "Un départ sans précipitation",
    "clubhouse": "Un verre au club-house",
    "return": "Retour",
-   "longLunch": "Un long déjeuner majorquin",
+   "longLunch": "Déjeuner proposé",
    "relaxedReturn": "Un retour tranquille",
-   "lunchBooked": "Déjeuner, réservé et chronométré",
+   "lunchBooked": "Déjeuner proposé",
    "beachOrVillage": "Heure de plage ou de village",
    "lastLight": "Retour dans la dernière lumière",
    "warmupCoach": "Échauffement coaché avec moi",
@@ -522,56 +548,61 @@ const data = {
    "holes9": "9 trous à {course}"
   },
   "desc": {
-   "transfer": "Un transfert privé vous prend à votre hébergement. Environ {drive} minutes jusqu'au parcours (estimation).",
-   "selfDrive": "Vous conduisez jusqu'au parcours, environ {drive} minutes (estimation). Les indications de stationnement arrivent avec le programme confirmé.",
-   "warmupCoach": "Une séance de 45 minutes avec moi : échauffement au practice, petit jeu et un plan pour les trous à venir.",
-   "warmupCoffee": "Balles de practice, putting green et un café en terrasse. Arrivez 45 minutes avant votre heure de départ.",
+   "transfer": "Un partenaire de voyage local peut réserver et facturer le transfert une fois l’itinéraire et les horaires convenus.",
+   "selfDrive": "Confirmez l’hôtel et l’itinéraire avant de fixer l’heure de départ.",
+   "warmupCoach": "Une séance d’échauffement ou de coaching avec moi, selon la date et les installations du parcours.",
+   "warmupCoffee": "Du temps pour l’accueil, l’échauffement et la préparation de la partie. Les installations dépendent du parcours.",
    "holeNote": " Remarque : {note}",
    "clubhouse": "Un verre tranquille en terrasse pendant que l'on conteste les cartes de score.",
-   "returnEfficient": "De retour à votre base, le reste de la journée intact. Environ {drive} minutes (estimation).",
-   "longLunch": "{lunch}. La table est réservée et chronométrée pour que vous quittiez le dernier trou et vous asseyiez directement.",
-   "relaxedReturn": "Un retour sans hâte, environ {drive} minutes (estimation).",
-   "lunchBooked": "{lunch}. Je réserve la bonne table pour votre groupe.",
-   "beachOrVillage": "Une crique proche ou une ville historique, choisie selon la région une fois le programme confirmé.",
-   "lastLight": "Retour à votre base, environ {drive} minutes (estimation), avec une journée complète à Majorque derrière vous."
+   "returnEfficient": "Retour à votre hébergement après les activités. L’itinéraire et le temps de trajet dépendent de votre hôtel.",
+   "longLunch": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "relaxedReturn": "Retour à votre hébergement après les activités. L’itinéraire et le temps de trajet dépendent de votre hôtel.",
+   "lunchBooked": "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver.",
+   "beachOrVillage": "Une étape facultative près du parcours. Le lieu, les horaires et le trajet sont vérifiés lors de la préparation du programme.",
+   "lastLight": "Retour à votre hébergement après les activités. L’itinéraire et le temps de trajet dépendent de votre hôtel.",
+   "round18": "Prévoyez environ 4–5 heures pour 18 trous, plus l’accueil et l’échauffement. Le rythme de jeu et les heures de jour sont vérifiés pour votre date.",
+   "round9": "Prévoyez environ 1½–2 heures pour 9 trous, plus l’accueil et l’échauffement.",
+   "shortNote": "Il s’agit d’une courte séance de golf. Une journée complète nécessite un parcours plus long adapté et un accès confirmé.",
+   "pmNote": "Une partie l’après-midi laisse peu de temps ensuite. Les activités et le déjeuner précèdent la partie ; je vérifie les heures de jour avant de confirmer un départ.",
+   "accessNote": "Les limites de handicap, la disponibilité et l’itinéraire sont vérifiés avant la réservation."
   },
   "why": {
-   "efficient": "Le golf passe en premier et les horaires restent serrés. {course} Rien dans le programme que vous n'ayez demandé.",
-   "lunch": "Du bon golf et de la bonne cuisine sont les deux choses que cette île offre le plus sûrement. {course} Cette journée accorde du vrai temps aux deux.",
-   "experienceAddons": "{course} Les extras que vous avez choisis méritent du vrai temps dans le programme, donc ce plan construit la journée complète autour d'eux.",
-   "experiencePlain": "{course} Ce plan ajoute l'île autour de la partie sans l'encombrer."
+   "efficient": "{course}",
+   "lunch": "{course}",
+   "experienceAddons": "{course}",
+   "experiencePlain": "{course}"
   },
   "whyCourse": {
    "courseType": {
     "famous": "c'est l'un des parcours les plus connus de l'île",
     "scenic": "il offre les vues que vous avez demandées",
-    "challenging": "c'est le parcours le plus exigeant à portée de votre base",
+    "challenging": "il propose une partie plus exigeante",
     "forgiving": "le tracé est large et tolérant",
-    "close": "c'est le parcours de qualité le plus proche de votre hébergement"
+    "close": "il se trouve dans le secteur que vous avez choisi"
    },
    "dayStyle": {
     "serious": "il offre une partie sérieuse",
     "relaxed": "le rythme et le tracé conviennent à une journée détendue",
-    "luxury": "c'est l'option premium de votre secteur",
-    "family": "il convient à tous les niveaux du groupe",
+    "luxury": "il offre une expérience de club haut de gamme",
+    "family": "il correspond au niveau de golf que vous avez indiqué",
     "scenic": "le cadre en est le point fort",
-    "food": "il se trouve près des meilleures tables du secteur"
+    "food": "il correspond au niveau de golf que vous avez indiqué"
    },
-   "matched": "il correspond bien à votre jeu",
+   "matched": "il correspond au niveau de golf que vous avez indiqué",
    "fallback": "La meilleure correspondance disponible avec vos réponses dans ce secteur.",
    "separator": ", ",
    "end": ".",
    "capitalise": true
   },
   "handles": {
-   "tee": "Heure de départ obtenue au bon tarif",
-   "table": "Table de restaurant réservée et calée autour de votre partie",
-   "transportYes": "Transport de porte à porte organisé",
-   "transportNo": "Indications d'itinéraire et de stationnement pour votre trajet",
-   "buggies": "Voiturettes, clubs et locations organisés si nécessaire",
-   "coachingYes": "Votre séance de coaching avec moi confirmée",
-   "coachingNo": "Échauffement ou coaching sur le parcours avec moi, en option",
-   "whatsapp": "Un seul contact WhatsApp pour toute la journée"
+   "tee": "Je confirme et réserve le golf",
+   "table": "Restaurants réservés et facturés par un partenaire local",
+   "transportYes": "Transferts réservés et facturés par un partenaire local",
+   "transportNo": "Itinéraire vérifié avec l’adresse de votre hôtel",
+   "buggies": "Location de clubs et de voiturette vérifiée avec le parcours",
+   "coachingYes": "Coaching avec moi, selon disponibilité",
+   "coachingNo": "Coaching avec moi, selon disponibilité",
+   "whatsapp": "Contactez-moi pour convenir du programme de golf"
   }
  },
  "phrases": {

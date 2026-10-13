@@ -49,10 +49,11 @@ function buildGolfDayBuilderBody(data) {
         <p style="margin:0 0 4px;font-family:'Jost',Arial,sans-serif;font-size:10px;letter-spacing:.15em;text-transform:uppercase;color:#B8973C;">${str(it?.name)}</p>
         <h3 style="margin:0 0 6px;font-family:Georgia,serif;font-size:19px;font-weight:400;color:#1A1916;">${str(it?.courseName)}</h3>
         <p style="margin:0 0 12px;font-family:Georgia,serif;font-size:14px;line-height:1.6;color:#2C2A27;">${str(it?.tagline, 400)}</p>
+        <p style="margin:0 0 12px;font-size:13px;line-height:1.6;color:#8A7F74;">${str(it?.note, 800)}</p>
         <table width="100%" cellpadding="0" cellspacing="0">
           ${(Array.isArray(it?.steps) ? it.steps.slice(0, 10) : []).map(s => `<tr>
             <td style="padding:4px 10px 4px 0;font-family:'Jost',Arial,sans-serif;font-size:11px;color:#8A7F74;white-space:nowrap;vertical-align:top;">${str(s?.time, 80)}</td>
-            <td style="padding:4px 0;font-family:'Jost',Arial,sans-serif;font-size:13px;color:#2C2A27;"><strong>${str(s?.title, 120)}</strong></td>
+            <td style="padding:4px 0;font-family:'Jost',Arial,sans-serif;font-size:13px;color:#2C2A27;"><strong>${str(s?.title, 120)}</strong><br/>${str(s?.desc, 800)}</td>
           </tr>`).join('')}
         </table>
       </div>`).join('')

@@ -6,91 +6,104 @@
 // English plan text. {braces} are filled by fmt(). Keep these in step with the
 // keys every overlay must supply (scripts/check-tool-data-localized.mjs checks it).
 export const EN_PLAN = {
-  names: { efficient: 'Efficient golf day', lunch: 'Golf & long lunch', experience: 'Full experience' },
-  taglines: {
-    efficient: 'The round is the day. Played well, back with the afternoon free.',
-    lunch: 'A serious round followed by a serious table.',
-    experience: 'The golf is the centrepiece. The island fills the rest of the schedule.',
+  "names": {
+    "efficient": "Efficient golf day",
+    "lunch": "Golf & long lunch",
+    "experience": "Full experience"
   },
-  time: {
-    depart: '{depart} (estimate)',
-    onArrival: 'On arrival',
-    beforeRound: 'Before the round',
-    teeWindow: 'Tee time window {tee} (estimate)',
-    afterRound: 'After the round',
-    earlyAfternoon: 'Early afternoon',
-    lateAfternoon: 'Late afternoon',
-    lunch: 'Lunch',
-    afternoon: 'Afternoon',
-    evening: 'Evening',
+  "taglines": {
+    "efficient": "Golf with time to check in, play and return.",
+    "lunch": "Golf and a suggested lunch stop near the course.",
+    "experience": "Golf and the extra activities you selected."
   },
-  title: {
-    depart: 'Depart your accommodation',
-    unhurried: 'An unhurried departure',
-    clubhouse: 'A drink at the clubhouse',
-    return: 'Return',
-    longLunch: 'A long Mallorcan lunch',
-    relaxedReturn: 'A relaxed return',
-    lunchBooked: 'Lunch, booked and timed',
-    beachOrVillage: 'Beach or village hour',
-    lastLight: 'Return in the last of the light',
-    warmupCoach: 'Coaching warm-up with me',
-    warmupCoffee: 'Warm-up and coffee',
-    holes18: '18 holes at {course}',
-    holes9: '9 holes at {course}',
+  "time": {
+    "depart": "{depart} (estimate)",
+    "onArrival": "On arrival",
+    "beforeRound": "Before the round",
+    "teeWindow": "Tee time window {tee} (estimate)",
+    "afterRound": "After the round",
+    "earlyAfternoon": "Early afternoon",
+    "lateAfternoon": "Late afternoon",
+    "lunch": "Lunch",
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "earlyStart": "Morning golf",
+    "midStart": "Mid-morning golf",
+    "pmStart": "Afternoon golf",
+    "afterActivities": "After the activities"
   },
-  desc: {
-    transfer: 'A private transfer collects you from your accommodation. Around {drive} minutes to the course (estimate).',
-    selfDrive: 'Self-drive to the course, around {drive} minutes (estimate). Parking notes come with the confirmed plan.',
-    warmupCoach: 'A 45-minute session with me: range warm-up, short game, and a plan for the holes ahead.',
-    warmupCoffee: 'Range balls, the putting green, and a coffee on the terrace. Arrive 45 minutes before your tee time.',
-    holeNote: ' Note: {note}',
-    clubhouse: 'A relaxed drink on the terrace while the scorecards are disputed.',
-    returnEfficient: 'Back at your base with the rest of the day untouched. Around {drive} minutes (estimate).',
-    longLunch: '{lunch}. The table is booked and timed so you walk off the last hole and sit straight down.',
-    relaxedReturn: 'A slow drive back, around {drive} minutes (estimate).',
-    lunchBooked: '{lunch}. I book the right table for your group.',
-    beachOrVillage: 'A nearby cove or a historic town, chosen by region when the plan is confirmed.',
-    lastLight: 'Back to your base, around {drive} minutes (estimate), with a full Mallorca day behind you.',
+  "title": {
+    "depart": "Depart your accommodation",
+    "unhurried": "An unhurried departure",
+    "clubhouse": "A drink at the clubhouse",
+    "return": "Return",
+    "longLunch": "Suggested lunch",
+    "relaxedReturn": "A relaxed return",
+    "lunchBooked": "Suggested lunch",
+    "beachOrVillage": "Beach or village hour",
+    "lastLight": "Return in the last of the light",
+    "warmupCoach": "Coaching warm-up with me",
+    "warmupCoffee": "Warm-up and coffee",
+    "holes18": "18 holes at {course}",
+    "holes9": "9 holes at {course}"
   },
-  why: {
-    efficient: 'The golf comes first and the timings stay tight. {course} Nothing in the schedule you did not ask for.',
-    lunch: 'Good golf and good food are the two things this island does most reliably. {course} This day gives proper time to both.',
-    experienceAddons: '{course} The add-ons you chose deserve real time in the schedule, so this plan builds the full day around them.',
-    experiencePlain: '{course} This plan adds the island around the round without crowding it.',
+  "desc": {
+    "transfer": "A local travel partner can arrange and invoice the transfer once the route and timings are agreed.",
+    "selfDrive": "Confirm the hotel and route before choosing a departure time.",
+    "warmupCoach": "A warm-up or coaching session with me, subject to the date and course facilities.",
+    "warmupCoffee": "Time to check in, warm up and prepare for the round. Facilities depend on the course.",
+    "holeNote": " Note: {note}",
+    "clubhouse": "A relaxed drink on the terrace while the scorecards are disputed.",
+    "returnEfficient": "Return to your accommodation after the activities. The route and travel time depend on your hotel.",
+    "longLunch": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "relaxedReturn": "Return to your accommodation after the activities. The route and travel time depend on your hotel.",
+    "lunchBooked": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "beachOrVillage": "An optional stop near the course. Venue, opening hours and travel time are checked when the plan is agreed.",
+    "lastLight": "Return to your accommodation after the activities. The route and travel time depend on your hotel.",
+    "round18": "Allow roughly 4–5 hours for 18 holes, plus check-in and warm-up. Pace and daylight need checking for your date.",
+    "round9": "Allow roughly 1½–2 hours for 9 holes, plus check-in and warm-up.",
+    "shortNote": "This is a short golf session. A full golf day needs a suitable longer course and confirmed access.",
+    "pmNote": "Afternoon golf leaves limited time afterwards. Extra activities and lunch come before the round; I check daylight before confirming a tee time.",
+    "accessNote": "Course-specific handicap limits, availability and the route are checked before booking."
   },
-  whyCourse: {
-    courseType: {
-      famous: "it is one of the island's best-known courses",
-      scenic: 'it has the views you asked for',
-      challenging: 'it is the most demanding course within reach of your base',
-      forgiving: 'the layout is wide and forgiving',
-      close: 'it is the closest quality course to where you are staying',
+  "why": {
+    "efficient": "{course}",
+    "lunch": "{course}",
+    "experienceAddons": "{course}",
+    "experiencePlain": "{course}"
+  },
+  "whyCourse": {
+    "courseType": {
+      "famous": "it is one of the island's best-known courses",
+      "scenic": "it has the views you asked for",
+      "challenging": "it offers a more demanding round",
+      "forgiving": "the layout is wide and forgiving",
+      "close": "it is in the area you selected"
     },
-    dayStyle: {
-      serious: 'it delivers a serious round',
-      relaxed: 'the pace and layout suit a relaxed day',
-      luxury: 'it is the premium option in your area',
-      family: 'it works for all abilities in the group',
-      scenic: 'the setting is the highlight',
-      food: 'it sits close to the best restaurant options in the area',
+    "dayStyle": {
+      "serious": "it delivers a serious round",
+      "relaxed": "the pace and layout suit a relaxed day",
+      "luxury": "it offers a premium club experience",
+      "family": "it suits the golf level you selected",
+      "scenic": "the setting is the highlight",
+      "food": "it suits the golf level you selected"
     },
-    matched: 'it is well-matched to your game',
-    fallback: 'The best available match for your answers in this area.',
-    separator: ', ',
-    end: '.',
-    capitalise: true,
+    "matched": "it suits the golf level you selected",
+    "fallback": "The best available match for your answers in this area.",
+    "separator": ", ",
+    "end": ".",
+    "capitalise": true
   },
-  handles: {
-    tee: 'Tee time secured at the right rate',
-    table: 'Restaurant table booked and timed around your round',
-    transportYes: 'Door-to-door transport arranged',
-    transportNo: 'Route and parking guidance for your drive',
-    buggies: 'Buggies, clubs, and rentals organised if needed',
-    coachingYes: 'Your coaching session with me confirmed',
-    coachingNo: 'Optional warm-up or on-course coaching with me',
-    whatsapp: 'One WhatsApp contact for the whole day',
-  },
+  "handles": {
+    "tee": "I confirm and book the golf",
+    "table": "Restaurants booked and invoiced by a local travel partner",
+    "transportYes": "Transfers booked and invoiced by a local travel partner",
+    "transportNo": "Route checked with your hotel address",
+    "buggies": "Club and buggy hire checked with the course",
+    "coachingYes": "Coaching with me, subject to availability",
+    "coachingNo": "Coaching with me, subject to availability",
+    "whatsapp": "Contact me to agree the golf plan"
+  }
 }
 
 export function fmt(template, vars = {}) {

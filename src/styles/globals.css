@@ -5600,7 +5600,7 @@ select.form-control { cursor: pointer; }
   gap: 24px;
 }
 @media (max-width: 940px) { .tools-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
-@media (max-width: 600px) { .tools-grid { grid-template-columns: 1fr; } .hr-quiz-wrap div.hr-options.hr-options--photos > button.hr-opt.hr-opt--photo, .cst-wrap div.tool-options--five > button:nth-child(n), .gdb-wrap div.tool-options--five > button:nth-child(n) { flex-basis: 100%; min-width: 100%; } }
+@media (max-width: 600px) { .tools-grid { grid-template-columns: 1fr; } }
 
 .tool-card {
   display: flex;
@@ -5813,8 +5813,7 @@ select.form-control { cursor: pointer; }
 /* Planning-tool photography: separate media from practical details. */
 .tool-photo { position: relative; aspect-ratio: 16 / 9; overflow: hidden; background: var(--linen); }
 .tool-photo__image { object-fit: cover; }
-div.hr-options.hr-options--photos { display: flex; flex-direction: row; flex-wrap: wrap; justify-content: center; align-items: stretch; }
-button.hr-opt.hr-opt--photo { display: flex; flex-direction: column; justify-content: flex-start; flex: 0 1 calc((100% - 28px) / 3); min-width: min(100%, 230px); padding: 0; overflow: hidden; min-height: 0; }
+button.hr-opt.hr-opt--photo { display: flex; flex-direction: column; justify-content: flex-start; gap: 0; padding: 0; overflow: hidden; min-height: 0; }
 .hr-opt--photo .tool-photo { width: 100%; flex-shrink: 0; }
 .hr-opt--photo .hr-opt-body { padding: var(--space-md, 20px); }
 .hr-photo-caption { display: block; margin-top: var(--space-sm, 12px); color: var(--taupe); font-size: .72rem; line-height: 1.5; font-weight: 300; }
@@ -5825,7 +5824,7 @@ button.hr-opt.hr-opt--photo { display: flex; flex-direction: column; justify-con
 .gf-compare__content--3 { --compare-count: 3; }
 .gf-compare__content--4 { --compare-count: 4; }
 .gf-compare__content--5 { --compare-count: 5; }
-.gf-compare__courses { display: grid; grid-template-columns: 130px repeat(var(--compare-count), minmax(0, 1fr)); }
+.gf-compare__courses { display: grid; grid-template-columns: repeat(var(--compare-count), minmax(0, 1fr)); }
 .gf-compare__course { display: flex; flex-direction: column; min-width: 0; }
 .gf-compare__course h3 { background: var(--pine); color: var(--cream); padding: var(--space-sm, 16px); margin: 0; font-family: var(--font-serif); font-size: 1.35rem; line-height: 1.25; flex: 1; }
 .gf-compare__label-col { width: 130px; }
@@ -5836,9 +5835,6 @@ button.hr-opt.hr-opt--photo { display: flex; flex-direction: column; justify-con
 .tool-card .tool-photo--directory { grid-column: 2; grid-row: 1 / span 3; width: clamp(68px, 8vw, 104px); align-self: start; aspect-ratio: 1; border-radius: 2px; }
 .tool-card .tool-card__footer { grid-column: 1 / -1; align-self: end; }
 
-/* Five choices keep equal widths, with a centred pair below the first three. */
-div.cst-opts.tool-options--five, div.gdb-opts.tool-options--five { display: flex; flex-wrap: wrap; justify-content: center; gap: var(--space-sm, 12px); max-width: 760px; }
-div.tool-options--five > button:nth-child(n) { flex: 0 1 calc((100% - 24px) / 3); min-width: min(100%, 220px); max-width: none; width: auto; }
 /* Global because these links are rendered by separate child components. */
 .tool-whatsapp-link { display: inline-flex; align-items: center; justify-content: center; gap: var(--space-sm, 10px); min-height: 48px; padding: var(--space-sm, 14px) var(--space-md, 20px); border: 1px solid var(--pine); border-radius: 2px; background: transparent; color: var(--pine); font-family: var(--font-sans); font-size: .8rem; font-weight: 500; letter-spacing: .08em; text-decoration: none; text-align: center; cursor: pointer; }
 .tool-whatsapp-link:hover { background: var(--pine-pale); }
@@ -5858,3 +5854,20 @@ div.tool-options--five > button:nth-child(n) { flex: 0 1 calc((100% - 24px) / 3)
 
 .tool-whatsapp-link--dark { border-color: var(--stone); color: var(--cream); }
 .tool-whatsapp-link--dark:hover { background: var(--pine-mid); }
+
+/* Shared single-row choices. Safe centring falls back to the start when scrolling. */
+.cst-wrap.cst-wrap:has(.cst-opts), .gdb-wrap.gdb-wrap:has(.gdb-opts), div.hr-quiz-wrap.hr-quiz-wrap { max-width: 1280px; }
+.tool-choices { min-width: 0; }
+.tool-choices__nav { display: flex; align-items: center; justify-content: flex-end; gap: var(--space-sm, 10px); margin-bottom: var(--space-sm, 12px); }
+.tool-choices__nav span { margin-right: auto; color: var(--taupe); font-size: .8rem; }
+.tool-choices__nav button { font-family: var(--font-sans); width: 44px; height: 44px; border: 1px solid var(--sand); background: transparent; color: var(--pine); font-size: 1.2rem; cursor: pointer; }
+div.tool-choice-track { display: flex; flex-direction: row; flex-wrap: nowrap; justify-content: safe center; align-items: stretch; gap: 14px; max-width: none; overflow-x: auto; scroll-snap-type: x proximity; scroll-padding: 4px; padding: 4px 4px 12px; scrollbar-width: thin; scrollbar-color: var(--gold) var(--linen); }
+div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(220px, calc((100% - 56px) / 5), 280px); min-width: 0; width: auto; max-width: none; scroll-snap-align: start; }
+div.tool-choice-track.hr-options--photos > button:nth-child(n) { flex-basis: clamp(220px, calc((100% - 56px) / 5), 300px); }
+.tool-choice-track > button:focus-visible, .tool-choices__nav button:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.gf .gf-compare__table thead th:nth-child(n) { width: auto; position: static; }
+.gf .gf-compare__table thead th:first-child { width: 130px; }
+.gdb-result-note { font-size: .85rem; line-height: 1.65; color: var(--taupe); text-align: center; margin-block: var(--space-md, 20px); }
+.gdb-no-match { text-align: center; padding-block: var(--space-xl, 40px); }
+
+.tool-choices__nav button:disabled, .tool-choice-track > button:disabled { opacity: .4; cursor: default; }

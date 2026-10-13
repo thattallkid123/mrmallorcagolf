@@ -3,7 +3,7 @@ export const dynamic = 'force-dynamic'
 export const metadata = buildPageMetadata('/tools/golf-day-builder', 'en', {
 
   title: 'Mallorca Golf Day Builder',
-  description: 'Eight questions. A complete day plan built around your group.',
+  description: "Nine questions. Suggested golf day plans matched to your group.",
   robots: { index: true, follow: true },
 })
 
