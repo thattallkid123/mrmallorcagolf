@@ -13,7 +13,14 @@ for (const locale of ['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh']) {
     await expect(page.locator('.pyt-page .cst-wrap')).toHaveCount(0)
     const supportLinks = page.locator('.pyt-hero__links a')
     await expect(supportLinks).toHaveCount(2)
-    for (const action of await page.locator(".pyt-hero__actions a, .pyt-hero__links a, .pyt-working-mode__link, .pyt-trip-ideas__cta a, .pyt-itin-invite__btn, .pyt-addon__btn").all()) {
+    for (const support of await supportLinks.all()) {
+      await expect(support).not.toHaveClass(/\bbtn\b/)
+      await expect(support).toHaveCSS('font-weight', '400')
+      await expect(support).toHaveCSS('text-transform', 'none')
+      await expect(support.locator('svg')).toHaveAttribute('aria-hidden', 'true')
+      expect(await support.evaluate(e => e.getBoundingClientRect().height)).toBeGreaterThanOrEqual(44)
+    }
+    for (const action of await page.locator(".pyt-hero__actions a, .pyt-working-mode__link, .pyt-trip-ideas__cta a, .pyt-itin-invite__btn, .pyt-addon__btn").all()) {
       await expect(action).toHaveClass(/\bbtn\b/)
       await expect(action).toHaveCSS("text-align", "center")
       await expect(action).toHaveCSS("font-size", "10px")
