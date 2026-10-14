@@ -37,9 +37,7 @@
     "src/components/CourseMapView.jsx": 8,
     "src/components/EmailSignup.jsx": 6,
     "src/components/LeadCaptureStatusPage.jsx": 1,
-    "src/components/LeadMagnetPage.jsx": 21,
-    "src/components/ToolTrustLine.jsx": 2,
-    "src/components/ToolsIndexView.jsx": 1
+    "src/components/LeadMagnetPage.jsx": 21
   },
   "cssImportant": {
     "src/styles/globals.css": 66

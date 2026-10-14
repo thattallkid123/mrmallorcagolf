@@ -1,6 +1,5 @@
 /* Trip-planning styles are loaded with the shared trip page, not every route. */
 
-
 .pyt-hero {
   position: relative;
   min-height: 78svh;
@@ -74,44 +73,6 @@
   gap: 12px;
   flex-wrap: wrap;
   margin-top: 28px;
-}
-
-.pyt-hero__btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 46px;
-  padding: 14px 28px;
-  border: 1px solid var(--gold-light);
-  border-radius: 2px;
-  background: var(--gold-light);
-  color: var(--deep);
-  font-family: var(--font-sans);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  line-height: 1.2;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  text-shadow: none;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
-}
-
-.pyt-hero__btn:hover {
-  background: transparent;
-  color: var(--cream);
-}
-
-.pyt-hero__btn--secondary {
-  background: transparent;
-  color: var(--cream);
-  border-color: rgba(247,244,239,0.5);
-}
-
-.pyt-hero__btn--secondary:hover {
-  border-color: var(--cream);
-  background: rgba(247,244,239,0.08);
 }
 
 .pyt-section {
@@ -446,31 +407,6 @@
   line-height: 1.55;
   color: var(--charcoal);
 }
-.pyt-working-mode__link {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 44px;
-  margin-top: 18px;
-  padding: 12px 22px;
-  border: 1px solid var(--pine);
-  border-radius: 2px;
-  background: transparent;
-  color: var(--pine);
-  font-family: var(--font-sans);
-  font-size: 12px;
-  font-weight: 500;
-  letter-spacing: 0.08em;
-  line-height: 1.2;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
-  transition: background 0.2s, color 0.2s;
-}
-.pyt-working-mode__link:hover {
-  background: var(--pine);
-  color: var(--cream);
-}
 .pyt-addon {
   display: flex;
   align-items: center;
@@ -509,26 +445,6 @@
 }
 .pyt-addon__action {
   flex-shrink: 0;
-}
-.pyt-addon__btn {
-  display: inline-block;
-  background: transparent;
-  color: var(--cream);
-  font-family: var(--font-sans);
-  font-size: 14px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 13px 32px;
-  border: 1px solid rgba(247,244,239,0.4);
-  border-radius: 2px;
-  white-space: nowrap;
-  transition: border-color 0.2s, background 0.2s;
-}
-.pyt-addon__btn:hover {
-  border-color: var(--cream);
-  background: rgba(247,244,239,0.08);
 }
 .pyt-sample-layout {
   display: grid;
@@ -597,26 +513,7 @@
   font-size: 0.98rem;
   line-height: 1.7;
 }
-.pyt-itin-invite__btn {
-  flex-shrink: 0;
-  background: var(--pine);
-  color: var(--cream);
-  border: 1px solid var(--pine);
-  border-radius: 2px;
-  font-family: var(--font-sans);
-  font-size: 13px;
-  font-weight: 500;
-  letter-spacing: 0.06em;
-  text-transform: uppercase;
-  text-decoration: none;
-  padding: 13px 30px;
-  cursor: pointer;
-  transition: background 0.2s, color 0.2s;
-}
-.pyt-itin-invite__btn:hover {
-  background: transparent;
-  color: var(--pine);
-}
+.pyt-itin-invite__btn { flex-shrink: 0; }
 .pyt-itin {
   margin-top: 44px;
   animation: pytItinIn 0.32s ease-out;
@@ -1531,8 +1428,6 @@
 
 .pyt-support .pyt-addon__title, .pyt-support .pyt-addon__body, .pyt-support .pyt-addon__price { color: var(--pine); }
 
-.pyt-support .pyt-addon__btn { color: var(--pine); border-color: var(--pine); }
-
 .pyt-support .pyt-eyebrow { color: var(--gold-text); }
 
 .pyt-enquiry__body { max-width: 62ch; color: var(--cream); line-height: 1.7; }
@@ -1547,6 +1442,7 @@
 /* Supporting destinations use the site's shared outlined-button style. */
 .pyt-hero__links { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: 24px; }
 .pyt-hero__links .btn { max-width: 100%; }
+.pyt-hero__actions .btn, .pyt-hero__links .btn { text-shadow: none; }
 .pyt-hero .pyt-eyebrow { color: var(--gold-light); }
 .pyt-planning-layout { gap: 32px; }
 .pyt-includes { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 40px; }

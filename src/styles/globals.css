@@ -149,6 +149,8 @@ body {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  text-align: center;
+  max-width: 100%;
   font-family: var(--font-sans);
   font-size: 10px;
   font-weight: 500;
@@ -1349,6 +1351,11 @@ body {
 .review-badge--mini .review-badge__brand { font-size: 0.68rem; }
 .review-badge--mini .review-badge__count { font-size: 0.68rem; }
 
+/* Shared tool trust styling, with colour inherited on dark tool headers. */
+.tool-trust-line { display: flex; flex-direction: column; align-items: center; gap: var(--space-2); text-align: center; padding: var(--space-4) var(--space-5) 0; color: var(--taupe-text); }
+.tool-trust-line__byline { font-family: var(--font-sans); font-weight: 300; font-size: 0.78rem; letter-spacing: 0.04em; color: inherit; margin: 0; }
+.tool-trust-line .review-badge, .tool-trust-line .review-badge__score, .tool-trust-line .review-badge__brand { color: inherit; }
+
 /* Review footer block */
 .footer__trust { grid-column: 1 / -1; border-top: 0.5px solid rgba(255,255,255,0.08); padding: 28px 0 20px; }
 .review-footer-block { display: inline-flex; flex-direction: column; gap: 6px; text-decoration: none; }
@@ -2092,16 +2099,6 @@ select.form-control { cursor: pointer; }
   .course__detail-grid { margin-left: 20px; margin-right: 20px; }
   .legal-page__inner { padding: 28px 22px; }
   .legal-page__hero { margin-bottom: 32px; padding-bottom: 26px; }
-}
-
-/* ── Guides carousel & article cards — responsive ────────────── */
-@media (max-width: 860px) {
-  .guides-carousel-section { padding: 56px 0 56px 20px; }
-  .guide-photo-card { flex: 0 0 292px; height: 400px; touch-action: pan-x; }
-}
-@media (max-width: 480px) {
-  .guide-photo-card { flex: 0 0 82vw; height: 380px; touch-action: pan-x; }
-  .guide-photo-card__title { font-size: 1.35rem; }
 }
 
 /* ── GUIDES / BLOG POSTS ──────────────────────────────────────── */
@@ -2996,6 +2993,16 @@ select.form-control { cursor: pointer; }
 .guide-photo-card__content { position: absolute; bottom: 0; left: 0; right: 0; padding: 28px 26px; z-index: 2; }
 .guide-photo-card__title { font-family: var(--font-serif); font-size: 1.22rem; font-weight: 500; color: var(--white); line-height: 1.25; margin: 0 0 10px; }
 .guide-photo-card__keywords { font-size: 9px; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.55); margin: 0; font-family: var(--font-sans); }
+
+/* ── Guides carousel & article cards — responsive ────────────── */
+@media (max-width: 860px) {
+  .guides-carousel-section { padding: 56px 0 56px 20px; }
+  .guide-photo-card { flex: 0 0 292px; height: 400px; touch-action: pan-x; }
+}
+@media (max-width: 480px) {
+  .guide-photo-card { flex: 0 0 82vw; height: 380px; touch-action: pan-x; }
+  .guide-photo-card__title { font-size: 1.35rem; }
+}
 
 /* Articles carousel — dark background variant */
 .guides-carousel-section--dark { background: linear-gradient(180deg, #1a1916 0%, #201d19 100%); }

@@ -13,6 +13,11 @@ for (const locale of ['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh']) {
     await expect(page.locator('.pyt-page .cst-wrap')).toHaveCount(0)
     const supportLinks = page.locator('.pyt-hero__links a')
     await expect(supportLinks).toHaveCount(2)
+    for (const action of await page.locator(".pyt-hero__actions a, .pyt-hero__links a, .pyt-working-mode__link, .pyt-trip-ideas__cta a, .pyt-itin-invite__btn, .pyt-addon__btn").all()) {
+      await expect(action).toHaveClass(/\bbtn\b/)
+      await expect(action).toHaveCSS("text-align", "center")
+      await expect(action).toHaveCSS("font-size", "10px")
+    }
     await expect(supportLinks.first()).toHaveAttribute('href', '#sample-itinerary')
     await expect(supportLinks.last()).toHaveAttribute('href', prefix + '/tools/course-selector')
     const explanation = page.locator('.pyt-itin-why')

@@ -75,12 +75,12 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
           <h1 className="pyt-hero__title">{content.heroTitle}</h1>
           <p className="pyt-hero__body">{content.heroBody}</p>
           <div className="pyt-hero__actions">
-            <Link href={tripPlanningHref} className="pyt-hero__btn">
+            <Link href={tripPlanningHref} className="btn btn--gold pyt-hero__btn">
               {content.professional.cta}
             </Link>
             <a
               href={messageHref}
-              className="pyt-hero__btn pyt-hero__btn--secondary"
+              className="btn btn--outline-white pyt-hero__btn pyt-hero__btn--secondary"
               target={locale === 'zh' ? undefined : '_blank'}
               rel={locale === 'zh' ? undefined : 'noopener noreferrer'}
             >
@@ -117,7 +117,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                   <article key={item.title} className="pyt-working-mode">
                     <h4>{item.title}</h4>
                     <p>{item.body}</p>
-                    <Link href={getWorkingModeHref(item.target)} className="pyt-working-mode__link">
+                    <Link href={getWorkingModeHref(item.target)} className="btn btn--dark pyt-working-mode__link">
                       {item.cta}
                     </Link>
                   </article>
@@ -203,7 +203,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
               ))}
             </ToolChoices>
             <div className="pyt-trip-ideas__cta">
-              <Link href={wholeTripHref} className="pyt-hero__btn">
+              <Link href={wholeTripHref} className="btn btn--gold pyt-hero__btn">
                 {content.tripIdeas.cta}
               </Link>
             </div>
@@ -223,7 +223,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                     <p className="pyt-itin-invite__body">{content.sampleItinerary.intro}</p>
                   </div>
                   {locale === 'en' && content.sampleItinerary.fullGuideLink ? (
-                    <Link href={content.sampleItinerary.fullGuideLink} className="pyt-itin-invite__btn">
+                    <Link href={content.sampleItinerary.fullGuideLink} className="btn btn--pine pyt-itin-invite__btn">
                       {content.sampleItinerary.fullGuideLabel}
                     </Link>
                   ) : null}
@@ -294,7 +294,7 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
             <p className="pyt-addon__price pyt-addon__price--sub">{content.addon.priceSuffix}</p>
           </div>
           <div className="pyt-addon__action">
-            <Link href={pwapHref} className="pyt-addon__btn">
+            <Link href={pwapHref} className="btn btn--dark pyt-addon__btn">
               {content.addon.cta}
             </Link>
           </div>
@@ -324,8 +324,8 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
           <h2 className="pyt-addon__title">{content.professional.cta}</h2>
           <p className="pyt-enquiry__body">{content.professional.sendPrompt}</p>
           <div className="pyt-hero__actions">
-            <Link href={tripPlanningHref} className="pyt-hero__btn">{content.professional.cta}</Link>
-            <a href={messageHref} className="pyt-hero__btn pyt-hero__btn--secondary"
+            <Link href={tripPlanningHref} className="btn btn--gold pyt-hero__btn">{content.professional.cta}</Link>
+            <a href={messageHref} className="btn btn--outline-white pyt-hero__btn pyt-hero__btn--secondary"
               target={locale === 'zh' ? undefined : '_blank'} rel={locale === 'zh' ? undefined : 'noopener noreferrer'}>
               {messageLabel}
             </a>

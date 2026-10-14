@@ -286,7 +286,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
           --deep:#1A1916; --muted:#6B6862; --ok:#2D6A44; --ok-bg:#EAF3EC; --warn:#8a6f26;
           --warn-bg:#F6EFDD; --no:#8a3a26; --no-bg:#F5E7E2; --info:#3B5A72; --info-bg:#E8EFF4;
           background:var(--cream); color:var(--deep); }
-        .hc-hero { background:var(--pine); padding:52px 24px 44px; text-align:center; color:#fff; }
+        .hc-hero { background:var(--pine); padding:calc(var(--nav-h) + var(--space-7)) 24px 44px; text-align:center; color:#fff; }
         .hc-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em;
           text-transform:uppercase; color:var(--gold); }
         .hc-hero h1 { font-family:var(--font-serif); font-weight:500;

@@ -318,7 +318,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
       <style>{`
         .gf { --pine:#2D4A3E; --pine-dark:#223A30; --gold:#B8973C; --cream:#F7F4EF; --row-alt:#EFEDE8;
           --deep:#1A1916; --muted:#6B6862; background:var(--cream); color:var(--deep); font-family:var(--font-sans); }
-        .gf-hero { background:var(--pine); padding:52px 24px 44px; text-align:center; color:#fff; }
+        .gf-hero { background:var(--pine); padding:calc(var(--nav-h) + var(--space-7)) 24px 44px; text-align:center; color:#fff; }
         .gf-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); }
         .gf-hero h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(1.9rem,4vw,2.8rem); margin:10px 0; }
         .gf-hero .sub { font-family:var(--font-sans); font-weight:300; font-size:.95rem; color:rgba(255,255,255,.85); max-width:640px; margin:0 auto; line-height:1.6; }
