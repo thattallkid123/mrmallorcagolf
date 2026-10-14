@@ -82,7 +82,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": "Martin Hawtree",
     "opened": "1986 (9 holes; extended to 18 in 1995)",
     "signatureHole": "12th (par 3) - raised tee over a lake to a wide green [unconfirmed - published-review candidate, Andy has not played this course]",
-    "practiceFacilities": "Driving range | Putting green | Chipping area"
+    "practiceFacilities": "Driving range (hitting mats) | Putting green | Chipping area"
   },
   "canyamel": {
     "id": "canyamel",
@@ -571,7 +571,7 @@ export const COURSE_FACTS = Object.freeze({
     "designer": "Grupo Harris",
     "opened": "1998",
     "signatureHole": "12 (short par-3, best views)",
-    "practiceFacilities": "Driving range | Grass and mat hitting areas | Chipping green | Putting green"
+    "practiceFacilities": "Small driving range | Grass and mat hitting areas | Chipping green | Putting green"
   },
   "son_vida": {
     "id": "son_vida",
