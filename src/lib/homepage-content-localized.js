@@ -208,7 +208,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta",
-            "Resumen tras la vuelta",
+            "Charla tras la vuelta, vídeo y notas escritas",
             "Hora de salida privada disponible, al coste"
           ],
           "note": "Mi tarifa del día. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
@@ -225,6 +225,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Hora de salida asegurada",
             "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta",
+            "Charla tras la vuelta, vídeo y notas escritas",
             "Hora de salida privada disponible, al coste"
           ],
           "note": "Mi tarifa fija del día para 2 o 3 golfistas. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
@@ -536,7 +537,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
             "On-course-Coaching während der Runde",
-            "Nachbesprechung nach der Runde",
+            "Nachbesprechung, Video und schriftliche Notizen",
             "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "note": "Mein Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger sind als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
@@ -553,6 +554,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Startzeit gesichert",
             "18 Löcher mit mir",
             "On-course-Coaching während der Runde",
+            "Nachbesprechung, Video und schriftliche Notizen",
             "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "note": "Mein fester Tagessatz für 2 oder 3 Golfer. Greenfee und Mittagessen sind separat. Buggy und Leihschläger sind als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
@@ -864,7 +866,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
             "Coaching sur le parcours pendant la partie",
-            "Bilan après la partie",
+            "Échange après la partie, vidéo et notes écrites",
             "Départ privatisé possible, au prix coûtant"
           ],
           "note": "Mon tarif journée. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, je peux vous aider à organiser.",
@@ -881,6 +883,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Heure de départ sécurisée",
             "18 trous avec moi",
             "Coaching sur le parcours pendant la partie",
+            "Échange après la partie, vidéo et notes écrites",
             "Départ privatisé possible, au prix coûtant"
           ],
           "note": "Mon tarif journalier fixe pour 2 ou 3 golfeurs. Le green fee et le déjeuner sont en sus. Voiturette et clubs de location disponibles en option, avec plaisir pour aider à les organiser.",
@@ -1192,7 +1195,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
             "Coaching op de baan tijdens de ronde",
-            "Nabespreking na de ronde",
+            "Nabespreking, video en schriftelijke notities",
             "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "note": "Mijn dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, ik help graag bij de organisatie.",
@@ -1209,6 +1212,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Starttijd vastgelegd",
             "18 holes met mij",
             "Coaching op de baan tijdens de ronde",
+            "Nabespreking, video en schriftelijke notities",
             "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "note": "Mijn vaste dagtarief voor 2 of 3 golfers. Greenfee en lunch zijn apart. Buggy en huurclubs zijn beschikbaar als optionele extra's, ik help graag bij de organisatie.",
@@ -1520,7 +1524,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
             "Coaching på banan under rundan",
-            "Genomgång efter rundan",
+            "Samtal efter rundan, video och skriftliga anteckningar",
             "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "note": "Mitt dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, jag hjälper gärna till att ordna.",
@@ -1537,6 +1541,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Starttid säkrad",
             "18 hål med mig",
             "Coaching på banan under rundan",
+            "Samtal efter rundan, video och skriftliga anteckningar",
             "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "note": "Mitt fasta dagspris för 2 eller 3 golfare. Green fee och lunch är separat. Golfbil och hyrklubbor finns som tillval, jag hjälper gärna till att ordna det.",
@@ -1855,7 +1860,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "开球时间已预订并安排妥当",
             "与我同打 18 洞",
             "球场实战指导贯穿全程",
-            "赛后总结",
+            "赛后交流、视频和书面笔记",
             "可加订私人开球时段，按成本价收取"
           ],
           "note": "我的日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，我很乐意帮您安排。",
@@ -1872,6 +1877,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "开球时间已预订",
             "与我同打 18 洞",
             "球场实战指导贯穿全程",
+            "赛后交流、视频和书面笔记",
             "可加订私人开球时段，按成本价收取"
           ],
           "note": "我针对 2 或 3 位球手的固定日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，我很乐意帮您安排。",

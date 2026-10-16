@@ -10,7 +10,7 @@ export const GREEN_FEES_T = {
       eyebrow: 'Free tool',
       title: 'Compare Mallorca Golf Courses',
       sub: 'All 24 courses on the island: green fees, buggy costs, walking rules, access, difficulty and handicap limits, plus my one-line verdict on each, as a UK PGA Advanced Professional based in Mallorca. Browse the full guide or compare up to five courses side by side.',
-      updated: 'Last updated: July 2026',
+      updated: 'Last updated: October 2026',
     },
     modebar: {
       all24: 'All 24 courses',
@@ -129,7 +129,7 @@ export const GREEN_FEES_T = {
       eyebrow: 'Kostenloses Werkzeug',
       title: 'Mallorca-Greenfee-Vergleich',
       sub: 'Alle 24 Plätze der Insel: Greenfees, Buggykosten, Gehen-Regeln, Zugang, Schwierigkeit und Vorgabe-Limits, plus mein Ein-Zeilen-Urteil zu jedem Platz als UK PGA Advanced Professional mit Sitz auf Mallorca. Durchsuchen Sie den vollständigen Leitfaden oder vergleichen Sie bis zu fünf Plätze nebeneinander.',
-      updated: 'Zuletzt aktualisiert: Juli 2026',
+      updated: 'Zuletzt aktualisiert: Oktober 2026',
     },
     modebar: {
       all24: 'Alle 24 Plätze',
@@ -248,7 +248,7 @@ export const GREEN_FEES_T = {
       eyebrow: 'Herramienta gratuita',
       title: 'Comparar campos de golf en Mallorca',
       sub: 'Los 24 campos de la isla: green fees, costes de carrito, reglas de caminar, acceso, dificultad y límites de hándicap, más mi veredicto de una línea sobre cada uno, como profesional avanzado de la PGA británica con base en Mallorca. Explore la guía completa o compare hasta cinco campos uno al lado del otro.',
-      updated: 'Última actualización: Julio 2026',
+      updated: 'Última actualización: octubre 2026',
     },
     modebar: {
       all24: 'Los 24 campos',
@@ -367,7 +367,7 @@ export const GREEN_FEES_T = {
       eyebrow: 'Outil gratuit',
       title: 'Comparer les parcours de golf à Majorque',
       sub: 'Les 24 parcours de l\'île : green fees, coûts de buggy, règles de marche, accès, difficulté et limites de handicap, plus mon verdict en une ligne sur chacun, en tant que professionnel avancé de la PGA britannique basé à Majorque. Parcourez le guide complet ou comparez jusqu\'à cinq parcours côte à côte.',
-      updated: 'Dernière mise à jour : juillet 2026',
+      updated: 'Dernière mise à jour : octobre 2026',
     },
     modebar: {
       all24: 'Les 24 parcours',
@@ -486,7 +486,7 @@ export const GREEN_FEES_T = {
       eyebrow: 'Gratis hulpmiddel',
       title: 'Vergelijk Mallorca-golfbanen',
       sub: 'Alle 24 banen op het eiland: green fees, buggykosten, walkingregels, toegang, moeilijkheidsgraad en handicaplimieten, plus mijn oordeel in één regel, als Britse PGA Advanced Professional gebaseerd op Mallorca. Bekijk de volledige gids of vergelijk tot vijf banen naast elkaar.',
-      updated: 'Laatst bijgewerkt: juli 2026',
+      updated: 'Laatst bijgewerkt: oktober 2026',
     },
     modebar: {
       all24: 'Alle 24 banen',
@@ -605,7 +605,7 @@ export const GREEN_FEES_T = {
       eyebrow: 'Gratis verktyg',
       title: 'Jämför Mallorcas golfbanor',
       sub: 'Alla 24 banor på ön: golfavgifter, golfbilskostnader, gångregler, åtkomst, svårighetsgrad och handicapgränser, plus mitt omdöme i en rad om varje bana, som brittisk PGA Advanced Professional bosatt på Mallorca. Bläddra i hela guiden eller jämför upp till fem banor sida vid sida.',
-      updated: 'Senast uppdaterad: juli 2026',
+      updated: 'Senast uppdaterad: oktober 2026',
     },
     modebar: {
       all24: 'Alla 24 banor',
@@ -724,7 +724,7 @@ export const GREEN_FEES_T = {
       eyebrow: '免费工具',
       title: '比较马略卡高尔夫球场',
       sub: '岛上所有 24 个球场：果岭费、球车费用、步行规则、入场、难度和差点限制，加上我（常驻马略卡的英国 PGA 高级职业教练）对每个球场的单行评价。浏览完整指南或并排比较多达五个球场。',
-      updated: '最后更新：2026 年 7 月',
+      updated: '最后更新：2026 年 10 月',
     },
     modebar: {
       all24: '全部 24 个球场',

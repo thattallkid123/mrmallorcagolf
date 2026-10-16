@@ -35,15 +35,6 @@ const FEATURE_ICONS = {
   ),
 }
 
-const HOME_UI = {
-  en: { tripPrompt: 'Need the whole trip planned? Start here' },
-  de: { tripPrompt: 'Soll die ganze Reise geplant werden?' },
-  es: { tripPrompt: 'Necesita que le planifique todo el viaje?' },
-  fr: { tripPrompt: 'Besoin que je planifie tout le sejour ?' },
-  nl: { tripPrompt: 'Wilt u dat ik de hele reis plan?' },
-  sv: { tripPrompt: 'Vill du att jag planerar hela resan?' },
-  zh: { tripPrompt: '想让我把整趟行程也一起安排好吗？' },
-}
 
 
 function JsonLd({ data }) {
@@ -85,7 +76,6 @@ export default function HomePageInner({ locale = 'en' }) {
   const planYourTripHref = locale === 'en' ? '/plan-your-trip' : `/${locale}/plan-your-trip`
   const itineraryHref = home.hero.primaryHref ? localizePath(home.hero.primaryHref, locale) : playWithAProHref
   const sharedPackageCta = null
-  const ui = HOME_UI[locale] || HOME_UI.en
   const wechatHref = locale === 'zh' ? `${contactHref}#wechat` : null
 
   return (
@@ -137,7 +127,7 @@ export default function HomePageInner({ locale = 'en' }) {
                 <span>微信联系：直接加我，或先看联系页</span>
               </a>
             ) : null}
-            <a href={golfCoursesHref} className="hero__pwap-link" aria-label={ui.tripPrompt}>
+            <a href={golfCoursesHref} className="hero__pwap-link">
               <span>{home.journey?.items?.[2]?.cta || 'Explore Courses'}</span>
             </a>
           </div>

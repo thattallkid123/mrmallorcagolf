@@ -97,7 +97,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Golf buggies run €35-48 depending on the course. Son Gual charges €45, Alcanada €48 - the GPS models give you yardages and hole maps. Pull trolleys €6-8. Electric trolleys €14-25.',
+          'Golf buggies run €35-55 depending on the course. Son Gual charges €45, Alcanada €48 - the GPS models give you yardages and hole maps. Pull trolleys €6-8. Electric trolleys €14-25.',
       },
       {
         type: 'paragraph',
@@ -109,7 +109,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         src: '/images/blog-golf-cost/T Golf Calvia Buggies.webp',
         alt: 'Golf buggies in use',
         containerStyle: { margin: '1.5rem 0 0.5rem 0', borderRadius: 2, aspectRatio: '15/8' },
-        caption: 'Buggies available at €35-€48 per round',
+        caption: 'Buggies available at €35-€55 per round',
       },
       { type: 'heading', text: 'Food and Drink' },
       {

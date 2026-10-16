@@ -9,13 +9,13 @@ const data = {
    "pills": [
     "球场旁",
     "水疗",
-    "米其林餐厅"
+    "高尔夫度假酒店"
    ],
-   "why": "Son Vida、Son Quint 和 Son Muntaner（2025 年西班牙最佳球场）都在庄园内。T Golf Calvià 距离 10 分钟。醒来、打球、用餐、恢复，一气呵成。",
-   "andy": "适合以高尔夫为主、希望一切都由别人安排好的团队的默认之选。酒店里的 Es Fum 拥有一颗米其林星。晚上去 Puerto Portals 开车约 15 分钟。",
+   "why": "位于 Son Vida 球场旁，附近还有 Son Muntaner 和 Son Quint。",
+   "andy": "以高尔夫为主的住宿选择，设有水疗和酒店餐厅。晚上也方便前往帕尔马。",
    "golf": "庄园内：Son Vida、Son Quint、Son Muntaner（2025 年西班牙最佳）。T Golf Calvià 10 分钟。Real Golf de Bendinat 15 分钟。Santa Ponsa 球场群 20 分钟。",
    "travelTime": "距帕尔马机场 15 分钟",
-   "subname": "Sheraton Collection"
+   "subname": "Son Vida"
   },
   "gran-melia-de-mar": {
    "pills": [
@@ -322,15 +322,15 @@ const data = {
   },
   "la-goleta": {
    "pills": [
-    "Cala Sant Vicenç",
-    "中档",
-    "可直达海滩"
+    "仅限成人",
+    "精品酒店",
+    "海滨"
    ],
-   "why": "位于美丽的 Cala de Sant Vicenç 的中档酒店，与五星的 El Vicenç 在同一个小海湾。价格只是一小部分，海滩相同，到 Alcanada 20 分钟。",
-   "andy": "Cala de Sant Vicenç 是北部最美的地方之一。La Goleta 让您住在同样的位置，价格却不奢华。",
+   "why": "位于 Port de Pollença 海滨的成人精品酒店，适合作为前往 Alcanada 和 Golf Pollença 打球的北部住宿基地。",
+   "andy": "适合希望在北部打球，同时享受 Port de Pollença 海滩和餐厅的成人旅客。",
    "golf": "Club de Golf Alcanada 20 分钟。Golf Pollença 10 分钟。",
    "travelTime": "距帕尔马机场 52 分钟",
-   "subname": "Cala de Sant Vicenç"
+   "subname": "Port de Pollença"
   },
   "north-villa-small": {
    "pills": [

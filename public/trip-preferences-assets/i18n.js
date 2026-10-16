@@ -7,6 +7,16 @@
 (function () {
   const ORDER = ['de', 'es', 'fr', 'nl', 'sv', 'zh'];
   const ROWS = [
+    ['This enquiry link is unavailable. Please ask Andy for help.', 'Dieser Anfragelink ist nicht verfügbar. Bitte wenden Sie sich an Andy.', 'Este enlace de consulta no está disponible. Pida ayuda a Andy.', 'Ce lien de demande est indisponible. Demandez de l’aide à Andy.', 'Deze aanvraaglink is niet beschikbaar. Vraag Andy om hulp.', 'Den här förfrågningslänken är inte tillgänglig. Be Andy om hjälp.', '此咨询链接不可用，请联系 Andy。'],
+    ["Your original enquiry","Ihre ursprüngliche Anfrage","Su consulta original","Votre demande initiale","Uw oorspronkelijke aanvraag","Din ursprungliga förfrågan","您的原始咨询"],
+    ["These are the details you already sent. Add any changes below.","Dies sind Ihre bereits gesendeten Angaben. Änderungen können Sie unten ergänzen.","Estos son los datos que ya envió. Añada cualquier cambio más abajo.","Voici les informations déjà envoyées. Ajoutez les changements ci-dessous.","Dit zijn de gegevens die u al heeft gestuurd. Voeg wijzigingen hieronder toe.","Det här är uppgifterna du redan skickat. Lägg till ändringar nedan.","这是您之前发送的信息。如有变更，请在下方补充。"],
+    ["Dates from your enquiry","Reisedaten aus Ihrer Anfrage","Fechas de su consulta","Dates de votre demande","Datums uit uw aanvraag","Datum från din förfrågan","咨询中的日期"],
+    ["Group size from your enquiry","Gruppengröße aus Ihrer Anfrage","Tamaño del grupo en su consulta","Taille du groupe dans votre demande","Groepsgrootte uit uw aanvraag","Gruppstorlek från din förfrågan","咨询中的人数"],
+    ["Handicap from your enquiry","Handicap aus Ihrer Anfrage","Hándicap de su consulta","Handicap dans votre demande","Handicap uit uw aanvraag","Handicap från din förfrågan","咨询中的差点"],
+    ["Courses from your enquiry","Golfplätze aus Ihrer Anfrage","Campos de su consulta","Parcours dans votre demande","Golfbanen uit uw aanvraag","Golfbanor från din förfrågan","咨询中的球场"],
+    ["Message from your enquiry","Nachricht aus Ihrer Anfrage","Mensaje de su consulta","Message de votre demande","Bericht uit uw aanvraag","Meddelande från din förfrågan","咨询中的留言"],
+    ["Loading your original enquiry…","Ihre ursprüngliche Anfrage wird geladen…","Cargando su consulta original…","Chargement de votre demande initiale…","Uw oorspronkelijke aanvraag wordt geladen…","Laddar din ursprungliga förfrågan…","正在加载您的原始咨询…"],
+    ["Your original enquiry could not be loaded. Please contact Andy before sending your choices.","Ihre ursprüngliche Anfrage konnte nicht geladen werden. Bitte kontaktieren Sie Andy, bevor Sie Ihre Auswahl senden.","No se pudo cargar su consulta original. Contacte con Andy antes de enviar sus preferencias.","Votre demande initiale n’a pas pu être chargée. Contactez Andy avant d’envoyer vos choix.","Uw oorspronkelijke aanvraag kon niet worden geladen. Neem contact op met Andy voordat u uw keuzes verstuurt.","Din ursprungliga förfrågan kunde inte laddas. Kontakta Andy innan du skickar dina val.","无法加载您的原始咨询。发送选择前，请先联系 Andy。"],
     // ---- header, side panel, footer
     ['Plan your Mallorca golf trip', 'Planen Sie Ihre Golfreise nach Mallorca', 'Planifique su viaje de golf a Mallorca', 'Planifiez votre séjour golf à Majorque', 'Plan uw golfreis naar Mallorca', 'Planera din golfresa till Mallorca', '规划您的马略卡高尔夫行程'],
     ['Plan your Mallorca golf trip | Mr Mallorca Golf', 'Golfreise nach Mallorca planen | Mr Mallorca Golf', 'Planifique su viaje de golf a Mallorca | Mr Mallorca Golf', 'Planifiez votre séjour golf à Majorque | Mr Mallorca Golf', 'Golfreis naar Mallorca plannen | Mr Mallorca Golf', 'Planera din golfresa till Mallorca | Mr Mallorca Golf', '规划马略卡高尔夫行程 | Mr Mallorca Golf'],
@@ -254,7 +264,7 @@
     ['Half day', 'Halber Tag', 'Medio día', 'Demi-journée', 'Halve dag', 'Halvdag', '半天'],
     ['skipper', 'mit Skipper', 'con patrón', 'avec skipper', 'met schipper', 'med skeppare', '配船长'],
     ['evening', 'abends', 'por la noche', 'en soirée', '’s avonds', 'på kvällen', '晚上'],
-    ['April to September', 'April bis September', 'de abril a septiembre', 'd’avril à septembre', 'april tot september', 'april till september', '4 月至 9 月'],
+    ["Seasonal opening","Saisonale Öffnung","Apertura de temporada","Ouverture saisonnière","Seizoensopening","Säsongsöppet","季节性开放"],
     ['Sunrise', 'Sonnenaufgang', 'Amanecer', 'Lever du soleil', 'Zonsopgang', 'Soluppgång', '日出'],
     ['weather dependent', 'wetterabhängig', 'según el tiempo', 'selon la météo', 'weersafhankelijk', 'väderberoende', '视天气而定'],
     ['1 hour', '1 Stunde', '1 hora', '1 heure', '1 uur', '1 timme', '1 小时'],

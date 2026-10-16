@@ -1,4 +1,5 @@
 import { randomUUID } from 'node:crypto'
+import { sealEnquiry } from '../../../lib/enquiry-context.js'
 import { Resend } from 'resend'
 
 import {
@@ -141,7 +142,8 @@ export async function POST(request) {
     const preferencesHost = process.env.VERCEL_ENV === 'production'
       ? 'www.mrmallorcagolf.com'
       : process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL || 'www.mrmallorcagolf.com'
-    const preferencesUrl = `https://${preferencesHost}/trip-preferences.html?ref=${enquiryRef}${/^(DE|ES|FR|NL|SV|ZH)$/.test(lang) ? `&lang=${lang.toLowerCase()}` : ''}`
+    const enquiryContext = sealEnquiry(enquiryRef, { name: fullName, email, dates, groupsize, handicap, courses, hotelHelp: HOTEL_HELP_LABELS[hotelHelp] || '', service: serviceTypeLabel, format: pwapFormatLabel, message })
+    const preferencesUrl = `https://${preferencesHost}/trip-preferences.html?ref=${enquiryRef}${/^(DE|ES|FR|NL|SV|ZH)$/.test(lang) ? `&lang=${lang.toLowerCase()}` : ''}#context=${enquiryContext}`
     const brief = buildEnquiryBrief({
       serviceType,
       serviceTypeLabel,
@@ -201,7 +203,7 @@ export async function POST(request) {
             <p style="color:#666;margin:0 0 8px">Still to ask in your reply:</p>
             <ul style="margin:0;padding-left:20px;color:#333;line-height:1.6">${brief.questions.map((question) => `<li>${escapeHtml(question)}</li>`).join('')}</ul>
           </div>
-          <p style="margin-top:24px;font-size:13px"><strong>Optional next step:</strong> After reviewing this enquiry, send the client this <a href="${escapeHtml(preferencesUrl)}">trip preferences link</a> before your call. It carries the enquiry reference so their answers can be matched here.</p>
+          <p style="margin-top:24px;font-size:13px"><strong>Optional next step:</strong> After reviewing this enquiry, send the client this <a href="${escapeHtml(preferencesUrl)}">trip preferences link</a> before your call. It loads an encrypted copy of this enquiry for 30 days. Keep the personal link private: anyone with it can view those details. Their answers will carry the same reference.</p>
           <p style="margin-top:32px;color:#999;font-size:12px">Reply directly to this email to respond to ${escapeHtml(fname)}.</p>
         </div>
       `,

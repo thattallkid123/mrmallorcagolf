@@ -307,7 +307,7 @@ export const HOME_CONTENT = {
           "Tee time secured and fully handled",
           "18 holes with me",
           "On-course coaching during the round",
-          "Post-round debrief",
+          "Post-round chat, video and written notes",
           "Private tee time available at cost"
         ],
         "note": "My day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",
@@ -326,6 +326,7 @@ export const HOME_CONTENT = {
           "Tee time secured and fully handled",
           "18 holes with me",
           "On-course coaching during the round",
+          "Post-round chat, video and written notes",
           "Private tee time available at cost"
         ],
         "note": "My fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",

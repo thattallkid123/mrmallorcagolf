@@ -375,7 +375,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         <p className="gdb-sub">{t.hero.sub}</p>
       </section>
 
-      {lang === 'en' && <ToolTrustLine locale={lang} />}
+      <ToolTrustLine locale={lang} />
 
       <div className="gdb-wrap">
 
@@ -595,9 +595,9 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
             <div className="gdb-more-tools">
               <div className="gdb-more-tools-label">{t.moreTools.label}</div>
               <div className="gdb-tool-links">
-                <a href="/tools/course-selector" className="gdb-tool-link">{t.moreTools.courses}</a>
-                <a href="/tools/hotel-recommender" className="gdb-tool-link">{t.moreTools.hotels}</a>
-                <a href="/tools/golf-cost-calculator" className="gdb-tool-link">{t.moreTools.cost}</a>
+                <a href={buildLocalePath('/tools/course-selector', lang)} className="gdb-tool-link">{t.moreTools.courses}</a>
+                <a href={buildLocalePath('/tools/hotel-recommender', lang)} className="gdb-tool-link">{t.moreTools.hotels}</a>
+                <a href={buildLocalePath('/tools/golf-cost-calculator', lang)} className="gdb-tool-link">{t.moreTools.cost}</a>
               </div>
             </div>
 

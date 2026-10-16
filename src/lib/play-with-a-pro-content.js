@@ -79,8 +79,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "Course management, shot selection, and decision-making at the moments they matter. Not a commentary, just the right observations at the right time."
       ],
       [
-        "Post-round debrief",
-        "What changed during the round, what to take away, and what to work on next."
+        "Post-round chat, video and written notes",
+        "We talk through the round afterwards. I send you video and written notes covering what changed and what to work on next."
       ]
     ]
   },
@@ -183,7 +183,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           "Tee time secured and fully handled",
           "18 holes with me",
           "On-course coaching during the round",
-          "Post-round debrief and next steps",
+          "Post-round chat, video and written notes",
           "Private tee time available at cost"
         ],
         "button": "Enquire →",
@@ -206,6 +206,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           "Tee time secured and fully handled",
           "18 holes with me",
           "On-course coaching during the round",
+          "Post-round chat, video and written notes",
           "Private tee time available at cost"
         ],
         "button": "Enquire →",
@@ -318,8 +319,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "eyebrow": "Want this inside your trip?",
     "title": "Tell me your dates and I'll recommend the right format.",
     "body": "Send dates, group size, handicap range, and any courses you are considering. I will tell you whether Play With A Pro works best as a standalone day or as part of a planned trip.",
-    "primaryCta": "Plan Your Trip →",
-    "primaryHref": "/plan-your-trip",
+    "primaryCta": "Enquire About Your Day →",
+    "primaryHref": "/contact?service=pwap",
     "secondaryCta": "Message on WhatsApp",
     "secondaryHref": "https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20a%20golf%20day%20in%20Mallorca.",
     "tertiaryCta": "Explore the Courses",

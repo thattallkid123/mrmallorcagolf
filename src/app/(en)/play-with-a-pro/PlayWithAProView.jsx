@@ -125,7 +125,8 @@ function playWithAProContactHref(locale) {
 function localizedHref(href, locale) {
   if (!href || href.startsWith('http')) return href
   if (locale !== 'en' && href.startsWith(`/${locale}/`)) return href
-  return buildLocalePath(href, locale)
+  const splitAt = href.search(/[?#]/)
+  return splitAt === -1 ? buildLocalePath(href, locale) : buildLocalePath(href.slice(0, splitAt), locale) + href.slice(splitAt)
 }
 
 function packageCtaHref(tier, index, locale) {

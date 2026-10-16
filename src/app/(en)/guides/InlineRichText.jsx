@@ -4,6 +4,8 @@ const ANCHOR_PATTERN = /<a\s+href=(["'])(.*?)\1>(.*?)<\/a>/g
 
 function localizeHref(href, locale) {
   if (!href || locale === 'en') return href
+  const leadMagnet = href.match(/^\/guides\/(cost-guide|course-comparison)(?:[?#]|$)/)?.[1]
+  if (leadMagnet === 'cost-guide' || (leadMagnet === 'course-comparison' && ['nl', 'sv'].includes(locale))) return href
   if (/^(https?:|mailto:|tel:|#)/.test(href)) return href
   // buildLocalePath drops a #section, so split it off and put it back (2026-10-11:
   // /plan-your-trip#trip-ideas became /de/plan-your-trip with no section).

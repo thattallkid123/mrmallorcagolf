@@ -65,8 +65,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Gestión del campo, elección de golpes y toma de decisiones en los momentos que importan. No es un comentario constante, solo las observaciones adecuadas en el momento adecuado."
         ],
         [
-          "Debrief después de la vuelta",
-          "Qué ha cambiado durante la vuelta, qué debe llevarse y en qué trabajar a continuación."
+          "Charla tras la vuelta, vídeo y notas escritas",
+          "Después de la vuelta comentamos lo ocurrido. Le envío un vídeo y notas escritas sobre lo que ha cambiado y en qué trabajar a continuación."
         ]
       ]
     },
@@ -152,7 +152,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta",
-            "Resumen final y próximos pasos",
+            "Charla tras la vuelta, vídeo y notas escritas",
             "Hora de salida privada disponible, al coste"
           ],
           "button": "Consultar →",
@@ -168,6 +168,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta",
+            "Charla tras la vuelta, vídeo y notas escritas",
             "Hora de salida privada disponible, al coste"
           ],
           "button": "Consultar →",
@@ -278,8 +279,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "¿Quiere incluirlo en su viaje?",
       "title": "Dígame sus fechas y le recomendaré el formato adecuado.",
       "body": "Envíeme las fechas, el tamaño del grupo, el rango de hándicap y los campos que está considerando. Le diré si Play With A Pro funciona mejor como día independiente o como parte de un viaje planificado.",
-      "primaryCta": "Planifique su viaje →",
-      "primaryHref": "/es/plan-your-trip",
+      "primaryCta": "Consultar por su día de golf →",
+      "primaryHref": "/es/contact?service=pwap",
       "secondaryCta": "Escribir por WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Hola%20Andy%2C%20me%20interesa%20un%20d%C3%ADa%20de%20golf%20en%20Mallorca.",
       "tertiaryCta": "Explorar los campos →",
@@ -349,8 +350,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Platzmanagement, Schlagauswahl und Entscheidungsfindung in den Momenten, in denen sie zählen. Kein Dauerkommentar, nur die richtigen Beobachtungen zur richtigen Zeit."
         ],
         [
-          "Nachbesprechung",
-          "Was sich während der Runde verändert hat, was Sie mitnehmen und woran Sie als Nächstes arbeiten sollten."
+          "Nachbesprechung, Video und schriftliche Notizen",
+          "Nach der Runde besprechen wir gemeinsam den Tag. Sie erhalten ein Video und schriftliche Notizen dazu, was sich verändert hat und woran Sie als Nächstes arbeiten können."
         ]
       ]
     },
@@ -436,7 +437,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
             "On-course-Coaching während der Runde",
-            "Nachbesprechung und nächste Schritte",
+            "Nachbesprechung, Video und schriftliche Notizen",
             "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "button": "Anfragen →",
@@ -452,6 +453,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
             "On-course-Coaching während der Runde",
+            "Nachbesprechung, Video und schriftliche Notizen",
             "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "button": "Anfragen →",
@@ -562,8 +564,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Möchten Sie das in Ihre Reise einbauen?",
       "title": "Nennen Sie mir Ihre Reisedaten, und ich empfehle das passende Format.",
       "body": "Senden Sie mir Daten, Gruppengröße, Handicap-Bereich und alle Plätze, die Sie in Erwägung ziehen. Ich sage Ihnen, ob Play With A Pro als eigenständiger Tag oder als Teil einer geplanten Reise am besten funktioniert.",
-      "primaryCta": "Reise planen →",
-      "primaryHref": "/de/plan-your-trip",
+      "primaryCta": "Golftag anfragen →",
+      "primaryHref": "/de/contact?service=pwap",
       "secondaryCta": "Per WhatsApp schreiben",
       "secondaryHref": "https://wa.me/34624466702?text=Hallo%20Andy%2C%20ich%20interessiere%20mich%20f%C3%BCr%20einen%20Golftag%20in%20Mallorca.",
       "tertiaryCta": "Die Plätze entdecken →",
@@ -633,8 +635,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Gestion du parcours, choix des coups et prise de décision aux moments qui comptent. Pas un commentaire permanent, juste les bonnes observations au bon moment."
         ],
         [
-          "Débrief après la ronde",
-          "Ce qui a changé pendant la partie, ce qu'il faut en retenir et sur quoi travailler ensuite."
+          "Échange après la partie, vidéo et notes écrites",
+          "Nous discutons de la partie après le dernier trou. Je vous envoie une vidéo et des notes écrites sur les changements observés et les points à travailler ensuite."
         ]
       ]
     },
@@ -720,7 +722,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
             "Coaching sur le parcours pendant la partie",
-            "Bilan final et prochaines étapes",
+            "Échange après la partie, vidéo et notes écrites",
             "Départ privatisé possible, au prix coûtant"
           ],
           "button": "Demander →",
@@ -736,6 +738,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
             "Coaching sur le parcours pendant la partie",
+            "Échange après la partie, vidéo et notes écrites",
             "Départ privatisé possible, au prix coûtant"
           ],
           "button": "Demander →",
@@ -846,8 +849,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Vous voulez intégrer cela à votre séjour ?",
       "title": "Donnez-moi vos dates et je vous recommanderai le bon format.",
       "body": "Envoyez-moi les dates, la taille du groupe, la fourchette de handicap et les parcours que vous envisagez. Je vous dirai si Play With A Pro fonctionne mieux comme journée à part ou intégré à un séjour planifié.",
-      "primaryCta": "Planifiez votre voyage →",
-      "primaryHref": "/fr/plan-your-trip",
+      "primaryCta": "Parlons de votre journée de golf →",
+      "primaryHref": "/fr/contact?service=pwap",
       "secondaryCta": "Écrire sur WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Bonjour%20Andy%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20une%20journ%C3%A9e%20de%20golf%20%C3%A0%20Majorque.",
       "tertiaryCta": "Explorer les parcours →",
@@ -916,8 +919,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Baanmanagement, slagkeuze en besluitvorming op de momenten dat het telt. Geen doorlopend commentaar, alleen de juiste observaties op het juiste moment."
         ],
         [
-          "Nabespreking",
-          "Wat er tijdens de ronde veranderd is, wat u meeneemt en waaraan u hierna kunt werken."
+          "Nabespreking, video en schriftelijke notities",
+          "Na de ronde bespreken we hoe het ging. U ontvangt een video en schriftelijke notities over wat er veranderde en waaraan u hierna kunt werken."
         ]
       ]
     },
@@ -1003,7 +1006,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
             "Coaching op de baan tijdens de ronde",
-            "Nabespreking en vervolgstappen",
+            "Nabespreking, video en schriftelijke notities",
             "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "button": "Aanvragen →",
@@ -1019,6 +1022,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
             "Coaching op de baan tijdens de ronde",
+            "Nabespreking, video en schriftelijke notities",
             "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "button": "Aanvragen →",
@@ -1129,8 +1133,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Wilt u dit in uw reis opnemen?",
       "title": "Geef me uw data en ik adviseer u het juiste format.",
       "body": "Stuur me de data, de groepsgrootte, het handicapbereik en de banen die u overweegt. Ik vertel u of Play With A Pro het best werkt als losse dag of als onderdeel van een geplande reis.",
-      "primaryCta": "Plan uw reis →",
-      "primaryHref": "/nl/plan-your-trip",
+      "primaryCta": "Vraag uw golfdag aan →",
+      "primaryHref": "/nl/contact?service=pwap",
       "secondaryCta": "Bericht via WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Hallo%20Andy%2C%20ik%20heb%20interesse%20in%20een%20golfdag%20in%20Mallorca.",
       "tertiaryCta": "Ontdek de banen →",
@@ -1200,8 +1204,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Banstrategi, slagval och beslutsfattande i de ögonblick då det spelar roll. Ingen ständig kommentar, bara rätt iakttagelser vid rätt tillfälle."
         ],
         [
-          "Genomgång efter rundan",
-          "Vad som förändrades under rundan, vad du tar med dig och vad du bör arbeta med härnäst."
+          "Samtal efter rundan, video och skriftliga anteckningar",
+          "Efter rundan pratar vi igenom hur det gick. Jag skickar en video och skriftliga anteckningar om vad som förändrades och vad du kan arbeta med härnäst."
         ]
       ]
     },
@@ -1287,7 +1291,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
             "Coaching på banan under rundan",
-            "Genomgång och nästa steg",
+            "Samtal efter rundan, video och skriftliga anteckningar",
             "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "button": "Förfrågan →",
@@ -1303,6 +1307,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
             "Coaching på banan under rundan",
+            "Samtal efter rundan, video och skriftliga anteckningar",
             "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "button": "Förfrågan →",
@@ -1413,8 +1418,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "Vill du ha med det här i din resa?",
       "title": "Berätta dina datum så rekommenderar jag rätt upplägg.",
       "body": "Skicka datum, gruppstorlek, handicapintervall och de banor du överväger. Jag berättar om Play With A Pro fungerar bäst som en fristående dag eller som en del av en planerad resa.",
-      "primaryCta": "Planera din resa →",
-      "primaryHref": "/sv/plan-your-trip",
+      "primaryCta": "Fråga om din golfdag →",
+      "primaryHref": "/sv/contact?service=pwap",
       "secondaryCta": "Skriv på WhatsApp",
       "secondaryHref": "https://wa.me/34624466702?text=Hej%20Andy%2C%20jag%20%C3%A4r%20intresserad%20av%20en%20golfdag%20p%C3%A5%20Mallorca.",
       "tertiaryCta": "Utforska banorna →",
@@ -1484,8 +1489,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "在关键时刻给出球场管理、击球选择和决策方面的指导。不是不停地评论，只在恰当的时间给出恰当的观察。"
         ],
         [
-          "赛后复盘",
-          "这一轮球中发生了什么变化，您应该带走什么，以及接下来该练什么。"
+          "赛后交流、视频和书面笔记",
+          "打完后我们会一起回顾这一轮球。我会发送视频和书面笔记，说明有哪些变化，以及接下来可以练习什么。"
         ]
       ]
     },
@@ -1571,7 +1576,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "开球时间已预订并安排妥当",
             "与我同打 18 洞",
             "球场实战指导贯穿全程",
-            "赛后总结与后续建议",
+            "赛后交流、视频和书面笔记",
             "可加订私人开球时段，按成本价收取"
           ],
           "button": "立即咨询 →",
@@ -1587,6 +1592,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "开球时间已预订并安排妥当",
             "与我同打 18 洞",
             "球场实战指导贯穿全程",
+            "赛后交流、视频和书面笔记",
             "可加订私人开球时段，按成本价收取"
           ],
           "button": "立即咨询 →",
@@ -1697,8 +1703,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "eyebrow": "想把这一天放进您的行程吗？",
       "title": "告诉我您的日期，我会推荐合适的形式。",
       "body": "请发给我日期、人数、差点范围，以及您在考虑的球场。我会告诉您，Play With A Pro 更适合作为单独的一天，还是作为规划行程的一部分。",
-      "primaryCta": "了解行程规划 →",
-      "primaryHref": "/zh/plan-your-trip",
+      "primaryCta": "咨询您的高尔夫日 →",
+      "primaryHref": "/zh/contact?service=pwap",
       "secondaryCta": "通过 WhatsApp 联系",
       "secondaryHref": "https://wa.me/34624466702?text=%E6%82%A8%E5%A5%BD%20Andy%EF%BC%8C%E6%88%91%E5%AF%B9%E9%A9%AC%E7%95%A5%E5%8D%A1%E9%AB%98%E5%B0%94%E5%A4%AB%E4%B9%8B%E6%97%85%E6%84%9F%E5%85%B4%E8%B6%A3%E3%80%82",
       "tertiaryCta": "查看球场 →",

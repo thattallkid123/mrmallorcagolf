@@ -4044,7 +4044,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "En campos más montañosos como Bendinat, Andratx o Son Vida, coge buggy: las subidas entre hoyos son fuertes y en Andratx es obligatorio antes de las 14:00 de todos modos. En los más llanos (Son Antem, Maioris, Santa Ponsa y otros), un trolley puede bastar si te apetece hacer ejercicio."
         },
         {
-          "caption": "Los buggies suelen costar 35-48 € por vuelta"
+          "caption": "Los buggies suelen costar 35-55 € por vuelta"
         },
         {
           "text": "Comida y bebida"
@@ -4178,13 +4178,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Buggies und Trolleys"
         },
         {
-          "text": "Golfbuggies kosten je nach Platz 35-48 €. Son Gual verlangt 45 €, Alcanada 48 € - die GPS-Modelle liefern Yardages und Lochübersichten. Zieh-Trolleys 6-8 €. Elektro-Trolleys 14-25 €."
+          "text": "Golfbuggies kosten je nach Platz 35-55 €. Son Gual verlangt 45 €, Alcanada 48 € - die GPS-Modelle liefern Yardages und Lochübersichten. Zieh-Trolleys 6-8 €. Elektro-Trolleys 14-25 €."
         },
         {
           "text": "Auf hügeligeren Plätzen wie Bendinat, Andratx oder Son Vida nehmen Sie einen Buggy: Die Anstiege zwischen den Löchern sind steil, und in Andratx ist er vor 14 Uhr ohnehin Pflicht. Auf den flacheren Plätzen (Son Antem, Maioris, Santa Ponsa und weitere) reicht ein Trolley, wenn Sie gern Bewegung haben."
         },
         {
-          "caption": "Buggies kosten pro Runde meist 35-48 €"
+          "caption": "Buggies kosten pro Runde meist 35-55 €"
         },
         {
           "text": "Essen und Trinken"
@@ -4324,7 +4324,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Sur les parcours vallonnés comme Bendinat, Andratx ou Son Vida, prenez une voiturette : les montées entre les trous sont raides, et à Andratx elle est de toute façon obligatoire avant 14 h. Sur les parcours plus plats (Son Antem, Maioris, Santa Ponsa et d'autres), un chariot suffit si vous aimez marcher."
         },
         {
-          "caption": "Les voiturettes coûtent en général €35-48 par partie"
+          "caption": "Les voiturettes coûtent en général €35-55 par partie"
         },
         {
           "text": "Restauration"
@@ -4458,13 +4458,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Buggys en trolleys"
         },
         {
-          "text": "Golfbuggys kosten €35-48 afhankelijk van de baan. Son Gual vraagt €45, Alcanada €48. De GPS-modellen geven afstanden en holekaarten. Trektrolley: €6-8. Elektrische trolley: €14-25."
+          "text": "Golfbuggys kosten €35-55 afhankelijk van de baan. Son Gual vraagt €45, Alcanada €48. De GPS-modellen geven afstanden en holekaarten. Trektrolley: €6-8. Elektrische trolley: €14-25."
         },
         {
           "text": "Op heuvelachtigere banen als Bendinat, Andratx of Son Vida neem je een buggy: de klimmen tussen de holes zijn steil, en op Andratx is hij voor 14.00 uur sowieso verplicht. Op de vlakkere banen (Son Antem, Maioris, Santa Ponsa en meer) is een trolley prima als je zin hebt in beweging."
         },
         {
-          "caption": "Buggys kosten meestal €35-48 per ronde"
+          "caption": "Buggys kosten meestal €35-55 per ronde"
         },
         {
           "text": "Eten en drinken"
@@ -4598,13 +4598,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Buggy och trolley"
         },
         {
-          "text": "Golfbuggy kostar €35-48 beroende på bana. Son Gual tar €45, Alcanada €48. GPS-modellerna ger avstånd och hålkartor. Dragvagn: €6-8. Elektrisk trolley: €14-25."
+          "text": "Golfbuggy kostar €35-55 beroende på bana. Son Gual tar €45, Alcanada €48. GPS-modellerna ger avstånd och hålkartor. Dragvagn: €6-8. Elektrisk trolley: €14-25."
         },
         {
           "text": "På kuperade banor som Bendinat, Andratx eller Son Vida, ta en golfbil: backarna mellan hålen är branta, och på Andratx är den ändå obligatorisk före 14.00. På de plattare banorna (Son Antem, Maioris, Santa Ponsa med flera) funkar en vagn bra om du vill ha motion."
         },
         {
-          "caption": "Buggy kostar vanligtvis €35-48 per rond"
+          "caption": "Buggy kostar vanligtvis €35-55 per rond"
         },
         {
           "text": "Mat och dryck"
@@ -4738,13 +4738,13 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "球车与手推车"
         },
         {
-          "text": "球车一般€35-48（约¥270-375）。Son Gual是€45，Alcanada是€48。带GPS的车型会给你距离和球洞地图。普通手推车€6-8，电动手推车€14-25。"
+          "text": "球车一般€35-55。Son Gual是€45，Alcanada是€48。带GPS的车型会给你距离和球洞地图。普通手推车€6-8，电动手推车€14-25。"
         },
         {
           "text": "在 Bendinat、Andratx 或 Son Vida 这类起伏较大的球场，建议用球车：洞与洞之间的上坡很陡，而 Andratx 下午 2 点前本来就必须用球车。在较平坦的球场（Son Antem、Maioris、Santa Ponsa 等），如果你想运动一下，手推车也完全够用。"
         },
         {
-          "caption": "一轮球的球车费用通常在€35-48之间"
+          "caption": "一轮球的球车费用通常在€35-55之间"
         },
         {
           "text": "餐饮"

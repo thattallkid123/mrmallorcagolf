@@ -1,4 +1,5 @@
 import { Resend } from 'resend'
+import { openEnquiry } from '../../../lib/enquiry-context.js'
 
 import {
   checkRateLimit,
@@ -74,6 +75,15 @@ export async function POST(request) {
     if (payload?.website) return Response.json({ ok: true })
 
     const enquiryRef = sanitizeText(payload?.enquiryRef, 36)
+    const original = payload?.enquiryContext ? openEnquiry(enquiryRef, payload.enquiryContext) : null
+    if (payload?.action === 'load-enquiry') {
+      return original
+        ? Response.json({ ok: true, enquiry: original }, { headers: { 'Cache-Control': 'private, no-store' } })
+        : Response.json({ ok: false, error: 'This enquiry link is unavailable. Please ask Andy for help.' }, { status: 404, headers: { 'Cache-Control': 'no-store' } })
+    }
+    if (payload?.enquiryContext && !original) {
+      return Response.json({ ok: false, error: 'This enquiry link is unavailable. Please ask Andy for help.' }, { status: 400 })
+    }
     const name = sanitizeText(payload?.contact?.name, 120)
     const email = sanitizeText(payload?.contact?.email, 160).toLowerCase()
     if (!/^[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}$/i.test(enquiryRef) || !name || !isValidEmail(email)) {
@@ -117,10 +127,11 @@ export async function POST(request) {
 
     const html = `<div style="font-family:Arial,sans-serif;max-width:680px;margin:auto;color:#2c2a27;padding:24px">
       <h2 style="color:#2d4a3e">Trip preferences from ${escapeHtml(name)}</h2>
-      <p>Call preparation for Andy. Read alongside the first enquiry using the reference below. The original record is not loaded by this questionnaire.</p>
+      <p>Call preparation for Andy. Read alongside the first enquiry using the reference below. ${original ? 'The original enquiry is included below; client updates are listed separately.' : 'The original record is not loaded by this questionnaire.'}</p>
       <p>These are client preferences. Confirm the shortlist on the call before asking Shane to check options and prices.</p>
       ${section('What would make it a success', [row('In their words', success || 'Not added; ask first on the call')])}
       ${section('Match to the first enquiry', [row('Enquiry reference', enquiryRef), row('Name', name), row('Email', email), row('Questionnaire language', questionnaireLang)])}
+      ${original ? section('Original enquiry', [row('Name', original.name), row('Email', original.email), row('Dates as requested', original.dates), row('Group size as requested', original.groupsize), row('Handicap', original.handicap), row('Courses in mind', original.courses), row('Hotel help', original.hotelHelp), row('Main enquiry', original.service), row('Play With A Pro format', original.format), row('Message', original.message)]) : ''}
       ${section('Group and golf updates', [
         row('Trip type', pick('tripType', trip.tripType)),
         row('Date update', [arrival, departure].filter(Boolean).join(' to ') || 'Use dates from first enquiry'), row('Flexibility', pick('dateFlex', trip.dateFlex)),

@@ -10,6 +10,7 @@ test('planning, playing and Signature Day have clear routes into enquiry', async
   await expect(page.getByRole('radio', { name: 'Book tee times for my group' })).toBeChecked()
 
   await page.goto('/play-with-a-pro', { waitUntil: 'networkidle' })
+  await expect(page.getByRole('link', { name: 'Enquire About Your Day →', exact: true })).toHaveAttribute('href', '/contact?service=pwap')
   const signatureLink = page.locator('.pwap-summary__signature a')
   await expect(signatureLink).toHaveAttribute('href', '/signature-day')
   await signatureLink.click()

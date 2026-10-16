@@ -409,7 +409,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
         </div>
       </div>
 
-      {lang === 'en' && <ToolTrustLine locale={lang} />}
+      <ToolTrustLine locale={lang} />
 
       <main className="gf-main">
         <div className="gf-disclaimer">
@@ -582,7 +582,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
         <div className="gf-selcta">
           <h2>{t.cta.courseSelector.title}</h2>
           <p>{t.cta.courseSelector.desc}</p>
-          <Link href="/tools/course-selector">{t.cta.courseSelector.link}</Link>
+          <Link href={buildLocalePath('/tools/course-selector', lang)}>{t.cta.courseSelector.link}</Link>
         </div>
 
         <div className="gf-contact">

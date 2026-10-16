@@ -27,7 +27,7 @@ for (const tool of ['course-selector', 'handicap-checker', 'green-fees', 'hotel-
         return (Math.max(f, b) + .05) / (Math.min(f, b) + .05)
       })
     })
-    expect(ratios).toHaveLength(2)
+    expect(ratios).toHaveLength(3)
     for (const ratio of ratios) expect(ratio).toBeGreaterThanOrEqual(4.5)
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
   })

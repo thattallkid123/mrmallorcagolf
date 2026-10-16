@@ -244,7 +244,7 @@ window.MMGTripCatalog = {
       "tag": "Free afternoon",
       "title": "Beach club",
       "detail": "Sunbeds, a pool and lunch that can stretch into the afternoon.",
-      "facts": "Calvià · April to September",
+      "facts": "Calvià · Seasonal opening",
       "note": "Works after a morning round or on a day off. Book sunbeds ahead in summer so the group can stay together.",
       "image": "card-do-beach.webp",
       "source": "https://www.nikkibeach.com/mallorca/",

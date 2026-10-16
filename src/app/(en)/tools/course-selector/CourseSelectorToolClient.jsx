@@ -807,7 +807,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         )}
       </section>
 
-      {lang === 'en' && <ToolTrustLine locale={lang} />}
+      <ToolTrustLine locale={lang} />
 
       <div className="cst-wrap">
 
@@ -914,7 +914,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
                       {t.results.enquire}
                     </a>
                     {c.reviewSlug && (
-                      <a className="cst-cc-review" href={`${SITE}/guides/${c.reviewSlug}`}>
+                      <a className="cst-cc-review" href={buildLocalePath(`/guides/${c.reviewSlug}`, lang)}>
                         {t.results.readReview}
                       </a>
                     )}
@@ -965,10 +965,10 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
               const extras = answers.extras || []
               const items = []
               if (extras.includes('hotel')) items.push(
-                <a key="hotel" href="/tools/hotel-recommender" className="cst-btn gold" style={{ padding:'12px 22px', fontSize:'.82rem', display:'block', textAlign:'center', marginBottom:'8px' }}>{t.results.hotelCta}</a>
+                <a key="hotel" href={buildLocalePath('/tools/hotel-recommender', lang)} className="cst-btn gold" style={{ padding:'12px 22px', fontSize:'.82rem', display:'block', textAlign:'center', marginBottom:'8px' }}>{t.results.hotelCta}</a>
               )
               if (extras.includes('coaching')) items.push(
-                <a key="coaching" href={`${SITE}/play-with-a-pro`} target="_blank" rel="noopener" className="cst-btn" style={{ padding:'12px 22px', fontSize:'.82rem', display:'block', textAlign:'center', marginBottom:'8px' }}>{t.results.coachingCta}</a>
+                <a key="coaching" href={buildLocalePath('/play-with-a-pro', lang)} target="_blank" rel="noopener" className="cst-btn" style={{ padding:'12px 22px', fontSize:'.82rem', display:'block', textAlign:'center', marginBottom:'8px' }}>{t.results.coachingCta}</a>
               )
               if (!items.length) return null
               return (
@@ -1044,11 +1044,11 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
               <div className="cst-cta-stack">
                 <a className="cst-btn gold" href={`${SITE}${planTripPath(lang)}`}>{t.results.email.planCta}</a>
                 {lang !== 'zh' && <WhatsAppCta label={t.results.email.whatsappCta} />}
-                <a className="cst-btn" style={{ background:'transparent', border:'1px solid #2D4A3E', color:'#2D4A3E' }} href={`${SITE}/play-with-a-pro`}>{t.results.email.pwapCta}</a>
+                <a className="cst-btn" style={{ background:'transparent', border:'1px solid #2D4A3E', color:'#2D4A3E' }} href={buildLocalePath('/play-with-a-pro', lang)}>{t.results.email.pwapCta}</a>
               </div>
 
               <div style={{ marginTop:'20px', fontSize:'.8rem', letterSpacing:'.04em' }}>
-                <a href={`${SITE}/golf-courses`} style={{ color:'#B8973C', textDecoration:'underline', textUnderlineOffset:'3px' }}>{t.results.email.allCourses}</a>
+                <a href={buildLocalePath('/golf-courses', lang)} style={{ color:'#B8973C', textDecoration:'underline', textUnderlineOffset:'3px' }}>{t.results.email.allCourses}</a>
               </div>
             </div>
 

@@ -267,11 +267,9 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
         <p className="hr-sub">{t.hero.sub}</p>
       </section>
 
-      {lang === 'en' && (
-        <div className="hr-trust-wrap">
+      <div className="hr-trust-wrap">
           <ToolTrustLine locale={lang} />
         </div>
-      )}
 
       {/* PROGRESS */}
       <div className="hr-progress-wrap">

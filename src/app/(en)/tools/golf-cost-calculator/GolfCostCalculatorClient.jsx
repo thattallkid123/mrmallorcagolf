@@ -355,7 +355,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         <p className="gcc-sub">{t.hero.sub}</p>
       </section>
 
-      {lang === 'en' && <ToolTrustLine locale={lang} />}
+      <ToolTrustLine locale={lang} />
 
       <div className="gcc-wrap">
         {/* PROGRESS */}
@@ -638,12 +638,12 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                 <a
                   className="gcc-btn primary"
                   style={{ background:'#3D6455' }}
-                  href="https://www.mrmallorcagolf.com/play-with-a-pro"
+                  href={buildLocalePath('/play-with-a-pro', lang)}
                   target="_blank"
                   rel="noopener"
                 >{t.email.golfDay}</a>
                 <a
-                  href="https://www.mrmallorcagolf.com/guides"
+                  href={buildLocalePath('/guides', lang)}
                   target="_blank"
                   rel="noopener"
                   style={{ display:'block', textAlign:'center', color:'#D4B068', fontFamily:'var(--font-sans)', fontSize:'13px', marginTop:'12px', fontWeight:'400' }}
@@ -658,9 +658,9 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
               <div className="gcc-tools-panel">
                 <div className="gcc-tools-panel__label">{t.tools.label}</div>
                 <div className="gcc-tools-panel__links">
-                  <a href="/tools/course-selector" className="gcc-tools-panel__link">{t.tools.selector}</a>
-                  <a href="/tools/hotel-recommender" className="gcc-tools-panel__link">{t.tools.hotelRecommender}</a>
-                  <a href="/tools/golf-day-builder" className="gcc-tools-panel__link">{t.tools.golfDay}</a>
+                  <a href={buildLocalePath('/tools/course-selector', lang)} className="gcc-tools-panel__link">{t.tools.selector}</a>
+                  <a href={buildLocalePath('/tools/hotel-recommender', lang)} className="gcc-tools-panel__link">{t.tools.hotelRecommender}</a>
+                  <a href={buildLocalePath('/tools/golf-day-builder', lang)} className="gcc-tools-panel__link">{t.tools.golfDay}</a>
                 </div>
               </div>
 

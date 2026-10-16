@@ -369,7 +369,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         <p className="sub">{t.hero.sub}</p>
       </section>
 
-      {lang === 'en' && <ToolTrustLine locale={lang} />}
+      <ToolTrustLine locale={lang} />
 
       <main className="hc-main">
         <section className="hc-panel">
@@ -514,7 +514,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
               </div>
             )}
 
-            <p className="hc-selector">{t.selector} <Link href="/tools/course-selector">{t.selectorLink}</Link></p>
+            <p className="hc-selector">{t.selector} <Link href={buildLocalePath('/tools/course-selector', lang)}>{t.selectorLink}</Link></p>
 
             <p className="hc-foot">{t.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
           </section>

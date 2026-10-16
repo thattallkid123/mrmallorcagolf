@@ -9,13 +9,13 @@ const data = {
    "pills": [
     "En el campo",
     "Spa",
-    "Cocina Michelin"
+    "Resort de golf"
    ],
-   "why": "Son Vida, Son Quint y Son Muntaner (mejor campo de golf de España 2025) están dentro de la finca. T Golf Calvià está a 10 minutos. Despertarse, jugar, comer, recuperarse.",
-   "andy": "La respuesta por defecto para un grupo centrado en el golf que quiere tenerlo todo resuelto. Es Fum, con una estrella Michelin, está en el propio hotel. Puerto Portals queda a unos 15 minutos en coche para salir por la noche.",
+   "why": "Una base junto a Son Vida, con Son Muntaner y Son Quint cerca.",
+   "andy": "Una base para el golf con spa y restaurantes en el hotel. Palma queda al alcance para salir por la noche.",
    "golf": "En la finca: Son Vida, Son Quint, Son Muntaner (mejor de España 2025). T Golf Calvià 10 min. Real Golf de Bendinat 15 min. grupo de Santa Ponsa 20 min.",
    "travelTime": "15 min del aeropuerto de Palma",
-   "subname": "Sheraton Collection"
+   "subname": "Son Vida"
   },
   "gran-melia-de-mar": {
    "pills": [
@@ -322,15 +322,15 @@ const data = {
   },
   "la-goleta": {
    "pills": [
-    "Cala Sant Vicenç",
-    "Gama media",
-    "Acceso a la playa"
+    "Solo adultos",
+    "Boutique",
+    "Frente al mar"
    ],
-   "why": "Hotel de gama media en la preciosa Cala de Sant Vicenç, la misma pequeña bahía que el cinco estrellas El Vicenç. Una fracción del precio con la misma playa y Alcanada a 20 minutos.",
-   "andy": "Cala de Sant Vicenç es uno de los rincones más bonitos del norte. La Goleta le da la ubicación sin el precio del lujo.",
+   "why": "Hotel boutique solo para adultos frente al mar en Port de Pollença. Una base en el norte para Alcanada y Golf Pollença.",
+   "andy": "Una opción para adultos que quieran combinar la playa y los restaurantes de Port de Pollença con golf en el norte.",
    "golf": "Club de Golf Alcanada 20 min. Golf Pollença 10 min.",
    "travelTime": "52 min del aeropuerto de Palma",
-   "subname": "Cala de Sant Vicenç"
+   "subname": "Port de Pollença"
   },
   "north-villa-small": {
    "pills": [

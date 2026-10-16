@@ -9,13 +9,13 @@ const data = {
    "pills": [
     "Vid banan",
     "Spa",
-    "Michelinmat"
+    "Golfresort"
    ],
-   "why": "Son Vida, Son Quint och Son Muntaner (Spaniens bästa golfbana 2025) ligger alla på området. T Golf Calvià är 10 minuter bort. Vakna, spela, äta, återhämta dig.",
-   "andy": "Standardsvaret för en golffokuserad grupp som vill ha allt ordnat. Es Fum, med en Michelinstjärna, ligger på hotellet. Puerto Portals ligger cirka 15 minuter bort med bil för en kväll ute.",
+   "why": "En bas vid Son Vida, med Son Muntaner och Son Quint i närheten.",
+   "andy": "En bas för golf med spa och restauranger på hotellet. Palma ligger inom räckhåll för kvällarna.",
    "golf": "På området: Son Vida, Son Quint, Son Muntaner (bäst i Spanien 2025). T Golf Calvià 10 min. Real Golf de Bendinat 15 min. Santa Ponsa-området 20 min.",
    "travelTime": "15 min från Palmas flygplats",
-   "subname": "Sheraton Collection"
+   "subname": "Son Vida"
   },
   "gran-melia-de-mar": {
    "pills": [
@@ -322,15 +322,15 @@ const data = {
   },
   "la-goleta": {
    "pills": [
-    "Cala Sant Vicenç",
-    "Mellanklass",
-    "Tillgång till stranden"
+    "Endast vuxna",
+    "Boutique",
+    "Vid havet"
    ],
-   "why": "Hotell i mellanklassen i vackra Cala de Sant Vicenç, samma lilla vik som femstjärnshotellet El Vicenç. En bråkdel av priset med samma strand och Alcanada 20 minuter bort.",
-   "andy": "Cala de Sant Vicenç är en av de vackraste platserna i norr. La Goleta ger dig läget utan lyxprislappen.",
+   "why": "Boutiquehotell endast för vuxna vid havet i Port de Pollença. En bas i norr för Alcanada och Golf Pollença.",
+   "andy": "Ett val för vuxna som vill kombinera stranden och restaurangerna i Port de Pollença med golf i norr.",
    "golf": "Club de Golf Alcanada 20 min. Golf Pollença 10 min.",
    "travelTime": "52 min från Palmas flygplats",
-   "subname": "Cala de Sant Vicenç"
+   "subname": "Port de Pollença"
   },
   "north-villa-small": {
    "pills": [
