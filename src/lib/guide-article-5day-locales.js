@@ -236,7 +236,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Wo der Luxus-Teil hineinpasst"
       },
       {
-        "text": "Das Golf ist das Rückgrat der Reise. Darum herum können Sie einen Abend mit Privatkoch, ein langes Abendessen in Palma, einen Weinbergbesuch, Spa-Zeit, eine Küstenfahrt durch die Tramuntana oder einen ruhigen Nachmittag zwischen den härteren Runden einbauen. Ich würde das dort einplanen, wo es dem Rhythmus der Woche hilft. Wenn Sie einen Ruhetag möchten, würde ich ihn nach Son Gual legen, vor die lange Fahrt in den Norden. Der Zug nach Sóller, ein halber Tag auf einem Boot oder eine Weinprobe bei Bodega Ribas passen dort gut hinein, und weitere Möglichkeiten finden Sie unter <a href=\"/plan-your-trip#trip-ideas\">Ideen für die Reise</a>. Das alles bucht mein lokaler Reisepartner direkt."
+        "text": "Das Golf ist das Rückgrat der Reise. Darum herum können Sie einen Abend mit Privatkoch, ein langes Abendessen in Palma, einen Weinbergbesuch, Spa-Zeit, eine Küstenfahrt durch die Tramuntana oder einen ruhigen Nachmittag zwischen den härteren Runden einbauen. Ich würde das dort einplanen, wo es dem Rhythmus der Woche hilft. Wenn Sie einen Ruhetag möchten, würde ich ihn nach Son Gual legen, vor die lange Fahrt in den Norden. Der Zug nach Sóller, ein halber Tag auf einem Boot oder eine Weinprobe bei Bodega Ribas passen dort gut hinein, und weitere Möglichkeiten finden Sie unter <a href=\"/plan-your-trip#trip-ideas\">Ideen für die Reise</a>. Mein lokaler Reisepartner kann bei der Organisation helfen. Wir vereinbaren die Einzelheiten vor der Buchung."
       },
       {
         "alt": "Gehobenes Essen in Palma während einer Golfreise auf Mallorca",
@@ -510,7 +510,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Dónde encaja la parte de lujo"
       },
       {
-        "text": "El golf es la columna vertebral del viaje. A su alrededor puedes añadir una noche con chef privado, una cena larga en Palma, una visita a una bodega, tiempo de spa, un recorrido costero por la Tramuntana o una tarde tranquila entre las vueltas más duras. Los añadiría donde ayuden al ritmo de la semana. Si quieres un día de descanso, lo pondría después de Son Gual, antes del largo trayecto al norte. El tren de Sóller, medio día en barco o una cata en Bodega Ribas encajan ahí, y hay más en las <a href=\"/plan-your-trip#trip-ideas\">ideas para el viaje</a>. Mi socio de viajes local reserva todo eso directamente."
+        "text": "El golf es la columna vertebral del viaje. A su alrededor puedes añadir una noche con chef privado, una cena larga en Palma, una visita a una bodega, tiempo de spa, un recorrido costero por la Tramuntana o una tarde tranquila entre las vueltas más duras. Los añadiría donde ayuden al ritmo de la semana. Si quieres un día de descanso, lo pondría después de Son Gual, antes del largo trayecto al norte. El tren de Sóller, medio día en barco o una cata en Bodega Ribas encajan ahí, y hay más en las <a href=\"/plan-your-trip#trip-ideas\">ideas para el viaje</a>. Mi colaborador local puede ayudar a organizarlas. Acordamos los detalles antes de reservar."
       },
       {
         "alt": "Cena de alto nivel en Palma durante un viaje de golf a Mallorca",
@@ -784,7 +784,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Où se place la partie luxe"
       },
       {
-        "text": "Le golf est la colonne vertébrale du séjour. Autour, vous pouvez ajouter une soirée avec chef privé, un long dîner à Palma, une visite de vignoble, un moment au spa, une route côtière dans la Tramuntana ou un après-midi tranquille entre les parties les plus dures. Je les ajouterais là où ils aident le rythme de la semaine. Si vous voulez une journée de repos, je la placerais après Son Gual, avant le long trajet vers le nord. Le train de Sóller, une demi-journée en bateau ou une dégustation à Bodega Ribas s'y prêtent bien, et vous en trouverez d'autres dans les <a href=\"/plan-your-trip#trip-ideas\">idées de voyage</a>. Mon partenaire de voyage local réserve tout cela directement."
+        "text": "Le golf est la colonne vertébrale du séjour. Autour, vous pouvez ajouter une soirée avec chef privé, un long dîner à Palma, une visite de vignoble, un moment au spa, une route côtière dans la Tramuntana ou un après-midi tranquille entre les parties les plus dures. Je les ajouterais là où ils aident le rythme de la semaine. Si vous voulez une journée de repos, je la placerais après Son Gual, avant le long trajet vers le nord. Le train de Sóller, une demi-journée en bateau ou une dégustation à Bodega Ribas s'y prêtent bien, et vous en trouverez d'autres dans les <a href=\"/plan-your-trip#trip-ideas\">idées de voyage</a>. Mon partenaire local peut aider à les organiser. Nous convenons des détails avant réservation."
       },
       {
         "alt": "Dîner haut de gamme à Palma pendant un voyage de golf à Majorque",
@@ -1058,7 +1058,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Waar het luxe deel past"
       },
       {
-        "text": "Het golf is de ruggengraat van de reis. Eromheen kun je een avond met een privékok toevoegen, een lang diner in Palma, een wijngaardbezoek, spatijd, een kustrit door de Tramuntana of een rustige middag tussen de zwaardere rondes. Ik zou die toevoegen waar ze het ritme van de week helpen. Wil je een rustdag, dan zou ik die na Son Gual plaatsen, vóór de lange rit naar het noorden. De trein naar Sóller, een halve dag op een boot of een proeverij bij Bodega Ribas passen daar goed, en er zijn meer opties bij de <a href=\"/plan-your-trip#trip-ideas\">reisideeën</a>. Mijn lokale reispartner boekt dat allemaal rechtstreeks."
+        "text": "Het golf is de ruggengraat van de reis. Eromheen kun je een avond met een privékok toevoegen, een lang diner in Palma, een wijngaardbezoek, spatijd, een kustrit door de Tramuntana of een rustige middag tussen de zwaardere rondes. Ik zou die toevoegen waar ze het ritme van de week helpen. Wil je een rustdag, dan zou ik die na Son Gual plaatsen, vóór de lange rit naar het noorden. De trein naar Sóller, een halve dag op een boot of een proeverij bij Bodega Ribas passen daar goed, en er zijn meer opties bij de <a href=\"/plan-your-trip#trip-ideas\">reisideeën</a>. Mijn lokale reispartner kan helpen dit te regelen. We spreken de details vóór het boeken af."
       },
       {
         "alt": "Luxe dineren in Palma tijdens een golfreis naar Mallorca",
@@ -1332,7 +1332,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Var lyxdelen passar in"
       },
       {
-        "text": "Golfen är ryggraden i resan. Runt den kan du lägga till en kväll med privatkock, en lång middag i Palma, ett vingårdsbesök, spatid, en kustresa genom Tramuntana eller en lugn eftermiddag mellan de tuffare rundorna. Jag skulle lägga in dem där de hjälper veckans rytm. Vill du ha en vilodag skulle jag lägga den efter Son Gual, före den långa resan norrut. Sóllertåget, en halv dag på en båt eller en provsmakning på Bodega Ribas passar där, och fler idéer finns bland <a href=\"/plan-your-trip#trip-ideas\">residéerna</a>. Min lokala resepartner bokar allt det direkt."
+        "text": "Golfen är ryggraden i resan. Runt den kan du lägga till en kväll med privatkock, en lång middag i Palma, ett vingårdsbesök, spatid, en kustresa genom Tramuntana eller en lugn eftermiddag mellan de tuffare rundorna. Jag skulle lägga in dem där de hjälper veckans rytm. Vill du ha en vilodag skulle jag lägga den efter Son Gual, före den långa resan norrut. Sóllertåget, en halv dag på en båt eller en provsmakning på Bodega Ribas passar där, och fler idéer finns bland <a href=\"/plan-your-trip#trip-ideas\">residéerna</a>. Min lokala resepartner kan hjälpa till att ordna det. Vi kommer överens om detaljerna före bokning."
       },
       {
         "alt": "Exklusiv middag i Palma under en golfresa på Mallorca",
@@ -1606,7 +1606,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "奢华的部分放在哪里"
       },
       {
-        "text": "高尔夫是整趟行程的主干。围绕它，你可以加入一晚私人厨师晚宴、一顿不赶时间的帕尔马晚餐、一次酒庄参观、水疗时光、一段穿越特拉蒙塔纳山的海岸驾驶，或者在两轮较难的球之间安排一个安静的下午。我会把这些放在能帮助一周节奏的位置。如果你想要一个休息日，我会放在 Son Gual 之后、北上长途驾驶之前。Sóller 小火车、半天出海，或者在 Bodega Ribas 的一次品酒都很合适，更多想法见<a href=\"/plan-your-trip#trip-ideas\">行程灵感</a>。这些由我的本地旅行合作伙伴直接预订。"
+        "text": "高尔夫是整趟行程的主干。围绕它，你可以加入一晚私人厨师晚宴、一顿不赶时间的帕尔马晚餐、一次酒庄参观、水疗时光、一段穿越特拉蒙塔纳山的海岸驾驶，或者在两轮较难的球之间安排一个安静的下午。我会把这些放在能帮助一周节奏的位置。如果你想要一个休息日，我会放在 Son Gual 之后、北上长途驾驶之前。Sóller 小火车、半天出海，或者在 Bodega Ribas 的一次品酒都很合适，更多想法见<a href=\"/plan-your-trip#trip-ideas\">行程灵感</a>。我的本地旅行合作伙伴可以协助安排这些活动。我们会在预订前确认细节。"
       },
       {
         "alt": "马略卡高尔夫行程中在帕尔马的高端晚餐",

@@ -38,11 +38,11 @@ how the pieces fit together; this file only tracks which surface has which statu
 | Surface | Status |
 |---|---|
 | `src/app/api/lead-magnet-signup/route.js` | ✅ No hardcoded price |
-| `public/downloads/trip-planner.pdf` | ⚠️ Manual — original tracked version. No PWAP price in extracted text |
-| `public/downloads/cost-guide.pdf` | ⚠️ Manual — original tracked version. €950 in text = green fee range, not PWAP |
-| `public/downloads/course-comparison.pdf` | ⚠️ Manual — original tracked version. No PWAP price in extracted text |
-| `public/downloads/beginners-guide.pdf` | ⚠️ Manual — original tracked version. No PWAP price in extracted text |
-| `scripts/generate-lead-magnet-pdfs.py` | Check if PWAP price is hardcoded |
+| `public/downloads/trip-planner.pdf` | Generated from course/access/logistics masters; embedded fingerprint checked by `check:lead-magnet-prices` |
+| `public/downloads/cost-guide.pdf` | Generated from course/access/logistics masters; embedded fingerprint checked by `check:lead-magnet-prices` |
+| `public/downloads/course-comparison.pdf` | Generated from course/access/logistics masters; embedded fingerprint checked by `check:lead-magnet-prices` |
+| `public/downloads/beginners-guide.pdf` | Generated from course/access/logistics masters; embedded fingerprint checked by `check:lead-magnet-prices` |
+| `scripts/generate-lead-magnet-pdfs.py` | Imports canonical data through `scripts/export-lead-magnet-data.mjs`; regenerate and render after course-data changes |
 | MailerLite live form copy | ❌ Manual update needed — check MailerLite dashboard |
 | MailerLite nurture email sequence | ❌ Manual update needed — check MailerLite dashboard |
 

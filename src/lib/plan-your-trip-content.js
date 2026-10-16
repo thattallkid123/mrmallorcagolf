@@ -6,10 +6,10 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   en: {
   "heroEyebrow": "Plan Your Mallorca Golf Trip",
   "heroTitle": "The right Mallorca courses, in the right order.",
-  "heroBody": "I choose and book the courses and tee times for your group, with buggies and rentals arranged before you arrive. You play the rounds on your own schedule. For the whole trip, I also work with a trusted local travel partner on the hotel, transfers, restaurants and days off. If you want me alongside you for a day, add Play With A Pro.",
+  "heroBody": "I choose and book courses and tee times for your group. For hotels, transfers, restaurants and days off, I work with a trusted local travel partner.",
   "options": {
     "itineraryLabel": "Sample trip",
-    "itineraryTitle": "See a real 5-day week",
+    "itineraryTitle": "See a sample five-day trip",
     "itineraryNote": "A Palma-based route and the thinking behind it.",
     "basicLabel": "Free",
     "basicTitle": "Course finder",
@@ -26,7 +26,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   "professional": {
     "eyebrow": "Personal",
     "title": "Let me plan and book the golf side of your trip",
-    "body": "Send me your dates, group size, and what you want from the trip. I will recommend the right courses for your group, work out the routing and number of rounds, book and confirm the tee times, arrange buggies and club rentals, and shape the golf days so the trip runs cleanly from start to finish.",
+    "body": "Send your dates, group size, handicap range and where you plan to stay. I will recommend the right level of help.",
     "includes": [
       "Course recommendations matched to your game, group, and budget",
       "The best area to stay for your golf itinerary",
@@ -37,7 +37,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     ],
     "workingModes": {
       "title": "Choose the level of help you need.",
-      "body": "Some groups only need tee times checked and booked. Others want the full golf plan, or the whole trip planned around it.",
+      "body": "One round, a long weekend or a longer golf trip. Choose the help you need; I do not have to join your rounds.",
       "items": [
         {
           "title": "Tee times only",
@@ -53,7 +53,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
         },
         {
           "title": "The whole trip",
-          "body": "Golf plus the hotel, transfers, restaurants and days off. I plan the golf, my local travel partner books the rest directly, and you get one plan.",
+          "body": "Golf plus accommodation, transfers, dining and days off, planned with my local travel partner.",
           "cta": "Plan the whole trip",
           "target": "whole-trip"
         }
@@ -61,7 +61,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     },
     "possibilities": {
       "title": "The whole trip, planned around the golf.",
-      "body": "I work with a trusted local travel partner who arranges hotels, transfers, restaurants and activities across the island. We agree the plan with you, the partner books and invoices the non-golf side directly, and I look after the golf.",
+      "body": "I plan and book the golf. A trusted local travel partner helps with hotels, transfers, restaurants and activities. Before you book, we agree the scope, costs and who handles each part.",
       "items": [
         "Palma hotel, resort or quieter finca base",
         "Michelin-starred restaurant, local favourite or private chef",
@@ -74,12 +74,12 @@ export const PLAN_YOUR_TRIP_CONTENT = {
       "steps": [
         "Send your dates, group size and what you want from the trip.",
         "For a wider trip, we agree the golf, the base and the extras on a short call.",
-        "I send the golf plan; my travel partner sends the hotel, transfer and dining options.",
+        "I confirm the golf options and check any wider requests with my travel partner.",
         "You decide, and only then is anything booked."
       ]
     },
     "note": "No commitment at enquiry stage. I reply personally within 24 hours with the recommended next step and a clear quote before anything is booked.",
-    "feeNote": "The management fee is 5% of the green fees. I show the full cost and booking terms before you commit.",
+    "feeNote": "Golf booking carries a 5% fee on green fees. Full planning and non-golf arrangements are quoted separately before you commit.",
     "sendPrompt": "Best details to send: dates, group size, handicap range, hotel area, and any courses already on your shortlist.",
     "cta": "Enquire about trip planning"
   },
@@ -186,8 +186,8 @@ export const PLAN_YOUR_TRIP_CONTENT = {
   },
   "sampleItinerary": {
     "eyebrow": "Sample Trip",
-    "title": "Five courses, five days. Based in Palma.",
-    "intro": "A Palma-based example for a group of club golfers: five rounds, one longer day north, and a clear reason for the order.",
+    "title": "A five-round example from Palma.",
+    "intro": "One Palma-based example for club golfers who want five rounds. Your trip can be shorter or longer, with rest days and a different course mix.",
     "routeLabel": "Route preview",
     "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
     "whyThisShape": {

@@ -10,7 +10,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "es": {
     "heroEyebrow": "Planifique su viaje de golf en Mallorca",
     "heroTitle": "Los campos adecuados de Mallorca, en el orden adecuado.",
-    "heroBody": "Elijo y reservo los campos y las horas de salida para su grupo, con buggies y alquileres organizados antes de su llegada. Usted juega las rondas a su propio ritmo. Para el viaje completo, también trabajo con un socio de viajes local de confianza para el hotel, los traslados, los restaurantes y los días libres. Si quiere que le acompañe un día, añada Play With A Pro.",
+    "heroBody": "Elijo y reservo campos y horas de salida para su grupo. Para hoteles, traslados, restaurantes y días sin golf, trabajo con un socio de viajes local de confianza.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Buscador de campos",
@@ -19,7 +19,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proTitle": "Planificación del viaje",
       "proNote": "Campos, ruta y reservas resueltos.",
       "itineraryLabel": "Viaje de ejemplo",
-      "itineraryTitle": "Vea una semana real de 5 días",
+      "itineraryTitle": "Vea un viaje de ejemplo de cinco días",
       "itineraryNote": "Una ruta desde Palma y su lógica."
     },
     "free": {
@@ -30,7 +30,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
     "professional": {
       "eyebrow": "Personal",
       "title": "Déjeme planificar y reservar la parte de golf de su viaje",
-      "body": "Envíeme sus fechas, el tamaño del grupo y lo que quiere del viaje. Recomendaré los campos adecuados para su grupo, calcularé la ruta y el número de rondas, reservaré y confirmaré las horas de salida, organizaré buggies y alquiler de palos, y daré forma a los días de golf para que el viaje salga redondo de principio a fin.",
+      "body": "Envíeme sus fechas, número de personas, nivel de hándicap y zona de alojamiento prevista. Le recomendaré el nivel de ayuda adecuado.",
       "includes": [
         "Campos recomendados según su juego, grupo y presupuesto",
         "La mejor zona donde alojarse para su itinerario de golf",
@@ -40,12 +40,12 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro disponible como añadido en cualquier momento"
       ],
       "note": "Sin compromiso al consultar. Le respondo personalmente en 24 horas con el siguiente paso recomendado y un presupuesto claro antes de reservar nada.",
-      "feeNote": "La comisión de gestión es el 5 % de los green fees. Le muestro el coste total y las condiciones de reserva antes de que se comprometa.",
+      "feeNote": "La reserva de golf lleva una comisión del 5 % de los green fees. La planificación completa y los servicios fuera del golf se presupuestan por separado antes de su confirmación.",
       "sendPrompt": "Mejor enviar: fechas, tamaño del grupo, hándicap, zona de hotel y los campos que ya tenga pensados.",
       "cta": "Consultar sobre la planificación",
       "workingModes": {
         "title": "Elija el nivel de ayuda que necesita.",
-        "body": "Algunos grupos solo necesitan que se comprueben y reserven los tee times. Otros quieren el plan de golf completo, o todo el viaje planificado a su alrededor.",
+        "body": "Una vuelta, un fin de semana largo o un viaje de golf más extenso. Elija la ayuda que necesita; no es necesario que yo juegue con usted.",
         "items": [
           {
             "title": "Solo tee times",
@@ -59,14 +59,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "El viaje completo",
-            "body": "Golf más hotel, traslados, restaurantes y días libres. Yo planifico el golf, mi socio de viajes local reserva el resto directamente y usted recibe un único plan.",
+            "body": "Golf, alojamiento, traslados, restaurantes y días libres, planificados con mi socio de viajes local.",
             "cta": "Planificar el viaje completo"
           }
         ]
       },
       "possibilities": {
         "title": "Todo el viaje, planificado en torno al golf.",
-        "body": "Trabajo con un socio de viajes local de confianza que organiza hoteles, traslados, restaurantes y actividades en toda la isla. Acordamos el plan con usted, el socio reserva y factura directamente todo lo que no es golf, y yo me ocupo del golf.",
+        "body": "Yo planifico y reservo el golf. Un socio de viajes local de confianza ayuda con hoteles, traslados, restaurantes y actividades. Antes de reservar, acordamos el alcance, los costes y quién se ocupa de cada parte.",
         "items": [
           "Hotel en Palma, resort o finca más tranquila",
           "Restaurante con estrella Michelin, favorito local o chef privado",
@@ -79,7 +79,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "steps": [
           "Envíeme sus fechas, el tamaño del grupo y lo que quiere del viaje.",
           "Para un viaje más amplio, acordamos el golf, la base y los extras en una llamada breve.",
-          "Le envío el plan de golf, y mi socio de viajes, las opciones de hotel, traslados y restaurantes.",
+          "Confirmo las opciones de golf y consulto las demás peticiones con mi socio de viajes.",
           "Usted decide, y solo entonces se reserva."
         ]
       }
@@ -168,8 +168,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelEyebrow": "Dónde alojarse",
       "hotelCta": "Usar el recomendador de hoteles",
       "eyebrow": "Viaje de ejemplo",
-      "title": "Cinco campos, cinco días. Base en Palma.",
-      "intro": "Un ejemplo con base en Palma para un grupo de jugadores de club: cinco rondas, un día más largo hacia el norte y una razón clara para el orden.",
+      "title": "Un ejemplo de cinco vueltas desde Palma.",
+      "intro": "Un ejemplo desde Palma para jugadores de club que quieren cinco vueltas. Su viaje puede ser más corto o más largo, con días de descanso y otros campos.",
       "routeLabel": "Vista previa de la ruta",
       "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
@@ -201,7 +201,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "de": {
     "heroEyebrow": "Planen Sie Ihren Mallorca-Golftrip",
     "heroTitle": "Die richtigen Plätze Mallorcas, in der richtigen Reihenfolge.",
-    "heroBody": "Ich wähle die Plätze und Startzeiten für Ihre Gruppe aus und buche sie, Buggys und Leihschläger organisiere ich vor Ihrer Anreise. Sie spielen die Runden nach Ihrem eigenen Zeitplan. Für die ganze Reise arbeite ich außerdem mit einem bewährten lokalen Reisepartner für Hotel, Transfers, Restaurants und freie Tage zusammen. Wenn Sie mich für einen Tag an Ihrer Seite möchten, fügen Sie Play With A Pro hinzu.",
+    "heroBody": "Ich wähle und buche Plätze und Startzeiten für Ihre Gruppe. Bei Hotels, Transfers, Restaurants und golffreien Tagen arbeite ich mit einem verlässlichen Reisepartner vor Ort zusammen.",
     "options": {
       "basicLabel": "Kostenlos",
       "basicTitle": "Kostenloser Platzfinder",
@@ -210,7 +210,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proTitle": "Reiseplanung",
       "proNote": "Plätze, Route und Buchungen erledigt.",
       "itineraryLabel": "Beispielreise",
-      "itineraryTitle": "Eine echte 5-Tage-Woche ansehen",
+      "itineraryTitle": "Beispiel einer fünftägigen Reise ansehen",
       "itineraryNote": "Eine Palma-Route und der Gedanke dahinter."
     },
     "free": {
@@ -221,7 +221,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
     "professional": {
       "eyebrow": "Persönlich",
       "title": "Lassen Sie mich die Golfseite Ihrer Reise planen und buchen",
-      "body": "Schicken Sie mir Ihre Daten, die Gruppengröße und was Sie sich von der Reise wünschen. Ich empfehle die passenden Plätze für Ihre Gruppe, erarbeite Route und Rundenzahl, buche und bestätige die Startzeiten, organisiere Buggys und Leihschläger und gestalte die Golftage so, dass die Reise von Anfang bis Ende reibungslos läuft.",
+      "body": "Schicken Sie mir Ihre Reisedaten, Gruppengröße, Handicap-Spanne und die geplante Unterkunftsregion. Ich empfehle Ihnen die passende Unterstützung.",
       "includes": [
         "Platzempfehlungen passend zu Spiel, Gruppe und Budget",
         "Die beste Gegend zum Übernachten für Ihren Golfreiseplan",
@@ -231,12 +231,12 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro jederzeit als Zusatz möglich"
       ],
       "note": "Keine Verpflichtung bei der Anfrage. Ich antworte persönlich innerhalb von 24 Stunden mit dem empfohlenen nächsten Schritt und einem klaren Angebot, bevor irgendetwas gebucht wird.",
-      "feeNote": "Die Verwaltungsgebühr beträgt 5 % der Greenfees. Gesamtkosten und Buchungsbedingungen zeige ich Ihnen, bevor Sie sich festlegen.",
+      "feeNote": "Für Golfbuchungen fällt eine Gebühr von 5 % der Greenfees an. Die vollständige Reiseplanung und Leistungen außerhalb des Golfs werden vor Ihrer Zusage separat angeboten.",
       "sendPrompt": "Am besten senden: Daten, Gruppengröße, Handicap, Hotelregion und alle Plätze, die schon auf Ihrer Liste stehen.",
       "cta": "Reiseplanung anfragen",
       "workingModes": {
         "title": "Wählen Sie, wie viel Unterstützung Sie brauchen.",
-        "body": "Manche Gruppen brauchen nur geprüfte und gebuchte Startzeiten. Andere möchten den vollständigen Golfplan oder die ganze Reise darum herum geplant.",
+        "body": "Eine Runde, ein verlängertes Wochenende oder eine längere Golfreise. Wählen Sie die gewünschte Unterstützung; ich muss Ihre Runden nicht begleiten.",
         "items": [
           {
             "title": "Nur Startzeiten",
@@ -250,14 +250,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Die ganze Reise",
-            "body": "Golf plus Hotel, Transfers, Restaurants und freie Tage. Ich plane das Golf, mein lokaler Reisepartner bucht den Rest direkt, und Sie erhalten einen Plan.",
+            "body": "Golf, Unterkunft, Transfers, Restaurants und golffreie Tage, gemeinsam mit meinem Reisepartner vor Ort geplant.",
             "cta": "Ganze Reise planen"
           }
         ]
       },
       "possibilities": {
         "title": "Die ganze Reise, rund um das Golf geplant.",
-        "body": "Ich arbeite mit einem bewährten lokalen Reisepartner zusammen, der Hotels, Transfers, Restaurants und Aktivitäten auf der ganzen Insel organisiert. Wir stimmen den Plan mit Ihnen ab, der Partner bucht und berechnet alles außerhalb des Golfs direkt, und ich kümmere mich um das Golf.",
+        "body": "Ich plane und buche das Golf. Ein verlässlicher Reisepartner vor Ort hilft bei Hotels, Transfers, Restaurants und Aktivitäten. Vor der Buchung klären wir Umfang, Kosten und Zuständigkeiten.",
         "items": [
           "Hotel in Palma, Resort oder ruhigere Finca",
           "Michelin-Restaurant, lokaler Favorit oder privater Koch",
@@ -270,7 +270,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "steps": [
           "Senden Sie mir Ihre Daten, die Gruppengröße und was Sie sich von der Reise wünschen.",
           "Bei einer größeren Reise stimmen wir Golf, Standort und Extras in einem kurzen Gespräch ab.",
-          "Ich schicke den Golfplan, mein Reisepartner die Optionen für Hotel, Transfers und Restaurants.",
+          "Ich bestätige die Golfoptionen und kläre weitere Wünsche mit meinem Reisepartner.",
           "Sie entscheiden, und erst dann wird gebucht."
         ]
       }
@@ -359,8 +359,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelEyebrow": "Wo Sie wohnen",
       "hotelCta": "Hotel-Empfehlung nutzen",
       "eyebrow": "Beispielreise",
-      "title": "Fünf Plätze, fünf Tage. Standort Palma.",
-      "intro": "Ein Beispiel mit Standort Palma für eine Gruppe Clubgolfer: fünf Runden, ein längerer Tag im Norden und ein klarer Grund für die Reihenfolge.",
+      "title": "Ein Beispiel mit fünf Runden ab Palma.",
+      "intro": "Ein Beispiel ab Palma für Clubgolfer, die fünf Runden spielen möchten. Ihre Reise kann kürzer oder länger sein, mit Ruhetagen und anderen Plätzen.",
       "routeLabel": "Routenvorschau",
       "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
@@ -392,7 +392,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "fr": {
     "heroEyebrow": "Planifiez votre séjour golf à Majorque",
     "heroTitle": "Les bons parcours de Majorque, dans le bon ordre.",
-    "heroBody": "Je choisis et je réserve les parcours et les heures de départ pour votre groupe, avec voiturettes et locations organisées avant votre arrivée. Vous jouez les parties à votre rythme. Pour le voyage complet, je travaille aussi avec un partenaire de voyage local de confiance pour l’hôtel, les transferts, les restaurants et les jours libres. Si vous voulez que je sois à vos côtés pendant une journée, ajoutez Play With A Pro.",
+    "heroBody": "Je choisis et réserve les parcours et les départs pour votre groupe. Pour les hôtels, transferts, restaurants et journées sans golf, je travaille avec un partenaire de voyage local de confiance.",
     "options": {
       "basicLabel": "Gratuit",
       "basicTitle": "Sélecteur de parcours",
@@ -401,7 +401,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proTitle": "Planification du séjour",
       "proNote": "Parcours, itinéraire et réservations.",
       "itineraryLabel": "Séjour type",
-      "itineraryTitle": "Découvrez une vraie semaine de 5 jours",
+      "itineraryTitle": "Voir un exemple de séjour de cinq jours",
       "itineraryNote": "Un itinéraire depuis Palma et sa logique."
     },
     "free": {
@@ -412,7 +412,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
     "professional": {
       "eyebrow": "Personnel",
       "title": "Laissez-moi planifier et réserver le volet golf de votre séjour",
-      "body": "Envoyez-moi vos dates, la taille du groupe et ce que vous attendez du séjour. Je vous recommande les bons parcours pour votre groupe, j'établis l'itinéraire et le nombre de parties, je réserve et je confirme les heures de départ, j'organise voiturettes et location de clubs, et je construis les journées de golf pour que le séjour se déroule sans accroc du début à la fin.",
+      "body": "Envoyez-moi vos dates, le nombre de participants, les handicaps et le secteur où vous comptez séjourner. Je vous proposerai le niveau d’aide adapté.",
       "includes": [
         "Parcours recommandés selon votre jeu, votre groupe et votre budget",
         "Le meilleur secteur où séjourner pour votre itinéraire de golf",
@@ -422,12 +422,12 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro disponible en option à tout moment"
       ],
       "note": "Aucun engagement au stade de la demande. Je réponds personnellement sous 24 heures avec la prochaine étape recommandée et un devis clair avant toute réservation.",
-      "feeNote": "Les frais de gestion représentent 5 % des green fees. Je vous indique le coût total et les conditions de réservation avant que vous vous engagiez.",
+      "feeNote": "La réservation du golf comporte des frais de 5 % des green fees. La planification complète et les prestations hors golf font l’objet d’un devis distinct avant votre accord.",
       "sendPrompt": "Idéalement : dates, taille du groupe, niveau, zone d’hôtel et parcours déjà envisagés.",
       "cta": "Demander la planification",
       "workingModes": {
         "title": "Choisissez le niveau d’aide dont vous avez besoin.",
-        "body": "Certains groupes ont seulement besoin que les départs soient vérifiés et réservés. D’autres veulent le plan golf complet, ou tout le voyage organisé autour.",
+        "body": "Une partie, un long week-end ou un séjour golf plus long. Choisissez l’aide souhaitée ; ma présence pendant vos parties n’est pas nécessaire.",
         "items": [
           {
             "title": "Départs seulement",
@@ -441,14 +441,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Le voyage complet",
-            "body": "Le golf, plus l’hôtel, les transferts, les restaurants et les jours libres. Je planifie le golf, mon partenaire de voyage local réserve le reste directement, et vous recevez un seul plan.",
+            "body": "Golf, hébergement, transferts, restaurants et journées libres, planifiés avec mon partenaire de voyage local.",
             "cta": "Organiser tout le voyage"
           }
         ]
       },
       "possibilities": {
         "title": "Tout le voyage, organisé autour du golf.",
-        "body": "Je travaille avec un partenaire de voyage local de confiance qui organise hôtels, transferts, restaurants et activités dans toute l’île. Nous convenons du plan avec vous, le partenaire réserve et facture directement tout ce qui ne concerne pas le golf, et je m’occupe du golf.",
+        "body": "Je planifie et réserve le golf. Un partenaire de voyage local de confiance aide pour les hôtels, transferts, restaurants et activités. Avant toute réservation, nous convenons des prestations, des coûts et du responsable de chaque partie.",
         "items": [
           "Hôtel à Palma, resort ou finca plus calme",
           "Restaurant étoilé Michelin, adresse locale ou chef privé",
@@ -461,7 +461,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "steps": [
           "Envoyez-moi vos dates, la taille du groupe et ce que vous attendez du voyage.",
           "Pour un voyage plus large, nous convenons du golf, du lieu de séjour et des extras lors d’un court appel.",
-          "Je vous envoie le plan golf, et mon partenaire de voyage les options d’hôtel, de transferts et de restaurants.",
+          "Je confirme les options de golf et examine les autres demandes avec mon partenaire de voyage.",
           "Vous décidez, et ce n’est qu’alors que l’on réserve."
         ]
       }
@@ -550,8 +550,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelEyebrow": "Où séjourner",
       "hotelCta": "Utiliser le recommandeur d'hôtels",
       "eyebrow": "Séjour type",
-      "title": "Cinq parcours, cinq jours. Basé à Palma.",
-      "intro": "Un exemple basé à Palma pour un groupe de golfeurs de club : cinq parties, une journée plus longue vers le nord et une raison claire pour l’ordre.",
+      "title": "Un exemple de cinq parties depuis Palma.",
+      "intro": "Un exemple depuis Palma pour des golfeurs de club souhaitant jouer cinq parties. Votre séjour peut être plus court ou plus long, avec des jours de repos et d’autres parcours.",
       "routeLabel": "Aperçu de l'itinéraire",
       "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
@@ -583,7 +583,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "nl": {
     "heroEyebrow": "Plan uw golfreis naar Mallorca",
     "heroTitle": "De juiste banen op Mallorca, in de juiste volgorde.",
-    "heroBody": "Ik kies en boek de banen en starttijden voor uw groep, met buggy's en huurmateriaal geregeld voordat u aankomt. U speelt de rondes in uw eigen tempo. Voor de hele reis werk ik ook samen met een vertrouwde lokale reispartner voor het hotel, de transfers, restaurants en vrije dagen. Wilt u dat ik een dag aan uw zijde sta, voeg dan Play With A Pro toe.",
+    "heroBody": "Ik kies en boek banen en starttijden voor uw groep. Voor hotels, transfers, restaurants en dagen zonder golf werk ik samen met een betrouwbare lokale reispartner.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Gratis banenzoeker",
@@ -592,7 +592,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proTitle": "Reisplanning",
       "proNote": "Banen, route en boekingen geregeld.",
       "itineraryLabel": "Voorbeeldreis",
-      "itineraryTitle": "Bekijk een echte week van 5 dagen",
+      "itineraryTitle": "Bekijk een voorbeeldreis van vijf dagen",
       "itineraryNote": "Een route vanuit Palma en de logica."
     },
     "free": {
@@ -603,7 +603,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
     "professional": {
       "eyebrow": "Persoonlijk",
       "title": "Laat mij de golfkant van uw reis plannen en boeken",
-      "body": "Stuur me uw data, groepsgrootte en wat u van de reis wilt. Ik adviseer de juiste banen voor uw groep, werk de route en het aantal rondes uit, boek en bevestig de starttijden, regel buggy's en huurclubs en geef de golfdagen vorm zodat de reis van begin tot eind soepel verloopt.",
+      "body": "Stuur uw reisdata, groepsgrootte, handicapniveau en de streek waar u wilt verblijven. Ik adviseer u welke hulp daarbij past.",
       "includes": [
         "Baanaanbevelingen afgestemd op uw spel, groep en budget",
         "De beste uitvalsbasis voor uw golfreis",
@@ -613,12 +613,12 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro als extra optie op elk moment"
       ],
       "note": "Geen verplichting bij aanvraag. Ik reageer persoonlijk binnen 24 uur met de aanbevolen volgende stap en een duidelijke prijsopgave voordat er iets wordt geboekt.",
-      "feeNote": "De beheersfee is 5 % van de greenfees. Ik toon u de totale kosten en boekingsvoorwaarden voordat u zich verbindt.",
+      "feeNote": "Voor het boeken van golf geldt een vergoeding van 5% van de greenfees. Volledige planning en onderdelen buiten het golf worden vooraf apart geoffreerd.",
       "sendPrompt": "Graag meesturen: data, groepsgrootte, handicap, hotelregio en banen die al op uw shortlist staan.",
       "cta": "Reisplanning aanvragen",
       "workingModes": {
         "title": "Kies hoeveel hulp u nodig heeft.",
-        "body": "Sommige groepen hebben alleen starttijden nodig die gecontroleerd en geboekt worden. Andere willen het volledige golfplan, of de hele reis eromheen gepland.",
+        "body": "Eén ronde, een lang weekend of een langere golfreis. Kies de hulp die u nodig heeft; ik hoef uw rondes niet mee te spelen.",
         "items": [
           {
             "title": "Alleen starttijden",
@@ -632,14 +632,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "De hele reis",
-            "body": "Golf plus hotel, transfers, restaurants en vrije dagen. Ik plan het golf, mijn lokale reispartner boekt de rest rechtstreeks, en u krijgt één plan.",
+            "body": "Golf, verblijf, transfers, restaurants en vrije dagen, gepland met mijn lokale reispartner.",
             "cta": "Hele reis plannen"
           }
         ]
       },
       "possibilities": {
         "title": "De hele reis, gepland rond het golf.",
-        "body": "Ik werk samen met een vertrouwde lokale reispartner die hotels, transfers, restaurants en activiteiten op het hele eiland regelt. We stemmen het plan met u af, de partner boekt en factureert alles buiten het golf rechtstreeks, en ik zorg voor het golf.",
+        "body": "Ik plan en boek het golf. Een betrouwbare lokale reispartner helpt met hotels, transfers, restaurants en activiteiten. Voor het boeken spreken we af wat wordt geregeld, wat het kost en wie elk onderdeel verzorgt.",
         "items": [
           "Hotel in Palma, resort of rustigere finca",
           "Michelinrestaurant, lokale favoriet of privékok",
@@ -652,7 +652,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "steps": [
           "Stuur uw data, groepsgrootte en wat u van de reis wilt.",
           "Voor een bredere reis stemmen we het golf, de verblijfsplek en de extra's af in een kort gesprek.",
-          "Ik stuur het golfplan, mijn reispartner de opties voor hotel, transfers en restaurants.",
+          "Ik bevestig de golfopties en bespreek aanvullende wensen met mijn reispartner.",
           "U beslist, en pas dan wordt er geboekt."
         ]
       }
@@ -741,8 +741,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelEyebrow": "Waar te verblijven",
       "hotelCta": "Gebruik de hotelzoeker",
       "eyebrow": "Voorbeeldreis",
-      "title": "Vijf banen, vijf dagen. Basis in Palma.",
-      "intro": "Een voorbeeld met Palma als basis voor een groep clubgolfers: vijf rondes, één langere dag naar het noorden en een duidelijke reden voor de volgorde.",
+      "title": "Een voorbeeld met vijf rondes vanuit Palma.",
+      "intro": "Een voorbeeld vanuit Palma voor clubgolfers die vijf rondes willen spelen. Uw reis kan korter of langer zijn, met rustdagen en andere banen.",
       "routeLabel": "Routevoorbeeld",
       "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
@@ -774,7 +774,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "sv": {
     "heroEyebrow": "Planera din golfresa till Mallorca",
     "heroTitle": "Rätt banor på Mallorca, i rätt ordning.",
-    "heroBody": "Jag väljer och bokar banorna och starttiderna åt din grupp, med golfbilar och uthyrning ordnat innan du kommer. Du spelar rundorna i din egen takt. För hela resan samarbetar jag också med en betrodd lokal resepartner kring hotell, transfer, restauranger och lediga dagar. Vill du ha mig vid din sida en dag, lägg till Play With A Pro.",
+    "heroBody": "Jag väljer och bokar banor och starttider för din grupp. För hotell, transfers, restauranger och golflediga dagar samarbetar jag med en pålitlig lokal resepartner.",
     "options": {
       "basicLabel": "Gratis",
       "basicTitle": "Gratis banfinder",
@@ -783,7 +783,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proTitle": "Reseplanering",
       "proNote": "Banor, rutt och bokningar ordnas.",
       "itineraryLabel": "Exempelresa",
-      "itineraryTitle": "Se en riktig vecka på 5 dagar",
+      "itineraryTitle": "Se ett exempel på en femdagarsresa",
       "itineraryNote": "En Palma-baserad rutt och tanken bakom den."
     },
     "free": {
@@ -794,7 +794,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
     "professional": {
       "eyebrow": "Personlig",
       "title": "Låt mig planera och boka golfdelen av din resa",
-      "body": "Skicka mig dina datum, gruppstorlek och vad du vill ha ut av resan. Jag rekommenderar rätt banor för din grupp, räknar ut rutten och antalet rundor, bokar och bekräftar starttiderna, ordnar golfbilar och klubbhyra och formar golfdagarna så att resan löper smidigt från start till mål.",
+      "body": "Skicka dina resdatum, gruppstorlek, handicapnivåer och området där du tänker bo. Jag föreslår vilken hjälp som passar.",
       "includes": [
         "Banrekommendationer anpassade efter spel, grupp och budget",
         "Det bästa området att bo i för din golfresa",
@@ -804,12 +804,12 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "Play With A Pro som tillägg när som helst"
       ],
       "note": "Inget åtagande vid förfrågan. Jag svarar personligen inom 24 timmar med rekommenderat nästa steg och en tydlig offert innan något bokas.",
-      "feeNote": "Administrationsavgiften är 5 % av greenfeen. Jag visar hela kostnaden och bokningsvillkoren innan du förbinder dig.",
+      "feeNote": "För golfbokningar tillkommer en avgift på 5 % av greenfeen. Fullständig planering och arrangemang utanför golfen offereras separat innan du bestämmer dig.",
       "sendPrompt": "Skicka gärna: datum, gruppstorlek, handicap, hotellområde och banor du redan funderar på.",
       "cta": "Fråga om reseplanering",
       "workingModes": {
         "title": "Välj hur mycket hjälp du behöver.",
-        "body": "Vissa grupper behöver bara få starttider kontrollerade och bokade. Andra vill ha hela golfplanen, eller hela resan planerad runt den.",
+        "body": "En runda, en långhelg eller en längre golfresa. Välj den hjälp du behöver; jag behöver inte spela med på rundorna.",
         "items": [
           {
             "title": "Endast starttider",
@@ -823,14 +823,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Hela resan",
-            "body": "Golf plus hotell, transfer, restauranger och lediga dagar. Jag planerar golfen, min lokala resepartner bokar resten direkt, och du får en enda plan.",
+            "body": "Golf, boende, transfers, restauranger och lediga dagar, planerade med min lokala resepartner.",
             "cta": "Planera hela resan"
           }
         ]
       },
       "possibilities": {
         "title": "Hela resan, planerad runt golfen.",
-        "body": "Jag samarbetar med en betrodd lokal resepartner som ordnar hotell, transfer, restauranger och aktiviteter på hela ön. Vi kommer överens om planen med dig, partnern bokar och fakturerar allt utanför golfen direkt, och jag tar hand om golfen.",
+        "body": "Jag planerar och bokar golfen. En pålitlig lokal resepartner hjälper till med hotell, transfers, restauranger och aktiviteter. Före bokning kommer vi överens om innehåll, kostnader och vem som ansvarar för varje del.",
         "items": [
           "Hotell i Palma, resort eller lugnare finca",
           "Michelinrestaurang, lokal favorit eller privat kock",
@@ -843,7 +843,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "steps": [
           "Skicka datum, gruppens storlek och vad du vill få ut av resan.",
           "För en större resa går vi igenom golfen, boendet och extra aktiviteter i ett kort samtal.",
-          "Jag skickar golfplanen och min resepartner alternativen för hotell, transfer och restauranger.",
+          "Jag bekräftar golfalternativen och stämmer av övriga önskemål med min resepartner.",
           "Du bestämmer, och först då bokas något."
         ]
       }
@@ -932,8 +932,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelEyebrow": "Var du ska bo",
       "hotelCta": "Använd hotellrekommendationen",
       "eyebrow": "Exempelresa",
-      "title": "Fem banor, fem dagar. Bas i Palma.",
-      "intro": "Ett Palma-baserat exempel för en grupp klubbgolfare: fem rundor, en längre dag norrut och en tydlig anledning till ordningen.",
+      "title": "Ett exempel med fem rundor från Palma.",
+      "intro": "Ett exempel från Palma för klubbgolfare som vill spela fem rundor. Din resa kan vara kortare eller längre, med vilodagar och andra banor.",
       "routeLabel": "Ruttförhandsvisning",
       "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {
@@ -965,7 +965,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
   "zh": {
     "heroEyebrow": "规划您的马略卡高尔夫之旅",
     "heroTitle": "合适的马略卡球场，按合适的顺序。",
-    "heroBody": "我为您的团队挑选并预订球场和开球时间，并在您抵达前安排好球车和租借球具。您按自己的时间安排打球。如需规划整趟行程，我还会与一位可靠的本地旅行合作伙伴一起安排酒店、接送、餐厅和休息日。如果您想让我陪您打一天，可以加选 Play With A Pro。",
+    "heroBody": "我为您的团队选择并预订球场和开球时间。酒店、接送、餐厅和不打球的日子，我会与可靠的当地旅行合作伙伴一起安排。",
     "options": {
       "basicLabel": "免费",
       "basicTitle": "免费球场筛选",
@@ -974,7 +974,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "proTitle": "行程规划",
       "proNote": "球场、路线与预订，一并安排。",
       "itineraryLabel": "行程范例",
-      "itineraryTitle": "看一份真实的五天行程",
+      "itineraryTitle": "查看五日行程示例",
       "itineraryNote": "帕尔马路线及其安排逻辑。"
     },
     "free": {
@@ -985,7 +985,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
     "professional": {
       "eyebrow": "专属",
       "title": "让我来规划并预订您行程中的高尔夫部分",
-      "body": "请发给我您的日期、人数以及您对这次行程的期望。我会为您的团队推荐合适的球场，安排路线和打球轮数，预订并确认开球时间，安排球车和球具租借，并设计好每个高尔夫日，让整趟行程从头到尾顺畅进行。",
+      "body": "请告诉我出行日期、人数、差点范围和计划住宿的区域。我会建议适合您的安排方式。",
       "includes": [
         "根据您的水平、团队和预算推荐球场",
         "根据高尔夫行程建议最合适的住宿区域",
@@ -995,12 +995,12 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "任何时候都可加购同场陪打服务"
       ],
       "note": "咨询阶段不涉及任何承诺。我会在24小时内亲自回复，给出建议的下一步和明确报价，之后才会预订任何内容。",
-      "feeNote": "管理费仅为果岭费的 5%。确认预订前，我会列明总费用和预订条款。",
+      "feeNote": "高尔夫预订收取果岭费的 5% 作为服务费。完整行程规划和高尔夫以外的安排，会在您确认前另行报价。",
       "sendPrompt": "最好一并发送：日期、人数、差点、酒店区域，以及已经看中的球场。",
       "cta": "咨询行程规划",
       "workingModes": {
         "title": "选择您需要的协助程度。",
-        "body": "有些团队只需要核对并预订开球时间，有些需要完整的球场计划，或围绕球局规划整趟行程。",
+        "body": "一轮球、长周末或更长的高尔夫旅行，都可以安排。您选择需要的帮助，不必由我陪同下场。",
         "items": [
           {
             "title": "只订开球时间",
@@ -1014,14 +1014,14 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "整趟行程",
-            "body": "高尔夫之外，还有酒店、接送、餐厅和休息日。我负责高尔夫，本地旅行合作伙伴直接预订其余部分，您拿到的是一份完整计划。",
+            "body": "高尔夫、住宿、接送、餐饮和休息日，由我与当地旅行合作伙伴共同规划。",
             "cta": "规划整趟行程"
           }
         ]
       },
       "possibilities": {
         "title": "整趟行程，围绕高尔夫来规划。",
-        "body": "我与一位可靠的本地旅行合作伙伴合作，由其负责全岛的酒店、接送、餐厅和活动安排。我们和您一起确定计划，高尔夫以外的部分由合作伙伴直接预订并开具发票，高尔夫由我负责。",
+        "body": "我负责规划和预订高尔夫。可靠的当地旅行合作伙伴协助安排酒店、接送、餐厅和活动。预订前，我们会与您确认服务范围、费用以及各部分的负责人。",
         "items": [
           "帕尔马酒店、度假村，或更安静的 finca",
           "米其林餐厅、本地常去的餐厅，或私人厨师",
@@ -1034,7 +1034,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
         "steps": [
           "发来您的日期、人数，以及您对这趟行程的期待。",
           "如果是更完整的行程，我们会通过简短通话确定球场、住宿区域和其他安排。",
-          "我发送高尔夫方案，旅行合作伙伴发送酒店、接送和餐厅的选项。",
+          "我确认高尔夫选项，并与旅行合作伙伴核实其他需求。",
           "由您决定，确认之后才会预订。"
         ]
       }
@@ -1124,8 +1124,8 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
       "hotelEyebrow": "住宿建议",
       "hotelCta": "使用酒店推荐工具",
       "eyebrow": "行程范例",
-      "title": "五座球场，五天。以帕尔马为基地。",
-      "intro": "一个以帕尔马为基地的例子，适合一组俱乐部球友：五轮球，其中一天去北部，顺序背后有清楚的理由。",
+      "title": "以帕尔马为住宿地点的五轮示例。",
+      "intro": "这是一个适合俱乐部球友、以帕尔马为住宿地点的五轮示例。您的行程可以更短或更长，也可以加入休息日并更换球场。",
       "routeLabel": "路线预览",
       "route": "Son Quint, Santa Ponsa 1, Son Gual, Alcanada, T Golf Calvià",
       "whyThisShape": {

@@ -6,6 +6,15 @@ import { getCanonicalCourseDataByName } from '../../src/lib/course-catalog'
 const answers = { region:'palma', dayStyle:'relaxed', level:'casual', handicap:'low', start:'pm', courseType:'close', addons:['village'], transport:'no', group:'vip' }
 
 describe('golf day planning rules', () => {
+  test('PWAP is on-course play with video and notes, without a promised warm-up lesson', () => {
+    const plans = buildItineraries({...answers,addons:['coaching']})
+    expect(plans.length).toBeGreaterThan(0)
+    for (const p of plans) {
+      expect(getCanonicalCourseDataByName(p.course.name).holeCount).toBe(18)
+      expect(p.steps.find(s => s.title.startsWith('18 holes')).desc).toContain('video and written notes')
+      expect(p.steps.map(s => s.title+' '+s.desc).join(' ')).not.toMatch(/coaching warm-up|warm-up or coaching session/i)
+    }
+  })
   test('the reported VIP example gets a full public course across every day option', () => {
     const plans = buildItineraries(answers)
     expect(plans).toHaveLength(3)

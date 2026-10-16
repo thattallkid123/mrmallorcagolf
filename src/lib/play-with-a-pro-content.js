@@ -67,7 +67,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "Secured and fully handled before you arrive. You just show up."
       ],
       [
-        "Pre-round briefing",
+        "Pre-round questionnaire",
         "The pre-round questionnaire mentioned earlier, so I understand your game, expectations, and current form."
       ],
       [
@@ -79,8 +79,8 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "Course management, shot selection, and decision-making at the moments they matter. Not a commentary, just the right observations at the right time."
       ],
       [
-        "Post-round chat, video and written notes",
-        "We talk through the round afterwards. I send you video and written notes covering what changed and what to work on next."
+        "Post-round video and written notes",
+        "I send you video and written notes covering what changed and what to work on next."
       ]
     ]
   },
@@ -183,7 +183,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           "Tee time secured and fully handled",
           "18 holes with me",
           "On-course coaching during the round",
-          "Post-round chat, video and written notes",
+          "Post-round video and written notes",
           "Private tee time available at cost"
         ],
         "button": "Enquire →",
@@ -206,7 +206,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
           "Tee time secured and fully handled",
           "18 holes with me",
           "On-course coaching during the round",
-          "Post-round chat, video and written notes",
+          "Post-round video and written notes",
           "Private tee time available at cost"
         ],
         "button": "Enquire →",
@@ -236,14 +236,14 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "eyebrow": "Trip Planning",
         "name": "Plan Your Trip",
         "price": "Price on enquiry",
-        "note": "5% management fee applies to green fees only. Confirmed after your first conversation.",
+        "note": "Golf booking carries a 5% fee on green fees. Full planning and non-golf arrangements are quoted separately before you commit.",
         "features": [
           "No searching apps or websites: tee times handled for you",
           "Courses picked to match your group, level, and budget",
           "Routing and number of rounds planned around your schedule",
           "Buggies and club hire arranged by me",
-          "Hotel, transfers and dining planned with my local travel partner, who books them directly",
-          "One plan, with me as your contact for all of it"
+          "Golf plus accommodation, transfers, dining and days off, planned with my local travel partner.",
+          "The contacts for golf and non-golf arrangements are agreed before booking"
         ],
         "button": "Plan Your Trip →",
         "href": "/plan-your-trip",
@@ -295,7 +295,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       },
       {
         "q": "What is it like if we do get paired?",
-        "a": "Normally completely fine and great company. The honest downside can be the pace of play, some waits on a few tees and the round can be longer. For us though, we are still in the same buggy, or walking together if we are not taking one, so the conversation and the coaching is the same. The debrief, video and the written notes afterwards are yours regardless of who else is out there."
+        "a": "Normally completely fine and great company. The honest downside can be the pace of play, some waits on a few tees and the round can be longer. For us though, we are still in the same buggy, or walking together if we are not taking one, so the conversation and the coaching is the same. I send you video and written notes covering what changed and what to work on next."
       },
       {
         "q": "Do you work with juniors?",

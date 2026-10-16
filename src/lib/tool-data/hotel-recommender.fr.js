@@ -359,6 +359,7 @@ const data = {
   },
   "pleta-de-mar": {
    "pills": [
+    "Adultes à partir de 16 ans",
     "Éco-luxe",
     "2 piscines à débordement",
     "Plage privée",

@@ -1,8 +1,15 @@
-import { createCipheriv, createDecipheriv, hkdfSync, randomBytes } from 'node:crypto'
+import { createCipheriv, createDecipheriv, hkdfSync, randomBytes, randomUUID } from 'node:crypto'
 import { deflateRawSync, inflateRawSync } from 'node:zlib'
 
 const UUID = /^[0-9a-f]{8}-(?:[0-9a-f]{4}-){3}[0-9a-f]{12}$/i
 const LIFETIME = 30 * 24 * 60 * 60 * 1000
+
+export function createPreferencesLink(enquiry, lang = 'en') {
+  const enquiryRef = randomUUID()
+  const host = process.env.VERCEL_ENV === 'production' ? 'www.mrmallorcagolf.com' : process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL || 'www.mrmallorcagolf.com'
+  const locale = /^(de|es|fr|nl|sv|zh)$/i.test(lang) ? `&lang=${lang.toLowerCase()}` : ''
+  return { enquiryRef, preferencesUrl: `https://${host}/trip-preferences.html?ref=${enquiryRef}${locale}#context=${sealEnquiry(enquiryRef, enquiry)}` }
+}
 
 // Purpose-separated key; rotating the server credential also invalidates old links.
 // No personal data is stored in a new database. The encrypted snapshot travels in

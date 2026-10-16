@@ -197,10 +197,7 @@ const data = {
      "Familjeaktivitet",
      "En aktivitet för golfare och medföljande"
     ],
-    "coaching": [
-     "Coaching med mig",
-     "Uppvärmning, lektion eller coaching på banan"
-    ]
+    "coaching": ["Play With A Pro","18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet."]
    }
   },
   "transport": {
@@ -496,10 +493,7 @@ const data = {
    "Familjeaktivitet",
    "Ett valfritt stopp nära banan. Plats, öppettider och restid kontrolleras när planen avtalas."
   ],
-  "coaching": [
-   "Coaching med mig",
-   "Uppvärmning eller coaching med mig, beroende på datum och banans faciliteter."
-  ],
+  "coaching": ["Play With A Pro","18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet."],
   "lunch": [
    "Lång lunch",
    "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning."
@@ -548,7 +542,8 @@ const data = {
    "holes9": "9 hål på {course}"
   },
   "desc": {
-   "transfer": "En lokal resepartner kan boka och fakturera transporten när färdväg och tider har avtalats.",
+"pwap": "18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet.",
+   "transfer": "Min lokala resepartner kan hjälpa till med transporter. Vi kommer överens om rutt, tider, kostnader och ansvar före bokning.",
    "selfDrive": "Bekräfta hotellet och färdvägen innan avresetiden planeras.",
    "warmupCoach": "Uppvärmning eller coaching med mig, beroende på datum och banans faciliteter.",
    "warmupCoffee": "Tid för incheckning, uppvärmning och förberedelse inför rundan. Faciliteterna beror på banan.",
@@ -598,11 +593,11 @@ const data = {
   },
   "handles": {
    "tee": "Jag bekräftar och bokar golfen",
-   "table": "Restauranger bokas och faktureras av en lokal resepartner",
-   "transportYes": "Transporter bokas och faktureras av en lokal resepartner",
+   "table": "Restaurangalternativ kontrollerade med min lokala resepartner",
+   "transportYes": "Transportalternativ kontrollerade med min lokala resepartner",
    "transportNo": "Färdväg kontrollerad med din hotelladress",
    "buggies": "Klubb- och buggyhyra kontrollerad med banan",
-   "coachingYes": "Coaching med mig, beroende på tillgänglighet",
+   "coachingYes": "18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet.",
    "coachingNo": "Coaching med mig, beroende på tillgänglighet",
    "whatsapp": "Kontakta mig för att komma överens om golfplanen"
   }

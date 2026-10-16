@@ -197,10 +197,7 @@ const data = {
      "Gezinsactiviteit",
      "Een activiteit voor golfers en niet-golfers"
     ],
-    "coaching": [
-     "Coaching met mij",
-     "Warming-up, les of coaching op de baan"
-    ]
+    "coaching": ["Play With A Pro","18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid."]
    }
   },
   "transport": {
@@ -496,10 +493,7 @@ const data = {
    "Gezinsactiviteit",
    "Een optionele stop bij de baan. Locatie, openingstijden en reistijd worden gecontroleerd bij het afspreken van het plan."
   ],
-  "coaching": [
-   "Coaching met mij",
-   "Een warming-up of coaching met mij, afhankelijk van de datum en de faciliteiten van de baan."
-  ],
+  "coaching": ["Play With A Pro","18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid."],
   "lunch": [
    "Lange lunch",
    "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt."
@@ -548,7 +542,8 @@ const data = {
    "holes9": "9 holes op {course}"
   },
   "desc": {
-   "transfer": "Een lokale reispartner kan het vervoer boeken en factureren zodra de route en tijden zijn afgesproken.",
+"pwap": "18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid.",
+   "transfer": "Mijn lokale reispartner kan helpen met vervoer. Route, tijden, kosten en verantwoordelijkheden spreken we vóór het boeken af.",
    "selfDrive": "Bevestig het hotel en de route voordat de vertrektijd wordt gepland.",
    "warmupCoach": "Een warming-up of coaching met mij, afhankelijk van de datum en de faciliteiten van de baan.",
    "warmupCoffee": "Tijd om in te checken, op te warmen en u op de ronde voor te bereiden. De faciliteiten verschillen per baan.",
@@ -598,11 +593,11 @@ const data = {
   },
   "handles": {
    "tee": "Ik bevestig en boek het golf",
-   "table": "Restaurants worden geboekt en gefactureerd door een lokale reispartner",
-   "transportYes": "Vervoer wordt geboekt en gefactureerd door een lokale reispartner",
+   "table": "Restaurantopties bekeken met mijn lokale reispartner",
+   "transportYes": "Vervoersopties bekeken met mijn lokale reispartner",
    "transportNo": "Route gecontroleerd met uw hoteladres",
    "buggies": "Club- en buggyhuur afgestemd met de baan",
-   "coachingYes": "Coaching met mij, afhankelijk van beschikbaarheid",
+   "coachingYes": "18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid.",
    "coachingNo": "Coaching met mij, afhankelijk van beschikbaarheid",
    "whatsapp": "Neem contact met mij op om het golfplan af te spreken"
   }

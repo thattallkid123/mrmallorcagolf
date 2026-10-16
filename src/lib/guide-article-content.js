@@ -636,7 +636,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'The golf is the spine of the trip. Around it, you can add a private chef evening, a long dinner in Palma, a vineyard visit, spa time, a coastal drive through Tramuntana, or a quiet afternoon between the harder rounds. I would add those where they help the rhythm of the week. If you want a rest day, I would put it after Son Gual, before the long drive north. The Sóller train, half a day on a boat or a tasting at Bodega Ribas all fit there, and there are more in the <a href="/plan-your-trip#trip-ideas">trip ideas</a>. My local travel partner books those directly.',
+          'The golf is the spine of the trip. Around it, you can add a private chef evening, a long dinner in Palma, a vineyard visit, spa time, a coastal drive through Tramuntana, or a quiet afternoon between the harder rounds. I would add those where they help the rhythm of the week. If you want a rest day, I would put it after Son Gual, before the long drive north. The Sóller train, half a day on a boat or a tasting at Bodega Ribas all fit there, and there are more in the <a href="/plan-your-trip#trip-ideas">trip ideas</a>. My local travel partner can help arrange those. We agree the details before booking.',
       },
       {
         type: 'image',
@@ -664,7 +664,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         type: 'cta',
         text: 'Want this shaped around your dates, group, handicaps, hotel area and budget?',
         linkLabel: 'Plan your Mallorca golf trip ->',
-        href: '/plan-your-trip',
+        href: '/contact?service=trip-planning',
       },
     ],
   },

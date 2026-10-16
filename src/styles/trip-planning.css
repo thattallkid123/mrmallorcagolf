@@ -1506,3 +1506,6 @@
   .pyt-process ol { gap: 16px; }
   .pyt-possibilities { margin-bottom: 36px; }
 }
+
+.pyt-planning-layout--compact { display: block; }
+.pyt-planning-layout--compact .pyt-pro-cta { max-width: 800px; }

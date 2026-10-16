@@ -2,6 +2,7 @@
 
 export const GOLF_COST_CALCULATOR_T = {
   en: {
+"assumptions": {"heading":"Estimate assumptions","body":"Golf totals use the suggested courses and daily licences. Accommodation assumes {nights} nights, with an allowance per golfer per night. Buggies are shared by two; essential hire is included. Transfers use one vehicle allowance per four golfers. Flights, golf-booking fees, coaching and full planning fees are excluded. Dates, access and supplier prices need confirmation.","licences":"Daily golf licences","close":"Close quote request"},
     hero: { title: 'Mallorca golf trip cost calculator', sub: 'Four steps. A cost estimate for your trip with a suggested course mix.' },
     step1: { label: 'Step 1 of 4', heading: 'Your trip basics', sub: 'Tell us about the group and how much golf you want.' },
     step1Fields: { days: 'Trip length (days)', golfers: 'Number of golfers', rounds: 'Rounds of golf' },
@@ -26,7 +27,7 @@ export const GOLF_COST_CALCULATOR_T = {
       budget: 'Where your budget is going',
       saveMoney: 'Ways to reduce cost',
       upgrade: 'When it\'s worth upgrading',
-      package: 'My recommended package',
+      package: "Planning help",
       packageNote: 'Play With A Pro is €795 solo or €950 total for 2–3 golfers. Trip planning is quoted separately once I see your dates, group, and routing needs.',
       areaFallback: "your chosen area",
       areaNote: "Since you're based around {area}, I will adjust for drive times.",
@@ -96,10 +97,10 @@ export const GOLF_COST_CALCULATOR_T = {
     tools: { label: 'More planning tools', selector: 'Find your courses', hotelRecommender: 'Find hotels', golfDay: 'Build a golf day' },
     disclaimer: 'Green fees, hotel rates, and dining prices in Mallorca vary by season and availability. All figures here are approximate ranges for planning only.',
     packages: {
-      value: 'Course Picks & Booking Help. I confirm your course mix, book tee times at the right rates, and share my course notes for each round.',
-      balanced: 'Trip Planning + One Coached Round. I plan the trip end to end and join you for a Play With A Pro round at one of your courses.',
-      premium: 'Signature Golf Day + Full Trip Planning. A hosted Signature Day with me plus full planning of courses, tee times, and transport.',
-      luxury: 'Full Concierge Trip. Every round, transfer, table, and tee time arranged, with me hosting your marquee golf day.',
+      value: "Golf plus accommodation, transfers, dining and days off, planned with my local travel partner.",
+      balanced: "Golf plus accommodation, transfers, dining and days off, planned with my local travel partner.",
+      premium: "Golf plus accommodation, transfers, dining and days off, planned with my local travel partner.",
+      luxury: "Golf plus accommodation, transfers, dining and days off, planned with my local travel partner.",
     },
     prefNotes: {
       scenic: 'You asked for scenic. I will weight the mix toward courses with the best views and settings.',
@@ -118,6 +119,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   de: {
+"assumptions": {"heading":"Annahmen der Schätzung","body":"Die Golfkosten basieren auf den vorgeschlagenen Plätzen und Tageslizenzen. Für die Unterkunft werden {nights} Nächte mit einem Betrag pro Golfer und Nacht angesetzt. Zwei Spieler teilen sich einen Buggy; erforderliche Miete ist enthalten. Transfers werden mit einem Fahrzeugbudget je vier Golfer kalkuliert. Flüge, Golfbuchungsgebühren, Coaching und vollständige Reiseplanung sind nicht enthalten. Termine, Zugang und Anbieterpreise werden noch bestätigt.","licences":"Tageslizenzen","close":"Anfrage schließen"},
     hero: { title: 'Mallorca-Golftrip-Kostenrechner', sub: 'Vier Schritte. Eine Kostenschätzung für Ihre Reise mit empfohlener Platzauswahl.' },
     step1: { label: 'Schritt 1 von 4', heading: 'Ihre Reisegrundlagen', sub: 'Erzählen Sie uns von der Gruppe und wie viel Golf Sie spielen möchten.' },
     step1Fields: { days: 'Reisedauer (Tage)', golfers: 'Anzahl der Golfer', rounds: 'Golfrunden' },
@@ -143,7 +145,7 @@ export const GOLF_COST_CALCULATOR_T = {
       budget: 'Wo Ihr Budget hingeht',
       saveMoney: 'So sparen Sie Kosten',
       upgrade: 'Wann sich ein Upgrade lohnt',
-      package: 'Mein empfohlenes Paket',
+      package: "Planungshilfe",
       packageNote: 'Play With A Pro kostet €795 für Einzelspieler oder €950 gesamt für 2–3 Golfer. Reiseplanung wird separat angeboten, sobald ich Ihre Termine kenne.',
       areaFallback: "Ihr gew\u00e4hltes Gebiet",
       areaNote: "Da Sie rund um {area} wohnen, passe ich die Fahrzeiten entsprechend an.",
@@ -213,10 +215,10 @@ export const GOLF_COST_CALCULATOR_T = {
     tools: { label: 'Weitere Planungswerkzeuge', selector: 'Finden Sie Ihre Plätze', hotelRecommender: 'Hotels finden', golfDay: 'Planen Sie einen Golftag' },
     disclaimer: 'Greenfees, Hotelprijzen und Restaurantprijzen auf Mallorca variieren je nach Saison und Verfügbarkeit. Alle Zahlen hier sind ungefähre Bereiche nur zur Planung.',
     packages: {
-      value: 'Platzauswahl & Buchungshilfe. Ich bestätige Ihre Platzauswahl, buche Startzeiten zu den richtigen Tarifen und teile meine Platznotizen für jede Runde.',
-      balanced: 'Reiseplanung + eine Runde mit Coaching. Ich plane die Reise von Anfang bis Ende und begleite Sie für eine Play With A Pro Runde auf einem Ihrer Plätze.',
-      premium: 'Signature Golf Day + Vollständige Reiseplanung. Ein von mir begleiteter Signature Day plus vollständiger Planung von Plätzen, Startzeiten und Transport.',
-      luxury: 'Vollständiger Concierge-Trip. Jede Runde, Transfer, Tisch und Startzeit organisiert, mit mir als Gastgeber Ihres wichtigsten Golftages.',
+      value: "Golf, Unterkunft, Transfers, Restaurants und golffreie Tage, gemeinsam mit meinem Reisepartner vor Ort geplant.",
+      balanced: "Golf, Unterkunft, Transfers, Restaurants und golffreie Tage, gemeinsam mit meinem Reisepartner vor Ort geplant.",
+      premium: "Golf, Unterkunft, Transfers, Restaurants und golffreie Tage, gemeinsam mit meinem Reisepartner vor Ort geplant.",
+      luxury: "Golf, Unterkunft, Transfers, Restaurants und golffreie Tage, gemeinsam mit meinem Reisepartner vor Ort geplant.",
     },
     prefNotes: {
       scenic: 'Sie wünschten sich malerische Plätze. Ich gewichte die Mischung zugunsten von Plätzen mit den schönsten Lagen.',
@@ -235,6 +237,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   es: {
+"assumptions": {"heading":"Supuestos del cálculo","body":"El cálculo del golf usa los campos sugeridos y las licencias diarias. El alojamiento supone {nights} noches, con una provisión por golfista y noche. Los buggies se comparten entre dos; el alquiler obligatorio está incluido. Los traslados usan una provisión por vehículo para cada cuatro golfistas. Se excluyen vuelos, comisiones de reserva de golf, clases y planificación completa. Fechas, acceso y precios requieren confirmación.","licences":"Licencias diarias","close":"Cerrar consulta"},
     hero: { title: 'Calculadora de costos de viaje de golf Mallorca', sub: 'Cuatro pasos. Una estimación de costos para su viaje con una mezcla de campos sugerida.' },
     step1: { label: 'Paso 1 de 4', heading: 'Lo básico de su viaje', sub: 'Cuéntenos sobre el grupo y cuánto golf quiere jugar.' },
     step1Fields: { days: 'Duración del viaje (días)', golfers: 'Número de golfistas', rounds: 'Rondas de golf' },
@@ -259,7 +262,7 @@ export const GOLF_COST_CALCULATOR_T = {
       budget: 'Dónde va su presupuesto',
       saveMoney: 'Formas de reducir coste',
       upgrade: 'Cuándo vale la pena actualizar',
-      package: 'Mi paquete recomendado',
+      package: "Ayuda para planificar",
       packageNote: 'Play With A Pro cuesta €795 solo o €950 total para 2-3 golfistas. La planificación del viaje se cotiza por separado una vez que veo sus fechas y grupo.',
       areaFallback: "su zona elegida",
       areaNote: "Como se aloja cerca de {area}, ajustar\u00e9 los tiempos de conducci\u00f3n.",
@@ -329,10 +332,10 @@ export const GOLF_COST_CALCULATOR_T = {
     tools: { label: 'Más herramientas de planificación', selector: 'Encuentre sus campos', hotelRecommender: 'Buscar hoteles', golfDay: 'Crea un día de golf' },
     disclaimer: 'Las tarifas de green fee, los precios de hoteles y los precios de comida en Mallorca varían según la temporada y disponibilidad. Todas las cifras aquí son rangos aproximados solo para planificación.',
     packages: {
-      value: 'Selección de campos y ayuda de reserva. Confirmo su combinación de campos, reservo horarios de salida a las tarifas correctas y comparto mis notas de campo para cada ronda.',
-      balanced: 'Planificación del viaje + una ronda con coaching conmigo. Planifico el viaje de principio a fin y me uno a usted para una ronda Play With A Pro en uno de sus campos.',
-      premium: 'Día de golf Signature + planificación completa del viaje. Un día Signature conmigo como anfitrión más planificación completa de campos, horarios de salida y transporte.',
-      luxury: 'Viaje concierge completo. Cada ronda, traslado, mesa y horario de salida organizado, conmigo como anfitrión de su día de golf más importante.',
+      value: "Golf, alojamiento, traslados, restaurantes y días libres, planificados con mi socio de viajes local.",
+      balanced: "Golf, alojamiento, traslados, restaurantes y días libres, planificados con mi socio de viajes local.",
+      premium: "Golf, alojamiento, traslados, restaurantes y días libres, planificados con mi socio de viajes local.",
+      luxury: "Golf, alojamiento, traslados, restaurantes y días libres, planificados con mi socio de viajes local.",
     },
     prefNotes: {
       scenic: 'Pidió campos pintorescos. Inclinaré la combinación hacia los campos con las mejores vistas y entornos.',
@@ -351,6 +354,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   fr: {
+"assumptions": {"heading":"Hypothèses de l’estimation","body":"Le calcul du golf utilise les parcours proposés et les licences journalières. L’hébergement prévoit {nights} nuits, avec un budget par golfeur et par nuit. Les voiturettes sont partagées à deux ; la location obligatoire est incluse. Les transferts prévoient un budget véhicule pour quatre golfeurs. Vols, frais de réservation du golf, coaching et planification complète sont exclus. Dates, accès et prix restent à confirmer.","licences":"Licences journalières","close":"Fermer la demande"},
     hero: { title: 'Simulateur de coût pour un voyage de golf à Majorque', sub: 'Quatre étapes. Une estimation de coût pour votre voyage avec une sélection de parcours suggérée.' },
     step1: { label: 'Étape 1 sur 4', heading: 'Bases de votre voyage', sub: 'Parlez-nous du groupe et de la quantité de golf que vous voulez jouer.' },
     step1Fields: { days: 'Durée du voyage (jours)', golfers: 'Nombre de golfeurs', rounds: 'Parties de golf' },
@@ -375,7 +379,7 @@ export const GOLF_COST_CALCULATOR_T = {
       budget: 'Où va votre budget',
       saveMoney: 'Façons de réduire les coûts',
       upgrade: 'Quand la montée en gamme en vaut la peine',
-      package: 'Mon package recommandé',
+      package: "Aide à la planification",
       packageNote: 'Play With A Pro coûte €795 en solo ou €950 au total pour 2-3 golfeurs. La planification du voyage est cotée séparément une fois que je vois vos dates et votre groupe.',
       areaFallback: "votre zone choisie",
       areaNote: "Comme vous \u00eates bas\u00e9 autour de {area}, j'ajusterai les temps de trajet.",
@@ -445,10 +449,10 @@ export const GOLF_COST_CALCULATOR_T = {
     tools: { label: 'Plus d\'outils de planification', selector: 'Trouvez vos parcours', hotelRecommender: 'Trouver des hôtels', golfDay: 'Créer une journée de golf' },
     disclaimer: 'Les tarifs des green fees, les prix des hôtels et les prix des repas à Mallorca varient selon la saison et la disponibilité. Tous les chiffres ici sont des gammes approximatives à titre indicatif.',
     packages: {
-      value: 'Sélection de parcours et aide de réservation. Je confirme votre sélection de parcours, réserve les heures de départ aux bons tarifs et partage mes notes de parcours pour chaque partie.',
-      balanced: 'Planification du voyage + une partie encadrée par un pro. Je planifie le voyage de bout en bout et vous rejoins pour une partie Play With A Pro sur l\'un de vos parcours.',
-      premium: 'Journée Signature + planification complète du voyage. Une journée Signature animée par mes soins, plus planification complète des parcours, des heures de départ et du transport.',
-      luxury: 'Voyage de conciergerie complet. Chaque partie, transfert, table et heure de départ arrangés, avec moi comme hôte de votre journée de golf phare.',
+      value: "Golf, hébergement, transferts, restaurants et journées libres, planifiés avec mon partenaire de voyage local.",
+      balanced: "Golf, hébergement, transferts, restaurants et journées libres, planifiés avec mon partenaire de voyage local.",
+      premium: "Golf, hébergement, transferts, restaurants et journées libres, planifiés avec mon partenaire de voyage local.",
+      luxury: "Golf, hébergement, transferts, restaurants et journées libres, planifiés avec mon partenaire de voyage local.",
     },
     prefNotes: {
       scenic: 'Vous avez demandé des parcours pittoresques. Je pondérerai la sélection vers les parcours avec les plus beaux cadres.',
@@ -467,6 +471,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   nl: {
+"assumptions": {"heading":"Aannames bij de schatting","body":"De golfkosten gebruiken de voorgestelde banen en daglicenties. Het verblijf gaat uit van {nights} nachten, met een bedrag per golfer per nacht. Twee spelers delen een buggy; verplichte huur is inbegrepen. Transfers gebruiken één voertuigbudget per vier golfers. Vluchten, golfboekingskosten, coaching en volledige planning zijn niet inbegrepen. Data, toegang en leveranciersprijzen moeten worden bevestigd.","licences":"Daglicenties","close":"Aanvraag sluiten"},
     hero: { title: 'Mallorca golftrip kostencalculator', sub: 'Vier stappen. Een kostenraming voor uw reis met een voorgestelde baanmix.' },
     step1: { label: 'Stap 1 van 4', heading: 'Basisgegevens van uw reis', sub: 'Vertel ons over de groep en hoeveel golf u wilt spelen.' },
     step1Fields: { days: 'Reisduur (dagen)', golfers: 'Aantal golfers', rounds: 'Golfrondes' },
@@ -491,7 +496,7 @@ export const GOLF_COST_CALCULATOR_T = {
       budget: 'Waar uw budget naartoe gaat',
       saveMoney: 'Manieren om kosten te besparen',
       upgrade: 'Wanneer upgraden de moeite waard is',
-      package: 'Mijn aanbevolen pakket',
+      package: "Hulp bij de planning",
       packageNote: 'Play With A Pro kost €795 solo of €950 totaal voor 2-3 golfers. Reisplanning wordt apart aangeboden zodra ik uw gegevens heb.',
       areaFallback: "uw gekozen gebied",
       areaNote: "Omdat u rond {area} verblijft, pas ik de rijtijden daarop aan.",
@@ -561,10 +566,10 @@ export const GOLF_COST_CALCULATOR_T = {
     tools: { label: 'Meer planningshulpmiddelen', selector: 'Vind uw banen', hotelRecommender: 'Hotels zoeken', golfDay: 'Bouw een golfdag' },
     disclaimer: 'Greenfees, hotelprijs en eetprijzen op Mallorca variëren per seizoen en beschikbaarheid. Alle cijfers zijn geschatte bereiken alleen voor planning.',
     packages: {
-      value: 'Baankeuze & Boekingshulp. Ik bevestig uw baanmix, boek starttijden tegen de juiste tarieven en deel mijn baanopmerkingen voor elke ronde.',
-      balanced: 'Reisplanning + Eén begeleide ronde. Ik plan de reis van begin tot eind en sluit bij u aan voor een Play With A Pro-ronde op een van uw banen.',
-      premium: 'Signature Golfdag + Volledige Reisplanning. Een gehoste Signature Day met mij plus volledige planning van banen, starttijden en vervoer.',
-      luxury: 'Volledige Concierge-reis. Elke ronde, transfer, tafel en starttijd geregeld, met mij als gastheer van uw belangrijkste golfdag.',
+      value: "Golf, verblijf, transfers, restaurants en vrije dagen, gepland met mijn lokale reispartner.",
+      balanced: "Golf, verblijf, transfers, restaurants en vrije dagen, gepland met mijn lokale reispartner.",
+      premium: "Golf, verblijf, transfers, restaurants en vrije dagen, gepland met mijn lokale reispartner.",
+      luxury: "Golf, verblijf, transfers, restaurants en vrije dagen, gepland met mijn lokale reispartner.",
     },
     prefNotes: {
       scenic: 'U vroeg om pittoreske banen. Ik stem de mix af op banen met de mooiste uitzichten en omgevingen.',
@@ -583,6 +588,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   sv: {
+"assumptions": {"heading":"Antaganden i beräkningen","body":"Golfkostnaden utgår från föreslagna banor och dagslicenser. Boendet räknas på {nights} nätter med ett belopp per golfare och natt. Två spelare delar golfbil; obligatorisk hyra ingår. Transfers räknas med en fordonsbudget per fyra golfare. Flyg, golfbokningsavgifter, coaching och fullständig planering ingår inte. Datum, tillträde och leverantörspriser behöver bekräftas.","licences":"Dagslicenser","close":"Stäng förfrågan"},
     hero: { title: 'Mallorca golfresa kostnadskalkylator', sub: 'Fyra steg. En kostnadsuppskattning för din resa med föreslagna banor.' },
     step1: { label: 'Steg 1 av 4', heading: 'Grunderna för din resa', sub: 'Berätta om gruppen och hur mycket golf du vill spela.' },
     step1Fields: { days: 'Resans längd (dagar)', golfers: 'Antal golfspelare', rounds: 'Golfrundor' },
@@ -607,7 +613,7 @@ export const GOLF_COST_CALCULATOR_T = {
       budget: 'Var din budget går',
       saveMoney: 'Sätt att spara pengar',
       upgrade: 'När det lönar sig att uppgradera',
-      package: 'Mitt rekommenderade paket',
+      package: "Hjälp med planeringen",
       packageNote: 'Play With A Pro kostar €795 solo eller €950 totalt för 2-3 golfspelare. Reseplaneringen prissätts separat när jag ser dina datum och din grupp.',
       areaFallback: "ditt valda omr\u00e5de",
       areaNote: "Eftersom du bor runt {area} justerar jag f\u00f6r k\u00f6rtider.",
@@ -677,10 +683,10 @@ export const GOLF_COST_CALCULATOR_T = {
     tools: { label: 'Fler planeringsverktyg', selector: 'Hitta dina banor', hotelRecommender: 'Hitta hotell', golfDay: 'Bygg en golfdag' },
     disclaimer: 'Green fees, hotelpriser och matpriser på Mallorca varierar beroende på säsong och tillgänglighet. Alla siffror här är ungefärliga intervall endast för planering.',
     packages: {
-      value: 'Banval & Bokningshjälp. Jag bekräftar din banmix, bokar starttider till rätt priser och delar mina anteckningar om varje bana inför varje runda.',
-      balanced: 'Reseplanering + En rond med coaching. Jag planerar resan från början till slut och ansluter till dig för en Play With A Pro-rond på en av dina banor.',
-      premium: 'Signature Golfdag + Fullständig Reseplanering. En Signature Day med mig som värd, plus fullständig planering av banor, starttider och transport.',
-      luxury: 'Fullständig Concierge-resa. Varje runda, transfer, bordsbokning och starttid ordnad, med mig som värd för din mest framträdande golfdag.',
+      value: "Golf, boende, transfers, restauranger och lediga dagar, planerade med min lokala resepartner.",
+      balanced: "Golf, boende, transfers, restauranger och lediga dagar, planerade med min lokala resepartner.",
+      premium: "Golf, boende, transfers, restauranger och lediga dagar, planerade med min lokala resepartner.",
+      luxury: "Golf, boende, transfers, restauranger och lediga dagar, planerade med min lokala resepartner.",
     },
     prefNotes: {
       scenic: 'Du frågade efter vackra banor. Jag viktar blandningen mot banor med de bästa vyerna och miljöerna.',
@@ -699,6 +705,7 @@ export const GOLF_COST_CALCULATOR_T = {
     },
   },
   zh: {
+"assumptions": {"heading":"估算依据","body":"高尔夫费用按建议球场和每日球会许可费计算。住宿按 {nights} 晚估算，使用每位球友每晚的预算。球车按两人共用计算，强制租用的球车已计入。接送按每四位球友一辆车的预算估算。不包含机票、高尔夫预订服务费、教学和完整行程规划费。日期、下场资格及供应商价格仍需确认。","licences":"每日球会许可费","close":"关闭咨询"},
     hero: { title: '马略卡高尔夫旅行成本计算器', sub: '四个步骤。对您的旅行进行成本估计，包括建议的球场组合。' },
     step1: { label: '第 1 步，共 4 步', heading: '您的旅行基础信息', sub: '告诉我们关于您的团体和您想打多少场高尔夫的信息。' },
     step1Fields: { days: '旅行时长（天）', golfers: '高尔夫球手数量', rounds: '高尔夫回合数' },
@@ -723,7 +730,7 @@ export const GOLF_COST_CALCULATOR_T = {
       budget: '您的预算流向',
       saveMoney: '节省费用的方法',
       upgrade: '何时值得升级',
-      package: '我推荐的套餐',
+      package: "行程规划帮助",
       packageNote: 'Play With A Pro 单人€795 或 2-3 位高尔夫球手总计€950。一旦我了解您的日期和团体，旅行规划将单独报价。',
       areaFallback: "\u60a8\u9009\u62e9\u7684\u533a\u57df",
       areaNote: "\u7531\u4e8e\u60a8\u4f4f\u5728{area}\u9644\u8fd1\uff0c\u6211\u4f1a\u6839\u636e\u8f66\u7a0b\u8c03\u6574\u5b89\u6392\u3002",
@@ -793,10 +800,10 @@ export const GOLF_COST_CALCULATOR_T = {
     tools: { label: '更多规划工具', selector: '找到您的球场', hotelRecommender: '查找酒店', golfDay: '建立高尔夫日' },
     disclaimer: '马略卡的果岭费、酒店价格和用餐价格因季节和可用性而异。此处的所有数字仅为规划目的的近似范围。',
     packages: {
-      value: '球场选择与预订帮助。我会确认您的球场组合，以合适的费率预订开球时间，并分享每一轮的球场笔记。',
-      balanced: '行程规划 + 一轮教练陪打。我从头到尾规划整个行程，并在您选定的其中一个球场陪您打一轮 Play With A Pro。',
-      premium: '标志性高尔夫日 + 完整行程规划。由我主持的标志性日加上球场、开球时间和交通的完整规划。',
-      luxury: '完整礼宾旅行。每一轮、接送、餐桌和开球时间都已安排，由我主持您最重要的高尔夫日。',
+      value: "高尔夫、住宿、接送、餐饮和休息日，由我与当地旅行合作伙伴共同规划。",
+      balanced: "高尔夫、住宿、接送、餐饮和休息日，由我与当地旅行合作伙伴共同规划。",
+      premium: "高尔夫、住宿、接送、餐饮和休息日，由我与当地旅行合作伙伴共同规划。",
+      luxury: "高尔夫、住宿、接送、餐饮和休息日，由我与当地旅行合作伙伴共同规划。",
     },
     prefNotes: {
       scenic: '您要求风景优美。我会将组合偏向景色和环境最优美的球场。',

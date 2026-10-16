@@ -58,7 +58,7 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/tools/golf-cost-calculator',
         eyebrow: 'Build Your Trip',
-        title: 'Trip Estimator',
+        title: "Trip Cost Calculator",
         desc: 'Four steps. A realistic cost estimate for your whole trip: green fees, accommodation, transport, dining, and a suggested course mix.',
         time: '< 2 min',
         cta: 'Estimate my trip',
@@ -125,7 +125,7 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/de/tools/golf-cost-calculator',
         eyebrow: 'Planen Sie Ihre Reise',
-        title: 'Reisekostenrechner',
+        title: "Reisekostenrechner",
         desc: 'Vier Schritte. Eine realistische Kostenschätzung für Ihre gesamte Reise: Greenfees, Unterkunft, Transport, Verpflegung und ein empfohlener Golfplatz-Mix.',
         time: '< 2 Min',
         cta: 'Meine Kosten schätzen',
@@ -192,7 +192,7 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/es/tools/golf-cost-calculator',
         eyebrow: 'Planifique su viaje',
-        title: 'Estimador de presupuesto',
+        title: "Calculador de costes",
         desc: 'Cuatro pasos. Una estimación realista de costos para todo su viaje: green fees, alojamiento, transporte, comida y una mezcla de campos sugerida.',
         time: '< 2 min',
         cta: 'Estimar mi viaje',
@@ -259,7 +259,7 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/fr/tools/golf-cost-calculator',
         eyebrow: 'Planifiez votre voyage',
-        title: 'Estimateur de budget',
+        title: "Calculateur de coûts",
         desc: 'Quatre étapes. Une estimation réaliste des coûts pour tout votre séjour : green fees, hébergement, transport, repas et une sélection de parcours suggérée.',
         time: '< 2 min',
         cta: 'Estimez mon voyage',
@@ -326,7 +326,7 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/nl/tools/golf-cost-calculator',
         eyebrow: 'Plan uw reis',
-        title: 'Budgetschatter',
+        title: "Reiskostencalculator",
         desc: 'Vier stappen. Een realistische kostenschatting voor uw hele trip: greenfees, accommodatie, vervoer, eten en een voorgestelde baanmix.',
         time: '< 2 min',
         cta: 'Schat mijn trip',
@@ -393,7 +393,7 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/sv/tools/golf-cost-calculator',
         eyebrow: 'Planera din resa',
-        title: 'Resekostnadskalkylator',
+        title: "Resekostnadskalkylator",
         desc: 'Fyra steg. En realistisk kostnadsestimering för hela din resa: greenfees, boende, transport, mat och en föreslagen banmix.',
         time: '< 2 min',
         cta: 'Uppskatta min resa',
@@ -460,7 +460,7 @@ export const TOOLS_INDEX_CONTENT = {
       {
         href: '/zh/tools/golf-cost-calculator',
         eyebrow: '规划您的行程',
-        title: '成本估算工具',
+        title: "行程费用计算器",
         desc: '四个步骤。获得整个行程的现实成本估计：球场费用、住宿、交通、用餐和建议的球场组合。',
         time: '不到2分钟',
         cta: '估算我的旅行',

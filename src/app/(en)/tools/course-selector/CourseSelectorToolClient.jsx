@@ -1,4 +1,5 @@
 'use client'
+import { buildToolEnquiryHref } from '../../../../lib/tool-enquiry'
 import { getToolRecoveryT } from '../../../../lib/tool-recovery-content'
 import ToolChoices from '../../../../components/ToolChoices'
 
@@ -58,7 +59,6 @@ const COURSE_COMPARISON_PDF_URL = '/downloads/course-comparison.pdf'
    golf-courses-data.js, so a new review needs no edit here.
 ===================================================================== */
 const SITE = 'https://www.mrmallorcagolf.com'
-const planTripPath = (lang) => buildLocalePath('/plan-your-trip', lang)
 
 const COURSE_IMGS = {
   'son-gual':         '/images/courses/son-gual.webp',
@@ -644,7 +644,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
     mlBody.set('fields[selector_shortlist_names]', selectorShortlistNames(topCourses))
     mlBody.set('ml-submit', '1')
     mlBody.set('anticsrf', 'true')
-    fetch(MAILERLITE_COURSE_SELECTOR, {
+    if (subscribeNewsletter) fetch(MAILERLITE_COURSE_SELECTOR, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: mlBody.toString(),
@@ -910,7 +910,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
                     {c.andy}
                   </div>
                   <div className="cst-cc-actions">
-                    <a className="cst-btn gold" href={`${SITE}${planTripPath(lang)}`} style={{ padding:'11px 22px', fontSize:'.82rem' }}>
+                    <a className="cst-btn gold" href={buildToolEnquiryHref(lang, { courses: c.name })} style={{ padding:'11px 22px', fontSize:'.82rem' }}>
                       {t.results.enquire}
                     </a>
                     {c.reviewSlug && (
@@ -1042,7 +1042,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
               <p style={{ color:'#2C2A27', fontSize:'.95rem', marginBottom:'20px', maxWidth:'470px', marginLeft:'auto', marginRight:'auto', lineHeight:'1.7' }}>{t.results.email.planText}</p>
 
               <div className="cst-cta-stack">
-                <a className="cst-btn gold" href={`${SITE}${planTripPath(lang)}`}>{t.results.email.planCta}</a>
+                <a className="cst-btn gold" href={buildToolEnquiryHref(lang, { courses: topCourses.map(c => c.name).join(", ") })}>{t.results.email.planCta}</a>
                 {lang !== 'zh' && <WhatsAppCta label={t.results.email.whatsappCta} />}
                 <a className="cst-btn" style={{ background:'transparent', border:'1px solid #2D4A3E', color:'#2D4A3E' }} href={buildLocalePath('/play-with-a-pro', lang)}>{t.results.email.pwapCta}</a>
               </div>

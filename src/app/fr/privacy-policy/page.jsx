@@ -36,6 +36,7 @@ export default function PrivacyPolicyFR() {
               <li><strong>Course Selector et formulaires d&rsquo;inscription par e-mail :</strong> votre adresse e-mail et toute information facultative que vous choisissez de fournir en demandant des notes de planification ou un suivi de votre sélection</li>
               <li><strong>Données analytiques :</strong> données d&rsquo;usage anonymes collectées par Google Analytics (voir la section 5)</li>
             </ul>
+            <p>Les demandes du calculateur de coûts comprennent aussi les parcours choisis, le budget estimé et les préférences de séjour, de transport et de voiturette. Elles utilisent le même lien privé de suivi.</p>
             <p>Nous ne collectons pas de données de carte bancaire. Tous les paiements sont traités hors ligne par virement bancaire.</p>
           </section>
 
@@ -64,6 +65,7 @@ export default function PrivacyPolicyFR() {
 
           <section className="legal-section">
             <h2>5. Google Analytics</h2>
+            <p>Le brouillon de vos préférences est conservé dans le stockage de session de cet onglet pendant 24 heures au maximum. Il est supprimé après un envoi réussi ou à la fin de la session de l’onglet. Les aperçus du personnel ne conservent aucun brouillon.</p>
             <p>Ce site utilise Google Analytics pour comprendre comment les visiteurs utilisent notre site. Google Analytics collecte des données d&rsquo;usage telles que les pages consultées, le temps passé et la localisation géographique approximative (pays/région), rattachées à un identifiant généré aléatoirement et stocké dans votre navigateur. Cet identifiant est pseudonymisé &mdash; il n&rsquo;inclut ni votre nom ni vos coordonnées &mdash; mais il ne s&rsquo;agit pas de données totalement anonymes.</p>
             <p>Les données Google Analytics sont traitées par Google LLC, certifiée dans le cadre du Data Privacy Framework UE-États-Unis, conformément à sa politique de confidentialité. Vous pouvez vous opposer au suivi Google Analytics à tout moment en installant le <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">module complémentaire de désactivation de Google Analytics</a>.</p>
           </section>

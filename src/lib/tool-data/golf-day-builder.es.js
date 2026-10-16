@@ -197,10 +197,7 @@ const data = {
      "Actividad familiar",
      "Una actividad para golfistas y acompañantes"
     ],
-    "coaching": [
-     "Clases conmigo",
-     "Calentamiento, clase o entrenamiento en el campo"
-    ]
+    "coaching": ["Play With A Pro","18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad."]
    }
   },
   "transport": {
@@ -496,10 +493,7 @@ const data = {
    "Actividad familiar",
    "Una parada opcional cerca del campo. El lugar, los horarios y el desplazamiento se comprueban al acordar el plan."
   ],
-  "coaching": [
-   "Coaching conmigo",
-   "Una sesión de calentamiento o entrenamiento conmigo, según la fecha y las instalaciones del campo."
-  ],
+  "coaching": ["Play With A Pro","18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad."],
   "lunch": [
    "Almuerzo largo",
    "Una mesa cerca del campo, elegida según su hora de salida. Un colaborador local comprueba horarios, disponibilidad y desplazamientos antes de reservar."
@@ -548,7 +542,8 @@ const data = {
    "holes9": "9 hoyos en {course}"
   },
   "desc": {
-   "transfer": "Un colaborador local de viajes puede reservar y facturar el traslado cuando se acuerden la ruta y los horarios.",
+"pwap": "18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad.",
+   "transfer": "Mi colaborador local puede ayudar con los traslados. Acordamos ruta, horarios, costes y responsabilidades antes de reservar.",
    "selfDrive": "Confirme el hotel y la ruta antes de fijar la hora de salida.",
    "warmupCoach": "Una sesión de calentamiento o entrenamiento conmigo, según la fecha y las instalaciones del campo.",
    "warmupCoffee": "Tiempo para registrarse, calentar y prepararse para la vuelta. Las instalaciones dependen del campo.",
@@ -598,11 +593,11 @@ const data = {
   },
   "handles": {
    "tee": "Confirmo y reservo el golf",
-   "table": "Un colaborador local reserva y factura los restaurantes",
-   "transportYes": "Un colaborador local reserva y factura los traslados",
+   "table": "Opciones de restaurantes revisadas con mi colaborador local",
+   "transportYes": "Opciones de traslados revisadas con mi colaborador local",
    "transportNo": "Ruta comprobada con la dirección de su hotel",
    "buggies": "Alquiler de palos y buggy consultado con el campo",
-   "coachingYes": "Entrenamiento conmigo, según disponibilidad",
+   "coachingYes": "18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad.",
    "coachingNo": "Entrenamiento conmigo, según disponibilidad",
    "whatsapp": "Contácteme para acordar el plan de golf"
   }

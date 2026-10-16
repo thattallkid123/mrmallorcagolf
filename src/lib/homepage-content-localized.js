@@ -27,7 +27,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "paragraphs": [
         "Play With A Pro es mi día en el campo con usted: un campo, 18 hoyos, gestión del campo, coaching integrado en la vuelta y el conocimiento local que convierte un buen día en un gran día.",
         "Si prefiere jugar por su cuenta, reservo el golf: los campos adecuados, en el orden adecuado, con horas de salida y buggies confirmados antes de su llegada.",
-        "Para el viaje completo, planifico el golf y trabajo con un socio de viajes local de confianza para el hotel, los traslados, los restaurantes y los días libres. El socio reserva directamente todo lo que no es golf, y yo reúno ambos planes en uno."
+        "Yo planifico y reservo el golf. Un socio de viajes local de confianza ayuda con hoteles, traslados, restaurantes y actividades. Antes de reservar, acordamos el alcance, los costes y quién se ocupa de cada parte."
       ],
       "stats": [
         {
@@ -208,7 +208,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta",
-            "Charla tras la vuelta, vídeo y notas escritas",
+            "Vídeo y notas escritas después de la vuelta",
             "Hora de salida privada disponible, al coste"
           ],
           "note": "Mi tarifa del día. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
@@ -225,7 +225,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Hora de salida asegurada",
             "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta",
-            "Charla tras la vuelta, vídeo y notas escritas",
+            "Vídeo y notas escritas después de la vuelta",
             "Hora de salida privada disponible, al coste"
           ],
           "note": "Mi tarifa fija del día para 2 o 3 golfistas. El green fee y el almuerzo son aparte. Buggy y palos de alquiler disponibles como extras opcionales, encantado de ayudar a organizarlo.",
@@ -262,10 +262,10 @@ export const HOME_LOCALIZED_CONTENT = {
             "Campos elegidos según su grupo, nivel y presupuesto",
             "Ruta y número de vueltas planificados según su calendario",
             "Buggies y palos de alquiler organizados por mí",
-            "Hotel, traslados y restaurantes planificados con mi socio de viajes local, que los reserva directamente",
-            "Un solo plan, conmigo como su contacto para todo"
+            "Golf, alojamiento, traslados, restaurantes y días libres, planificados con mi socio de viajes local.",
+            "Los contactos para el golf y los demás servicios se acuerdan antes de reservar"
           ],
-          "note": "La comisión de gestión del 5 % se aplica solo a los green fees. Se confirma tras la primera conversación.",
+          "note": "La reserva de golf lleva una comisión del 5 % de los green fees. La planificación completa y los servicios fuera del golf se presupuestan por separado antes de su confirmación.",
           "cta": "Planifique su viaje",
           "href": "/es/plan-your-trip"
         }
@@ -355,7 +355,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "paragraphs": [
         "Play With A Pro ist mein Tag auf dem Platz mit Ihnen: ein Platz, 18 Löcher, Platzmanagement, Coaching mitten in der Runde und das lokale Wissen, das aus einem guten Tag einen großartigen macht.",
         "Wenn Sie lieber unter sich spielen, buche ich das Golf: die passenden Plätze in der richtigen Reihenfolge, mit Startzeiten und Buggys, die vor Ihrer Ankunft bestätigt sind.",
-        "Für die ganze Reise plane ich das Golf und arbeite für Hotel, Transfers, Restaurants und freie Tage mit einem bewährten lokalen Reisepartner zusammen. Der Partner bucht alles außerhalb des Golfs direkt, und ich führe beides zu einem Plan zusammen."
+        "Ich plane und buche das Golf. Ein verlässlicher Reisepartner vor Ort hilft bei Hotels, Transfers, Restaurants und Aktivitäten. Vor der Buchung klären wir Umfang, Kosten und Zuständigkeiten."
       ],
       "stats": [
         {
@@ -537,7 +537,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
             "On-course-Coaching während der Runde",
-            "Nachbesprechung, Video und schriftliche Notizen",
+            "Video und schriftliche Notizen nach der Runde",
             "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "note": "Mein Tagessatz. Greenfee und Mittagessen sind separat. Buggy und Leihschläger sind als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
@@ -554,7 +554,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Startzeit gesichert",
             "18 Löcher mit mir",
             "On-course-Coaching während der Runde",
-            "Nachbesprechung, Video und schriftliche Notizen",
+            "Video und schriftliche Notizen nach der Runde",
             "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "note": "Mein fester Tagessatz für 2 oder 3 Golfer. Greenfee und Mittagessen sind separat. Buggy und Leihschläger sind als optionale Zusatzleistungen buchbar, ich helfe gern bei der Organisation.",
@@ -591,10 +591,10 @@ export const HOME_LOCALIZED_CONTENT = {
             "Plätze passend zu Gruppe, Spielstärke und Budget",
             "Route und Rundenzahl passend zu Ihrem Zeitplan",
             "Buggys und Leihschläger von mir organisiert",
-            "Hotel, Transfers und Restaurants plane ich mit meinem lokalen Reisepartner, der sie direkt bucht",
-            "Ein Plan, mit mir als Ansprechperson für alles"
+            "Golf, Unterkunft, Transfers, Restaurants und golffreie Tage, gemeinsam mit meinem Reisepartner vor Ort geplant.",
+            "Die Ansprechpartner für Golf und weitere Leistungen stehen vor der Buchung fest"
           ],
-          "note": "5 % Verwaltungsgebühr, nur auf Greenfees. Wird nach dem ersten Gespräch bestätigt.",
+          "note": "Für Golfbuchungen fällt eine Gebühr von 5 % der Greenfees an. Die vollständige Reiseplanung und Leistungen außerhalb des Golfs werden vor Ihrer Zusage separat angeboten.",
           "cta": "Reise planen",
           "href": "/de/plan-your-trip"
         }
@@ -684,7 +684,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "paragraphs": [
         "Play With A Pro est ma journée sur le parcours avec vous : un parcours, 18 trous, gestion du parcours, coaching intégré à la partie et la connaissance locale qui transforme une bonne journée en excellente journée.",
         "Si vous préférez jouer entre vous, je réserve le golf : les bons parcours, dans le bon ordre, avec départs et voiturettes confirmés avant votre arrivée.",
-        "Pour le voyage complet, je planifie le golf et je travaille avec un partenaire de voyage local de confiance pour l’hôtel, les transferts, les restaurants et les jours libres. Le partenaire réserve directement tout ce qui ne concerne pas le golf, et je réunis les deux plans."
+        "Je planifie et réserve le golf. Un partenaire de voyage local de confiance aide pour les hôtels, transferts, restaurants et activités. Avant toute réservation, nous convenons des prestations, des coûts et du responsable de chaque partie."
       ],
       "stats": [
         {
@@ -866,7 +866,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
             "Coaching sur le parcours pendant la partie",
-            "Échange après la partie, vidéo et notes écrites",
+            "Vidéo et notes écrites après la partie",
             "Départ privatisé possible, au prix coûtant"
           ],
           "note": "Mon tarif journée. Le green fee et le déjeuner sont en sus. Buggy et clubs de location disponibles en option, je peux vous aider à organiser.",
@@ -883,7 +883,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Heure de départ sécurisée",
             "18 trous avec moi",
             "Coaching sur le parcours pendant la partie",
-            "Échange après la partie, vidéo et notes écrites",
+            "Vidéo et notes écrites après la partie",
             "Départ privatisé possible, au prix coûtant"
           ],
           "note": "Mon tarif journalier fixe pour 2 ou 3 golfeurs. Le green fee et le déjeuner sont en sus. Voiturette et clubs de location disponibles en option, avec plaisir pour aider à les organiser.",
@@ -920,10 +920,10 @@ export const HOME_LOCALIZED_CONTENT = {
             "Parcours choisis selon votre groupe, votre niveau et votre budget",
             "Itinéraire et nombre de tours pensés selon votre planning",
             "Buggies et location de clubs organisés par mes soins",
-            "Hôtel, transferts et restaurants planifiés avec mon partenaire de voyage local, qui les réserve directement",
-            "Un seul plan, avec moi comme point de contact pour tout"
+            "Golf, hébergement, transferts, restaurants et journées libres, planifiés avec mon partenaire de voyage local.",
+            "Les contacts pour le golf et les autres prestations sont convenus avant la réservation"
           ],
-          "note": "Frais de gestion de 5 %, uniquement sur les green fees. Confirmé après votre premier échange.",
+          "note": "La réservation du golf comporte des frais de 5 % des green fees. La planification complète et les prestations hors golf font l’objet d’un devis distinct avant votre accord.",
           "cta": "Planifiez votre voyage",
           "href": "/fr/plan-your-trip"
         }
@@ -1013,7 +1013,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "paragraphs": [
         "Play With A Pro is mijn dag op de baan met u: één baan, 18 holes, baanmanagement, coaching verweven in de ronde en de lokale kennis die van een goede dag een geweldige dag maakt.",
         "Wilt u liever zelf spelen, dan boek ik het golf: de juiste banen, in de juiste volgorde, met starttijden en buggy's bevestigd voordat u aankomt.",
-        "Voor de hele reis plan ik het golf en werk ik voor het hotel, de transfers, restaurants en vrije dagen samen met een vertrouwde lokale reispartner. De partner boekt alles buiten het golf rechtstreeks, en ik breng beide plannen samen."
+        "Ik plan en boek het golf. Een betrouwbare lokale reispartner helpt met hotels, transfers, restaurants en activiteiten. Voor het boeken spreken we af wat wordt geregeld, wat het kost en wie elk onderdeel verzorgt."
       ],
       "stats": [
         {
@@ -1195,7 +1195,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
             "Coaching op de baan tijdens de ronde",
-            "Nabespreking, video en schriftelijke notities",
+            "Video en schriftelijke notities na de ronde",
             "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "note": "Mijn dagtarief. Greenfees en lunch zijn apart. Buggy en huurclubs beschikbaar als optionele extra's, ik help graag bij de organisatie.",
@@ -1212,7 +1212,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Starttijd vastgelegd",
             "18 holes met mij",
             "Coaching op de baan tijdens de ronde",
-            "Nabespreking, video en schriftelijke notities",
+            "Video en schriftelijke notities na de ronde",
             "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "note": "Mijn vaste dagtarief voor 2 of 3 golfers. Greenfee en lunch zijn apart. Buggy en huurclubs zijn beschikbaar als optionele extra's, ik help graag bij de organisatie.",
@@ -1249,10 +1249,10 @@ export const HOME_LOCALIZED_CONTENT = {
             "Baankeuze afgestemd op uw groep, niveau en budget",
             "Route en aantal rondes gepland rond uw schema",
             "Buggy's en huurclubs door mij geregeld",
-            "Hotel, transfers en restaurants gepland met mijn lokale reispartner, die ze rechtstreeks boekt",
-            "Eén plan, met mij als uw aanspreekpunt voor alles"
+            "Golf, verblijf, transfers, restaurants en vrije dagen, gepland met mijn lokale reispartner.",
+            "De contactpersonen voor golf en andere onderdelen worden vóór het boeken afgesproken"
           ],
-          "note": "Er geldt een beheersfee van 5 %, alleen op greenfees. Bevestigd na het eerste gesprek.",
+          "note": "Voor het boeken van golf geldt een vergoeding van 5% van de greenfees. Volledige planning en onderdelen buiten het golf worden vooraf apart geoffreerd.",
           "cta": "Plan uw reis",
           "href": "/nl/plan-your-trip"
         }
@@ -1342,7 +1342,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "paragraphs": [
         "Play With A Pro är min dag på banan med dig: en bana, 18 hål, banstrategi, coaching invävd i rundan och den lokala kunskap som gör en bra dag till en riktigt bra dag.",
         "Vill du hellre spela på egen hand bokar jag golfen: rätt banor i rätt ordning, med starttider och golfbilar bekräftade innan du kommer.",
-        "För hela resan planerar jag golfen och samarbetar med en betrodd lokal resepartner kring hotell, transfer, restauranger och lediga dagar. Partnern bokar allt utanför golfen direkt, och jag sätter ihop de två planerna."
+        "Jag planerar och bokar golfen. En pålitlig lokal resepartner hjälper till med hotell, transfers, restauranger och aktiviteter. Före bokning kommer vi överens om innehåll, kostnader och vem som ansvarar för varje del."
       ],
       "stats": [
         {
@@ -1524,7 +1524,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
             "Coaching på banan under rundan",
-            "Samtal efter rundan, video och skriftliga anteckningar",
+            "Video och skriftliga anteckningar efter rundan",
             "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "note": "Mitt dagspris. Green fee och lunch är separat. Golfbil och hyrklubbor tillgängliga som tillval, jag hjälper gärna till att ordna.",
@@ -1541,7 +1541,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "Starttid säkrad",
             "18 hål med mig",
             "Coaching på banan under rundan",
-            "Samtal efter rundan, video och skriftliga anteckningar",
+            "Video och skriftliga anteckningar efter rundan",
             "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "note": "Mitt fasta dagspris för 2 eller 3 golfare. Green fee och lunch är separat. Golfbil och hyrklubbor finns som tillval, jag hjälper gärna till att ordna det.",
@@ -1578,10 +1578,10 @@ export const HOME_LOCALIZED_CONTENT = {
             "Banor valda efter grupp, nivå och budget",
             "Rutt och antal rundor planerade efter ditt schema",
             "Golfbilar och hyrklubbor ordnade av mig",
-            "Hotell, transfers och restauranger planerade med min lokala resepartner, som bokar dem direkt",
-            "En plan, med mig som din kontaktperson för allt"
+            "Golf, boende, transfers, restauranger och lediga dagar, planerade med min lokala resepartner.",
+            "Kontaktpersoner för golf och övriga arrangemang bestäms före bokning"
           ],
-          "note": "5 % administrationsavgift gäller endast greenfee. Bekräftas efter ditt första samtal.",
+          "note": "För golfbokningar tillkommer en avgift på 5 % av greenfeen. Fullständig planering och arrangemang utanför golfen offereras separat innan du bestämmer dig.",
           "cta": "Planera din resa",
           "href": "/sv/plan-your-trip"
         }
@@ -1671,7 +1671,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "paragraphs": [
         "Play With A Pro 是我陪您在球场上度过的一天：一座球场、18 洞、球场管理、融入球局的指导，以及把好的一天变得更好的本地经验。",
         "如果您想自己打球，由我负责预订：合适的球场、合理的顺序，开球时间和球车在您抵达前全部确认。",
-        "如需规划整趟行程，我负责高尔夫部分，并与一位可靠的本地旅行合作伙伴安排酒店、接送、餐厅和休息日。高尔夫以外的部分由合作伙伴直接预订，我把两边的安排整合成一份计划。"
+        "我负责规划和预订高尔夫。可靠的当地旅行合作伙伴协助安排酒店、接送、餐厅和活动。预订前，我们会与您确认服务范围、费用以及各部分的负责人。"
       ],
       "services": [
         {
@@ -1860,7 +1860,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "开球时间已预订并安排妥当",
             "与我同打 18 洞",
             "球场实战指导贯穿全程",
-            "赛后交流、视频和书面笔记",
+            "下场后的视频和书面笔记",
             "可加订私人开球时段，按成本价收取"
           ],
           "note": "我的日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，我很乐意帮您安排。",
@@ -1877,7 +1877,7 @@ export const HOME_LOCALIZED_CONTENT = {
             "开球时间已预订",
             "与我同打 18 洞",
             "球场实战指导贯穿全程",
-            "赛后交流、视频和书面笔记",
+            "下场后的视频和书面笔记",
             "可加订私人开球时段，按成本价收取"
           ],
           "note": "我针对 2 或 3 位球手的固定日费。果岭费和午餐另计。球车和租借球具可作为可选附加项，我很乐意帮您安排。",
@@ -1914,10 +1914,10 @@ export const HOME_LOCALIZED_CONTENT = {
             "根据您的团队、水平和预算挑选球场",
             "按您的行程安排路线和打球轮次",
             "球车和租杆由我来安排",
-            "酒店、接送和餐厅由我和本地旅行合作伙伴一起规划，并由合作伙伴直接预订",
-            "一份计划，由我作为您的唯一联系人负责全部事项"
+            "高尔夫、住宿、接送、餐饮和休息日，由我与当地旅行合作伙伴共同规划。",
+            "预订前确认高尔夫及其他安排的联系人"
           ],
-          "note": "管理费仅按果岭费的 5% 收取。第一次沟通后确认。",
+          "note": "高尔夫预订收取果岭费的 5% 作为服务费。完整行程规划和高尔夫以外的安排，会在您确认前另行报价。",
           "cta": "了解行程规划",
           "href": "/zh/plan-your-trip"
         }

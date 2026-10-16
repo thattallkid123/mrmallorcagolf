@@ -87,7 +87,7 @@ export async function POST(request) {
 
     // Add to MailerLite (non-blocking) for the Handicap Access Checker nurture group.
     const mlToken = process.env.MAILERLITE_API_TOKEN
-    if (mlToken) {
+    if (payload.subscribeNewsletter === true && mlToken) {
       fetch('https://connect.mailerlite.com/api/subscribers', {
         method: 'POST',
         headers: {

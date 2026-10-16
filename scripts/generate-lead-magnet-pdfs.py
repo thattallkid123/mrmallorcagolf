@@ -1,278 +1,128 @@
+"""Build public downloads from the same course, access and logistics masters as the site."""
+import json
+import subprocess
 from pathlib import Path
-
+from xml.sax.saxutils import escape
 from reportlab.lib import colors
 from reportlab.lib.pagesizes import A4, landscape
-from reportlab.lib.styles import ParagraphStyle, getSampleStyleSheet
+from reportlab.lib.styles import ParagraphStyle
 from reportlab.lib.units import mm
 from reportlab.pdfbase import pdfmetrics
 from reportlab.pdfbase.ttfonts import TTFont
-from reportlab.platypus import PageBreak, Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
-
+from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, TableStyle
 
 ROOT = Path(__file__).resolve().parent.parent
-DOWNLOADS_DIR = ROOT / "public" / "downloads"
+DOWNLOADS_DIR = ROOT / 'public' / 'downloads'
+PINE = colors.HexColor('#2D4A3E')
+for name, filename in [('MMG', 'arial.ttf'), ('MMGBold', 'arialbd.ttf')]:
+    font = Path('C:/Windows/Fonts') / filename
+    if font.exists():
+        pdfmetrics.registerFont(TTFont(name, str(font)))
+REGULAR = 'MMG' if 'MMG' in pdfmetrics.getRegisteredFontNames() else 'Helvetica'
+BOLD = 'MMGBold' if 'MMGBold' in pdfmetrics.getRegisteredFontNames() else 'Helvetica-Bold'
+TITLE = ParagraphStyle('title', fontName=BOLD, fontSize=19, leading=24, textColor=PINE, spaceAfter=10)
+HEADING = ParagraphStyle('heading', fontName=BOLD, fontSize=12, leading=16, textColor=PINE, spaceBefore=12, spaceAfter=6)
+BODY = ParagraphStyle('body', fontName=REGULAR, fontSize=10, leading=14, spaceAfter=8)
+CELL = ParagraphStyle('cell', fontName=REGULAR, fontSize=8, leading=10)
+HEADER = ParagraphStyle('header', parent=CELL, fontName=BOLD, textColor=colors.white)
 
+def text(value):
+    return escape(str(value))
 
-def register_fonts():
-    regular = Path(r"C:\Windows\Fonts\arial.ttf")
-    bold = Path(r"C:\Windows\Fonts\arialbd.ttf")
-    if regular.exists() and bold.exists():
-        pdfmetrics.registerFont(TTFont("MMGSans", str(regular)))
-        pdfmetrics.registerFont(TTFont("MMGSans-Bold", str(bold)))
-        return "MMGSans", "MMGSans-Bold"
-    return "Helvetica", "Helvetica-Bold"
+def euro(value):
+    return 'On request' if value is None else f'€{value:g}'
 
+def intro(title, description):
+    return [Paragraph('MR MALLORCA GOLF', HEADING), Paragraph(title, TITLE), Paragraph(description, BODY)]
 
-FONT_REGULAR, FONT_BOLD = register_fonts()
-styles = getSampleStyleSheet()
-TITLE = ParagraphStyle(
-    "MMGTitle",
-    parent=styles["Title"],
-    fontName=FONT_BOLD,
-    fontSize=20,
-    leading=24,
-    textColor=colors.HexColor("#2D4A3E"),
-    spaceAfter=8,
-)
-SUBTITLE = ParagraphStyle(
-    "MMGSubtitle",
-    parent=styles["BodyText"],
-    fontName=FONT_REGULAR,
-    fontSize=10.5,
-    leading=14,
-    textColor=colors.HexColor("#4D4A45"),
-    spaceAfter=10,
-)
-SECTION = ParagraphStyle(
-    "MMGSection",
-    parent=styles["Heading2"],
-    fontName=FONT_BOLD,
-    fontSize=12.5,
-    leading=15,
-    textColor=colors.HexColor("#2D4A3E"),
-    spaceBefore=8,
-    spaceAfter=6,
-)
-BODY = ParagraphStyle(
-    "MMGBody",
-    parent=styles["BodyText"],
-    fontName=FONT_REGULAR,
-    fontSize=10,
-    leading=13.5,
-    textColor=colors.HexColor("#1A1916"),
-    spaceAfter=6,
-)
-SMALL = ParagraphStyle(
-    "MMGSmall",
-    parent=styles["BodyText"],
-    fontName=FONT_REGULAR,
-    fontSize=8.5,
-    leading=11,
-    textColor=colors.HexColor("#6F685F"),
-    spaceAfter=4,
-)
+def table(rows, widths):
+    cells = [[Paragraph(text(value), HEADER if index == 0 else CELL) for value in row] for index, row in enumerate(rows)]
+    result = Table(cells, colWidths=[width*mm for width in widths], repeatRows=1, hAlign='LEFT')
+    result.setStyle(TableStyle([
+        ('BACKGROUND', (0,0), (-1,0), PINE),
+        ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, colors.HexColor('#F7F4EF')]),
+        ('GRID', (0,0), (-1,-1), .3, colors.HexColor('#D9D1C5')),
+        ('VALIGN', (0,0), (-1,-1), 'TOP'),
+        ('LEFTPADDING', (0,0), (-1,-1), 5), ('RIGHTPADDING', (0,0), (-1,-1), 5),
+        ('TOPPADDING', (0,0), (-1,-1), 5), ('BOTTOMPADDING', (0,0), (-1,-1), 5),
+    ]))
+    return result
 
-
-COURSE_COST_ROWS = [
-    ["Alcanada", "€230", "€115", "35-48", "25-38", "8/10"],
-    ["Andratx", "€170", "€95", "€45", "35-40", "9/10"],
-    ["Bendinat", "€123", "€74", "33-43", "30-40", "7/10"],
-    ["Canyamel", "€145", "€85", "30-45", "€35", "6/10"],
-    ["Capdepera", "€149", "€75", "35-45", "€35", "7/10"],
-    ["Maioris", "€110", "€91", "36-47", "€33", "5/10"],
-    ["Palma Pitch & Putt", "€30", "€27", "-", "5-8", "2/10"],
-    ["Pollenca", "€75", "€65", "35-45", "30-40", "6/10"],
-    ["Pula", "€135", "€75", "€40", "€35", "7/10"],
-    ["Reserva Rotana", "€130", "€85", "35-45", "€35", "6/10"],
-    ["Santa Ponsa 1", "€126", "€77", "30-45", "30-40", "7/10"],
-    ["Santa Ponsa 2", "Members only", "Guest w/ member", "-", "-", "7/10"],
-    ["Santa Ponsa 3", "Members only", "Guest w/ member", "-", "-", "6/10"],
-    ["Son Antem East", "€140", "€105", "32-48", "28-42", "5/10"],
-    ["Son Antem West", "€145", "€109", "32-48", "28-42", "6/10"],
-    ["Son Gual", "€165", "€115", "35-45", "25-38", "8/10"],
-    ["Son Muntaner", "€260", "€110", "Incl.", "€40", "8/10"],
-    ["Son Quint", "€172", "€70", "45-55", "35-40", "6/10"],
-    ["Son Servera", "€165", "€80", "35-45", "30-40", "6/10"],
-    ["Son Termes", "€110", "€90", "36-47", "€33", "6/10"],
-    ["Son Vida", "€190", "€85", "€55", "€38", "8/10"],
-    ["T Golf Calvia", "€210", "€80", "45-55", "35-50", "7/10"],
-    ["T Golf Palma", "€150", "€80", "45-50", "30-50", "6/10"],
-    ["Vall d'Or", "€132", "€99", "35-45", "30-40", "6/10"],
-]
-
-
-def footer(canvas, _doc):
+def footer(canvas, doc):
     canvas.saveState()
-    canvas.setFont(FONT_REGULAR, 8)
-    canvas.setFillColor(colors.HexColor("#8A7F74"))
-    canvas.drawCentredString(
-        A4[0] / 2,
-        10 * mm,
-        "www.mrmallorcagolf.com | andy@mrmallorcagolf.com | Copyright 2026",
-    )
+    canvas.setFont(REGULAR, 8)
+    canvas.setFillColor(colors.HexColor('#6F685F'))
+    canvas.drawCentredString(doc.pagesize[0]/2, 10*mm, f'www.mrmallorcagolf.com | andy@mrmallorcagolf.com | {doc.page}')
     canvas.restoreState()
 
-
-def build_table(data, col_widths):
-    table = Table(data, colWidths=col_widths, repeatRows=1)
-    table.setStyle(
-        TableStyle(
-            [
-                ("BACKGROUND", (0, 0), (-1, 0), colors.HexColor("#2D4A3E")),
-                ("TEXTCOLOR", (0, 0), (-1, 0), colors.white),
-                ("FONTNAME", (0, 0), (-1, 0), FONT_BOLD),
-                ("FONTNAME", (0, 1), (-1, -1), FONT_REGULAR),
-                ("FONTSIZE", (0, 0), (-1, -1), 8.5),
-                ("LEADING", (0, 0), (-1, -1), 10.5),
-                ("GRID", (0, 0), (-1, -1), 0.35, colors.HexColor("#D9D1C5")),
-                ("ROWBACKGROUNDS", (0, 1), (-1, -1), [colors.white, colors.HexColor("#F7F4EF")]),
-                ("VALIGN", (0, 0), (-1, -1), "MIDDLE"),
-                ("ALIGN", (1, 0), (-1, -1), "CENTER"),
-                ("LEFTPADDING", (0, 0), (-1, -1), 6),
-                ("RIGHTPADDING", (0, 0), (-1, -1), 6),
-                ("TOPPADDING", (0, 0), (-1, -1), 5),
-                ("BOTTOMPADDING", (0, 0), (-1, -1), 5),
-            ]
-        )
-    )
-    return table
-
-
-def story_intro(title, description):
-    return [
-        Paragraph("MR MALLORCA GOLF", SMALL),
-        Paragraph(title, TITLE),
-        Paragraph(description, SUBTITLE),
-        Spacer(1, 4),
-    ]
-
-
-def generate_trip_planner():
-    story = story_intro(
-        "7-Day Mallorca Golf Itinerary",
-        "A complete day-by-day plan for seven days of golf in Mallorca. Balances championship courses, scenic rounds, value rounds, and rest days. Includes driving times, difficulty progression, and customization tips.",
-    )
-    story.extend(
-        [
-            Paragraph("Days 1-3: Palma and Southwest Foundation", SECTION),
-            Paragraph("<b>Day 1: Arrival and Easy Warm-Up</b><br/>Santa Ponsa 1 - €126 peak | Par 72 | Walkable | 25 mins from airport<br/>Public access, forgiving layout, confidence-building. Perfect warm-up after travel.", BODY),
-            Paragraph("<b>Day 2: Championship Round</b><br/>Son Gual - €165 peak | Par 72 | Championship | 20 mins from Palma<br/>Andy's favourite. Fast greens, proper test, excellent conditioning. Early tee time recommended.", BODY),
-            Paragraph("<b>Day 3: Scenic and Wild</b><br/>Golf de Andratx - €170 peak | Par 72 | Mountain course | 40 mins from Palma<br/>Dramatic views, challenging terrain. New environment adds variety to your week.", BODY),
-            PageBreak(),
-            Paragraph("MR MALLORCA GOLF", SMALL),
-            Paragraph("Days 4-7: Northeast and Rest", SECTION),
-            Paragraph("<b>Day 4: Travel / Rest Day</b><br/>Optional: Palma Pitch & Putt (9-hole course, €27-30 for 18 holes) - recovery day. Explore Palma or rest.", BODY),
-            Paragraph("<b>Day 5: Northeast Adventure</b><br/>Club de Golf Alcanada - €230 peak | Lighthouse views | 50 mins from Palma", BODY),
-            Paragraph("<b>Day 6: Value and Local Gem</b><br/>Pollenca - €75 peak | Scenic | Less crowded", BODY),
-            Paragraph("<b>Day 7: Grand Finale</b><br/>Son Muntaner - €260 peak | Premium finish near Palma", BODY),
-            Spacer(1, 8),
-            Paragraph("<b>7-Day Budget:</b> €2,200-€3,240 per player (peak season, including accommodation and meals).", BODY),
-        ]
-    )
-    return story
-
-
-def generate_cost_guide():
-    header = [["Course", "Peak", "Low", "Buggy", "Clubs", "Diff"]]
-    story = story_intro(
-        "Mallorca Golf Cost Breakdown 2026",
-        "Complete breakdown of green fees, equipment hire, and sample trip budgets for all 24 Mallorca courses. Plan your budget by season, course, and group size. Updated June 2026.",
-    )
-    story.append(build_table(header + COURSE_COST_ROWS[:17], [56 * mm, 21 * mm, 21 * mm, 21 * mm, 21 * mm, 16 * mm]))
-    story.extend(
-        [
-            PageBreak(),
-            Paragraph("MR MALLORCA GOLF", SMALL),
-            build_table(header + COURSE_COST_ROWS[17:], [56 * mm, 21 * mm, 21 * mm, 21 * mm, 21 * mm, 16 * mm]),
-            Spacer(1, 8),
-            Paragraph("<b>Best Value:</b> Maioris (€91-110), Palma Pitch & Putt (€27-30), Son Antem East (€105-140).", BODY),
-            Paragraph("<b>Best Premium:</b> Son Muntaner (€110-260), Son Vida (€85-190), Alcanada (€115-230).", BODY),
-            Paragraph("<b>Sample Trip Budgets</b>", SECTION),
-            Paragraph("3-Day: Son Gual + Alcanada + Santa Ponsa 1 = €510 (peak) | €300 (low) fees + buggy €120 + clubs €90 + meals €150 = €750-860 peak | €450-540 low", BODY),
-            Paragraph("5-Day: Green fees €850-950 + buggy €200 + clubs €150 + meals €250 = €1,350-1,550 peak | €850-1,050 low", BODY),
-            Paragraph("7-Day: Green fees €1,100-1,300 + buggy €280 + clubs €210 + meals €350 = €1,800-2,140 peak | €1,200-1,500 low", BODY),
-        ]
-    )
-    return story
-
-
-def generate_course_comparison():
-    rows = [
-        ["Course", "Difficulty", "Cost (Peak)", "Views", "Facilities", "From Palma", "Best For"],
-        ["Son Gual", "5/5", "€165", "4/5", "5/5", "10 min", "Championship"],
-        ["Alcanada", "4/5", "€220", "5/5", "4/5", "50 min", "Scenic"],
-        ["T Golf Calvia", "4/5", "€210", "3/5", "4/5", "20 min", "Premium"],
-        ["Son Muntaner", "4/5", "€260", "3/5", "5/5", "15 min", "Luxury"],
-        ["Golf de Andratx", "5/5", "€170", "4/5", "3/5", "45 min", "Challenge"],
-        ["Santa Ponsa 1", "3/5", "€125", "2/5", "3/5", "25 min", "Value"],
-        ["Son Quint", "3/5", "€172", "2/5", "3/5", "15 min", "Budget"],
-        ["Pollenca", "3/5", "€110", "4/5", "3/5", "55 min", "Scenic Value"],
-        ["Maioris", "2/5", "€81", "2/5", "2/5", "25 min", "Budget"],
-        ["Palma Pitch & Putt", "1/5", "€30", "N/A", "2/5", "2 min", "Beginners"],
-    ]
-    story = story_intro(
-        "Mallorca Course Comparison Chart",
-        "Compare 10 popular Mallorca courses by difficulty, cost, views, facilities, and distance from Palma. Use this to decide which courses match your priorities.",
-    )
-    story.append(build_table(rows, [38 * mm, 20 * mm, 24 * mm, 16 * mm, 20 * mm, 21 * mm, 30 * mm]))
-    story.extend(
-        [
-            Spacer(1, 8),
-            Paragraph("Best for championship golf: Son Gual, Golf de Andratx, Alcanada.", BODY),
-            Paragraph("Best budget options: Maioris, Son Quint, Palma Pitch & Putt.", BODY),
-            Paragraph("Best views: Alcanada, Son Termes, Pollenca.", BODY),
-            Paragraph("Best for beginners: Santa Ponsa 1 and 3, Son Quint, Palma Pitch & Putt.", BODY),
-        ]
-    )
-    return story
-
-
-def generate_beginners_guide():
-    story = story_intro(
-        "Beginner's Guide to Playing Golf in Mallorca",
-        "Everything you need to know before your first round in Mallorca. Whether you're nervous or new to holiday golf, this guide covers the five best beginner courses, what to bring, what to expect, and answers to common questions.",
-    )
-    story.extend(
-        [
-            Paragraph("5 Best Beginner Courses", SECTION),
-            Paragraph("<b>Palma Pitch & Putt</b> - €27-30 | Difficulty 1/10<br/>Central, par-3 focused, no long drives. Perfect starter round.", BODY),
-            Paragraph("<b>Golf Maioris</b> - €91-110 | Difficulty 5/10<br/>Open public play, broad landing areas, and a calmer resort-style round for newer golfers.", BODY),
-            Paragraph("<b>Son Quint</b> - €70-172 | Difficulty 5/10<br/>Near Palma, manageable par-4s, good facilities. Accessible difficulty.", BODY),
-            Paragraph("<b>Son Antem East</b> - €105-140 | Difficulty 5/10<br/>Resort course, buggy-friendly, coaching available. Gentle terrain.", BODY),
-            Paragraph("<b>Pollenca</b> - €65-75 | Difficulty 6/10<br/>Less crowded, beautiful setting, scenery plus slight challenge.", BODY),
-            Paragraph("What to Bring", SECTION),
-            Paragraph("Golf gear: clubs (rent €30-40), shoes, balls, tees. Clothing: hat, sunscreen, light layers, trousers or shorts, collared shirt. Accessories: water bottle, snacks, towel, phone. Optional: golf glove, notebook for scores.", BODY),
-            PageBreak(),
-            Paragraph("MR MALLORCA GOLF", SMALL),
-            Paragraph("What to Expect on the Day", SECTION),
-            Paragraph("Most Mallorca courses expect standard golf etiquette: arrive early, repair pitch marks, keep pace, and respect dress codes. If you are renting clubs or a buggy, confirm this at booking stage.", BODY),
-            Paragraph("Beginner-friendly Mallorca rounds are best when you choose a forgiving course, play the right tee, and do not over-schedule the day. A calmer setup nearly always leads to a better first experience.", BODY),
-            Paragraph("Need help choosing the right course? Andy can narrow it down based on your level, dates, and where you are staying.", BODY),
-        ]
-    )
-    return story
-
-
-def build_pdf(filename, story, pagesize=A4):
-    doc = SimpleDocTemplate(
-        str(DOWNLOADS_DIR / filename),
-        pagesize=pagesize,
-        leftMargin=18 * mm,
-        rightMargin=18 * mm,
-        topMargin=18 * mm,
-        bottomMargin=16 * mm,
-    )
+def build(filename, story, data, wide=False):
+    doc = SimpleDocTemplate(str(DOWNLOADS_DIR/filename), pagesize=landscape(A4) if wide else A4,
+        leftMargin=18*mm, rightMargin=18*mm, topMargin=16*mm, bottomMargin=18*mm,
+        title=filename.replace('-', ' ').replace('.pdf',''), author='Mr Mallorca Golf',
+        subject='MMG_LEAD_MAGNET_DATA_SHA256:'+data['fingerprint'])
     doc.build(story, onFirstPage=footer, onLaterPages=footer)
 
+def rate_notes(data):
+    return Paragraph('Course-data review: '+data['reviewed']+'. Prices are planning indications, not quotes. Variable rates change by date and demand. Nine-hole courses are marked. Palma Pitch &amp; Putt has nine holes; its listed fees cover 18 holes and vary by weekday. Member-only and hotel-only prices are not public visitor rates. Confirm access and exact prices before booking.', BODY)
+
+def buggy_label(course):
+    if course['access'] != 'Public': return 'On request'
+    if not course['buggy']: return 'Not needed'
+    if course['buggyIncludedAtPeak']: return euro(course['buggy'])+' low; included peak'
+    return euro(course['buggy'])
+
+def generate_cost_guide(data):
+    story = intro('Mallorca Golf Cost Breakdown 2026', 'Green fees, buggy hire and daily licences for all 24 courses. Buggy prices are per vehicle, normally shared by two golfers. The table distinguishes visitor rates from restricted access.')
+    rows=[['Course','Holes','Low','Peak','Buggy','Licence / player','Handicap','Access']]
+    for c in data['courses']:
+        rows.append([c['name'],c['holes'],euro(c['low']),euro(c['peak'])+(' *' if c['dynamic'] else ''),buggy_label(c),euro(c['licence']),c['handicap']+(' + certificate' if c['certificate'] else ''),c['access']])
+    story.extend([table(rows,[49,12,18,18,31,21,37,35]),Spacer(1,10),rate_notes(data)])
+    chosen=[next(c for c in data['courses'] if c['canonicalName']==name) for name in ['Golf Son Gual','Club de Golf Alcanada','Golf Santa Ponsa 1']]
+    hire=sum(c['buggy'] for c in chosen)/2
+    low=sum(c['low']+c['licence'] for c in chosen)+hire
+    peak=sum(c['peak']+c['licence'] for c in chosen)+hire
+    story.extend([Paragraph('A three-round golf budget',HEADING),Paragraph(f'Two golfers playing Son Gual, Alcanada and Santa Ponsa 1, sharing one buggy each round: {euro(low)} to {euro(peak)} per golfer. This includes the three green fees, shared buggy hire and published daily licences. It excludes club hire, meals, transport, accommodation, golf-booking fees and coaching.',BODY),Paragraph('Rental clubs and off-course costs',HEADING),Paragraph('Club hire depends on equipment, course and the number of days. Ask for the hire-company quote before deciding whether to bring your own clubs. Hotels, transfers and dining are priced separately for your dates and group. Golf booking carries a fee of 5% of green fees; full planning is quoted separately.',BODY),Paragraph('For your own dates and group, use the <link href="https://www.mrmallorcagolf.com/tools/golf-cost-calculator" color="#2D4A3E">trip cost calculator</link> or <link href="https://www.mrmallorcagolf.com/contact?service=tee-time-booking" color="#2D4A3E">ask me to book the golf</link>.',BODY)])
+    return story
+
+def generate_course_comparison(data):
+    story=intro('Mallorca Course Comparison Chart', 'All 24 courses compared by green fees, difficulty, holes, walking, published access rules and approximate drive time from Palma. Difficulty is my course-guide rating, out of ten. Travel depends on your exact hotel and traffic.')
+    rows=[['Course','Holes / par','Difficulty','Low','Peak','Walk','Palma drive','Access / handicap']]
+    for c in data['courses']:
+        access=c['access']+'; '+c['handicap']+('; certificate' if c['certificate'] else '')
+        rows.append([c['name'],str(c['holes'])+' / '+str(c['par']),c['difficulty'],euro(c['low']),euro(c['peak'])+(' *' if c['dynamic'] else ''),c['walk'],str(c['fromPalma'])+' min' if c['fromPalma'] else 'Confirm',access])
+    story.extend([table(rows,[46,17,18,18,18,34,23,47]),Spacer(1,10),rate_notes(data),Paragraph('Start with your handicap, where you are staying and how much driving you want. A short course can suit an arrival afternoon; a full 18-hole round needs more time. The <link href="https://www.mrmallorcagolf.com/tools/handicap-checker" color="#2D4A3E">handicap checker</link> separates courses you can book from those that need a certificate or an enquiry.',BODY)])
+    return story
+
+def generate_trip_planner(data):
+    # Seven compact days fit on one A4 page without an orphaned closing CTA.
+    body = ParagraphStyle('trip-body', parent=BODY, fontSize=9, leading=12, spaceAfter=5)
+    heading = ParagraphStyle('trip-heading', parent=HEADING, spaceBefore=8, spaceAfter=4)
+    story=intro('7-Day Mallorca Golf Itinerary', 'A sample week from a Palma hotel, with four planned rounds, a rest day and optional golf around arrival and departure. Change the length and pace to suit your group. This is an example, not a fixed trip or booking.')
+    days=[('Day 1: arrive and settle in',None,'Leave time for the flight, luggage and check-in. A short round is optional once the arrival time and daylight are known.'),('Day 2: Santa Ponsa 1','Golf Santa Ponsa 1','A full round near the southwest. Choose tees for the group and leave the evening open.'),('Day 3: Son Gual','Golf Son Gual','Put the more technical round after the group has settled. Play With A Pro can be discussed for this day.'),('Day 4: a day without a tee time',None,'Keep the day for Palma, a coastal visit or a quieter afternoon. A local travel partner can help with dining, transfers and activities.'),('Day 5: Alcanada','Club de Golf Alcanada','Give the northern round its own day. Check the drive and tee time before adding evening plans.'),('Day 6: Son Vida','Golf Son Vida','Return to golf near Palma. Keep the course choice flexible for the group and the week’s weather.'),('Day 7: departure',None,'Only add another round if the flight time leaves space for golf, traffic, returning a hire car and airport check-in. An early flight means no golf.')]
+    for title,name,description in days:
+        story.append(Paragraph(title,heading))
+        if name:
+            c=next(c for c in data['courses'] if c['canonicalName']==name)
+            description = f'{text(c["name"])}: {euro(c["low"])} to {euro(c["peak"])} green fee; {c["holes"]} holes, par {c["par"]}; about {c["fromPalma"]} minutes from Palma. {text(c["handicap"])}'+('; certificate required. ' if c['certificate'] else '. ')+description
+        story.append(Paragraph(description,body))
+    story.extend([rate_notes(data),Paragraph('Before booking',HEADING),Paragraph('Confirm the group’s handicaps, dates, hotel, walking or buggy needs, and a budget per person. Prices above are green fees, not a whole-trip price. I book the golf; my local travel partner helps with wider arrangements. Scope, costs and the contacts for each part are agreed before booking.',BODY),Paragraph('<link href="https://www.mrmallorcagolf.com/contact?service=trip-planning" color="#2D4A3E">Send your dates and group details</link>. For another example, read the <link href="https://www.mrmallorcagolf.com/guides/5-day-mallorca-golf-itinerary" color="#2D4A3E">five-round Palma itinerary</link>.',BODY)])
+    return story
+
+def generate_beginners_guide(data):
+    story=intro('Beginner’s Guide to Playing Golf in Mallorca', 'Start with course access, then choose a layout and length that suit your group. An approachable layout does not remove a club’s handicap or certificate rules.')
+    for name in ['Palma Pitch & Putt','Golf Son Quint','Golf Son Antem East','Golf Maioris','Golf Pollença']:
+        c=next(c for c in data['courses'] if c['canonicalName']==name)
+        story.extend([Paragraph(text(c['name']),HEADING),Paragraph(f'{c["holes"]} holes, par {c["par"]}; green fees {euro(c["low"])} to {euro(c["peak"])}. {text(c["handicap"])}'+('; a valid handicap certificate is required.' if c['certificate'] else '. No official handicap certificate is required.'),BODY)])
+    story.extend([rate_notes(data),Paragraph('Before the round',HEADING),Paragraph('Confirm the course’s access rules, rental equipment, dress code and check-in time. Bring golf shoes, balls, tees, water, a hat and sun protection. Repair pitch marks, keep up with the group ahead, and let the club know if you are new to the game.',BODY),Paragraph('A first day with me',HEADING),Paragraph('My coaching takes place on the course through Play With A Pro. We choose the course around your game. Send me your experience level, dates and where you are staying before deciding on a format.',BODY),Paragraph('<link href="https://www.mrmallorcagolf.com/tools/handicap-checker" color="#2D4A3E">Check course access</link> or <link href="https://www.mrmallorcagolf.com/contact?service=pwap" color="#2D4A3E">enquire about Play With A Pro</link>.',BODY)])
+    return story
 
 def main():
-    DOWNLOADS_DIR.mkdir(parents=True, exist_ok=True)
-    build_pdf("trip-planner.pdf", generate_trip_planner())
-    build_pdf("cost-guide.pdf", generate_cost_guide(), pagesize=landscape(A4))
-    build_pdf("course-comparison.pdf", generate_course_comparison(), pagesize=landscape(A4))
-    build_pdf("beginners-guide.pdf", generate_beginners_guide())
-    print("Generated lead magnet PDFs in", DOWNLOADS_DIR)
+    result=subprocess.run(['node','--no-warnings','scripts/export-lead-magnet-data.mjs'],cwd=ROOT,check=True,capture_output=True,encoding='utf-8')
+    data=json.loads(result.stdout)
+    assert len(data['courses'])==24
+    DOWNLOADS_DIR.mkdir(parents=True,exist_ok=True)
+    for name,generator,wide in [('cost-guide',generate_cost_guide,True),('course-comparison',generate_course_comparison,True),('trip-planner',generate_trip_planner,False),('beginners-guide',generate_beginners_guide,False)]:
+        build(name+'.pdf',generator(data),data,wide)
+    print('Generated four PDFs from 24 canonical course records; fingerprint '+data['fingerprint'])
 
-
-if __name__ == "__main__":
-    main()
+if __name__=='__main__': main()

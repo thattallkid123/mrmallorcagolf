@@ -1,131 +1,81 @@
-/* =====================================================================
-   COST DATA. Real 2026 Mallorca pricing ranges (EUR).
-   Source: MMG_COURSE_PRICING_MASTER (May 2026) + market research.
-   [lo, hi] = low season to peak season per unit.
-===================================================================== */
+import { getCoursePricingByName } from './course-pricing-data.js'
+import { getCourseLogisticsByName } from './course-logistics-data.js'
+
+// Golf uses the same published course masters as the comparison tool. Off-course
+// figures remain broad planning allowances, not partner quotes or bookable rates.
 export const COSTS = {
-  greenFees: {
-    value:    [55, 85],
-    balanced: [74, 126],
-    premium:  [80, 165],
-    luxury:   [96, 220],
-  },
-  buggyPerRound:    [30, 42],
+  buggyPerRound: [35, 55],
   clubHirePerRound: [25, 40],
-  transportPerDay:  [80, 140],
-  dining: {
-    casual:  [35, 55],
-    local:   [55, 85],
-    premium: [85, 150],
-  },
-  accommodation: {
-    self:    [0, 0],
-    '3star': [70, 130],
-    '4star': [120, 200],
-    '5star': [200, 350],
-    villa:   [180, 350],
-  },
+  transportPerDay: [80, 140],
+  dining: { casual: [35, 55], local: [55, 85], premium: [85, 150] },
+  accommodation: { self: [0, 0], '3star': [70, 130], '4star': [120, 200], '5star': [200, 350], villa: [180, 350] },
 }
 
 export const COURSE_MIX = {
-  value:    ['Golf Pollença', 'Golf Maioris', 'Son Antem East', 'Capdepera Golf'],
-  balanced: ['Golf de Bendinat', 'Canyamel Golf', 'Pula Golf', 'Golf Son Antem West', 'Vall d\'Or Golf', 'Son Servera'],
-  premium:  ['Son Gual', 'Son Vida', 'T Golf Palma', 'T Golf Calvià (Poniente)', 'Golf de Andratx'],
-  luxury:   ['Club de Golf Alcanada', 'Son Muntaner', 'T Golf Calvià (Poniente)'],
+  value: ['Golf Maioris', 'Golf Santa Ponsa 1', 'Golf Son Termes', 'Pula Golf'],
+  balanced: ['Real Golf de Bendinat', 'Golf Santa Ponsa 1', 'Golf Son Antem East', 'Golf Son Antem West', 'Golf Son Quint'],
+  premium: ['Golf Son Gual', 'Golf Son Vida', 'T Golf Palma (Puntiró)', 'T Golf Calvià (Poniente)', 'Golf de Andratx'],
+  luxury: ['Son Muntaner', 'Club de Golf Alcanada', 'T Golf Calvià (Poniente)'],
 }
 
-export const AREA_COURSE_MIX = {
-  north: {
-    value: ['Golf Pollença', 'Club de Golf Alcanada', 'Pula Golf', 'Son Servera'],
-    balanced: ['Club de Golf Alcanada', 'Golf Pollença', 'Pula Golf', 'Son Servera'],
-    premium: ['Club de Golf Alcanada', 'Son Muntaner', 'Son Gual', 'T Golf Palma'],
-    luxury: ['Club de Golf Alcanada', 'Son Muntaner', 'Son Gual'],
-  },
-  east: {
-    value: ['Capdepera Golf', 'Son Servera', 'Golf Pollença', 'Golf Maioris'],
-    balanced: ['Canyamel Golf', 'Pula Golf', 'Capdepera Golf', 'Son Servera'],
-    premium: ['Pula Golf', 'Club de Golf Alcanada', 'Son Gual', 'T Golf Palma'],
-    luxury: ['Club de Golf Alcanada', 'Son Muntaner', 'Son Gual'],
-  },
-  south: {
-    value: ['Golf Maioris', 'Son Antem East', 'Son Antem West', 'Golf Pollença'],
-    balanced: ['Son Antem West', 'Golf Maioris', 'Golf de Bendinat', 'Canyamel Golf'],
-    premium: ['Son Gual', 'T Golf Palma', 'T Golf Calvià (Poniente)', 'Son Vida'],
-    luxury: ['Son Muntaner', 'Son Gual', 'Club de Golf Alcanada'],
-  },
-  palma: {
-    value: ['Golf Maioris', 'Son Antem East', 'Golf Pollença', 'Capdepera Golf'],
-    balanced: ['Golf de Bendinat', 'Golf Son Antem West', 'Son Servera', 'Canyamel Golf'],
-    premium: ['Son Gual', 'Son Vida', 'T Golf Palma', 'Son Muntaner'],
-    luxury: ['Son Muntaner', 'Son Gual', 'Club de Golf Alcanada'],
-  },
-  southwest: {
-    value: ['Golf Maioris', 'Son Antem East', 'Golf Pollença', 'Capdepera Golf'],
-    balanced: ['Golf de Bendinat', 'Golf Son Antem West', 'Canyamel Golf', 'Pula Golf'],
-    premium: ['T Golf Calvià (Poniente)', 'Golf de Andratx', 'Son Gual', 'Son Vida'],
-    luxury: ['Son Muntaner', 'T Golf Calvià (Poniente)', 'Club de Golf Alcanada'],
-  },
+const LOCAL_COURSES = {
+  palma: ['Golf Son Gual', 'Golf Son Vida', 'Golf Son Quint', 'Son Muntaner', 'T Golf Palma (Puntiró)', 'Real Golf de Bendinat', 'Golf Son Termes', 'Golf Maioris', 'Golf Son Antem East', 'Golf Son Antem West', 'Golf Santa Ponsa 1'],
+  southwest: ['Golf Santa Ponsa 1', 'Real Golf de Bendinat', 'T Golf Calvià (Poniente)', 'Golf de Andratx', 'Golf Son Vida', 'Golf Son Quint', 'Son Muntaner'],
+  south: ['Golf Maioris', 'Golf Son Antem East', 'Golf Son Antem West', 'Golf Son Gual', 'T Golf Palma (Puntiró)'],
+  east: ['Capdepera Golf', 'Canyamel Golf', 'Pula Golf', 'Golf Club Son Servera', "Vall d'Or Golf"],
+  north: ['Club de Golf Alcanada'],
 }
 
-export const PREF_NOTES = {
-  scenic:      'You asked for scenic. I will weight the mix toward courses with the best views and settings.',
-  famous:      'You asked for famous names. I will prioritise the island\'s best-known courses in this tier.',
-  challenging: 'You asked for a challenge. I will pick the courses in this tier that ask the most questions of your game.',
-  relaxed:     'You asked for relaxed golf. I will favour friendlier layouts and gentler pacing.',
-  near:        'You want courses near your hotel. Once I know where you\'re staying, I\'ll tighten the mix around it.',
-  none:        'A balanced mix from this tier. I will tailor it once I know your group.',
-}
+// North has one public 18-hole course. Never quietly replace a local 18-hole
+// request with a nine-hole round or a drive to the other side of the island.
+export const AREA_COURSE_MIX = Object.fromEntries(Object.entries(LOCAL_COURSES).map(([area, courses]) => [area,
+  Object.fromEntries(Object.entries(COURSE_MIX).map(([budget, preferred]) => {
+    const localPreferred = preferred.filter(name => courses.includes(name))
+    const remaining = courses.filter(name => !localPreferred.includes(name)).sort((a, b) => {
+      const x = getCoursePricingByName(a), y = getCoursePricingByName(b)
+      return (x.low + x.peak - y.low - y.peak) * (['premium', 'luxury'].includes(budget) ? -1 : 1)
+    })
+    return [budget, [...localPreferred, ...remaining]]
+  }))
+]))
 
-export const PACKAGES = {
-  value:    'Course Picks &amp; Booking Help. I confirm your course mix, book tee times at the right rates, and share my course notes for each round.',
-  balanced: 'Trip Planning + One Coached Round. I plan the trip end to end and join you for a Play With A Pro round at one of your courses.',
-  premium:  'Signature Golf Day + Full Trip Planning. A hosted Signature Day with me plus full planning of courses, tee times, and transport.',
-  luxury:   'Full Concierge Trip. Every round, transfer, table, and tee time arranged, with me hosting your marquee golf day.',
-}
-
-export const AREA_NAMES = {
-  southwest: 'the Southwest',
-  palma: 'the Palma area',
-  north: 'the North',
-  east: 'the East',
-  south: 'the South',
-}
-
-export function range(perUnit, units) { return [perUnit[0] * units, perUnit[1] * units] }
-export function addR(a, b) { return [a[0] + b[0], a[1] + b[1]] }
+export const AREA_NAMES = { southwest: 'the Southwest', palma: 'the Palma area', north: 'the North', east: 'the East', south: 'the South' }
+export function range(pair, units) { return pair.map(value => value * units) }
+export function addR(a, b) { return a.map((value, index) => value + b[index]) }
 export function fmt(n) { return '€' + Math.round(n).toLocaleString('en-GB') }
-export function fmtR(r) { return fmt(r[0]) + ' – ' + fmt(r[1]) }
-export function mid(r) { return (r[0] + r[1]) / 2 }
-
-export function getSuggestedCourses(s) {
-  return AREA_COURSE_MIX[s.area]?.[s.budget] || COURSE_MIX[s.budget]
-}
+export function fmtR(pair) { return fmt(pair[0]) + ' – ' + fmt(pair[1]) }
+export function mid(pair) { return (pair[0] + pair[1]) / 2 }
+export function getSuggestedCourses(s) { return AREA_COURSE_MIX[s.area]?.[s.budget] || COURSE_MIX[s.budget] }
 
 export function calculate(state) {
   const s = state
-  const buggyRounds = s.buggy === 'yes' ? s.rounds : s.buggy === 'some' ? Math.ceil(s.rounds / 2) : 0
+  const names = getSuggestedCourses(s)
+  if (!names?.length) throw new Error('Unknown course mix')
   const nights = Math.max(0, s.days - 1)
-
-  const greenFees = range(COSTS.greenFees[s.budget], s.rounds * s.golfers)
-  const buggy     = range(COSTS.buggyPerRound, buggyRounds * s.golfers)
-  const clubs     = s.clubs === 'yes' ? range(COSTS.clubHirePerRound, s.rounds * s.golfers) : [0, 0]
-  const transport = s.transport === 'yes' ? range(COSTS.transportPerDay, s.days) : [0, 0]
-  const dining    = range(COSTS.dining[s.dining], s.days * s.golfers)
-  const accom     = range(COSTS.accommodation[s.accommodation], nights * s.golfers)
-
-  const golfOnly = addR(addR(greenFees, buggy), clubs)
-  const total    = addR(addR(addR(golfOnly, transport), dining), accom)
-
-  return {
-    greenFees, buggy, clubs, transport, dining, accom, golfOnly, total,
-    perGolfer: [total[0] / s.golfers, total[1] / s.golfers],
-    perRound:  [golfOnly[0] / (s.rounds * s.golfers), golfOnly[1] / (s.rounds * s.golfers)],
+  const buggyRounds = s.buggy === 'yes' ? s.rounds : s.buggy === 'some' ? Math.ceil(s.rounds / 2) : 0
+  const buggyCount = Math.ceil(s.golfers / 2)
+  let greenFees = [0, 0], buggy = [0, 0], licences = [0, 0]
+  for (let round = 0; round < s.rounds; round++) {
+    const name = names[round % names.length]
+    const price = getCoursePricingByName(name)
+    const logistics = getCourseLogisticsByName(name)
+    greenFees = addR(greenFees, range([price.low, price.peak], s.golfers))
+    licences = addR(licences, range([price.licenceFee || 0, price.licenceFee || 0], s.golfers))
+    // Essential buggies remain in the estimate even when 'no' was selected.
+    if (round < buggyRounds || logistics?.walkAllowed === false) {
+      const hire = logistics?.buggy ?? COSTS.buggyPerRound[1]
+      // Son Muntaner's low rate is walking; its peak rate includes the buggy.
+      buggy = addR(buggy, range([hire, logistics?.buggyIncl ? 0 : hire], buggyCount))
+    }
   }
+  const clubs = s.clubs === 'yes' ? range(COSTS.clubHirePerRound, s.rounds * s.golfers) : [0, 0]
+  const transport = s.transport === 'yes' ? range(COSTS.transportPerDay, s.days * Math.ceil(s.golfers / 4)) : [0, 0]
+  const dining = range(COSTS.dining[s.dining], s.days * s.golfers)
+  const accom = range(COSTS.accommodation[s.accommodation], nights * s.golfers)
+  const golfOnly = addR(addR(addR(greenFees, buggy), clubs), licences)
+  const total = addR(addR(addR(golfOnly, transport), dining), accom)
+  return { greenFees, buggy, clubs, licences, transport, dining, accom, golfOnly, total, nights, buggyCount,
+    perGolfer: range(total, 1 / s.golfers), perRound: range(golfOnly, 1 / (s.rounds * s.golfers)) }
 }
 
-export const DEFAULT_STATE = {
-  days: 4, golfers: 2, rounds: 3,
-  budget: 'balanced', preference: 'none', area: 'flexible',
-  buggy: 'yes', clubs: 'no', transport: 'yes',
-  accommodation: '4star', dining: 'local',
-}
+export const DEFAULT_STATE = { days: 4, golfers: 2, rounds: 3, budget: 'balanced', preference: 'none', area: 'flexible', buggy: 'yes', clubs: 'no', transport: 'yes', accommodation: '4star', dining: 'local' }

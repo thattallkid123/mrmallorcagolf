@@ -36,6 +36,7 @@ export default function PrivacyPolicy() {
               <li><strong>Course Selector and email signup forms:</strong> your email address, and any optional information you choose to provide when requesting planning notes or shortlist follow-ups</li>
               <li><strong>Analytics data:</strong> anonymous usage data collected by Google Analytics (see Section 5)</li>
             </ul>
+            <p>Trip cost enquiries also include your selected course mix, estimate and planning choices, such as hotel style, transport and buggy hire. They use the same private follow-up link.</p>
             <p>We do not collect payment card details. All payments are handled offline via bank transfer.</p>
           </section>
 
@@ -64,6 +65,7 @@ export default function PrivacyPolicy() {
 
           <section className="legal-section">
             <h2>5. Google Analytics</h2>
+            <p>Your trip-preferences draft is saved in session storage for up to 24 hours in that tab. It is cleared after successful submission or when the tab session ends. Staff previews do not save drafts.</p>
             <p>This website uses Google Analytics to understand how visitors use our site. Google Analytics collects usage data including pages visited, time spent, and approximate geographic location (country/region level), tied to a randomly generated identifier stored in your browser. This identifier is pseudonymous &mdash; it does not include your name or contact details &mdash; but it is not fully anonymous data.</p>
             <p>Google Analytics data is processed by Google LLC, certified under the EU-US Data Privacy Framework, in accordance with their privacy policy. You can opt out of Google Analytics tracking at any time by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.</p>
           </section>

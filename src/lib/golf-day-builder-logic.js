@@ -86,8 +86,8 @@ export const ADDONS = {
     "desc": "An optional stop near the course. Venue, opening hours and travel time are checked when the plan is agreed."
   },
   "coaching": {
-    "title": "Coaching with me",
-    "desc": "A warm-up or coaching session with me, subject to the date and course facilities."
+    "title": "Play With A Pro",
+    "desc": "18 holes with me, with coaching during play, followed by video and written notes. Subject to availability."
   },
   "lunch": {
     "title": "Lunch",
@@ -340,8 +340,8 @@ export const QUESTIONS = [
       },
       {
         "v": "coaching",
-        "t": "Coaching with me",
-        "d": "Warm-up, lesson or on-course coaching"
+        "t": "Play With A Pro",
+        "d": "18 holes with me, plus video and written notes"
       }
     ]
   },
@@ -412,7 +412,7 @@ export function isCourseEligible(course, answers) {
   const access = canonical?.access
   if (!canonical || !access || access.accessType !== 'public') return false
   if (LEVEL_RANK[answers.level] < LEVEL_REQ[course.level]) return false
-  if (canonical.holeCount < 18 && answers.level !== 'beginner' && !answers.addons?.includes('coaching')) return false
+  if (canonical.holeCount < 18 && (answers.addons?.includes('coaching') || answers.level !== 'beginner')) return false
   if (access.handicapRequired || access.certificateRequired) {
     const highest = HANDICAP_BANDS[answers.handicap]
     const limits = [access.handicapMen, access.handicapWomen].filter(Number.isFinite)

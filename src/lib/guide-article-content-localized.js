@@ -4038,7 +4038,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Buggies y trolleys"
         },
         {
-          "text": "Los buggies cuestan entre 35 y 48 € según el campo. Son Gual cobra 45 €, Alcanada 48 €; los modelos con GPS aportan distancias y mapas de hoyo. Trolley manual: 6-8 €. Trolley eléctrico: 14-25 €."
+          "text": "Los buggies cuestan entre 35 y 55 € según el campo. Son Gual cobra 45 €, Alcanada 48 €; los modelos con GPS aportan distancias y mapas de hoyo. Trolley manual: 6-8 €. Trolley eléctrico: 14-25 €."
         },
         {
           "text": "En campos más montañosos como Bendinat, Andratx o Son Vida, coge buggy: las subidas entre hoyos son fuertes y en Andratx es obligatorio antes de las 14:00 de todos modos. En los más llanos (Son Antem, Maioris, Santa Ponsa y otros), un trolley puede bastar si te apetece hacer ejercicio."
@@ -4318,7 +4318,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Voiturettes et chariots"
         },
         {
-          "text": "Les voiturettes coûtent entre 35 et €48 selon le parcours. Son Gual facture €45, Alcanada €48 ; les modèles GPS donnent les distances et le plan du trou. Chariot manuel : €6-8. Chariot électrique : €14-25."
+          "text": "Les voiturettes coûtent entre 35 et 55 € selon le parcours. Son Gual facture 45 €, Alcanada 48 € ; les modèles GPS donnent les distances et le plan du trou. Chariot manuel : 6-8 €. Chariot électrique : 14-25 €."
         },
         {
           "text": "Sur les parcours vallonnés comme Bendinat, Andratx ou Son Vida, prenez une voiturette : les montées entre les trous sont raides, et à Andratx elle est de toute façon obligatoire avant 14 h. Sur les parcours plus plats (Son Antem, Maioris, Santa Ponsa et d'autres), un chariot suffit si vous aimez marcher."

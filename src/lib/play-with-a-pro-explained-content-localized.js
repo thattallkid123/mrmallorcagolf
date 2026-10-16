@@ -50,7 +50,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Nach der Runde',
       title: 'Was Sie von diesem Tag mitnehmen.',
       paragraph:
-        'Wenn die Runde vorbei ist, haben Sie bereits klares Feedback dazu erhalten, was gut lief, was nicht und woran Sie weiterarbeiten sollten. Danach schicke ich Ihnen außerdem eine schriftliche Zusammenfassung, damit die Details des Tages nicht verloren gehen. Sie gehen mit einem klaren Bild nach Hause, nicht mit einer langen Liste, sondern mit den Dingen, die wirklich einen Unterschied machen.',
+        "Nach der Runde erhalten Sie ein Video und schriftliche Notizen dazu, was sich verändert hat und woran Sie als Nächstes arbeiten können.",
       quoteText:
         'Ich fand, dass er mir klares und konkretes Feedback gab, das mir half, mehrere meiner Fehler zu korrigieren. Vor allem mein Putten, mit dem ich mich schwergetan habe, hat sich sehr verbessert.',
       quoteCredit: 'Synøve',
@@ -135,7 +135,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Después de la vuelta',
       title: 'Lo que se lleva del día.',
       paragraph:
-        'Al terminar la vuelta, ya habrá recibido comentarios claros sobre qué funcionó bien, qué no y en qué debe seguir trabajando. Después también le envío un resumen por escrito para que no se le olviden los detalles del día. Termina con una imagen clara, no con una lista larga, solo con lo que realmente marcará la diferencia.',
+        "Después de la vuelta te envío un vídeo y notas escritas sobre lo que ha cambiado y en qué trabajar a continuación.",
       quoteText:
         'Me pareció que me daba indicaciones claras y concretas que me ayudaron a corregir varios de mis errores. Sobre todo mi putt, con el que he tenido dificultades, ha mejorado mucho.',
       quoteCredit: 'Synøve',
@@ -220,7 +220,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Après le parcours',
       title: 'Ce que vous retirez de cette journée.',
       paragraph:
-        "À la fin du parcours, vous avez déjà reçu des retours clairs sur ce qui a bien fonctionné, ce qui n'a pas marché et ce que vous devez continuer à travailler. Je vous envoie ensuite un compte rendu écrit pour que les détails de la journée ne s'effacent pas. Vous repartez avec une vision claire, pas une longue liste, juste ce qui fera vraiment la différence.",
+        "Après la partie, je vous envoie une vidéo et des notes écrites sur les progrès réalisés et les points à travailler ensuite.",
       quoteText:
         "J'ai trouvé qu'il me donnait des retours clairs et précis qui m'ont permis de corriger plusieurs de mes erreurs. Mon putting surtout, avec lequel j'ai eu du mal, s'est beaucoup amélioré.",
       quoteCredit: 'Synøve',
@@ -305,7 +305,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Na de ronde',
       title: 'Wat u van de dag meeneemt.',
       paragraph:
-        'Wanneer de ronde voorbij is, hebt u al duidelijke feedback gekregen over wat goed ging, wat niet en waaraan u verder moet werken. Daarna stuur ik u ook een schriftelijke samenvatting, zodat de details van de dag niet verloren gaan. U sluit af met een helder beeld, geen lange lijst, alleen de dingen die echt verschil maken.',
+        "Na de ronde stuur ik je een video en schriftelijke notities over wat er veranderde en waaraan je hierna kunt werken.",
       quoteText:
         'Ik vond dat hij me duidelijke en specifieke feedback gaf die me hielp meerdere van mijn fouten te corrigeren. Vooral mijn putting, waar ik moeite mee heb gehad, is flink verbeterd.',
       quoteCredit: 'Synøve',
@@ -390,7 +390,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: 'Efter rundan',
       title: 'Vad du tar med dig från dagen.',
       paragraph:
-        'När rundan är klar har du redan fått tydlig återkoppling om vad som fungerade bra, vad som inte gjorde det och vad du bör fortsätta arbeta med. Efteråt skickar jag också en skriftlig sammanfattning så att du inte glömmer detaljerna från dagen. Du går därifrån med en tydlig bild, inte en lång lista, bara det som faktiskt gör skillnad.',
+        "Efter rundan skickar jag en video och skriftliga anteckningar om vad som förändrades och vad du kan arbeta med härnäst.",
       quoteText:
         'Jag tyckte att han gav mig tydlig och konkret feedback som hjälpte mig att rätta till flera av mina misstag. Framför allt min puttning, som jag har kämpat med, har blivit mycket bättre.',
       quoteCredit: 'Synøve',
@@ -475,7 +475,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
       eyebrow: '比赛结束后',
       title: '您从这一天带走的东西。',
       paragraph:
-        '比赛结束时，您已经清楚知道哪些方面做得好、哪些需要改进，以及接下来该继续练什么。之后我还会给您发一份书面总结，让这一天的重要细节不至于遗忘。您带走的是清晰的方向，不是一长串清单，而是真正能带来改变的重点。',
+        "下场后，我会发送视频和书面笔记，说明本轮的变化以及接下来需要练习的内容。",
       quoteText:
         '我觉得他给了我清晰具体的反馈，帮我纠正了好几个错误。尤其是让我头疼的推杆，进步了很多。',
       quoteCredit: 'Synøve',

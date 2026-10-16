@@ -589,13 +589,13 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
           <h2>{t.cta.contact.title}</h2>
           <p>{t.cta.contact.desc}</p>
           <div className="gf-cta-btns">
-            <Link className="btn-gold" href={buildLocalePath('/plan-your-trip', lang)}>{t.cta.contact.enquire}</Link>
+            <Link className="btn-gold" href={`${buildLocalePath('/contact', lang)}?service=tee-time-booking`}>{t.cta.contact.enquire}</Link>
             <WhatsAppCta label={t.cta.contact.whatsapp} />
           </div>
         </div>
 
         <footer className="gf-foot">
-          {t.footer.text} <Link href={buildLocalePath('/plan-your-trip', lang)}>{t.footer.linkText}</Link>.
+          {t.footer.text} <Link href={`${buildLocalePath('/contact', lang)}?service=tee-time-booking`}>{t.footer.linkText}</Link>.
         </footer>
       </main>
     </div>

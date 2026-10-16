@@ -53,7 +53,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Asegurada y gestionada por completo antes de su llegada. Usted solo tiene que presentarse."
         ],
         [
-          "Briefing previo",
+          "Cuestionario previo a la vuelta",
           "El cuestionario previo a la vuelta mencionado antes, para que entienda su juego, sus expectativas y su forma actual."
         ],
         [
@@ -65,8 +65,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Gestión del campo, elección de golpes y toma de decisiones en los momentos que importan. No es un comentario constante, solo las observaciones adecuadas en el momento adecuado."
         ],
         [
-          "Charla tras la vuelta, vídeo y notas escritas",
-          "Después de la vuelta comentamos lo ocurrido. Le envío un vídeo y notas escritas sobre lo que ha cambiado y en qué trabajar a continuación."
+          "Vídeo y notas escritas después de la vuelta",
+          "Le envío un vídeo y notas escritas sobre lo que ha cambiado y en qué trabajar a continuación."
         ]
       ]
     },
@@ -152,7 +152,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta",
-            "Charla tras la vuelta, vídeo y notas escritas",
+            "Vídeo y notas escritas después de la vuelta",
             "Hora de salida privada disponible, al coste"
           ],
           "button": "Consultar →",
@@ -168,7 +168,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Hora de salida asegurada y completamente gestionada",
             "18 hoyos conmigo",
             "Coaching en el campo durante la vuelta",
-            "Charla tras la vuelta, vídeo y notas escritas",
+            "Vídeo y notas escritas después de la vuelta",
             "Hora de salida privada disponible, al coste"
           ],
           "button": "Consultar →",
@@ -198,14 +198,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Planificación de viajes",
           "name": "Planifique su viaje",
           "price": "Precio bajo demanda",
-          "note": "Se aplica una comisión de gestión del 5% solo a los green fees. Se confirma después de su primer evento.",
+          "note": "La reserva de golf lleva una comisión del 5 % de los green fees. La planificación completa y los servicios fuera del golf se presupuestan por separado antes de su confirmación.",
           "features": [
             "Sin búsqueda en aplicaciones o sitios web: nosotros gestionamos las horas de salida",
             "Campos elegidos para adaptarse a su grupo, nivel y presupuesto",
             "Ruta y número de vueltas planificados según su calendario",
             "Buggies y palos de alquiler organizados por mí",
-            "Hotel, traslados y restaurantes planificados con mi socio de viajes local, que los reserva directamente",
-            "Un solo plan, conmigo como su contacto para todo"
+            "Golf, alojamiento, traslados, restaurantes y días libres, planificados con mi socio de viajes local.",
+            "Los contactos para el golf y los demás servicios se acuerdan antes de reservar"
           ],
           "button": "Planifique su viaje →",
           "href": "/es/plan-your-trip"
@@ -255,7 +255,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Cómo es si nos juntan con otros?",
-          "a": "Normalmente va perfectamente bien y se hace buena compañía. El inconveniente honesto puede ser el ritmo de juego, alguna espera en varios tees y una vuelta más larga. Para nosotros, en cambio, seguimos en el mismo buggy, o caminando juntos si no lo llevamos, así que la conversación y el coaching son los mismos. El resumen, el vídeo y las notas por escrito después son suyos, esté quien esté en el campo."
+          "a": "Normalmente va perfectamente bien y se hace buena compañía. El inconveniente honesto puede ser el ritmo de juego, alguna espera en varios tees y una vuelta más larga. Para nosotros, en cambio, seguimos en el mismo buggy, o caminando juntos si no lo llevamos, así que la conversación y el coaching son los mismos. Le envío un vídeo y notas escritas sobre lo que ha cambiado y en qué trabajar a continuación."
         },
         {
           "q": "¿Trabaja con juniors?",
@@ -338,7 +338,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Gesichert und komplett organisiert, bevor Sie ankommen. Sie müssen nur erscheinen."
         ],
         [
-          "Briefing vor der Runde",
+          "Fragebogen vor der Runde",
           "Der oben erwähnte Fragebogen vor der Runde, damit ich Ihr Spiel, Ihre Erwartungen und Ihre aktuelle Form verstehe."
         ],
         [
@@ -350,8 +350,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Platzmanagement, Schlagauswahl und Entscheidungsfindung in den Momenten, in denen sie zählen. Kein Dauerkommentar, nur die richtigen Beobachtungen zur richtigen Zeit."
         ],
         [
-          "Nachbesprechung, Video und schriftliche Notizen",
-          "Nach der Runde besprechen wir gemeinsam den Tag. Sie erhalten ein Video und schriftliche Notizen dazu, was sich verändert hat und woran Sie als Nächstes arbeiten können."
+          "Video und schriftliche Notizen nach der Runde",
+          "Sie erhalten ein Video und schriftliche Notizen dazu, was sich verändert hat und woran Sie als Nächstes arbeiten können."
         ]
       ]
     },
@@ -437,7 +437,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
             "On-course-Coaching während der Runde",
-            "Nachbesprechung, Video und schriftliche Notizen",
+            "Video und schriftliche Notizen nach der Runde",
             "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "button": "Anfragen →",
@@ -453,7 +453,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Startzeit gesichert und komplett organisiert",
             "18 Löcher mit mir",
             "On-course-Coaching während der Runde",
-            "Nachbesprechung, Video und schriftliche Notizen",
+            "Video und schriftliche Notizen nach der Runde",
             "Private Startzeit auf Wunsch, zum Selbstkostenpreis"
           ],
           "button": "Anfragen →",
@@ -483,14 +483,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Reiseplanung",
           "name": "Reise planen",
           "price": "Preis auf Anfrage",
-          "note": "5% Verwaltungsgebühr nur auf Greenfees. Nach Ihrem ersten Gespräch bestätigt.",
+          "note": "Für Golfbuchungen fällt eine Gebühr von 5 % der Greenfees an. Die vollständige Reiseplanung und Leistungen außerhalb des Golfs werden vor Ihrer Zusage separat angeboten.",
           "features": [
             "Keine App-Recherche: Die Startzeiten werden für Sie organisiert",
             "Plätze, die zu Ihrer Gruppe, Ihrem Level und Budget passen",
             "Route und Rundenzahl passend zu Ihrem Zeitplan",
             "Buggys und Leihschläger von mir organisiert",
-            "Hotel, Transfers und Restaurants plane ich mit meinem lokalen Reisepartner, der sie direkt bucht",
-            "Ein Plan, mit mir als Ansprechperson für alles"
+            "Golf, Unterkunft, Transfers, Restaurants und golffreie Tage, gemeinsam mit meinem Reisepartner vor Ort geplant.",
+            "Die Ansprechpartner für Golf und weitere Leistungen stehen vor der Buchung fest"
           ],
           "button": "Reise planen →",
           "href": "/de/plan-your-trip"
@@ -540,7 +540,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Wie ist es, wenn wir zusammengelegt werden?",
-          "a": "Normalerweise völlig unproblematisch und gute Gesellschaft. Der ehrliche Nachteil kann das Tempo sein, etwas Warten an einigen Abschlägen und eine längere Runde. Für uns ändert sich dagegen nichts: Wir sitzen weiterhin im selben Buggy, oder gehen zusammen, wenn wir keinen nehmen, das Gespräch und das Coaching bleiben also gleich. Die Nachbesprechung, das Video und die schriftlichen Notizen danach gehören Ihnen, egal wer sonst dabei ist."
+          "a": "Normalerweise völlig unproblematisch und gute Gesellschaft. Der ehrliche Nachteil kann das Tempo sein, etwas Warten an einigen Abschlägen und eine längere Runde. Für uns ändert sich dagegen nichts: Wir sitzen weiterhin im selben Buggy, oder gehen zusammen, wenn wir keinen nehmen, das Gespräch und das Coaching bleiben also gleich. Sie erhalten ein Video und schriftliche Notizen dazu, was sich verändert hat und woran Sie als Nächstes arbeiten können."
         },
         {
           "q": "Arbeiten Sie auch mit Junioren?",
@@ -623,7 +623,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Réservé et entièrement géré avant votre arrivée. Vous n'avez qu'à vous présenter."
         ],
         [
-          "Briefing avant la ronde",
+          "Questionnaire avant la partie",
           "Le questionnaire d'avant-partie mentionné plus haut, pour que je comprenne votre jeu, vos attentes et votre forme actuelle."
         ],
         [
@@ -635,8 +635,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Gestion du parcours, choix des coups et prise de décision aux moments qui comptent. Pas un commentaire permanent, juste les bonnes observations au bon moment."
         ],
         [
-          "Échange après la partie, vidéo et notes écrites",
-          "Nous discutons de la partie après le dernier trou. Je vous envoie une vidéo et des notes écrites sur les changements observés et les points à travailler ensuite."
+          "Vidéo et notes écrites après la partie",
+          "Je vous envoie une vidéo et des notes écrites sur les progrès réalisés et les points à travailler ensuite."
         ]
       ]
     },
@@ -722,7 +722,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
             "Coaching sur le parcours pendant la partie",
-            "Échange après la partie, vidéo et notes écrites",
+            "Vidéo et notes écrites après la partie",
             "Départ privatisé possible, au prix coûtant"
           ],
           "button": "Demander →",
@@ -738,7 +738,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Heure de départ sécurisée et entièrement gérée",
             "18 trous avec moi",
             "Coaching sur le parcours pendant la partie",
-            "Échange après la partie, vidéo et notes écrites",
+            "Vidéo et notes écrites après la partie",
             "Départ privatisé possible, au prix coûtant"
           ],
           "button": "Demander →",
@@ -768,14 +768,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Planification de voyage",
           "name": "Planifiez votre voyage",
           "price": "Prix sur demande",
-          "note": "Des frais de gestion de 5% s'appliquent uniquement aux greens fees. Confirmés après votre première conversation.",
+          "note": "La réservation du golf comporte des frais de 5 % des green fees. La planification complète et les prestations hors golf font l’objet d’un devis distinct avant votre accord.",
           "features": [
             "Pas de recherche sur des apps ou des sites: heures de départ gérées par nous",
             "Parcours choisis pour correspondre à votre groupe, votre niveau et votre budget",
             "Itinéraire et nombre de parties planifiés autour de votre emploi du temps",
             "Buggys et location de clubs organisés par mes soins",
-            "Hôtel, transferts et restaurants planifiés avec mon partenaire de voyage local, qui les réserve directement",
-            "Un seul plan, avec moi comme point de contact pour tout"
+            "Golf, hébergement, transferts, restaurants et journées libres, planifiés avec mon partenaire de voyage local.",
+            "Les contacts pour le golf et les autres prestations sont convenus avant la réservation"
           ],
           "button": "Planifiez votre voyage →",
           "href": "/fr/plan-your-trip"
@@ -825,7 +825,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Comment cela se passe si nous sommes regroupés ?",
-          "a": "Normalement cela se passe très bien et la compagnie est agréable. L'inconvénient honnête peut être le rythme de jeu, quelques attentes sur certains départs et une partie plus longue. Pour nous, en revanche, nous restons dans la même voiturette, ou nous marchons ensemble si nous n'en prenons pas, la conversation et le coaching sont donc les mêmes. Le bilan, la vidéo et les notes écrites ensuite vous appartiennent, quels que soient les autres joueurs."
+          "a": "Normalement cela se passe très bien et la compagnie est agréable. L'inconvénient honnête peut être le rythme de jeu, quelques attentes sur certains départs et une partie plus longue. Pour nous, en revanche, nous restons dans la même voiturette, ou nous marchons ensemble si nous n'en prenons pas, la conversation et le coaching sont donc les mêmes. Je vous envoie une vidéo et des notes écrites sur les progrès réalisés et les points à travailler ensuite."
         },
         {
           "q": "Travaillez-vous avec des juniors ?",
@@ -907,7 +907,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Vastgelegd en volledig geregeld voordat u aankomt. U hoeft alleen maar te verschijnen."
         ],
         [
-          "Briefing voor de ronde",
+          "Vragenlijst vóór de ronde",
           "De eerder genoemde vragenlijst vóór de ronde, zodat ik uw spel, uw verwachtingen en uw huidige vorm begrijp."
         ],
         [
@@ -919,8 +919,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Baanmanagement, slagkeuze en besluitvorming op de momenten dat het telt. Geen doorlopend commentaar, alleen de juiste observaties op het juiste moment."
         ],
         [
-          "Nabespreking, video en schriftelijke notities",
-          "Na de ronde bespreken we hoe het ging. U ontvangt een video en schriftelijke notities over wat er veranderde en waaraan u hierna kunt werken."
+          "Video en schriftelijke notities na de ronde",
+          "U ontvangt een video en schriftelijke notities over wat er veranderde en waaraan u hierna kunt werken."
         ]
       ]
     },
@@ -1006,7 +1006,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
             "Coaching op de baan tijdens de ronde",
-            "Nabespreking, video en schriftelijke notities",
+            "Video en schriftelijke notities na de ronde",
             "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "button": "Aanvragen →",
@@ -1022,7 +1022,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Starttijd vastgelegd en volledig geregeld",
             "18 holes met mij",
             "Coaching op de baan tijdens de ronde",
-            "Nabespreking, video en schriftelijke notities",
+            "Video en schriftelijke notities na de ronde",
             "Privé starttijd mogelijk, tegen kostprijs"
           ],
           "button": "Aanvragen →",
@@ -1052,14 +1052,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Reisplanning",
           "name": "Plan uw reis",
           "price": "Prijs op aanvraag",
-          "note": "Er geldt een beheersvergoeding van 5% alleen op greenfees. Bevestigd na uw eerste gesprek.",
+          "note": "Voor het boeken van golf geldt een vergoeding van 5% van de greenfees. Volledige planning en onderdelen buiten het golf worden vooraf apart geoffreerd.",
           "features": [
             "Geen zoeken in apps of websites: starttijden geregeld door ons",
             "Banen gekozen om aan uw groep, niveau en budget te voldoen",
             "Route en aantal rondes afgestemd op uw schema",
             "Buggy's en huurclubs door mij geregeld",
-            "Hotel, transfers en restaurants gepland met mijn lokale reispartner, die ze rechtstreeks boekt",
-            "Eén plan, met mij als uw aanspreekpunt voor alles"
+            "Golf, verblijf, transfers, restaurants en vrije dagen, gepland met mijn lokale reispartner.",
+            "De contactpersonen voor golf en andere onderdelen worden vóór het boeken afgesproken"
           ],
           "button": "Plan uw reis →",
           "href": "/nl/plan-your-trip"
@@ -1109,7 +1109,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Hoe is het als we wel worden ingedeeld?",
-          "a": "Normaal gesproken helemaal prima en goed gezelschap. Het eerlijke nadeel kan het speeltempo zijn, wat wachten op een paar tees en een langere ronde. Voor ons verandert er echter niets: we zitten nog steeds in dezelfde buggy, of we lopen samen als we er geen nemen, dus het gesprek en de coaching blijven hetzelfde. De nabespreking, de video en de schriftelijke notities achteraf zijn van u, wie er verder ook op de baan is."
+          "a": "Normaal gesproken helemaal prima en goed gezelschap. Het eerlijke nadeel kan het speeltempo zijn, wat wachten op een paar tees en een langere ronde. Voor ons verandert er echter niets: we zitten nog steeds in dezelfde buggy, of we lopen samen als we er geen nemen, dus het gesprek en de coaching blijven hetzelfde. U ontvangt een video en schriftelijke notities over wat er veranderde en waaraan u hierna kunt werken."
         },
         {
           "q": "Werkt u ook met junioren?",
@@ -1192,7 +1192,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Bokad och helt ordnad innan du kommer. Du behöver bara dyka upp."
         ],
         [
-          "Briefing före rundan",
+          "Frågeformulär före rundan",
           "Frågeformuläret före rundan som nämndes tidigare, så att jag förstår ditt spel, dina förväntningar och din form just nu."
         ],
         [
@@ -1204,8 +1204,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "Banstrategi, slagval och beslutsfattande i de ögonblick då det spelar roll. Ingen ständig kommentar, bara rätt iakttagelser vid rätt tillfälle."
         ],
         [
-          "Samtal efter rundan, video och skriftliga anteckningar",
-          "Efter rundan pratar vi igenom hur det gick. Jag skickar en video och skriftliga anteckningar om vad som förändrades och vad du kan arbeta med härnäst."
+          "Video och skriftliga anteckningar efter rundan",
+          "Jag skickar en video och skriftliga anteckningar om vad som förändrades och vad du kan arbeta med härnäst."
         ]
       ]
     },
@@ -1291,7 +1291,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
             "Coaching på banan under rundan",
-            "Samtal efter rundan, video och skriftliga anteckningar",
+            "Video och skriftliga anteckningar efter rundan",
             "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "button": "Förfrågan →",
@@ -1307,7 +1307,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "Starttid säkrad och helt ordnad",
             "18 hål med mig",
             "Coaching på banan under rundan",
-            "Samtal efter rundan, video och skriftliga anteckningar",
+            "Video och skriftliga anteckningar efter rundan",
             "Privat starttid kan ordnas, till självkostnadspris"
           ],
           "button": "Förfrågan →",
@@ -1337,14 +1337,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "Reseplanering",
           "name": "Planera din resa",
           "price": "Pris på förfrågan",
-          "note": "5% administrationsavgift gäller endast för greenfees. Bekräftas efter ditt första samtal.",
+          "note": "För golfbokningar tillkommer en avgift på 5 % av greenfeen. Fullständig planering och arrangemang utanför golfen offereras separat innan du bestämmer dig.",
           "features": [
             "Ingen sökning i appar eller webbplatser: starttider arrangerade av oss",
             "Banor valda för att matcha din grupp, nivå och budget",
             "Rutt och antal rundor planerade efter ditt schema",
             "Golfbilar och hyrklubbor ordnade av mig",
-            "Hotell, transfers och restauranger planerade med min lokala resepartner, som bokar dem direkt",
-            "En plan, med mig som din kontaktperson för allt"
+            "Golf, boende, transfers, restauranger och lediga dagar, planerade med min lokala resepartner.",
+            "Kontaktpersoner för golf och övriga arrangemang bestäms före bokning"
           ],
           "button": "Planera din resa →",
           "href": "/sv/plan-your-trip"
@@ -1394,7 +1394,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "Hur är det om vi blir ihopslagna?",
-          "a": "Oftast går det alldeles utmärkt och sällskapet är trevligt. Den ärliga nackdelen kan vara speltempot, en del väntan på några tees och en längre runda. För oss är det däremot samma sak: vi sitter fortfarande i samma buggy, eller går tillsammans om vi inte tar någon, så samtalet och coachingen är desamma. Genomgången, videon och de skriftliga anteckningarna efteråt är dina oavsett vilka andra som är ute på banan."
+          "a": "Oftast går det alldeles utmärkt och sällskapet är trevligt. Den ärliga nackdelen kan vara speltempot, en del väntan på några tees och en längre runda. För oss är det däremot samma sak: vi sitter fortfarande i samma buggy, eller går tillsammans om vi inte tar någon, så samtalet och coachingen är desamma. Jag skickar en video och skriftliga anteckningar om vad som förändrades och vad du kan arbeta med härnäst."
         },
         {
           "q": "Arbetar du med juniorer?",
@@ -1477,7 +1477,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "在您抵达之前已经锁定并全部安排好。您只需要到场。"
         ],
         [
-          "赛前简报",
+          "下场前问卷",
           "前面提到的赛前问卷，让我了解您的球技、期望和当前状态。"
         ],
         [
@@ -1489,8 +1489,8 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "在关键时刻给出球场管理、击球选择和决策方面的指导。不是不停地评论，只在恰当的时间给出恰当的观察。"
         ],
         [
-          "赛后交流、视频和书面笔记",
-          "打完后我们会一起回顾这一轮球。我会发送视频和书面笔记，说明有哪些变化，以及接下来可以练习什么。"
+          "下场后的视频和书面笔记",
+          "我会发送视频和书面笔记，说明本轮的变化以及接下来需要练习的内容。"
         ]
       ]
     },
@@ -1576,7 +1576,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "开球时间已预订并安排妥当",
             "与我同打 18 洞",
             "球场实战指导贯穿全程",
-            "赛后交流、视频和书面笔记",
+            "下场后的视频和书面笔记",
             "可加订私人开球时段，按成本价收取"
           ],
           "button": "立即咨询 →",
@@ -1592,7 +1592,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
             "开球时间已预订并安排妥当",
             "与我同打 18 洞",
             "球场实战指导贯穿全程",
-            "赛后交流、视频和书面笔记",
+            "下场后的视频和书面笔记",
             "可加订私人开球时段，按成本价收取"
           ],
           "button": "立即咨询 →",
@@ -1622,14 +1622,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "eyebrow": "行程规划",
           "name": "规划您的行程",
           "price": "按需询价",
-          "note": "管理费仅按果岭费的 5% 收取。首次沟通后确认。",
+          "note": "高尔夫预订收取果岭费的 5% 作为服务费。完整行程规划和高尔夫以外的安排，会在您确认前另行报价。",
           "features": [
             "无需在应用或网站上搜索：我们为您安排开球时间",
             "精选球场以适配您的小组、水平及预算",
             "根据您的日程安排行程与轮数",
             "球车和租杆由我来安排",
-            "酒店、接送和餐厅由我和本地旅行合作伙伴一起规划，并由合作伙伴直接预订",
-            "一份计划，由我作为您的唯一联系人负责全部事项"
+            "高尔夫、住宿、接送、餐饮和休息日，由我与当地旅行合作伙伴共同规划。",
+            "预订前确认高尔夫及其他安排的联系人"
           ],
           "button": "了解行程规划 →",
           "href": "/zh/plan-your-trip"
@@ -1679,7 +1679,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         },
         {
           "q": "如果真的和别人拼组，体验会怎样？",
-          "a": "通常完全没问题，而且往往是很好的球友。要说真实的代价，主要是打球节奏：有几个发球台需要等待，整轮时间可能会拉长。但对我们两个人来说，我们仍然同坐一辆球车，如果不用球车就一起步行，所以交流和教学完全一样。赛后总结、反馈视频和书面记录，无论场上还有谁，都仍然只属于您。"
+          "a": "通常完全没问题，而且往往是很好的球友。要说真实的代价，主要是打球节奏：有几个发球台需要等待，整轮时间可能会拉长。但对我们两个人来说，我们仍然同坐一辆球车，如果不用球车就一起步行，所以交流和教学完全一样。我会发送视频和书面笔记，说明本轮的变化以及接下来需要练习的内容。"
         },
         {
           "q": "您接受青少年学员吗？",

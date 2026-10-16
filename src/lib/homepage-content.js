@@ -29,7 +29,7 @@ export const HOME_CONTENT = {
     "paragraphs": [
       "Play With A Pro is my on-course day with you: one course, 18 holes, course management, coaching woven into the round, and the local knowledge that turns a good day into a great one.",
       "If you want to play on your own, I book the golf: the right courses, in the right order, with tee times and buggies confirmed before you arrive.",
-      "For the whole trip, I plan the golf and work with a trusted local travel partner on the hotel, transfers, restaurants and days off. The partner books the non-golf side directly, and I put the two plans together."
+      "I plan and book the golf. A trusted local travel partner helps with hotels, transfers, restaurants and activities. Before you book, we agree the scope, costs and who handles each part."
     ],
     "services": [
       {
@@ -307,7 +307,7 @@ export const HOME_CONTENT = {
           "Tee time secured and fully handled",
           "18 holes with me",
           "On-course coaching during the round",
-          "Post-round chat, video and written notes",
+          "Post-round video and written notes",
           "Private tee time available at cost"
         ],
         "note": "My day rate. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",
@@ -326,7 +326,7 @@ export const HOME_CONTENT = {
           "Tee time secured and fully handled",
           "18 holes with me",
           "On-course coaching during the round",
-          "Post-round chat, video and written notes",
+          "Post-round video and written notes",
           "Private tee time available at cost"
         ],
         "note": "My fixed day rate for 2 or 3 golfers. Golf course green fee and lunch are separate. Buggy and rental clubs available as optional add-ons, happy to help arrange.",
@@ -365,10 +365,10 @@ export const HOME_CONTENT = {
           "Courses picked to match your group, level, and budget",
           "Routing and number of rounds planned around your schedule",
           "Buggies and club hire arranged by me",
-          "Hotel, transfers and dining planned with my local travel partner, who books them directly",
-          "One plan, with me as your contact for all of it"
+          "Golf plus accommodation, transfers, dining and days off, planned with my local travel partner.",
+          "The contacts for golf and non-golf arrangements are agreed before booking"
         ],
-        "note": "5% management fee applies to green fees only. Confirmed after your first conversation.",
+        "note": "Golf booking carries a 5% fee on green fees. Full planning and non-golf arrangements are quoted separately before you commit.",
         "cta": "Plan Your Trip",
         "href": "/plan-your-trip"
       }

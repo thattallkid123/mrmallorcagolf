@@ -359,6 +359,7 @@ const data = {
   },
   "pleta-de-mar": {
    "pills": [
+    "Nur Erwachsene ab 16",
     "Öko-Luxus",
     "2 Infinity-Pools",
     "Privatstrand",

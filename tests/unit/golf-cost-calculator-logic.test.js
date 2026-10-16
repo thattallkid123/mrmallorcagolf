@@ -1,130 +1,55 @@
 import { describe, expect, test } from 'vitest'
-import {
-  calculate,
-  getSuggestedCourses,
-  fmt,
-  fmtR,
-  mid,
-  range,
-  addR,
-  DEFAULT_STATE,
-  COSTS,
-  COURSE_MIX,
-  AREA_COURSE_MIX,
-} from '../../src/lib/golf-cost-calculator-logic'
-
-describe('range/addR/fmt helpers', () => {
-  test('range multiplies both ends of a [lo, hi] pair', () => {
-    expect(range([10, 20], 3)).toEqual([30, 60])
+import { calculate, getSuggestedCourses, DEFAULT_STATE, COURSE_MIX } from '../../src/lib/golf-cost-calculator-logic'
+import { getCoursePricingByName } from '../../src/lib/course-pricing-data'
+describe('trip estimates use the selected course itinerary', () => {
+  test('two golfers sharing a buggy at Son Gual pay for one vehicle', () => {
+    const r = calculate({ ...DEFAULT_STATE, budget: 'premium', rounds: 1 })
+    const p = getCoursePricingByName('Golf Son Gual')
+    expect(r.greenFees).toEqual([p.low * 2, p.peak * 2])
+    expect(r.buggy).toEqual([45, 45])
+    expect(r.licences).toEqual([(p.licenceFee || 0) * 2, (p.licenceFee || 0) * 2])
   })
-
-  test('addR sums two ranges element-wise', () => {
-    expect(addR([10, 20], [1, 2])).toEqual([11, 22])
+  test('an odd group needs a second buggy', () => {
+    expect(calculate({ ...DEFAULT_STATE, budget: 'premium', rounds: 1, golfers: 3 }).buggy).toEqual([90, 90])
   })
-
-  test('fmt formats a euro amount with thousands separator, no decimals', () => {
-    expect(fmt(1234.6)).toBe('€1,235')
-    expect(fmt(99)).toBe('€99')
+  test('essential buggies remain included when no is selected', () => {
+    expect(calculate({ ...DEFAULT_STATE, rounds: 1, buggy: 'no' }).buggy).toEqual([43, 43])
   })
-
-  test('fmtR formats a range as "€lo – €hi"', () => {
-    expect(fmtR([100, 250])).toBe('€100 – €250')
+  test('walking round adds no optional buggy', () => {
+    expect(calculate({ ...DEFAULT_STATE, budget: 'premium', rounds: 1, buggy: 'no' }).buggy).toEqual([0, 0])
   })
-
-  test('mid returns the midpoint of a range', () => {
-    expect(mid([100, 300])).toBe(200)
+  test('Muntaner peak rate does not charge twice for its included buggy', () => {
+    expect(calculate({ ...DEFAULT_STATE, budget: 'luxury', rounds: 1 }).buggy).toEqual([45, 0])
   })
-})
-
-describe('getSuggestedCourses', () => {
-  test('returns the area-specific mix when area and budget both match', () => {
-    const result = getSuggestedCourses({ area: 'north', budget: 'luxury' })
-    expect(result).toEqual(AREA_COURSE_MIX.north.luxury)
+  test('north itinerary repeats Alcanada rather than leaving the selected area', () => {
+    const s = { ...DEFAULT_STATE, area: 'north', rounds: 5 }
+    expect(getSuggestedCourses(s)).toEqual(['Club de Golf Alcanada'])
+    const p = getCoursePricingByName('Club de Golf Alcanada')
+    expect(calculate(s).greenFees).toEqual([p.low * 10, p.peak * 10])
   })
-
-  test('falls back to the flat COURSE_MIX when area is unrecognised (e.g. "flexible")', () => {
-    const result = getSuggestedCourses({ area: 'flexible', budget: 'balanced' })
-    expect(result).toEqual(COURSE_MIX.balanced)
+  test('Palma choices exclude the east coast', () => {
+    for (const budget of Object.keys(COURSE_MIX)) {
+      expect(getSuggestedCourses({ area: 'palma', budget })).not.toContain('Golf Club Son Servera')
+      expect(getSuggestedCourses({ area: 'palma', budget })).not.toContain('Pula Golf')
+    }
   })
-
-  test('falls back to COURSE_MIX when the area exists but the budget tier does not', () => {
-    const result = getSuggestedCourses({ area: 'north', budget: 'nonsense' })
-    expect(result).toEqual(COURSE_MIX.nonsense)
+  test('one day has no nights; transport scales beyond four people', () => {
+    const r = calculate({ ...DEFAULT_STATE, days: 1, golfers: 5 })
+    expect(r.accom).toEqual([0, 0])
+    expect(r.transport).toEqual([160, 280])
   })
-})
-
-describe('calculate', () => {
-  test('matches a hand-computed total for the default state', () => {
-    const result = calculate(DEFAULT_STATE)
-    // days:4 golfers:2 rounds:3 budget:balanced buggy:yes clubs:no transport:yes accommodation:4star dining:local
-    const expectedGreenFees = range(COSTS.greenFees.balanced, 3 * 2) // rounds * golfers
-    const expectedBuggy = range(COSTS.buggyPerRound, 3 * 2) // buggy:'yes' -> all rounds
-    const expectedClubs = [0, 0] // clubs:'no'
-    const expectedTransport = range(COSTS.transportPerDay, 4) // days
-    const expectedDining = range(COSTS.dining.local, 4 * 2) // days * golfers
-    const expectedAccom = range(COSTS.accommodation['4star'], 3 * 2) // nights(days-1) * golfers
-
-    expect(result.greenFees).toEqual(expectedGreenFees)
-    expect(result.buggy).toEqual(expectedBuggy)
-    expect(result.clubs).toEqual(expectedClubs)
-    expect(result.transport).toEqual(expectedTransport)
-    expect(result.dining).toEqual(expectedDining)
-    expect(result.accom).toEqual(expectedAccom)
-
-    const expectedGolfOnly = addR(addR(expectedGreenFees, expectedBuggy), expectedClubs)
-    const expectedTotal = addR(addR(expectedGolfOnly, expectedTransport), expectedDining)
-    const expectedTotalWithAccom = addR(expectedTotal, expectedAccom)
-    expect(result.golfOnly).toEqual(expectedGolfOnly)
-    expect(result.total).toEqual(expectedTotalWithAccom)
-  })
-
-  test('buggy "some" charges roughly half the rounds, rounded up', () => {
-    const state = { ...DEFAULT_STATE, buggy: 'some', rounds: 3 }
-    const result = calculate(state)
-    // ceil(3/2) = 2 buggy rounds, golfers: 2 -> 4 buggy-units
-    expect(result.buggy).toEqual(range(COSTS.buggyPerRound, 4))
-  })
-
-  test('buggy "no" charges nothing for buggies', () => {
-    const result = calculate({ ...DEFAULT_STATE, buggy: 'no' })
-    expect(result.buggy).toEqual([0, 0])
-  })
-
-  test('clubs "yes" adds club hire per round per golfer', () => {
-    const result = calculate({ ...DEFAULT_STATE, clubs: 'yes' })
-    expect(result.clubs).toEqual(range(COSTS.clubHirePerRound, DEFAULT_STATE.rounds * DEFAULT_STATE.golfers))
-  })
-
-  test('transport "no" removes the transport line entirely', () => {
-    const result = calculate({ ...DEFAULT_STATE, transport: 'no' })
-    expect(result.transport).toEqual([0, 0])
-  })
-
-  test('a single-day trip (days: 1) has zero accommodation nights', () => {
-    const result = calculate({ ...DEFAULT_STATE, days: 1 })
-    expect(result.accom).toEqual([0, 0])
-  })
-
-  test('self-catering accommodation costs nothing regardless of nights', () => {
-    const result = calculate({ ...DEFAULT_STATE, accommodation: 'self', days: 7 })
-    expect(result.accom).toEqual([0, 0])
-  })
-
-  test('perGolfer divides the total evenly across golfers', () => {
-    const result = calculate({ ...DEFAULT_STATE, golfers: 4 })
-    expect(result.perGolfer).toEqual([result.total[0] / 4, result.total[1] / 4])
-  })
-
-  test('perRound divides golf-only cost across rounds and golfers', () => {
-    const result = calculate({ ...DEFAULT_STATE, rounds: 5, golfers: 3 })
-    expect(result.perRound).toEqual([result.golfOnly[0] / (5 * 3), result.golfOnly[1] / (5 * 3)])
-  })
-
-  test('every budget tier produces a positive, well-ordered total range', () => {
-    for (const budget of Object.keys(COSTS.greenFees)) {
-      const result = calculate({ ...DEFAULT_STATE, budget })
-      expect(result.total[0]).toBeGreaterThan(0)
-      expect(result.total[1]).toBeGreaterThanOrEqual(result.total[0])
+  test('breakdown sums to totals across areas, tiers and optional extras', () => {
+    for (const area of ['flexible', 'palma', 'southwest', 'south', 'east', 'north']) {
+      for (const budget of Object.keys(COURSE_MIX)) {
+        for (const buggy of ['yes', 'some', 'no']) {
+          const r = calculate({ ...DEFAULT_STATE, area, budget, buggy, golfers: 3, rounds: 7, clubs: 'yes' })
+          for (let i = 0; i < 2; i++) {
+            expect(r.total[i]).toBe(r.greenFees[i] + r.buggy[i] + r.clubs[i] + r.licences[i] + r.transport[i] + r.dining[i] + r.accom[i])
+            expect(r.perGolfer[i]).toBeCloseTo(r.total[i] / 3)
+          }
+          expect(r.total[1]).toBeGreaterThanOrEqual(r.total[0])
+        }
+      }
     }
   })
 })

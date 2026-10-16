@@ -359,6 +359,7 @@ const data = {
   },
   "pleta-de-mar": {
    "pills": [
+    "Endast vuxna från 16 år",
     "Ekolyx",
     "2 infinitypooler",
     "Privat strand",

@@ -2,7 +2,7 @@ const { expect, test } = require('@playwright/test')
 
 test('planning, playing and Signature Day have clear routes into enquiry', async ({ page }) => {
   await page.goto('/plan-your-trip', { waitUntil: 'networkidle' })
-  await expect(page.locator('.pyt-hero__body')).toContainText('You play the rounds on your own schedule')
+  await expect(page.locator('.pyt-hero__body')).toContainText('I choose and book courses and tee times for your group')
   await page.getByRole('link', { name: /^Plan my golf trip/ }).click()
   await expect(page).toHaveURL(/\/contact\?service=trip-planning$/)
   await expect(page.getByRole('radio', { name: 'Plan My Golf Trip' })).toBeChecked()

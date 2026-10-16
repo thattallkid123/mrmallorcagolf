@@ -22,6 +22,18 @@ function makeHotel(overrides = {}) {
 const baseAnswers = { area: 'southwest', group: 'couple', size: '1-2', style: 'boutique', budget: 'premium', priority: [] }
 
 describe('scoreHotel', () => {
+  test('family results never include adults-only hotels or unknown family suitability', () => {
+    const family = { ...baseAnswers, group: 'family' }
+    for (const h of HOTELS) {
+      const score = scoreHotel(h, { ...family, area: h.area })
+      if (!h.groups.includes('family') || h.pills?.some(p => /adults only/i.test(p))) expect(score).toBe(-999)
+    }
+    for (const id of ['pleta-de-mar', 'la-goleta']) {
+      const h = HOTELS.find(h => h.id === id)
+      expect(h).toBeDefined()
+      expect(scoreHotel(h, { ...family, area: h.area })).toBe(-999)
+    }
+  })
   test('a hotel outside the requested area is disqualified with -999, regardless of every other match', () => {
     const perfectMatchWrongArea = makeHotel({ area: 'north' })
     expect(scoreHotel(perfectMatchWrongArea, baseAnswers)).toBe(-999)

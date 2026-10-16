@@ -42,15 +42,16 @@ export const EN_PLAN = {
     "lunchBooked": "Suggested lunch",
     "beachOrVillage": "Beach or village hour",
     "lastLight": "Return in the last of the light",
-    "warmupCoach": "Coaching warm-up with me",
+    "warmupCoach": "Check-in and warm-up",
     "warmupCoffee": "Warm-up and coffee",
     "holes18": "18 holes at {course}",
     "holes9": "9 holes at {course}"
   },
   "desc": {
-    "transfer": "A local travel partner can arrange and invoice the transfer once the route and timings are agreed.",
+"pwap": "18 holes with me, with coaching during play, followed by video and written notes. Subject to availability.",
+    "transfer": "My local travel partner can help with transfers. Route, timings, costs and responsibility are agreed before booking.",
     "selfDrive": "Confirm the hotel and route before choosing a departure time.",
-    "warmupCoach": "A warm-up or coaching session with me, subject to the date and course facilities.",
+    "warmupCoach": "Time to check in and prepare for your round. Facilities depend on the course.",
     "warmupCoffee": "Time to check in, warm up and prepare for the round. Facilities depend on the course.",
     "holeNote": " Note: {note}",
     "clubhouse": "A relaxed drink on the terrace while the scorecards are disputed.",
@@ -98,11 +99,11 @@ export const EN_PLAN = {
   },
   "handles": {
     "tee": "I confirm and book the golf",
-    "table": "Restaurants booked and invoiced by a local travel partner",
-    "transportYes": "Transfers booked and invoiced by a local travel partner",
+    "table": "Restaurant options checked with my local travel partner",
+    "transportYes": "Transfer options checked with my local travel partner",
     "transportNo": "Route checked with your hotel address",
     "buggies": "Club and buggy hire checked with the course",
-    "coachingYes": "Coaching with me, subject to availability",
+    "coachingYes": "18 holes with me, with coaching during play, followed by video and written notes. Subject to availability.",
     "coachingNo": "Coaching with me, subject to availability",
     "whatsapp": "Contact me to agree the golf plan"
   }

@@ -21,7 +21,7 @@ export const LEAD_MAGNETS = {
     title: 'Mallorca Golf Cost Breakdown 2026',
     eyebrow: 'Free Download',
     description:
-      'Every green fee, buggy hire, caddie, and hidden cost - broken down course by course so you can plan your budget before you book.',
+      'Green fees, shared buggy hire and daily licences across 24 courses, with a worked three-round budget and a checklist of other costs.',
     bullets: [
       'Peak vs. low-season pricing for every major course',
       'What extras actually cost on the day',
@@ -55,7 +55,7 @@ export const LEAD_MAGNETS = {
     title: "Beginner's Guide to Playing Golf in Mallorca",
     eyebrow: 'Free Download',
     description:
-      "Everything a less-experienced golfer needs to know before stepping onto a Mallorca course - from handicap requirements to what the caddies expect.",
+      "Course access, handicap certificates and five starting options for less-experienced golfers, with practical advice for booking a round.",
     bullets: [
       'Which courses welcome beginners and which to avoid',
       'Local rules, dress codes, and etiquette',
@@ -72,16 +72,16 @@ export const LEAD_MAGNETS = {
     title: 'Mallorca Golf Course Comparison Chart',
     eyebrow: 'Free Download',
     description:
-      "A side-by-side comparison of Mallorca's top courses across price, difficulty, scenery, walkability, and insider rating - so you can choose in minutes.",
+      "A side-by-side comparison of all 24 Mallorca courses: green fees, difficulty, holes, walkability, travel from Palma and access requirements.",
     bullets: [
       'All 24 courses on the island, compared',
-      'Green fees, difficulty, and best-for at a glance',
-      "A PGA pro's honest pick for every type of golfer",
+      'Green fees, difficulty and walking guidance at a glance',
+      "Handicap, certificate and visitor-access requirements",
     ],
     downloadUrl: 'https://www.mrmallorcagolf.com/downloads/course-comparison.pdf',
     buttonLabel: 'Send me the chart',
     metaTitle: 'Mallorca Golf Course Comparison',
     metaDescription:
-      "Compare all 24 Mallorca golf courses side by side. Free chart: green fees, difficulty, and a PGA pro's honest rating.",
+      "Compare all 24 Mallorca golf courses side by side. Free chart: green fees, difficulty, walking and visitor access.",
   },
 }

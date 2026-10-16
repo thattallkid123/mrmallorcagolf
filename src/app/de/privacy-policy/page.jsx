@@ -36,6 +36,7 @@ export default function PrivacyPolicyDE() {
               <li><strong>Course Selector und E-Mail-Anmeldeformulare:</strong> Ihre E-Mail-Adresse und alle optionalen Angaben, die Sie beim Anfordern von Planungsnotizen oder Ergebnis-Follow-ups machen</li>
               <li><strong>Analysedaten:</strong> anonyme Nutzungsdaten, die von Google Analytics erhoben werden (siehe Abschnitt 5)</li>
             </ul>
+            <p>Anfragen über den Reisekostenrechner enthalten auch Ihre Platzauswahl, Kostenschätzung und Planungsangaben, etwa Hotelstil, Transport und Buggy-Miete. Dafür wird derselbe private Folgelink verwendet.</p>
             <p>Wir erheben keine Zahlungskartendaten. Alle Zahlungen erfolgen offline per Banküberweisung.</p>
           </section>
 
@@ -64,6 +65,7 @@ export default function PrivacyPolicyDE() {
 
           <section className="legal-section">
             <h2>5. Google Analytics</h2>
+            <p>Ihr Entwurf der Reisepräferenzen wird für höchstens 24 Stunden im Sitzungsspeicher dieses Tabs gespeichert. Er wird nach erfolgreichem Absenden oder am Ende der Tab-Sitzung gelöscht. Mitarbeitervorschauen speichern keine Entwürfe.</p>
             <p>Diese Website nutzt Google Analytics, um zu verstehen, wie Besucher unsere Website nutzen. Google Analytics erfasst Nutzungsdaten wie besuchte Seiten, Verweildauer und ungefähren geografischen Standort (Land/Region), verknüpft mit einer zufällig erzeugten Kennung, die in Ihrem Browser gespeichert wird. Diese Kennung ist pseudonym &mdash; sie enthält weder Ihren Namen noch Ihre Kontaktdaten &mdash;, aber es handelt sich nicht um vollständig anonyme Daten.</p>
             <p>Google-Analytics-Daten werden von Google LLC verarbeitet, das im Rahmen des EU-US Data Privacy Framework zertifiziert ist, gemäß dessen Datenschutzerklärung. Sie können der Erfassung durch Google Analytics jederzeit widersprechen, indem Sie das <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser-Add-on</a> installieren.</p>
           </section>

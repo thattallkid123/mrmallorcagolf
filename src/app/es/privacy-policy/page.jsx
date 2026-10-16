@@ -34,6 +34,7 @@ export default function PrivacyPolicyES() {
               <li><strong>Course Selector y formularios de email:</strong> tu dirección de correo y cualquier dato opcional que facilites al pedir resultados o notas de planificación</li>
               <li><strong>Datos analíticos:</strong> datos de uso anónimos recopilados por Google Analytics (véase la sección 5)</li>
             </ul>
+            <p>Las consultas del calculador de costes también incluyen los campos elegidos, el presupuesto estimado y las preferencias de hotel, transporte y alquiler de buggy. Utilizan el mismo enlace privado de seguimiento.</p>
             <p>No recopilamos datos de tarjetas de pago. Todos los pagos se gestionan de forma presencial mediante transferencia bancaria.</p>
           </section>
 
@@ -62,6 +63,7 @@ export default function PrivacyPolicyES() {
 
           <section className="legal-section">
             <h2>5. Google Analytics</h2>
+            <p>El borrador de preferencias se guarda en el almacenamiento de sesión de esa pestaña durante un máximo de 24 horas. Se elimina al enviarlo correctamente o al finalizar la sesión de la pestaña. Las vistas previas del personal no guardan borradores.</p>
             <p>Este sitio web utiliza Google Analytics para comprender cómo los visitantes usan el sitio. Google Analytics recopila datos de uso como las páginas visitadas, el tiempo de permanencia y la ubicación geográfica aproximada (a nivel de país o región), vinculados a un identificador generado aleatoriamente y almacenado en tu navegador. Este identificador es seudónimo &mdash; no incluye tu nombre ni tus datos de contacto &mdash; pero no son datos completamente anónimos.</p>
             <p>Los datos de Google Analytics son tratados por Google LLC, certificada bajo el Marco de Privacidad de Datos UE-EE. UU., de conformidad con su política de privacidad. Puedes desactivar el seguimiento de Google Analytics en cualquier momento instalando el <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">complemento de inhabilitación de Google Analytics</a>.</p>
           </section>

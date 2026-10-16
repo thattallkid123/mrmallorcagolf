@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { currentPagePath, trackEvent, trackLead } from './analytics'
 import { getLeadAttribution } from './lead-attribution'
+import { readToolEnquiry } from './tool-enquiry'
 
 const INITIAL_FORM = {
   fname: '',
@@ -29,6 +30,8 @@ export function useContactFormSubmission(lang = 'en') {
 
   useEffect(() => {
     const requestedService = new URLSearchParams(window.location.search).get('service')
+    const planning = readToolEnquiry(window.location.hash)
+    setForm(current => ({ ...current, ...planning }))
     if (['pwap', 'trip-planning', 'whole-trip', 'tee-time-booking', 'both'].includes(requestedService)) {
       setForm((current) => ({ ...current, serviceType: requestedService, experience: requestedService }))
     }

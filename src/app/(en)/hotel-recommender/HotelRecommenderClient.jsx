@@ -1,4 +1,5 @@
 'use client'
+import { buildToolEnquiryHref } from '../../../lib/tool-enquiry'
 import { getToolRecoveryT } from '../../../lib/tool-recovery-content'
 import ToolChoices from '../../../components/ToolChoices'
 
@@ -140,7 +141,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
     mlBody.set('fields[hotel_answers]', answerSummary)
     mlBody.set('ml-submit', '1')
     mlBody.set('anticsrf', 'true')
-    fetch('https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe', {
+    if (newsletter) fetch('https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: mlBody.toString(),
@@ -426,7 +427,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
               <h3>{t.cta.title}</h3>
               <p>{t.cta.body}</p>
               <div className="hr-cta-links">
-                <a href={`https://www.mrmallorcagolf.com${buildLocalePath('/plan-your-trip', lang)}`} className="hr-cta-link hr-cta-link-primary">{t.cta.enquire}</a>
+                <a href={buildToolEnquiryHref(lang, { serviceType: 'whole-trip', message: [t.results.heroSub.replace('{group}', t.groupLabel[answers.group]).replace('{priority}', (answers.priority || []).map(p => t.priorityLabel[p]).join(', ')).replace('{area}', t.areaLabels[answers.area]), ...results.map(x => x.hotel.name)].join('\n') })} className="hr-cta-link hr-cta-link-primary">{t.cta.enquire}</a>
                 <a href={WA_HOTEL_HREF} data-analytics-manual="true" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>{t.cta.whatsapp}</a>
               </div>
             </div>

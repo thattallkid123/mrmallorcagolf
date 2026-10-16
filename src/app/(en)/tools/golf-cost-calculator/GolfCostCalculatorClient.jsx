@@ -1,6 +1,6 @@
 'use client'
 
-import { useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
 import { getGolfCostCalculatorT } from '../../../../lib/golf-cost-calculator-translations'
@@ -62,6 +62,23 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
   const [quoteSuccess, setQuoteSuccess] = useState(false)
   const [quoteError, setQuoteError] = useState(false)
   const containerRef = useRef(null)
+  const quotePanelRef = useRef(null)
+  useEffect(() => {
+    if (!quoteBuilderOpen) return
+    const previous = document.activeElement
+    const panel = quotePanelRef.current
+    const focusable = () => [...panel.querySelectorAll('button, input, textarea, a[href]')].filter(el => !el.disabled)
+    focusable()[0]?.focus()
+    function handleKey(event) {
+      if (event.key === 'Escape') { setQuoteBuilderOpen(false); return }
+      if (event.key !== 'Tab') return
+      const items = focusable(), first = items[0], last = items.at(-1)
+      if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus() }
+      if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus() }
+    }
+    document.addEventListener('keydown', handleKey)
+    return () => { document.removeEventListener('keydown', handleKey); previous?.focus() }
+  }, [quoteBuilderOpen])
 
   function scrollToTop() {
     const el = containerRef.current
@@ -114,7 +131,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
     mlBody.set('fields[email]', email)
     mlBody.set('ml-submit', '1')
     mlBody.set('anticsrf', 'true')
-    fetch(MAILERLITE_COURSE_SELECTOR, {
+    if (subscribeNewsletter) fetch(MAILERLITE_COURSE_SELECTOR, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: mlBody.toString(),
@@ -134,10 +151,13 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
             days: s.days,
             golfers: s.golfers,
             rounds: s.rounds,
-            buggy: s.buggy !== 'no',
+            courses: getSuggestedCourses(s).slice(0, s.rounds),
+            buggy: r.buggy.some(value => value > 0),
             clubs: s.clubs === 'yes',
             transport: s.transport === 'yes',
             greenFees: r.greenFees,
+            licences: r.licences,
+            assumptions: t.assumptions.body.replace('{nights}', String(r.nights)),
             buggyRange: r.buggy,
             clubsRange: r.clubs,
             transportRange: r.transport,
@@ -190,6 +210,17 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
           perGolfer: fmtR(r.perGolfer),
           dates: quoteDates || null,
           notes: quoteNotes || null,
+          lang,
+          planningDetails: [
+            [t.step2Fields.area, state.area], [t.step2Fields.preference, state.preference],
+            [t.step3Fields.buggy, state.buggy], [t.step3Fields.clubs, state.clubs],
+            [t.step3Fields.transport, state.transport], [t.step3Fields.accommodation, state.accommodation],
+            [t.step3Fields.dining, state.dining],
+          ].map(([label, value]) => {
+            const fields = Object.values(t.step2Fields).concat(Object.values(t.step3Fields)).filter(Array.isArray)
+            const option = fields.flat().find(opt => opt.val === value)
+            return `${label}: ${option?.label || value}`
+          }).join('\n'),
         }),
       })
 
@@ -286,6 +317,8 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-btn.gold { background:#B8973C; color:#fff; flex:1; }
         .gcc-btn.gold:hover { opacity:.9; }
         /* Results */
+        .gcc-assumptions { margin:var(--space-4) 0; font-family:var(--font-sans); font-size:13px; line-height:1.65; color:#6F665B; }
+        .gcc-assumptions summary { cursor:pointer; color:#2D4A3E; font-weight:500; padding:var(--space-3) 0; }
         .gcc-hero-est { background:#2D4A3E; color:#F7F4EF; border-radius:14px; padding:26px 20px; text-align:center; margin-bottom:14px; }
         .gcc-hero-est .lab { font-family:var(--font-sans); font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:#D4B068; font-weight:500; }
         .gcc-hero-est .big { font-family:var(--font-serif); font-size:clamp(32px,8vw,44px); font-weight:500; margin:10px 0 4px; letter-spacing:-0.02em; line-height:1.02; }
@@ -461,6 +494,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
 
           const parts = [
             [t.resultCards.budgetLineGreenFees, r.greenFees],
+            [t.assumptions.licences, r.licences],
             [t.resultCards.budgetLineAccommodation, r.accom],
             [t.resultCards.budgetLineDining, r.dining],
             [t.resultCards.budgetLineBuggies, r.buggy],
@@ -487,6 +521,11 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
           return (
             <div>
               <div className="gcc-step-label">{t.results.label}</div>
+
+              <details className="gcc-assumptions">
+                <summary>{t.assumptions.heading}</summary>
+                <p>{formatText(t.assumptions.body, { nights: r.nights })}</p>
+              </details>
 
               <div className="gcc-hero-est">
                 <div className="lab">{t.results.total}</div>
@@ -685,7 +724,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
             }}
             onClick={() => !quoteSuccess && setQuoteBuilderOpen(false)}
           />
-          <aside
+          <aside ref={quotePanelRef} role="dialog" aria-modal="true" aria-labelledby="trip-quote-title"
             style={{
               position:'fixed',
               zIndex:61,
@@ -705,10 +744,10 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
             {/* Header */}
             <div className="gcc-sheet-head">
               <div className="gcc-sheet-head__eyebrow">{t.quote.cta}</div>
-              <h3 className="gcc-sheet-head__title">{t.quoteForm.heading}</h3>
+              <h3 id="trip-quote-title" className="gcc-sheet-head__title">{t.quoteForm.heading}</h3>
               <button
                 onClick={() => !quoteSuccess && setQuoteBuilderOpen(false)}
-                className="gcc-sheet-head__close"
+                className="gcc-sheet-head__close" aria-label={t.assumptions.close}
               >×</button>
             </div>
 
@@ -750,8 +789,8 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                   {/* Form */}
                   <form onSubmit={submitQuote}>
                     <div style={{ marginBottom:16 }}>
-                      <label style={labelStyle}>{t.quoteForm.email}</label>
-                      <input
+                      <label htmlFor="quote-email" style={labelStyle}>{t.quoteForm.email}</label>
+                      <input id="quote-email"
                         type="email"
                         value={quoteEmail}
                         onChange={e => setQuoteEmail(e.target.value)}
@@ -770,8 +809,8 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                     </div>
 
                     <div style={{ marginBottom:16 }}>
-                      <label style={labelStyle}>{t.quoteForm.dates} <span style={{ textTransform:'none', fontWeight:'normal' }}>(optional)</span></label>
-                      <input
+                      <label htmlFor="quote-dates" style={labelStyle}>{t.quoteForm.dates}</label>
+                      <input id="quote-dates"
                         type="text"
                         value={quoteDates}
                         onChange={e => setQuoteDates(e.target.value)}
@@ -790,8 +829,8 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                     </div>
 
                     <div style={{ marginBottom:16 }}>
-                      <label style={labelStyle}>{t.quoteForm.notes}</label>
-                      <textarea
+                      <label htmlFor="quote-notes" style={labelStyle}>{t.quoteForm.notes}</label>
+                      <textarea id="quote-notes"
                         value={quoteNotes}
                         onChange={e => setQuoteNotes(e.target.value)}
                         placeholder={t.quoteForm.notesPlaceholder}

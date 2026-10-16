@@ -1,5 +1,6 @@
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
+import { createPreferencesLink } from '../../../lib/enquiry-context.js'
 
 import {
   checkRateLimit,
@@ -37,7 +38,7 @@ export async function POST(request) {
       return NextResponse.json({ success: true })
     }
 
-    const { email, golfers, days, rounds, budget, courses, estimate, perGolfer, dates, notes } = payload
+    const { email, golfers, days, rounds, budget, courses, estimate, perGolfer, dates, notes, planningDetails, lang } = payload
 
     if (!email || !isValidEmail(email) || !golfers) {
       return NextResponse.json({ error: 'Missing required fields' }, { status: 400 })
@@ -58,6 +59,12 @@ export async function POST(request) {
     const safePerGolfer = escapeHtml(sanitizeText(perGolfer, 60))
     const safeDates = escapeHtml(sanitizeText(dates, 120))
     const safeNotes = escapeHtml(sanitizeMultilineText(notes, 2000))
+    const details = sanitizeMultilineText(planningDetails, 2000)
+    const { enquiryRef, preferencesUrl } = createPreferencesLink({
+      name: '', email, dates: sanitizeText(dates, 120), groupsize: sanitizeText(String(golfers), 40),
+      courses: sanitizeText(courses, 400), service: 'Trip cost estimate enquiry',
+      message: [`${sanitizeText(String(days), 40)} days; ${sanitizeText(String(rounds), 40)} rounds; ${sanitizeText(budget, 80)}. Planning estimate: ${sanitizeText(estimate, 60)} total, ${sanitizeText(perGolfer, 60)} per golfer.`, sanitizeMultilineText(notes, 2000), details].filter(Boolean).join('\n\n'),
+    }, sanitizeText(lang, 10))
 
     // Build email to Andy with structured lead
     const bodyHtml = `
@@ -77,11 +84,14 @@ export async function POST(request) {
       ${safeNotes ? `<p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;"><strong>Anything else about the trip:</strong></p>
       <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;white-space:pre-wrap;">${safeNotes}</p>` : ''}
 
+      <p><strong>Planning choices:</strong><br/>${escapeHtml(details).replaceAll('\n', '<br/>')}</p>
+      <p><strong>Enquiry reference:</strong> ${enquiryRef}</p>
+      <p>After reviewing the enquiry, you can send this <a href="${escapeHtml(preferencesUrl)}">personal trip preferences link</a> before your call. It loads the original request for 30 days. Keep the link private.</p>
       <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8a8784;">From: Mallorca Golf Trip Cost Calculator</p>
     `
 
     const resend = new Resend(resendKey)
-    await resend.emails.send({
+    const sent = await resend.emails.send({
       from: 'Trip Quote Builder <quotes@mrmallorcagolf.com>',
       to: 'andy@mrmallorcagolf.com',
       replyTo: email,
@@ -89,10 +99,12 @@ export async function POST(request) {
       html: bodyHtml,
     })
 
-    // Optional: add to MailerLite if configured (doesn't block the response)
+    if (sent.error) throw new Error('Quote email delivery failed')
+
+    // Add to planning notes only with explicit consent.
     const mlToken = process.env.MAILERLITE_API_TOKEN
     const mlGroup = process.env.MAILERLITE_QUOTE_BUILDER_GROUP_ID
-    if (mlToken && mlGroup) {
+    if (payload.subscribeNewsletter === true && mlToken && mlGroup) {
       fetch('https://connect.mailerlite.com/api/subscribers', {
         method: 'POST',
         headers: {

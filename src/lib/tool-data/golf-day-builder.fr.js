@@ -197,10 +197,7 @@ const data = {
      "Activité en famille",
      "Une activité pour les joueurs et les non-golfeurs"
     ],
-    "coaching": [
-     "Coaching avec moi",
-     "Échauffement, cours ou coaching sur le parcours"
-    ]
+    "coaching": ["Play With A Pro","18 trous avec moi, du coaching pendant le jeu, puis une vidéo et des notes écrites. Selon mes disponibilités."]
    }
   },
   "transport": {
@@ -496,10 +493,7 @@ const data = {
    "Activité en famille",
    "Une étape facultative près du parcours. Le lieu, les horaires et le trajet sont vérifiés lors de la préparation du programme."
   ],
-  "coaching": [
-   "Coaching avec moi",
-   "Une séance d’échauffement ou de coaching avec moi, selon la date et les installations du parcours."
-  ],
+  "coaching": ["Play With A Pro","18 trous avec moi, du coaching pendant le jeu, puis une vidéo et des notes écrites. Selon mes disponibilités."],
   "lunch": [
    "Long déjeuner",
    "Une table près du parcours, choisie en fonction de votre départ. Un partenaire local vérifie les horaires, la disponibilité et le trajet avant de réserver."
@@ -548,7 +542,8 @@ const data = {
    "holes9": "9 trous à {course}"
   },
   "desc": {
-   "transfer": "Un partenaire de voyage local peut réserver et facturer le transfert une fois l’itinéraire et les horaires convenus.",
+"pwap": "18 trous avec moi, du coaching pendant le jeu, puis une vidéo et des notes écrites. Selon mes disponibilités.",
+   "transfer": "Mon partenaire local peut aider à organiser les transferts. Le trajet, les horaires, les coûts et les responsabilités sont convenus avant réservation.",
    "selfDrive": "Confirmez l’hôtel et l’itinéraire avant de fixer l’heure de départ.",
    "warmupCoach": "Une séance d’échauffement ou de coaching avec moi, selon la date et les installations du parcours.",
    "warmupCoffee": "Du temps pour l’accueil, l’échauffement et la préparation de la partie. Les installations dépendent du parcours.",
@@ -598,11 +593,11 @@ const data = {
   },
   "handles": {
    "tee": "Je confirme et réserve le golf",
-   "table": "Restaurants réservés et facturés par un partenaire local",
-   "transportYes": "Transferts réservés et facturés par un partenaire local",
+   "table": "Restaurants étudiés avec mon partenaire local",
+   "transportYes": "Transferts étudiés avec mon partenaire local",
    "transportNo": "Itinéraire vérifié avec l’adresse de votre hôtel",
    "buggies": "Location de clubs et de voiturette vérifiée avec le parcours",
-   "coachingYes": "Coaching avec moi, selon disponibilité",
+   "coachingYes": "18 trous avec moi, du coaching pendant le jeu, puis une vidéo et des notes écrites. Selon mes disponibilités.",
    "coachingNo": "Coaching avec moi, selon disponibilité",
    "whatsapp": "Contactez-moi pour convenir du programme de golf"
   }

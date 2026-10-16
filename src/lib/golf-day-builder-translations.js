@@ -33,7 +33,7 @@ export const GOLF_DAY_BUILDER_T = {
       "courseChosen": "Course chosen:",
       "whyCard": "Why this day fits you",
       "andyCard": "What can be arranged after you enquire",
-      "estimate": "These are suggested day plans. I confirm the golf; a trusted local travel partner checks, books and invoices any restaurants or transfers.",
+      "estimate": "These are suggested day plans. I confirm the golf and work with my local travel partner on restaurants or transfers. Costs and responsibilities are agreed before booking.",
       "tabs": {
         "efficient": "Efficient golf day",
         "lunch": "Golf & long lunch",
@@ -129,7 +129,7 @@ export const GOLF_DAY_BUILDER_T = {
       "courseChosen": "Platz gewählt:",
       "whyCard": "Warum dieser Tag zu Ihnen passt",
       "andyCard": "Was nach Ihrer Anfrage organisiert werden kann",
-      "estimate": "Dies sind Vorschläge für einen Golftag. Ich bestätige das Golf; ein lokaler Reisepartner prüft, bucht und berechnet Restaurants oder Transfers.",
+      "estimate": "Dies sind Vorschläge für einen Golftag. Ich bestätige das Golf und stimme Restaurants oder Transfers mit meinem lokalen Reisepartner ab. Kosten und Zuständigkeiten werden vor der Buchung vereinbart.",
       "tabs": {
         "efficient": "Effizienter Golftag",
         "lunch": "Golf & langes Mittagessen",
@@ -225,7 +225,7 @@ export const GOLF_DAY_BUILDER_T = {
       "courseChosen": "Campo elegido:",
       "whyCard": "Por qué este día le conviene",
       "andyCard": "Lo que se puede organizar después de su consulta",
-      "estimate": "Estos son planes sugeridos. Confirmo el golf; un colaborador local comprueba, reserva y factura los restaurantes o traslados.",
+      "estimate": "Son propuestas para un día de golf. Yo confirmo el golf y coordino restaurantes o traslados con mi colaborador local. Acordamos costes y responsabilidades antes de reservar.",
       "tabs": {
         "efficient": "Día de golf eficiente",
         "lunch": "Golf y largo almuerzo",
@@ -321,7 +321,7 @@ export const GOLF_DAY_BUILDER_T = {
       "courseChosen": "Parcours choisi:",
       "whyCard": "Pourquoi cette journée vous convient",
       "andyCard": "Ce qui peut être organisé après votre demande",
-      "estimate": "Ces programmes sont des propositions. Je confirme le golf ; un partenaire local vérifie, réserve et facture les restaurants ou transferts.",
+      "estimate": "Ce sont des propositions de journées. Je confirme le golf et étudie les restaurants ou transferts avec mon partenaire local. Les coûts et responsabilités sont convenus avant réservation.",
       "tabs": {
         "efficient": "Journée de golf efficace",
         "lunch": "Golf et long déjeuner",
@@ -417,7 +417,7 @@ export const GOLF_DAY_BUILDER_T = {
       "courseChosen": "Baan gekozen:",
       "whyCard": "Waarom deze dag bij u past",
       "andyCard": "Wat na uw aanvraag kan worden geregeld",
-      "estimate": "Dit zijn voorgestelde dagplannen. Ik bevestig het golf; een lokale reispartner controleert, boekt en factureert restaurants of vervoer.",
+      "estimate": "Dit zijn voorgestelde dagplannen. Ik bevestig het golf en stem restaurants of vervoer af met mijn lokale reispartner. Kosten en verantwoordelijkheden spreken we vóór het boeken af.",
       "tabs": {
         "efficient": "Efficiënte golfdag",
         "lunch": "Golf en lange lunch",
@@ -513,7 +513,7 @@ export const GOLF_DAY_BUILDER_T = {
       "courseChosen": "Bana vald:",
       "whyCard": "Varför denna dag passar dig",
       "andyCard": "Vad som kan ordnas efter din förfrågan",
-      "estimate": "Detta är förslag på dagsplaner. Jag bekräftar golfen; en lokal resepartner kontrollerar, bokar och fakturerar restauranger eller transporter.",
+      "estimate": "Det här är förslag på dagsplaner. Jag bekräftar golfen och stämmer av restauranger eller transporter med min lokala resepartner. Vi kommer överens om kostnader och ansvar före bokning.",
       "tabs": {
         "efficient": "Effektiv golfdag",
         "lunch": "Golf och långlunch",
@@ -609,7 +609,7 @@ export const GOLF_DAY_BUILDER_T = {
       "courseChosen": "选择的球场：",
       "whyCard": "为什么这一天适合您",
       "andyCard": "咨询后可安排的事项",
-      "estimate": "这些是行程建议。由我确认高尔夫；当地旅游合作方负责核实、预订餐厅或接送服务，并开具账单。",
+      "estimate": "这些是一天行程的建议。我负责确认高尔夫，并与本地旅行合作伙伴协调餐厅或接送。费用和各方责任会在预订前确认。",
       "tabs": {
         "efficient": "高效的高尔夫日",
         "lunch": "高尔夫和长午餐",

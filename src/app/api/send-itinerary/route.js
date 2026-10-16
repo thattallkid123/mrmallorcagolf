@@ -86,18 +86,20 @@ function buildGolfCostCalculatorBody(data) {
       <p style="margin:0 0 20px;font-family:'Jost',Arial,sans-serif;font-size:15px;line-height:1.7;color:#2C2A27;">Here is your planning estimate for a ${days ?? ''}-day trip with ${golfers ?? ''} golfer${golfers > 1 ? 's' : ''}, ${rounds ?? ''} round${rounds > 1 ? 's' : ''} of golf.</p>
       <table width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
         ${row('Green fees', fmtRange(data?.greenFees))}
+        ${row('Daily licences', fmtRange(data?.licences))}
         ${data?.buggy ? row('Buggy hire', fmtRange(data?.buggyRange)) : ''}
         ${data?.clubs ? row('Club hire', fmtRange(data?.clubsRange)) : ''}
         ${data?.transport ? row('Transport', fmtRange(data?.transportRange)) : ''}
         ${row('Dining', fmtRange(data?.dining))}
         ${row('Accommodation', fmtRange(data?.accommodation))}
       </table>
+      <p><strong>Suggested courses:</strong> ${(Array.isArray(data?.courses) ? data.courses.slice(0, 20) : []).map(c => str(c, 120)).join(', ')}. Additional rounds repeat this mix.</p>
       <div style="background:#2D4A3E;border-radius:4px;padding:20px 24px;margin-bottom:20px;">
         <p style="margin:0 0 4px;font-family:'Jost',Arial,sans-serif;font-size:10px;letter-spacing:0.15em;text-transform:uppercase;color:rgba(247,244,239,0.6);">Total estimate</p>
         <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:26px;color:#F7F4EF;">${fmtRange(data?.total)}</p>
         <p style="margin:6px 0 0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:rgba(247,244,239,0.6);">${fmtRange(data?.perGolfer)} per golfer</p>
       </div>
-      <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8A7F74;">These are planning estimates. Tee times, bookings, and exact pricing are confirmed when you book with me.</p>`
+      <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8A7F74;">${str(data?.assumptions, 1400)} Exact prices, access and responsibilities are agreed before booking.</p>`
 }
 
 function buildCourseSelectorBody(data) {

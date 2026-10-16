@@ -359,6 +359,7 @@ const data = {
   },
   "pleta-de-mar": {
    "pills": [
+    "Solo adultos, desde 16 años",
     "Ecolujo",
     "2 piscinas infinitas",
     "Playa privada",

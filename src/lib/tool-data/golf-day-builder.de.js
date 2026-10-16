@@ -197,10 +197,7 @@ const data = {
      "Familienaktivität",
      "Eine Aktivität für Golfer und Nichtgolfer"
     ],
-    "coaching": [
-     "Coaching mit mir",
-     "Aufwärmen, Unterricht oder Coaching auf dem Platz"
-    ]
+    "coaching": ["Play With A Pro","18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit."]
    }
   },
   "transport": {
@@ -496,10 +493,7 @@ const data = {
    "Familienaktivität",
    "Ein optionaler Stopp in Platznähe. Ort, Öffnungszeiten und Fahrzeit werden bei der Abstimmung des Plans geprüft."
   ],
-  "coaching": [
-   "Coaching mit mir",
-   "Eine Aufwärm- oder Coaching-Einheit mit mir, abhängig vom Datum und den Einrichtungen des Platzes."
-  ],
+  "coaching": ["Play With A Pro","18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit."],
   "lunch": [
    "Langes Mittagessen",
    "Ein Tisch in Platznähe, abgestimmt auf Ihre Startzeit. Ein lokaler Reisepartner prüft Öffnungszeiten, Verfügbarkeit und Anfahrt vor der Buchung."
@@ -548,7 +542,8 @@ const data = {
    "holes9": "9 Löcher auf {course}"
   },
   "desc": {
-   "transfer": "Ein lokaler Reisepartner kann den Transfer buchen und abrechnen, sobald Route und Zeiten vereinbart sind.",
+"pwap": "18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit.",
+   "transfer": "Mein lokaler Reisepartner kann bei Transfers helfen. Route, Zeiten, Kosten und Zuständigkeiten werden vor der Buchung vereinbart.",
    "selfDrive": "Hotel und Route müssen feststehen, bevor die Abfahrtszeit geplant wird.",
    "warmupCoach": "Eine Aufwärm- oder Coaching-Einheit mit mir, abhängig vom Datum und den Einrichtungen des Platzes.",
    "warmupCoffee": "Zeit zum Einchecken, Aufwärmen und Vorbereiten auf die Runde. Die Übungsmöglichkeiten hängen vom Platz ab.",
@@ -598,11 +593,11 @@ const data = {
   },
   "handles": {
    "tee": "Ich bestätige und buche das Golf",
-   "table": "Restaurants werden von einem lokalen Reisepartner gebucht und abgerechnet",
-   "transportYes": "Transfers werden von einem lokalen Reisepartner gebucht und abgerechnet",
+   "table": "Restaurantoptionen mit meinem lokalen Reisepartner geprüft",
+   "transportYes": "Transferoptionen mit meinem lokalen Reisepartner geprüft",
    "transportNo": "Route anhand Ihrer Hoteladresse geprüft",
    "buggies": "Schläger- und Buggy-Miete mit dem Platz abgestimmt",
-   "coachingYes": "Coaching mit mir, je nach Verfügbarkeit",
+   "coachingYes": "18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit.",
    "coachingNo": "Coaching mit mir, je nach Verfügbarkeit",
    "whatsapp": "Kontaktieren Sie mich, um den Golfplan abzustimmen"
   }

@@ -1,4 +1,5 @@
 'use client'
+import { buildToolEnquiryHref } from '../../../lib/tool-enquiry'
 import { buildItineraries } from '../../../lib/golf-day-planner'
 import ToolChoices from '../../../components/ToolChoices'
 
@@ -231,7 +232,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
     mlBody.set('fields[email]', email)
     mlBody.set('ml-submit', '1')
     mlBody.set('anticsrf', 'true')
-    fetch(MAILERLITE_COURSE_SELECTOR, {
+    if (subscribeNewsletter) fetch(MAILERLITE_COURSE_SELECTOR, {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
       body: mlBody.toString(),
@@ -265,7 +266,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
     H.table,
     answers.transport === 'yes' ? H.transportYes : H.transportNo,
     H.buggies,
-    answers.addons?.includes('coaching') ? H.coachingYes : H.coachingNo,
+    ...(answers.addons?.includes('coaching') ? [H.coachingYes] : []),
     H.whatsapp,
   ] : []
 
@@ -584,7 +585,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
             <div className="gdb-booking-panel">
               <p>{t.cta.footer}</p>
               <div className="gdb-cta-grid">
-                <button className="gdb-btn-gold" onClick={() => window.open(`https://www.mrmallorcagolf.com${buildLocalePath('/plan-your-trip', lang)}`, '_blank', 'noopener')}>{t.cta.askAndy}</button>
+                <button className="gdb-btn-gold" onClick={() => window.location.assign(buildToolEnquiryHref(lang, { courses: itins[activeItin]?.course?.name || '', message: itins[activeItin]?.steps.map(s => s.title).join(' → ') || '' }))}>{t.cta.askAndy}</button>
                 <button className="gdb-btn-pine" style={{ borderRadius:'2px' }} onClick={() => window.open(`https://www.mrmallorcagolf.com${buildLocalePath('/play-with-a-pro', lang)}`, '_blank', 'noopener')}>{t.cta.explorePro}</button>
                 <div className="gdb-cta-secondary">
                   <button className="gdb-btn-secondary tool-whatsapp-link" onClick={() => { trackDayWhatsApp(); window.open(WA_DAY_HREF, '_blank', 'noopener') }}>{t.cta.whatsapp}</button>

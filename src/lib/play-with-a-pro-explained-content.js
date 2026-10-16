@@ -52,7 +52,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_CONTENT = {
       eyebrow: 'After the round',
       title: 'What you take from the day.',
       paragraph:
-        'When the round is done, you will already have had clear feedback on what worked well, what did not, and what to keep working on. I also send you a written summary afterwards so you do not forget the detail from the day. You finish with a clear picture, not a long list, just the things that will actually make a difference.',
+        "I send you video and written notes after the round, covering what changed and what to work on next.",
       quoteText:
         'I found that he gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot.',
       quoteCredit: 'Synøve',
