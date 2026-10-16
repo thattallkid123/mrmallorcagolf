@@ -7,6 +7,7 @@ import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import InlineRichText from '../guides/InlineRichText'
+import { localizeGuideHref } from '../../../lib/guide-link'
 
 function FillImageFrame({ src, alt, sizes = '(max-width: 768px) 100vw, 720px', priority = false, containerStyle, imageStyle }) {
   return (
@@ -33,11 +34,6 @@ const MONTHS = {
   December: '12',
 }
 
-function joinHref(locale, path) {
-  if (!path || path.startsWith('http')) return path
-  if (locale === 'en') return path
-  return `/${locale}${path === '/' ? '' : path}`
-}
 
 function normalizeContainerStyle(style, fallback) {
   const merged = style || fallback
@@ -261,7 +257,7 @@ function renderBlock(block, index, locale, imageOrdinal, articleSlug) {
   }
 
   if (block.type === 'cta') {
-    const href = joinHref(locale, block.href)
+    const href = localizeGuideHref(block.href, locale)
     return (
       <div key={`cta-${index}`} className="post-cta">
         <p className="post-cta__text"><InlineRichText text={block.text} locale={locale} /></p>
@@ -421,8 +417,8 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
   const planningSlot = findPlanningSlot(blocks)
   const contextualTool = ARTICLE_TOOL_PLACEMENTS[meta.slug] || 'courseSelector'
   const stickyLabels = ARTICLE_CTA_LABELS[locale] || ARTICLE_CTA_LABELS.en
-  const stickyPlanHref = joinHref(locale, '/plan-your-trip')
-  const stickyPlayHref = joinHref(locale, '/play-with-a-pro')
+  const stickyPlanHref = localizeGuideHref('/plan-your-trip', locale)
+  const stickyPlayHref = localizeGuideHref('/play-with-a-pro', locale)
 
   return (
     <PageLayout lang={locale === 'en' ? undefined : locale}>
