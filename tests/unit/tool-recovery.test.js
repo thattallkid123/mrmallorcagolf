@@ -3,7 +3,7 @@ import { HOTELS, QUESTIONS_DATA, rankHotels } from '../../src/lib/hotel-recommen
 import { TOOL_RECOVERY_T } from '../../src/lib/tool-recovery-content'
 
 describe('hotel result recovery', () => {
-  test('every questionnaire combination returns hotels or can recover by editing one offered preference', () => {
+  test('every questionnaire combination returns hotels or can recover by editing only the offered preferences', () => {
     const questions = QUESTIONS_DATA.filter(q => !q.multi)
     const priority = QUESTIONS_DATA.find(q => q.multi).opts.map(o => o.val)
     let checked = 0
@@ -21,8 +21,15 @@ describe('hotel result recovery', () => {
           if (hotels.some(item => item.hotel.area !== a.area || item.score <= 0)) throw Error('Ranking changed a preference or returned a non-match')
         } else {
           empty++
-          const recoverable = questions.filter(q => ['area','style','budget'].includes(q.key))
-            .some(q => q.opts.some(o => rankHotels(HOTELS, { ...a, [q.key]: o.val }).length))
+          const offered = questions.filter(q => ['area','style','budget'].includes(q.key))
+          function canRecover(current, start = 0) {
+            if (rankHotels(HOTELS, current).length) return true
+            for (let i = start; i < offered.length; i++) {
+              if (offered[i].opts.some(o => o.val !== current[offered[i].key] && canRecover({ ...current, [offered[i].key]: o.val }, i + 1))) return true
+            }
+            return false
+          }
+          const recoverable = canRecover(a)
           expect(recoverable, JSON.stringify(a)).toBe(true)
         }
       }

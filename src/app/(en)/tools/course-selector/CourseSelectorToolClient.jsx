@@ -744,7 +744,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         .cst-btn-ghost:hover { color:#2D4A3E; }
         .cst-btn { display:inline-block; background:#2D4A3E; color:#F7F4EF; border:1px solid #2D4A3E; cursor:pointer; padding:14px 30px; border-radius:2px; font-weight:500; font-size:.8rem; font-family:var(--font-sans); letter-spacing:.18em; text-transform:uppercase; transition:all .3s; text-decoration:none; text-align:center; }
         .cst-btn:hover { background:#3D6455; border-color:#3D6455; transform:translateY(-2px); box-shadow:0 14px 30px rgba(45,74,62,0.22); }
-        .cst-btn.gold { background:#B8973C; border-color:#B8973C; color:#fff; }
+        .cst-btn.gold { background:#B8973C; border-color:#B8973C; color:#1A1916; }
         .cst-btn.gold:hover { background:#D4B068; border-color:#D4B068; }
         .cst-btn.outline { background:transparent; border:1px solid #2D4A3E; color:#2D4A3E; }
         .cst-btn.outline:hover { background:#2D4A3E; color:#F7F4EF; }
@@ -756,7 +756,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         /* Course cards */
         .cst-course-card { background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 22px 60px rgba(18,17,15,0.08); margin-bottom:24px; border:1px solid rgba(26,25,22,0.08); }
         .cst-cc-banner { background:linear-gradient(120deg,#1A1916,#2D4A3E); padding:42px 24px 20px; position:relative; }
-        .cst-cc-rank { position:absolute; top:12px; left:12px; background:#B8973C; color:#fff; font-size:.65rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase; padding:5px 13px; border-radius:99px; font-family:var(--font-sans); }
+        .cst-cc-rank { position:absolute; top:12px; left:12px; background:#B8973C; color:#1A1916; font-size:.65rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase; padding:5px 13px; border-radius:99px; font-family:var(--font-sans); }
         .cst-cc-banner h3 { font-family:var(--font-serif); color:#F7F4EF; font-size:1.7rem; margin-bottom:10px; line-height:1.1; font-weight:500; }
         .cst-cc-match-line { font-family:var(--font-sans); font-size:.8rem; color:rgba(247,244,239,0.78); line-height:1.55; border-top:1px solid rgba(255,255,255,.14); padding-top:10px; }
         .cst-cc-body { padding:22px 24px 26px; }

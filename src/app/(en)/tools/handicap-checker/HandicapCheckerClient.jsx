@@ -309,7 +309,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         .hc-nohcp { display:flex; align-items:center; gap:8px; margin-top:9px; font-size:.85rem; color:var(--muted); cursor:pointer; }
         .hc-nohcp input { accent-color:var(--pine); width:16px; height:16px; cursor:pointer; }
         .hc-field-full { grid-column:1 / -1; }
-        .hc-check { margin-top:22px; width:100%; background:var(--gold); color:#fff; border:none; cursor:pointer;
+        .hc-check { margin-top:22px; width:100%; background:var(--gold); color:#1A1916; border:none; cursor:pointer;
           font-family:var(--font-sans); font-size:.82rem; letter-spacing:.18em; text-transform:uppercase; padding:14px 20px; border-radius:2px; transition:background .2s; }
         .hc-check:hover { background:#a5862f; }
         .hc-summary { background:var(--pine); color:#fff; border-radius:6px; padding:20px 24px; margin-bottom:22px; line-height:1.6; font-size:.95rem; }
@@ -338,7 +338,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         .hc-cta { background:var(--pine-dark); color:#fff; border-radius:6px; padding:24px; margin-top:30px; text-align:center; }
         .hc-cta h3 { font-family:var(--font-serif); font-weight:400; font-size:1.4rem; margin-bottom:8px; }
         .hc-cta p { font-size:.9rem; color:rgba(255,255,255,.85); margin-bottom:16px; line-height:1.6; }
-        .hc-cta a.btn { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem;
+        .hc-cta a.btn { display:inline-block; background:var(--gold); color:#1A1916; text-decoration:none; font-size:.85rem;
           letter-spacing:.06em; text-transform:uppercase; padding:12px 24px; border-radius:2px; transition:background .2s; }
         .hc-cta a.btn:hover { background:#a5862f; }
         .hc-cta-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }

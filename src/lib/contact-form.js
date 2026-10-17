@@ -29,11 +29,16 @@ export function useContactFormSubmission(lang = 'en') {
   const [started, setStarted] = useState(false)
 
   useEffect(() => {
-    const requestedService = new URLSearchParams(window.location.search).get('service')
+    const params = new URLSearchParams(window.location.search)
+    const requestedService = params.get('service')
+    const requestedFormat = params.get('format')
+    if (['pwap-solo', 'pwap-group', 'signature-day', 'pwap-not-sure'].includes(requestedFormat)) {
+      setForm(current => ({ ...current, serviceType: 'pwap', pwapFormat: requestedFormat, experience: requestedFormat }))
+    }
     const planning = readToolEnquiry(window.location.hash)
     setForm(current => ({ ...current, ...planning }))
     if (['pwap', 'trip-planning', 'whole-trip', 'tee-time-booking', 'both'].includes(requestedService)) {
-      setForm((current) => ({ ...current, serviceType: requestedService, experience: requestedService }))
+      setForm((current) => ({ ...current, serviceType: requestedService, experience: ['pwap-solo', 'pwap-group', 'signature-day', 'pwap-not-sure'].includes(requestedFormat) ? requestedFormat : requestedService }))
     }
   }, [])
 

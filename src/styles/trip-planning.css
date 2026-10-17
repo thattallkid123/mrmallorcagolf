@@ -1508,4 +1508,4 @@
 }
 
 .pyt-planning-layout--compact { display: block; }
-.pyt-planning-layout--compact .pyt-pro-cta { max-width: 800px; }
+.pyt-planning-layout--compact .pyt-pro-cta { width: 100%; }

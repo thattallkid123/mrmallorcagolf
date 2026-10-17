@@ -35,7 +35,7 @@ test('an empty hotel shortlist offers targeted editing and never offers to email
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
   await page.getByRole('button',{name:'Change style',exact:true}).click()
   await expect(page.getByRole('button',{name:/Private villa/})).toHaveClass(/selected/)
-  await page.getByRole('button',{name:/Full resort with all facilities/}).click()
+  await page.getByRole('button',{name:/Classic and established/}).click()
   await expect(page.getByRole('button',{name:/Up to €250/})).toHaveClass(/selected/)
   await page.getByRole('button',{name:/Up to €250/}).click()
   await expect(page.locator('.hr-hotel-card').first()).toBeVisible()

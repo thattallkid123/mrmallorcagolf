@@ -270,7 +270,7 @@ export default function HomePageInner({ locale = 'en' }) {
               {pkg.note && <p className={`tier__note${pkg.featured ? ' tier__note--feature' : ''}`}>{pkg.note}</p>}
               {!sharedPackageCta ? (
                 <div className="tier__actions">
-                  <a href={pkg.href || contactHref} className="tier__btn">
+                  <a href={index < 3 ? `${contactHref}?service=pwap&format=${['pwap-solo', 'pwap-group', 'signature-day'][index]}` : (pkg.href || contactHref)} className="tier__btn">
                     {pkg.cta}
                   </a>
                   {pkg.detailHref ? (

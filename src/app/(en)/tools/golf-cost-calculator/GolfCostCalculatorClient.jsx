@@ -314,7 +314,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-btn.primary { background:#2D4A3E; color:#F7F4EF; flex:1; }
         .gcc-btn.primary:hover { background:#3D6455; }
         .gcc-btn.ghost { background:transparent; color:#8A7F74; border:1.5px solid #d9cfb8; }
-        .gcc-btn.gold { background:#B8973C; color:#fff; flex:1; }
+        .gcc-btn.gold { background:#B8973C; color:#1A1916; flex:1; }
         .gcc-btn.gold:hover { opacity:.9; }
         /* Results */
         .gcc-assumptions { margin:var(--space-4) 0; font-family:var(--font-sans); font-size:13px; line-height:1.65; color:#6F665B; }

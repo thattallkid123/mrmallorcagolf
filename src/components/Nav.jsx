@@ -115,6 +115,18 @@ export default function Nav({ transparent = false, lang }) {
     return () => window.removeEventListener('scroll', onScroll)
   }, [transparent])
 
+  useEffect(() => {
+    if (!menuOpen) return
+    const closeOnEscape = (event) => {
+      if (event.key === 'Escape') {
+        setMenuOpen(false)
+        document.querySelector('.nav__hamburger')?.focus()
+      }
+    }
+    document.addEventListener('keydown', closeOnEscape)
+    return () => document.removeEventListener('keydown', closeOnEscape)
+  }, [menuOpen])
+
   const navClass = ['nav', !transparent ? 'solid' : scrolled ? 'scrolled' : ''].filter(Boolean).join(' ')
   const isActive = (href) => resolvedPathname === href
   const logoSrc = (!transparent || scrolled) ? '/logo-dark-green-96.webp' : '/logo-white-96.webp'

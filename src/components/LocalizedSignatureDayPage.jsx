@@ -6,7 +6,7 @@ import { buildLocalePath } from '../lib/site'
 import { localizeAlt } from '../lib/alt-text'
 
 export default function LocalizedSignatureDayPage({ locale, content }) {
-  const contactHref = buildLocalePath('/contact', locale)
+  const contactHref = `${buildLocalePath('/contact', locale)}?service=pwap&format=signature-day`
   const coursesHref = buildLocalePath('/golf-courses', locale)
   const playHref = buildLocalePath('/play-with-a-pro', locale)
   const homeHref = buildLocalePath('/', locale)

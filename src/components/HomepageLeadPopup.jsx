@@ -1,13 +1,14 @@
 'use client'
 
 import Link from 'next/link'
-import { useEffect, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 
 const DISMISS_KEY = 'mmg-course-selector-popup-dismissed-at'
 const DISMISS_WINDOW_MS = 1000 * 60 * 60 * 24 * 7
 
 export default function HomepageLeadPopup() {
   const [isVisible, setIsVisible] = useState(false)
+  const dialogRef = useRef(null)
 
   useEffect(() => {
     const dismissedAt = window.localStorage.getItem(DISMISS_KEY)
@@ -31,16 +32,16 @@ export default function HomepageLeadPopup() {
     let timerId = null
     let active = false
 
-    // Trigger 1: scroll past 80% of page
+    // Keep the final enquiry section clear. Offer the finder earlier, after engagement.
     function onScroll() {
       const scrolled = window.scrollY + window.innerHeight
       const total = document.documentElement.scrollHeight
-      if (scrolled / total >= 0.8) show()
+      if (window.scrollY > window.innerHeight && scrolled / total >= 0.55 && scrolled / total < 0.75) show()
     }
 
     // Trigger 2: exit-intent (mouse leaves viewport through top)
     function onMouseLeave(e) {
-      if (e.clientY <= 0) show()
+      if (e.clientY <= 0 && window.scrollY > window.innerHeight) show()
     }
 
     function start() {
@@ -66,6 +67,21 @@ export default function HomepageLeadPopup() {
     }
   }, [])
 
+  useEffect(() => {
+    if (!isVisible || !dialogRef.current) return
+    const dialog = dialogRef.current
+    const previousFocus = document.activeElement
+    const previousOverflow = document.body.style.overflow
+    dialog.showModal()
+    dialog.querySelector('.lead-popup__close')?.focus()
+    document.body.style.overflow = 'hidden'
+    return () => {
+      dialog.close()
+      document.body.style.overflow = previousOverflow
+      if (previousFocus instanceof HTMLElement && previousFocus.isConnected) previousFocus.focus({ preventScroll: true })
+    }
+  }, [isVisible])
+
   function closePopup() {
     window.localStorage.setItem(DISMISS_KEY, String(Date.now()))
     setIsVisible(false)
@@ -74,11 +90,12 @@ export default function HomepageLeadPopup() {
   if (!isVisible) return null
 
   return (
-    <div className="lead-popup" role="dialog" aria-modal="true" aria-labelledby="lead-popup-title">
+    <dialog ref={dialogRef} className="lead-popup" aria-modal="true" aria-labelledby="lead-popup-title" onCancel={(event) => { event.preventDefault(); closePopup() }}>
       <button
         type="button"
         className="lead-popup__backdrop"
         aria-label="Close popup"
+        tabIndex={-1}
         onClick={closePopup}
       />
       <div className="lead-popup__panel">
@@ -93,7 +110,7 @@ export default function HomepageLeadPopup() {
         <p className="lead-popup__eyebrow">Plan your Mallorca trip</p>
         <h2 id="lead-popup-title">Choose the right courses before you book.</h2>
         <p className="lead-popup__body">
-          Answer a few quick questions to get a shortlist matched to your game. I&apos;ll send course recommendations that fit your dates, group size, and budget.
+          Answer a few quick questions to get a shortlist matched to your game, group size and budget.
         </p>
         <div className="lead-popup__actions">
           <Link href="/tools/course-selector" className="btn btn--gold" onClick={closePopup}>
@@ -110,6 +127,6 @@ export default function HomepageLeadPopup() {
           </Link>.
         </p>
       </div>
-    </div>
+    </dialog>
   )
 }

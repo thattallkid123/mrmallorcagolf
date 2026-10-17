@@ -130,7 +130,7 @@ function localizedHref(href, locale) {
 }
 
 function packageCtaHref(tier, index, locale) {
-  if (index === 0 || index === 1) return playWithAProContactHref(locale)
+  if (index < 3) return `${playWithAProContactHref(locale)}&format=${['pwap-solo', 'pwap-group', 'signature-day'][index]}`
   if (index === 3) return buildLocalePath('/plan-your-trip', locale)
   if (!tier.href || tier.href.startsWith('http')) return tier.href
   if (locale !== 'en' && tier.href.startsWith(`/${locale}/`)) return tier.href

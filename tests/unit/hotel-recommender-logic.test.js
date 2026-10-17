@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'vitest'
-import { HOTELS, scoreHotel, pillClass } from '../../src/lib/hotel-recommender-logic'
+import { HOTELS, scoreHotel, rankHotels, pillClass } from '../../src/lib/hotel-recommender-logic'
 
 function makeHotel(overrides = {}) {
   return {
@@ -144,5 +144,21 @@ describe('HOTELS data sanity', () => {
     for (const h of HOTELS) {
       expect(() => scoreHotel(h, { ...baseAnswers, area: h.area })).not.toThrow()
     }
+  })
+})
+
+describe('hotel shortlist requirements', () => {
+  test('does not fill a shortlist with a different style or budget', () => {
+    const exact = makeHotel()
+    const wrongStyle = makeHotel({ id: 'resort', styles: ['resort'] })
+    const wrongBudget = makeHotel({ id: 'ultra', budgets: ['ultra'] })
+    expect(rankHotels([wrongStyle, wrongBudget, exact], baseAnswers).map(x => x.hotel.id)).toEqual(['test-hotel'])
+  })
+  test('a flexible budget permits other budget tiers while retaining the chosen style', () => {
+    const hotel = makeHotel({ budgets: ['ultra'] })
+    expect(rankHotels([hotel], { ...baseAnswers, budget: 'flexible' })).toHaveLength(1)
+  })
+  test('an unavailable brief reaches recovery instead of silently substituting another hotel', () => {
+    expect(rankHotels([makeHotel({ styles: ['resort'], budgets: ['ultra'] })], baseAnswers)).toEqual([])
   })
 })

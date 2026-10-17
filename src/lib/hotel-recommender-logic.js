@@ -166,7 +166,12 @@ export function pillClass(p) {
 }
 
 export function rankHotels(hotels, answers) {
-  return hotels.map(hotel => ({ hotel, score: scoreHotel(hotel, answers) }))
+  // These are explicit visitor requirements. Ranking preferences must not override them.
+  const matches = hotels.filter(h =>
+    (!answers.style || h.styles.includes(answers.style)) &&
+    (!answers.budget || answers.budget === 'flexible' || h.budgets.includes(answers.budget))
+  )
+  return matches.map(hotel => ({ hotel, score: scoreHotel(hotel, answers) }))
     .filter(item => item.score > 0)
     .sort((a, b) => b.score - a.score)
     .slice(0, 3)
