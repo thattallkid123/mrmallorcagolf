@@ -142,6 +142,24 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 - Chinese: full-width punctuation （），。？！：, no space between Chinese characters, a space either side of a Latin name or number (在 Son Gual 打球, 约 1 小时).
 - List items after a label ("Best tee time: early afternoon …") continue the label, so they start in lower case in every language, as the English does. German nouns keep their capital, but "Auf dem Papier …" after "Gut zu wissen:" should be "auf dem Papier …".
 
+### 10. Client arrival page (checked by Opus on all six languages, October 2026)
+
+The page text and the course answers (opening times, dress code, water, parking) are short, so the same slips repeat in every language.
+
+- **"Before the day" is the day of play,** not a calque: de "Vor dem Spieltag", es "Antes del día de juego", fr "avant le jour J", nl "Vóór de speeldag" (with the accent: "voor de dag" reads as "for the day"), zh 打球日之前 (出发前 means before setting off).
+- **"Halfway house":** fr "buvette à mi-parcours", es "parada a mitad de vuelta", sv "halfway house" is not Swedish (say what it is). "At the turn" is not football's "zur Halbzeit" (de) or "vid halvtid" (sv): de "nach den ersten neun Löchern", fr "à mi-parcours".
+- **"Fourballs" / "pay for the whole flight":** fourball is a match format in fr, nl, sv. Say "groupes de quatre", "grupper om fyra", "alle vier plaatsen betalen", "alle vier die Plätze".
+- **"Tailored" shorts or trousers** means smart, not made to measure: sv "tygbyxor", not "skräddarsydda".
+- **"Closed-heel" golf shoes** must keep the heel detail (de "geschlossene Ferse", nl "met een dichte hiel"); "closed shoes" is not the same.
+- **"Hire bags / hire sets" here means the rental clubs:** de "Leihschläger", nl "huurclubs", zh 租杆, never a bag only.
+- **"Does not list a charge" is not "does not charge":** keep the hedge (es "no indica", fr "ne mentionne pas").
+- **Range tokens:** sv "pollett", de one word throughout (Jeton, not Ballmünze and Jeton).
+- **Estimates stay estimates:** "I expect the pro shop to open about 08:55" is es "calculo que", never "espero que" (hope).
+- **"X opens at 10:30 with drinks"** is not "öffnet mit Getränken": de "öffnet ... und bietet ...".
+- **"Be there by {time}" is a latest time:** zh 最晚, others may use "um" or "à" naturally.
+- **Dates in Chinese** use digits for the month and day (10 月 26 日), not a mix like 十月 26 日.
+- **Agreement and list slips:** es "se venden agua, café y aperitivos"; a comma before "oder" in German lists; one verb dropped in a short French line.
+
 ## Checklist before a translation ships
 
 1. Every sentence says what the English says, no more and no less, and the numbers match.
