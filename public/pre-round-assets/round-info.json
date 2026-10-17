@@ -27,6 +27,7 @@
       "handicapMen": 33,
       "handicapWomen": 35,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Club de Golf Alcanada Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -62,6 +63,7 @@
       "handicapMen": 28,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf de Andratx Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -97,6 +99,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Real Golf de Bendinat Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -134,6 +137,7 @@
       "handicapMen": 36,
       "handicapWomen": 45,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Canyamel Golf Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -167,6 +171,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Capdepera Golf Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -201,6 +206,7 @@
       "handicapMen": 54,
       "handicapWomen": 54,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf Maioris Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -235,6 +241,7 @@
       "handicapMen": null,
       "handicapWomen": null,
       "certificateRequired": false,
+      "mapsDestination": null,
       "mapsQuery": "Palma Pitch & Putt Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -279,6 +286,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf Pollença Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -315,6 +323,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Pula Golf Resort Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -353,6 +362,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Reserva Rotana Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -386,6 +396,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf Santa Ponsa 1 Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -420,16 +431,15 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": "39.4954722,2.4849431",
       "mapsQuery": "Golf Santa Ponsa II",
       "pickerHidden": false,
-      "contact": {
-        "phone": "+34 971 695 703",
-        "email": "golf1@golf-santaponsa.com"
-      },
+      "contact": null,
       "info": {
         "checkInMinutes": 45,
         "arrivalPoint": "Santa Ponsa 2 has its own clubhouse. Ring at the gate to be buzzed in, or I will let you in.",
         "bringWater": "Water for the first nine holes. The clubhouse is closed for the first tee times, and the next chance to buy a drink is after nine holes.",
+        "firstTee": "I normally tee off as early as I can.",
         "rangeOpens": "The range opens at 08:00.",
         "water": "Water and drinks are only available at the clubhouse, which you pass after nine holes. It is closed for the first tee times of the day, so bring water with you.",
         "dressCode": "Appropriate golf clothing, and soft rubber spikes only.",
@@ -446,6 +456,7 @@
       "handicapMen": 54,
       "handicapWomen": 54,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf Son Antem East Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -482,6 +493,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf Son Antem West Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -516,6 +528,7 @@
       "handicapMen": 28,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf Son Gual Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -554,6 +567,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Son Muntaner Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -597,6 +611,7 @@
       "handicapMen": 54,
       "handicapWomen": 54,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf Son Quint Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -641,6 +656,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf Club Son Servera Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -679,6 +695,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf Son Termes Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -717,6 +734,7 @@
       "handicapMen": 54,
       "handicapWomen": 54,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Golf Son Vida Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -760,6 +778,7 @@
       "handicapMen": 28,
       "handicapWomen": 34,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "T Golf Calvià (Poniente) Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -797,6 +816,7 @@
       "handicapMen": 28,
       "handicapWomen": 34,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "T Golf Palma (Puntiró) Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -836,6 +856,7 @@
       "handicapMen": 36,
       "handicapWomen": 36,
       "certificateRequired": true,
+      "mapsDestination": null,
       "mapsQuery": "Vall d'Or Golf Mallorca",
       "pickerHidden": false,
       "contact": {

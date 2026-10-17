@@ -40,8 +40,10 @@ main { max-width: 720px; margin: 0 auto; padding: 28px 16px 48px; }
 .eyebrow { color: var(--gold); font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; }
 h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.4rem; line-height: 1.1; color: var(--pine); margin: 6px 0 4px; }
 h2 { font-family: var(--font-serif); font-weight: 600; font-size: 1.45rem; color: var(--pine); margin: 26px 0 8px; }
-.when { color: var(--taupe); font-size: 0.95rem; font-weight: 400; }
-.checkin { margin-top: 16px; background: var(--pine); color: var(--cream); border-radius: 6px; padding: 14px 16px; }
+.when { color: #6B6157; font-size: 0.95rem; font-weight: 400; }
+.checkin { margin-top: 16px; background: var(--pine); color: var(--cream); border-radius: 6px; padding: 18px 20px; }
+.checkin .main { font-family: var(--font-serif); font-size: 1.7rem; font-weight: 500; line-height: 1.2; }
+.checkin .advice { margin-top: 8px; font-size: 0.95rem; opacity: 0.92; }
 .checkin strong { color: var(--gold-light); font-weight: 500; }
 .notice { margin-top: 12px; background: #FBF1DC; border: 1px solid var(--gold); border-radius: 6px; padding: 12px 16px; }
 .notice strong { color: var(--deep); font-weight: 500; }
@@ -49,20 +51,21 @@ h2 { font-family: var(--font-serif); font-weight: 600; font-size: 1.45rem; color
 .round:last-of-type { border-bottom: 0; }
 dl { display: grid; grid-template-columns: 1fr; gap: 10px; }
 .item { background: #fff; border: 1px solid var(--sand); border-radius: 6px; padding: 10px 14px; }
-dt { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--taupe); }
+dt { font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #6B6157; }
 dd { margin-top: 2px; }
 ul.bring { list-style: none; display: grid; gap: 6px; }
 ul.bring li { padding-left: 22px; position: relative; }
 ul.bring li::before { content: ''; position: absolute; left: 4px; top: 0.7em; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); }
-.muted { color: var(--taupe); }
+.muted { color: #6B6157; }
 .later { margin-top: 14px; }
 .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 4px; background: var(--pine); color: var(--cream); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
 .btn.alt { background: transparent; color: var(--pine); border: 1px solid var(--pine); }
 .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
+.btns.top { margin-top: 14px; }
 .picker { margin-top: 16px; display: grid; gap: 8px; }
 .picker select { min-height: 44px; font: inherit; padding: 0 10px; border: 1px solid var(--stone); border-radius: 4px; background: #fff; }
 footer { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--sand); }
-@media (min-width: 640px) { dl { grid-template-columns: 1fr 1fr; } h1 { font-size: 2.8rem; } }
+@media (min-width: 640px) { dl { grid-template-columns: 1fr 1fr; } dl .item:last-child:nth-child(odd) { grid-column: 1 / -1; } h1 { font-size: 2.8rem; } }
 </style>
 </head>
 <body>
@@ -113,7 +116,7 @@ const UI = {
     bring_sun: 'Sun cream and a hat. The sun is strong at this time of year.',
     bring_both: 'Sun cream and a hat in summer, when the sun is strong from April to October, and a warm layer for winter mornings.',
     bring_warm: 'A warm layer. Winter mornings are cool before 10:00.',
-    directions: 'Directions to the club', maps: 'Find the club on Google Maps',
+    directions: 'Directions to the club',
     contact_h: 'Contact the club', contact_p: 'Questions about the course itself, such as hire bags, buggies or opening times? The club can answer these directly.', call: 'Call the club', emailclub: 'Email the club', later: 'I will send you the details for this course directly before the day.',
     picker_h: 'Arrival notes', picker_p: 'Choose your course to see when to arrive, what is open and what to bring.', picker_opt: 'Choose a course',
     footer_a: 'Clubs change their hours and rules from time to time. If anything here matters to your plan, message me and I will confirm it with the club.',
@@ -138,7 +141,7 @@ const UI = {
     bring_sun: 'Sonnencreme und eine Kappe. Die Sonne ist zu dieser Jahreszeit stark.',
     bring_both: 'Im Sommer Sonnencreme und eine Kappe, denn die Sonne ist von April bis Oktober stark, und im Winter etwas Warmes für die Morgenstunden.',
     bring_warm: 'Etwas Warmes zum Überziehen. Im Winter sind die Morgenstunden vor 10:00 Uhr kühl.',
-    directions: 'Anfahrt zum Club', maps: 'Club in Google Maps ansehen',
+    directions: 'Anfahrt zum Club',
     contact_h: 'Den Club kontaktieren', contact_p: 'Fragen zum Platz selbst, etwa zu Leihtaschen, Buggys oder Öffnungszeiten? Der Club beantwortet sie Ihnen direkt.', call: 'Club anrufen', emailclub: 'Club per E-Mail kontaktieren', later: 'Die Details zu diesem Platz schicke ich Ihnen vor dem Spieltag direkt.',
     picker_h: 'Hinweise zur Ankunft', picker_p: 'Wählen Sie Ihren Platz, um zu sehen, wann Sie ankommen sollten, was geöffnet hat und was Sie mitbringen sollten.', picker_opt: 'Platz wählen',
     footer_a: 'Die Clubs ändern ihre Öffnungszeiten und Regeln von Zeit zu Zeit. Wenn etwas hier für Ihre Planung wichtig ist, schreiben Sie mir, dann bestätige ich es beim Club.',
@@ -163,7 +166,7 @@ const UI = {
     bring_sun: 'Crema solar y gorra. El sol es fuerte en esta época del año.',
     bring_both: 'En verano, crema solar y gorra, porque el sol es fuerte de abril a octubre, y en invierno una prenda de abrigo para las mañanas.',
     bring_warm: 'Una prenda de abrigo. Las mañanas de invierno son frescas antes de las 10:00.',
-    directions: 'Cómo llegar al club', maps: 'Ver el club en Google Maps',
+    directions: 'Cómo llegar al club',
     contact_h: 'Contactar con el club', contact_p: '¿Preguntas sobre el campo, por ejemplo sobre bolsas de alquiler, buggies u horarios? El club se las responde directamente.', call: 'Llamar al club', emailclub: 'Escribir al club', later: 'Le enviaré los detalles de este campo directamente antes del día.',
     picker_h: 'Información para su llegada', picker_p: 'Elija su campo para ver cuándo llegar, qué está abierto y qué llevar.', picker_opt: 'Elija un campo',
     footer_a: 'Los clubes cambian sus horarios y normas de vez en cuando. Si algo de lo que aparece aquí es importante para su plan, escríbame y lo confirmaré con el club.',
@@ -252,10 +255,15 @@ function renderRound(course, round, closures) {
     .forEach(c => { html += `<div class="notice"><strong>${ui('note')}</strong> ${esc(tx(c.text))}</div>`; });
   if (info.checkInMinutes) {
     const by = minusMinutes(round.t, info.checkInMinutes);
-    html += info.arrivalPoint
-      ? `<div class="checkin">${by ? ui('meet_by', { time: by }) : ui('meet_plain')}${ui('meet_note', { n: info.checkInMinutes })}</div>`
-      : `<div class="checkin">${by ? ui('checkin_by', { time: by }) : ui('checkin_plain') + '.'}${ui('checkin_note', { n: info.checkInMinutes })}</div>`;
+    const main = info.arrivalPoint
+      ? (by ? ui('meet_by', { time: by }) : ui('meet_plain'))
+      : (by ? ui('checkin_by', { time: by }) : ui('checkin_plain') + '.');
+    const advice = (info.arrivalPoint ? ui('meet_note', { n: info.checkInMinutes }) : ui('checkin_note', { n: info.checkInMinutes })).trim();
+    html += `<div class="checkin"><div class="main">${main}</div><div class="advice">${advice}</div></div>`;
   }
+  // One Google option, near the top where it is needed on the day: by club name, or an exact entrance Andy has given.
+  const dest = course.mapsDestination || (course.mapsQuery ? encodeURIComponent(course.mapsQuery) : (course.lat && course.lng ? course.lat + ',' + course.lng : ''));
+  if (dest) html += `<div class="btns top"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=${dest}" target="_blank" rel="noopener">${ui('directions')}</a></div>`;
 
   let any = false;
   GROUPS.forEach(([title, fields]) => {
@@ -272,10 +280,6 @@ function renderRound(course, round, closures) {
       + (tel ? `<a class="btn alt" href="tel:${tel}">${ui('call')}</a>` : '')
       + (course.contact.email ? `<a class="btn alt" href="mailto:${esc(course.contact.email)}">${ui('emailclub')}</a>` : '')
       + '</div>';
-  }
-  if (course.lat && course.lng) {
-    html += `<div class="btns"><a class="btn" href="https://www.google.com/maps/dir/?api=1&destination=${course.mapsQuery ? encodeURIComponent(course.mapsQuery) : course.lat + ',' + course.lng}" target="_blank" rel="noopener">${ui('directions')}</a>`
-      + (course.mapsQuery ? `<a class="btn alt" href="https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(course.mapsQuery)}" target="_blank" rel="noopener">${ui('maps')}</a>` : '') + '</div>';
   }
   return html + '</section>';
 }
