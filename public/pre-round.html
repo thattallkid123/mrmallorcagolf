@@ -49,6 +49,12 @@ h2 { font-family: var(--font-serif); font-weight: 600; font-size: 1.45rem; color
 .tile .k { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); }
 .tile .v { font-family: var(--font-serif); font-size: 2.1rem; font-weight: 500; line-height: 1.1; }
 .tile .s { font-size: 0.85rem; opacity: 0.85; }
+.hero { position: relative; margin: 0 0 16px; border-radius: 8px; overflow: hidden; background: var(--deep); }
+.hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 8; object-fit: cover; }
+.hero .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 56px 20px 16px; background: linear-gradient(to top, rgba(26, 25, 22, 0.82), rgba(26, 25, 22, 0)); color: #fff; }
+.hero .cap h1 { color: #fff; margin: 2px 0 0; }
+.hero .cap .eyebrow { color: var(--gold-light); }
+.share { margin-top: 14px; }
 .addr { color: #6B6157; font-size: 0.95rem; line-height: 1.45; }
 .checkin strong { color: var(--gold-light); font-weight: 500; }
 .notice { margin-top: 12px; background: #FBF1DC; border: 1px solid var(--gold); border-radius: 6px; padding: 12px 16px; }
@@ -134,6 +140,7 @@ const UI = {
     bring_sun: 'Sun cream and a hat. The sun is strong at this time of year.',
     bring_both: 'Sun cream and a hat in summer, when the sun is strong from April to October, and a warm layer for winter mornings.',
     bring_warm: 'A warm layer. Winter mornings are cool before 10:00.',
+    share: 'Share on WhatsApp', msg_by: 'Be there by {time}', msg_dir: 'Directions', msg_all: 'All the details', photoalt: 'Photo of {name}',
     directions: 'Directions to the club', mapalt: 'Map showing where {name} is',
     contact_h: 'Contact the club', contact_p: 'Questions about the course itself, such as hire bags, buggies or opening times? The club can answer these directly.', call: 'Call the club', emailclub: 'Email the club', later: 'I will send you the details for this course directly before the day.',
     picker_h: 'Arrival notes', picker_p: 'Choose your course to see when to arrive, what is open and what to bring.', picker_opt: 'Choose a course',
@@ -160,6 +167,7 @@ const UI = {
     bring_sun: 'Sonnencreme und eine Kappe. Die Sonne ist zu dieser Jahreszeit stark.',
     bring_both: 'Im Sommer Sonnencreme und eine Kappe, denn die Sonne ist von April bis Oktober stark, und im Winter etwas Warmes für die Morgenstunden.',
     bring_warm: 'Etwas Warmes zum Überziehen. Im Winter sind die Morgenstunden vor 10:00 Uhr kühl.',
+    share: 'Per WhatsApp teilen', msg_by: 'Um {time} Uhr da sein', msg_dir: 'Anfahrt', msg_all: 'Alle Details', photoalt: 'Foto von {name}',
     directions: 'Anfahrt zum Club', mapalt: 'Karte mit der Lage von {name}',
     contact_h: 'Den Club kontaktieren', contact_p: 'Fragen zum Platz selbst, etwa zu Leihtaschen, Buggys oder Öffnungszeiten? Der Club beantwortet sie Ihnen direkt.', call: 'Club anrufen', emailclub: 'Club per E-Mail kontaktieren', later: 'Die Details zu diesem Platz schicke ich Ihnen vor dem Spieltag direkt.',
     picker_h: 'Hinweise zur Ankunft', picker_p: 'Wählen Sie Ihren Platz, um zu sehen, wann Sie ankommen sollten, was geöffnet hat und was Sie mitbringen sollten.', picker_opt: 'Platz wählen',
@@ -186,6 +194,7 @@ const UI = {
     bring_sun: 'Crema solar y gorra. El sol es fuerte en esta época del año.',
     bring_both: 'En verano, crema solar y gorra, porque el sol es fuerte de abril a octubre, y en invierno una prenda de abrigo para las mañanas.',
     bring_warm: 'Una prenda de abrigo. Las mañanas de invierno son frescas antes de las 10:00.',
+    share: 'Compartir por WhatsApp', msg_by: 'Estar allí a las {time}', msg_dir: 'Cómo llegar', msg_all: 'Todos los detalles', photoalt: 'Foto de {name}',
     directions: 'Cómo llegar al club', mapalt: 'Mapa con la ubicación de {name}',
     contact_h: 'Contactar con el club', contact_p: '¿Preguntas sobre el campo, por ejemplo sobre bolsas de alquiler, buggies u horarios? El club se las responde directamente.', call: 'Llamar al club', emailclub: 'Escribir al club', later: 'Le enviaré los detalles de este campo directamente antes del día.',
     picker_h: 'Información para su llegada', picker_p: 'Elija su campo para ver cuándo llegar, qué está abierto y qué llevar.', picker_opt: 'Elija un campo',
@@ -277,7 +286,10 @@ function renderRound(course, round, closures) {
   // The wording for this round's season where the club gives different summer and winter answers, else the single answer.
   const valueFor = f => (season && seasonal[f] && seasonal[f][season]) || info[f];
   const when = [niceDate(round.d), round.t ? `${ui('teeTime')} ${esc(round.t)}` : ''].filter(Boolean).join(', ');
-  let html = `<div class="eyebrow">${ui('eyebrow')}</div><h1>${esc(course.name)}</h1>`;
+  // A course photo from the website with the title over it; courses with no photo keep the plain title.
+  let html = course.hero
+    ? `<figure class="hero"><img src="/pre-round-assets/hero/${esc(round.c)}.webp" alt="${esc(ui('photoalt', { name: course.name }))}" width="1000" height="500"><figcaption class="cap"><div class="eyebrow">${ui('eyebrow')}</div><h1>${esc(course.name)}</h1></figcaption></figure>`
+    : `<div class="eyebrow">${ui('eyebrow')}</div><h1>${esc(course.name)}</h1>`;
   if (when) html += `<div class="when">${when}</div>`;
   (closures || []).filter(c => round.d && (c.courses || []).includes(round.c) && round.d >= c.from && round.d <= c.to)
     .forEach(c => { html += `<div class="notice"><strong>${ui('note')}</strong> ${esc(tx(c.text))}</div>`; });
@@ -297,6 +309,19 @@ function renderRound(course, round, closures) {
       html += `<div class="checkin"><div class="main">${main}</div><div class="advice">${advice}</div></div>`;
     }
   }
+  // A WhatsApp message a client can send to the people they are playing with: course, day, when to be there, directions, and this page.
+  {
+    const by = round.t && info.checkInMinutes ? minusMinutes(round.t, info.checkInMinutes) : null;
+    const place = course.mapsDestination || (course.mapsQuery ? encodeURIComponent(course.mapsQuery) : '');
+    const lines = [[course.name, niceDate(round.d), round.t ? `${ui('teeTime')} ${round.t}` : ''].filter(Boolean).join(', ')];
+    if (by) lines.push(ui('msg_by', { time: by }));
+    if (course.address) lines.push(course.address);
+    if (place) lines.push(ui('msg_dir') + ': https://www.google.com/maps/dir/?api=1&destination=' + place);
+    const part = [round.c, round.d || '', round.t ? round.t.replace(':', '') : ''].join('~').replace(/~+$/, '');
+    lines.push(ui('msg_all') + ': ' + location.origin + location.pathname + '?r=' + part + (LANG !== 'en' ? '&lang=' + LANG : ''));
+    html += `<div class="btns share"><a class="btn alt" href="https://wa.me/?text=${encodeURIComponent(lines.join('\n'))}" target="_blank" rel="noopener">${ui('share')}</a></div>`;
+  }
+
   let any = false;
   GROUPS.forEach(([title, fields]) => {
     const rows = fields.filter(f => valueFor(f) && !(f === 'shoes' && valueFor('dressCode')));
