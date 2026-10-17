@@ -15,10 +15,26 @@
     {
       "source": "/trip-preferences-assets/(.*)",
       "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
+    },
+    {
+      "source": "/pre-round",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
+    },
+    {
+      "source": "/pre-round.html",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
+    },
+    {
+      "source": "/pre-round-assets/(.*)",
+      "headers": [
+        { "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" },
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" }
+      ]
     }
   ],
   "rewrites": [
-    { "source": "/trip-planning-preview", "destination": "/trip-preferences.html" }
+    { "source": "/trip-planning-preview", "destination": "/trip-preferences.html" },
+    { "source": "/pre-round", "destination": "/pre-round.html" }
   ],
   "redirects": [
     {
