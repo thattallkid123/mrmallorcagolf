@@ -133,6 +133,8 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 - English working phrases translated literally: "keep the airport simple" (the drive to the airport stays simple), "a fair trade", "earns its keep".
 - Recurring headings read the same on every page in a language ("Vier Dinge, die ich vor der Buchung von … klären würde", "预订 … 前值得先知道的四件事"). If you change one, change them all.
 
+- Chinese: an ongoing English statement such as "I play and review every course" must not become a completed all-courses claim such as "全岛 24 座球场，我都亲自打过并认真评价过". Keep the ongoing meaning; a count of listed courses does not establish that Andy has played them all. Check the course-facts authority before adding first-hand coverage claims.
+
 ### 9. Typography
 
 - French: a space before ? ! : ; and « guillemets » around quoted labels; apostrophes as ’.

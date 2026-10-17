@@ -5,6 +5,7 @@ import HomeToolsStrip from '../components/HomeToolsStrip'
 import HomepageLeadPopup from '../components/HomepageLeadPopup'
 import ReviewBadge from '../components/ReviewBadge'
 import { localizeAlt } from '../lib/alt-text'
+import InlineRichText from './(en)/guides/InlineRichText'
 
 const FEATURE_ICONS = {
   arranged: (
@@ -146,9 +147,9 @@ export default function HomePageInner({ locale = 'en' }) {
             <p key={i}>{p}</p>
           ))}
           {home.intro.coursesBlurb ? (
-            <p>
-              {home.intro.coursesBlurb}{' '}
-              <a href={golfCoursesHref} style={{ color: 'var(--gold, #b8975a)', textDecoration: 'none' }}>{home.intro.coursesBlurbLink}</a>.
+            <p className="intro__course-links">
+              <InlineRichText text={home.intro.coursesBlurb} locale={locale} />
+              {home.intro.coursesBlurbLink ? <>{' '}<a href={golfCoursesHref} style={{ color: 'var(--gold, #b8975a)', textDecoration: 'none' }}>{home.intro.coursesBlurbLink}</a>.</> : null}
             </p>
           ) : null}
           {home.intro.guideBlurb ? (

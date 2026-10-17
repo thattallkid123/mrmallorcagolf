@@ -51,10 +51,10 @@ export const HOME_CONTENT = {
         "href": "/plan-your-trip#whole-trip"
       }
     ],
-    "coursesBlurb": "I play and review every course on the island: Son Gual, Alcanada, T Golf Calvia, Son Muntaner, and the rest. If you want to compare courses before booking,",
-    "coursesBlurbLink": "see the full list",
-    "guideBlurb": "For the full ranked breakdown of all 24 Mallorca (Majorca) courses, with green fees and who each one suits,",
-    "guideBlurbLink": "read the course guide",
+    "coursesBlurb": "I play and review every course on the island: Son Gual, Alcanada, T Golf Calvia, Son Muntaner, and the rest. Compare all 24 courses before booking in the <a href=\"/golf-courses\">course list</a>, or read the <a href=\"/guides/best-golf-courses-mallorca\">ranked guide</a> for green fees and who each course suits.",
+    "coursesBlurbLink": "",
+    "guideBlurb": "",
+    "guideBlurbLink": "",
     "stats": [
       {
         "value": "24",

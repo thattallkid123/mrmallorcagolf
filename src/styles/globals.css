@@ -796,6 +796,7 @@ body {
 .intro .serif-display { font-size: clamp(1.85rem,3vw,2.7rem); color: var(--deep); margin-bottom: 1.35rem; }
 .intro__left p:not(.eyebrow) { font-size: 1rem; color: var(--charcoal); line-height: 1.85; margin-bottom: 1.15rem; }
 .intro__left p:last-child { margin-bottom: 0; }
+.intro__course-links a { color: var(--gold); text-decoration: none; }
 .intro__services { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-top: 28px; }
 .intro-service { display: flex; flex-direction: column; gap: 8px; min-height: 164px; padding: 22px; border: 1px solid rgba(26,25,22,0.1); background: var(--cream); color: var(--charcoal); text-decoration: none; transition: border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease; }
 .intro-service:hover { border-color: rgba(184,151,60,0.44); transform: translateY(-2px); box-shadow: 0 10px 28px rgba(26,25,22,0.08); }

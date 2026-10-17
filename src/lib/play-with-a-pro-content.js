@@ -171,7 +171,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
   "packages": {
     "eyebrow": "Pricing",
     "title": "Solo, group, or Signature Day.",
-    "body": "Solo and group are the core Play With A Pro day rates. Golf courses pair bookings when they are busy, so a one or two ball can end up sharing the tee time with strangers. If you would rather it was just your party, I can reserve the spare slots and the tee time is yours. The course sets that charge and I pass it through at cost. Green fees and lunch are separate. A private tee time is included as standard with Signature Day.",
+    "body": "Solo and group are the core Play With A Pro day rates. At busy times, one or two golfers may be paired with strangers. If you prefer a private tee time, I can reserve the spare slots. The course sets that charge and I pass it through at cost. Green fees and lunch are separate. Signature Day includes a private tee time.",
     "tiers": [
       {
         "eyebrow": "A Day With Andy",
