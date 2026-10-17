@@ -28,6 +28,7 @@
       "handicapWomen": 35,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Carretera del Faro, s/n, 07400 Port d'Alcúdia",
       "mapsQuery": "Club de Golf Alcanada Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -64,6 +65,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Carrer Cromlec, 1, 07160 Camp de Mar",
       "mapsQuery": "Golf de Andratx Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -100,6 +102,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Carrer Campoamor, s/n, 07181 Bendinat",
       "mapsQuery": "Real Golf de Bendinat Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -138,6 +141,7 @@
       "handicapWomen": 45,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Ctra. Coves de s'Ermita, Km.8, 07589 Canyamel Platja",
       "mapsQuery": "Canyamel Golf Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -172,6 +176,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Carretera Artà - Capdepera Km 3.5, 07570 Artà",
       "mapsQuery": "Capdepera Golf Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -207,6 +212,7 @@
       "handicapWomen": 54,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Camí de Cabo Blanco, Km 7, 07609 Llucmajor",
       "mapsQuery": "Golf Maioris Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -242,6 +248,7 @@
       "handicapWomen": null,
       "certificateRequired": false,
       "mapsDestination": null,
+      "address": "Camí de Son Rapinya, 15, 07013 Palma",
       "mapsQuery": "Palma Pitch & Putt Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -287,6 +294,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Urb. Can Porquer, 30A, 07460 Pollença",
       "mapsQuery": "Golf Pollença Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -324,6 +332,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Predio de Pula, Ma-4040, s/n, km 2,3, 07550 Son Servera",
       "mapsQuery": "Pula Golf Resort Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -363,6 +372,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Camí de Bendrís, 3, 07500 Manacor",
       "mapsQuery": "Reserva Rotana Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -397,6 +407,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Carrer de Berenguer de Palou, 2, 07180 Santa Ponça",
       "mapsQuery": "Golf Santa Ponsa 1 Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -432,6 +443,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": "39.4954722,2.4849431",
+      "address": null,
       "mapsQuery": "Golf Santa Ponsa II",
       "pickerHidden": false,
       "contact": null,
@@ -457,6 +469,7 @@
       "handicapWomen": 54,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Ma-19, salida 20, 07620 Llucmajor",
       "mapsQuery": "Golf Son Antem East Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -494,6 +507,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Ma-19, salida 20, 07620 Llucmajor",
       "mapsQuery": "Golf Son Antem West Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -529,6 +543,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Ma 15 - Palma - Manacor, Km 11,5, 07199 Palma",
       "mapsQuery": "Golf Son Gual Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -568,6 +583,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Carrer Miquel Lladó, s/n, 07013 Palma",
       "mapsQuery": "Son Muntaner Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -612,6 +628,7 @@
       "handicapWomen": 54,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Camí de Son Vida, 38, 07013 Palma",
       "mapsQuery": "Golf Son Quint Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -657,6 +674,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Carrer del Golf, 07559 Costa des Pins",
       "mapsQuery": "Golf Club Son Servera Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -696,6 +714,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Carretera de Santa Maria, Km 10, 07193 S'Esgleieta",
       "mapsQuery": "Golf Son Termes Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -735,6 +754,7 @@
       "handicapWomen": 54,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Carrer Solleric, 1, 07013 Son Vida",
       "mapsQuery": "Golf Son Vida Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -779,6 +799,7 @@
       "handicapWomen": 34,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Camí Cala Figuera, s/n, 07181 Calvià",
       "mapsQuery": "T Golf Calvià (Poniente) Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -817,6 +838,7 @@
       "handicapWomen": 34,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Camí Vell de Sineu, Km 10, 07198 Palma",
       "mapsQuery": "T Golf Palma (Puntiró) Mallorca",
       "pickerHidden": false,
       "contact": {
@@ -857,6 +879,7 @@
       "handicapWomen": 36,
       "certificateRequired": true,
       "mapsDestination": null,
+      "address": "Ctra Cala d'Or - Portocolom, Km 7,7, 07669 Felanitx",
       "mapsQuery": "Vall d'Or Golf Mallorca",
       "pickerHidden": false,
       "contact": {

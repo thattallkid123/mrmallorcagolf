@@ -44,6 +44,11 @@ h2 { font-family: var(--font-serif); font-weight: 600; font-size: 1.45rem; color
 .checkin { margin-top: 16px; background: var(--pine); color: var(--cream); border-radius: 6px; padding: 18px 20px; }
 .checkin .main { font-family: var(--font-serif); font-size: 1.7rem; font-weight: 500; line-height: 1.2; }
 .checkin .advice { margin-top: 8px; font-size: 0.95rem; opacity: 0.92; }
+.tiles { display: flex; flex-wrap: wrap; gap: 8px 28px; }
+.tile .k { font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-light); }
+.tile .v { font-family: var(--font-serif); font-size: 2.1rem; font-weight: 500; line-height: 1.1; }
+.tile .s { font-size: 0.85rem; opacity: 0.85; }
+.addr { margin-top: 2px; color: #6B6157; font-size: 0.95rem; }
 .checkin strong { color: var(--gold-light); font-weight: 500; }
 .notice { margin-top: 12px; background: #FBF1DC; border: 1px solid var(--gold); border-radius: 6px; padding: 12px 16px; }
 .notice strong { color: var(--deep); font-weight: 500; }
@@ -100,6 +105,7 @@ let PHRASES = {};
 const tx = text => (LANG !== 'en' && PHRASES[text]) || text;
 const UI = {
   en: {
+    l_dressShoes: 'Dress code and shoes', t_checkin: 'Check in by', t_there: 'Be there by', t_proshop: 'at the pro shop', t_tee: 'Tee time', t_range: 'Range opens',
     l_arrivalPoint: 'Getting in', l_proShopOpens: 'Opening hours', l_firstTee: 'First tee time', l_rangeOpens: 'Range', l_earlyTee: 'Early tee times',
     l_foodBeforeRound: 'Food and coffee', l_water: 'Water and drinks', l_licence: 'Daily licence', l_dressCode: 'Dress code',
     l_shoes: 'Shoes', l_flights: 'Playing with others', l_changingRooms: 'Changing rooms', l_parking: 'Parking',
@@ -125,6 +131,7 @@ const UI = {
     error: 'This page could not load. Message me on <a href="{wa}">WhatsApp</a> and I will send the details directly.'
   },
   de: {
+    l_dressShoes: 'Kleiderordnung und Schuhe', t_checkin: 'Einchecken bis', t_there: 'Da sein um', t_proshop: 'im Pro Shop', t_tee: 'Startzeit', t_range: 'Range öffnet',
     l_arrivalPoint: 'Zugang', l_proShopOpens: 'Öffnungszeiten', l_firstTee: 'Erste Startzeit', l_rangeOpens: 'Driving Range', l_earlyTee: 'Frühe Startzeiten',
     l_foodBeforeRound: 'Essen und Kaffee', l_water: 'Wasser und Getränke', l_licence: 'Tageslizenz', l_dressCode: 'Kleiderordnung',
     l_shoes: 'Schuhe', l_flights: 'Spiel mit anderen', l_changingRooms: 'Umkleiden', l_parking: 'Parken',
@@ -150,6 +157,7 @@ const UI = {
     error: 'Diese Seite konnte nicht geladen werden. Schreiben Sie mir per <a href="{wa}">WhatsApp</a>, dann schicke ich Ihnen die Details direkt.'
   },
   es: {
+    l_dressShoes: 'Código de vestimenta y calzado', t_checkin: 'Registro antes de las', t_there: 'Llegue a las', t_proshop: 'en el pro shop', t_tee: 'Hora de salida', t_range: 'Prácticas abre a las',
     l_arrivalPoint: 'Cómo entrar', l_proShopOpens: 'Horario', l_firstTee: 'Primera hora de salida', l_rangeOpens: 'Campo de prácticas', l_earlyTee: 'Salidas a primera hora',
     l_foodBeforeRound: 'Comida y café', l_water: 'Agua y bebidas', l_licence: 'Licencia diaria', l_dressCode: 'Código de vestimenta',
     l_shoes: 'Calzado', l_flights: 'Jugar con otros jugadores', l_changingRooms: 'Vestuarios', l_parking: 'Aparcamiento',
@@ -215,6 +223,14 @@ function seasonFor(d) {
   return (d >= lastSunday(y, 9) || d < lastSunday(y, 2)) ? 'winter' : 'summer';
 }
 
+// A range opening time for the summary strip, only when the answer is one plain statement (no weekday, season or closure wording).
+function rangeTime(text) {
+  if (!text || /except|monday|tuesday|wednesday|thursday|friday|saturday|sunday|closed|summer|winter/i.test(text)) return null;
+  const m = /^[^.]*\bopens?\b(?: at| from)? (\d{1,2}:\d{2})\b/i.exec(text);
+  return m ? m[1].padStart(5, '0') : null;
+}
+const flat = t => String(t || '').toLowerCase().replace(/[^a-z0-9]+/g, ' ').trim();
+
 function minusMinutes(t, mins) {
   if (!t || !/^\d{1,2}:\d{2}$/.test(t)) return null;
   const [h, m] = t.split(':').map(Number);
@@ -250,16 +266,25 @@ function renderRound(course, round, closures) {
   const valueFor = f => (season && seasonal[f] && seasonal[f][season]) || info[f];
   const when = [niceDate(round.d), round.t ? `${ui('teeTime')} ${esc(round.t)}` : ''].filter(Boolean).join(', ');
   let html = `<section class="round"><div class="eyebrow">${ui('eyebrow')}</div><h1>${esc(course.name)}</h1>`;
+  if (course.address) html += `<div class="addr">${esc(course.address)}</div>`;
   if (when) html += `<div class="when">${when}</div>`;
   (closures || []).filter(c => round.d && (c.courses || []).includes(round.c) && round.d >= c.from && round.d <= c.to)
     .forEach(c => { html += `<div class="notice"><strong>${ui('note')}</strong> ${esc(tx(c.text))}</div>`; });
   if (info.checkInMinutes) {
     const by = minusMinutes(round.t, info.checkInMinutes);
-    const main = info.arrivalPoint
-      ? (by ? ui('meet_by', { time: by }) : ui('meet_plain'))
-      : (by ? ui('checkin_by', { time: by }) : ui('checkin_plain') + '.');
     const advice = (info.arrivalPoint ? ui('meet_note', { n: info.checkInMinutes }) : ui('checkin_note', { n: info.checkInMinutes })).trim();
-    html += `<div class="checkin"><div class="main">${main}</div><div class="advice">${advice}</div></div>`;
+    if (by && round.t) {
+      // Summary strip: when to be there, the tee time, and when the range opens if the answer says so plainly.
+      const rt = rangeTime(valueFor('rangeOpens'));
+      const tile = (k, v, sub) => `<div class="tile"><div class="k">${k}</div><div class="v">${esc(v)}</div>${sub ? `<div class="s">${sub}</div>` : ''}</div>`;
+      html += `<div class="checkin"><div class="tiles">`
+        + (info.arrivalPoint ? tile(ui('t_there'), by) : tile(ui('t_checkin'), by, ui('t_proshop')))
+        + tile(ui('t_tee'), round.t) + (rt ? tile(ui('t_range'), rt) : '')
+        + `</div><div class="advice">${advice}</div></div>`;
+    } else {
+      const main = info.arrivalPoint ? ui('meet_plain') : ui('checkin_plain') + '.';
+      html += `<div class="checkin"><div class="main">${main}</div><div class="advice">${advice}</div></div>`;
+    }
   }
   // One Google option, near the top where it is needed on the day: by club name, or an exact entrance Andy has given.
   const dest = course.mapsDestination || (course.mapsQuery ? encodeURIComponent(course.mapsQuery) : (course.lat && course.lng ? course.lat + ',' + course.lng : ''));
@@ -267,10 +292,17 @@ function renderRound(course, round, closures) {
 
   let any = false;
   GROUPS.forEach(([title, fields]) => {
-    const rows = fields.filter(f => valueFor(f));
+    const rows = fields.filter(f => valueFor(f) && !(f === 'shoes' && valueFor('dressCode')));
     if (!rows.length) return;
     any = true;
-    html += `<h2>${ui(title)}</h2><dl>` + rows.map(f => `<div class="item"><dt>${ui('l_' + f)}</dt><dd>${linkify(tx(valueFor(f)))}</dd></div>`).join('') + '</dl>';
+    const card = f => {
+      if (f !== 'dressCode') return `<div class="item"><dt>${ui('l_' + f)}</dt><dd>${linkify(tx(valueFor(f)))}</dd></div>`;
+      // One card for the clothing and the shoes; the shoe rule is left out when the dress code already says it.
+      const shoes = valueFor('shoes');
+      const dup = shoes && flat(valueFor('dressCode')).includes(flat(shoes));
+      return `<div class="item"><dt>${ui(shoes ? 'l_dressShoes' : 'l_dressCode')}</dt><dd>${linkify(tx(valueFor('dressCode')))}</dd>${shoes && !dup ? `<dd>${linkify(tx(shoes))}</dd>` : ''}</div>`;
+    };
+    html += `<h2>${ui(title)}</h2><dl>` + rows.map(card).join('') + '</dl>';
   });
   if (!any) html += `<p class="muted later">${ui('later')}</p>`;
   html += `<h2>${ui('g_bring')}</h2><ul class="bring">` + bringList(course, round).map(i => `<li>${esc(i)}</li>`).join('') + '</ul>';
@@ -300,19 +332,25 @@ async function main() {
     return `<a href="?${p.toString()}" class="${l === LANG ? 'on' : ''}" hreflang="${l}">${l.toUpperCase()}</a>`;
   }).join('');
   app.innerHTML = `<p class="muted">${ui('loading')}</p>`;
+  // Both files are fetched together, each retried a couple of times so a dropped request on a poor connection does not leave the page in English.
+  const getJson = async url => {
+    for (let attempt = 0; attempt < 3; attempt++) {
+      try { const res = await fetch(url, { cache: 'no-store' }); if (res.ok) return await res.json(); } catch (e) { /* try again */ }
+      await new Promise(r => setTimeout(r, 300 * (attempt + 1)));
+    }
+    throw new Error('Could not load ' + url);
+  };
   let data;
   try {
-    const res = await fetch('/pre-round-assets/round-info.json', { cache: 'no-store' });
-    data = await res.json();
+    const [info, phrases] = await Promise.all([
+      getJson('/pre-round-assets/round-info.json'),
+      LANG !== 'en' ? getJson('/pre-round-assets/round-info.i18n.json').catch(() => ({})) : Promise.resolve({})
+    ]);
+    data = info;
+    PHRASES = phrases[LANG] || {};
   } catch (e) {
     app.innerHTML = `<p>${ui('error', { wa: WHATSAPP })}</p>`;
     return;
-  }
-  if (LANG !== 'en') {
-    try {
-      const res = await fetch('/pre-round-assets/round-info.i18n.json', { cache: 'no-store' });
-      PHRASES = (await res.json())[LANG] || {};
-    } catch (e) { PHRASES = {}; }
   }
   const rounds = parseRounds(new URLSearchParams(location.search)).filter(r => data.courses[r.c]);
   let html = rounds.length ? rounds.map(r => renderRound(data.courses[r.c], r, data.closures)).join('') : renderPicker(data);
