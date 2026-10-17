@@ -158,6 +158,8 @@ The page text and the course answers (opening times, dress code, water, parking)
 - **"X opens at 10:30 with drinks"** is not "öffnet mit Getränken": de "öffnet ... und bietet ...".
 - **"Be there by {time}" is a latest time:** zh 最晚, others may use "um" or "à" naturally.
 - **Dates in Chinese** use digits for the month and day (10 月 26 日), not a mix like 十月 26 日.
+- **Chinese licence words (Andy's call, 18 Oct 2026):** the Spanish federation card is 西班牙高尔夫球协会会员证 (not 执照, which reads like a driving or business licence); the daily licence is 每日临时会员证.
+- **Swedish spikes (Andy's call, 18 Oct 2026):** say "softspikes" and "metallspikes" ("hårda spikes" for hard), not "dubbar".
 - **Agreement and list slips:** es "se venden agua, café y aperitivos"; a comma before "oder" in German lists; one verb dropped in a short French line.
 
 ## Checklist before a translation ships
