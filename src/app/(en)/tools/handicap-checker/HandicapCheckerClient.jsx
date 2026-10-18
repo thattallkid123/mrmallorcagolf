@@ -259,6 +259,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
           tier: result.tier.label,
           recommendations: result.recPool,
           summary,
+          accessResults: result.results.map(({ course, r }) => ({ name: course.name, status: r.status, label: stripStatusIcon(r.label), detail: r.detail })),
         }),
       })
       if (res.ok) {

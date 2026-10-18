@@ -16,7 +16,7 @@ export default function PrivacyPolicyDE() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Datenschutzerklärung</h1>
-            <p className="legal-page__updated">Zuletzt aktualisiert: Oktober 2026</p>
+            <p className="legal-page__updated">Zuletzt aktualisiert: 18. Oktober 2026</p>
           </div>
 
           <section className="legal-section">
@@ -34,6 +34,7 @@ export default function PrivacyPolicyDE() {
               <li><strong>Fragebogen vor der Runde:</strong> Ihr Name, Ihre E-Mail-Adresse, Ihr Handicap und Ihre Antworten zu Ihrem Spiel, Ihrem Training und Ihren Zielen. Altersgruppe und Wohnort sind freiwillig. Die Antworten werden uns per E-Mail zugestellt und dienen der Planung Ihres Termins.</li>
               <li><strong>Anfragen per E-Mail und WhatsApp:</strong> Ihr Name und Ihre Kontaktdaten, wenn Sie sich direkt an uns wenden</li>
               <li><strong>Course Selector und E-Mail-Anmeldeformulare:</strong> Ihre E-Mail-Adresse und alle optionalen Angaben, die Sie beim Anfordern von Planungsnotizen oder Ergebnis-Follow-ups machen</li>
+              <li><strong>Anforderung von PDF-Leitfäden:</strong> Ihre E-Mail-Adresse, den von Ihnen angeforderten Leitfaden und die Angabe, ob Sie dem Erhalt von Planungs-E-Mails zugestimmt haben. Wir führen eine separate Aufzeichnung der Leitfaden-Anforderungen und erhalten eine E-Mail-Benachrichtigung. Wenn Sie einen Leitfaden anfordern, melden Sie sich damit nicht für Marketing-E-Mails an.</li>
               <li><strong>Analysedaten:</strong> anonyme Nutzungsdaten, die von Google Analytics erhoben werden (siehe Abschnitt 5)</li>
             </ul>
             <p>Anfragen über den Reisekostenrechner enthalten auch Ihre Platzauswahl, Kostenschätzung und Planungsangaben, etwa Hotelstil, Transport und Buggy-Miete. Dafür wird derselbe private Folgelink verwendet.</p>
@@ -82,7 +83,7 @@ export default function PrivacyPolicyDE() {
             <p>Wir verkaufen oder vermieten Ihre personenbezogenen Daten nicht an Dritte. Wir geben Daten an folgende Auftragsverarbeiter weiter, nur soweit dies für den Betrieb dieser Website und die Erbringung unserer Leistungen erforderlich ist:</p>
             <ul>
               <li><strong>Google Analytics:</strong> pseudonymisierte Nutzungsdaten, wie in Abschnitt 5 beschrieben</li>
-              <li><strong>MailerLite:</strong> Ihre E-Mail-Adresse und, je nach verwendetem Formular, die von Ihnen angegebenen Reisedetails (z. B. Termine, Gruppengröße, Budget oder Handicap) sowie etwaige Notizen, um Ihnen Ergebnisse zuzusenden und &mdash; nur wenn Sie sich dafür entscheiden &mdash; unsere gelegentlichen Planungs-E-Mails. MailerLite verarbeitet Daten innerhalb der EU.</li>
+              <li><strong>MailerLite:</strong> Ihre E-Mail-Adresse und, je nach verwendetem Formular, die von Ihnen angegebenen Reisedetails (z. B. Termine, Gruppengröße, Budget oder Handicap) sowie etwaige Notizen, um Ihnen Ergebnisse zuzusenden und &mdash; nur wenn Sie sich dafür entscheiden &mdash; unsere gelegentlichen Planungs-E-Mails. MailerLite verarbeitet Daten innerhalb der EU. Wir nutzen MailerLite außerdem, um die Aufzeichnungen zu Leitfaden-Anforderungen getrennt von den Marketing-Abonnements zu speichern.</li>
               <li><strong>Resend:</strong> den Inhalt jedes von Ihnen abgesendeten Kontakt-, Anfrage- oder Fragebogenformulars, um es an uns zuzustellen und Ihnen gegebenenfalls eine Bestätigungs-E-Mail zu senden. Resend hat seinen Sitz in den USA.</li>
               <li><strong>Upstash:</strong> Ihre IP-Adresse, kurzzeitig gespeichert, um Missbrauch unserer Formulare zu verhindern (Rate Limiting). Upstash hat seinen Sitz in den USA.</li>
               <li><strong>Vercel:</strong> hostet diese Website und verarbeitet dabei Standard-Webanfragedaten wie Ihre IP-Adresse und Browserinformationen. Vercel hat seinen Sitz in den USA.</li>

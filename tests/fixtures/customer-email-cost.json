@@ -1,0 +1,50 @@
+{
+  "days": 4,
+  "golfers": 2,
+  "rounds": 3,
+  "courses": [
+    "Real Golf de Bendinat",
+    "Golf Santa Ponsa 1",
+    "Golf Son Antem East"
+  ],
+  "buggy": true,
+  "clubs": false,
+  "transport": true,
+  "greenFees": [
+    512,
+    778
+  ],
+  "licences": [
+    0,
+    0
+  ],
+  "assumptions": "Golf totals use the suggested courses and daily licences. Accommodation assumes 3 nights, with an allowance per golfer per night. Buggies are shared by two; essential hire is included. Transfers use one vehicle allowance per four golfers. Flights, golf-booking fees, coaching and full planning fees are excluded. Dates, access and supplier prices need confirmation.",
+  "buggyRange": [
+    134,
+    134
+  ],
+  "clubsRange": [
+    0,
+    0
+  ],
+  "transportRange": [
+    320,
+    560
+  ],
+  "dining": [
+    440,
+    680
+  ],
+  "accommodation": [
+    720,
+    1200
+  ],
+  "total": [
+    2126,
+    3352
+  ],
+  "perGolfer": [
+    1063,
+    1676
+  ]
+}

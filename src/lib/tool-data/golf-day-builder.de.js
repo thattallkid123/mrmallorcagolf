@@ -197,7 +197,10 @@ const data = {
      "Familienaktivität",
      "Eine Aktivität für Golfer und Nichtgolfer"
     ],
-    "coaching": ["Play With A Pro","18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit."]
+    "coaching": [
+     "Play With A Pro",
+     "18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit."
+    ]
    }
   },
   "transport": {
@@ -493,7 +496,10 @@ const data = {
    "Familienaktivität",
    "Ein optionaler Stopp in Platznähe. Ort, Öffnungszeiten und Fahrzeit werden bei der Abstimmung des Plans geprüft."
   ],
-  "coaching": ["Play With A Pro","18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit."],
+  "coaching": [
+   "Play With A Pro",
+   "18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit."
+  ],
   "lunch": [
    "Langes Mittagessen",
    "Ein Tisch in Platznähe, abgestimmt auf Ihre Startzeit. Ein lokaler Reisepartner prüft Öffnungszeiten, Verfügbarkeit und Anfahrt vor der Buchung."
@@ -501,14 +507,14 @@ const data = {
  },
  "plan": {
   "names": {
-   "efficient": "Effizienter Golftag",
-   "lunch": "Golf & langes Mittagessen",
-   "experience": "Vollständiges Erlebnis"
+   "efficient": "Nur Golf",
+   "lunch": "Golf und Mittagessen",
+   "experience": "Golf, Mittagessen und ein zusätzlicher Stopp"
   },
   "taglines": {
-   "efficient": "Golf mit Zeit zum Einchecken, Spielen und Zurückfahren.",
-   "lunch": "Golf und ein vorgeschlagenes Mittagessen in Platznähe.",
-   "experience": "Golf und die von Ihnen ausgewählten Zusatzaktivitäten."
+   "efficient": "Eine Runde Golf, danach direkt zurück zu Ihrem Hotel.",
+   "lunch": "Eine Runde Golf mit eingeplanter Zeit für das Mittagessen bei {venue}.",
+   "experience": "Golf und Mittagessen, mit Zeit für die von Ihnen ausgewählten zusätzlichen Aktivitäten."
   },
   "time": {
    "depart": "{depart} (Schätzung)",
@@ -524,7 +530,7 @@ const data = {
    "earlyStart": "Golf am Morgen",
    "midStart": "Golf am Vormittag",
    "pmStart": "Golf am Nachmittag",
-   "afterActivities": "Nach den Aktivitäten"
+   "afterActivities": "Zum Abschluss"
   },
   "title": {
    "depart": "Abfahrt von Ihrer Unterkunft",
@@ -533,33 +539,38 @@ const data = {
    "return": "Rückfahrt",
    "longLunch": "Vorgeschlagenes Mittagessen",
    "relaxedReturn": "Eine entspannte Rückfahrt",
-   "lunchBooked": "Vorgeschlagenes Mittagessen",
+   "lunchBooked": "Mittagsstopp noch abzustimmen",
    "beachOrVillage": "Strand- oder Dorfstunde",
    "lastLight": "Rückfahrt im letzten Licht",
    "warmupCoach": "Coaching-Aufwärmen mit mir",
    "warmupCoffee": "Aufwärmen und Kaffee",
    "holes18": "18 Löcher auf {course}",
-   "holes9": "9 Löcher auf {course}"
+   "holes9": "9 Löcher auf {course}",
+   "lunchAt": "Mittagessen bei {venue}"
   },
   "desc": {
-"pwap": "18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit.",
-   "transfer": "Mein lokaler Reisepartner kann bei Transfers helfen. Route, Zeiten, Kosten und Zuständigkeiten werden vor der Buchung vereinbart.",
+   "pwap": "18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit.",
+   "transfer": "Ich helfe Ihnen, einen Transfer passend zu Ihrem Hotel und Ihrer Startzeit zu planen. Route, Zeiten und Preis werden mit Ihnen abgestimmt.",
    "selfDrive": "Hotel und Route müssen feststehen, bevor die Abfahrtszeit geplant wird.",
    "warmupCoach": "Eine Aufwärm- oder Coaching-Einheit mit mir, abhängig vom Datum und den Einrichtungen des Platzes.",
    "warmupCoffee": "Zeit zum Einchecken, Aufwärmen und Vorbereiten auf die Runde. Die Übungsmöglichkeiten hängen vom Platz ab.",
    "holeNote": " Hinweis: {note}",
    "clubhouse": "Ein entspanntes Getränk auf der Terrasse, während über die Scorekarten gestritten wird.",
-   "returnEfficient": "Rückfahrt zur Unterkunft nach den Aktivitäten. Route und Fahrzeit hängen von Ihrem Hotel ab.",
-   "longLunch": "Ein Tisch in Platznähe, abgestimmt auf Ihre Startzeit. Ein lokaler Reisepartner prüft Öffnungszeiten, Verfügbarkeit und Anfahrt vor der Buchung.",
-   "relaxedReturn": "Rückfahrt zur Unterkunft nach den Aktivitäten. Route und Fahrzeit hängen von Ihrem Hotel ab.",
-   "lunchBooked": "Ein Tisch in Platznähe, abgestimmt auf Ihre Startzeit. Ein lokaler Reisepartner prüft Öffnungszeiten, Verfügbarkeit und Anfahrt vor der Buchung.",
+   "returnEfficient": "Zurück zu Ihrer Unterkunft.",
+   "longLunch": "Ich schlage ein Restaurant vor, sobald Platz und Route festgelegt sind.",
+   "relaxedReturn": "Zurück zu Ihrer Unterkunft.",
+   "lunchBooked": "Ich schlage ein Restaurant vor, sobald Platz und Route festgelegt sind.",
    "beachOrVillage": "Ein optionaler Stopp in Platznähe. Ort, Öffnungszeiten und Fahrzeit werden bei der Abstimmung des Plans geprüft.",
-   "lastLight": "Rückfahrt zur Unterkunft nach den Aktivitäten. Route und Fahrzeit hängen von Ihrem Hotel ab.",
+   "lastLight": "Zurück zu Ihrer Unterkunft.",
    "round18": "Planen Sie etwa 4–5 Stunden für 18 Löcher sowie Zeit zum Einchecken und Aufwärmen ein. Spieltempo und Tageslicht werden für Ihr Datum geprüft.",
    "round9": "Planen Sie etwa 1½–2 Stunden für 9 Löcher sowie Zeit zum Einchecken und Aufwärmen ein.",
    "shortNote": "Dies ist eine kurze Golfeinheit. Für einen ganzen Golftag braucht es einen geeigneten längeren Platz und bestätigten Zugang.",
    "pmNote": "Nach einer Nachmittagsrunde bleibt wenig Zeit. Zusatzaktivitäten und Mittagessen finden vor der Runde statt; ich prüfe das Tageslicht vor der Bestätigung einer Startzeit.",
-   "accessNote": "Handicap-Grenzen, Verfügbarkeit und Route werden vor der Buchung geprüft."
+   "accessNote": "Handicap-Grenzen, Verfügbarkeit und Route werden vor der Buchung geprüft.",
+   "namedLunch": "Bleiben Sie zum Mittagessen auf dem Platz. Ich kann bei {venue} einen Tisch passend zu Ihrer Startzeit reservieren.",
+   "returnGolfOnly": "Nach der Runde zurück zu Ihrer Unterkunft, ohne weitere geplante Stopps.",
+   "returnAfterLunch": "Nach dem Mittagessen zurück zu Ihrer Unterkunft.",
+   "returnAfterStop": "Nach Ihrem letzten Stopp zurück zu Ihrer Unterkunft."
   },
   "why": {
    "efficient": "{course}",
@@ -593,8 +604,8 @@ const data = {
   },
   "handles": {
    "tee": "Ich bestätige und buche das Golf",
-   "table": "Restaurantoptionen mit meinem lokalen Reisepartner geprüft",
-   "transportYes": "Transferoptionen mit meinem lokalen Reisepartner geprüft",
+   "table": "Ich helfe bei der Planung der Restaurants",
+   "transportYes": "Ich helfe bei der Planung der Transfers",
    "transportNo": "Route anhand Ihrer Hoteladresse geprüft",
    "buggies": "Schläger- und Buggy-Miete mit dem Platz abgestimmt",
    "coachingYes": "18 Löcher mit mir, Coaching während der Runde und anschließend Video und schriftliche Notizen. Je nach Verfügbarkeit.",

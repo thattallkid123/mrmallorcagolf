@@ -197,7 +197,10 @@ const data = {
      "Gezinsactiviteit",
      "Een activiteit voor golfers en niet-golfers"
     ],
-    "coaching": ["Play With A Pro","18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid."]
+    "coaching": [
+     "Play With A Pro",
+     "18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid."
+    ]
    }
   },
   "transport": {
@@ -493,7 +496,10 @@ const data = {
    "Gezinsactiviteit",
    "Een optionele stop bij de baan. Locatie, openingstijden en reistijd worden gecontroleerd bij het afspreken van het plan."
   ],
-  "coaching": ["Play With A Pro","18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid."],
+  "coaching": [
+   "Play With A Pro",
+   "18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid."
+  ],
   "lunch": [
    "Lange lunch",
    "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt."
@@ -501,14 +507,14 @@ const data = {
  },
  "plan": {
   "names": {
-   "efficient": "Efficiënte golfdag",
-   "lunch": "Golf en lange lunch",
-   "experience": "Volledige ervaring"
+   "efficient": "Alleen golf",
+   "lunch": "Golf en lunch",
+   "experience": "Golf, lunch en een extra stop"
   },
   "taglines": {
-   "efficient": "Golf met tijd om in te checken, te spelen en terug te gaan.",
-   "lunch": "Golf en een voorgestelde lunch bij de baan.",
-   "experience": "Golf en de extra activiteiten die u heeft gekozen."
+   "efficient": "Een ronde golf, met daarna een directe terugreis naar uw hotel.",
+   "lunch": "Een ronde golf met tijd die is vrijgehouden voor de lunch bij {venue}.",
+   "experience": "Golf en lunch, met tijd voor de extra activiteiten die u hebt gekozen."
   },
   "time": {
    "depart": "{depart} (schatting)",
@@ -524,7 +530,7 @@ const data = {
    "earlyStart": "Golf in de ochtend",
    "midStart": "Golf later in de ochtend",
    "pmStart": "Golf in de middag",
-   "afterActivities": "Na de activiteiten"
+   "afterActivities": "Tot slot"
   },
   "title": {
    "depart": "Vertrek vanaf uw accommodatie",
@@ -533,33 +539,38 @@ const data = {
    "return": "Terugreis",
    "longLunch": "Voorgestelde lunch",
    "relaxedReturn": "Een ontspannen terugreis",
-   "lunchBooked": "Voorgestelde lunch",
+   "lunchBooked": "Lunchstop nog af te spreken",
    "beachOrVillage": "Strand- of dorpsuurtje",
    "lastLight": "Terug in het laatste licht",
    "warmupCoach": "Warming-up met coaching van mij",
    "warmupCoffee": "Warming-up en koffie",
    "holes18": "18 holes op {course}",
-   "holes9": "9 holes op {course}"
+   "holes9": "9 holes op {course}",
+   "lunchAt": "Lunch bij {venue}"
   },
   "desc": {
-"pwap": "18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid.",
-   "transfer": "Mijn lokale reispartner kan helpen met vervoer. Route, tijden, kosten en verantwoordelijkheden spreken we vóór het boeken af.",
+   "pwap": "18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid.",
+   "transfer": "Ik help u een transfer te plannen rond uw hotel en starttijd. De route, de tijden en de prijs worden met u afgestemd.",
    "selfDrive": "Bevestig het hotel en de route voordat de vertrektijd wordt gepland.",
    "warmupCoach": "Een warming-up of coaching met mij, afhankelijk van de datum en de faciliteiten van de baan.",
    "warmupCoffee": "Tijd om in te checken, op te warmen en u op de ronde voor te bereiden. De faciliteiten verschillen per baan.",
    "holeNote": " Let op: {note}",
    "clubhouse": "Een ontspannen drankje op het terras terwijl over de scorekaarten wordt gediscussieerd.",
-   "returnEfficient": "Terug naar uw accommodatie na de activiteiten. De route en reistijd hangen af van uw hotel.",
-   "longLunch": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
-   "relaxedReturn": "Terug naar uw accommodatie na de activiteiten. De route en reistijd hangen af van uw hotel.",
-   "lunchBooked": "Een tafel bij de baan, gekozen rond uw starttijd. Een lokale reispartner controleert openingstijden, beschikbaarheid en de route voordat er wordt geboekt.",
+   "returnEfficient": "Terug naar uw accommodatie.",
+   "longLunch": "Ik stel een restaurant voor zodra de baan en de route zijn afgesproken.",
+   "relaxedReturn": "Terug naar uw accommodatie.",
+   "lunchBooked": "Ik stel een restaurant voor zodra de baan en de route zijn afgesproken.",
    "beachOrVillage": "Een optionele stop bij de baan. Locatie, openingstijden en reistijd worden gecontroleerd bij het afspreken van het plan.",
-   "lastLight": "Terug naar uw accommodatie na de activiteiten. De route en reistijd hangen af van uw hotel.",
+   "lastLight": "Terug naar uw accommodatie.",
    "round18": "Reken op ongeveer 4–5 uur voor 18 holes, plus inchecken en opwarmen. Speeltempo en daglicht worden voor uw datum gecontroleerd.",
    "round9": "Reken op ongeveer 1½–2 uur voor 9 holes, plus inchecken en opwarmen.",
    "shortNote": "Dit is een korte golfsessie. Een volledige golfdag vraagt om een geschikte langere baan en bevestigde toegang.",
    "pmNote": "Golf in de middag laat weinig tijd over daarna. Extra activiteiten en lunch komen vóór de ronde; ik controleer het daglicht voordat ik een starttijd bevestig.",
-   "accessNote": "Handicaplimieten, beschikbaarheid en route worden vóór het boeken gecontroleerd."
+   "accessNote": "Handicaplimieten, beschikbaarheid en route worden vóór het boeken gecontroleerd.",
+   "namedLunch": "Blijf op de baan voor de lunch. Ik kan bij {venue} een tafel reserveren die past bij uw starttijd.",
+   "returnGolfOnly": "Na de ronde terug naar uw accommodatie, zonder extra geplande stops.",
+   "returnAfterLunch": "Na de lunch terug naar uw accommodatie.",
+   "returnAfterStop": "Na uw laatste stop terug naar uw accommodatie."
   },
   "why": {
    "efficient": "{course}",
@@ -593,8 +604,8 @@ const data = {
   },
   "handles": {
    "tee": "Ik bevestig en boek het golf",
-   "table": "Restaurantopties bekeken met mijn lokale reispartner",
-   "transportYes": "Vervoersopties bekeken met mijn lokale reispartner",
+   "table": "Ik help bij het plannen van de restaurants",
+   "transportYes": "Ik help bij het plannen van de transfers",
    "transportNo": "Route gecontroleerd met uw hoteladres",
    "buggies": "Club- en buggyhuur afgestemd met de baan",
    "coachingYes": "18 holes met mij, coaching tijdens het spelen en daarna video en schriftelijke notities. Afhankelijk van beschikbaarheid.",

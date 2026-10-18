@@ -1,3 +1,4 @@
+import { buildToolEmail, emailParagraph, emailField } from '../_lib/tool-email'
 import { Resend } from 'resend'
 
 import {
@@ -87,6 +88,21 @@ export async function POST(request) {
     if (error) {
       console.error('Resend questionnaire error:', error)
       return Response.json({ ok: false, error: 'Failed to send' }, { status: 500 })
+    }
+
+    if (canReply) {
+      try {
+      const { error: copyError } = await resend.emails.send({
+        from: 'Andy Griffiths <andy@mrmallorcagolf.com>',
+        to: email,
+        replyTo: 'andy@mrmallorcagolf.com',
+        subject: 'Your pre-round questionnaire',
+        html: buildToolEmail('Your pre-round questionnaire', emailParagraph('Here is a copy of your answers. Reply to this email if anything changes before your round.') + safeSummary.filter(item => item?.a && item.a !== '-').map(item => emailField(escapeHtml(sanitizeText(item.q,200)), escapeHtml(sanitizeMultilineText(item.a,1000)).replaceAll('\n','<br>'))).join(''), {includeIntroduction:false}),
+      })
+      if (copyError) console.error('Resend questionnaire copy error:', copyError)
+      } catch (copyError) {
+        console.error('Resend questionnaire copy error:', copyError)
+      }
     }
 
     return Response.json({ ok: true })

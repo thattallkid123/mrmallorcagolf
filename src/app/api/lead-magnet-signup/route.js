@@ -1,6 +1,7 @@
+import { buildToolEmail, emailParagraph } from '../_lib/tool-email'
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
-import { LEAD_MAGNET_GROUPS, LEAD_MAGNETS } from '../../../lib/signup-config'
+import { LEAD_MAGNET_GROUPS, PDF_REQUEST_GROUPS, PDF_REQUEST_LEADS_GROUP_ID } from '../../../lib/signup-config'
 import {
   checkRateLimit,
   getClientKey,
@@ -8,6 +9,7 @@ import {
   isJsonRequest,
   isPayloadTooLarge,
   isValidEmail,
+  escapeHtml,
 } from '../../../lib/request-safety'
 
 const DELIVERY_EMAILS = {
@@ -34,41 +36,7 @@ const DELIVERY_EMAILS = {
 }
 
 function buildDeliveryEmail(guideName, downloadUrl) {
-  return `<!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
-<body style="margin:0;padding:0;background:#F7F4EF;font-family:Georgia,serif;">
-  <div style="display:none;max-height:0;overflow:hidden;opacity:0;color:transparent;">Who I am and why this might actually be useful.</div>
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#F7F4EF;padding:48px 24px;">
-    <tr><td align="center">
-      <table width="100%" cellpadding="0" cellspacing="0" style="max-width:560px;">
-        <tr><td style="padding-bottom:32px;">
-          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#B8973C;">Mr Mallorca Golf</p>
-        </td></tr>
-        <tr><td style="background:#fff;border-radius:4px;padding:40px 40px 32px;">
-          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Hi,</p>
-          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Here is your ${guideName}. Click the link below to download it.</p>
-          <table cellpadding="0" cellspacing="0" style="margin:28px 0;">
-            <tr><td style="background:#2D4A3E;border-radius:3px;">
-              <a href="${downloadUrl}" style="display:inline-block;padding:14px 28px;font-family:'Jost',Arial,sans-serif;font-size:12px;font-weight:500;letter-spacing:0.1em;text-transform:uppercase;color:#fff;text-decoration:none;">Download PDF</a>
-            </td></tr>
-          </table>
-          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Wanted to say hello properly too.</p>
-          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">I'm Andy. UK PGA Advanced Professional, based in Mallorca. I moved here from Shanghai in early 2025 after eleven years coaching there. I play the courses here most weeks and I know all 24 of them well: which ones are worth the green fee, which ones look better in photos than they play, and which ones most visitors miss entirely.</p>
-          <p style="margin:0 0 20px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">Everything I write comes from that. No tourism copy, no padding. Practical information from someone who actually plays here.</p>
-          <p style="margin:0 0 24px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">If you have a question about courses, timing, what to budget, or whether to bring your own clubs, reply to this email. I read everything.</p>
-          <p style="margin:0;font-family:Georgia,serif;font-size:15px;line-height:1.45;color:#2C2A27;">Andy</p>
-          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;line-height:1.45;color:#8a8784;">UKPGA Advanced Professional</p>
-          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;line-height:1.45;color:#8a8784;">Mr Mallorca Golf</p>
-        </td></tr>
-        <tr><td style="padding:24px 0 0;text-align:center;">
-          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:11px;color:#aaa;">Mr Mallorca Golf, Mallorca, Spain</p>
-        </td></tr>
-      </table>
-    </td></tr>
-  </table>
-</body>
-</html>`
+  return buildToolEmail(guideName, emailParagraph('Here is your ' + guideName + '. You can keep the PDF and use it while planning your trip.') + '<p style="margin:24px 0;"><a href="'+downloadUrl+'" style="display:inline-block;padding:12px 20px;background:#2D4A3E;color:#FFFFFF;text-decoration:none;font-family:Jost,Arial,Helvetica,sans-serif;font-size:15px;line-height:1.5;font-weight:500;letter-spacing:0.02em;border-radius:3px;">Download PDF</a></p>')
 }
 
 export async function POST(request) {
@@ -99,68 +67,115 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Missing or invalid email or guide' }, { status: 400 })
     }
 
-    const groupId = LEAD_MAGNET_GROUPS[guide]
-    if (!groupId) {
+    if (!Object.hasOwn(LEAD_MAGNET_GROUPS, guide)) {
       return NextResponse.json({ error: 'Unknown guide' }, { status: 400 })
     }
+    const groupId = LEAD_MAGNET_GROUPS[guide]
 
     const apiToken = process.env.MAILERLITE_API_TOKEN
     const resendKey = process.env.RESEND_API_KEY
-    if (!apiToken || !resendKey) {
+    if (!resendKey || !apiToken) {
       return NextResponse.json({ error: 'Server misconfigured' }, { status: 500 })
     }
 
-    // Add to MailerLite group (for the nurture sequence)
-    const mlResponse = await fetch('https://connect.mailerlite.com/api/subscribers', {
-      method: 'POST',
-      headers: {
-        Authorization: `Bearer ${apiToken}`,
-        'Content-Type': 'application/json',
-        Accept: 'application/json',
-      },
+    // Preserve existing subscriptions and unsubscribes. New PDF-only contacts
+    // are unconfirmed, so the request record cannot become a marketing opt-in.
+    const mlHeaders = { Authorization: `Bearer ${apiToken}`, 'Content-Type': 'application/json', Accept: 'application/json' }
+    const existing = await fetch(`https://connect.mailerlite.com/api/subscribers/${encodeURIComponent(email)}`, { headers: mlHeaders })
+    if (!existing.ok && existing.status !== 404) {
+      console.error('[lead-magnet-signup] Lead lookup failed:', existing.status)
+      return NextResponse.json({ error: 'Please try again.' }, { status: 502 })
+    }
+    const leadResponse = await fetch('https://connect.mailerlite.com/api/subscribers', {
+      method: 'POST', headers: mlHeaders,
       body: JSON.stringify({
         email,
-        groups: [groupId],
-        fields: { source: guide },
+        groups: [PDF_REQUEST_LEADS_GROUP_ID, PDF_REQUEST_GROUPS[guide]],
+        ...(existing.status === 404 ? { status: subscribeNewsletter === true ? 'active' : 'unconfirmed' } : {}),
       }),
     })
-
-    if (!mlResponse.ok && mlResponse.status !== 200 && mlResponse.status !== 201) {
-      const mlData = await mlResponse.json().catch(() => null)
-      console.error('[lead-magnet-signup] MailerLite error:', mlResponse.status, mlData)
-      return NextResponse.json({ error: 'Subscription failed' }, { status: 502 })
+    if (!leadResponse.ok) {
+      console.error('[lead-magnet-signup] Lead capture failed:', leadResponse.status)
+      return NextResponse.json({ error: 'Please try again.' }, { status: 502 })
     }
 
-    // Optional newsletter/planning-notes opt-in
-    if (subscribeNewsletter) {
-      const newsletterGroupId = process.env.MAILERLITE_TOOLS_GROUP_ID
-      if (newsletterGroupId) {
-        await fetch('https://connect.mailerlite.com/api/subscribers', {
-          method: 'POST',
-          headers: {
-            Authorization: `Bearer ${apiToken}`,
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-          },
-          body: JSON.stringify({
-            email,
-            groups: [newsletterGroupId],
-            fields: { source: `${guide}-planning-notes` },
-          }),
-        }).catch(() => {})
+    // A PDF request alone is not consent to a nurture sequence.
+    if (subscribeNewsletter === true) {
+      // Add to MailerLite group (for the nurture sequence)
+      const mlResponse = await fetch('https://connect.mailerlite.com/api/subscribers', {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${apiToken}`,
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          email,
+          groups: [groupId],
+          fields: { source: guide },
+        }),
+      })
+
+      if (!mlResponse.ok && mlResponse.status !== 200 && mlResponse.status !== 201) {
+        const mlData = await mlResponse.json().catch(() => null)
+        console.error('[lead-magnet-signup] MailerLite error:', mlResponse.status, mlData)
+        return NextResponse.json({ error: 'Subscription failed' }, { status: 502 })
       }
+
+      // Optional newsletter/planning-notes opt-in
+      if (subscribeNewsletter === true) {
+        const newsletterGroupId = process.env.MAILERLITE_TOOLS_GROUP_ID
+        if (newsletterGroupId) {
+          await fetch('https://connect.mailerlite.com/api/subscribers', {
+            method: 'POST',
+            headers: {
+              Authorization: `Bearer ${apiToken}`,
+              'Content-Type': 'application/json',
+              Accept: 'application/json',
+            },
+            body: JSON.stringify({
+              email,
+              groups: [newsletterGroupId],
+              fields: { source: `${guide}-planning-notes` },
+            }),
+          }).catch(() => {})
+        }
+      }
+
     }
 
     // Send instant delivery email via Resend
     const delivery = DELIVERY_EMAILS[guide]
     if (delivery) {
       const resend = new Resend(resendKey)
-      await resend.emails.send({
+      const { error } = await resend.emails.send({
         from: 'Andy Griffiths <andy@mrmallorcagolf.com>',
         to: email,
         subject: delivery.subject,
         html: buildDeliveryEmail(delivery.guideName, delivery.downloadUrl),
       })
+      if (error) {
+        console.error('[lead-magnet-signup] Delivery failed:', error)
+        return NextResponse.json({ error: 'Server error' }, { status: 502 })
+      }
+
+      // Set PDF_REQUEST_NOTIFICATIONS_ENABLED=false in Vercel to silence
+      // owner notifications while keeping lead capture and PDF delivery.
+      if (process.env.PDF_REQUEST_NOTIFICATIONS_ENABLED !== 'false') {
+        try {
+          const { error: notificationError } = await resend.emails.send({
+            from: 'Mr Mallorca Golf <enquiries@mrmallorcagolf.com>',
+            to: 'andy@mrmallorcagolf.com',
+            replyTo: email,
+            subject: `PDF guide request: ${delivery.guideName}`,
+            text: `Email: ${email}\nGuide: ${delivery.guideName}\nPlanning emails opted in: ${subscribeNewsletter === true ? 'Yes' : 'No'}\n\nSaved to the PDF requests lead list in MailerLite.\nhttps://dashboard.mailerlite.com/groups/${PDF_REQUEST_LEADS_GROUP_ID}`,
+            html: `<div style="font-family:Arial,Helvetica,sans-serif;line-height:1.6;color:#2C2A27;"><h2>PDF guide request</h2><p><strong>Email:</strong> ${escapeHtml(email)}<br><strong>Guide:</strong> ${escapeHtml(delivery.guideName)}<br><strong>Planning emails opted in:</strong> ${subscribeNewsletter === true ? 'Yes' : 'No'}</p><p>Saved to the <a href="https://dashboard.mailerlite.com/groups/${PDF_REQUEST_LEADS_GROUP_ID}">PDF requests lead list in MailerLite</a>.</p></div>`,
+          })
+          if (notificationError) console.error('[lead-magnet-signup] Owner notification failed')
+        } catch {
+          console.error('[lead-magnet-signup] Owner notification failed')
+        }
+      }
     }
 
     return NextResponse.json({ success: true })

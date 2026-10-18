@@ -1,6 +1,6 @@
 'use client'
 import { buildToolEnquiryHref } from '../../../lib/tool-enquiry'
-import { buildItineraries } from '../../../lib/golf-day-planner'
+import { buildItineraries, buildDayEnquiryBrief } from '../../../lib/golf-day-planner'
 import ToolChoices from '../../../components/ToolChoices'
 
 import ToolPhoto from '../../../components/ToolPhoto'
@@ -206,15 +206,22 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
   }
 
   async function requestTripPdf() {
-    if (!email) return
-    setPdfSent(true)
+    if (!email || emailSending) return
+    setEmailSending(true)
+
     try {
-      await fetch('/api/lead-magnet-signup', {
+      const response = await fetch('/api/lead-magnet-signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, guide: 'trip-planner', subscribeNewsletter }),
       })
-    } catch { /* fire and forget */ }
+      if (!response.ok) throw new Error('PDF delivery failed')
+      setPdfSent(true)
+    } catch {
+      displayToast(t.cta.error)
+    } finally {
+      setEmailSending(false)
+    }
   }
 
   function displayToast(msg) {
@@ -242,14 +249,16 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
       name: it.name,
       courseName: displayCourseName(it.course.name, localData),
       note: it.note,
+      why: it.why,
+      courseSummary: it.course.blurb,
       tagline: it.tagline,
-      steps: it.steps.map(s => ({ time: s.time, title: s.title, desc: s.desc })),
+      steps: it.steps.map(s => ({ kind: s.kind, time: s.time, title: s.title, desc: s.desc })),
     }))
     try {
       const res = await fetch('/api/send-itinerary', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email, tool: 'golf-day-builder', subject: 'Your Mallorca golf day plan', data: { itineraries }, subscribeNewsletter }),
+        body: JSON.stringify({ email, tool: 'golf-day-builder', subject: 'Your Mallorca golf day plan', data: { itineraries, answerSummary: localizeQuestions(QUESTIONS, localData).map(question => { const values = Array.isArray(answers[question.key]) ? answers[question.key] : [answers[question.key]]; return question.opts.filter(option => values.includes(option.v)).map(option => option.t).join(", ") }).filter(Boolean).join(" · ") }, subscribeNewsletter }),
       })
       setEmailSending(false)
       if (res.ok) { setEmailSent(true) }
@@ -472,7 +481,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
               <p>
                 {builtLine(answers, localData, `${t.results.builtFor} ${GROUP_LABEL[answers.group]} ${t.results.staying} ${REGION_LABEL[answers.region]}.`)}
                 <span style={{ display:'block', marginTop:'6px', fontSize:'.82rem', color:'#8A7F74' }}>
-                  {t.results.courseChosen} {whyCourseChosen(itins[0].course, answers, planText(localData).whyCourse)}
+                  {t.results.courseChosen} {whyCourseChosen((itins[activeItin] || itins[0]).course, answers, planText(localData).whyCourse)}
                 </span>
               </p>
             </div>
@@ -547,7 +556,8 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
                           rel="noopener"
                           className="gdb-btn-gold"
                           style={{ fontSize:'13px', display:'inline-block', textDecoration:'none', padding:'10px 20px', borderRadius:'2px' }}
-                          onClick={requestTripPdf}
+                          onClick={event => { if (emailSending) { event.preventDefault(); return }; requestTripPdf() }}
+                          aria-disabled={emailSending}
                         >{t.cta.pdfButton}</a>
                       </div>
                     ) : (
@@ -585,10 +595,10 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
             <div className="gdb-booking-panel">
               <p>{t.cta.footer}</p>
               <div className="gdb-cta-grid">
-                <button className="gdb-btn-gold" onClick={() => window.location.assign(buildToolEnquiryHref(lang, { courses: itins[activeItin]?.course?.name || '', message: itins[activeItin]?.steps.map(s => s.title).join(' → ') || '' }))}>{t.cta.askAndy}</button>
+                <button className="gdb-btn-gold" onClick={() => window.location.assign(buildToolEnquiryHref(lang, { courses: itins[activeItin]?.course?.name || '', message: buildDayEnquiryBrief(answers, itins[activeItin], localData) }))}>{t.cta.askAndy}</button>
                 <button className="gdb-btn-pine" style={{ borderRadius:'2px' }} onClick={() => window.open(`https://www.mrmallorcagolf.com${buildLocalePath('/play-with-a-pro', lang)}`, '_blank', 'noopener')}>{t.cta.explorePro}</button>
                 <div className="gdb-cta-secondary">
-                  <button className="gdb-btn-secondary tool-whatsapp-link" onClick={() => { trackDayWhatsApp(); window.open(WA_DAY_HREF, '_blank', 'noopener') }}>{t.cta.whatsapp}</button>
+                  <button className="gdb-btn-secondary tool-whatsapp-link" onClick={() => { trackDayWhatsApp(); window.open(WA_DAY_HREF + '%0A%0A' + encodeURIComponent(buildDayEnquiryBrief(answers, itins[activeItin], localData)), '_blank', 'noopener') }}>{t.cta.whatsapp}</button>
                 </div>
               </div>
             </div>

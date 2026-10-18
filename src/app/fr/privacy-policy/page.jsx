@@ -16,7 +16,7 @@ export default function PrivacyPolicyFR() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Politique de confidentialité</h1>
-            <p className="legal-page__updated">Dernière mise à jour : octobre 2026</p>
+            <p className="legal-page__updated">Dernière mise à jour : 18 octobre 2026</p>
           </div>
 
           <section className="legal-section">
@@ -34,6 +34,7 @@ export default function PrivacyPolicyFR() {
               <li><strong>Questionnaire d&rsquo;avant-partie :</strong> votre nom, votre adresse e-mail, votre handicap et vos réponses sur votre jeu, votre entraînement et vos objectifs. La tranche d&rsquo;âge et votre lieu de résidence sont facultatifs. Les réponses nous parviennent par e-mail et servent à préparer votre séance.</li>
               <li><strong>Demandes par e-mail et WhatsApp :</strong> votre nom et vos coordonnées lorsque vous nous contactez directement</li>
               <li><strong>Course Selector et formulaires d&rsquo;inscription par e-mail :</strong> votre adresse e-mail et toute information facultative que vous choisissez de fournir en demandant des notes de planification ou un suivi de votre sélection</li>
+              <li><strong>Demandes de guides PDF :</strong> votre adresse e-mail, le guide que vous demandez et si vous avez accepté de recevoir les e-mails de planification. Nous conservons un enregistrement distinct des demandes de guides et recevons une notification par e-mail. Si vous demandez un guide, vous ne vous inscrivez pas aux e-mails marketing.</li>
               <li><strong>Données analytiques :</strong> données d&rsquo;usage anonymes collectées par Google Analytics (voir la section 5)</li>
             </ul>
             <p>Les demandes du calculateur de coûts comprennent aussi les parcours choisis, le budget estimé et les préférences de séjour, de transport et de voiturette. Elles utilisent le même lien privé de suivi.</p>
@@ -82,7 +83,7 @@ export default function PrivacyPolicyFR() {
             <p>Nous ne vendons ni ne louons vos données personnelles à des tiers. Nous partageons des données avec les sous-traitants suivants, uniquement dans la mesure nécessaire au fonctionnement de ce site et à la fourniture de nos services :</p>
             <ul>
               <li><strong>Google Analytics :</strong> données d&rsquo;usage pseudonymisées, comme décrit à la section 5</li>
-              <li><strong>MailerLite :</strong> votre adresse e-mail et, selon le formulaire utilisé, les détails de voyage que vous fournissez (dates, taille du groupe, budget ou handicap) ainsi que toute note, afin de vous transmettre des résultats et &mdash; uniquement si vous y consentez &mdash; nos e-mails occasionnels de planification. MailerLite traite les données au sein de l&rsquo;UE.</li>
+              <li><strong>MailerLite :</strong> votre adresse e-mail et, selon le formulaire utilisé, les détails de voyage que vous fournissez (dates, taille du groupe, budget ou handicap) ainsi que toute note, afin de vous transmettre des résultats et &mdash; uniquement si vous y consentez &mdash; nos e-mails occasionnels de planification. MailerLite traite les données au sein de l&rsquo;UE. Nous utilisons également MailerLite pour conserver les enregistrements des demandes de guides séparément des abonnements marketing.</li>
               <li><strong>Resend :</strong> le contenu de tout formulaire de contact, de demande ou de questionnaire que vous soumettez, afin de nous le transmettre et, le cas échéant, de vous envoyer un e-mail de confirmation. Resend est basé aux États-Unis.</li>
               <li><strong>Upstash :</strong> votre adresse IP, conservée brièvement, afin de prévenir les abus sur nos formulaires (limitation de débit). Upstash est basé aux États-Unis.</li>
               <li><strong>Vercel :</strong> héberge ce site et, à ce titre, traite des données standard de requête web telles que votre adresse IP et les informations de votre navigateur. Vercel est basé aux États-Unis.</li>

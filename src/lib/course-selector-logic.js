@@ -98,12 +98,15 @@ export function optionLabels(question, value) {
     .filter(Boolean)
 }
 
-export function selectorAnswerSummary(answers) {
+export function selectorAnswerSummary(answers, questionText = {}) {
   return QUESTIONS
     .map(question => {
-      const labels = optionLabels(question, answers[question.id])
+      const translated = questionText[question.id]
+      const value = answers[question.id]
+      const values = value == null ? [] : Array.isArray(value) ? value : [value]
+      const labels = values.map(v => translated?.options?.[v]?.label || optionLabels(question, v)[0]).filter(Boolean)
       if (!labels.length) return null
-      return `${question.title} ${labels.join(', ')}`
+      return `${translated?.title || question.title} ${labels.join(', ')}`
     })
     .filter(Boolean)
     .join(' | ')

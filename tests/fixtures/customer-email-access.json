@@ -1,0 +1,157 @@
+{
+  "handicap": 28,
+  "area": "Palma & around",
+  "recommendations": [
+    "Son Gual",
+    "Son Quint",
+    "Son Termes"
+  ],
+  "summary": [
+    "Canyamel: You can book",
+    "Capdepera: You can book",
+    "Alcanada: You can book",
+    "Son Servera: You can book",
+    "Andratx: You can book",
+    "Maioris: You can book",
+    "Pollença: You can book",
+    "Santa Ponsa 1: You can book",
+    "Santa Ponsa 2: Members & guests only",
+    "Santa Ponsa 3: Members & guests only",
+    "Son Antem East: You can book",
+    "Son Antem West: You can book",
+    "Son Gual: You can book",
+    "Son Quint: You can book",
+    "Son Termes: You can book",
+    "Son Vida: You can book",
+    "Palma Pitch & Putt: You can book",
+    "Pula: You can book",
+    "Bendinat: You can book",
+    "Reserva Rotana: Hotel guests only",
+    "Son Muntaner: You can book",
+    "T Golf Calvià (Poniente): You can book",
+    "T Golf Palma (Puntiró): You can book",
+    "Vall d'Or: You can book"
+  ],
+  "accessResults": [
+    {
+      "name": "Canyamel",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Capdepera",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Alcanada",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Son Servera",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Andratx",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Maioris",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Pollença",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Santa Ponsa 1",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Santa Ponsa 2",
+      "label": "Members & guests only",
+      "status": "warn"
+    },
+    {
+      "name": "Santa Ponsa 3",
+      "label": "Members & guests only",
+      "status": "warn"
+    },
+    {
+      "name": "Son Antem East",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Son Antem West",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Son Gual",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Son Quint",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Son Termes",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Son Vida",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Palma Pitch & Putt",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Pula",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Bendinat",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Reserva Rotana",
+      "label": "Hotel guests only",
+      "status": "no"
+    },
+    {
+      "name": "Son Muntaner",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "T Golf Calvià (Poniente)",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "T Golf Palma (Puntiró)",
+      "label": "You can book",
+      "status": "ok"
+    },
+    {
+      "name": "Vall d'Or",
+      "label": "You can book",
+      "status": "ok"
+    }
+  ]
+}

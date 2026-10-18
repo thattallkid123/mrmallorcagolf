@@ -43,7 +43,11 @@ export const AREA_NAMES = { southwest: 'the Southwest', palma: 'the Palma area',
 export function range(pair, units) { return pair.map(value => value * units) }
 export function addR(a, b) { return a.map((value, index) => value + b[index]) }
 export function fmt(n) { return '€' + Math.round(n).toLocaleString('en-GB') }
-export function fmtR(pair) { return fmt(pair[0]) + ' – ' + fmt(pair[1]) }
+export function fmtR(pair) {
+  const low = fmt(pair[0])
+  const high = fmt(pair[1])
+  return low === high ? low : low + ' – ' + high
+}
 export function mid(pair) { return (pair[0] + pair[1]) / 2 }
 export function getSuggestedCourses(s) { return AREA_COURSE_MIX[s.area]?.[s.budget] || COURSE_MIX[s.budget] }
 

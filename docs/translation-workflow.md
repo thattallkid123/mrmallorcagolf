@@ -299,3 +299,7 @@ The question is:
 - “Which locale source files and leak checks does this change touch right now?”
 
 That is the standard this repo should follow from now on.
+
+<!-- 2026-10-18 customer email feedback: revised lunch reservation wording and specific return steps, all six golf-day locales written by Opus and read in full against English. Full review completed; preview pending Andy approval. -->
+
+<!-- 2026-10-18: Chinese course shortlist closing written by Opus and read in full. Golf booking remains Andy’s responsibility; other trip arrangements are planning advice. Existing WeChat CTA retained; no new supplier promise. Shared email presentation only for other locales. -->

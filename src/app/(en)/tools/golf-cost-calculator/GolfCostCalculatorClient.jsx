@@ -110,15 +110,22 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
   }
 
   async function requestCostPdf() {
-    if (!email) return
-    setPdfSent(true)
+    if (!email || emailSending) return
+    setEmailSending(true)
+    setEmailError(false)
     try {
-      await fetch('/api/lead-magnet-signup', {
+      const response = await fetch('/api/lead-magnet-signup', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, guide: 'cost-guide', subscribeNewsletter }),
       })
-    } catch { /* fire and forget */ }
+      if (!response.ok) throw new Error('PDF delivery failed')
+      setPdfSent(true)
+    } catch {
+      setEmailError(true)
+    } finally {
+      setEmailSending(false)
+    }
   }
 
   async function emailEstimate() {
@@ -627,7 +634,8 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                           rel="noopener"
                           className="gcc-btn gold"
                           style={{ fontSize:'13px', display:'inline-block', padding:'10px 20px' }}
-                          onClick={requestCostPdf}
+                          onClick={event => { if (emailSending) { event.preventDefault(); return }; requestCostPdf() }}
+                          aria-disabled={emailSending}
                         >{t.email.pdfButton}</a>
                       </div>
                     ) : (
@@ -662,9 +670,11 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       />
                       {t.email.newsletter}
                     </label>
-                    {emailError && <p style={{ fontSize:'13px', color:'#e8b4a8', marginBottom:'10px' }}>{t.email.error}</p>}
+
                   </>
                 )}
+
+                {emailError && <p style={{ fontSize:'13px', color:'#e8b4a8', marginBottom:'10px' }}>{t.email.error}</p>}
 
                 <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.45)', marginBottom:'12px' }}>{t.email.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
                 <a

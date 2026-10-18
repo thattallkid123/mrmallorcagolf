@@ -5,6 +5,11 @@ When a new bug is fixed, add it here so it never comes back.
 
 ---
 
+## Customer email delivery, quiz context and hotel matching
+**Pattern (October 2026 customer audit):** Some PDF forms and the pre-round questionnaire showed success before checking the send response; several routes ignored returned provider errors. A PDF request also joined a nurture group without the optional planning-notes consent. The course enquiry dropped quiz choices, its email omitted promised notes, and the pre-round form promised a customer copy that was never sent. Family/spa tags and several hotel descriptions had factual errors.
+**Fix:** Await and check delivery, preserve answers on failure, require explicit marketing consent, include the existing course notes and complete quiz summary, send the promised pre-round copy, and correct the hotel master plus all six overlays from official property sources. Unit and browser regressions cover rejection, retry, escaped answer display and the Palma family match.
+
+
 ## Navigation CTA overflow and duplicate button
 **Pattern:** `.nav__cta--mobile { display: none; }` appeared before the general `.nav__cta { display: inline-flex; }`, so the mobile-only button also appeared on desktop and contributed to contact-page overflow on narrow screens.
 **Fix (Sep 2026):** Keep the mobile hide rule after the base CTA rule, with the responsive show rule later. The offer-funnel browser check asserts one visible nav enquiry button and no contact-page overflow on desktop and mobile.

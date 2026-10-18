@@ -14,17 +14,18 @@ from reportlab.platypus import Paragraph, SimpleDocTemplate, Spacer, Table, Tabl
 ROOT = Path(__file__).resolve().parent.parent
 DOWNLOADS_DIR = ROOT / 'public' / 'downloads'
 PINE = colors.HexColor('#2D4A3E')
-for name, filename in [('MMG', 'arial.ttf'), ('MMGBold', 'arialbd.ttf')]:
-    font = Path('C:/Windows/Fonts') / filename
-    if font.exists():
-        pdfmetrics.registerFont(TTFont(name, str(font)))
-REGULAR = 'MMG' if 'MMG' in pdfmetrics.getRegisteredFontNames() else 'Helvetica'
-BOLD = 'MMGBold' if 'MMGBold' in pdfmetrics.getRegisteredFontNames() else 'Helvetica-Bold'
-TITLE = ParagraphStyle('title', fontName=BOLD, fontSize=19, leading=24, textColor=PINE, spaceAfter=10)
-HEADING = ParagraphStyle('heading', fontName=BOLD, fontSize=12, leading=16, textColor=PINE, spaceBefore=12, spaceAfter=6)
+# Embed the actual brand fonts; PDF readers do not need web-font support.
+for name, filename in [('MMG', 'Jost-400.ttf'), ('MMGBold', 'Jost-500.ttf'), ('MMGHeading', 'CormorantGaramond-Regular-500.ttf')]:
+    pdfmetrics.registerFont(TTFont(name, str(ROOT / 'MMG-Fonts' / filename)))
+pdfmetrics.registerFontFamily('MMG', normal='MMG', bold='MMGBold')
+REGULAR = 'MMG'
+BOLD = 'MMGBold'
+TITLE = ParagraphStyle('title', fontName='MMGHeading', fontSize=25, leading=28, textColor=PINE, spaceAfter=10)
+HEADING = ParagraphStyle('heading', fontName='MMGHeading', fontSize=16, leading=18, textColor=PINE, spaceBefore=10, spaceAfter=5)
 BODY = ParagraphStyle('body', fontName=REGULAR, fontSize=10, leading=14, spaceAfter=8)
-CELL = ParagraphStyle('cell', fontName=REGULAR, fontSize=8, leading=10)
+CELL = ParagraphStyle('cell', fontName=REGULAR, fontSize=8.5, leading=10.5)
 HEADER = ParagraphStyle('header', parent=CELL, fontName=BOLD, textColor=colors.white)
+BRAND = ParagraphStyle('brand', parent=BODY, fontName=BOLD, fontSize=10, leading=13, textColor=PINE, spaceAfter=8)
 
 def text(value):
     return escape(str(value))
@@ -33,11 +34,12 @@ def euro(value):
     return 'On request' if value is None else f'€{value:g}'
 
 def intro(title, description):
-    return [Paragraph('MR MALLORCA GOLF', HEADING), Paragraph(title, TITLE), Paragraph(description, BODY)]
+    return [Paragraph('MR MALLORCA GOLF', BRAND), Paragraph(title, TITLE), Paragraph(description, BODY)]
 
 def table(rows, widths):
     cells = [[Paragraph(text(value), HEADER if index == 0 else CELL) for value in row] for index, row in enumerate(rows)]
-    result = Table(cells, colWidths=[width*mm for width in widths], repeatRows=1, hAlign='LEFT')
+    usable_width = landscape(A4)[0] - 36*mm
+    result = Table(cells, colWidths=[usable_width*width/sum(widths) for width in widths], repeatRows=1, hAlign='LEFT')
     result.setStyle(TableStyle([
         ('BACKGROUND', (0,0), (-1,0), PINE),
         ('ROWBACKGROUNDS', (0,1), (-1,-1), [colors.white, colors.HexColor('#F7F4EF')]),
@@ -62,8 +64,11 @@ def build(filename, story, data, wide=False):
         subject='MMG_LEAD_MAGNET_DATA_SHA256:'+data['fingerprint'])
     doc.build(story, onFirstPage=footer, onLaterPages=footer)
 
-def rate_notes(data):
-    return Paragraph('Course-data review: '+data['reviewed']+'. Prices are planning indications, not quotes. Variable rates change by date and demand. Nine-hole courses are marked. Palma Pitch &amp; Putt has nine holes; its listed fees cover 18 holes and vary by weekday. Member-only and hotel-only prices are not public visitor rates. Confirm access and exact prices before booking.', BODY)
+def rate_notes(data, table_notes=True):
+    note = 'Course-data review: '+data['reviewed']+'. Prices are planning indications, not quotes. Variable rates change by date and demand. '
+    if table_notes:
+        note += 'An asterisk marks date-variable rates. Nine-hole courses are marked. Palma Pitch &amp; Putt has nine holes; its listed fees cover 18 holes and vary by weekday. Member-only and hotel-only prices are not public visitor rates. '
+    return Paragraph(note+'Confirm access and exact prices before booking.', BODY)
 
 def buggy_label(course):
     if course['access'] != 'Public': return 'On request'
@@ -95,25 +100,28 @@ def generate_course_comparison(data):
 
 def generate_trip_planner(data):
     # Seven compact days fit on one A4 page without an orphaned closing CTA.
-    body = ParagraphStyle('trip-body', parent=BODY, fontSize=9, leading=12, spaceAfter=5)
-    heading = ParagraphStyle('trip-heading', parent=HEADING, spaceBefore=8, spaceAfter=4)
+    body = ParagraphStyle('trip-body', parent=BODY, fontSize=9.5, leading=12.5, spaceAfter=5)
+    heading = ParagraphStyle('trip-heading', parent=HEADING, fontSize=15, leading=16, spaceBefore=7, spaceAfter=4)
     story=intro('7-Day Mallorca Golf Itinerary', 'A sample week from a Palma hotel, with four planned rounds, a rest day and optional golf around arrival and departure. Change the length and pace to suit your group. This is an example, not a fixed trip or booking.')
-    days=[('Day 1: arrive and settle in',None,'Leave time for the flight, luggage and check-in. A short round is optional once the arrival time and daylight are known.'),('Day 2: Santa Ponsa 1','Golf Santa Ponsa 1','A full round near the southwest. Choose tees for the group and leave the evening open.'),('Day 3: Son Gual','Golf Son Gual','Put the more technical round after the group has settled. Play With A Pro can be discussed for this day.'),('Day 4: a day without a tee time',None,'Keep the day for Palma, a coastal visit or a quieter afternoon. A local travel partner can help with dining, transfers and activities.'),('Day 5: Alcanada','Club de Golf Alcanada','Give the northern round its own day. Check the drive and tee time before adding evening plans.'),('Day 6: Son Vida','Golf Son Vida','Return to golf near Palma. Keep the course choice flexible for the group and the week’s weather.'),('Day 7: departure',None,'Only add another round if the flight time leaves space for golf, traffic, returning a hire car and airport check-in. An early flight means no golf.')]
+    days=[('Day 1: arrive and settle in',None,'Leave time for the flight, luggage and check-in. A short round is optional once the arrival time and daylight are known.'),('Day 2: Santa Ponsa 1','Golf Santa Ponsa 1','A full round near the southwest. Choose tees for the group and leave the evening open.'),('Day 3: Son Gual','Golf Son Gual','Put the more technical round after the group has settled. Play With A Pro can be discussed for this day.'),('Day 4: a day without a tee time',None,'Keep the day for Palma, a coastal visit or a quieter afternoon.'),('Day 5: Alcanada','Club de Golf Alcanada','Give the northern round its own day. Check the drive and tee time before adding evening plans.'),('Day 6: Son Vida','Golf Son Vida','Return to golf near Palma. Keep the course choice flexible for the group and the week’s weather.'),('Day 7: departure',None,'Only add another round if the flight time leaves space for golf, traffic, returning a hire car and airport check-in. An early flight means no golf.')]
     for title,name,description in days:
         story.append(Paragraph(title,heading))
         if name:
             c=next(c for c in data['courses'] if c['canonicalName']==name)
             description = f'{text(c["name"])}: {euro(c["low"])} to {euro(c["peak"])} green fee; {c["holes"]} holes, par {c["par"]}; about {c["fromPalma"]} minutes from Palma. {text(c["handicap"])}'+('; certificate required. ' if c['certificate'] else '. ')+description
         story.append(Paragraph(description,body))
-    story.extend([rate_notes(data),Paragraph('Before booking',HEADING),Paragraph('Confirm the group’s handicaps, dates, hotel, walking or buggy needs, and a budget per person. Prices above are green fees, not a whole-trip price. I book the golf; my local travel partner helps with wider arrangements. Scope, costs and the contacts for each part are agreed before booking.',BODY),Paragraph('<link href="https://www.mrmallorcagolf.com/contact?service=trip-planning" color="#2D4A3E">Send your dates and group details</link>. For another example, read the <link href="https://www.mrmallorcagolf.com/guides/5-day-mallorca-golf-itinerary" color="#2D4A3E">five-round Palma itinerary</link>.',BODY)])
+    story.extend([rate_notes(data, table_notes=False),Paragraph('Before booking',HEADING),Paragraph('Confirm the group’s handicaps, dates, hotel, walking or buggy needs, and a budget per person. Prices above are green fees, not a whole-trip price. I plan and book the golf. For hotels, transfers and other arrangements, I work with a local travel partner. We agree the scope, prices and who handles each part before booking.',BODY),Paragraph('<link href="https://www.mrmallorcagolf.com/contact?service=trip-planning" color="#2D4A3E">Send your dates and group details</link>. For another example, read the <link href="https://www.mrmallorcagolf.com/guides/5-day-mallorca-golf-itinerary" color="#2D4A3E">five-round Palma itinerary</link>.',BODY)])
     return story
 
 def generate_beginners_guide(data):
     story=intro('Beginner’s Guide to Playing Golf in Mallorca', 'Start with course access, then choose a layout and length that suit your group. An approachable layout does not remove a club’s handicap or certificate rules.')
     for name in ['Palma Pitch & Putt','Golf Son Quint','Golf Son Antem East','Golf Maioris','Golf Pollença']:
         c=next(c for c in data['courses'] if c['canonicalName']==name)
-        story.extend([Paragraph(text(c['name']),HEADING),Paragraph(f'{c["holes"]} holes, par {c["par"]}; green fees {euro(c["low"])} to {euro(c["peak"])}. {text(c["handicap"])}'+('; a valid handicap certificate is required.' if c['certificate'] else '. No official handicap certificate is required.'),BODY)])
-    story.extend([rate_notes(data),Paragraph('Before the round',HEADING),Paragraph('Confirm the course’s access rules, rental equipment, dress code and check-in time. Bring golf shoes, balls, tees, water, a hat and sun protection. Repair pitch marks, keep up with the group ahead, and let the club know if you are new to the game.',BODY),Paragraph('A first day with me',HEADING),Paragraph('My coaching takes place on the course through Play With A Pro. We choose the course around your game. Send me your experience level, dates and where you are staying before deciding on a format.',BODY),Paragraph('<link href="https://www.mrmallorcagolf.com/tools/handicap-checker" color="#2D4A3E">Check course access</link> or <link href="https://www.mrmallorcagolf.com/contact?service=pwap" color="#2D4A3E">enquire about Play With A Pro</link>.',BODY)])
+        price_line = f'{c["holes"]} holes, par {c["par"]}; green fees {euro(c["low"])} to {euro(c["peak"])}. '
+        if name == 'Palma Pitch & Putt':
+            price_line = f'9 holes, par 27. The published {euro(c["low"])} to {euro(c["peak"])} fee covers 18 holes. '
+        story.extend([Paragraph(text(c['name']),HEADING),Paragraph(price_line+text(c['handicap'])+('; a valid handicap certificate is required.' if c['certificate'] else '. No official handicap certificate is required.'),BODY)])
+    story.extend([rate_notes(data, table_notes=False),Paragraph('Before the round',HEADING),Paragraph('Confirm the course’s access rules, rental equipment, dress code and check-in time. Bring golf shoes, balls, tees, water, a hat and sun protection. Repair pitch marks, keep up with the group ahead, and let the club know if you are new to the game.',BODY),Paragraph('A first day with me',HEADING),Paragraph('My coaching takes place on the course through Play With A Pro. We choose the course around your game. Send me your experience level, dates and where you are staying before deciding on a format.',BODY),Paragraph('<link href="https://www.mrmallorcagolf.com/tools/handicap-checker" color="#2D4A3E">Check course access</link> or <link href="https://www.mrmallorcagolf.com/contact?service=pwap" color="#2D4A3E">enquire about Play With A Pro</link>.',BODY)])
     return story
 
 def main():

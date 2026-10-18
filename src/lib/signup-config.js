@@ -15,6 +15,15 @@ export const LEAD_MAGNET_GROUPS = {
   'course-comparison': '190205569293878890',
 }
 
+// Request records only: these groups have no marketing automations attached.
+export const PDF_REQUEST_LEADS_GROUP_ID = '201682395025376464'
+export const PDF_REQUEST_GROUPS = {
+  'cost-guide': '201682395267597568',
+  'course-comparison': '201682395598947644',
+  'trip-planner': '201682395841169303',
+  'beginners-guide': '201682396088632499',
+}
+
 export const LEAD_MAGNETS = {
   'cost-guide': {
     slug: 'cost-guide',

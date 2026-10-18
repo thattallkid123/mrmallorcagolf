@@ -43,13 +43,13 @@ const data = {
   },
   "hotel-bendinat": {
    "pills": [
-    "球场旁",
-    "性价比高",
-    "安静区域"
+    "海滨",
+    "安静区域",
+    "西南部高尔夫"
    ],
-   "why": "紧邻 Real Golf de Bendinat。当需求是打球加好位置，而不是泳池边的奢华时，这是明智的选择。",
-   "andy": "老 Bendinat 是西南部较安静的角落之一。不是度假村，而是一家实实在在的高尔夫酒店，说到做到。",
-   "golf": "Real Golf de Bendinat 就在门口。T Golf Calvià 10 分钟。Santa Ponsa 球场群 20 分钟。",
+   "why": "位于老 Bendinat 的四星级海滨酒店，设有花园、泳池和可眺望大海的餐厅。这是打西南部高尔夫的海岸基地，前往各球场需要驾车。",
+   "andy": "老 Bendinat 是西南部较安静的角落之一。请先安排好前往球场的交通，之后留出时间享受大海，并回到酒店用晚餐。",
+   "golf": "Real Golf de Bendinat、T Golf Calvià 和 Golf Santa Ponsa 1 都是西南部行程的选择。酒店位于海岸；前往各高尔夫球场需要驾车。",
    "travelTime": "距帕尔马机场 15 分钟",
    "subname": "Bendinat"
   },
@@ -81,14 +81,14 @@ const data = {
   "secrets-villamil": {
    "pills": [
     "仅限成人",
-    "悬崖泳池",
+    "水疗",
     "帕格拉海滩"
    ],
-   "why": "位于帕格拉海滩的 AMR Collection 成人专享酒店。水上套房、悬崖边无边泳池、多处餐饮选择。到 Golf de Andratx 15 分钟。",
+   "why": "位于帕格拉海滩的成人专享度假村，仅接待 18 岁及以上的客人。设有客房与套房、水疗中心、泳池和多个餐饮选择。Golf de Andratx 是附近可打一轮的选择。",
    "andy": "如果情侣想要真正的海滩度假村，同时能到西南部全部球场，这是很好的五星基地。Andratx 最近，也最壮观。",
    "golf": "Golf de Andratx 15 分钟。T Golf Calvià 20 分钟。Santa Ponsa 25 分钟。",
    "travelTime": "距帕尔马机场 30 分钟",
-   "subname": "AMR Collection, Paguera"
+   "subname": "帕格拉"
   },
   "donna-portals": {
    "pills": [
@@ -104,15 +104,15 @@ const data = {
   },
   "finca-serena": {
    "pills": [
-    "乡村庄园",
+    "仅限成人",
     "康养",
-    "40公顷"
+    "45公顷"
    ],
-   "why": "整体康养理念的五星庄园，拥有 40 公顷农田和认真的养生项目。到 Golf Maioris 5 分钟，到 Son Gual 15 分钟。",
-   "andy": "Golf Maioris 和 Son Gual 是马略卡最有意思的两座球场。附近有 Andreu Genestra（一颗米其林星）。",
-   "golf": "Golf Maioris 5 分钟。Son Antem East/West 10 分钟。Son Gual 15 分钟。注意：这一带距离帕尔马市区 40-60 分钟。",
+   "why": "Montuïri 附近的成人专享五星庄园，拥有 45 公顷乡野、一个水疗中心和 Jacaranda 餐厅。这是乡村基地，前往球场需要驾车。",
+   "andy": "如果您想在两轮球之间享受乡村时光，可以选择这里。Son Gual 是打球的一个选择；请围绕您的开球时间安排交通。",
+   "golf": "根据酒店的高尔夫指南，Son Gual 距酒店 19 公里。其他球场的选择需要配合从 Montuïri 出发的路线。",
    "travelTime": "距帕尔马机场 25 分钟",
-   "subname": "Llucmajor附近"
+   "subname": "Montuïri"
   },
   "sw-villa": {
    "pills": [
@@ -131,11 +131,11 @@ const data = {
    "pills": [
     "历史庄园",
     "17世纪",
-    "无边泳池"
+    "水疗"
    ],
-   "why": "17 世纪的石头庄园，位于特拉蒙塔纳山脚，距 Golf de Andratx 20 分钟。无边泳池、古老橄榄园，完全私密的感觉。",
+   "why": "位于 Puigpunyent、特拉蒙塔纳山麓的 17 世纪石造庄园，设有花园、泳池和水疗中心。这是乡村住宿，前往球场需要驾车。",
    "andy": "岛上最美的建筑之一。真正的庄园度假，同时仍能前往西南部球场。",
-   "golf": "Golf de Andratx 20 分钟。T Golf Calvià 25 分钟。Santa Ponsa 球场群 30 分钟。",
+   "golf": "从 Puigpunyent 出发，Son Vida、Son Muntaner、Son Quint 和 Son Termes 都是可以考虑的选择。请围绕开球时间安排接送。",
    "travelTime": "距帕尔马机场 25 分钟",
    "subname": "Puigpunyent"
   },
@@ -145,7 +145,7 @@ const data = {
     "会议设施",
     "帕尔马景观"
    ],
-   "why": "位于帕尔马上方山丘的大型四星酒店，拥有海湾全景和完整水疗。适合较大的团队，以及打球之外还需要会议空间的商务行程。",
+   "why": "位于帕尔马上方山丘的大型五星酒店，拥有海湾全景和完整水疗。适合较大的团队，以及打球之外还需要会议空间的商务行程。",
    "andy": "不是最有魅力的，但很适合团队。是西南部和帕尔马地区多种球场组合的好基地。",
    "golf": "Son Vida / Son Quint / Son Muntaner 10 分钟。Real Golf de Bendinat 15 分钟。T Golf Calvià 20 分钟。",
    "travelTime": "距帕尔马机场 15 分钟",
@@ -177,11 +177,11 @@ const data = {
   },
   "portals-hills": {
    "pills": [
-    "仅限成人",
+    "精品酒店",
     "山顶",
     "无边泳池"
    ],
-   "why": "位于 Portals Nous 上方的成人专享精品酒店，无边泳池面向大海。私密安静，距球场和 Puerto Portals 游艇码头都是 10 分钟。",
+   "why": "位于 Portals Nous 上方的精品酒店，无边泳池面向大海。提供家庭套房。这是较安静的基地，前往球场和 Puerto Portals 游艇码头需要驾车。",
    "andy": "比 Donna Portals 更安静的选择，适合重视隐私胜过热闹的情侣。T Golf Calvià 距离 10 分钟。",
    "golf": "T Golf Calvià 10 分钟。Real Golf de Bendinat 12 分钟。Son Vida 15 分钟。",
    "travelTime": "距帕尔马机场 15 分钟",
@@ -193,7 +193,7 @@ const data = {
     "36洞",
     "度假村设施"
    ],
-   "why": "万豪度假村正好位于 Son Antem East 和 West 之间：36 洞就在门口。企业高尔夫设施完善，四星舒适度可靠。",
+   "why": "位于 Son Antem 的五星级度假村，设有两个 18 洞球场、水疗中心和家庭设施。当行程中安排了 Son Antem East 和 West 时，这是实用的落脚点。",
    "andy": "不是岛上最有意思的酒店，但如果行程里有 Son Antem，它是最实用的。到 Golf Maioris 10 分钟，到 Son Gual 15 分钟。",
    "golf": "Son Antem East 和 West 就在园内。Golf Maioris 10 分钟。Son Gual 15 分钟。可前往 Finca Serena 一带。",
    "travelTime": "距帕尔马机场 20 分钟",
@@ -205,9 +205,9 @@ const data = {
     "家庭",
     "Santa Ponsa球场群"
    ],
-   "why": "Palmanova 简单直接的三星海滩酒店。适合重点在打球而不是酒店的团队。到 T Golf Calvià 10 分钟，到 Santa Ponsa 球场群 15 分钟。",
+   "why": "Palmanova 海滩区简单直接的四星酒店。适合重点在打球而不是酒店的团队。T Golf Calvià 和 Golf Santa Ponsa 1 是打球的选择。",
    "andy": "西南部诚实的预算之选。房间少花一点，把钱花在球局上。",
-   "golf": "T Golf Calvià 10 分钟。Real Golf de Bendinat 15 分钟。Golf Santa Ponsa 1 和 2 约 15 分钟。",
+   "golf": "T Golf Calvià、Real Golf de Bendinat 和 Golf Santa Ponsa 1 是西南部对公众开放的选择。请安排从 Palmanova 出发的交通。",
    "travelTime": "距帕尔马机场 20 分钟",
    "subname": "Palmanova"
   },
@@ -253,7 +253,7 @@ const data = {
     "米其林主厨",
     "海滩前"
    ],
-   "why": "精品五星酒店，可直达海滩，餐厅由 Santi Taura（一颗米其林星）掌厨。到 Alcanada 20 分钟，到波连萨老城 10 分钟。",
+   "why": "位于 Cala Sant Vicenç、靠近 Cala Molins 海滩的精品五星酒店，设有水疗中心和由 Santi Taura 主理的餐厅。Pollença 和 Alcanada 是打球的选择，前往球场需要驾车。",
    "andy": "Santi Taura 是马略卡最好的主厨之一。如果美食和高尔夫一样重要，而且选择北部，这就是答案。",
    "golf": "Club de Golf Alcanada 20 分钟。Golf Pollença 10 分钟。",
    "travelTime": "距帕尔马机场 50 分钟",
@@ -303,7 +303,7 @@ const data = {
    ],
    "why": "位于 Orient 小村的传统农庄民宿，被特拉蒙塔纳群山环绕。完全寂静，食材新鲜，真正的马略卡乡村。",
    "andy": "Orient 是岛上最特别的村庄之一。去球场需要开车，但这里的体验和任何酒店都不同。最好搭配 Alcanada 的几轮球。",
-   "golf": "Club de Golf Alcanada 30 分钟。Golf Pollença 20 分钟。",
+   "golf": "请把打球安排为从特拉蒙塔纳山区的 Orient 出发的一日外出。Son Termes 是可以考虑的一个选择；请根据路线和开球时间来选择球场。",
    "travelTime": "距帕尔马机场 35 分钟",
    "subname": "Orient"
   },
@@ -389,7 +389,7 @@ const data = {
     "Trackman练习场",
     "高尔夫套餐"
    ],
-   "why": "酒店直接位于 Pula Golf 上，练习设施齐全，包括 Trackman 技术。这里曾举办过八场欧巡赛。直截了当的高尔夫基地。",
+   "why": "位于 Pula Golf 的酒店，练习设施包括 Trackman 技术。这是可在场地内打球和练习的基地。",
    "andy": "如果行程里有 Pula，而团队希望一切都在一个地方，这就是答案。练习设施是马略卡最好的之一。",
    "golf": "Pula Golf 就在园内。Golf Club Son Servera 10 分钟。Capdepera Golf 15 分钟。Canyamel Golf 20 分钟。",
    "travelTime": "距帕尔马机场 60 分钟",
@@ -397,13 +397,13 @@ const data = {
   },
   "sa-bassa-rotja": {
    "pills": [
-    "酒庄",
-    "有机水疗",
+    "历史庄园",
+    "水疗",
     "乡村"
    ],
-   "why": "位于马略卡内陆一座在营酒庄上的精品酒店。有机水疗、庄园葡萄酒，真正的乡村宁静。不是标准的海滩或高尔夫度假村。",
-   "andy": "一种不同的住法。适合想要马略卡内陆体验、并愿意开 25 到 30 分钟去东海岸球场的情侣。",
-   "golf": "Vall d'Or Golf 25 分钟。Club de Golf Pula 25 分钟。Golf Club Son Servera 30 分钟。",
+   "why": "位于 Porreres 附近一座历史庄园上的乡村酒店，设有水疗中心、桑拿和恒温室内泳池。这是乡村基地，前往球场需要驾车。",
+   "andy": "适合想要马略卡内陆、并愿意安排驾车前往球场的情侣。",
+   "golf": "从 Porreres 出发，Vall d'Or、Son Antem 和 Pula 都是可以考虑的选择。请根据全天的路线来安排球局，而不要指望门口就有球场。",
    "travelTime": "距帕尔马机场 35 分钟",
    "subname": "Porreres"
   },
@@ -435,14 +435,14 @@ const data = {
   "son-moll-sentits": {
    "pills": [
     "仅限成人",
-    "屋顶水疗",
-    "Capdepera小镇"
+    "海滨",
+    "水疗"
    ],
-   "why": "Capdepera 老城里的成人专享精品酒店，设有屋顶水疗和泳池。比海滨度假村更安静、更私密，到 Capdepera Golf 5 分钟。",
-   "andy": "东海岸最小、最有个性的选择之一。适合偏爱小镇和高尔夫胜过海滩的情侣。",
+   "why": "位于 Cala Ratjada、面朝 Son Moll 海滩的成人专享四星超级酒店，设有水疗中心和泳池。这是打东部高尔夫的海岸基地，前往各球场需要驾车。",
+   "andy": "可以利用 Cala Ratjada 在两轮球之间享受海边时光。Capdepera、Canyamel 和 Pula 是打球的选择；请在预订前安排好交通。",
    "golf": "Capdepera Golf 5 分钟。Canyamel Golf 10 分钟。Club de Golf Pula 15 分钟。",
    "travelTime": "距帕尔马机场 60 分钟",
-   "subname": "Capdepera"
+   "subname": "Cala Ratjada"
   },
   "protur-biomar": {
    "pills": [
@@ -451,9 +451,9 @@ const data = {
     "家庭泳池",
     "成人区"
    ],
-   "why": "Sa Coma 海滩上的大型高端度假村，设有专门的成人区和家庭区。水疗不错，有多个泳池。到 Pula Golf 10 分钟。",
+   "why": "位于 Sa Coma 的度假村，设有家庭区和独立的成人区。水疗、多个泳池，步行不远即到海滩。打球可以考虑 Pula 和 Son Servera。",
    "andy": "东海岸较有实力的度假村之一，适合有人想打球、有人想整天泡在海滩和泳池的团队。",
-   "golf": "Club de Golf Pula 10 分钟。Golf Club Son Servera 12 分钟。Capdepera Golf 20 分钟。",
+   "golf": "Pula、Son Servera、Capdepera 和 Canyamel 为您提供东海岸的多种球场组合。请安排好从 Sa Coma 出发的交通。",
    "travelTime": "距帕尔马机场 58 分钟",
    "subname": "Sa Coma"
   },
@@ -486,9 +486,9 @@ const data = {
    "pills": [
     "海滩",
     "水疗",
-    "高性价比四星"
+    "五星"
    ],
-   "why": "实用、位置好的四星酒店，有真正的海滩通道和像样的水疗。到球场的便利程度与 Illetas 的五星酒店相近，价格更低。",
+   "why": "五星级酒店，可直达 Cala Major 海滩，并设有水疗中心。这是帕尔马附近的海岸基地，适合在西南部打球。",
    "andy": "适合想要海滩和水疗、又不想付超奢华价格的情侣或小团队的明智选择。到 Bendinat 15 分钟。",
    "golf": "Real Golf de Bendinat 15 分钟。T Golf Calvià 20 分钟。Son Vida / Son Quint / Son Muntaner 15 分钟。Son Gual 20 分钟。",
    "travelTime": "距帕尔马机场 12 分钟",
@@ -500,7 +500,7 @@ const data = {
     "庭院露台",
     "老城"
    ],
-   "why": "位于 Carrer Born 的 19 世纪宫殿，这是帕尔马最时髦的街道。华丽的庭院，到老城、大教堂和餐厅的位置极佳。",
+   "why": "位于帕尔马老城 Carrer de Sant Jaume 的宫殿酒店，设有庭院。步行可达大教堂、餐厅和 Passeig des Born。",
    "andy": "Born 让您置身帕尔马夜晚的中心。到 Son Gual 20 分钟，适合清晨一轮，然后回来吃一顿悠长的午餐。",
    "golf": "Son Gual 20 分钟。T Golf Palma (Puntiró) 20 分钟。Son Vida / Son Quint / Son Muntaner 18 分钟。Real Golf de Bendinat 20 分钟。",
    "travelTime": "距帕尔马机场 20 分钟",
@@ -634,7 +634,7 @@ const data = {
     "戴亚",
     "历史庄园"
    ],
-   "why": "戴亚上方的两座 16 世纪石头庄园。岛上最负盛名的精品酒店。大卫·鲍伊、罗伯特·格雷夫斯和戴安娜王妃都曾住在这里。",
+   "why": "戴亚上方的两座历史石造宅邸，设有花园、泳池和水疗中心。这是在特拉蒙塔纳的住宿，打球按一日外出来安排。",
    "andy": "不是高尔夫旅行的基地。是西班牙最好的酒店之一。适合先在西北部住 2 晚，再转到西南部打球。",
    "golf": "球局需要作为全天外出来规划。Son Termes、Golf de Andratx、Alcanada 和 Pollença 都可能合适，取决于具体路线。",
    "travelTime": "距帕尔马机场 60 分钟",
@@ -655,10 +655,10 @@ const data = {
   "es-moli": {
    "pills": [
     "经典特拉蒙塔纳",
-    "梯田泳池",
-    "3月至11月营业"
+    "恒温泳池",
+    "梯田花园"
    ],
-   "why": "没有 Belmond 价格的经典马略卡。多个梯田泳池凿入悬崖，可看到山谷和大海。3 月至 11 月营业。",
+   "why": "位于戴亚上方梯田花园中的酒店，设有恒温室外泳池，可看到山谷和大海。这是特拉蒙塔纳的基地，适合度过高尔夫之外的时间，球局按一日游来安排。",
    "andy": "为欣赏风景先在西北部安排 2 晚，再转到西南部或北部，让高尔夫行程更轻松。",
    "golf": "从戴亚出发，最好把打球当作全天计划。合适的球场取决于当天是朝西南部、帕尔马还是北部。",
    "travelTime": "距帕尔马机场 55 分钟",
@@ -679,10 +679,10 @@ const data = {
   "gran-hotel-soller": {
    "pills": [
     "索列尔镇",
-    "经典四星",
+    "五星",
     "橙园"
    ],
-   "why": "位于索列尔市中心的四星酒店，索列尔是马略卡最有魅力的小镇之一。橙子市场、通往 Port de Sóller 的历史电车，以及门口的好餐厅。",
+   "why": "位于索列尔市中心的五星酒店，索列尔是马略卡最有魅力的小镇之一。橙子市场、通往 Port de Sóller 的历史电车，以及门口的好餐厅。",
    "andy": "西北部更容易接受的价位。适合想要索列尔体验、又不想付 Jumeirah 价格的团队。打球需要围绕车程来安排。",
    "golf": "从索列尔出发，打球是一日游项目，而不是附近就有球场群。Son Termes、Golf de Andratx、Alcanada 或 Pollença 可能合适，取决于整体行程。",
    "travelTime": "距帕尔马机场 35 分钟",
@@ -731,7 +731,7 @@ const data = {
     "经济型",
     "可直达海滩"
    ],
-   "why": "Port de Sóller 海湾边的三星经济型酒店。从索列尔镇出发的橙园电车是马略卡最令人愉快的体验之一。打球需要专程一日往返，附近没有球场。",
+   "why": "位于 Port de Sóller 海湾的酒店。从索列尔镇出发的橙园电车是马略卡最令人愉快的体验之一。这里打球属于一日往返，而不是附近就有球场的安排。",
    "andy": "西北部实惠的选择。Port de Sóller 是一个醒来就能面对的美丽海湾。把一两个有计划的打球日与在特拉蒙塔纳的真正时光结合起来。",
    "golf": "请把打球安排为从 Port de Sóller 出发的一日游。最佳球场取决于当天是朝帕尔马、西南部还是北部。",
    "travelTime": "距帕尔马机场 45 分钟",

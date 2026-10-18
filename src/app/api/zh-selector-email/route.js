@@ -1,3 +1,4 @@
+import { buildToolEmail, emailParagraph, emailField } from '../_lib/tool-email'
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 
@@ -57,52 +58,14 @@ export async function POST(request) {
         const zh = escapeHtml(sanitizeText(c?.zh, 120))
         return `
           <div style="margin-bottom:20px;border-left:3px solid #B8973C;padding-left:16px;">
-            <p style="margin:0 0 4px;font-family:Georgia,serif;font-size:14px;font-weight:bold;color:#2D4A3E;">${en}</p>
-            <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#666;">${zh}</p>
+            <p style="margin:0 0 4px;font-family:Jost,Arial,Helvetica,sans-serif;font-size:18px;font-weight:500;color:#2D4A3E;">${en}</p>
+            <p style="margin:0;font-family:Jost,Arial,Helvetica,sans-serif;font-size:15px;line-height:1.65;color:#2C2A27;">${zh}</p>
           </div>
         `
       })
       .join('')
 
-    const emailHtml = `<!DOCTYPE html>
-<html>
-<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"></head>
-<body style="margin:0;padding:0;background:#F7F4EF;font-family:Georgia,serif;">
-  <table width="100%" cellpadding="0" cellspacing="0" style="background:#F7F4EF;padding:48px 24px;">
-    <tr><td align="center">
-      <table width="100%" cellpadding="0" cellspacing="0" style="max-width:580px;">
-        <tr><td style="padding-bottom:24px;">
-          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:11px;font-weight:500;letter-spacing:0.15em;text-transform:uppercase;color:#B8973C;">Mr Mallorca Golf · Andy 教练</p>
-        </td></tr>
-        <tr><td style="background:#2D4A3E;border-radius:4px 4px 0 0;padding:32px 40px 24px;">
-          <h1 style="margin:0;font-family:Georgia,serif;font-size:24px;font-weight:400;color:#F7F4EF;line-height:1.2;">您的球场推荐</h1>
-          <p style="margin:12px 0 0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:rgba(247,244,239,0.7);">根据您的选择精心推荐</p>
-        </td></tr>
-        <tr><td style="background:#fff;border-radius:0 0 4px 4px;padding:32px 40px 40px;">
-          <p style="margin:0 0 20px;font-family:'Jost',Arial,sans-serif;font-size:13px;color:#666;line-height:1.6;">感谢您使用球场选择器。根据您的球技水平、预算和偏好，以下是最适合您这次行程的3座球场：</p>
-          ${courseListHtml}
-          <hr style="border:none;border-top:1px solid #EDE9E1;margin:32px 0;">
-          <p style="margin:0 0 12px;font-family:Georgia,serif;font-size:15px;line-height:1.7;color:#2C2A27;">下一步？直接和我联系，我会帮您安排开球时间、陪打、餐厅、酒店和接送——全程中文沟通。</p>
-          <table cellpadding="0" cellspacing="0" style="margin-top:20px;">
-            <tr>
-              <td style="padding-right:8px;">
-                <a href="https://wa.me/34624466702" style="display:inline-block;padding:12px 20px;background:#2D4A3E;border-radius:3px;font-family:'Jost',Arial,sans-serif;font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#fff;text-decoration:none;">WhatsApp 联系</a>
-              </td>
-              <td>
-                <a href="https://www.mrmallorcagolf.com/zh/contact" style="display:inline-block;padding:12px 20px;border:1px solid #2D4A3E;border-radius:3px;font-family:'Jost',Arial,sans-serif;font-size:11px;font-weight:500;letter-spacing:0.08em;text-transform:uppercase;color:#2D4A3E;text-decoration:none;">发送消息</a>
-              </td>
-            </tr>
-          </table>
-          <p style="margin:24px 0 4px;font-family:Georgia,serif;font-size:15px;color:#2C2A27;">Andy 教练</p>
-          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8a8784;">PGA 高级职业教练</p>
-        </td></tr>
-        <tr><td style="padding:24px 0 0;text-align:center;">
-          <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:11px;color:#aaa;">Mr Mallorca Golf · 马略卡高尔夫 · 西班牙</p>
-        </td></tr>
-      </table>
-    </td></tr>
-  </table>
-</body></html>`
+    const emailHtml = buildToolEmail('您的球场推荐', emailParagraph('感谢您使用球场选择器。根据您的球技水平、预算和偏好，以下是最适合您这次行程的3座球场：') + courseListHtml + emailParagraph("请告知您偏好的球场与出行日期。高尔夫的预订由我为您确认并安排，行程中的其他部分，我也可以为您提供规划上的建议。相关细节我们可以用中文沟通，欢迎微信联系。"), {includeIntroduction:false, lang:'zh', footerLabel:'Mr Mallorca Golf · 马略卡高尔夫 · 西班牙', subtitle:'根据您的选择精心推荐', footerHtml:'<div style="margin-top:24px;">'+emailParagraph('Andy 教练<br>PGA 高级职业教练')+'<a href="https://www.mrmallorcagolf.com/zh/contact#wechat" style="display:inline-block;padding:12px 20px;background:#2D4A3E;color:#FFFFFF;font-family:Jost,Arial,Helvetica,sans-serif;font-size:15px;text-decoration:none;">微信联系</a></div>'})
 
     const resend = new Resend(process.env.RESEND_API_KEY)
     const { error } = await resend.emails.send({

@@ -1151,6 +1151,7 @@
 
     <div class="nav-row">
       <button class="btn btn-secondary" onclick="prevSection()">← Back</button>
+      <p id="submission-error" role="alert" hidden>Your questionnaire could not be sent. Please try again.</p>
       <button class="btn btn-gold" onclick="submitForm()">Submit questionnaire →</button>
     </div>
     <p class="form-note">Your answers are emailed to me and used to plan your day. <a href="/privacy-policy" target="_blank" rel="noopener">Privacy policy</a></p>
@@ -1308,7 +1309,9 @@
     window.prompt('Copy this questionnaire link:', shareUrl);
   }
 
-  function submitForm() {
+  let submitting = false;
+  async function submitForm() {
+    if (submitting) return;
     const summaryData = [
       { q: 'Name', a: getVal('q-name') || '—' },
       { q: 'Email', a: getVal('q-email') || '—' },
@@ -1339,13 +1342,29 @@
       { q: 'Anything else', a: getVal('q-anything-else') || '—' },
     ];
 
-    // Send to server
+    // Confirm acceptance before showing the thank-you screen.
+    submitting = true;
+    const button = document.querySelector('[onclick="submitForm()"]');
+    button.disabled = true;
+    const errorBox = document.getElementById('submission-error');
+    errorBox.hidden = true;
+    try {
     const website = getVal('q-website');
-    fetch('/api/questionnaire', {
+    const response = await fetch('/api/questionnaire', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify({ summaryData, website }),
-    }).catch(() => {}); // fire-and-forget; don't block the thank-you screen
+    });
+    if (!response.ok) throw new Error('Submission failed');
+    const result = await response.json();
+    if (!result.ok) throw new Error('Submission failed');
+    } catch {
+      errorBox.hidden = false;
+      return;
+    } finally {
+      submitting = false;
+      button.disabled = false;
+    }
 
     const container = document.getElementById('summary-items');
     container.innerHTML = '';
@@ -1353,7 +1372,13 @@
       if (item.a && item.a !== '—') {
         const div = document.createElement('div');
         div.className = 'summary-item';
-        div.innerHTML = `<p class="summary-q">${item.q}</p><p class="summary-a">${item.a}</p>`;
+        const question = document.createElement('p');
+        question.className = 'summary-q';
+        question.textContent = item.q;
+        const answer = document.createElement('p');
+        answer.className = 'summary-a';
+        answer.textContent = item.a;
+        div.append(question, answer);
         container.appendChild(div);
       }
     });

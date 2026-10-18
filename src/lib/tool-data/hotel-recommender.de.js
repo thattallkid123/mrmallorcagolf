@@ -43,13 +43,13 @@ const data = {
   },
   "hotel-bendinat": {
    "pills": [
-    "Am Platz",
-    "Gutes Preis-Leistungs-Verhältnis",
-    "Ruhige Gegend"
+    "Am Meer",
+    "Ruhige Gegend",
+    "Golf im Südwesten"
    ],
-   "why": "Direkt neben dem Real Golf de Bendinat. Die vernünftige Wahl, wenn es um Golf und eine gute Lage geht und nicht um Luxus am Pool.",
-   "andy": "Das alte Bendinat ist eine der ruhigeren Ecken im Südwesten. Kein Resort, sondern ein ehrliches Golfhotel, das hält, was es verspricht.",
-   "golf": "Real Golf de Bendinat direkt vor der Tür. T Golf Calvià 10 Min. Santa Ponsa-Gruppe 20 Min.",
+   "why": "Vier-Sterne-Hotel am Meer im alten Bendinat, mit Gärten, einem Pool und einem Restaurant mit Blick aufs Meer. Eine Basis an der Küste für Golf im Südwesten, mit einer Fahrt zu den Plätzen.",
+   "andy": "Das alte Bendinat ist eine der ruhigeren Ecken im Südwesten. Planen Sie den Transport zum Golf und lassen Sie danach Zeit für das Meer und das Abendessen zurück im Hotel.",
+   "golf": "Real Golf de Bendinat, T Golf Calvià und Golf Santa Ponsa 1 sind Optionen für eine Reise in den Südwesten. Das Hotel liegt an der Küste; zu den Golfplätzen ist eine Fahrt nötig.",
    "travelTime": "15 Min. vom Flughafen Palma",
    "subname": "Bendinat"
   },
@@ -81,14 +81,14 @@ const data = {
   "secrets-villamil": {
    "pills": [
     "Nur Erwachsene",
-    "Klippenpool",
-    "Strand von Paguera"
+    "Spa",
+    "Strand von Peguera"
    ],
-   "why": "Reines Erwachsenenhotel der AMR Collection direkt am Strand von Paguera. Überwasser-Suiten, Infinity-Pools an der Klippe, mehrere Restaurants. Golf de Andratx 15 Minuten entfernt.",
+   "why": "Resort nur für Erwachsene ab 18 Jahren, am Strand von Peguera. Zimmer und Suiten, ein Spa, Pools und mehrere gastronomische Angebote. Golf de Andratx ist eine Option in der Nähe für eine Runde.",
    "andy": "Eine gute Fünf-Sterne-Basis, wenn das Paar ein richtiges Strandresort will und alle Plätze im Südwesten erreichbar sein sollen. Andratx ist der nächstgelegene und dramatischste.",
    "golf": "Golf de Andratx 15 Min. T Golf Calvià 20 Min. Santa Ponsa 25 Min.",
    "travelTime": "30 Min. vom Flughafen Palma",
-   "subname": "AMR Collection, Paguera"
+   "subname": "Peguera"
   },
   "donna-portals": {
    "pills": [
@@ -104,15 +104,15 @@ const data = {
   },
   "finca-serena": {
    "pills": [
-    "Finca",
+    "Nur Erwachsene",
     "Wellness",
-    "40 Hektar"
+    "45 Hektar"
    ],
-   "why": "Ganzheitliche Fünf-Sterne-Finca mit 40 Hektar Ackerland und einem ernsthaften Wellnessprogramm. Golf Maioris 5 Minuten entfernt, Son Gual 15 Minuten.",
-   "andy": "Golf Maioris und Son Gual gehören zu den interessantesten Plätzen Mallorcas. Andreu Genestra (ein Michelin-Stern) ist in der Nähe.",
-   "golf": "Golf Maioris 5 Min. Son Antem East/West 10 Min. Son Gual 15 Min. Hinweis: Diese Gegend ist 40-60 Min. von Palma entfernt.",
+   "why": "Fünf-Sterne-Finca nur für Erwachsene bei Montuïri, mit 45 Hektar Landschaft, einem Spa und dem Restaurant Jacaranda. Eine ländliche Basis mit einer Fahrt zum Golf.",
+   "andy": "Wählen Sie sie für Zeit auf dem Land zwischen den Runden. Son Gual ist eine Option für das Golf; planen Sie den Transport um Ihre Startzeiten herum.",
+   "golf": "Son Gual ist laut dem Golfführer des Hotels 19 km vom Hotel entfernt. Andere Platzwahlen müssen zur Route ab Montuïri passen.",
    "travelTime": "25 Min. vom Flughafen Palma",
-   "subname": "Bei Llucmajor"
+   "subname": "Montuïri"
   },
   "sw-villa": {
    "pills": [
@@ -131,11 +131,11 @@ const data = {
    "pills": [
     "Historische Finca",
     "17. Jahrhundert",
-    "Infinity-Pool"
+    "Spa"
    ],
-   "why": "Steinfinca aus dem 17. Jahrhundert am Fuß der Tramuntana, 20 Minuten vom Golf de Andratx. Infinity-Pool, alte Olivenhaine, ein vollkommen privates Gefühl.",
+   "why": "Landgut aus Stein aus dem 17. Jahrhundert am Fuß der Tramuntana in Puigpunyent, mit Gärten, Pools und einem Spa. Ein Aufenthalt auf dem Land mit einer Fahrt zum Golf.",
    "andy": "Eines der schönsten Gebäude der Insel. Ein echter Finca-Rückzugsort, von dem aus die Plätze im Südwesten dennoch erreichbar bleiben.",
-   "golf": "Golf de Andratx 20 Min. T Golf Calvià 25 Min. Santa Ponsa-Gruppe 30 Min.",
+   "golf": "Son Vida, Son Muntaner, Son Quint und Son Termes sind Optionen, die von Puigpunyent aus infrage kommen. Planen Sie die Transfers um die Startzeiten herum.",
    "travelTime": "25 Min. vom Flughafen Palma",
    "subname": "Puigpunyent"
   },
@@ -145,7 +145,7 @@ const data = {
     "Tagungsräume",
     "Blick auf Palma"
    ],
-   "why": "Großes Vier-Sterne-Haus auf dem Hügel über Palma mit Panoramablick auf die Bucht und vollem Spa. Praktisch für größere Gruppen und Firmenreisen, die neben dem Golf Tagungsräume brauchen.",
+   "why": "Großes Fünf-Sterne-Haus auf dem Hügel über Palma mit Panoramablick auf die Bucht und vollem Spa. Praktisch für größere Gruppen und Firmenreisen, die neben dem Golf Tagungsräume brauchen.",
    "andy": "Nicht das glamouröseste Hotel, aber für Gruppen sehr leistungsfähig. Gute Basis für verschiedene Platzkombinationen im Südwesten und im Raum Palma.",
    "golf": "Son Vida / Son Quint / Son Muntaner 10 Min. Real Golf de Bendinat 15 Min. T Golf Calvià 20 Min.",
    "travelTime": "15 Min. vom Flughafen Palma",
@@ -177,11 +177,11 @@ const data = {
   },
   "portals-hills": {
    "pills": [
-    "Nur Erwachsene",
+    "Boutique",
     "Auf dem Hügel",
     "Infinity-Pool"
    ],
-   "why": "Boutique-Hotel nur für Erwachsene oberhalb von Portals Nous mit Infinity-Pool und Blick aufs Meer. Intim und ruhig, 10 Minuten vom Golf und vom Yachthafen Puerto Portals.",
+   "why": "Boutique-Hotel oberhalb von Portals Nous, mit einem Infinity-Pool mit Blick aufs Meer. Familiensuiten sind verfügbar. Eine ruhigere Basis mit einer Fahrt zum Golf und zum Yachthafen Puerto Portals.",
    "andy": "Eine ruhigere Alternative zum Donna Portals für Paare, die Privatsphäre über Trubel stellen. T Golf Calvià ist 10 Minuten entfernt.",
    "golf": "T Golf Calvià 10 Min. Real Golf de Bendinat 12 Min. Son Vida 15 Min.",
    "travelTime": "15 Min. vom Flughafen Palma",
@@ -193,7 +193,7 @@ const data = {
     "36 Löcher",
     "Resort-Einrichtungen"
    ],
-   "why": "Marriott-Resort direkt zwischen Son Antem East und West: 36 Löcher vor der Tür. Gute Golfeinrichtungen für Firmenevents und verlässlicher Vier-Sterne-Komfort.",
+   "why": "Fünf-Sterne-Resort in Son Antem, mit zwei 18-Loch-Plätzen, einem Spa und Einrichtungen für Familien. Eine praktische Basis, wenn Son Antem East und West auf dem Programm stehen.",
    "andy": "Nicht das aufregendste Hotel der Insel, aber das praktischste, wenn Son Antem auf dem Programm steht. Golf Maioris ist 10 Minuten entfernt, Son Gual 15.",
    "golf": "Son Antem East und West vor Ort. Golf Maioris 10 Min. Son Gual 15 Min. Die Gegend um die Finca Serena ist erreichbar.",
    "travelTime": "20 Min. vom Flughafen Palma",
@@ -205,9 +205,9 @@ const data = {
     "Familie",
     "Platzgruppe Santa Ponsa"
    ],
-   "why": "Unkompliziertes Drei-Sterne-Strandhotel in Palmanova. Erfüllt seinen Zweck für Gruppen, bei denen Golf im Vordergrund steht und nicht das Hotel. T Golf Calvià 10 Minuten, die Platzgruppe von Santa Ponsa 15.",
+   "why": "Unkompliziertes Vier-Sterne-Hotel im Strandbereich von Palmanova. Erfüllt seinen Zweck für Gruppen, bei denen Golf im Vordergrund steht und nicht das Hotel. T Golf Calvià und Golf Santa Ponsa 1 sind Optionen für die Runden.",
    "andy": "Die ehrliche Budget-Antwort für den Südwesten. Weniger für das Zimmer ausgeben, dafür mehr für die Runden.",
-   "golf": "T Golf Calvià 10 Min. Real Golf de Bendinat 15 Min. Golf Santa Ponsa 1 und 2 ca. 15 Min.",
+   "golf": "T Golf Calvià, Real Golf de Bendinat und Golf Santa Ponsa 1 sind öffentlich zugängliche Optionen im Südwesten. Organisieren Sie den Transport ab Palmanova.",
    "travelTime": "20 Min. vom Flughafen Palma",
    "subname": "Palmanova"
   },
@@ -253,7 +253,7 @@ const data = {
     "Michelin-Koch",
     "Direkt am Strand"
    ],
-   "why": "Boutique-Fünf-Sterne-Haus mit direktem Strandzugang und Santi Taura (ein Michelin-Stern) im Restaurant. Alcanada 20 Minuten, die Altstadt von Pollença 10 Minuten.",
+   "why": "Boutique-Fünf-Sterne-Haus in Cala Sant Vicenç, nahe dem Strand Cala Molins, mit einem Spa und Restaurants von Santi Taura. Pollença und Alcanada sind Optionen für das Golf, mit einer Fahrt zu den Plätzen.",
    "andy": "Santi Taura ist einer der besten Köche Mallorcas. Wenn das Essen so wichtig ist wie das Golf und der Norden die Zone ist, ist das hier die Antwort.",
    "golf": "Club de Golf Alcanada 20 Min. Golf Pollença 10 Min.",
    "travelTime": "50 Min. vom Flughafen Palma",
@@ -303,7 +303,7 @@ const data = {
    ],
    "why": "Traditionelle Agroturismo-Finca im winzigen Dorf Orient, umgeben von der Tramuntana. Vollkommene Stille, frische Produkte, echtes ländliches Mallorca.",
    "andy": "Orient ist eines der besonderen Dörfer der Insel. Zum Golf muss man fahren, aber das Erlebnis hier ist mit keinem Hotel vergleichbar. Am besten kombiniert mit ein paar Runden in Alcanada.",
-   "golf": "Club de Golf Alcanada 30 Min. Golf Pollença 20 Min.",
+   "golf": "Planen Sie Golf als Tagesausflug von Orient in den Tramuntana-Bergen aus. Son Termes ist eine Option, die infrage kommt; wählen Sie den Platz passend zur Route und zur Startzeit.",
    "travelTime": "35 Min. vom Flughafen Palma",
    "subname": "Orient"
   },
@@ -389,7 +389,7 @@ const data = {
     "Trackman-Range",
     "Golfpakete"
    ],
-   "why": "Hotel direkt auf dem Pula Golf, mit vollständigen Übungsanlagen einschließlich Trackman-Technik. Hier wurden acht Turniere der European Tour ausgetragen. Ein unkomplizierter Standort für Golf.",
+   "why": "Hotel am Pula Golf, mit Übungsanlagen einschließlich Trackman-Technik. Eine Basis für Runden und Übungseinheiten vor Ort.",
    "andy": "Wenn Pula auf dem Programm steht und die Gruppe alles an einem Ort haben möchte, ist das die Antwort. Die Übungsanlagen gehören zu den besten Mallorcas.",
    "golf": "Pula Golf vor Ort. Golf Club Son Servera 10 Min. Capdepera Golf 15 Min. Canyamel Golf 20 Min.",
    "travelTime": "60 Min. vom Flughafen Palma",
@@ -397,13 +397,13 @@ const data = {
   },
   "sa-bassa-rotja": {
    "pills": [
-    "Weingut",
-    "Bio-Spa",
+    "Historisches Gut",
+    "Spa",
     "Landschaft"
    ],
-   "why": "Boutique-Hotel auf einem Weingut im Landesinneren Mallorcas. Bio-Spa, Weine vom Gut, echte ländliche Ruhe. Kein gewöhnliches Strand- oder Golfresort.",
-   "andy": "Eine andere Art zu wohnen. Für Paare, die das Landesinnere Mallorcas wollen und bereit sind, 25 bis 30 Minuten zu den Plätzen an der Ostküste zu fahren.",
-   "golf": "Vall d'Or Golf 25 Min. Club de Golf Pula 25 Min. Golf Club Son Servera 30 Min.",
+   "why": "Ländliches Hotel auf einem historischen Gut bei Porreres, mit Spa, Sauna und beheiztem Innenpool. Eine Basis auf dem Land mit einer Fahrt zum Golf.",
+   "andy": "Für Paare, die das Landesinnere Mallorcas wollen und die Fahrten zum Golf gern einplanen.",
+   "golf": "Vall d'Or, Son Antem und Pula sind Optionen, die von Porreres aus infrage kommen. Wählen Sie die Runden passend zur Route des ganzen Tages, statt Golf direkt vor der Tür zu erwarten.",
    "travelTime": "35 Min. vom Flughafen Palma",
    "subname": "Porreres"
   },
@@ -435,14 +435,14 @@ const data = {
   "son-moll-sentits": {
    "pills": [
     "Nur Erwachsene",
-    "Dach-Spa",
-    "Stadt Capdepera"
+    "Am Meer",
+    "Spa"
    ],
-   "why": "Boutique-Hotel nur für Erwachsene in der Altstadt von Capdepera mit Dach-Spa und Pool. Eine ruhigere, intimere Option als die Küstenresorts, und Capdepera Golf ist 5 Minuten entfernt.",
-   "andy": "Eine der kleinsten und charaktervollsten Optionen an der Ostküste. Passt zu Paaren, die Stadt und Golf dem Strand vorziehen.",
+   "why": "Vier-Sterne-Superior-Hotel nur für Erwachsene gegenüber dem Strand Son Moll in Cala Ratjada, mit einem Spa und einem Pool. Eine Basis an der Küste für Golf im Osten, mit einer Fahrt zu den Plätzen.",
+   "andy": "Nutzen Sie Cala Ratjada für Zeit am Meer zwischen den Runden. Capdepera, Canyamel und Pula sind Optionen für das Golf; planen Sie den Transport vor der Buchung.",
    "golf": "Capdepera Golf 5 Min. Canyamel Golf 10 Min. Club de Golf Pula 15 Min.",
    "travelTime": "60 Min. vom Flughafen Palma",
-   "subname": "Capdepera"
+   "subname": "Cala Ratjada"
   },
   "protur-biomar": {
    "pills": [
@@ -451,9 +451,9 @@ const data = {
     "Familienpools",
     "Erwachsenenbereich"
    ],
-   "why": "Großes Premium-Resort am Strand von Sa Coma mit eigenem Erwachsenenbereich und einem Familienbereich. Gutes Spa und mehrere Pools. Pula Golf 10 Minuten.",
+   "why": "Resort in Sa Coma mit einem Familienbereich und einem separaten Erwachsenenbereich. Spa, mehrere Pools und der Strand einen kurzen Spaziergang entfernt. Pula und Son Servera sind Optionen für das Golf.",
    "andy": "Eines der leistungsfähigeren Resorts an der Ostküste für Gruppen, in denen manche Golf spielen und andere den ganzen Tag Strand und Pool wollen.",
-   "golf": "Club de Golf Pula 10 Min. Golf Club Son Servera 12 Min. Capdepera Golf 20 Min.",
+   "golf": "Pula, Son Servera, Capdepera und Canyamel ergeben eine Platzmischung an der Ostküste. Planen Sie den Transport von Sa Coma aus.",
    "travelTime": "58 Min. vom Flughafen Palma",
    "subname": "Sa Coma"
   },
@@ -486,9 +486,9 @@ const data = {
    "pills": [
     "Strand",
     "Spa",
-    "Vier-Sterne mit gutem Preis"
+    "Fünf Sterne"
    ],
-   "why": "Praktisches, gut gelegenes Vier-Sterne-Haus mit echtem Strandzugang und richtigem Spa. Ähnlicher Golfzugang wie die Fünf-Sterne-Hotels in Illetas, zu einem niedrigeren Preis.",
+   "why": "Fünf-Sterne-Hotel mit direktem Zugang zum Strand von Cala Major und einem Spa. Eine Basis an der Küste nahe Palma für Runden im Südwesten.",
    "andy": "Eine vernünftige Wahl für Paare oder kleine Gruppen, die Strand und Spa wollen, ohne den Ultra-Luxus-Preis. Bendinat 15 Minuten.",
    "golf": "Real Golf de Bendinat 15 Min. T Golf Calvià 20 Min. Son Vida / Son Quint / Son Muntaner 15 Min. Son Gual 20 Min.",
    "travelTime": "12 Min. vom Flughafen Palma",
@@ -500,7 +500,7 @@ const data = {
     "Terrasse im Innenhof",
     "Altstadt"
    ],
-   "why": "Ein Palast aus dem 19. Jahrhundert an der Carrer Born, Palmas angesagtester Straße. Verzierter Innenhof, ausgezeichnete Lage für Altstadt, Kathedrale und Restaurants.",
+   "why": "Palasthotel an der Carrer de Sant Jaume in der Altstadt von Palma, mit einem Innenhof. Zu Fuß erreichbar sind die Kathedrale, Restaurants und der Passeig des Born.",
    "andy": "Das Born bringt Sie mitten in die Abende von Palma. Son Gual 20 Minuten für eine frühe Morgenrunde, danach zurück zu einem langen Mittagessen.",
    "golf": "Son Gual 20 Min. T Golf Palma (Puntiró) 20 Min. Son Vida / Son Quint / Son Muntaner 18 Min. Real Golf de Bendinat 20 Min.",
    "travelTime": "20 Min. vom Flughafen Palma",
@@ -634,7 +634,7 @@ const data = {
     "Deià",
     "Historisches Herrenhaus"
    ],
-   "why": "Zwei Herrenhäuser aus Stein aus dem 16. Jahrhundert oberhalb von Deià. Das berühmteste Boutique-Hotel der Insel. David Bowie, Robert Graves und Prinzessin Diana waren hier zu Gast.",
+   "why": "Zwei historische Herrenhäuser aus Stein oberhalb von Deià, mit Gärten, Pools und einem Spa. Ein Aufenthalt in der Tramuntana, bei dem Golf als Tagesausflug geplant wird.",
    "andy": "Keine Basis für eine Golfreise. Eines der besten Hotels Spaniens. Gut für 2 Nächte im Nordwesten, bevor es für die Runden in den Südwesten weitergeht.",
    "golf": "Golfrunden müssen als ganztägige Ausflüge geplant werden. Son Termes, Golf de Andratx, Alcanada und Pollença können je nach genauer Route alle sinnvoll sein.",
    "travelTime": "60 Min. vom Flughafen Palma",
@@ -655,10 +655,10 @@ const data = {
   "es-moli": {
    "pills": [
     "Klassische Tramuntana",
-    "Terrassenpools",
-    "Geöffnet März-Nov."
+    "Beheizter Pool",
+    "Terrassengärten"
    ],
-   "why": "Klassisches Mallorca ohne den Belmond-Preis. Mehrere Terrassenpools, in die Klippe gehauen, mit Blick auf Tal und Meer. Geöffnet von März bis November.",
+   "why": "Ein Hotel in Terrassengärten oberhalb von Deià, mit beheiztem Außenpool und Blick auf Tal und Meer. Eine Basis in der Tramuntana für Zeit abseits des Golfs, mit Runden, die als Tagesausflüge geplant werden.",
    "andy": "Planen Sie 2 Nächte im Nordwesten für die Landschaft ein und ziehen Sie dann für die einfachere Golflogistik in den Südwesten oder Norden um.",
    "golf": "Golf planen Sie von Deià aus am besten als ganzen Tag ein. Der passende Platz hängt davon ab, ob der Tag Richtung Südwesten, Palma oder Norden führt.",
    "travelTime": "55 Min. vom Flughafen Palma",
@@ -679,10 +679,10 @@ const data = {
   "gran-hotel-soller": {
    "pills": [
     "Stadt Sóller",
-    "Klassisches Vier-Sterne-Haus",
+    "Fünf Sterne",
     "Orangenhaine"
    ],
-   "why": "Vier-Sterne-Haus im Zentrum von Sóller, einer der charmantesten Städte Mallorcas. Der Orangenmarkt, die historische Straßenbahn nach Port de Sóller und gute Restaurants direkt vor der Tür.",
+   "why": "Fünf-Sterne-Haus im Zentrum von Sóller, einer der charmantesten Städte Mallorcas. Der Orangenmarkt, die historische Straßenbahn nach Port de Sóller und gute Restaurants direkt vor der Tür.",
    "andy": "Ein zugänglicheres Preisniveau für den Nordwesten. Für Gruppen, die das Sóller-Erlebnis ohne die Preise des Jumeirah wollen. Golf muss um die Fahrt herum geplant werden.",
    "golf": "Golf ist von Sóller aus ein Tagesausflug und keine Platzgruppe in der Nähe. Son Termes, Golf de Andratx, Alcanada oder Pollença können je nach Gesamtreiseplan passen.",
    "travelTime": "35 Min. vom Flughafen Palma",
@@ -731,7 +731,7 @@ const data = {
     "Günstig",
     "Strandzugang"
    ],
-   "why": "Drei-Sterne-Budgethotel an der Bucht von Port de Sóller. Die Orangenhain-Straßenbahn von Sóller ist eines der schönsten Erlebnisse auf Mallorca. Golf bedeutet hier einen Tagesausflug, Plätze in der Nähe gibt es nicht.",
+   "why": "Hotel an der Bucht von Port de Sóller. Die Orangenhain-Straßenbahn aus dem Ort Sóller ist eines der schönsten Erlebnisse auf Mallorca. Golf ist ein Tagesausflug und keine Lage mit Plätzen in der Nähe.",
    "andy": "Die erschwingliche Antwort für den Nordwesten. Port de Sóller ist eine wunderschöne Bucht zum Aufwachen. Verbinden Sie ein oder zwei geplante Golftage mit echter Zeit in der Tramuntana.",
    "golf": "Planen Sie Golf als Tagesausflug von Port de Sóller aus. Die beste Platzwahl hängt davon ab, ob der Tag Richtung Palma, Südwesten oder Norden führt.",
    "travelTime": "45 Min. vom Flughafen Palma",

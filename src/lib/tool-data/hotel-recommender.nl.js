@@ -43,13 +43,13 @@ const data = {
   },
   "hotel-bendinat": {
    "pills": [
-    "Aan de baan",
-    "Goede prijs-kwaliteit",
-    "Rustige omgeving"
+    "Aan zee",
+    "Rustige omgeving",
+    "Golf in het zuidwesten"
    ],
-   "why": "Direct naast Real Golf de Bendinat. De verstandige keuze als het gaat om golf en een goede ligging, niet om luxe aan het zwembad.",
-   "andy": "Oud Bendinat is een van de rustigere hoeken van het zuidwesten. Geen resort. Een eerlijk golfhotel dat doet wat het belooft.",
-   "golf": "Real Golf de Bendinat voor de deur. T Golf Calvià 10 min. Santa Ponsa-groep 20 min.",
+   "why": "Viersterrenhotel aan zee in het oude Bendinat, met tuinen, een zwembad en een restaurant met uitzicht op zee. Een basis aan de kust voor golf in het zuidwesten, met een autorit naar de banen.",
+   "andy": "Oud Bendinat is een van de rustigere hoeken van het zuidwesten. Plan het vervoer naar de golf en houd daarna tijd over voor de zee en het diner terug in het hotel.",
+   "golf": "Real Golf de Bendinat, T Golf Calvià en Golf Santa Ponsa 1 zijn opties voor een reis in het zuidwesten. Het hotel ligt aan de kust; voor de golfbanen is een autorit nodig.",
    "travelTime": "15 min van de luchthaven van Palma",
    "subname": "Bendinat"
   },
@@ -81,14 +81,14 @@ const data = {
   "secrets-villamil": {
    "pills": [
     "Alleen volwassenen",
-    "Klifzwembad",
-    "Strand van Paguera"
+    "Spa",
+    "Strand van Peguera"
    ],
-   "why": "AMR Collection alleen voor volwassenen aan het strand van Paguera. Suites boven het water, infinity pools op de klif, meerdere restaurants. Golf de Andratx op 15 minuten.",
+   "why": "Resort alleen voor volwassenen van 18 jaar en ouder, aan het strand van Peguera. Kamers en suites, een spa, zwembaden en meerdere eetgelegenheden. Golf de Andratx is een optie in de buurt voor een ronde.",
    "andy": "Een goede vijfsterrenbasis als het stel een serieus strandresort wil met het volledige aanbod aan banen in het zuidwesten binnen bereik. Andratx is de dichtstbijzijnde en meest dramatische.",
    "golf": "Golf de Andratx 15 min. T Golf Calvià 20 min. Santa Ponsa 25 min.",
    "travelTime": "30 min van de luchthaven van Palma",
-   "subname": "AMR Collection, Paguera"
+   "subname": "Peguera"
   },
   "donna-portals": {
    "pills": [
@@ -104,15 +104,15 @@ const data = {
   },
   "finca-serena": {
    "pills": [
-    "Finca",
+    "Alleen volwassenen",
     "Wellness",
-    "40 hectare"
+    "45 hectare"
    ],
-   "why": "Holistische vijfsterrenfinca met 40 hectare landbouwgrond en een serieus wellnessprogramma. Golf Maioris op 5 minuten, Son Gual op 15.",
-   "andy": "Golf Maioris en Son Gual zijn twee van de interessantste banen van Mallorca. Andreu Genestra (één Michelinster) is in de buurt.",
-   "golf": "Golf Maioris 5 min. Son Antem East/West 10 min. Son Gual 15 min. Let op: dit gebied ligt 40-60 min van Palma.",
+   "why": "Vijfsterrenfinca alleen voor volwassenen bij Montuïri, met 45 hectare platteland, een spa en het restaurant Jacaranda. Een landelijke basis met een autorit naar de golf.",
+   "andy": "Kies deze voor tijd op het platteland tussen de rondes. Son Gual is een optie voor de golf; plan het vervoer rond uw starttijden.",
+   "golf": "Son Gual ligt volgens de golfgids van het hotel 19 km van het hotel. Andere baankeuzes moeten passen bij de route vanaf Montuïri.",
    "travelTime": "25 min van de luchthaven van Palma",
-   "subname": "Bij Llucmajor"
+   "subname": "Montuïri"
   },
   "sw-villa": {
    "pills": [
@@ -131,11 +131,11 @@ const data = {
    "pills": [
     "Historische finca",
     "17e eeuw",
-    "Infinity pool"
+    "Spa"
    ],
-   "why": "Stenen finca uit de zeventiende eeuw aan de voet van de Tramuntana, 20 minuten van Golf de Andratx. Infinity pool, oude olijfgaarden, een volledig privékarakter.",
+   "why": "Stenen landgoed uit de zeventiende eeuw aan de voet van de Tramuntana in Puigpunyent, met tuinen, zwembaden en een spa. Een verblijf op het platteland met een autorit naar de golf.",
    "andy": "Een van de mooiste gebouwen van het eiland. Een echte finca-ontsnapping die de banen in het zuidwesten toch binnen bereik houdt.",
-   "golf": "Golf de Andratx 20 min. T Golf Calvià 25 min. Santa Ponsa-groep 30 min.",
+   "golf": "Son Vida, Son Muntaner, Son Quint en Son Termes zijn opties om te overwegen vanuit Puigpunyent. Plan de transfers rond de starttijden.",
    "travelTime": "25 min van de luchthaven van Palma",
    "subname": "Puigpunyent"
   },
@@ -145,7 +145,7 @@ const data = {
     "Congresfaciliteiten",
     "Uitzicht op Palma"
    ],
-   "why": "Groot viersterrenhotel op de heuvel boven Palma met panoramisch uitzicht op de baai en een volledige spa. Praktisch voor grotere groepen en zakelijke reizen die naast golf vergaderruimte nodig hebben.",
+   "why": "Groot vijfsterrenhotel op de heuvel boven Palma met panoramisch uitzicht op de baai en een volledige spa. Praktisch voor grotere groepen en zakelijke reizen die naast golf vergaderruimte nodig hebben.",
    "andy": "Niet het meest glamoureuze, maar zeer capabel voor groepen. Goede uitvalsbasis voor meerdere combinaties van banen in het zuidwesten en rond Palma.",
    "golf": "Son Vida / Son Quint / Son Muntaner 10 min. Real Golf de Bendinat 15 min. T Golf Calvià 20 min.",
    "travelTime": "15 min van de luchthaven van Palma",
@@ -177,11 +177,11 @@ const data = {
   },
   "portals-hills": {
    "pills": [
-    "Alleen volwassenen",
+    "Boutique",
     "Op een heuvel",
     "Infinity pool"
    ],
-   "why": "Boutiquehotel alleen voor volwassenen boven Portals Nous met een infinity pool met uitzicht op zee. Intiem en rustig, op 10 minuten van zowel golf als de jachthaven van Puerto Portals.",
+   "why": "Boutiquehotel boven Portals Nous, met een infinity pool met uitzicht op zee. Er zijn familiesuites beschikbaar. Een rustigere basis met een autorit naar de golf en de jachthaven van Puerto Portals.",
    "andy": "Een rustiger alternatief voor het Donna Portals voor stellen die privacy boven sfeer stellen. T Golf Calvià is 10 minuten.",
    "golf": "T Golf Calvià 10 min. Real Golf de Bendinat 12 min. Son Vida 15 min.",
    "travelTime": "15 min van de luchthaven van Palma",
@@ -193,7 +193,7 @@ const data = {
     "36 holes",
     "Resortfaciliteiten"
    ],
-   "why": "Marriott-resort direct tussen Son Antem East en West: 36 holes voor de deur. Goede golffaciliteiten voor zakelijke groepen en betrouwbaar viersterrencomfort.",
+   "why": "Vijfsterrenresort bij Son Antem, met twee 18-holesbanen, een spa en voorzieningen voor gezinnen. Een praktische basis wanneer Son Antem East en West op het programma staan.",
    "andy": "Niet het spannendste hotel van het eiland, maar wel het meest praktische als Son Antem op het programma staat. Golf Maioris is 10 minuten, Son Gual 15.",
    "golf": "Son Antem East en West op locatie. Golf Maioris 10 min. Son Gual 15 min. Omgeving Finca Serena bereikbaar.",
    "travelTime": "20 min van de luchthaven van Palma",
@@ -205,9 +205,9 @@ const data = {
     "Gezin",
     "Banengroep Santa Ponsa"
    ],
-   "why": "Ongecompliceerd driesterrenstrandhotel in Palmanova. Doet wat het moet doen voor groepen die zich op golf richten en niet op het hotel. T Golf Calvià 10 minuten, de banengroep van Santa Ponsa 15.",
+   "why": "Ongecompliceerd viersterrenhotel in het strandgebied van Palmanova. Doet wat het moet doen voor groepen die zich op golf richten en niet op het hotel. T Golf Calvià en Golf Santa Ponsa 1 zijn opties voor de rondes.",
    "andy": "Het eerlijke budgetantwoord voor het zuidwesten. Geef minder uit aan de kamer en meer aan de rondes.",
-   "golf": "T Golf Calvià 10 min. Real Golf de Bendinat 15 min. Golf Santa Ponsa 1 en 2 ca. 15 min.",
+   "golf": "T Golf Calvià, Real Golf de Bendinat en Golf Santa Ponsa 1 zijn openbaar toegankelijke opties in het zuidwesten. Regel het vervoer vanuit Palmanova.",
    "travelTime": "20 min van de luchthaven van Palma",
    "subname": "Palmanova"
   },
@@ -253,7 +253,7 @@ const data = {
     "Michelinchef",
     "Direct aan het strand"
    ],
-   "why": "Boutique-vijfsterrenhotel met directe toegang tot het strand en Santi Taura (één Michelinster) in het restaurant. Alcanada op 20 minuten. De oude stad van Pollença op 10.",
+   "why": "Boutique-vijfsterrenhotel in Cala Sant Vicenç, bij het strand van Cala Molins, met een spa en restaurants van Santi Taura. Pollença en Alcanada zijn opties voor de golf, met een autorit naar de banen.",
    "andy": "Santi Taura is een van de beste chefs van Mallorca. Als het eten net zo belangrijk is als golf, en het noorden de regio is, is dit het antwoord.",
    "golf": "Club de Golf Alcanada 20 min. Golf Pollença 10 min.",
    "travelTime": "50 min van de luchthaven van Palma",
@@ -303,7 +303,7 @@ const data = {
    ],
    "why": "Traditionele agrotoerisme-finca in het piepkleine dorp Orient, omringd door de Tramuntana. Complete stilte, verse producten, echt landelijk Mallorca.",
    "andy": "Orient is een van de bijzonderste dorpen van het eiland. Voor golf moet u rijden, maar de ervaring hier is met geen enkel hotel te vergelijken. Het best te combineren met een paar rondes in Alcanada.",
-   "golf": "Club de Golf Alcanada 30 min. Golf Pollença 20 min.",
+   "golf": "Plan golf als een dagje uit vanuit Orient in het Tramuntanagebergte. Son Termes is een optie om te overwegen; kies de baan op basis van de route en de starttijd.",
    "travelTime": "35 min van de luchthaven van Palma",
    "subname": "Orient"
   },
@@ -389,7 +389,7 @@ const data = {
     "Trackman-range",
     "Golfpakketten"
    ],
-   "why": "Hotel direct op Pula Golf, met volledige oefenfaciliteiten, waaronder Trackman-technologie. Acht toernooien van de European Tour zijn hier gehouden. Een rechttoe-rechtaan uitvalsbasis voor golf.",
+   "why": "Hotel bij Pula Golf, met oefenfaciliteiten waaronder Trackman-technologie. Een basis voor rondes en oefenen op locatie.",
    "andy": "Als Pula op het programma staat en de groep alles op één plek wil, is dit het antwoord. De oefenfaciliteiten behoren tot de beste van Mallorca.",
    "golf": "Pula Golf op locatie. Golf Club Son Servera 10 min. Capdepera Golf 15 min. Canyamel Golf 20 min.",
    "travelTime": "60 min van de luchthaven van Palma",
@@ -397,13 +397,13 @@ const data = {
   },
   "sa-bassa-rotja": {
    "pills": [
-    "Wijngoed",
-    "Biologische spa",
+    "Historisch landgoed",
+    "Spa",
     "Platteland"
    ],
-   "why": "Boutiquehotel op een werkend wijnlandgoed in het binnenland van Mallorca. Biologische spa, wijnen van het landgoed, echte landelijke rust. Geen standaard strand- of golfresort.",
-   "andy": "Een ander soort verblijf. Voor stellen die het binnenland van Mallorca willen en bereid zijn 25 tot 30 minuten te rijden naar de banen aan de oostkust.",
-   "golf": "Vall d'Or Golf 25 min. Club de Golf Pula 25 min. Golf Club Son Servera 30 min.",
+   "why": "Landelijk hotel op een historisch landgoed bij Porreres, met een spa, sauna en verwarmd binnenzwembad. Een basis op het platteland met een autorit naar de golf.",
+   "andy": "Voor stellen die het binnenland van Mallorca willen en de autoritten naar de golf graag inplannen.",
+   "golf": "Vall d'Or, Son Antem en Pula zijn opties om te overwegen vanuit Porreres. Kies de rondes op basis van de route van de hele dag in plaats van golf voor de deur te verwachten.",
    "travelTime": "35 min van de luchthaven van Palma",
    "subname": "Porreres"
   },
@@ -435,14 +435,14 @@ const data = {
   "son-moll-sentits": {
    "pills": [
     "Alleen volwassenen",
-    "Spa op het dak",
-    "Stadje Capdepera"
+    "Aan zee",
+    "Spa"
    ],
-   "why": "Boutiquehotel alleen voor volwassenen in de oude stad van Capdepera met een dakspa en zwembad. Een rustigere, intiemere optie dan de kustresorts, en Capdepera Golf is 5 minuten.",
-   "andy": "Een van de kleinste en meest karaktervolle opties aan de oostkust. Past bij stellen die stad en golf boven het strand verkiezen.",
+   "why": "Viersterren-superieur hotel alleen voor volwassenen tegenover het strand van Son Moll in Cala Ratjada, met een spa en zwembad. Een basis aan de kust voor golf in het oosten, met een autorit naar de banen.",
+   "andy": "Gebruik Cala Ratjada voor tijd aan zee tussen de rondes. Capdepera, Canyamel en Pula zijn opties voor de golf; plan het vervoer voordat u boekt.",
    "golf": "Capdepera Golf 5 min. Canyamel Golf 10 min. Club de Golf Pula 15 min.",
    "travelTime": "60 min van de luchthaven van Palma",
-   "subname": "Capdepera"
+   "subname": "Cala Ratjada"
   },
   "protur-biomar": {
    "pills": [
@@ -451,9 +451,9 @@ const data = {
     "Gezinszwembaden",
     "Volwassenenzone"
    ],
-   "why": "Groot premiumresort aan het strand van Sa Coma met een eigen volwassenenzone en een gezinszone. Goede spa en meerdere zwembaden. Pula Golf op 10 minuten.",
+   "why": "Resort in Sa Coma met een gezinsgedeelte en een apart gedeelte voor volwassenen. Spa, meerdere zwembaden en het strand op korte loopafstand. Pula en Son Servera zijn opties voor de golf.",
    "andy": "Een van de geschiktere resorts aan de oostkust voor groepen waarin sommigen willen golfen en anderen de hele dag strand en zwembaden willen.",
-   "golf": "Club de Golf Pula 10 min. Golf Club Son Servera 12 min. Capdepera Golf 20 min.",
+   "golf": "Pula, Son Servera, Capdepera en Canyamel geven u een mix van banen aan de oostkust. Plan het vervoer vanuit Sa Coma.",
    "travelTime": "58 min van de luchthaven van Palma",
    "subname": "Sa Coma"
   },
@@ -486,9 +486,9 @@ const data = {
    "pills": [
     "Strand",
     "Spa",
-    "Viersterren met goede prijs"
+    "Vijfsterren"
    ],
-   "why": "Praktisch, goed gelegen viersterrenhotel met echte toegang tot het strand en een echte spa. Vergelijkbare toegang tot golf als de vijfsterrenhotels in Illetas, tegen een lagere prijs.",
+   "why": "Vijfsterrenhotel met directe toegang tot het strand van Cala Major en een spa. Een basis aan de kust bij Palma voor rondes in het zuidwesten.",
    "andy": "Een verstandige keuze voor stellen of kleine groepen die strand en spa willen zonder het prijskaartje van ultraluxe. Bendinat op 15 minuten.",
    "golf": "Real Golf de Bendinat 15 min. T Golf Calvià 20 min. Son Vida / Son Quint / Son Muntaner 15 min. Son Gual 20 min.",
    "travelTime": "12 min van de luchthaven van Palma",
@@ -500,7 +500,7 @@ const data = {
     "Terras op de binnenplaats",
     "Oude stad"
    ],
-   "why": "Een paleis uit de negentiende eeuw aan Carrer Born, de meest trendy straat van Palma. Sierlijke binnenplaats, uitstekende locatie voor de oude stad, de kathedraal en de restaurants.",
+   "why": "Paleishotel aan de Carrer de Sant Jaume in de oude stad van Palma, met een binnenplaats. Op loopafstand van de kathedraal, restaurants en de Passeig des Born.",
    "andy": "Het Born plaatst u midden in de avonden van Palma. Son Gual op 20 minuten voor een vroege ochtendronde, daarna terug voor een lange lunch.",
    "golf": "Son Gual 20 min. T Golf Palma (Puntiró) 20 min. Son Vida / Son Quint / Son Muntaner 18 min. Real Golf de Bendinat 20 min.",
    "travelTime": "20 min van de luchthaven van Palma",
@@ -634,7 +634,7 @@ const data = {
     "Deià",
     "Historisch landhuis"
    ],
-   "why": "Twee stenen landhuizen uit de zestiende eeuw boven Deià. Het meest gevierde boutiquehotel van het eiland. David Bowie, Robert Graves en prinses Diana verbleven hier.",
+   "why": "Twee historische stenen landhuizen boven Deià, met tuinen, zwembaden en een spa. Een verblijf in de Tramuntana met golf gepland als een dagje uit.",
    "andy": "Geen basis voor een golfreis. Een van de beste hotels van Spanje. Werkt goed als 2 nachten in het noordwesten voordat u voor de rondes naar het zuidwesten gaat.",
    "golf": "Golfrondes moeten worden gepland als uitstappen van een hele dag. Son Termes, Golf de Andratx, Alcanada en Pollença kunnen allemaal logisch zijn, afhankelijk van de exacte route.",
    "travelTime": "60 min van de luchthaven van Palma",
@@ -655,10 +655,10 @@ const data = {
   "es-moli": {
    "pills": [
     "Klassieke Tramuntana",
-    "Terraszwembaden",
-    "Open mrt-nov"
+    "Verwarmd zwembad",
+    "Terrastuinen"
    ],
-   "why": "Klassiek Mallorca zonder de prijs van Belmond. Meerdere terraszwembaden uitgehouwen in de klif, met uitzicht over dal en zee. Open van maart tot november.",
+   "why": "Een hotel in terrastuinen boven Deià, met een verwarmd buitenzwembad en uitzicht op het dal en de zee. Een basis in de Tramuntana voor tijd weg van de golf, met rondes gepland als dagtrips.",
    "andy": "Plan 2 nachten in het noordwesten voor het landschap en verhuis daarna naar het zuidwesten of het noorden voor eenvoudiger golflogistiek.",
    "golf": "Golf plant u vanuit Deià het best als een hele dag. De juiste baan hangt ervan af of de dag richting het zuidwesten, Palma of het noorden gaat.",
    "travelTime": "55 min van de luchthaven van Palma",
@@ -678,11 +678,11 @@ const data = {
   },
   "gran-hotel-soller": {
    "pills": [
-    "Dorp Sóller",
-    "Klassiek viersterren",
+    "Stad Sóller",
+    "Vijfsterren",
     "Sinaasappelgaarden"
    ],
-   "why": "Viersterrenhotel in het centrum van Sóller, een van de charmantste plaatsen van Mallorca. De sinaasappelmarkt, de historische tram naar Port de Sóller en goede restaurants voor de deur.",
+   "why": "Vijfsterrenhotel in het centrum van Sóller, een van de charmantste plaatsen van Mallorca. De sinaasappelmarkt, de historische tram naar Port de Sóller en goede restaurants voor de deur.",
    "andy": "Een toegankelijker prijsniveau voor het noordwesten. Voor groepen die de Sóller-ervaring willen zonder de prijzen van het Jumeirah. Golf moet rond de rit worden gepland.",
    "golf": "Golf is vanuit Sóller een dagtrip en geen banengroep in de buurt. Son Termes, Golf de Andratx, Alcanada of Pollença kunnen passen, afhankelijk van de bredere reisroute.",
    "travelTime": "35 min van de luchthaven van Palma",
@@ -731,7 +731,7 @@ const data = {
     "Budget",
     "Toegang tot het strand"
    ],
-   "why": "Driesterren-budgethotel aan de baai van Port de Sóller. De sinaasappeltram vanuit Sóller is een van de leukste ervaringen op Mallorca. Golf betekent hier een dagtrip, er liggen geen banen in de buurt.",
+   "why": "Hotel aan de baai van Port de Sóller. De sinaasappeltram vanuit het stadje Sóller is een van de leukste ervaringen op Mallorca. Golf is een dagtrip en geen opzet met banen in de buurt.",
    "andy": "Het betaalbare antwoord voor het noordwesten. Port de Sóller is een prachtige baai om naast wakker te worden. Combineer een of twee geplande golfdagen met echte tijd in de Tramuntana.",
    "golf": "Plan golf als dagtrip vanuit Port de Sóller. De beste baankeuze hangt ervan af of de dag richting Palma, het zuidwesten of het noorden gaat.",
    "travelTime": "45 min van de luchthaven van Palma",

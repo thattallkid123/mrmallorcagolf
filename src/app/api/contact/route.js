@@ -1,3 +1,4 @@
+import { buildToolEmail, emailParagraph } from '../_lib/tool-email'
 import { randomUUID } from 'node:crypto'
 import { sealEnquiry } from '../../../lib/enquiry-context.js'
 import { Resend } from 'resend'
@@ -218,21 +219,13 @@ export async function POST(request) {
     const whatsappHref = localeKey === 'zh' ? 'https://www.mrmallorcagolf.com/zh/contact#wechat' : 'https://wa.me/34624466702'
     try {
       const confirmContent = getContactContent(localeKey)
-      await resend.emails.send({
+      const { error: confirmationError } = await resend.emails.send({
         from: 'Andy Griffiths <andy@mrmallorcagolf.com>',
         to: email,
         subject: confirmContent.success.title,
-        html: `
-          <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
-            <h2 style="color:#2D4A3E;margin-bottom:16px">${escapeHtml(confirmContent.success.title)}</h2>
-            <p style="color:#333;line-height:1.6">${escapeHtml(confirmContent.success.body)}</p>
-            <p style="margin-top:28px">
-              <a href="${whatsappHref}" style="display:inline-block;padding:12px 22px;background:#25D366;border-radius:3px;font-family:sans-serif;font-size:13px;font-weight:600;color:#fff;text-decoration:none">${escapeHtml(confirmContent.cards.whatsappValue)}</a>
-            </p>
-            <p style="margin-top:28px;color:#999;font-size:12px">Mr Mallorca Golf &middot; Andy Griffiths, PGA Advanced Professional</p>
-          </div>
-        `,
+        html: buildToolEmail(escapeHtml(confirmContent.success.title), emailParagraph(escapeHtml(confirmContent.success.body)) + '<p style="margin:24px 0 0;"><a href="'+whatsappHref+'" style="display:inline-block;padding:12px 20px;background:#2D4A3E;font-family:Jost,Arial,Helvetica,sans-serif;font-size:15px;font-weight:500;color:#FFFFFF;text-decoration:none;">'+escapeHtml(confirmContent.cards.whatsappValue)+'</a></p>', {includeIntroduction:false, footerHtml:'', lang:localeKey}),
       })
+      if (confirmationError) console.error('Resend confirmation email error:', confirmationError)
     } catch (confirmError) {
       console.error('Resend confirmation email error:', confirmError)
     }

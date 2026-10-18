@@ -15,7 +15,7 @@ export default function PrivacyPolicyES() {
           </p>
 
           <h1 style={{ marginBottom: '0.5rem' }}>Política de Privacidad</h1>
-          <p style={{ color: 'rgba(255,255,255,0.72)', marginBottom: '3rem', fontSize: '0.9rem' }}>Última actualización: octubre de 2026</p>
+          <p style={{ color: 'rgba(255,255,255,0.72)', marginBottom: '3rem', fontSize: '0.9rem' }}>Última actualización: 18 de octubre de 2026</p>
 
           <section className="legal-section">
             <h2>1. Responsable del tratamiento</h2>
@@ -32,6 +32,7 @@ export default function PrivacyPolicyES() {
               <li><strong>Cuestionario previo a la ronda:</strong> tu nombre, correo electrónico, hándicap y tus respuestas sobre tu juego, tu práctica y tus objetivos. La franja de edad y dónde vives son opcionales. Las respuestas nos llegan por correo electrónico y las usamos para planificar tu sesión.</li>
               <li><strong>Consultas por correo electrónico y WhatsApp:</strong> tu nombre y datos de contacto cuando te comunicas con nosotros directamente</li>
               <li><strong>Course Selector y formularios de email:</strong> tu dirección de correo y cualquier dato opcional que facilites al pedir resultados o notas de planificación</li>
+              <li><strong>Solicitudes de guías en PDF:</strong> su dirección de correo electrónico, la guía que solicita y si ha aceptado recibir correos de planificación. Conservamos un registro independiente de las solicitudes de guías y recibimos una notificación por correo electrónico. Si solicita una guía, no se suscribe a los correos de marketing.</li>
               <li><strong>Datos analíticos:</strong> datos de uso anónimos recopilados por Google Analytics (véase la sección 5)</li>
             </ul>
             <p>Las consultas del calculador de costes también incluyen los campos elegidos, el presupuesto estimado y las preferencias de hotel, transporte y alquiler de buggy. Utilizan el mismo enlace privado de seguimiento.</p>
@@ -80,7 +81,7 @@ export default function PrivacyPolicyES() {
             <p>No vendemos ni cedemos tus datos personales a terceros. Compartimos datos con los siguientes encargados del tratamiento, solo en la medida necesaria para gestionar este sitio web y prestar nuestros servicios:</p>
             <ul>
               <li><strong>Google Analytics:</strong> datos de uso seudonimizados, según lo descrito en la sección 5</li>
-              <li><strong>MailerLite:</strong> tu dirección de correo y, según el formulario que utilices, los datos del viaje que nos facilites (fechas, tamaño del grupo, presupuesto o hándicap) y cualquier nota, para enviarte resultados y &mdash; solo si te suscribes &mdash; nuestras notas de planificación ocasionales. MailerLite trata los datos dentro de la UE.</li>
+              <li><strong>MailerLite:</strong> tu dirección de correo y, según el formulario que utilices, los datos del viaje que nos facilites (fechas, tamaño del grupo, presupuesto o hándicap) y cualquier nota, para enviarte resultados y &mdash; solo si te suscribes &mdash; nuestras notas de planificación ocasionales. MailerLite trata los datos dentro de la UE. También utilizamos MailerLite para conservar los registros de solicitudes de guías de forma independiente de las suscripciones de marketing.</li>
               <li><strong>Resend:</strong> el contenido de cualquier formulario de contacto, consulta o cuestionario que envíes, para hacérnoslo llegar y, cuando corresponda, enviarte un correo de confirmación. Resend tiene su sede en Estados Unidos.</li>
               <li><strong>Upstash:</strong> tu dirección IP, retenida brevemente, para evitar el uso abusivo de nuestros formularios (limitación de solicitudes). Upstash tiene su sede en Estados Unidos.</li>
               <li><strong>Vercel:</strong> aloja este sitio web y, como parte de ello, trata datos estándar de las solicitudes web, como tu dirección IP e información del navegador. Vercel tiene su sede en Estados Unidos.</li>

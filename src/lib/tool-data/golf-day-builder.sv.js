@@ -197,7 +197,10 @@ const data = {
      "Familjeaktivitet",
      "En aktivitet för golfare och medföljande"
     ],
-    "coaching": ["Play With A Pro","18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet."]
+    "coaching": [
+     "Play With A Pro",
+     "18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet."
+    ]
    }
   },
   "transport": {
@@ -493,7 +496,10 @@ const data = {
    "Familjeaktivitet",
    "Ett valfritt stopp nära banan. Plats, öppettider och restid kontrolleras när planen avtalas."
   ],
-  "coaching": ["Play With A Pro","18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet."],
+  "coaching": [
+   "Play With A Pro",
+   "18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet."
+  ],
   "lunch": [
    "Lång lunch",
    "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning."
@@ -501,14 +507,14 @@ const data = {
  },
  "plan": {
   "names": {
-   "efficient": "Effektiv golfdag",
-   "lunch": "Golf och lång lunch",
-   "experience": "Hela upplevelsen"
+   "efficient": "Endast golf",
+   "lunch": "Golf och lunch",
+   "experience": "Golf, lunch och ett extra stopp"
   },
   "taglines": {
-   "efficient": "Golf med tid för incheckning, spel och hemresa.",
-   "lunch": "Golf och ett föreslaget lunchstopp nära banan.",
-   "experience": "Golf och de extra aktiviteter du har valt."
+   "efficient": "En runda golf, med direkt återresa till ditt hotell efteråt.",
+   "lunch": "En runda golf med avsatt tid för lunch på {venue}.",
+   "experience": "Golf och lunch, med tid för de extra aktiviteter du har valt."
   },
   "time": {
    "depart": "{depart} (uppskattning)",
@@ -524,7 +530,7 @@ const data = {
    "earlyStart": "Golf på morgonen",
    "midStart": "Golf på förmiddagen",
    "pmStart": "Golf på eftermiddagen",
-   "afterActivities": "Efter aktiviteterna"
+   "afterActivities": "Till sist"
   },
   "title": {
    "depart": "Avfärd från ditt boende",
@@ -533,33 +539,38 @@ const data = {
    "return": "Hemfärd",
    "longLunch": "Föreslagen lunch",
    "relaxedReturn": "En avslappnad hemfärd",
-   "lunchBooked": "Föreslagen lunch",
+   "lunchBooked": "Lunchstopp att komma överens om",
    "beachOrVillage": "Strand- eller bytimme",
    "lastLight": "Hem i det sista ljuset",
    "warmupCoach": "Uppvärmning med coaching av mig",
    "warmupCoffee": "Uppvärmning och kaffe",
    "holes18": "18 hål på {course}",
-   "holes9": "9 hål på {course}"
+   "holes9": "9 hål på {course}",
+   "lunchAt": "Lunch på {venue}"
   },
   "desc": {
-"pwap": "18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet.",
-   "transfer": "Min lokala resepartner kan hjälpa till med transporter. Vi kommer överens om rutt, tider, kostnader och ansvar före bokning.",
+   "pwap": "18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet.",
+   "transfer": "Jag hjälper dig att planera en transfer utifrån ditt hotell och din starttid. Rutt, tider och pris bekräftas med dig.",
    "selfDrive": "Bekräfta hotellet och färdvägen innan avresetiden planeras.",
    "warmupCoach": "Uppvärmning eller coaching med mig, beroende på datum och banans faciliteter.",
    "warmupCoffee": "Tid för incheckning, uppvärmning och förberedelse inför rundan. Faciliteterna beror på banan.",
    "holeNote": " Observera: {note}",
    "clubhouse": "En avslappnad drink på terrassen medan scorekorten diskuteras.",
-   "returnEfficient": "Tillbaka till ditt boende efter aktiviteterna. Färdväg och restid beror på ditt hotell.",
-   "longLunch": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
-   "relaxedReturn": "Tillbaka till ditt boende efter aktiviteterna. Färdväg och restid beror på ditt hotell.",
-   "lunchBooked": "Ett bord nära banan, valt efter din starttid. En lokal resepartner kontrollerar öppettider, tillgänglighet och färdväg före bokning.",
+   "returnEfficient": "Tillbaka till ditt boende.",
+   "longLunch": "Jag föreslår en restaurang så snart banan och rutten är bestämda.",
+   "relaxedReturn": "Tillbaka till ditt boende.",
+   "lunchBooked": "Jag föreslår en restaurang så snart banan och rutten är bestämda.",
    "beachOrVillage": "Ett valfritt stopp nära banan. Plats, öppettider och restid kontrolleras när planen avtalas.",
-   "lastLight": "Tillbaka till ditt boende efter aktiviteterna. Färdväg och restid beror på ditt hotell.",
+   "lastLight": "Tillbaka till ditt boende.",
    "round18": "Räkna med cirka 4–5 timmar för 18 hål, plus incheckning och uppvärmning. Speltempo och dagsljus kontrolleras för ditt datum.",
    "round9": "Räkna med cirka 1½–2 timmar för 9 hål, plus incheckning och uppvärmning.",
    "shortNote": "Detta är ett kort golfpass. En hel golfdag kräver en lämplig längre bana och bekräftat tillträde.",
    "pmNote": "Eftermiddagsgolf lämnar lite tid efteråt. Extra aktiviteter och lunch sker före rundan; jag kontrollerar dagsljuset innan en starttid bekräftas.",
-   "accessNote": "Banans handicapgränser, tillgänglighet och färdväg kontrolleras före bokning."
+   "accessNote": "Banans handicapgränser, tillgänglighet och färdväg kontrolleras före bokning.",
+   "namedLunch": "Stanna kvar på banan för lunch. Jag kan boka ett bord på {venue} som passar din starttid.",
+   "returnGolfOnly": "Tillbaka till ditt boende efter rundan, utan några extra stopp inplanerade.",
+   "returnAfterLunch": "Tillbaka till ditt boende efter lunchen.",
+   "returnAfterStop": "Tillbaka till ditt boende efter ditt sista stopp."
   },
   "why": {
    "efficient": "{course}",
@@ -593,8 +604,8 @@ const data = {
   },
   "handles": {
    "tee": "Jag bekräftar och bokar golfen",
-   "table": "Restaurangalternativ kontrollerade med min lokala resepartner",
-   "transportYes": "Transportalternativ kontrollerade med min lokala resepartner",
+   "table": "Jag hjälper till att planera restaurangerna",
+   "transportYes": "Jag hjälper till att planera transfers",
    "transportNo": "Färdväg kontrollerad med din hotelladress",
    "buggies": "Klubb- och buggyhyra kontrollerad med banan",
    "coachingYes": "18 hål med mig, coaching under spelet och sedan video och skriftliga anteckningar. I mån av tillgänglighet.",

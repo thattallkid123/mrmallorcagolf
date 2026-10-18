@@ -69,7 +69,7 @@ describe('golf day planning rules', () => {
   test('an afternoon plan puts lunch and extras before golf, and returns afterwards', () => {
     for (const plan of buildItineraries(answers)) {
       const golf = plan.steps.findIndex(s => s.title.startsWith('18 holes'))
-      const lunch = plan.steps.findIndex(s => s.title === 'Suggested lunch')
+      const lunch = plan.steps.findIndex(s => /^Lunch at |^Lunch stop/.test(s.title))
       expect(golf).toBeGreaterThan(0)
       if (lunch >= 0) expect(lunch).toBeLessThan(golf)
       expect(plan.steps.at(-1).title).toBe('Return')
@@ -91,7 +91,7 @@ describe('golf day planning rules', () => {
       expect(plan).not.toHaveProperty('drive')
       const text = plan.steps.map(s => `${s.title} ${s.desc}`).join(' ')
       expect(text).not.toMatch(/\d+ minutes|table is booked|sit straight down|closest quality/i)
-      if (plan.key !== 'efficient') expect(text).toMatch(/local travel partner/i)
+      expect(text).not.toMatch(/local travel partner/i)
     }
   })
 

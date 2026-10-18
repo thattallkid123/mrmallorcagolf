@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Privacy Policy</h1>
-            <p className="legal-page__updated">Last updated: October 2026</p>
+            <p className="legal-page__updated">Last updated: 18 October 2026</p>
           </div>
 
           <section className="legal-section">
@@ -34,6 +34,7 @@ export default function PrivacyPolicy() {
               <li><strong>Pre-round questionnaire:</strong> your name, email address, handicap and your answers about your game, practice and goals. Age range and where you live are optional. The answers are emailed to us and used to plan your session.</li>
               <li><strong>Email and WhatsApp enquiries:</strong> your name and contact details when you reach out directly</li>
               <li><strong>Course Selector and email signup forms:</strong> your email address, and any optional information you choose to provide when requesting planning notes or shortlist follow-ups</li>
+              <li><strong>PDF guide requests:</strong> your email address, the guide you request and whether you opted into planning emails. We keep a separate record of guide requests and receive an email notification. Requesting a guide does not subscribe you to marketing emails.</li>
               <li><strong>Analytics data:</strong> anonymous usage data collected by Google Analytics (see Section 5)</li>
             </ul>
             <p>Trip cost enquiries also include your selected course mix, estimate and planning choices, such as hotel style, transport and buggy hire. They use the same private follow-up link.</p>
@@ -82,7 +83,7 @@ export default function PrivacyPolicy() {
             <p>We do not sell or rent your personal data to third parties. We share data with the following processors, only to the extent necessary to run this website and provide our services:</p>
             <ul>
               <li><strong>Google Analytics:</strong> pseudonymised usage data, as described in Section 5</li>
-              <li><strong>MailerLite:</strong> your email address and, depending on which form you use, trip details you provide (such as dates, group size, budget, or handicap) and any notes, to deliver results and &mdash; only if you opt in &mdash; our occasional planning-notes emails. MailerLite processes data within the EU.</li>
+              <li><strong>MailerLite:</strong> your email address and, depending on which form you use, trip details you provide (such as dates, group size, budget, or handicap) and any notes, to deliver results and &mdash; only if you opt in &mdash; our occasional planning-notes emails. MailerLite processes data within the EU. We also use MailerLite to keep guide-request records separately from marketing subscriptions.</li>
               <li><strong>Resend:</strong> the content of any contact, enquiry or questionnaire form you submit, to deliver it to us and, where applicable, send you a confirmation email. Resend is based in the United States.</li>
               <li><strong>Upstash:</strong> your IP address, held briefly, to prevent abuse of our forms (rate limiting). Upstash is based in the United States.</li>
               <li><strong>Vercel:</strong> hosts this website and, as part of that, processes standard web request data such as your IP address and browser information. Vercel is based in the United States.</li>

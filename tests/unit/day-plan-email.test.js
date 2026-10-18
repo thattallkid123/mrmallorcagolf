@@ -11,13 +11,13 @@ const post = data => POST(new Request('http://localhost:3000/api/send-itinerary'
 }))
 describe('day plan result email', () => {
   beforeEach(() => { process.env.RESEND_API_KEY='test-key'; send.mockReset().mockResolvedValue({data:{id:'test'},error:null}) })
-  test('keeps the route, daylight and partner caveats from the displayed plan', async () => {
+  test('keeps route and daylight context without repeating partner references', async () => {
     const plans = buildItineraries({region:'palma',dayStyle:'relaxed',level:'casual',handicap:'low',start:'pm',courseType:'close',addons:['village'],transport:'yes',group:'vip'})
     const response=await post({itineraries:plans.map(p=>({...p,courseName:p.course.name}))})
     expect(response.status).toBe(200)
     const html=send.mock.calls[0][0].html
     expect(html).toContain('daylight')
-    expect(html).toContain('local travel partner')
+    expect(html).not.toContain('local travel partner')
     expect(html).toContain('4–5 hours')
     expect(html).not.toContain('5 minutes')
     expect(html).not.toContain('table is booked')

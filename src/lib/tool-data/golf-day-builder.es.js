@@ -197,7 +197,10 @@ const data = {
      "Actividad familiar",
      "Una actividad para golfistas y acompañantes"
     ],
-    "coaching": ["Play With A Pro","18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad."]
+    "coaching": [
+     "Play With A Pro",
+     "18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad."
+    ]
    }
   },
   "transport": {
@@ -493,7 +496,10 @@ const data = {
    "Actividad familiar",
    "Una parada opcional cerca del campo. El lugar, los horarios y el desplazamiento se comprueban al acordar el plan."
   ],
-  "coaching": ["Play With A Pro","18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad."],
+  "coaching": [
+   "Play With A Pro",
+   "18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad."
+  ],
   "lunch": [
    "Almuerzo largo",
    "Una mesa cerca del campo, elegida según su hora de salida. Un colaborador local comprueba horarios, disponibilidad y desplazamientos antes de reservar."
@@ -501,14 +507,14 @@ const data = {
  },
  "plan": {
   "names": {
-   "efficient": "Día de golf eficiente",
-   "lunch": "Golf y largo almuerzo",
-   "experience": "Experiencia completa"
+   "efficient": "Solo golf",
+   "lunch": "Golf y comida",
+   "experience": "Golf, comida y una parada adicional"
   },
   "taglines": {
-   "efficient": "Golf con tiempo para registrarse, jugar y regresar.",
-   "lunch": "Golf y una comida sugerida cerca del campo.",
-   "experience": "Golf y las actividades extra que ha elegido."
+   "efficient": "Una vuelta de golf y, después, regreso directo a su hotel.",
+   "lunch": "Una vuelta de golf con tiempo reservado para comer en {venue}.",
+   "experience": "Golf y comida, con tiempo para las actividades adicionales que ha seleccionado."
   },
   "time": {
    "depart": "{depart} (estimación)",
@@ -524,7 +530,7 @@ const data = {
    "earlyStart": "Golf por la mañana",
    "midStart": "Golf a media mañana",
    "pmStart": "Golf por la tarde",
-   "afterActivities": "Después de las actividades"
+   "afterActivities": "Para terminar"
   },
   "title": {
    "depart": "Salida desde su alojamiento",
@@ -533,33 +539,38 @@ const data = {
    "return": "Regreso",
    "longLunch": "Comida sugerida",
    "relaxedReturn": "Un regreso tranquilo",
-   "lunchBooked": "Comida sugerida",
+   "lunchBooked": "Parada para comer por acordar",
    "beachOrVillage": "Hora de playa o de pueblo",
    "lastLight": "Regreso con la última luz",
    "warmupCoach": "Calentamiento con coaching conmigo",
    "warmupCoffee": "Calentamiento y café",
    "holes18": "18 hoyos en {course}",
-   "holes9": "9 hoyos en {course}"
+   "holes9": "9 hoyos en {course}",
+   "lunchAt": "Comida en {venue}"
   },
   "desc": {
-"pwap": "18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad.",
-   "transfer": "Mi colaborador local puede ayudar con los traslados. Acordamos ruta, horarios, costes y responsabilidades antes de reservar.",
+   "pwap": "18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad.",
+   "transfer": "Le ayudo a planificar un traslado en función de su hotel y su hora de salida. La ruta, los horarios y el precio se confirman con usted.",
    "selfDrive": "Confirme el hotel y la ruta antes de fijar la hora de salida.",
    "warmupCoach": "Una sesión de calentamiento o entrenamiento conmigo, según la fecha y las instalaciones del campo.",
    "warmupCoffee": "Tiempo para registrarse, calentar y prepararse para la vuelta. Las instalaciones dependen del campo.",
    "holeNote": " Nota: {note}",
    "clubhouse": "Una copa tranquila en la terraza mientras se discuten las tarjetas.",
-   "returnEfficient": "Regreso al alojamiento después de las actividades. La ruta y el tiempo de viaje dependen de su hotel.",
-   "longLunch": "Una mesa cerca del campo, elegida según su hora de salida. Un colaborador local comprueba horarios, disponibilidad y desplazamientos antes de reservar.",
-   "relaxedReturn": "Regreso al alojamiento después de las actividades. La ruta y el tiempo de viaje dependen de su hotel.",
-   "lunchBooked": "Una mesa cerca del campo, elegida según su hora de salida. Un colaborador local comprueba horarios, disponibilidad y desplazamientos antes de reservar.",
+   "returnEfficient": "Regrese a su alojamiento.",
+   "longLunch": "Le sugiero un restaurante en cuanto estén acordados el campo y la ruta.",
+   "relaxedReturn": "Regrese a su alojamiento.",
+   "lunchBooked": "Le sugiero un restaurante en cuanto estén acordados el campo y la ruta.",
    "beachOrVillage": "Una parada opcional cerca del campo. El lugar, los horarios y el desplazamiento se comprueban al acordar el plan.",
-   "lastLight": "Regreso al alojamiento después de las actividades. La ruta y el tiempo de viaje dependen de su hotel.",
+   "lastLight": "Regrese a su alojamiento.",
    "round18": "Calcule unas 4–5 horas para 18 hoyos, más el registro y el calentamiento. El ritmo de juego y las horas de luz se comprueban para su fecha.",
    "round9": "Calcule unas 1½–2 horas para 9 hoyos, más el registro y el calentamiento.",
    "shortNote": "Esta es una sesión corta de golf. Un día completo requiere un campo más largo adecuado y acceso confirmado.",
    "pmNote": "El golf de tarde deja poco tiempo después. Las actividades extra y la comida van antes de la vuelta; compruebo las horas de luz antes de confirmar la salida.",
-   "accessNote": "Los límites de hándicap del campo, la disponibilidad y la ruta se comprueban antes de reservar."
+   "accessNote": "Los límites de hándicap del campo, la disponibilidad y la ruta se comprueban antes de reservar.",
+   "namedLunch": "Quédese en el campo para comer. Puedo reservarle una mesa en {venue} que encaje con su hora de salida.",
+   "returnGolfOnly": "Regreso a su alojamiento después de la vuelta, sin paradas adicionales previstas.",
+   "returnAfterLunch": "Regrese a su alojamiento después de comer.",
+   "returnAfterStop": "Regrese a su alojamiento después de su última parada."
   },
   "why": {
    "efficient": "{course}",
@@ -593,8 +604,8 @@ const data = {
   },
   "handles": {
    "tee": "Confirmo y reservo el golf",
-   "table": "Opciones de restaurantes revisadas con mi colaborador local",
-   "transportYes": "Opciones de traslados revisadas con mi colaborador local",
+   "table": "Le ayudo a planificar los restaurantes",
+   "transportYes": "Le ayudo a planificar los traslados",
    "transportNo": "Ruta comprobada con la dirección de su hotel",
    "buggies": "Alquiler de palos y buggy consultado con el campo",
    "coachingYes": "18 hoyos conmigo, coaching durante el juego y después vídeo y notas escritas. Sujeto a disponibilidad.",

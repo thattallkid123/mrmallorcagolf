@@ -7,14 +7,14 @@
 // keys every overlay must supply (scripts/check-tool-data-localized.mjs checks it).
 export const EN_PLAN = {
   "names": {
-    "efficient": "Efficient golf day",
-    "lunch": "Golf & long lunch",
-    "experience": "Full experience"
+    "efficient": "Golf only",
+    "lunch": "Golf and lunch",
+    "experience": "Golf, lunch and an extra stop"
   },
   "taglines": {
-    "efficient": "Golf with time to check in, play and return.",
-    "lunch": "Golf and a suggested lunch stop near the course.",
-    "experience": "Golf and the extra activities you selected."
+    "efficient": "A round of golf, with a direct return to your hotel afterwards.",
+    "lunch": "A round of golf with time set aside for lunch at {venue}.",
+    "experience": "Golf and lunch, with time for the extra activities you selected."
   },
   "time": {
     "depart": "{depart} (estimate)",
@@ -30,7 +30,7 @@ export const EN_PLAN = {
     "earlyStart": "Morning golf",
     "midStart": "Mid-morning golf",
     "pmStart": "Afternoon golf",
-    "afterActivities": "After the activities"
+    "afterActivities": "To finish"
   },
   "title": {
     "depart": "Depart your accommodation",
@@ -39,33 +39,38 @@ export const EN_PLAN = {
     "return": "Return",
     "longLunch": "Suggested lunch",
     "relaxedReturn": "A relaxed return",
-    "lunchBooked": "Suggested lunch",
+    "lunchBooked": "Lunch stop to be agreed",
     "beachOrVillage": "Beach or village hour",
     "lastLight": "Return in the last of the light",
     "warmupCoach": "Check-in and warm-up",
     "warmupCoffee": "Warm-up and coffee",
     "holes18": "18 holes at {course}",
-    "holes9": "9 holes at {course}"
+    "holes9": "9 holes at {course}",
+    "lunchAt": "Lunch at {venue}"
   },
   "desc": {
-"pwap": "18 holes with me, with coaching during play, followed by video and written notes. Subject to availability.",
-    "transfer": "My local travel partner can help with transfers. Route, timings, costs and responsibility are agreed before booking.",
+    "pwap": "18 holes with me, with coaching during play, followed by video and written notes. Subject to availability.",
+    "transfer": "I’ll help plan a transfer around your hotel and tee time. The route, timing and price are confirmed with you.",
     "selfDrive": "Confirm the hotel and route before choosing a departure time.",
     "warmupCoach": "Time to check in and prepare for your round. Facilities depend on the course.",
     "warmupCoffee": "Time to check in, warm up and prepare for the round. Facilities depend on the course.",
     "holeNote": " Note: {note}",
     "clubhouse": "A relaxed drink on the terrace while the scorecards are disputed.",
-    "returnEfficient": "Return to your accommodation after the activities. The route and travel time depend on your hotel.",
-    "longLunch": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
-    "relaxedReturn": "Return to your accommodation after the activities. The route and travel time depend on your hotel.",
-    "lunchBooked": "A table near the course, chosen around your tee time. A local travel partner checks opening hours, availability and travel before booking.",
+    "returnEfficient": "Head back to your accommodation.",
+    "longLunch": "I’ll suggest a restaurant once your course and route are agreed.",
+    "relaxedReturn": "Head back to your accommodation.",
+    "lunchBooked": "I’ll suggest a restaurant once your course and route are agreed.",
     "beachOrVillage": "An optional stop near the course. Venue, opening hours and travel time are checked when the plan is agreed.",
-    "lastLight": "Return to your accommodation after the activities. The route and travel time depend on your hotel.",
+    "lastLight": "Head back to your accommodation.",
     "round18": "Allow roughly 4–5 hours for 18 holes, plus check-in and warm-up. Pace and daylight need checking for your date.",
     "round9": "Allow roughly 1½–2 hours for 9 holes, plus check-in and warm-up.",
     "shortNote": "This is a short golf session. A full golf day needs a suitable longer course and confirmed access.",
     "pmNote": "Afternoon golf leaves limited time afterwards. Extra activities and lunch come before the round; I check daylight before confirming a tee time.",
-    "accessNote": "Course-specific handicap limits, availability and the route are checked before booking."
+    "accessNote": "Course-specific handicap limits, availability and the route are checked before booking.",
+    "namedLunch": "Stay at the course for lunch. I can reserve a table at {venue} to fit your tee time.",
+    "returnGolfOnly": "Head back to your accommodation after the round, with no extra stops planned.",
+    "returnAfterLunch": "Head back to your accommodation after lunch.",
+    "returnAfterStop": "Head back to your accommodation after your final stop."
   },
   "why": {
     "efficient": "{course}",
@@ -99,8 +104,8 @@ export const EN_PLAN = {
   },
   "handles": {
     "tee": "I confirm and book the golf",
-    "table": "Restaurant options checked with my local travel partner",
-    "transportYes": "Transfer options checked with my local travel partner",
+    "table": "I help plan the restaurants",
+    "transportYes": "I help plan the transfers",
     "transportNo": "Route checked with your hotel address",
     "buggies": "Club and buggy hire checked with the course",
     "coachingYes": "18 holes with me, with coaching during play, followed by video and written notes. Subject to availability.",
