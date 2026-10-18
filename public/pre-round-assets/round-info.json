@@ -34,6 +34,7 @@
       "address": "Carretera del Faro, s/n, 07400 Port d'Alcúdia",
       "mapsQuery": "Club de Golf Alcanada Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 549 560",
         "email": "info@golf-alcanada.com"
@@ -44,7 +45,7 @@
         "hireBags": "Hire clubs are TaylorMade QI 4D. The hire bags have straps, so you can carry them.",
         "proShopOpens": "Reception and the pro shop open at 07:30.",
         "firstTee": "The first tee time is 08:00.",
-        "earlyTee": "When I have played the first tee times of the day, the pro shop, the driving range and the cafe bar have all been open.",
+        "earlyTee": "The pro shop, the driving range and the cafe bar are all open for the first tee times of the day.",
         "rangeOpens": "Toptracer range. Range balls are included in the green fee, and pyramids are prepared at the same hour the course opens.",
         "foodBeforeRound": "The restaurant opens at 08:00, some days a little earlier but not guaranteed. It is run by a separate operator; the club takes it over from 1 March 2027. Terrace with lighthouse views.",
         "water": "There are water fountains out on the course, so bring a bottle and refill it. The Lighthouse Bar halfway house sits between the 9th and 10th holes for drinks, beer, sandwiches and tapas.",
@@ -74,6 +75,7 @@
       "address": "Carrer Cromlec, 1, 07160 Camp de Mar",
       "mapsQuery": "Golf de Andratx Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 236 280",
         "email": "info@golfdeandratx.com"
@@ -113,6 +115,7 @@
       "address": "Carrer Campoamor, s/n, 07181 Bendinat",
       "mapsQuery": "Real Golf de Bendinat Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 405 200",
         "email": "info@realgolfbendinat.com"
@@ -155,6 +158,7 @@
       "address": "Ctra. Coves de s'Ermita, Km.8, 07589 Canyamel Platja",
       "mapsQuery": "Canyamel Golf Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 841 313",
         "email": "casaclub@canyamelgolf.com"
@@ -193,6 +197,7 @@
       "address": "Carretera Artà - Capdepera Km 3.5, 07570 Artà",
       "mapsQuery": "Capdepera Golf Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 818 500",
         "email": "info@golfcapdepera.com"
@@ -232,6 +237,7 @@
       "address": "Camí de Cabo Blanco, Km 7, 07609 Llucmajor",
       "mapsQuery": "Golf Maioris Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 748 315",
         "email": "recepcion@golfmaioris.es"
@@ -271,6 +277,7 @@
       "address": "Camí de Son Rapinya, 15, 07013 Palma",
       "mapsQuery": "Palma Pitch & Putt Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 606 175",
         "email": "golf.mallorca@arabellagolf.com"
@@ -281,7 +288,7 @@
         "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-18:30. Summer: 07:30-20:30.",
         "firstTee": "The earliest tee time bookable online is usually 07:40, the same as Son Quint.",
-        "earlyTee": "On the first tee time there was no chance to use the range before teeing off. Early mornings can be cold with dew still down, so bring a jacket.",
+        "earlyTee": "On the first tee time of the day there is little or no time to use the range before you tee off. Early mornings can be cold with dew still down, so bring a jacket.",
         "rangeOpens": "Uses the Son Quint driving range, under 100 metres away. Register at the pro shop before using the range.",
         "foodBeforeRound": "The restaurant opens at 08:00, so it is not open before the earliest tee times. In winter (from 26 October) the kitchen only starts at 09:00, so there is no cooked breakfast before then.",
         "water": "There is no halfway house, as it is only nine holes. Son Quint's clubhouse is nearby and has a water refill station.",
@@ -320,6 +327,7 @@
       "address": "Urb. Can Porquer, 30A, 07460 Pollença",
       "mapsQuery": "Golf Pollença Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 683 248 469",
         "email": "rec@golfpollensa.com"
@@ -360,6 +368,7 @@
       "address": "Predio de Pula, Ma-4040, s/n, km 2,3, 07550 Son Servera",
       "mapsQuery": "Pula Golf Resort Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 817 034",
         "email": "reservas@pulagolf.com"
@@ -403,6 +412,7 @@
       "address": "Camí de Bendrís, 3, 07500 Manacor",
       "mapsQuery": "Reserva Rotana Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 845 685",
         "email": "info@reservarotana.com"
@@ -440,6 +450,7 @@
       "address": "Carrer de Berenguer de Palou, 2, 07180 Santa Ponça",
       "mapsQuery": "Golf Santa Ponsa 1 Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 690 211",
         "email": "golf1@golf-santaponsa.com"
@@ -482,6 +493,7 @@
       "address": null,
       "mapsQuery": "Golf Santa Ponsa II",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": null,
       "info": {
         "checkInMinutes": 45,
@@ -512,6 +524,7 @@
       "address": "Ma-19, salida 20, 07620 Llucmajor",
       "mapsQuery": "Golf Son Antem East Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 129 200",
         "email": "mallorca.golfclub@vacationclub.com"
@@ -553,6 +566,7 @@
       "address": "Ma-19, salida 20, 07620 Llucmajor",
       "mapsQuery": "Golf Son Antem West Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 129 200",
         "email": "mallorca.golfclub@vacationclub.com"
@@ -592,6 +606,7 @@
       "address": "Ma 15 - Palma - Manacor, Km 11,5, 07199 Palma",
       "mapsQuery": "Golf Son Gual Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 785 888",
         "email": "info@son-gual.com"
@@ -602,7 +617,7 @@
         "hireBags": "Full hire sets with bags are available, and you can take them on the course. The course is long but easy to walk.",
         "proShopOpens": "Reception 08:30-18:00.",
         "firstTee": "The course opens at 09:00, so the first tee time is 09:00.",
-        "earlyTee": "On an early tee time, reception and the range were both open, but after checking in I did not have time to reach the range before we teed off. Arrive early if you want to warm up.",
+        "earlyTee": "On an early tee time, reception and the range are both open, but check-in takes a while, so there may not be time to reach the range before you tee off. Arrive early if you want to warm up.",
         "rangeOpens": "Range €20 including 72 balls, or a €4 token for 24 balls (€5 from 2027).",
         "foodBeforeRound": "The clubhouse and bar open at 08:30 for drinks, before the course opens at 09:00. Restaurant 13:00-20:30 (kitchen closes 19:00).",
         "water": "The terrace serves soup at the turn and the bar and bistro serve snacks all day. There is no free water at check-in. There are water filter stations at the clubhouse, at the end of the front nine, where you can refill a bottle.",
@@ -635,6 +650,7 @@
       "address": "Carrer Miquel Lladó, s/n, 07013 Palma",
       "mapsQuery": "Son Muntaner Mallorca",
       "pickerHidden": false,
+      "licenceUrl": "https://arabella.inone.es/forms/register",
       "contact": {
         "phone": "+34 971 783 030",
         "email": "golf.mallorca@arabellagolf.com"
@@ -648,7 +664,7 @@
         "rangeOpens": "Toptracer driving range on site. Register at the pro shop before using the range.",
         "foodBeforeRound": "Na Capitana opens at 08:00 and has a breakfast menu. In winter (from 26 October) the restaurant closes at 18:00 and the kitchen at 17:30; in summer it is open until 19:30.",
         "water": "Every clubhouse has a water refill station for your own bottle. The halfway houses open at 10:30 with drinks, snacks and another refill station.",
-        "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop: https://arabella.inone.es/forms/register. You can pay online or at the pro shop.",
+        "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop. You can pay online or at the pro shop.",
         "dressCode": "Collared polo shirt, long trousers or knee-length shorts, socks. No jeans, t-shirts, tracksuits or swimwear. Golf shoes with soft spikes only, no metal spikes.",
         "shoes": "Soft spikes only, no metal spikes.",
         "changingRooms": "Changing rooms and lockers are available, and there is a bag drop service.",
@@ -683,6 +699,7 @@
       "address": "Camí de Son Vida, 38, 07013 Palma",
       "mapsQuery": "Golf Son Quint Mallorca",
       "pickerHidden": false,
+      "licenceUrl": "https://arabella.inone.es/forms/register",
       "contact": {
         "phone": "+34 971 606 175",
         "email": "golf.mallorca@arabellagolf.com"
@@ -693,11 +710,11 @@
         "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-18:30. Summer: 07:30-20:30.",
         "firstTee": "The first tee time is usually 07:40.",
-        "earlyTee": "On the first tee time there was no chance to use the range before teeing off. Early mornings can be cold with dew still down, so bring a jacket.",
+        "earlyTee": "On the first tee time of the day there is little or no time to use the range before you tee off. Early mornings can be cold with dew still down, so bring a jacket.",
         "rangeOpens": "Driving range available for warm-up before play. Register at the pro shop before using the range.",
         "foodBeforeRound": "The restaurant opens at 08:00, so it is not open before the earliest tee times. In winter (from 26 October) the kitchen only starts at 09:00, so there is no cooked breakfast before then.",
         "water": "Every clubhouse has a water refill station for your own bottle. The halfway houses open at 10:30 with drinks, snacks and another refill station.",
-        "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop: https://arabella.inone.es/forms/register. You can pay online or at the pro shop.",
+        "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop. You can pay online or at the pro shop.",
         "dressCode": "Collared polo shirt, long trousers or knee-length shorts, socks. No jeans, t-shirts, tracksuits or swimwear. Golf shoes with soft spikes only, no metal spikes.",
         "shoes": "Soft spikes only, no metal spikes.",
         "changingRooms": "Changing rooms and lockers are available.",
@@ -732,6 +749,7 @@
       "address": "Carrer del Golf, 07559 Costa des Pins",
       "mapsQuery": "Golf Club Son Servera Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 840 096",
         "email": "reservas@golfsonservera.com"
@@ -775,6 +793,7 @@
       "address": "Carretera de Santa Maria, Km 10, 07193 S'Esgleieta",
       "mapsQuery": "Golf Son Termes Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 617 862",
         "email": "reservas@golfsontermes.com"
@@ -818,6 +837,7 @@
       "address": "Carrer Solleric, 1, 07013 Son Vida",
       "mapsQuery": "Golf Son Vida Mallorca",
       "pickerHidden": false,
+      "licenceUrl": "https://arabella.inone.es/forms/register",
       "contact": {
         "phone": "+34 971 791 210",
         "email": "golf.mallorca@arabellagolf.com"
@@ -831,7 +851,7 @@
         "rangeOpens": "Son Vida has no driving range, only a warm-up net. Arabella suggests the range at Son Quint (slightly closer; its pro shop opens at 07:30) or at Son Muntaner. Register at that pro shop before using the range.",
         "foodBeforeRound": "The restaurant opens at 08:00, so it is not open before the earliest tee times. In winter (from 26 October) the kitchen only starts at 09:00, so there is no cooked breakfast before then.",
         "water": "Every clubhouse has a water refill station for your own bottle. The halfway houses open at 10:30 with drinks, snacks and another refill station.",
-        "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop: https://arabella.inone.es/forms/register. You can pay online or at the pro shop.",
+        "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop. You can pay online or at the pro shop.",
         "dressCode": "Collared polo shirt, long trousers or knee-length shorts, socks. No jeans, t-shirts, tracksuits or swimwear. Golf shoes with soft spikes only, no metal spikes.",
         "shoes": "Soft spikes only, no metal spikes.",
         "changingRooms": "Changing rooms and lockers are available.",
@@ -866,6 +886,7 @@
       "address": "Camí Cala Figuera, s/n, 07181 Calvià",
       "mapsQuery": "T Golf Calvià (Poniente) Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 130 148",
         "email": "calvia@t-golf.club"
@@ -875,7 +896,7 @@
         "bringWater": "No need to bring water. Tees and water are provided.",
         "proShopOpens": "Course and driving range open 08:00-20:00.",
         "firstTee": "The first tee time is 07:30 from May to September, and around 08:00 in winter.",
-        "earlyTee": "I arrived before the pro shop had opened and waited for reception, then checked in and collected the buggy before teeing off. Allow time for this on an early tee time.",
+        "earlyTee": "For an early tee time the pro shop may not have opened when you arrive. Wait for reception, then check in and collect your buggy before you tee off, so allow time for this.",
         "rangeOpens": "Driving range 08:00-20:00. Range balls are not included: a token of 30 balls costs €5.",
         "foodBeforeRound": "T-elicious restaurant in the clubhouse. The bar opens at 09:00, so nothing is on offer before an early start.",
         "water": "Tees and water are provided.",
@@ -907,6 +928,7 @@
       "address": "Camí Vell de Sineu, Km 10, 07198 Palma",
       "mapsQuery": "T Golf Palma (Puntiró) Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 797 330",
         "email": "palma@t-golf.club"
@@ -915,7 +937,7 @@
         "checkInMinutes": 45,
         "bringWater": "A water bottle. The halfway house is open 11:00 to 16:00 in peak season, and there is a drinks cart on the course.",
         "proShopOpens": "Course open 08:00-20:00 in summer, 08:00-18:00 in winter.",
-        "firstTee": "07:30 was the first tee time of the day when I played.",
+        "firstTee": "The first tee time of the day is usually 07:30.",
         "earlyTee": "The course opens 08:00 and the restaurant 08:30, yet 07:30 tee times are sold, so an early group has no coffee and may have no range. The first tee time of the day is 07:30.",
         "rangeOpens": "Driving range 08:00-18:00; on Tuesdays it closes at 16:00. The range, pitching and putting areas are included with a 9 or 18-hole green fee on the same day; otherwise the practice fee is €15 per person. Range balls are not included: a token of 30 balls costs €5 (Wilson Premium balls).",
         "foodBeforeRound": "Restaurant opens 08:30 (summer 08:30-20:00, winter 08:30-19:00); the kitchen runs 11:00-19:00 in summer, 11:00-17:45 in winter. Nothing is open before 08:30.",
@@ -950,6 +972,7 @@
       "address": "Ctra Cala d'Or - Portocolom, Km 7,7, 07669 Felanitx",
       "mapsQuery": "Vall d'Or Golf Mallorca",
       "pickerHidden": false,
+      "licenceUrl": null,
       "contact": {
         "phone": "+34 971 837 001",
         "email": "valldorgolf@valldorgolf.com"

@@ -60,23 +60,37 @@ h2 { font-family: var(--font-serif); font-weight: 600; font-size: 1.45rem; color
 .checkin strong { color: var(--gold-light); font-weight: 500; }
 .notice { margin-top: 12px; background: #FBF1DC; border: 1px solid var(--gold); border-radius: 6px; padding: 12px 16px; }
 .notice strong { color: var(--deep); font-weight: 500; }
-.round { border-bottom: 1px solid var(--sand); padding-bottom: 28px; margin-bottom: 28px; display: grid; grid-template-columns: minmax(0, 1fr); gap: 20px; }
-.round .body { min-width: 0; max-width: 720px; }
-.rail .map { position: relative; display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--sand); background: var(--linen); }
-.rail .map img { display: block; width: 100%; height: 190px; object-fit: cover; }
-.rail .chip { position: absolute; left: 10px; bottom: 10px; background: var(--pine); color: var(--cream); font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 7px 11px; border-radius: 999px; }
-.rail .addr { margin-top: 10px; }
-@media (min-width: 980px) {
-  .round { grid-template-columns: 300px minmax(0, 720px); column-gap: 40px; }
-  .rail { position: sticky; top: 20px; align-self: start; }
-  .rail .map img { height: 225px; }
-}
+.round { border-bottom: 1px solid var(--sand); padding-bottom: 32px; margin-bottom: 32px; }
 .round:last-of-type { border-bottom: 0; }
-dl { display: block; }
-.item { background: #fff; border: 1px solid var(--sand); border-radius: 6px; padding: 10px 14px; break-inside: avoid; margin-bottom: 10px; }
-.item dd + dd { margin-top: 6px; }
+.cols { display: grid; grid-template-columns: minmax(0, 1fr); gap: 8px; margin-top: 8px; }
+.rail .map { position: relative; display: block; border-radius: 8px; overflow: hidden; border: 1px solid var(--sand); background: var(--linen); }
+.rail .map img { display: block; width: 100%; height: 240px; object-fit: cover; }
+.rail .chip { position: absolute; left: 12px; bottom: 12px; background: var(--pine); color: var(--cream); font-size: 11px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; padding: 8px 13px; border-radius: 999px; }
+.rail .addr { margin-top: 10px; }
+.railbox { margin-top: 18px; padding-top: 4px; border-top: 1px solid var(--sand); }
+.railbox h2 { font-size: 1.25rem; margin: 14px 0 4px; }
+.railbox p { font-size: 0.95rem; }
+.rail .share { margin-top: 18px; }
+@media (min-width: 900px) {
+  .cols { grid-template-columns: 400px minmax(0, 1fr); column-gap: 48px; }
+  .rail { position: sticky; top: 20px; align-self: start; }
+  .rail .map img { height: 300px; }
+  .hero img { aspect-ratio: 16 / 6; }
+}
+dl { display: block; background: #fff; border: 1px solid var(--sand); border-radius: 8px; }
+.item { padding: 14px 18px; border-top: 1px solid var(--sand); }
+.item:first-child { border-top: 0; }
+.item dd + dd { margin-top: 8px; }
 dt { font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #6B6157; }
 dd { margin-top: 2px; }
+dd .btn { margin-top: 2px; }
+@media (min-width: 640px) {
+  .item { display: grid; grid-template-columns: 170px minmax(0, 1fr); column-gap: 24px; }
+  .item dt { grid-column: 1; grid-row: 1 / span 4; padding-top: 3px; }
+  .item dd { grid-column: 2; margin-top: 0; }
+  .item dd + dd { margin-top: 8px; }
+}
+.body h2:first-child { margin-top: 18px; }
 ul.bring { list-style: none; display: grid; gap: 6px; }
 ul.bring li { padding-left: 22px; position: relative; }
 ul.bring li::before { content: ''; position: absolute; left: 4px; top: 0.7em; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); }
@@ -178,7 +192,8 @@ const UI = {
     "whatsapp": "WhatsApp Andy",
     "loading": "Loading your round...",
     "error": "This page could not load. Message me on <a href=\"{wa}\">WhatsApp</a> and I will send the details directly.",
-    "l_hireBags": "Hire clubs and bags"
+    "l_hireBags": "Hire clubs and bags",
+    "licence_link": "Register online"
   },
   "de": {
     "l_dressShoes": "Kleiderordnung und Schuhe",
@@ -243,7 +258,8 @@ const UI = {
     "whatsapp": "WhatsApp Andy",
     "loading": "Ihre Runde wird geladen ...",
     "error": "Diese Seite konnte nicht geladen werden. Schreiben Sie mir per <a href=\"{wa}\">WhatsApp</a>, dann schicke ich Ihnen die Details direkt.",
-    "l_hireBags": "Leihschläger und Taschen"
+    "l_hireBags": "Leihschläger und Taschen",
+    "licence_link": "Online registrieren"
   },
   "es": {
     "l_dressShoes": "Código de vestimenta y calzado",
@@ -308,7 +324,8 @@ const UI = {
     "whatsapp": "WhatsApp a Andy",
     "loading": "Cargando su vuelta...",
     "error": "No se ha podido cargar esta página. Escríbame por <a href=\"{wa}\">WhatsApp</a> y le enviaré los detalles directamente.",
-    "l_hireBags": "Palos de alquiler y bolsas"
+    "l_hireBags": "Palos de alquiler y bolsas",
+    "licence_link": "Registrarse en línea"
   },
   "fr": {
     "l_dressShoes": "Tenue et chaussures",
@@ -373,7 +390,8 @@ const UI = {
     "whatsapp": "WhatsApp Andy",
     "loading": "Chargement de votre partie...",
     "error": "Cette page n’a pas pu se charger. Écrivez-moi sur <a href=\"{wa}\">WhatsApp</a> et je vous enverrai directement les détails.",
-    "l_hireBags": "Clubs de location et sacs"
+    "l_hireBags": "Clubs de location et sacs",
+    "licence_link": "S’inscrire en ligne"
   },
   "nl": {
     "l_dressShoes": "Kledingvoorschrift en schoenen",
@@ -438,7 +456,8 @@ const UI = {
     "whatsapp": "WhatsApp Andy",
     "loading": "Uw ronde wordt geladen...",
     "error": "Deze pagina kon niet worden geladen. Stuur mij een bericht via <a href=\"{wa}\">WhatsApp</a>, dan stuur ik u de gegevens rechtstreeks.",
-    "l_hireBags": "Huurclubs en tassen"
+    "l_hireBags": "Huurclubs en tassen",
+    "licence_link": "Online registreren"
   },
   "sv": {
     "l_dressShoes": "Klädsel och skor",
@@ -503,7 +522,8 @@ const UI = {
     "whatsapp": "WhatsApp Andy",
     "loading": "Laddar din runda...",
     "error": "Sidan kunde inte laddas. Skriv till mig på <a href=\"{wa}\">WhatsApp</a> så skickar jag detaljerna direkt.",
-    "l_hireBags": "Hyrklubbor och bagar"
+    "l_hireBags": "Hyrklubbor och bagar",
+    "licence_link": "Registrera online"
   },
   "zh": {
     "l_dressShoes": "着装与球鞋",
@@ -568,7 +588,8 @@ const UI = {
     "whatsapp": "通过 WhatsApp 联系 Andy",
     "loading": "正在加载您的球局……",
     "error": "此页面无法加载。请通过 <a href=\"{wa}\">WhatsApp</a> 给我发消息，我会直接把详细信息发给您。",
-    "l_hireBags": "租杆和球包"
+    "l_hireBags": "租杆和球包",
+    "licence_link": "在线登记"
   }
 };
 // END GENERATED UI
@@ -664,12 +685,12 @@ function renderRound(course, round, closures) {
   const valueFor = f => (season && seasonal[f] && seasonal[f][season]) || info[f];
   const when = [niceDate(round.d), round.t ? `${ui('teeTime')} ${esc(round.t)}` : ''].filter(Boolean).join(LANG === 'zh' ? '，' : ', ');
   // A course photo from the website with the title over it; courses with no photo keep the plain title.
-  let html = course.hero
+  let head = course.hero
     ? `<figure class="hero"><img src="/pre-round-assets/hero/${esc(round.c)}.webp" alt="${esc(ui('photoalt', { name: course.name }))}" width="1000" height="500"><figcaption class="cap"><div class="eyebrow">${ui('eyebrow')}</div><h1>${esc(course.name)}</h1></figcaption></figure>`
     : `<div class="eyebrow">${ui('eyebrow')}</div><h1>${esc(course.name)}</h1>`;
-  if (when) html += `<div class="when">${when}</div>`;
+  if (when) head += `<div class="when">${when}</div>`;
   (closures || []).filter(c => round.d && (c.courses || []).includes(round.c) && round.d >= c.from && round.d <= c.to)
-    .forEach(c => { html += `<div class="notice"><strong>${ui('note')}</strong>${LANG === 'zh' ? '' : ' '}${esc(tx(c.text))}</div>`; });
+    .forEach(c => { head += `<div class="notice"><strong>${ui('note')}</strong>${LANG === 'zh' ? '' : ' '}${esc(tx(c.text))}</div>`; });
   if (info.checkInMinutes) {
     const by = minusMinutes(round.t, info.checkInMinutes);
     const advice = (info.arrivalPoint ? ui('meet_note', { n: info.checkInMinutes }) : ui('checkin_note', { n: info.checkInMinutes })).trim();
@@ -677,15 +698,17 @@ function renderRound(course, round, closures) {
       // Summary strip: when to be there, the tee time, and when the range opens if the answer says so plainly.
       const rt = rangeTime(valueFor('rangeOpens'));
       const tile = (k, v, sub) => `<div class="tile"><div class="k">${k}</div><div class="v">${esc(v)}</div>${sub ? `<div class="s">${sub}</div>` : ''}</div>`;
-      html += `<div class="checkin"><div class="tiles">`
+      head += `<div class="checkin"><div class="tiles">`
         + (info.arrivalPoint ? tile(ui('t_there'), by) : tile(ui('t_checkin'), by, ui('t_proshop')))
         + tile(ui('t_tee'), round.t) + (rt ? tile(ui('t_range'), rt) : '')
         + `</div><div class="advice">${advice}</div></div>`;
     } else {
       const main = info.arrivalPoint ? ui('meet_plain') : ui('checkin_plain') + '.';
-      html += `<div class="checkin"><div class="main">${main}</div><div class="advice">${advice}</div></div>`;
+      head += `<div class="checkin"><div class="main">${main}</div><div class="advice">${advice}</div></div>`;
     }
   }
+  let shareBtn = '';
+  let contactHtml = '';
   // A WhatsApp message a client can send to the people they are playing with: course, day, when to be there, directions, and this page.
   {
     const by = round.t && info.checkInMinutes ? minusMinutes(round.t, info.checkInMinutes) : null;
@@ -696,16 +719,17 @@ function renderRound(course, round, closures) {
     if (place) lines.push(ui('msg_dir') + ': https://www.google.com/maps/dir/?api=1&destination=' + place);
     const part = [round.c, round.d || '', round.t ? round.t.replace(':', '') : ''].join('~').replace(/~+$/, '');
     lines.push(ui('msg_all') + ': ' + location.origin + location.pathname + '?r=' + part + (LANG !== 'en' ? '&lang=' + LANG : ''));
-    html += `<div class="btns share"><a class="btn alt" href="https://wa.me/?text=${encodeURIComponent(lines.join('\n'))}" target="_blank" rel="noopener">${ui('share')}</a></div>`;
+    shareBtn = `<div class="btns share"><a class="btn alt" href="https://wa.me/?text=${encodeURIComponent(lines.join('\n'))}" target="_blank" rel="noopener">${ui('share')}</a></div>`;
   }
 
+  let html = '';
   let any = false;
   GROUPS.forEach(([title, fields]) => {
     const rows = fields.filter(f => valueFor(f) && !(f === 'shoes' && valueFor('dressCode')));
     if (!rows.length) return;
     any = true;
     const card = f => {
-      if (f !== 'dressCode') return `<div class="item"><dt>${ui('l_' + f)}</dt><dd>${linkify(tx(valueFor(f)))}</dd></div>`;
+      if (f !== 'dressCode') return `<div class="item"><dt>${ui('l_' + f)}</dt><dd>${linkify(tx(valueFor(f)))}</dd>${f === 'licence' && course.licenceUrl ? `<dd><a class="btn alt" href="${esc(course.licenceUrl)}" target="_blank" rel="noopener">${ui('licence_link')} &#8599;</a></dd>` : ''}</div>`;
       // One card for the clothing and the shoes; the shoe rule is left out when the dress code already says it.
       const shoes = valueFor('shoes');
       const dup = shoes && flat(valueFor('dressCode')).includes(flat(shoes));
@@ -717,10 +741,10 @@ function renderRound(course, round, closures) {
   html += `<h2>${ui('g_bring')}</h2><ul class="bring">` + bringList(course, round).map(i => `<li>${esc(i)}</li>`).join('') + '</ul>';
   if (course.contact && (course.contact.phone || course.contact.email)) {
     const tel = String(course.contact.phone || '').replace(/[^\d+]/g, '');
-    html += `<h2>${ui('contact_h')}</h2><p>${ui('contact_p')}</p><div class="btns">`
+    contactHtml = `<div class="railbox"><h2>${ui('contact_h')}</h2><p>${ui('contact_p')}</p><div class="btns">`
       + (tel ? `<a class="btn alt" href="tel:${tel}">${ui('call')}</a>` : '')
       + (course.contact.email ? `<a class="btn alt" href="mailto:${esc(course.contact.email)}">${ui('emailclub')}</a>` : '')
-      + '</div>';
+      + '</div></div>';
   }
   // The map picture on the left (on a phone, above everything): tap it for directions in Google Maps. It is centred on the
   // club pin Google gives (its clubhouse; Santa Ponsa 2 is the gate), and the route goes to the same point.
@@ -729,8 +753,9 @@ function renderRound(course, round, closures) {
   const rail = (course.map && mapLink
     ? `<a class="map" href="${mapLink}" target="_blank" rel="noopener" aria-label="${esc(ui('directions'))}"><img src="/pre-round-assets/maps/${esc(round.c)}.jpg" alt="${esc(ui('mapalt', { name: course.name }))}" width="640" height="480" loading="lazy"><span class="chip">${ui('directions')} &#8599;</span></a>`
     : (mapLink ? `<a class="btn" href="${mapLink}" target="_blank" rel="noopener">${ui('directions')}</a>` : ''))
-    + (course.address ? `<div class="addr">${esc(course.address)}</div>` : '');
-  return `<section class="round"><aside class="rail">${rail}</aside><div class="body">${html}</div></section>`;
+    + (course.address ? `<div class="addr">${esc(course.address)}</div>` : '')
+    + contactHtml + shareBtn;
+  return `<section class="round"><div class="top">${head}</div><div class="cols"><aside class="rail">${rail}</aside><div class="body">${html}</div></div></section>`;
 }
 
 function renderPicker(data) {
