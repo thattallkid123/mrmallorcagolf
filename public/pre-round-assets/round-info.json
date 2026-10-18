@@ -137,7 +137,7 @@
         "bringWater": "A water bottle and a few coins. There is a refill at the pro shop but no fountains on the course, and the vending machines on the course sell water for cash only.",
         "hireBags": "Hire bags have one strap. The course is hilly, so most players take a buggy. There are only a few hire sets, so reserve them in advance.",
         "buggyTrolley": "Buggies and manual trolleys are available.",
-        "proShopOpens": "I expect the pro shop to open about 15 minutes before the first tee time, around 08:55.",
+        "proShopOpens": "The pro shop opens at about 08:30.",
         "firstTee": "The first starting time is 09:10.",
         "rangeOpens": "The driving range opens at 08:00 every day except Tuesday, when it opens at 09:00.",
         "foodBeforeRound": "The restaurant opens at 10:30. The pro shop has a coffee machine and a water refill.",
@@ -149,13 +149,10 @@
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
         "flights": "The club can advise for a specific day and time.",
-        "arrivalNotes": "A club card showing a handicap of 36 or lower is required. Only 50 visitor green fees are sold a day, so the course is never crowded. Dogs are not allowed."
+        "arrivalNotes": "A club card showing a handicap of 36 or lower is required. Visitor green fees are limited each day, so book ahead."
       },
       "seasonal": {},
-      "toCheck": [
-        "proShopOpens",
-        "arrivalNotes"
-      ],
+      "toCheck": [],
       "filtered": []
     },
     "canyamel": {
@@ -428,14 +425,12 @@
       },
       "info": {
         "checkInMinutes": 30,
-        "bringWater": "A water bottle. There is a halfway house on the course.",
         "hireBags": "Hire clubs are subject to availability. The club checks for a carry bag with a double strap before your tee time.",
         "buggyTrolley": "Buggies, a single-rider scooter, push trolleys and electric trolleys are available.",
         "proShopOpens": "The pro shop opens at 07:30.",
         "firstTee": "The earliest tee time available online is 08:03.",
         "rangeOpens": "Trackman Range and putting greens.",
         "foodBeforeRound": "The restaurant opens at 07:30, so you can have a coffee or buy water before an early round. S'Era de Pula terrace is by the putting green.",
-        "water": "There is a halfway house on the course.",
         "licence": "No extra daily fee for golf insurance or a licence.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course. Palma Pitch & Putt is the only relaxed course.",
         "shoes": "Soft spikes are necessary.",
@@ -447,8 +442,6 @@
       },
       "seasonal": {},
       "toCheck": [
-        "rangeOpens",
-        "water",
         "changingRooms"
       ],
       "filtered": []
@@ -488,11 +481,7 @@
         "arrivalNotes": "The course is reserved for hotel guests and there are no tee times. The hotel opens March to November."
       },
       "seasonal": {},
-      "toCheck": [
-        "foodBeforeRound",
-        "flights",
-        "arrivalNotes"
-      ],
+      "toCheck": [],
       "filtered": []
     },
     "santa_ponsa": {
@@ -536,10 +525,7 @@
         "arrivalNotes": "An official handicap is required to play."
       },
       "seasonal": {},
-      "toCheck": [
-        "hireBags",
-        "dressCode"
-      ],
+      "toCheck": [],
       "filtered": []
     },
     "santa_ponsa2": {
@@ -576,9 +562,7 @@
         "payment": "Cards are accepted at the club."
       },
       "seasonal": {},
-      "toCheck": [
-        "dressCode"
-      ],
+      "toCheck": [],
       "filtered": []
     },
     "son_antem_e": {
@@ -702,7 +686,7 @@
         "earlyTee": "On an early tee time, reception and the range are both open, but check-in takes a while, so there may not be time to reach the range before you tee off. Arrive early if you want to warm up.",
         "rangeOpens": "Range €20 including 72 balls, or a €4 token for 24 balls (€5 from 2027).",
         "foodBeforeRound": "The clubhouse and bar open at 08:30 for drinks, before the course opens at 09:00. Restaurant 13:00-20:30 (kitchen closes 19:00).",
-        "water": "The terrace serves soup at the turn and the bar and bistro serve snacks all day. There is no free water at check-in. There are water filter stations at the clubhouse, at the end of the front nine, where you can refill a bottle.",
+        "water": "There is no free water at check-in. There are water filter stations at the clubhouse, at the end of the front nine, where you can refill a bottle.",
         "licence": "A daily licence is not required for foreign players.",
         "dressCode": "Golf clothing is required, and hard spikes are not allowed.",
         "shoes": "Hard spikes are not allowed.",
@@ -714,7 +698,6 @@
       },
       "seasonal": {},
       "toCheck": [
-        "water",
         "arrivalNotes"
       ],
       "filtered": []
@@ -881,14 +864,12 @@
       },
       "info": {
         "checkInMinutes": 45,
-        "bringWater": "A refillable bottle. There are water refill points along the course.",
         "hireBags": "Hire bags are standard bags. You can carry them without a trolley, but the club recommends renting a manual trolley.",
         "buggyTrolley": "Buggies, push trolleys and electric trolleys are available.",
         "proShopOpens": "Reception, the pro shop and the first tee time are all 08:00.",
         "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "Driving range closed on Wednesdays for mowing.",
         "foodBeforeRound": "The restaurant opens at 08:30, so it is not open for the earliest tee times. Costa de los Pinos has a terrace over the 18th and the sea.",
-        "water": "There are water refill points along the course.",
         "licence": "The club does not list a separate daily licence charge.",
         "dressCode": "Appropriate golf clothing.",
         "shoes": "Soft spikes only. Metal spikes are not allowed.",
@@ -896,13 +877,11 @@
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
         "flights": "In high season tee times are organised in groups of four, so a fourth player may join a group of three.",
-        "arrivalNotes": "Wheelchair accessible throughout. Dogs are not allowed."
+        "arrivalNotes": "Dogs are not allowed. GPS devices are allowed."
       },
       "seasonal": {},
       "toCheck": [
-        "water",
-        "changingRooms",
-        "arrivalNotes"
+        "changingRooms"
       ],
       "filtered": []
     },
