@@ -33,10 +33,16 @@ a { color: var(--pine); font-weight: 500; }
 .topbar { background: var(--deep); min-height: 70px; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; color: var(--stone); font-size: 11px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .topbar-brand { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: var(--gold-light); text-decoration: none; }
 .topbar img { height: 36px; width: 36px; display: block; filter: brightness(0) invert(1); }
-.langs { margin-left: auto; display: flex; gap: 2px; }
-@media (max-width: 560px) { .topbar span { display: none; } .langs a { min-width: 32px; } }
-.langs a { color: var(--stone); text-decoration: none; font-weight: 400; min-width: 34px; min-height: 44px; display: inline-flex; align-items: center; justify-content: center; border: 1px solid transparent; border-radius: 999px; }
-.langs a.on { border-color: var(--stone); color: var(--cream); }
+.langs { margin-left: auto; position: relative; }
+.langs summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid var(--stone); border-radius: 999px; color: var(--cream); font-weight: 400; }
+.langs summary::-webkit-details-marker { display: none; }
+.langs summary::after { content: ''; width: 7px; height: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-2px); }
+.langs[open] summary::after { transform: rotate(225deg); }
+.langs .menu { position: absolute; right: 0; top: calc(100% + 8px); z-index: 10; min-width: 190px; background: var(--deep); border: 1px solid #3a3733; border-radius: 8px; padding: 6px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35); }
+.langs .menu a { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; padding: 0 12px; border-radius: 6px; color: var(--stone); text-decoration: none; font-weight: 400; letter-spacing: 0.04em; text-transform: none; font-size: 14px; }
+.langs .menu a:hover { background: #2a2825; color: var(--cream); }
+.langs .menu a.on { color: var(--gold-light); }
+.backlink { display: inline-flex; align-items: center; min-height: 44px; margin: 0 0 4px; font-size: 0.95rem; }
 main { max-width: 1080px; margin: 0 auto; padding: 28px 16px 48px; }
 .narrow { max-width: 720px; }
 .eyebrow { color: var(--gold); font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -107,7 +113,7 @@ footer { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--sand);
 </style>
 </head>
 <body>
-<header class="topbar"><a class="topbar-brand" href="https://www.mrmallorcagolf.com" aria-label="Mr Mallorca Golf home"><img src="/logo-white-96.webp" alt="" width="36" height="36"><span>Mr Mallorca Golf</span></a><nav class="langs" id="langs" aria-label="Language"></nav></header>
+<header class="topbar"><a class="topbar-brand" href="https://www.mrmallorcagolf.com" aria-label="Mr Mallorca Golf home"><img src="/logo-white-96.webp" alt="" width="36" height="36"><span>Mr Mallorca Golf</span></a><details class="langs" id="langs"></details></header>
 <main id="app" aria-live="polite" aria-busy="true"><p class="eyebrow">Your round</p><h1>Arrival notes</h1><p>Choose your course to see when to arrive, what is open and what to bring.</p><p class="muted">Loading your round...</p></main>
 <noscript><p>Message me on <a href="https://wa.me/34624466702">WhatsApp</a> and I will send the details directly.</p></noscript>
 <script>
@@ -118,7 +124,7 @@ footer { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--sand);
 const WHATSAPP = 'https://wa.me/34624466702';
 const GROUPS = [
   ['g_before', ['licence']],
-  ['g_arrive', ['arrivalPoint', 'proShopOpens', 'firstTee', 'earlyTee', 'rangeOpens', 'foodBeforeRound', 'restaurants', 'changingRooms', 'parking', 'payment']],
+  ['g_arrive', ['arrivalPoint', 'proShopOpens', 'earlyTee', 'rangeOpens', 'foodBeforeRound', 'restaurants', 'changingRooms', 'parking', 'payment']],
   ['g_course', ['water', 'dressCode', 'shoes', 'hireBags', 'flights', 'arrivalNotes']]
 ];
 
@@ -196,7 +202,8 @@ const UI = {
     "licence_link": "Register online",
     "l_restaurants": "Restaurants",
     "guide_link": "Guide to the facilities",
-    "rental_link": "Rental conditions (PDF, in Spanish)"
+    "rental_link": "Rental conditions (PDF, in Spanish)",
+    "all_courses": "Other courses"
   },
   "de": {
     "l_dressShoes": "Kleiderordnung und Schuhe",
@@ -265,7 +272,8 @@ const UI = {
     "licence_link": "Online registrieren",
     "l_restaurants": "Restaurants",
     "guide_link": "Leitfaden zur Anlage",
-    "rental_link": "Mietbedingungen (PDF, auf Spanisch)"
+    "rental_link": "Mietbedingungen (PDF, auf Spanisch)",
+    "all_courses": "Andere Plätze"
   },
   "es": {
     "l_dressShoes": "Código de vestimenta y calzado",
@@ -334,7 +342,8 @@ const UI = {
     "licence_link": "Registrarse en línea",
     "l_restaurants": "Restaurantes",
     "guide_link": "Guía de las instalaciones",
-    "rental_link": "Condiciones de alquiler (PDF)"
+    "rental_link": "Condiciones de alquiler (PDF)",
+    "all_courses": "Otros campos"
   },
   "fr": {
     "l_dressShoes": "Tenue et chaussures",
@@ -403,7 +412,8 @@ const UI = {
     "licence_link": "S’inscrire en ligne",
     "l_restaurants": "Restaurants",
     "guide_link": "Guide des installations",
-    "rental_link": "Conditions de location (PDF, en espagnol)"
+    "rental_link": "Conditions de location (PDF, en espagnol)",
+    "all_courses": "Autres parcours"
   },
   "nl": {
     "l_dressShoes": "Kledingvoorschrift en schoenen",
@@ -472,7 +482,8 @@ const UI = {
     "licence_link": "Online registreren",
     "l_restaurants": "Restaurants",
     "guide_link": "Gids voor de faciliteiten",
-    "rental_link": "Huurvoorwaarden (pdf, in het Spaans)"
+    "rental_link": "Huurvoorwaarden (pdf, in het Spaans)",
+    "all_courses": "Andere banen"
   },
   "sv": {
     "l_dressShoes": "Klädsel och skor",
@@ -541,7 +552,8 @@ const UI = {
     "licence_link": "Registrera online",
     "l_restaurants": "Restauranger",
     "guide_link": "Guide till faciliteterna",
-    "rental_link": "Hyresvillkor (PDF, på spanska)"
+    "rental_link": "Hyresvillkor (PDF, på spanska)",
+    "all_courses": "Andra banor"
   },
   "zh": {
     "l_dressShoes": "着装与球鞋",
@@ -610,7 +622,8 @@ const UI = {
     "licence_link": "在线登记",
     "l_restaurants": "餐厅",
     "guide_link": "设施指南",
-    "rental_link": "租赁条款（PDF，西班牙语）"
+    "rental_link": "租赁条款（PDF，西班牙语）",
+    "all_courses": "其他球场"
   }
 };
 // END GENERATED UI
@@ -778,7 +791,7 @@ function renderRound(course, round, closures) {
     + (course.address ? `<div class="addr">${esc(course.address)}</div>` : '')
     + (course.guideUrl ? `<div class="btns guide"><a class="btn alt" href="${esc(course.guideUrl)}" target="_blank" rel="noopener">${ui('guide_link')} &#8599;</a></div>` : '')
     + contactHtml + shareBtn;
-  return `<section class="round"><div class="top">${head}</div><div class="cols"><aside class="rail">${rail}</aside><div class="body">${html}</div></div></section>`;
+  return `<section class="round"><div class="top"><a class="backlink" href="?${LANG !== 'en' ? 'lang=' + LANG : ''}">&larr; ${ui('all_courses')}</a>${head}</div><div class="cols"><aside class="rail">${rail}</aside><div class="body">${html}</div></div></section>`;
 }
 
 function renderPicker(data) {
@@ -792,10 +805,13 @@ async function main() {
   const app = document.getElementById('app');
   document.documentElement.lang = LANG;
   document.title = ui('title');
-  document.getElementById('langs').innerHTML = SUPPORTED.map(l => {
+  const NAMES = { en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', nl: 'Nederlands', sv: 'Svenska', zh: '中文' };
+  const langBox = document.getElementById('langs');
+  langBox.innerHTML = `<summary aria-label="Language">${LANG.toUpperCase()}</summary><nav class="menu">` + SUPPORTED.map(l => {
     const p = new URLSearchParams(location.search); p.set('lang', l);
-    return `<a href="?${p.toString()}" class="${l === LANG ? 'on' : ''}" hreflang="${l}">${l.toUpperCase()}</a>`;
-  }).join('');
+    return `<a href="?${p.toString()}" class="${l === LANG ? 'on' : ''}" hreflang="${l}">${NAMES[l]}<span>${l.toUpperCase()}</span></a>`;
+  }).join('') + '</nav>';
+  document.addEventListener('click', e => { if (!langBox.contains(e.target)) langBox.removeAttribute('open'); });
   app.innerHTML = `<p class="muted">${ui('loading')}</p>`;
   // Both files are fetched together, each retried a couple of times so a dropped request on a poor connection does not leave the page in English.
   const getJson = async url => {
