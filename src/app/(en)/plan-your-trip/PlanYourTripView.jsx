@@ -180,6 +180,11 @@ export default function PlanYourTripView({ locale = 'en', content: rawContent })
                     <strong>{content.sampleItinerary.route}</strong>
                   </div>
                 ) : null}
+                {locale === 'en' ? (
+                  <p className="pdf-guide-inline-link">
+                    <Link href="/guides/trip-planner">Prefer a full week? Get the 7-day itinerary PDF by email.</Link>
+                  </p>
+                ) : null}
               </div>
               <div className="pyt-sample-media">
                 <Image

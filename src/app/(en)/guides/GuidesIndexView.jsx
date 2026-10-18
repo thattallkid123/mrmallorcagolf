@@ -188,16 +188,6 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
             slim
             dark
           />
-          <nav className="guides-downloads" aria-labelledby="pdf-guides-heading">
-            <h2 id="pdf-guides-heading">Free PDF guides</h2>
-            <p>Four guides in English to keep while planning your trip.</p>
-            <ul>
-              <li><Link href="/guides/course-comparison">Course comparison chart</Link></li>
-              <li><Link href="/guides/cost-guide">Golf cost breakdown</Link></li>
-              <li><Link href="/guides/trip-planner">7-day golf itinerary</Link></li>
-              <li><Link href="/guides/beginners-guide">Beginner’s golf guide</Link></li>
-            </ul>
-          </nav>
         </section>
       ) : null}
 
@@ -209,6 +199,12 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         articlesHeading={content.articlesHeading}
         imageBySlug={GUIDE_IMAGES}
       />
+
+      {locale === 'en' ? (
+        <p className="guides-pdf-link">
+          <Link href="/tools#pdf-guides">Printable planning guides (PDF by email)</Link>
+        </p>
+      ) : null}
 
       <section className="cta-final">
         <div className="cta-final__left">

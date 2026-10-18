@@ -4,6 +4,7 @@ import ToolPhoto from './ToolPhoto'
 import { toolDirectoryPhoto } from '../lib/hotel-images'
 import PageLayout from './PageLayout'
 import ReviewBadge from './ReviewBadge'
+import PdfGuidePrompt, { PDF_GUIDE_ORDER } from './PdfGuidePrompt'
 import { SITE_ORIGIN, buildLocalePath } from '../lib/site'
 import { getToolsIndexContent } from '../lib/tools-index-content'
 
@@ -117,6 +118,18 @@ export default function ToolsIndexView({ locale = 'en', heroImage = null }) {
           ))}
         </div>
       </section>
+
+      {locale === 'en' ? (
+        <section className="pdf-guides-section" id="pdf-guides" aria-labelledby="pdf-guides-heading">
+          <div className="pdf-guides-section__inner">
+            <h2 className="serif-display" id="pdf-guides-heading">Printable planning guides</h2>
+            <p className="pdf-guides-section__intro">Four free PDFs in English to keep while planning your trip. Choose a guide and enter your email to receive it. Newsletter signup is optional.</p>
+            <div className="pdf-guides-grid">
+              {PDF_GUIDE_ORDER.map(slug => <PdfGuidePrompt key={slug} slug={slug} compact />)}
+            </div>
+          </div>
+        </section>
+      ) : null}
 
       <section className="tools-trust">
         <div className="tools-trust__panel">

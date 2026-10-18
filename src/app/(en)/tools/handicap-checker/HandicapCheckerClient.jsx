@@ -3,6 +3,7 @@
 import { Fragment, useRef, useState } from 'react'
 import Link from 'next/link'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
+import PdfGuidePrompt from '../../../../components/PdfGuidePrompt'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
 import { COURSE_ACCESS_LIST } from '../../../../lib/course-access-data'
 import { getCourseShortName } from '../../../../lib/golf-courses-helpers'
@@ -516,6 +517,10 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
             )}
 
             <p className="hc-selector">{t.selector} <Link href={buildLocalePath('/tools/course-selector', lang)}>{t.selectorLink}</Link></p>
+
+            {lang === 'en' && (result.hcp === 'none' || result.hcp >= 28) ? (
+              <PdfGuidePrompt slug="beginners-guide" />
+            ) : null}
 
             <p className="hc-foot">{t.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
           </section>

@@ -2890,12 +2890,26 @@ select.form-control { cursor: pointer; }
 }
 
 .guides-list { display: flex; flex-direction: column; gap: 2px; }
-.guides-downloads { max-width: var(--max-w); margin: var(--space-5) auto var(--space-4); }
-.guides-downloads h2 { font-family: var(--font-serif); font-size: 1.55rem; font-weight: 500; color: var(--pine); }
-.guides-downloads p { font-size: 0.9rem; margin: var(--space-2) 0 var(--space-4); }
-.guides-downloads ul { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); gap: var(--space-3); list-style: none; }
-.guides-downloads a { display: block; padding: var(--space-3) var(--space-4); border: 1px solid var(--sand); background: var(--white); color: var(--pine); font-family: var(--font-sans); font-size: 0.9rem; font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
-.guides-downloads a:hover, .guides-downloads a:focus-visible { background: var(--pine-pale); }
+.guides-pdf-link { max-width: var(--max-w); margin: 0 auto; padding: 0 var(--space-5) var(--space-7); font-size: 0.95rem; }
+.guides-pdf-link a, .pdf-guide-inline-link a { color: var(--pine); text-underline-offset: 4px; }
+.guides-pdf-link a { display: inline-flex; align-items: center; min-height: 44px; }
+.pdf-guides-section { padding: var(--space-7) var(--space-5); background: var(--white); scroll-margin-top: calc(var(--nav-h) + var(--space-5)); }
+.pdf-guides-section__inner, .pdf-guide-context { max-width: var(--max-w); margin: 0 auto; }
+.pdf-guides-section__inner > h2 { font-size: clamp(1.8rem, 3vw, 2.4rem); color: var(--pine); }
+.pdf-guides-section__intro { max-width: 68ch; margin-top: var(--space-3); font-size: 1rem; line-height: 1.7; color: var(--taupe-text); }
+.pdf-guides-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 440px), 1fr)); gap: 0 var(--space-7); margin-top: var(--space-6); }
+.pdf-guide-context { padding: 0 var(--space-5); }
+.pdf-guide-prompt { display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-5); margin: var(--space-6) 0; padding: var(--space-5) 0; border-top: 1px solid var(--sand); border-bottom: 1px solid var(--sand); }
+.pdf-guide-prompt__copy { flex: 1 1 320px; }
+.pdf-guide-prompt .pdf-guide-prompt__eyebrow { font-family: var(--font-sans); font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-text); line-height: 1.5; margin: 0 0 var(--space-2); }
+.pdf-guide-prompt .pdf-guide-prompt__title { font-family: var(--font-serif); font-size: 1.65rem; font-weight: 500; line-height: 1.15; color: var(--pine); margin: 0 0 var(--space-3); }
+.pdf-guide-prompt .pdf-guide-prompt__description { font-family: var(--font-sans); font-size: 0.95rem; font-weight: 300; line-height: 1.7; color: var(--taupe-text); margin: 0; }
+.pdf-guide-prompt a.pdf-guide-prompt__button { flex-shrink: 0; color: var(--white); text-decoration: none; }
+.pdf-guide-prompt a.pdf-guide-prompt__button:hover { color: var(--white); }
+.pdf-guide-prompt--compact { flex-direction: column; align-items: flex-start; margin: 0; border-bottom: 0; }
+.pdf-guide-prompt--compact .pdf-guide-prompt__copy { flex: 1; }
+.pdf-guide-inline-link { margin-top: var(--space-4); font-size: 0.95rem; line-height: 1.6; }
+.pdf-guide-inline-link a { display: inline-block; padding: var(--space-2) 0; }
 .guides-index-shell { max-width: 920px; margin: 0 auto; padding: clamp(56px,8vw,104px) clamp(20px,4vw,40px); }
 .guides-index-shell__heading { font-size: 0.72rem; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: var(--gold-text); margin-bottom: 2rem; }
 .guides-index-shell__heading--spaced { margin: clamp(40px,6vw,72px) 0 2rem; }

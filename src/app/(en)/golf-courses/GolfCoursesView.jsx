@@ -4,6 +4,7 @@ import PageLayout from '../../../components/PageLayout'
 import DeferredHydrate from '../../../components/DeferredHydrate'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
+import PdfGuidePrompt from '../../../components/PdfGuidePrompt'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import GolfCoursesClient from '../golf-courses/GolfCoursesClient'
 import { GOLF_COURSE_DATA } from '../../../lib/golf-courses-data'
@@ -226,6 +227,12 @@ export default function GolfCoursesView({ locale = 'en', content }) {
         >
           <GolfCoursesClient lang={locale} />
         </DeferredHydrate>
+
+        {locale === 'en' ? (
+          <div className="pdf-guide-context">
+            <PdfGuidePrompt slug="course-comparison" />
+          </div>
+        ) : null}
 
         {content.ui?.faq?.length > 0 && (
           <section className="faq">

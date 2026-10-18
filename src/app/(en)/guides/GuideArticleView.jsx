@@ -5,6 +5,7 @@ import PageLayout from '../../../components/PageLayout'
 import GuideSectionNav from '../../../components/GuideSectionNav'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
+import PdfGuidePrompt from '../../../components/PdfGuidePrompt'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import InlineRichText from '../guides/InlineRichText'
 import { localizeGuideHref } from '../../../lib/guide-link'
@@ -415,6 +416,12 @@ function findPlanningSlot(blocks) {
 export default function GuideArticleView({ meta, blocks, locale = 'en', children = null }) {
   let imageOrdinal = 0
   const planningSlot = findPlanningSlot(blocks)
+  const pdfGuide = {
+    'golf-trip-planning-mallorca': 'trip-planner',
+    '5-day-mallorca-golf-itinerary': 'trip-planner',
+    'best-mallorca-golf-courses-higher-handicappers': 'beginners-guide',
+  }[meta.slug]
+  const lastCtaIndex = blocks.findLastIndex(block => block.type === 'cta')
   const contextualTool = ARTICLE_TOOL_PLACEMENTS[meta.slug] || 'courseSelector'
   const stickyLabels = ARTICLE_CTA_LABELS[locale] || ARTICLE_CTA_LABELS.en
   const stickyPlanHref = localizeGuideHref('/plan-your-trip', locale)
@@ -436,6 +443,15 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
           {blocks.map((block, index) => {
             const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
             const renderedBlock = renderBlock(block, index, locale, currentImageOrdinal, meta.slug)
+
+            if (locale === 'en' && pdfGuide && index === lastCtaIndex) {
+              return (
+                <Fragment key={`article-block-with-pdf-${index}`}>
+                  <PdfGuidePrompt slug={pdfGuide} />
+                  {renderedBlock}
+                </Fragment>
+              )
+            }
 
             if (locale === 'en' && index === planningSlot) {
               return (

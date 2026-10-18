@@ -2,6 +2,13 @@ import { describe, expect, test } from 'vitest'
 import { calculate, getSuggestedCourses, DEFAULT_STATE, COURSE_MIX } from '../../src/lib/golf-cost-calculator-logic'
 import { getCoursePricingByName } from '../../src/lib/course-pricing-data'
 describe('trip estimates use the selected course itinerary', () => {
+  test('daily licences reflect the courses and scale by golfers and rounds', () => {
+    expect(calculate(DEFAULT_STATE).licences).toEqual([0, 0])
+    // Son Gual (0), Son Vida (3), T Golf Palma (3), for two golfers.
+    expect(calculate({ ...DEFAULT_STATE, budget: 'premium', rounds: 3 }).licences).toEqual([12, 12])
+    // Five Alcanada rounds, each with a 3 EUR daily licence per golfer.
+    expect(calculate({ ...DEFAULT_STATE, area: 'north', rounds: 5 }).licences).toEqual([30, 30])
+  })
   test('two golfers sharing a buggy at Son Gual pay for one vehicle', () => {
     const r = calculate({ ...DEFAULT_STATE, budget: 'premium', rounds: 1 })
     const p = getCoursePricingByName('Golf Son Gual')
