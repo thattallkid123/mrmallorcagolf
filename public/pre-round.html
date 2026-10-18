@@ -118,7 +118,7 @@ footer { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--sand);
 const WHATSAPP = 'https://wa.me/34624466702';
 const GROUPS = [
   ['g_before', ['licence']],
-  ['g_arrive', ['arrivalPoint', 'proShopOpens', 'firstTee', 'earlyTee', 'rangeOpens', 'foodBeforeRound', 'changingRooms', 'parking', 'payment']],
+  ['g_arrive', ['arrivalPoint', 'proShopOpens', 'firstTee', 'earlyTee', 'rangeOpens', 'foodBeforeRound', 'restaurants', 'changingRooms', 'parking', 'payment']],
   ['g_course', ['water', 'dressCode', 'shoes', 'hireBags', 'flights', 'arrivalNotes']]
 ];
 
@@ -193,7 +193,10 @@ const UI = {
     "loading": "Loading your round...",
     "error": "This page could not load. Message me on <a href=\"{wa}\">WhatsApp</a> and I will send the details directly.",
     "l_hireBags": "Hire clubs and bags",
-    "licence_link": "Register online"
+    "licence_link": "Register online",
+    "l_restaurants": "Restaurants",
+    "guide_link": "Guide to the facilities",
+    "rental_link": "Rental conditions (PDF, in Spanish)"
   },
   "de": {
     "l_dressShoes": "Kleiderordnung und Schuhe",
@@ -259,7 +262,10 @@ const UI = {
     "loading": "Ihre Runde wird geladen ...",
     "error": "Diese Seite konnte nicht geladen werden. Schreiben Sie mir per <a href=\"{wa}\">WhatsApp</a>, dann schicke ich Ihnen die Details direkt.",
     "l_hireBags": "Leihschläger und Taschen",
-    "licence_link": "Online registrieren"
+    "licence_link": "Online registrieren",
+    "l_restaurants": "Restaurants",
+    "guide_link": "Leitfaden zur Anlage",
+    "rental_link": "Mietbedingungen (PDF, auf Spanisch)"
   },
   "es": {
     "l_dressShoes": "Código de vestimenta y calzado",
@@ -325,7 +331,10 @@ const UI = {
     "loading": "Cargando su vuelta...",
     "error": "No se ha podido cargar esta página. Escríbame por <a href=\"{wa}\">WhatsApp</a> y le enviaré los detalles directamente.",
     "l_hireBags": "Palos de alquiler y bolsas",
-    "licence_link": "Registrarse en línea"
+    "licence_link": "Registrarse en línea",
+    "l_restaurants": "Restaurantes",
+    "guide_link": "Guía de las instalaciones",
+    "rental_link": "Condiciones de alquiler (PDF)"
   },
   "fr": {
     "l_dressShoes": "Tenue et chaussures",
@@ -391,7 +400,10 @@ const UI = {
     "loading": "Chargement de votre partie...",
     "error": "Cette page n’a pas pu se charger. Écrivez-moi sur <a href=\"{wa}\">WhatsApp</a> et je vous enverrai directement les détails.",
     "l_hireBags": "Clubs de location et sacs",
-    "licence_link": "S’inscrire en ligne"
+    "licence_link": "S’inscrire en ligne",
+    "l_restaurants": "Restaurants",
+    "guide_link": "Guide des installations",
+    "rental_link": "Conditions de location (PDF, en espagnol)"
   },
   "nl": {
     "l_dressShoes": "Kledingvoorschrift en schoenen",
@@ -457,7 +469,10 @@ const UI = {
     "loading": "Uw ronde wordt geladen...",
     "error": "Deze pagina kon niet worden geladen. Stuur mij een bericht via <a href=\"{wa}\">WhatsApp</a>, dan stuur ik u de gegevens rechtstreeks.",
     "l_hireBags": "Huurclubs en tassen",
-    "licence_link": "Online registreren"
+    "licence_link": "Online registreren",
+    "l_restaurants": "Restaurants",
+    "guide_link": "Gids voor de faciliteiten",
+    "rental_link": "Huurvoorwaarden (pdf, in het Spaans)"
   },
   "sv": {
     "l_dressShoes": "Klädsel och skor",
@@ -523,7 +538,10 @@ const UI = {
     "loading": "Laddar din runda...",
     "error": "Sidan kunde inte laddas. Skriv till mig på <a href=\"{wa}\">WhatsApp</a> så skickar jag detaljerna direkt.",
     "l_hireBags": "Hyrklubbor och bagar",
-    "licence_link": "Registrera online"
+    "licence_link": "Registrera online",
+    "l_restaurants": "Restauranger",
+    "guide_link": "Guide till faciliteterna",
+    "rental_link": "Hyresvillkor (PDF, på spanska)"
   },
   "zh": {
     "l_dressShoes": "着装与球鞋",
@@ -589,7 +607,10 @@ const UI = {
     "loading": "正在加载您的球局……",
     "error": "此页面无法加载。请通过 <a href=\"{wa}\">WhatsApp</a> 给我发消息，我会直接把详细信息发给您。",
     "l_hireBags": "租杆和球包",
-    "licence_link": "在线登记"
+    "licence_link": "在线登记",
+    "l_restaurants": "餐厅",
+    "guide_link": "设施指南",
+    "rental_link": "租赁条款（PDF，西班牙语）"
   }
 };
 // END GENERATED UI
@@ -725,11 +746,12 @@ function renderRound(course, round, closures) {
   let html = '';
   let any = false;
   GROUPS.forEach(([title, fields]) => {
-    const rows = fields.filter(f => valueFor(f) && !(f === 'shoes' && valueFor('dressCode')));
+    const rows = fields.filter(f => (f === 'restaurants' ? (course.restaurants || []).length : valueFor(f)) && !(f === 'shoes' && valueFor('dressCode')));
     if (!rows.length) return;
     any = true;
     const card = f => {
-      if (f !== 'dressCode') return `<div class="item"><dt>${ui('l_' + f)}</dt><dd>${linkify(tx(valueFor(f)))}</dd>${f === 'licence' && course.licenceUrl ? `<dd><a class="btn alt" href="${esc(course.licenceUrl)}" target="_blank" rel="noopener">${ui('licence_link')} &#8599;</a></dd>` : ''}</div>`;
+      if (f === 'restaurants') return `<div class="item"><dt>${ui('l_restaurants')}</dt>` + course.restaurants.map(r => `<dd><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>${r.note ? ' &ndash; ' + esc(tx(r.note)) : ''}</dd>`).join('') + '</div>';
+      if (f !== 'dressCode') return `<div class="item"><dt>${ui('l_' + f)}</dt><dd>${linkify(tx(valueFor(f)))}</dd>${f === 'hireBags' && course.rentalUrl ? `<dd><a href="${esc(course.rentalUrl)}" target="_blank" rel="noopener">${ui('rental_link')} &#8599;</a></dd>` : ''}${f === 'licence' && course.licenceUrl ? `<dd><a class="btn alt" href="${esc(course.licenceUrl)}" target="_blank" rel="noopener">${ui('licence_link')} &#8599;</a></dd>` : ''}</div>`;
       // One card for the clothing and the shoes; the shoe rule is left out when the dress code already says it.
       const shoes = valueFor('shoes');
       const dup = shoes && flat(valueFor('dressCode')).includes(flat(shoes));
@@ -754,6 +776,7 @@ function renderRound(course, round, closures) {
     ? `<a class="map" href="${mapLink}" target="_blank" rel="noopener" aria-label="${esc(ui('directions'))}"><img src="/pre-round-assets/maps/${esc(round.c)}.jpg" alt="${esc(ui('mapalt', { name: course.name }))}" width="640" height="480" loading="lazy"><span class="chip">${ui('directions')} &#8599;</span></a>`
     : (mapLink ? `<a class="btn" href="${mapLink}" target="_blank" rel="noopener">${ui('directions')}</a>` : ''))
     + (course.address ? `<div class="addr">${esc(course.address)}</div>` : '')
+    + (course.guideUrl ? `<div class="btns guide"><a class="btn alt" href="${esc(course.guideUrl)}" target="_blank" rel="noopener">${ui('guide_link')} &#8599;</a></div>` : '')
     + contactHtml + shareBtn;
   return `<section class="round"><div class="top">${head}</div><div class="cols"><aside class="rail">${rail}</aside><div class="body">${html}</div></div></section>`;
 }

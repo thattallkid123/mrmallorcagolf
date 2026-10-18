@@ -34,6 +34,9 @@
       "address": "Carretera del Faro, s/n, 07400 Port d'Alcúdia",
       "mapsQuery": "Club de Golf Alcanada Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 549 560",
@@ -75,6 +78,9 @@
       "address": "Carrer Cromlec, 1, 07160 Camp de Mar",
       "mapsQuery": "Golf de Andratx Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 236 280",
@@ -115,6 +121,9 @@
       "address": "Carrer Campoamor, s/n, 07181 Bendinat",
       "mapsQuery": "Real Golf de Bendinat Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 405 200",
@@ -158,6 +167,9 @@
       "address": "Ctra. Coves de s'Ermita, Km.8, 07589 Canyamel Platja",
       "mapsQuery": "Canyamel Golf Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 841 313",
@@ -197,6 +209,9 @@
       "address": "Carretera Artà - Capdepera Km 3.5, 07570 Artà",
       "mapsQuery": "Capdepera Golf Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 818 500",
@@ -237,6 +252,9 @@
       "address": "Camí de Cabo Blanco, Km 7, 07609 Llucmajor",
       "mapsQuery": "Golf Maioris Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 748 315",
@@ -277,7 +295,26 @@
       "address": "Camí de Son Rapinya, 15, 07013 Palma",
       "mapsQuery": "Palma Pitch & Putt Mallorca",
       "pickerHidden": false,
-      "licenceUrl": null,
+      "guideUrl": "https://welcome-to-arabella-golf-376228291139.us-west1.run.app/",
+      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2024/09/Resumen_rentals_sept_ES.pdf",
+      "restaurants": [
+        {
+          "name": "Na Capitana",
+          "url": "https://arabellagolfmallorca.com/restaurantes/na-capitana-restaurant/",
+          "note": "Healthy cuisine with a local touch."
+        },
+        {
+          "name": "Restaurant Son Vida",
+          "url": "https://arabellagolfmallorca.com/restaurantes/restaurant-son-vida/",
+          "note": "Tapas and vermouths."
+        },
+        {
+          "name": "Restaurant Son Quint",
+          "url": "https://arabellagolfmallorca.com/restaurantes/restaurant-son-quint/",
+          "note": "Pasta and golf."
+        }
+      ],
+      "licenceUrl": "https://arabella.inone.es/forms/register",
       "contact": {
         "phone": "+34 971 606 175",
         "email": "golf.mallorca@arabellagolf.com"
@@ -292,7 +329,7 @@
         "rangeOpens": "Uses the Son Quint driving range, under 100 metres away. Register at the pro shop before using the range.",
         "foodBeforeRound": "The restaurant opens at 08:00, so it is not open before the earliest tee times. In winter (from 26 October) the kitchen only starts at 09:00, so there is no cooked breakfast before then.",
         "water": "There is no halfway house, as it is only nine holes. Son Quint's clubhouse is nearby and has a water refill station.",
-        "licence": "€2 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop: https://arabella.inone.es/forms/register. You can pay online or at the pro shop.",
+        "licence": "€2 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop. You can pay online or at the pro shop.",
         "dressCode": "Casual: t-shirts and jeans are fine.",
         "shoes": "Golf shoes with soft spikes only. Metal spikes are not allowed.",
         "changingRooms": "Changing rooms and showers are shared with Son Quint.",
@@ -327,6 +364,9 @@
       "address": "Urb. Can Porquer, 30A, 07460 Pollença",
       "mapsQuery": "Golf Pollença Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 683 248 469",
@@ -368,6 +408,9 @@
       "address": "Predio de Pula, Ma-4040, s/n, km 2,3, 07550 Son Servera",
       "mapsQuery": "Pula Golf Resort Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 817 034",
@@ -412,6 +455,9 @@
       "address": "Camí de Bendrís, 3, 07500 Manacor",
       "mapsQuery": "Reserva Rotana Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 845 685",
@@ -450,6 +496,9 @@
       "address": "Carrer de Berenguer de Palou, 2, 07180 Santa Ponça",
       "mapsQuery": "Golf Santa Ponsa 1 Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 690 211",
@@ -493,6 +542,9 @@
       "address": null,
       "mapsQuery": "Golf Santa Ponsa II",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": null,
       "info": {
@@ -524,6 +576,9 @@
       "address": "Ma-19, salida 20, 07620 Llucmajor",
       "mapsQuery": "Golf Son Antem East Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 129 200",
@@ -566,6 +621,9 @@
       "address": "Ma-19, salida 20, 07620 Llucmajor",
       "mapsQuery": "Golf Son Antem West Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 129 200",
@@ -606,6 +664,9 @@
       "address": "Ma 15 - Palma - Manacor, Km 11,5, 07199 Palma",
       "mapsQuery": "Golf Son Gual Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 785 888",
@@ -650,6 +711,25 @@
       "address": "Carrer Miquel Lladó, s/n, 07013 Palma",
       "mapsQuery": "Son Muntaner Mallorca",
       "pickerHidden": false,
+      "guideUrl": "https://welcome-to-arabella-golf-376228291139.us-west1.run.app/",
+      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2024/09/Resumen_rentals_sept_ES.pdf",
+      "restaurants": [
+        {
+          "name": "Na Capitana",
+          "url": "https://arabellagolfmallorca.com/restaurantes/na-capitana-restaurant/",
+          "note": "Healthy cuisine with a local touch."
+        },
+        {
+          "name": "Restaurant Son Vida",
+          "url": "https://arabellagolfmallorca.com/restaurantes/restaurant-son-vida/",
+          "note": "Tapas and vermouths."
+        },
+        {
+          "name": "Restaurant Son Quint",
+          "url": "https://arabellagolfmallorca.com/restaurantes/restaurant-son-quint/",
+          "note": "Pasta and golf."
+        }
+      ],
       "licenceUrl": "https://arabella.inone.es/forms/register",
       "contact": {
         "phone": "+34 971 783 030",
@@ -696,9 +776,28 @@
       "mapsDestination": "39.5913875,2.6045702",
       "hero": true,
       "map": true,
-      "address": "Camí de Son Vida, 38, 07013 Palma",
+      "address": "Camí de Son Rapinya, 38, 07013 Palma",
       "mapsQuery": "Golf Son Quint Mallorca",
       "pickerHidden": false,
+      "guideUrl": "https://welcome-to-arabella-golf-376228291139.us-west1.run.app/",
+      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2024/09/Resumen_rentals_sept_ES.pdf",
+      "restaurants": [
+        {
+          "name": "Na Capitana",
+          "url": "https://arabellagolfmallorca.com/restaurantes/na-capitana-restaurant/",
+          "note": "Healthy cuisine with a local touch."
+        },
+        {
+          "name": "Restaurant Son Vida",
+          "url": "https://arabellagolfmallorca.com/restaurantes/restaurant-son-vida/",
+          "note": "Tapas and vermouths."
+        },
+        {
+          "name": "Restaurant Son Quint",
+          "url": "https://arabellagolfmallorca.com/restaurantes/restaurant-son-quint/",
+          "note": "Pasta and golf."
+        }
+      ],
       "licenceUrl": "https://arabella.inone.es/forms/register",
       "contact": {
         "phone": "+34 971 606 175",
@@ -715,7 +814,7 @@
         "foodBeforeRound": "The restaurant opens at 08:00, so it is not open before the earliest tee times. In winter (from 26 October) the kitchen only starts at 09:00, so there is no cooked breakfast before then.",
         "water": "Every clubhouse has a water refill station for your own bottle. The halfway houses open at 10:30 with drinks, snacks and another refill station.",
         "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop. You can pay online or at the pro shop.",
-        "dressCode": "Collared polo shirt, long trousers or knee-length shorts, socks. No jeans, t-shirts, tracksuits or swimwear. Golf shoes with soft spikes only, no metal spikes.",
+        "dressCode": "Casual dress: jeans and T-shirts are allowed. Women may wear sleeveless or collared tops.",
         "shoes": "Soft spikes only, no metal spikes.",
         "changingRooms": "Changing rooms and lockers are available.",
         "parking": "Car park at the club, with EV charging points.",
@@ -749,6 +848,9 @@
       "address": "Carrer del Golf, 07559 Costa des Pins",
       "mapsQuery": "Golf Club Son Servera Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 840 096",
@@ -793,6 +895,9 @@
       "address": "Carretera de Santa Maria, Km 10, 07193 S'Esgleieta",
       "mapsQuery": "Golf Son Termes Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 617 862",
@@ -837,6 +942,25 @@
       "address": "Carrer Solleric, 1, 07013 Son Vida",
       "mapsQuery": "Golf Son Vida Mallorca",
       "pickerHidden": false,
+      "guideUrl": "https://welcome-to-arabella-golf-376228291139.us-west1.run.app/",
+      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2024/09/Resumen_rentals_sept_ES.pdf",
+      "restaurants": [
+        {
+          "name": "Na Capitana",
+          "url": "https://arabellagolfmallorca.com/restaurantes/na-capitana-restaurant/",
+          "note": "Healthy cuisine with a local touch."
+        },
+        {
+          "name": "Restaurant Son Vida",
+          "url": "https://arabellagolfmallorca.com/restaurantes/restaurant-son-vida/",
+          "note": "Tapas and vermouths."
+        },
+        {
+          "name": "Restaurant Son Quint",
+          "url": "https://arabellagolfmallorca.com/restaurantes/restaurant-son-quint/",
+          "note": "Pasta and golf."
+        }
+      ],
       "licenceUrl": "https://arabella.inone.es/forms/register",
       "contact": {
         "phone": "+34 971 791 210",
@@ -852,7 +976,7 @@
         "foodBeforeRound": "The restaurant opens at 08:00, so it is not open before the earliest tee times. In winter (from 26 October) the kitchen only starts at 09:00, so there is no cooked breakfast before then.",
         "water": "Every clubhouse has a water refill station for your own bottle. The halfway houses open at 10:30 with drinks, snacks and another refill station.",
         "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop. You can pay online or at the pro shop.",
-        "dressCode": "Collared polo shirt, long trousers or knee-length shorts, socks. No jeans, t-shirts, tracksuits or swimwear. Golf shoes with soft spikes only, no metal spikes.",
+        "dressCode": "Casual dress: jeans and T-shirts are allowed. Women may wear sleeveless or collared tops.",
         "shoes": "Soft spikes only, no metal spikes.",
         "changingRooms": "Changing rooms and lockers are available.",
         "parking": "Car park at the club.",
@@ -886,6 +1010,9 @@
       "address": "Camí Cala Figuera, s/n, 07181 Calvià",
       "mapsQuery": "T Golf Calvià (Poniente) Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 130 148",
@@ -928,6 +1055,9 @@
       "address": "Camí Vell de Sineu, Km 10, 07198 Palma",
       "mapsQuery": "T Golf Palma (Puntiró) Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 797 330",
@@ -972,6 +1102,9 @@
       "address": "Ctra Cala d'Or - Portocolom, Km 7,7, 07669 Felanitx",
       "mapsQuery": "Vall d'Or Golf Mallorca",
       "pickerHidden": false,
+      "guideUrl": null,
+      "rentalUrl": null,
+      "restaurants": [],
       "licenceUrl": null,
       "contact": {
         "phone": "+34 971 837 001",
