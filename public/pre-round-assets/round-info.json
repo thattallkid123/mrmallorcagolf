@@ -4,6 +4,7 @@
     "checkInMinutes",
     "arrivalPoint",
     "bringWater",
+    "hireBags",
     "proShopOpens",
     "firstTee",
     "earlyTee",
@@ -40,6 +41,7 @@
       "info": {
         "checkInMinutes": 30,
         "bringWater": "A water bottle to top up at the fountains on the course.",
+        "hireBags": "Hire clubs are TaylorMade QI 4D. The hire bags have straps, so you can carry them.",
         "proShopOpens": "Reception and the pro shop open at 07:30.",
         "firstTee": "The first tee time is 08:00.",
         "earlyTee": "When I have played the first tee times of the day, the pro shop, the driving range and the cafe bar have all been open.",
@@ -118,6 +120,7 @@
       "info": {
         "checkInMinutes": 45,
         "bringWater": "A water bottle and a few coins. There is a refill at the pro shop but no fountains on the course, and the vending machines on the course sell water for cash only.",
+        "hireBags": "Hire bags have one strap. The course is hilly, so most players take a buggy. There are only a few hire sets, so reserve them in advance.",
         "proShopOpens": "I expect the pro shop to open about 15 minutes before the first tee time, around 08:55.",
         "firstTee": "The first starting time is 09:10.",
         "rangeOpens": "The driving range opens at 08:00 every day except Tuesday, when it opens at 09:00.",
@@ -159,6 +162,7 @@
       "info": {
         "checkInMinutes": 45,
         "bringWater": "A water bottle if you are walking. Water comes with the buggy.",
+        "hireBags": "Hire bags can be carried on foot.",
         "proShopOpens": "Open 08:00-19:00. The pro shop is where players check in.",
         "firstTee": "The first tee time is usually 09:00.",
         "rangeOpens": "Range €10, balls €3 for a token of 38.",
@@ -196,6 +200,7 @@
       "info": {
         "checkInMinutes": 45,
         "bringWater": "A bottle of water. It is sold in the pro shop, so pick one up before you start.",
+        "hireBags": "Hire bags are the trolley style, with no straps.",
         "proShopOpens": "Staff are on site from 07:30. Open 08:00-19:00 every day.",
         "firstTee": "The first tee time is 08:06, and 07:30 in July.",
         "rangeOpens": "Range €10; balls €5 for 30, €9 for 60, €12 for 90. Range sits next to the clubhouse; three short-game areas.",
@@ -234,6 +239,7 @@
       "info": {
         "checkInMinutes": 15,
         "bringWater": "A water bottle. There are no fountains on the course, and water is sold in the pro shop, the restaurant and from vending machines on the course.",
+        "hireBags": "Hire bags can be carried on foot, with or without a trolley.",
         "proShopOpens": "Reception opens at 07:30 and the first tee time is 08:00.",
         "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "Range tokens €3 for 35 balls (10 tokens €25). Range without a green fee €8.",
@@ -272,6 +278,7 @@
       "info": {
         "checkInMinutes": 60,
         "bringWater": "A water bottle. It is only nine holes with no halfway house, and Son Quint's clubhouse nearby has a refill station.",
+        "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-18:30. Summer: 07:30-20:30.",
         "firstTee": "The earliest tee time bookable online is usually 07:40, the same as Son Quint.",
         "earlyTee": "On the first tee time there was no chance to use the range before teeing off. Early mornings can be cold with dew still down, so bring a jacket.",
@@ -360,6 +367,7 @@
       "info": {
         "checkInMinutes": 30,
         "bringWater": "A water bottle. There is a halfway house on the course.",
+        "hireBags": "Hire clubs are subject to availability. The club checks for a carry bag with a double strap before your tee time.",
         "proShopOpens": "The pro shop opens at 07:30.",
         "firstTee": "The earliest tee time available online is 08:03.",
         "rangeOpens": "Trackman Range and putting greens.",
@@ -439,6 +447,7 @@
       "info": {
         "checkInMinutes": 45,
         "bringWater": "Water for the first nine holes. The clubhouse is closed for the first tee times, and the next chance to buy a drink is after nine holes.",
+        "hireBags": "Hire bags are cart bags.",
         "proShopOpens": "The pro shop opens at about 07:45.",
         "firstTee": "The first tee time for visitors is 09:04. Earlier times, from 08:00, are kept for members.",
         "rangeOpens": "Range €8 plus €4 per ball token (all seasons).",
@@ -454,7 +463,9 @@
         "arrivalNotes": "An official handicap is required to play."
       },
       "seasonal": {},
-      "toCheck": [],
+      "toCheck": [
+        "hireBags"
+      ],
       "filtered": []
     },
     "santa_ponsa2": {
@@ -505,6 +516,7 @@
       "info": {
         "checkInMinutes": 45,
         "bringWater": "A water bottle. The small shop by check-in sells water, coffee and snacks.",
+        "hireBags": "Hire bags are large and have one strap.",
         "proShopOpens": "Pro shop open every day: 07:15-20:00 April to October, 07:15-18:30 November to March.",
         "firstTee": "The first tee time is 07:30.",
         "rangeOpens": "Academy range balls: 14 balls for €1, or a card of 500 balls for €30.",
@@ -545,6 +557,7 @@
       "info": {
         "checkInMinutes": 45,
         "bringWater": "A water bottle. The small shop by check-in sells water, coffee and snacks.",
+        "hireBags": "Hire bags are large and have one strap.",
         "proShopOpens": "Pro shop open every day: 07:15-20:00 April to October, 07:15-18:30 November to March.",
         "firstTee": "The first tee time is 07:30.",
         "rangeOpens": "Academy range balls: 14 balls for €1, or a card of 500 balls for €30.",
@@ -583,6 +596,7 @@
       "info": {
         "checkInMinutes": 15,
         "bringWater": "A water bottle. There is no free water at check-in, but there are water filter stations at the clubhouse, at the end of the front nine.",
+        "hireBags": "Full hire sets with bags are available, and you can take them on the course. The course is long but easy to walk.",
         "proShopOpens": "Reception 08:30-18:00.",
         "firstTee": "The course opens at 09:00, so the first tee time is 09:00.",
         "earlyTee": "On an early tee time, reception and the range were both open, but after checking in I did not have time to reach the range before we teed off. Arrive early if you want to warm up.",
@@ -625,6 +639,7 @@
       "info": {
         "checkInMinutes": 60,
         "bringWater": "A refillable bottle. Every clubhouse has a water refill station, and the halfway houses open at 10:30 with another.",
+        "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-19:30. Summer: 07:45-20:30.",
         "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "Toptracer driving range on site. Register at the pro shop before using the range.",
@@ -672,6 +687,7 @@
       "info": {
         "checkInMinutes": 60,
         "bringWater": "A refillable bottle. Every clubhouse has a water refill station, and the halfway houses open at 10:30 with another.",
+        "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-18:30. Summer: 07:30-20:30.",
         "firstTee": "The first tee time is usually 07:40.",
         "earlyTee": "On the first tee time there was no chance to use the range before teeing off. Early mornings can be cold with dew still down, so bring a jacket.",
@@ -720,6 +736,7 @@
       "info": {
         "checkInMinutes": 45,
         "bringWater": "A refillable bottle. There are water refill points along the course.",
+        "hireBags": "Hire bags are standard bags. You can carry them without a trolley, but the club recommends renting a manual trolley.",
         "proShopOpens": "Reception, the pro shop and the first tee time are all 08:00.",
         "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "Driving range closed on Wednesdays for mowing.",
@@ -762,6 +779,7 @@
       "info": {
         "checkInMinutes": 45,
         "bringWater": "Enough water for the whole round. There are no fountains on the course.",
+        "hireBags": "Hire bags have double straps. The last nine holes are steep, so the club recommends a buggy, though you can play on foot.",
         "proShopOpens": "The gates open at 08:00.",
         "firstTee": "The first available tee time is 08:20. The gates open at 08:00.",
         "earlyTee": "The pro shop and the driving range have been open for the first tee times of the day.",
@@ -804,6 +822,7 @@
       "info": {
         "checkInMinutes": 60,
         "bringWater": "A refillable bottle. Every clubhouse has a water refill station, and the halfway houses open at 10:30 with another.",
+        "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-18:30. Summer: 07:30-20:30.",
         "firstTee": "The first tee time is usually 07:58.",
         "rangeOpens": "Son Vida has no driving range, only a warm-up net. Arabella suggests the range at Son Quint (slightly closer; its pro shop opens at 07:30) or at Son Muntaner. Register at that pro shop before using the range.",
@@ -935,6 +954,7 @@
       "info": {
         "checkInMinutes": 45,
         "bringWater": "Your own water. There is no drinkable water on the course, and bottles are sold at the restaurant.",
+        "hireBags": "Hire sets are for use with a buggy or a manual or electric trolley only, not for carrying.",
         "proShopOpens": "Reception and the pro shop open at 07:30.",
         "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "Basket of range balls €4. Practice-only green fee €12.",
