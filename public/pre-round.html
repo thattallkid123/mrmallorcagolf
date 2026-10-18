@@ -42,7 +42,8 @@ a { color: var(--pine); font-weight: 500; }
 .langs .menu a { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; padding: 0 12px; border-radius: 6px; color: var(--stone); text-decoration: none; font-weight: 400; letter-spacing: 0.04em; text-transform: none; font-size: 14px; }
 .langs .menu a:hover { background: #2a2825; color: var(--cream); }
 .langs .menu a.on { color: var(--gold-light); }
-.backlink { display: inline-flex; align-items: center; min-height: 44px; margin: 0 0 4px; font-size: 0.95rem; }
+.backlink { display: inline-flex; align-items: center; min-height: 44px; margin: 0 0 4px; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--taupe); text-decoration: none; }
+.backlink:hover { color: var(--pine); }
 main { max-width: 1080px; margin: 0 auto; padding: 28px 16px 48px; }
 .narrow { max-width: 720px; }
 .eyebrow { color: var(--gold); font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; }
@@ -76,7 +77,9 @@ h2 { font-family: var(--font-serif); font-weight: 600; font-size: 1.45rem; color
 .railbox { margin-top: 18px; padding-top: 4px; border-top: 1px solid var(--sand); }
 .railbox h2 { font-size: 1.25rem; margin: 14px 0 4px; }
 .railbox p { font-size: 0.95rem; }
-.rail .share { margin-top: 18px; }
+.railbox .btns { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 12px; }
+.rail .share { display: grid; grid-template-columns: 1fr; margin-top: 10px; }
+.rail .guide { display: grid; grid-template-columns: 1fr; margin-top: 12px; }
 @media (min-width: 900px) {
   .cols { grid-template-columns: 400px minmax(0, 1fr); column-gap: 48px; }
   .rail { position: sticky; top: 20px; align-self: start; }
