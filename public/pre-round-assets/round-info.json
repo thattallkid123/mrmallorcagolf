@@ -449,13 +449,13 @@
         "bringWater": "Water for the first nine holes. The clubhouse is closed for the first tee times, and the next chance to buy a drink is after nine holes.",
         "hireBags": "Hire bags are cart bags.",
         "proShopOpens": "The pro shop opens at about 07:45.",
-        "firstTee": "The first tee time for visitors is 09:04. Earlier times, from 08:00, are kept for members.",
+        "firstTee": "The first tee time for visitors who book directly is 09:04. If you book through me, tee times start from 08:00.",
         "rangeOpens": "Range €8 plus €4 per ball token (all seasons).",
         "foodBeforeRound": "Bar and cafeteria beside the caddy master while the hotel is renovated: drinks and simple clubhouse food.",
         "water": "Water and drinks are only available at the clubhouse, which you pass after nine holes. It is closed for the first tee times of the day, so bring water with you.",
         "licence": "The club does not list a separate daily licence charge.",
-        "dressCode": "Appropriate golf clothing, and soft rubber spikes only.",
-        "shoes": "Soft rubber spikes only.",
+        "dressCode": "Wear a collared golf shirt and golf trousers or tailored shorts. No jeans or T-shirts.",
+        "shoes": "Soft spikes only. Metal spikes are not allowed.",
         "changingRooms": "There are no lockers or changing rooms at the moment, only temporary buildings while building work is going on.",
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
@@ -464,7 +464,8 @@
       },
       "seasonal": {},
       "toCheck": [
-        "hireBags"
+        "hireBags",
+        "dressCode"
       ],
       "filtered": []
     },
@@ -486,14 +487,16 @@
         "checkInMinutes": 45,
         "arrivalPoint": "Santa Ponsa 2 has its own clubhouse. Ring at the gate to be buzzed in, or I will let you in.",
         "bringWater": "Water for the first nine holes. The clubhouse is closed for the first tee times, and the next chance to buy a drink is after nine holes.",
-        "firstTee": "I normally tee off as early as I can.",
+        "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "The range opens at 08:00.",
         "water": "Water and drinks are only available at the clubhouse, which you pass after nine holes. It is closed for the first tee times of the day, so bring water with you.",
-        "dressCode": "Appropriate golf clothing, and soft rubber spikes only.",
-        "shoes": "Soft rubber spikes only."
+        "dressCode": "Wear a collared golf shirt and golf trousers or tailored shorts. No jeans or T-shirts.",
+        "shoes": "Soft spikes only. Metal spikes are not allowed."
       },
       "seasonal": {},
-      "toCheck": [],
+      "toCheck": [
+        "dressCode"
+      ],
       "filtered": []
     },
     "son_antem_e": {
