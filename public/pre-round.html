@@ -59,9 +59,9 @@ h2 { font-family: var(--font-serif); font-weight: 600; font-size: 1.45rem; color
 .tile .s { font-size: 0.85rem; opacity: 0.85; }
 .hero { position: relative; margin: 0 0 16px; border-radius: 8px; overflow: hidden; background: var(--deep); }
 .hero img { display: block; width: 100%; height: auto; aspect-ratio: 16 / 8; object-fit: cover; }
-.hero .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 56px 20px 16px; background: linear-gradient(to top, rgba(26, 25, 22, 0.82), rgba(26, 25, 22, 0)); color: #fff; }
+.hero .cap { position: absolute; left: 0; right: 0; bottom: 0; padding: 110px 24px 20px; background: linear-gradient(to top, rgba(26, 25, 22, 0.94) 0%, rgba(26, 25, 22, 0.78) 38%, rgba(26, 25, 22, 0.35) 72%, rgba(26, 25, 22, 0) 100%); color: #fff; text-shadow: 0 1px 10px rgba(0, 0, 0, 0.55); }
 .hero .cap h1 { color: #fff; margin: 2px 0 0; }
-.hero .cap .eyebrow { color: var(--gold-light); }
+.hero .cap .eyebrow { color: var(--gold-light); font-weight: 500; }
 .share { margin-top: 14px; }
 .addr { color: #6B6157; font-size: 0.95rem; line-height: 1.45; }
 .checkin strong { color: var(--gold-light); font-weight: 500; }
@@ -127,7 +127,7 @@ footer { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--sand);
 const WHATSAPP = 'https://wa.me/34624466702';
 const GROUPS = [
   ['g_before', ['licence']],
-  ['g_arrive', ['arrivalPoint', 'proShopOpens', 'earlyTee', 'rangeOpens', 'foodBeforeRound', 'restaurants', 'changingRooms', 'parking', 'payment']],
+  ['g_arrive', ['arrivalPoint', 'proShopOpens', 'earlyTee', 'rangeOpens', 'practiceFacilities', 'foodBeforeRound', 'restaurants', 'changingRooms', 'parking', 'payment']],
   ['g_course', ['water', 'dressCode', 'shoes', 'hireBags', 'buggyTrolley', 'flights', 'arrivalNotes']]
 ];
 
@@ -207,7 +207,8 @@ const UI = {
     "guide_link": "Guide to the facilities",
     "rental_link": "Rental conditions (PDF, in Spanish)",
     "all_courses": "Other courses",
-    "l_buggyTrolley": "Buggies and trolleys"
+    "l_buggyTrolley": "Buggies and trolleys",
+    "l_practiceFacilities": "Practice facilities"
   },
   "de": {
     "l_dressShoes": "Kleiderordnung und Schuhe",
@@ -278,7 +279,8 @@ const UI = {
     "guide_link": "Leitfaden zur Anlage",
     "rental_link": "Mietbedingungen (PDF, auf Spanisch)",
     "all_courses": "Andere Plätze",
-    "l_buggyTrolley": "Buggys und Trolleys"
+    "l_buggyTrolley": "Buggys und Trolleys",
+    "l_practiceFacilities": "Übungsanlagen"
   },
   "es": {
     "l_dressShoes": "Código de vestimenta y calzado",
@@ -349,7 +351,8 @@ const UI = {
     "guide_link": "Guía de las instalaciones",
     "rental_link": "Condiciones de alquiler (PDF)",
     "all_courses": "Otros campos",
-    "l_buggyTrolley": "Buggies y carros"
+    "l_buggyTrolley": "Buggies y carros",
+    "l_practiceFacilities": "Zonas de práctica"
   },
   "fr": {
     "l_dressShoes": "Tenue et chaussures",
@@ -420,7 +423,8 @@ const UI = {
     "guide_link": "Guide des installations",
     "rental_link": "Conditions de location (PDF, en espagnol)",
     "all_courses": "Autres parcours",
-    "l_buggyTrolley": "Voiturettes et chariots"
+    "l_buggyTrolley": "Voiturettes et chariots",
+    "l_practiceFacilities": "Zones d’entraînement"
   },
   "nl": {
     "l_dressShoes": "Kledingvoorschrift en schoenen",
@@ -491,7 +495,8 @@ const UI = {
     "guide_link": "Gids voor de faciliteiten",
     "rental_link": "Huurvoorwaarden (pdf, in het Spaans)",
     "all_courses": "Andere banen",
-    "l_buggyTrolley": "Buggy’s en trolleys"
+    "l_buggyTrolley": "Buggy’s en trolleys",
+    "l_practiceFacilities": "Oefenfaciliteiten"
   },
   "sv": {
     "l_dressShoes": "Klädsel och skor",
@@ -562,7 +567,8 @@ const UI = {
     "guide_link": "Guide till faciliteterna",
     "rental_link": "Hyresvillkor (PDF, på spanska)",
     "all_courses": "Andra banor",
-    "l_buggyTrolley": "Golfbilar och vagnar"
+    "l_buggyTrolley": "Golfbilar och vagnar",
+    "l_practiceFacilities": "Träningsanläggningar"
   },
   "zh": {
     "l_dressShoes": "着装与球鞋",
@@ -633,7 +639,8 @@ const UI = {
     "guide_link": "设施指南",
     "rental_link": "租赁条款（PDF，西班牙语）",
     "all_courses": "其他球场",
-    "l_buggyTrolley": "球车和手推车"
+    "l_buggyTrolley": "球车和手推车",
+    "l_practiceFacilities": "练习设施"
   }
 };
 // END GENERATED UI
