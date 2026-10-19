@@ -425,6 +425,21 @@
       "lang": "all",
       "pattern": "(?:La Opinión Honesta|L'Avis Honnête|De Eerlijke Mening|Ärliga Omdöme)",
       "fix": "English-style Title Case in a translated title: only the first word and names take capitals"
+    },
+    {
+      "lang": "fr",
+      "pattern": "\bavant tout premier départ\b",
+      "fix": "avant le tout premier départ (\"avant tout\" means above all)"
+    },
+    {
+      "lang": "nl",
+      "pattern": "\bals u dat zorgen baart\b",
+      "fix": "als dat u zorgen baart (the worry is the golfer's)"
+    },
+    {
+      "lang": "zh",
+      "pattern": "苦艾酒",
+      "fix": "味美思 for vermouth (苦艾酒 is absinthe)"
     }
   ]
 }
