@@ -114,6 +114,13 @@ membership rates for the new year at the same time as green fees. Update
 "Membership & Access" section together. This is internal reference only — never
 publish membership terms flagged `doNotPublish` (Santa Ponsa I/II/III).
 
+## Prices typed into Course Info (check these in the same pass)
+
+The client arrival page shows a few amounts that live as typed text in the Course Info tab, not in the Pricing Sheet:
+
+- **Range ball prices** (the `rangeOpens` answer for each course: tokens, baskets, practice-only fees). Check them against the club's rates page and fix them in Course Info. They are not in the Sheet's `range` column, which is only a rough per-day estimate for the cost calculators.
+- **Daily licence amounts** are guarded: `mmg-tools/scripts/build-round-info.js` reads `licenceFee` from the Pricing Sheet and stops the build if the Course Info text disagrees, so just fix the Sheet. After a licence fee changes, translate the new licence sentence (`node scripts/round-info-i18n.js --list de`).
+
 ## Recording what you find
 
 - Numbers go in the **Pricing Sheet** (the master), then `.\mmg.ps1 pricing-publish`.
