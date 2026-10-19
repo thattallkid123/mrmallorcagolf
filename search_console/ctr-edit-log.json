@@ -116,6 +116,11 @@
           "date": "2026-09-26",
           "commit": "same commit",
           "summary": "CTR attempt: title simplified to direct review query; description now leads with 5 mins from Palma, €110–€260, buggy included, and Best Golf Course in Spain 2025."
+        },
+        {
+          "date": "2026-10-19",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "Fourth look. Live title 'Son Muntaner Golf Review 2026' (48 chars with suffix) and description (115 chars) both display as written, so no truncation or rewrite. Top queries are the bare club name ('son muntaner golf', 'son muntaner') at pos 9-10, where the club's own site and booking sites sit above; the shortfall is rank, not copy. Another rewrite would be a variant of three already tried. Next lever is position (internal links, depth), not metadata."
         }
       ]
     },
@@ -125,6 +130,11 @@
           "date": "2026-09-14",
           "commit": "DIAGNOSIS-ONLY, no code change",
           "summary": "Title/description already within budget (57/131 chars) and already specific (price, empresas, 2026). The flagged query \"club rentals mallorca\" is an English-language commercial query ranking on the /es/ URL at pos 4.7, not the /en/ or /de/ equivalent. This is a language-mismatch case, not a copy-quality one: an English searcher sees Spanish title/description in the SERP and does not click. Rewriting the Spanish copy again will not fix an English-query-on-Spanish-URL mismatch. Not actionable via title/meta edit."
+        },
+        {
+          "date": "2026-10-19",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "Re-flagged. Same language-mismatch diagnosis as 2026-09-14 ('club rentals mallorca' is an English query landing on the /es/ URL). No copy change."
         }
       ]
     },
@@ -175,6 +185,11 @@
           "date": "2026-09-14",
           "commit": "DIAGNOSIS-ONLY, no code change",
           "summary": "Flagged query is the brand term \"mr mallorca golf\" at pos 1.4 with 0 clicks on this specific subpage. Branded searches overwhelmingly land on the homepage rather than a deep page even when Google ranks the deep page; this is expected brand-query behaviour, not a CTR defect on this page. Not actionable via title/meta edit."
+        },
+        {
+          "date": "2026-10-19",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "Re-flagged on the same brand term 'mr mallorca golf' at pos 1.0 (see 2026-09-14). Brand searches land on the homepage; not a CTR defect on this page."
         }
       ]
     },
@@ -216,6 +231,11 @@
           "date": "2026-09-14",
           "commit": "d99e1fc",
           "summary": "Description 184 chars, over budget. Trimmed to 112 chars, same facts."
+        },
+        {
+          "date": "2026-10-19",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "55 impr; flagged query '24courses' is a one-off oddity, 1 click vs ~3 expected: noise. Not actionable via title/meta edit."
         }
       ]
     },
@@ -252,6 +272,60 @@
           "date": "2026-10-06",
           "commit": "2f7cd7a",
           "summary": "Description was generic (no numbers) or, for sv, carried par 72. Now: green fee ~€90-110, par 70, 20 min from Palma, 6/10, matching EN. Par 72 corrected to par 70 in the facts block and EN/SV descriptions."
+        }
+      ]
+    },
+    "/guides/santa-ponsa-1-review": {
+      "edits": [
+        {
+          "date": "2026-10-19",
+          "commit": "pending",
+          "summary": "Title was the generic 'Honest Review 2026' template with no 'Golf'; top queries are 'golf santa ponsa reviews' / 'santa ponsa golf 1'. Now 'Santa Ponsa 1 Golf Review 2026'. Description left unchanged so the effect is attributable. 176 impr, pos 8.8, 1.1% CTR before."
+        }
+      ]
+    },
+    "/fr/guides/is-mallorca-good-for-golf": {
+      "edits": [
+        {
+          "date": "2026-10-19",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "One query ('golf majorque', 138 impr, pos 7.0) carries all 147 impressions; 0 clicks. Page answers 'is Mallorca good for golf' while the query wants courses/information, so intent mismatch is possible, but a single-query sample this size is too thin to act on. Re-check next month; if still 0 clicks on 150+ impressions, trial a query-led FR title."
+        }
+      ]
+    },
+    "/fr/guides/alcanada-review": {
+      "edits": [
+        {
+          "date": "2026-10-19",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "95 impr, 1 click vs ~3 expected: within noise. Not actionable via title/meta edit."
+        }
+      ]
+    },
+    "/sv/guides/son-muntaner-review": {
+      "edits": [
+        {
+          "date": "2026-10-19",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "76 impr, 0 clicks vs ~2 expected: sample too small. Not actionable via title/meta edit."
+        }
+      ]
+    },
+    "/de/guides/son-muntaner-review": {
+      "edits": [
+        {
+          "date": "2026-10-19",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "60 impr, 0 clicks vs ~2 expected: sample too small. Not actionable via title/meta edit."
+        }
+      ]
+    },
+    "/sv/guides/son-gual-review": {
+      "edits": [
+        {
+          "date": "2026-10-19",
+          "commit": "DIAGNOSIS-ONLY, no code change",
+          "summary": "60 impr, 0 clicks vs ~2 expected: sample too small. Not actionable via title/meta edit."
         }
       ]
     }

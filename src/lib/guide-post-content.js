@@ -428,7 +428,7 @@ export const GUIDE_POST_CONTENT = {
   'santa-ponsa-1-review': {
     en: {
       metadata: {
-        title: "Santa Ponsa 1 - Honest Review 2026",
+        title: "Santa Ponsa 1 Golf Review 2026",
         description:
           "Santa Ponsa 1: €77-€126, par 72, one of the longest in Europe. Hosted the DP World Tour in 2021.",
         imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
