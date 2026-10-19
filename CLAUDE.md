@@ -213,7 +213,7 @@ Never reference private contact details in public content.
 
 Next.js 16 App Router, React 18, JSX only. Vercel deployment from GitHub. Languages: EN default + DE, ES, FR, NL, SV, ZH. No database, no auth, no payment gateway.
 
-**NL and SV are SEO-only, unlinked from navigation on purpose** (`NAV_LOCALES` in `src/lib/site.js` deliberately excludes them; `ALL_LOCALES` has all 7). Pages exist and are maintained at full parity for organic search, but there is no nav link, language switcher entry, or other on-site path to them. This is intentional, not a gap — do not add them to nav links or flag their absence as a bug.
+**All 7 locales are in the language menu.** `NAV_LOCALES` in `src/lib/site.js` now equals `ALL_LOCALES` (changed 2026-10-19 at Andy's request, once the header switcher became a dropdown). NL and SV used to be unlinked on purpose; they are now reachable from the menu and the footer, so they must stay at full parity.
 
 ## Critical Rules
 

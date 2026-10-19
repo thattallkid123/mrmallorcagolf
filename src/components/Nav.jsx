@@ -1,5 +1,5 @@
 'use client'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useRef } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import { usePathname } from 'next/navigation'
@@ -85,6 +85,8 @@ const LANG_CONFIG = {
   },
 }
 
+const LANG_NAMES = { en: 'English', es: 'Español', de: 'Deutsch', fr: 'Français', nl: 'Nederlands', sv: 'Svenska', zh: '中文' }
+
 function getLangCodes(activeLang) {
   const locales = NAV_LOCALES.includes(activeLang)
     ? [activeLang, ...NAV_LOCALES.filter((locale) => locale !== activeLang)]
@@ -94,12 +96,15 @@ function getLangCodes(activeLang) {
     code: locale === 'en' ? 'EN' : locale.toUpperCase(),
     locale,
     label: locale === 'zh' ? '中文' : locale.toUpperCase(),
+    name: LANG_NAMES[locale],
   }))
 }
 
 export default function Nav({ transparent = false, lang }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
+  const [langOpen, setLangOpen] = useState(false)
+  const langRef = useRef(null)
   const pathname = usePathname()
 
   const resolvedPathname = pathname || '/'
@@ -126,6 +131,21 @@ export default function Nav({ transparent = false, lang }) {
     document.addEventListener('keydown', closeOnEscape)
     return () => document.removeEventListener('keydown', closeOnEscape)
   }, [menuOpen])
+
+  useEffect(() => {
+    if (!langOpen) return
+    const close = (event) => {
+      if (event.type === 'keydown' && event.key !== 'Escape') return
+      if (event.type === 'mousedown' && langRef.current?.contains(event.target)) return
+      setLangOpen(false)
+    }
+    document.addEventListener('mousedown', close)
+    document.addEventListener('keydown', close)
+    return () => {
+      document.removeEventListener('mousedown', close)
+      document.removeEventListener('keydown', close)
+    }
+  }, [langOpen])
 
   const navClass = ['nav', !transparent ? 'solid' : scrolled ? 'scrolled' : ''].filter(Boolean).join(' ')
   const isActive = (href) => resolvedPathname === href
@@ -157,20 +177,37 @@ export default function Nav({ transparent = false, lang }) {
             <Link href={config.cta.href} prefetch={false} className="nav__cta"><span>{config.cta.label}</span></Link>
           </li>
           <li>
-            <div className="nav__lang">
-              {langCodes.map(({ code, locale, label }, i) => (
-                <span key={code}>
-                  <Link
-                    href={getLanguageSwitchPath(resolvedPathname, locale)}
-                    prefetch={false}
-                    className={activeLangCode === code ? 'active' : ''}
-                    aria-label={locale === activeLang ? `Current language: ${label}` : `Switch language to ${label}`}
-                  >
-                    {label}
-                  </Link>
-                  {i < langCodes.length - 1 && <span className="nav__lang-sep"> · </span>}
-                </span>
-              ))}
+            <div className="nav__lang" ref={langRef}>
+              <button
+                type="button"
+                className="nav__lang-btn"
+                aria-haspopup="true"
+                aria-expanded={langOpen}
+                aria-label={`Language: ${LANG_NAMES[activeLang] || activeLangCode}`}
+                onClick={() => setLangOpen((open) => !open)}
+              >
+                {activeLangCode}
+                <span className="nav__lang-chevron" aria-hidden="true" />
+              </button>
+              {langOpen && (
+                <ul className="nav__lang-menu">
+                  {langCodes.map(({ code, locale, name }) => (
+                    <li key={code}>
+                      <Link
+                        href={getLanguageSwitchPath(resolvedPathname, locale)}
+                        prefetch={false}
+                        className={activeLangCode === code ? 'active' : ''}
+                        aria-current={locale === activeLang ? 'true' : undefined}
+                        hrefLang={locale}
+                        onClick={() => setLangOpen(false)}
+                      >
+                        {name}
+                        <span>{code}</span>
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              )}
             </div>
           </li>
         </ul>
