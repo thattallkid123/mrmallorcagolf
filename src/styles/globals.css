@@ -323,27 +323,34 @@ body {
 .nav__lang-btn:hover { color: var(--gold-text); }
 .nav.scrolled .nav__lang-btn:hover,
 .nav.solid .nav__lang-btn:hover { color: var(--pine); }
-/* Language box: gold outline with a small globe so it reads as a language chooser, in both the over-the-photo and scrolled states. Same corner radius and height as the Enquire button beside it. */
+/* Language chooser: plain text with a small gold globe, set off from the Enquire button by a thin divider, so Enquire stays the only box in the header. */
 .nav__lang {
-  border-radius: 2px;
-  border: 1.5px solid var(--gold-light);
-  background: rgba(20, 24, 23, 0.35);
+  margin-left: 1.25rem;
+  padding: 0 0 0 1.5rem;
+  border: none;
+  border-left: 1px solid rgba(255,255,255,0.28);
+  border-radius: 0;
+  background: transparent;
   box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 .nav.scrolled .nav__lang,
 .nav.solid .nav__lang {
-  border-color: var(--gold);
-  background: var(--white);
+  border-left-color: rgba(26,25,22,0.15);
+  background: transparent;
   box-shadow: none;
 }
 .nav__lang-btn {
-  color: var(--white);
-  font-weight: 500;
+  color: rgba(255,255,255,0.9);
+  font-weight: 400;
   font-size: 11px;
-  min-height: 39px;
-  padding: 0 16px;
-  border-radius: 2px;
+  letter-spacing: 0.15em;
+  min-height: 36px;
+  padding: 0;
+  border-radius: 0;
 }
+.nav__lang-btn:hover { color: var(--white); }
 .nav__lang-btn::before {
   content: "";
   width: 14px;
@@ -351,7 +358,7 @@ body {
   background: no-repeat center / contain url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D4B068' stroke-width='1.6'><circle cx='12' cy='12' r='9'/><path d='M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18'/></svg>");
 }
 .nav.scrolled .nav__lang-btn,
-.nav.solid .nav__lang-btn { color: var(--charcoal); }
+.nav.solid .nav__lang-btn { color: var(--taupe-text); }
 .nav.scrolled .nav__lang-btn::before,
 .nav.solid .nav__lang-btn::before {
   background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B8973C' stroke-width='1.6'><circle cx='12' cy='12' r='9'/><path d='M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18'/></svg>");
