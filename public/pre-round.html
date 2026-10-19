@@ -33,15 +33,18 @@ a { color: var(--pine); font-weight: 500; }
 .topbar { background: var(--deep); min-height: 70px; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 12px; color: var(--stone); font-size: 11px; font-weight: 400; letter-spacing: 0.12em; text-transform: uppercase; }
 .topbar-brand { display: inline-flex; align-items: center; gap: 12px; min-height: 44px; color: var(--gold-light); text-decoration: none; }
 .topbar img { height: 36px; width: 36px; display: block; filter: brightness(0) invert(1); }
-.langs { margin-left: auto; position: relative; }
-.langs summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 16px; border: 1px solid var(--stone); border-radius: 999px; color: var(--cream); font-weight: 400; }
+.langs { margin-left: auto; position: relative; padding-left: 24px; border-left: 1px solid rgba(255,255,255,0.28); }
+.langs summary { list-style: none; cursor: pointer; display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0; color: rgba(255,255,255,0.9); font-weight: 400; font-size: 11px; letter-spacing: 0.15em; }
 .langs summary::-webkit-details-marker { display: none; }
-.langs summary::after { content: ''; width: 7px; height: 7px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-2px); }
+.langs summary::before { content: ''; width: 14px; height: 14px; background: no-repeat center / contain url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D4B068' stroke-width='1.6'><circle cx='12' cy='12' r='9'/><path d='M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18'/></svg>"); }
+.langs summary::after { content: ''; width: 6px; height: 6px; border-right: 1.5px solid currentColor; border-bottom: 1.5px solid currentColor; transform: rotate(45deg) translateY(-2px); transition: transform 0.2s; }
 .langs[open] summary::after { transform: rotate(225deg); }
-.langs .menu { position: absolute; right: 0; top: calc(100% + 8px); z-index: 10; min-width: 190px; background: var(--deep); border: 1px solid #3a3733; border-radius: 8px; padding: 6px; box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35); }
-.langs .menu a { display: flex; align-items: center; justify-content: space-between; gap: 16px; min-height: 44px; padding: 0 12px; border-radius: 6px; color: var(--stone); text-decoration: none; font-weight: 400; letter-spacing: 0.04em; text-transform: none; font-size: 14px; }
-.langs .menu a:hover { background: #2a2825; color: var(--cream); }
-.langs .menu a.on { color: var(--gold-light); }
+.langs .menu { position: absolute; right: 0; top: calc(100% + 10px); z-index: 60; min-width: 190px; background: #fff; border: 1px solid var(--linen); border-radius: 10px; padding: 6px; box-shadow: 0 14px 34px rgba(26,25,22,0.18); }
+.langs .menu a { display: flex; align-items: center; justify-content: space-between; gap: 18px; min-height: 44px; padding: 0 12px; border-radius: 6px; color: var(--charcoal); text-decoration: none; font-weight: 400; letter-spacing: 0.02em; text-transform: none; font-size: 13px; }
+.langs .menu a span { font-size: 10px; letter-spacing: 0.14em; color: #6B6157; }
+.langs .menu a:hover { background: var(--cream); color: var(--pine); }
+.langs .menu a.on { color: var(--pine); font-weight: 500; }
+:focus-visible { outline: 2px solid var(--gold); outline-offset: 4px; }
 .backlink { display: inline-flex; align-items: center; min-height: 44px; margin: 0 0 4px; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: var(--taupe); text-decoration: none; }
 .backlink:hover { color: var(--pine); }
 main { max-width: 1080px; margin: 0 auto; padding: 28px 16px 48px; }
@@ -77,11 +80,17 @@ h2 { font-family: var(--font-serif); font-weight: 600; font-size: 1.45rem; color
 .railbox { margin-top: 18px; padding-top: 4px; border-top: 1px solid var(--sand); }
 .railbox h2 { font-size: 1.25rem; margin: 14px 0 4px; }
 .railbox p { font-size: 0.95rem; }
-.railbox .btns { display: grid; grid-template-columns: repeat(auto-fit, minmax(140px, 1fr)); gap: 10px; margin-top: 12px; }
+.contacts { display: grid; gap: 10px; margin-top: 12px; }
+.contacts a { display: block; min-height: 44px; overflow-wrap: anywhere; text-underline-offset: 3px; }
+.contacts .label { display: block; color: #6B6157; font-size: 0.8rem; font-weight: 400; }
+.copy-status { min-height: 1.5em; font-size: 0.85rem; color: var(--pine); }
+.copy-fallback { margin-top: 10px; }
+.copy-fallback p { font-size: 0.9rem; }
+.copy-fallback textarea { display: block; width: 100%; min-height: 180px; margin-top: 8px; padding: 12px; font: inherit; color: var(--charcoal); background: #fff; border: 1px solid var(--stone); }
 .rail .share { display: grid; grid-template-columns: 1fr; margin-top: 10px; }
 .rail .guide { display: grid; grid-template-columns: 1fr; margin-top: 12px; }
 @media (min-width: 900px) {
-  .cols { grid-template-columns: 400px minmax(0, 1fr); column-gap: 48px; }
+  .cols { grid-template-columns: 320px minmax(0, 1fr); column-gap: 40px; }
   .rail { position: sticky; top: 20px; align-self: start; }
   .rail .map img { height: 300px; }
   .hero img { aspect-ratio: 16 / 6; }
@@ -93,25 +102,23 @@ dl { display: block; background: #fff; border: 1px solid var(--sand); border-rad
 dt { font-size: 12px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #6B6157; }
 dd { margin-top: 2px; }
 dd .btn { margin-top: 2px; }
-@media (min-width: 640px) {
-  .item { display: grid; grid-template-columns: 170px minmax(0, 1fr); column-gap: 24px; }
-  .item dt { grid-column: 1; grid-row: 1 / span 4; padding-top: 3px; }
-  .item dd { grid-column: 2; margin-top: 0; }
-  .item dd + dd { margin-top: 8px; }
-}
 .body h2:first-child { margin-top: 18px; }
 ul.bring { list-style: none; display: grid; gap: 6px; }
 ul.bring li { padding-left: 22px; position: relative; }
 ul.bring li::before { content: ''; position: absolute; left: 4px; top: 0.7em; width: 8px; height: 8px; border-radius: 50%; background: var(--gold); }
 .muted { color: #6B6157; }
 .later { margin-top: 14px; }
-.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 0 18px; border-radius: 4px; background: var(--pine); color: var(--cream); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
+.btn { display: inline-flex; align-items: center; justify-content: center; min-height: 44px; padding: 10px 18px; border: 1px solid transparent; cursor: pointer; font-family: inherit; line-height: 1.4; border-radius: 4px; background: var(--pine); color: var(--cream); text-decoration: none; font-weight: 500; font-size: 0.95rem; }
 .btn.alt { background: transparent; color: var(--pine); border: 1px solid var(--pine); }
 .btns { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 10px; }
 .btns.top { margin-top: 14px; }
 .picker { margin-top: 16px; display: grid; gap: 8px; }
 .picker select { min-height: 44px; font: inherit; padding: 0 10px; border: 1px solid var(--stone); border-radius: 4px; background: #fff; }
-footer { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--sand); max-width: 720px; }
+footer { margin-top: 24px; padding-top: 24px; border-top: 1px solid var(--sand); display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 16px 24px; }
+.footer-copy { flex: 1 1 420px; }
+.footer-copy p + p { margin-top: 4px; }
+footer .btn { flex: 0 0 auto; }
+.round:last-of-type { margin-bottom: 0; padding-bottom: 8px; }
 @media (min-width: 640px) { h1 { font-size: 2.8rem; } }
 </style>
 </head>
@@ -189,15 +196,15 @@ const UI = {
     "directions": "Directions to the club",
     "mapalt": "Map showing where {name} is",
     "contact_h": "Contact the club",
-    "contact_p": "Questions about the course itself, such as the straps on the bags with the hire sets, buggy availability or opening hours? The club can answer these directly.",
+    "contact_p": "For opening hours, hire equipment or course rules, contact the club directly.",
     "call": "Call the club",
     "emailclub": "Email the club",
     "later": "I will send you the details for this course directly before the day.",
     "picker_h": "Arrival notes",
     "picker_p": "Choose your course to see when to arrive, what is open and what to bring.",
     "picker_opt": "Choose a course",
-    "footer_a": "Clubs change their hours and rules from time to time. If anything here matters to your plan, message me and I will confirm it with the club.",
-    "footer_b": "Questions before the day? Message me and I will sort it out.",
+    "footer_a": "Arrival times, facilities and what to bring for your round in Mallorca.",
+    "footer_b": "Questions about your booking? Message me.",
     "whatsapp": "WhatsApp Andy",
     "loading": "Loading your round...",
     "error": "This page could not load. Message me on <a href=\"{wa}\">WhatsApp</a> and I will send the details directly.",
@@ -210,7 +217,12 @@ const UI = {
     "l_buggyTrolley": "Walking, buggies and trolleys",
     "l_practiceFacilities": "Practice facilities",
     "l_travel": "Getting there",
-    "travel_text": "About {p} minutes from Palma and {a} minutes from Palma airport."
+    "travel_text": "About {p} minutes from Palma and {a} minutes from Palma airport.",
+    "round_intro": "Practical information for your round in Mallorca.",
+    "copy": "Copy round info",
+    "copied": "Round info copied.",
+    "copy_manual": "Select and copy the information below.",
+    "language": "Language"
   },
   "de": {
     "l_dressShoes": "Kleiderordnung und Schuhe",
@@ -263,15 +275,15 @@ const UI = {
     "directions": "Anfahrt zum Club",
     "mapalt": "Karte mit der Lage von {name}",
     "contact_h": "Den Club kontaktieren",
-    "contact_p": "Fragen zum Platz selbst, etwa zu den Tragegurten an den Taschen der Leihschläger, zur Verfügbarkeit von Buggys oder zu den Öffnungszeiten? Der Club beantwortet sie Ihnen direkt.",
+    "contact_p": "Bei Fragen zu Öffnungszeiten, Leihausrüstung oder Platzregeln wenden Sie sich bitte direkt an den Club.",
     "call": "Club anrufen",
     "emailclub": "Club per E-Mail kontaktieren",
     "later": "Die Details zu diesem Platz schicke ich Ihnen vor dem Spieltag direkt.",
     "picker_h": "Hinweise zur Ankunft",
     "picker_p": "Wählen Sie Ihren Platz, um zu sehen, wann Sie ankommen sollten, was geöffnet hat und was Sie mitbringen sollten.",
     "picker_opt": "Platz wählen",
-    "footer_a": "Die Clubs ändern ihre Öffnungszeiten und Regeln von Zeit zu Zeit. Wenn etwas hier für Ihre Planung wichtig ist, schreiben Sie mir, dann bestätige ich es beim Club.",
-    "footer_b": "Fragen vor dem Spieltag? Schreiben Sie mir, ich kümmere mich darum.",
+    "footer_a": "Ankunftszeiten, Einrichtungen und was Sie für Ihre Golfrunde auf Mallorca mitbringen sollten.",
+    "footer_b": "Fragen zu Ihrer Buchung? Schreiben Sie mir.",
     "whatsapp": "WhatsApp Andy",
     "loading": "Ihre Runde wird geladen ...",
     "error": "Diese Seite konnte nicht geladen werden. Schreiben Sie mir per <a href=\"{wa}\">WhatsApp</a>, dann schicke ich Ihnen die Details direkt.",
@@ -284,7 +296,12 @@ const UI = {
     "l_buggyTrolley": "Gehen, Buggys und Trolleys",
     "l_practiceFacilities": "Übungsanlagen",
     "l_travel": "Anfahrt",
-    "travel_text": "Etwa {p} Minuten von Palma und {a} Minuten vom Flughafen Palma entfernt."
+    "travel_text": "Etwa {p} Minuten von Palma und {a} Minuten vom Flughafen Palma entfernt.",
+    "round_intro": "Praktische Informationen für Ihre Golfrunde auf Mallorca.",
+    "copy": "Rundeninfos kopieren",
+    "copied": "Rundeninfos kopiert.",
+    "copy_manual": "Markieren und kopieren Sie die folgenden Informationen.",
+    "language": "Sprache"
   },
   "es": {
     "l_dressShoes": "Código de vestimenta y calzado",
@@ -337,15 +354,15 @@ const UI = {
     "directions": "Cómo llegar al club",
     "mapalt": "Mapa con la ubicación de {name}",
     "contact_h": "Contactar con el club",
-    "contact_p": "¿Preguntas sobre el campo, por ejemplo sobre las correas de las bolsas de los palos de alquiler, la disponibilidad de buggies o el horario? El club puede responderlas directamente.",
+    "contact_p": "Para consultar horarios, material de alquiler o normas del campo, contacte directamente con el club.",
     "call": "Llamar al club",
     "emailclub": "Escribir al club",
     "later": "Le enviaré los detalles de este campo directamente antes del día de juego.",
     "picker_h": "Información para su llegada",
     "picker_p": "Elija su campo para ver cuándo llegar, qué está abierto y qué llevar.",
     "picker_opt": "Elija un campo",
-    "footer_a": "Los clubes cambian sus horarios y normas de vez en cuando. Si algo de lo que aparece aquí es importante para su plan, escríbame y lo confirmaré con el club.",
-    "footer_b": "¿Alguna pregunta antes del día de juego? Escríbame y lo resuelvo.",
+    "footer_a": "Horarios de llegada, instalaciones y qué llevar para su ronda de golf en Mallorca.",
+    "footer_b": "¿Preguntas sobre su reserva? Escríbame.",
     "whatsapp": "WhatsApp a Andy",
     "loading": "Cargando su vuelta...",
     "error": "No se ha podido cargar esta página. Escríbame por <a href=\"{wa}\">WhatsApp</a> y le enviaré los detalles directamente.",
@@ -358,7 +375,12 @@ const UI = {
     "l_buggyTrolley": "A pie, buggies y carros",
     "l_practiceFacilities": "Zonas de práctica",
     "l_travel": "Cómo llegar",
-    "travel_text": "A unos {p} minutos de Palma y {a} minutos del aeropuerto de Palma."
+    "travel_text": "A unos {p} minutos de Palma y {a} minutos del aeropuerto de Palma.",
+    "round_intro": "Información práctica para su ronda de golf en Mallorca.",
+    "copy": "Copiar información",
+    "copied": "Información copiada.",
+    "copy_manual": "Seleccione y copie la información siguiente.",
+    "language": "Idioma"
   },
   "fr": {
     "l_dressShoes": "Tenue et chaussures",
@@ -411,15 +433,15 @@ const UI = {
     "directions": "Itinéraire jusqu’au club",
     "mapalt": "Carte indiquant où se trouve {name}",
     "contact_h": "Contacter le club",
-    "contact_p": "Une question sur le parcours lui-même, par exemple les bretelles des sacs des clubs de location, la disponibilité des voiturettes ou les horaires d’ouverture ? Le club peut y répondre directement.",
+    "contact_p": "Pour les horaires, le matériel de location ou les règles du parcours, contactez directement le club.",
     "call": "Appeler le club",
     "emailclub": "Écrire au club",
     "later": "Je vous enverrai directement les détails de ce parcours avant le jour J.",
     "picker_h": "Infos d’arrivée",
     "picker_p": "Choisissez votre parcours pour voir quand arriver, ce qui est ouvert et quoi apporter.",
     "picker_opt": "Choisir un parcours",
-    "footer_a": "Les clubs modifient parfois leurs horaires et leurs règles. Si un point ici compte pour votre programme, écrivez-moi et je le confirmerai avec le club.",
-    "footer_b": "Des questions avant le jour J ? Écrivez-moi et je m’en occupe.",
+    "footer_a": "Heure d’arrivée, installations et affaires à prévoir pour votre partie de golf à Mallorca.",
+    "footer_b": "Une question sur votre réservation ? Écrivez-moi.",
     "whatsapp": "WhatsApp Andy",
     "loading": "Chargement de votre partie...",
     "error": "Cette page n’a pas pu se charger. Écrivez-moi sur <a href=\"{wa}\">WhatsApp</a> et je vous enverrai directement les détails.",
@@ -432,7 +454,12 @@ const UI = {
     "l_buggyTrolley": "Marche, voiturettes et chariots",
     "l_practiceFacilities": "Zones d’entraînement",
     "l_travel": "Accès",
-    "travel_text": "À environ {p} minutes de Palma et {a} minutes de l’aéroport de Palma."
+    "travel_text": "À environ {p} minutes de Palma et {a} minutes de l’aéroport de Palma.",
+    "round_intro": "Informations pratiques pour votre partie de golf à Mallorca.",
+    "copy": "Copier les informations",
+    "copied": "Informations copiées.",
+    "copy_manual": "Sélectionnez et copiez les informations ci-dessous.",
+    "language": "Langue"
   },
   "nl": {
     "l_dressShoes": "Kledingvoorschrift en schoenen",
@@ -485,15 +512,15 @@ const UI = {
     "directions": "Route naar de club",
     "mapalt": "Kaart met de ligging van {name}",
     "contact_h": "Neem contact op met de club",
-    "contact_p": "Vragen over de baan zelf, zoals de draagriemen van de tassen bij de huurclubs, de beschikbaarheid van buggy’s of de openingstijden? De club kan die rechtstreeks beantwoorden.",
+    "contact_p": "Neem voor openingstijden, huurmateriaal of baanregels rechtstreeks contact op met de club.",
     "call": "Bel de club",
     "emailclub": "Mail de club",
     "later": "Ik stuur u de gegevens voor deze baan vóór de speeldag rechtstreeks toe.",
     "picker_h": "Aankomstinformatie",
     "picker_p": "Kies uw baan om te zien wanneer u er moet zijn, wat open is en wat u moet meenemen.",
     "picker_opt": "Kies een baan",
-    "footer_a": "Clubs passen hun openingstijden en regels van tijd tot tijd aan. Als iets hiervan belangrijk is voor uw planning, stuur mij dan een bericht, dan bevestig ik het bij de club.",
-    "footer_b": "Vragen vóór de speeldag? Stuur mij een bericht, dan regel ik het.",
+    "footer_a": "Aankomsttijden, faciliteiten en wat u moet meenemen voor uw golfronde op Mallorca.",
+    "footer_b": "Vragen over uw boeking? Stuur mij een bericht.",
     "whatsapp": "WhatsApp Andy",
     "loading": "Uw ronde wordt geladen...",
     "error": "Deze pagina kon niet worden geladen. Stuur mij een bericht via <a href=\"{wa}\">WhatsApp</a>, dan stuur ik u de gegevens rechtstreeks.",
@@ -506,7 +533,12 @@ const UI = {
     "l_buggyTrolley": "Lopen, buggy’s en trolleys",
     "l_practiceFacilities": "Oefenfaciliteiten",
     "l_travel": "Route",
-    "travel_text": "Ongeveer {p} minuten van Palma en {a} minuten van de luchthaven van Palma."
+    "travel_text": "Ongeveer {p} minuten van Palma en {a} minuten van de luchthaven van Palma.",
+    "round_intro": "Praktische informatie voor uw golfronde op Mallorca.",
+    "copy": "Ronde-informatie kopiëren",
+    "copied": "Ronde-informatie gekopieerd.",
+    "copy_manual": "Selecteer en kopieer de onderstaande informatie.",
+    "language": "Taal"
   },
   "sv": {
     "l_dressShoes": "Klädsel och skor",
@@ -559,15 +591,15 @@ const UI = {
     "directions": "Vägbeskrivning till klubben",
     "mapalt": "Karta som visar var {name} ligger",
     "contact_h": "Kontakta klubben",
-    "contact_p": "Frågor om själva banan, till exempel bärremmarna på bagarna som hör till hyrklubborna, tillgången på golfbilar eller öppettider? Det kan klubben svara på direkt.",
+    "contact_p": "Kontakta klubben direkt för öppettider, hyrutrustning eller banregler.",
     "call": "Ring klubben",
     "emailclub": "Mejla klubben",
     "later": "Jag skickar detaljerna för den här banan direkt till dig före dagen.",
     "picker_h": "Ankomstinformation",
     "picker_p": "Välj din bana för att se när du ska komma, vad som är öppet och vad du ska ta med.",
     "picker_opt": "Välj en bana",
-    "footer_a": "Klubbarna ändrar sina öppettider och regler då och då. Om något här påverkar din planering, skriv till mig så bekräftar jag det med klubben.",
-    "footer_b": "Frågor före dagen? Skriv till mig så ordnar jag det.",
+    "footer_a": "Ankomsttider, faciliteter och vad du ska ta med till din golfrunda på Mallorca.",
+    "footer_b": "Frågor om din bokning? Skriv till mig.",
     "whatsapp": "WhatsApp Andy",
     "loading": "Laddar din runda...",
     "error": "Sidan kunde inte laddas. Skriv till mig på <a href=\"{wa}\">WhatsApp</a> så skickar jag detaljerna direkt.",
@@ -580,7 +612,12 @@ const UI = {
     "l_buggyTrolley": "Att gå, golfbilar och vagnar",
     "l_practiceFacilities": "Träningsanläggningar",
     "l_travel": "Hit kommer du",
-    "travel_text": "Cirka {p} minuter från Palma och {a} minuter från Palmas flygplats."
+    "travel_text": "Cirka {p} minuter från Palma och {a} minuter från Palmas flygplats.",
+    "round_intro": "Praktisk information inför din golfrunda på Mallorca.",
+    "copy": "Kopiera rundinformationen",
+    "copied": "Rundinformationen kopierad.",
+    "copy_manual": "Markera och kopiera informationen nedan.",
+    "language": "Språk"
   },
   "zh": {
     "l_dressShoes": "着装与球鞋",
@@ -633,15 +670,15 @@ const UI = {
     "directions": "前往球会的路线",
     "mapalt": "显示 {name} 位置的地图",
     "contact_h": "联系球会",
-    "contact_p": "关于球场本身的问题，例如租杆所配球包的背带、球车是否可租，或营业时间？球会可以直接为您解答。",
+    "contact_p": "如需了解营业时间、租赁装备或球场规定，请直接联系球会。",
     "call": "致电球会",
     "emailclub": "给球会发邮件",
     "later": "我会在当天之前直接把这个球场的详细信息发给您。",
     "picker_h": "到达须知",
     "picker_p": "选择您的球场，查看何时到达、哪些设施开放以及需要携带什么。",
     "picker_opt": "选择球场",
-    "footer_a": "球会会不时调整营业时间和规定。如果这里的内容对您的安排有影响，请给我发消息，我会向球会确认。",
-    "footer_b": "当天之前有任何问题？给我发消息，我来处理。",
+    "footer_a": "查看您在马略卡打球的到达时间、球场设施和所需物品。",
+    "footer_b": "对预订有疑问？请给我发消息。",
     "whatsapp": "通过 WhatsApp 联系 Andy",
     "loading": "正在加载您的球局……",
     "error": "此页面无法加载。请通过 <a href=\"{wa}\">WhatsApp</a> 给我发消息，我会直接把详细信息发给您。",
@@ -654,7 +691,12 @@ const UI = {
     "l_buggyTrolley": "步行、球车和手推车",
     "l_practiceFacilities": "练习设施",
     "l_travel": "前往方式",
-    "travel_text": "距帕尔马约{p}分钟车程，距帕尔马机场约{a}分钟车程。"
+    "travel_text": "距帕尔马约{p}分钟车程，距帕尔马机场约{a}分钟车程。",
+    "round_intro": "您在马略卡打球前需要的实用信息。",
+    "copy": "复制球局信息",
+    "copied": "球局信息已复制。",
+    "copy_manual": "请选中并复制以下信息。",
+    "language": "语言"
   }
 };
 // END GENERATED UI
@@ -753,6 +795,7 @@ function renderRound(course, round, closures) {
   let head = course.hero
     ? `<figure class="hero"><img src="/pre-round-assets/hero/${esc(round.c)}.webp" alt="${esc(ui('photoalt', { name: course.name }))}" width="1000" height="500"><figcaption class="cap"><div class="eyebrow">${ui('eyebrow')}</div><h1>${esc(course.name)}</h1></figcaption></figure>`
     : `<div class="eyebrow">${ui('eyebrow')}</div><h1>${esc(course.name)}</h1>`;
+  head += `<p class="round-intro">${ui('round_intro')}</p>`;
   if (when) head += `<div class="when">${when}</div>`;
   (closures || []).filter(c => round.d && (c.courses || []).includes(round.c) && round.d >= c.from && round.d <= c.to)
     .forEach(c => { head += `<div class="notice"><strong>${ui('note')}</strong>${LANG === 'zh' ? '' : ' '}${esc(tx(c.text))}</div>`; });
@@ -773,6 +816,7 @@ function renderRound(course, round, closures) {
     }
   }
   let shareBtn = '';
+  let shareText = '';
   let contactHtml = '';
   // A WhatsApp message a client can send to the people they are playing with: course, day, when to be there, directions, and this page.
   {
@@ -784,7 +828,8 @@ function renderRound(course, round, closures) {
     if (place) lines.push(ui('msg_dir') + ': https://www.google.com/maps/dir/?api=1&destination=' + place);
     const part = [round.c, round.d || '', round.t ? round.t.replace(':', '') : ''].join('~').replace(/~+$/, '');
     lines.push(ui('msg_all') + ': ' + location.origin + location.pathname + '?r=' + part + (LANG !== 'en' ? '&lang=' + LANG : ''));
-    shareBtn = `<div class="btns share"><a class="btn alt" href="https://wa.me/?text=${encodeURIComponent(lines.join('\n'))}" target="_blank" rel="noopener">${ui('share')}</a></div>`;
+    shareText = lines.join('\n');
+    shareBtn = `<div class="btns share"><a class="btn alt" href="https://wa.me/?text=${encodeURIComponent(shareText)}" target="_blank" rel="noopener">${ui('share')}</a><button class="btn alt copy-info" type="button" data-copy="${esc(shareText)}">${ui('copy')}</button></div><p class="copy-status" role="status"></p><div class="copy-fallback" hidden><p>${ui('copy_manual')}</p><textarea readonly aria-label="${esc(ui('copy'))}"></textarea></div>`;
   }
 
   let html = '';
@@ -808,9 +853,9 @@ function renderRound(course, round, closures) {
   html += `<h2>${ui('g_bring')}</h2><ul class="bring">` + bringList(course, round).map(i => `<li>${esc(i)}</li>`).join('') + '</ul>';
   if (course.contact && (course.contact.phone || course.contact.email)) {
     const tel = String(course.contact.phone || '').replace(/[^\d+]/g, '');
-    contactHtml = `<div class="railbox"><h2>${ui('contact_h')}</h2><p>${ui('contact_p')}</p><div class="btns">`
-      + (tel ? `<a class="btn alt" href="tel:${tel}">${ui('call')}</a>` : '')
-      + (course.contact.email ? `<a class="btn alt" href="mailto:${esc(course.contact.email)}">${ui('emailclub')}</a>` : '')
+    contactHtml = `<div class="railbox"><h2>${ui('contact_h')}</h2><p>${ui('contact_p')}</p><div class="contacts">`
+      + (tel ? `<a href="tel:${tel}"><span class="label">${ui('call')}</span>${esc(course.contact.phone)}</a>` : '')
+      + (course.contact.email ? `<a href="mailto:${esc(course.contact.email)}"><span class="label">${ui('emailclub')}</span>${esc(course.contact.email)}</a>` : '')
       + '</div></div>';
   }
   // The map picture on the left (on a phone, above everything): tap it for directions in Google Maps. It is centred on the
@@ -839,11 +884,12 @@ async function main() {
   document.title = ui('title');
   const NAMES = { en: 'English', de: 'Deutsch', es: 'Español', fr: 'Français', nl: 'Nederlands', sv: 'Svenska', zh: '中文' };
   const langBox = document.getElementById('langs');
-  langBox.innerHTML = `<summary aria-label="Language">${LANG.toUpperCase()}</summary><nav class="menu">` + SUPPORTED.map(l => {
+  langBox.innerHTML = `<summary aria-label="${esc(ui('language'))}: ${NAMES[LANG]}">${LANG.toUpperCase()}</summary><nav class="menu" aria-label="${esc(ui('language'))}">` + [LANG, ...SUPPORTED.filter(l => l !== LANG)].map(l => {
     const p = new URLSearchParams(location.search); p.set('lang', l);
-    return `<a href="?${p.toString()}" class="${l === LANG ? 'on' : ''}" hreflang="${l}">${NAMES[l]}<span>${l.toUpperCase()}</span></a>`;
+    return `<a href="?${p.toString()}" class="${l === LANG ? 'on' : ''}" hreflang="${l}"${l === LANG ? ' aria-current="true"' : ''}>${NAMES[l]}<span>${l.toUpperCase()}</span></a>`;
   }).join('') + '</nav>';
   document.addEventListener('click', e => { if (!langBox.contains(e.target)) langBox.removeAttribute('open'); });
+  document.addEventListener('keydown', e => { if (e.key === 'Escape' && langBox.open) { langBox.open = false; langBox.querySelector('summary').focus(); } });
   app.innerHTML = `<p class="muted">${ui('loading')}</p>`;
   // Both files are fetched together, each retried a couple of times so a dropped request on a poor connection does not leave the page in English.
   const getJson = async url => {
@@ -867,9 +913,26 @@ async function main() {
   }
   const rounds = parseRounds(new URLSearchParams(location.search)).filter(r => data.courses[r.c]);
   let html = rounds.length ? rounds.map(r => renderRound(data.courses[r.c], r, data.closures)).join('') : renderPicker(data);
-  html += `<footer><p class="muted">${ui('footer_a')}</p><p>${ui('footer_b')}</p><div class="btns"><a class="btn alt" href="${WHATSAPP}">${ui('whatsapp')}</a></div></footer>`;
+  html += `<footer><div class="footer-copy"><p class="muted">${ui('footer_a')}</p><p>${ui('footer_b')}</p></div><a class="btn alt" href="${WHATSAPP}">${ui('whatsapp')}</a></footer>`;
   app.innerHTML = html;
   app.setAttribute('aria-busy', 'false');
+  app.querySelectorAll('.copy-info').forEach(button => button.addEventListener('click', async () => {
+    const rail = button.closest('.rail');
+    const status = rail.querySelector('.copy-status');
+    const fallback = rail.querySelector('.copy-fallback');
+    try {
+      await navigator.clipboard.writeText(button.dataset.copy);
+      status.textContent = ui('copied');
+      fallback.hidden = true;
+    } catch (e) {
+      status.textContent = '';
+      fallback.hidden = false;
+      const field = fallback.querySelector('textarea');
+      field.value = button.dataset.copy;
+      field.focus();
+      field.select();
+    }
+  }));
   const pick = document.getElementById('pick');
   if (pick) pick.addEventListener('change', () => { if (pick.value) location.search = '?c=' + encodeURIComponent(pick.value) + (LANG !== 'en' ? '&lang=' + LANG : ''); });
 }
