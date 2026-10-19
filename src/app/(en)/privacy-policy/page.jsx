@@ -69,6 +69,7 @@ export default function PrivacyPolicy() {
             <p>Your trip-preferences draft is saved in session storage for up to 24 hours in that tab. It is cleared after successful submission or when the tab session ends. Staff previews do not save drafts.</p>
             <p>This website uses Google Analytics to understand how visitors use our site. Google Analytics collects usage data including pages visited, time spent, and approximate geographic location (country/region level), tied to a randomly generated identifier stored in your browser. This identifier is pseudonymous &mdash; it does not include your name or contact details &mdash; but it is not fully anonymous data.</p>
             <p>Google Analytics data is processed by Google LLC, certified under the EU-US Data Privacy Framework, in accordance with their privacy policy. You can opt out of Google Analytics tracking at any time by installing the <a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer">Google Analytics Opt-out Browser Add-on</a>.</p>
+            <p>On the Chinese-language pages (/zh) we do not use Google Analytics. We count page views there with Vercel Web Analytics instead, which sets no cookies and stores no personal profile. It reports only anonymous totals such as pages viewed, country and device type, and is processed by Vercel Inc., our hosting provider.</p>
           </section>
 
           <section className="legal-section">
