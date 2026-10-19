@@ -206,7 +206,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Rolle auf der Reise: starker Abschluss, vernünftiger Flughafentag"
       },
       {
-        "text": "Am letzten Tag sollte der Weg zum Flughafen einfach bleiben. T Golf Calvià bietet einen starken Abschluss, und die Gruppe muss nie über die Insel fahren: Es liegt etwa dreißig Minuten von Palma und rund 25 Minuten vom Flughafen entfernt, alles auf der Autobahn."
+        "text": "Am letzten Tag sollte der Weg zum Flughafen einfach bleiben. T Golf Calvià bietet einen starken Abschluss, und die Gruppe muss nie über die Insel fahren: Es liegt etwa dreißig Minuten von Palma und vom Flughafen entfernt, alles auf der Autobahn."
       },
       {
         "alt": "T Golf Calvià auf Mallorca",
@@ -480,7 +480,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Papel en el viaje: un buen final y un día de aeropuerto razonable"
       },
       {
-        "text": "El último día conviene que el traslado al aeropuerto sea sencillo. T Golf Calvià ofrece un buen final y el grupo no tiene que cruzar la isla: está a unos treinta minutos de Palma y a unos 25 minutos del aeropuerto, todo por autopista."
+        "text": "El último día conviene que el traslado al aeropuerto sea sencillo. T Golf Calvià ofrece un buen final y el grupo no tiene que cruzar la isla: está a unos treinta minutos tanto de Palma como del aeropuerto, todo por autopista."
       },
       {
         "alt": "T Golf Calvià en Mallorca",
@@ -754,7 +754,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Rôle dans le séjour : une belle fin et un jour de départ raisonnable"
       },
       {
-        "text": "Le dernier jour, le trajet vers l'aéroport doit rester simple. T Golf Calvià offre une belle fin et le groupe n'a jamais à traverser l'île : il est à environ trente minutes de Palma et à 25 minutes environ de l'aéroport, le tout par l'autoroute."
+        "text": "Le dernier jour, le trajet vers l'aéroport doit rester simple. T Golf Calvià offre une belle fin et le groupe n'a jamais à traverser l'île : il est à environ trente minutes de Palma comme de l'aéroport, le tout par l'autoroute."
       },
       {
         "alt": "T Golf Calvià à Majorque",
@@ -1028,7 +1028,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Rol in de reis: sterke afsluiting, verstandige luchthavendag"
       },
       {
-        "text": "Op de laatste dag moet de rit naar de luchthaven eenvoudig blijven. T Golf Calvià geeft je een sterke afsluiting en de groep hoeft nooit het eiland over te steken: het ligt ongeveer dertig minuten van Palma en zo'n 25 minuten van de luchthaven, allemaal via de snelweg."
+        "text": "Op de laatste dag moet de rit naar de luchthaven eenvoudig blijven. T Golf Calvià geeft je een sterke afsluiting en de groep hoeft nooit het eiland over te steken: het ligt ongeveer dertig minuten van zowel Palma als de luchthaven, allemaal via de snelweg."
       },
       {
         "alt": "T Golf Calvià op Mallorca",
@@ -1302,7 +1302,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "Roll i resan: stark avslutning, förnuftig flygplatsdag"
       },
       {
-        "text": "Sista dagen ska resan till flygplatsen vara enkel. T Golf Calvià ger dig en stark avslutning och gruppen behöver aldrig åka över ön: den ligger cirka trettio minuter från Palma och cirka 25 minuter från flygplatsen, hela vägen på motorvägen."
+        "text": "Sista dagen ska resan till flygplatsen vara enkel. T Golf Calvià ger dig en stark avslutning och gruppen behöver aldrig åka över ön: den ligger cirka trettio minuter från både Palma och flygplatsen, hela vägen på motorvägen."
       },
       {
         "alt": "T Golf Calvià på Mallorca",
@@ -1576,7 +1576,7 @@ export const FIVE_DAY_ITINERARY_LOCALIZED = {
         "text": "在行程中的角色：强劲的收尾，合理的机场日"
       },
       {
-        "text": "最后一天，去机场的路要尽量简单。T Golf Calvià 给你一个强劲的收尾，团队也完全不用横穿全岛：它离帕尔马大约三十分钟，离机场大约 25 分钟，全程走高速。"
+        "text": "最后一天，去机场的路要尽量简单。T Golf Calvià 给你一个强劲的收尾，团队也完全不用横穿全岛：它离帕尔马和机场都大约三十分钟，全程走高速。"
       },
       {
         "alt": "马略卡 T Golf Calvià",

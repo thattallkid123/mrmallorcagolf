@@ -190,7 +190,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Terminar corto y cerca del aeropuerto",
-            "body": "La última vuelta debería dejar fácil el traslado al aeropuerto. T Golf Calvià está a unos 25 minutos del aeropuerto por autopista, así que el grupo no cruza la isla de camino a casa, y un pequeño retraso debería costar la comida, no el vuelo."
+            "body": "La última vuelta debería dejar fácil el traslado al aeropuerto. T Golf Calvià está a unos 30 minutos del aeropuerto por autopista, así que el grupo no cruza la isla de camino a casa, y un pequeño retraso debería costar la comida, no el vuelo."
           }
         ]
       },
@@ -381,7 +381,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Kurz und flughafennah abschließen",
-            "body": "Die letzte Runde sollte den Flughafen einfach halten. T Golf Calvià liegt auf der Autobahn etwa 25 Minuten vom Flughafen entfernt, die Gruppe muss also auf dem Heimweg nicht quer über die Insel fahren, und eine kleine Verzögerung sollte das Mittagessen kosten, nicht den Flug."
+            "body": "Die letzte Runde sollte den Flughafen einfach halten. T Golf Calvià liegt auf der Autobahn etwa 30 Minuten vom Flughafen entfernt, die Gruppe muss also auf dem Heimweg nicht quer über die Insel fahren, und eine kleine Verzögerung sollte das Mittagessen kosten, nicht den Flug."
           }
         ]
       },
@@ -572,7 +572,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Finir court et près de l’aéroport",
-            "body": "La dernière partie doit laisser un trajet simple vers l’aéroport. T Golf Calvià est à environ 25 minutes de l’aéroport par l’autoroute : le groupe ne traverse pas l’île au retour, et un petit retard devrait coûter le déjeuner, pas le vol."
+            "body": "La dernière partie doit laisser un trajet simple vers l’aéroport. T Golf Calvià est à environ 30 minutes de l’aéroport par l’autoroute : le groupe ne traverse pas l’île au retour, et un petit retard devrait coûter le déjeuner, pas le vol."
           }
         ]
       },
@@ -763,7 +763,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Eindig kort en dicht bij de luchthaven",
-            "body": "Bij de laatste ronde moet de rit naar de luchthaven eenvoudig blijven. T Golf Calvià ligt via de snelweg ongeveer 25 minuten van de luchthaven, dus de groep hoeft op de terugweg niet over het eiland te rijden, en een kleine vertraging mag de lunch kosten, niet de vlucht."
+            "body": "Bij de laatste ronde moet de rit naar de luchthaven eenvoudig blijven. T Golf Calvià ligt via de snelweg ongeveer 30 minuten van de luchthaven, dus de groep hoeft op de terugweg niet over het eiland te rijden, en een kleine vertraging mag de lunch kosten, niet de vlucht."
           }
         ]
       },
@@ -954,7 +954,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "Avsluta kort och nära flygplatsen",
-            "body": "Sista rundan ska ge en enkel resa till flygplatsen. T Golf Calvià ligger cirka 25 minuter från flygplatsen via motorvägen, så gruppen behöver inte åka över ön på hemvägen, och en liten försening får kosta lunchen, inte flyget."
+            "body": "Sista rundan ska ge en enkel resa till flygplatsen. T Golf Calvià ligger cirka 30 minuter från flygplatsen via motorvägen, så gruppen behöver inte åka över ön på hemvägen, och en liten försening får kosta lunchen, inte flyget."
           }
         ]
       },
@@ -1146,7 +1146,7 @@ export const PLAN_YOUR_TRIP_LOCALIZED_CONTENT = {
           },
           {
             "title": "最后一轮短一些，靠近机场",
-            "body": "最后一轮应该让去机场这件事简单。T Golf Calvià 走高速离机场大约 25 分钟，团队回程不用横穿全岛，小延误最多影响午餐，不应该影响航班。"
+            "body": "最后一轮应该让去机场这件事简单。T Golf Calvià 走高速离机场大约 30 分钟，团队回程不用横穿全岛，小延误最多影响午餐，不应该影响航班。"
           }
         ]
       },

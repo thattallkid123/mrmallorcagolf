@@ -3,14 +3,14 @@ const content = {
   "es": {
     "metadata": {
       "title": "Son Antem West - Análisis del resort 2026",
-      "description": "Son Antem West: green fees desde 109 €, par 72, 6.293 m. Campo de resort a 15-20 min de Palma, bien mantenido y fácil de jugar."
+      "description": "Son Antem West: green fees desde 109 €, par 72, 6.293 m. Campo de resort a 25 min de Palma, bien mantenido y fácil de jugar."
     },
     "meta": {
       "badge": "Análisis del campo",
       "readTime": "6 min",
       "updated": "Mayo 2026",
       "title": "Son Antem West Golf Club, Mallorca - análisis honesto de un Profesional PGA (2026)",
-      "intro": "Un campo de resort a 15-20 minutos de Palma. Buen mantenimiento, campo abierto y un recorrido que sirve para muchos tipos de jugador.",
+      "intro": "Un campo de resort a 25 minutos de Palma. Buen mantenimiento, campo abierto y un recorrido que sirve para muchos tipos de jugador.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -33,7 +33,7 @@ const content = {
     "blocks": [
       {
         "alt": "Obstáculo de agua en Son Antem West, Llucmajor, Mallorca",
-        "caption": "Uno de los hoyos con agua del West Course. El campo está en Llucmajor, a unos 15-20 minutos de Palma, en campo abierto y sin casas visibles."
+        "caption": "Uno de los hoyos con agua del West Course. El campo está en Llucmajor, a unos 25 minutos de Palma, en campo abierto y sin casas visibles."
       },
       {
         "text": "Ya había tres o cuatro partidos esperando en el tee del 1 cuando llegamos a las 7:50 de un domingo. Había reservado temprano precisamente para evitar el ritmo lento que puede aparecer en los campos de resort. No lo evitamos."
@@ -122,7 +122,7 @@ const content = {
           ],
           [
             "Llucmajor",
-            "15-20 min desde Palma"
+            "25 min desde Palma"
           ]
         ]
       },
@@ -177,14 +177,14 @@ const content = {
   "de": {
     "metadata": {
       "title": "Son Antem West - Resort-Bewertung 2026",
-      "description": "Son Antem West: Greenfees ab 109 €, Par 72, 6.293 m. Resortplatz 15-20 Minuten von Palma, gut gepflegt und entspannt zu spielen."
+      "description": "Son Antem West: Greenfees ab 109 €, Par 72, 6.293 m. Resortplatz 25 Minuten von Palma, gut gepflegt und entspannt zu spielen."
     },
     "meta": {
       "badge": "Platz-Bewertung",
       "readTime": "6 Min.",
       "updated": "Mai 2026",
       "title": "Son Antem West Golf Club, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
-      "intro": "Ein Resortplatz 15-20 Minuten von Palma entfernt. Gute Pflege, offene Landschaft und ein Layout, das vielen Spielstärken entgegenkommt.",
+      "intro": "Ein Resortplatz 25 Minuten von Palma entfernt. Gute Pflege, offene Landschaft und ein Layout, das vielen Spielstärken entgegenkommt.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -207,7 +207,7 @@ const content = {
     "blocks": [
       {
         "alt": "Wasserhindernis auf Son Antem West, Llucmajor, Mallorca",
-        "caption": "Eines der Wasserlöcher auf dem West Course. Der Platz liegt in Llucmajor, etwa 15-20 Minuten von Palma, offen in der Landschaft und ohne sichtbare Wohnhäuser."
+        "caption": "Eines der Wasserlöcher auf dem West Course. Der Platz liegt in Llucmajor, etwa 25 Minuten von Palma, offen in der Landschaft und ohne sichtbare Wohnhäuser."
       },
       {
         "text": "Drei oder vier Flights warteten bereits am ersten Abschlag, als wir an einem Sonntagmorgen um 7:50 ankamen. Wir hatten früh gebucht, um dem Tempo-Problem, das Resortplätze manchmal haben, zuvorzukommen. Das gelang nicht."
@@ -222,7 +222,7 @@ const content = {
         "text": "Schon bei der Einfahrt in das Resort wird die Größe klar. Wohnanlagen, viel Grün, Golfakademie, Padelplätze und Hotel. Es wirkt wie ein komplettes Golfziel. Der Check-in war organisiert, das Team hilfreich, und ein kleiner Shop am Eingang machte Kaffee und Snack vor der Runde einfach. Um 7:45 Uhr ist das ein echtes Detail."
       },
       {
-        "text": "Auf dem Platz öffnet sich die Umgebung. Der West Course liegt in der mallorquinischen Landschaft bei Llucmajor, 15 bis 20 Minuten von Palma. Von den Fairways sieht man keine Häuser, der Randa-Berg steht auf den zweiten Neun im Hintergrund, und Tiere sind ständig präsent. Kaninchen laufen regelmäßig über die Fairways. Reiher und andere Vögel sind rund um die Wasserlöcher zu sehen. Es fühlt sich nicht wie ein Vorstadtplatz an, und das hilft."
+        "text": "Auf dem Platz öffnet sich die Umgebung. Der West Course liegt in der mallorquinischen Landschaft bei Llucmajor, 25 Minuten von Palma. Von den Fairways sieht man keine Häuser, der Randa-Berg steht auf den zweiten Neun im Hintergrund, und Tiere sind ständig präsent. Kaninchen laufen regelmäßig über die Fairways. Reiher und andere Vögel sind rund um die Wasserlöcher zu sehen. Es fühlt sich nicht wie ein Vorstadtplatz an, und das hilft."
       },
       {
         "alt": "Vögel auf dem Fairway von Son Antem West mit Wasser und Green dahinter, Mallorca",
@@ -296,7 +296,7 @@ const content = {
           ],
           [
             "Llucmajor",
-            "15-20 Min. von Palma"
+            "25 Min. von Palma"
           ]
         ]
       },
@@ -307,7 +307,7 @@ const content = {
         "text": "Greenfee: 105 € an dem Tag, an dem wir spielten. Das Resort ist vor und nach der Runde gut aufgestellt. Es gibt einen kleinen Shop nahe dem Check-in für Kaffee, Wasser und Snacks, was bei einer frühen Startzeit wirklich nützlich ist. Buggys sind verfügbar. Zu Fuß ist der Platz problemlos."
       },
       {
-        "text": "Lage: Llucmajor, etwa 15 bis 20 Minuten südlich von Palma. Leicht zu erreichen und gut mit einem Tag oder zwei in der Stadt zu verbinden."
+        "text": "Lage: Llucmajor, etwa 25 Minuten südlich von Palma. Leicht zu erreichen und gut mit einem Tag oder zwei in der Stadt zu verbinden."
       },
       {
         "text": "Häufige Fragen"
@@ -351,14 +351,14 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Son Antem West - Avis du resort 2026",
-      "description": "Son Antem West : green fees à partir de 109 €, par 72, 6 293 m. Parcours de resort à 15-20 min de Palma, bien entretenu et facile à jouer."
+      "description": "Son Antem West : green fees à partir de 109 €, par 72, 6 293 m. Parcours de resort à 25 min de Palma, bien entretenu et facile à jouer."
     },
     "meta": {
       "badge": "Avis parcours",
       "readTime": "6 min",
       "updated": "Mai 2026",
       "title": "Son Antem West Golf Club, Majorque - avis honnête d'un professionnel PGA (2026)",
-      "intro": "Un parcours de resort à 15-20 minutes de Palma. Bon entretien, campagne ouverte et un tracé qui convient à beaucoup de joueurs.",
+      "intro": "Un parcours de resort à 25 minutes de Palma. Bon entretien, campagne ouverte et un tracé qui convient à beaucoup de joueurs.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -381,7 +381,7 @@ const content = {
     "blocks": [
       {
         "alt": "Obstacle d'eau sur Son Antem West, Llucmajor, Majorque",
-        "caption": "Un des trous avec eau sur le West Course. Le parcours se trouve à Llucmajor, à environ 15-20 minutes de Palma, en pleine campagne et sans maisons visibles."
+        "caption": "Un des trous avec eau sur le West Course. Le parcours se trouve à Llucmajor, à environ 25 minutes de Palma, en pleine campagne et sans maisons visibles."
       },
       {
         "text": "Trois ou quatre parties attendaient déjà au départ du 1 lorsque nous sommes arrivés à 7 h 50 un dimanche matin. Nous avions réservé tôt pour éviter le rythme lent que les parcours de resort peuvent parfois avoir. Nous ne l'avons pas évité."
@@ -470,7 +470,7 @@ const content = {
           ],
           [
             "Llucmajor",
-            "15-20 min de Palma"
+            "25 min de Palma"
           ]
         ]
       },
@@ -481,7 +481,7 @@ const content = {
         "text": "Green fee : 105 € le jour où nous avons joué. Le resort est bien organisé avant et après la partie. Il y a une petite boutique près du check-in pour café, eau et snacks, vraiment utile avec un départ matinal. Les voiturettes sont disponibles. Marcher reste simple partout."
       },
       {
-        "text": "Lieu : Llucmajor, à environ 15 à 20 minutes au sud de Palma. Facile d'accès et facile à combiner avec une journée ou deux en ville."
+        "text": "Lieu : Llucmajor, à environ 25 minutes au sud de Palma. Facile d'accès et facile à combiner avec une journée ou deux en ville."
       },
       {
         "text": "Questions fréquentes"
@@ -523,14 +523,14 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Son Antem West - Eerlijke review 2026",
-      "description": "Son Antem West: greenfees vanaf €109, par 72, 6.293 m. Resortbaan op 15-20 minuten van Palma, goed onderhouden en ontspannen speelbaar."
+      "description": "Son Antem West: greenfees vanaf €109, par 72, 6.293 m. Resortbaan op 25 minuten van Palma, goed onderhouden en ontspannen speelbaar."
     },
     "meta": {
       "badge": "Baanbeoordeling",
       "readTime": "6 min",
       "updated": "Mei 2026",
       "title": "Son Antem West Golf Club, Mallorca - eerlijke review van een PGA Professional (2026)",
-      "intro": "Een resortbaan op 15-20 minuten van Palma. Goede conditie, open landschap en een lay-out die voor veel spelers werkt.",
+      "intro": "Een resortbaan op 25 minuten van Palma. Goede conditie, open landschap en een lay-out die voor veel spelers werkt.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -553,7 +553,7 @@ const content = {
     "blocks": [
       {
         "alt": "Waterhindernis op Son Antem West, Llucmajor, Mallorca",
-        "caption": "Een van de waterholes op de West Course. De baan ligt in Llucmajor, ongeveer 15-20 minuten van Palma, open in het landschap en zonder zichtbare huizen."
+        "caption": "Een van de waterholes op de West Course. De baan ligt in Llucmajor, ongeveer 25 minuten van Palma, open in het landschap en zonder zichtbare huizen."
       },
       {
         "text": "Er stonden al drie of vier flights te wachten op de eerste tee toen we op zondagochtend om 7:50 aankwamen. We hadden vroeg geboekt om de trage speelsnelheid die resortbanen kunnen hebben voor te zijn. Dat lukte niet."
@@ -568,7 +568,7 @@ const content = {
         "text": "Bij het binnenrijden van het resort is de schaal meteen duidelijk. Woningen, veel groen, een golfacademy, padelbanen en een hotel. Het voelt als een volledige golfbestemming. De check-in was georganiseerd, het personeel behulpzaam en een klein winkeltje bij de ingang maakte koffie en een snack voor de ronde makkelijk. Om 7:45 is dat nuttig."
       },
       {
-        "text": "Op de baan opent de omgeving zich. De West Course ligt in het Mallorcaanse landschap bij Llucmajor, 15 tot 20 minuten van Palma. Vanaf de fairways zie je geen huizen, de Randa-berg ligt op de back nine in de achtergrond, en dieren zijn constant aanwezig. Konijnen kruisen regelmatig de fairways. Reigers en andere vogels zitten rond de waterholes. Het voelt niet als een golfbaan in een buitenwijk, en dat helpt."
+        "text": "Op de baan opent de omgeving zich. De West Course ligt in het Mallorcaanse landschap bij Llucmajor, 25 minuten van Palma. Vanaf de fairways zie je geen huizen, de Randa-berg ligt op de back nine in de achtergrond, en dieren zijn constant aanwezig. Konijnen kruisen regelmatig de fairways. Reigers en andere vogels zitten rond de waterholes. Het voelt niet als een golfbaan in een buitenwijk, en dat helpt."
       },
       {
         "alt": "Vogels op de fairway van Son Antem West met water en green erachter, Mallorca",
@@ -642,7 +642,7 @@ const content = {
           ],
           [
             "Llucmajor",
-            "15-20 min van Palma"
+            "25 min van Palma"
           ]
         ]
       },
@@ -653,7 +653,7 @@ const content = {
         "text": "Greenfee: 105 € op de dag dat wij speelden. Het resort is goed ingericht voor en na de ronde. Er is een klein winkeltje bij de check-in voor koffie, water en snacks, echt handig bij een vroege starttijd. Buggyhuur is beschikbaar. Lopen is overal eenvoudig."
       },
       {
-        "text": "Locatie: Llucmajor, ongeveer 15 tot 20 minuten ten zuiden van Palma. Makkelijk te bereiken en goed te combineren met een dag of twee in de stad."
+        "text": "Locatie: Llucmajor, ongeveer 25 minuten ten zuiden van Palma. Makkelijk te bereiken en goed te combineren met een dag of twee in de stad."
       },
       {
         "text": "Veelgestelde vragen"
@@ -697,14 +697,14 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Antem West - Ärlig recension 2026",
-      "description": "Son Antem West: greenfee från €109, par 72, 6 293 m. Resortbana 15-20 minuter från Palma med bra skick och avslappnad layout."
+      "description": "Son Antem West: greenfee från €109, par 72, 6 293 m. Resortbana 25 minuter från Palma med bra skick och avslappnad layout."
     },
     "meta": {
       "badge": "Banrecension",
       "readTime": "6 min",
       "updated": "Maj 2026",
       "title": "Son Antem West Golf Club, Mallorca - ärlig recension av en PGA Professional (2026)",
-      "intro": "En resortbana 15-20 minuter från Palma. Bra skick, öppet landskap och en layout som passar många olika spelare.",
+      "intro": "En resortbana 25 minuter från Palma. Bra skick, öppet landskap och en layout som passar många olika spelare.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -727,7 +727,7 @@ const content = {
     "blocks": [
       {
         "alt": "Vattenhinder på Son Antem West, Llucmajor, Mallorca",
-        "caption": "Ett av vattenhålen på West Course. Banan ligger i Llucmajor, cirka 15-20 minuter från Palma, i öppet landskap utan synliga hus."
+        "caption": "Ett av vattenhålen på West Course. Banan ligger i Llucmajor, cirka 25 minuter från Palma, i öppet landskap utan synliga hus."
       },
       {
         "text": "Tre eller fyra bollar köade redan på första tee när vi kom 7:50 en söndagsmorgon. Vi hade bokat tidigt för att komma före det tempo som resortbanor ibland kan få. Det gjorde vi inte."
@@ -742,7 +742,7 @@ const content = {
         "text": "När man kör in i resorten märks skalan direkt. Bostäder, stora grönytor, golfakademi, padelbanor och hotell. Det känns som en komplett golfdestination. Incheckningen var organiserad, personalen hjälpsam, och en liten butik nära ingången gjorde kaffe och snack före rundan enkelt. En bra detalj 7.45 på morgonen."
       },
       {
-        "text": "Ute på banan öppnar landskapet sig. West Course ligger i mallorkinsk landsbygd nära Llucmajor, 15 till 20 minuter från Palma. Inga hus syns från fairways, Randa-berget ligger i bakgrunden på back nine, och djurlivet finns där hela rundan. Kaniner korsar fairways regelbundet. Hagrar och andra fåglar syns runt vattenhålen. Det känns inte som en förortsbana, och det hjälper."
+        "text": "Ute på banan öppnar landskapet sig. West Course ligger i mallorkinsk landsbygd nära Llucmajor, 25 minuter från Palma. Inga hus syns från fairways, Randa-berget ligger i bakgrunden på back nine, och djurlivet finns där hela rundan. Kaniner korsar fairways regelbundet. Hagrar och andra fåglar syns runt vattenhålen. Det känns inte som en förortsbana, och det hjälper."
       },
       {
         "alt": "Fåglar på fairway på Son Antem West med vatten och green bakom, Mallorca",
@@ -816,7 +816,7 @@ const content = {
           ],
           [
             "Llucmajor",
-            "15-20 min från Palma"
+            "25 min från Palma"
           ]
         ]
       },
@@ -827,7 +827,7 @@ const content = {
         "text": "Greenfee: 105 € den dag vi spelade. Resorten fungerar bra före och efter rundan. Det finns en liten butik vid incheckningen för kaffe, vatten och snacks, vilket är verkligt användbart vid tidig starttid. Buggy finns. Att gå är enkelt hela vägen."
       },
       {
-        "text": "Plats: Llucmajor, cirka 15 till 20 minuter söder om Palma. Lätt att nå och lätt att kombinera med en dag eller två i staden."
+        "text": "Plats: Llucmajor, cirka 25 minuter söder om Palma. Lätt att nå och lätt att kombinera med en dag eller två i staden."
       },
       {
         "text": "Vanliga frågor"
@@ -871,14 +871,14 @@ const content = {
   "zh": {
     "metadata": {
       "title": "Son Antem West 度假村球场 - PGA教练真实评测（2026）",
-      "description": "Son Antem West：果岭费109欧起，标准杆72，6,293米。距离帕尔马15-20分钟的度假村球场，养护不错，打法轻松。这里是它真实的下场体验，以及适合的人群。"
+      "description": "Son Antem West：果岭费109欧起，标准杆72，6,293米。距离帕尔马25分钟的度假村球场，养护不错，打法轻松。这里是它真实的下场体验，以及适合的人群。"
     },
     "meta": {
       "badge": "球场评测",
       "readTime": "6分钟",
       "updated": "2026年5月",
       "title": "Son Antem West 高尔夫俱乐部，马略卡 - PGA 职业教练真实评测（2026）",
-      "intro": "距离帕尔马15-20分钟的度假村球场。养护好，环境开阔，球场设计适合很多类型的球手。",
+      "intro": "距离帕尔马25分钟的度假村球场。养护好，环境开阔，球场设计适合很多类型的球手。",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -901,7 +901,7 @@ const content = {
     "blocks": [
       {
         "alt": "马略卡Llucmajor的Son Antem West球场水障碍",
-        "caption": "West Course其中一个有水的球洞。球场位于Llucmajor，距离帕尔马约15-20分钟，四周开阔，看不到住宅。"
+        "caption": "West Course其中一个有水的球洞。球场位于Llucmajor，距离帕尔马约25分钟，四周开阔，看不到住宅。"
       },
       {
         "text": "周日早上7:50到达时，1号洞发球台已经有三四组人在排队。我们特意订了早场，就是想避开度假村球场常见的慢节奏。结果还是没避开。"
@@ -990,7 +990,7 @@ const content = {
           ],
           [
             "Llucmajor",
-            "距帕尔马15-20分钟"
+            "距帕尔马25分钟"
           ]
         ]
       },

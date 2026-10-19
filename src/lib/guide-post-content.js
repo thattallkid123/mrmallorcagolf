@@ -1679,7 +1679,7 @@ export const GUIDE_POST_CONTENT = {
         readTime: '6 min read',
         updated: 'May 2026',
         title: "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)",
-        intro: 'A resort course 15-20 minutes from Palma. Good conditioning, open countryside, and a layout that suits a wide range of players.',
+        intro: 'A resort course 25 minutes from Palma. Good conditioning, open countryside, and a layout that suits a wide range of players.',
         related: [
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
           { slug: 't-golf-calvia-review', title: 'T Golf Calvià - Honest Review 2026' },
@@ -1692,7 +1692,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'image',
           src: '/images/son-antem-west-review-blog/son-antem-west-1.webp',
           alt: 'Water hazard on Son Antem West golf course, Llucmajor, Mallorca',
-          caption: 'One of the water holes on the West course. The course sits in Llucmajor, about 15-20 minutes from Palma, open countryside, no houses visible.',
+          caption: 'One of the water holes on the West course. The course sits in Llucmajor, about 25 minutes from Palma, open countryside, no houses visible.',
           priority: true,
           presentation: 'natural',
           naturalWidth: 1200,
@@ -1716,7 +1716,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Out on the course, the setting opens up. The West course sits in open Mallorcan countryside near Llucmajor, 15 to 20 minutes from Palma. There are no houses visible from the fairways, the Randa mountains sit in the background on the back nine, and the wildlife is a constant presence. Rabbits cross the fairways regularly. Herons and various birds are around the water holes throughout the round. It does not feel like a suburban golf course, which helps.',
+          text: 'Out on the course, the setting opens up. The West course sits in open Mallorcan countryside near Llucmajor, 25 minutes from Palma. There are no houses visible from the fairways, the Randa mountains sit in the background on the back nine, and the wildlife is a constant presence. Rabbits cross the fairways regularly. Herons and various birds are around the water holes throughout the round. It does not feel like a suburban golf course, which helps.',
         },
         {
           type: 'image',
@@ -1817,7 +1817,7 @@ export const GUIDE_POST_CONTENT = {
             ['€109-145', 'Green fee'],
             ['7/10', 'My rating'],
             ['Par 72', '6,293m'],
-            ['Llucmajor', '15-20 min from Palma'],
+            ['Llucmajor', '25 min from Palma'],
           ],
         },
         {
@@ -1830,7 +1830,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Location: Llucmajor, about 15 to 20 minutes south of Palma. Easy to reach and easy to combine with a day or two in the city.',
+          text: 'Location: Llucmajor, about 25 minutes south of Palma. Easy to reach and easy to combine with a day or two in the city.',
         },
         {
           type: 'heading',

@@ -614,7 +614,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'The final day should keep the airport simple. T Golf Calvià gives you a strong finish and the group never crosses the island: it is around thirty minutes from Palma and about 25 minutes from the airport, all on the motorway.',
+          'The final day should keep the airport simple. T Golf Calvià gives you a strong finish and the group never crosses the island: it is around thirty minutes from both Palma and the airport, all on the motorway.',
       },
       {
         type: 'image',

@@ -99,6 +99,8 @@ Separately, from the same Search Console pull: `/de/golf-courses` ranks pos 50.5
 
 **Factual fix found while checking:** the Son Muntaner review, its facts row, intro, caption, verdict, description and the six translations said "5 minutes from Palma". The course data (`course-logistics.json`, from Palma Cathedral, verified 2026-07-22) says 15 minutes, 20 from the airport, and an independent OSRM route check gave 4.8 km and about 12 minutes from the cathedral. The near-Palma comparison table already said 15. Corrected to 15 everywhere (EN + de/es/fr/nl/sv/zh, plus the one-line blurb in the trip-planning guide). The old "in a different category" argument rested on the 5 and was dropped. The description change restarts the 21-day window for this page.
 
+Same audit, three more drive times corrected across EN + de/es/fr/nl/sv/zh against `course-logistics.json` (Palma Cathedral basis) and an OSRM route check: Son Antem West said 15-20 minutes from Palma in the review (intro, body, facts row, location line) and the guides-index card, now 25 (22 km, about 26 min; the near-Palma table already said 25); the Son Termes guides-index card said 20 minutes, now 25 like the review; T Golf Calvià said about 25 minutes from the airport in the 5-day itinerary and the plan-your-trip page, now 30 (course data 30, OSRM about 33). Son Antem East's airport time is unresolved: the data says 15, the 5-day itinerary says about 20, OSRM about 22; left as is pending Andy.
+
 ### 2026-10-06 CTR sweep (first run of the monthly Hermes job)
 
 The new monthly job (`Monthly Search Console CTR Review`, Hermes) flagged 10 pages. 2 (`/guides/golf-cost-mallorca`, `/guides/son-muntaner-review`) were inside the 21-day window and were not touched. Of the other 8, diagnosed before drafting:
