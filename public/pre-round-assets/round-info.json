@@ -39,6 +39,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 50,
         "airport": 45
@@ -50,6 +51,7 @@
       },
       "info": {
         "checkInMinutes": 30,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle to top up at the fountains on the course.",
         "hireBags": "Hire clubs are TaylorMade Qi4D. The hire bags have straps, so you can carry them.",
         "buggyTrolley": "You can walk it if you are fit, but there are some big climbs to certain tees and long rides between holes. Buggies are allowed on the fairways when the weather permits. Buggies with GPS, electric trolleys and pull trolleys are available to hire.",
@@ -57,6 +59,7 @@
         "firstTee": "The first tee time is 08:00.",
         "earlyTee": "The pro shop, the driving range and the cafe bar are all open for the first tee times of the day.",
         "rangeOpens": "A Toptracer range, with balls included in the green fee. The pyramids are prepared at the same time the course opens.",
+        "practiceFacilities": "There is a Toptracer driving range with a covered practice area of 10 mats and an outdoor one of 10 mats, a natural-grass practice area in season when available, and a short game area.",
         "foodBeforeRound": "The restaurant opens at 08:00, some days a little earlier but not guaranteed. It is run by a separate operator; the club takes it over from 1 March 2027. Terrace with lighthouse views.",
         "water": "There are water fountains out on the course, so bring a bottle and refill it. The Lighthouse Bar halfway house sits between the 9th and 10th holes for drinks, beer, sandwiches and tapas.",
         "licence": "€3 per person per day, paid at reception on check-in, unless you hold a Spanish federation licence.",
@@ -88,6 +91,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 30,
         "airport": 35
@@ -99,6 +103,7 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle. There is a free refill station at the clubhouse.",
         "buggyTrolley": "The course is hilly with long walks from green to tee, so a buggy is compulsory before 14:00 and walking is allowed from 14:00. Book the buggy with your tee time, as two players share one. Electric and push trolleys are also available.",
         "firstTee": "The first tee time is usually 08:00.",
@@ -136,6 +141,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 15,
         "airport": 20
@@ -147,12 +153,14 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle and a few coins. There is a refill at the pro shop but no fountains on the course, and the vending machines on the course sell water for cash only.",
         "hireBags": "Hire bags have one strap. The course is hilly, so most players take a buggy. There are only a few hire sets, so reserve them in advance.",
         "buggyTrolley": "The course is very hilly, so a buggy is essential for most players. Buggies and manual trolleys are available.",
         "proShopOpens": "The pro shop opens at about 08:30.",
         "firstTee": "The first starting time is 09:10.",
         "rangeOpens": "The driving range opens at 08:00 every day except Tuesday, when it opens at 09:00.",
+        "practiceFacilities": "There is a driving range with hitting mats, a putting green and a chipping area.",
         "foodBeforeRound": "The restaurant opens at 10:30. The pro shop has a coffee machine and a water refill.",
         "water": "There is a water refill at the pro shop. No halfway house or drinks cart, and no drinking fountains on the course. A couple of vending machines on the course sell water, cash only.",
         "licence": "There is no separate daily licence charge.",
@@ -184,6 +192,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 75,
         "airport": 65
@@ -195,12 +204,14 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle if you are walking. Water comes with the buggy.",
         "hireBags": "Hire bags can be carried on foot.",
         "buggyTrolley": "The front nine is hilly, so a buggy is recommended there. The back nine is flatter and easy to walk. Buggies, manual trolleys and electric trolleys are available.",
         "proShopOpens": "The pro shop is open 08:00-19:00 and is where you check in.",
         "firstTee": "The first tee time is usually 09:00.",
         "rangeOpens": "Range balls are €3 for a token of 38. Using the range without a green fee costs €10.",
+        "practiceFacilities": "There is a driving range, a putting green, a pitching green, a chipping green and a practice bunker.",
         "foodBeforeRound": "The restaurant is open 09:00-20:00, depending on demand, so it is not open before the earliest tee times. Terrace on the 18th.",
         "water": "Water and tees come with the buggy.",
         "licence": "€3 per person per day, unless you hold a Spanish federation licence.",
@@ -231,6 +242,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 70,
         "airport": 65
@@ -242,6 +254,7 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A bottle of water. It is sold in the pro shop, so pick one up before you start.",
         "hireBags": "Hire bags are the trolley style, with no straps.",
         "buggyTrolley": "The course is mostly flat, but the last six holes climb into the hills, so some players will want a buggy. Buggies, trolleys and electric trolleys are available.",
@@ -280,6 +293,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 25,
         "airport": 15
@@ -291,12 +305,14 @@
       },
       "info": {
         "checkInMinutes": 15,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle. There are no fountains on the course, and water is sold in the pro shop, the restaurant and from vending machines on the course.",
         "hireBags": "Hire bags can be carried on foot, with or without a trolley.",
         "buggyTrolley": "You can walk it if you are reasonably fit, but the final holes include two significant climbs, so take a buggy if that worries you. Buggies, trolleys and electric trolleys are available, and buggies are not guaranteed in high season, so book ahead.",
         "proShopOpens": "Reception opens at 07:30 and the first tee time is 08:00.",
         "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "Range tokens are €3 for 35 balls, or €25 for ten tokens. Using the range without a green fee costs €8.",
+        "practiceFacilities": "There is a driving range with grass and mat hitting areas, a large putting green, an all-grass chipping and pitching area with slopes, and a bunker practice area.",
         "foodBeforeRound": "The restaurant does not open until 10:00. There is a coffee machine and cold drinks at the club, and a small shopping centre nearby where you can have breakfast.",
         "water": "There are no water fountains on the course. Water is sold in the pro shop, the restaurant and from vending machines on the course.",
         "licence": "No daily licence or insurance charge.",
@@ -344,6 +360,7 @@
           "note": "Pasta and golf."
         }
       ],
+      "meetAtGate": false,
       "travel": {
         "palma": 10,
         "airport": 10
@@ -355,6 +372,7 @@
       },
       "info": {
         "checkInMinutes": 60,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle. It is only nine holes with no halfway house, and Son Quint's clubhouse nearby has a refill station.",
         "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
         "buggyTrolley": "The course is short and easy to walk, so you do not need a buggy. There are no buggies on the pitch and putt, but trolleys are available.",
@@ -362,6 +380,7 @@
         "firstTee": "The earliest tee time bookable online is usually 07:40, the same as Son Quint.",
         "earlyTee": "On the first tee time of the day there is little or no time to use the range before you tee off. Early mornings can be cold with dew still down, so bring a jacket.",
         "rangeOpens": "Uses the Son Quint driving range, under 100 metres away. Register at the pro shop before using the range.",
+        "practiceFacilities": "The Son Quint driving range, chipping area and putting green are less than 100 metres away.",
         "foodBeforeRound": "The restaurant opens at 08:00, so it is not open before the earliest tee times. In winter (from 26 October) the kitchen only starts at 09:00, so there is no cooked breakfast before then.",
         "water": "There is no halfway house, as it is only nine holes. Son Quint's clubhouse is nearby and has a water refill station.",
         "licence": "€2 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop. You can pay online or at the pro shop.",
@@ -402,6 +421,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 45,
         "airport": 45
@@ -413,12 +433,14 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle to top up at the water stations on the course.",
         "hireBags": "Hire sets come with carry bags.",
         "buggyTrolley": "You can walk it if you are reasonably fit, but there are a few climbs and two of the longest holes in Mallorca, so a buggy suits many players. Buggies, push trolleys and electric trolleys are available.",
         "proShopOpens": "The club is open every day 07:30-20:00 from 1 April to 15 October.",
         "firstTee": "The first tee time is usually 08:00.",
         "rangeOpens": "The practice range costs €7, plus €5 for a bucket of 50 balls.",
+        "practiceFacilities": "There is a driving range, a practice bunker, and pitching and putting greens.",
         "foodBeforeRound": "Clubhouse restaurant March to October with a daily three-course menu; bar only in winter.",
         "water": "There are water stations and shaded rest points on the course, and drinks carts in summer.",
         "licence": "There is no extra licence charge on top of the green fee.",
@@ -431,8 +453,7 @@
       },
       "seasonal": {},
       "toCheck": [
-        "foodBeforeRound",
-        "changingRooms"
+        "foodBeforeRound"
       ],
       "filtered": []
     },
@@ -452,6 +473,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 70,
         "airport": 55
@@ -463,11 +485,12 @@
       },
       "info": {
         "checkInMinutes": 30,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "hireBags": "Hire clubs are subject to availability. The club checks for a carry bag with a double strap before your tee time.",
         "buggyTrolley": "You can walk it if you are fit, with one notable hill, and a buggy is optional for most players. Buggies, a single-rider scooter, push trolleys and electric trolleys are available.",
         "proShopOpens": "The pro shop opens at 07:30.",
         "firstTee": "The earliest tee time available online is 08:03.",
-        "practiceFacilities": "There is a TrackMan range and there are putting greens.",
+        "practiceFacilities": "There is a two-level TrackMan range, two putting greens, a pitching green, and a short game area with bunkers.",
         "foodBeforeRound": "The restaurant opens at 07:30, so you can have a coffee or buy water before an early round. S'Era de Pula terrace is by the putting green.",
         "licence": "No extra daily fee for golf insurance or a licence.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course.",
@@ -500,6 +523,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 60,
         "airport": 50
@@ -513,6 +537,7 @@
         "checkInMinutes": 45,
         "bringWater": "A water bottle.",
         "buggyTrolley": "The course is built on a hill, so a buggy is generally recommended. Petrol buggies, trolleys and electric trolleys are available.",
+        "practiceFacilities": "There is a driving range, a chipping green, practice bunkers and a par-3 training area.",
         "foodBeforeRound": "Terrace Bistro in the hotel: Mediterranean with Asian touches and grilled dishes.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course.",
         "shoes": "Soft spikes required.",
@@ -541,6 +566,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 25,
         "airport": 25
@@ -552,12 +578,14 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "Water for the first nine holes. The clubhouse is closed for the first tee times, and the next chance to buy a drink is after nine holes.",
         "hireBags": "Hire bags are cart bags.",
         "buggyTrolley": "The course is flat but long, so it is easy to walk and a buggy is optional. Buggies, manual trolleys and electric trolleys are available.",
         "proShopOpens": "The pro shop opens at about 07:45.",
         "firstTee": "The first tee time for visitors who book directly is 09:04. If you book through me, tee times start from 08:00.",
         "rangeOpens": "The range costs €8, plus €4 per ball token, in every season.",
+        "practiceFacilities": "There is a driving range and a short game area.",
         "foodBeforeRound": "Bar and cafeteria beside the caddy master while the hotel is renovated: drinks and simple clubhouse food.",
         "water": "Water and drinks are only available at the clubhouse, which you pass after nine holes. It is closed for the first tee times of the day, so bring water with you.",
         "dressCode": "Wear a collared golf shirt and golf trousers or tailored shorts. No jeans or T-shirts.",
@@ -582,12 +610,13 @@
       "mapsDestination": "39.4954722,2.4849431",
       "hero": false,
       "map": true,
-      "address": null,
+      "address": "Golf Santa Ponsa II, 07180 Santa Ponça, Calvià",
       "mapsQuery": "Golf Santa Ponsa II",
       "pickerHidden": false,
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": true,
       "travel": {
         "palma": 25,
         "airport": 25
@@ -607,7 +636,8 @@
         "shoes": "Soft spikes only. Metal spikes are not allowed.",
         "changingRooms": "There are toilets and a small changing room.",
         "parking": "Car park at the club.",
-        "payment": "Cards are accepted at the club."
+        "payment": "Cards are accepted at the club.",
+        "flights": "Santa Ponsa 2 is quiet, so it is unlikely that other players are added to your group. If it happens, the alternative is to pay the full rate for the empty places."
       },
       "seasonal": {},
       "toCheck": [],
@@ -629,9 +659,10 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 25,
-        "airport": 15
+        "airport": 20
       },
       "licenceUrl": null,
       "contact": {
@@ -640,12 +671,14 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle. The small shop by check-in sells water, coffee and snacks.",
         "hireBags": "Hire bags are large and have one strap.",
         "buggyTrolley": "The course is flat and easy to walk, and buggies must stay on the paths. Buggies, push trolleys and electric trolleys are available.",
         "proShopOpens": "The pro shop is open every day, 07:15-20:00 from April to October and 07:15-18:30 from November to March.",
         "firstTee": "The first tee time is 07:30.",
         "rangeOpens": "Academy range balls are 14 for €1, or €30 for a card of 500 balls.",
+        "practiceFacilities": "There is a circular driving range, an approach green with bunkers and a putting green of about 1,000 square metres.",
         "foodBeforeRound": "The pro shop and a mini-market sell coffee and food, which suits an early round. The restaurant opens later.",
         "water": "The small shop by check-in sells water, coffee and snacks.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course.",
@@ -678,9 +711,10 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 25,
-        "airport": 15
+        "airport": 20
       },
       "licenceUrl": null,
       "contact": {
@@ -689,12 +723,14 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle. The small shop by check-in sells water, coffee and snacks.",
         "hireBags": "Hire bags are large and have one strap.",
         "buggyTrolley": "The course is flat and easy to walk, and buggies must stay on the paths. Buggies, push trolleys and electric trolleys are available.",
         "proShopOpens": "The pro shop is open every day, 07:15-20:00 from April to October and 07:15-18:30 from November to March.",
         "firstTee": "The first tee time is 07:30.",
         "rangeOpens": "Academy range balls are 14 for €1, or €30 for a card of 500 balls.",
+        "practiceFacilities": "There is a circular driving range with grass and artificial tees, an approach green with bunkers and a putting green of about 1,000 square metres.",
         "foodBeforeRound": "The pro shop and a mini-market sell coffee and food, which suits an early round. The restaurant opens later.",
         "water": "The small shop by check-in sells water, coffee and snacks.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course.",
@@ -725,6 +761,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 20,
         "airport": 15
@@ -736,6 +773,7 @@
       },
       "info": {
         "checkInMinutes": 15,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle. There is no free water at check-in, but there are water filter stations at the clubhouse, at the end of the front nine.",
         "hireBags": "Full hire sets with bags are available, and you can take them on the course. The course is long but easy to walk.",
         "buggyTrolley": "It is long but gently undulating, so you can walk it, though it is not easy. Buggies are allowed on the fairways when the weather permits. Buggies with GPS, hand trolleys and electric trolleys are available.",
@@ -743,6 +781,7 @@
         "firstTee": "The course opens at 09:00, so the first tee time is 09:00.",
         "earlyTee": "On an early tee time, reception and the range are both open, but check-in takes a while, so there may not be time to reach the range before you tee off. Arrive early if you want to warm up.",
         "rangeOpens": "The range costs €20 including 72 balls, or €4 for a token of 24 balls (€5 from 2027).",
+        "practiceFacilities": "There is a driving range, a putting green and a short game area.",
         "foodBeforeRound": "The clubhouse and bar open at 08:30 for drinks, before the course opens at 09:00. Restaurant 13:00-20:30 (kitchen closes 19:00).",
         "water": "There is no free water at check-in. There are water filter stations at the clubhouse, at the end of the front nine, where you can refill a bottle.",
         "licence": "A daily licence is not required for foreign players.",
@@ -792,6 +831,7 @@
           "note": "Pasta and golf."
         }
       ],
+      "meetAtGate": false,
       "travel": {
         "palma": 15,
         "airport": 20
@@ -803,12 +843,14 @@
       },
       "info": {
         "checkInMinutes": 60,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A refillable bottle. Every clubhouse has a water refill station, and the halfway houses open at 10:30 with another.",
         "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
         "buggyTrolley": "It is long but fairly flat, so you can walk it if you are fit, and buggies are allowed on the fairways when the weather permits. A buggy is included in the green fee from March to late November, and manual and electric trolleys can be added to your booking through Arabella.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-19:30. Summer: 07:45-20:30.",
         "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "Toptracer driving range on site. Register at the pro shop before using the range.",
+        "practiceFacilities": "There is a Toptracer driving range, a chipping area and a putting green.",
         "foodBeforeRound": "Na Capitana opens at 08:00 and has a breakfast menu. In winter (from 26 October) the restaurant closes at 18:00 and the kitchen at 17:30; in summer it is open until 19:30.",
         "water": "Every clubhouse has a water refill station for your own bottle. The halfway houses open at 10:30 with drinks, snacks and another refill station.",
         "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop. You can pay online or at the pro shop.",
@@ -865,6 +907,7 @@
           "note": "Pasta and golf."
         }
       ],
+      "meetAtGate": false,
       "travel": {
         "palma": 15,
         "airport": 20
@@ -876,6 +919,7 @@
       },
       "info": {
         "checkInMinutes": 60,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A refillable bottle. Every clubhouse has a water refill station, and the halfway houses open at 10:30 with another.",
         "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
         "buggyTrolley": "It is shorter and gently undulating, so you can walk it if you are fit, and buggies are allowed on the fairways when the weather permits. Buggies and manual and electric trolleys can be added to your booking through Arabella.",
@@ -883,6 +927,7 @@
         "firstTee": "The first tee time is usually 07:40.",
         "earlyTee": "On the first tee time of the day there is little or no time to use the range before you tee off. Early mornings can be cold with dew still down, so bring a jacket.",
         "rangeOpens": "Driving range available for warm-up before play. Register at the pro shop before using the range.",
+        "practiceFacilities": "There is a separate driving range, a warm-up area beside the clubhouse, a chipping area and a putting green.",
         "foodBeforeRound": "The restaurant opens at 08:00, so it is not open before the earliest tee times. In winter (from 26 October) the kitchen only starts at 09:00, so there is no cooked breakfast before then.",
         "water": "Every clubhouse has a water refill station for your own bottle. The halfway houses open at 10:30 with drinks, snacks and another refill station.",
         "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop. You can pay online or at the pro shop.",
@@ -923,6 +968,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 70,
         "airport": 60
@@ -934,11 +980,13 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "hireBags": "Hire bags are standard bags. You can carry them without a trolley, but the club recommends renting a manual trolley.",
         "buggyTrolley": "The course is flat and easy to walk, and a buggy is optional. Buggies, push trolleys and electric trolleys are available.",
         "proShopOpens": "Reception, the pro shop and the first tee time are all 08:00.",
         "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "The driving range is closed on Wednesdays for mowing.",
+        "practiceFacilities": "There is a driving range with 15 mats and a seasonal grass area, a putting green, two chipping areas and a practice bunker.",
         "foodBeforeRound": "The restaurant opens at 08:30, so it is not open for the earliest tee times. Costa de los Pinos has a terrace over the 18th and the sea.",
         "dressCode": "Appropriate golf clothing.",
         "shoes": "Soft spikes only. Metal spikes are not allowed.",
@@ -970,6 +1018,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 25,
         "airport": 20
@@ -981,6 +1030,7 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "Enough water for the whole round. There are no fountains on the course.",
         "hireBags": "Hire bags have double straps. The last nine holes are steep, so the club recommends a buggy, though you can play on foot.",
         "buggyTrolley": "The terrain is hilly, with long walks from some greens to the next tee, so a buggy is recommended. The club sells buggies and electric trolleys only as a package with the green fee. Manual trolleys are available separately.",
@@ -988,6 +1038,7 @@
         "firstTee": "The first available tee time is 08:20. The gates open at 08:00.",
         "earlyTee": "The pro shop and the driving range are open for the first tee times of the day.",
         "rangeOpens": "The driving range opens at 08:00 from Tuesday to Sunday, and at 10:00 on Mondays.",
+        "practiceFacilities": "There is a small driving range with grass and mat hitting areas, a chipping green and a putting green.",
         "foodBeforeRound": "The restaurant opens at 10:00. Terrace with views over Palma, the cathedral and the sea.",
         "water": "There are no water fountains out on the course, so bring enough water with you.",
         "licence": "No daily licence charge.",
@@ -1038,6 +1089,7 @@
           "note": "Pasta and golf."
         }
       ],
+      "meetAtGate": false,
       "travel": {
         "palma": 15,
         "airport": 20
@@ -1049,12 +1101,14 @@
       },
       "info": {
         "checkInMinutes": 60,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A refillable bottle. Every clubhouse has a water refill station, and the halfway houses open at 10:30 with another.",
         "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
         "buggyTrolley": "It is fairly short and undulating, so you can walk it if you are fit, and buggies are allowed on the fairways when the weather permits. Buggies and manual and electric trolleys can be added to your booking through Arabella.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-18:30. Summer: 07:30-20:30.",
         "firstTee": "The first tee time is usually 07:58.",
         "rangeOpens": "Son Vida has no driving range, only a warm-up net. Arabella suggests the range at Son Quint (slightly closer; its pro shop opens at 07:30) or at Son Muntaner. Register at that pro shop before using the range.",
+        "practiceFacilities": "There is a covered warm-up net, a putting green and an approach and chipping area.",
         "foodBeforeRound": "The restaurant opens at 08:00, so it is not open before the earliest tee times. In winter (from 26 October) the kitchen only starts at 09:00, so there is no cooked breakfast before then.",
         "water": "Every clubhouse has a water refill station for your own bottle. The halfway houses open at 10:30 with drinks, snacks and another refill station.",
         "licence": "€3 per person per day, unless you hold a Spanish federation licence. Register online before the day to skip the queue at the pro shop. You can pay online or at the pro shop.",
@@ -1095,6 +1149,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 30,
         "airport": 30
@@ -1106,12 +1161,14 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "No need to bring water. Tees and water are provided.",
         "buggyTrolley": "It is not very hilly and easy to walk, and buggies are allowed on the fairways when the weather permits. Buggies, manual trolleys and electric trolleys are available.",
         "proShopOpens": "The course and driving range are open 08:00-20:00.",
         "firstTee": "The first tee time is 07:30 from May to September, and around 08:00 in winter.",
         "earlyTee": "For an early tee time the pro shop may not have opened when you arrive. Wait for reception, then check in and collect your buggy before you tee off, so allow time for this.",
         "rangeOpens": "Driving range 08:00-20:00. Range balls are not included: a token of 30 balls costs €5.",
+        "practiceFacilities": "There is a grass driving range with 40 stations and 7 target greens, two putting greens, two chipping greens, and two pitching and approach areas with practice bunkers.",
         "foodBeforeRound": "T-elicious restaurant in the clubhouse. The bar opens at 09:00, so nothing is on offer before an early start.",
         "water": "Tees and water are provided.",
         "licence": "€3 per person per day, unless you hold a Spanish federation licence.",
@@ -1145,6 +1202,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 25,
         "airport": 15
@@ -1156,12 +1214,14 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle. The halfway house is open 11:00 to 16:00 in peak season, and there is a drinks cart on the course.",
         "buggyTrolley": "It is gently undulating and easy to walk, and there are buggy paths. Buggies can go onto the fairways when the weather permits. Buggies, manual trolleys and electric trolleys are available.",
         "proShopOpens": "The course is open 08:00-20:00 in summer and 08:00-18:00 in winter.",
         "firstTee": "The first tee time of the day is usually 07:30.",
         "earlyTee": "The course opens at 08:00 and the restaurant at 08:30, but 07:30 tee times are sold, so an early group will find no coffee and may not be able to use the range.",
         "rangeOpens": "The driving range is open 08:00-18:00, and closes at 16:00 on Tuesdays. The range, pitching and putting areas are included with a 9 or 18-hole green fee on the same day, otherwise the practice fee is €15 per person. Range balls are not included: a token of 30 Wilson Premium balls costs €5.",
+        "practiceFacilities": "There is a 42-bay driving range with 14 covered bays, putting greens and a large short game area.",
         "foodBeforeRound": "Restaurant opens 08:30 (summer 08:30-20:00, winter 08:30-19:00); the kitchen runs 11:00-19:00 in summer, 11:00-17:45 in winter. Nothing is open before 08:30.",
         "water": "Halfway house open 11:00-16:00 in peak season. From mid-March there is a mandatory 10-minute stop at the halfway. Drinks cart on the course.",
         "licence": "€3 per person per day, unless you hold a Spanish federation licence.",
@@ -1197,6 +1257,7 @@
       "guideUrl": null,
       "rentalUrl": null,
       "restaurants": [],
+      "meetAtGate": false,
       "travel": {
         "palma": 55,
         "airport": 45
@@ -1208,12 +1269,14 @@
       },
       "info": {
         "checkInMinutes": 45,
+        "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "Your own water. There is no drinkable water on the course, and bottles are sold at the restaurant.",
         "hireBags": "Hire sets are for use with a buggy or a manual or electric trolley only, not for carrying.",
         "buggyTrolley": "The course is hilly, so a buggy is recommended, though you can walk it if you are fit. Buggies, trolleys and electric trolleys are available.",
         "proShopOpens": "Reception and the pro shop open at 07:30.",
         "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "A basket of range balls is €4. A practice-only green fee is €12.",
+        "practiceFacilities": "There is a driving range with 18 teeing areas and sand bunkers, putting greens and a chipping green.",
         "foodBeforeRound": "Everything is open from 07:30, before the 08:00 first tee time. Maxime Restaurant has a terrace with sea and course views, and a Friday barbecue with live music from May to October.",
         "water": "There is no drinkable water on the course. Bottles are sold at the restaurant, or bring your own.",
         "licence": "No daily licence charge. A golf licence and handicap are enough.",

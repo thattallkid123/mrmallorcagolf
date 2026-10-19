@@ -803,17 +803,17 @@ function renderRound(course, round, closures) {
     .forEach(c => { head += `<div class="notice"><strong>${ui('note')}</strong>${LANG === 'zh' ? '' : ' '}${esc(tx(c.text))}</div>`; });
   if (info.checkInMinutes) {
     const by = minusMinutes(round.t, info.checkInMinutes);
-    const advice = (info.arrivalPoint ? ui('meet_note', { n: info.checkInMinutes }) : ui('checkin_note', { n: info.checkInMinutes })).trim();
+    const advice = (course.meetAtGate ? ui('meet_note', { n: info.checkInMinutes }) : ui('checkin_note', { n: info.checkInMinutes })).trim();
     if (by && round.t) {
       // Summary strip: when to be there, the tee time, and when the range opens if the answer says so plainly.
       const rt = rangeTime(valueFor('rangeOpens'));
       const tile = (k, v, sub) => `<div class="tile"><div class="k">${k}</div><div class="v">${esc(v)}</div>${sub ? `<div class="s">${sub}</div>` : ''}</div>`;
       head += `<div class="checkin"><div class="tiles">`
-        + (info.arrivalPoint ? tile(ui('t_there'), by) : tile(ui('t_checkin'), by, ui('t_proshop')))
+        + (course.meetAtGate ? tile(ui('t_there'), by) : tile(ui('t_checkin'), by, ui('t_proshop')))
         + tile(ui('t_tee'), round.t) + (rt ? tile(ui('t_range'), rt) : '')
         + `</div><div class="advice">${advice}</div></div>`;
     } else {
-      const main = info.arrivalPoint ? ui('meet_plain') : ui('checkin_plain') + '.';
+      const main = course.meetAtGate ? ui('meet_plain') : ui('checkin_plain') + '.';
       head += `<div class="checkin"><div class="main">${main}</div><div class="advice">${advice}</div></div>`;
     }
   }
