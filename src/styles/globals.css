@@ -323,8 +323,9 @@ body {
 .nav__lang-btn:hover { color: var(--gold-text); }
 .nav.scrolled .nav__lang-btn:hover,
 .nav.solid .nav__lang-btn:hover { color: var(--pine); }
-/* Language pill: gold outline with a small globe so it reads as a language chooser, in both the over-the-photo and scrolled states. */
+/* Language box: gold outline with a small globe so it reads as a language chooser, in both the over-the-photo and scrolled states. Same corner radius and height as the Enquire button beside it. */
 .nav__lang {
+  border-radius: 2px;
   border: 1.5px solid var(--gold-light);
   background: rgba(20, 24, 23, 0.35);
   box-shadow: none;
@@ -339,7 +340,9 @@ body {
   color: var(--white);
   font-weight: 500;
   font-size: 11px;
+  min-height: 39px;
   padding: 0 16px;
+  border-radius: 2px;
 }
 .nav__lang-btn::before {
   content: "";
