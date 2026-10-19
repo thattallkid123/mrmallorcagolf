@@ -1,10 +1,14 @@
+export const PLANNING_NOTES_GROUP_ID = '193787639776675209'
+
+export const PLANNING_NOTES_MAILERLITE_ACTION = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
+
 export const COURSE_SELECTOR_MAILERLITE_URL = 'https://preview.mailerlite.io/forms/2404105/189284603205256243/share'
 
-export const COURSE_SELECTOR_MAILERLITE_ACTION = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
+export const COURSE_SELECTOR_MAILERLITE_ACTION = PLANNING_NOTES_MAILERLITE_ACTION
 
-export const COURSE_SELECTOR_FORM_NAME = 'Course Selector Results'
+export const COURSE_SELECTOR_FORM_NAME = 'Mallorca Golf Planning Notes'
 
-export const COURSE_SELECTOR_GROUP_NAME = 'Course Selector Leads'
+export const COURSE_SELECTOR_GROUP_NAME = 'Mallorca Golf Planning Notes'
 
 export const LEAD_MAGNET_MAILERLITE_ACTION = 'https://assets.mailerlite.com/jsonp/2404105/forms/190189762313717408/subscribe'
 

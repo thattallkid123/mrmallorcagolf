@@ -101,7 +101,6 @@ function getCourseFacts(course, data) {
   return facts.map(f => localizeFact(f, F, data?.phrases)).slice(0, 3)
 }
 
-const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
 const TRIP_PLANNER_PDF_URL = '/downloads/trip-planner.pdf'
 
 export default function GolfDayBuilderClient({ lang = 'en', localData = null }) {
@@ -234,16 +233,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
     if (!email || !email.includes('@')) return
     setEmailSending(true)
 
-    // Fire-and-forget: add to MailerLite
-    const mlBody = new URLSearchParams()
-    mlBody.set('fields[email]', email)
-    mlBody.set('ml-submit', '1')
-    mlBody.set('anticsrf', 'true')
-    if (subscribeNewsletter) fetch(MAILERLITE_COURSE_SELECTOR, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: mlBody.toString(),
-    }).catch(() => {})
     const builtItins = buildItineraries(answers, localData)
     const itineraries = builtItins.map(it => ({
       name: it.name,

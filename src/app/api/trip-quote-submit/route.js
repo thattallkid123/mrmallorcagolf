@@ -1,3 +1,4 @@
+import { requestPlanningNotes } from '../../../lib/planning-notes-signup'
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
 import { createPreferencesLink } from '../../../lib/enquiry-context.js'
@@ -90,6 +91,8 @@ export async function POST(request) {
       <p style="margin:0;font-family:'Jost',Arial,sans-serif;font-size:12px;color:#8a8784;">From: Mallorca Golf Trip Cost Calculator</p>
     `
 
+    if (payload.subscribeNewsletter === true) await requestPlanningNotes(email, 'trip-quote')
+
     const resend = new Resend(resendKey)
     const sent = await resend.emails.send({
       from: 'Trip Quote Builder <quotes@mrmallorcagolf.com>',
@@ -100,34 +103,6 @@ export async function POST(request) {
     })
 
     if (sent.error) throw new Error('Quote email delivery failed')
-
-    // Add to planning notes only with explicit consent.
-    const mlToken = process.env.MAILERLITE_API_TOKEN
-    const mlGroup = process.env.MAILERLITE_QUOTE_BUILDER_GROUP_ID
-    if (payload.subscribeNewsletter === true && mlToken && mlGroup) {
-      fetch('https://connect.mailerlite.com/api/subscribers', {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${mlToken}`,
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          groups: [mlGroup],
-          fields: {
-            golfers: String(golfers),
-            trip_days: String(days),
-            rounds: String(rounds),
-            budget_style: budget,
-            suggested_courses: courses,
-            estimated_total: estimate,
-            preferred_dates: dates || '',
-            trip_notes: notes || '',
-          },
-        }),
-      }).catch(() => {})
-    }
 
     return NextResponse.json({ success: true })
   } catch (error) {

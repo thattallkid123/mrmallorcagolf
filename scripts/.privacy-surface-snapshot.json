@@ -1,10 +1,10 @@
 {
   "src/app/api/contact/route.js": "865c8506cf8577c3",
-  "src/app/api/handicap-checker-submit/route.js": "0470f5930dff600b",
-  "src/app/api/lead-magnet-signup/route.js": "d37c3748d958f4ee",
+  "src/app/api/handicap-checker-submit/route.js": "38db8a7ecf78c773",
+  "src/app/api/lead-magnet-signup/route.js": "fb90cb92c5455b9d",
   "src/app/api/questionnaire/route.js": "61b63a09f0690ba5",
-  "src/app/api/send-itinerary/route.js": "4f7e64783c76bcf7",
+  "src/app/api/send-itinerary/route.js": "67893d388bfe30c6",
   "src/app/api/trip-preferences/route.js": "cd5aa73a7bba7542",
-  "src/app/api/trip-quote-submit/route.js": "287732e224914ae9",
+  "src/app/api/trip-quote-submit/route.js": "e6481a702dc88055",
   "src/app/api/zh-selector-email/route.js": "22d660dd24875716"
 }

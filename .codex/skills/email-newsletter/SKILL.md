@@ -36,7 +36,15 @@ Every newsletter issue:
 
 Example: Course Selector sends results → immediate email with shortlist → 2 days later, MailerLite emails about booking/handicap/weather for those courses.
 
-## Existing Integrations (Live as of June 2026)
+## Current signup routing (October 2026)
+
+- One marketing audience: **Mallorca Golf Planning Notes**, group `193787639776675209`. All explicit opt-ins use `PLANNING_NOTES_MAILERLITE_ACTION` from `src/lib/signup-config.js`; API routes call `requestPlanningNotes`. Keep double opt-in enabled. Never force `active` status or re-enrol an unsubscribed contact through the API.
+- The shared form is `189284603205256243`, renamed from Course Selector Results. `signup_source` records the originating guide/tool; the reserved `source` key is not a custom field.
+- PDF requests remain in their separate request groups and are delivered through Resend. A request alone does not join marketing. Historical guide groups and old nurture workflows are retained for reference and must not be reactivated or bulk-migrated without permission evidence.
+- Keep the programme small: one welcome after confirmation, then useful occasional planning notes. Do not send a generic subscriber a promised personalised shortlist.
+- The Clients master has a generated **Email audience** tab, refreshed by `mmg-tools/scripts/email-audience-sync.py` in the existing hourly Clients Sync job. It combines client/enquiry addresses with MailerLite records without importing or subscribing anyone. People remains the client source; MailerLite remains the subscription/unsubscribe source. Unknown permission stays unknown.
+
+## Delivery integrations
 
 - **Resend:** Immediate delivery for website-side lead magnet emails (no delay)
 - **MailerLite:** Nurture sequences, automation, group management, broadcast emails
@@ -80,7 +88,7 @@ Same as blog: read `MMG_BRAND_VOICE_GUIDELINES.md` from Drive. Newsletter is ema
 - **GDPR (EU/UK):** Must have consent, easy unsubscribe, data retention policy
 - **MailerLite:** Handles both. Unsubscribe syncs back automatically.
 
-If someone unsubscribes from a sequence, they stay subscribed to broadcasts unless they also unsubscribe from those.
+A MailerLite subscriber unsubscribe excludes that address from marketing, including broadcasts. Never treat an old group membership as permission to bypass it. Requested PDF and service communications remain separate.
 
 ## Next Steps
 

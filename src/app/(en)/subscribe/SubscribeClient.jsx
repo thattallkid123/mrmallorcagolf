@@ -4,7 +4,7 @@ import React from "react"
 import Link from "next/link"
 import PageLayout from "../../../components/PageLayout"
 import EmailSignup from "../../../components/EmailSignup"
-import { COURSE_SELECTOR_MAILERLITE_ACTION } from "../../../lib/signup-config"
+import { PLANNING_NOTES_MAILERLITE_ACTION } from "../../../lib/signup-config"
 
 export default function SubscribeClient() {
   return (
@@ -48,7 +48,7 @@ export default function SubscribeClient() {
           <p style={{ fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "rgba(255,255,255,0.45)", margin: "0 0 0.75rem 0" }}>Planning notes</p>
           <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 auto 1.5rem", display: "block" }} />
           <h1 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(2rem,4.5vw,3.2rem)", fontWeight: 500, color: "#fff", lineHeight: 1.08, margin: "0 0 1.25rem 0" }}>Get the planning notes</h1>
-          <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: "clamp(0.9rem,1.5vw,1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.8, margin: 0 }}>The best starting point is the course selector. If you already know you want the follow-up notes by email, you can subscribe here as well.</p>
+          <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: "clamp(0.9rem,1.5vw,1rem)", color: "rgba(255,255,255,0.65)", lineHeight: 1.8, margin: 0 }}>Occasional notes on Mallorca courses, green fees and planning a trip. Sign up below and confirm your email address to receive them.</p>
         </div>
       </section>
 
@@ -60,8 +60,8 @@ export default function SubscribeClient() {
           <div style={{ paddingTop: "4px" }}>
             <p style={{ fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>What you get</p>
             <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 0 1.5rem 0", display: "block" }} />
-            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.7rem,2.8vw,2.4rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.08, margin: "0 0 1.1rem 0" }}>Start with the selector.</h2>
-              <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: "0.95rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 1.75rem 0" }}>Most Mallorca golf trips start with too many course names and not enough context. The course selector gives you a first shortlist on the site, then the email notes help you turn that into a sensible trip plan.</p>
+            <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.7rem,2.8vw,2.4rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.08, margin: "0 0 1.1rem 0" }}>Course advice for your next trip</h2>
+              <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: "0.95rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 1.75rem 0" }}>Course reviews, seasonal changes and practical advice on choosing rounds around your hotel, handicap and budget. You can use the course selector without subscribing.</p>
             <div style={{ margin: "0 0 1.75rem 0" }}>
               <Link href="/tools/course-selector" style={{ display: "inline-block", padding: "14px 28px", background: "var(--pine)", color: "#fff", fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase", textDecoration: "none" }}>
                 Take the course selector
@@ -76,7 +76,7 @@ export default function SubscribeClient() {
                 ["No noise", "Useful notes only. Unsubscribe whenever you like."],
               ].map(([title, detail]) => (
                 <li key={title} style={{ display: "flex", gap: "1rem", alignItems: "flex-start" }}>
-                  <span style={{ fontFamily: "var(--font-serif)", color: "var(--gold)", fontSize: "1rem", lineHeight: 1.6, flexShrink: 0, marginTop: "2px" }} aria-hidden="true">&#x2014;</span>
+                  <span style={{ fontFamily: "var(--font-serif)", color: "var(--gold)", fontSize: "1rem", lineHeight: 1.6, flexShrink: 0, marginTop: "2px" }} aria-hidden="true">&#x2022;</span>
                   <div>
                     <span style={{ display: "block", fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "0.875rem", color: "var(--deep)", marginBottom: "0.2rem" }}>{title}</span>
                     <span style={{ display: "block", fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: "0.875rem", color: "var(--charcoal)", lineHeight: 1.75 }}>{detail}</span>
@@ -92,14 +92,15 @@ export default function SubscribeClient() {
               <p style={{ fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>Email delivery</p>
               <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 0 1.5rem 0", display: "block" }} />
               <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.5rem,2.4vw,2rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.1, margin: "0 0 0.85rem 0" }}>Get the planning notes by email</h2>
-              <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: "0.9rem", color: "var(--charcoal)", lineHeight: 1.8, margin: "0 0 1.5rem 0" }}>Free. Useful before you book. This adds you to the follow-up planning notes.</p>
+              <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: "0.9rem", color: "var(--charcoal)", lineHeight: 1.8, margin: "0 0 1.5rem 0" }}>Free. Occasional emails. Confirm your address to join.</p>
               <div style={{ width: "100%", marginBottom: "0.75rem" }}>
                 <EmailSignup
                   placeholder="Email address"
                   buttonLabel="Send notes"
                   successMessage="You're on the list. I'll send the planning notes by email."
                   title="Subscribe to Mr Mallorca Golf planning notes"
-                  mailerliteFormAction={COURSE_SELECTOR_MAILERLITE_ACTION}
+                  mailerliteFormAction={PLANNING_NOTES_MAILERLITE_ACTION}
+                  extraFields={{ signup_source: "planning-notes-page" }}
                   redirectOnSuccess="/course-selector/check-email"
                 />
               </div>

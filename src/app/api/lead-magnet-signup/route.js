@@ -1,3 +1,4 @@
+import { requestPlanningNotes } from '../../../lib/planning-notes-signup'
 import { buildToolEmail, emailParagraph } from '../_lib/tool-email'
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
@@ -70,7 +71,6 @@ export async function POST(request) {
     if (!Object.hasOwn(LEAD_MAGNET_GROUPS, guide)) {
       return NextResponse.json({ error: 'Unknown guide' }, { status: 400 })
     }
-    const groupId = LEAD_MAGNET_GROUPS[guide]
 
     const apiToken = process.env.MAILERLITE_API_TOKEN
     const resendKey = process.env.RESEND_API_KEY
@@ -91,7 +91,7 @@ export async function POST(request) {
       body: JSON.stringify({
         email,
         groups: [PDF_REQUEST_LEADS_GROUP_ID, PDF_REQUEST_GROUPS[guide]],
-        ...(existing.status === 404 ? { status: subscribeNewsletter === true ? 'active' : 'unconfirmed' } : {}),
+        ...(existing.status === 404 ? { status: 'unconfirmed' } : {}),
       }),
     })
     if (!leadResponse.ok) {
@@ -99,50 +99,8 @@ export async function POST(request) {
       return NextResponse.json({ error: 'Please try again.' }, { status: 502 })
     }
 
-    // A PDF request alone is not consent to a nurture sequence.
-    if (subscribeNewsletter === true) {
-      // Add to MailerLite group (for the nurture sequence)
-      const mlResponse = await fetch('https://connect.mailerlite.com/api/subscribers', {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${apiToken}`,
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          groups: [groupId],
-          fields: { source: guide },
-        }),
-      })
-
-      if (!mlResponse.ok && mlResponse.status !== 200 && mlResponse.status !== 201) {
-        const mlData = await mlResponse.json().catch(() => null)
-        console.error('[lead-magnet-signup] MailerLite error:', mlResponse.status, mlData)
-        return NextResponse.json({ error: 'Subscription failed' }, { status: 502 })
-      }
-
-      // Optional newsletter/planning-notes opt-in
-      if (subscribeNewsletter === true) {
-        const newsletterGroupId = process.env.MAILERLITE_TOOLS_GROUP_ID
-        if (newsletterGroupId) {
-          await fetch('https://connect.mailerlite.com/api/subscribers', {
-            method: 'POST',
-            headers: {
-              Authorization: `Bearer ${apiToken}`,
-              'Content-Type': 'application/json',
-              Accept: 'application/json',
-            },
-            body: JSON.stringify({
-              email,
-              groups: [newsletterGroupId],
-              fields: { source: `${guide}-planning-notes` },
-            }),
-          }).catch(() => {})
-        }
-      }
-
-    }
+    // Only the unchecked, optional planning-notes box starts double opt-in.
+    if (subscribeNewsletter === true) await requestPlanningNotes(email, guide)
 
     // Send instant delivery email via Resend
     const delivery = DELIVERY_EMAILS[guide]

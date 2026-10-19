@@ -21,8 +21,6 @@ import {
   QUESTIONS,
   optionLabels,
   selectorAnswerSummary,
-  selectorShortlistSummary,
-  selectorShortlistNames,
   rankCourses,
   DIFF_LABEL,
   personalMatchLine,
@@ -47,7 +45,6 @@ function WhatsAppCta({ label, href = WA_HREF }) {
   )
 }
 
-const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
 const COURSE_COMPARISON_PDF_URL = '/downloads/course-comparison.pdf'
 
 /* =====================================================================
@@ -638,19 +635,6 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
     setEmailSending(true)
     setEmailError(false)
 
-    // Fire-and-forget: add to MailerLite Course Selector Leads group
-    const mlBody = new URLSearchParams()
-    mlBody.set('fields[email]', email)
-    mlBody.set('fields[selector_answers]', selectorAnswerSummary(answers))
-    mlBody.set('fields[selector_shortlist]', selectorShortlistSummary(topCourses))
-    mlBody.set('fields[selector_shortlist_names]', selectorShortlistNames(topCourses))
-    mlBody.set('ml-submit', '1')
-    mlBody.set('anticsrf', 'true')
-    if (subscribeNewsletter) fetch(MAILERLITE_COURSE_SELECTOR, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: mlBody.toString(),
-    }).catch(() => {})
 
     const topCoursesForEmail = topCourses.map(loc).map(c => ({
       name: c.displayName || c.name,

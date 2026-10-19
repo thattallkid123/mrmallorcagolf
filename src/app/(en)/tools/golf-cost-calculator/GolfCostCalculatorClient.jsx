@@ -40,7 +40,6 @@ function WhatsAppQuoteLink({ t }) {
   )
 }
 
-const MAILERLITE_COURSE_SELECTOR = 'https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe'
 const COST_GUIDE_PDF_URL = '/downloads/cost-guide.pdf'
 
 export default function GolfCostCalculatorClient({ lang = 'en' }) {
@@ -133,16 +132,6 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
     setEmailSending(true)
     setEmailError(false)
 
-    // Fire-and-forget: add to MailerLite Course Selector Leads
-    const mlBody = new URLSearchParams()
-    mlBody.set('fields[email]', email)
-    mlBody.set('ml-submit', '1')
-    mlBody.set('anticsrf', 'true')
-    if (subscribeNewsletter) fetch(MAILERLITE_COURSE_SELECTOR, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: mlBody.toString(),
-    }).catch(() => {})
     const r = results || calculate(state)
     const s = state
 

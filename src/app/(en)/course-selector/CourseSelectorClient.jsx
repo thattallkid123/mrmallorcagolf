@@ -5,7 +5,7 @@ import Link from 'next/link'
 import EmailSignup from '../../../components/EmailSignup'
 import { formatCourseFeeLabel, getCoursePricingByName } from '../../../lib/course-pricing-data'
 import { getCourseReviewSlug } from '../../../lib/golf-courses-helpers'
-import { COURSE_SELECTOR_MAILERLITE_ACTION } from '../../../lib/signup-config'
+import { PLANNING_NOTES_MAILERLITE_ACTION } from '../../../lib/signup-config'
 
 const QUESTIONS = [
   {
@@ -246,8 +246,9 @@ export default function CourseSelectorClient() {
                   buttonLabel="Send notes"
                   successMessage="Done. Check your inbox. I'll send the notes by email."
                   title="Send Mallorca course selector results"
-                  mailerliteFormAction={COURSE_SELECTOR_MAILERLITE_ACTION}
+                  mailerliteFormAction={PLANNING_NOTES_MAILERLITE_ACTION}
                   extraFields={{
+                    signup_source: "course-selector",
                     selector_answers: selectorAnswerSummary,
                     selector_shortlist: shortlistSummary,
                     selector_shortlist_names: shortlistNames,

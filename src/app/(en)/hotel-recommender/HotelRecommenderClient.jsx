@@ -135,17 +135,6 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
       golf: x.hotel.golf,
     }))
 
-    // Fire-and-forget: add to MailerLite
-    const mlBody = new URLSearchParams()
-    mlBody.set('fields[email]', email)
-    mlBody.set('fields[hotel_answers]', answerSummary)
-    mlBody.set('ml-submit', '1')
-    mlBody.set('anticsrf', 'true')
-    if (newsletter) fetch('https://assets.mailerlite.com/jsonp/2404105/forms/189284603205256243/subscribe', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
-      body: mlBody.toString(),
-    }).catch(() => {})
 
     try {
       const response = await fetch('/api/send-itinerary', {

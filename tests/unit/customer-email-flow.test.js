@@ -42,10 +42,15 @@ describe('customer email delivery and consent',()=>{
     expect((await post(sendPdf,{guide:'course-comparison',subscribeNewsletter:'true'})).status).toBe(200)
     expect(fetch).toHaveBeenCalledTimes(2);expect(JSON.parse(fetch.mock.calls[1][1].body).status).toBe('unconfirmed')
   })
-  test('an explicitly opted-in PDF request can join the guide follow-up group',async()=>{
-    vi.stubEnv('MAILERLITE_API_TOKEN','test-token');vi.stubEnv('MAILERLITE_TOOLS_GROUP_ID','')
+  test('an explicitly opted-in PDF request uses the confirmation form, keeping the request unconfirmed',async()=>{
+    fetch.mockResolvedValueOnce({ok:false,status:404})
+      .mockResolvedValueOnce({ok:true,status:201,json:async()=>({})})
+      .mockResolvedValueOnce({ok:true,status:200,json:async()=>({success:true})})
     expect((await post(sendPdf,{guide:'course-comparison',subscribeNewsletter:true})).status).toBe(200)
-    expect(fetch).toHaveBeenCalledTimes(3);expect(JSON.parse(fetch.mock.calls[1][1].body).status).toBe('active');expect(JSON.parse(fetch.mock.calls[2][1].body).groups).toEqual([LEAD_MAGNET_GROUPS['course-comparison']])
+    expect(fetch).toHaveBeenCalledTimes(3)
+    expect(JSON.parse(fetch.mock.calls[1][1].body).status).toBe('unconfirmed')
+    expect(fetch.mock.calls[2][0]).toContain('/forms/189284603205256243/subscribe')
+    expect(new URLSearchParams(fetch.mock.calls[2][1].body).get('fields[signup_source]')).toBe('course-comparison')
   })
   test('an existing subscriber keeps their subscription status and existing groups',async()=>{
     fetch.mockResolvedValueOnce({ok:true,status:200,json:async()=>({data:{status:'unsubscribed'}})})

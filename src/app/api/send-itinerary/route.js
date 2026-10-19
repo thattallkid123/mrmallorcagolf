@@ -1,3 +1,4 @@
+import { requestPlanningNotes } from '../../../lib/planning-notes-signup'
 import { buildToolEmail, emailParagraph, emailSection, emailField } from '../_lib/tool-email'
 import { NextResponse } from 'next/server'
 import { Resend } from 'resend'
@@ -157,6 +158,8 @@ export async function POST(request) {
 
     // The email HTML is always rebuilt server-side from structured data (never
     // from a client-supplied HTML string), so every value is escaped before use.
+    if (subscribeNewsletter === true) await requestPlanningNotes(email, tool)
+
     const resend = new Resend(resendKey)
     const { error } = await resend.emails.send({
       from: 'Andy Griffiths <andy@mrmallorcagolf.com>',
@@ -168,27 +171,6 @@ export async function POST(request) {
     if (error) {
       console.error('[send-itinerary] Delivery failed:', error)
       return NextResponse.json({ error: 'Server error' }, { status: 502 })
-    }
-
-    // Optional newsletter opt-in via MailerLite
-    if (subscribeNewsletter === true) {
-      const mlToken = process.env.MAILERLITE_API_TOKEN
-      const mlGroup = process.env.MAILERLITE_TOOLS_GROUP_ID
-      if (mlToken && mlGroup) {
-        await fetch('https://connect.mailerlite.com/api/subscribers', {
-          method: 'POST',
-          headers: {
-            Authorization: `Bearer ${mlToken}`,
-            'Content-Type': 'application/json',
-            Accept: 'application/json',
-          },
-          body: JSON.stringify({
-            email,
-            groups: [mlGroup],
-            fields: { source: tool },
-          }),
-        }).catch(() => {})
-      }
     }
 
     return NextResponse.json({ success: true })

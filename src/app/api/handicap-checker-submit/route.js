@@ -1,3 +1,4 @@
+import { requestPlanningNotes } from '../../../lib/planning-notes-signup'
 import { findCourseByName, getCourseDestination, getShortCourseId } from '../../../lib/golf-courses-helpers'
 import { buildToolEmail, emailSection, emailParagraph, emailField } from '../_lib/tool-email'
 import { NextResponse } from 'next/server'
@@ -15,7 +16,6 @@ import {
 } from '../../../lib/request-safety'
 
 // Stable, non-secret MailerLite group id for the Handicap Access Checker.
-const MAILERLITE_HANDICAP_GROUP_ID = '192009044036159243'
 
 export async function POST(request) {
   if (!isAllowedOrigin(request)) {
@@ -98,6 +98,8 @@ export async function POST(request) {
       <p style="margin:0;font-family:Jost,Arial,Helvetica,sans-serif;font-size:12px;color:#8a8784;line-height:1.6;">The club sets its handicap and certificate rules. I confirm access and any daily licence charge before booking.</p>
     `
 
+    if (payload.subscribeNewsletter === true) await requestPlanningNotes(email, 'handicap-checker')
+
     const resend = new Resend(resendKey)
     const { error } = await resend.emails.send({
       from: 'Andy at Mr Mallorca Golf <andy@mrmallorcagolf.com>',
@@ -110,27 +112,6 @@ export async function POST(request) {
     if (error) {
       console.error('[handicap-checker-submit] Delivery failed:', error)
       return NextResponse.json({ error: 'Server error' }, { status: 502 })
-    }
-
-    // Add to MailerLite (non-blocking) for the Handicap Access Checker nurture group.
-    const mlToken = process.env.MAILERLITE_API_TOKEN
-    if (payload.subscribeNewsletter === true && mlToken) {
-      fetch('https://connect.mailerlite.com/api/subscribers', {
-        method: 'POST',
-        headers: {
-          Authorization: `Bearer ${mlToken}`,
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-        body: JSON.stringify({
-          email,
-          groups: [MAILERLITE_HANDICAP_GROUP_ID],
-          fields: {
-            hcp_checker_handicap: sanitizeText(handicap, 40),
-            hcp_checker_summary: (Array.isArray(summary) ? summary : []).join('; ').slice(0, 950),
-          },
-        }),
-      }).catch(() => {})
     }
 
     return NextResponse.json({ success: true })
