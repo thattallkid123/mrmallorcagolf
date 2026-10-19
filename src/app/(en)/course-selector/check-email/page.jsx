@@ -3,8 +3,8 @@ import { SITE_ORIGIN } from '../../../../lib/site'
 import LeadCaptureStatusPage from '../../../../components/LeadCaptureStatusPage'
 
 export const metadata = {
-  title: 'Check Your Email | Mallorca Course Selector',
-  description: 'Confirm your email to receive Mallorca golf planning notes and selector follow-up from Andy Griffiths.',
+  title: 'Confirm Your Golf Planning Emails',
+  description: 'Confirm your email to join Andy Griffiths\' occasional Mallorca golf planning notes.',
   robots: {
     index: false,
     follow: false,
@@ -13,13 +13,13 @@ export const metadata = {
   openGraph: {
     type: 'website',
     url: `${SITE_ORIGIN}/course-selector/check-email`,
-    title: 'Check your email | Mallorca course selector',
+    title: 'Confirm your golf planning emails',
     description: 'One more step. Confirm your email and I will send the planning notes.',
     images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Check your email | Mallorca course selector',
+    title: 'Confirm your golf planning emails',
     description: 'Confirm your email and I will send the planning notes.',
     images: [DEFAULT_SOCIAL_IMAGE.url],
   },
@@ -28,27 +28,27 @@ export const metadata = {
 export default function CourseSelectorCheckEmailPage() {
   return (
     <LeadCaptureStatusPage
-      eyebrow="Course selector"
+      eyebrow="Planning notes"
       title="Check your email"
-      intro="I have sent a confirmation email. Click the link in that email and I will send the follow-up planning notes."
+      intro="Confirm your address to join my occasional Mallorca golf emails."
       bullets={[
         {
-          title: 'Open the confirmation email',
-          text: 'It should arrive from Mr Mallorca Golf. If it is not in your inbox, check promotions, spam, or search for info@mrmallorcagolf.com.',
+          title: 'Find my message',
+          text: 'Look for Mr Mallorca Golf in your inbox. If it has not arrived, check promotions or spam.',
         },
         {
-          title: 'Click the confirmation button',
-          text: 'That proves it is really your address and keeps the list clean. Without that click, nothing else will send.',
+          title: 'Complete your signup',
+          text: 'Click the link inside. Updates only start after this step.',
         },
         {
-          title: 'Then the planning notes start',
-          text: 'You will get follow-up emails on timing, course fit, and how to build a sensible Mallorca trip.',
+          title: 'Your welcome email',
+          text: 'I will send a tip and links to the free tools and PDF guides, then occasional notes on courses, green fees and trip planning.',
         },
       ]}
       primaryHref="/golf-courses"
       primaryLabel="View the courses"
-      secondaryHref="/course-selector"
-      secondaryLabel="Back to selector"
+      secondaryHref="/tools/course-selector"
+      secondaryLabel="Use the course selector"
       asideTitle="While you wait"
       asideBody="If you want to compare courses while you wait, the full course guide is already on the site."
     />

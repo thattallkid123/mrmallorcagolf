@@ -3,23 +3,23 @@ import { SITE_ORIGIN } from '../../../lib/site'
 import SubscribeClient from '../subscribe/SubscribeClient'
 
 export const metadata = {
-  title: 'Mallorca Golf Course Guide and Planning Notes',
+  title: 'Mallorca Golf Planning Emails',
   description:
-    'Get Andy Griffiths\' Mallorca golf course guide and planning notes: course fit, timing, price context, and honest recommendations from a PGA Professional on the island.',
+    'Get occasional Mallorca golf planning emails from Andy Griffiths: course advice, green fees and practical trip notes. Free, with email confirmation.',
   keywords:
-    'Mallorca golf course guide, Mallorca golf courses, Son Gual, Alcanada, PGA professional Mallorca',
+    'Mallorca golf newsletter, Mallorca golf planning, Mallorca golf courses, PGA professional Mallorca',
   alternates: { canonical: `${SITE_ORIGIN}/subscribe` },
   openGraph: {
     type: 'website',
     url: `${SITE_ORIGIN}/subscribe`,
-    title: 'Mallorca Golf Course Guide and Planning Notes',
+    title: 'Mallorca Golf Planning Emails',
     description:
       'Get Mallorca golf planning notes from Andy Griffiths, PGA Advanced Professional on the island.',
     images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Mallorca Golf Course Guide and Planning Notes',
+    title: 'Mallorca Golf Planning Emails',
     description:
       'Get Mallorca golf planning notes from a PGA Professional on the island.',
     images: [DEFAULT_SOCIAL_IMAGE.url],

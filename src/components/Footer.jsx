@@ -250,6 +250,7 @@ export default function Footer({ lang }) {
           <li><Link href={`${prefix}/about`} prefetch={false}>{copy.about}</Link></li>
           <li><a href="https://www.instagram.com/mrmallorcagolf" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           <li><a href="mailto:andy@mrmallorcagolf.com">Email</a></li>
+          {locale === 'en' ? <li><Link href="/subscribe" prefetch={false}>Golf planning emails</Link></li> : null}
         </ul>
       </div>
 

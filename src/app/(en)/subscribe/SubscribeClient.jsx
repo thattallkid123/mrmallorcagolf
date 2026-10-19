@@ -69,7 +69,7 @@ export default function SubscribeClient() {
             </div>
             <ul style={{ listStyle: "none", padding: 0, margin: 0, display: "flex", flexDirection: "column", gap: "1.25rem" }}>
               {[
-                ["First shortlist", "Which courses suit lower handicaps, mixed groups, scenery-first trips, and serious golf days."],
+                ["Choosing courses", "Which courses suit lower handicaps, mixed groups, scenery-first trips, and serious golf days."],
                 ["Timing and seasons", "When to go, what changes through the year, and which tee times are worth protecting."],
                 ["Planning logic", "Which courses pair well together and how to build a week that makes sense with driving time and budget."],
                 ["On-course judgment", "What I notice when I play the courses myself, and what that means for your trip."],
@@ -97,7 +97,7 @@ export default function SubscribeClient() {
                 <EmailSignup
                   placeholder="Email address"
                   buttonLabel="Send notes"
-                  successMessage="You're on the list. I'll send the planning notes by email."
+                  successMessage="Check your inbox and confirm your email to join."
                   title="Subscribe to Mr Mallorca Golf planning notes"
                   mailerliteFormAction={PLANNING_NOTES_MAILERLITE_ACTION}
                   extraFields={{ signup_source: "planning-notes-page" }}
@@ -127,7 +127,7 @@ export default function SubscribeClient() {
           <p style={{ fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "9px", letterSpacing: "0.22em", textTransform: "uppercase", color: "var(--taupe)", margin: "0 0 0.75rem 0" }}>New here?</p>
           <div style={{ width: "36px", height: "1px", background: "var(--gold)", margin: "0 auto 1.5rem", display: "block" }} />
           <h2 style={{ fontFamily: "var(--font-serif)", fontSize: "clamp(1.9rem,3.5vw,2.8rem)", fontWeight: 500, color: "var(--deep)", lineHeight: 1.08, margin: "0 0 1.25rem 0" }}>Start with the course guide</h2>
-          <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: "1rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 2.5rem 0" }}>Full notes on all 24 courses on the island. What each one teaches, which to play first, how to pair them together.</p>
+          <p style={{ fontFamily: "var(--font-sans)", fontWeight: 300, fontSize: "1rem", color: "var(--charcoal)", lineHeight: 1.85, margin: "0 0 2.5rem 0" }}>Compare all 24 courses and read my reviews before choosing your rounds.</p>
           <a href="/golf-courses" style={{ display: "inline-block", padding: "14px 40px", background: "var(--pine)", color: "#fff", fontFamily: "var(--font-sans)", fontWeight: 500, fontSize: "10px", letterSpacing: "0.18em", textTransform: "uppercase", textDecoration: "none" }}>View all 24 courses</a>
         </div>
       </section>

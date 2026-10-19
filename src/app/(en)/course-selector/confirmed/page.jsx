@@ -3,7 +3,7 @@ import { SITE_ORIGIN } from '../../../../lib/site'
 import LeadCaptureStatusPage from '../../../../components/LeadCaptureStatusPage'
 
 export const metadata = {
-  title: 'You Are In | Mallorca Course Selector',
+  title: 'Your Golf Planning Emails Are Confirmed',
   description: 'Your email is confirmed. You are now on the list for Mallorca golf planning notes.',
   robots: {
     index: false,
@@ -13,14 +13,14 @@ export const metadata = {
   openGraph: {
     type: 'website',
     url: `${SITE_ORIGIN}/course-selector/confirmed`,
-    title: 'You are in | Mallorca course selector',
-    description: 'Your email is confirmed and the planning notes will now reach you properly.',
+    title: 'Your golf planning emails are confirmed',
+    description: 'Your email is confirmed. You will receive occasional Mallorca golf planning notes.',
     images: [DEFAULT_SOCIAL_IMAGE],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'You are in | Mallorca course selector',
-    description: 'Your email is confirmed and the planning notes will now reach you properly.',
+    title: 'Your golf planning emails are confirmed',
+    description: 'Your email is confirmed. You will receive occasional Mallorca golf planning notes.',
     images: [DEFAULT_SOCIAL_IMAGE.url],
   },
 }
@@ -30,27 +30,27 @@ export default function CourseSelectorConfirmedPage() {
     <LeadCaptureStatusPage
       eyebrow="Email confirmed"
       title="You are on the list"
-      intro="That confirmation is done. You will now receive the follow-up planning notes properly."
+      intro="Thanks for signing up. I will send occasional notes on courses, green fees and planning a Mallorca golf trip."
       bullets={[
         {
-          title: 'Useful first email',
-          text: 'The first email gives you a practical starting point rather than a generic Mallorca course roundup.',
+          title: 'Your welcome',
+          text: 'A practical tip and links to the free tools and PDF guides for planning your rounds.',
         },
         {
-          title: 'Then the useful planning notes',
-          text: 'Expect follow-up emails on timing, course fit, and the mistakes golfers make when they book by reputation alone.',
+          title: 'Occasional updates',
+          text: 'Seasonal changes and advice on choosing courses around your hotel, handicap and budget.',
         },
         {
           title: 'Reply if you want help',
-          text: 'If you are already deep into planning and want a more tailored steer, you can reply and I will point you in the right direction.',
+          text: 'Reply with your dates, group size and where you are staying if you want help choosing your rounds.',
         },
       ]}
-      primaryHref="/course-selector"
-      primaryLabel="Use the selector again"
+      primaryHref="/tools/course-selector"
+      primaryLabel="Use the course selector"
       secondaryHref="/plan-your-trip"
       secondaryLabel="Plan your trip"
-      asideTitle="Best next step"
-      asideBody="If your group has mixed handicaps or only a few rounds to play, the selector is still the quickest way to sense-check the shortlist before you book anything."
+      asideTitle="While you plan"
+      asideBody="The course selector matches options to your group, handicap and hotel area. You can use it without making a booking."
     />
   )
 }
