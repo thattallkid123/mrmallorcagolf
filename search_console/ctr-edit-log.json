@@ -124,7 +124,7 @@
         },
         {
           "date": "2026-10-19",
-          "commit": "pending",
+          "commit": "b0813986",
           "summary": "Factual fix, not a wording test: description, facts row, intro, caption and verdict said 5 mins from Palma; course data and an OSRM route check say 15 (about 12 min from the cathedral, 20 from the airport). Description now leads with 15 mins. Applied to all 7 locales. Restarts the 21-day window; do not judge CTR before ~2026-11-09."
         }
       ]
