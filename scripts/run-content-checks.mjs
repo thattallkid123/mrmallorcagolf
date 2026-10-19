@@ -62,6 +62,7 @@ const CHECKS = [
   { name: 'check:locale-sync', script: 'check-locale-sync.mjs' },
   { name: 'check:guide-alt', script: 'check-guide-alt.mjs' },
   { name: 'check:pricing-narrative', script: 'check-pricing-narrative.mjs' },
+  { name: 'check:public-data-leaks', script: 'check-public-data-leaks.mjs' },
   { name: 'check:lead-magnet-prices', script: 'check-lead-magnet-prices.mjs' },
   { name: 'check:guide-parity', script: 'check-guide-parity.mjs' },
   { name: 'check:guide-pill-labels', script: 'check-guide-pill-labels.mjs' },

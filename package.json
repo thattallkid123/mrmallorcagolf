@@ -47,6 +47,7 @@
     "check:guide-alt": "node --no-warnings scripts/check-guide-alt.mjs",
     "check:rendered-english": "node --no-warnings scripts/check-rendered-english.mjs",
     "check:pricing-narrative": "node --no-warnings scripts/check-pricing-narrative.mjs",
+    "check:public-data-leaks": "node scripts/check-public-data-leaks.mjs",
     "check:lead-magnet-prices": "node --no-warnings scripts/check-lead-magnet-prices.mjs",
     "check:guide-parity": "node --no-warnings scripts/check-guide-parity.mjs",
     "check:guide-pill-labels": "node --no-warnings scripts/check-guide-pill-labels.mjs",
