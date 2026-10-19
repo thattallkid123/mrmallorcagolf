@@ -323,6 +323,36 @@ body {
 .nav__lang-btn:hover { color: var(--gold-text); }
 .nav.scrolled .nav__lang-btn:hover,
 .nav.solid .nav__lang-btn:hover { color: var(--pine); }
+/* Language pill: gold outline with a small globe so it reads as a language chooser, in both the over-the-photo and scrolled states. */
+.nav__lang {
+  border: 1.5px solid var(--gold-light);
+  background: rgba(20, 24, 23, 0.35);
+  box-shadow: none;
+}
+.nav.scrolled .nav__lang,
+.nav.solid .nav__lang {
+  border-color: var(--gold);
+  background: var(--white);
+  box-shadow: none;
+}
+.nav__lang-btn {
+  color: var(--white);
+  font-weight: 500;
+  font-size: 11px;
+  padding: 0 16px;
+}
+.nav__lang-btn::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: no-repeat center / contain url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23D4B068' stroke-width='1.6'><circle cx='12' cy='12' r='9'/><path d='M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18'/></svg>");
+}
+.nav.scrolled .nav__lang-btn,
+.nav.solid .nav__lang-btn { color: var(--charcoal); }
+.nav.scrolled .nav__lang-btn::before,
+.nav.solid .nav__lang-btn::before {
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B8973C' stroke-width='1.6'><circle cx='12' cy='12' r='9'/><path d='M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18'/></svg>");
+}
 .nav__lang-chevron {
   width: 6px;
   height: 6px;
