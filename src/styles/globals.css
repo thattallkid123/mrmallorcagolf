@@ -764,12 +764,12 @@ body {
 /* ─── HOMEPAGE HERO ──────────────────────────────────────── */
 .hero {
   position: relative;
-  height: 100svh;
-  min-height: 640px;
+  min-height: max(100svh, 640px);
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding: 0 40px 80px;
+  /* Top padding keeps the text clear of the fixed nav and logo when the window is short (the content is bottom-anchored, so it would otherwise ride up under them) */
+  padding: calc(var(--nav-h) + 32px) 40px 80px;
   overflow: hidden;
 }
 .hero::before {
@@ -2036,7 +2036,7 @@ select.form-control { cursor: pointer; }
   .story__sidebar { position: static; border-left: none; border-top: 1px solid var(--linen); min-height: auto; }
 }
 @media (max-width: 768px) {
-  .hero { height: 100svh; min-height: 640px; padding: 0 20px 96px; }
+  .hero { min-height: max(100svh, 640px); padding: calc(var(--nav-h) + 24px) 20px 96px; }
   .hero__content { width: 100%; max-width: 31rem; min-width: 0; }
   .hero__eyebrow { max-width: 100%; flex-wrap: wrap; gap: 8px; font-size: 8px; letter-spacing: 0.14em; line-height: 1.6; }
   .hero__eyebrow::before { width: 24px; }
