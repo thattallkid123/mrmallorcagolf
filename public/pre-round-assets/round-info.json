@@ -106,6 +106,7 @@
         "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle. There is a free refill station at the clubhouse.",
         "buggyTrolley": "The course is hilly with long walks from green to tee, so a buggy is compulsory before 14:00 and walking is allowed from 14:00. Book the buggy with your tee time, as two players share one. Electric and push trolleys are also available.",
+        "proShopOpens": "The pro shop is open every day 08:00-18:00.",
         "firstTee": "The first tee time is usually 08:00.",
         "earlyTee": "The pro shop and the driving range are open for the first tee times of the day.",
         "rangeOpens": "Range use is free with a green fee. Balls come from a card machine: €5 for 1 credit (about 40 balls), €20 for 5 credits, €35 for 10 and €60 for 20. TrackMan Range with 21 open and 7 covered bays.",
@@ -494,16 +495,14 @@
         "licence": "No extra daily fee for golf insurance or a licence.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course.",
         "shoes": "Soft spikes are necessary.",
-        "changingRooms": "Locker rooms, sauna and outdoor pool.",
+        "changingRooms": "Changing rooms with lockers.",
         "parking": "Free parking on site, including accessible spaces and an EV charger.",
         "payment": "Cards are accepted at the club.",
         "flights": "Pula pairs players up to four per tee time. To keep a tee time private you pay for the empty places.",
         "arrivalNotes": "Players with a handicap above 36 can start after 14:00. Play is limited to 4 hours 40 minutes for 18 holes."
       },
       "seasonal": {},
-      "toCheck": [
-        "changingRooms"
-      ],
+      "toCheck": [],
       "filtered": []
     },
     "rotana": {
@@ -538,6 +537,7 @@
         "buggyTrolley": "The course is built on a hill, so a buggy is generally recommended. Petrol buggies, trolleys and electric trolleys are available.",
         "practiceFacilities": "There is a driving range, a chipping green, practice bunkers and a par-3 training area.",
         "foodBeforeRound": "Terrace Bistro in the hotel: Mediterranean with Asian touches and grilled dishes.",
+        "licence": "There is no separate daily licence charge.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course.",
         "shoes": "Soft spikes required.",
         "parking": "Car park at the club.",
@@ -587,6 +587,7 @@
         "practiceFacilities": "There is a driving range and a short game area.",
         "foodBeforeRound": "Bar and cafeteria beside the caddy master while the hotel is renovated: drinks and simple clubhouse food.",
         "water": "Water and drinks are only available at the clubhouse, which you pass after nine holes. It is closed for the first tee times of the day, so bring water with you.",
+        "licence": "There is no separate daily licence charge.",
         "dressCode": "Wear a collared golf shirt and golf trousers or tailored shorts. No jeans or T-shirts.",
         "shoes": "Soft spikes only. Metal spikes are not allowed.",
         "changingRooms": "There are no lockers or changing rooms at the moment, only temporary buildings while building work is going on.",
@@ -626,11 +627,14 @@
         "checkInMinutes": 45,
         "arrivalPoint": "Santa Ponsa 2 has its own clubhouse. Ring at the gate to be buzzed in, or I will let you in.",
         "bringWater": "Water for the first nine holes. The clubhouse is closed for the first tee times, and the next chance to buy a drink is after nine holes.",
+        "hireBags": "Hire bags are cart bags.",
         "buggyTrolley": "The course is easy to walk, with some longer walks from green to tee but nothing steep, and a buggy is optional. Buggies are available.",
+        "proShopOpens": "The door opens at 07:45 and the first tee time is 08:00.",
         "firstTee": "The first tee time is 08:00.",
         "rangeOpens": "The range opens at 08:00. It is a grass driving range, with one putting green and one chipping green.",
         "foodBeforeRound": "Food and drinks are available in the clubhouse from around 10:30.",
         "water": "Water and drinks are only available at the clubhouse, which you pass after nine holes. It is closed for the first tee times of the day, so bring water with you.",
+        "licence": "There is no separate daily licence charge.",
         "dressCode": "Wear a collared golf shirt and golf trousers or tailored shorts. No jeans or T-shirts.",
         "shoes": "Soft spikes only. Metal spikes are not allowed.",
         "changingRooms": "There are toilets and a small changing room.",
@@ -680,18 +684,17 @@
         "practiceFacilities": "There is a circular driving range, an approach green with bunkers and a putting green of about 1,000 square metres.",
         "foodBeforeRound": "The pro shop and a mini-market sell coffee and food, which suits an early round. The restaurant opens later.",
         "water": "The small shop by check-in sells water, coffee and snacks.",
+        "licence": "There is no separate daily licence charge.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course.",
         "shoes": "Soft spikes only. Metal spikes are not allowed.",
-        "changingRooms": "Locker rooms, sauna and pools.",
+        "changingRooms": "Locker rooms and showers.",
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
         "flights": "The club may add other players to a group of fewer than four. For a group of three the club can block the tee time as an exception.",
         "arrivalNotes": "Bring a handicap card: it is checked at registration."
       },
       "seasonal": {},
-      "toCheck": [
-        "changingRooms"
-      ],
+      "toCheck": [],
       "filtered": []
     },
     "son_antem_w": {
@@ -732,6 +735,7 @@
         "practiceFacilities": "There is a circular driving range with grass and artificial tees, an approach green with bunkers and a putting green of about 1,000 square metres.",
         "foodBeforeRound": "The pro shop and a mini-market sell coffee and food, which suits an early round. The restaurant opens later.",
         "water": "The small shop by check-in sells water, coffee and snacks.",
+        "licence": "There is no separate daily licence charge.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course.",
         "shoes": "Soft spikes only. Metal spikes are not allowed.",
         "changingRooms": "Changing rooms and lockers are available.",
@@ -987,13 +991,13 @@
         "rangeOpens": "The driving range is closed on Wednesdays for mowing.",
         "practiceFacilities": "There is a driving range with 15 mats and a seasonal grass area, a putting green, two chipping areas and a practice bunker.",
         "foodBeforeRound": "The restaurant opens at 08:30, so it is not open for the earliest tee times. Costa de los Pinos has a terrace over the 18th and the sea.",
+        "licence": "There is no separate daily licence charge.",
         "dressCode": "Appropriate golf clothing.",
         "shoes": "Soft spikes only. Metal spikes are not allowed.",
         "changingRooms": "Locker room in the clubhouse.",
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
-        "flights": "In high season tee times are organised in groups of four, so a fourth player may join a group of three.",
-        "arrivalNotes": "Dogs are not allowed. GPS devices are allowed."
+        "flights": "In high season tee times are organised in groups of four, so a fourth player may join a group of three."
       },
       "seasonal": {},
       "toCheck": [
@@ -1046,14 +1050,10 @@
         "changingRooms": "Locker rooms.",
         "parking": "Easy parking right by the clubhouse.",
         "payment": "Cards are accepted at the club.",
-        "flights": "The club may add other players to a group of fewer than four.",
-        "arrivalNotes": "Dogs are not allowed. GPS devices are allowed."
+        "flights": "The club may add other players to a group of fewer than four."
       },
       "seasonal": {},
-      "toCheck": [
-        "changingRooms",
-        "arrivalNotes"
-      ],
+      "toCheck": [],
       "filtered": []
     },
     "son_vida": {
