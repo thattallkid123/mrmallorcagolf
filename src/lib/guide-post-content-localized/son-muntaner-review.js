@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Golf Son Muntaner - Análisis honesto 2026",
-      "description": "Son Muntaner está a 5 minutos de Palma, €110–€260 con buggy incluido, y fue elegido Mejor Campo de Golf de España en 2025. Reseña de un pro PGA.",
+      "description": "Son Muntaner está a 15 minutos de Palma, €110–€260 con buggy incluido, y fue elegido Mejor Campo de Golf de España en 2025. Reseña de un pro PGA.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -11,7 +11,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Abril 2026",
       "title": "Golf Son Muntaner, Mallorca - análisis honesto de un Profesional PGA (2026)",
-      "intro": "A cinco minutos de Palma. Buggy incluido durante la mayor parte de la temporada. Mejor Campo de Golf de España en los World Golf Awards 2025. Lo jugué un sábado por la mañana con la hoja de salidas completa. Esto es lo que encontré.",
+      "intro": "A quince minutos de Palma. Buggy incluido durante la mayor parte de la temporada. Mejor Campo de Golf de España en los World Golf Awards 2025. Lo jugué un sábado por la mañana con la hoja de salidas completa. Esto es lo que encontré.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -56,7 +56,7 @@ const content = {
             "Buggy"
           ],
           [
-            "5 min",
+            "15 min",
             "Desde el centro de Palma"
           ],
           [
@@ -69,14 +69,14 @@ const content = {
         "text": "Cómo llegar"
       },
       {
-        "text": "A cinco minutos del centro de Palma. Eso solo ya lo sitúa en una categoría diferente a la mayoría de los campos que merecen la pena en la isla. Son Gual está a veinte minutos, Alcanada a cincuenta. Si te alojas en la ciudad y quieres una vuelta seria sin organizar media jornada en torno al trayecto, Son Muntaner es la respuesta."
+        "text": "A unos quince minutos del centro de Palma y a veinte del aeropuerto. Son Gual está a veinte minutos de la ciudad, Alcanada a cincuenta. Si te alojas en la ciudad y quieres una vuelta seria sin organizar media jornada en torno al trayecto, Son Muntaner es la respuesta."
       },
       {
         "text": "El servicio desde la llegada hasta la ronda fue impecable. El equipo es atento sin resultar intrusivo. Las pelotas para el campo de prácticas, las instalaciones de entrenamiento y el funcionamiento general están al nivel que cabe esperar con la reputación del campo."
       },
       {
         "alt": "Campo de golf Son Muntaner Mallorca mirando por el fairway del hoyo 17 con la Bahía de Palma al fondo",
-        "caption": "Mirando hacia el hoyo 17. A cinco minutos del centro de Palma y parece otro mundo."
+        "caption": "Mirando hacia el hoyo 17. A quince minutos del centro de Palma y parece otro mundo."
       },
       {
         "text": "El recorrido a pie y por qué el buggy está incluido"
@@ -216,7 +216,7 @@ const content = {
         "text": "Veredicto"
       },
       {
-        "text": "El título de Mejor Campo de Golf de España no es marketing. Son Muntaner ofrece un campo que pone a prueba el posicionamiento, la disciplina y la claridad de decisión desde el primer hoyo hasta el último. Premia el control sobre la potencia y crea oportunidades de puntuar a través de la precisión. A cinco minutos de Palma, la logística es sencilla. Solo los greens justifican el viaje. Compara todos los campos en la <a href='/golf-courses'>página de campos de golf de Mallorca</a>."
+        "text": "El título de Mejor Campo de Golf de España no es marketing. Son Muntaner ofrece un campo que pone a prueba el posicionamiento, la disciplina y la claridad de decisión desde el primer hoyo hasta el último. Premia el control sobre la potencia y crea oportunidades de puntuar a través de la precisión. A quince minutos de Palma, la logística es sencilla. Solo los greens justifican el viaje. Compara todos los campos en la <a href='/golf-courses'>página de campos de golf de Mallorca</a>."
       },
       {
         "text": "Una segunda visita encontrando más fairways permitiría conocer el trazado en profundidad. Esa es la señal de un campo al que merece la pena volver. Si Son Muntaner es el punto central de un viaje más largo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre horarios y logística."
@@ -230,14 +230,14 @@ const content = {
   "de": {
     "metadata": {
       "title": "Son Muntaner - Bewertung & Gebühren",
-      "description": "Son Muntaner liegt 5 Minuten von Palma, €110–€260 inklusive Buggy, und wurde 2025 zum besten Golfplatz Spaniens gekürt. Review eines PGA-Pros.",
+      "description": "Son Muntaner liegt 15 Minuten von Palma, €110–€260 inklusive Buggy, und wurde 2025 zum besten Golfplatz Spaniens gekürt. Review eines PGA-Pros.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
       "badge": "Platz-Bewertung",
       "readTime": "6 Min.",
       "title": "Golf Son Muntaner, Mallorca - Ehrliche Bewertung eines PGA-Professionals (2026)",
-      "intro": "Fünf Minuten von Palma. Buggy in den meisten Monaten der Saison inklusive. Bester Golfplatz Spaniens bei den World Golf Awards 2025. Ich habe ihn an einem Samstagmorgen bei voller Startliste gespielt. Das ist mir aufgefallen.",
+      "intro": "Fünfzehn Minuten von Palma. Buggy in den meisten Monaten der Saison inklusive. Bester Golfplatz Spaniens bei den World Golf Awards 2025. Ich habe ihn an einem Samstagmorgen bei voller Startliste gespielt. Das ist mir aufgefallen.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -282,7 +282,7 @@ const content = {
             "Buggy"
           ],
           [
-            "5 Min.",
+            "15 Min.",
             "Vom Zentrum Palmas"
           ],
           [
@@ -295,14 +295,14 @@ const content = {
         "text": "Anreise"
       },
       {
-        "text": "Fünf Minuten vom Zentrum Palmas. Das allein hebt ihn in eine andere Kategorie als die meisten empfehlenswerten Plätze der Insel. Son Gual braucht zwanzig Minuten, Alcanada fünfzig. Wer in der Stadt wohnt und eine ernsthafte Runde spielen möchte, ohne dafür einen halben Tag einzuplanen, findet in Son Muntaner die Antwort."
+        "text": "Etwa fünfzehn Minuten vom Zentrum Palmas, vom Flughafen sind es zwanzig. Son Gual braucht von der Stadt aus zwanzig Minuten, Alcanada fünfzig. Wer in der Stadt wohnt und eine ernsthafte Runde spielen möchte, ohne dafür einen halben Tag einzuplanen, findet in Son Muntaner die Antwort."
       },
       {
         "text": "Der Service vom Empfang bis zum Abschlag war reibungslos. Das Team ist aufmerksam, ohne aufdringlich zu sein. Bälle für die Range, Übungsanlage und der gesamte Betrieb entsprechen dem Niveau, das der Ruf des Platzes erwarten lässt."
       },
       {
         "alt": "Son Muntaner Golfplatz Mallorca – Blick das 17. Loch hinunter mit der Bucht von Palma im Hintergrund",
-        "caption": "Blick das 17. Loch hinunter. Fünf Minuten vom Zentrum Palmas entfernt – und es fühlt sich wie eine andere Welt an."
+        "caption": "Blick das 17. Loch hinunter. Fünfzehn Minuten vom Zentrum Palmas entfernt – und es fühlt sich wie eine andere Welt an."
       },
       {
         "text": "Zu Fuß oder per Buggy und warum der Buggy inklusive ist"
@@ -442,7 +442,7 @@ const content = {
         "text": "Fazit"
       },
       {
-        "text": "Der Titel als bester Golfplatz Spaniens ist kein Marketing. Son Muntaner bietet einen Platz, der Positionierung, Disziplin und klare Entscheidungen vom ersten bis zum letzten Loch prüft. Er belohnt Kontrolle statt Kraft und schafft durch Präzision Scoring-Chancen. Fünf Minuten von Palma machen die Logistik unkompliziert. Allein die Grüns rechtfertigen die Fahrt. Vergleichen Sie alle Plätze auf der Seite <a href='/golf-courses'>Golfplätze auf Mallorca</a>."
+        "text": "Der Titel als bester Golfplatz Spaniens ist kein Marketing. Son Muntaner bietet einen Platz, der Positionierung, Disziplin und klare Entscheidungen vom ersten bis zum letzten Loch prüft. Er belohnt Kontrolle statt Kraft und schafft durch Präzision Scoring-Chancen. Fünfzehn Minuten von Palma machen die Logistik unkompliziert. Allein die Grüns rechtfertigen die Fahrt. Vergleichen Sie alle Plätze auf der Seite <a href='/golf-courses'>Golfplätze auf Mallorca</a>."
       },
       {
         "text": "Ein erneuter Besuch mit mehr gefundenen Fairways würde den Platz noch tiefer erschließen. Das ist das Zeichen eines Platzes, zu dem man zurückkehren möchte. Wenn Son Muntaner der Mittelpunkt einer längeren Reise ist, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Timing und Logistik ab."
@@ -456,7 +456,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Son Muntaner - Avis & Tarifs",
-      "description": "Son Muntaner est à 5 minutes de Palma, €110–€260 avec voiturette incluse, et élu meilleur parcours de golf d'Espagne 2025. Avis d'un pro PGA.",
+      "description": "Son Muntaner est à 15 minutes de Palma, €110–€260 avec voiturette incluse, et élu meilleur parcours de golf d'Espagne 2025. Avis d'un pro PGA.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -464,7 +464,7 @@ const content = {
       "readTime": "6 min",
       "updated": "Avril 2026",
       "title": "Golf Son Muntaner, Majorque - avis honnête d'un Professionnel PGA (2026)",
-      "intro": "À cinq minutes de Palma. Voiturette incluse la plupart de la saison. Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. Je l'ai joué un samedi matin, avec une feuille de départs complète. Voici ce que j'y ai trouvé.",
+      "intro": "À quinze minutes de Palma. Voiturette incluse la plupart de la saison. Meilleur parcours de golf d'Espagne aux World Golf Awards 2025. Je l'ai joué un samedi matin, avec une feuille de départs complète. Voici ce que j'y ai trouvé.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -509,7 +509,7 @@ const content = {
             "Buggy"
           ],
           [
-            "5 min",
+            "15 min",
             "Depuis le centre de Palma"
           ],
           [
@@ -522,14 +522,14 @@ const content = {
         "text": "Comment s'y rendre"
       },
       {
-        "text": "À cinq minutes du centre de Palma. Cela seul le place dans une catégorie différente de la plupart des parcours de l'île qui méritent le détour. Son Gual est à vingt minutes, Alcanada à cinquante. Si vous êtes basé en ville et souhaitez faire un bon parcours sans organiser une demi-journée autour du trajet, Son Muntaner est la réponse."
+        "text": "À environ quinze minutes du centre de Palma, vingt depuis l'aéroport. Son Gual est à vingt minutes de la ville, Alcanada à cinquante. Si vous êtes basé en ville et souhaitez faire un bon parcours sans organiser une demi-journée autour du trajet, Son Muntaner est la réponse."
       },
       {
         "text": "Le service, de l'arrivée à la partie, était irréprochable. L'équipe est attentive sans être intrusive. Les balles pour le practice, les installations d'entraînement et l'organisation générale sont au niveau que la réputation du parcours laissait présager."
       },
       {
         "alt": "Parcours de golf Son Muntaner Majorque vue sur le 17ème trou avec la Baie de Palma en arrière-plan",
-        "caption": "Vue sur le 17ème trou. À cinq minutes du centre de Palma et on se croirait dans un autre monde."
+        "caption": "Vue sur le 17ème trou. À quinze minutes du centre de Palma et on se croirait dans un autre monde."
       },
       {
         "text": "La marche et pourquoi le buggy est inclus"
@@ -669,7 +669,7 @@ const content = {
         "text": "Verdict"
       },
       {
-        "text": "Le titre de meilleur parcours de golf d'Espagne n'est pas du marketing. Son Muntaner offre un parcours qui met à l'épreuve le placement, la discipline et la clarté de décision du premier au dernier trou. Il récompense le contrôle plutôt que la puissance et crée des occasions de scorer grâce à la précision. À cinq minutes de Palma, la logistique est simple. Les greens à eux seuls justifient le déplacement. Comparez tous les parcours sur la <a href='/golf-courses'>page des parcours de golf de Majorque</a>."
+        "text": "Le titre de meilleur parcours de golf d'Espagne n'est pas du marketing. Son Muntaner offre un parcours qui met à l'épreuve le placement, la discipline et la clarté de décision du premier au dernier trou. Il récompense le contrôle plutôt que la puissance et crée des occasions de scorer grâce à la précision. À quinze minutes de Palma, la logistique est simple. Les greens à eux seuls justifient le déplacement. Comparez tous les parcours sur la <a href='/golf-courses'>page des parcours de golf de Majorque</a>."
       },
       {
         "text": "Une prochaine visite avec plus de fairways trouvés permettrait une lecture plus approfondie du tracé. C'est la marque d'un parcours sur lequel il vaut la peine de revenir. Si Son Muntaner est le point central d'un voyage plus long, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre le timing et la logistique."
@@ -683,14 +683,14 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Son Muntaner - Beoordeling & Tarief",
-      "description": "Son Muntaner ligt 5 minuten van Palma, €110–€260 inclusief buggy, en werd in 2025 beste golfbaan van Spanje. Review van een PGA-pro.",
+      "description": "Son Muntaner ligt 15 minuten van Palma, €110–€260 inclusief buggy, en werd in 2025 beste golfbaan van Spanje. Review van een PGA-pro.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
       "badge": "Baanbeoordeling",
       "readTime": "6 min",
       "title": "Golf Son Muntaner, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
-      "intro": "Vijf minuten van Palma. Buggy het grootste deel van het seizoen inbegrepen. Beste golfbaan van Spanje bij de World Golf Awards 2025. Ik speelde hem met een volle starttijdenlijst op een zaterdagochtend. Dit is wat ik vond.",
+      "intro": "Vijftien minuten van Palma. Buggy het grootste deel van het seizoen inbegrepen. Beste golfbaan van Spanje bij de World Golf Awards 2025. Ik speelde hem met een volle starttijdenlijst op een zaterdagochtend. Dit is wat ik vond.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -735,7 +735,7 @@ const content = {
             "Buggy"
           ],
           [
-            "5 min",
+            "15 min",
             "Vanaf het centrum van Palma"
           ],
           [
@@ -748,14 +748,14 @@ const content = {
         "text": "Hoe je er komt"
       },
       {
-        "text": "Vijf minuten van het centrum van Palma. Dat alleen al plaatst hem in een andere categorie dan de meeste banen op het eiland die de moeite waard zijn. Son Gual kost twintig minuten, Alcanada vijftig. Als je in de stad verblijft en een serieuze ronde wilt spelen zonder een halve dag rond de rit te plannen, is Son Muntaner het antwoord."
+        "text": "Ongeveer vijftien minuten van het centrum van Palma, twintig vanaf de luchthaven. Son Gual kost twintig minuten vanuit de stad, Alcanada vijftig. Als je in de stad verblijft en een serieuze ronde wilt spelen zonder een halve dag rond de rit te plannen, is Son Muntaner het antwoord."
       },
       {
         "text": "De service van aankomst tot de ronde was soepel. Het team is attent zonder opdringerig te zijn. Oefenballen, oefenfaciliteiten en de algehele organisatie zitten op het niveau dat de reputatie van de baan doet verwachten."
       },
       {
         "alt": "Golfbaan Son Muntaner Mallorca kijkend over het 17e hole met de Baai van Palma op de achtergrond",
-        "caption": "Kijkend over hole 17. Vijf minuten van het centrum van Palma en het voelt als een andere wereld."
+        "caption": "Kijkend over hole 17. Vijftien minuten van het centrum van Palma en het voelt als een andere wereld."
       },
       {
         "text": "Het lopen en waarom de buggy is inbegrepen"
@@ -895,7 +895,7 @@ const content = {
         "text": "Conclusie"
       },
       {
-        "text": "De titel beste golfbaan van Spanje is geen marketing. Son Muntaner levert een baan die positionering, discipline en duidelijkheid in besluitvorming test van de eerste tot de laatste hole. Hij beloont controle boven kracht en creëert scoremogelijkheden door precisie. Vijf minuten van Palma maakt de logistiek eenvoudig. De greens alleen al rechtvaardigen de reis. Vergelijk alle banen op de pagina <a href='/golf-courses'>golfbanen op Mallorca</a>."
+        "text": "De titel beste golfbaan van Spanje is geen marketing. Son Muntaner levert een baan die positionering, discipline en duidelijkheid in besluitvorming test van de eerste tot de laatste hole. Hij beloont controle boven kracht en creëert scoremogelijkheden door precisie. Vijftien minuten van Palma maakt de logistiek eenvoudig. De greens alleen al rechtvaardigen de reis. Vergelijk alle banen op de pagina <a href='/golf-courses'>golfbanen op Mallorca</a>."
       },
       {
         "text": "Een volgend bezoek met meer gevonden fairways zou een diepere kennis van het ontwerp ontsluiten. Dat is het kenmerk van een baan die het waard is om naar terug te keren. Als Son Muntaner het middelpunt is van een langere reis, behandelt de <a href=\"/plan-your-trip\">reisplanningsgids</a> timing en logistiek."
@@ -909,14 +909,14 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Muntaner - Recension & Avgifter",
-      "description": "Son Muntaner ligger 5 minuter från Palma, €110–€260 med buggy inkluderad, och utsågs till Spaniens bästa golfbana 2025. Recension av en PGA-pro.",
+      "description": "Son Muntaner ligger 15 minuter från Palma, €110–€260 med buggy inkluderad, och utsågs till Spaniens bästa golfbana 2025. Recension av en PGA-pro.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
       "badge": "Banomdöme",
       "readTime": "6 min",
       "title": "Golf Son Muntaner, Mallorca - ärlig recension av en PGA Professional (2026)",
-      "intro": "Fem minuter från Palma. Buggy ingår större delen av säsongen. Spaniens bästa golfbana vid World Golf Awards 2025. Jag spelade den en lördagsmorgon med full startlista. Här är vad jag hittade.",
+      "intro": "Femton minuter från Palma. Buggy ingår större delen av säsongen. Spaniens bästa golfbana vid World Golf Awards 2025. Jag spelade den en lördagsmorgon med full startlista. Här är vad jag hittade.",
       "related": [
         {
           "slug": "son-gual-review",
@@ -961,7 +961,7 @@ const content = {
             "Buggy"
           ],
           [
-            "5 min",
+            "15 min",
             "Från centrala Palma"
           ],
           [
@@ -974,14 +974,14 @@ const content = {
         "text": "Hur man tar sig dit"
       },
       {
-        "text": "Fem minuter från centrala Palma. Det ensamt placerar den i en annan kategori än de flesta banor på ön värda att nämna. Son Gual tar tjugo minuter, Alcanada femtio. Om du är baserad i staden och vill ha en seriös runda utan att planera en halvdag kring körningen, är Son Muntaner svaret."
+        "text": "Ungefär femton minuter från centrala Palma, tjugo från flygplatsen. Son Gual tar tjugo minuter från staden, Alcanada femtio. Om du är baserad i staden och vill ha en seriös runda utan att planera en halvdag kring körningen, är Son Muntaner svaret."
       },
       {
         "text": "Servicen från ankomst till runda var smidig. Teamet är uppmärksamt utan att vara påträngande. Rangebollar, träningsanläggningar och den övergripande driften ligger alla på den nivå som banans rykte leder dig att förvänta dig."
       },
       {
         "alt": "Golfbanan Son Muntaner Mallorca med utsikt ned längs hål 17 med Palma-bukten i bakgrunden",
-        "caption": "Vy ned över hål 17. Fem minuter från centrala Palma och det känns som en annan värld."
+        "caption": "Vy ned över hål 17. Femton minuter från centrala Palma och det känns som en annan värld."
       },
       {
         "text": "Gången och varför buggyn ingår"
@@ -1121,7 +1121,7 @@ const content = {
         "text": "Sammanfattning"
       },
       {
-        "text": "Titeln som Spaniens bästa golfbana är ingen marknadsföring. Son Muntaner levererar en bana som testar positionering, disciplin och tydlighet i beslutsfattandet från första till sista hålet. Den belönar kontroll framför kraft och skapar scoringschanser genom precision. Fem minuter från Palma gör logistiken enkel. Greenerna ensamma motiverar resan. Jämför alla banor på sidan om <a href='/golf-courses'>golfbanor på Mallorca</a>."
+        "text": "Titeln som Spaniens bästa golfbana är ingen marknadsföring. Son Muntaner levererar en bana som testar positionering, disciplin och tydlighet i beslutsfattandet från första till sista hålet. Den belönar kontroll framför kraft och skapar scoringschanser genom precision. Femton minuter från Palma gör logistiken enkel. Greenerna ensamma motiverar resan. Jämför alla banor på sidan om <a href='/golf-courses'>golfbanor på Mallorca</a>."
       },
       {
         "text": "Ett återbesök med fler hittade fairways skulle låsa upp en djupare läsning av layouten. Det är tecknet på en bana värd att komma tillbaka till. Om Son Muntaner är mittpunkten i en längre resa tar <a href=\"/plan-your-trip\">reseplaneringsguiden</a> upp timing och logistik."
@@ -1135,7 +1135,7 @@ const content = {
   "zh": {
     "metadata": {
       "title": "Son Muntaner 高尔夫 - 诚实评测（2026）",
-      "description": "Son Muntaner 距帕尔马 5 分钟车程，€110–€260 含球车，并在 2025 年被评为西班牙最佳高尔夫球场。PGA 职业教练评测。",
+      "description": "Son Muntaner 距帕尔马 15 分钟车程，€110–€260 含球车，并在 2025 年被评为西班牙最佳高尔夫球场。PGA 职业教练评测。",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -1143,7 +1143,7 @@ const content = {
       "readTime": "6分钟",
       "updated": "2026年4月",
       "title": "Son Muntaner 高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
-      "intro": "距帕尔马五分钟车程。大部分季节含球车。在 2025 年世界高尔夫奖中被评为西班牙最佳高尔夫球场。我在周六早晨、开球表排满的情况下打了一轮。以下是我的发现。",
+      "intro": "距帕尔马十五分钟车程。大部分季节含球车。在 2025 年世界高尔夫奖中被评为西班牙最佳高尔夫球场。我在周六早晨、开球表排满的情况下打了一轮。以下是我的发现。",
       "related": [
         {
           "slug": "son-gual-review",
@@ -1188,7 +1188,7 @@ const content = {
             "球车"
           ],
           [
-            "5分钟",
+            "15分钟",
             "距帕尔马市中心"
           ],
           [
@@ -1201,14 +1201,14 @@ const content = {
         "text": "前往方式"
       },
       {
-        "text": "距帕尔马市中心仅五分钟。仅凭这一点，它就与岛上大多数值得一去的球场不在同一档次。Son Gual需要二十分钟，Alcanada五十分钟。如果你住在市区，想要打一场认真的球而不必为往返花上半天时间，Son Muntaner就是答案。"
+        "text": "距帕尔马市中心约十五分钟车程，距机场约二十分钟。Son Gual从市区出发需要二十分钟，Alcanada五十分钟。如果你住在市区，想要打一场认真的球而不必为往返花上半天时间，Son Muntaner就是答案。"
       },
       {
         "text": "从抵达到开球，整个服务流程顺畅自然。工作人员体贴而不失分寸。练习场用球、训练设施以及整体运营水准，都与这个球场的声誉相符。"
       },
       {
         "alt": "马略卡Son Muntaner高尔夫球场俯视第17洞球道，背景为帕尔马湾",
-        "caption": "俯瞰第17洞球道。距帕尔马市中心仅五分钟车程，却宛如身处另一个世界。"
+        "caption": "俯瞰第17洞球道。距帕尔马市中心约十五分钟车程，却宛如身处另一个世界。"
       },
       {
         "text": "步行挑战：以及球车为何包含在内"
@@ -1348,7 +1348,7 @@ const content = {
         "text": "总结"
       },
       {
-        "text": "西班牙最佳高尔夫球场这个称号不是营销。Son Muntaner 提供的是一座从第一洞到最后一洞都考验站位、纪律和决策清晰度的球场。它奖励控制而非力量，通过精准创造成绩机会。距帕尔马五分钟，交通安排很简单。仅果岭本身就值得这趟旅程。想比较所有球场，请看<a href='/golf-courses'>马略卡高尔夫球场</a>页面。"
+        "text": "西班牙最佳高尔夫球场这个称号不是营销。Son Muntaner 提供的是一座从第一洞到最后一洞都考验站位、纪律和决策清晰度的球场。它奖励控制而非力量，通过精准创造成绩机会。距帕尔马十五分钟，交通安排很简单。仅果岭本身就值得这趟旅程。想比较所有球场，请看<a href='/golf-courses'>马略卡高尔夫球场</a>页面。"
       },
       {
         "text": "带着更多找到球道的经历再次造访，将解锁对球道布局更深层的理解。这正是一个值得回头再打的球场所具备的特质。如果 Son Muntaner 是更长行程的核心，<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了时间安排和后勤事项。"

@@ -4856,7 +4856,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual: imprescindible para golfistas serios"
         },
         {
-          "text": "Experiencia DP World Tour cerca de Palma: Son Muntaner. A cinco minutos de la ciudad, muy bien cuidado y elegido Mejor Campo de Golf de España en 2025."
+          "text": "Experiencia DP World Tour cerca de Palma: Son Muntaner. A quince minutos de la ciudad, muy bien cuidado y elegido Mejor Campo de Golf de España en 2025."
         },
         {
           "text": "Costa este con paisaje: Canyamel y Pula. Merece la pena combinarlos con una noche en Artà o en la localidad de Capdepera."
@@ -4980,7 +4980,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - ein Muss für ernsthafte Golfer"
         },
         {
-          "text": "DP-World-Tour-Erlebnis bei Palma: Son Muntaner. Fünf Minuten von der Stadt, hervorragend gepflegt und 2025 zum besten Golfplatz Spaniens gekürt."
+          "text": "DP-World-Tour-Erlebnis bei Palma: Son Muntaner. Fünfzehn Minuten von der Stadt, hervorragend gepflegt und 2025 zum besten Golfplatz Spaniens gekürt."
         },
         {
           "text": "Landschaftlich schöne Ostküste: Canyamel und Pula. Lässt sich gut mit einer Übernachtung in Artà oder Capdepera verbinden."
@@ -5104,7 +5104,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - incontournable pour les golfeurs sérieux"
         },
         {
-          "text": "L'expérience DP World Tour près de Palma : Son Muntaner. À cinq minutes de la ville, très bien entretenu, et élu meilleur parcours de golf d'Espagne en 2025."
+          "text": "L'expérience DP World Tour près de Palma : Son Muntaner. À quinze minutes de la ville, très bien entretenu, et élu meilleur parcours de golf d'Espagne en 2025."
         },
         {
           "text": "Côte est pittoresque : Canyamel et Pula. À combiner avec une nuit à Artà ou à Capdepera."
@@ -5228,7 +5228,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - een must voor serieuze golfers"
         },
         {
-          "text": "DP World Tour-ervaring bij Palma: Son Muntaner. Vijf minuten van de stad, sterk onderhouden en in 2025 uitgeroepen tot beste golfbaan van Spanje."
+          "text": "DP World Tour-ervaring bij Palma: Son Muntaner. Vijftien minuten van de stad, sterk onderhouden en in 2025 uitgeroepen tot beste golfbaan van Spanje."
         },
         {
           "text": "Mooie oostkust: Canyamel en Pula. Goed te combineren met een overnachting in Artà of Capdepera."
@@ -5352,7 +5352,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - en måste-bana för seriösa golfare"
         },
         {
-          "text": "DP World Tour-upplevelse nära Palma: Son Muntaner. Fem minuter från staden, mycket välskött och utsedd till Spaniens bästa golfbana 2025."
+          "text": "DP World Tour-upplevelse nära Palma: Son Muntaner. Femton minuter från staden, mycket välskött och utsedd till Spaniens bästa golfbana 2025."
         },
         {
           "text": "Natursköna östkusten: Canyamel och Pula. Värt att kombinera med en natt i Artà eller Capdepera."
@@ -5476,7 +5476,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - 认真球手必打的球场"
         },
         {
-          "text": "帕尔马附近的 DP World Tour 体验：Son Muntaner。距离市区五分钟，养护出色，并在 2025 年被评为西班牙最佳高尔夫球场。"
+          "text": "帕尔马附近的 DP World Tour 体验：Son Muntaner。距离市区十五分钟，养护出色，并在 2025 年被评为西班牙最佳高尔夫球场。"
         },
         {
           "text": "风景优美的东海岸：Canyamel 和 Pula。值得搭配在 Artà 或 Capdepera 镇过一夜。"

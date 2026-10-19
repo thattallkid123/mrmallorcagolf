@@ -348,7 +348,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: 'Son Muntaner Golf Review 2026',
         description:
-          "Son Muntaner is 5 mins from Palma, €110–€260 with buggy included, and Best Golf Course in Spain 2025. PGA pro review.",
+          "Son Muntaner is 15 mins from Palma, €110–€260 with buggy included, and Best Golf Course in Spain 2025. PGA pro review.",
         imagePath: '/images/son-muntaner-blog/sm-4.webp',
       },
       meta: {
@@ -357,7 +357,7 @@ export const GUIDE_POST_CONTENT = {
         readTime: '6 min read',
         updated: 'April 2026',
         title: "Son Muntaner Golf - Best in Spain? (2026)",
-        intro: "Five minutes from Palma. Buggy included for most of the season. Best Golf Course in Spain at the 2025 World Golf Awards. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
+        intro: "Fifteen minutes from Palma. Buggy included for most of the season. Best Golf Course in Spain at the 2025 World Golf Awards. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
         related: [
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
           { slug: 'alcanada-review', title: 'Alcanada Golf - Honest Review 2026' },
@@ -373,11 +373,11 @@ export const GUIDE_POST_CONTENT = {
           type: 'paragraph',
           text: "Book Son Muntaner if you want premium conditioning close to Palma, with a buggy included and a layout that rewards positional golf over pure power. If your group prefers a bigger visual experience, compare it with <a href='/guides/alcanada-review'>Alcanada</a>; if you want the sternest championship test, compare <a href='/guides/son-gual-review'>Son Gual</a>.",
         },
-        { type: 'facts', items: [['€110-€260', '2026 green fee range'], ['Included', 'Buggy'], ['5 mins', 'From central Palma'], ['7/10', 'Difficulty']] },
+        { type: 'facts', items: [['€110-€260', '2026 green fee range'], ['Included', 'Buggy'], ['15 mins', 'From central Palma'], ['7/10', 'Difficulty']] },
         { type: 'heading', text: 'Getting There' },
-        { type: 'paragraph', text: "Five minutes from central Palma. That alone puts it in a different category from most courses on the island worth talking about. Son Gual takes twenty minutes, Alcanada fifty. If you're based in the city and want a serious round without building a half-day around the drive, Son Muntaner is the answer." },
+        { type: 'paragraph', text: "About fifteen minutes from central Palma, twenty from the airport. Son Gual takes twenty minutes from the city, Alcanada fifty. If you're based in the city and want a serious round without building a half-day around the drive, Son Muntaner is the answer." },
         { type: 'paragraph', text: "The service from arrival through to the round was smooth. The team are attentive without being intrusive. Range balls, practice facilities, and the overall operation all sit at the level the course's reputation would lead you to expect." },
-        { type: 'image', src: '/images/son-muntaner-blog/sm-6.webp', alt: 'Son Muntaner golf course Mallorca looking down the 17th fairway with Bay of Palma in background', caption: 'Looking down the 17th. Five minutes from central Palma and it feels like a different world.' },
+        { type: 'image', src: '/images/son-muntaner-blog/sm-6.webp', alt: 'Son Muntaner golf course Mallorca looking down the 17th fairway with Bay of Palma in background', caption: 'Looking down the 17th. Fifteen minutes from central Palma and it feels like a different world.' },
         { type: 'heading', text: 'The Walk and Why the Buggy Is Included' },
         { type: 'paragraph', text: "The course is a genuine physical test on foot. Several long climbs up to tees. The buggy is included in the green fee, which is the right call by the club. Most players will want it, and making it a separate charge would feel wrong at this level. After years in China relying on caddies, I prefer to walk, but I understand why most visitors take the buggy here." },
         { type: 'image', src: '/images/son-muntaner-blog/sm-4.webp', alt: 'Son Muntaner golf course Mallorca elevated fairway view through the Na Burguesa mountains', caption: 'Looking back from one of the longer climbs. The routing through the Na Burguesa mountains is what makes this course feel different from anything else close to Palma.' },
@@ -419,7 +419,7 @@ export const GUIDE_POST_CONTENT = {
           ],
         },
         { type: 'heading', text: 'Verdict' },
-        { type: 'paragraph', text: "The Best Golf Course in Spain title is not marketing. Son Muntaner delivers a course that tests positioning, discipline, and clarity of decision-making from the first hole to the last. It rewards control over power and creates scoring opportunities through precision. Five minutes from Palma makes the logistics straightforward. The greens alone justify the trip. Compare all courses on the <a href='/golf-courses'>Mallorca golf courses page</a>." },
+        { type: 'paragraph', text: "The Best Golf Course in Spain title is not marketing. Son Muntaner delivers a course that tests positioning, discipline, and clarity of decision-making from the first hole to the last. It rewards control over power and creates scoring opportunities through precision. Fifteen minutes from Palma makes the logistics straightforward. The greens alone justify the trip. Compare all courses on the <a href='/golf-courses'>Mallorca golf courses page</a>." },
         { type: 'paragraph', text: "A return visit with more fairways found would unlock a deeper read of the layout. That's the mark of a course worth coming back to. If Son Muntaner is the centrepiece of a longer trip, the <a href='/plan-your-trip'>trip planning guide</a> covers timing and logistics." },
         { type: 'cta', text: 'Playing Son Muntaner? I can help the premium fee feel justified with the right plan off the tee and into the greens.', linkLabel: 'Book a Play With A Pro day in Mallorca →', href: '/play-with-a-pro' },
       ],

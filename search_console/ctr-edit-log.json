@@ -121,6 +121,11 @@
           "date": "2026-10-19",
           "commit": "DIAGNOSIS-ONLY, no code change",
           "summary": "Fourth look. Live title 'Son Muntaner Golf Review 2026' (48 chars with suffix) and description (115 chars) both display as written, so no truncation or rewrite. Top queries are the bare club name ('son muntaner golf', 'son muntaner') at pos 9-10, where the club's own site and booking sites sit above; the shortfall is rank, not copy. Another rewrite would be a variant of three already tried. Next lever is position (internal links, depth), not metadata."
+        },
+        {
+          "date": "2026-10-19",
+          "commit": "pending",
+          "summary": "Factual fix, not a wording test: description, facts row, intro, caption and verdict said 5 mins from Palma; course data and an OSRM route check say 15 (about 12 min from the cathedral, 20 from the airport). Description now leads with 15 mins. Applied to all 7 locales. Restarts the 21-day window; do not judge CTR before ~2026-11-09."
         }
       ]
     },

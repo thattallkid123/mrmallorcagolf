@@ -381,7 +381,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'DP World Tour experience near Palma: Son Muntaner. Five minutes from the city, strong conditioning, and named Best Golf Course in Spain 2025.',
+        text: 'DP World Tour experience near Palma: Son Muntaner. Fifteen minutes from the city, strong conditioning, and named Best Golf Course in Spain 2025.',
       },
       {
         type: 'paragraph',
