@@ -127,7 +127,7 @@ footer { margin-top: 32px; padding-top: 18px; border-top: 1px solid var(--sand);
 const WHATSAPP = 'https://wa.me/34624466702';
 const GROUPS = [
   ['g_before', ['licence']],
-  ['g_arrive', ['arrivalPoint', 'proShopOpens', 'earlyTee', 'rangeOpens', 'practiceFacilities', 'foodBeforeRound', 'restaurants', 'changingRooms', 'parking', 'payment']],
+  ['g_arrive', ['travel', 'arrivalPoint', 'proShopOpens', 'earlyTee', 'rangeOpens', 'practiceFacilities', 'foodBeforeRound', 'restaurants', 'changingRooms', 'parking', 'payment']],
   ['g_course', ['water', 'dressCode', 'shoes', 'hireBags', 'buggyTrolley', 'flights', 'arrivalNotes']]
 ];
 
@@ -148,7 +148,7 @@ const UI = {
     "l_arrivalPoint": "Getting in",
     "l_proShopOpens": "Opening hours",
     "l_firstTee": "First tee time",
-    "l_rangeOpens": "Range",
+    "l_rangeOpens": "Driving range",
     "l_earlyTee": "Early tee times",
     "l_foodBeforeRound": "Food and coffee",
     "l_water": "Water and drinks",
@@ -207,8 +207,10 @@ const UI = {
     "guide_link": "Guide to the facilities",
     "rental_link": "Rental conditions (PDF, in Spanish)",
     "all_courses": "Other courses",
-    "l_buggyTrolley": "Buggies and trolleys",
-    "l_practiceFacilities": "Practice facilities"
+    "l_buggyTrolley": "Walking, buggies and trolleys",
+    "l_practiceFacilities": "Practice facilities",
+    "l_travel": "Getting there",
+    "travel_text": "About {p} minutes from Palma and {a} minutes from Palma airport."
   },
   "de": {
     "l_dressShoes": "Kleiderordnung und Schuhe",
@@ -279,8 +281,10 @@ const UI = {
     "guide_link": "Leitfaden zur Anlage",
     "rental_link": "Mietbedingungen (PDF, auf Spanisch)",
     "all_courses": "Andere Plätze",
-    "l_buggyTrolley": "Buggys und Trolleys",
-    "l_practiceFacilities": "Übungsanlagen"
+    "l_buggyTrolley": "Gehen, Buggys und Trolleys",
+    "l_practiceFacilities": "Übungsanlagen",
+    "l_travel": "Anfahrt",
+    "travel_text": "Etwa {p} Minuten von Palma und {a} Minuten vom Flughafen Palma entfernt."
   },
   "es": {
     "l_dressShoes": "Código de vestimenta y calzado",
@@ -351,8 +355,10 @@ const UI = {
     "guide_link": "Guía de las instalaciones",
     "rental_link": "Condiciones de alquiler (PDF)",
     "all_courses": "Otros campos",
-    "l_buggyTrolley": "Buggies y carros",
-    "l_practiceFacilities": "Zonas de práctica"
+    "l_buggyTrolley": "A pie, buggies y carros",
+    "l_practiceFacilities": "Zonas de práctica",
+    "l_travel": "Cómo llegar",
+    "travel_text": "A unos {p} minutos de Palma y {a} minutos del aeropuerto de Palma."
   },
   "fr": {
     "l_dressShoes": "Tenue et chaussures",
@@ -423,8 +429,10 @@ const UI = {
     "guide_link": "Guide des installations",
     "rental_link": "Conditions de location (PDF, en espagnol)",
     "all_courses": "Autres parcours",
-    "l_buggyTrolley": "Voiturettes et chariots",
-    "l_practiceFacilities": "Zones d’entraînement"
+    "l_buggyTrolley": "Marche, voiturettes et chariots",
+    "l_practiceFacilities": "Zones d’entraînement",
+    "l_travel": "Accès",
+    "travel_text": "À environ {p} minutes de Palma et {a} minutes de l’aéroport de Palma."
   },
   "nl": {
     "l_dressShoes": "Kledingvoorschrift en schoenen",
@@ -495,8 +503,10 @@ const UI = {
     "guide_link": "Gids voor de faciliteiten",
     "rental_link": "Huurvoorwaarden (pdf, in het Spaans)",
     "all_courses": "Andere banen",
-    "l_buggyTrolley": "Buggy’s en trolleys",
-    "l_practiceFacilities": "Oefenfaciliteiten"
+    "l_buggyTrolley": "Lopen, buggy’s en trolleys",
+    "l_practiceFacilities": "Oefenfaciliteiten",
+    "l_travel": "Route",
+    "travel_text": "Ongeveer {p} minuten van Palma en {a} minuten van de luchthaven van Palma."
   },
   "sv": {
     "l_dressShoes": "Klädsel och skor",
@@ -508,7 +518,7 @@ const UI = {
     "l_arrivalPoint": "Så tar du dig in",
     "l_proShopOpens": "Öppettider",
     "l_firstTee": "Första starttid",
-    "l_rangeOpens": "Driving range",
+    "l_rangeOpens": "Drivingrange",
     "l_earlyTee": "Tidiga starttider",
     "l_foodBeforeRound": "Mat och kaffe",
     "l_water": "Vatten och dryck",
@@ -567,8 +577,10 @@ const UI = {
     "guide_link": "Guide till faciliteterna",
     "rental_link": "Hyresvillkor (PDF, på spanska)",
     "all_courses": "Andra banor",
-    "l_buggyTrolley": "Golfbilar och vagnar",
-    "l_practiceFacilities": "Träningsanläggningar"
+    "l_buggyTrolley": "Att gå, golfbilar och vagnar",
+    "l_practiceFacilities": "Träningsanläggningar",
+    "l_travel": "Hit kommer du",
+    "travel_text": "Cirka {p} minuter från Palma och {a} minuter från Palmas flygplats."
   },
   "zh": {
     "l_dressShoes": "着装与球鞋",
@@ -639,8 +651,10 @@ const UI = {
     "guide_link": "设施指南",
     "rental_link": "租赁条款（PDF，西班牙语）",
     "all_courses": "其他球场",
-    "l_buggyTrolley": "球车和手推车",
-    "l_practiceFacilities": "练习设施"
+    "l_buggyTrolley": "步行、球车和手推车",
+    "l_practiceFacilities": "练习设施",
+    "l_travel": "前往方式",
+    "travel_text": "距帕尔马约{p}分钟车程，距帕尔马机场约{a}分钟车程。"
   }
 };
 // END GENERATED UI
@@ -776,10 +790,11 @@ function renderRound(course, round, closures) {
   let html = '';
   let any = false;
   GROUPS.forEach(([title, fields]) => {
-    const rows = fields.filter(f => (f === 'restaurants' ? (course.restaurants || []).length : valueFor(f)) && !(f === 'shoes' && valueFor('dressCode')));
+    const rows = fields.filter(f => (f === 'restaurants' ? (course.restaurants || []).length : f === 'travel' ? course.travel : valueFor(f)) && !(f === 'shoes' && valueFor('dressCode')));
     if (!rows.length) return;
     any = true;
     const card = f => {
+      if (f === 'travel') return `<div class="item"><dt>${ui('l_travel')}</dt><dd>${esc(ui('travel_text', { p: course.travel.palma, a: course.travel.airport }))}</dd></div>`;
       if (f === 'restaurants') return `<div class="item"><dt>${ui('l_restaurants')}</dt>` + course.restaurants.map(r => `<dd><a href="${esc(r.url)}" target="_blank" rel="noopener">${esc(r.name)}</a>${r.note ? ' &ndash; ' + esc(tx(r.note)) : ''}</dd>`).join('') + '</div>';
       if (f !== 'dressCode') return `<div class="item"><dt>${ui('l_' + f)}</dt><dd>${linkify(tx(valueFor(f)))}</dd>${f === 'hireBags' && course.rentalUrl ? `<dd><a href="${esc(course.rentalUrl)}" target="_blank" rel="noopener">${ui('rental_link')} &#8599;</a></dd>` : ''}${f === 'licence' && course.licenceUrl ? `<dd><a class="btn alt" href="${esc(course.licenceUrl)}" target="_blank" rel="noopener">${ui('licence_link')} &#8599;</a></dd>` : ''}</div>`;
       // One card for the clothing and the shoes; the shoe rule is left out when the dress code already says it.
