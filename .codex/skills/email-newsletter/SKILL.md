@@ -1,101 +1,44 @@
 ---
 name: email-newsletter
-description: Build and schedule newsletter content — monthly Mallorca golf planning notes, email sequences, and opt-in management. Use when Andy wants to launch a new email programme, draft a newsletter, or wire up MailerLite automation for a new lead magnet.
+description: Maintain MMG's single confirmed planning-notes audience, one welcome email and occasional useful broadcasts. Covers MailerLite routing, consent records, copy and launch checks.
 ---
 
 # Email & Newsletter Workflow
 
-## Starting a New Newsletter Program
+## Agreed programme
 
-Before drafting: clarify the strategy with Andy.
+Verified 19 October 2026: the single welcome is active, its test was received in Andy's inbox, the shared form retains double opt-in, and all five historical sequences are inactive. Recheck the live account before future operational changes. The first planning-note broadcast remains an unsent draft.
 
-- **Audience:** Who is this for? (subscribers, Course Selector leads, Play With A Pro booking leads, general?)
-- **Frequency:** Monthly? Weekly? Triggered by guide publish?
-- **Tone:** Same as blog (first-hand, practical, honest) or softer/lighter?
-- **CTA:** Soft (reply with questions), medium (book a session), or hard (affiliate link)?
-- **Content pillars:** What three things appear in every issue? (e.g., one course note + one planning tip + one local knowledge tidbit)
+- One marketing audience: **Mallorca Golf Planning Notes**. Send one welcome after email confirmation, then occasional useful planning notes when there is something worth sharing. No fixed weekly commitment, guide-specific nurture branches, re-engagement drips or automatic post-enquiry marketing.
+- Requested PDFs and tool results are delivered immediately through **Resend**, independently of marketing. Keep the newsletter option separate and unchecked. A download, enquiry, booking or existing customer relationship is not recorded newsletter permission.
+- All explicit marketing opt-ins use the shared MailerLite double-opt-in form. Never force `active`, bypass confirmation or re-enrol an unsubscribed address.
+- Keep legacy guide/source groups for history. The four old guide nurtures are archived/inactive and Course Selector Welcome Sequence is paused. Do not reactivate them or migrate their contacts without permission evidence and Andy's instruction.
+- Do not add old clients to campaigns or send a bulk permission-request email as a workaround. Normal requested booking/coaching correspondence remains a separate service workflow.
 
-## Newsletter Content Standards
+## Routing and operating sources
 
-Every newsletter issue:
-- **Opener:** Personal, specific to this month/season (not generic Mallorca tourism)
-- **One course insight:** Price change, access rule update, tip for first-timers, or new review published
-- **One practical planning tip:** Handicap certificate logistics, best time to visit for weather, golf-specific travel hacks, etc.
-- **One brand/partnership mention:** TaylorMade video content, hotel exclusive day, affiliate course discount, etc.
-- **Closing:** Soft CTA (reply with a question, share your experience, let me know your plans)
-- **Unsubscribe footer:** Required by CAN-SPAM and GDPR
+- `src/lib/signup-config.js` defines the canonical group and shared form/action. `src/lib/planning-notes-signup.js` provides `requestPlanningNotes` for server routes. Use these authorities rather than copying IDs into more documents.
+- Shared form: **Mallorca Golf Planning Notes**, formerly Course Selector Results. `signup_source` records the originating guide/tool. The reserved `source` key is not a custom field.
+- Optional signup is wired through `lead-magnet-signup`, `send-itinerary`, `handicap-checker-submit` and `trip-quote-submit`, plus the explicit signup forms. Do not also submit a second request from the browser.
+- PDF-only request records remain separate from marketing. New request contacts are unconfirmed; preserve existing status, especially unsubscribe/bounce exclusions. Read the current lead-magnet route and CLAUDE.md's Lead Magnets, Tools, And Newsletter section for delivery, notifications and guide placement.
+- MailerLite workflow **Mallorca Golf Planning Notes - Welcome** is the sole marketing welcome. Verify its trigger targets only the canonical planning-notes group, contains exactly one complete email, and does not bulk-enrol historical contacts when activated.
+- The Clients master spreadsheet's generated **Email audience** tab combines client/enquiry addresses and MailerLite records without importing or subscribing anyone. People is the client source; MailerLite is the subscription/unsubscribe source. Blank permission stays not recorded; active status in a legacy PDF group alone is not newsletter permission.
+- `mmg-tools/scripts/email-audience-sync.py` refreshes that view after the existing hourly Clients Sync. The PC must be running. Edit the underlying source, not the generated tab.
 
-**Word target:** 200–300 words. Scannable on mobile. One short paragraph per section.
+## Drafts and copy
 
-## Building a New Lead Magnet Email Sequence
+- Canonical private drafts: `G:/My Drive/Mr Mallorca Golf/Content/Drafts/MMG planning email drafts.md`. Keep public code and private contacts/drafts separate.
+- The welcome introduces Andy, offers a practical planning tip, links to the tools/PDFs and invites a reply. Generic subscribers must not be promised a personalised shortlist they have not requested.
+- The first planning note is a draft until Andy approves its actual audience and send. Do not treat a saved draft, workflow test or programme approval as approval to send a broadcast.
+- Read the current Drive `MMG_BRAND_VOICE_GUIDELINES.md` and run the voice gate. Preserve Andy's meaning and tone; keep Play With A Pro and its coaching/course-management context clear alongside tee-time booking.
+- Give one useful course insight or planning point and a clear next step. Length follows useful content, not a rigid word count or compulsory partnership mention. Do not invent personal experience, discounts, urgency or guaranteed best rates. No em dashes.
+- Verify prices, access rules and venue details against current authorities before using them. Distinguish budget references from bookable quotes.
 
-1. **Landing page:** `/[slug]` with opt-in form
-2. **Trigger email:** Immediate Resend delivery (no MailerLite delay) with the promised PDF/tool result
-3. **Nurture sequence:** MailerLite automation starts 1–2 days after opt-in (let the trigger email land first, then nurture follow)
-4. **Tracking:** Add `selector_answers`, `selector_shortlist`, `selector_shortlist_names` variables to MailerLite so emails use real data, not placeholders
+## Design and sending
 
-Example: Course Selector sends results → immediate email with shortlist → 2 days later, MailerLite emails about booking/handicap/weather for those courses.
-
-## Current signup routing (October 2026)
-
-- One marketing audience: **Mallorca Golf Planning Notes**, group `193787639776675209`. All explicit opt-ins use `PLANNING_NOTES_MAILERLITE_ACTION` from `src/lib/signup-config.js`; API routes call `requestPlanningNotes`. Keep double opt-in enabled. Never force `active` status or re-enrol an unsubscribed contact through the API.
-- The shared form is `189284603205256243`, renamed from Course Selector Results. `signup_source` records the originating guide/tool; the reserved `source` key is not a custom field.
-- PDF requests remain in their separate request groups and are delivered through Resend. A request alone does not join marketing. Historical guide groups and old nurture workflows are retained for reference and must not be reactivated or bulk-migrated without permission evidence.
-- Keep the programme small: one welcome after confirmation, then useful occasional planning notes. Do not send a generic subscriber a promised personalised shortlist.
-- The Clients master has a generated **Email audience** tab, refreshed by `mmg-tools/scripts/email-audience-sync.py` in the existing hourly Clients Sync job. It combines client/enquiry addresses with MailerLite records without importing or subscribing anyone. People remains the client source; MailerLite remains the subscription/unsubscribe source. Unknown permission stays unknown.
-
-## Delivery integrations
-
-- **Resend:** Immediate delivery for website-side lead magnet emails (no delay)
-- **MailerLite:** Nurture sequences, automation, group management, broadcast emails
-- **Opt-in capture:** the site's own `src/app/api/*` routes (e.g. `lead-magnet-signup`, `questionnaire`, `trip-quote-submit`, `handicap-checker-submit`, `zh-selector-email`), not Google Forms — every data-collecting route follows the four-guard contract in the `api-route-safety` skill
-- **Variables in emails:** Course names, shortlist, answers (wired up per tool)
-- **Unsubscribe tracking:** Syncs back to MailerLite so bounces don't re-mail
-
-## Process: Drafting a Newsletter Issue
-
-1. **Brainstorm the angle:** What's happening this month? (season change, new guide, price update, user question)
-2. **Draft the four sections** (opener + course + tip + brand + CTA) — 200–300 words total
-3. **Self-check:** Does it sound like Andy (first-hand, honest, specific)? Would you forward it to a friend?
-4. **Wire up in MailerLite:** Create a broadcast or automation email
-5. **Test send:** Check rendering on mobile + desktop. Check unsubscribe link.
-6. **Schedule:** Confirm send time (early morning, Tuesday–Thursday are typical peaks)
-7. **Track opens/clicks:** After send, monitor in MailerLite and feed insights back to GA4 (if applicable)
-
-## When to Nurture vs. Broadcast
-
-- **Broadcast:** Monthly newsletter (one-off send to all subscribers)
-- **Nurture:** Triggered by an action (opt-in → immediate email, Course Selector results → shortlist email, PWAP enquiry → confirmation + next steps)
-- **Nurture timing:** 0–2 hours (immediate follow-up on high-intent actions), 1–3 days (soft follow-up), 1 week (re-engagement)
-
-## Course Selector Email Example
-
-User completes quiz → results shown on site → immediate Resend email with shortlist → 2 days later, MailerLite email "3 Things About [Course A]" → 5 days later, "Ready to book? Here's how"
-
-## Copywriting Rules
-
-Same as blog: read `MMG_BRAND_VOICE_GUIDELINES.md` from Drive. Newsletter is email, not a sales page — tone is advisory, not pushy.
-
-- No filler ("don't miss out", "limited time", "exclusive")
-- Specific facts (prices, handicap rules, drive times) not hype
-- One honest negative or caveat per email (maintains trust)
-- Short sentences. Scannable bullets. Mobile-first formatting.
-- Sign off with Andy's name + course/location context (e.g., "—Andy, Mallorca 2026")
-
-## Unsubscribe & Compliance
-
-- **CAN-SPAM (US):** Must include physical address, unsubscribe link, subject line accuracy
-- **GDPR (EU/UK):** Must have consent, easy unsubscribe, data retention policy
-- **MailerLite:** Handles both. Unsubscribe syncs back automatically.
-
-A MailerLite subscriber unsubscribe excludes that address from marketing, including broadcasts. Never treat an old group membership as permission to bypass it. Requested PDF and service communications remain separate.
-
-## Next Steps
-
-When ready to launch a programme:
-1. Decide: broadcast vs. sequence vs. both
-2. Draft: 2–3 issues/emails as samples
-3. Wire: MailerLite automation + Resend template if needed
-4. Test: Send to Andy first, check rendering
-5. Schedule: Go live
-6. Monitor: Track opens, clicks, unsubscribes. Adjust tone/frequency if needed.
+- Website/delivery-email pairing: Cormorant Garamond headings and Jost body, with Georgia and Arial fallbacks. When MailerLite's native editor cannot supply those custom fonts, use the deliberate Georgia/Arial pairing. Check the actual generated email, not just a separately styled mock-up.
+- Keep readable contrast, clear spacing, descriptive links and consistent label/detail layouts on desktop and mobile. Preserve the configured business-address footer and working unsubscribe link; remove generic language suggesting a purchase means newsletter signup.
+- Prepare a draft, check rendered desktop/mobile output and links, and send a test to Andy. Verify receipt and content before calling delivery tested. MailerLite test messages disable unsubscribe/preference links; verify their configured destinations separately.
+- Before activating, read the confirmation dialog: future confirmed subscribers only; no historical bulk enrollment. Verify enabled state, one email and the correct trigger afterward. Keep the old workflows inactive.
+- Before a broadcast, confirm the actual permissioned audience and Andy's send instruction. Exclude unsubscribed, bounced and junk contacts regardless of other memberships.
+- Review replies, clicks and unsubscribes after real sends. Use small-list results cautiously; add complexity only when actual audience needs justify it.
