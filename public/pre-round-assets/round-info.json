@@ -60,7 +60,7 @@
         "earlyTee": "The pro shop, the driving range and the cafe bar are all open for the first tee times of the day.",
         "rangeOpens": "A Toptracer range, with balls included in the green fee. The pyramids are prepared at the same time the course opens.",
         "practiceFacilities": "There is a Toptracer driving range with a covered practice area of 10 mats and an outdoor one of 10 mats, a natural-grass practice area in season when available, and a short game area.",
-        "foodBeforeRound": "The restaurant opens at 08:00, some days a little earlier but not guaranteed. It is run by a separate operator; the club takes it over from 1 March 2027. Terrace with lighthouse views.",
+        "foodBeforeRound": "The restaurant opens at 08:00, some days a little earlier but not guaranteed. Terrace with lighthouse views.",
         "water": "There are water fountains out on the course, so bring a bottle and refill it. The Lighthouse Bar halfway house sits between the 9th and 10th holes for drinks, beer, sandwiches and tapas.",
         "licence": "€3 per person per day, paid at reception on check-in, unless you hold a Spanish federation licence.",
         "dressCode": "Collared shirts or golf mock-collar shirts; women may wear sleeveless golf shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs, on the course or the practice area.",
@@ -69,7 +69,7 @@
         "parking": "Car park at the club, with EV charging points.",
         "payment": "Cards are accepted at the club.",
         "flights": "The club may pair players into groups of up to four.",
-        "arrivalNotes": "Check in at reception at least 30 minutes before the tee time and be on the 1st tee 10 minutes before. Juniors show ID at check-in."
+        "arrivalNotes": "Juniors show ID at check-in."
       },
       "seasonal": {},
       "toCheck": [],
@@ -169,8 +169,7 @@
         "changingRooms": "Changing rooms and showers.",
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
-        "flights": "The club can advise for a specific day and time.",
-        "arrivalNotes": "A club card showing a handicap of 36 or lower is required. Visitor green fees are limited each day, so book ahead."
+        "flights": "The club can advise for a specific day and time."
       },
       "seasonal": {},
       "toCheck": [],
@@ -499,7 +498,7 @@
         "parking": "Free parking on site, including accessible spaces and an EV charger.",
         "payment": "Cards are accepted at the club.",
         "flights": "Pula pairs players up to four per tee time. To keep a tee time private you pay for the empty places.",
-        "arrivalNotes": "Be at the club 30 minutes before the tee time and on the tee 10 minutes before. Handicap certificate of 36 or better needed; higher handicaps can start after 14:00. Maximum 4 hours 40 minutes for 18 holes."
+        "arrivalNotes": "Players with a handicap above 36 can start after 14:00. Play is limited to 4 hours 40 minutes for 18 holes."
       },
       "seasonal": {},
       "toCheck": [
@@ -544,7 +543,7 @@
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
         "flights": "There are no tee times: hotel guests start when they like and are not paired with strangers.",
-        "arrivalNotes": "The course is reserved for hotel guests and there are no tee times. The hotel opens March to November."
+        "arrivalNotes": "The hotel opens March to November."
       },
       "seasonal": {},
       "toCheck": [],

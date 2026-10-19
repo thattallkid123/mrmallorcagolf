@@ -186,7 +186,7 @@ const UI = {
     "bring_cert": "Your handicap certificate or federation card.",
     "bring_limit": " The handicap limit is {m} for men and {w} for women.",
     "bring_shoes": "Soft-spike golf shoes.",
-    "bring_water": "A refillable water bottle. Many courses have water fountains out on the course, so bring your own and top it up as you go.",
+    "bring_water": "A refillable water bottle.",
     "bring_sun": "Sun cream and a hat. The sun is strong at this time of year.",
     "bring_both": "Sun cream and a hat in summer, when the sun is strong from April to October, and a warm layer for winter mornings.",
     "bring_warm": "A warm layer. Winter mornings are cool before 10:00.",
@@ -265,7 +265,7 @@ const UI = {
     "bring_cert": "Ihr Handicap-Nachweis oder Ihr Verbandsausweis.",
     "bring_limit": " Die Handicap-Grenze liegt bei {m} für Herren und {w} für Damen.",
     "bring_shoes": "Golfschuhe mit Softspikes.",
-    "bring_water": "Eine wiederbefüllbare Wasserflasche. Auf vielen Plätzen gibt es Trinkwasserstellen, bringen Sie also Ihre eigene mit und füllen Sie sie unterwegs auf.",
+    "bring_water": "Eine wiederbefüllbare Wasserflasche.",
     "bring_sun": "Sonnencreme und eine Kappe. Die Sonne ist zu dieser Jahreszeit stark.",
     "bring_both": "Im Sommer Sonnencreme und eine Kappe, denn die Sonne ist von April bis Oktober stark, und im Winter etwas Warmes für die Morgenstunden.",
     "bring_warm": "Etwas Warmes zum Überziehen. Im Winter sind die Morgenstunden vor 10:00 Uhr kühl.",
@@ -344,7 +344,7 @@ const UI = {
     "bring_cert": "Su certificado de hándicap o su licencia federativa.",
     "bring_limit": " El límite de hándicap es {m} para caballeros y {w} para señoras.",
     "bring_shoes": "Zapatos de golf con tacos blandos.",
-    "bring_water": "Una botella de agua reutilizable. Muchos campos tienen fuentes de agua en el recorrido, así que traiga la suya y rellénela durante la vuelta.",
+    "bring_water": "Una botella de agua reutilizable.",
     "bring_sun": "Crema solar y gorra. El sol es fuerte en esta época del año.",
     "bring_both": "En verano, crema solar y gorra, porque el sol es fuerte de abril a octubre, y en invierno una prenda de abrigo para las mañanas.",
     "bring_warm": "Una prenda de abrigo. Las mañanas de invierno son frescas antes de las 10:00.",
@@ -423,7 +423,7 @@ const UI = {
     "bring_cert": "Votre certificat de handicap ou votre carte de la fédération.",
     "bring_limit": " La limite de handicap est de {m} pour les hommes et de {w} pour les dames.",
     "bring_shoes": "Des chaussures de golf à spikes souples.",
-    "bring_water": "Une gourde réutilisable. De nombreux clubs ont des fontaines à eau sur le parcours : apportez la vôtre et remplissez-la en chemin.",
+    "bring_water": "Une gourde réutilisable.",
     "bring_sun": "De la crème solaire et une casquette. Le soleil est fort à cette période de l’année.",
     "bring_both": "De la crème solaire et une casquette en été, quand le soleil est fort d’avril à octobre, et un vêtement chaud pour les matins d’hiver.",
     "bring_warm": "Un vêtement chaud. Les matins d’hiver sont frais avant 10:00.",
@@ -502,7 +502,7 @@ const UI = {
     "bring_cert": "Uw handicapbewijs of federatiepas.",
     "bring_limit": " De handicaplimiet is {m} voor heren en {w} voor dames.",
     "bring_shoes": "Golfschoenen met zachte spikes.",
-    "bring_water": "Een fles die u kunt bijvullen. Op veel banen staan drinkwaterpunten, dus neem uw eigen fles mee en vul die onderweg bij.",
+    "bring_water": "Een fles die u kunt bijvullen.",
     "bring_sun": "Zonnebrandcrème en een pet. De zon is in deze tijd van het jaar sterk.",
     "bring_both": "Zonnebrandcrème en een pet in de zomer, wanneer de zon van april tot oktober sterk is, en iets warms voor winterochtenden.",
     "bring_warm": "Iets warms om aan te trekken. Winterochtenden zijn koel voor 10:00.",
@@ -581,7 +581,7 @@ const UI = {
     "bring_cert": "Ditt handicapbevis eller ditt förbundskort.",
     "bring_limit": " Handicapgränsen är {m} för herrar och {w} för damer.",
     "bring_shoes": "Golfskor med softspikes.",
-    "bring_water": "En vattenflaska som du kan fylla på. Många banor har vattenfontäner ute på banan, så ta med din egen och fyll på under rundan.",
+    "bring_water": "En vattenflaska som du kan fylla på.",
     "bring_sun": "Solkräm och keps. Solen är stark den här tiden på året.",
     "bring_both": "Solkräm och keps på sommaren, när solen är stark från april till oktober, och ett varmt lager för vintermorgnarna.",
     "bring_warm": "Ett varmt lager. Vintermorgnarna är kyliga före 10.00.",
@@ -660,7 +660,7 @@ const UI = {
     "bring_cert": "您的差点证明或联合会会员卡。",
     "bring_limit": "差点上限为男士 {m}、女士 {w}。",
     "bring_shoes": "软钉高尔夫球鞋。",
-    "bring_water": "一个可重复灌水的水瓶。许多球场在场内设有饮水器，请自带水瓶，随时加水。",
+    "bring_water": "一个可重复灌水的水瓶。",
     "bring_sun": "防晒霜和帽子。每年这个时候阳光很强。",
     "bring_both": "夏季请带防晒霜和帽子（四月至十月阳光强烈），冬季清晨请带一件保暖外套。",
     "bring_warm": "一件保暖外套。冬季清晨 10:00 前天气较凉。",
@@ -775,7 +775,9 @@ function bringList(course, round) {
   }
   // The course's own shoe rule is already listed under "On the course", so the generic line only fills a gap.
   if (!(course.info || {}).shoes) items.push(ui('bring_shoes'));
-  items.push((course.info || {}).bringWater ? tx(course.info.bringWater) : ui('bring_water'));
+  // The checklist keeps just the item; the rest of the water answer is already in the Water row above.
+  const firstSentence = s => { const m = /^[\s\S]*?(?:[.!?](?:\s|$)|。)/.exec(s); return m ? m[0].trim() : s; };
+  items.push((course.info || {}).bringWater ? firstSentence(tx(course.info.bringWater)) : ui('bring_water'));
   // With a date the line fits the season (sun from April to October, a warm layer from November to March for an
   // early start); with no date one line covers both, so a winter client is not told the sun is strong.
   const hour = round.t && /^\d{1,2}:/.test(round.t) ? Number(round.t.split(':')[0]) : null;
