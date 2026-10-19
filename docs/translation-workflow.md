@@ -217,6 +217,8 @@ Before writing or proofreading any translation, read `docs/translation-style-gui
 
 ## Review Log
 
+- 19 October 2026: Arabella rental summary and the two English-PDF link labels on the pre-round page. All six translations were re-read against the 88-word English summary for the driving age, two-person limit, damage responsibility and liability wording. PDF files are explicitly labelled as English. Automated language coverage checked; no native-speaker review claimed.
+
 2026-10-18 email follow-up: Opus wrote and reread every changed day-planner plan-name, tagline, lunch title/description, transfer description and restaurant/transfer handle in DE/ES/FR/NL/SV/ZH. The review preserved named-venue placeholders, first-person planning, all register rules and the distinction between golf only and golf with lunch, without claiming non-golf bookings or availability.
 
 2026-10-17 customer audit: the changed hotel recommender strings in DE/ES/FR/NL/SV/ZH were written and reread in full by Opus through the authenticated Claude CLI. The review corrected property location, star classification, age/family restrictions and unsupported facilities without adding booking promises. English factual patches and existing locale records were supplied together; output was compared by key before application. Stable hotel IDs and unaffected text were retained.
