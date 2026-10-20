@@ -19,7 +19,7 @@ These are **separate from the Drive-mastered `MMG_SKILL_*` docs** synced by `SKI
 | `expand-guide` | Adding Common Questions / new facts to a live guide |
 | `scorecard-update` | Par/SI/distance changes and the periodic "is what's recorded still true" check — mostly automated now (one command + two genuinely-manual steps), not a hand chain |
 | `health-check` | Read-only recon sweep for drift/cleanup candidates across repo, tools, and Drive |
-| `email-newsletter` | Launching a newsletter programme, drafting an issue, or wiring a new lead-magnet email sequence |
+| `email-newsletter` | Following the single-audience Drive workflow, preparing a planning-note campaign, or maintaining signup routing and the one welcome |
 | `api-route-safety` | Adding or editing anything under `src/app/api/`, or any new form/tool/integration that collects data |
 
 **This table is a quick-scan aid, not the source of truth for what a skill
