@@ -504,7 +504,6 @@
         "firstTee": "The earliest tee time available online is 08:03.",
         "practiceFacilities": "There is a two-level TrackMan range, two putting greens, a pitching green, and a short game area with bunkers.",
         "foodBeforeRound": "The restaurant opens at 07:30, so you can have a coffee or buy water before an early round. S'Era de Pula terrace is by the putting green.",
-        "water": "There is a halfway house on the course.",
         "licence": "No extra daily fee for golf insurance or a licence.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course.",
         "shoes": "Soft spikes are necessary.",
@@ -515,9 +514,7 @@
         "arrivalNotes": "Players with a handicap above 36 can start after 14:00. Play is limited to 4 hours 40 minutes for 18 holes."
       },
       "seasonal": {},
-      "toCheck": [
-        "water"
-      ],
+      "toCheck": [],
       "filtered": []
     },
     "rotana": {
@@ -1017,7 +1014,6 @@
         "rangeOpens": "The driving range is closed on Wednesdays for mowing.",
         "practiceFacilities": "There is a driving range with 15 mats and a seasonal grass area, a putting green, two chipping areas and a practice bunker.",
         "foodBeforeRound": "The restaurant opens at 08:30, so it is not open for the earliest tee times. Costa de los Pinos has a terrace over the 18th and the sea.",
-        "water": "There are water refill points along the course.",
         "licence": "There is no separate daily licence charge.",
         "dressCode": "Appropriate golf clothing.",
         "shoes": "Soft spikes only. Metal spikes are not allowed.",
@@ -1027,9 +1023,7 @@
         "flights": "In high season tee times are organised in groups of four, so a fourth player may join a group of three."
       },
       "seasonal": {},
-      "toCheck": [
-        "water"
-      ],
+      "toCheck": [],
       "filtered": []
     },
     "son_termes": {
@@ -1236,7 +1230,7 @@
         "palma": 25,
         "airport": 15
       },
-      "licenceUrl": null,
+      "licenceUrl": "https://app.smartpanel.com/crm/NjIyIzE5OA==/cform/formulario-del-seguro-obligatorio-1?lang=en",
       "contact": {
         "phone": "+34 971 797 330",
         "email": "palma@t-golf.club"
