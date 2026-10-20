@@ -49,6 +49,23 @@ a { color: var(--pine); font-weight: 500; }
 .backlink:hover { color: var(--pine); }
 main { max-width: 1080px; margin: 0 auto; padding: 28px 16px 48px; }
 .narrow { max-width: 720px; }
+.trip-overview { margin-bottom: 28px; padding: 18px 24px; background: var(--linen); border-left: 2px solid var(--gold); }
+.trip-overview h2 { margin-top: 0; }
+.trip-overview p { color: #6B6157; font-size: 0.95rem; }
+.trip-overview ul { list-style: none; margin-top: 12px; }
+.trip-overview li + li { border-top: 1px solid var(--sand); }
+.trip-overview a { display: grid; gap: 2px; min-height: 44px; padding: 12px 0; text-decoration: none; font-weight: 400; overflow-wrap: anywhere; }
+.trip-overview a:hover strong, .trip-overview a:focus-visible strong { text-decoration: underline; text-underline-offset: 3px; }
+.trip-overview strong { font-family: var(--font-serif); font-size: 1.4rem; font-weight: 500; line-height: 1.2; }
+.trip-date { font-size: 0.9rem; color: #6B6157; }
+.trip-times { font-size: 0.95rem; }
+.round { scroll-margin-top: 20px; }
+.tile { min-width: 0; max-width: 100%; }
+.booking-contact { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--sand); }
+.booking-contact p { font-size: 0.95rem; }
+.booking-contact .btn { margin-top: 10px; }
+@media (min-width: 640px) { .trip-overview a { grid-template-columns: minmax(180px, 1fr) minmax(0, 1.2fr) minmax(140px, 1fr); align-items: center; gap: 16px; } }
+
 .eyebrow { color: var(--gold); font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; }
 h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.4rem; line-height: 1.1; color: var(--pine); margin: 6px 0 4px; }
 h2 { font-family: var(--font-serif); font-weight: 600; font-size: 1.45rem; color: var(--pine); margin: 26px 0 8px; }
@@ -149,8 +166,8 @@ const LOCALE = {"en":"en-GB","de":"de-DE","es":"es-ES","fr":"fr-FR","nl":"nl-NL"
 const UI = {
   "en": {
     "l_dressShoes": "Dress code and shoes",
-    "t_checkin": "Check in by",
-    "t_there": "Be there by",
+    "t_checkin": "Suggested arrival",
+    "t_there": "Suggested arrival",
     "t_proshop": "at the pro shop",
     "t_tee": "Tee time",
     "t_range": "Range opens",
@@ -191,14 +208,14 @@ const UI = {
     "bring_both": "Sun cream and a hat in summer, when the sun is strong from April to October, and a warm layer for winter mornings.",
     "bring_warm": "A warm layer. Winter mornings are cool before 10:00.",
     "share": "Share on WhatsApp",
-    "msg_by": "Be there by {time}",
+    "msg_by": "Suggested arrival: {time}",
     "msg_dir": "Directions",
     "msg_all": "All the details",
     "photoalt": "Photo of {name}",
     "directions": "Directions to the club",
     "mapalt": "Map showing where {name} is",
     "contact_h": "Contact the club",
-    "contact_p": "For opening hours, hire equipment or course rules, contact the club directly.",
+    "contact_p": "For directions or help at the course on the day, contact the club.",
     "call": "Call the club",
     "emailclub": "Email the club",
     "later": "I will send you the details for this course directly before the day.",
@@ -226,12 +243,16 @@ const UI = {
     "copy_manual": "Select and copy the information below.",
     "language": "Language",
     "l_rentalNotes": "Hiring equipment",
-    "rental_summary_link": "Short rental notes (PDF, English)"
+    "rental_summary_link": "Short rental notes (PDF, English)",
+    "booking_p": "Booking changes or questions? Message me.",
+    "teeTimes": "tee times",
+    "trip_h": "Your rounds",
+    "trip_local": "All times are local to Mallorca."
   },
   "de": {
     "l_dressShoes": "Kleiderordnung und Schuhe",
-    "t_checkin": "Einchecken bis",
-    "t_there": "Da sein um",
+    "t_checkin": "Empfohlene Ankunft",
+    "t_there": "Empfohlene Ankunft",
     "t_proshop": "im Pro Shop",
     "t_tee": "Startzeit",
     "t_range": "Range öffnet",
@@ -272,14 +293,14 @@ const UI = {
     "bring_both": "Im Sommer Sonnencreme und eine Kappe, denn die Sonne ist von April bis Oktober stark, und im Winter etwas Warmes für die Morgenstunden.",
     "bring_warm": "Etwas Warmes zum Überziehen. Im Winter sind die Morgenstunden vor 10:00 Uhr kühl.",
     "share": "Per WhatsApp teilen",
-    "msg_by": "Um {time} Uhr da sein",
+    "msg_by": "Empfohlene Ankunft: {time}",
     "msg_dir": "Anfahrt",
     "msg_all": "Alle Details",
     "photoalt": "Foto von {name}",
     "directions": "Anfahrt zum Club",
     "mapalt": "Karte mit der Lage von {name}",
     "contact_h": "Den Club kontaktieren",
-    "contact_p": "Bei Fragen zu Öffnungszeiten, Leihausrüstung oder Platzregeln wenden Sie sich bitte direkt an den Club.",
+    "contact_p": "Für die Anfahrt oder Hilfe vor Ort am Spieltag wenden Sie sich an den Club.",
     "call": "Club anrufen",
     "emailclub": "Club per E-Mail kontaktieren",
     "later": "Die Details zu diesem Platz schicke ich Ihnen vor dem Spieltag direkt.",
@@ -307,12 +328,16 @@ const UI = {
     "copy_manual": "Markieren und kopieren Sie die folgenden Informationen.",
     "language": "Sprache",
     "l_rentalNotes": "Leihausrüstung",
-    "rental_summary_link": "Kurze Hinweise zur Miete (PDF, Englisch)"
+    "rental_summary_link": "Kurze Hinweise zur Miete (PDF, Englisch)",
+    "booking_p": "Fragen oder Änderungen zur Buchung? Schreiben Sie mir.",
+    "teeTimes": "Startzeiten",
+    "trip_h": "Ihre Runden",
+    "trip_local": "Alle Zeiten sind Ortszeit auf Mallorca."
   },
   "es": {
     "l_dressShoes": "Código de vestimenta y calzado",
-    "t_checkin": "Registro antes de las",
-    "t_there": "Llegue a las",
+    "t_checkin": "Llegada recomendada",
+    "t_there": "Llegada recomendada",
     "t_proshop": "en el pro shop",
     "t_tee": "Hora de salida",
     "t_range": "Prácticas desde las",
@@ -353,14 +378,14 @@ const UI = {
     "bring_both": "En verano, crema solar y gorra, porque el sol es fuerte de abril a octubre, y en invierno una prenda de abrigo para las mañanas.",
     "bring_warm": "Una prenda de abrigo. Las mañanas de invierno son frescas antes de las 10:00.",
     "share": "Compartir por WhatsApp",
-    "msg_by": "Estar allí a las {time}",
+    "msg_by": "Llegada recomendada: {time}",
     "msg_dir": "Cómo llegar",
     "msg_all": "Todos los detalles",
     "photoalt": "Foto de {name}",
     "directions": "Cómo llegar al club",
     "mapalt": "Mapa con la ubicación de {name}",
     "contact_h": "Contactar con el club",
-    "contact_p": "Para consultar horarios, material de alquiler o normas del campo, contacte directamente con el club.",
+    "contact_p": "Para indicaciones o ayuda en el campo el mismo día, contacte con el club.",
     "call": "Llamar al club",
     "emailclub": "Escribir al club",
     "later": "Le enviaré los detalles de este campo directamente antes del día de juego.",
@@ -388,12 +413,16 @@ const UI = {
     "copy_manual": "Seleccione y copie la información siguiente.",
     "language": "Idioma",
     "l_rentalNotes": "Alquiler de material",
-    "rental_summary_link": "Resumen del alquiler (PDF, en inglés)"
+    "rental_summary_link": "Resumen del alquiler (PDF, en inglés)",
+    "booking_p": "¿Cambios o preguntas sobre la reserva? Escríbame.",
+    "teeTimes": "horas de salida",
+    "trip_h": "Sus vueltas",
+    "trip_local": "Todas las horas son hora local de Mallorca."
   },
   "fr": {
     "l_dressShoes": "Tenue et chaussures",
-    "t_checkin": "Enregistrement avant",
-    "t_there": "Sur place avant",
+    "t_checkin": "Arrivée conseillée",
+    "t_there": "Arrivée conseillée",
     "t_proshop": "au pro shop",
     "t_tee": "Heure de départ",
     "t_range": "Ouverture du practice",
@@ -434,14 +463,14 @@ const UI = {
     "bring_both": "De la crème solaire et une casquette en été, quand le soleil est fort d’avril à octobre, et un vêtement chaud pour les matins d’hiver.",
     "bring_warm": "Un vêtement chaud. Les matins d’hiver sont frais avant 10:00.",
     "share": "Partager sur WhatsApp",
-    "msg_by": "Sur place avant {time}",
+    "msg_by": "Arrivée conseillée : {time}",
     "msg_dir": "Itinéraire",
     "msg_all": "Tous les détails",
     "photoalt": "Photo de {name}",
     "directions": "Itinéraire jusqu’au club",
     "mapalt": "Carte indiquant où se trouve {name}",
     "contact_h": "Contacter le club",
-    "contact_p": "Pour les horaires, le matériel de location ou les règles du parcours, contactez directement le club.",
+    "contact_p": "Pour l'itinéraire ou une aide sur place le jour même, contactez le club.",
     "call": "Appeler le club",
     "emailclub": "Écrire au club",
     "later": "Je vous enverrai directement les détails de ce parcours avant le jour J.",
@@ -469,12 +498,16 @@ const UI = {
     "copy_manual": "Sélectionnez et copiez les informations ci-dessous.",
     "language": "Langue",
     "l_rentalNotes": "Location de matériel",
-    "rental_summary_link": "Résumé de la location (PDF, en anglais)"
+    "rental_summary_link": "Résumé de la location (PDF, en anglais)",
+    "booking_p": "Une modification ou une question sur votre réservation ? Écrivez-moi.",
+    "teeTimes": "heures de départ",
+    "trip_h": "Vos parties",
+    "trip_local": "Toutes les heures sont à l'heure locale de Majorque."
   },
   "nl": {
     "l_dressShoes": "Kledingvoorschrift en schoenen",
-    "t_checkin": "Inchecken uiterlijk",
-    "t_there": "Aanwezig uiterlijk",
+    "t_checkin": "Aanbevolen aankomst",
+    "t_there": "Aanbevolen aankomst",
     "t_proshop": "bij de pro shop",
     "t_tee": "Starttijd",
     "t_range": "Driving range opent",
@@ -515,14 +548,14 @@ const UI = {
     "bring_both": "Zonnebrandcrème en een pet in de zomer, wanneer de zon van april tot oktober sterk is, en iets warms voor winterochtenden.",
     "bring_warm": "Iets warms om aan te trekken. Winterochtenden zijn koel voor 10:00.",
     "share": "Delen via WhatsApp",
-    "msg_by": "Aanwezig uiterlijk {time}",
+    "msg_by": "Aanbevolen aankomst: {time}",
     "msg_dir": "Routebeschrijving",
     "msg_all": "Alle details",
     "photoalt": "Foto van {name}",
     "directions": "Route naar de club",
     "mapalt": "Kaart met de ligging van {name}",
     "contact_h": "Neem contact op met de club",
-    "contact_p": "Neem voor openingstijden, huurmateriaal of baanregels rechtstreeks contact op met de club.",
+    "contact_p": "Voor de route of hulp op de baan op de dag zelf kunt u contact opnemen met de club.",
     "call": "Bel de club",
     "emailclub": "Mail de club",
     "later": "Ik stuur u de gegevens voor deze baan vóór de speeldag rechtstreeks toe.",
@@ -550,12 +583,16 @@ const UI = {
     "copy_manual": "Selecteer en kopieer de onderstaande informatie.",
     "language": "Taal",
     "l_rentalNotes": "Materiaal huren",
-    "rental_summary_link": "Korte huurinformatie (pdf, Engels)"
+    "rental_summary_link": "Korte huurinformatie (pdf, Engels)",
+    "booking_p": "Wijzigingen of vragen over uw boeking? Stuur mij een bericht.",
+    "teeTimes": "starttijden",
+    "trip_h": "Uw rondes",
+    "trip_local": "Alle tijden zijn lokale tijd op Mallorca."
   },
   "sv": {
     "l_dressShoes": "Klädsel och skor",
-    "t_checkin": "Checka in senast",
-    "t_there": "Var på plats senast",
+    "t_checkin": "Rekommenderad ankomst",
+    "t_there": "Rekommenderad ankomst",
     "t_proshop": "i pro shopen",
     "t_tee": "Starttid",
     "t_range": "Driving rangen öppnar",
@@ -596,14 +633,14 @@ const UI = {
     "bring_both": "Solkräm och keps på sommaren, när solen är stark från april till oktober, och ett varmt lager för vintermorgnarna.",
     "bring_warm": "Ett varmt lager. Vintermorgnarna är kyliga före 10.00.",
     "share": "Dela på WhatsApp",
-    "msg_by": "Var på plats senast {time}",
+    "msg_by": "Rekommenderad ankomst: {time}",
     "msg_dir": "Vägbeskrivning",
     "msg_all": "Alla detaljer",
     "photoalt": "Foto av {name}",
     "directions": "Vägbeskrivning till klubben",
     "mapalt": "Karta som visar var {name} ligger",
     "contact_h": "Kontakta klubben",
-    "contact_p": "Kontakta klubben direkt för öppettider, hyrutrustning eller banregler.",
+    "contact_p": "För vägbeskrivning eller hjälp på banan på speldagen, kontakta klubben.",
     "call": "Ring klubben",
     "emailclub": "Mejla klubben",
     "later": "Jag skickar detaljerna för den här banan direkt till dig före dagen.",
@@ -631,12 +668,16 @@ const UI = {
     "copy_manual": "Markera och kopiera informationen nedan.",
     "language": "Språk",
     "l_rentalNotes": "Hyra utrustning",
-    "rental_summary_link": "Kort information om hyra (PDF, engelska)"
+    "rental_summary_link": "Kort information om hyra (PDF, engelska)",
+    "booking_p": "Ändringar eller frågor om bokningen? Skicka ett meddelande till mig.",
+    "teeTimes": "starttider",
+    "trip_h": "Dina rundor",
+    "trip_local": "Alla tider är lokal tid på Mallorca."
   },
   "zh": {
     "l_dressShoes": "着装与球鞋",
-    "t_checkin": "最晚登记时间",
-    "t_there": "最晚到达时间",
+    "t_checkin": "建议抵达时间",
+    "t_there": "建议抵达时间",
     "t_proshop": "在球场商店",
     "t_tee": "开球时间",
     "t_range": "练习场开放",
@@ -677,14 +718,14 @@ const UI = {
     "bring_both": "夏季请带防晒霜和帽子（四月至十月阳光强烈），冬季清晨请带一件保暖外套。",
     "bring_warm": "一件保暖外套。冬季清晨 10:00 前天气较凉。",
     "share": "分享到 WhatsApp",
-    "msg_by": "请在 {time} 前到达",
+    "msg_by": "建议抵达时间：{time}",
     "msg_dir": "路线",
     "msg_all": "全部详情",
     "photoalt": "{name} 的照片",
     "directions": "前往球会的路线",
     "mapalt": "显示 {name} 位置的地图",
     "contact_h": "联系球会",
-    "contact_p": "如需了解营业时间、租赁装备或球场规定，请直接联系球会。",
+    "contact_p": "当天如需路线指引或球场现场协助，请联系球会。",
     "call": "致电球会",
     "emailclub": "给球会发邮件",
     "later": "我会在当天之前直接把这个球场的详细信息发给您。",
@@ -712,7 +753,11 @@ const UI = {
     "copy_manual": "请选中并复制以下信息。",
     "language": "语言",
     "l_rentalNotes": "租赁球具与球车",
-    "rental_summary_link": "租赁须知摘要（PDF，英语）"
+    "rental_summary_link": "租赁须知摘要（PDF，英语）",
+    "booking_p": "需要修改预订或有疑问？请给我发消息。",
+    "teeTimes": "开球时间",
+    "trip_h": "您的球局",
+    "trip_local": "所有时间均为马略卡当地时间。"
   }
 };
 // END GENERATED UI
@@ -802,13 +847,36 @@ function bringList(course, round) {
   return items;
 }
 
-function renderRound(course, round, closures) {
+// Tee slots at the same course on the same day share facilities and preparation notes.
+// Keep different playing dates separate so seasonal answers and closures remain date-specific.
+function groupRounds(rounds) {
+  const groups = new Map();
+  rounds.forEach(round => {
+    const key = JSON.stringify([round.c, round.d || '']);
+    if (!groups.has(key)) groups.set(key, { ...round, times: [] });
+    const group = groups.get(key);
+    if (round.t && !group.times.includes(round.t)) group.times.push(round.t);
+  });
+  return [...groups.values()].map(group => {
+    group.times.sort();
+    return { ...group, t: group.times[0] || '' };
+  });
+}
+function renderOverview(groups, courses) {
+  if (groups.length < 2 && (groups[0]?.times.length || 0) < 2) return '';
+  return `<nav class="trip-overview" aria-labelledby="trip-heading"><h2 id="trip-heading">${ui('trip_h')}</h2><p>${ui('trip_local')}</p><ul>`
+    + groups.map((round, i) => `<li><a href="#round-${i + 1}"><span class="trip-date">${esc(niceDate(round.d))}</span><strong>${esc(courses[round.c].name)}</strong><span class="trip-times">${round.times.length ? esc(ui(round.times.length > 1 ? 'teeTimes' : 'teeTime')) + ': ' + esc(round.times.join(', ')) : ''}</span></a></li>`).join('') + '</ul></nav>';
+}
+
+function renderRound(course, round, closures, index = 0) {
   const info = course.info || {};
   const season = seasonFor(round.d);
   const seasonal = course.seasonal || {};
   // The wording for this round's season where the club gives different summer and winter answers, else the single answer.
   const valueFor = f => (season && seasonal[f] && seasonal[f][season]) || info[f];
-  const when = [niceDate(round.d), round.t ? `${ui('teeTime')} ${esc(round.t)}` : ''].filter(Boolean).join(LANG === 'zh' ? '，' : ', ');
+  const times = round.times || (round.t ? [round.t] : []);
+  const timeLabel = ui(times.length > 1 ? 'teeTimes' : 'teeTime');
+  const when = [niceDate(round.d), times.length ? `${timeLabel} ${esc(times.join(', '))}` : ''].filter(Boolean).join(LANG === 'zh' ? '，' : ', ');
   // A course photo from the website with the title over it; courses with no photo keep the plain title.
   let head = course.hero
     ? `<figure class="hero"><img src="/pre-round-assets/hero/${esc(round.c)}.webp" alt="${esc(ui('photoalt', { name: course.name }))}" width="1000" height="500"><figcaption class="cap"><div class="eyebrow">${ui('eyebrow')}</div><h1>${esc(course.name)}</h1></figcaption></figure>`
@@ -826,7 +894,7 @@ function renderRound(course, round, closures) {
       const tile = (k, v, sub) => `<div class="tile"><div class="k">${k}</div><div class="v">${esc(v)}</div>${sub ? `<div class="s">${sub}</div>` : ''}</div>`;
       head += `<div class="checkin"><div class="tiles">`
         + (course.meetAtGate ? tile(ui('t_there'), by) : tile(ui('t_checkin'), by, ui('t_proshop')))
-        + tile(ui('t_tee'), round.t) + (rt ? tile(ui('t_range'), rt) : '')
+        + tile(times.length > 1 ? ui('teeTimes') : ui('t_tee'), times.join(', ')) + (rt ? tile(ui('t_range'), rt) : '')
         + `</div><div class="advice">${advice}</div></div>`;
     } else {
       const main = course.meetAtGate ? ui('meet_plain') : ui('checkin_plain') + '.';
@@ -840,11 +908,11 @@ function renderRound(course, round, closures) {
   {
     const by = round.t && info.checkInMinutes ? minusMinutes(round.t, info.checkInMinutes) : null;
     const place = course.mapsDestination || (course.mapsQuery ? encodeURIComponent(course.mapsQuery) : '');
-    const lines = [[course.name, niceDate(round.d), round.t ? `${ui('teeTime')} ${round.t}` : ''].filter(Boolean).join(', ')];
+    const lines = [[course.name, niceDate(round.d), times.length ? `${timeLabel} ${times.join(', ')}` : ''].filter(Boolean).join(', ')];
     if (by) lines.push(ui('msg_by', { time: by }));
     if (course.address) lines.push(course.address);
     if (place) lines.push(ui('msg_dir') + ': https://www.google.com/maps/dir/?api=1&destination=' + place);
-    const part = [round.c, round.d || '', round.t ? round.t.replace(':', '') : ''].join('~').replace(/~+$/, '');
+    const part = (times.length ? times : ['']).map(time => [round.c, round.d || '', time ? time.replace(':', '') : ''].join('~').replace(/~+$/, '')).join(',');
     lines.push(ui('msg_all') + ': ' + location.origin + location.pathname + '?r=' + part + (LANG !== 'en' ? '&lang=' + LANG : ''));
     shareText = lines.join('\n');
     shareBtn = `<div class="btns share"><a class="btn alt" href="https://wa.me/?text=${encodeURIComponent(shareText)}" target="_blank" rel="noopener">${ui('share')}</a><button class="btn alt copy-info" type="button" data-copy="${esc(shareText)}">${ui('copy')}</button></div><p class="copy-status" role="status"></p><div class="copy-fallback" hidden><p>${ui('copy_manual')}</p><textarea readonly aria-label="${esc(ui('copy'))}"></textarea></div>`;
@@ -885,8 +953,9 @@ function renderRound(course, round, closures) {
     : (mapLink ? `<a class="btn" href="${mapLink}" target="_blank" rel="noopener">${ui('directions')}</a>` : ''))
     + (course.address ? `<div class="addr">${esc(course.address)}</div>` : '')
     + (course.guideUrl ? `<div class="btns guide"><a class="btn alt" href="${esc(course.guideUrl)}" target="_blank" rel="noopener">${ui('guide_link')}</a></div>` : '')
+    + `<div class="booking-contact"><p>${ui('booking_p')}</p><a class="btn" href="${WHATSAPP}">${ui('whatsapp')}</a></div>`
     + contactHtml + shareBtn;
-  return `<section class="round"><div class="top"><a class="backlink" href="?${LANG !== 'en' ? 'lang=' + LANG : ''}">&larr; ${ui('all_courses')}</a>${head}</div><div class="cols"><aside class="rail">${rail}</aside><div class="body">${html}</div></div></section>`;
+  return `<section class="round" id="round-${index + 1}"><div class="top"><a class="backlink" href="?${LANG !== 'en' ? 'lang=' + LANG : ''}">&larr; ${ui('all_courses')}</a>${head}</div><div class="cols"><aside class="rail">${rail}</aside><div class="body">${html}</div></div></section>`;
 }
 
 function renderPicker(data) {
@@ -930,7 +999,8 @@ async function main() {
     return;
   }
   const rounds = parseRounds(new URLSearchParams(location.search)).filter(r => data.courses[r.c]);
-  let html = rounds.length ? rounds.map(r => renderRound(data.courses[r.c], r, data.closures)).join('') : renderPicker(data);
+  const groups = groupRounds(rounds);
+  let html = groups.length ? renderOverview(groups, data.courses) + groups.map((r, i) => renderRound(data.courses[r.c], r, data.closures, i)).join('') : renderPicker(data);
   html += `<footer><div class="footer-copy"><p class="muted">${ui('footer_a')}</p><p>${ui('footer_b')}</p></div><a class="btn alt" href="${WHATSAPP}">${ui('whatsapp')}</a></footer>`;
   app.innerHTML = html;
   app.setAttribute('aria-busy', 'false');
