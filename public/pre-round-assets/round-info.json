@@ -448,11 +448,11 @@
         "bringWater": "A water bottle to top up at the water stations on the course.",
         "hireBags": "Hire sets come with carry bags.",
         "buggyTrolley": "You can walk it if you are reasonably fit, but there are a few climbs and two of the longest holes in Mallorca, so a buggy suits many players. Buggies, push trolleys and electric trolleys are available.",
-        "proShopOpens": "The club is open every day 07:30-20:00 from 1 April to 15 October.",
+        "proShopOpens": "The club is open every day 07:30-20:00 from 1 April to 15 October. In winter it opens at about 08:00 and closes at about 18:30, depending on the daylight.",
         "firstTee": "The first tee time is usually 08:00.",
         "rangeOpens": "The practice range costs €7, plus €5 for a bucket of 50 balls.",
         "practiceFacilities": "There is a driving range, a practice bunker, and pitching and putting greens.",
-        "foodBeforeRound": "Clubhouse restaurant March to October with a daily three-course menu; bar only in winter.",
+        "foodBeforeRound": "Clubhouse restaurant March to October with a daily three-course menu. In winter there is no food available at the club, so bring something with you.",
         "water": "There are water stations and shaded rest points on the course, and drinks carts in summer.",
         "licence": "There is no extra licence charge on top of the green fee.",
         "dressCode": "Collared shirts or golf mock-collar shirts. No jeans, t-shirts, swimwear, leggings, tracksuits or cut-offs on the course.",
@@ -463,9 +463,7 @@
         "flights": "You can have a tee time with just three players, with no supplement."
       },
       "seasonal": {},
-      "toCheck": [
-        "foodBeforeRound"
-      ],
+      "toCheck": [],
       "filtered": []
     },
     "pula": {
