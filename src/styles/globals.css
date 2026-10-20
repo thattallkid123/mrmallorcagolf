@@ -4087,15 +4087,6 @@ select.form-control { cursor: pointer; }
 .tools-trust__actions { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
 .tools-trust__badge { margin-top: 18px; display: flex; justify-content: center; }
 
-.draft-guides__inner {
-  width: min(980px, 100%);
-  margin: 0 auto;
-}
-
-.draft-guides__grid {
-  margin-top: var(--space-xl);
-}
-
 @media (max-width: 768px) {
   .tools-hero { padding: calc(var(--nav-h) + 34px) 22px 40px; }
   .tools-hero--photo { min-height: 56vh; padding-top: calc(var(--nav-h) + 52px); padding-bottom: 44px; }

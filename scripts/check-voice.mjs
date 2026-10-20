@@ -203,7 +203,6 @@ function excerpt(line, marker) {
 const GUIDE_SOURCES = [
   { rel: 'src/lib/guide-post-content.js', exportName: 'GUIDE_POST_CONTENT' },
   { rel: 'src/lib/guide-article-content.js', exportName: 'GUIDE_ARTICLE_CONTENT' },
-  { rel: 'src/lib/draft-guide-content.js', exportName: 'DRAFT_GUIDE_CONTENT' },
 ]
 const NOT_PLAYED_RE = /\b(?:have not|haven't|not yet|never)\s+(?:yet\s+)?(?:played|visited)\b|\bnot played\b/i
 
