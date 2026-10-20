@@ -5,6 +5,7 @@
     "arrivalPoint",
     "bringWater",
     "hireBags",
+    "rentalNotes",
     "buggyTrolley",
     "proShopOpens",
     "firstTee",
@@ -38,6 +39,7 @@
       "pickerHidden": false,
       "guideUrl": "https://www.golf-alcanada.com/practice-facilities/",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -90,6 +92,7 @@
       "pickerHidden": false,
       "guideUrl": "https://www.golfdeandratx.com/club",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -141,6 +144,7 @@
       "pickerHidden": false,
       "guideUrl": "https://www.realgolfbendinat.com/club/",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -192,6 +196,7 @@
       "pickerHidden": false,
       "guideUrl": "https://canyamelgolf.com/clubhouse/",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -243,6 +248,7 @@
       "pickerHidden": false,
       "guideUrl": null,
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -295,6 +301,7 @@
       "pickerHidden": false,
       "guideUrl": "https://golfmaioris.com/club/",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -346,7 +353,8 @@
       "mapsQuery": "Palma Pitch & Putt Mallorca",
       "pickerHidden": false,
       "guideUrl": "https://welcome-to-arabella-golf-376228291139.us-west1.run.app/",
-      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2024/09/Resumen_rentals_sept_ES.pdf",
+      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2025/08/Resumen_rentals_2025_EN.pdf",
+      "rentalSummaryUrl": "https://www.mrmallorcagolf.com/pre-round-assets/arabella-rental-notes-en.pdf",
       "restaurants": [
         {
           "name": "Na Capitana",
@@ -379,6 +387,7 @@
         "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle. It is only nine holes with no halfway house, and Son Quint's clubhouse nearby has a refill station.",
         "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
+        "rentalNotes": "Return hired equipment in the condition you received it. Damage, loss or misuse can be charged to your card or hotel room. Buggy drivers must be 18 or over; only the designated driver may drive, with no more than two people seated inside. Follow the permitted routes and staff instructions. Do not drive under the influence of alcohol or drugs. Use the parking brake when stopped and switch off when unused. Read the full terms before signing: they include liability waivers and damage charges for buggies and clubs.",
         "buggyTrolley": "The course is short and easy to walk, so you do not need a buggy. There are no buggies on the pitch and putt, but trolleys are available.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-18:30. Summer: 07:30-20:30.",
         "firstTee": "The earliest tee time bookable online is usually 07:40, the same as Son Quint.",
@@ -424,6 +433,7 @@
       "pickerHidden": false,
       "guideUrl": "https://golfpollensa.com/en/services",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -477,6 +487,7 @@
       "pickerHidden": false,
       "guideUrl": "https://www.pulagolf.com/servicios.html",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -529,6 +540,7 @@
       "pickerHidden": false,
       "guideUrl": null,
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -573,6 +585,7 @@
       "pickerHidden": false,
       "guideUrl": null,
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -625,6 +638,7 @@
       "pickerHidden": false,
       "guideUrl": null,
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": true,
       "travel": {
@@ -673,6 +687,7 @@
       "pickerHidden": false,
       "guideUrl": "https://www.sonantemgolf.com/the-clubhouse/",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -725,6 +740,7 @@
       "pickerHidden": false,
       "guideUrl": "https://www.sonantemgolf.com/the-clubhouse/",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -777,6 +793,7 @@
       "pickerHidden": false,
       "guideUrl": null,
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -827,7 +844,8 @@
       "mapsQuery": "Son Muntaner Mallorca",
       "pickerHidden": false,
       "guideUrl": "https://welcome-to-arabella-golf-376228291139.us-west1.run.app/",
-      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2024/09/Resumen_rentals_sept_ES.pdf",
+      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2025/08/Resumen_rentals_2025_EN.pdf",
+      "rentalSummaryUrl": "https://www.mrmallorcagolf.com/pre-round-assets/arabella-rental-notes-en.pdf",
       "restaurants": [
         {
           "name": "Na Capitana",
@@ -860,6 +878,7 @@
         "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A refillable bottle. Every clubhouse has a water refill station, and the halfway houses open at 10:30 with another.",
         "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
+        "rentalNotes": "Return hired equipment in the condition you received it. Damage, loss or misuse can be charged to your card or hotel room. Buggy drivers must be 18 or over; only the designated driver may drive, with no more than two people seated inside. Follow the permitted routes and staff instructions. Do not drive under the influence of alcohol or drugs. Use the parking brake when stopped and switch off when unused. Read the full terms before signing: they include liability waivers and damage charges for buggies and clubs.",
         "buggyTrolley": "It is long but fairly flat, so you can walk it if you are fit, and buggies are allowed on the fairways when the weather permits. A buggy is included in the green fee from March to late November, and manual and electric trolleys can be added to your booking through Arabella.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-19:30. Summer: 07:45-20:30.",
         "firstTee": "The first tee time is 08:00.",
@@ -904,7 +923,8 @@
       "mapsQuery": "Golf Son Quint Mallorca",
       "pickerHidden": false,
       "guideUrl": "https://welcome-to-arabella-golf-376228291139.us-west1.run.app/",
-      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2024/09/Resumen_rentals_sept_ES.pdf",
+      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2025/08/Resumen_rentals_2025_EN.pdf",
+      "rentalSummaryUrl": "https://www.mrmallorcagolf.com/pre-round-assets/arabella-rental-notes-en.pdf",
       "restaurants": [
         {
           "name": "Na Capitana",
@@ -937,6 +957,7 @@
         "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A refillable bottle. Every clubhouse has a water refill station, and the halfway houses open at 10:30 with another.",
         "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
+        "rentalNotes": "Return hired equipment in the condition you received it. Damage, loss or misuse can be charged to your card or hotel room. Buggy drivers must be 18 or over; only the designated driver may drive, with no more than two people seated inside. Follow the permitted routes and staff instructions. Do not drive under the influence of alcohol or drugs. Use the parking brake when stopped and switch off when unused. Read the full terms before signing: they include liability waivers and damage charges for buggies and clubs.",
         "buggyTrolley": "It is shorter and gently undulating, so you can walk it if you are fit, and buggies are allowed on the fairways when the weather permits. Buggies and manual and electric trolleys can be added to your booking through Arabella.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-18:30. Summer: 07:30-20:30.",
         "firstTee": "The first tee time is usually 07:40.",
@@ -982,6 +1003,7 @@
       "pickerHidden": false,
       "guideUrl": null,
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -1034,6 +1056,7 @@
       "pickerHidden": false,
       "guideUrl": null,
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -1084,7 +1107,8 @@
       "mapsQuery": "Golf Son Vida Mallorca",
       "pickerHidden": false,
       "guideUrl": "https://welcome-to-arabella-golf-376228291139.us-west1.run.app/",
-      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2024/09/Resumen_rentals_sept_ES.pdf",
+      "rentalUrl": "https://arabellagolfmallorca.com/wp-content/uploads/2025/08/Resumen_rentals_2025_EN.pdf",
+      "rentalSummaryUrl": "https://www.mrmallorcagolf.com/pre-round-assets/arabella-rental-notes-en.pdf",
       "restaurants": [
         {
           "name": "Na Capitana",
@@ -1117,6 +1141,7 @@
         "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A refillable bottle. Every clubhouse has a water refill station, and the halfway houses open at 10:30 with another.",
         "hireBags": "Hire sets come in carry bags with double straps, so you can carry them or use a trolley.",
+        "rentalNotes": "Return hired equipment in the condition you received it. Damage, loss or misuse can be charged to your card or hotel room. Buggy drivers must be 18 or over; only the designated driver may drive, with no more than two people seated inside. Follow the permitted routes and staff instructions. Do not drive under the influence of alcohol or drugs. Use the parking brake when stopped and switch off when unused. Read the full terms before signing: they include liability waivers and damage charges for buggies and clubs.",
         "buggyTrolley": "It is fairly short and undulating, so you can walk it if you are fit, and buggies are allowed on the fairways when the weather permits. Buggies and manual and electric trolleys can be added to your booking through Arabella.",
         "proShopOpens": "Winter (from 26 October): the course is open 07:00-18:30. Summer: 07:30-20:30.",
         "firstTee": "The first tee time is usually 07:58.",
@@ -1162,6 +1187,7 @@
       "pickerHidden": false,
       "guideUrl": "https://t-golf.club/calvia/clubhouse/",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -1213,6 +1239,7 @@
       "pickerHidden": false,
       "guideUrl": "https://t-golf.club/palma/clubhouse/",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
@@ -1266,6 +1293,7 @@
       "pickerHidden": false,
       "guideUrl": "https://valldorgolf.com/el-club/servicios/",
       "rentalUrl": null,
+      "rentalSummaryUrl": null,
       "restaurants": [],
       "meetAtGate": false,
       "travel": {
