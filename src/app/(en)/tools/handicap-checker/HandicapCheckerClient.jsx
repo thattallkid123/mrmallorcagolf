@@ -251,6 +251,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
     try {
       const res = await fetch('/api/handicap-checker-submit', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email,

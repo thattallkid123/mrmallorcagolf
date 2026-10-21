@@ -211,6 +211,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
     try {
       const response = await fetch('/api/lead-magnet-signup', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, guide: 'trip-planner', subscribeNewsletter }),
       })
@@ -246,6 +247,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
     try {
       const res = await fetch('/api/send-itinerary', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, tool: 'golf-day-builder', subject: 'Your Mallorca golf day plan', data: { itineraries, answerSummary: localizeQuestions(QUESTIONS, localData).map(question => { const values = Array.isArray(answers[question.key]) ? answers[question.key] : [answers[question.key]]; return question.opts.filter(option => values.includes(option.v)).map(option => option.t).join(", ") }).filter(Boolean).join(" · ") }, subscribeNewsletter }),
       })

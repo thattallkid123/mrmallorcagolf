@@ -51,17 +51,17 @@ export const LEAD_MAGNETS = {
     title: '7-Day Mallorca Golf Itinerary',
     eyebrow: 'Free Download',
     description:
-      'A ready-to-use week-long plan with the right courses in the right order, rest days built in, and recommendations for where to stay and eat.',
+      'A sample week from Palma with four rounds, a rest day, approximate drive times, and named hotel and dining ideas. Adapt it to your dates and group.',
     bullets: [
       'Which courses to play on which days (and why)',
-      'Drive times and logistics between courses',
+      'Approximate drive times from a Palma base',
       'Local tips from a PGA pro based on the island',
     ],
     downloadUrl: 'https://www.mrmallorcagolf.com/downloads/trip-planner.pdf',
     buttonLabel: 'Send me the itinerary',
     metaTitle: '7-Day Mallorca Golf Itinerary',
     metaDescription:
-      'A free 7-day Mallorca golf itinerary from a local PGA pro. Courses in order, logistics sorted, no wasted days.',
+      'A free 7-day Mallorca golf itinerary from a local PGA pro. Four rounds, a rest day, drive times and hotel and dining ideas.',
   },
   'beginners-guide': {
     slug: 'beginners-guide',
@@ -70,8 +70,8 @@ export const LEAD_MAGNETS = {
     description:
       "Course access, handicap certificates and five starting options for less-experienced golfers, with practical advice for booking a round.",
     bullets: [
-      'Which courses welcome beginners and which to avoid',
-      'Local rules, dress codes, and etiquette',
+      'Five starting options and their access requirements',
+      'What to wear, bring and check before playing',
       'How to get the most from your round as a beginner',
     ],
     downloadUrl: 'https://www.mrmallorcagolf.com/downloads/beginners-guide.pdf',

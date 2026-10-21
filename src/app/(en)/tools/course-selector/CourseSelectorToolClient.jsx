@@ -651,6 +651,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
     try {
       const res = await fetch('/api/send-itinerary', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email,
@@ -679,6 +680,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
     try {
       const response = await fetch('/api/lead-magnet-signup', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, guide: 'course-comparison', subscribeNewsletter }),
       })

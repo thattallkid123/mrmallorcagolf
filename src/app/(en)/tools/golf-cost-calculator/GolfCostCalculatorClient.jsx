@@ -115,6 +115,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
     try {
       const response = await fetch('/api/lead-magnet-signup', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, guide: 'cost-guide', subscribeNewsletter }),
       })
@@ -138,6 +139,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
     try {
       const res = await fetch('/api/send-itinerary', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email,
@@ -194,6 +196,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
     try {
       const res = await fetch('/api/trip-quote-submit', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email: quoteEmail,

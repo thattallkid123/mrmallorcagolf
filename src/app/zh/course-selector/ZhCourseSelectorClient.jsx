@@ -240,6 +240,7 @@ export default function ZhCourseSelectorClient({ heroHeadingLevel = 1 }) {
     try {
       const res = await fetch('/api/zh-selector-email', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email,

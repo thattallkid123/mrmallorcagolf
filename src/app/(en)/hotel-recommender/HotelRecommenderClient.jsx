@@ -34,6 +34,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   const [results, setResults] = useState(null)
   const [email, setEmail] = useState('')
   const [newsletter, setNewsletter] = useState(false)
+  const [emailSending, setEmailSending] = useState(false)
   const [emailSent, setEmailSent] = useState(false)
   const [emailError, setEmailError] = useState(false)
   const containerRef = useRef(null)
@@ -110,7 +111,9 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   }
 
   async function sendEmail() {
-    if (!email || !email.includes('@')) return
+    if (!email || !email.includes('@') || emailSending) return
+    setEmailSending(true)
+    setEmailError(false)
 
     const answerSummary = (() => {
       const parts = []
@@ -139,6 +142,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
     try {
       const response = await fetch('/api/send-itinerary', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
           email,
@@ -152,6 +156,8 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
       setEmailSent(true)
     } catch {
       setEmailError(true)
+    } finally {
+      setEmailSending(false)
     }
   }
 
@@ -399,7 +405,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
                       value={email}
                       onChange={e => setEmail(e.target.value)}
                     />
-                    <button className="hr-btn-email" onClick={sendEmail}>{t.email.button}</button>
+                    <button className="hr-btn-email" onClick={sendEmail} disabled={emailSending}>{emailSending ? t.email.sending : t.email.button}</button>
                   </div>
                   <label className="hr-newsletter-opt">
                     <input type="checkbox" checked={newsletter} onChange={e => setNewsletter(e.target.checked)} style={{ accentColor:'#B8973C' }} />

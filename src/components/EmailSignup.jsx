@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useId, useState } from 'react'
 
 export default function EmailSignup({
   placeholder = 'Email address',
@@ -11,6 +11,7 @@ export default function EmailSignup({
   redirectOnSuccess,
   extraFields = {},
 }) {
+  const emailId = useId()
   const [email, setEmail] = useState('')
   const [status, setStatus] = useState('idle')
   const [errorMessage, setErrorMessage] = useState('')
@@ -19,7 +20,7 @@ export default function EmailSignup({
 
   async function handleMailerLiteSubmit(event) {
     event.preventDefault()
-    if (!resolvedMailerLiteFormAction || !email) return
+    if (status === 'submitting' || !resolvedMailerLiteFormAction || !email) return
 
     setStatus('submitting')
     setErrorMessage('')
@@ -40,6 +41,7 @@ export default function EmailSignup({
 
       const response = await fetch(resolvedMailerLiteFormAction, {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: {
           'Content-Type': 'application/x-www-form-urlencoded',
           Accept: 'application/json',
@@ -63,9 +65,11 @@ export default function EmailSignup({
       const nextError = data?.errors?.fields?.email?.[0] || 'There was a problem subscribing.'
       setStatus('error')
       setErrorMessage(nextError)
-    } catch {
+    } catch (error) {
       setStatus('error')
-      setErrorMessage('There was a problem subscribing.')
+      setErrorMessage(error.name === 'TimeoutError'
+        ? 'This is taking longer than expected. Check your inbox for the confirmation email, then try again if it has not arrived.'
+        : 'Your signup could not be confirmed. Please try again.')
     }
   }
 
@@ -86,9 +90,12 @@ export default function EmailSignup({
   if (resolvedMailerLiteFormAction) {
     return (
       <>
+        <label className="email-capture-label" htmlFor={emailId}>Email address</label>
         <form
           onSubmit={handleMailerLiteSubmit}
+          aria-busy={status === 'submitting'}
           aria-label={title}
+          className="email-capture-form"
           style={{
             display: 'flex',
             width: '100%',
@@ -101,6 +108,9 @@ export default function EmailSignup({
         >
           <input
             type="email"
+            id={emailId}
+            autoComplete="email"
+            name="email"
             value={email}
             onChange={(event) => setEmail(event.target.value)}
             placeholder={placeholder}
@@ -115,7 +125,6 @@ export default function EmailSignup({
               color: 'var(--deep)',
               background: 'transparent',
               border: 'none',
-              outline: 'none',
             }}
           />
           <button
@@ -141,7 +150,7 @@ export default function EmailSignup({
           </button>
         </form>
         {status === 'error' ? (
-          <p style={{
+          <p role="alert" style={{
             fontFamily: "var(--font-sans)",
             fontSize: '0.8rem',
             color: '#8b2f2f',

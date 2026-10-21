@@ -22,6 +22,10 @@ test.describe('visual smoke checks', () => {
         }
       })
 
+      // Vercel serves this endpoint only on its host, not next start/dev.
+      // Stub that exact local-only script; retain all other console/image failures.
+      await page.route(url => ['127.0.0.1', 'localhost'].includes(url.hostname) && url.pathname === '/_vercel/insights/script.js',
+        r => r.fulfill({ contentType: 'application/javascript', body: '' }))
       await page.goto(route, { waitUntil: 'domcontentloaded' })
       await page.waitForLoadState('load', { timeout: 15000 }).catch(() => {})
 

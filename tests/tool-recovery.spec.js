@@ -18,6 +18,12 @@ test('an empty hotel shortlist offers targeted editing and never offers to email
   expect(new Set(buttonBounds.map(b=>b.height)).size).toBe(1)
   if(info.project.name === 'desktop-chrome') expect(new Set(buttonBounds.map(b=>b.top)).size).toBe(1)
   else expect(new Set(buttonBounds.map(b=>b.top)).size).toBe(3)
+  await page.mouse.move(0, 0)
+  // Read the settled normal colours, not a frame mid-way through a hover transition.
+  for (const button of await page.locator('.tool-empty-result button').all()) {
+    await expect(button).toHaveCSS('color', 'rgb(45, 74, 62)')
+    await expect(button).toHaveCSS('background-color', 'rgb(255, 255, 255)')
+  }
   const contrast = await page.locator('.tool-empty-result button').evaluateAll(buttons => {
     const rgb = value => value.match(/[0-9.]+/g).map(Number)
     const lum = channels => channels.slice(0,3).map(v => { const n=v/255; return n<=.04045 ? n/12.92 : ((n+.055)/1.055)**2.4 }).reduce((n,v,i)=>n+v*[.2126,.7152,.0722][i],0)

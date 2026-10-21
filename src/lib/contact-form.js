@@ -69,6 +69,7 @@ export function useContactFormSubmission(lang = 'en') {
       const attribution = getLeadAttribution()
       const response = await fetch('/api/contact', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ ...form, lang, attribution }),
       })
@@ -108,7 +109,7 @@ export function useContactFormSubmission(lang = 'en') {
         language: lang,
         page_path: currentPagePath(),
       })
-      setError(submitError.message || 'Unable to send enquiry right now.')
+      setError(submitError.name === 'TimeoutError' ? 'Unable to send enquiry right now.' : submitError.message || 'Unable to send enquiry right now.')
     } finally {
       setSubmitting(false)
     }

@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useId, useState } from 'react'
 import { currentPagePath, trackEvent, trackLead, trackNewsletterSignup } from '../lib/analytics'
 
 const NEXT_TOOL_BY_GUIDE = {
@@ -27,6 +27,7 @@ const NEXT_TOOL_BY_GUIDE = {
 }
 
 export default function LeadMagnetPage({ guide }) {
+  const emailId = useId()
   const [email, setEmail] = useState('')
   const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
   const [status, setStatus] = useState('idle')
@@ -35,13 +36,14 @@ export default function LeadMagnetPage({ guide }) {
 
   async function handleSubmit(event) {
     event.preventDefault()
-    if (!email) return
+    if (!email || status === 'submitting') return
     setStatus('submitting')
     setErrorMessage('')
 
     try {
       const response = await fetch('/api/lead-magnet-signup', {
         method: 'POST',
+        signal: AbortSignal.timeout(20000),
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, guide: guide.slug, subscribeNewsletter }),
       })
@@ -79,13 +81,15 @@ export default function LeadMagnetPage({ guide }) {
       })
       setStatus('error')
       setErrorMessage(nextError)
-    } catch {
+    } catch (error) {
       trackEvent('lead_magnet_error', {
         guide_slug: guide.slug,
         page_path: currentPagePath(),
       })
       setStatus('error')
-      setErrorMessage('There was a problem. Please try again.')
+      setErrorMessage(error.name === 'TimeoutError'
+        ? 'This is taking longer than expected. Check your inbox for the guide, then try again if it has not arrived.'
+        : 'Your guide request could not be confirmed. Please try again.')
     }
   }
 
@@ -193,6 +197,7 @@ export default function LeadMagnetPage({ guide }) {
         </ul>
 
         <style>{`
+          .lm-input { background: transparent; border: none; }
           @media (max-width: 480px) {
             .lm-form { flex-direction: column !important; border: none !important; background: transparent !important; overflow: visible !important; }
             .lm-input { border: 1px solid rgba(44,42,39,0.2); border-radius: 3px; background: #fff; }
@@ -285,9 +290,11 @@ export default function LeadMagnetPage({ guide }) {
           </div>
         ) : (
           <>
+            <label className="email-capture-label" htmlFor={emailId}>Email address</label>
             <form
               onSubmit={handleSubmit}
-              className="lm-form"
+              aria-busy={status === 'submitting'}
+              className="lm-form email-capture-form"
               style={{
                 display: 'flex',
                 width: '100%',
@@ -300,6 +307,9 @@ export default function LeadMagnetPage({ guide }) {
             >
               <input
                 type="email"
+                id={emailId}
+                autoComplete="email"
+                name="email"
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
                 placeholder="Your email address"
@@ -313,10 +323,7 @@ export default function LeadMagnetPage({ guide }) {
                   fontSize: '0.88rem',
                   fontWeight: 300,
                   color: 'var(--deep, #1A1916)',
-                  background: 'transparent',
-                  border: 'none',
-                  outline: 'none',
-                }}
+                    }}
               />
               <button
                 type="submit"
@@ -362,7 +369,7 @@ export default function LeadMagnetPage({ guide }) {
               Also send me Andy&apos;s occasional Mallorca golf planning notes
             </label>
             {status === 'error' ? (
-              <p
+              <p role="alert"
                 style={{
                   fontFamily: "var(--font-sans)",
                   fontSize: '0.8rem',
