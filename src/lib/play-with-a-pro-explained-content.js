@@ -68,7 +68,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_CONTENT = {
     facts: {
       format: { label: 'Format', value: '18 holes, full day' },
       courseSelection: { label: 'Course selection', value: 'Matched to your game and handicap' },
-      included: { label: "What's included", value: 'Course, tee time, coaching, strategy' },
+      included: { label: "What's included", value: 'Course selection, tee-time arrangements, coaching and strategy' },
       duration: { label: 'Duration', value: 'Typically 5–6 hours' },
       dayRateLabel: 'Day rate',
       soloLabel: 'solo',

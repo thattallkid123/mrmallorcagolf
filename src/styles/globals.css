@@ -4328,3 +4328,22 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .email-capture-form button:focus-visible {
   outline-color: var(--cream);
 }
+
+/* Explicit analytics choice, independent of enquiry and newsletter consent. */
+.analytics-consent { position: fixed; inset: auto 0 0; z-index: 1100; display: flex; flex-wrap: wrap; align-items: center; gap: var(--space-5); padding: var(--space-5); border-top: 1px solid var(--sand); background: var(--cream); color: var(--charcoal); max-height: 90dvh; overflow-y: auto; }
+.analytics-consent__copy { flex: 1 1 480px; }
+.analytics-consent h2 { font-family: var(--font-serif); font-size: 1.7rem; line-height: 1.2; margin: 0 0 var(--space-2); }
+.analytics-consent p { font-family: var(--font-sans); font-size: 1rem; line-height: 1.55; margin: 0; }
+.analytics-consent a { color: var(--pine); text-decoration: underline; }
+.analytics-consent__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); flex: 1 1 330px; }
+.analytics-consent__actions .btn { flex: 1 1 145px; min-height: 44px; padding: var(--space-3) var(--space-4); white-space: normal; text-align: center; }
+.analytics-consent__close { min-height: 44px; padding: var(--space-2); border: 0; background: transparent; color: var(--pine); font: inherit; text-decoration: underline; cursor: pointer; }
+.analytics-consent :focus-visible, .cookie-settings-button:focus-visible, .missing-page a:focus-visible { outline: 2px solid var(--pine); outline-offset: 4px; }
+.cookie-settings-button { border: 0; padding: var(--space-2) 0; background: transparent; font: inherit; cursor: pointer; }
+.cookie-settings-button:focus-visible { outline-color: var(--gold-light); }
+.missing-page { max-width: 800px; min-height: 100svh; margin: 0 auto; padding: var(--space-8) var(--space-5); display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: var(--space-5); }
+.missing-page__brand { display: flex; align-items: center; gap: var(--space-4); color: var(--pine); text-decoration: none; font-family: var(--font-serif); font-size: 1.7rem; }
+.missing-page h1 { font-family: var(--font-serif); font-size: clamp(2.8rem, 7vw, 4rem); line-height: 1.08; margin: 0; }
+.missing-page p { margin: 0; }
+.missing-page__links { display: flex; flex-wrap: wrap; gap: var(--space-4) var(--space-5); }
+.missing-page__links a { display: inline-flex; align-items: center; min-height: 44px; color: var(--pine); text-decoration: underline; text-underline-offset: 4px; }

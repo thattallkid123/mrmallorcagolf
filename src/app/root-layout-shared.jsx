@@ -1,5 +1,6 @@
 import '../styles/globals.css'
-import localFont from 'next/font/local'
+import { jost, cormorantGaramond } from '../lib/site-fonts'
+import AnalyticsConsent from '../components/AnalyticsConsent'
 import Script from 'next/script'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
 import { ALL_LOCALES, buildLocalePath, SITE_ORIGIN } from '../lib/site.js'
@@ -9,43 +10,6 @@ import IntentTracker from '../components/IntentTracker.jsx'
 import PageViewTracker from '../components/PageViewTracker.jsx'
 import ScrollDepthTracker from '../components/ScrollDepthTracker.jsx'
 import ScrollToTop from './scroll-to-top.jsx'
-
-// Source .ttf files stay in MMG-Fonts/ for editing/reference, but next/font/local
-// is pointed at .woff2 (generated via fontTools, `flavor = 'woff2'`) since it
-// serves whatever format it's given rather than re-encoding it — .woff2's
-// built-in Brotli compression cuts these files by ~70-78% with zero visual
-// change (confirmed 2026-08-22 during a Lighthouse mobile-LCP investigation).
-const jost = localFont({
-  src: [
-    { path: '../../MMG-Fonts/Jost-300.woff2', weight: '300', style: 'normal' },
-    { path: '../../MMG-Fonts/Jost-400.woff2', weight: '400', style: 'normal' },
-    { path: '../../MMG-Fonts/Jost-500.woff2', weight: '500', style: 'normal' },
-  ],
-  variable: '--font-sans',
-  display: 'swap',
-  preload: true,
-})
-
-const cormorantGaramond = localFont({
-  src: [
-    { path: '../../MMG-Fonts/CormorantGaramond-Regular-400.woff2', weight: '400', style: 'normal' },
-    { path: '../../MMG-Fonts/CormorantGaramond-Regular-500.woff2', weight: '500', style: 'normal' },
-    { path: '../../MMG-Fonts/CormorantGaramond-Regular-600.woff2', weight: '600', style: 'normal' },
-    { path: '../../MMG-Fonts/CormorantGaramond-Italic-400.woff2', weight: '400', style: 'italic' },
-    { path: '../../MMG-Fonts/CormorantGaramond-Italic-500.woff2', weight: '500', style: 'italic' },
-  ],
-  variable: '--font-serif',
-  display: 'swap',
-  // next/font/local sizes its stand-in from Arial by default, so serif headings
-  // flashed as a sans font until Cormorant arrived (seen on /plan-your-trip,
-  // 9 Oct 2026). A metric-matched Times New Roman keeps the stand-in a serif.
-  adjustFontFallback: 'Times New Roman',
-  // Keep Cormorant available for brand headings and editorial italic text, but
-  // avoid forcing every display-font variant into the critical route head.
-  // Jost stays explicitly configured as the body/UI font; Cormorant can load
-  // on demand when heading and editorial styles need it.
-  preload: false,
-})
 
 export const viewport = {
   width: 'device-width',
@@ -281,32 +245,8 @@ export default function SiteRootLayout({ lang, children }) {
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
-        {/* Keep strategy="afterInteractive" (loads on page load, not gated on user
-            interaction). A 2026-05-25 Lighthouse-driven change deferred this until
-            a click/tap/keydown or a 3s timeout, which silently undercounted real
-            visitors who bounced before either fired - GA4 organic sessions dropped
-            to a fraction of Search Console's click count for ~9 weeks before being
-            caught and reverted on 2026-07-27 (commit 1c5e259). Don't re-gate this
-            behind interaction for a Lighthouse score again without re-checking GA4
-            vs Search Console afterward. */}
-        <Script id="google-analytics" strategy="afterInteractive">
-          {`
-            (function () {
-              if (window.location.pathname.startsWith('/zh')) return;
-              if (!/^(www\\.)?mrmallorcagolf\\.com$/.test(window.location.hostname)) return;
-
-              var s = document.createElement('script');
-              s.async = true;
-              s.src = 'https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N';
-              document.head.appendChild(s);
-              window.dataLayer = window.dataLayer || [];
-              window.gtag = function(){window.dataLayer.push(arguments);};
-              window.gtag('js', new Date());
-              window.gtag('config', 'G-0Z2BRNWB4N');
-            })();
-          `}
-        </Script>
-
+        {/* GA is loaded only after explicit analytics consent, never after an
+            arbitrary interaction or delay. See analytics-consent.js. */}
         <Script id="baidu-analytics" strategy="afterInteractive">
           {`
             (function () {
@@ -329,6 +269,7 @@ export default function SiteRootLayout({ lang, children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       </head>
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
+        <AnalyticsConsent lang={lang} />
         <ScrollToTop />
         <PageViewTracker />
         <ScrollDepthTracker />

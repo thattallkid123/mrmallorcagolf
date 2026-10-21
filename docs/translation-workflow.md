@@ -254,27 +254,9 @@ Which model wrote or read each body of translated copy, how deeply, and what is 
 
 **Standard from here.** Any new or changed translation is either written by Opus, or written by another model and then read in full by Opus before it ships; add a row here either way. Every translated surface has now had at least an Opus sample. Next: a sample after each round of edits (the samples needed a fix in 1 string in 4 to 1 in 7), the Play With A Pro, homepage and other service pages (read in the October audit by Sonnet, sampled by Opus once), and a native read of German and French. A native read of German and French (the biggest non-English markets) and of the Chinese pages would catch what no model review can.
 
-## Repo Cleanup
+## Removed migration material
 
-The following one-off migration scripts were removed because they do not affect the running site and only added confusion:
-
-- `scripts/decode-about-locales.js`
-- `scripts/fix-homepage-locales.js`
-- `scripts/rewrite-about-locales.js`
-- `scripts/rewrite-coaching-locales.js`
-- `scripts/rewrite-contact-locales.js`
-- `scripts/rewrite-play-locales.js`
-
-They were setup leftovers, not part of the real maintenance workflow.
-
-The following old translation prompt/checklist docs were also removed because they duplicated or diluted the real workflow:
-
-- `docs/translation-master-prompt.txt`
-- `docs/translation-language-notes.txt`
-- `docs/translation-qa-checklist.txt`
-- `docs/translation-notes.md`
-
-If future translation guidance is needed, add it to this file rather than creating a competing document.
+The one-off locale rewrite scripts and duplicate translation prompt documents were removed. They are not maintenance tools. Use this workflow and the translation style guide for current changes.
 
 ## Self-Review Standard
 
@@ -308,3 +290,5 @@ That is the standard this repo should follow from now on.
 <!-- 2026-10-18 customer email feedback: revised lunch reservation wording and specific return steps, all six golf-day locales written by Opus and read in full against English. Full review completed; preview pending Andy approval. -->
 
 <!-- 2026-10-18: Chinese course shortlist closing written by Opus and read in full. Golf booking remains Andy’s responsibility; other trip arrangements are planning advice. Existing WeChat CTA retained; no new supplier promise. Shared email presentation only for other locales. -->
+
+<!-- 2026-10-21: Consent controls (de/es/fr/nl/sv), EN/DE/ES/FR cookie notice and analytics-data list wording, and all six PWAP inclusion labels reviewed against English. Opus read the consent strings and inclusion labels in full; Swedish saved-choice wording corrected and French/Swedish arranging wording aligned. NL/SV have no legal-page routes; the shared notice is used only by EN/DE/ES/FR. No Chinese consent screen: GA remains excluded there. -->

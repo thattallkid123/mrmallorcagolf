@@ -16,6 +16,11 @@ module.exports = defineConfig({
   reporter: [['list']],
   use: {
     baseURL,
+    // General journeys use a returning visitor who accepted analytics. Consent
+    // regressions explicitly reset this state to exercise a real first visit.
+    storageState: { cookies: [], origins: [{ origin: baseURL, localStorage: [
+      { name: 'mmg-analytics-consent-v1', value: JSON.stringify({ choice: 'accepted', at: Date.now() }) },
+    ] }] },
     trace: 'retain-on-failure',
   },
   projects: [
@@ -29,7 +34,9 @@ module.exports = defineConfig({
     },
   ],
   webServer: {
-    command: `npm run dev -- --hostname 127.0.0.1 --port ${port}`,
+    command: process.env.PLAYWRIGHT_USE_BUILD === '1'
+      ? `npm run start -- --hostname 127.0.0.1 --port ${port}`
+      : `npm run dev -- --hostname 127.0.0.1 --port ${port}`,
     url: baseURL,
     reuseExistingServer: true,
     timeout: 120 * 1000,

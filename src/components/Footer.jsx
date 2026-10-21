@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import Image from 'next/image'
 import { NAV_LOCALES, getLegalPath, hasLocaleRoute, buildLocalePath } from '../lib/site'
+import CookieSettingsButton from './CookieSettingsButton'
 import ReviewBadge from './ReviewBadge'
 import { BookingTermsLink } from './BookingPolicyNotice'
 
@@ -278,6 +279,7 @@ export default function Footer({ lang }) {
             {copy.terms}
           </Link>{' '}{'\u00b7'}{' '}
           <BookingTermsLink locale={locale} footer />
+          {locale !== 'zh' ? <> {'\u00b7'} <CookieSettingsButton lang={locale} /></> : null}
         </p>
         <div className="footer__lang">
           {NAV_LOCALES.map((code) => (

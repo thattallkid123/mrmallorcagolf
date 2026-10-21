@@ -66,7 +66,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     facts: {
       format: { label: 'Format', value: '18 Löcher, ganzer Tag' },
       courseSelection: { label: 'Platzwahl', value: 'Passend zu Ihrem Spiel und Handicap' },
-      included: { label: 'Leistungen', value: 'Platz, Startzeit, Coaching, Strategie' },
+      included: { label: 'Leistungen', value: 'Platzwahl, Organisation der Startzeit, Coaching und Strategie' },
       duration: { label: 'Dauer', value: 'Meist 5-6 Stunden' },
       dayRateLabel: 'Tagessatz',
       soloLabel: 'solo',
@@ -151,7 +151,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     facts: {
       format: { label: 'Formato', value: '18 hoyos, día completo' },
       courseSelection: { label: 'Elección de campo', value: 'Ajustado a su juego y hándicap' },
-      included: { label: 'Qué incluye', value: 'Campo, hora de salida, coaching, estrategia' },
+      included: { label: 'Qué incluye', value: 'Elección del campo, gestión de la hora de salida, coaching y estrategia' },
       duration: { label: 'Duración', value: 'Normalmente 5-6 horas' },
       dayRateLabel: 'Tarifa del día',
       soloLabel: 'solo',
@@ -236,7 +236,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     facts: {
       format: { label: 'Format', value: '18 trous, journée complète' },
       courseSelection: { label: 'Choix du parcours', value: 'Adapté à votre niveau et votre index' },
-      included: { label: 'Ce qui est inclus', value: 'Parcours, départ, coaching, stratégie' },
+      included: { label: 'Ce qui est inclus', value: 'Choix du parcours, réservation des heures de départ, coaching et stratégie' },
       duration: { label: 'Durée', value: 'Généralement 5 à 6 heures' },
       dayRateLabel: 'Tarif journalier',
       soloLabel: 'solo',
@@ -321,7 +321,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     facts: {
       format: { label: 'Format', value: '18 holes, hele dag' },
       courseSelection: { label: 'Baankeuze', value: 'Passend bij uw spel en handicap' },
-      included: { label: 'Inbegrepen', value: 'Baan, tee time, coaching, strategie' },
+      included: { label: 'Inbegrepen', value: 'Baankeuze, starttijd regelen, coaching en strategie' },
       duration: { label: 'Duur', value: 'Meestal 5-6 uur' },
       dayRateLabel: 'Dagtarief',
       soloLabel: 'solo',
@@ -406,7 +406,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     facts: {
       format: { label: 'Format', value: '18 hål, hel dag' },
       courseSelection: { label: 'Val av bana', value: 'Anpassad efter ditt spel och handicap' },
-      included: { label: 'Vad som ingår', value: 'Bana, starttid, coaching, strategi' },
+      included: { label: 'Vad som ingår', value: 'Val av bana, bokning av starttid, coaching och strategi' },
       duration: { label: 'Tidsåtgång', value: 'Vanligtvis 5-6 timmar' },
       dayRateLabel: 'Dagtaxa',
       soloLabel: 'solo',
@@ -491,7 +491,7 @@ export const PLAY_WITH_A_PRO_EXPLAINED_LOCALIZED_CONTENT = {
     facts: {
       format: { label: '形式', value: '18 洞，完整一天' },
       courseSelection: { label: '球场选择', value: '根据您的球技和差点匹配' },
-      included: { label: '包含内容', value: '球场、开球时间、指导、策略' },
+      included: { label: '包含内容', value: '球场选择、开球时间安排、指导与策略' },
       duration: { label: '时长', value: '通常 5-6 小时' },
       dayRateLabel: '单日费用',
       soloLabel: '单人',
