@@ -65,7 +65,7 @@ def build(filename, story, data, wide=False):
     doc.build(story, onFirstPage=footer, onLaterPages=footer)
 
 def rate_notes(data, table_notes=True):
-    note = 'Course-data review: '+data['reviewed']+'. Prices are planning indications, not quotes. Variable rates change by date and demand. '
+    note = 'Prices are planning indications, not quotes. Variable rates change by date and demand. '
     if table_notes:
         note += 'An asterisk marks date-variable rates. Nine-hole courses are marked. Palma Pitch &amp; Putt has nine holes; its listed fees cover 18 holes and vary by weekday. Member-only and hotel-only prices are not public visitor rates. '
     return Paragraph(note+'Confirm access and exact prices before booking.', BODY)
@@ -108,14 +108,16 @@ def generate_trip_planner(data):
         story.append(Paragraph(title,heading))
         if name:
             c=next(c for c in data['courses'] if c['canonicalName']==name)
-            description = f'{text(c["name"])}: {euro(c["low"])} to {euro(c["peak"])} green fee; {c["holes"]} holes, par {c["par"]}; about {c["fromPalma"]} minutes from Palma. {text(c["handicap"])}'+('; certificate required. ' if c['certificate'] else '. ')+description
+            # The official Son Vida scorecard offers par 70 and 71 layouts.
+            par_label = '70 or 71, depending on the layout' if name == 'Golf Son Vida' else str(c['par'])
+            description = f'{text(c["name"])}: {euro(c["low"])} to {euro(c["peak"])} green fee; {c["holes"]} holes, par {par_label}; about {c["fromPalma"]} minutes from Palma. {text(c["handicap"])}'+('; certificate required. ' if c['certificate'] else '. ')+description
         story.append(Paragraph(description,body))
     # Venue facts checked against their official sites on 21 October 2026.
     story.extend([
         Paragraph('A Palma base and two meal ideas', heading),
         Paragraph('<b>Stay: Hotel Saratoga.</b> A central Palma hotel for evenings in the city. Each round in this example needs a drive; it is not a course-side base. Use the <link href="https://www.mrmallorcagolf.com/tools/hotel-recommender" color="#2D4A3E">hotel recommender</link> to compare options for your group.', body),
         Paragraph('<b>After Son Vida: Son Vida Restaurant.</b> Tapas beside the 18th green make it a straightforward lunch stop on day 6, with no extra drive between golf and lunch.', body),
-        Paragraph('<b>A Palma dinner: Marc Fosh.</b> Contemporary Mediterranean cooking in the old Convent de la Missió. Put a longer dinner on the rest day, rather than tying it to the return from Alcanada. Book tables ahead for your group.', body),
+        Paragraph('<b>A Palma dinner: Marc Fosh.</b> Contemporary Mediterranean cooking in the old Convent de la Missió. Open Tuesday to Saturday. Plan a longer dinner on an evening without a long drive back from golf, and book a table ahead.', body),
     ])
     story.extend([rate_notes(data, table_notes=False),Paragraph('Before booking',heading),Paragraph('Confirm the group’s handicaps, dates, hotel, walking or buggy needs, and a budget per person. Prices above are green fees, not a whole-trip price. I plan and book the golf. For hotels, transfers and other arrangements, I work with a local travel partner. We agree the scope, prices and who handles each part before booking.',BODY),Paragraph('<link href="https://www.mrmallorcagolf.com/contact?service=trip-planning" color="#2D4A3E">Send your dates and group details</link>. For another example, read the <link href="https://www.mrmallorcagolf.com/guides/5-day-mallorca-golf-itinerary" color="#2D4A3E">five-round Palma itinerary</link>.',BODY)])
     return story

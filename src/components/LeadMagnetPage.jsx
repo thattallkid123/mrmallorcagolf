@@ -197,11 +197,14 @@ export default function LeadMagnetPage({ guide }) {
         </ul>
 
         <style>{`
-          .lm-input { background: transparent; border: none; }
+          .lm-input { background: transparent; border: none; font-size: 0.88rem; }
+          .lm-btn { padding: var(--space-3) var(--space-5); }
+          .lm-btn-short { display: none; }
           @media (max-width: 480px) {
-            .lm-form { flex-direction: column !important; border: none !important; background: transparent !important; overflow: visible !important; }
-            .lm-input { border: 1px solid rgba(44,42,39,0.2); border-radius: 3px; background: #fff; }
-            .lm-btn { border-radius: 3px; text-align: center; }
+            .lm-input { font-size: 1rem; }
+            .lm-btn { padding: var(--space-3) var(--space-4); }
+            .lm-btn-full { display: none; }
+            .lm-btn-short { display: inline; }
           }
         `}</style>
 
@@ -320,7 +323,6 @@ export default function LeadMagnetPage({ guide }) {
                   minWidth: 0,
                   padding: '14px 16px',
                   fontFamily: "var(--font-sans)",
-                  fontSize: '0.88rem',
                   fontWeight: 300,
                   color: 'var(--deep, #1A1916)',
                     }}
@@ -331,7 +333,6 @@ export default function LeadMagnetPage({ guide }) {
                 className="lm-btn"
                 style={{
                   flexShrink: 0,
-                  padding: '14px 22px',
                   fontFamily: "var(--font-sans)",
                   fontSize: '0.75rem',
                   fontWeight: 500,
@@ -344,7 +345,12 @@ export default function LeadMagnetPage({ guide }) {
                   whiteSpace: 'nowrap',
                 }}
               >
-                {status === 'submitting' ? '...' : guide.buttonLabel}
+                {status === 'submitting' ? '...' : (
+                  <>
+                    <span className="lm-btn-full">{guide.buttonLabel}</span>
+                    <span className="lm-btn-short">Email PDF</span>
+                  </>
+                )}
               </button>
             </form>
             <label
