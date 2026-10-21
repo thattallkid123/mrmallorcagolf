@@ -64,7 +64,8 @@ main { max-width: 1080px; margin: 0 auto; padding: 28px 16px 48px; }
 .booking-contact { margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--sand); }
 .booking-contact p { font-size: 0.95rem; }
 .booking-contact .btn { margin-top: 10px; }
-@media (min-width: 640px) { .trip-overview a { grid-template-columns: minmax(180px, 1fr) minmax(0, 1.2fr) minmax(140px, 1fr); align-items: center; gap: 16px; } }
+@media (min-width: 640px) { .trip-overview a { grid-template-columns: minmax(0, 1fr) minmax(140px, 1fr); align-items: baseline; gap: 4px 16px; } .trip-date { grid-column: 1 / -1; } }
+@media (min-width: 900px) { .trip-overview a { grid-template-columns: 280px minmax(0, 1fr) minmax(140px, 1fr); gap: 16px; } .trip-date { grid-column: auto; white-space: nowrap; } }
 
 .eyebrow { color: var(--gold); font-size: 11px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; }
 h1 { font-family: var(--font-serif); font-weight: 500; font-size: 2.4rem; line-height: 1.1; color: var(--pine); margin: 6px 0 4px; }
