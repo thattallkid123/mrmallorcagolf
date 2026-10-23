@@ -97,7 +97,11 @@ export const REVIEW_PLAY_BOX_BY_SLUG = {
     "course": "Son Vida",
     "quote": "finlay",
     "credit": "Finlay",
-    "photo": null
+    "photo": {
+      "src": "/images/son-vida-blog/son-vida-8.webp",
+      "alt": "Andy hitting an iron shot at Son Vida",
+      "position": "22% 62%"
+    }
   },
   "son-quint-review": {
     "course": "Son Quint",

@@ -435,6 +435,14 @@ export const ALT_TEXT = {
     "nl": "Andy met Sam op T Golf Palma tijdens een Play With A Pro-dag",
     "sv": "Andy med Sam på T Golf Palma under en Play With A Pro-dag",
     "zh": "Andy 与 Sam 在 T Golf Palma 的 Play With A Pro 体验日"
+  },
+  "Andy hitting an iron shot at Son Vida": {
+    "de": "Andy schlägt einen Eisenschlag in Son Vida",
+    "es": "Andy golpeando un hierro en Son Vida",
+    "fr": "Andy jouant un coup de fer à Son Vida",
+    "nl": "Andy slaat een ijzerslag op Son Vida",
+    "sv": "Andy slår ett järnslag på Son Vida",
+    "zh": "Andy 在 Son Vida 打出一记铁杆击球"
   }
 }
 
