@@ -17,13 +17,21 @@ export const REVIEW_PLAY_BOX_BY_SLUG = {
     "course": "Son Muntaner",
     "quote": "matt",
     "credit": "Matt",
-    "photo": null
+    "photo": {
+      "src": "/images/andy-son-muntaner.webp",
+      "alt": "Andy at Son Muntaner Golf",
+      "position": "center 30%"
+    }
   },
   "golf-andratx-review": {
     "course": "Andratx",
     "quote": "adam",
     "credit": "Adam",
-    "photo": null
+    "photo": {
+      "src": "/images/client-group-valley.webp",
+      "alt": "Andy with a group at Golf de Andratx",
+      "position": "center 36%"
+    }
   },
   "t-golf-calvia-review": {
     "course": "T Golf Calvià",
@@ -49,7 +57,11 @@ export const REVIEW_PLAY_BOX_BY_SLUG = {
     "course": "Alcanada",
     "quote": "jo",
     "credit": "Jo",
-    "photo": null
+    "photo": {
+      "src": "/images/client-alcanada.webp",
+      "alt": "Andy with a client at Alcanada",
+      "position": "center 38%"
+    }
   },
   "son-antem-west-review": {
     "course": "Son Antem West",

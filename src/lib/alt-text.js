@@ -411,6 +411,22 @@ export const ALT_TEXT = {
     "nl": "Golfbuggy's in gebruik",
     "sv": "Golfbilar i bruk",
     "zh": "使用中的高尔夫球车"
+  },
+  "Andy with a group at Golf de Andratx": {
+    "de": "Andy mit einer Gruppe im Golf de Andratx",
+    "es": "Andy con un grupo en Golf de Andratx",
+    "fr": "Andy avec un groupe au Golf de Andratx",
+    "nl": "Andy met een groep op Golf de Andratx",
+    "sv": "Andy med en grupp på Golf de Andratx",
+    "zh": "Andy 与一组球手在 Golf de Andratx"
+  },
+  "Andy at Son Muntaner Golf": {
+    "de": "Andy auf dem Golfplatz Son Muntaner",
+    "es": "Andy en el campo de Son Muntaner",
+    "fr": "Andy sur le parcours de Son Muntaner",
+    "nl": "Andy op de golfbaan van Son Muntaner",
+    "sv": "Andy på Son Muntaners golfbana",
+    "zh": "Andy 在 Son Muntaner 球场"
   }
 }
 
