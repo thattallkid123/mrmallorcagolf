@@ -77,13 +77,21 @@ export const REVIEW_PLAY_BOX_BY_SLUG = {
     "course": "Santa Ponsa 1",
     "quote": "synove",
     "credit": "Synøve",
-    "photo": null
+    "photo": {
+      "src": "/images/client-santa-ponsa.jpg",
+      "alt": "Andy with a client at Santa Ponsa during a Play With A Pro day",
+      "position": "center 40%"
+    }
   },
   "t-golf-palma-review": {
     "course": "T Golf Palma",
     "quote": "sam",
     "credit": "Sam",
-    "photo": null
+    "photo": {
+      "src": "/images/client-t-golf-palma-sam.webp",
+      "alt": "Andy with Sam at T Golf Palma during a Play With A Pro day",
+      "position": "center 35%"
+    }
   },
   "son-vida-review": {
     "course": "Son Vida",
