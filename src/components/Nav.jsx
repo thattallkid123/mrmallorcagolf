@@ -135,7 +135,10 @@ export default function Nav({ transparent = false, lang }) {
   useEffect(() => {
     if (!langOpen) return
     const close = (event) => {
-      if (event.type === 'keydown' && event.key !== 'Escape') return
+      if (event.type === 'keydown') {
+        if (event.key !== 'Escape') return
+        langRef.current?.querySelector('.nav__lang-btn')?.focus()
+      }
       if (event.type === 'mousedown' && langRef.current?.contains(event.target)) return
       setLangOpen(false)
     }
@@ -177,7 +180,15 @@ export default function Nav({ transparent = false, lang }) {
             <Link href={config.cta.href} prefetch={false} className="nav__cta"><span>{config.cta.label}</span></Link>
           </li>
           <li>
-            <div className="nav__lang" ref={langRef}>
+            <div className="nav__lang" ref={langRef} onKeyDown={(event) => {
+              if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return
+              event.preventDefault()
+              if (!langOpen) { setLangOpen(true); return }
+              const items = Array.from(langRef.current.querySelectorAll('.nav__lang-menu a'))
+              const at = items.indexOf(document.activeElement)
+              const next = event.key === 'ArrowDown' ? at + 1 : at - 1
+              items[(next + items.length) % items.length]?.focus()
+            }}>
               <button
                 type="button"
                 className="nav__lang-btn"
