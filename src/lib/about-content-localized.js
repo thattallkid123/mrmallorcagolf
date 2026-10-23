@@ -9,15 +9,17 @@ export const ABOUT_LOCALIZED_CONTENT = {
       "breadcrumbHome": "Inicio",
       "breadcrumbCurrent": "Sobre Andy",
       "title": [
-        "El Profesional",
-        "detrás de la Experiencia."
+        "Soy Andy Griffiths."
       ],
       "tags": [
         "UK PGA Advanced Professional",
         "Trackman Master",
         "TPI Level 3",
         "Mallorca"
-      ]
+      ],
+      "lead": "UK PGA Advanced Professional. Entrené durante once años en Shanghái y me mudé a Mallorca con mi familia en marzo de 2025. La mayoría de las semanas estoy en alguno de los campos de la isla, y los golfistas que nos visitan pueden jugar una vuelta completa conmigo.",
+      "primaryCta": "Juegue 18 hoyos conmigo",
+      "secondaryCta": "Lea mi historia"
     },
     "chapters": [
       {
@@ -136,15 +138,17 @@ export const ABOUT_LOCALIZED_CONTENT = {
       "breadcrumbHome": "Startseite",
       "breadcrumbCurrent": "Über",
       "title": [
-        "Der Profi",
-        "hinter dem Erlebnis."
+        "Ich bin Andy Griffiths."
       ],
       "tags": [
         "PGA Advanced Professional",
         "Trackman Master Zertifiziert",
         "TPI Level 3",
         "Auf Mallorca ansässig"
-      ]
+      ],
+      "lead": "UK PGA Advanced Professional. Elf Jahre lang habe ich in Shanghai trainiert, im März 2025 bin ich mit meiner Familie nach Mallorca gezogen. In den meisten Wochen bin ich auf einem der Plätze der Insel unterwegs, und Golfer, die die Insel besuchen, können eine volle Runde mit mir spielen.",
+      "primaryCta": "18 Löcher mit mir spielen",
+      "secondaryCta": "Meine Geschichte lesen"
     },
     "chapters": [
       {
@@ -261,15 +265,17 @@ export const ABOUT_LOCALIZED_CONTENT = {
       "breadcrumbHome": "Accueil",
       "breadcrumbCurrent": "À propos",
       "title": [
-        "Le Professionnel",
-        "Derrière l'Expérience."
+        "Je suis Andy Griffiths."
       ],
       "tags": [
         "Professionnel avancé UKPGA",
         "Certifié Maître Trackman",
         "TPI Niveau 3",
         "Basé à Majorque"
-      ]
+      ],
+      "lead": "UK PGA Advanced Professional. J'ai enseigné onze ans à Shanghai, puis je me suis installé à Majorque avec ma famille en mars 2025. La plupart des semaines, je suis sur l'un des parcours de l'île, et les golfeurs de passage peuvent faire une partie complète avec moi.",
+      "primaryCta": "Jouez 18 trous avec moi",
+      "secondaryCta": "Lire mon histoire"
     },
     "chapters": [
       {
@@ -389,15 +395,17 @@ export const ABOUT_LOCALIZED_CONTENT = {
       "homeHref": "/nl",
       "breadcrumbCurrent": "Over Andy",
       "title": [
-        "De Professional",
-        "achter de Ervaring."
+        "Ik ben Andy Griffiths."
       ],
       "tags": [
         "PGA Advanced Professional",
         "Trackman Master gecertificeerd",
         "TPI Niveau 3",
         "Gevestigd op Mallorca"
-      ]
+      ],
+      "lead": "UK PGA Advanced Professional. Ik gaf elf jaar les in Shanghai en verhuisde in maart 2025 met mijn gezin naar Mallorca. De meeste weken sta ik op een van de banen van het eiland, en golfers die op bezoek zijn kunnen een volledige ronde met mij spelen.",
+      "primaryCta": "Speel 18 holes met mij",
+      "secondaryCta": "Lees mijn verhaal"
     },
     "chapters": [
       {
@@ -512,15 +520,17 @@ export const ABOUT_LOCALIZED_CONTENT = {
       "breadcrumbHome": "Hem",
       "breadcrumbCurrent": "Om",
       "title": [
-        "Professionellen",
-        "bakom upplevelsen."
+        "Jag är Andy Griffiths."
       ],
       "tags": [
         "PGA Advanced Professional",
         "Certifierad Trackman Master",
         "TPI Level 3",
         "Baserad i Mallorca"
-      ]
+      ],
+      "lead": "UK PGA Advanced Professional. Jag tränade i Shanghai i elva år och flyttade till Mallorca med min familj i mars 2025. De flesta veckor är jag ute på någon av öns banor, och golfare som besöker ön kan spela en hel runda med mig.",
+      "primaryCta": "Spela 18 hål med mig",
+      "secondaryCta": "Läs min historia"
     },
     "chapters": [
       {
@@ -627,15 +637,17 @@ export const ABOUT_LOCALIZED_CONTENT = {
       "breadcrumbHome": "首页",
       "breadcrumbCurrent": "关于",
       "title": [
-        "体验背后",
-        "的专业人士。"
+        "我是 Andy Griffiths。"
       ],
       "tags": [
         "PGA高级职业教练",
         "Trackman大师认证",
         "TPI 3级",
         "现居马略卡"
-      ]
+      ],
+      "lead": "UK PGA Advanced Professional。我在上海执教十一年，2025 年 3 月带着家人搬到马略卡。我大多数周都在岛上的球场上，来访的球手可以和我一起打一整轮。",
+      "primaryCta": "与我同场打满 18 洞",
+      "secondaryCta": "阅读我的故事"
     },
     "chapters": [
       {

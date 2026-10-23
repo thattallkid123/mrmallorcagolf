@@ -118,6 +118,17 @@ function buildBreadcrumbSchema(locale, content) {
   }
 }
 
+// The reviews about the day itself and the company come first; the longer improvement stories follow.
+// Authors are proper names, identical in every language, so one order works for all seven.
+const FIRST_REVIEWS = ['Finlay', 'Amanda', 'Adam']
+function orderTestimonials(items) {
+  const rank = (item) => {
+    const at = FIRST_REVIEWS.indexOf(item.author)
+    return at === -1 ? FIRST_REVIEWS.length : at
+  }
+  return items.map((item, index) => ({ item, index })).sort((a, b) => rank(a.item) - rank(b.item) || a.index - b.index).map(({ item }) => item)
+}
+
 function playWithAProContactHref(locale) {
   return `${buildLocalePath('/contact', locale)}?service=pwap`
 }
@@ -191,16 +202,17 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         {content.faq?.items?.length ? <JsonLd data={buildFaqSchema(locale, content)} /> : null}
         <RevealObserver />
 
-        <section className="pwap-hero pwap-hero--tall">
+        <section className="pwap-hero pwap-hero--tall pwap-hero--split">
           <div className="pwap-hero__bg" aria-hidden="true">
             <Image
-              src="/images/andy-coaching-client.webp"
-              alt={localizeAlt(copy.heroImageAlt, locale)}
-              fill
+              src="/images/pwap-hero-amanda.webp"
+              alt={localizeAlt('Andy with Amanda at T Golf Calvia during a Play With A Pro day', locale)}
+              width={1200}
+              height={1600}
               loading="eager" fetchPriority="high"
               quality={88}
-              sizes="100vw"
-              className="pwap-hero__image"
+              sizes="(max-width: 768px) 100vw, 66vw"
+              className="pwap-hero__photo"
             />
             <div className="pwap-hero__overlay" />
           </div>
@@ -229,6 +241,12 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               {content.hero.price ? (
                 <p className="pwap-hero__price">{content.hero.price}</p>
               ) : null}
+              {content.hero.proof ? (
+                <div className="pwap-hero__proof">
+                  <ReviewBadge variant="text" theme="dark" locale={locale} />
+                  <p className="pwap-hero__proof-quote">&ldquo;{content.hero.proof.quote}&rdquo; &middot; {content.hero.proof.credit}</p>
+                </div>
+              ) : null}
               <div className="pwap-hero__actions">
                 <Link href={playWithAProContactHref(locale)} className="btn btn--gold">
                   {content.hero.primaryCta}
@@ -247,6 +265,34 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
             </div>
           </div>
         </section>
+
+        {content.clients ? (
+          <section className="pwap-clients">
+            <p className="eyebrow pwap-clients__eyebrow">{content.clients.eyebrow}</p>
+            <PwapPhotoStrip label={localizeAlt(copy.stripLabel, locale)}>
+              {dayPhotosLoop.map((photo, index) => (
+                <figure
+                  key={`${photo.src}-${index}`}
+                  className={`pwap-day-strip__card${photo.variant === 'portrait' ? ' pwap-day-strip__card--portrait' : ''}`}
+                >
+                  <Image
+                    src={photo.src}
+                    alt={localizeAlt(photo.alt, locale)}
+                    fill
+                    sizes="(max-width: 920px) 78vw, 360px"
+                    style={{ objectFit: 'cover', objectPosition: photo.position || 'center center' }}
+                  />
+                </figure>
+              ))}
+            </PwapPhotoStrip>
+            <blockquote className="pwap-clients__quote">
+              <p>&ldquo;{content.clients.quote}&rdquo;</p>
+              <footer>
+                {content.clients.credit} &middot; <a href="#reviews">{content.clients.linkLabel}</a>
+              </footer>
+            </blockquote>
+          </section>
+        ) : null}
 
         {content.offerSummary ? (
           <section className="pwap-summary">
@@ -288,22 +334,6 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               <p>&ldquo;{content.day.quote}&rdquo;</p>
             </div>
             {content.day.postQuoteParagraph ? <p>{content.day.postQuoteParagraph}</p> : null}
-            <PwapPhotoStrip label={localizeAlt(copy.stripLabel, locale)}>
-                {dayPhotosLoop.map((photo, index) => (
-                  <figure
-                    key={`${photo.src}-${index}`}
-                    className={`pwap-day-strip__card${photo.variant === 'portrait' ? ' pwap-day-strip__card--portrait' : ''}`}
-                  >
-                    <Image
-                      src={photo.src}
-                      alt={localizeAlt(photo.alt, locale)}
-                      fill
-                      sizes="(max-width: 920px) 78vw, 360px"
-                      style={{ objectFit: 'cover', objectPosition: photo.position || 'center center' }}
-                    />
-                  </figure>
-                ))}
-            </PwapPhotoStrip>
             <div className="pwap-course-note">
               <p className="eyebrow">{content.courses.eyebrow}</p>
               <h3>{content.courses.title}</h3>
@@ -364,13 +394,13 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
         ) : null}
 
         {content.testimonials?.items?.length ? (
-          <section className="testimonials">
+          <section className="testimonials" id="reviews">
             <div className="testimonials__header reveal">
               <p className="eyebrow eyebrow--gold">{content.testimonials.eyebrow}</p>
               <h2 className="serif-display" style={{ color: '#fff' }}>{content.testimonials.title}</h2>
             </div>
             <PwapReviewCarousel label={content.testimonials.title} buttonLabel={locale === 'zh' ? '查看更多评价' : 'Scroll for more reviews'}>
-                {content.testimonials.items.map((item) => (
+                {orderTestimonials(content.testimonials.items).map((item) => (
                   <div key={item.author} className="testimonial">
                     <p>{item.text}</p>
                     <p className="testimonial__author">{item.author}</p>

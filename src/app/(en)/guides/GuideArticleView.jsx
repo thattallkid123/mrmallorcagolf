@@ -5,6 +5,8 @@ import PageLayout from '../../../components/PageLayout'
 import GuideSectionNav from '../../../components/GuideSectionNav'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
+import GuideAskBox from '../../../components/GuideAskBox'
+import { getGuideAskBox } from '../../../lib/guide-ask-box'
 import PdfGuidePrompt from '../../../components/PdfGuidePrompt'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import InlineRichText from '../guides/InlineRichText'
@@ -413,6 +415,15 @@ function findPlanningSlot(blocks) {
   return 4
 }
 
+// The "which of these suits your game?" box goes after the opening, at the first section break.
+function findAskSlot(blocks) {
+  for (let i = 1; i < blocks.length - 1; i++) {
+    const here = blocks[i].type
+    if (here !== 'heading' && here !== 'subheading' && blocks[i + 1].type === 'heading') return i
+  }
+  return 1
+}
+
 export default function GuideArticleView({ meta, blocks, locale = 'en', children = null }) {
   let imageOrdinal = 0
   const planningSlot = findPlanningSlot(blocks)
@@ -426,6 +437,9 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
   const stickyLabels = ARTICLE_CTA_LABELS[locale] || ARTICLE_CTA_LABELS.en
   const stickyPlanHref = localizeGuideHref('/plan-your-trip', locale)
   const stickyPlayHref = localizeGuideHref('/play-with-a-pro', locale)
+  const stickyContactHref = localizeGuideHref('/contact', locale)
+  const askBox = meta.slug === 'best-golf-courses-mallorca' ? getGuideAskBox(locale) : null
+  const askSlot = askBox ? findAskSlot(blocks) : -1
 
   return (
     <PageLayout lang={locale === 'en' ? undefined : locale}>
@@ -443,6 +457,24 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
           {blocks.map((block, index) => {
             const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
             const renderedBlock = renderBlock(block, index, locale, currentImageOrdinal, meta.slug)
+
+            if (askBox && index === askSlot) {
+              const withAsk = (
+                <Fragment key={`article-block-with-ask-${index}`}>
+                  {renderedBlock}
+                  <GuideAskBox text={askBox.text} button={askBox.button} href={stickyContactHref} />
+                </Fragment>
+              )
+              if (locale === 'en' && index === planningSlot) {
+                return (
+                  <Fragment key={`article-block-with-ask-planning-${index}`}>
+                    {withAsk}
+                    <ToolPlacementCta tool={contextualTool} compact />
+                  </Fragment>
+                )
+              }
+              return withAsk
+            }
 
             if (locale === 'en' && pdfGuide && index === lastCtaIndex) {
               return (

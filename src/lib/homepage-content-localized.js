@@ -328,6 +328,12 @@ export const HOME_LOCALIZED_CONTENT = {
       "newsletterEyebrow": "BOLETÍN",
       "newsletterTitle": "Ideas de golf en su bandeja de entrada.",
       "newsletterBody": "Condiciones actualizadas a medida que juego. Qué tee times merecen la pena, dónde ruedan rápidos los greens y qué conviene saber antes de volar. Enviado cada dos semanas, puede darse de baja cuando quiera."
+    },
+    "clientStrip": {
+      "eyebrow": "Golfistas con los que he jugado en Mallorca",
+      "quote": "Mis vueltas con Andy fueron lo mejor de mi viaje.",
+      "credit": "John H.",
+      "linkLabel": "Leer todas las opiniones"
     }
   },
   "de": {
@@ -657,6 +663,12 @@ export const HOME_LOCALIZED_CONTENT = {
       "newsletterEyebrow": "DER NEWSLETTER",
       "newsletterTitle": "Golf-Einblicke direkt ins Postfach.",
       "newsletterBody": "Platzbedingungen, sobald ich sie spiele. Welche Startzeiten es wert sind, wo die Grüns schnell laufen und was Sie vor dem Abflug wissen sollten. Alle zwei Wochen, jederzeit abbestellbar."
+    },
+    "clientStrip": {
+      "eyebrow": "Golfer, mit denen ich auf Mallorca gespielt habe",
+      "quote": "Die Runden mit Andy waren der beste Teil meiner Reise.",
+      "credit": "John H.",
+      "linkLabel": "Alle Bewertungen lesen"
     }
   },
   "fr": {
@@ -986,6 +998,12 @@ export const HOME_LOCALIZED_CONTENT = {
       "newsletterEyebrow": "LA NEWSLETTER",
       "newsletterTitle": "Des infos golf livrées régulièrement.",
       "newsletterBody": "Des notes de parcours mises à jour au fil de mes parties. Les heures de départ qui valent le coup, les greens qui roulent vite et ce qu'il faut savoir avant de prendre l'avion. Toutes les deux semaines, désinscription à tout moment."
+    },
+    "clientStrip": {
+      "eyebrow": "Des golfeurs avec qui j'ai joué à Majorque",
+      "quote": "Mes parties avec Andy ont été le meilleur moment de mon voyage.",
+      "credit": "John H.",
+      "linkLabel": "Lire tous les avis"
     }
   },
   "nl": {
@@ -1315,6 +1333,12 @@ export const HOME_LOCALIZED_CONTENT = {
       "newsletterEyebrow": "DE NIEUWSBRIEF",
       "newsletterTitle": "Golfinzichten in uw inbox.",
       "newsletterBody": "Baancondities zodra ik ze speel. Welke starttijden de moeite waard zijn, waar de greens snel lopen en wat u vóór vertrek wilt weten. Eens per twee weken, op elk moment uit te schakelen."
+    },
+    "clientStrip": {
+      "eyebrow": "Golfers met wie ik op Mallorca heb gespeeld",
+      "quote": "Mijn rondes met Andy waren het beste deel van mijn reis.",
+      "credit": "John H.",
+      "linkLabel": "Lees alle reviews"
     }
   },
   "sv": {
@@ -1644,6 +1668,12 @@ export const HOME_LOCALIZED_CONTENT = {
       "newsletterEyebrow": "NYHETSBREVET",
       "newsletterTitle": "Golfinsikter direkt till dig.",
       "newsletterBody": "Banförhållanden uppdaterade när jag spelar dem. Vilka starttider som är värda att jaga, var greenerna rullar snabbt och vad som är bra att veta innan du flyger. Varannan vecka, avregistrera när du vill."
+    },
+    "clientStrip": {
+      "eyebrow": "Golfare jag har spelat med på Mallorca",
+      "quote": "Mina rundor med Andy var den bästa delen av min resa.",
+      "credit": "John H.",
+      "linkLabel": "Läs alla omdömen"
     }
   },
   "zh": {
@@ -1981,6 +2011,12 @@ export const HOME_LOCALIZED_CONTENT = {
       "newsletterEyebrow": "电子简报",
       "newsletterTitle": "高尔夫洞见，定期送达。",
       "newsletterBody": "我会在打球时同步更新球场状况。哪些开球时间值得争取、果岭滚速有多快、出发前哪些信息最重要。每两周发送一次，随时可退订。"
+    },
+    "clientStrip": {
+      "eyebrow": "我在马略卡一起打过球的球手",
+      "quote": "和 Andy 一起打的几轮球是我这次旅行最美好的部分。",
+      "credit": "John H.",
+      "linkLabel": "查看全部评价"
     }
   }
 }

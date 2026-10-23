@@ -24,10 +24,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Jugar con un Pro",
       "eyebrow": "Play With A Pro | Mallorca | Profesional PGA",
       "title": "Un día de 18 hoyos conmigo.",
-      "body": "Play With A Pro: coaching en el campo, estrategia de campo y una mejora real de su juego en el campo de Mallorca que más le conviene.",
+      "body": "Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, entrenando por el camino.",
       "primaryCta": "Consultar sobre su día →",
       "primaryHref": "/es/contact",
-      "secondaryCta": "Ver paquetes"
+      "secondaryCta": "Ver paquetes",
+      "proof": {
+        "quote": "Una vuelta divertida y con muy buena compañía",
+        "credit": "Amanda, T Golf Calvià"
+      }
     },
     "day": {
       "eyebrow": "Qué incluye el día",
@@ -285,6 +289,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "secondaryHref": "https://wa.me/34624466702?text=Hola%20Andy%2C%20me%20interesa%20un%20d%C3%ADa%20de%20golf%20en%20Mallorca.",
       "tertiaryCta": "Explorar los campos →",
       "tertiaryHref": "/es/golf-courses"
+    },
+    "clients": {
+      "eyebrow": "Golfistas con los que he jugado en Mallorca",
+      "quote": "Lo que más disfruté fue lo cómodo que me hizo sentir en el campo.",
+      "credit": "Finlay",
+      "linkLabel": "Leer todas las opiniones"
     }
   },
   "de": {
@@ -309,10 +319,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Mit einem Pro spielen",
       "eyebrow": "Play With A Pro | Mallorca | PGA-Profi",
       "title": "Ein 18-Loch-Tag mit mir.",
-      "body": "Play With A Pro: Coaching auf dem Platz, Platzstrategie und echte Spielverbesserung auf dem für Sie richtigen Platz auf Mallorca.",
+      "body": "Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite, mit Coaching unterwegs.",
       "primaryCta": "Ihren Tag anfragen →",
       "primaryHref": "/de/contact",
-      "secondaryCta": "Pakete ansehen"
+      "secondaryCta": "Pakete ansehen",
+      "proof": {
+        "quote": "Eine Runde mit viel Spaß und toller Gesellschaft",
+        "credit": "Amanda, T Golf Calvià"
+      }
     },
     "day": {
       "eyebrow": "Was der Tag beinhaltet",
@@ -570,6 +584,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "secondaryHref": "https://wa.me/34624466702?text=Hallo%20Andy%2C%20ich%20interessiere%20mich%20f%C3%BCr%20einen%20Golftag%20in%20Mallorca.",
       "tertiaryCta": "Die Plätze entdecken →",
       "tertiaryHref": "/de/golf-courses"
+    },
+    "clients": {
+      "eyebrow": "Golfer, mit denen ich auf Mallorca gespielt habe",
+      "quote": "Am meisten hat mir gefallen, wie wohl ich mich mit ihm auf dem Platz gefühlt habe.",
+      "credit": "Finlay",
+      "linkLabel": "Alle Bewertungen lesen"
     }
   },
   "fr": {
@@ -594,10 +614,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Jouer avec un pro",
       "eyebrow": "Play With A Pro | Majorque | Professionnel PGA",
       "title": "Une journée de 18 trous avec moi.",
-      "body": "Play With A Pro : du coaching sur le parcours, de la stratégie de parcours et une vraie progression de votre jeu, sur le parcours de Majorque qui vous convient.",
+      "body": "Je choisis le parcours selon votre jeu, je réserve le départ et je joue les 18 trous à vos côtés, en vous conseillant au fil de la partie.",
       "primaryCta": "Se renseigner sur la journée →",
       "primaryHref": "/fr/contact",
-      "secondaryCta": "Voir les formules"
+      "secondaryCta": "Voir les formules",
+      "proof": {
+        "quote": "Une partie sympa en très bonne compagnie",
+        "credit": "Amanda, T Golf Calvià"
+      }
     },
     "day": {
       "eyebrow": "Ce que la journée comprend",
@@ -855,6 +879,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "secondaryHref": "https://wa.me/34624466702?text=Bonjour%20Andy%2C%20je%20suis%20int%C3%A9ress%C3%A9%20par%20une%20journ%C3%A9e%20de%20golf%20%C3%A0%20Majorque.",
       "tertiaryCta": "Explorer les parcours →",
       "tertiaryHref": "/fr/golf-courses"
+    },
+    "clients": {
+      "eyebrow": "Des golfeurs avec qui j'ai joué à Majorque",
+      "quote": "Ce que j'ai le plus apprécié, c'est le confort qu'il m'a donné sur le parcours.",
+      "credit": "Finlay",
+      "linkLabel": "Lire tous les avis"
     }
   },
   "nl": {
@@ -878,10 +908,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Spelen met een pro",
       "eyebrow": "Play With A Pro | Mallorca | PGA-professional",
       "title": "Een dag van 18 holes met mij.",
-      "body": "Play With A Pro: coaching op de baan, baanstrategie en echte verbetering van uw spel op de juiste baan op Mallorca voor u.",
+      "body": "Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, met coaching onderweg.",
       "primaryCta": "Informeer naar uw dag →",
       "primaryHref": "/nl/contact",
-      "secondaryCta": "Bekijk pakketten"
+      "secondaryCta": "Bekijk pakketten",
+      "proof": {
+        "quote": "Een leuke ronde in geweldig gezelschap",
+        "credit": "Amanda, T Golf Calvià"
+      }
     },
     "day": {
       "eyebrow": "Wat de dag inhoudt",
@@ -1139,6 +1173,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "secondaryHref": "https://wa.me/34624466702?text=Hallo%20Andy%2C%20ik%20heb%20interesse%20in%20een%20golfdag%20in%20Mallorca.",
       "tertiaryCta": "Ontdek de banen →",
       "tertiaryHref": "/nl/golf-courses"
+    },
+    "clients": {
+      "eyebrow": "Golfers met wie ik op Mallorca heb gespeeld",
+      "quote": "Wat ik het meest waardeerde, was hoe comfortabel hij me op de baan liet voelen.",
+      "credit": "Finlay",
+      "linkLabel": "Lees alle reviews"
     }
   },
   "sv": {
@@ -1163,10 +1203,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Spela med ett proffs",
       "eyebrow": "Play With A Pro | Mallorca | PGA-professional",
       "title": "En dag med 18 hål tillsammans med mig.",
-      "body": "Play With A Pro: coaching på banan, banstrategi och verklig förbättring av ditt spel på rätt bana på Mallorca för dig.",
+      "body": "Jag väljer banan efter ditt spel, bokar starttiden och spelar alla 18 hålen vid din sida, med coaching under rundan.",
       "primaryCta": "Fråga om din dag →",
       "primaryHref": "/sv/contact",
-      "secondaryCta": "Se paket"
+      "secondaryCta": "Se paket",
+      "proof": {
+        "quote": "En rolig runda i härligt sällskap",
+        "credit": "Amanda, T Golf Calvià"
+      }
     },
     "day": {
       "eyebrow": "Vad dagen innehåller",
@@ -1424,6 +1468,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "secondaryHref": "https://wa.me/34624466702?text=Hej%20Andy%2C%20jag%20%C3%A4r%20intresserad%20av%20en%20golfdag%20p%C3%A5%20Mallorca.",
       "tertiaryCta": "Utforska banorna →",
       "tertiaryHref": "/sv/golf-courses"
+    },
+    "clients": {
+      "eyebrow": "Golfare jag har spelat med på Mallorca",
+      "quote": "Det jag uppskattade mest var hur bekväm han fick mig att känna mig ute på banan.",
+      "credit": "Finlay",
+      "linkLabel": "Läs alla omdömen"
     }
   },
   "zh": {
@@ -1448,10 +1498,14 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "与职业球手同场",
       "eyebrow": "Play With A Pro | 马略卡 | PGA 职业教练",
       "title": "与我同打 18 洞的一天。",
-      "body": "Play With A Pro：球场实战指导、球场策略，以及在适合您的马略卡球场上真正提升您的球技。",
+      "body": "我根据您的水平选择球场，订好开球时间，陪您打完全部 18 洞，并在场上随时指导。",
       "primaryCta": "咨询您的高尔夫日 →",
       "primaryHref": "/zh/contact",
-      "secondaryCta": "查看方案"
+      "secondaryCta": "查看方案",
+      "proof": {
+        "quote": "一轮好玩的球，很棒的陪伴",
+        "credit": "Amanda, T Golf Calvià"
+      }
     },
     "day": {
       "eyebrow": "这一天包含什么",
@@ -1709,6 +1763,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "secondaryHref": "https://wa.me/34624466702?text=%E6%82%A8%E5%A5%BD%20Andy%EF%BC%8C%E6%88%91%E5%AF%B9%E9%A9%AC%E7%95%A5%E5%8D%A1%E9%AB%98%E5%B0%94%E5%A4%AB%E4%B9%8B%E6%97%85%E6%84%9F%E5%85%B4%E8%B6%A3%E3%80%82",
       "tertiaryCta": "查看球场 →",
       "tertiaryHref": "/zh/golf-courses"
+    },
+    "clients": {
+      "eyebrow": "我在马略卡一起打过球的球手",
+      "quote": "我最喜欢的是，他让我在球场上始终感觉很自在。",
+      "credit": "Finlay",
+      "linkLabel": "查看全部评价"
     }
   }
 }

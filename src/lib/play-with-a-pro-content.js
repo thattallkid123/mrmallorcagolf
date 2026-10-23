@@ -11,11 +11,15 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "breadcrumbCurrent": "Play With A Pro",
     "eyebrow": "Play With A Pro | Mallorca | PGA Professional",
     "title": "An 18-hole day with me.",
-    "body": "Play With A Pro: on-course coaching, course strategy, and real game improvement on the right Mallorca course for you.",
+    "body": "I choose the course for your game, book the tee time and play all 18 holes alongside you, coaching as we go.",
     "price": null,
     "primaryCta": "Enquire about the day",
     "primaryHref": "/contact",
-    "secondaryCta": "See pricing"
+    "secondaryCta": "See pricing",
+    "proof": {
+      "quote": "Fun round with great company",
+      "credit": "Amanda, T Golf Calvià"
+    }
   },
   "offerSummary": {
     "eyebrow": "At a glance",
@@ -325,6 +329,12 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "secondaryHref": "https://wa.me/34624466702?text=Hi%20Andy%2C%20I%27m%20interested%20in%20a%20golf%20day%20in%20Mallorca.",
     "tertiaryCta": "Explore the Courses",
     "tertiaryHref": "/golf-courses"
+  },
+  "clients": {
+    "eyebrow": "Golfers I have played with in Mallorca",
+    "quote": "The thing I most enjoyed was how comfortable he made me feel on the course.",
+    "credit": "Finlay",
+    "linkLabel": "Read all the reviews"
   }
 }
 }

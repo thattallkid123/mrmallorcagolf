@@ -129,7 +129,11 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "note": "Respondo personalmente a cada consulta en 24 horas. Sus datos se usan solo para responder y organizar el servicio que elija.",
       "experienceHelpTitle": "¿Qué opción le encaja?",
       "experienceHelp": "Elija la opción más cercana y yo afinaré el resto con usted. Planificación de viaje significa que organizo la ruta, los campos y la lógica alrededor de sus fechas y su grupo. Play With A Pro significa que Andy estará con usted en el campo. Si todavía no lo tiene claro, elija la opción de duda y yo le orientaré.",
-      "sendPrompt": "Son útiles las fechas, el tamaño del grupo, la zona del hotel, el rango de hándicap y los campos que ya tenga en su lista. Si aún está decidiendo, envíeme lo que sepa y lo iremos acotando juntos."
+      "sendPrompt": "Son útiles las fechas, el tamaño del grupo, la zona del hotel, el rango de hándicap y los campos que ya tenga en su lista. Si aún está decidiendo, envíeme lo que sepa y lo iremos acotando juntos.",
+      "quickWhatsapp": "Escríbame por WhatsApp",
+      "quickEmail": "Escríbame un correo",
+      "quickOr": "O envíe el breve formulario de abajo. Respondo en un plazo de 24 horas.",
+      "moreDetails": "Añadir más detalles (opcional)"
     },
     "gift": {
       "heading": "¿Es un regalo?",
@@ -277,7 +281,11 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "note": "Ich beantworte jede Anfrage persönlich innerhalb von 24 Stunden. Ihre Angaben nutze ich nur, um zu antworten und die von Ihnen gewählte Leistung zu organisieren.",
       "experienceHelpTitle": "Welche Option passt?",
       "experienceHelp": "Wählen Sie die nächste passende Option und ich verfeinere den Rest mit Ihnen. Reiseplanung bedeutet, dass ich Ablauf, Plätze und Logik rund um Ihre Daten und Gruppe aufbaue. Play With A Pro bedeutet, dass Andy mit Ihnen auf dem Platz ist. Wenn Sie noch unsicher sind, wählen Sie die unsichere Option und ich leite Sie in die richtige Richtung.",
-      "sendPrompt": "Hilfreich sind Daten, Gruppengröße, Hotelregion, Handicap-Bereich und alle Plätze, die schon auf Ihrer Liste stehen. Wenn Sie sich noch entscheiden, schicken Sie mir, was Sie wissen, und wir grenzen es gemeinsam ein."
+      "sendPrompt": "Hilfreich sind Daten, Gruppengröße, Hotelregion, Handicap-Bereich und alle Plätze, die schon auf Ihrer Liste stehen. Wenn Sie sich noch entscheiden, schicken Sie mir, was Sie wissen, und wir grenzen es gemeinsam ein.",
+      "quickWhatsapp": "Schreiben Sie mir auf WhatsApp",
+      "quickEmail": "Schreiben Sie mir eine E-Mail",
+      "quickOr": "Oder senden Sie das kurze Formular unten. Ich antworte innerhalb von 24 Stunden.",
+      "moreDetails": "Weitere Angaben hinzufügen (optional)"
     },
     "gift": {
       "heading": "Schenken Sie diesen Tag?",
@@ -425,7 +433,11 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "note": "Je réponds personnellement à chaque demande sous 24 heures. Vos coordonnées servent uniquement à vous répondre et à organiser la prestation que vous choisissez.",
       "experienceHelpTitle": "Quelle option vous correspond ?",
       "experienceHelp": "Choisissez l'option la plus proche et j'affine le reste avec vous. La planification de voyage signifie que je construis le parcours, la logique et le rythme autour de vos dates et de votre groupe. Play With A Pro signifie qu'Andy sera sur le parcours avec vous. Si vous n'êtes pas encore certain, choisissez l'option d'hésitation et je vous orienterai.",
-      "sendPrompt": "Les dates, la taille du groupe, la zone d'hôtel, la fourchette de handicap et les parcours déjà sur votre liste sont utiles. Si vous hésitez encore, envoyez-moi ce que vous savez et nous affinerons ensemble."
+      "sendPrompt": "Les dates, la taille du groupe, la zone d'hôtel, la fourchette de handicap et les parcours déjà sur votre liste sont utiles. Si vous hésitez encore, envoyez-moi ce que vous savez et nous affinerons ensemble.",
+      "quickWhatsapp": "Écrivez-moi sur WhatsApp",
+      "quickEmail": "Envoyez-moi un e-mail",
+      "quickOr": "Ou envoyez le court formulaire ci-dessous. Je réponds sous 24 heures.",
+      "moreDetails": "Ajouter des précisions (facultatif)"
     },
     "gift": {
       "heading": "Vous offrez cette journée ?",
@@ -573,7 +585,11 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "note": "Ik reageer persoonlijk op elke aanvraag binnen 24 uur. Uw gegevens worden alleen gebruikt om te antwoorden en de dienst te regelen die u kiest.",
       "experienceHelpTitle": "Welke optie past het best?",
       "experienceHelp": "Kies de optie die het dichtst in de buurt komt en ik werk de rest met u uit. Reisplanning betekent dat ik route, banen en timing opbouw rond uw data en uw groep. Play With A Pro betekent dat Andy met u op de baan is. Twijfelt u nog, kies dan de onzekere optie en ik help u de juiste richting op.",
-      "sendPrompt": "Handig zijn de data, groepsgrootte, hotelregio, handicapbereik en banen die al op uw shortlist staan. Twijfelt u nog, stuur dan wat u weet en we scherpen het samen aan."
+      "sendPrompt": "Handig zijn de data, groepsgrootte, hotelregio, handicapbereik en banen die al op uw shortlist staan. Twijfelt u nog, stuur dan wat u weet en we scherpen het samen aan.",
+      "quickWhatsapp": "Stuur me een bericht op WhatsApp",
+      "quickEmail": "Stuur me een e-mail",
+      "quickOr": "Of verstuur het korte formulier hieronder. Ik antwoord binnen 24 uur.",
+      "moreDetails": "Meer gegevens toevoegen (optioneel)"
     },
     "gift": {
       "heading": "Is dit een cadeau?",
@@ -721,7 +737,11 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "note": "Jag svarar personligen på varje förfrågan inom 24 timmar. Dina uppgifter används bara för att svara och ordna den tjänst du väljer.",
       "experienceHelpTitle": "Vilket upplägg passar bäst?",
       "experienceHelp": "Välj det alternativ som ligger närmast så finjusterar jag resten med dig. Reseplanering betyder att jag bygger rutten, banvalet och upplägget runt dina datum och din grupp. Play With A Pro betyder att Andy är med dig ute på banan. Om du inte är säker ännu, välj det osäkra alternativet så pekar jag dig rätt.",
-      "sendPrompt": "Datum, gruppstorlek, hotellområde, handicapintervall och banor som redan finns på din lista är användbart. Är du fortfarande osäker, skicka det du vet så avgränsar vi det tillsammans."
+      "sendPrompt": "Datum, gruppstorlek, hotellområde, handicapintervall och banor som redan finns på din lista är användbart. Är du fortfarande osäker, skicka det du vet så avgränsar vi det tillsammans.",
+      "quickWhatsapp": "Skriv till mig på WhatsApp",
+      "quickEmail": "Maila mig",
+      "quickOr": "Eller skicka det korta formuläret nedan. Jag svarar inom 24 timmar.",
+      "moreDetails": "Lägg till fler uppgifter (valfritt)"
     },
     "gift": {
       "heading": "Köper du detta som en present?",
@@ -872,7 +892,11 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "note": "我会在 24 小时内亲自回复每一条咨询。您的信息只会用于回复，以及安排您所选择的服务。",
       "experienceHelpTitle": "哪一种安排更合适？",
       "experienceHelp": "请选择最接近的选项，我会在此基础上帮您细化。行程规划意味着我会围绕您的日期和同行人安排球场、路线和节奏。Play With A Pro 意味着 Andy 会和您一起下场。如果还不确定，就选择不确定的选项，我会帮您判断。",
-      "sendPrompt": "日期、人数、住宿区域、差点范围，以及您清单上已有的球场都很有帮助。如果还在犹豫，把您已知的信息发给我，我们一起缩小范围。"
+      "sendPrompt": "日期、人数、住宿区域、差点范围，以及您清单上已有的球场都很有帮助。如果还在犹豫，把您已知的信息发给我，我们一起缩小范围。",
+      "quickWhatsapp": "微信联系我",
+      "quickEmail": "发邮件给我",
+      "quickOr": "或者填写下方的简短表单。我会在 24 小时内回复。",
+      "moreDetails": "补充更多信息（选填）"
     },
     "gift": {
       "heading": "这是一份礼物？",

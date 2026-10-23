@@ -234,6 +234,13 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "body": "Dígame sus fechas, el tamaño del grupo y lo que quiere del viaje. Le responderé personalmente en 24 horas con el siguiente paso más claro.",
       "primaryCta": "Planifique su viaje",
       "secondaryCta": "Play With A Pro"
+    },
+    "intro": {
+      "text": "Cada reseña de campo de esta página procede de una vuelta que he jugado. Si no sabe por dónde empezar, pruebe una de estas.",
+      "best": "Los campos que jugaría primero",
+      "cost": "Cuánto cuesta una vuelta en Mallorca",
+      "day": "Un día en el campo conmigo",
+      "photoAlt": "Andy Griffiths en un campo de golf de Mallorca"
     }
   },
   "de": {
@@ -468,6 +475,13 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "body": "Nennen Sie mir Ihre Daten, die Gruppengröße und was Sie sich von der Reise wünschen. Ich antworte persönlich innerhalb von 24 Stunden mit dem klarsten nächsten Schritt.",
       "primaryCta": "Reise planen",
       "secondaryCta": "Play With A Pro"
+    },
+    "intro": {
+      "text": "Jede Platzbewertung hier stammt aus einer Runde, die ich selbst gespielt habe. Wenn Sie nicht wissen, wo Sie anfangen sollen, probieren Sie eine davon.",
+      "best": "Die Plätze, die ich zuerst spielen würde",
+      "cost": "Was eine Runde auf Mallorca kostet",
+      "day": "Ein Tag auf dem Platz mit mir",
+      "photoAlt": "Andy Griffiths auf einem Golfplatz in Mallorca"
     }
   },
   "fr": {
@@ -701,6 +715,13 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "body": "Dites-moi vos dates, la taille du groupe et ce que vous attendez du séjour. Je vous réponds personnellement sous 24 heures avec la prochaine étape la plus claire.",
       "primaryCta": "Planifiez votre voyage",
       "secondaryCta": "Play With A Pro"
+    },
+    "intro": {
+      "text": "Chaque avis sur un parcours ici vient d'une partie que j'ai jouée. Si vous ne savez pas par où commencer, essayez l'un de ceux-ci.",
+      "best": "Les parcours que je jouerais en premier",
+      "cost": "Ce que coûte une partie à Majorque",
+      "day": "Une journée sur le parcours avec moi",
+      "photoAlt": "Andy Griffiths sur un parcours de golf à Majorque"
     }
   },
   "nl": {
@@ -935,6 +956,13 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "body": "Vertel me uw data, de groepsgrootte en wat u van de reis wilt. Ik antwoord persoonlijk binnen 24 uur met de duidelijkste volgende stap.",
       "primaryCta": "Plan uw reis",
       "secondaryCta": "Play With A Pro"
+    },
+    "intro": {
+      "text": "Elke baanrecensie hier komt uit een ronde die ik zelf heb gespeeld. Weet u niet waar u moet beginnen, probeer dan een van deze.",
+      "best": "De banen die ik als eerste zou spelen",
+      "cost": "Wat een ronde op Mallorca kost",
+      "day": "Een dag op de baan met mij",
+      "photoAlt": "Andy Griffiths op een golfbaan op Mallorca"
     }
   },
   "sv": {
@@ -1169,6 +1197,13 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "body": "Berätta dina datum, gruppstorlek och vad du vill ha ut av resan. Jag svarar personligen inom 24 timmar med det tydligaste nästa steget.",
       "primaryCta": "Planera din resa",
       "secondaryCta": "Play With A Pro"
+    },
+    "intro": {
+      "text": "Varje banrecension här kommer från en runda jag har spelat. Om du inte vet var du ska börja kan du prova någon av dessa.",
+      "best": "Banorna jag skulle spela först",
+      "cost": "Vad en runda på Mallorca kostar",
+      "day": "En dag på banan med mig",
+      "photoAlt": "Andy Griffiths på en golfbana på Mallorca"
     }
   },
   "zh": {
@@ -1403,6 +1438,13 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "body": "请告诉我您的日期、人数以及您对这次行程的期望。我会在 24 小时内亲自回复，告诉您最清晰的下一步。",
       "primaryCta": "规划行程",
       "secondaryCta": "陪打体验"
+    },
+    "intro": {
+      "text": "这里的每一篇球场评测都来自我亲自打过的一轮球。如果不知道从哪里开始，可以先看这几篇。",
+      "best": "我会优先去打的球场",
+      "cost": "在马略卡打一轮球要花多少钱",
+      "day": "与我同场的一天",
+      "photoAlt": "Andy Griffiths 在马略卡的高尔夫球场上"
     }
   }
 }

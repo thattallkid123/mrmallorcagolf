@@ -293,6 +293,13 @@ export const GUIDES_CONTENT = {
     "body": "Tell me your dates, group size, and what you want from the trip. I will reply personally within 24 hours with the clearest next step.",
     "primaryCta": "Plan Your Trip",
     "secondaryCta": "Play With A Pro"
+  },
+  "intro": {
+    "text": "Every course review here comes from a round I have played. If you are not sure where to start, try one of these.",
+    "best": "The courses I would play first",
+    "cost": "What a round in Mallorca costs",
+    "day": "A day on the course with me",
+    "photoAlt": "Andy Griffiths on a golf course in Mallorca"
   }
 }
 }

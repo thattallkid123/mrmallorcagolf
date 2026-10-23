@@ -76,6 +76,23 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         <p>{content.form.intro}</p>
       </div>
 
+      {content.form.quickWhatsapp ? (
+        <div className="contact-quick">
+          <a
+            href={whatsappHref}
+            className="contact-quick__btn contact-quick__btn--primary"
+            target={locale === 'zh' ? undefined : '_blank'}
+            rel={locale === 'zh' ? undefined : 'noopener noreferrer'}
+          >
+            {content.form.quickWhatsapp}
+          </a>
+          <a href="mailto:andy@mrmallorcagolf.com" className="contact-quick__btn">
+            {content.form.quickEmail}
+          </a>
+          <p className="contact-quick__note">{content.form.quickOr}</p>
+        </div>
+      ) : null}
+
       <form onSubmit={handleSubmit} aria-busy={submitting}>
         <input
           type="text"
@@ -121,32 +138,18 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           </div>
         </fieldset>
 
-        <div className="form-row">
-          <div className="form-group">
-            <label htmlFor="fname">{content.form.labels.fname}</label>
-            <input
-              type="text"
-              id="fname"
-              name="fname"
-              className="form-control"
-              placeholder={content.form.placeholders.fname}
-              required
-              value={form.fname}
-              onChange={handleChange}
-            />
-          </div>
-          <div className="form-group">
-            <label htmlFor="lname">{content.form.labels.lname}</label>
-            <input
-              type="text"
-              id="lname"
-              name="lname"
-              className="form-control"
-              placeholder={content.form.placeholders.lname}
-              value={form.lname}
-              onChange={handleChange}
-            />
-          </div>
+        <div className="form-group">
+          <label htmlFor="fname">{content.form.labels.fname}</label>
+          <input
+            type="text"
+            id="fname"
+            name="fname"
+            className="form-control"
+            placeholder={content.form.placeholders.fname}
+            required
+            value={form.fname}
+            onChange={handleChange}
+          />
         </div>
 
         <div className="form-group">
@@ -209,20 +212,6 @@ export default function ContactFormPanel({ locale = 'en', content }) {
         </div>
 
         <div className="form-group">
-          <label htmlFor="handicap">{content.form.labels.handicap} <span style={{ fontSize: '0.85em', color: 'var(--taupe)' }}>{content.form.handicapOptional || '(optional)'}</span></label>
-          <input
-            type="text"
-            id="handicap"
-            name="handicap"
-            className="form-control"
-            placeholder={content.form.placeholders.handicap}
-            value={form.handicap}
-            onChange={handleChange}
-            style={{ height: '42px' }}
-          />
-        </div>
-
-        <div className="form-group">
           <label htmlFor="groupsize">{content.form.labels.groupsize}</label>
           <select id="groupsize" name="groupsize" className="form-control" value={form.groupsize} onChange={handleChange}>
             {content.form.groupsizeOptions.map((option) => (
@@ -233,32 +222,61 @@ export default function ContactFormPanel({ locale = 'en', content }) {
           </select>
         </div>
 
-        <div className="form-group">
-          <label htmlFor="courses">{content.form.labels.courses}</label>
-          <input
-            type="text"
-            id="courses"
-            name="courses"
-            className="form-control"
-            placeholder={content.form.placeholders.courses}
-            value={form.courses}
-            onChange={handleChange}
-            style={{ height: '42px' }}
-          />
-        </div>
+        <details className="form-more">
+          <summary>{content.form.moreDetails || '+'}</summary>
 
-        {['pwap', 'tee-time-booking'].includes(form.serviceType) ? null : (
           <div className="form-group">
-            <label htmlFor="hotelHelp">{content.form.labels.hotelHelp}</label>
-            <select id="hotelHelp" name="hotelHelp" className="form-control" value={form.hotelHelp} onChange={handleChange}>
-              {content.form.hotelHelpOptions.map((option) => (
-                <option key={option.label} value={option.value}>
-                  {option.label}
-                </option>
-              ))}
-            </select>
+            <label htmlFor="lname">{content.form.labels.lname}</label>
+            <input
+              type="text"
+              id="lname"
+              name="lname"
+              className="form-control"
+              placeholder={content.form.placeholders.lname}
+              value={form.lname}
+              onChange={handleChange}
+            />
           </div>
-        )}
+
+          <div className="form-group">
+            <label htmlFor="handicap">{content.form.labels.handicap} <span className="form-optional">{content.form.handicapOptional || '(optional)'}</span></label>
+            <input
+              type="text"
+              id="handicap"
+              name="handicap"
+              className="form-control form-control--short"
+              placeholder={content.form.placeholders.handicap}
+              value={form.handicap}
+              onChange={handleChange}
+            />
+          </div>
+
+          <div className="form-group">
+            <label htmlFor="courses">{content.form.labels.courses}</label>
+            <input
+              type="text"
+              id="courses"
+              name="courses"
+              className="form-control form-control--short"
+              placeholder={content.form.placeholders.courses}
+              value={form.courses}
+              onChange={handleChange}
+            />
+          </div>
+
+          {['pwap', 'tee-time-booking'].includes(form.serviceType) ? null : (
+            <div className="form-group">
+              <label htmlFor="hotelHelp">{content.form.labels.hotelHelp}</label>
+              <select id="hotelHelp" name="hotelHelp" className="form-control" value={form.hotelHelp} onChange={handleChange}>
+                {content.form.hotelHelpOptions.map((option) => (
+                  <option key={option.label} value={option.value}>
+                    {option.label}
+                  </option>
+                ))}
+              </select>
+            </div>
+          )}
+        </details>
 
         <div className="form-group">
           <label htmlFor="message">{content.form.labels.message}</label>

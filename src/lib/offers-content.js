@@ -11,7 +11,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Play With A Pro in Mallorca (Majorca): an 18-hole day with PGA Advanced Professional Andy Griffiths. Solo from €795, groups from €950 total, green fees additional.',
     playHeroBody:
-      'Play With A Pro: on-course coaching, course strategy, and real game improvement on the right Mallorca course for you.',
+      'I choose the course for your game, book the tee time and play all 18 holes alongside you, coaching as we go.',
     playMultiDayDetail: null,
     homeMultiDayBody:
       'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',
@@ -48,7 +48,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Ein Golftag auf Mallorca an der Seite von Andy Griffiths. Solo ab €795. Gruppen ab €950 insgesamt. Greenfees zusätzlich.',
     playHeroBody:
-      'Ein Platz. Ein ganzer Tag an der Seite eines PGA Advanced Professionals, der alles organisiert hat. Solo ab €795. Gruppen ab €950 insgesamt. Greenfees zusätzlich, werden bei der Anfrage bestätigt.',
+      'Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite, mit Coaching unterwegs.',
     playMultiDayDetail:
       'Signature Day. Ein privater Golftag mit Andy, einer Session mit John Brazier, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespräch bestätigt, sobald der Tag Form hat.',
     homeMultiDayBody:
@@ -80,7 +80,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Un día de golf en Mallorca junto a Andy Griffiths. Solo desde €795. Grupos desde €950 en total. Green fees adicionales.',
     playHeroBody:
-      'Un campo. Un día completo junto a un PGA Advanced Professional que lo ha organizado todo. Solo desde €795. Grupos desde €950 en total. Green fees adicionales, confirmados cuando hablemos.',
+      'Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, entrenando por el camino.',
     playMultiDayDetail:
       'Signature Day. Un día privado de golf con Andy, una sesión con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversación, cuando el día tiene forma.',
     homeMultiDayBody:
@@ -112,7 +112,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Une journée de golf à Majorque aux côtés d\'Andy Griffiths. Solo à partir de €795. Groupes à partir de €950 au total. Green fees additionnels.',
     playHeroBody:
-      'Un parcours. Une journée complète aux côtés d\'un PGA Advanced Professional qui a tout organisé. En solo à partir de €795. Groupes à partir de €950 au total. Green fees additionnels, confirmés lors de notre conversation.',
+      'Je choisis le parcours selon votre jeu, je réserve le départ et je joue les 18 trous à vos côtés, en vous conseillant au fil de la partie.',
     playMultiDayDetail:
       'Signature Day. Une journée de golf privée avec Andy, une session avec John Brazier, des transferts privés et une soirée coordonnée. Le tarif est confirmé après la première conversation, lorsque le cadre de la journée est clair.',
     homeMultiDayBody:
@@ -144,7 +144,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Een golfdag op Mallorca aan de zijde van Andy Griffiths. Solo vanaf €795. Groepen vanaf €950 in totaal. Greenfees bijkomend.',
     playHeroBody:
-      'Eén baan. Een volledige dag naast een PGA Advanced Professional die alles heeft geregeld. Solo vanaf €795. Groepen vanaf €950 in totaal. Greenfees bijkomend, bevestigd wanneer we spreken.',
+      'Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, met coaching onderweg.',
     playMultiDayDetail:
       'Signature Day. Een privé golfdag met Andy, een sessie met John Brazier, privé transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.',
     homeMultiDayBody:
@@ -176,7 +176,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'En golfdag på Mallorca tillsammans med Andy Griffiths. Solo från €795. Grupper från €950 totalt. Green fees tillkommer.',
     playHeroBody:
-      'En bana. En hel dag tillsammans med en PGA Advanced Professional som har ordnat allt. Solo från €795. Grupper från €950 totalt. Green fees tillkommer, bekräftas när vi pratar.',
+      'Jag väljer banan efter ditt spel, bokar starttiden och spelar alla 18 hålen vid din sida, med coaching under rundan.',
     playMultiDayDetail:
       'Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kväll. Priset bekräftas efter första samtalet, när dagen har form.',
     homeMultiDayBody:
@@ -208,7 +208,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       '与马略卡职业高尔夫教练安迪·格里菲斯共度一天的高尔夫时光。单人 €795。小组从 €950 总计起。果岭费另计。',
     playHeroBody:
-      '一座球场。一整天与一位已经把一切都安排好的 PGA Advanced Professional 同组下场。单人方案 €795。小组从 €950 总计起，果岭费另计。',
+      '我根据您的水平选择球场，订好开球时间，陪您打完全部 18 洞，并在场上随时指导。',
     playMultiDayDetail:
       'Signature Day：与 Andy 同打私人高尔夫日，包含 John Brazier 环节、私人接送和晚间协调。第一次沟通后，等当天范围清楚再确认价格。',
     homeMultiDayBody:

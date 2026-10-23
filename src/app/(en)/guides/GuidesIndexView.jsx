@@ -175,6 +175,22 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         </div>
       </header>
 
+      {content.intro ? (
+        <section className="guides-intro">
+          <div className="guides-intro__photo">
+            <Image src="/images/andy-portrait-hero.webp" alt={content.intro.photoAlt} fill sizes="88px" className="guides-intro__img" />
+          </div>
+          <div className="guides-intro__body">
+            <p className="guides-intro__text">{content.intro.text}</p>
+            <div className="guides-intro__links">
+              <Link href={`${prefix}/guides/best-golf-courses-mallorca`}>{content.intro.best}</Link>
+              <Link href={`${prefix}/guides/golf-cost-mallorca`}>{content.intro.cost}</Link>
+              <Link href={`${prefix}/play-with-a-pro`}>{content.intro.day}</Link>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
       {locale === 'en' ? (
         <section style={{ background: 'var(--cream)', padding: '16px clamp(20px, 5vw, 60px)' }}>
           <ToolPlacementCta

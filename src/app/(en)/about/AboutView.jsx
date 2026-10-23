@@ -6,6 +6,7 @@ import { imageSize } from 'image-size'
 import PageLayout from '../../../components/PageLayout'
 import RevealObserver from '../../../components/RevealObserver'
 import CareerStrip from '../../../components/CareerStrip'
+import ReviewBadge from '../../../components/ReviewBadge'
 
 const CREDENTIAL_LOGOS = [
   { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399 },
@@ -161,16 +162,12 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
         <JsonLd data={buildBreadcrumbSchema(locale)} />
         <RevealObserver />
 
-        <header className="page-hero about-hero">
-          <div className="about-hero__media" aria-hidden="true">
-            <Image src="/images/hero-main.webp" alt="" fill loading="eager" fetchPriority="high" quality={88} sizes="100vw" className="about-hero__image" />
-          </div>
-          <div className="page-hero__inner">
+        <header className="about-intro">
+          <div className="about-intro__text">
             <p className="breadcrumb">
-              <Link href={content.hero.homeHref}>{content.hero.breadcrumbHome}</Link> &nbsp;/&nbsp;{' '}
-              <span style={{ color: 'var(--gold-light)' }}>{content.hero.breadcrumbCurrent}</span>
+              <Link href={content.hero.homeHref}>{content.hero.breadcrumbHome}</Link> &nbsp;/&nbsp; <span className="breadcrumb__current">{content.hero.breadcrumbCurrent}</span>
             </p>
-            <h1>
+            <h1 className="about-intro__title">
               {titleLines.map((line, index) => (
                 <span key={line}>
                   {line}
@@ -179,6 +176,26 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
                 </span>
               ))}
             </h1>
+            <p className="about-intro__lead">{content.hero.lead}</p>
+            <div className="about-intro__proof">
+              <ReviewBadge variant="text" theme="dark" locale={locale} />
+            </div>
+            <div className="about-intro__actions">
+              <Link href={buildLocalePath('/play-with-a-pro', locale)} className="btn btn--gold">{content.hero.primaryCta}</Link>
+              <a href="#story" className="btn btn--outline-white">{content.hero.secondaryCta}</a>
+            </div>
+          </div>
+          <div className="about-intro__photo">
+            <Image
+              src="/images/andy-portrait-hero.webp"
+              alt={content.imageAlt}
+              fill
+              loading="eager"
+              fetchPriority="high"
+              quality={88}
+              sizes="(max-width: 768px) 100vw, 45vw"
+              className="about-intro__image"
+            />
           </div>
         </header>
 
@@ -199,7 +216,7 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             ))}
           </div>
         </section>
-        <div className="story">
+        <div className="story" id="story">
           <main className="story__main">
             {content.chapters.map((chapter) => (
               <div key={chapter.label} className="chapter reveal">

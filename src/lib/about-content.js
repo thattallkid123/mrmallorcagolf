@@ -9,15 +9,17 @@ export const ABOUT_CONTENT = {
     "breadcrumbHome": "Home",
     "breadcrumbCurrent": "About",
     "title": [
-      "The Professional",
-      "Behind the Experience."
+      "I'm Andy Griffiths."
     ],
     "tags": [
       "PGA Advanced Professional",
       "Trackman Master Certified",
       "TPI Level 3",
       "Based in Mallorca"
-    ]
+    ],
+    "lead": "UK PGA Advanced Professional. I coached in Shanghai for eleven years, then moved to Mallorca with my family in March 2025. Most weeks I am out on one of the island's courses, and visiting golfers can join me for a full round.",
+    "primaryCta": "Play 18 holes with me",
+    "secondaryCta": "Read my story"
   },
   "chapters": [
     {

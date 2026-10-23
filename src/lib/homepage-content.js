@@ -430,6 +430,12 @@ export const HOME_CONTENT = {
     "newsletterEyebrow": "THE NEWSLETTER",
     "newsletterTitle": "Golf insights delivered.",
     "newsletterBody": "Course conditions updated as I play them. Which tee times are worth fighting for, where the greens are running fast, and what is worth knowing before you fly. Sent every two weeks, unsubscribe whenever."
+  },
+  "clientStrip": {
+    "eyebrow": "Golfers I have played with in Mallorca",
+    "quote": "My rounds with Andy were the best part of my trip.",
+    "credit": "John H.",
+    "linkLabel": "Read all the reviews"
   }
 }
 }

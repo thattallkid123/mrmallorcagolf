@@ -4331,3 +4331,96 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .email-capture-form button:focus-visible {
   outline-color: var(--cream);
 }
+
+
+/* ---------------------------------------------------------------------------
+   Face-first pages (23 Oct 2026): About intro, Play With A Pro split hero, client strips,
+   review-page box, best-courses box, contact shortcuts, guides intro.
+   Uses only the 768px breakpoint that already exists and adds no override weight.
+--------------------------------------------------------------------------- */
+.about-intro,
+.pwap-hero--split { --hero-green: #17241c; }
+
+/* About: the words and your face before anything else */
+.about-intro { position: relative; display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr); min-height: min(100svh, 880px); background: var(--hero-green); color: #f4efe4; overflow: hidden; }
+.about-intro__text { display: flex; flex-direction: column; justify-content: center; align-items: flex-start; padding: calc(var(--nav-h) + var(--space-8)) var(--space-8) var(--space-8) clamp(24px, 6vw, 96px); }
+.about-intro__text .breadcrumb { margin-bottom: var(--space-5); }
+.breadcrumb__current { color: var(--gold-light); }
+.about-intro__title { margin: 0 0 var(--space-5); font-family: var(--font-serif); font-weight: 500; font-size: clamp(2.6rem, 5.6vw, 4.4rem); line-height: 1.04; color: #fff; text-wrap: balance; }
+.about-intro__lead { max-width: 36rem; margin: 0 0 var(--space-5); font-size: 1.08rem; font-weight: 300; line-height: 1.7; color: rgba(244,239,228,0.88); }
+.about-intro__proof { margin: 0 0 var(--space-6); }
+.about-intro__proof .review-text { align-items: flex-start; }
+.about-intro__actions { display: flex; flex-wrap: wrap; gap: var(--space-3); }
+.about-intro__photo { position: relative; min-height: 420px; }
+.about-intro__image { object-fit: cover; object-position: center 20%; }
+.about-intro__photo::after { content: ''; position: absolute; inset: 0; background: linear-gradient(90deg, var(--hero-green) 0%, rgba(23,36,28,0.85) 12%, rgba(23,36,28,0.55) 26%, rgba(23,36,28,0.25) 42%, rgba(23,36,28,0.06) 58%, rgba(23,36,28,0) 70%); }
+
+/* Play With A Pro: a real client day, with the photo fading into the green */
+.pwap-hero--split .pwap-hero__bg { background-color: var(--hero-green); }
+.pwap-hero--split .pwap-hero__photo { position: absolute; top: 0; right: 0; width: 66%; height: 100%; object-fit: cover; object-position: center 40%; }
+.pwap-hero--split .pwap-hero__overlay { background: linear-gradient(90deg, var(--hero-green) 0%, var(--hero-green) 36%, rgba(23,36,28,0.8) 46%, rgba(23,36,28,0.5) 56%, rgba(23,36,28,0.2) 68%, rgba(23,36,28,0) 82%); }
+.pwap-hero__proof { margin: 0 0 var(--space-5); }
+.pwap-hero__proof .review-text { align-items: flex-start; }
+.pwap-hero__proof-quote { margin: var(--space-2) 0 0; font-size: 0.92rem; font-style: italic; color: var(--gold-light); }
+
+/* Play With A Pro: the client photo strip now sits straight under the first screen */
+.pwap-clients { width: min(1200px, 100%); margin: 0 auto; padding: var(--space-7) 40px var(--space-6); background: linear-gradient(180deg, #f7f3eb 0%, #fbfaf7 100%); border-left: 1px solid var(--linen); border-right: 1px solid var(--linen); text-align: center; }
+.pwap-clients__eyebrow { margin: 0; }
+.pwap-clients__quote { max-width: 40rem; margin: 0 auto; }
+.pwap-clients__quote p { margin: 0 0 var(--space-2); font-family: var(--font-serif); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.3; color: var(--pine); }
+.pwap-clients__quote footer { font-size: 0.85rem; color: var(--taupe); }
+.pwap-clients__quote footer a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Homepage client strip */
+.client-strip { background: var(--cream); padding: var(--space-6) clamp(20px, 5vw, 60px) var(--space-7); text-align: center; }
+.client-strip__eyebrow { margin: 0 0 var(--space-4); font-size: 0.72rem; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: var(--gold-text, #8a6d12); }
+.client-strip__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); max-width: 900px; margin: 0 auto var(--space-5); }
+.client-strip__photo { position: relative; aspect-ratio: 3 / 4; overflow: hidden; border-radius: 4px; }
+.client-strip__img { object-fit: cover; }
+.client-strip__quote { max-width: 40rem; margin: 0 auto; }
+.client-strip__quote p { margin: 0 0 var(--space-2); font-family: var(--font-serif); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.3; color: var(--pine); }
+.client-strip__quote footer { font-size: 0.85rem; color: var(--taupe); }
+.client-strip__quote footer a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+
+/* Box at the end of each course review */
+.review-play__row { display: grid; grid-template-columns: 96px 1fr; gap: var(--space-4); align-items: center; }
+.review-play__row--text-only { grid-template-columns: 1fr; }
+.review-play__photo { position: relative; aspect-ratio: 4 / 5; overflow: hidden; border-radius: 4px; }
+.review-play__img { object-fit: cover; }
+.post-cta.review-play .review-play__quote { margin: 0; font-family: var(--font-sans); font-size: 0.9rem; font-style: italic; font-weight: 300; line-height: 1.6; color: var(--gold-light); }
+
+/* Box near the top of the best-courses guide */
+.guide-ask { display: grid; gap: var(--space-4); margin: var(--space-6) 0; padding: var(--space-5) var(--space-6); background: var(--pine-pale); border-left: 3px solid var(--gold); }
+.guide-ask .guide-ask__text { margin: 0; font-family: var(--font-serif); font-size: 1.15rem; line-height: 1.45; color: var(--pine); }
+.guide-ask a.guide-ask__button { justify-self: start; padding: 12px 22px; background: var(--gold); color: var(--deep); font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; text-decoration: none; }
+
+/* Contact form: WhatsApp and email first, the extra fields folded away */
+.contact-quick { display: grid; grid-template-columns: 1fr 1fr; gap: var(--space-3); margin: 0 0 var(--space-6); }
+.contact-quick__btn { display: block; padding: 14px 12px; border: 1px solid var(--pine); border-radius: 3px; color: var(--pine); font-size: 0.9rem; text-align: center; text-decoration: none; }
+.contact-quick__btn--primary { background: var(--pine); color: #fff; }
+.contact-quick__note { grid-column: 1 / -1; margin: 0; font-size: 0.85rem; color: var(--taupe); text-align: center; }
+.form-more { margin: 0 0 var(--space-5); }
+.form-more > summary { padding: var(--space-2) 0 var(--space-3); color: var(--gold-text, #8a6d12); font-size: 0.92rem; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; list-style: none; }
+.form-more > summary::-webkit-details-marker { display: none; }
+.form-optional { font-size: 0.85em; color: var(--taupe); }
+.form-control--short { height: 42px; }
+
+/* Guides page: a line from you and three places to start */
+.guides-intro { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: var(--space-5); padding: var(--space-6) clamp(20px, 5vw, 60px); background: var(--cream); }
+.guides-intro__photo { position: relative; flex: none; width: 88px; height: 88px; overflow: hidden; border-radius: 50%; }
+.guides-intro__img { object-fit: cover; object-position: center 18%; }
+.guides-intro__body { max-width: 46rem; }
+.guides-intro__text { margin: 0 0 var(--space-3); font-family: var(--font-serif); font-size: 1.2rem; line-height: 1.45; color: var(--pine); }
+.guides-intro__links { display: flex; flex-wrap: wrap; gap: var(--space-2) var(--space-4); }
+.guides-intro__links a { color: var(--gold-text, #8a6d12); font-size: 0.92rem; text-decoration: underline; text-underline-offset: 3px; }
+
+@media (max-width: 768px) {
+  .about-intro { grid-template-columns: 1fr; min-height: 0; }
+  .about-intro__photo { order: -1; min-height: 0; height: 58svh; }
+  .about-intro__photo::after { background: linear-gradient(180deg, rgba(23,36,28,0) 55%, var(--hero-green) 100%); }
+  .about-intro__text { padding: var(--space-5) 22px var(--space-7); }
+  .pwap-hero--split .pwap-hero__photo { width: 100%; height: 54%; object-position: center 30%; }
+  .pwap-hero--split .pwap-hero__overlay { background: linear-gradient(180deg, rgba(23,36,28,0) 30%, var(--hero-green) 52%); }
+  .pwap-clients { padding: var(--space-6) 20px var(--space-5); }
+  .guide-ask { padding: var(--space-5); }
+}
