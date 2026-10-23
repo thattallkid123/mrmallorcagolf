@@ -1,4 +1,3 @@
-import AnalyticsPrivacyNotice from '../../../components/AnalyticsPrivacyNotice'
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import { buildLegalMetadata } from '../../../lib/page-metadata'
@@ -17,7 +16,7 @@ export default function PrivacyPolicy() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Privacy Policy</h1>
-            <p className="legal-page__updated">Last updated: 21 October 2026</p>
+            <p className="legal-page__updated">Last updated: 18 October 2026</p>
           </div>
 
           <section className="legal-section">
@@ -36,7 +35,7 @@ export default function PrivacyPolicy() {
               <li><strong>Email and WhatsApp enquiries:</strong> your name and contact details when you reach out directly</li>
               <li><strong>Course Selector and email signup forms:</strong> your email address, and any optional information you choose to provide when requesting planning notes or shortlist follow-ups</li>
               <li><strong>PDF guide requests:</strong> your email address, the guide you request and whether you opted into planning emails. We keep a separate record of guide requests and receive an email notification. Requesting a guide does not subscribe you to marketing emails.</li>
-              <li><strong>Analytics data:</strong> pseudonymous usage data collected by Google Analytics after your consent (see Section 5)</li>
+              <li><strong>Analytics data:</strong> anonymous usage data collected by Google Analytics (see Section 5)</li>
             </ul>
             <p>Trip cost enquiries also include your selected course mix, estimate and planning choices, such as hotel style, transport and buggy hire. They use the same private follow-up link.</p>
             <p>We do not collect payment card details. All payments are handled offline via bank transfer.</p>
@@ -75,7 +74,7 @@ export default function PrivacyPolicy() {
 
           <section className="legal-section">
             <h2>6. Cookies</h2>
-            <AnalyticsPrivacyNotice lang="en" />
+            <p>This website uses cookies solely for Google Analytics purposes. These are analytics cookies that help us understand how the site is used. No advertising cookies or tracking pixels are used.</p>
             <p>During your visit, session storage remembers the page and campaign that led you to an enquiry. It clears when the browser tab session ends.</p>
             <p>Most browsers allow you to refuse or delete cookies. Doing so will not prevent you from using this website, but will disable analytics tracking.</p>
           </section>

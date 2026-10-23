@@ -1,9 +1,7 @@
 'use client'
 
-import { analyticsAllowed } from './analytics-consent'
-
 function canTrack() {
-  return analyticsAllowed() && typeof window.gtag === 'function'
+  return typeof window !== 'undefined' && typeof window.gtag === 'function'
 }
 
 function withPageDefaults(params = {}) {

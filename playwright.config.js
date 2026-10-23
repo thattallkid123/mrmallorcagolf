@@ -16,11 +16,6 @@ module.exports = defineConfig({
   reporter: [['list']],
   use: {
     baseURL,
-    // General journeys use a returning visitor who accepted analytics. Consent
-    // regressions explicitly reset this state to exercise a real first visit.
-    storageState: { cookies: [], origins: [{ origin: baseURL, localStorage: [
-      { name: 'mmg-analytics-consent-v1', value: JSON.stringify({ choice: 'accepted', at: Date.now() }) },
-    ] }] },
     trace: 'retain-on-failure',
   },
   projects: [

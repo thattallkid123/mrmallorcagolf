@@ -1,4 +1,3 @@
-import AnalyticsPrivacyNotice from '../../../components/AnalyticsPrivacyNotice'
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import { buildLegalMetadata } from '../../../lib/page-metadata'
@@ -7,7 +6,7 @@ export const metadata = buildLegalMetadata('privacy-policy', 'de')
 
 export default function PrivacyPolicyDE() {
   return (
-    <PageLayout lang="de">
+    <PageLayout>
       <div className="legal-page">
         <div className="legal-page__inner">
 
@@ -17,7 +16,7 @@ export default function PrivacyPolicyDE() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Datenschutzerklärung</h1>
-            <p className="legal-page__updated">Zuletzt aktualisiert: 21. Oktober 2026</p>
+            <p className="legal-page__updated">Zuletzt aktualisiert: 18. Oktober 2026</p>
           </div>
 
           <section className="legal-section">
@@ -36,7 +35,7 @@ export default function PrivacyPolicyDE() {
               <li><strong>Anfragen per E-Mail und WhatsApp:</strong> Ihr Name und Ihre Kontaktdaten, wenn Sie sich direkt an uns wenden</li>
               <li><strong>Course Selector und E-Mail-Anmeldeformulare:</strong> Ihre E-Mail-Adresse und alle optionalen Angaben, die Sie beim Anfordern von Planungsnotizen oder Ergebnis-Follow-ups machen</li>
               <li><strong>Anforderung von PDF-Leitfäden:</strong> Ihre E-Mail-Adresse, den von Ihnen angeforderten Leitfaden und die Angabe, ob Sie dem Erhalt von Planungs-E-Mails zugestimmt haben. Wir führen eine separate Aufzeichnung der Leitfaden-Anforderungen und erhalten eine E-Mail-Benachrichtigung. Wenn Sie einen Leitfaden anfordern, melden Sie sich damit nicht für Marketing-E-Mails an.</li>
-              <li><strong>Analysedaten:</strong> pseudonyme Nutzungsdaten, die Google Analytics nach Ihrer Einwilligung erhebt (siehe Abschnitt 5)</li>
+              <li><strong>Analysedaten:</strong> anonyme Nutzungsdaten, die von Google Analytics erhoben werden (siehe Abschnitt 5)</li>
             </ul>
             <p>Anfragen über den Reisekostenrechner enthalten auch Ihre Platzauswahl, Kostenschätzung und Planungsangaben, etwa Hotelstil, Transport und Buggy-Miete. Dafür wird derselbe private Folgelink verwendet.</p>
             <p>Wir erheben keine Zahlungskartendaten. Alle Zahlungen erfolgen offline per Banküberweisung.</p>
@@ -75,7 +74,7 @@ export default function PrivacyPolicyDE() {
 
           <section className="legal-section">
             <h2>6. Cookies</h2>
-            <AnalyticsPrivacyNotice lang="de" />
+            <p>Diese Website verwendet Cookies ausschließlich für Google-Analytics-Zwecke. Es handelt sich um Analyse-Cookies, die uns helfen zu verstehen, wie die Website genutzt wird. Es werden keine Werbe-Cookies oder Tracking-Pixel eingesetzt.</p>
             <p>Während Ihres Besuchs merkt sich der Sitzungsspeicher die Seite und Kampagne, die zu Ihrer Anfrage geführt haben. Diese Daten werden beim Ende der Browser-Tab-Sitzung gelöscht.</p>
             <p>Die meisten Browser erlauben es Ihnen, Cookies abzulehnen oder zu löschen. Dies hindert Sie nicht an der Nutzung dieser Website, deaktiviert aber die Analyse-Erfassung.</p>
           </section>

@@ -1,4 +1,3 @@
-import AnalyticsPrivacyNotice from '../../../components/AnalyticsPrivacyNotice'
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import { buildLegalMetadata } from '../../../lib/page-metadata'
@@ -7,7 +6,7 @@ export const metadata = buildLegalMetadata('privacy-policy', 'es')
 
 export default function PrivacyPolicyES() {
   return (
-    <PageLayout lang="es">
+    <PageLayout>
       <div className="legal-page">
         <div className="legal-page__inner">
 
@@ -16,7 +15,7 @@ export default function PrivacyPolicyES() {
           </p>
 
           <h1 style={{ marginBottom: '0.5rem' }}>Política de Privacidad</h1>
-          <p style={{ color: 'rgba(255,255,255,0.72)', marginBottom: '3rem', fontSize: '0.9rem' }}>Última actualización: 21 de octubre de 2026</p>
+          <p style={{ color: 'rgba(255,255,255,0.72)', marginBottom: '3rem', fontSize: '0.9rem' }}>Última actualización: 18 de octubre de 2026</p>
 
           <section className="legal-section">
             <h2>1. Responsable del tratamiento</h2>
@@ -34,7 +33,7 @@ export default function PrivacyPolicyES() {
               <li><strong>Consultas por correo electrónico y WhatsApp:</strong> tu nombre y datos de contacto cuando te comunicas con nosotros directamente</li>
               <li><strong>Course Selector y formularios de email:</strong> tu dirección de correo y cualquier dato opcional que facilites al pedir resultados o notas de planificación</li>
               <li><strong>Solicitudes de guías en PDF:</strong> su dirección de correo electrónico, la guía que solicita y si ha aceptado recibir correos de planificación. Conservamos un registro independiente de las solicitudes de guías y recibimos una notificación por correo electrónico. Si solicita una guía, no se suscribe a los correos de marketing.</li>
-              <li><strong>Datos analíticos:</strong> datos de uso seudónimos recopilados por Google Analytics tras tu consentimiento (véase la sección 5)</li>
+              <li><strong>Datos analíticos:</strong> datos de uso anónimos recopilados por Google Analytics (véase la sección 5)</li>
             </ul>
             <p>Las consultas del calculador de costes también incluyen los campos elegidos, el presupuesto estimado y las preferencias de hotel, transporte y alquiler de buggy. Utilizan el mismo enlace privado de seguimiento.</p>
             <p>No recopilamos datos de tarjetas de pago. Todos los pagos se gestionan de forma presencial mediante transferencia bancaria.</p>
@@ -73,7 +72,7 @@ export default function PrivacyPolicyES() {
 
           <section className="legal-section">
             <h2>6. Cookies</h2>
-            <AnalyticsPrivacyNotice lang="es" />
+            <p>Este sitio web utiliza cookies exclusivamente con fines de Google Analytics. Son cookies analíticas que nos ayudan a entender cómo se usa el sitio. No se utilizan cookies publicitarias ni pixeles de seguimiento.</p>
             <p>Durante la visita, el almacenamiento de sesión recuerda la página y campaña que te llevaron a la consulta. Estos datos se borran al terminar la sesión de la pestaña del navegador.</p>
             <p>La mayoría de los navegadores te permiten rechazar o eliminar las cookies. Hacerlo no impedirá que uses este sitio web, pero desactivará el seguimiento analítico.</p>
           </section>

@@ -1,4 +1,3 @@
-import AnalyticsPrivacyNotice from '../../../components/AnalyticsPrivacyNotice'
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
 import { buildLegalMetadata } from '../../../lib/page-metadata'
@@ -7,7 +6,7 @@ export const metadata = buildLegalMetadata('privacy-policy', 'fr')
 
 export default function PrivacyPolicyFR() {
   return (
-    <PageLayout lang="fr">
+    <PageLayout>
       <div className="legal-page">
         <div className="legal-page__inner">
 
@@ -17,7 +16,7 @@ export default function PrivacyPolicyFR() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Politique de confidentialité</h1>
-            <p className="legal-page__updated">Dernière mise à jour : 21 octobre 2026</p>
+            <p className="legal-page__updated">Dernière mise à jour : 18 octobre 2026</p>
           </div>
 
           <section className="legal-section">
@@ -36,7 +35,7 @@ export default function PrivacyPolicyFR() {
               <li><strong>Demandes par e-mail et WhatsApp :</strong> votre nom et vos coordonnées lorsque vous nous contactez directement</li>
               <li><strong>Course Selector et formulaires d&rsquo;inscription par e-mail :</strong> votre adresse e-mail et toute information facultative que vous choisissez de fournir en demandant des notes de planification ou un suivi de votre sélection</li>
               <li><strong>Demandes de guides PDF :</strong> votre adresse e-mail, le guide que vous demandez et si vous avez accepté de recevoir les e-mails de planification. Nous conservons un enregistrement distinct des demandes de guides et recevons une notification par e-mail. Si vous demandez un guide, vous ne vous inscrivez pas aux e-mails marketing.</li>
-              <li><strong>Données analytiques :</strong> données d&rsquo;utilisation pseudonymes collectées par Google Analytics après votre consentement (voir la section 5)</li>
+              <li><strong>Données analytiques :</strong> données d&rsquo;usage anonymes collectées par Google Analytics (voir la section 5)</li>
             </ul>
             <p>Les demandes du calculateur de coûts comprennent aussi les parcours choisis, le budget estimé et les préférences de séjour, de transport et de voiturette. Elles utilisent le même lien privé de suivi.</p>
             <p>Nous ne collectons pas de données de carte bancaire. Tous les paiements sont traités hors ligne par virement bancaire.</p>
@@ -75,7 +74,7 @@ export default function PrivacyPolicyFR() {
 
           <section className="legal-section">
             <h2>6. Cookies</h2>
-            <AnalyticsPrivacyNotice lang="fr" />
+            <p>Ce site utilise des cookies uniquement à des fins Google Analytics. Il s&rsquo;agit de cookies analytiques qui nous aident à comprendre l&rsquo;usage du site. Aucun cookie publicitaire ni pixel de suivi n&rsquo;est utilisé.</p>
             <p>Pendant votre visite, le stockage de session conserve la page et la campagne qui vous ont conduit au formulaire. Ces données sont effacées à la fin de la session de l&rsquo;onglet du navigateur.</p>
             <p>La plupart des navigateurs vous permettent de refuser ou de supprimer les cookies. Cela ne vous empêchera pas d&rsquo;utiliser ce site, mais désactivera le suivi analytique.</p>
           </section>

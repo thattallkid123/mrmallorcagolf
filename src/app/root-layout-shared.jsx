@@ -1,6 +1,5 @@
 import '../styles/globals.css'
 import { jost, cormorantGaramond } from '../lib/site-fonts'
-import AnalyticsConsent from '../components/AnalyticsConsent'
 import Script from 'next/script'
 import { getStructuredOfferCatalog } from '../lib/offers-content.js'
 import { ALL_LOCALES, buildLocalePath, SITE_ORIGIN } from '../lib/site.js'
@@ -245,8 +244,32 @@ export default function SiteRootLayout({ lang, children }) {
   return (
     <html lang={lang} suppressHydrationWarning>
       <head>
-        {/* GA is loaded only after explicit analytics consent, never after an
-            arbitrary interaction or delay. See analytics-consent.js. */}
+        {/* Keep strategy="afterInteractive" (loads on page load, not gated on user
+            interaction). A 2026-05-25 Lighthouse-driven change deferred this until
+            a click/tap/keydown or a 3s timeout, which silently undercounted real
+            visitors who bounced before either fired - GA4 organic sessions dropped
+            to a fraction of Search Console's click count for ~9 weeks before being
+            caught and reverted on 2026-07-27 (commit 1c5e259). Don't re-gate this
+            behind interaction for a Lighthouse score again without re-checking GA4
+            vs Search Console afterward. */}
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            (function () {
+              if (window.location.pathname.startsWith('/zh')) return;
+              if (!/^(www\\.)?mrmallorcagolf\\.com$/.test(window.location.hostname)) return;
+
+              var s = document.createElement('script');
+              s.async = true;
+              s.src = 'https://www.googletagmanager.com/gtag/js?id=G-0Z2BRNWB4N';
+              document.head.appendChild(s);
+              window.dataLayer = window.dataLayer || [];
+              window.gtag = function(){window.dataLayer.push(arguments);};
+              window.gtag('js', new Date());
+              window.gtag('config', 'G-0Z2BRNWB4N');
+            })();
+          `}
+        </Script>
+
         <Script id="baidu-analytics" strategy="afterInteractive">
           {`
             (function () {
@@ -269,7 +292,6 @@ export default function SiteRootLayout({ lang, children }) {
         <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }} />
       </head>
       <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
-        <AnalyticsConsent lang={lang} />
         <ScrollToTop />
         <PageViewTracker />
         <ScrollDepthTracker />
