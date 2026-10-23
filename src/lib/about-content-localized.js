@@ -317,7 +317,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "text": "Aucun jugement, beaucoup de connaissances et des objectifs clairs ont rendu la leçon vraiment efficace et agréable."
         },
         {
-          "text": "Ce que j'ai le plus apprécié, c'est le confort qu'il m'a donné sur le parcours."
+          "text": "Ce que j'ai le plus apprécié, c'est à quel point il m'a mis à l'aise sur le parcours."
         },
         {
           "text": "Andy allie une affabilité si naturelle à une sagesse profonde ; jouer avec lui est un véritable privilège."
@@ -445,7 +445,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "text": "Geen oordeel, veel kennis en duidelijke doelen maakten de les echt effectief en plezierig."
         },
         {
-          "text": "Wat ik het meest waardeerde, was hoe comfortabel hij me op de baan liet voelen."
+          "text": "Wat ik het meest waardeerde, was hoe hij me op de baan op mijn gemak stelde."
         },
         {
           "text": "Andy straalt zo'n ongedwongen vriendelijkheid en diepe wijsheid uit; met hem spelen is een echt voorrecht."
@@ -570,7 +570,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
           "text": "Inget dömande, mycket kunskap och tydliga mål gjorde lektionen riktigt effektiv och rolig."
         },
         {
-          "text": "Det jag uppskattade mest var hur bekväm han fick mig att känna mig ute på banan."
+          "text": "Det jag uppskattade mest var hur avslappnad han fick mig att känna mig ute på banan."
         },
         {
           "text": "Andy har en så lättsam vänlighet och en djup visdom; att spela med honom är ett riktigt privilegium."
