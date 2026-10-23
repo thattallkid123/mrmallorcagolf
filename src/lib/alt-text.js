@@ -429,9 +429,9 @@ export const ALT_TEXT = {
     "zh": "Andy 在 Son Muntaner 球场"
   },
   "Andy with Sam at T Golf Palma during a Play With A Pro day": {
-    "de": "Andy mit Sam in T Golf Palma bei einem Play-With-A-Pro-Tag",
+    "de": "Andy mit Sam im T Golf Palma bei einem Play-With-A-Pro-Tag",
     "es": "Andy con Sam en T Golf Palma durante un día Play With A Pro",
-    "fr": "Andy avec Sam à T Golf Palma lors d'une journée Play With A Pro",
+    "fr": "Andy avec Sam au T Golf Palma lors d'une journée Play With A Pro",
     "nl": "Andy met Sam op T Golf Palma tijdens een Play With A Pro-dag",
     "sv": "Andy med Sam på T Golf Palma under en Play With A Pro-dag",
     "zh": "Andy 与 Sam 在 T Golf Palma 的 Play With A Pro 体验日"

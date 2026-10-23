@@ -48,7 +48,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Ein Golftag auf Mallorca an der Seite von Andy Griffiths. Solo ab €795. Gruppen ab €950 insgesamt. Greenfees zusätzlich.',
     playHeroBody:
-      'Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite, mit Coaching unterwegs.',
+      'Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite und coache Sie während der Runde.',
     playMultiDayDetail:
       'Signature Day. Ein privater Golftag mit Andy, einer Session mit John Brazier, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespräch bestätigt, sobald der Tag Form hat.',
     homeMultiDayBody:
@@ -80,7 +80,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Un día de golf en Mallorca junto a Andy Griffiths. Solo desde €795. Grupos desde €950 en total. Green fees adicionales.',
     playHeroBody:
-      'Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, entrenando por el camino.',
+      'Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, dándole consejos durante toda la vuelta.',
     playMultiDayDetail:
       'Signature Day. Un día privado de golf con Andy, una sesión con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversación, cuando el día tiene forma.',
     homeMultiDayBody:
@@ -144,7 +144,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Een golfdag op Mallorca aan de zijde van Andy Griffiths. Solo vanaf €795. Groepen vanaf €950 in totaal. Greenfees bijkomend.',
     playHeroBody:
-      'Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, met coaching onderweg.',
+      'Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, en coach u tijdens de ronde.',
     playMultiDayDetail:
       'Signature Day. Een privé golfdag met Andy, een sessie met John Brazier, privé transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.',
     homeMultiDayBody:

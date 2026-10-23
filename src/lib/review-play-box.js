@@ -114,35 +114,35 @@ export const REVIEW_PLAY_BOX_BY_SLUG = {
 export const REVIEW_PLAY_QUOTES = {
   "jannie": {
     "en": "Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s, playing with confidence and loving golf again.",
-    "de": "Drei Wochen später hatte ich es von gelegentlichem Herumschlagen zu Runden in den niedrigen 90ern geschafft, spiele mit Selbstvertrauen und liebe Golf wieder.",
-    "es": "Tres semanas más tarde, había pasado de jugar de vez en cuando a hacer vueltas en los noventa bajos, jugando con confianza y disfrutando de nuevo del golf.",
+    "de": "Drei Wochen später hatte ich es vom gelegentlichen Herumhacken zu Runden in den niedrigen 90ern geschafft, spielte mit Selbstvertrauen und liebte Golf wieder.",
+    "es": "Tres semanas más tarde, había pasado de dar palos un par de veces al año a hacer vueltas de poco más de 90 golpes, jugando con confianza y disfrutando de nuevo del golf.",
     "fr": "Trois semaines plus tard, moi qui tapais la balle n'importe comment deux ou trois fois par an, je rendais des cartes à 90 et quelques, en jouant avec confiance et en retrouvant le plaisir du golf.",
-    "nl": "Drie weken later was ik gegaan van af en toe wat rondjes hakken naar scores in de lage negentig, speel ik met vertrouwen en geniet ik weer volop van golf.",
-    "sv": "Tre veckor senare hade jag gått från att hacka mig runt banan då och då till att slå rundor i låga nittiotalet, spelar med självförtroende och älskar golf igen.",
-    "zh": "三周之后，我从偶尔打几次，进步到能打出接近 90 杆的成绩，打球更自信，也重新爱上了高尔夫。"
+    "nl": "Drie weken later was ik van af en toe wat rondhakken gegaan naar scores in de lage negentig, speelde ik met vertrouwen en genoot ik weer volop van golf.",
+    "sv": "Tre veckor senare hade jag gått från att hacka mig runt banan ett par gånger om året till att gå runt på låga 90, spelade med självförtroende och älskade golf igen.",
+    "zh": "三周之后，我从一年只胡乱打几次，进步到能打出 90 出头的成绩，打球更自信，也重新爱上了高尔夫。"
   },
   "matt": {
     "en": "Zero judgement and a wealth of knowledge with clear goals meant the lesson was really effective and enjoyable.",
-    "de": "Keinerlei Bewertung, viel Wissen und klare Ziele machten die Stunde wirklich effektiv und angenehm.",
+    "de": "Ganz ohne Wertung, mit viel Wissen und klaren Zielen war die Stunde wirklich effektiv und angenehm.",
     "es": "Cero juicios, muchísimo conocimiento y objetivos claros hicieron que la clase fuera realmente eficaz y agradable.",
     "fr": "Aucun jugement, beaucoup de connaissances et des objectifs clairs ont rendu la leçon vraiment efficace et agréable.",
     "nl": "Geen oordeel, veel kennis en duidelijke doelen maakten de les echt effectief en plezierig.",
-    "sv": "Noll dömande, mycket kunskap och tydliga mål gjorde lektionen riktigt effektiv och rolig.",
+    "sv": "Inget dömande, mycket kunskap och tydliga mål gjorde lektionen riktigt effektiv och rolig.",
     "zh": "没有任何评判，知识渊博、目标清晰，让这堂课既高效又愉快。"
   },
   "adam": {
     "en": "Even the smallest tweaks produced consistent results.",
     "de": "Selbst die kleinsten Anpassungen brachten konstante Ergebnisse.",
-    "es": "Incluso los ajustes más pequeños dieron resultados consistentes.",
+    "es": "Incluso los ajustes más pequeños dieron resultados constantes.",
     "fr": "Même les plus petits ajustements ont donné des résultats constants.",
     "nl": "Zelfs de kleinste aanpassingen leverden consistente resultaten op.",
-    "sv": "Även de minsta justeringarna gav konsekventa resultat.",
+    "sv": "Även de minsta justeringarna gav jämna resultat.",
     "zh": "即使是最小的调整也带来了稳定的效果。"
   },
   "amanda": {
     "en": "Fun round with great company",
     "de": "Eine Runde mit viel Spaß und toller Gesellschaft",
-    "es": "Una vuelta divertida y con muy buena compañía",
+    "es": "Una vuelta divertida con muy buena compañía",
     "fr": "Une partie sympa en très bonne compagnie",
     "nl": "Een leuke ronde in geweldig gezelschap",
     "sv": "En rolig runda i härligt sällskap",
@@ -159,10 +159,10 @@ export const REVIEW_PLAY_QUOTES = {
   },
   "jo": {
     "en": "Knows his craft, understands how to help you improve, and offers deep insights.",
-    "de": "Er kennt sein Handwerk, weiß, wie er einem beim Besserwerden hilft, und liefert tiefe Einblicke.",
+    "de": "Er kennt sein Handwerk, weiß, wie er einem hilft, besser zu werden, und liefert tiefe Einblicke.",
     "es": "Domina su oficio, sabe cómo ayudarte a mejorar y aporta ideas profundas.",
     "fr": "Il maîtrise son métier, sait comment vous aider à progresser et apporte des analyses profondes.",
-    "nl": "Hij kent zijn vak, weet hoe hij je kunt helpen verbeteren en biedt diepe inzichten.",
+    "nl": "Hij kent zijn vak, weet hoe hij je kan helpen beter te worden en biedt diepgaande inzichten.",
     "sv": "Han kan sitt hantverk, vet hur man hjälper en att bli bättre och ger djupa insikter.",
     "zh": "他精通自己的专业，懂得如何帮你提高，见解深刻。"
   },
@@ -172,7 +172,7 @@ export const REVIEW_PLAY_QUOTES = {
     "es": "Aprendí más en medio día con él que en un año jugando solo.",
     "fr": "J'ai appris plus en une demi-journée avec lui qu'en un an à jouer seul.",
     "nl": "Ik leerde meer in een halve dag met hem dan in een jaar alleen spelen.",
-    "sv": "Jag lärde mig mer på en halv dag med honom än på ett år av att spela själv.",
+    "sv": "Jag lärde mig mer på en halv dag med honom än på ett år på egen hand.",
     "zh": "跟他打半天球学到的东西，比我自己打一年球学到的还多。"
   },
   "synove": {
@@ -197,19 +197,19 @@ export const REVIEW_PLAY_QUOTES = {
     "en": "The thing I most enjoyed was how comfortable he made me feel on the course.",
     "de": "Am meisten hat mir gefallen, wie wohl ich mich mit ihm auf dem Platz gefühlt habe.",
     "es": "Lo que más disfruté fue lo cómodo que me hizo sentir en el campo.",
-    "fr": "Ce que j'ai le plus apprécié, c'est le confort qu'il m'a donné sur le parcours.",
-    "nl": "Wat ik het meest waardeerde, was hoe comfortabel hij me op de baan liet voelen.",
-    "sv": "Det jag uppskattade mest var hur bekväm han fick mig att känna mig ute på banan.",
+    "fr": "Ce que j'ai le plus apprécié, c'est à quel point il m'a mis à l'aise sur le parcours.",
+    "nl": "Wat ik het meest waardeerde, was hoe hij me op de baan op mijn gemak stelde.",
+    "sv": "Det jag uppskattade mest var hur avslappnad han fick mig att känna mig ute på banan.",
     "zh": "我最喜欢的是，他让我在球场上始终感觉很自在。"
   },
   "johnh": {
     "en": "My rounds with Andy were the best part of my trip.",
-    "de": "Die Runden mit Andy waren der beste Teil meiner Reise.",
-    "es": "Mis vueltas con Andy fueron lo mejor de mi viaje.",
+    "de": "Meine Runden mit Andy waren das Beste an meiner Reise.",
+    "es": "Mis vueltas con Andy fueron lo mejor del viaje.",
     "fr": "Mes parties avec Andy ont été le meilleur moment de mon voyage.",
     "nl": "Mijn rondes met Andy waren het beste deel van mijn reis.",
-    "sv": "Mina rundor med Andy var den bästa delen av min resa.",
-    "zh": "和 Andy 一起打的几轮球是我这次旅行最美好的部分。"
+    "sv": "Mina rundor med Andy var det bästa med resan.",
+    "zh": "和 Andy 的几场球是整趟旅行中最美好的部分。"
   }
 }
 
@@ -225,22 +225,12 @@ export const REVIEW_PLAY_TEMPLATE = {
 
 export const REVIEW_PLAY_BUTTON = {
   "en": "See what a day with me includes",
-  "de": "Sehen Sie, was ein Tag mit mir beinhaltet",
+  "de": "Was ein Tag mit mir umfasst",
   "es": "Mira qué incluye un día conmigo",
   "fr": "Voir ce que comprend une journée avec moi",
   "nl": "Bekijk wat een dag met mij inhoudt",
   "sv": "Se vad en dag med mig innehåller",
-  "zh": "了解与我同场一天包含什么"
-}
-
-export const REVIEW_PLAY_FUNNEL_Q2 = {
-  "en": "Want me to plan the trip around this course?",
-  "de": "Möchten Sie, dass ich hier eine Runde organisiere?",
-  "es": "¿Quieres que organice una vuelta aquí?",
-  "fr": "Souhaitez-vous que j'organise une partie ici ?",
-  "nl": "Wilt u dat ik hier een ronde regel?",
-  "sv": "Vill du att jag ordnar en runda här?",
-  "zh": "想让我为您安排一场球局？"
+  "zh": "看看和我同场一天包括哪些内容"
 }
 
 export const REVIEW_PLAY_SECONDARY_EN = "Still narrowing down the trip? Start with Plan Your Trip and send me your dates, hotel area, handicap, and shortlist."

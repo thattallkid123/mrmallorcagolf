@@ -477,11 +477,11 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "secondaryCta": "Play With A Pro"
     },
     "intro": {
-      "text": "Jede Platzbewertung hier stammt aus einer Runde, die ich selbst gespielt habe. Wenn Sie nicht wissen, wo Sie anfangen sollen, probieren Sie eine davon.",
+      "text": "Jede Platzbewertung hier stammt aus einer Runde, die ich selbst gespielt habe. Wenn Sie nicht wissen, wo Sie anfangen sollen, beginnen Sie mit einer dieser Seiten.",
       "best": "Die Plätze, die ich zuerst spielen würde",
       "cost": "Was eine Runde auf Mallorca kostet",
       "day": "Ein Tag auf dem Platz mit mir",
-      "photoAlt": "Andy Griffiths auf einem Golfplatz in Mallorca"
+      "photoAlt": "Andy Griffiths auf einem Golfplatz auf Mallorca"
     }
   },
   "fr": {
@@ -717,7 +717,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "secondaryCta": "Play With A Pro"
     },
     "intro": {
-      "text": "Chaque avis sur un parcours ici vient d'une partie que j'ai jouée. Si vous ne savez pas par où commencer, essayez l'un de ceux-ci.",
+      "text": "Chaque avis sur un parcours ici vient d'une partie que j'ai jouée. Si vous ne savez pas par où commencer, commencez par l'une de ces pages.",
       "best": "Les parcours que je jouerais en premier",
       "cost": "Ce que coûte une partie à Majorque",
       "day": "Une journée sur le parcours avec moi",

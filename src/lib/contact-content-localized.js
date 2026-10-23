@@ -284,7 +284,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "sendPrompt": "Hilfreich sind Daten, Gruppengröße, Hotelregion, Handicap-Bereich und alle Plätze, die schon auf Ihrer Liste stehen. Wenn Sie sich noch entscheiden, schicken Sie mir, was Sie wissen, und wir grenzen es gemeinsam ein.",
       "quickWhatsapp": "Schreiben Sie mir auf WhatsApp",
       "quickEmail": "Schreiben Sie mir eine E-Mail",
-      "quickOr": "Oder senden Sie das kurze Formular unten. Ich antworte innerhalb von 24 Stunden.",
+      "quickOr": "Oder nutzen Sie das kurze Formular unten. Ich antworte innerhalb von 24 Stunden.",
       "moreDetails": "Weitere Angaben hinzufügen (optional)"
     },
     "gift": {
@@ -436,7 +436,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "sendPrompt": "Les dates, la taille du groupe, la zone d'hôtel, la fourchette de handicap et les parcours déjà sur votre liste sont utiles. Si vous hésitez encore, envoyez-moi ce que vous savez et nous affinerons ensemble.",
       "quickWhatsapp": "Écrivez-moi sur WhatsApp",
       "quickEmail": "Envoyez-moi un e-mail",
-      "quickOr": "Ou envoyez le court formulaire ci-dessous. Je réponds sous 24 heures.",
+      "quickOr": "Ou remplissez le court formulaire ci-dessous. Je réponds sous 24 heures.",
       "moreDetails": "Ajouter des précisions (facultatif)"
     },
     "gift": {
@@ -589,7 +589,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
       "quickWhatsapp": "Stuur me een bericht op WhatsApp",
       "quickEmail": "Stuur me een e-mail",
       "quickOr": "Of verstuur het korte formulier hieronder. Ik antwoord binnen 24 uur.",
-      "moreDetails": "Meer gegevens toevoegen (optioneel)"
+      "moreDetails": "Meer details toevoegen (optioneel)"
     },
     "gift": {
       "heading": "Is dit een cadeau?",

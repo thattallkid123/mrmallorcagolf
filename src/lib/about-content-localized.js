@@ -17,7 +17,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "TPI Level 3",
         "Mallorca"
       ],
-      "lead": "UK PGA Advanced Professional. Entrené durante once años en Shanghái y me mudé a Mallorca con mi familia en marzo de 2025. La mayoría de las semanas estoy en alguno de los campos de la isla, y los golfistas que nos visitan pueden jugar una vuelta completa conmigo.",
+      "lead": "UK PGA Advanced Professional. Fui entrenador durante once años en Shanghái y me mudé a Mallorca con mi familia en marzo de 2025. La mayoría de las semanas estoy en alguno de los campos de la isla, y los golfistas que nos visitan pueden jugar una vuelta completa conmigo.",
       "primaryCta": "Juegue 18 hoyos conmigo",
       "secondaryCta": "Lea mi historia"
     },
@@ -146,7 +146,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "TPI Level 3",
         "Auf Mallorca ansässig"
       ],
-      "lead": "UK PGA Advanced Professional. Elf Jahre lang habe ich in Shanghai trainiert, im März 2025 bin ich mit meiner Familie nach Mallorca gezogen. In den meisten Wochen bin ich auf einem der Plätze der Insel unterwegs, und Golfer, die die Insel besuchen, können eine volle Runde mit mir spielen.",
+      "lead": "UK PGA Advanced Professional. Elf Jahre lang habe ich in Shanghai als Coach gearbeitet und bin im März 2025 mit meiner Familie nach Mallorca gezogen. In den meisten Wochen bin ich auf einem der Plätze der Insel unterwegs, und Golfer, die die Insel besuchen, können eine volle Runde mit mir spielen.",
       "primaryCta": "18 Löcher mit mir spielen",
       "secondaryCta": "Meine Geschichte lesen"
     },
@@ -185,7 +185,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
       "title": "Was Kunden über den Tag sagen.",
       "quotes": [
         {
-          "text": "Keinerlei Bewertung, viel Wissen und klare Ziele machten die Stunde wirklich effektiv und angenehm."
+          "text": "Ganz ohne Wertung, mit viel Wissen und klaren Zielen war die Stunde wirklich effektiv und angenehm."
         },
         {
           "text": "Am meisten hat mir gefallen, wie wohl ich mich mit ihm auf dem Platz gefühlt habe."
@@ -275,7 +275,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
       ],
       "lead": "UK PGA Advanced Professional. J'ai enseigné onze ans à Shanghai, puis je me suis installé à Majorque avec ma famille en mars 2025. La plupart des semaines, je suis sur l'un des parcours de l'île, et les golfeurs de passage peuvent faire une partie complète avec moi.",
       "primaryCta": "Jouez 18 trous avec moi",
-      "secondaryCta": "Lire mon histoire"
+      "secondaryCta": "Lisez mon histoire"
     },
     "chapters": [
       {
@@ -528,7 +528,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "TPI Level 3",
         "Baserad i Mallorca"
       ],
-      "lead": "UK PGA Advanced Professional. Jag tränade i Shanghai i elva år och flyttade till Mallorca med min familj i mars 2025. De flesta veckor är jag ute på någon av öns banor, och golfare som besöker ön kan spela en hel runda med mig.",
+      "lead": "UK PGA Advanced Professional. Jag var golftränare i Shanghai i elva år och flyttade till Mallorca med min familj i mars 2025. De flesta veckor är jag ute på någon av öns banor, och golfare som besöker ön kan spela en hel runda med mig.",
       "primaryCta": "Spela 18 hål med mig",
       "secondaryCta": "Läs min historia"
     },
@@ -567,7 +567,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
       "title": "Vad kunder säger om dagen.",
       "quotes": [
         {
-          "text": "Noll dömande, mycket kunskap och tydliga mål gjorde lektionen riktigt effektiv och rolig."
+          "text": "Inget dömande, mycket kunskap och tydliga mål gjorde lektionen riktigt effektiv och rolig."
         },
         {
           "text": "Det jag uppskattade mest var hur bekväm han fick mig att känna mig ute på banan."
@@ -645,7 +645,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "TPI 3级",
         "现居马略卡"
       ],
-      "lead": "UK PGA Advanced Professional。我在上海执教十一年，2025 年 3 月带着家人搬到马略卡。我大多数周都在岛上的球场上，来访的球手可以和我一起打一整轮。",
+      "lead": "UK PGA Advanced Professional。我在上海执教十一年，2025 年 3 月带着家人搬到马略卡。我几乎每周都会在岛上的某座球场打球，来访的球手可以和我一起打一整轮。",
       "primaryCta": "与我同场打满 18 洞",
       "secondaryCta": "阅读我的故事"
     },

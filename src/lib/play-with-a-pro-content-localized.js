@@ -24,12 +24,12 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Jugar con un Pro",
       "eyebrow": "Play With A Pro | Mallorca | Profesional PGA",
       "title": "Un día de 18 hoyos conmigo.",
-      "body": "Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, entrenando por el camino.",
+      "body": "Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, dándole consejos durante toda la vuelta.",
       "primaryCta": "Consultar sobre su día →",
       "primaryHref": "/es/contact",
       "secondaryCta": "Ver paquetes",
       "proof": {
-        "quote": "Una vuelta divertida y con muy buena compañía",
+        "quote": "Una vuelta divertida con muy buena compañía",
         "credit": "Amanda, T Golf Calvià"
       }
     },
@@ -319,7 +319,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Mit einem Pro spielen",
       "eyebrow": "Play With A Pro | Mallorca | PGA-Profi",
       "title": "Ein 18-Loch-Tag mit mir.",
-      "body": "Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite, mit Coaching unterwegs.",
+      "body": "Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite und coache Sie während der Runde.",
       "primaryCta": "Ihren Tag anfragen →",
       "primaryHref": "/de/contact",
       "secondaryCta": "Pakete ansehen",
@@ -908,7 +908,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Spelen met een pro",
       "eyebrow": "Play With A Pro | Mallorca | PGA-professional",
       "title": "Een dag van 18 holes met mij.",
-      "body": "Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, met coaching onderweg.",
+      "body": "Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, en coach u tijdens de ronde.",
       "primaryCta": "Informeer naar uw dag →",
       "primaryHref": "/nl/contact",
       "secondaryCta": "Bekijk pakketten",
@@ -1765,7 +1765,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "tertiaryHref": "/zh/golf-courses"
     },
     "clients": {
-      "eyebrow": "我在马略卡一起打过球的球手",
+      "eyebrow": "在马略卡和我一起打过球的球手",
       "quote": "我最喜欢的是，他让我在球场上始终感觉很自在。",
       "credit": "Finlay",
       "linkLabel": "查看全部评价"

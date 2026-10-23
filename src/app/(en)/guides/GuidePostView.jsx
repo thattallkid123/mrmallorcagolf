@@ -30,37 +30,37 @@ const FUNNEL_CTA_STRINGS = {
   de: {
     q1: (name) => `Nicht sicher, ob ${name} zu Ihrer Gruppe passt?`,
     l1: 'Platzmatch in 60 Sekunden →',
-    q2: 'Möchten Sie, dass ich hier eine Runde organisiere?',
+    q2: 'Soll ich die Reise rund um diesen Platz planen?',
     l2: 'Angebot anfragen →',
   },
   es: {
     q1: (name) => `¿No estás seguro de si ${name} es el campo adecuado para tu grupo?`,
     l1: 'Selector de campo en 60 segundos →',
-    q2: '¿Quieres que organice una vuelta aquí?',
+    q2: '¿Quieres que planifique el viaje en torno a este campo?',
     l2: 'Solicitar presupuesto →',
   },
   fr: {
     q1: (name) => `Vous n'êtes pas sûr que ${name} convienne à votre groupe ?`,
     l1: 'Trouvez le bon parcours en 60 secondes →',
-    q2: 'Souhaitez-vous que j’organise une partie ici ?',
+    q2: 'Souhaitez-vous que je planifie le voyage autour de ce parcours ?',
     l2: 'Demander un devis →',
   },
   nl: {
     q1: (name) => `Twijfelt u of ${name} geschikt is voor uw groep?`,
     l1: 'Baanselector in 60 seconden →',
-    q2: 'Wilt u dat ik hier een ronde regel?',
+    q2: 'Wilt u dat ik de reis rond deze baan plan?',
     l2: 'Offerte aanvragen →',
   },
   sv: {
     q1: (name) => `Inte säker på om ${name} passar er grupp?`,
     l1: 'Banmatchning på 60 sekunder →',
-    q2: 'Vill du att jag ordnar en runda här?',
+    q2: 'Vill du att jag planerar resan runt den här banan?',
     l2: 'Begär offert →',
   },
   zh: {
     q1: (name) => `不确定${name}是否适合您的团队？`,
     l1: '60秒球场匹配 →',
-    q2: '想让我为您安排一场球局？',
+    q2: '想让我围绕这座球场为您规划行程吗？',
     l2: '获取报价 →',
   },
 }

@@ -331,7 +331,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "clientStrip": {
       "eyebrow": "Golfistas con los que he jugado en Mallorca",
-      "quote": "Mis vueltas con Andy fueron lo mejor de mi viaje.",
+      "quote": "Mis vueltas con Andy fueron lo mejor del viaje.",
       "credit": "John H.",
       "linkLabel": "Leer todas las opiniones"
     }
@@ -666,7 +666,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "clientStrip": {
       "eyebrow": "Golfer, mit denen ich auf Mallorca gespielt habe",
-      "quote": "Die Runden mit Andy waren der beste Teil meiner Reise.",
+      "quote": "Meine Runden mit Andy waren das Beste an meiner Reise.",
       "credit": "John H.",
       "linkLabel": "Alle Bewertungen lesen"
     }
@@ -1671,7 +1671,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "clientStrip": {
       "eyebrow": "Golfare jag har spelat med på Mallorca",
-      "quote": "Mina rundor med Andy var den bästa delen av min resa.",
+      "quote": "Mina rundor med Andy var det bästa med resan.",
       "credit": "John H.",
       "linkLabel": "Läs alla omdömen"
     }
@@ -2013,8 +2013,8 @@ export const HOME_LOCALIZED_CONTENT = {
       "newsletterBody": "我会在打球时同步更新球场状况。哪些开球时间值得争取、果岭滚速有多快、出发前哪些信息最重要。每两周发送一次，随时可退订。"
     },
     "clientStrip": {
-      "eyebrow": "我在马略卡一起打过球的球手",
-      "quote": "和 Andy 一起打的几轮球是我这次旅行最美好的部分。",
+      "eyebrow": "在马略卡和我一起打过球的球手",
+      "quote": "和 Andy 的几场球是整趟旅行中最美好的部分。",
       "credit": "John H.",
       "linkLabel": "查看全部评价"
     }
