@@ -24,7 +24,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Jugar con un Pro",
       "eyebrow": "Play With A Pro | Mallorca | Profesional PGA",
       "title": "Un día de 18 hoyos conmigo.",
-      "body": "Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, dándole consejos durante toda la vuelta.",
+      "body": "¿Cuándo fue la última vez que un entrenador le vio jugar un hoyo de verdad? La mayoría de las clases se dan en el campo de prácticas, con la bola en un lie plano, pero el juego que quiere mejorar se juega en el campo. Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, dándole consejos durante toda la vuelta.",
       "primaryCta": "Consultar sobre su día →",
       "primaryHref": "/es/contact",
       "secondaryCta": "Ver paquetes"
@@ -315,7 +315,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Mit einem Pro spielen",
       "eyebrow": "Play With A Pro | Mallorca | PGA-Profi",
       "title": "Ein 18-Loch-Tag mit mir.",
-      "body": "Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite und coache Sie während der Runde.",
+      "body": "Wann hat ein Coach Ihnen zuletzt auf einem echten Loch zugesehen? Die meisten Stunden finden auf der Range mit ebenem Lie statt, aber das Spiel, das Sie verbessern wollen, wird auf dem Platz gespielt. Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite und coache Sie während der Runde.",
       "primaryCta": "Ihren Tag anfragen →",
       "primaryHref": "/de/contact",
       "secondaryCta": "Pakete ansehen"
@@ -606,7 +606,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Jouer avec un pro",
       "eyebrow": "Play With A Pro | Majorque | Professionnel PGA",
       "title": "Une journée de 18 trous avec moi.",
-      "body": "Je choisis le parcours selon votre jeu, je réserve le départ et je joue les 18 trous à vos côtés, en vous conseillant au fil de la partie.",
+      "body": "Quand un coach vous a-t-il vu jouer un vrai trou pour la dernière fois ? La plupart des leçons ont lieu au practice, sur un lie plat, mais le jeu que vous voulez améliorer se joue sur le parcours. Je choisis le parcours selon votre jeu, je réserve le départ et je joue les 18 trous à vos côtés, en vous conseillant au fil de la partie.",
       "primaryCta": "Se renseigner sur la journée →",
       "primaryHref": "/fr/contact",
       "secondaryCta": "Voir les formules"
@@ -896,7 +896,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Spelen met een pro",
       "eyebrow": "Play With A Pro | Mallorca | PGA-professional",
       "title": "Een dag van 18 holes met mij.",
-      "body": "Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, en coach u tijdens de ronde.",
+      "body": "Wanneer zag een coach u voor het laatst een echte hole spelen? De meeste lessen vinden plaats op de driving range, op een vlakke ligging, maar het spel dat u wilt verbeteren wordt gespeeld op de baan. Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, en coach u tijdens de ronde.",
       "primaryCta": "Informeer naar uw dag →",
       "primaryHref": "/nl/contact",
       "secondaryCta": "Bekijk pakketten"
@@ -1187,7 +1187,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "Spela med ett proffs",
       "eyebrow": "Play With A Pro | Mallorca | PGA-professional",
       "title": "En dag med 18 hål tillsammans med mig.",
-      "body": "Jag väljer banan efter ditt spel, bokar starttiden och spelar alla 18 hålen vid din sida, med coaching under rundan.",
+      "body": "När såg en tränare dig senast spela ett riktigt hål? De flesta lektioner hålls på rangen med bollen på platt underlag, men det spel du vill bli bättre på spelas på banan. Jag väljer banan efter ditt spel, bokar starttiden och spelar alla 18 hålen vid din sida, med coaching under rundan.",
       "primaryCta": "Fråga om din dag →",
       "primaryHref": "/sv/contact",
       "secondaryCta": "Se paket"
@@ -1478,7 +1478,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "breadcrumbCurrent": "与职业球手同场",
       "eyebrow": "Play With A Pro | 马略卡 | PGA 职业教练",
       "title": "与我同打 18 洞的一天。",
-      "body": "我根据您的水平选择球场，订好开球时间，陪您打完全部 18 洞，并在场上随时指导。",
+      "body": "上一次有教练在球场上看您打一个真正的洞是什么时候？大多数课程都在练习场的平坦球位上进行，但您想提高的那种球，是在球场上打的。我根据您的水平选择球场，订好开球时间，陪您打完全部 18 洞，并在场上随时指导。",
       "primaryCta": "咨询您的高尔夫日 →",
       "primaryHref": "/zh/contact",
       "secondaryCta": "查看方案"

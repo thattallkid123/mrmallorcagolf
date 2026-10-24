@@ -17,7 +17,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "TPI Level 3",
         "Mallorca"
       ],
-      "lead": "UK PGA Advanced Professional. Fui entrenador durante once años en Shanghái y me mudé a Mallorca con mi familia en marzo de 2025. La mayoría de las semanas estoy en alguno de los campos de la isla, y los golfistas que nos visitan pueden jugar una vuelta completa conmigo.",
+      "lead": "UK PGA Advanced Professional. Empecé entrenando en Pebble Beach, Doral, Evian y The Open, y después pasé once años en Shanghái, donde me convertí en el primer Trackman Master de China. Años de clases, a menudo con la bola en un lie plano del campo de prácticas, me enseñaron que los jugadores cambian más en el campo, así que ahora solo entreno allí. Vivo en Mallorca con mi familia y me gustaría jugar una vuelta con usted.",
       "primaryCta": "Juegue 18 hoyos conmigo",
       "secondaryCta": "Lea mi historia"
     },
@@ -146,7 +146,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "TPI Level 3",
         "Auf Mallorca ansässig"
       ],
-      "lead": "UK PGA Advanced Professional. Elf Jahre lang habe ich in Shanghai als Coach gearbeitet und bin im März 2025 mit meiner Familie nach Mallorca gezogen. In den meisten Wochen bin ich auf einem der Plätze der Insel unterwegs, und Golfer, die die Insel besuchen, können eine volle Runde mit mir spielen.",
+      "lead": "UK PGA Advanced Professional. Ich habe zuerst in Pebble Beach, Doral, Evian und bei The Open gecoacht und dann elf Jahre in Shanghai verbracht, wo ich Chinas erster Trackman Master wurde. Jahre von Unterrichtsstunden, oft auf einem ebenen Lie auf der Range, haben mir gezeigt, dass sich Spieler auf dem Platz am meisten verbessern. Deshalb coache ich heute nur noch dort. Ich lebe mit meiner Familie auf Mallorca und würde gern eine Runde mit Ihnen spielen.",
       "primaryCta": "18 Löcher mit mir spielen",
       "secondaryCta": "Meine Geschichte lesen"
     },
@@ -273,7 +273,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "TPI Niveau 3",
         "Basé à Majorque"
       ],
-      "lead": "UK PGA Advanced Professional. J'ai enseigné onze ans à Shanghai, puis je me suis installé à Majorque avec ma famille en mars 2025. La plupart des semaines, je suis sur l'un des parcours de l'île, et les golfeurs de passage peuvent faire une partie complète avec moi.",
+      "lead": "UK PGA Advanced Professional. J'ai débuté comme coach à Pebble Beach, Doral, Evian et à The Open, puis j'ai passé onze ans à Shanghai, où je suis devenu le premier Trackman Master de Chine. Des années de leçons, souvent sur un lie plat au practice, m'ont appris que les joueurs progressent surtout sur le parcours, alors aujourd'hui je n'enseigne plus que là. J'habite à Majorque avec ma famille et j'aimerais jouer une partie avec vous.",
       "primaryCta": "Jouez 18 trous avec moi",
       "secondaryCta": "Lisez mon histoire"
     },
@@ -403,7 +403,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "TPI Niveau 3",
         "Gevestigd op Mallorca"
       ],
-      "lead": "UK PGA Advanced Professional. Ik gaf elf jaar les in Shanghai en verhuisde in maart 2025 met mijn gezin naar Mallorca. De meeste weken sta ik op een van de banen van het eiland, en golfers die op bezoek zijn kunnen een volledige ronde met mij spelen.",
+      "lead": "UK PGA Advanced Professional. Ik begon als coach op Pebble Beach, Doral, Evian en The Open en bracht daarna elf jaar door in Shanghai, waar ik de eerste Trackman Master van China werd. Jarenlang lesgeven, vaak op een vlakke ligging op de driving range, leerde me dat spelers het meest veranderen op de baan, dus nu coach ik alleen nog daar. Ik woon met mijn gezin op Mallorca en speel graag een ronde met u.",
       "primaryCta": "Speel 18 holes met mij",
       "secondaryCta": "Lees mijn verhaal"
     },
@@ -528,7 +528,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "TPI Level 3",
         "Baserad i Mallorca"
       ],
-      "lead": "UK PGA Advanced Professional. Jag var golftränare i Shanghai i elva år och flyttade till Mallorca med min familj i mars 2025. De flesta veckor är jag ute på någon av öns banor, och golfare som besöker ön kan spela en hel runda med mig.",
+      "lead": "UK PGA Advanced Professional. Jag började som tränare på Pebble Beach, Doral, Evian och The Open och tillbringade sedan elva år i Shanghai, där jag blev Kinas första Trackman Master. Många års lektioner, ofta på platt underlag på rangen, lärde mig att spelare förändras mest på banan, så nu coachar jag bara där. Jag bor på Mallorca med min familj och spelar gärna en runda med dig.",
       "primaryCta": "Spela 18 hål med mig",
       "secondaryCta": "Läs min historia"
     },
@@ -645,7 +645,7 @@ export const ABOUT_LOCALIZED_CONTENT = {
         "TPI 3级",
         "现居马略卡"
       ],
-      "lead": "UK PGA Advanced Professional。我在上海执教十一年，2025 年 3 月带着家人搬到马略卡。我几乎每周都会在岛上的某座球场打球，来访的球手可以和我一起打一整轮。",
+      "lead": "UK PGA Advanced Professional。我最早在 Pebble Beach、Doral、Evian 和 The Open 执教，之后在上海度过十一年，成为中国第一位 Trackman Master。多年的课程大多在练习场的平坦球位上进行，让我明白球手在球场上进步最大，所以现在我只在球场上执教。我和家人住在马略卡，很想和您一起打一轮。",
       "primaryCta": "与我同场打满 18 洞",
       "secondaryCta": "阅读我的故事"
     },

@@ -11,7 +11,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "breadcrumbCurrent": "Play With A Pro",
     "eyebrow": "Play With A Pro | Mallorca | PGA Professional",
     "title": "An 18-hole day with me.",
-    "body": "I choose the course for your game, book the tee time and play all 18 holes alongside you, coaching as we go.",
+    "body": "When did a coach last watch you play a real hole? Most lessons happen on a flat lie at the range, but the game you want to improve happens on the course. I choose the course for your game, book the tee time and play all 18 holes alongside you, coaching as we go.",
     "price": null,
     "primaryCta": "Enquire about the day",
     "primaryHref": "/contact",

@@ -17,7 +17,7 @@ export const ABOUT_CONTENT = {
       "TPI Level 3",
       "Based in Mallorca"
     ],
-    "lead": "UK PGA Advanced Professional. I coached in Shanghai for eleven years, then moved to Mallorca with my family in March 2025. Most weeks I am out on one of the island's courses, and visiting golfers can join me for a full round.",
+    "lead": "UK PGA Advanced Professional. I started out coaching at Pebble Beach, Doral, Evian and The Open, then spent eleven years in Shanghai, where I became China’s first Trackman Master. Years of lessons often on a flat lie at the range taught me that players change most on the course, so now I just coach there! I live in Mallorca with my family, and I would like to play a round with you.",
     "primaryCta": "Play 18 holes with me",
     "secondaryCta": "Read my story"
   },

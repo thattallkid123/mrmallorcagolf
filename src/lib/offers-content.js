@@ -11,7 +11,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Play With A Pro in Mallorca (Majorca): an 18-hole day with PGA Advanced Professional Andy Griffiths. Solo from €795, groups from €950 total, green fees additional.',
     playHeroBody:
-      'I choose the course for your game, book the tee time and play all 18 holes alongside you, coaching as we go.',
+      'When did a coach last watch you play a real hole? Most lessons happen on a flat lie at the range, but the game you want to improve happens on the course. I choose the course for your game, book the tee time and play all 18 holes alongside you, coaching as we go.',
     playMultiDayDetail: null,
     homeMultiDayBody:
       'Use the basic tool for course ideas. If you want the real plan, I can handle course choice, base, routing, tee times, buggies, rentals, dining suggestions, and whether Play With A Pro belongs in the trip.',
@@ -48,7 +48,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Ein Golftag auf Mallorca an der Seite von Andy Griffiths. Solo ab €795. Gruppen ab €950 insgesamt. Greenfees zusätzlich.',
     playHeroBody:
-      'Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite und coache Sie während der Runde.',
+      'Wann hat ein Coach Ihnen zuletzt auf einem echten Loch zugesehen? Die meisten Stunden finden auf der Range mit ebenem Lie statt, aber das Spiel, das Sie verbessern wollen, wird auf dem Platz gespielt. Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite und coache Sie während der Runde.',
     playMultiDayDetail:
       'Signature Day. Ein privater Golftag mit Andy, einer Recovery-Session, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespräch bestätigt, sobald der Tag Form hat.',
     homeMultiDayBody:
@@ -80,7 +80,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Un día de golf en Mallorca junto a Andy Griffiths. Solo desde €795. Grupos desde €950 en total. Green fees adicionales.',
     playHeroBody:
-      'Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, dándole consejos durante toda la vuelta.',
+      '¿Cuándo fue la última vez que un entrenador le vio jugar un hoyo de verdad? La mayoría de las clases se dan en el campo de prácticas, con la bola en un lie plano, pero el juego que quiere mejorar se juega en el campo. Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, dándole consejos durante toda la vuelta.',
     playMultiDayDetail:
       'Signature Day. Un día privado de golf con Andy, una sesión de recuperación, traslados privados y una noche coordinada. El precio se confirma después de la primera conversación, cuando el día tiene forma.',
     homeMultiDayBody:
@@ -112,7 +112,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Une journée de golf à Majorque aux côtés d\'Andy Griffiths. Solo à partir de €795. Groupes à partir de €950 au total. Green fees additionnels.',
     playHeroBody:
-      'Je choisis le parcours selon votre jeu, je réserve le départ et je joue les 18 trous à vos côtés, en vous conseillant au fil de la partie.',
+      'Quand un coach vous a-t-il vu jouer un vrai trou pour la dernière fois ? La plupart des leçons ont lieu au practice, sur un lie plat, mais le jeu que vous voulez améliorer se joue sur le parcours. Je choisis le parcours selon votre jeu, je réserve le départ et je joue les 18 trous à vos côtés, en vous conseillant au fil de la partie.',
     playMultiDayDetail:
       'Signature Day. Une journée de golf privée avec Andy, une session de récupération, des transferts privés et une soirée coordonnée. Le tarif est confirmé après la première conversation, lorsque le cadre de la journée est clair.',
     homeMultiDayBody:
@@ -144,7 +144,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'Een golfdag op Mallorca aan de zijde van Andy Griffiths. Solo vanaf €795. Groepen vanaf €950 in totaal. Greenfees bijkomend.',
     playHeroBody:
-      'Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, en coach u tijdens de ronde.',
+      'Wanneer zag een coach u voor het laatst een echte hole spelen? De meeste lessen vinden plaats op de driving range, op een vlakke ligging, maar het spel dat u wilt verbeteren wordt gespeeld op de baan. Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, en coach u tijdens de ronde.',
     playMultiDayDetail:
       'Signature Day. Een privé golfdag met Andy, een herstelsessie, privé transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.',
     homeMultiDayBody:
@@ -176,7 +176,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       'En golfdag på Mallorca tillsammans med Andy Griffiths. Solo från €795. Grupper från €950 totalt. Green fees tillkommer.',
     playHeroBody:
-      'Jag väljer banan efter ditt spel, bokar starttiden och spelar alla 18 hålen vid din sida, med coaching under rundan.',
+      'När såg en tränare dig senast spela ett riktigt hål? De flesta lektioner hålls på rangen med bollen på platt underlag, men det spel du vill bli bättre på spelas på banan. Jag väljer banan efter ditt spel, bokar starttiden och spelar alla 18 hålen vid din sida, med coaching under rundan.',
     playMultiDayDetail:
       'Signature Day. En privat golfdag med Andy, en återhämtningssession, privata transfers och en koordinerad kväll. Priset bekräftas efter första samtalet, när dagen har form.',
     homeMultiDayBody:
@@ -208,7 +208,7 @@ const OFFER_CONTENT = {
     playWithAProMeta:
       '与马略卡职业高尔夫教练安迪·格里菲斯共度一天的高尔夫时光。单人 €795。小组从 €950 总计起。果岭费另计。',
     playHeroBody:
-      '我根据您的水平选择球场，订好开球时间，陪您打完全部 18 洞，并在场上随时指导。',
+      '上一次有教练在球场上看您打一个真正的洞是什么时候？大多数课程都在练习场的平坦球位上进行，但您想提高的那种球，是在球场上打的。我根据您的水平选择球场，订好开球时间，陪您打完全部 18 洞，并在场上随时指导。',
     playMultiDayDetail:
       'Signature Day：与 Andy 同打私人高尔夫日，包含赛后恢复环节、私人接送和晚间协调。第一次沟通后，等当天范围清楚再确认价格。',
     homeMultiDayBody:
