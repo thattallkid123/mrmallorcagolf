@@ -21,12 +21,11 @@ const GUIDE_CATEGORY_BY_SLUG = {
 
 function shortTitle(title) {
   return title
-    .replace(/ - A PGA Professional's Honest (Review|Take|Ranking)$/, '')
-    .replace(/ - A PGA Professional's Honest Answer from Someone Who Lives Here$/, '')
-    .replace(/: A PGA Professional's Honest (Review|Take)$/, '')
-    .replace(/: An Honest Answer from Someone Who Lives Here$/, '')
-    .replace(/ Review$/, '')
     .replace(/\s*\(?\d{4}\)?$/, '')
+    .replace(/\s*[-:.]?\s*A PGA Professional's Honest (Review|Take|Ranking|Answer from Someone Who Lives Here)$/, '')
+    .replace(/[:.]?\s*An Honest Answer from Someone Who Lives Here$/, '')
+    .replace(/ Review$/, '')
+    .replace(/[\s:.-]+$/, '')
     .trim()
 }
 

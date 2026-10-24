@@ -175,8 +175,10 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
         </div>
       </header>
 
-      {content.intro ? (
-        <section className="guides-intro">
+      {content.intro || locale === 'en' ? (
+        <section className="guides-lead">
+        {content.intro ? (
+        <div className="guides-intro">
           <div className="guides-intro__photo">
             <Image src="/images/andy-portrait-hero.webp" alt={content.intro.photoAlt} fill sizes="88px" className="guides-intro__img" />
           </div>
@@ -188,11 +190,9 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
               <Link href={`${prefix}/play-with-a-pro`}>{content.intro.day}</Link>
             </div>
           </div>
-        </section>
-      ) : null}
-
-      {locale === 'en' ? (
-        <section className="guides-tools-strip">
+        </div>
+        ) : null}
+        {locale === 'en' ? (
           <ToolPlacementCta
             tool={{
               eyebrow: 'Free planning tools',
@@ -202,8 +202,8 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
               cta: 'Open the tools',
             }}
             slim
-            dark
           />
+        ) : null}
         </section>
       ) : null}
 
