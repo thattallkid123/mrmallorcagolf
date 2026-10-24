@@ -15,11 +15,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "price": null,
     "primaryCta": "Enquire about the day",
     "primaryHref": "/contact",
-    "secondaryCta": "See pricing",
-    "proof": {
-      "quote": "Fun round with great company",
-      "credit": "Amanda, T Golf Calvià"
-    }
+    "secondaryCta": "See pricing"
   },
   "offerSummary": {
     "eyebrow": "At a glance",
@@ -43,7 +39,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
       }
     ],
     "signatureRoute": {
-      "text": "For a private tee time, a session with John Brazier (The Golf Doctor) after the round, transfers and an evening arranged around your group, see Signature Day.",
+      "text": "For a private tee time, a post-round recovery session, transfers and an evening arranged around your group, see Signature Day.",
       "cta": "Explore Signature Day →"
     }
   },
@@ -225,7 +221,7 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "note": "Everything arranged. All details confirmed before the day.",
         "features": [
           "Course, private tee time, and a fully arranged day with me",
-          "Post-round recovery and sports-performance session with John Brazier",
+          "Post-round recovery and sports-performance session",
           "Private transfers to and from the course",
           "Dinner planning at a recommended hotel or restaurant, or with a private chef"
         ],

@@ -50,9 +50,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite und coache Sie während der Runde.',
     playMultiDayDetail:
-      'Signature Day. Ein privater Golftag mit Andy, einer Session mit John Brazier, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespräch bestätigt, sobald der Tag Form hat.',
+      'Signature Day. Ein privater Golftag mit Andy, einer Recovery-Session, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespräch bestätigt, sobald der Tag Form hat.',
     homeMultiDayBody:
-      'Signature Day - ein privater Golftag mit Andy, John Brazier, Transfers und einem koordinierten Abend. Preis nach Umfang des Tages.',
+      'Signature Day - ein privater Golftag mit Andy, einer Recovery-Session, Transfers und einem koordinierten Abend. Preis nach Umfang des Tages.',
     contactUnknown: 'Noch unsicher - beraten Sie mich',
     offers: {
       [OFFER_IDS.solo]: {
@@ -82,9 +82,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, dándole consejos durante toda la vuelta.',
     playMultiDayDetail:
-      'Signature Day. Un día privado de golf con Andy, una sesión con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversación, cuando el día tiene forma.',
+      'Signature Day. Un día privado de golf con Andy, una sesión de recuperación, traslados privados y una noche coordinada. El precio se confirma después de la primera conversación, cuando el día tiene forma.',
     homeMultiDayBody:
-      'Signature Day - un día privado de golf con Andy, John Brazier, traslados y una noche coordinada. Precio según el día.',
+      'Signature Day - un día privado de golf con Andy, una sesión de recuperación, traslados y una noche coordinada. Precio según el día.',
     contactUnknown: 'Aún no lo sé - aconséjeme',
     offers: {
       [OFFER_IDS.solo]: {
@@ -114,9 +114,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Je choisis le parcours selon votre jeu, je réserve le départ et je joue les 18 trous à vos côtés, en vous conseillant au fil de la partie.',
     playMultiDayDetail:
-      'Signature Day. Une journée de golf privée avec Andy, une session avec John Brazier, des transferts privés et une soirée coordonnée. Le tarif est confirmé après la première conversation, lorsque le cadre de la journée est clair.',
+      'Signature Day. Une journée de golf privée avec Andy, une session de récupération, des transferts privés et une soirée coordonnée. Le tarif est confirmé après la première conversation, lorsque le cadre de la journée est clair.',
     homeMultiDayBody:
-      'Signature Day - une journée de golf privée avec Andy, John Brazier, des transferts privés et une soirée coordonnée. Tarif adapté à la journée.',
+      'Signature Day - une journée de golf privée avec Andy, une session de récupération, des transferts privés et une soirée coordonnée. Tarif adapté à la journée.',
     contactUnknown: 'Je ne suis pas encore certain(e) - conseillez-moi',
     offers: {
       [OFFER_IDS.solo]: {
@@ -146,9 +146,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, en coach u tijdens de ronde.',
     playMultiDayDetail:
-      'Signature Day. Een privé golfdag met Andy, een sessie met John Brazier, privé transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.',
+      'Signature Day. Een privé golfdag met Andy, een herstelsessie, privé transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.',
     homeMultiDayBody:
-      'Signature Day - een privé golfdag met Andy, John Brazier, transfers en een georganiseerde avond. Prijs afgestemd op de dag.',
+      'Signature Day - een privé golfdag met Andy, een herstelsessie, transfers en een georganiseerde avond. Prijs afgestemd op de dag.',
     contactUnknown: 'Nog niet zeker - adviseer me',
     offers: {
       [OFFER_IDS.solo]: {
@@ -178,9 +178,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       'Jag väljer banan efter ditt spel, bokar starttiden och spelar alla 18 hålen vid din sida, med coaching under rundan.',
     playMultiDayDetail:
-      'Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kväll. Priset bekräftas efter första samtalet, när dagen har form.',
+      'Signature Day. En privat golfdag med Andy, en återhämtningssession, privata transfers och en koordinerad kväll. Priset bekräftas efter första samtalet, när dagen har form.',
     homeMultiDayBody:
-      'Signature Day - en privat golfdag med Andy, John Brazier, transfers och en koordinerad kväll. Pris anpassat efter dagen.',
+      'Signature Day - en privat golfdag med Andy, en återhämtningssession, transfers och en koordinerad kväll. Pris anpassat efter dagen.',
     contactUnknown: 'Inte säker ännu - ge mig råd',
     offers: {
       [OFFER_IDS.solo]: {
@@ -210,9 +210,9 @@ const OFFER_CONTENT = {
     playHeroBody:
       '我根据您的水平选择球场，订好开球时间，陪您打完全部 18 洞，并在场上随时指导。',
     playMultiDayDetail:
-      'Signature Day：与 Andy 同打私人高尔夫日，包含 John Brazier 环节、私人接送和晚间协调。第一次沟通后，等当天范围清楚再确认价格。',
+      'Signature Day：与 Andy 同打私人高尔夫日，包含赛后恢复环节、私人接送和晚间协调。第一次沟通后，等当天范围清楚再确认价格。',
     homeMultiDayBody:
-      'Signature Day - 与 Andy 同打私人高尔夫日，包含 John Brazier 环节、私人接送和晚间协调。按当天范围报价。',
+      'Signature Day - 与 Andy 同打私人高尔夫日，包含赛后恢复环节、私人接送和晚间协调。按当天范围报价。',
     contactUnknown: '暂时不确定 - 请给我建议',
     offers: {
       [OFFER_IDS.solo]: {

@@ -4361,13 +4361,14 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .pwap-hero--split .pwap-hero__overlay { background: linear-gradient(90deg, var(--hero-green) 0%, var(--hero-green) 36%, rgba(23,36,28,0.8) 46%, rgba(23,36,28,0.5) 56%, rgba(23,36,28,0.2) 68%, rgba(23,36,28,0) 82%); }
 .pwap-hero__proof { margin: 0 0 var(--space-5); }
 .pwap-hero__proof .review-text { align-items: flex-start; }
-.pwap-hero__proof-quote { margin: var(--space-2) 0 0; font-size: 0.92rem; font-style: italic; color: var(--gold-light); }
+.pwap-hero__proof-list { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: grid; gap: 0.35rem; }
+.pwap-hero__proof-list li { font-size: 0.92rem; font-style: italic; line-height: 1.4; color: var(--gold-light); }
 
 /* Play With A Pro: the client photo strip now sits straight under the first screen */
 .pwap-clients { width: min(1200px, 100%); margin: 0 auto; padding: var(--space-7) 40px var(--space-6); background: linear-gradient(180deg, #f7f3eb 0%, #fbfaf7 100%); border-left: 1px solid var(--linen); border-right: 1px solid var(--linen); text-align: center; }
 .pwap-clients__eyebrow { margin: 0; }
-.pwap-clients__quote { max-width: 40rem; margin: 0 auto; }
-.pwap-clients__quote p { margin: 0 0 var(--space-2); font-family: var(--font-serif); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.3; color: var(--pine); }
+.pwap-clients__quote { max-width: 64rem; margin: 0 auto; }
+.pwap-clients__quote p { margin: 0 0 var(--space-2); font-family: var(--font-serif); font-size: clamp(1.15rem, 2.1vw, 1.45rem); line-height: 1.3; color: var(--pine); }
 .pwap-clients__quote footer { font-size: 0.85rem; color: var(--taupe); }
 .pwap-clients__quote footer a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 
@@ -4377,8 +4378,8 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .client-strip__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--space-3); max-width: 900px; margin: 0 auto var(--space-5); }
 .client-strip__photo { position: relative; aspect-ratio: 3 / 4; overflow: hidden; border-radius: 4px; }
 .client-strip__img { object-fit: cover; }
-.client-strip__quote { max-width: 40rem; margin: 0 auto; }
-.client-strip__quote p { margin: 0 0 var(--space-2); font-family: var(--font-serif); font-size: clamp(1.25rem, 2.4vw, 1.6rem); line-height: 1.3; color: var(--pine); }
+.client-strip__quote { max-width: 64rem; margin: 0 auto; }
+.client-strip__quote p { margin: 0 0 var(--space-2); font-family: var(--font-serif); font-size: clamp(1.15rem, 2.1vw, 1.45rem); line-height: 1.3; color: var(--pine); }
 .client-strip__quote footer { font-size: 0.85rem; color: var(--taupe); }
 .client-strip__quote footer a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
 
@@ -4424,3 +4425,8 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
   .pwap-clients { padding: var(--space-6) 20px var(--space-5); }
   .guide-ask { padding: var(--space-5); }
 }
+
+/* About: slim press link under the credential logos (24 Oct 2026); the full spread stays at the bottom */
+.about-press-strip { margin: 0; padding: var(--space-4) clamp(20px, 5vw, 60px); text-align: center; font-size: 0.95rem; color: var(--taupe); background: var(--cream, transparent); }
+.about-press-strip__label { font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78rem; margin-right: var(--space-2); }
+.about-press-strip a { color: var(--gold); text-decoration: none; font-weight: 500; border-bottom: 1px solid var(--gold); padding-bottom: 2px; }

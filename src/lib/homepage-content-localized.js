@@ -273,7 +273,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "¿Busca algo más grande?",
         "title": "Una experiencia de varios días, organizada alrededor de usted.",
-        "body": "Signature Day - un día privado de golf con Andy, John Brazier, traslados y una noche coordinada. Precio según el día.",
+        "body": "Signature Day - un día privado de golf con Andy, una sesión de recuperación, traslados y una noche coordinada. Precio según el día.",
         "cta": "Consultar un viaje de varios días",
         "href": "/es/plan-your-trip",
         "detail": "Desde €2.000. Escríbame con sus fechas y le propondré una opción a su medida.",
@@ -608,7 +608,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "Suchen Sie nach etwas Größerem?",
         "title": "Ein mehrtägiges Erlebnis, um Sie herum arrangiert.",
-        "body": "Signature Day - ein privater Golftag mit Andy, John Brazier, Transfers und einem koordinierten Abend. Preis nach Umfang des Tages.",
+        "body": "Signature Day - ein privater Golftag mit Andy, einer Recovery-Session, Transfers und einem koordinierten Abend. Preis nach Umfang des Tages.",
         "cta": "Mehrtägige Reise anfragen",
         "href": "/de/plan-your-trip",
         "detail": "Ab €2.000. Schreiben Sie mir mit Ihren Reisedaten, und ich schicke Ihnen einen passenden Vorschlag.",
@@ -943,7 +943,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "Vous cherchez quelque chose de plus ambitieux ?",
         "title": "Une expérience sur plusieurs jours, organisée autour de vous.",
-        "body": "Signature Day - une journée de golf privée avec Andy, John Brazier, des transferts privés et une soirée coordonnée. Tarif adapté à la journée.",
+        "body": "Signature Day - une journée de golf privée avec Andy, une session de récupération, des transferts privés et une soirée coordonnée. Tarif adapté à la journée.",
         "cta": "Demander un séjour sur plusieurs jours",
         "href": "/fr/plan-your-trip",
         "detail": "À partir de 2 000 €. Envoyez-moi vos dates et je vous proposerai une version adaptée.",
@@ -1278,7 +1278,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "Zoekt u iets groters?",
         "title": "Een meerdaagse ervaring, volledig om u heen opgebouwd.",
-        "body": "Signature Day - een privé golfdag met Andy, John Brazier, transfers en een georganiseerde avond. Prijs afgestemd op de dag.",
+        "body": "Signature Day - een privé golfdag met Andy, een herstelsessie, transfers en een georganiseerde avond. Prijs afgestemd op de dag.",
         "cta": "Meerdaagse trip aanvragen",
         "href": "/nl/plan-your-trip",
         "detail": "Vanaf €2.000. Stuur me uw data en ik werk een passend voorstel uit.",
@@ -1613,7 +1613,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "Letar du efter något större?",
         "title": "En flerdagarsupplevelse, planerad runt dig.",
-        "body": "Signature Day - en privat golfdag med Andy, John Brazier, transfers och en koordinerad kväll. Pris anpassat efter dagen.",
+        "body": "Signature Day - en privat golfdag med Andy, en återhämtningssession, transfers och en koordinerad kväll. Pris anpassat efter dagen.",
         "cta": "Fråga om en flerdagarsresa",
         "href": "/sv/plan-your-trip",
         "detail": "Från €2.000. Skicka dina datum så sätter jag ihop ett förslag som passar.",
@@ -1955,7 +1955,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "multiDay": {
         "eyebrow": "想要更完整的行程？",
         "title": "一款围绕您定制的多日体验。",
-        "body": "Signature Day - 与 Andy 同打私人高尔夫日，包含 John Brazier 环节、私人接送和晚间协调。按当天范围报价。",
+        "body": "Signature Day - 与 Andy 同打私人高尔夫日，包含赛后恢复环节、私人接送和晚间协调。按当天范围报价。",
         "cta": "咨询多日行程",
         "href": "/zh/plan-your-trip",
         "detail": "€2,000 起。把您的日期发给我，我会为您准备合适的方案。",

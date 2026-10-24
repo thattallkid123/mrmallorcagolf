@@ -14,7 +14,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Siguiente paso", "text": "Envie sus fechas, tamaño del grupo y rango de hándicap. Le respondo personalmente en 24 horas." }
       ],
       "signatureRoute": {
-        "text": "Si quiere un tee time privado, una sesión con John Brazier (The Golf Doctor) después de la vuelta, traslados y una velada organizada para su grupo, vea Signature Day.",
+        "text": "Si quiere un tee time privado, una sesión de recuperación después de la vuelta, traslados y una velada organizada para su grupo, vea Signature Day.",
         "cta": "Explorar Signature Day →"
       }
     },
@@ -27,11 +27,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "Elijo el campo según su juego, reservo la hora de salida y juego los 18 hoyos a su lado, dándole consejos durante toda la vuelta.",
       "primaryCta": "Consultar sobre su día →",
       "primaryHref": "/es/contact",
-      "secondaryCta": "Ver paquetes",
-      "proof": {
-        "quote": "Una vuelta divertida con muy buena compañía",
-        "credit": "Amanda, T Golf Calvià"
-      }
+      "secondaryCta": "Ver paquetes"
     },
     "day": {
       "eyebrow": "Qué incluye el día",
@@ -190,7 +186,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "note": "Todo organizado. Todos los detalles se confirman antes del día.",
           "features": [
             "Campo, hora de salida privada y un día completamente organizado conmigo",
-            "Sesión de recuperación y rendimiento deportivo con John Brazier",
+            "Sesión de recuperación y rendimiento deportivo",
             "Traslados privados de ida y vuelta al campo",
             "Cena en hotel o restaurante recomendado, o chef privado si encaja"
           ],
@@ -219,7 +215,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "¿Busca algo más grande?",
         "title": "Una experiencia de varios días, organizada alrededor de usted.",
         "body": "Dos o tres días consecutivos entre Son Gual, Alcanada y más allá, con traslados privados, una selección cuidada de restaurantes y acceso a campos que la mayoría de los visitantes no puede reservar.",
-        "detail": "Signature Day. Un día privado de golf con Andy, una sesión con John Brazier, traslados privados y una noche coordinada. El precio se confirma después de la primera conversación, cuando el día tiene forma.",
+        "detail": "Signature Day. Un día privado de golf con Andy, una sesión de recuperación, traslados privados y una noche coordinada. El precio se confirma después de la primera conversación, cuando el día tiene forma.",
         "button": "Consultar un viaje de varios días →",
         "href": "/es/plan-your-trip"
       }
@@ -309,7 +305,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Nächster Schritt", "text": "Schicken Sie Ihre Daten, Gruppengröße und Handicap-Bereich. Ich antworte persönlich innerhalb von 24 Stunden." }
       ],
       "signatureRoute": {
-        "text": "Für eine private Startzeit, eine Einheit mit John Brazier (The Golf Doctor) nach der Runde, Transfers und einen Abend für Ihre Gruppe gibt es den Signature Day.",
+        "text": "Für eine private Startzeit, eine Recovery-Einheit nach der Runde, Transfers und einen Abend für Ihre Gruppe gibt es den Signature Day.",
         "cta": "Signature Day ansehen →"
       }
     },
@@ -322,11 +318,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "Ich wähle den Platz passend zu Ihrem Spiel, buche die Startzeit und spiele alle 18 Löcher an Ihrer Seite und coache Sie während der Runde.",
       "primaryCta": "Ihren Tag anfragen →",
       "primaryHref": "/de/contact",
-      "secondaryCta": "Pakete ansehen",
-      "proof": {
-        "quote": "Eine Runde mit viel Spaß und toller Gesellschaft",
-        "credit": "Amanda, T Golf Calvià"
-      }
+      "secondaryCta": "Pakete ansehen"
     },
     "day": {
       "eyebrow": "Was der Tag beinhaltet",
@@ -485,7 +477,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "note": "Alles arrangiert. Alle Details werden vor dem Tag bestätigt.",
           "features": [
             "Platz, private Startzeit und ein vollständig organisierter Tag mit mir",
-            "Recovery- und Sports-Performance-Session mit John Brazier",
+            "Recovery- und Sports-Performance-Session",
             "Private Transfers zum und vom Platz",
             "Dinner in einem empfohlenen Hotel oder Restaurant, oder mit Private Chef"
           ],
@@ -514,7 +506,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Suchen Sie nach etwas Größerem?",
         "title": "Ein mehrtägiges Erlebnis, um Sie herum arrangiert.",
         "body": "Zwei oder drei aufeinanderfolgende Tage über Son Gual, Alcanada und weitere Plätze hinweg - mit privaten Transfers, sorgfältig ausgewählter Gastronomie und Zugang zu Plätzen, die die meisten Besucher nicht buchen können.",
-        "detail": "Signature Day. Ein privater Golftag mit Andy, einer Session mit John Brazier, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespräch bestätigt, sobald der Tag Form hat.",
+        "detail": "Signature Day. Ein privater Golftag mit Andy, einer Recovery-Session, privaten Transfers und einem koordinierten Abend. Der Preis wird nach dem ersten Gespräch bestätigt, sobald der Tag Form hat.",
         "button": "Mehrtägige Reise anfragen →",
         "href": "/de/plan-your-trip"
       }
@@ -604,7 +596,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Étape suivante", "text": "Envoyez vos dates, la taille du groupe et votre index. Je réponds personnellement sous 24 heures." }
       ],
       "signatureRoute": {
-        "text": "Pour un départ privé, une séance avec John Brazier (The Golf Doctor) après la partie, les transferts et une soirée organisée pour votre groupe, découvrez Signature Day.",
+        "text": "Pour un départ privé, une séance de récupération après la partie, les transferts et une soirée organisée pour votre groupe, découvrez Signature Day.",
         "cta": "Découvrir Signature Day →"
       }
     },
@@ -617,11 +609,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "Je choisis le parcours selon votre jeu, je réserve le départ et je joue les 18 trous à vos côtés, en vous conseillant au fil de la partie.",
       "primaryCta": "Se renseigner sur la journée →",
       "primaryHref": "/fr/contact",
-      "secondaryCta": "Voir les formules",
-      "proof": {
-        "quote": "Une partie sympa en très bonne compagnie",
-        "credit": "Amanda, T Golf Calvià"
-      }
+      "secondaryCta": "Voir les formules"
     },
     "day": {
       "eyebrow": "Ce que la journée comprend",
@@ -780,7 +768,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "note": "Tout est organisé. Tous les détails sont confirmés avant la journée.",
           "features": [
             "Parcours, départ privé et une journée entièrement organisée avec moi",
-            "Session récupération et performance sportive avec John Brazier",
+            "Session récupération et performance sportive",
             "Transferts privés aller-retour au parcours",
             "Planification du dîner dans un hôtel ou restaurant recommandé, ou avec un chef privé"
           ],
@@ -809,7 +797,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Vous cherchez quelque chose de plus ambitieux ?",
         "title": "Une expérience sur plusieurs jours, organisée autour de vous.",
         "body": "Deux ou trois jours consécutifs entre Son Gual, Alcanada et au-delà, avec transferts privés, bonnes tables soigneusement choisies et accès à des parcours que la plupart des visiteurs ne peuvent pas réserver.",
-        "detail": "Signature Day. Une journée de golf privée avec Andy, une session avec John Brazier, des transferts privés et une soirée coordonnée. Le tarif est confirmé après le premier échange, lorsque la journée a pris forme.",
+        "detail": "Signature Day. Une journée de golf privée avec Andy, une session de récupération, des transferts privés et une soirée coordonnée. Le tarif est confirmé après le premier échange, lorsque la journée a pris forme.",
         "button": "Demander un séjour sur plusieurs jours →",
         "href": "/fr/plan-your-trip"
       }
@@ -899,7 +887,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Volgende stap", "text": "Stuur uw data, groepsgrootte en handicaprange. Ik reageer persoonlijk binnen 24 uur." }
       ],
       "signatureRoute": {
-        "text": "Voor een privéstarttijd, een sessie met John Brazier (The Golf Doctor) na de ronde, transfers en een avond voor uw groep is er Signature Day.",
+        "text": "Voor een privéstarttijd, een herstelsessie na de ronde, transfers en een avond voor uw groep is er Signature Day.",
         "cta": "Bekijk Signature Day →"
       }
     },
@@ -911,11 +899,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "Ik kies de baan die bij uw spel past, boek de starttijd en speel alle 18 holes naast u, en coach u tijdens de ronde.",
       "primaryCta": "Informeer naar uw dag →",
       "primaryHref": "/nl/contact",
-      "secondaryCta": "Bekijk pakketten",
-      "proof": {
-        "quote": "Een leuke ronde in geweldig gezelschap",
-        "credit": "Amanda, T Golf Calvià"
-      }
+      "secondaryCta": "Bekijk pakketten"
     },
     "day": {
       "eyebrow": "Wat de dag inhoudt",
@@ -1074,7 +1058,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "note": "Alles geregeld. Alle details worden voor de dag bevestigd.",
           "features": [
             "Baan, privé starttijd en een volledig georganiseerde dag met mij",
-            "Herstel- en sportprestatiesessie met John Brazier",
+            "Herstel- en sportprestatiesessie",
             "Privé transfers van en naar de baan",
             "Dinerplanning in een aanbevolen hotel of restaurant, of met een privéchef"
           ],
@@ -1103,7 +1087,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Zoekt u iets groters?",
         "title": "Een meerdaagse ervaring, volledig om u heen opgebouwd.",
         "body": "Twee of drie opeenvolgende dagen langs Son Gual, Alcanada en meer, met privétransfers, zorgvuldig gekozen restaurants en toegang tot banen die de meeste bezoekers niet kunnen boeken.",
-        "detail": "Signature Day. Een privé golfdag met Andy, een sessie met John Brazier, privé transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.",
+        "detail": "Signature Day. Een privé golfdag met Andy, een herstelsessie, privé transfers en een georganiseerde avond. De prijs wordt bevestigd na het eerste gesprek, zodra de dag vorm heeft.",
         "button": "Meerdaagse trip aanvragen →",
         "href": "/nl/plan-your-trip"
       }
@@ -1193,7 +1177,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "Nästa steg", "text": "Skicka dina datum, gruppstorlek och handicapintervall. Jag svarar personligen inom 24 timmar." }
       ],
       "signatureRoute": {
-        "text": "För en privat starttid, ett pass med John Brazier (The Golf Doctor) efter rundan, transfer och en kväll ordnad för gruppen finns Signature Day.",
+        "text": "För en privat starttid, ett återhämtningspass efter rundan, transfer och en kväll ordnad för gruppen finns Signature Day.",
         "cta": "Se Signature Day →"
       }
     },
@@ -1206,11 +1190,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "Jag väljer banan efter ditt spel, bokar starttiden och spelar alla 18 hålen vid din sida, med coaching under rundan.",
       "primaryCta": "Fråga om din dag →",
       "primaryHref": "/sv/contact",
-      "secondaryCta": "Se paket",
-      "proof": {
-        "quote": "En rolig runda i härligt sällskap",
-        "credit": "Amanda, T Golf Calvià"
-      }
+      "secondaryCta": "Se paket"
     },
     "day": {
       "eyebrow": "Vad dagen innehåller",
@@ -1369,7 +1349,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "note": "Allt är ordnat. Alla detaljer bekräftas före dagen.",
           "features": [
             "Bana, privat starttid och en helt organiserad dag med mig",
-            "Aterhamtnings- och sportprestationssession med John Brazier",
+            "Aterhamtnings- och sportprestationssession",
             "Privata transfers till och från banan",
             "Middagsplanering på ett rekommenderat hotell eller en restaurang, eller med privatkock"
           ],
@@ -1398,7 +1378,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "Letar du efter något större?",
         "title": "En flerdagarsupplevelse, planerad runt dig.",
         "body": "Två eller tre dagar i följd över Son Gual, Alcanada och vidare, med privata transfers, noggrant utvalda restauranger och tillgång till banor som de flesta besökare inte kan boka.",
-        "detail": "Signature Day. En privat golfdag med Andy, en session med John Brazier, privata transfers och en koordinerad kväll. Priset bekräftas efter första samtalet, när dagen har form.",
+        "detail": "Signature Day. En privat golfdag med Andy, en återhämtningssession, privata transfers och en koordinerad kväll. Priset bekräftas efter första samtalet, när dagen har form.",
         "button": "Fråga om en flerdagarsresa →",
         "href": "/sv/plan-your-trip"
       }
@@ -1488,7 +1468,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         { "label": "下一步", "text": "发送您的日期、人数与差点范围，我会在24小时内亲自回复。" }
       ],
       "signatureRoute": {
-        "text": "如果希望安排私人开球时间、赛后与 John Brazier（The Golf Doctor）的训练恢复环节、接送和适合团队的晚间活动，可以了解 Signature Day。",
+        "text": "如果希望安排私人开球时间、赛后的训练恢复环节、接送和适合团队的晚间活动，可以了解 Signature Day。",
         "cta": "了解 Signature Day →"
       }
     },
@@ -1501,11 +1481,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "body": "我根据您的水平选择球场，订好开球时间，陪您打完全部 18 洞，并在场上随时指导。",
       "primaryCta": "咨询您的高尔夫日 →",
       "primaryHref": "/zh/contact",
-      "secondaryCta": "查看方案",
-      "proof": {
-        "quote": "一轮好玩的球，很棒的陪伴",
-        "credit": "Amanda, T Golf Calvià"
-      }
+      "secondaryCta": "查看方案"
     },
     "day": {
       "eyebrow": "这一天包含什么",
@@ -1664,7 +1640,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
           "note": "全部安排妥当。所有细节会在活动当天前确认。",
           "features": [
             "球场、私人开球时段，以及与我一起完全安排好的一天",
-            "与 John Brazier 进行恢复与运动表现环节",
+            "赛后恢复与运动表现环节",
             "往返球场的私人接送",
             "推荐酒店或餐厅晚餐，合适时可安排私人厨师"
           ],
@@ -1693,7 +1669,7 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
         "eyebrow": "想要更完整的行程？",
         "title": "一款围绕您定制的多日体验。",
         "body": "连续两到三天，安排 Son Gual、Alcanada 及更多球场，包含私人接送、精心挑选的餐饮，以及多数访客订不到的球场机会。",
-        "detail": "Signature Day：与 Andy 同打私人高尔夫日，包含 John Brazier 环节、私人接送和晚间协调。第一次沟通后，等当天范围清楚再确认价格。",
+        "detail": "Signature Day：与 Andy 同打私人高尔夫日，包含赛后恢复环节、私人接送和晚间协调。第一次沟通后，等当天范围清楚再确认价格。",
         "button": "咨询多日行程 →",
         "href": "/zh/plan-your-trip"
       }

@@ -216,6 +216,14 @@ export default function AboutView({ content, locale = 'en', careerStripProps = {
             ))}
           </div>
         </section>
+        {content.press && (
+          <p className="about-press-strip">
+            <span className="about-press-strip__label">{content.press.eyebrow}</span>{' '}
+            <a href={content.press.url} target="_blank" rel="noopener noreferrer">
+              {content.press.publication}: {content.press.title} →
+            </a>
+          </p>
+        )}
         <div className="story" id="story">
           <main className="story__main">
             {content.chapters.map((chapter) => (

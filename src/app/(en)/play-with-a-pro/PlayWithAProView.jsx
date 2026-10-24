@@ -9,6 +9,10 @@ import RevealObserver from '../../../components/RevealObserver'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import { PWAP_PHOTOS } from '../../../lib/pwap-photos.js'
 import { localizeAlt } from '../../../lib/alt-text'
+import { REVIEW_PLAY_QUOTES } from '../../../lib/review-play-box'
+
+// Short lines from three clients' reviews (translated in review-play-box.js), shown without names.
+const HERO_PROOF_QUOTES = ['julien', 'adam', 'paul']
 
 const PAGE_LINKS = {
   en: {
@@ -241,12 +245,14 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               {content.hero.price ? (
                 <p className="pwap-hero__price">{content.hero.price}</p>
               ) : null}
-              {content.hero.proof ? (
-                <div className="pwap-hero__proof">
-                  <ReviewBadge variant="text" theme="dark" locale={locale} />
-                  <p className="pwap-hero__proof-quote">&ldquo;{content.hero.proof.quote}&rdquo; &middot; {content.hero.proof.credit}</p>
-                </div>
-              ) : null}
+              <div className="pwap-hero__proof">
+                <ReviewBadge variant="text" theme="dark" locale={locale} />
+                <ul className="pwap-hero__proof-list">
+                  {HERO_PROOF_QUOTES.map((key) => (
+                    <li key={key}>&ldquo;{REVIEW_PLAY_QUOTES[key][locale] || REVIEW_PLAY_QUOTES[key].en}&rdquo;</li>
+                  ))}
+                </ul>
+              </div>
               <div className="pwap-hero__actions">
                 <Link href={playWithAProContactHref(locale)} className="btn btn--gold">
                   {content.hero.primaryCta}
