@@ -258,7 +258,7 @@
   margin: 0 0 10px;
   color: var(--deep);
   font-family: var(--font-serif);
-  font-size: clamp(1.45rem, 2.6vw, 2rem);
+  font-size: clamp(1.25rem, 2vw, 1.55rem);
   font-weight: 400;
   line-height: 1.18;
 }
@@ -1509,3 +1509,8 @@
 
 .pyt-planning-layout--compact { display: block; }
 .pyt-planning-layout--compact .pyt-pro-cta { width: 100%; }
+
+/* How-it-works steps: a numeral above each step so all four columns start on the same line. */
+.pyt-process ol { list-style: none; padding-left: 0; counter-reset: pyt-step; }
+.pyt-process li { counter-increment: pyt-step; padding-left: 0; }
+.pyt-process li::before { content: counter(pyt-step, decimal-leading-zero); display: block; margin-bottom: 6px; font-family: var(--font-serif); font-size: 1.35rem; color: var(--gold-text); line-height: 1; }

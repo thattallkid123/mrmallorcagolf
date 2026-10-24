@@ -7,7 +7,7 @@ export const metadata = buildPlanYourTripMetadata('en')
 
 export default function PlanYourTripPage() {
   return (
-    <PageLayout lang="en" navTransparent={false}>
+    <PageLayout lang="en">
       <PlanYourTripView locale="en" content={getPlanYourTripContent('en')} />
     </PageLayout>
   )

@@ -60,7 +60,7 @@ export default function ToolsIndexView({ locale = 'en', heroImage = null }) {
   const isZh = locale === 'zh'
 
   return (
-    <PageLayout lang={locale === 'en' ? undefined : locale} navTransparent={false} showWhatsAppButton={false}>
+    <PageLayout lang={locale === 'en' ? undefined : locale} showWhatsAppButton={false}>
       <JsonLd data={buildBreadcrumbSchema(locale, content)} />
       <JsonLd data={buildToolsListSchema(locale, content)} />
 

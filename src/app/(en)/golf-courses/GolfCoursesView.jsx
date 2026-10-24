@@ -137,7 +137,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
 
   return (
     <>
-      <PageLayout lang={locale === 'en' ? undefined : locale} navTransparent={false} showWhatsAppButton={false} showScrollReset={true}>
+      <PageLayout lang={locale === 'en' ? undefined : locale} showWhatsAppButton={false} showScrollReset={true}>
         <StickyMobileCta
           primaryHref={joinHref(locale, '/plan-your-trip')}
           primaryLabel={stickyLabels.plan}

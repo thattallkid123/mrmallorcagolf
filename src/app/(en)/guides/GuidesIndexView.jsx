@@ -126,7 +126,7 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
   const stickyLabels = INDEX_CTA_LABELS[locale] || INDEX_CTA_LABELS.en
 
   return (
-    <PageLayout lang={pageLayoutLang} navTransparent={false} showWhatsAppButton={false}>
+    <PageLayout lang={pageLayoutLang} showWhatsAppButton={false}>
       <StickyMobileCta
         primaryHref={`${prefix}/plan-your-trip`}
         primaryLabel={stickyLabels.plan}

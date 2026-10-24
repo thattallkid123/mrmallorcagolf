@@ -1285,7 +1285,7 @@ body {
 .pwap-day-strip__card { position: relative; flex: 0 0 352px; height: 248px; margin: 0; overflow: hidden; background: #111; border: 1px solid var(--gold); }
 .pwap-day-strip__card--portrait { flex-basis: 228px; }
 
-.pwap-feature-photo { background: linear-gradient(180deg, #f7f3eb 0%, #f4efe5 100%); padding: 8px 40px 82px; }
+.pwap-feature-photo { background: linear-gradient(180deg, #f7f3eb 0%, #f4efe5 100%); padding: var(--space-7) 40px 82px; }
 .pwap-feature-photo__inner { width: min(1200px, 100%); margin: 0 auto; border: 1px solid rgba(26,25,22,0.08); box-shadow: var(--shadow-soft); overflow: hidden; background: rgba(255,255,255,0.8); }
 .pwap-feature-photo__img { width: 100%; height: auto; display: block; }
 
@@ -1304,6 +1304,7 @@ body {
 .course-choice p { font-size: 0.9rem; font-weight: 300; color: rgba(255,255,255,0.72); line-height: 1.8; }
 
 .pwap-who { background: linear-gradient(180deg, #f0ebe2 0%, #f7f3eb 100%); padding: 92px 40px; }
+.pwap-who > * { width: min(1200px, 100%); margin-inline: auto; }
 /* Same invisible-boundary case as .career-strip + .testimonials above:
    pwap-feature-photo ends on #f4efe5 and pwap-who opens on #f0ebe2, a
    difference of ~4 RGB points, so their two stacked section gaps read as one
@@ -1324,7 +1325,7 @@ body {
 .pwap-testimonials__grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
 
 .pwap-packages { background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(249,247,242,0.94)); padding: 104px 40px; }
-.pwap-packages__header { max-width: 1100px; margin: 0 auto 48px; }
+.pwap-packages__header { max-width: 1200px; margin: 0 auto 48px; }
 .pwap-packages__intro { font-size: 1rem; color: var(--taupe-text); line-height: 1.8; margin-top: 1rem; max-width: 600px; }
 .pwap-packages__photo { max-width: 680px; margin: 0 auto 52px; border-radius: 2px; overflow: hidden; box-shadow: 0 8px 32px rgba(26,25,22,0.10); }
 .pwap-packages__photo img { width: 100%; height: auto; display: block; border-radius: 2px; }
@@ -3225,7 +3226,7 @@ select.form-control { cursor: pointer; }
    pixel, so the ring's left/right sides rounded up to 2 device px while its
    top rounded down to 1, which read as "thicker at the sides than the top". */
 .career-strip { background: linear-gradient(180deg, #171613 0%, #1d1a17 100%); padding: clamp(70px,8vw,112px) 4px; overflow: hidden; }
-.career-strip__header { max-width: 1200px; margin: 0 auto 3.5rem; padding: 0 clamp(20px,5vw,60px); }
+.career-strip__header { max-width: none; margin: 0 0 3.5rem; padding: 0 clamp(20px,4vw,40px); }
 .career-strip__label { font-size: 10px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.58); margin-bottom: .75rem; }
 .career-strip__title { color: #fff; font-size: clamp(1.8rem,3vw,2.6rem); }
 .career-strip__viewport-wrap { position: relative; }
@@ -4042,7 +4043,7 @@ select.form-control { cursor: pointer; }
   font-weight: 300;
   font-size: 0.9rem;
   line-height: 1.7;
-  color: var(--taupe-text);
+  color: var(--charcoal);
   margin-bottom: 22px;
   flex: 1;
 }
@@ -4307,7 +4308,7 @@ div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(200px, calc((100% 
 
 /* Shared editorial clarity: preserve copy while making supporting detail optional. */
 .pyt-hero__title, .pyt-tier-title, .pwap-section-title, .contact-left__title { text-wrap: balance; }
-.pwap-booking-terms { max-width: var(--max-w); margin-inline: auto; padding: var(--space-4) var(--space-5); }
+.pwap-booking-terms { width: min(1200px, calc(100% - 40px)); margin-inline: auto; padding: var(--space-4) 0; }
 .booking-terms-link { color: var(--pine); font-family: var(--font-sans); font-size: 0.9rem; text-underline-offset: 4px; }
 .footer__bottom { flex-wrap: wrap; gap: var(--space-4); }
 .footer__bottom p { flex: 1 1 auto; line-height: 1.8; }

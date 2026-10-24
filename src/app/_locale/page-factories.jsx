@@ -96,7 +96,7 @@ export function createPlanYourTripMetadata(locale) {
 export function createPlanYourTripPage(locale) {
   return async function LocalePlanYourTripPage() {
     return (
-      <PageLayout lang={locale} navTransparent={false}>
+      <PageLayout lang={locale}>
         <PlanYourTripView locale={locale} content={getPlanYourTripContent(locale)} />
       </PageLayout>
     )
