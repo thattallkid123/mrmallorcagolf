@@ -276,7 +276,7 @@ export default function HomePageInner({ locale = 'en' }) {
           <h2 className="serif-display">{home.packages.title}</h2>
           <p>{home.packages.body}</p>
         </div>
-        <div className="packages__grid packages__grid--paid" style={{ maxWidth: '1180px', margin: '0 auto' }}>
+        <div className="packages__grid packages__grid--paid">
           {home.packages.items.map((pkg, index) => (
             <div key={`${pkg.eyebrow}-${pkg.name}-${index}`} className={`tier${pkg.signature ? ' tier--signature' : pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
               <p className="tier__name-small">{pkg.eyebrow}</p>
@@ -323,7 +323,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
       </section>
 
-      <section className="faq">
+      <section className="faq home-faq">
         <div className="faq__left reveal">
           <p className="eyebrow">{home.faq.eyebrow}</p>
           <h2 className="serif-display">{home.faq.title}</h2>

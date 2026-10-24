@@ -29,10 +29,10 @@ export default function HomeToolsStrip({ locale = 'en' }) {
     <aside className="home-tools-strip">
       <style>{`
         .home-tools-strip {
-          max-width: 1060px;
-          margin: 0 auto;
-          padding: 0 24px;
-          text-align: center;
+          max-width: none;
+          margin: 0;
+          padding: 0;
+          text-align: left;
         }
         .hts-eyebrow {
           display: inline-block;
@@ -47,11 +47,11 @@ export default function HomeToolsStrip({ locale = 'en' }) {
         .hts-title {
           font-family: var(--font-serif);
           font-weight: 500;
-          font-size: clamp(1.6rem, 4vw, 2.2rem);
+          font-size: clamp(1.75rem, 2.5vw, 2.2rem);
           line-height: 1.15;
           color: #1A1916;
           max-width: 620px;
-          margin: 0 auto 26px;
+          margin: 0 0 26px;
         }
         .hts-grid {
           display: grid;
@@ -71,7 +71,7 @@ export default function HomeToolsStrip({ locale = 'en' }) {
           gap: 6px;
           background: #fff;
           border: 1px solid rgba(26,25,22,0.09);
-          border-radius: 14px;
+          border-radius: 4px;
           padding: 20px 18px;
           text-align: left;
           text-decoration: none;
@@ -95,7 +95,7 @@ export default function HomeToolsStrip({ locale = 'en' }) {
           font-weight: 300;
           font-size: .86rem;
           line-height: 1.55;
-          color: #8A7F74;
+          color: #5C5046;
         }
         .hts-card-go {
           margin-top: auto;
@@ -103,13 +103,13 @@ export default function HomeToolsStrip({ locale = 'en' }) {
           font-size: .78rem;
           letter-spacing: .08em;
           text-transform: uppercase;
-          color: #B8973C;
+          color: #8a6d12;
           padding-top: 8px;
         }
         .hts-footer {
           display: flex;
           flex-direction: column;
-          align-items: center;
+          align-items: flex-start;
           gap: 10px;
         }
         .hts-all {
@@ -129,7 +129,7 @@ export default function HomeToolsStrip({ locale = 'en' }) {
           font-family: var(--font-sans);
           font-weight: 300;
           font-size: .78rem;
-          color: #8A7F74;
+          color: #5C5046;
         }
       `}</style>
 
