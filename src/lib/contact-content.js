@@ -50,9 +50,9 @@ export const CONTACT_CONTENT = {
       message: 'Anything else I should know',
       },
       placeholders: {
-        fname: 'Andy',
+        fname: 'James',
         lname: 'Smith',
-        email: 'andy@example.com',
+        email: 'james@example.com',
         dates: 'e.g. 15-22 October 2026',
         handicap: "e.g. 14, or 'beginner'",
         courses: 'e.g. Son Gual, Alcanada, or suggest some for me',

@@ -1440,8 +1440,8 @@ body {
 .contact-left__eyebrow { font-size: 10px; font-weight: 500; letter-spacing: .2em; text-transform: uppercase; color: rgba(255,255,255,.72); margin-bottom: 1.5rem; }
 .contact-left__title { font-size: clamp(2rem,4vw,3.2rem); color: #fff; line-height: 1.08; margin-bottom: 1.5rem; }
 .contact-left__intro { font-size: 1rem; font-weight: 300; color: rgba(255,255,255,0.78); line-height: 1.85; max-width: 480px; position: relative; z-index: 1; }
-.promise-block { background: rgba(255,255,255,0.055); padding: 22px 26px; border-left: 2px solid var(--gold); position: relative; z-index: 1; }
-.promise-block p { font-family: var(--font-serif); font-style: italic; font-size: 1.1rem; color: rgba(255,255,255,0.77); line-height: 1.62; margin-bottom: 8px; }
+.promise-block { background: rgba(20,18,14,0.6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); padding: 22px 26px; border-left: 2px solid var(--gold); position: relative; z-index: 1; }
+.promise-block p { font-family: var(--font-serif); font-style: italic; font-size: 1.1rem; color: rgba(255,255,255,0.9); line-height: 1.62; margin-bottom: 8px; }
 .promise-block cite { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; color: var(--gold-light); font-style: normal; }
 
 /* Review badge */
@@ -1499,12 +1499,12 @@ body {
 .contact-detail__value a { color: var(--gold-light); text-decoration: none; }
 /* Contact cards — redesigned info section */
 .contact-cards { display: flex; flex-direction: column; gap: 12px; position: relative; z-index: 1; }
-.contact-card { display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.1); border-radius: 22px; text-decoration: none; color: inherit; transition: background 0.35s var(--ease-luxury), border-color 0.35s var(--ease-luxury), transform 0.35s var(--ease-luxury); cursor: pointer; }
-.contact-card:hover { background: rgba(255,255,255,0.10); border-color: rgba(255,255,255,0.2); transform: translateY(-2px); }
+.contact-card { display: flex; align-items: center; gap: 18px; padding: 18px 22px; background: rgba(20,18,14,0.6); backdrop-filter: blur(6px); -webkit-backdrop-filter: blur(6px); border: 1px solid rgba(255,255,255,0.14); border-radius: 22px; text-decoration: none; color: inherit; transition: background 0.35s var(--ease-luxury), border-color 0.35s var(--ease-luxury), transform 0.35s var(--ease-luxury); cursor: pointer; }
+.contact-card:hover { background: rgba(20,18,14,0.72); border-color: rgba(255,255,255,0.2); transform: translateY(-2px); }
 .contact-card--whatsapp:hover { border-color: rgba(37,211,102,0.4); background: rgba(37,211,102,0.07); }
 .contact-card--wechat:hover { border-color: rgba(9,183,0,0.4); background: rgba(9,183,0,0.07); }
 .contact-card--info { cursor: default; }
-.contact-card--info:hover { background: rgba(255,255,255,0.06); border-color: rgba(255,255,255,0.1); }
+.contact-card--info:hover { background: rgba(20,18,14,0.6); border-color: rgba(255,255,255,0.14); }
 /* color: rgba(255,255,255,.82) is needed because .contact-card has
    color: inherit and nothing between here and <body> sets a light colour -
    it was resolving to the page's default dark charcoal. Invisible on this
@@ -1515,7 +1515,7 @@ body {
    already override this with their own brand colours. */
 .contact-card__icon { font-size: 1.4rem; flex-shrink: 0; width: 32px; text-align: center; display: flex; align-items: center; justify-content: center; color: rgba(255,255,255,0.82); }
 .contact-card__icon-svg { width: 24px; height: 24px; }
-.contact-card__label { font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.74); margin-bottom: 4px; font-family: var(--font-sans); }
+.contact-card__label { font-size: 10px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.88); margin-bottom: 4px; font-family: var(--font-sans); }
 .contact-card__value { font-size: 1rem; font-weight: 400; color: #fff; line-height: 1.4; font-family: var(--font-sans); }
 .contact-card__value-select { user-select: all; }
 .contact-card--whatsapp .contact-card__icon { color: #25D366; }
@@ -4318,7 +4318,7 @@ div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(200px, calc((100% 
 .about-hero__media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to top, rgba(12,11,9,0.72) 0%, rgba(12,11,9,0.22) 48%, transparent 74%), linear-gradient(to right, rgba(12,11,9,0.78) 0%, rgba(12,11,9,0.46) 42%, rgba(12,11,9,0.08) 78%); }
 .about-hero .page-hero__inner { position: relative; z-index: 1; }
 .contact-hero__image { object-fit: cover; object-position: center 30%; }
-.contact-hero__media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.55) 50%, rgba(26,25,22,0.8) 100%); }
+.contact-hero__media::after { content: ''; position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(26,25,22,0.72) 0%, rgba(26,25,22,0.64) 50%, rgba(26,25,22,0.8) 100%); }
 .contact-left__hero > :not(.contact-hero__media), .contact-left .promise-block, .contact-left .contact-cards, .contact-left .contact-trust { position: relative; z-index: 1; }
 
 .guide-section-nav { margin-block: var(--space-5); padding: var(--space-3) var(--space-5); border: 1px solid var(--sand); background: var(--cream); }
