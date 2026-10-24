@@ -2,6 +2,7 @@
 
 import Link from 'next/link'
 import { useEffect, useRef, useState } from 'react'
+import { trackEvent } from '../lib/analytics'
 
 const DISMISS_KEY = 'mmg-course-selector-popup-dismissed-at'
 const DISMISS_WINDOW_MS = 1000 * 60 * 60 * 24 * 7
@@ -9,6 +10,7 @@ const DISMISS_WINDOW_MS = 1000 * 60 * 60 * 24 * 7
 export default function HomepageLeadPopup() {
   const [isVisible, setIsVisible] = useState(false)
   const dialogRef = useRef(null)
+  const triggerRef = useRef('scroll')
 
   useEffect(() => {
     const dismissedAt = window.localStorage.getItem(DISMISS_KEY)
@@ -20,9 +22,10 @@ export default function HomepageLeadPopup() {
     }
 
     let fired = false
-    function show() {
+    function show(trigger) {
       if (fired) return
       fired = true
+      triggerRef.current = trigger
       setIsVisible(true)
       window.removeEventListener('scroll', onScroll)
       document.removeEventListener('mouseleave', onMouseLeave)
@@ -36,12 +39,12 @@ export default function HomepageLeadPopup() {
     function onScroll() {
       const scrolled = window.scrollY + window.innerHeight
       const total = document.documentElement.scrollHeight
-      if (window.scrollY > window.innerHeight && scrolled / total >= 0.55 && scrolled / total < 0.75) show()
+      if (window.scrollY > window.innerHeight && scrolled / total >= 0.55 && scrolled / total < 0.75) show('scroll')
     }
 
     // Trigger 2: exit-intent (mouse leaves viewport through top)
     function onMouseLeave(e) {
-      if (e.clientY <= 0 && window.scrollY > window.innerHeight) show()
+      if (e.clientY <= 0 && window.scrollY > window.innerHeight) show('exit_intent')
     }
 
     function start() {
@@ -73,6 +76,7 @@ export default function HomepageLeadPopup() {
     const previousFocus = document.activeElement
     const previousOverflow = document.body.style.overflow
     dialog.showModal()
+    trackEvent('homepage_popup_shown', { trigger: triggerRef.current })
     dialog.querySelector('.lead-popup__close')?.focus()
     document.body.style.overflow = 'hidden'
     return () => {
@@ -82,28 +86,35 @@ export default function HomepageLeadPopup() {
     }
   }, [isVisible])
 
-  function closePopup() {
+  // Measured so we can tell, after a few weeks, whether the popup earns its place.
+  function closePopup(method = 'close_button') {
     window.localStorage.setItem(DISMISS_KEY, String(Date.now()))
+    if (method !== 'click') trackEvent('homepage_popup_close', { method })
     setIsVisible(false)
+  }
+
+  function clickThrough(target) {
+    trackEvent('homepage_popup_click', { target })
+    closePopup('click')
   }
 
   if (!isVisible) return null
 
   return (
-    <dialog ref={dialogRef} className="lead-popup" aria-modal="true" aria-labelledby="lead-popup-title" onCancel={(event) => { event.preventDefault(); closePopup() }}>
+    <dialog ref={dialogRef} className="lead-popup" aria-modal="true" aria-labelledby="lead-popup-title" onCancel={(event) => { event.preventDefault(); closePopup('escape') }}>
       <button
         type="button"
         className="lead-popup__backdrop"
         aria-label="Close popup"
         tabIndex={-1}
-        onClick={closePopup}
+        onClick={() => closePopup('backdrop')}
       />
       <div className="lead-popup__panel">
         <button
           type="button"
           className="lead-popup__close"
           aria-label="Close popup"
-          onClick={closePopup}
+          onClick={() => closePopup('close_button')}
         >
           &#x2715;
         </button>
@@ -113,16 +124,16 @@ export default function HomepageLeadPopup() {
           Answer a few quick questions to get a shortlist matched to your game, group size and budget.
         </p>
         <div className="lead-popup__actions">
-          <Link href="/tools/course-selector" className="btn btn--gold" onClick={closePopup}>
+          <Link href="/tools/course-selector" className="btn btn--gold" onClick={() => clickThrough('find_courses')}>
             Find my courses
           </Link>
-          <Link href="/tools/green-fees" className="btn btn--dark" onClick={closePopup}>
+          <Link href="/tools/green-fees" className="btn btn--dark" onClick={() => clickThrough('compare_courses')}>
             Compare all 24 courses
           </Link>
         </div>
         <p className="lead-popup__note">
           I read every message and reply personally. Already know what you want?{' '}
-          <Link href="/contact" className="lead-popup__contact-link" onClick={closePopup}>
+          <Link href="/contact" className="lead-popup__contact-link" onClick={() => clickThrough('contact')}>
             Send a quick message instead
           </Link>.
         </p>
