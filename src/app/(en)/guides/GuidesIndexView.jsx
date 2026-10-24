@@ -192,7 +192,7 @@ export default function GuidesIndexView({ locale = 'en', pageLang, content }) {
       ) : null}
 
       {locale === 'en' ? (
-        <section style={{ background: 'var(--cream)', padding: '16px clamp(20px, 5vw, 60px)' }}>
+        <section className="guides-tools-strip">
           <ToolPlacementCta
             tool={{
               eyebrow: 'Free planning tools',

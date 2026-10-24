@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Alcanada - Reseña & Tarifas",
-      "description": "Alcanada: 9/10, €115-€230, 58 bunkers. El veredicto honesto de Andy, incluido por qué merecen la pena los 50 minutos de trayecto."
+      "description": "Alcanada: 9/10, €115-€230, 58 bunkers. Mi veredicto honesto, incluido por qué merecen la pena los 50 minutos de trayecto."
     },
     "meta": {
       "badge": "Análisis del campo",
@@ -99,7 +99,7 @@ const content = {
           ],
           [
             "9/10",
-            "Valoración de Andy"
+            "Mi valoración"
           ],
           [
             "58",
@@ -174,7 +174,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Alcanada - Review & Gebühren",
-      "description": "Alcanada: 9/10, €115-€230, 58 Bunker. Andys ehrliches Urteil, auch dazu, warum sich die 50 Minuten Fahrt lohnen."
+      "description": "Alcanada: 9/10, €115-€230, 58 Bunker. Mein ehrliches Urteil, auch dazu, warum sich die 50 Minuten Fahrt lohnen."
     },
     "meta": {
       "badge": "Platzbewertung",
@@ -270,7 +270,7 @@ const content = {
           ],
           [
             "9/10",
-            "Andys Bewertung"
+            "Meine Bewertung"
           ],
           [
             "58",
@@ -345,7 +345,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Alcanada Golf - Avis honnête 2026",
-      "description": "Alcanada : 9/10, €115-€230, 58 bunkers. Le verdict honnête d'Andy, y compris pourquoi les 50 minutes de route valent la peine."
+      "description": "Alcanada : 9/10, €115-€230, 58 bunkers. Mon verdict honnête, y compris pourquoi les 50 minutes de route valent la peine."
     },
     "meta": {
       "badge": "Avis parcours",
@@ -441,7 +441,7 @@ const content = {
           ],
           [
             "9/10",
-            "Note d'Andy"
+            "Ma note"
           ],
           [
             "58",
@@ -514,7 +514,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Alcanada Golf - Eerlijke review 2026",
-      "description": "Alcanada: 9/10, €115-€230, 58 bunkers. Andy's eerlijke oordeel, inclusief waarom de rit van 50 minuten het waard is."
+      "description": "Alcanada: 9/10, €115-€230, 58 bunkers. Mijn eerlijke oordeel, inclusief waarom de rit van 50 minuten het waard is."
     },
     "meta": {
       "badge": "Baanreview",
@@ -610,7 +610,7 @@ const content = {
           ],
           [
             "9/10",
-            "Andy's beoordeling"
+            "Mijn beoordeling"
           ],
           [
             "58",
@@ -685,7 +685,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Alcanada Golf - Ärlig recension 2026",
-      "description": "Alcanada: 9/10, €115-€230, 58 bunkrar. Andys ärliga omdöme, inklusive varför den 50 minuter långa resan är värd det."
+      "description": "Alcanada: 9/10, €115-€230, 58 bunkrar. Mitt ärliga omdöme, inklusive varför den 50 minuter långa resan är värd det."
     },
     "meta": {
       "badge": "Banrecension",
@@ -781,7 +781,7 @@ const content = {
           ],
           [
             "9/10",
-            "Andys betyg"
+            "Mitt betyg"
           ],
           [
             "58",
@@ -856,7 +856,7 @@ const content = {
   "zh": {
     "metadata": {
       "title": "阿尔卡纳达高尔夫球场 - PGA职业教练诚实评测",
-      "description": "Alcanada：9/10，€115-€230，58 个沙坑。Andy 的诚实结论，包括为什么值得开 50 分钟的车。"
+      "description": "Alcanada：9/10，€115-€230，58 个沙坑。我的诚实结论，包括为什么值得开 50 分钟的车。"
     },
     "meta": {
       "badge": "球场评测",
@@ -952,7 +952,7 @@ const content = {
           ],
           [
             "9/10",
-            "Andy 的评分"
+            "我的评分"
           ],
           [
             "58",

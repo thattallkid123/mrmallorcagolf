@@ -36,7 +36,7 @@ function GuideCarousel({ id, heading, guides, prefix, imageBySlug, priorityFirst
       {heading && (
         <div className="guides-carousel-section__header">
           <p className={`eyebrow${dark ? ' eyebrow--light' : ''}`}>{heading}</p>
-          <p className="guides-carousel-section__hint" style={dark ? { color: 'rgba(255,255,255,0.4)' } : {}}>{'<- scroll ->'}</p>
+          <p className="guides-carousel-section__hint" style={dark ? { color: 'rgba(255,255,255,0.4)' } : {}}>Scroll →</p>
         </div>
       )}
       <div className="guides-carousel__track" aria-label={`${heading || 'Guides'} carousel`}>

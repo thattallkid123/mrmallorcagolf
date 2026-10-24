@@ -7,7 +7,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: 'Son Gual Golf Review: €115-€165 (2026)',
         description:
-          "Andy's favourite course in Mallorca: €115-€165, handicap certificate required. Full breakdown and honest verdict.",
+          "My favourite course in Mallorca: €115-€165, handicap certificate required. Full breakdown and honest verdict.",
         imagePath: '/images/son-gual-blog/sg-hero.webp',
       },
       meta: {
@@ -186,7 +186,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Alcanada Golf - Honest Review 2026",
         description:
-          "Alcanada: 9/10, €115-€230, 58 bunkers. Andy's honest verdict, including why it's worth the 50-minute drive.",
+          "Alcanada: 9/10, €115-€230, 58 bunkers. My honest verdict, including why it's worth the 50-minute drive.",
         imagePath: '/images/alcanada-blog/alc-7.webp',
       },
       meta: {
@@ -285,7 +285,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'facts',
           items: [
             ['Peak €230 / Low €115', '2026 price guide'],
-            ['9/10', "Andy's rating"],
+            ['9/10', "My rating"],
             ['58', 'Bunkers'],
             ['55 km', 'From Palma'],
           ],
@@ -559,7 +559,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf de Andratx Review: 7.5/10 (2026)",
         description:
-          "Golf de Andratx: 7.5/10, green fees €95-€170 by date and tee time, and the longest par 5 in Spain (609m). Andy's honest verdict.",
+          "Golf de Andratx: 7.5/10, green fees €95-€170 by date and tee time, and the longest par 5 in Spain (609m). My honest verdict.",
         imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
@@ -680,7 +680,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'facts',
           items: [
             ['~€125', 'Green fee (May 2026)'],
-            ['7.5/10', "Andy's rating"],
+            ['7.5/10', "My rating"],
             ['Par 72', 'Mountain layout'],
             ['SW Mallorca', 'Above Andratx town'],
           ],
@@ -1028,7 +1028,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'facts',
           items: [
             ['€75', 'Green fee on the day we played'],
-            ['9/10', "Andy's rating"],
+            ['9/10', "My rating"],
             ['6,027m', 'White tees (Par 71)'],
             ['Buggy optional', 'Course is walkable, not too hilly'],
           ],
@@ -1217,7 +1217,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'facts',
           items: [
             ['\u20ac120', 'Guest green fee on the day we played'],
-            ['8/10', "Andy's rating"],
+            ['8/10', "My rating"],
             ['6,021m', 'White tees (Par 71)'],
             ['Buggy optional', 'We walked all 18'],
           ],
@@ -1430,7 +1430,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'facts',
           items: [
             ['€88', 'Sheraton guest rate on the day we played'],
-            ['7/10', "Andy's rating"],
+            ['7/10', "My rating"],
             ['5,470m', 'Yellow tees (Par 70)'],
             ['Buggy optional', 'We walked all 18'],
           ],
@@ -1604,7 +1604,7 @@ export const GUIDE_POST_CONTENT = {
           items: [
             ['Up to €210', 'Peak green fee'],
             ['From €150', 'Twilight rate'],
-            ['9/10', "Andy's rating"],
+            ['9/10', "My rating"],
             ['6,500m', 'Back tees (Par 72)'],
           ],
         },
@@ -1942,7 +1942,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'Common Questions' },
         {
           type: 'paragraph',
-          text: "On-course coaching works well for a wide range of players, from those whose course management is holding back a reasonable standard of golf to visitors who want to get more out of playing courses like Son Gual or Alcanada. It is also a good option for pairs or small groups coached together. Sessions mostly take place at Son Gual, Andy's most-played course on the island, or Alcanada for groups who want the most scenic round; other courses are used depending on the group and what they want to work on. Most players leave with three or four specific things to work on, rather than a long list of swing faults, plus a clearer sense of course management: where to take risk and where to play safe.",
+          text: "On-course coaching works well for a wide range of players, from those whose course management is holding back a reasonable standard of golf to visitors who want to get more out of playing courses like Son Gual or Alcanada. It is also a good option for pairs or small groups coached together. Sessions mostly take place at Son Gual, my most-played course on the island, or Alcanada for groups who want the most scenic round; other courses are used depending on the group and what they want to work on. Most players leave with three or four specific things to work on, rather than a long list of swing faults, plus a clearer sense of course management: where to take risk and where to play safe.",
         },
         { type: 'heading', text: 'A Note on Range Lessons' },
         {

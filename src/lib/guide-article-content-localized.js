@@ -4913,7 +4913,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           "text": "¿Quieres que la parte de golf esté bien organizada: campos, ruta, salidas, buggies, alquileres y un presupuesto claro antes de reservar nada?",
-          "linkLabel": "Pídele a Andy que planifique el golf →"
+          "linkLabel": "Pídeme que planifique el golf →"
         }
       ]
     },
@@ -5037,7 +5037,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           "text": "Möchten Sie die Golfseite sauber organisiert haben: Plätze, Route, Startzeiten, Buggys, Leihschläger und ein klares Angebot, bevor etwas gebucht wird?",
-          "linkLabel": "Andy bitten, das Golf zu planen →"
+          "linkLabel": "Lassen Sie mich das Golf planen →"
         }
       ]
     },
@@ -5161,7 +5161,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           "text": "Vous voulez le volet golf organisé correctement : parcours, itinéraire, départs, voiturettes, locations et un devis clair avant toute réservation ?",
-          "linkLabel": "Demander à Andy de planifier le golf →"
+          "linkLabel": "Me demander de planifier le golf →"
         }
       ]
     },
@@ -5285,7 +5285,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           "text": "Wil je de golfkant goed geregeld hebben: banen, route, starttijden, buggy's, huurmateriaal en een duidelijke offerte voordat er iets wordt geboekt?",
-          "linkLabel": "Vraag Andy om het golf te plannen →"
+          "linkLabel": "Vraag mij om het golf te plannen →"
         }
       ]
     },
@@ -5409,7 +5409,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           "text": "Vill du ha golfsidan ordentligt ordnad: banor, rutt, starttider, golfbilar, uthyrning och en tydlig offert innan något bokas?",
-          "linkLabel": "Be Andy planera golfen →"
+          "linkLabel": "Be mig planera golfen →"
         }
       ]
     },
@@ -5533,7 +5533,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           "text": "想让高尔夫这一部分安排妥当吗：球场、路线、开球时间、球车、租杆，以及预订前清晰的报价？",
-          "linkLabel": "请 Andy 来规划高尔夫 →"
+          "linkLabel": "请我来规划高尔夫 →"
         }
       ]
     }

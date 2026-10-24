@@ -42,7 +42,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Nach Region durchsuchen. Jede Karte zeigt Preis, Schwierigkeit, Andys Bewertung sowie eventuelle dynamische Preise oder Handicap-Vorgaben vor der Buchung.",
+      "explorerIntro": "Nach Region durchsuchen. Jede Karte zeigt Preis, Schwierigkeit, meine Bewertung sowie eventuelle dynamische Preise oder Handicap-Vorgaben vor der Buchung.",
       "faqEyebrow": "Fragen",
       "faqTitle": "Häufige Fragen",
       "faqIntro": "Ein paar schnelle Antworten, bevor Sie Ihre Auswahl treffen oder buchen.",
@@ -120,7 +120,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Explore por zona. Cada ficha muestra precio, dificultad, la valoración de Andy y cualquier tarifa dinámica o requisito de hándicap antes de reservar.",
+      "explorerIntro": "Explore por zona. Cada ficha muestra precio, dificultad, mi valoración y cualquier tarifa dinámica o requisito de hándicap antes de reservar.",
       "faqEyebrow": "Preguntas",
       "faqTitle": "Preguntas frecuentes",
       "faqIntro": "Respuestas rápidas antes de hacer su lista corta o reservar.",
@@ -197,7 +197,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Parcourez par région. Chaque fiche montre le prix, la difficulté, la note d'Andy et tout tarif dynamique ou exigence de handicap avant de réserver.",
+      "explorerIntro": "Parcourez par région. Chaque fiche montre le prix, la difficulté, ma note et tout tarif dynamique ou exigence de handicap avant de réserver.",
       "faqEyebrow": "Questions",
       "faqTitle": "Questions fréquentes",
       "faqIntro": "Quelques réponses rapides avant de faire votre short-list ou de réserver.",
@@ -273,7 +273,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Blader per regio. Elke kaart toont prijs, moeilijkheid, de beoordeling van Andy en eventuele dynamische prijzen of handicapeisen voor het boeken.",
+      "explorerIntro": "Blader per regio. Elke kaart toont prijs, moeilijkheid, mijn beoordeling en eventuele dynamische prijzen of handicapeisen voor het boeken.",
       "faqEyebrow": "Vragen",
       "faqTitle": "Veelgestelde vragen",
       "faqIntro": "Snelle antwoorden voordat u een shortlist maakt of boekt.",
@@ -350,7 +350,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "Bläddra efter region. Varje kort visar pris, svårighetsgrad, Andys betyg och eventuell dynamisk prissättning eller handicapkrav före bokning.",
+      "explorerIntro": "Bläddra efter region. Varje kort visar pris, svårighetsgrad, mitt betyg och eventuell dynamisk prissättning eller handicapkrav före bokning.",
       "faqEyebrow": "Frågor",
       "faqTitle": "Vanliga frågor",
       "faqIntro": "Några snabba svar innan du gör din kortlista eller bokar.",
@@ -429,7 +429,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "explorerIntro": "按地区浏览。每张卡片都会标出价格、难度、Andy 的评分，以及预订前要注意的动态定价或差点要求。",
+      "explorerIntro": "按地区浏览。每张卡片都会标出价格、难度、我的评分，以及预订前要注意的动态定价或差点要求。",
       "faqEyebrow": "问题",
       "faqTitle": "常见问题",
       "faqIntro": "在您列出 shortlist 或预订之前，先看几个简短答案。",

@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Son Gual - Reseña & Tarifas",
-      "description": "El campo favorito de Andy en Mallorca: €115-€165, se exige certificado de hándicap. Desglose completo y veredicto honesto."
+      "description": "Mi campo favorito en Mallorca: €115-€165, se exige certificado de hándicap. Desglose completo y veredicto honesto."
     },
     "meta": {
       "badge": "Reseña del campo",
@@ -174,7 +174,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Son Gual - Review & Gebühren",
-      "description": "Andys Lieblingsplatz auf Mallorca: €115-€165, Handicap-Nachweis erforderlich. Ausführliche Übersicht und ehrliches Urteil."
+      "description": "Mein Lieblingsplatz auf Mallorca: €115-€165, Handicap-Nachweis erforderlich. Ausführliche Übersicht und ehrliches Urteil."
     },
     "meta": {
       "badge": "Platzbewertung",
@@ -345,7 +345,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Son Gual - Avis & Tarifs",
-      "description": "Le parcours préféré d'Andy à Majorque : €115-€165, certificat d'index exigé. Détail complet et verdict honnête."
+      "description": "Mon parcours préféré à Majorque : €115-€165, certificat d'index exigé. Détail complet et verdict honnête."
     },
     "meta": {
       "badge": "Avis parcours",
@@ -516,7 +516,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Son Gual - Review & Tarief",
-      "description": "Andy's favoriete baan op Mallorca: €115-€165, handicapbewijs vereist. Volledige uitleg en eerlijk oordeel."
+      "description": "Mijn favoriete baan op Mallorca: €115-€165, handicapbewijs vereist. Volledige uitleg en eerlijk oordeel."
     },
     "meta": {
       "badge": "Baanrecensie",
@@ -687,7 +687,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Gual - Recension & Avgifter",
-      "description": "Andys favoritbana på Mallorca: €115-€165, handicapintyg krävs. Fullständig genomgång och ärligt omdöme."
+      "description": "Min favoritbana på Mallorca: €115-€165, handicapintyg krävs. Fullständig genomgång och ärligt omdöme."
     },
     "meta": {
       "badge": "Banrecension",
@@ -858,7 +858,7 @@ const content = {
   "zh": {
     "metadata": {
       "title": "Son Gual高尔夫球场马略卡岛 - PGA职业球手诚实点评（2026）",
-      "description": "Andy 在马略卡最喜欢的球场：€115-€165，需要差点证明。完整解析与诚实结论。"
+      "description": "我在马略卡最喜欢的球场：€115-€165，需要差点证明。完整解析与诚实结论。"
     },
     "meta": {
       "badge": "球场评测",

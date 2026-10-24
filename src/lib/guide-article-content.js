@@ -456,7 +456,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'cta',
         text: 'Want the golf side arranged properly: courses, routing, tee times, buggies, rentals, and a clear quote before anything is booked?',
-        linkLabel: 'Ask Andy to plan the golf →',
+        linkLabel: 'Ask me to plan the golf →',
         href: '/plan-your-trip',
       },
     ],

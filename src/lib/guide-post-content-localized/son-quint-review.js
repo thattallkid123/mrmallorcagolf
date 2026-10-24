@@ -111,7 +111,7 @@ const content = {
           ],
           [
             "8/10",
-            "Valoración de Andy"
+            "Mi valoración"
           ],
           [
             "6.021 m",
@@ -286,7 +286,7 @@ const content = {
           ],
           [
             "8/10",
-            "Andys Bewertung"
+            "Meine Bewertung"
           ],
           [
             "6.021 m",
@@ -461,7 +461,7 @@ const content = {
           ],
           [
             "8/10",
-            "Note de Andy"
+            "Ma note"
           ],
           [
             "6 021 m",
@@ -636,7 +636,7 @@ const content = {
           ],
           [
             "8/10",
-            "Andy's beoordeling"
+            "Mijn beoordeling"
           ],
           [
             "6.021m",
@@ -811,7 +811,7 @@ const content = {
           ],
           [
             "8/10",
-            "Andys betyg"
+            "Mitt betyg"
           ],
           [
             "6 021 m",
@@ -986,7 +986,7 @@ const content = {
           ],
           [
             "8/10",
-            "Andy的评分"
+            "我的评分"
           ],
           [
             "6021米",
