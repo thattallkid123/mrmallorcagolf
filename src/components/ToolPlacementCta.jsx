@@ -37,6 +37,7 @@ export default function ToolPlacementCta({
   tool = DEFAULT_TOOLS.courseSelector,
   compact = false,
   slim = false,
+  line = false,
   dark = false,
 }) {
   const resolvedTool = typeof tool === 'string' ? DEFAULT_TOOLS[tool] : tool
@@ -45,7 +46,7 @@ export default function ToolPlacementCta({
 
   return (
     <aside
-      className={`tool-placement-cta${compact ? ' tool-placement-cta--compact' : ''}${slim ? ' tool-placement-cta--slim' : ''}${dark ? ' tool-placement-cta--dark' : ''}`}
+      className={`tool-placement-cta${compact ? ' tool-placement-cta--compact' : ''}${slim ? ' tool-placement-cta--slim' : ''}${line ? ' tool-placement-cta--line' : ''}${dark ? ' tool-placement-cta--dark' : ''}`}
     >
       <div className="tool-placement-cta__copy">
         <p className="tool-placement-cta__eyebrow">{resolvedTool.eyebrow}</p>

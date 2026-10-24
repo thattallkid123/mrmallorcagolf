@@ -856,43 +856,52 @@ export default function GolfCoursesClient({ lang = 'en' }) {
   return (
     <>
       <section className="course-controls-shell">
-        <div id="all-courses" className="filter-tabs filter-tabs--anchored filter-tabs--primary">
-          {regions.map((region) => (
-            <button
-              key={region.key}
-              className={`filter-tab${activeFilter === region.key ? ' active' : ''}`}
-              onClick={() => setActiveFilter(region.key)}
-            >
-              {region.label}
-            </button>
-          ))}
+        <div className="course-controls-head">
+          <h2 className="region-title">{activeFilter === 'all' ? t.allCourses : regionHeaders[activeFilter]?.title}</h2>
+          <span className="region-count">
+            {activeFilter === 'all'
+              ? `${globallySortedCourses.length} ${sortUi.coursesWord || 'courses'}`
+              : regionHeaders[activeFilter]?.count}
+          </span>
         </div>
         <div className="course-controls-copy">
           <p>{t.explorerIntro || sortUi.controlsIntro}</p>
-          <p className="course-controls-copy__key">{sortUi.dynamicKey}</p>
         </div>
 
-        <div className="sort-controls reveal">
-          <span className="sort-controls__label">{sortUi.sortLabel}</span>
-          <div className="sort-controls__grid">
-            {['rating', 'az', 'price', 'nearest'].map((sortKey) => {
-              const isActive = activeSort === sortKey
-              return (
-                <button
-                  key={sortKey}
-                  className={`filter-tab filter-tab--sort${isActive ? ' active' : ''}`}
-                  onClick={() => handleSortChange(sortKey)}
-                >
-                  <span>{getSortLabel(sortKey, sortUi, sortDirections[sortKey], isLocating && sortKey === 'nearest')}</span>
-                  {isActive ? (
-                    <span
-                      className={`filter-tab__triangle filter-tab__triangle--${getSortTriangleDirection(sortKey, sortDirections[sortKey])}`}
-                      aria-hidden="true"
-                    />
-                  ) : null}
-                </button>
-              )
-            })}
+        <div id="all-courses" className="course-controls-bar">
+          <div className="filter-tabs filter-tabs--anchored filter-tabs--primary">
+            {regions.map((region) => (
+              <button
+                key={region.key}
+                className={`filter-tab${activeFilter === region.key ? ' active' : ''}`}
+                onClick={() => setActiveFilter(region.key)}
+              >
+                {region.label}
+              </button>
+            ))}
+          </div>
+          <div className="sort-controls">
+            <span className="sort-controls__label">{sortUi.sortLabel}</span>
+            <div className="sort-controls__grid">
+              {['rating', 'az', 'price', 'nearest'].map((sortKey) => {
+                const isActive = activeSort === sortKey
+                return (
+                  <button
+                    key={sortKey}
+                    className={`filter-tab filter-tab--sort${isActive ? ' active' : ''}`}
+                    onClick={() => handleSortChange(sortKey)}
+                  >
+                    <span>{getSortLabel(sortKey, sortUi, sortDirections[sortKey], isLocating && sortKey === 'nearest')}</span>
+                    {isActive ? (
+                      <span
+                        className={`filter-tab__triangle filter-tab__triangle--${getSortTriangleDirection(sortKey, sortDirections[sortKey])}`}
+                        aria-hidden="true"
+                      />
+                    ) : null}
+                  </button>
+                )
+              })}
+            </div>
           </div>
         </div>
       </section>
@@ -901,10 +910,7 @@ export default function GolfCoursesClient({ lang = 'en' }) {
         <div className="page-main">
           {activeFilter === 'all' ? (
             <section className="region-section">
-              <div className="region-header">
-                <h2 className="region-title">{t.allCourses}</h2>
-                <span className="region-count">{globallySortedCourses.length} {sortUi.coursesWord || 'courses'}</span>
-              </div>
+              <p className="course-footnote">{sortUi.dynamicKey}</p>
               {t.courseNote && (
                 <p className="region-note">{t.courseNote}</p>
               )}
@@ -913,16 +919,12 @@ export default function GolfCoursesClient({ lang = 'en' }) {
               </div>
             </section>
           ) : visibleRegions.map((regionData, i) => {
-            const header = regionHeaders[regionData.region]
             const sortedCourses = regionSortedCourses.get(regionData.region) || regionData.courses
             return (
               <div key={regionData.region + activeFilter}>
                 {i > 0 && <div className="divider" />}
                 <section className="region-section">
-                  <div className="region-header">
-                    <h2 className="region-title">{header.title}</h2>
-                    <span className="region-count">{header.count}</span>
-                  </div>
+                  <p className="course-footnote">{sortUi.dynamicKey}</p>
                   {t.courseNote && (
                     <p className="region-note">{t.courseNote}</p>
                   )}

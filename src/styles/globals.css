@@ -1582,10 +1582,13 @@ select.form-control { cursor: pointer; }
 
 /* ─── GOLF COURSES PAGE ──────────────────────────────────── */
 
-.course-controls-shell { background: var(--cream); border-bottom: 1px solid var(--sand); }
-.course-controls-copy { padding: 0 40px 16px; }
-.course-controls-copy p { font-size: 0.95rem; font-weight: 400; color: var(--charcoal); line-height: 1.7; margin-bottom: 0; max-width: 920px; }
-.course-controls-copy .course-controls-copy__key { margin-top: 0.5rem; color: var(--taupe-text); }
+.course-controls-shell { background: var(--cream); border-bottom: 1px solid var(--sand); padding: 32px 40px 0; }
+.course-controls-head { display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; margin-bottom: 10px; }
+.course-controls-copy { padding: 0 0 24px; }
+.course-controls-copy p { font-size: 0.95rem; font-weight: 400; color: var(--taupe-text); line-height: 1.7; margin-bottom: 0; max-width: 920px; }
+.course-controls-bar { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 0 32px; border-top: 1px solid var(--sand); scroll-margin-top: 80px; }
+.course-footnote { font-size: 0.78rem; color: var(--taupe-text); line-height: 1.6; margin: 0 0 24px; }
+.course-shortcut { background: var(--cream); padding: 20px 40px 0; }
 .expert-label { font-size: 10px; font-weight: 500; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.72); margin-bottom: 4px; }
 .expert-name { font-family: var(--font-serif); font-size: 1.3rem; font-weight: 500; color: #fff; margin-bottom: 8px; }
 .expert-credentials { font-size: 0.82rem; font-weight: 300; color: rgba(255,255,255,0.76); line-height: 1.75; margin-bottom: 16px; }
@@ -1595,7 +1598,7 @@ select.form-control { cursor: pointer; }
 .filter-tabs { background: var(--white); border-bottom: 1px solid var(--linen); padding: 0 40px; display: flex; gap: 0; overflow-x: auto; scrollbar-width: none; position: sticky; top: var(--nav-h); z-index: 50; }
 .filter-tabs--anchored { scroll-margin-top: 80px; }
 .filter-tabs--primary { position: static; top: auto; }
-.filter-tabs--primary { background: var(--cream); border-bottom: 1px solid var(--sand); }
+.filter-tabs--primary { background: var(--cream); border-bottom: none; padding: 0; flex: 1 1 auto; min-width: 0; }
 .filter-tabs--primary .filter-tab { color: var(--taupe-text); }
 .filter-tabs--primary .filter-tab:hover { color: var(--deep); }
 .filter-tabs--primary .filter-tab.active { color: var(--pine); border-bottom-color: var(--pine); }
@@ -1604,12 +1607,15 @@ select.form-control { cursor: pointer; }
 .filter-tab:hover { color: var(--deep); }
 .filter-tab.active { color: var(--pine); border-bottom-color: var(--pine); }
 .sort-controls {
-  padding: 0 40px 26px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px 12px;
+  padding: 10px 0;
 }
 .sort-controls__label {
   display: inline-flex;
   align-items: center;
-  margin-bottom: 10px;
   font-size: 10px;
   font-weight: 500;
   letter-spacing: 0.14em;
@@ -1618,18 +1624,18 @@ select.form-control { cursor: pointer; }
   font-family: var(--font-sans);
 }
 .sort-controls__grid {
-  display: grid;
-  grid-template-columns: repeat(4, minmax(0, 1fr));
-  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
 }
 .sort-controls .filter-tab {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
-  min-height: 42px;
-  padding: 10px 14px;
-  font-size: 0.78rem;
+  min-height: 36px;
+  padding: 6px 14px;
+  font-size: 0.7rem;
   color: var(--taupe-text);
   border: 1px solid var(--sand);
   background: var(--white);
@@ -1663,7 +1669,7 @@ select.form-control { cursor: pointer; }
 
 .page-layout { display: block; background: linear-gradient(180deg, rgba(255,255,255,0.98), rgba(248,244,236,0.9)); }
 .page-main { padding: 0; }
-.region-section { padding: 60px 40px; }
+.region-section { padding: 28px 40px 60px; }
 .region-header { margin-bottom: 36px; display: flex; align-items: baseline; gap: 16px; flex-wrap: wrap; }
 .region-title { font-family: var(--font-serif); font-size: 1.8rem; font-weight: 500; color: var(--deep); }
 .region-subtitle { font-size: 10px; letter-spacing: 0.13em; text-transform: uppercase; color: var(--taupe-text); }
@@ -2065,9 +2071,6 @@ select.form-control { cursor: pointer; }
   .journey-card--photo p { max-width: 100%; }
   .how { padding: 70px 20px; }
   .how__steps { grid-template-columns: 1fr; }
-  .sort-controls__grid {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
   .what { grid-template-columns: 1fr; gap: 40px; padding: 70px 20px; }
   .home-credentials { padding: 64px 20px; }
   .home-credentials__grid { grid-template-columns: 1fr; }
@@ -2159,9 +2162,12 @@ select.form-control { cursor: pointer; }
   .contact-left .contact-cards { order: 4; padding: 32px 24px 0; margin: 0; }
   .contact-left .contact-trust { order: 5; margin: 0; padding: 36px 24px 52px; }
   .form-row { grid-template-columns: 1fr; }
-  .course-controls-copy { padding: 24px 20px 12px; }
+  .course-controls-shell { padding: 24px 20px 0; }
+  .course-controls-copy { padding: 0 0 20px; }
   .course-controls-copy p { font-size: 0.95rem; line-height: 1.6; }
+  .course-shortcut { padding: 16px 20px 0; }
   .filter-tabs { padding: 0 20px; }
+  .filter-tabs--primary { padding: 0; }
   .filter-tab { padding: 18px 18px; }
   .filter-tabs__count { margin-left: 0; padding: 14px 0 14px 20px; }
   .region-section { padding: 40px 20px; }
@@ -2671,6 +2677,11 @@ select.form-control { cursor: pointer; }
   display: none;
 }
 
+/* Single-line variant for the golf-courses shortcut: the question stands in for the paragraph. */
+.tool-placement-cta--line { max-width: none; background: var(--white); border: 1px solid var(--sand); border-left: 3px solid var(--gold); }
+.tool-placement-cta--line h2 { display: block; margin: 0; font-size: 1.15rem; line-height: 1.3; }
+.tool-placement-cta--line .tool-placement-cta__copy > p:not(.tool-placement-cta__eyebrow) { display: none; }
+
 .tool-placement-cta--slim .tool-placement-cta__button {
   min-height: 36px;
   padding: 8px 18px;
@@ -2682,6 +2693,8 @@ select.form-control { cursor: pointer; }
   .tool-placement-cta--slim .tool-placement-cta__copy p {
     display: none;
   }
+  .tool-placement-cta--line .tool-placement-cta__eyebrow { display: none; }
+  .tool-placement-cta--line h2 { font-size: 1rem; }
 }
 
 .email-signup__iframe {

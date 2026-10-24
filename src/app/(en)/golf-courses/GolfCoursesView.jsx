@@ -205,8 +205,8 @@ export default function GolfCoursesView({ locale = 'en', content }) {
         </header>
 
         {content.ui?.toolCta ? (
-          <section style={{ background: 'var(--cream)', padding: 'clamp(28px, 5vw, 52px) clamp(20px, 5vw, 60px)' }}>
-            <ToolPlacementCta tool={content.ui.toolCta} dark />
+          <section className="course-shortcut">
+            <ToolPlacementCta tool={content.ui.toolCta} slim line />
           </section>
         ) : null}
 
