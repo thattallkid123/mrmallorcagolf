@@ -5,6 +5,10 @@ When a new bug is fixed, add it here so it never comes back.
 
 ---
 
+## Mobile hero text overlapped the photo and navigation
+**Pattern (October 2026):** Play With A Pro and Signature Day shared a fixed viewport-height hero. Long introductions, translations and short in-app browser viewports pushed the copy above the hero; the mobile Play With A Pro photo also sat behind the heading and body.
+**Fix:** Let the hero grow with its content, reserve navigation clearance on wider screens, and place the photo above a solid text section on mobile. Visual checks cover both pages in all seven languages, including 320px phones and short tablet viewports.
+
 ## Customer email delivery, quiz context and hotel matching
 **Pattern (October 2026 customer audit):** Some PDF forms and the pre-round questionnaire showed success before checking the send response; several routes ignored returned provider errors. A PDF request also joined a nurture group without the optional planning-notes consent. The course enquiry dropped quiz choices, its email omitted promised notes, and the pre-round form promised a customer copy that was never sent. Family/spa tags and several hotel descriptions had factual errors.
 **Fix:** Await and check delivery, preserve answers on failure, require explicit marketing consent, include the existing course notes and complete quiz summary, send the promised pre-round copy, and correct the hotel master plus all six overlays from official property sources. Unit and browser regressions cover rejection, retry, escaped answer display and the Palma family match.

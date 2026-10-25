@@ -1,10 +1,10 @@
 const { expect, test } = require('@playwright/test')
 
 const LOCALES = ['de', 'es', 'fr', 'nl', 'sv', 'zh']
-const BASE_ROUTES = ['/', '/about', '/play-with-a-pro', '/guides', '/contact', '/golf-courses']
+const BASE_ROUTES = ['/', '/about', '/play-with-a-pro', '/signature-day', '/guides', '/contact', '/golf-courses']
 const ROUTES = [
   ...BASE_ROUTES,
-  ...LOCALES.flatMap((locale) => ['/', '/about', '/play-with-a-pro', '/guides', '/contact', '/golf-courses'].map((p) => `/${locale}${p === '/' ? '' : p}`)),
+  ...LOCALES.flatMap((locale) => BASE_ROUTES.map((p) => `/${locale}${p === '/' ? '' : p}`)),
 ]
 
 test.describe('visual smoke checks', () => {
@@ -34,6 +34,32 @@ test.describe('visual smoke checks', () => {
 
       const hasHorizontalOverflow = await page.evaluate(() => document.documentElement.scrollWidth > window.innerWidth + 2)
       expect(hasHorizontalOverflow, `Unexpected horizontal overflow on ${route}`).toBe(false)
+
+      if (route.endsWith('/play-with-a-pro') || route.endsWith('/signature-day')) {
+        // Long translated introductions must grow below the photo, never rise behind the nav.
+        const viewports = test.info().project.name === 'mobile-chrome'
+          ? [{ width: 320, height: 568 }, { width: 390, height: 670 }, { width: 768, height: 1024 }]
+          : [{ width: 1440, height: 900 }, { width: 1024, height: 600 }]
+        for (const viewport of viewports) {
+          await page.setViewportSize(viewport)
+          await page.evaluate(() => window.scrollTo(0, 0))
+          const bounds = await page.evaluate(() => {
+            const rect = (selector) => document.querySelector(selector).getBoundingClientRect().toJSON()
+            return {
+              hero: rect('.pwap-hero'), photo: rect('.pwap-hero__bg'),
+              content: rect('.pwap-hero__content'), nav: rect('.nav'),
+              overflow: document.documentElement.scrollWidth - innerWidth,
+            }
+          })
+          expect(bounds.content.top, `Hero copy behind navigation on ${route}`).toBeGreaterThanOrEqual(bounds.nav.bottom)
+          expect(bounds.content.bottom, `Hero copy clipped on ${route}`).toBeLessThanOrEqual(bounds.hero.bottom)
+          expect(bounds.overflow, `Hero overflow on ${route}`).toBeLessThanOrEqual(2)
+          if (viewport.width <= 768) {
+            expect(bounds.content.top, `Hero copy overlaps photograph on ${route}`).toBeGreaterThanOrEqual(bounds.photo.bottom)
+          }
+        }
+        await page.setViewportSize(test.info().project.use.viewport)
+      }
 
       if (route === '/') {
         const packages = page.locator('.packages')
