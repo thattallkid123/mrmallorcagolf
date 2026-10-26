@@ -38,6 +38,26 @@
   ],
   "redirects": [
     {
+      "source": "/guides/son-quint-review-176",
+      "destination": "/guides/son-quint-review",
+      "permanent": true
+    },
+    {
+      "source": "/guides/t-golf-calvia-review-257",
+      "destination": "/guides/t-golf-calvia-review",
+      "permanent": true
+    },
+    {
+      "source": "/golf-courses-310",
+      "destination": "/golf-courses",
+      "permanent": true
+    },
+    {
+      "source": "/images/son-gual-blog/sg-clients-group.webp-2",
+      "destination": "/images/son-gual-blog/sg-clients-group.webp",
+      "permanent": true
+    },
+    {
       "source": "/handicap-checker.html",
       "destination": "/tools/handicap-checker",
       "permanent": true

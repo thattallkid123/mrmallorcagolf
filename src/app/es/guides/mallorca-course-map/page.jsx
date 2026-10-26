@@ -1,7 +1,9 @@
 import PageLayout from '../../../../components/PageLayout'
 import CourseMapView from '../../../../components/CourseMapView'
+import { getAlternates } from '../../../../lib/site'
 
 export const metadata = {
+  alternates: getAlternates('/es/guides/mallorca-course-map'),
   title: 'Mapa de los 24 campos de golf de Mallorca | Guía interactiva',
   description: 'Mapa interactivo con los 24 campos de golf de Mallorca. Filtra por región (Palma, suroeste, sur, este, norte) y localiza cada campo.',
   robots: { index: true, follow: true },

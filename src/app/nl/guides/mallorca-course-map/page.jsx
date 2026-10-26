@@ -1,7 +1,9 @@
 import PageLayout from '../../../../components/PageLayout'
 import CourseMapView from '../../../../components/CourseMapView'
+import { getAlternates } from '../../../../lib/site'
 
 export const metadata = {
+  alternates: getAlternates('/nl/guides/mallorca-course-map'),
   title: 'Kaart van alle 24 golfbanen op Mallorca | Interactief overzicht',
   description: 'Interactieve kaart met alle 24 golfbanen op Mallorca. Filter op regio (Palma, zuidwesten, zuiden, oosten, noorden) en vind elke baan.',
   robots: { index: true, follow: true },

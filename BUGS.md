@@ -5,6 +5,10 @@ When a new bug is fixed, add it here so it never comes back.
 
 ---
 
+## Translated course maps inherited the homepage canonical
+**Pattern (October 2026):** Six translated course-map pages declared titles and descriptions but no alternates, so Next.js inherited the root homepage canonical. The pages returned 200 while telling search engines to consolidate them into the English homepage.
+**Fix:** Set each translated map's alternates through `getAlternates()` with its full localized path. Verify the rendered canonical and all seven language alternates, rather than checking only that a canonical uses the correct domain.
+
 ## Mobile hero text overlapped the photo and navigation
 **Pattern (October 2026):** Play With A Pro and Signature Day shared a fixed viewport-height hero. Long introductions, translations and short in-app browser viewports pushed the copy above the hero; the mobile Play With A Pro photo also sat behind the heading and body.
 **Fix:** Let the hero grow with its content, reserve navigation clearance on wider screens, and place the photo above a solid text section on mobile. Visual checks cover both pages in all seven languages, including 320px phones and short tablet viewports.

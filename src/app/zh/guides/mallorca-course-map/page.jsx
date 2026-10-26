@@ -1,7 +1,9 @@
 import PageLayout from '../../../../components/PageLayout'
 import CourseMapView from '../../../../components/CourseMapView'
+import { getAlternates } from '../../../../lib/site'
 
 export const metadata = {
+  alternates: getAlternates('/zh/guides/mallorca-course-map'),
   title: '马略卡全部 24 座高尔夫球场地图 | 互动指南',
   description: '展示马略卡全部 24 座高尔夫球场的互动地图。可按区域筛选（帕尔马、西南、南部、东部、北部），点击定位每座球场。',
   robots: { index: true, follow: true },
