@@ -130,6 +130,25 @@ function stripStatusIcon(label) {
   return String(label).replace(/^[\u2000-\u27bf\ufe0f\s]+/, '')
 }
 
+// Numbered sister courses with the same verdict and wording (Santa Ponsa 2 and 3, both
+// members-only) share one card, so the same paragraph is not printed twice. Counts and the
+// email summary still use the full list.
+function mergeSiblingCards(items) {
+  const merged = []
+  for (const item of items) {
+    const base = item.course.name.replace(/\s\d+$/, '')
+    const num = item.course.name.slice(base.length).trim()
+    const prev = merged[merged.length - 1]
+    if (num && prev && prev.base === base && prev.r.label === item.r.label && prev.r.detail === item.r.detail && !item.r.borderline) {
+      prev.nums.push(num)
+      prev.name = `${base} ${prev.nums.join(' & ')}`
+    } else {
+      merged.push({ ...item, name: item.course.name, base, nums: num ? [num] : [] })
+    }
+  }
+  return merged
+}
+
 function tierFromHcp(hcp, noHcp, t) {
   if (noHcp) return { key: 'new', label: t.tiers.new }
   if (hcp <= 9) return { key: 'low', label: t.tiers.low }
@@ -460,9 +479,9 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
                 <div key={key}>
                   <h3 className="hc-group-head">{t.groups[key]} <span className="count">{t.results.courseCount(items.length)}</span></h3>
                   <div className="hc-cards">
-                    {items.map(({ course, r }) => (
-                      <div key={course.name} className={`hc-card ${r.status}`}>
-                        <div className="name">{course.name}</div>
+                    {mergeSiblingCards(items).map(({ course, name, r }) => (
+                      <div key={name} className={`hc-card ${r.status}`}>
+                        <div className="name">{name}</div>
                         <span className={`hc-badge ${r.status}`}>{r.label}</span>
                         <div className="detail">{r.detail}</div>
                         {r.borderline && <Link className="enquire" href={`${buildLocalePath('/contact', lang)}?service=tee-time-booking`}>{t.results.askIfPossible}</Link>}
