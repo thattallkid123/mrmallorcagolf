@@ -105,6 +105,7 @@ export default function Nav({ transparent = false, lang }) {
   const [menuOpen, setMenuOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
   const langRef = useRef(null)
+  const langPointer = useRef('')
   const pathname = usePathname()
 
   const resolvedPathname = pathname || '/'
@@ -180,7 +181,17 @@ export default function Nav({ transparent = false, lang }) {
             <Link href={config.cta.href} prefetch={false} className="nav__cta"><span>{config.cta.label}</span></Link>
           </li>
           <li>
-            <div className="nav__lang" ref={langRef} onKeyDown={(event) => {
+            <div
+              className="nav__lang"
+              ref={langRef}
+              onPointerEnter={(event) => {
+                langPointer.current = event.pointerType
+                if (event.pointerType === 'mouse') setLangOpen(true)
+              }}
+              onPointerLeave={(event) => {
+                if (event.pointerType === 'mouse') setLangOpen(false)
+              }}
+              onKeyDown={(event) => {
               if (event.key !== 'ArrowDown' && event.key !== 'ArrowUp') return
               event.preventDefault()
               if (!langOpen) { setLangOpen(true); return }
@@ -195,20 +206,22 @@ export default function Nav({ transparent = false, lang }) {
                 aria-haspopup="true"
                 aria-expanded={langOpen}
                 aria-label={`Language: ${LANG_NAMES[activeLang] || activeLangCode}`}
-                onClick={() => setLangOpen((open) => !open)}
+                onClick={(event) => {
+                  // A mouse click lands on a menu the hover already opened; keep it open.
+                  if (event.detail > 0 && langPointer.current === 'mouse') setLangOpen(true)
+                  else setLangOpen((open) => !open)
+                }}
               >
                 {activeLangCode}
                 <span className="nav__lang-chevron" aria-hidden="true" />
               </button>
               {langOpen && (
                 <ul className="nav__lang-menu">
-                  {langCodes.map(({ code, locale, name }) => (
+                  {langCodes.filter(({ locale }) => locale !== activeLang).map(({ code, locale, name }) => (
                     <li key={code}>
                       <Link
                         href={getLanguageSwitchPath(resolvedPathname, locale)}
                         prefetch={false}
-                        className={activeLangCode === code ? 'active' : ''}
-                        aria-current={locale === activeLang ? 'true' : undefined}
                         hrefLang={locale}
                         onClick={() => setLangOpen(false)}
                       >
