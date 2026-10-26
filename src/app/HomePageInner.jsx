@@ -5,15 +5,9 @@ import HomeToolsStrip from '../components/HomeToolsStrip'
 import HomepageLeadPopup from '../components/HomepageLeadPopup'
 import ReviewBadge from '../components/ReviewBadge'
 import ClientStrip from '../components/ClientStrip'
+import { PWAP_PHOTOS } from '../lib/pwap-photos'
 import { localizeAlt } from '../lib/alt-text'
 import InlineRichText from './(en)/guides/InlineRichText'
-
-// Group photos for the homepage strip; the Play With A Pro page shows the one-to-one photos instead.
-const HOME_CLIENT_PHOTOS = [
-  { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', position: 'center 36%' },
-  { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', position: 'center 44%' },
-  { src: '/images/client-son-gual2.webp', alt: 'Group day with water views', position: 'center 30%' },
-]
 
 const FEATURE_ICONS = {
   arranged: (
@@ -147,7 +141,7 @@ export default function HomePageInner({ locale = 'en' }) {
           credit={home.clientStrip.credit}
           linkLabel={home.clientStrip.linkLabel}
           linkHref={`${buildLocalePath('/play-with-a-pro', locale)}#reviews`}
-          photos={HOME_CLIENT_PHOTOS}
+          photos={PWAP_PHOTOS}
           locale={locale}
         />
       ) : null}

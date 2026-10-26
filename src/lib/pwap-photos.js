@@ -16,4 +16,8 @@ export const PWAP_PHOTOS = [
   { src: '/images/client-son-gual-jannie.webp', alt: 'Andy with Jannie at Son Gual during a Play With A Pro day', position: 'center 30%', variant: 'portrait' },
   { src: '/images/client-son-termes-paul.webp', alt: 'Andy with Paul at Son Termes during a Play With A Pro day', position: 'center 45%', variant: 'portrait' },
   { src: '/images/client-son-quint-john.webp', alt: 'Andy with John at Son Quint during a Play With A Pro day', position: 'center 38%', variant: 'portrait' },
+  // Added 2026-10-26 (Andy's pick). Keep new photos at the end: Play With A Pro's localised alt list matches by position.
+  { src: '/images/client-son-gual2.webp', alt: 'Golfers at Son Gual with Andy Griffiths', position: 'center 45%', variant: 'portrait' },
+  { src: '/images/client-son-gual-john.webp', alt: 'Andy with John at Son Gual during a Play With A Pro day', position: 'center 62%' },
+  { src: '/images/client-t-golf-palma-sam.webp', alt: 'Andy with Sam at T Golf Palma during a Play With A Pro day', position: 'center 30%', variant: 'portrait' },
 ]
