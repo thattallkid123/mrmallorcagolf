@@ -11,8 +11,11 @@ import { PWAP_PHOTOS } from '../../../lib/pwap-photos.js'
 import { localizeAlt } from '../../../lib/alt-text'
 import { REVIEW_PLAY_QUOTES } from '../../../lib/review-play-box'
 
-// Short lines from three clients' reviews (translated in review-play-box.js), shown without names.
-const HERO_PROOF_QUOTES = ['julien', 'adam', 'paul']
+// Two short lines from clients' reviews (translated in review-play-box.js), each with the client's first name.
+const HERO_PROOF_QUOTES = [
+  { key: 'julien', credit: 'Julien' },
+  { key: 'paul', credit: 'Paul' },
+]
 
 const PAGE_LINKS = {
   en: {
@@ -247,11 +250,14 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
               ) : null}
               <div className="pwap-hero__proof">
                 <ReviewBadge variant="text" theme="dark" locale={locale} />
-                <ul className="pwap-hero__proof-list">
-                  {HERO_PROOF_QUOTES.map((key) => (
-                    <li key={key}>&ldquo;{REVIEW_PLAY_QUOTES[key][locale] || REVIEW_PLAY_QUOTES[key].en}&rdquo;</li>
+                <div className="pwap-hero__proof-list">
+                  {HERO_PROOF_QUOTES.map(({ key, credit }) => (
+                    <blockquote key={key} className="pwap-hero__proof-quote">
+                      <p>&ldquo;{REVIEW_PLAY_QUOTES[key][locale] || REVIEW_PLAY_QUOTES[key].en}&rdquo;</p>
+                      <footer>{credit}</footer>
+                    </blockquote>
                   ))}
-                </ul>
+                </div>
               </div>
               <div className="pwap-hero__actions">
                 <Link href={playWithAProContactHref(locale)} className="btn btn--gold">

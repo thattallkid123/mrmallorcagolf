@@ -1439,39 +1439,6 @@
   .pyt-enquiry__tool { flex-direction: column; }
 }
 
-/* An editorial navigation row sits quietly beneath the main enquiry actions. */
-.pyt-hero__links {
-  display: flex;
-  flex-wrap: wrap;
-  column-gap: var(--space-6);
-  row-gap: var(--space-1);
-  width: fit-content;
-  max-width: 100%;
-  margin-top: var(--space-5);
-  padding-top: var(--space-2);
-  border-top: 1px solid rgba(247,244,239,0.16);
-  text-shadow: none;
-}
-.pyt-hero__support-link {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  min-height: 44px;
-  max-width: 100%;
-  padding-block: var(--space-2);
-  color: rgba(247,244,239,0.76);
-  font-family: var(--font-sans);
-  font-size: 12px;
-  font-weight: 400;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  text-decoration: none;
-  transition: color 0.2s;
-}
-.pyt-hero__support-link svg { width: 16px; height: 16px; flex-shrink: 0; color: var(--gold-light); opacity: 0.7; }
-.pyt-hero__support-link:hover, .pyt-hero__support-link:focus-visible { color: var(--white); }
-.pyt-hero__support-link:hover svg, .pyt-hero__support-link:focus-visible svg { opacity: 1; }
-.pyt-hero__support-link:focus-visible { outline: 1px solid var(--gold-light); outline-offset: var(--space-1); }
 .pyt-hero__actions .btn { text-shadow: none; }
 .pyt-hero .pyt-eyebrow { color: var(--gold-light); }
 .pyt-planning-layout { gap: 32px; }
@@ -1501,7 +1468,6 @@
 }
 @media (max-width: 640px) {
   .pyt-includes, .pyt-process ol, .pyt-possibilities__list, .pyt-client-reviews__grid { grid-template-columns: minmax(0, 1fr); }
-  .pyt-hero__links { column-gap: var(--space-4); }
   .pyt-working-modes .pyt-working-mode__link { white-space: normal; }
   .pyt-process ol { gap: 16px; }
   .pyt-possibilities { margin-bottom: 36px; }

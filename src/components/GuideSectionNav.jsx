@@ -5,7 +5,8 @@ const LABELS = {
 
 export default function GuideSectionNav({ blocks, locale = 'en' }) {
   const headings = blocks.map((block, index) => ({ ...block, index })).filter(block => block.type === 'heading')
-  if (headings.length < 4) return null
+  // Raised from 4 to 10 on 2026-10-26: today's guides have about six short sections, where the box only pushed the article down.
+  if (headings.length < 10) return null
   const label = LABELS[locale] || LABELS.en
   return <details className="guide-section-nav">
     <summary>{label}</summary>

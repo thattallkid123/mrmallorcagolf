@@ -4394,8 +4394,10 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .pwap-hero--split .pwap-hero__overlay { background: linear-gradient(90deg, var(--hero-green) 0%, var(--hero-green) 36%, rgba(23,36,28,0.8) 46%, rgba(23,36,28,0.5) 56%, rgba(23,36,28,0.2) 68%, rgba(23,36,28,0) 82%); }
 .pwap-hero__proof { margin: 0 0 var(--space-5); }
 .pwap-hero__proof .review-text { align-items: flex-start; }
-.pwap-hero__proof-list { list-style: none; margin: var(--space-2) 0 0; padding: 0; display: grid; gap: 0.35rem; }
-.pwap-hero__proof-list li { font-size: 0.92rem; font-style: italic; line-height: 1.4; color: var(--gold-light); }
+.pwap-hero__proof-list { margin: var(--space-4) 0 0; display: grid; gap: var(--space-4); max-width: 520px; }
+.pwap-hero__proof-quote { margin: 0; padding-left: var(--space-4); border-left: 1px solid var(--gold-light); }
+.pwap-hero__proof-quote p { margin: 0; font-family: var(--font-serif); font-size: 1.2rem; font-style: italic; line-height: 1.4; color: rgba(255,255,255,0.92); }
+.pwap-hero__proof-quote footer { margin-top: var(--space-1); font-family: var(--font-sans); font-size: 11px; font-weight: 500; letter-spacing: 0.15em; text-transform: uppercase; color: var(--gold-light); }
 
 /* Play With A Pro: the client photo strip now sits straight under the first screen */
 .pwap-clients { width: min(1200px, 100%); margin: 0 auto; padding: var(--space-7) 40px var(--space-6); background: linear-gradient(180deg, #f7f3eb 0%, #fbfaf7 100%); border-left: 1px solid var(--linen); border-right: 1px solid var(--linen); text-align: center; }

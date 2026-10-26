@@ -136,9 +136,6 @@ export default function HomePageInner({ locale = 'en' }) {
                 <span>微信联系：直接加我，或先看联系页</span>
               </a>
             ) : null}
-            <a href={golfCoursesHref} className="hero__pwap-link">
-              <span>{home.journey?.items?.[2]?.cta || 'Explore Courses'}</span>
-            </a>
           </div>
         </div>
       </section>
@@ -222,7 +219,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
       </section>
 
-      {/* "Choose your route" (home.journey) was removed 2026-10-11: it repeated the three services in "What I do" with different wording. Only home.journey.items[2].cta is still read, for the hero "Explore Courses" link. */}
+      {/* "Choose your route" (home.journey) was removed 2026-10-11: it repeated the three services in "What I do" with different wording. The hero "Explore Courses" link that read home.journey.items[2].cta was removed 2026-10-26, so no component reads home.journey now. */}
 
       {locale === 'en' ? (
         <section className="planning-guide-home reveal">
