@@ -36,10 +36,13 @@ const SURFACE_GROUPS = [
   { label: 'Docs', paths: ['docs/pricing-change-checklist.md', 'docs/pricing-surfaces-inventory.md', 'docs/content-architecture.md', 'CLAUDE.md'] },
 ]
 
-// Sibling repos — only searched if mounted/present on disk.
+const DRIVE_ROOT = process.env.MMG_DRIVE_ROOT || 'G:\\My Drive\\Mr Mallorca Golf'
+
+// Sibling repos and Drive folders with text-based price copy — only searched if mounted/present on disk.
 const SIBLING_REPOS = [
   { label: 'mmg-tools', dir: join(WORKSPACE_ROOT, 'mmg-tools') },
   { label: 'standalone-apps/mallorca-hub', dir: join(WORKSPACE_ROOT, 'standalone-apps', 'mallorca-hub') },
+  { label: 'Drive Partnerships/Info Sheet (sheet source + outreach messages)', dir: join(DRIVE_ROOT, 'Partnerships', 'Info Sheet') },
 ]
 
 const EXTERNAL_MANUAL_SURFACES = [
@@ -47,6 +50,7 @@ const EXTERNAL_MANUAL_SURFACES = [
   'about.me profile',
   'Trustpilot / Google Reviews business profile',
   'WhatsApp business profile/about text + saved replies',
+  'Info sheet PDF (Drive Partnerships\\Info Sheet): edit source\\info-sheet.html, re-print the PDF, update MMG_INFO_SHEET_MESSAGES.md',
   'Brochures, PDFs, rate cards shared externally',
   'MailerLite live form copy + nurture sequence (check if a price is mentioned)',
 ]

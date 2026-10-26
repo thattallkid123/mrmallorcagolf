@@ -59,7 +59,7 @@ Run `node scripts/price-sweep.mjs --old <old> --new <new> --label "<what changed
 
 - Create `docs/pricing-handover-YYYY-MM-DD.md` logging the decision (old → new, why, what was touched).
 - Update the status columns in `docs/pricing-surfaces-inventory.md`.
-- **Report the external/manual surfaces to Andy** — these cannot be done from the repo: Google Business Profile, about.me, WhatsApp business profile + saved replies, MailerLite forms/sequences, any externally shared brochures/rate cards. List them explicitly with ❌ until Andy confirms.
+- **Report the external/manual surfaces to Andy** — these cannot be done from the repo: Google Business Profile, about.me, WhatsApp business profile + saved replies, MailerLite forms/sequences, the one-page info sheet in Drive `Partnerships\Info Sheet\` (Play With A Pro prices; steps in the inventory), any externally shared brochures/rate cards. List them explicitly with ❌ until Andy confirms.
 
 ## 6. Ship
 

@@ -116,6 +116,7 @@ Only surfaces that actually show a price are listed. Updated 2026-08-26 after th
 | WhatsApp business profile/about text | Yes | ✅ Andy confirmed updated 2026-08-26 |
 | WhatsApp saved replies | Yes | ✅ Andy confirmed updated 2026-08-26 |
 | WhatsApp Business Catalog (5 products: PWAP Solo/Group/Signature Day, Club Rentals Mallorca, Rent2Play Golf hire) | Yes | ✅ Andy confirmed updated 2026-08-26; added 2026-08-15, not synced by any script |
+| One-page info sheet, Drive `Partnerships\Info Sheet\MMG_Info_Sheet_2026-10.pdf` (Play With A Pro Solo and Group prices), plus the outreach messages in `MMG_INFO_SHEET_MESSAGES.md` there | Yes | ✅ Current at €795 / €950 (made 2026-10-26). On a change: edit `source\info-sheet.html`, print to A4 PDF from Chrome (margins none, background graphics on), replace the PDF, update the messages file. `price-sweep.mjs` greps that folder |
 | Brochures, PDFs, rate cards shared externally | Yes | ❌ Check and update manually |
 | MailerLite live form copy | No price | ✅ No action needed |
 | MailerLite nurture email sequence | No price | ✅ No action needed |
