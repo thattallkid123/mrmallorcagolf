@@ -285,7 +285,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
       <style jsx>{`
         .gcc-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
         .gcc-eyebrow { display:inline-block; font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; }
-        .gcc-h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
+        .gcc-h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
         .gcc-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .gcc-wrap { max-width:680px; margin:0 auto; padding:20px 16px 64px; }
         .gcc-progress { display:flex; gap:6px; margin:22px 0 18px; }
@@ -293,7 +293,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-progress span.on { background:#B8973C; }
         .gcc-step-label { font-family:var(--font-sans); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:#8A7F74; margin-bottom:6px; }
         .gcc-card { background:#fff; border:1px solid #e6ddc9; border-radius:14px; padding:22px 18px; box-shadow:0 2px 10px rgba(21,57,43,.06); }
-        .gcc-card h2 { font-family:var(--font-serif); font-size:26px; color:#2D4A3E; margin-bottom:6px; font-weight:500; line-height:1.15; }
+        .gcc-card h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:26px; color:#2D4A3E; margin-bottom:6px; font-weight:500; line-height:1.15; }
         .gcc-card .sub { font-size:13px; color:#8A7F74; margin-bottom:20px; line-height:1.6; font-weight:300; }
         .gcc-field { margin-bottom:18px; }
         .gcc-flabel { display:block; font-family:var(--font-sans); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#2D4A3E; margin-bottom:12px; font-weight:600; }
@@ -320,15 +320,15 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-assumptions summary { cursor:pointer; color:#2D4A3E; font-weight:500; padding:var(--space-3) 0; }
         .gcc-hero-est { background:#2D4A3E; color:#F7F4EF; border-radius:14px; padding:26px 20px; text-align:center; margin-bottom:14px; }
         .gcc-hero-est .lab { font-family:var(--font-sans); font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:#D4B068; font-weight:500; }
-        .gcc-hero-est .big { font-family:var(--font-serif); font-size:clamp(32px,8vw,44px); font-weight:500; margin:10px 0 4px; letter-spacing:-0.02em; line-height:1.02; }
+        .gcc-hero-est .big { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(32px,8vw,44px); font-weight:500; margin:10px 0 4px; letter-spacing:-0.02em; line-height:1.02; }
         .gcc-hero-est .per { font-family:var(--font-sans); font-size:14px; color:#cfdad2; font-weight:300; }
         .gcc-approx { font-size:12px; color:#D4B068; margin-top:10px; font-style:italic; }
         .gcc-grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px; }
         .gcc-mini { background:#fff; border:1px solid #e6ddc9; border-radius:14px; padding:16px; text-align:center; }
         .gcc-mini .lab { font-family:var(--font-sans); font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:#8A7F74; font-weight:500; }
-        .gcc-mini .num { font-family:var(--font-serif); font-size:20px; color:#2D4A3E; font-weight:500; margin-top:6px; line-height:1.1; }
+        .gcc-mini .num { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:20px; color:#2D4A3E; font-weight:500; margin-top:6px; line-height:1.1; }
         .gcc-rcard { background:#fff; border:1px solid #e6ddc9; border-radius:14px; padding:20px 18px; margin-bottom:14px; }
-        .gcc-rcard h3 { font-family:var(--font-serif); font-size:20px; color:#2D4A3E; margin-bottom:12px; display:flex; align-items:center; gap:8px; font-weight:500; line-height:1.2; }
+        .gcc-rcard h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:20px; color:#2D4A3E; margin-bottom:12px; display:flex; align-items:center; gap:8px; font-weight:500; line-height:1.2; }
         .gcc-rcard h3 .dot { width:8px; height:8px; border-radius:50%; background:#B8973C; display:inline-block; flex-shrink:0; }
         .gcc-rcard ul { list-style:none; }
         .gcc-rcard li { padding:8px 0; border-bottom:1px solid #f1ead9; font-size:13px; display:flex; justify-content:space-between; gap:10px; font-weight:300; color:#2C2A27; }
@@ -343,11 +343,11 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-quote-cta::before { content:''; position:absolute; inset:6px; border:1px solid rgba(205,185,138,.35); border-radius:9px; pointer-events:none; }
         .gcc-quote-cta__inner { position:relative; z-index:1; }
         .gcc-quote-cta__eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.24em; text-transform:uppercase; color:#cdb98a; margin-bottom:8px; }
-        .gcc-quote-cta__title { font-family:var(--font-serif); font-size:clamp(2rem, 3.6vw, 2.45rem); color:#fff; font-weight:500; margin:0 0 10px; line-height:1.08; text-wrap:balance; }
+        .gcc-quote-cta__title { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(2rem, 3.6vw, 2.45rem); color:#fff; font-weight:500; margin:0 0 10px; line-height:1.08; text-wrap:balance; }
         .gcc-quote-cta__body { font-family:var(--font-sans); font-size:14px; color:#cfdad2; max-width:420px; margin:0 auto 18px; line-height:1.65; }
-        .gcc-quote-cta__note { font-family:var(--font-serif); font-size:18px; color:#cdb98a; margin-top:10px; font-style:italic; line-height:1.35; }
+        .gcc-quote-cta__note { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:18px; color:#cdb98a; margin-top:10px; font-style:italic; line-height:1.35; }
         .gcc-cta-box { background:#1A1916; color:#F7F4EF; border-radius:14px; padding:24px 20px; margin-top:8px; }
-        .gcc-cta-box h3 { font-family:var(--font-serif); font-size:24px; margin-bottom:8px; color:#fff; font-weight:500; line-height:1.2; }
+        .gcc-cta-box h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:24px; margin-bottom:8px; color:#fff; font-weight:500; line-height:1.2; }
         .gcc-cta-box p { font-family:var(--font-sans); font-size:13px; color:#cfdad2; margin-bottom:18px; font-weight:300; line-height:1.6; }
         .gcc-cta-box a { display:block; text-align:center; text-decoration:none; width:100%; margin-bottom:10px; padding:14px 20px; border:none; border-radius:2px; font-size:15px; font-family:inherit; cursor:pointer; }
         .gcc-email-capture { display:flex; flex-direction:column; gap:8px; margin-bottom:6px; align-items:center; }
@@ -361,11 +361,11 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-tools-panel__link:hover { border-color:#B8973C; color:#1A1916; transform:translateY(-1px); }
         .gcc-sheet-head { background:#15392b; color:#f7f2e7; padding:20px 22px 18px; position:sticky; top:0; border-radius:18px 18px 0 0; z-index:2; }
         .gcc-sheet-head__eyebrow { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#cdb98a; margin-bottom:4px; }
-        .gcc-sheet-head__title { font-family:var(--font-serif); font-size:24px; color:#fff; font-weight:500; padding-right:36px; line-height:1.08; }
+        .gcc-sheet-head__title { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:24px; color:#fff; font-weight:500; padding-right:36px; line-height:1.08; }
         .gcc-sheet-head__close { position:absolute; top:16px; right:16px; width:34px; height:34px; border-radius:50%; border:1px solid rgba(205,185,138,.5); background:transparent; color:#f7f2e7; font-size:17px; line-height:1; cursor:pointer; font-family:var(--font-sans); }
         .gcc-sheet-summary__label { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:#8a7f74; margin-bottom:8px; }
         .gcc-sheet-success__icon { width:54px; height:54px; border-radius:50%; background:#15392b; color:#cdb98a; display:flex; align-items:center; justify-content:center; font-size:24px; margin:0 auto 16px; }
-        .gcc-sheet-success__title { font-family:var(--font-serif); font-size:24px; color:#15392b; margin-bottom:8px; line-height:1.08; }
+        .gcc-sheet-success__title { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:24px; color:#15392b; margin-bottom:8px; line-height:1.08; }
         .gcc-sheet-success__body { font-family:var(--font-sans); font-size:15px; color:#2c2a27; max-width:320px; margin:0 auto 18px; line-height:1.65; }
         @media (max-width:600px) {
           .gcc-nav {

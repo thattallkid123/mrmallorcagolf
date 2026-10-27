@@ -311,13 +311,13 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         .hc-hero { background:var(--pine); padding:calc(var(--nav-h) + var(--space-7)) 24px 44px; text-align:center; color:#fff; }
         .hc-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em;
           text-transform:uppercase; color:var(--gold); }
-        .hc-hero h1 { font-family:var(--font-serif); font-weight:500;
+        .hc-hero h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500;
           font-size:clamp(1.9rem,4vw,2.8rem); margin:10px 0; }
         .hc-hero .sub { font-family:var(--font-sans); font-weight:300; font-size:.95rem;
           color:rgba(255,255,255,.85); max-width:620px; margin:0 auto; line-height:1.6; }
         .hc-main { max-width:860px; margin:0 auto; padding:28px 20px 80px; font-family:var(--font-sans); }
         .hc-panel { background:#fff; border-radius:6px; padding:26px 24px; box-shadow:0 2px 12px rgba(45,74,62,.08); margin-bottom:26px; }
-        .hc-panel h2 { font-family:var(--font-serif); font-weight:500; color:var(--pine); font-size:1.4rem; margin-bottom:18px; }
+        .hc-panel h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; color:var(--pine); font-size:1.4rem; margin-bottom:18px; }
         .hc-grid { display:grid; grid-template-columns:1fr 1fr; gap:18px 22px; }
         @media (max-width:560px){ .hc-grid { grid-template-columns:1fr; } }
         .hc-field .top { display:block; font-size:.72rem; letter-spacing:.08em; text-transform:uppercase; color:var(--muted); margin-bottom:7px; }
@@ -338,11 +338,11 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         .hc-summary strong { color:var(--gold); font-weight:500; }
         .hc-rec { background:#fff; border-left:4px solid var(--gold); border-radius:6px; padding:18px 20px; margin-bottom:22px; box-shadow:0 2px 8px rgba(45,74,62,.07); }
         .hc-rec .lbl { font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--gold); margin-bottom:6px; }
-        .hc-rec p { font-family:var(--font-serif); font-size:1.12rem; color:#2C2A27; line-height:1.6; }
+        .hc-rec p { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.12rem; color:#2C2A27; line-height:1.6; }
         .hc-pairnote { background:#fff; border-left:4px solid var(--pine); border-radius:6px; padding:16px 20px; margin:22px 0; box-shadow:0 2px 8px rgba(45,74,62,.07); }
         .hc-pairnote .lbl { font-size:.68rem; letter-spacing:.16em; text-transform:uppercase; color:var(--pine); margin-bottom:6px; }
         .hc-pairnote p { font-family:var(--font-sans); font-size:.9rem; color:#4a463f; line-height:1.6; }
-        .hc-group-head { font-family:var(--font-serif); font-size:1.35rem; font-weight:500; color:var(--pine);
+        .hc-group-head { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.35rem; font-weight:500; color:var(--pine);
           margin:26px 0 12px; display:flex; align-items:baseline; gap:10px; }
         .hc-group-head .count { font-family:var(--font-sans); font-size:.8rem; color:var(--muted); }
         .hc-cards { display:grid; grid-template-columns:1fr 1fr; gap:12px; }
@@ -350,7 +350,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         .hc-card { background:#fff; border-radius:6px; padding:16px 18px; box-shadow:0 2px 8px rgba(45,74,62,.07); border-left:4px solid var(--muted); }
         .hc-card.ok { border-left-color:var(--ok); } .hc-card.warn { border-left-color:var(--gold); }
         .hc-card.no { border-left-color:var(--no); } .hc-card.info { border-left-color:var(--info); }
-        .hc-card .name { font-family:var(--font-serif); font-size:1.15rem; font-weight:500; color:var(--pine); margin-bottom:6px; }
+        .hc-card .name { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.15rem; font-weight:500; color:var(--pine); margin-bottom:6px; }
         .hc-badge { display:inline-block; font-size:.72rem; letter-spacing:.04em; padding:3px 10px; border-radius:10px; margin-bottom:8px; }
         .hc-badge.ok { background:var(--ok-bg); color:var(--ok); } .hc-badge.warn { background:var(--warn-bg); color:var(--warn); }
         .hc-badge.no { background:var(--no-bg); color:var(--no); } .hc-badge.info { background:var(--info-bg); color:var(--info); }
@@ -358,7 +358,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         .hc-card a.enquire { display:inline-block; margin-top:8px; font-size:.8rem; color:var(--gold); text-decoration:none; letter-spacing:.04em; }
         .hc-card a.enquire:hover { text-decoration:underline; }
         .hc-cta { background:var(--pine-dark); color:#fff; border-radius:6px; padding:24px; margin-top:30px; text-align:center; }
-        .hc-cta h3 { font-family:var(--font-serif); font-weight:400; font-size:1.4rem; margin-bottom:8px; }
+        .hc-cta h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:400; font-size:1.4rem; margin-bottom:8px; }
         .hc-cta p { font-size:.9rem; color:rgba(255,255,255,.85); margin-bottom:16px; line-height:1.6; }
         .hc-cta a.btn { display:inline-block; background:var(--gold); color:#1A1916; text-decoration:none; font-size:.85rem;
           letter-spacing:.06em; text-transform:uppercase; padding:12px 24px; border-radius:2px; transition:background .2s; }
@@ -368,7 +368,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
           font-family:var(--font-sans); font-size:.8rem; letter-spacing:.18em; text-transform:uppercase; padding:12px 22px; border-radius:2px; transition:background .2s; }
         .btn-wa:hover { background:#1eb858; }
         .hc-email { background:#fff; border-radius:6px; padding:24px; box-shadow:0 2px 12px rgba(45,74,62,.08); margin-top:26px; }
-        .hc-email h3 { font-family:var(--font-serif); font-weight:500; color:var(--pine); font-size:1.3rem; margin-bottom:6px; }
+        .hc-email h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; color:var(--pine); font-size:1.3rem; margin-bottom:6px; }
         .hc-email p { font-size:.86rem; color:var(--muted); margin-bottom:14px; line-height:1.55; }
         .hc-email-row { display:flex; gap:10px; flex-wrap:wrap; }
         .hc-email-row input { flex:1; min-width:220px; font-family:var(--font-sans); font-size:.95rem; padding:11px 14px; border:1px solid rgba(45,74,62,.3); border-radius:2px; }

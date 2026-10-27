@@ -78,7 +78,7 @@ export const QUESTIONS = [
     ]
   },
   {
-    id:'extras', title:'Anything else Andy should arrange?',
+    id:'extras', title:'Anything else I should arrange?',
     sub:'Choose any that apply. This shapes the trip plan, not the course match.', cols:true, multi:true,
     options:[
       {value:'coaching',label:'Coaching with me',desc:'Lessons or a Play With A Pro round'},

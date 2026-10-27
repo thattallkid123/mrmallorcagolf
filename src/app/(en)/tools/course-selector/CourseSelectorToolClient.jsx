@@ -715,7 +715,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
       <style jsx>{`
         .cst-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
         .cst-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
-        .cst-h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
+        .cst-h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
         .cst-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .cst-wrap { max-width:800px; margin:0 auto; padding:0 18px 90px; }
         /* Progress */
@@ -724,7 +724,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         .cst-progress-fill { height:100%; background:linear-gradient(90deg,#B8973C,#D4B068); transition:width .5s cubic-bezier(0.22,1,0.36,1); border-radius:99px; }
         .cst-progress-label { display:flex; justify-content:space-between; font-size:.7rem; color:#8A7F74; margin-top:9px; letter-spacing:.12em; text-transform:uppercase; }
         /* Question */
-        .cst-q-title { font-family:var(--font-serif); font-size:clamp(1.55rem,4vw,2.1rem); color:#1A1916; text-align:center; margin-bottom:6px; font-weight:500; }
+        .cst-q-title { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(1.55rem,4vw,2.1rem); color:#1A1916; text-align:center; margin-bottom:6px; font-weight:500; }
         .cst-q-sub { text-align:center; color:#8A7F74; font-size:.9rem; margin-bottom:28px; }
         .cst-opts { display:grid; gap:12px; max-width:560px; margin:0 auto; }
         .cst-opts.cols-2 { grid-template-columns:1fr; }
@@ -748,14 +748,14 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         .cst-btn.outline:hover { background:#2D4A3E; color:#F7F4EF; }
         /* Results */
         .cst-results-head { text-align:center; margin:10px 0 32px; }
-        .cst-results-head h2 { font-family:var(--font-serif); font-size:clamp(1.7rem,4.5vw,2.4rem); color:#1A1916; font-weight:500; }
+        .cst-results-head h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(1.7rem,4.5vw,2.4rem); color:#1A1916; font-weight:500; }
         .cst-results-head p { color:#8A7F74; margin-top:10px; font-size:.92rem; max-width:540px; margin-inline:auto; line-height:1.65; }
         .cst-eyebrow-sm { display:inline-block; letter-spacing:.22em; text-transform:uppercase; font-size:.7rem; font-weight:500; color:#B8973C; margin-bottom:14px; font-family:var(--font-sans); }
         /* Course cards */
         .cst-course-card { background:#fff; border-radius:18px; overflow:hidden; box-shadow:0 22px 60px rgba(18,17,15,0.08); margin-bottom:24px; border:1px solid rgba(26,25,22,0.08); }
         .cst-cc-banner { background:linear-gradient(120deg,#1A1916,#2D4A3E); padding:42px 24px 20px; position:relative; }
         .cst-cc-rank { position:absolute; top:12px; left:12px; background:#B8973C; color:#1A1916; font-size:.65rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase; padding:5px 13px; border-radius:99px; font-family:var(--font-sans); }
-        .cst-cc-banner h3 { font-family:var(--font-serif); color:#F7F4EF; font-size:1.7rem; margin-bottom:10px; line-height:1.1; font-weight:500; }
+        .cst-cc-banner h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; color:#F7F4EF; font-size:1.7rem; margin-bottom:10px; line-height:1.1; font-weight:500; }
         .cst-cc-match-line { font-family:var(--font-sans); font-size:.8rem; color:rgba(247,244,239,0.78); line-height:1.55; border-top:1px solid rgba(255,255,255,.14); padding-top:10px; }
         .cst-cc-body { padding:22px 24px 26px; }
         .cst-cc-bestfor { font-size:.74rem; letter-spacing:.14em; text-transform:uppercase; color:#B8973C; font-weight:500; margin-bottom:10px; font-family:var(--font-sans); }
@@ -765,7 +765,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         @media(min-width:560px) { .cst-cc-grid { grid-template-columns:1fr 1fr 1fr 1fr; } }
         .cst-cc-stat .k { font-size:.66rem; text-transform:uppercase; letter-spacing:.12em; color:#8A7F74; font-family:var(--font-sans); }
         .cst-cc-stat .v { font-size:.86rem; font-weight:400; color:#2D4A3E; margin-top:3px; line-height:1.4; }
-        .cst-cc-andy { background:#F7F4EF; border-left:3px solid #B8973C; border-radius:0 10px 10px 0; padding:13px 17px; font-size:.9rem; line-height:1.65; color:#2C2A27; margin-bottom:18px; font-family:var(--font-serif); font-style:italic; }
+        .cst-cc-andy { background:#F7F4EF; border-left:3px solid #B8973C; border-radius:0 10px 10px 0; padding:13px 17px; font-size:.9rem; line-height:1.65; color:#2C2A27; margin-bottom:18px; font-family:var(--font-serif); font-variant-numeric:lining-nums; font-style:italic; }
         .cst-cc-andy strong { font-style:normal; font-family:var(--font-sans); font-size:.72rem; letter-spacing:.12em; text-transform:uppercase; color:#2D4A3E; display:block; margin-bottom:4px; }
         .cst-cc-hcap { background:#fff8ee; border-left:3px solid #e8860a; border-radius:0 10px 10px 0; padding:9px 17px; font-size:.82rem; line-height:1.5; color:#7a4300; margin-bottom:18px; font-weight:400; }
         .cst-cc-members { background:#f0f4ff; border-left:3px solid #4a6fa5; border-radius:0 10px 10px 0; padding:9px 17px; font-size:.82rem; line-height:1.5; color:#2a3f6f; margin-bottom:18px; font-weight:400; }
@@ -776,12 +776,12 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
         .cst-compare-wrap { overflow-x:auto; margin:20px 0; border-radius:14px; border:1px solid rgba(26,25,22,0.08); box-shadow:0 22px 60px rgba(18,17,15,0.08); }
         table.cst-compare { width:100%; border-collapse:collapse; background:#fff; min-width:560px; }
         table.cst-compare th, table.cst-compare td { padding:13px 18px; text-align:left; font-size:.88rem; border-bottom:1px solid #EDE9E1; font-weight:300; line-height:1.5; }
-        table.cst-compare th { background:#2D4A3E; color:#F7F4EF; font-family:var(--font-serif); font-size:1.15rem; font-weight:500; }
+        table.cst-compare th { background:#2D4A3E; color:#F7F4EF; font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.15rem; font-weight:500; }
         table.cst-compare td:first-child { font-weight:400; color:#8A7F74; font-size:.7rem; text-transform:uppercase; letter-spacing:.12em; width:140px; }
         table.cst-compare tr:last-child td { border-bottom:none; }
         /* Final CTA */
         .cst-final-cta { background:#2D4A3E; border-radius:20px; padding:42px 30px; text-align:center; color:#F7F4EF; margin-top:40px; box-shadow:0 30px 80px rgba(18,17,15,0.16); }
-        .cst-final-cta h2 { font-family:var(--font-serif); font-size:clamp(1.5rem,4vw,2rem); margin-bottom:12px; font-weight:500; }
+        .cst-final-cta h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(1.5rem,4vw,2rem); margin-bottom:12px; font-weight:500; }
         .cst-final-cta p { color:rgba(247,244,239,0.78); font-size:.92rem; max-width:470px; margin:0 auto 26px; line-height:1.7; font-weight:300; }
         .cst-email-row { display:flex; flex-direction:column; gap:10px; max-width:400px; margin:0 auto 16px; align-items:center; }
         .cst-email-row input { width:100%; padding:13px 18px; border-radius:99px; border:none; font-family:inherit; font-size:.9rem; background:rgba(247,244,239,0.95); color:#2C2A27; text-align:center; }

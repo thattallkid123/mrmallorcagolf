@@ -275,7 +275,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
       <style jsx>{`
         .gdb-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
         .gdb-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
-        .gdb-h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
+        .gdb-h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
         .gdb-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .gdb-wrap { max-width:800px; margin:0 auto; padding:0 22px 90px; }
         /* Intro */
@@ -290,7 +290,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         .gdb-progress span.done { background:#B8973C; }
         .gdb-step-label { text-align:center; font-weight:400; font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:#8A7F74; margin-bottom:8px; }
         /* Question cards */
-        .gdb-qcard h2 { font-family:var(--font-serif); font-size:clamp(1.7rem,4vw,2.3rem); font-weight:500; line-height:1.12; color:#1A1916; text-align:center; margin:16px 0 4px; }
+        .gdb-qcard h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(1.7rem,4vw,2.3rem); font-weight:500; line-height:1.12; color:#1A1916; text-align:center; margin:16px 0 4px; }
         .gdb-qcard .sub { text-align:center; color:#8A7F74; font-size:.95rem; margin-bottom:26px; line-height:1.6; }
         .gdb-multi-note { text-align:center; font-weight:400; font-size:9px; color:#B8973C; margin-bottom:16px; letter-spacing:.14em; text-transform:uppercase; }
         .gdb-opts { display:grid; grid-template-columns:1fr; gap:10px; }
@@ -301,7 +301,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         .gdb-opt { background:#fff; border:1px solid #E0D8CB; padding:18px; cursor:pointer; text-align:left; display:flex; gap:16px; align-items:center; transition:border-color .25s, box-shadow .25s, transform .2s; font:inherit; color:inherit; width:100%; }
         .gdb-opt:hover { border-color:#B8973C; transform:translateY(-1px); }
         .gdb-opt.selected { border-color:#B8973C; background:#F4EDD8; }
-        .gdb-opt .t { font-family:var(--font-serif); font-size:1.18rem; font-weight:500; color:#1A1916; line-height:1.2; }
+        .gdb-opt .t { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.18rem; font-weight:500; color:#1A1916; line-height:1.2; }
         .gdb-opt .d { font-size:.78rem; font-weight:400; color:#8A7F74; margin-top:2px; line-height:1.5; display:block; }
         .gdb-nav-row { display:flex; justify-content:space-between; margin-top:28px; gap:12px; }
         .gdb-btn-pine { background:#2D4A3E; color:#fff; border:none; padding:16px 34px; font-family:var(--font-sans); font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:background .25s, transform .25s; border-radius:2px; }
@@ -312,7 +312,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         /* Results */
         .gdb-result-head { text-align:center; padding-top:40px; margin-bottom:8px; }
         .gdb-result-head .eyebrow { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#B8973C; margin-bottom:12px; display:block; }
-        .gdb-result-head h2 { font-family:var(--font-serif); font-size:clamp(1.9rem,4.5vw,2.7rem); font-weight:500; color:#1A1916; line-height:1.1; }
+        .gdb-result-head h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(1.9rem,4.5vw,2.7rem); font-weight:500; color:#1A1916; line-height:1.1; }
         .gdb-result-head p { color:#8A7F74; margin-top:10px; font-size:.95rem; }
         .gdb-tabs { display:flex; gap:2px; margin:28px 0 24px; border:1px solid #E0D8CB; background:#fff; }
         .gdb-tab { flex:1; border:none; padding:14px 6px; cursor:pointer; font-family:var(--font-sans); font-weight:500; font-size:9px; letter-spacing:.12em; text-transform:uppercase; line-height:1.5; background:transparent; color:#8A7F74; transition:background .25s, color .25s; }
@@ -321,7 +321,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         .gdb-itin.active { display:block; }
         .gdb-course-card { background:linear-gradient(165deg, #2D4A3E 0%, #1A1916 120%); color:#fff; padding:30px 26px; margin-bottom:28px; position:relative; overflow:hidden; }
         .gdb-course-card .tag { display:inline-block; font-weight:500; font-size:9px; letter-spacing:.22em; text-transform:uppercase; color:#D4B068; border:1px solid rgba(212,176,104,.4); padding:6px 12px; margin-bottom:16px; }
-        .gdb-course-card h3 { font-family:var(--font-serif); font-size:1.9rem; font-weight:500; line-height:1.1; margin-bottom:8px; }
+        .gdb-course-card h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.9rem; font-weight:500; line-height:1.1; margin-bottom:8px; }
         .gdb-course-card .where { font-size:.78rem; font-weight:400; letter-spacing:.06em; color:rgba(255,255,255,0.72); }
         .gdb-course-card .blurb { margin-top:14px; font-size:.92rem; color:rgba(255,255,255,0.78); line-height:1.8; max-width:46ch; }
         .gdb-pills { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
@@ -331,23 +331,23 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         .gdb-timeline::before { content:""; position:absolute; left:13px; top:10px; bottom:14px; width:1px; background:linear-gradient(#B8973C, #E0D8CB); }
         .gdb-tl-item { position:relative; padding-bottom:26px; }
         .gdb-tl-item:last-child { padding-bottom:8px; }
-        .gdb-tl-dot { position:absolute; left:-40px; top:0; width:27px; height:27px; background:#fff; border:1px solid #B8973C; display:flex; align-items:center; justify-content:center; font-family:var(--font-serif); font-style:italic; font-size:.8rem; color:#B8973C; }
+        .gdb-tl-dot { position:absolute; left:-40px; top:0; width:27px; height:27px; background:#fff; border:1px solid #B8973C; display:flex; align-items:center; justify-content:center; font-family:var(--font-serif); font-variant-numeric:lining-nums; font-style:italic; font-size:.8rem; color:#B8973C; }
         .gdb-tl-time { font-size:9px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#B8973C; }
-        .gdb-tl-title { font-family:var(--font-serif); font-size:1.22rem; font-weight:500; color:#1A1916; margin-top:3px; line-height:1.25; }
+        .gdb-tl-title { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.22rem; font-weight:500; color:#1A1916; margin-top:3px; line-height:1.25; }
         .gdb-tl-desc { font-size:.85rem; font-weight:300; color:#2C2A27; margin-top:4px; line-height:1.75; max-width:52ch; }
         .gdb-why-card { border-left:2px solid #B8973C; background:#F4EDD8; padding:24px 26px; margin-top:26px; }
         .gdb-why-card h4 { font-weight:500; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:#B8973C; margin-bottom:10px; }
-        .gdb-why-card p { font-family:var(--font-serif); font-style:italic; font-size:1.1rem; color:#2D4A3E; line-height:1.6; }
+        .gdb-why-card p { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-style:italic; font-size:1.1rem; color:#2D4A3E; line-height:1.6; }
         .gdb-andy-card { background:#EDE9E1; padding:26px; margin-top:18px; }
         .gdb-andy-card h4 { font-weight:500; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:#B8973C; margin-bottom:14px; }
         .gdb-andy-card ul { list-style:none; }
         .gdb-andy-card li { font-size:.88rem; font-weight:300; padding:6px 0 6px 28px; position:relative; color:#2C2A27; }
-        .gdb-andy-card li::before { content:'·'; position:absolute; left:6px; font-family:var(--font-serif); font-size:1.4rem; line-height:1; top:6px; color:#B8973C; }
+        .gdb-andy-card li::before { content:'·'; position:absolute; left:6px; font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.4rem; line-height:1; top:6px; color:#B8973C; }
         .gdb-estimate-note { font-size:.74rem; font-weight:300; font-style:italic; color:#8A7F74; text-align:center; margin-top:22px; line-height:1.7; }
         /* CTA block */
         .gdb-cta-block { margin-top:38px; background:#1A1916; padding:44px 28px; text-align:center; color:#fff; }
         .gdb-cta-block .eyebrow { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#D4B068; margin-bottom:14px; display:block; }
-        .gdb-cta-block h3 { font-family:var(--font-serif); font-size:clamp(1.6rem,4vw,2.1rem); font-weight:500; line-height:1.15; max-width:420px; margin:0 auto 12px; }
+        .gdb-cta-block h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(1.6rem,4vw,2.1rem); font-weight:500; line-height:1.15; max-width:420px; margin:0 auto 12px; }
         .gdb-cta-copy { font-size:.9rem; color:rgba(255,255,255,.72); max-width:400px; margin:0 auto 28px; line-height:1.8; }
         .gdb-cta-grid { display:grid; gap:10px; max-width:380px; margin:0 auto; }
         .gdb-email-row { display:flex; flex-direction:column; gap:8px; align-items:center; }

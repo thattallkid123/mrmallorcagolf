@@ -320,7 +320,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
           --deep:#1A1916; --muted:#6B6862; background:var(--cream); color:var(--deep); font-family:var(--font-sans); }
         .gf-hero { background:var(--pine); padding:calc(var(--nav-h) + var(--space-7)) 24px 44px; text-align:center; color:#fff; }
         .gf-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--gold); }
-        .gf-hero h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(1.9rem,4vw,2.8rem); margin:10px 0; }
+        .gf-hero h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(1.9rem,4vw,2.8rem); margin:10px 0; }
         .gf-hero .sub { font-family:var(--font-sans); font-weight:300; font-size:.95rem; color:rgba(255,255,255,.85); max-width:640px; margin:0 auto; line-height:1.6; }
         .gf-updated { display:inline-block; margin-top:18px; border:1px solid var(--gold); color:var(--gold); font-size:.75rem; letter-spacing:.1em; text-transform:uppercase; padding:6px 14px; border-radius:2px; }
         .gf-main { max-width:1100px; margin:0 auto; padding:32px 20px 80px; }
@@ -345,7 +345,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
         .gf tbody tr:nth-child(odd) { background:var(--cream); }
         .gf tbody tr:nth-child(even) { background:var(--row-alt); }
         .gf tbody tr:hover { background:#F1EBDD; }
-        .gf td.gf-course { font-family:var(--font-serif); font-size:1.08rem; font-weight:500; color:var(--pine); }
+        .gf td.gf-course { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.08rem; font-weight:500; color:var(--pine); }
         .gf-9h { display:block; font-family:var(--font-sans); font-size:.66rem; letter-spacing:.12em; text-transform:uppercase; color:var(--muted); margin-top:3px; }
         .gf-guide { display:block; font-family:var(--font-sans); font-size:.75rem; margin-top:3px; color:var(--gold); text-decoration:none; letter-spacing:.08em; text-transform:uppercase; }
         a.gf-guide:hover { text-decoration:underline; }
@@ -359,19 +359,19 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
         .gf-reset:hover { background:#fff; }
         .gf-cards { display:none; }
         .gf-card { background:#fff; border-radius:6px; padding:18px 18px 16px; margin-bottom:14px; box-shadow:0 2px 8px rgba(45,74,62,.08); border-top:3px solid var(--pine); }
-        .gf-card h3 { font-family:var(--font-serif); font-weight:500; font-size:1.25rem; color:var(--pine); margin-bottom:2px; }
+        .gf-card h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:1.25rem; color:var(--pine); margin-bottom:2px; }
         .gf-card .area-tag { font-size:.75rem; letter-spacing:.06em; text-transform:uppercase; color:var(--gold); margin-bottom:10px; }
         .gf-card .grid { display:grid; grid-template-columns:1fr 1fr; gap:8px 14px; font-size:.85rem; margin-bottom:10px; }
         .gf-card .grid .k { font-size:.68rem; letter-spacing:.06em; text-transform:uppercase; color:var(--muted); display:block; }
         .gf-card .v-line { font-style:italic; font-size:.87rem; color:#4a463f; border-top:1px solid rgba(45,74,62,.12); padding-top:10px; line-height:1.55; }
         .gf-card .gf-guide { display:inline-block; margin-top:8px; font-size:.8rem; }
         .gf-selcta { margin-top:40px; background:var(--pine); color:#fff; border-radius:6px; padding:32px 28px; text-align:center; }
-        .gf-selcta h2 { font-family:var(--font-serif); font-weight:400; font-size:1.6rem; margin-bottom:8px; }
+        .gf-selcta h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:400; font-size:1.6rem; margin-bottom:8px; }
         .gf-selcta p { font-size:.9rem; color:rgba(255,255,255,.8); margin-bottom:18px; }
         .gf-selcta a { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:11px 22px; border-radius:2px; transition:background .2s; }
         .gf-selcta a:hover { background:#a5862f; }
         .gf-contact { margin-top:16px; background:var(--pine-dark); color:#fff; border-radius:6px; padding:28px; text-align:center; }
-        .gf-contact h2 { font-family:var(--font-serif); font-weight:400; font-size:1.5rem; margin-bottom:8px; }
+        .gf-contact h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:400; font-size:1.5rem; margin-bottom:8px; }
         .gf-contact p { font-size:.9rem; color:rgba(255,255,255,.82); margin-bottom:18px; line-height:1.6; }
         .gf-cta-btns { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
         .gf-contact a.btn-gold { display:inline-block; background:var(--gold); color:#fff; text-decoration:none; font-size:.85rem; letter-spacing:.06em; text-transform:uppercase; padding:12px 22px; border-radius:2px; transition:background .2s; }

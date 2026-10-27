@@ -169,7 +169,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
       <style jsx>{`
         .hr-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
         .hr-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
-        .hr-h1 { font-family:var(--font-serif); font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
+        .hr-h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
         .hr-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .hr-trust-wrap { background:#2D4A3E; padding:0 24px 24px; display:flex; justify-content:center; }
         .hr-trust-wrap :global(.tool-trust-line) { margin:0; color:rgba(247,244,239,0.76); }
@@ -180,7 +180,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
         .hr-progress-fill { height:100%; background:#B8973C; border-radius:2px; transition:width 0.4s ease; }
         .hr-quiz-wrap { max-width:880px; margin:0 auto; padding:48px 24px 60px; }
         .hr-step-num { font-size:0.72rem; font-weight:500; letter-spacing:.14em; text-transform:uppercase; color:#B8973C; margin-bottom:10px; }
-        .hr-step h2 { font-family:var(--font-serif); font-size:clamp(1.5rem,3.5vw,2rem); font-weight:400; color:#1A1916; line-height:1.25; margin-bottom:8px; text-align:center; }
+        .hr-step h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(1.5rem,3.5vw,2rem); font-weight:400; color:#1A1916; line-height:1.25; margin-bottom:8px; text-align:center; }
         .hr-step-sub { font-size:0.88rem; color:#8A7F74; line-height:1.65; margin-bottom:28px; text-align:center; }
         .hr-options { display:flex; flex-direction:column; gap:14px; }
         .hr-options-grid { display:grid; grid-template-columns:1fr 1fr; gap:14px; }
@@ -198,7 +198,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
         .hr-btn-back { background:none; border:none; color:#8A7F74; font-family:var(--font-sans); font-size:0.8rem; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; padding:8px 0; transition:color 0.18s; }
         .hr-btn-back:hover { color:#1A1916; }
         .hr-results-hero { background:#2D4A3E; padding:48px 32px 40px; text-align:center; color:#F7F4EF; }
-        .hr-results-hero h2 { font-family:var(--font-serif); font-size:clamp(1.8rem,4vw,2.4rem); font-weight:300; margin-bottom:10px; }
+        .hr-results-hero h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(1.8rem,4vw,2.4rem); font-weight:300; margin-bottom:10px; }
         .hr-results-hero p { font-size:0.9rem; color:rgba(247,244,239,0.7); max-width:480px; margin:0 auto; line-height:1.7; }
         .hr-results-wrap { max-width:720px; margin:0 auto; padding:44px 24px 60px; }
         .hr-results-label { font-size:0.72rem; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:#8A7F74; margin-bottom:24px; }
@@ -212,7 +212,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
         .hr-card-area { font-size:0.72rem; font-weight:500; letter-spacing:.12em; text-transform:uppercase; color:#B8973C; }
         .hr-card-sep { color:#C8B89A; }
         .hr-card-tier { font-size:0.78rem; color:#8A7F74; }
-        .hr-hotel-card h3 { font-family:var(--font-serif); font-size:1.35rem; font-weight:400; color:#1A1916; margin-bottom:8px; line-height:1.2; }
+        .hr-hotel-card h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.35rem; font-weight:400; color:#1A1916; margin-bottom:8px; line-height:1.2; }
         .hr-pills { display:flex; flex-wrap:wrap; gap:6px; margin-bottom:12px; }
         .pill { font-size:0.72rem; font-weight:500; padding:3px 9px; border-radius:20px; letter-spacing:.05em; background:#eee; color:#555; }
         .pill--beach { background:#E8F0F5; color:#2a5a7a; }
@@ -227,7 +227,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
         .hr-card-golf { font-size:0.82rem; color:#8A7F74; margin-bottom:14px; line-height:1.55; }
         .hr-card-golf strong { color:#2D4A3E; font-weight:500; }
         .hr-email-section { background:#2D4A3E; padding:36px 28px; text-align:center; color:#F7F4EF; border-radius:3px; margin-top:36px; }
-        .hr-email-section h3 { font-family:var(--font-serif); font-size:1.4rem; font-weight:300; margin-bottom:8px; }
+        .hr-email-section h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.4rem; font-weight:300; margin-bottom:8px; }
         .hr-email-section p { font-size:0.85rem; color:rgba(247,244,239,0.7); margin-bottom:20px; line-height:1.65; }
         .hr-email-row { display:flex; flex-direction:column; gap:10px; max-width:420px; margin:0 auto 12px; align-items:center; }
         .hr-email-row .hr-btn-email { width:100%; }
@@ -239,7 +239,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
         .hr-newsletter-opt { display:flex; align-items:center; justify-content:center; gap:8px; font-size:0.78rem; color:rgba(247,244,239,0.55); cursor:pointer; }
         .hr-email-success { font-size:0.88rem; color:#B8973C; padding:8px 0; }
         .hr-andy-cta { background:#fff; border:1px solid #E0D8CB; border-radius:3px; padding:28px 24px; text-align:center; margin-top:20px; }
-        .hr-andy-cta h3 { font-family:var(--font-serif); font-size:1.3rem; font-weight:400; color:#1A1916; margin-bottom:8px; }
+        .hr-andy-cta h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.3rem; font-weight:400; color:#1A1916; margin-bottom:8px; }
         .hr-andy-cta p { font-size:0.85rem; color:#8A7F74; line-height:1.65; margin-bottom:18px; max-width:440px; margin-left:auto; margin-right:auto; }
         .hr-cta-links { display:flex; gap:12px; justify-content:center; flex-wrap:wrap; }
         .hr-cta-link { display:inline-block; padding:11px 24px; font-size:0.85rem; font-weight:500; border-radius:2px; text-decoration:none; letter-spacing:.05em; transition:background 0.18s, color 0.18s; }
