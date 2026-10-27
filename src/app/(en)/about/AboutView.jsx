@@ -9,7 +9,7 @@ import CareerStrip from '../../../components/CareerStrip'
 import ReviewBadge from '../../../components/ReviewBadge'
 
 const CREDENTIAL_LOGOS = [
-  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399 },
+  { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 540, height: 588 },
   { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438 },
   { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918 },
   { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091 },

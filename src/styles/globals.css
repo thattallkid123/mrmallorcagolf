@@ -583,6 +583,12 @@ body {
   color: rgba(255,255,255,0.4);
   text-transform: uppercase;
 }
+.footer__trademark {
+  flex: 1 1 100%;
+  font-size: 0.65rem;
+  letter-spacing: 0.04em;
+  color: rgba(255,255,255,0.4);
+}
 .footer__lang { display: flex; gap: 16px; }
 .footer__lang a {
   font-size: 10px;

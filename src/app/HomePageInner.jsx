@@ -193,7 +193,7 @@ export default function HomePageInner({ locale = 'en' }) {
         </div>
         <div className="intro__creds">
           {[
-            { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 1080, height: 1399, className: 'intro__cred-logo--pga' },
+            { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 540, height: 588, className: 'intro__cred-logo--pga' },
             { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438, className: 'intro__cred-logo--tpi' },
             { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918, className: 'intro__cred-logo--trackman' },
             { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091, className: 'intro__cred-logo--uskids' },

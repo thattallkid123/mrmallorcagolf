@@ -4,6 +4,9 @@ import { NAV_LOCALES, getLegalPath, hasLocaleRoute, buildLocalePath } from '../l
 import ReviewBadge from './ReviewBadge'
 import { BookingTermsLink } from './BookingPolicyNotice'
 
+// Required by the PGA with every use of the Members' Crest (2025 brand guidelines). Legal wording: kept in English on every locale.
+const PGA_TRADEMARK_LINE = "The Professional Golfers’ Association and the Device are registered trademarks of The Professional Golfers’ Association Limited"
+
 const FOOTER_COPY = {
   en: {
     tagline: 'Mallorca golf trip planning with Andy Griffiths. Local course judgment, itinerary logic, and premium add-ons when they help.',
@@ -279,6 +282,7 @@ export default function Footer({ lang }) {
           </Link>{' '}{'\u00b7'}{' '}
           <BookingTermsLink locale={locale} footer />
         </p>
+        <p className="footer__trademark">{PGA_TRADEMARK_LINE}</p>
         <div className="footer__lang">
           {NAV_LOCALES.map((code) => (
             <Link key={code} href={code === 'en' ? '/' : `/${code}`} prefetch={false}>
