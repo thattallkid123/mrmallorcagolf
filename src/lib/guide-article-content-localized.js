@@ -5797,8 +5797,8 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     },
     "fr": {
       "metadata": {
-        "title": "Majorque, bonne pour le golf ? Oui",
-        "description": "24 parcours, du soleil toute l'année, €55–€260. La réponse honnête d'un pro PGA : parcours, conditions, attentes.",
+        "title": "Le golf à Majorque vaut-il le voyage ?",
+        "description": "24 parcours, du soleil toute l'année, green fees de 55 à 260 €. La réponse honnête d'un pro PGA : parcours, conditions, à quoi s'attendre.",
         "imageAlt": "Majorque est-elle bonne pour le golf ? La réponse d'un Professionnel PGA"
       },
       "meta": {

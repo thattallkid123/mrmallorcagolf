@@ -4,7 +4,7 @@ import { getAlternates } from '../../../../lib/site'
 
 export const metadata = {
   alternates: getAlternates('/de/guides/mallorca-course-map'),
-  title: 'Karte aller 24 Golfplätze auf Mallorca | Interaktiver Überblick',
+  title: 'Karte aller 24 Golfplätze auf Mallorca',
   description: 'Interaktive Karte mit allen 24 Golfplätzen auf Mallorca. Filtern Sie nach Region (Palma, Südwesten, Süden, Osten, Norden) und finden Sie jeden Platz.',
   robots: { index: true, follow: true },
 }

@@ -52,12 +52,19 @@ const DESCRIPTION_FILES = [
 // list. Confirmed 2026-09-14: this coverage gap let 10 titles and 6
 // descriptions ship over the SERP budget across /tools and two EN pages,
 // invisible to this check because it only ever scanned the fixed list below.
+// Pages that write `export const metadata = { title: ... }` directly, without
+// buildPageMetadata, were still invisible until 2026-10-27: the six translated
+// course-map titles ran 79 characters in the SERP for weeks after the English
+// one was fixed.
 function findInlineMetadataPageFiles() {
   const out = execSync('git ls-files -- "src/app/**/page.jsx"', { cwd: REPO_ROOT, encoding: 'utf8' })
   return out
     .split('\n')
     .filter(Boolean)
-    .filter((relPath) => readFileSync(join(REPO_ROOT, relPath), 'utf8').includes('buildPageMetadata('))
+    .filter((relPath) => {
+      const text = readFileSync(join(REPO_ROOT, relPath), 'utf8')
+      return text.includes('buildPageMetadata(') || text.includes('export const metadata = {')
+    })
 }
 
 const INLINE_METADATA_PAGE_FILES = findInlineMetadataPageFiles()

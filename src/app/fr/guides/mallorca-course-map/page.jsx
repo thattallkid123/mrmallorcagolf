@@ -4,7 +4,7 @@ import { getAlternates } from '../../../../lib/site'
 
 export const metadata = {
   alternates: getAlternates('/fr/guides/mallorca-course-map'),
-  title: 'Carte des 24 parcours de golf de Majorque | Guide interactif',
+  title: 'Carte des 24 golfs de Majorque',
   description: 'Carte interactive des 24 parcours de golf de Majorque. Filtrez par région (Palma, sud-ouest, sud, est, nord) et localisez chaque parcours.',
   robots: { index: true, follow: true },
 }

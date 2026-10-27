@@ -4,7 +4,7 @@ import { getAlternates } from '../../../../lib/site'
 
 export const metadata = {
   alternates: getAlternates('/sv/guides/mallorca-course-map'),
-  title: 'Karta över alla 24 golfbanor på Mallorca | Interaktiv guide',
+  title: 'Karta över alla 24 golfbanor på Mallorca',
   description: 'Interaktiv karta över alla 24 golfbanor på Mallorca. Filtrera efter region (Palma, sydväst, söder, öster, norr) och hitta varje bana.',
   robots: { index: true, follow: true },
 }
