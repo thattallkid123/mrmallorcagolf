@@ -30,7 +30,7 @@ export const HOTELS = [
   {"id":"four-seasons-formentor","name":"Four Seasons Resort Mallorca at Formentor","subname":"Formentor Peninsula","area":"north","luxury":4,"type":"hotel","vibes":["resort","boutique"],"styles":["resort","boutique"],"groups":["couple","solo","corporate","family"],"sizes":["1-2","3-5"],"beach":true,"spa":true,"golfProximity":2,"priority":["beach","spa","dining"],"pills":["Four Seasons","Formentor bay","Peninsula drive"],"budgets":["ultra","flexible"],"why":"Ultra-luxury with the Formentor bay. One of the most scenic stays on the island. Golf early, Formentor bay the rest of the day.","andy":"The peninsula road is the best drive in Mallorca. Alcanada is 35 minutes: not the closest, but worth it for the setting.","golf":"Club de Golf Alcanada 35 min. Golf Pollença 20 min.","travelTime":"55 min from Palma airport"},
   {"id":"el-vicenc","name":"El Vicenç de la Mar","subname":"Cala de Sant Vicenç","area":"north","luxury":4,"type":"hotel","vibes":["boutique"],"styles":["boutique"],"groups":["couple","solo"],"sizes":["1-2"],"beach":true,"spa":true,"golfProximity":2,"priority":["beach","dining","spa"],"pills":["Boutique","Michelin chef","Beachfront"],"budgets":["ultra","flexible"],"why":"Boutique five-star at Cala Sant Vicenç, near Cala Molins beach, with a spa and restaurants by Santi Taura. Pollença and Alcanada are options for the golf, with a drive to the courses.","andy":"Santi Taura is one of the best chefs in Mallorca. If the food matters as much as the golf, and the north is the zone, this is the answer.","golf":"Club de Golf Alcanada 20 min. Golf Pollença 10 min.","travelTime":"50 min from Palma airport"},
   { id:'son-brull', name:'Son Brull Hotel & Spa', subname:'Near Pollença', area:'north', luxury:4, type:'hotel', vibes:['boutique','countryside'], styles:['boutique','countryside'], groups:['couple','solo','friends'], sizes:['1-2','3-5'], beach:false, spa:true, golfProximity:2, priority:['spa','privacy','dining'], pills:['Boutique five-star','Serious spa','360 wine'], budgets:['ultra','flexible'], why:"Eighteenth-century monastery converted into a serious boutique five-star. The spa is one of the best on the island and 360 restaurant uses the estate's own produce.", andy:'A strong argument for staying in the north even if you want serious golf. Alcanada 15 minutes. Quiet, high-quality, genuinely Mallorcan.', golf:'Club de Golf Alcanada 15 min. Golf Pollença 5 min.', travelTime:'50 min from Palma airport' },
-  {"id":"illa-dor","name":"Illa d'Or","subname":"Port de Pollença","area":"north","luxury":2,"type":"hotel","vibes":["classic","boutique"],"styles":["classic","boutique"],"groups":["couple","solo","friends"],"sizes":["1-2","3-5"],"beach":true,"spa":true,"golfProximity":2,"priority":["beach","dining","spa"],"pills":["Bay views","Classic","Walkable evenings"],"budgets":["mid","premium","flexible"],"why":"Port de Pollença is one of the nicest bases in the North. Quieter than Alcúdia, walkable in evenings, and Alcanada 20 minutes away.","andy":"The most established hotel right on the bay. 23 rooms. Good food.","golf":"Club de Golf Alcanada 20 min. Golf Pollença 10 min (9 holes).","travelTime":"50 min from Palma airport"},
+  {"id":"illa-dor","name":"Illa d'Or","subname":"Port de Pollença","area":"north","luxury":2,"type":"hotel","vibes":["classic","boutique"],"styles":["classic","boutique"],"groups":["couple","solo","friends"],"sizes":["1-2","3-5"],"beach":true,"spa":true,"golfProximity":2,"priority":["beach","dining","spa"],"pills":["Bay views","Classic","Walkable evenings"],"budgets":["mid","premium","flexible"],"why":"Port de Pollença is one of the nicest bases in the North. Quieter than Alcúdia, walkable in evenings, and Alcanada 20 minutes away.","andy":"A seafront base on the Pine Walk in Port de Pollença. Plan transport to the golf.","golf":"Club de Golf Alcanada 20 min. Golf Pollença 10 min (9 holes).","travelTime":"50 min from Palma airport"},
   { id:'hotel-sis-pins', name:'Hotel Sis Pins', subname:'Port de Pollença', area:'north', luxury:1, type:'hotel', vibes:['classic'], styles:['classic'], groups:['couple','friends','solo'], sizes:['1-2','3-5'], beach:true, spa:false, golfProximity:2, priority:['beach'], pills:['Budget-friendly','Bay views','Simple and clean'], budgets:['mid','flexible'], why:'Honest, clean mid-range hotel right on the Port de Pollença promenade. No frills but good value in one of the nicest towns in the north.', andy:'If the budget is tight and the north is the zone, this is the practical answer. Golf Alcanada 20 minutes, evenings sorted by the Pollença food scene.', golf:'Club de Golf Alcanada 20 min. Golf Pollença 10 min.', travelTime:'50 min from Palma airport' },
   {"id":"agrotourisme-son-palou","name":"Agrotourisme Son Palou","subname":"Orient","area":"northwest","luxury":2,"type":"hotel","vibes":["countryside"],"styles":["countryside"],"groups":["couple","solo"],"sizes":["1-2"],"beach":false,"spa":false,"golfProximity":1,"priority":["privacy"],"pills":["Rural finca","Mountain village","Complete peace"],"budgets":["mid","premium","flexible"],"why":"Traditional agrotourism finca in the tiny village of Orient, surrounded by Tramuntana mountains. Complete silence, fresh produce, proper countryside Mallorca.","andy":"Orient is one of the most special villages on the island. Golf requires a drive but the experience here is unlike any hotel. Best combined with a few rounds at Alcanada.","golf":"Plan golf as a day out from Orient in the Tramuntana mountains. Son Termes is one option to consider; choose the course around the route and tee time.","travelTime":"35 min from Palma airport"},
   { id:'north-villa', name:'Luxury Villa, North Mallorca', subname:'Pollença / Alcúdia area', area:'north', luxury:3, type:'villa', vibes:['villa'], styles:['villa'], groups:['friends','family','couple'], sizes:['6-9','10+'], beach:true, spa:false, golfProximity:2, priority:['privacy','beach'], pills:['Private villa','Own pool','Coves nearby'], budgets:['premium','ultra','flexible','mid'], why:'Pollença valley or coastal Alcúdia puts you 15 minutes from Alcanada. Hire cars essential. Beaches and coves nearby.', andy:'The north is quieter and more scenic than the Southwest. A north villa works well if the brief is a proper holiday with good golf rather than maximum rounds.', golf:'Club de Golf Alcanada 15-20 min. Golf Pollença 10-15 min.', travelTime:'50 min from Palma airport' },
@@ -57,7 +57,7 @@ export const HOTELS = [
   {"id":"nakar-hotel","name":"Nakar Hotel","subname":"Palma","area":"palma","luxury":3,"type":"hotel","vibes":["boutique"],"styles":["boutique"],"groups":["couple","solo","friends"],"sizes":["1-2","3-5"],"beach":false,"spa":true,"golfProximity":1,"priority":["dining","spa"],"pills":["Rooftop pool","Design rooms","City centre"],"budgets":["premium","flexible"],"why":"Modern design hotel in central Palma with a strong rooftop pool and bar. Younger feel than the old-town palace hotels. Well-placed for the Passeig des Born.","andy":"For the group that wants Palma nightlife without being too far from golf. Son Gual is 20 minutes at most.","golf":"Son Gual 20 min. T Golf Palma (Puntiró) 18 min. Son Vida / Son Quint 15 min. Real Golf de Bendinat 18 min.","travelTime":"18 min from Palma airport"},
   { id:'palacio-ca-sa-galesa', name:'Palacio Ca Sa Galesa', subname:'Palma old town', area:'palma', luxury:4, type:'hotel', vibes:['boutique'], styles:['boutique','classic'], groups:['couple','solo'], sizes:['1-2'], beach:false, spa:true, golfProximity:1, priority:['dining','privacy'], pills:['Ultra-luxury','12 rooms','Cathedral views'], budgets:['ultra','flexible'], why:'Twelve-room ultra-luxury hotel in the heart of Palma old town, with views of the cathedral. One of the most intimate and special hotels in the city. Indoor pool and spa.', andy:'The most exclusive Palma city option. Dinners on the terrace looking at La Seu. Son Gual 20 minutes for the morning round.', golf:'Son Gual 20 min. Son Vida / Son Quint / Son Muntaner 15 min. T Golf Palma (Puntiró) 18 min. Real Golf de Bendinat 20 min.', travelTime:'20 min from Palma airport' },
   {"id":"portixol","name":"Hotel Portixol","subname":"Portixol, Palma","area":"palma","luxury":2,"type":"hotel","vibes":["boutique"],"styles":["boutique"],"groups":["couple","solo"],"sizes":["1-2"],"beach":false,"spa":true,"golfProximity":1,"priority":["dining","spa"],"pills":["Neighbourhood feel","Best fish in Palma","Quiet"],"budgets":["mid","premium","flexible"],"why":"Portixol village feel with some of the best fish restaurants in Mallorca. Es Mollet 5 minutes on foot. Golf requires a drive.","andy":"A quieter Palma option. Use as an evening base. Son Gual is 25 minutes for a morning round.","golf":"Son Gual 25 min. Son Vida / Son Quint 20 min. T Golf Palma (Puntiró) 20 min. Real Golf de Bendinat 20 min.","travelTime":"15 min from Palma airport"},
-  {"id":"convent-missio","name":"Convent de la Missió","subname":"Palma old town","area":"palma","luxury":3,"type":"hotel","vibes":["boutique"],"styles":["boutique"],"groups":["couple","solo","corporate"],"sizes":["1-2"],"beach":false,"spa":true,"golfProximity":1,"priority":["dining","spa"],"pills":["Design hotel","Palma old town","Rooftop"],"budgets":["premium","ultra","flexible"],"why":"Design rooms, rooftop terrace, and one of Palma's best dining options. For golfers who want the city experience between rounds.","andy":"The old town is 10 minutes on foot. Multiple acclaimed restaurants within walking distance.","golf":"Son Gual 25 min. Son Vida / Son Quint / Son Muntaner 20 min. T Golf Palma (Puntiró) 15 min. Real Golf de Bendinat 20 min.","travelTime":"20 min from Palma airport"},
+  {"id":"convent-missio","name":"Convent de la Missió","subname":"Palma old town","area":"palma","luxury":3,"type":"hotel","vibes":["boutique"],"styles":["boutique"],"groups":["couple","solo","corporate"],"sizes":["1-2"],"beach":false,"spa":true,"golfProximity":1,"priority":["dining","spa"],"pills":["Design hotel","Palma old town","Rooftop"],"budgets":["premium","ultra","flexible"],"why":"Design rooms, rooftop terrace, and one of Palma's best dining options. For golfers who want the city experience between rounds.","andy":"The hotel is in Palma’s old town. Plan a drive to the golf.","golf":"Son Gual 25 min. Son Vida / Son Quint / Son Muntaner 20 min. T Golf Palma (Puntiró) 15 min. Real Golf de Bendinat 20 min.","travelTime":"20 min from Palma airport"},
   { id:'innside-palma', name:'INNSiDE Palma Center', subname:'Palma', area:'palma', luxury:2, type:'hotel', vibes:['resort','classic'], styles:['classic'], groups:['friends','couple','corporate'], sizes:['1-2','3-5','6-9'], beach:false, spa:true, golfProximity:1, priority:['dining'], pills:['Four-star hotel','Rooftop pool','Central Palma'], budgets:['mid','flexible'], why:'Four-star hotel near Palma’s old town, with a rooftop pool and a wellness area. A city base for restaurants and evenings out between rounds.', andy:'A no-nonsense Palma base. Good for corporate groups. Son Gual 20 minutes for the rounds.', golf:'Son Gual 20 min. T Golf Palma (Puntiró) 18 min. Son Vida / Son Quint 15 min.', travelTime:'15 min from Palma airport' },
   { id:'brondo-architect', name:'Brondo Architect Hotel', subname:'Palma old town', area:'palma', luxury:2, type:'hotel', vibes:['boutique'], styles:['boutique'], groups:['couple','solo'], sizes:['1-2'], beach:false, spa:false, golfProximity:1, priority:['dining'], pills:['Boutique','Design','Old town location'], budgets:['mid','premium','flexible'], why:'Small design-led hotel in the Palma old town, within walking distance of the main restaurants, the cathedral, and Es Baluard museum.', andy:'The affordable boutique Palma option. Not the luxury of Palacio Ca Sa Galesa but the location is the same and the character is genuine.', golf:'Son Gual 22 min. T Golf Palma (Puntiró) 18 min. Real Golf de Bendinat 20 min.', travelTime:'20 min from Palma airport' },
   { id:'hostal-cuba', name:'Hostal Cuba', subname:'Santa Catalina, Palma', area:'palma', luxury:1, type:'hotel', vibes:['boutique','classic'], styles:['boutique'], groups:['couple','solo','friends'], sizes:['1-2','3-5'], beach:false, spa:false, golfProximity:1, priority:['dining'], pills:['Budget boutique','Santa Catalina','Best neighbourhood in Palma'], budgets:['mid','flexible'], why:"Characterful budget boutique in Santa Catalina, Palma's best neighbourhood for bars and restaurants. The hostal has been here for decades and has its own personality.", andy:'Santa Catalina is where locals eat. Not the old town for tourists. The real Palma food scene. Son Gual 20 minutes for morning golf.', golf:'Son Gual 22 min. T Golf Palma (Puntiró) 18 min. Son Vida 18 min.', travelTime:'15 min from Palma airport' },
@@ -78,46 +78,198 @@ export const HOTELS = [
 ]
 
 export const QUESTIONS_DATA = [
-  { key: 'area', qNum: '1', total: '6', title: 'Where would you like to stay?', sub: 'Choose an area for your hotel shortlist.', grid: false, opts: [
-    { val: 'southwest', label: 'Southwest Mallorca', desc: 'Santa Ponsa, Calvià, Bendinat and Andratx.' },
-    { val: 'north', label: 'North Mallorca', desc: 'Alcúdia, Pollença and Formentor. Courses include Alcanada and Golf Pollença.' },
-    { val: 'east', label: 'East Mallorca', desc: 'Capdepera, Canyamel, Pula, Son Servera and Vall d’Or.' },
-    { val: 'palma', label: 'Near Palma', desc: 'Palma city, Son Vida, Son Muntaner and Son Quint.' },
-    { val: 'northwest', label: 'Northwest Mallorca', desc: 'Sóller, Deià and Valldemossa. Plan a drive to the golf.' },
-  ]},
-  { key: 'priority', qNum: '2', total: '6', title: 'What matters most outside the golf?', sub: 'Pick all that apply: between rounds, what does the group want?', grid: false, multi: true, opts: [
-    { val: 'golf-focused', label: 'Close to the golf', desc: 'Stay close to the courses.' },
-    { val: 'beach', label: 'Beach and pool', desc: 'Time by the sea or pool.' },
-    { val: 'spa', label: 'Spa', desc: 'Access to a spa between rounds.' },
-    { val: 'dining', label: 'Food and evenings out', desc: 'Restaurants and evenings out.' },
-    { val: 'privacy', label: 'Privacy', desc: 'Your own space and facilities.' },
-  ]},
-  { key: 'group', qNum: '3', total: '6', title: 'Who is travelling?', sub: 'Helps match the right atmosphere and facilities.', grid: true, opts: [
-    { val: 'couple', label: 'Couple' },
-    { val: 'friends', label: 'Group of friends' },
-    { val: 'family', label: 'Family with kids' },
-    { val: 'solo', label: 'Travelling solo' },
-    { val: 'corporate', label: 'Corporate group' },
-  ]},
-  { key: 'size', qNum: '4', total: '6', title: 'How many people in total?', sub: 'Affects whether a villa makes more sense than a hotel.', grid: true, opts: [
-    { val: '1-2', label: '1 or 2' },
-    { val: '3-5', label: '3 to 5' },
-    { val: '6-9', label: '6 to 9' },
-    { val: '10+', label: '10 or more' },
-  ]},
-  { key: 'style', qNum: '5', total: '6', title: 'What kind of place feels right?', sub: 'Not about budget. About character.', grid: false, opts: [
-    { val: 'boutique', label: 'Boutique hotel', desc: 'Smaller hotels with individual character.' },
-    { val: 'resort', label: 'Resort', desc: 'Pools, restaurants and on-site facilities.' },
-    { val: 'classic', label: 'Classic hotel', desc: 'Traditional hotel rooms and shared facilities.' },
-    { val: 'villa', label: 'Private villa', desc: 'Your own kitchen, living space and pool.' },
-    { val: 'countryside', label: 'Countryside finca', desc: 'Rural stays away from the main resorts.' },
-  ]},
-  { key: 'budget', qNum: '6', total: '6', title: 'What is the rough budget per room per night?', sub: 'In high season (June to September). Helps filter to realistic options.', grid: false, opts: [
-    { val: 'mid', label: 'Up to €250 per room', desc: 'Mid-range four-star. Good location, comfortable, nothing extravagant.' },
-    { val: 'premium', label: '€250 to €500 per room', desc: 'Premium four or five-star. Proper spa, quality dining, noticeably better.' },
-    { val: 'ultra', label: '€500 or more per room', desc: 'Ultra-luxury. Four Seasons, Belmond, Jumeirah. The best the island has.' },
-    { val: 'flexible', label: 'Flexible: show me the best option', desc: 'Not constrained by price. Show me what genuinely fits best.' },
-  ]},
+  {
+    "key": "area",
+    "qNum": "1",
+    "total": "6",
+    "title": "Where would you like to stay?",
+    "sub": "Choose an area for your hotel shortlist.",
+    "grid": false,
+    "opts": [
+      {
+        "val": "southwest",
+        "label": "Southwest Mallorca",
+        "desc": "Santa Ponsa, Calvià, Bendinat and Andratx."
+      },
+      {
+        "val": "north",
+        "label": "North Mallorca",
+        "desc": "Alcúdia, Pollença and Formentor. Courses include Alcanada and Golf Pollença."
+      },
+      {
+        "val": "east",
+        "label": "East Mallorca",
+        "desc": "Capdepera, Canyamel, Pula, Son Servera and Vall d’Or."
+      },
+      {
+        "val": "palma",
+        "label": "Near Palma",
+        "desc": "Palma city, Son Vida, Son Muntaner and Son Quint."
+      },
+      {
+        "val": "northwest",
+        "label": "Northwest Mallorca",
+        "desc": "Sóller, Deià and Valldemossa. Plan a drive to the golf."
+      }
+    ]
+  },
+  {
+    "key": "priority",
+    "qNum": "2",
+    "total": "6",
+    "title": "What matters most for your stay?",
+    "sub": "Pick all that apply: between rounds, what does the group want?",
+    "grid": false,
+    "multi": true,
+    "opts": [
+      {
+        "val": "golf-focused",
+        "label": "Close to the golf",
+        "desc": "Stay close to the courses."
+      },
+      {
+        "val": "beach",
+        "label": "Beach and pool",
+        "desc": "Time by the sea or pool."
+      },
+      {
+        "val": "spa",
+        "label": "Spa",
+        "desc": "Access to a spa between rounds."
+      },
+      {
+        "val": "dining",
+        "label": "Food and evenings out",
+        "desc": "Restaurants and evenings out."
+      },
+      {
+        "val": "privacy",
+        "label": "Privacy",
+        "desc": "Quieter surroundings and time to yourselves."
+      }
+    ]
+  },
+  {
+    "key": "group",
+    "qNum": "3",
+    "total": "6",
+    "title": "Who is travelling?",
+    "sub": "Helps match the right atmosphere and facilities.",
+    "grid": true,
+    "opts": [
+      {
+        "val": "couple",
+        "label": "Couple"
+      },
+      {
+        "val": "friends",
+        "label": "Group of friends"
+      },
+      {
+        "val": "family",
+        "label": "Family with kids"
+      },
+      {
+        "val": "solo",
+        "label": "Travelling solo"
+      },
+      {
+        "val": "corporate",
+        "label": "Corporate group"
+      }
+    ]
+  },
+  {
+    "key": "size",
+    "qNum": "4",
+    "total": "6",
+    "title": "How many people in total?",
+    "sub": "Include everyone, including children.",
+    "grid": true,
+    "opts": [
+      {
+        "val": "1-2",
+        "label": "1 or 2"
+      },
+      {
+        "val": "3-5",
+        "label": "3 to 5"
+      },
+      {
+        "val": "6-9",
+        "label": "6 to 9"
+      },
+      {
+        "val": "10+",
+        "label": "10 or more"
+      }
+    ]
+  },
+  {
+    "key": "style",
+    "qNum": "5",
+    "total": "6",
+    "title": "What kind of place feels right?",
+    "sub": "Choose the type of stay you prefer.",
+    "grid": false,
+    "opts": [
+      {
+        "val": "boutique",
+        "label": "Boutique hotel",
+        "desc": "Smaller hotels with individual character."
+      },
+      {
+        "val": "resort",
+        "label": "Resort",
+        "desc": "Pools, restaurants and on-site facilities."
+      },
+      {
+        "val": "classic",
+        "label": "Classic hotel",
+        "desc": "Traditional hotel rooms and shared facilities."
+      },
+      {
+        "val": "villa",
+        "label": "Private villa",
+        "desc": "Your own kitchen, living space and pool."
+      },
+      {
+        "val": "countryside",
+        "label": "Countryside finca",
+        "desc": "Rural stays away from the main resorts."
+      }
+    ]
+  },
+  {
+    "key": "budget",
+    "qNum": "6",
+    "total": "6",
+    "title": "What is the rough budget per room per night?",
+    "sub": "Indicative budget bands, not live prices. Confirm rates for your dates.",
+    "grid": false,
+    "opts": [
+      {
+        "val": "mid",
+        "label": "Up to €250 per room",
+        "desc": ""
+      },
+      {
+        "val": "premium",
+        "label": "€250 to €500 per room",
+        "desc": ""
+      },
+      {
+        "val": "ultra",
+        "label": "€500 or more per room",
+        "desc": ""
+      },
+      {
+        "val": "flexible",
+        "label": "Flexible budget",
+        "desc": "Compare stays across the budget bands."
+      }
+    ]
+  }
 ]
 
 export function scoreHotel(h, answers) {
@@ -168,8 +320,9 @@ export function pillClass(p) {
 export function rankHotels(hotels, answers) {
   // These are explicit visitor requirements. Ranking preferences must not override them.
   const matches = hotels.filter(h =>
+    (answers.style === 'villa' ? h.type === 'villa' && (!answers.size || h.sizes.includes(answers.size)) : h.type !== 'villa') &&
     (!answers.style || h.styles.includes(answers.style)) &&
-    (!answers.budget || answers.budget === 'flexible' || h.budgets.includes(answers.budget))
+    (answers.style === 'villa' || !answers.budget || answers.budget === 'flexible' || h.budgets.includes(answers.budget))
   )
   return matches.map(hotel => ({ hotel, score: scoreHotel(hotel, answers) }))
     .filter(item => item.score > 0)

@@ -32,7 +32,7 @@ const data = {
   "son-muntaner": {
    "areaLabel": "Son Vida · Palma",
    "buggyNote": "Los buggies se usan mucho en el terreno ondulado",
-   "bestFor": "El campo mejor cuidado de España, oficialmente",
+   "bestFor": "Mejor campo de golf de España 2025, World Golf Awards",
    "why": "Elegido mejor campo de golf de España en los World Golf Awards 2025. Diseñado por Kurt Rossknecht junto a las colinas de Na Burguesa, con vistas a la bahía de Palma y un olivo milenario junto al 15. El estado del campo está de forma constante en lo más alto de la isla. Dos cosas que conviene saber antes de reservar: los precios son dinámicos y se aplica una licencia diaria además del green fee.",
    "andy": "El estado del campo aquí es tan bueno como en cualquier otro de la isla. Cuente con la licencia diaria además del green fee.",
    "bestPlayer": "Jugador ocasional a hándicap bajo"

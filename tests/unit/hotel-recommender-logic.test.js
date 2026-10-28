@@ -21,6 +21,18 @@ function makeHotel(overrides = {}) {
 
 const baseAnswers = { area: 'southwest', group: 'couple', size: '1-2', style: 'boutique', budget: 'premium', priority: [] }
 
+test('villa suggestions use group capacity rather than hotel room budget bands', () => {
+  const large = makeHotel({ type: 'villa', styles: ['villa'], sizes: ['10+'], budgets: ['ultra'] })
+  const small = makeHotel({ type: 'villa', styles: ['villa'], sizes: ['3-5'], budgets: ['mid'] })
+  const results = rankHotels([large, small], { ...baseAnswers, size: '10+', style: 'villa', budget: 'mid', villaBudget: '600' })
+  expect(results.map(item => item.hotel)).toEqual([large])
+})
+
+test('a countryside hotel search cannot return a generic whole-villa suggestion', () => {
+  const villa = makeHotel({ type: 'villa', styles: ['countryside'] })
+  expect(rankHotels([villa], { ...baseAnswers, style: 'countryside' })).toEqual([])
+})
+
 describe('scoreHotel', () => {
   test('family results never include adults-only hotels or unknown family suitability', () => {
     const family = { ...baseAnswers, group: 'family' }

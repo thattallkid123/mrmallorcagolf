@@ -278,7 +278,7 @@ const data = {
     "适合夜晚散步"
    ],
    "why": "Port de Pollença 是北部最好的基地之一。比 Alcúdia 更安静，晚上适合散步，到 Alcanada 20 分钟。",
-   "andy": "海湾边历史最悠久的酒店。23 间客房。餐饮不错。",
+   "andy": "位于Port de Pollença的Pine Walk海滨步道。请提前安排前往球场的交通。",
    "golf": "Club de Golf Alcanada 20 分钟。Golf Pollença 10 分钟（9 洞）。",
    "travelTime": "距帕尔马机场 50 分钟",
    "subname": "Port de Pollença"
@@ -549,7 +549,7 @@ const data = {
     "屋顶露台"
    ],
    "why": "设计客房、屋顶露台，以及帕尔马最好的餐饮之一。适合想在球局之间体验城市的球手。",
-   "andy": "步行 10 分钟到老城。步行范围内有多家广受好评的餐厅。",
+   "andy": "酒店位于帕尔玛老城区。前往球场需要安排交通。",
    "golf": "Son Gual 25 分钟。Son Vida / Son Quint / Son Muntaner 20 分钟。T Golf Palma (Puntiró) 15 分钟。Real Golf de Bendinat 20 分钟。",
    "travelTime": "距帕尔马机场 20 分钟",
    "subname": "帕尔马老城"
@@ -752,145 +752,145 @@ const data = {
  },
  "questions": {
   "area": {
-   "title": "您想住在哪个区域？",
-   "sub": "选择一个区域，查看对应的住宿推荐。",
-   "opts": {
-    "southwest": {
-     "label": "马略卡西南部",
-     "desc": "Santa Ponsa、Calvià、Bendinat 和 Andratx。"
-    },
-    "north": {
-     "label": "马略卡北部",
-     "desc": "Alcúdia、Pollença 和 Formentor。球场包括 Alcanada 和 Golf Pollença。"
-    },
-    "east": {
-     "label": "马略卡东部",
-     "desc": "Capdepera、Canyamel、Pula、Son Servera 和 Vall d’Or。"
-    },
-    "palma": {
-     "label": "帕尔马附近",
-     "desc": "帕尔玛市区、Son Vida、Son Muntaner 和 Son Quint。"
-    },
-    "northwest": {
-     "label": "马略卡西北部",
-     "desc": "Sóller、Deià 和 Valldemossa。打球需安排驾车出行。"
+    "title": "您想住在哪个区域？",
+    "sub": "选择一个区域，查看对应的住宿推荐。",
+    "opts": {
+      "southwest": {
+        "label": "马略卡西南部",
+        "desc": "Santa Ponsa、Calvià、Bendinat 和 Andratx。"
+      },
+      "north": {
+        "label": "马略卡北部",
+        "desc": "Alcúdia、Pollença 和 Formentor。球场包括 Alcanada 和 Golf Pollença。"
+      },
+      "east": {
+        "label": "马略卡东部",
+        "desc": "Capdepera、Canyamel、Pula、Son Servera 和 Vall d’Or。"
+      },
+      "palma": {
+        "label": "帕尔马附近",
+        "desc": "帕尔玛市区、Son Vida、Son Muntaner 和 Son Quint。"
+      },
+      "northwest": {
+        "label": "马略卡西北部",
+        "desc": "Sóller、Deià 和 Valldemossa。打球需安排驾车出行。"
+      }
     }
-   }
   },
   "priority": {
-   "title": "打球之外，什么最重要？",
-   "sub": "请选择所有适用项：球局之间，团队想要什么？",
-   "opts": {
-    "golf-focused": {
-     "label": "靠近球场",
-     "desc": "住在球场附近。"
-    },
-    "beach": {
-     "label": "海滩和泳池",
-     "desc": "在海边或泳池边放松。"
-    },
-    "spa": {
-     "label": "水疗",
-     "desc": "打球之余使用水疗设施。"
-    },
-    "dining": {
-     "label": "餐饮和夜间活动",
-     "desc": "餐厅和晚间外出。"
-    },
-    "privacy": {
-     "label": "私密空间",
-     "desc": "独立空间和设施。"
+    "title": "您最看重住宿的哪些方面？",
+    "sub": "请选择所有适用项：球局之间，团队想要什么？",
+    "opts": {
+      "golf-focused": {
+        "label": "靠近球场",
+        "desc": "住在球场附近。"
+      },
+      "beach": {
+        "label": "海滩和泳池",
+        "desc": "在海边或泳池边放松。"
+      },
+      "spa": {
+        "label": "水疗",
+        "desc": "打球之余使用水疗设施。"
+      },
+      "dining": {
+        "label": "餐饮和夜间活动",
+        "desc": "餐厅和晚间外出。"
+      },
+      "privacy": {
+        "label": "私密空间",
+        "desc": "更安静的环境，以及属于自己的时间。"
+      }
     }
-   }
   },
   "group": {
-   "title": "谁在出行？",
-   "sub": "有助于匹配合适的氛围和设施。",
-   "opts": {
-    "couple": {
-     "label": "情侣或夫妻"
-    },
-    "friends": {
-     "label": "朋友团体"
-    },
-    "family": {
-     "label": "带孩子的家庭"
-    },
-    "solo": {
-     "label": "独自旅行"
-    },
-    "corporate": {
-     "label": "企业团体"
+    "title": "谁在出行？",
+    "sub": "有助于匹配合适的氛围和设施。",
+    "opts": {
+      "couple": {
+        "label": "情侣或夫妻"
+      },
+      "friends": {
+        "label": "朋友团体"
+      },
+      "family": {
+        "label": "带孩子的家庭"
+      },
+      "solo": {
+        "label": "独自旅行"
+      },
+      "corporate": {
+        "label": "企业团体"
+      }
     }
-   }
   },
   "size": {
-   "title": "一共多少人？",
-   "sub": "影响别墅是否比酒店更合适。",
-   "opts": {
-    "1-2": {
-     "label": "1 或 2 人"
-    },
-    "3-5": {
-     "label": "3 至 5 人"
-    },
-    "6-9": {
-     "label": "6 至 9 人"
-    },
-    "10+": {
-     "label": "10 人或以上"
+    "title": "一共多少人？",
+    "sub": "请计算所有同行者，包括儿童。",
+    "opts": {
+      "1-2": {
+        "label": "1 或 2 人"
+      },
+      "3-5": {
+        "label": "3 至 5 人"
+      },
+      "6-9": {
+        "label": "6 至 9 人"
+      },
+      "10+": {
+        "label": "10 人或以上"
+      }
     }
-   }
   },
   "style": {
-   "title": "哪种类型的住处感觉合适？",
-   "sub": "与预算无关，而是关于个性。",
-   "opts": {
-    "boutique": {
-     "label": "精品酒店",
-     "desc": "规模较小、各具特色的酒店。"
-    },
-    "resort": {
-     "label": "度假村",
-     "desc": "泳池、餐厅和园内设施。"
-    },
-    "classic": {
-     "label": "经典酒店",
-     "desc": "传统客房和公共设施。"
-    },
-    "villa": {
-     "label": "私人别墅",
-     "desc": "独立厨房、起居空间和泳池。"
-    },
-    "countryside": {
-     "label": "乡村庄园",
-     "desc": "位于主要度假区以外的乡村住宿。"
+    "title": "哪种类型的住处感觉合适？",
+    "sub": "选择您喜欢的住宿类型。",
+    "opts": {
+      "boutique": {
+        "label": "精品酒店",
+        "desc": "规模较小、各具特色的酒店。"
+      },
+      "resort": {
+        "label": "度假村",
+        "desc": "泳池、餐厅和园内设施。"
+      },
+      "classic": {
+        "label": "经典酒店",
+        "desc": "传统客房和公共设施。"
+      },
+      "villa": {
+        "label": "私人别墅",
+        "desc": "独立厨房、起居空间和泳池。"
+      },
+      "countryside": {
+        "label": "乡村庄园",
+        "desc": "位于主要度假区以外的乡村住宿。"
+      }
     }
-   }
   },
   "budget": {
-   "title": "每间客房每晚的大致预算是多少？",
-   "sub": "旺季（6 月至 9 月）。有助于筛选出现实的选择。",
-   "opts": {
-    "mid": {
-     "label": "每间客房最高 250 欧元",
-     "desc": "中档四星。位置好，舒适，不奢侈。"
-    },
-    "premium": {
-     "label": "每间客房 250 至 500 欧元",
-     "desc": "高端四星或五星。像样的水疗、优质餐饮，明显更好。"
-    },
-    "ultra": {
-     "label": "每间客房 500 欧元或以上",
-     "desc": "超奢华。Four Seasons、Belmond、Jumeirah。岛上最好的。"
-    },
-    "flexible": {
-     "label": "灵活：给我看最好的选择",
-     "desc": "不受价格限制。给我看真正最合适的。"
+    "title": "每间客房每晚的大致预算是多少？",
+    "sub": "预算档位仅供规划，并非实时房价。请确认出行日期的实际价格。",
+    "opts": {
+      "mid": {
+        "label": "每间客房最高 250 欧元",
+        "desc": ""
+      },
+      "premium": {
+        "label": "每间客房 250 至 500 欧元",
+        "desc": ""
+      },
+      "ultra": {
+        "label": "每间客房 500 欧元或以上",
+        "desc": ""
+      },
+      "flexible": {
+        "label": "预算灵活",
+        "desc": "比较不同预算档位的住宿。"
+      }
     }
-   }
   }
- }
+}
 }
 
 export default data

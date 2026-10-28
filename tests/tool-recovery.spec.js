@@ -8,8 +8,10 @@ test('an empty hotel shortlist offers targeted editing and never offers to email
   await page.getByRole('button',{name:'Corporate group',exact:true}).click()
   await page.getByRole('button',{name:'1 or 2',exact:true}).click()
   await page.getByRole('button',{name:/Private villa/}).click()
-  await page.getByRole('button',{name:/Up to €250/}).click()
-  await expect(page.getByRole('heading',{name:'No hotel shortlist for these preferences'})).toBeVisible()
+  await expect(page.locator('#villa-nightly-budget')).toBeVisible()
+  await page.locator('.hr-btn-next').click()
+  await expect(page.getByRole('heading',{name:'No villa area suggestions for these answers'})).toBeVisible()
+  await expect(page.getByRole('button',{name:'Change group size',exact:true})).toBeVisible()
   await expect(page.getByRole('button',{name:/Email my shortlist/})).toHaveCount(0)
   await expect(page.locator('.hr-email-section')).toHaveCount(0)
   await expect(page.locator('.tool-empty-result button')).toHaveCount(3)
@@ -42,7 +44,7 @@ test('an empty hotel shortlist offers targeted editing and never offers to email
   await page.getByRole('button',{name:'Change style',exact:true}).click()
   await expect(page.getByRole('button',{name:/Private villa/})).toHaveClass(/selected/)
   await page.getByRole('button',{name:/Classic hotel/}).click()
-  await expect(page.getByRole('button',{name:/Up to €250/})).toHaveClass(/selected/)
+  await expect(page.getByRole('button',{name:/Up to €250/})).not.toHaveClass(/selected/)
   await page.getByRole('button',{name:/Up to €250/}).click()
   await expect(page.locator('.hr-hotel-card').first()).toBeVisible()
   await expect(page.locator('.hr-email-section')).toBeVisible()
@@ -68,7 +70,10 @@ for (const lang of ['de','es','fr','nl','sv','zh']) {
     const choices=[4,0,4,0,3,0]
     for(let i=0;i<choices.length;i++) {
       await expect.poll(async()=>Number((await page.locator('.hr-step-num').textContent()).match(/[0-9]+/)[0])).toBe(i+1)
-      await page.locator('.hr-opt').nth(choices[i]).click()
+      if(i===5) {
+        await expect(page.locator('#villa-nightly-budget')).toBeVisible()
+        await page.locator('.hr-btn-next').click()
+      } else await page.locator('.hr-opt').nth(choices[i]).click()
       if(i===1) {
         await expect(page.locator('.hr-opt').first()).toHaveAttribute('aria-pressed','true')
         await page.locator('.hr-btn-next').click()

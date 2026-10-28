@@ -32,7 +32,7 @@ const data = {
   "son-muntaner": {
    "areaLabel": "Son Vida · Palma",
    "buggyNote": "Buggy's worden veel gebruikt op het glooiende terrein",
-   "bestFor": "De best onderhouden baan van Spanje, officieel",
+   "bestFor": "Beste golfbaan van Spanje 2025, World Golf Awards",
    "why": "Uitgeroepen tot beste golfbaan van Spanje bij de World Golf Awards 2025. Ontworpen door Kurt Rossknecht tegen de heuvels van Na Burguesa met uitzicht over de baai van Palma, en een duizend jaar oude olijfboom naast de 15e. De baanconditie behoort steevast tot de top van het eiland. Twee dingen om te weten voor u boekt: de prijzen zijn dynamisch en bovenop de greenfee geldt een dagelijkse licentie.",
    "andy": "De conditie is hier net zo goed als waar dan ook op het eiland. Reken de dagelijkse licentie bovenop de greenfee mee.",
    "bestPlayer": "Recreatiegolfer tot laag handicap"

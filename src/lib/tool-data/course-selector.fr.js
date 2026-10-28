@@ -32,7 +32,7 @@ const data = {
   "son-muntaner": {
    "areaLabel": "Son Vida · Palma",
    "buggyNote": "Les voiturettes sont très utilisées sur le terrain vallonné",
-   "bestFor": "Le parcours le mieux entretenu d'Espagne, officiellement",
+   "bestFor": "Meilleur parcours d’Espagne 2025, World Golf Awards",
    "why": "Élu meilleur parcours de golf d'Espagne aux World Golf Awards 2025. Dessiné par Kurt Rossknecht contre les collines de Na Burguesa, avec vue sur la baie de Palma, et un olivier millénaire à côté du 15. L'état du parcours est constamment au plus haut niveau de l'île. Deux choses à savoir avant de réserver : les tarifs sont dynamiques, et une licence journalière s'ajoute au green fee.",
    "andy": "L'état du parcours est ici aussi bon que partout ailleurs sur l'île. Prévoyez la licence journalière en plus du green fee.",
    "bestPlayer": "Golfeur occasionnel à faible handicap"

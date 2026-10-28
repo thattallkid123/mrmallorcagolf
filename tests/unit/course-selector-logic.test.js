@@ -10,7 +10,15 @@ import {
   rankCourses,
   DIFF_LABEL,
   getCourseFactsLine,
+  personalMatchLine,
 } from '../../src/lib/course-selector-logic'
+
+test('match explanations reflect multiple selected trip styles', () => {
+  const course = makeCourse({ tags: { ability: [], style: ['scenic', 'relaxed'], budget: [], group: [] } })
+  const line = personalMatchLine(course, 0, { style: ['scenic', 'relaxed'], area: 'flexible' }, COURSE_SELECTOR_T.en)
+  expect(line).toContain(COURSE_SELECTOR_T.en.matchLines.style.scenic)
+  expect(line).toContain(COURSE_SELECTOR_T.en.matchLines.style.relaxed)
+})
 
 test('each translated shortlist introduction renders every location without throwing', () => {
   for (const copy of Object.values(COURSE_SELECTOR_T)) {

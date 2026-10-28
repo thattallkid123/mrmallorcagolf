@@ -32,7 +32,7 @@ const data = {
   "son-muntaner": {
    "areaLabel": "Son Vida · Palma",
    "buggyNote": "Golfbilar används mycket i den böljande terrängen",
-   "bestFor": "Spaniens bäst skötta bana, officiellt",
+   "bestFor": "Spaniens bästa golfbana 2025, World Golf Awards",
    "why": "Utsedd till Spaniens bästa golfbana vid World Golf Awards 2025. Ritad av Kurt Rossknecht mot Na Burguesas kullar med utsikt över Palmaviken och ett tusenårigt olivträd bredvid 15:an. Banans skick ligger genomgående i toppen på ön. Två saker att veta före bokning: priserna är dynamiska, och en daglig licens tillkommer utöver greenfeen.",
    "andy": "Skicket är här lika bra som var som helst på ön. Räkna med den dagliga licensen utöver greenfeen.",
    "bestPlayer": "Hobbygolfare till lågt handicap"

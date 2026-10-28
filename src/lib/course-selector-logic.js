@@ -173,9 +173,9 @@ export function personalMatchLine(c, rank, answers, t) {
     const p = ml.ability[answers.ability]
     if (p) reasons.push(p)
   }
-  if (c.tags.style.includes(answers.style)) {
-    const p = ml.style[answers.style]
-    if (p) reasons.push(p)
+  const styles = Array.isArray(answers.style) ? answers.style : [answers.style]
+  for (const style of styles) {
+    if (c.tags.style.includes(style) && ml.style[style]) reasons.push(ml.style[style])
   }
   if (answers.area !== 'flexible' && c.area === answers.area) reasons.push(ml.location)
   if (c.tags.budget.includes(answers.budget)) {

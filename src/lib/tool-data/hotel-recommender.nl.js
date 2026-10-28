@@ -278,7 +278,7 @@ const data = {
     "Wandelen in de avond"
    ],
    "why": "Port de Pollença is een van de mooiste uitvalsbases in het noorden. Rustiger dan Alcúdia, 's avonds goed te belopen, en Alcanada ligt op 20 minuten.",
-   "andy": "Het best gevestigde hotel direct aan de baai. 23 kamers. Goed eten.",
+   "andy": "Een uitvalsbasis aan zee op de Pine Walk in Port de Pollença. Plan vervoer naar de golfbaan.",
    "golf": "Club de Golf Alcanada 20 min. Golf Pollença 10 min (9 holes).",
    "travelTime": "50 min van de luchthaven van Palma",
    "subname": "Port de Pollença"
@@ -549,7 +549,7 @@ const data = {
     "Dakterras"
    ],
    "why": "Designkamers, dakterras en een van de beste eetgelegenheden van Palma. Voor golfers die tussen de rondes de stad willen beleven.",
-   "andy": "De oude stad is 10 minuten lopen. Meerdere bekroonde restaurants op loopafstand.",
+   "andy": "Het hotel ligt in de oude binnenstad van Palma. Plan vervoer naar de golfbaan.",
    "golf": "Son Gual 25 min. Son Vida / Son Quint / Son Muntaner 20 min. T Golf Palma (Puntiró) 15 min. Real Golf de Bendinat 20 min.",
    "travelTime": "20 min van de luchthaven van Palma",
    "subname": "Oude stad van Palma"
@@ -752,145 +752,145 @@ const data = {
  },
  "questions": {
   "area": {
-   "title": "Waar wilt u verblijven?",
-   "sub": "Kies een gebied voor uw hotelselectie.",
-   "opts": {
-    "southwest": {
-     "label": "Zuidwest-Mallorca",
-     "desc": "Santa Ponsa, Calvià, Bendinat en Andratx."
-    },
-    "north": {
-     "label": "Noord-Mallorca",
-     "desc": "Alcúdia, Pollença en Formentor. Golfbanen zijn Alcanada en Golf Pollença."
-    },
-    "east": {
-     "label": "Oost-Mallorca",
-     "desc": "Capdepera, Canyamel, Pula, Son Servera en Vall d’Or."
-    },
-    "palma": {
-     "label": "Bij Palma",
-     "desc": "Palma, Son Vida, Son Muntaner en Son Quint."
-    },
-    "northwest": {
-     "label": "Noordwest-Mallorca",
-     "desc": "Sóller, Deià en Valldemossa. Houd rekening met een autorit naar de golfbaan."
+    "title": "Waar wilt u verblijven?",
+    "sub": "Kies een gebied voor uw hotelselectie.",
+    "opts": {
+      "southwest": {
+        "label": "Zuidwest-Mallorca",
+        "desc": "Santa Ponsa, Calvià, Bendinat en Andratx."
+      },
+      "north": {
+        "label": "Noord-Mallorca",
+        "desc": "Alcúdia, Pollença en Formentor. Golfbanen zijn Alcanada en Golf Pollença."
+      },
+      "east": {
+        "label": "Oost-Mallorca",
+        "desc": "Capdepera, Canyamel, Pula, Son Servera en Vall d’Or."
+      },
+      "palma": {
+        "label": "Bij Palma",
+        "desc": "Palma, Son Vida, Son Muntaner en Son Quint."
+      },
+      "northwest": {
+        "label": "Noordwest-Mallorca",
+        "desc": "Sóller, Deià en Valldemossa. Houd rekening met een autorit naar de golfbaan."
+      }
     }
-   }
   },
   "priority": {
-   "title": "Wat is het belangrijkst naast het golfen?",
-   "sub": "Kies alles wat van toepassing is: wat wil de groep tussen de rondes?",
-   "opts": {
-    "golf-focused": {
-     "label": "Dicht bij de golfbaan",
-     "desc": "Verblijf dicht bij de banen."
-    },
-    "beach": {
-     "label": "Strand en zwembad",
-     "desc": "Tijd aan zee of bij het zwembad."
-    },
-    "spa": {
-     "label": "Spa",
-     "desc": "Toegang tot een spa tussen de rondes."
-    },
-    "dining": {
-     "label": "Eten en uitgaan",
-     "desc": "Restaurants en avondjes uit."
-    },
-    "privacy": {
-     "label": "Privacy",
-     "desc": "Uw eigen ruimte en voorzieningen."
+    "title": "Wat is belangrijk voor uw verblijf?",
+    "sub": "Kies alles wat van toepassing is: wat wil de groep tussen de rondes?",
+    "opts": {
+      "golf-focused": {
+        "label": "Dicht bij de golfbaan",
+        "desc": "Verblijf dicht bij de banen."
+      },
+      "beach": {
+        "label": "Strand en zwembad",
+        "desc": "Tijd aan zee of bij het zwembad."
+      },
+      "spa": {
+        "label": "Spa",
+        "desc": "Toegang tot een spa tussen de rondes."
+      },
+      "dining": {
+        "label": "Eten en uitgaan",
+        "desc": "Restaurants en avondjes uit."
+      },
+      "privacy": {
+        "label": "Privacy",
+        "desc": "Een rustigere omgeving en tijd voor uzelf."
+      }
     }
-   }
   },
   "group": {
-   "title": "Wie reist er mee?",
-   "sub": "Helpt bij het vinden van de juiste sfeer en faciliteiten.",
-   "opts": {
-    "couple": {
-     "label": "Stel"
-    },
-    "friends": {
-     "label": "Groep vrienden"
-    },
-    "family": {
-     "label": "Gezin met kinderen"
-    },
-    "solo": {
-     "label": "Alleen reizen"
-    },
-    "corporate": {
-     "label": "Bedrijfsgroep"
+    "title": "Wie reist er mee?",
+    "sub": "Helpt bij het vinden van de juiste sfeer en faciliteiten.",
+    "opts": {
+      "couple": {
+        "label": "Stel"
+      },
+      "friends": {
+        "label": "Groep vrienden"
+      },
+      "family": {
+        "label": "Gezin met kinderen"
+      },
+      "solo": {
+        "label": "Alleen reizen"
+      },
+      "corporate": {
+        "label": "Bedrijfsgroep"
+      }
     }
-   }
   },
   "size": {
-   "title": "Hoeveel personen in totaal?",
-   "sub": "Bepaalt of een villa meer zin heeft dan een hotel.",
-   "opts": {
-    "1-2": {
-     "label": "1 of 2"
-    },
-    "3-5": {
-     "label": "3 tot 5"
-    },
-    "6-9": {
-     "label": "6 tot 9"
-    },
-    "10+": {
-     "label": "10 of meer"
+    "title": "Hoeveel personen in totaal?",
+    "sub": "Tel iedereen mee, ook kinderen.",
+    "opts": {
+      "1-2": {
+        "label": "1 of 2"
+      },
+      "3-5": {
+        "label": "3 tot 5"
+      },
+      "6-9": {
+        "label": "6 tot 9"
+      },
+      "10+": {
+        "label": "10 of meer"
+      }
     }
-   }
   },
   "style": {
-   "title": "Wat voor soort verblijf voelt goed?",
-   "sub": "Het gaat niet om het budget, maar om het karakter.",
-   "opts": {
-    "boutique": {
-     "label": "Boetiekhotel",
-     "desc": "Kleinere hotels met een eigen karakter."
-    },
-    "resort": {
-     "label": "Resort",
-     "desc": "Zwembaden, restaurants en voorzieningen op het terrein."
-    },
-    "classic": {
-     "label": "Klassiek hotel",
-     "desc": "Traditionele hotelkamers en gedeelde voorzieningen."
-    },
-    "villa": {
-     "label": "Privévilla",
-     "desc": "Een eigen keuken, leefruimte en zwembad."
-    },
-    "countryside": {
-     "label": "Landelijke finca",
-     "desc": "Landelijk verblijf buiten de grote badplaatsen."
+    "title": "Wat voor soort verblijf voelt goed?",
+    "sub": "Kies het soort verblijf dat u het liefst wilt.",
+    "opts": {
+      "boutique": {
+        "label": "Boetiekhotel",
+        "desc": "Kleinere hotels met een eigen karakter."
+      },
+      "resort": {
+        "label": "Resort",
+        "desc": "Zwembaden, restaurants en voorzieningen op het terrein."
+      },
+      "classic": {
+        "label": "Klassiek hotel",
+        "desc": "Traditionele hotelkamers en gedeelde voorzieningen."
+      },
+      "villa": {
+        "label": "Privévilla",
+        "desc": "Een eigen keuken, leefruimte en zwembad."
+      },
+      "countryside": {
+        "label": "Landelijke finca",
+        "desc": "Landelijk verblijf buiten de grote badplaatsen."
+      }
     }
-   }
   },
   "budget": {
-   "title": "Wat is het globale budget per kamer per nacht?",
-   "sub": "In het hoogseizoen (juni tot september). Helpt om realistische opties te filteren.",
-   "opts": {
-    "mid": {
-     "label": "Tot € 250 per kamer",
-     "desc": "Viersterren in de middenklasse. Goede ligging, comfortabel, niets extravagants."
-    },
-    "premium": {
-     "label": "€ 250 tot € 500 per kamer",
-     "desc": "Premium vier- of vijfsterren. Echte spa, kwaliteitsrestaurant, merkbaar beter."
-    },
-    "ultra": {
-     "label": "€ 500 of meer per kamer",
-     "desc": "Ultraluxe. Four Seasons, Belmond, Jumeirah. Het beste dat het eiland heeft."
-    },
-    "flexible": {
-     "label": "Flexibel: toon me de beste optie",
-     "desc": "Niet beperkt door de prijs. Toon me wat echt het best past."
+    "title": "Wat is het globale budget per kamer per nacht?",
+    "sub": "Indicatieve budgetcategorieën, geen liveprijzen. Bevestig tarieven voor uw reisdata.",
+    "opts": {
+      "mid": {
+        "label": "Tot € 250 per kamer",
+        "desc": ""
+      },
+      "premium": {
+        "label": "€ 250 tot € 500 per kamer",
+        "desc": ""
+      },
+      "ultra": {
+        "label": "€ 500 of meer per kamer",
+        "desc": ""
+      },
+      "flexible": {
+        "label": "Flexibel budget",
+        "desc": "Vergelijk verblijven in verschillende budgetcategorieën."
+      }
     }
-   }
   }
- }
+}
 }
 
 export default data

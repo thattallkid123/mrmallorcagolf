@@ -278,7 +278,7 @@ const data = {
     "Noches para pasear"
    ],
    "why": "Port de Pollença es una de las mejores bases del norte. Más tranquilo que Alcúdia, agradable para pasear por las noches y con Alcanada a 20 minutos.",
-   "andy": "El hotel más consolidado justo en la bahía. 23 habitaciones. Buena comida.",
+   "andy": "Una base junto al mar en el Pine Walk de Port de Pollença. Planifique el transporte al golf.",
    "golf": "Club de Golf Alcanada 20 min. Golf Pollença 10 min (9 hoyos).",
    "travelTime": "50 min del aeropuerto de Palma",
    "subname": "Port de Pollença"
@@ -549,7 +549,7 @@ const data = {
     "Azotea"
    ],
    "why": "Habitaciones de diseño, terraza en la azotea y una de las mejores opciones gastronómicas de Palma. Para golfistas que quieren la experiencia de ciudad entre rondas.",
-   "andy": "El casco antiguo está a 10 minutos a pie. Varios restaurantes reconocidos a poca distancia.",
+   "andy": "El hotel está en el casco antiguo de Palma. Planifique el traslado al golf.",
    "golf": "Son Gual 25 min. Son Vida / Son Quint / Son Muntaner 20 min. T Golf Palma (Puntiró) 15 min. Real Golf de Bendinat 20 min.",
    "travelTime": "20 min del aeropuerto de Palma",
    "subname": "Casco antiguo de Palma"
@@ -752,145 +752,145 @@ const data = {
  },
  "questions": {
   "area": {
-   "title": "¿Dónde le gustaría alojarse?",
-   "sub": "Elija una zona para su selección de hoteles.",
-   "opts": {
-    "southwest": {
-     "label": "Suroeste de Mallorca",
-     "desc": "Santa Ponsa, Calvià, Bendinat y Andratx."
-    },
-    "north": {
-     "label": "Norte de Mallorca",
-     "desc": "Alcúdia, Pollença y Formentor. Los campos incluyen Alcanada y Golf Pollença."
-    },
-    "east": {
-     "label": "Este de Mallorca",
-     "desc": "Capdepera, Canyamel, Pula, Son Servera y Vall d’Or."
-    },
-    "palma": {
-     "label": "Cerca de Palma",
-     "desc": "Palma, Son Vida, Son Muntaner y Son Quint."
-    },
-    "northwest": {
-     "label": "Noroeste de Mallorca",
-     "desc": "Sóller, Deià y Valldemossa. Prevea desplazarse en coche para jugar al golf."
+    "title": "¿Dónde le gustaría alojarse?",
+    "sub": "Elija una zona para su selección de hoteles.",
+    "opts": {
+      "southwest": {
+        "label": "Suroeste de Mallorca",
+        "desc": "Santa Ponsa, Calvià, Bendinat y Andratx."
+      },
+      "north": {
+        "label": "Norte de Mallorca",
+        "desc": "Alcúdia, Pollença y Formentor. Los campos incluyen Alcanada y Golf Pollença."
+      },
+      "east": {
+        "label": "Este de Mallorca",
+        "desc": "Capdepera, Canyamel, Pula, Son Servera y Vall d’Or."
+      },
+      "palma": {
+        "label": "Cerca de Palma",
+        "desc": "Palma, Son Vida, Son Muntaner y Son Quint."
+      },
+      "northwest": {
+        "label": "Noroeste de Mallorca",
+        "desc": "Sóller, Deià y Valldemossa. Prevea desplazarse en coche para jugar al golf."
+      }
     }
-   }
   },
   "priority": {
-   "title": "¿Qué es lo más importante fuera del golf?",
-   "sub": "Elija todo lo que corresponda: entre rondas, ¿qué quiere el grupo?",
-   "opts": {
-    "golf-focused": {
-     "label": "Cerca del golf",
-     "desc": "Alojamiento cerca de los campos."
-    },
-    "beach": {
-     "label": "Playa y piscina",
-     "desc": "Tiempo junto al mar o la piscina."
-    },
-    "spa": {
-     "label": "Spa",
-     "desc": "Acceso a un spa entre rondas."
-    },
-    "dining": {
-     "label": "Comida y salidas",
-     "desc": "Restaurantes y salidas por la noche."
-    },
-    "privacy": {
-     "label": "Privacidad",
-     "desc": "Su propio espacio e instalaciones."
+    "title": "¿Qué es lo más importante para su estancia?",
+    "sub": "Elija todo lo que corresponda: entre rondas, ¿qué quiere el grupo?",
+    "opts": {
+      "golf-focused": {
+        "label": "Cerca del golf",
+        "desc": "Alojamiento cerca de los campos."
+      },
+      "beach": {
+        "label": "Playa y piscina",
+        "desc": "Tiempo junto al mar o la piscina."
+      },
+      "spa": {
+        "label": "Spa",
+        "desc": "Acceso a un spa entre rondas."
+      },
+      "dining": {
+        "label": "Comida y salidas",
+        "desc": "Restaurantes y salidas por la noche."
+      },
+      "privacy": {
+        "label": "Privacidad",
+        "desc": "Un entorno más tranquilo y tiempo para ustedes."
+      }
     }
-   }
   },
   "group": {
-   "title": "¿Quién viaja?",
-   "sub": "Ayuda a encontrar el ambiente y las instalaciones adecuados.",
-   "opts": {
-    "couple": {
-     "label": "Pareja"
-    },
-    "friends": {
-     "label": "Grupo de amigos"
-    },
-    "family": {
-     "label": "Familia con niños"
-    },
-    "solo": {
-     "label": "Viajando solo"
-    },
-    "corporate": {
-     "label": "Grupo corporativo"
+    "title": "¿Quién viaja?",
+    "sub": "Ayuda a encontrar el ambiente y las instalaciones adecuados.",
+    "opts": {
+      "couple": {
+        "label": "Pareja"
+      },
+      "friends": {
+        "label": "Grupo de amigos"
+      },
+      "family": {
+        "label": "Familia con niños"
+      },
+      "solo": {
+        "label": "Viajando solo"
+      },
+      "corporate": {
+        "label": "Grupo corporativo"
+      }
     }
-   }
   },
   "size": {
-   "title": "¿Cuántas personas en total?",
-   "sub": "Influye en si una villa tiene más sentido que un hotel.",
-   "opts": {
-    "1-2": {
-     "label": "1 o 2"
-    },
-    "3-5": {
-     "label": "3 a 5"
-    },
-    "6-9": {
-     "label": "6 a 9"
-    },
-    "10+": {
-     "label": "10 o más"
+    "title": "¿Cuántas personas en total?",
+    "sub": "Incluya a todos, también a los niños.",
+    "opts": {
+      "1-2": {
+        "label": "1 o 2"
+      },
+      "3-5": {
+        "label": "3 a 5"
+      },
+      "6-9": {
+        "label": "6 a 9"
+      },
+      "10+": {
+        "label": "10 o más"
+      }
     }
-   }
   },
   "style": {
-   "title": "¿Qué tipo de alojamiento le encaja?",
-   "sub": "No se trata del presupuesto, sino del carácter.",
-   "opts": {
-    "boutique": {
-     "label": "Hotel boutique",
-     "desc": "Hoteles pequeños con carácter propio."
-    },
-    "resort": {
-     "label": "Resort",
-     "desc": "Piscinas, restaurantes e instalaciones en el recinto."
-    },
-    "classic": {
-     "label": "Hotel clásico",
-     "desc": "Habitaciones tradicionales e instalaciones compartidas."
-    },
-    "villa": {
-     "label": "Villa privada",
-     "desc": "Su propia cocina, sala de estar y piscina."
-    },
-    "countryside": {
-     "label": "Finca rural",
-     "desc": "Alojamiento rural fuera de los principales núcleos turísticos."
+    "title": "¿Qué tipo de alojamiento le encaja?",
+    "sub": "Elija el tipo de alojamiento que prefiere.",
+    "opts": {
+      "boutique": {
+        "label": "Hotel boutique",
+        "desc": "Hoteles pequeños con carácter propio."
+      },
+      "resort": {
+        "label": "Resort",
+        "desc": "Piscinas, restaurantes e instalaciones en el recinto."
+      },
+      "classic": {
+        "label": "Hotel clásico",
+        "desc": "Habitaciones tradicionales e instalaciones compartidas."
+      },
+      "villa": {
+        "label": "Villa privada",
+        "desc": "Su propia cocina, sala de estar y piscina."
+      },
+      "countryside": {
+        "label": "Finca rural",
+        "desc": "Alojamiento rural fuera de los principales núcleos turísticos."
+      }
     }
-   }
   },
   "budget": {
-   "title": "¿Cuál es el presupuesto aproximado por habitación y noche?",
-   "sub": "En temporada alta (de junio a septiembre). Ayuda a filtrar opciones realistas.",
-   "opts": {
-    "mid": {
-     "label": "Hasta 250 € por habitación",
-     "desc": "Cuatro estrellas de gama media. Buena ubicación, cómodo, nada extravagante."
-    },
-    "premium": {
-     "label": "De 250 a 500 € por habitación",
-     "desc": "Cuatro o cinco estrellas premium. Spa de verdad, gastronomía de calidad, notablemente mejor."
-    },
-    "ultra": {
-     "label": "500 € o más por habitación",
-     "desc": "Ultralujo. Four Seasons, Belmond, Jumeirah. Lo mejor que tiene la isla."
-    },
-    "flexible": {
-     "label": "Flexible: muéstreme la mejor opción",
-     "desc": "Sin limitación de precio. Muéstreme lo que de verdad encaja mejor."
+    "title": "¿Cuál es el presupuesto aproximado por habitación y noche?",
+    "sub": "Franjas orientativas, no precios en directo. Confirme las tarifas para sus fechas.",
+    "opts": {
+      "mid": {
+        "label": "Hasta 250 € por habitación",
+        "desc": ""
+      },
+      "premium": {
+        "label": "De 250 a 500 € por habitación",
+        "desc": ""
+      },
+      "ultra": {
+        "label": "500 € o más por habitación",
+        "desc": ""
+      },
+      "flexible": {
+        "label": "Presupuesto flexible",
+        "desc": "Comparar alojamientos de distintas franjas de presupuesto."
+      }
     }
-   }
   }
- }
+}
 }
 
 export default data

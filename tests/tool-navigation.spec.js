@@ -38,3 +38,48 @@ test('Hotel Finder keeps Back before Continue in DOM and visual order',async({pa
   await expect(page.locator('.planning-tool')).toHaveAttribute('data-tool-active','true')
   await expect(page.locator('.tool-trust-line')).toBeHidden()
 })
+
+test('Hotel Finder result summary retains every selected priority',async({page})=>{
+  await page.goto('/tools/hotel-recommender',{waitUntil:'load'})
+  await page.locator('.hr-opt').first().click()
+  await expect(page.locator('.hr-step-num')).toContainText('2')
+  await page.getByRole('button',{name:'Beach and pool',exact:false}).click()
+  await page.getByRole('button',{name:'Spa',exact:false}).click()
+  await page.locator('.hr-btn-next').click()
+  for(const step of [3,4,5,6]){
+    await expect(page.locator('.hr-step-num')).toHaveText(`Question ${step} of 6`)
+    await (step===6 ? page.locator('.hr-opt').last() : page.locator('.hr-opt').first()).click()
+  }
+  const summary=page.locator('.hr-results-hero p')
+  await expect(summary).toContainText('with beach time after golf')
+  await expect(summary).toContainText('with spa recovery between rounds')
+})
+
+test('whole-villa budget stays separate and is included in the saved brief',async({page})=>{
+  let sent
+  await page.route('**/api/send-itinerary',async route=>{
+    sent=route.request().postDataJSON()
+    await route.fulfill({json:{ok:true}})
+  })
+  await page.goto('/tools/hotel-recommender',{waitUntil:'load'})
+  for(const [step,index] of [[1,0],[2,4],[3,1],[4,2],[5,3]]){
+    await expect(page.locator('.hr-step-num')).toHaveText(`Question ${step} of 6`)
+    await page.locator('.hr-opt').nth(index).click()
+    if(step===2)await page.locator('.hr-btn-next').click()
+  }
+  const budget=page.getByLabel('Whole villa per night (€)')
+  await expect(budget).toBeVisible()
+  await expect(page.getByRole('button',{name:/Up to €250/})).toHaveCount(0)
+  await budget.fill('600')
+  await page.locator('.hr-btn-next').click()
+  await expect(page.getByRole('heading',{name:'Villa area suggestions'})).toBeVisible()
+  await expect(page.locator('.hr-results-hero')).toContainText('Whole-villa nightly budget: €600')
+  await expect(page.locator('.hr-results-hero')).toContainText('not available properties or confirmed prices')
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
+  await page.locator('.hr-email-input').fill('layout-check@example.com')
+  await page.locator('.hr-btn-email').click()
+  await expect.poll(()=>sent?.data?.answerSummary).toContain('Whole-villa nightly budget: €600')
+  expect(sent.data.answerSummary).not.toContain('/room')
+  const href=await page.locator('.hr-cta-link-primary').getAttribute('href')
+  expect(decodeURIComponent(href)).toContain('Whole-villa nightly budget: €600')
+})

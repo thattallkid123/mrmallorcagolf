@@ -278,7 +278,7 @@ const data = {
     "Kvällspromenader"
    ],
    "why": "Port de Pollença är en av de trevligaste baserna i norr. Lugnare än Alcúdia, trevligt att promenera på kvällarna, och Alcanada ligger 20 minuter bort.",
-   "andy": "Det mest etablerade hotellet precis vid viken. 23 rum. Bra mat.",
+   "andy": "En bas vid havet längs Pine Walk i Port de Pollença. Planera transport till golfen.",
    "golf": "Club de Golf Alcanada 20 min. Golf Pollença 10 min (9 hål).",
    "travelTime": "50 min från Palmas flygplats",
    "subname": "Port de Pollença"
@@ -549,7 +549,7 @@ const data = {
     "Takterrass"
    ],
    "why": "Designrum, takterrass och ett av Palmas bästa matställen. För golfare som vill uppleva staden mellan rundorna.",
-   "andy": "Gamla stan är 10 minuters promenad bort. Flera välrenommerade restauranger inom gångavstånd.",
+   "andy": "Hotellet ligger i Palmas gamla stad. Planera en bilresa till golfen.",
    "golf": "Son Gual 25 min. Son Vida / Son Quint / Son Muntaner 20 min. T Golf Palma (Puntiró) 15 min. Real Golf de Bendinat 20 min.",
    "travelTime": "20 min från Palmas flygplats",
    "subname": "Palmas gamla stan"
@@ -752,145 +752,145 @@ const data = {
  },
  "questions": {
   "area": {
-   "title": "Var vill ni bo?",
-   "sub": "Välj ett område för ert hotellurval.",
-   "opts": {
-    "southwest": {
-     "label": "Sydvästra Mallorca",
-     "desc": "Santa Ponsa, Calvià, Bendinat och Andratx."
-    },
-    "north": {
-     "label": "Norra Mallorca",
-     "desc": "Alcúdia, Pollença och Formentor. Här finns Alcanada och Golf Pollença."
-    },
-    "east": {
-     "label": "Östra Mallorca",
-     "desc": "Capdepera, Canyamel, Pula, Son Servera och Vall d’Or."
-    },
-    "palma": {
-     "label": "Nära Palma",
-     "desc": "Palma, Son Vida, Son Muntaner och Son Quint."
-    },
-    "northwest": {
-     "label": "Nordvästra Mallorca",
-     "desc": "Sóller, Deià och Valldemossa. Räkna med bilresa till golfen."
+    "title": "Var vill ni bo?",
+    "sub": "Välj ett område för ert hotellurval.",
+    "opts": {
+      "southwest": {
+        "label": "Sydvästra Mallorca",
+        "desc": "Santa Ponsa, Calvià, Bendinat och Andratx."
+      },
+      "north": {
+        "label": "Norra Mallorca",
+        "desc": "Alcúdia, Pollença och Formentor. Här finns Alcanada och Golf Pollença."
+      },
+      "east": {
+        "label": "Östra Mallorca",
+        "desc": "Capdepera, Canyamel, Pula, Son Servera och Vall d’Or."
+      },
+      "palma": {
+        "label": "Nära Palma",
+        "desc": "Palma, Son Vida, Son Muntaner och Son Quint."
+      },
+      "northwest": {
+        "label": "Nordvästra Mallorca",
+        "desc": "Sóller, Deià och Valldemossa. Räkna med bilresa till golfen."
+      }
     }
-   }
   },
   "priority": {
-   "title": "Vad är viktigast utanför golfen?",
-   "sub": "Välj allt som stämmer: vad vill gruppen mellan rundorna?",
-   "opts": {
-    "golf-focused": {
-     "label": "Nära golfen",
-     "desc": "Bo nära golfbanorna."
-    },
-    "beach": {
-     "label": "Strand och pool",
-     "desc": "Tid vid havet eller poolen."
-    },
-    "spa": {
-     "label": "Spa",
-     "desc": "Tillgång till spa mellan rundorna."
-    },
-    "dining": {
-     "label": "Mat och kvällsliv",
-     "desc": "Restauranger och kvällar ute."
-    },
-    "privacy": {
-     "label": "Avskildhet",
-     "desc": "Eget utrymme och egna faciliteter."
+    "title": "Vad är viktigast för din vistelse?",
+    "sub": "Välj allt som stämmer: vad vill gruppen mellan rundorna?",
+    "opts": {
+      "golf-focused": {
+        "label": "Nära golfen",
+        "desc": "Bo nära golfbanorna."
+      },
+      "beach": {
+        "label": "Strand och pool",
+        "desc": "Tid vid havet eller poolen."
+      },
+      "spa": {
+        "label": "Spa",
+        "desc": "Tillgång till spa mellan rundorna."
+      },
+      "dining": {
+        "label": "Mat och kvällsliv",
+        "desc": "Restauranger och kvällar ute."
+      },
+      "privacy": {
+        "label": "Avskildhet",
+        "desc": "Lugnare omgivningar och tid för er själva."
+      }
     }
-   }
   },
   "group": {
-   "title": "Vem reser?",
-   "sub": "Hjälper till att hitta rätt atmosfär och faciliteter.",
-   "opts": {
-    "couple": {
-     "label": "Par"
-    },
-    "friends": {
-     "label": "Vängrupp"
-    },
-    "family": {
-     "label": "Familj med barn"
-    },
-    "solo": {
-     "label": "Reser ensam"
-    },
-    "corporate": {
-     "label": "Företagsgrupp"
+    "title": "Vem reser?",
+    "sub": "Hjälper till att hitta rätt atmosfär och faciliteter.",
+    "opts": {
+      "couple": {
+        "label": "Par"
+      },
+      "friends": {
+        "label": "Vängrupp"
+      },
+      "family": {
+        "label": "Familj med barn"
+      },
+      "solo": {
+        "label": "Reser ensam"
+      },
+      "corporate": {
+        "label": "Företagsgrupp"
+      }
     }
-   }
   },
   "size": {
-   "title": "Hur många personer totalt?",
-   "sub": "Påverkar om en villa är mer vettig än ett hotell.",
-   "opts": {
-    "1-2": {
-     "label": "1 eller 2"
-    },
-    "3-5": {
-     "label": "3 till 5"
-    },
-    "6-9": {
-     "label": "6 till 9"
-    },
-    "10+": {
-     "label": "10 eller fler"
+    "title": "Hur många personer totalt?",
+    "sub": "Räkna med alla, även barn.",
+    "opts": {
+      "1-2": {
+        "label": "1 eller 2"
+      },
+      "3-5": {
+        "label": "3 till 5"
+      },
+      "6-9": {
+        "label": "6 till 9"
+      },
+      "10+": {
+        "label": "10 eller fler"
+      }
     }
-   }
   },
   "style": {
-   "title": "Vilken typ av ställe känns rätt?",
-   "sub": "Det handlar inte om budget, utan om karaktär.",
-   "opts": {
-    "boutique": {
-     "label": "Boutiquehotell",
-     "desc": "Mindre hotell med egen karaktär."
-    },
-    "resort": {
-     "label": "Resort",
-     "desc": "Pooler, restauranger och faciliteter på området."
-    },
-    "classic": {
-     "label": "Klassiskt hotell",
-     "desc": "Traditionella hotellrum och gemensamma faciliteter."
-    },
-    "villa": {
-     "label": "Privat villa",
-     "desc": "Eget kök, sällskapsutrymmen och pool."
-    },
-    "countryside": {
-     "label": "Finca på landet",
-     "desc": "Lantliga boenden utanför de stora semesterorterna."
+    "title": "Vilken typ av ställe känns rätt?",
+    "sub": "Välj den typ av boende du föredrar.",
+    "opts": {
+      "boutique": {
+        "label": "Boutiquehotell",
+        "desc": "Mindre hotell med egen karaktär."
+      },
+      "resort": {
+        "label": "Resort",
+        "desc": "Pooler, restauranger och faciliteter på området."
+      },
+      "classic": {
+        "label": "Klassiskt hotell",
+        "desc": "Traditionella hotellrum och gemensamma faciliteter."
+      },
+      "villa": {
+        "label": "Privat villa",
+        "desc": "Eget kök, sällskapsutrymmen och pool."
+      },
+      "countryside": {
+        "label": "Finca på landet",
+        "desc": "Lantliga boenden utanför de stora semesterorterna."
+      }
     }
-   }
   },
   "budget": {
-   "title": "Vilken är den ungefärliga budgeten per rum och natt?",
-   "sub": "Under högsäsong (juni till september). Hjälper till att filtrera fram realistiska alternativ.",
-   "opts": {
-    "mid": {
-     "label": "Upp till 250 € per rum",
-     "desc": "Fyrstjärnigt i mellanklassen. Bra läge, bekvämt, inget extravagant."
-    },
-    "premium": {
-     "label": "250 till 500 € per rum",
-     "desc": "Premium fyra- eller femstjärnigt. Riktigt spa, kvalitetsmat, märkbart bättre."
-    },
-    "ultra": {
-     "label": "500 € eller mer per rum",
-     "desc": "Ultralyx. Four Seasons, Belmond, Jumeirah. Det bästa ön har."
-    },
-    "flexible": {
-     "label": "Flexibelt: visa mig det bästa alternativet",
-     "desc": "Inte begränsad av pris. Visa mig vad som verkligen passar bäst."
+    "title": "Vilken är den ungefärliga budgeten per rum och natt?",
+    "sub": "Ungefärliga budgetnivåer, inga livepriser. Bekräfta priser för dina datum.",
+    "opts": {
+      "mid": {
+        "label": "Upp till 250 € per rum",
+        "desc": ""
+      },
+      "premium": {
+        "label": "250 till 500 € per rum",
+        "desc": ""
+      },
+      "ultra": {
+        "label": "500 € eller mer per rum",
+        "desc": ""
+      },
+      "flexible": {
+        "label": "Flexibel budget",
+        "desc": "Jämför boenden i olika budgetnivåer."
+      }
     }
-   }
   }
- }
+}
 }
 
 export default data

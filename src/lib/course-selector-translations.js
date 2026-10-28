@@ -7,7 +7,7 @@ export const COURSE_SELECTOR_T = {
     hero: {
       eyebrow: 'Free tool',
       h1: 'Find your Mallorca course',
-      sub: 'A few quick questions. A shortlist matched to your handicap, budget, and what you want from a round.',
+      sub: "A shortlist based on your playing level, budget and preferences.",
     },
     intro: {
       h2: 'Which courses fit your game?',
@@ -37,7 +37,7 @@ export const COURSE_SELECTOR_T = {
         options: {
           solo: { label: 'Just me', desc: 'Solo golf trip' },
           couple: { label: 'A couple', desc: 'Golf plus time together' },
-          friends: { label: 'Friends group', desc: '3 to 8 players' },
+          friends: { label: 'Friends group', desc: "A golf trip with friends" },
           family: { label: 'Family', desc: 'Mixed ages and abilities' },
           corporate: { label: 'Corporate or VIP', desc: "Golf with clients or colleagues" },
         },
@@ -85,7 +85,7 @@ export const COURSE_SELECTOR_T = {
       },
       walking: {
         title: 'Walk or ride?',
-        sub: 'Some Mallorca courses are seriously hilly. Andratx is buggy-only territory.',
+        sub: "Check walking and buggy rules for your course and tee time.",
         options: {
           walk: { label: 'I like to walk', desc: 'Prefer walkable courses' },
           buggy: { label: 'Buggy please', desc: 'Happy riding, hills welcome' },
@@ -179,7 +179,7 @@ export const COURSE_SELECTOR_T = {
     hero: {
       eyebrow: 'Kostenloses Tool',
       h1: 'Finden Sie Ihren Mallorca-Golfplatz',
-      sub: 'Fünf Fragen. Eine auf Ihr Handicap, Budget und Wünsche abgestimmte Platzauswahl.',
+      sub: "Eine Auswahl nach Spielniveau, Budget und Wünschen.",
     },
     intro: {
       h2: 'Welche Plätze passen zu Ihrem Spiel?',
@@ -209,7 +209,7 @@ export const COURSE_SELECTOR_T = {
         options: {
           solo: { label: 'Nur ich', desc: 'Golfreise alleine' },
           couple: { label: 'Ein Pärchen', desc: 'Golf und Zeit zu zweit' },
-          friends: { label: 'Freundesgruppe', desc: '3 bis 8 Spieler' },
+          friends: { label: 'Freundesgruppe', desc: "Eine Golfreise mit Freunden" },
           family: { label: 'Familie', desc: 'Verschiedene Altersgruppen und Niveaus' },
           corporate: { label: 'Geschäftlich oder VIP', desc: "Golf mit Kunden oder Kollegen" },
         },
@@ -257,7 +257,7 @@ export const COURSE_SELECTOR_T = {
       },
       walking: {
         title: 'Laufen oder Buggy?',
-        sub: 'Einige Mallorca-Plätze sind sehr hügelig. Andratx ist reines Buggy-Terrain.',
+        sub: "Geh- und Buggyregeln für Platz und Startzeit prüfen.",
         options: {
           walk: { label: 'Ich laufe gerne', desc: 'Bevorzuge begehbare Plätze' },
           buggy: { label: 'Buggy bitte', desc: 'Fahre gerne, Hügel willkommen' },
@@ -351,7 +351,7 @@ export const COURSE_SELECTOR_T = {
     hero: {
       eyebrow: 'Outil gratuit',
       h1: 'Trouvez votre parcours à Majorque',
-      sub: 'Cinq questions. Une sélection adaptée à votre handicap, votre budget et vos attentes.',
+      sub: "Une sélection selon votre niveau de jeu, votre budget et vos préférences.",
     },
     intro: {
       h2: 'Quels parcours correspondent à votre jeu?',
@@ -381,7 +381,7 @@ export const COURSE_SELECTOR_T = {
         options: {
           solo: { label: 'Juste moi', desc: 'Voyage de golf en solo' },
           couple: { label: 'Un couple', desc: 'Golf et moments ensemble' },
-          friends: { label: "Groupe d'amis", desc: '3 à 8 joueurs' },
+          friends: { label: "Groupe d'amis", desc: "Un séjour golf entre amis" },
           family: { label: 'Famille', desc: 'Âges et niveaux variés' },
           corporate: { label: 'Entreprise ou VIP', desc: "Golf avec des clients ou des collègues" },
         },
@@ -429,7 +429,7 @@ export const COURSE_SELECTOR_T = {
       },
       walking: {
         title: 'Marcher ou voiturette?',
-        sub: 'Certains parcours de Majorque sont très vallonnés. Andratx est uniquement en voiturette.',
+        sub: "Vérifiez les règles de marche et de voiturette pour le parcours et l’heure de départ.",
         options: {
           walk: { label: "J'aime marcher", desc: 'Je préfère les parcours praticables à pied' },
           buggy: { label: 'Voiturette', desc: 'Content de rouler, collines bienvenues' },
@@ -523,7 +523,7 @@ export const COURSE_SELECTOR_T = {
     hero: {
       eyebrow: 'Herramienta gratuita',
       h1: 'Encuentre su campo en Mallorca',
-      sub: 'Cinco preguntas. Una selección adaptada a su hándicap, presupuesto y lo que busca en una vuelta.',
+      sub: "Una selección según su nivel de juego, presupuesto y preferencias.",
     },
     intro: {
       h2: '¿Qué campos se adaptan a su juego?',
@@ -553,7 +553,7 @@ export const COURSE_SELECTOR_T = {
         options: {
           solo: { label: 'Solo yo', desc: 'Viaje de golf en solitario' },
           couple: { label: 'Una pareja', desc: 'Golf y tiempo juntos' },
-          friends: { label: 'Grupo de amigos', desc: '3 a 8 jugadores' },
+          friends: { label: 'Grupo de amigos', desc: "Un viaje de golf con amigos" },
           family: { label: 'Familia', desc: 'Edades y niveles mezclados' },
           corporate: { label: 'Empresarial o VIP', desc: "Golf con clientes o compañeros" },
         },
@@ -601,7 +601,7 @@ export const COURSE_SELECTOR_T = {
       },
       walking: {
         title: '¿Caminar o buggy?',
-        sub: 'Algunos campos de Mallorca son muy accidentados. Andratx es solo en buggy.',
+        sub: "Compruebe las normas para caminar y usar buggy según el campo y la hora de salida.",
         options: {
           walk: { label: 'Me gusta caminar', desc: 'Prefiero campos practicables a pie' },
           buggy: { label: 'Buggy, por favor', desc: 'Feliz en buggy, colinas bienvenidas' },
@@ -695,7 +695,7 @@ export const COURSE_SELECTOR_T = {
     hero: {
       eyebrow: 'Gratis tool',
       h1: 'Vind uw Mallorca golfbaan',
-      sub: 'Vijf vragen. Een selectie afgestemd op uw handicap, budget en verwachtingen.',
+      sub: "Een selectie op basis van uw speelniveau, budget en voorkeuren.",
     },
     intro: {
       h2: 'Welke banen passen bij uw spel?',
@@ -725,7 +725,7 @@ export const COURSE_SELECTOR_T = {
         options: {
           solo: { label: 'Alleen ik', desc: 'Solo golfreis' },
           couple: { label: 'Een stel', desc: 'Golf en tijd samen' },
-          friends: { label: 'Vriendengroep', desc: '3 tot 8 spelers' },
+          friends: { label: 'Vriendengroep', desc: "Een golfreis met vrienden" },
           family: { label: 'Familie', desc: 'Gemengde leeftijden en niveaus' },
           corporate: { label: 'Zakelijk of VIP', desc: "Golf met klanten of collega’s" },
         },
@@ -773,7 +773,7 @@ export const COURSE_SELECTOR_T = {
       },
       walking: {
         title: 'Lopen of buggy?',
-        sub: 'Sommige Mallorca banen zijn erg heuvelachtig. Andratx is alleen met buggy.',
+        sub: "Controleer de wandel- en buggyregels voor uw baan en starttijd.",
         options: {
           walk: { label: 'Ik loop graag', desc: 'Geef de voorkeur aan loopbare banen' },
           buggy: { label: 'Buggy graag', desc: 'Rij graag, heuvels zijn welkom' },
@@ -867,7 +867,7 @@ export const COURSE_SELECTOR_T = {
     hero: {
       eyebrow: 'Gratis verktyg',
       h1: 'Hitta din Mallorca-bana',
-      sub: 'Fem frågor. En lista anpassad till ditt handicap, budget och vad du söker i en runda.',
+      sub: "Ett urval utifrån din spelnivå, budget och dina önskemål.",
     },
     intro: {
       h2: 'Vilka banor passar ditt spel?',
@@ -897,7 +897,7 @@ export const COURSE_SELECTOR_T = {
         options: {
           solo: { label: 'Bara jag', desc: 'Soloresan med golf' },
           couple: { label: 'Ett par', desc: 'Golf och tid tillsammans' },
-          friends: { label: 'Vännergrupp', desc: '3 till 8 spelare' },
+          friends: { label: 'Vännergrupp', desc: "En golfresa med vänner" },
           family: { label: 'Familj', desc: 'Blandade åldrar och nivåer' },
           corporate: { label: 'Företag eller VIP', desc: "Golf med kunder eller kollegor" },
         },
@@ -945,7 +945,7 @@ export const COURSE_SELECTOR_T = {
       },
       walking: {
         title: 'Gå eller åka buggy?',
-        sub: 'Vissa Mallorcabanor är riktigt kuperade. Andratx kräver buggy.',
+        sub: "Kontrollera gång- och buggyregler för banan och starttiden.",
         options: {
           walk: { label: 'Jag går gärna', desc: 'Föredrar banor man kan gå' },
           buggy: { label: 'Buggy tack', desc: 'Åker gärna, backar välkomna' },

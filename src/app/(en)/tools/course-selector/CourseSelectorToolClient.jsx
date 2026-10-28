@@ -149,7 +149,7 @@ const COURSES = [
     diff10:7, scenery:4, prestige:5, value:2, walkability:3,
     greenFee:'Peak €260 / Low €99 (dynamic)',
     buggyNote:'Buggies widely used on the rolling terrain',
-    bestFor:'The best-conditioned course in Spain, officially',
+    bestFor:"Spain’s Best Golf Course 2025, World Golf Awards",
     why:'Named Best Golf Course in Spain at the 2025 World Golf Awards. Designed by Kurt Rossknecht against the Na Burguesa hills with views over Palma Bay, and a thousand-year-old olive tree beside the 15th. Conditioning is consistently at the top end on the island. Two things to know before booking: pricing is dynamic, and a daily licence applies on top of the green fee.',
     andy:'Conditioning here is as good as anywhere on the island. Budget for the daily licence on top of the green fee.',
     played:true,

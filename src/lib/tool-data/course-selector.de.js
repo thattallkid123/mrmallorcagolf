@@ -32,7 +32,7 @@ const data = {
   "son-muntaner": {
    "areaLabel": "Son Vida · Palma",
    "buggyNote": "Buggys werden im welligen Gelände viel genutzt",
-   "bestFor": "Der offiziell am besten gepflegte Platz Spaniens",
+   "bestFor": "Spaniens bester Golfplatz 2025, World Golf Awards",
    "why": "Bei den World Golf Awards 2025 als bester Golfplatz Spaniens ausgezeichnet. Von Kurt Rossknecht an den Hügeln der Na Burguesa mit Blick über die Bucht von Palma entworfen, mit einem tausendjährigen Olivenbaum neben der 15. Der Pflegezustand gehört durchgehend zur Spitze der Insel. Zwei Dinge sollten Sie vor der Buchung wissen: Die Preise sind dynamisch, und zusätzlich zum Greenfee fällt eine Tageslizenz an.",
    "andy": "Die Pflege ist hier so gut wie nirgends sonst auf der Insel. Planen Sie die Tageslizenz zusätzlich zum Greenfee ein.",
    "bestPlayer": "Gelegenheitsgolfer bis Niedrig-Handicapper"

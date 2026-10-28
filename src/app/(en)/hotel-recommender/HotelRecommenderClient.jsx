@@ -1,5 +1,6 @@
 'use client'
 import useQuizTransition from '../../../lib/use-quiz-transition'
+import { getVillaBudgetT } from '../../../lib/hotel-villa-budget-content'
 import { buildToolEnquiryHref } from '../../../lib/tool-enquiry'
 import { getToolRecoveryT } from '../../../lib/tool-recovery-content'
 import ToolChoices from '../../../components/ToolChoices'
@@ -29,6 +30,7 @@ function trackHotelWhatsApp() {
 
 export default function HotelRecommenderClient({ lang = 'en', localData = null }) {
   const t = getHotelRecommenderT(lang)
+  const villaT = getVillaBudgetT(lang)
   const recovery = getToolRecoveryT(lang)
   const [step, setStep] = useState(1)
   const [answers, setAnswers] = useState({})
@@ -61,6 +63,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
       })
     } else {
       const newAnswers = { ...answers, [key]: val }
+      if (key === 'style') newAnswers.budget = val === 'villa' ? 'flexible' : undefined
       setAnswers(newAnswers)
       scheduleAdvance(() => {
         if (step === TOTAL) {
@@ -124,7 +127,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
 
     const answerSummary = (() => {
       const parts = []
-      const priorityMapForEmail = { 'golf-focused':'Close to courses', beach:'Beach & pool', spa:'Spa & wellness', dining:'Food & evenings', privacy:'Private villa / own space' }
+      const priorityMapForEmail = { 'golf-focused':'Close to courses', beach:'Beach & pool', spa:'Spa & wellness', dining:'Food & evenings', privacy:'Privacy' }
       const sizeMap = { '1-2':'1–2 people', '3-5':'3–5 people', '6-9':'6–9 people', '10+':'10+ people' }
       const styleMap = { boutique:'Boutique', resort:'Full resort', classic:'Classic hotel', villa:'Private villa', countryside:'Countryside finca' }
       const budgetMap = { mid:'Up to €250/room', premium:'€250–€500/room', ultra:'€500+/room', flexible:'Flexible budget' }
@@ -134,7 +137,8 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
       if (answers.group) parts.push(`Group: ${t.groupLabel[answers.group] ? t.groupLabel[answers.group].charAt(0).toUpperCase() + t.groupLabel[answers.group].slice(1) : answers.group}`)
       if (answers.size) parts.push(`Size: ${sizeMap[answers.size] || answers.size}`)
       if (answers.style) parts.push(`Style: ${styleMap[answers.style] || answers.style}`)
-      if (answers.budget) parts.push(`Budget: ${budgetMap[answers.budget] || answers.budget}`)
+      if (answers.style === 'villa') parts.push(budgetSummary, villaT.resultsNote)
+      else if (answers.budget) parts.push(`Budget: ${budgetMap[answers.budget] || answers.budget}`)
       return parts.join(' | ')
     })()
 
@@ -168,7 +172,13 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
     }
   }
 
-  const canContinue = currentQ && (Array.isArray(answers[currentQ.key]) ? answers[currentQ.key].length > 0 : !!answers[currentQ.key])
+  const isVillaBudget = currentQ?.key === 'budget' && answers.style === 'villa'
+  const canContinue = isVillaBudget
+    ? !answers.villaBudget || (Number.isFinite(Number(answers.villaBudget)) && Number(answers.villaBudget) > 0)
+    : currentQ && (Array.isArray(answers[currentQ.key]) ? answers[currentQ.key].length > 0 : !!answers[currentQ.key])
+  const budgetSummary = answers.style === 'villa'
+    ? `${villaT.summary}: ${answers.villaBudget ? `€${answers.villaBudget}` : villaT.unknown}`
+    : ''
   const isLastStep = step === TOTAL
 
   return (
@@ -286,10 +296,15 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
         <div className="hr-quiz-wrap">
           <div className="hr-step">
             <p className="hr-step-num">{t.quiz.stepOf(currentQ.qNum, currentQ.total)}</p>
-            <h2>{currentQ.title}</h2>
-            <p className="hr-step-sub">{currentQ.sub}</p>
+            <h2>{isVillaBudget ? villaT.title : currentQ.title}</h2>
+            <p className="hr-step-sub">{isVillaBudget ? villaT.sub : currentQ.sub}</p>
 
-            <ToolChoices locale={lang} className={['area', 'style'].includes(currentQ.key) ? 'hr-options--photos' : ''}>
+            {isVillaBudget ? <div className="hr-villa-budget">
+              <label htmlFor="villa-nightly-budget">{villaT.label}</label>
+              <input id="villa-nightly-budget" type="number" inputMode="decimal" min="1" step="0.01"
+                value={answers.villaBudget || ''} placeholder={villaT.unknown}
+                onChange={event => setAnswers(previous => ({ ...previous, villaBudget: event.target.value, budget: 'flexible' }))} />
+            </div> : <ToolChoices locale={lang} className={['area', 'style'].includes(currentQ.key) ? 'hr-options--photos' : ''}>
               {currentQ.opts.map(opt => (
                 <button
                   key={opt.val}
@@ -311,7 +326,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
                   </div>
                 </button>
               ))}
-            </ToolChoices>
+            </ToolChoices>}
 
             <div className="hr-nav">
               {step > 1 && <button className="hr-btn-back" onClick={back}>{t.buttons.back}</button>}
@@ -327,12 +342,13 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
       {results && (
         <>
           <div className="hr-results-hero">
-            <h2>{results.length ? t.results.hero : recovery.hotelTitle}</h2>
+            <h2>{results.length ? (answers.style === 'villa' ? villaT.resultsTitle : t.results.hero) : (answers.style === 'villa' ? villaT.emptyTitle : recovery.hotelTitle)}</h2>
             {results.length > 0 && <p>{t.results.heroSub
               .replace('{group}', t.groupLabel[answers.group] || 'your group')
-              .replace('{priority}', t.priorityLabel[answers.priority] || '')
+              .replace('{priority}', (answers.priority || []).map(priority => t.priorityLabel[priority]).filter(Boolean).join(', '))
               .replace('{area}', t.areaLabels[answers.area] || answers.area)}
             </p>}
+            {results.length > 0 && answers.style === 'villa' && <><p>{budgetSummary}</p><p>{villaT.resultsNote}</p></>}
           </div>
 
           <div className="hr-results-wrap">
@@ -345,11 +361,11 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
             {results.length > 0 && <p className="hr-results-label">{t.results.label.replace('{area}', t.areaLabels[answers.area] || answers.area)}</p>}
 
             {results.length === 0 ? (
-              <section className="tool-empty-result" aria-label={recovery.hotelTitle}>
+              <section className="tool-empty-result" aria-label={answers.style === 'villa' ? villaT.emptyTitle : recovery.hotelTitle}>
                 <p>{recovery.hotelCopy}</p>
-                <p>{recovery.hotelTip}</p>
+                <p>{answers.style === 'villa' ? villaT.emptyTip : recovery.hotelTip}</p>
                 <div className="tool-empty-result__actions">
-                  {['area','style','budget'].map(key => <button className="hr-btn-retry" key={key} onClick={() => editAnswer(key)}>{recovery[key]}</button>)}
+                  {(answers.style === 'villa' ? ['area','style','size'] : ['area','style','budget']).map(key => <button className="hr-btn-retry" key={key} onClick={() => editAnswer(key)}>{key === 'size' ? villaT.size : recovery[key]}</button>)}
                 </div>
               </section>
             ) : (
@@ -427,7 +443,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
               <h3>{t.cta.title}</h3>
               <p>{t.cta.body}</p>
               <div className="hr-cta-links">
-                <a href={buildToolEnquiryHref(lang, { serviceType: 'whole-trip', message: [t.results.heroSub.replace('{group}', t.groupLabel[answers.group]).replace('{priority}', (answers.priority || []).map(p => t.priorityLabel[p]).join(', ')).replace('{area}', t.areaLabels[answers.area]), ...results.map(x => x.hotel.name)].join('\n') })} className="hr-cta-link hr-cta-link-primary">{t.cta.enquire}</a>
+                <a href={buildToolEnquiryHref(lang, { serviceType: 'whole-trip', message: [t.results.heroSub.replace('{group}', t.groupLabel[answers.group]).replace('{priority}', (answers.priority || []).map(p => t.priorityLabel[p]).join(', ')).replace('{area}', t.areaLabels[answers.area]), budgetSummary, ...results.map(x => x.hotel.name)].filter(Boolean).join('\n') })} className="hr-cta-link hr-cta-link-primary">{t.cta.enquire}</a>
                 <a href={WA_HOTEL_HREF} data-analytics-manual="true" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>{t.cta.whatsapp}</a>
               </div>
             </div>
