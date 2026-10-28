@@ -1,4 +1,5 @@
 'use client'
+import useQuizTransition from '../../../lib/use-quiz-transition'
 import { buildToolEnquiryHref } from '../../../lib/tool-enquiry'
 import { getToolRecoveryT } from '../../../lib/tool-recovery-content'
 import ToolChoices from '../../../components/ToolChoices'
@@ -38,6 +39,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   const [emailSent, setEmailSent] = useState(false)
   const [emailError, setEmailError] = useState(false)
   const containerRef = useRef(null)
+  const { scheduleAdvance, cancelAdvance } = useQuizTransition()
 
   function scrollToTop() {
     const el = containerRef.current
@@ -60,7 +62,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
     } else {
       const newAnswers = { ...answers, [key]: val }
       setAnswers(newAnswers)
-      setTimeout(() => {
+      scheduleAdvance(() => {
         if (step === TOTAL) {
           setResults(rankHotels(HOTELS, newAnswers))
           scrollToTop()
@@ -68,11 +70,12 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
           setStep(s => s + 1)
           scrollToTop()
         }
-      }, 220)
+      })
     }
   }
 
   function next() {
+    cancelAdvance()
     if (step === TOTAL) {
       buildResults()
     } else {
@@ -82,16 +85,19 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   }
 
   function back() {
+    cancelAdvance()
     setStep(s => s - 1)
     scrollToTop()
   }
 
   function buildResults() {
+    cancelAdvance()
     setResults(rankHotels(HOTELS, answers))
     scrollToTop()
   }
 
   function editAnswer(key) {
+    cancelAdvance()
     setResults(null)
     setStep(QUESTIONS.findIndex(question => question.key === key) + 1)
     setEmailSent(false)
@@ -100,6 +106,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   }
 
   function restart() {
+    cancelAdvance()
     setStep(1)
     setAnswers({})
     setResults(null)
@@ -165,7 +172,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   const isLastStep = step === TOTAL
 
   return (
-    <div ref={containerRef} className="planning-tool">
+    <div ref={containerRef} className="planning-tool" data-tool-active={step > 1 || Boolean(results)}>
       <style jsx>{`
         .hr-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
         .hr-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
@@ -307,12 +314,10 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
             </ToolChoices>
 
             <div className="hr-nav">
+              {step > 1 && <button className="hr-btn-back" onClick={back}>{t.buttons.back}</button>}
               <button className="hr-btn-next" onClick={next} disabled={!canContinue}>
                 {isLastStep ? t.buttons.seeRecommendations : t.buttons.continue}
               </button>
-              {step > 1 && (
-                <button className="hr-btn-back" onClick={back}>{t.buttons.back}</button>
-              )}
             </div>
           </div>
         </div>

@@ -752,28 +752,28 @@ const data = {
  },
  "questions": {
   "area": {
-   "title": "Dans quelle partie de Majorque comptez-vous jouer au golf ?",
-   "sub": "Cela détermine quels groupes de parcours vous pouvez rejoindre facilement. Si vous hésitez, choisissez le Sud-Ouest : c'est là qu'il y a le plus de parcours.",
+   "title": "Où souhaitez-vous séjourner ?",
+   "sub": "Choisissez une zone pour votre sélection d’hôtels.",
    "opts": {
     "southwest": {
      "label": "Sud-Ouest de Majorque",
-     "desc": "Andratx, Santa Ponsa, Bendinat, Calvià. Le principal groupe de parcours : 4 à 5 parcours à moins de 15 minutes. La meilleure base pour un séjour très golf."
+     "desc": "Santa Ponsa, Calvià, Bendinat et Andratx."
     },
     "north": {
      "label": "Nord de Majorque",
-     "desc": "Alcúdia, Pollença, Formentor. Alcanada est l'un des meilleurs parcours de l'île. Moins de parties disponibles, mais une base plus pittoresque et plus détendue."
+     "desc": "Alcúdia, Pollença et Formentor. Les parcours comprennent Alcanada et Golf Pollença."
     },
     "east": {
      "label": "Est de Majorque",
-     "desc": "Capdepera, Canyamel, Pula, Son Servera, Vall d'Or. Plus calme, de belles plages, des parcours sous-estimés. Bien pour les familles ou ceux qui préfèrent le calme à la commodité."
+     "desc": "Capdepera, Canyamel, Pula, Son Servera et Vall d’Or."
     },
     "palma": {
      "label": "Près de Palma",
-     "desc": "Utilisez Palma comme base pour les soirées. Son Gual, Son Vida, Son Muntaner et Bendinat sont tous à moins de 20 minutes. Bien si les restaurants de la ville et la vie nocturne comptent autant que le golf."
+     "desc": "Palma, Son Vida, Son Muntaner et Son Quint."
     },
     "northwest": {
-     "label": "Nord-Ouest : expérience Tramuntana",
-     "desc": "Sóller, Deià, Valldemossa. Paysages spectaculaires, mais le golf devient une sortie planifiée plutôt qu'une partie rapide sur place. Idéal en complément de 2 nuits à une autre zone."
+     "label": "Nord-ouest de Majorque",
+     "desc": "Sóller, Deià et Valldemossa. Prévoyez un trajet en voiture pour le golf."
     }
    }
   },
@@ -782,24 +782,24 @@ const data = {
    "sub": "Sélectionnez tout ce qui s'applique : entre les parties, que souhaite le groupe ?",
    "opts": {
     "golf-focused": {
-     "label": "Être le plus près possible des parcours",
-     "desc": "Sur un parcours ou à côté, départs matinaux faciles, rien qui gêne les parties."
+     "label": "Proximité du golf",
+     "desc": "Séjournez près des parcours."
     },
     "beach": {
-     "label": "Plage et piscine après le golf",
-     "desc": "Récupérer au bord de la mer ou de la piscine après la partie est aussi important que la partie elle-même."
+     "label": "Plage et piscine",
+     "desc": "Du temps en bord de mer ou à la piscine."
     },
     "spa": {
-     "label": "Spa et récupération bien-être",
-     "desc": "Un vrai spa pour les jambes et le dos après plusieurs parties. Soins, hammam, piscine."
+     "label": "Spa",
+     "desc": "Un accès au spa entre les parties."
     },
     "dining": {
-     "label": "Bonne table et soirées dehors",
-     "desc": "Restaurants, vin, marchés locaux. Les soirées comptent autant que les journées."
+     "label": "Restaurants et sorties",
+     "desc": "Restaurants et sorties en soirée."
     },
     "privacy": {
-     "label": "Intimité et espace : un lieu rien qu'à nous",
-     "desc": "Piscine privée, emploi du temps libre, pas d'horaires d'hôtel. Une villa où le groupe fait ce qu'il veut."
+     "label": "Intimité",
+     "desc": "Votre propre espace et vos équipements."
     }
    }
   },
@@ -847,24 +847,24 @@ const data = {
    "sub": "Il ne s'agit pas du budget, mais du caractère.",
    "opts": {
     "boutique": {
-     "label": "Boutique et intime",
-     "desc": "Petit, plein de caractère, service personnalisé. Après une journée, vous connaissez le personnel par son prénom."
+     "label": "Hôtel boutique",
+     "desc": "De petits hôtels avec leur propre caractère."
     },
     "resort": {
-     "label": "Resort complet avec tous les équipements",
-     "desc": "Plusieurs piscines, restaurants, un spa, des activités. Tout au même endroit."
+     "label": "Resort",
+     "desc": "Piscines, restaurants et équipements sur place."
     },
     "classic": {
-     "label": "Classique et établi",
-     "desc": "Un vrai hôtel, un service fiable, pas de gadgets Instagram. Se défend tout seul."
+     "label": "Hôtel classique",
+     "desc": "Des chambres traditionnelles et des équipements communs."
     },
     "villa": {
      "label": "Villa privée",
-     "desc": "Piscine privée, cuisine privée, emploi du temps libre. Pas de hall d'hôtel, pas d'heure de départ."
+     "desc": "Votre propre cuisine, espace de vie et piscine."
     },
     "countryside": {
-     "label": "Finca à la campagne ou retraite rurale",
-     "desc": "Ancienne ferme rénovée, oliveraies, calme. L'île loin de la côte."
+     "label": "Finca à la campagne",
+     "desc": "Des séjours ruraux hors des principales stations balnéaires."
     }
    }
   },

@@ -314,7 +314,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
     : <span className="gf-guide" style={{ opacity: 0.45 }}>{t.table.guideComing}</span>
 
   return (
-    <div className="gf planning-tool">
+    <div className="gf planning-tool" data-tool-active={mode === 'compare'}>
       <style>{`
         .gf { --pine:#2D4A3E; --pine-dark:#223A30; --gold:#B8973C; --cream:#F7F4EF; --row-alt:#EFEDE8;
           --deep:#1A1916; --muted:#6B6862; background:var(--cream); color:var(--deep); font-family:var(--font-sans); }

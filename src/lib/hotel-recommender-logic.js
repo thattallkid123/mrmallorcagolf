@@ -78,19 +78,19 @@ export const HOTELS = [
 ]
 
 export const QUESTIONS_DATA = [
-  { key: 'area', qNum: '1', total: '6', title: 'Which part of Mallorca are you planning to golf in?', sub: 'This determines which course clusters you can reach easily. If you are unsure, choose Southwest: it has the most courses.', grid: false, opts: [
-    { val: 'southwest', label: 'Southwest Mallorca', desc: 'Andratx, Santa Ponsa, Bendinat, Calvià. The main golf cluster: 4 to 5 courses within 15 minutes. Best base for a golf-heavy trip.' },
-    { val: 'north', label: 'North Mallorca', desc: 'Alcúdia, Pollença, Formentor. Alcanada is one of the island\'s best courses. Fewer rounds available but a more scenic, relaxed base.' },
-    { val: 'east', label: 'East Mallorca', desc: 'Capdepera, Canyamel, Pula, Son Servera, Vall d\'Or. Quieter, great beaches, underrated courses. Good for families or those who want calm over convenience.' },
-    { val: 'palma', label: 'Near Palma', desc: 'Use Palma as an evening base. Son Gual, Son Vida, Son Muntaner, and Bendinat all within 20 minutes. Good if city restaurants and nightlife matter as much as golf.' },
-    { val: 'northwest', label: 'Northwest: Tramuntana experience', desc: 'Sóller, Deià, Valldemossa. Spectacular scenery, but golf becomes a planned day out rather than a quick local round. Best as a 2-night add-on to another area.' },
+  { key: 'area', qNum: '1', total: '6', title: 'Where would you like to stay?', sub: 'Choose an area for your hotel shortlist.', grid: false, opts: [
+    { val: 'southwest', label: 'Southwest Mallorca', desc: 'Santa Ponsa, Calvià, Bendinat and Andratx.' },
+    { val: 'north', label: 'North Mallorca', desc: 'Alcúdia, Pollença and Formentor. Courses include Alcanada and Golf Pollença.' },
+    { val: 'east', label: 'East Mallorca', desc: 'Capdepera, Canyamel, Pula, Son Servera and Vall d’Or.' },
+    { val: 'palma', label: 'Near Palma', desc: 'Palma city, Son Vida, Son Muntaner and Son Quint.' },
+    { val: 'northwest', label: 'Northwest Mallorca', desc: 'Sóller, Deià and Valldemossa. Plan a drive to the golf.' },
   ]},
   { key: 'priority', qNum: '2', total: '6', title: 'What matters most outside the golf?', sub: 'Pick all that apply: between rounds, what does the group want?', grid: false, multi: true, opts: [
-    { val: 'golf-focused', label: 'Be as close to the courses as possible', desc: 'On or beside a course, easy early tee times, nothing to get in the way of the rounds.' },
-    { val: 'beach', label: 'Beach and pool time after golf', desc: 'Post-round recovery at the sea or pool is just as important as the round itself.' },
-    { val: 'spa', label: 'Spa and wellness recovery', desc: 'A proper spa for legs and backs after multiple rounds. Treatments, steam, pool.' },
-    { val: 'dining', label: 'Good food and evenings out', desc: 'Restaurants, wine, local markets. The evenings are as important as the days.' },
-    { val: 'privacy', label: 'Privacy and space: our own place', desc: 'Own pool, own schedule, no hotel timetable. A villa where the group can do what it wants.' },
+    { val: 'golf-focused', label: 'Close to the golf', desc: 'Stay close to the courses.' },
+    { val: 'beach', label: 'Beach and pool', desc: 'Time by the sea or pool.' },
+    { val: 'spa', label: 'Spa', desc: 'Access to a spa between rounds.' },
+    { val: 'dining', label: 'Food and evenings out', desc: 'Restaurants and evenings out.' },
+    { val: 'privacy', label: 'Privacy', desc: 'Your own space and facilities.' },
   ]},
   { key: 'group', qNum: '3', total: '6', title: 'Who is travelling?', sub: 'Helps match the right atmosphere and facilities.', grid: true, opts: [
     { val: 'couple', label: 'Couple' },
@@ -106,11 +106,11 @@ export const QUESTIONS_DATA = [
     { val: '10+', label: '10 or more' },
   ]},
   { key: 'style', qNum: '5', total: '6', title: 'What kind of place feels right?', sub: 'Not about budget. About character.', grid: false, opts: [
-    { val: 'boutique', label: 'Boutique and intimate', desc: 'Small, characterful, personal service. You know the staff by name after a day.' },
-    { val: 'resort', label: 'Full resort with all facilities', desc: 'Multiple pools, restaurants, a spa, activities. Everything in one place.' },
-    { val: 'classic', label: 'Classic and established', desc: 'Proper hotel, reliable service, no Instagram gimmicks. Stands for itself.' },
-    { val: 'villa', label: 'Private villa', desc: 'Own pool, own kitchen, own timetable. No hotel lobby, no check-out time.' },
-    { val: 'countryside', label: 'Countryside finca or rural retreat', desc: 'Farmhouse conversion, olive groves, quiet. The island away from the coast.' },
+    { val: 'boutique', label: 'Boutique hotel', desc: 'Smaller hotels with individual character.' },
+    { val: 'resort', label: 'Resort', desc: 'Pools, restaurants and on-site facilities.' },
+    { val: 'classic', label: 'Classic hotel', desc: 'Traditional hotel rooms and shared facilities.' },
+    { val: 'villa', label: 'Private villa', desc: 'Your own kitchen, living space and pool.' },
+    { val: 'countryside', label: 'Countryside finca', desc: 'Rural stays away from the main resorts.' },
   ]},
   { key: 'budget', qNum: '6', total: '6', title: 'What is the rough budget per room per night?', sub: 'In high season (June to September). Helps filter to realistic options.', grid: false, opts: [
     { val: 'mid', label: 'Up to €250 per room', desc: 'Mid-range four-star. Good location, comfortable, nothing extravagant.' },

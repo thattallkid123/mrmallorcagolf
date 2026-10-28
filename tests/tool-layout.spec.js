@@ -10,11 +10,14 @@ test('hotel choices align and use the available width', async ({ page }, info) =
   const track = page.locator('.tool-choice-track')
   await expect(track.locator('button')).toHaveCount(5)
   const bounds = await track.locator('img').evaluateAll(images => images.map(image => ({top:image.getBoundingClientRect().top, height:image.getBoundingClientRect().height, width:image.getBoundingClientRect().width})))
-  expect(new Set(bounds.map(b => Math.round(b.top))).size).toBe(info.project.name === 'desktop-chrome' ? 2 : 5)
-  if (info.project.name === 'desktop-chrome') expect(new Set(bounds.map(b => Math.round(b.height))).size).toBe(1)
-  else expect(bounds.every(b => b.width >= 80 && b.width <= 130 && b.height < 260)).toBe(true)
-  expect(await track.evaluate(e => e.scrollWidth - e.clientWidth)).toBeLessThanOrEqual(2)
-  await expect(page.getByRole('button', { name:'Next choices', exact:true })).toHaveCount(0)
+  expect(new Set(bounds.map(b => Math.round(b.top))).size).toBe(1)
+  expect(new Set(bounds.map(b => Math.round(b.height))).size).toBe(1)
+  expect(bounds.every(b => b.width >= 258 && b.width <= 320 && b.height >= 170)).toBe(true)
+  await expect(track.locator('img').first()).toHaveCSS('object-fit', 'contain')
+  if (await track.evaluate(e => e.scrollWidth - e.clientWidth) > 2) {
+    await page.getByRole('button', { name:'Next choices', exact:true }).click()
+    await expect.poll(() => track.evaluate(e => e.scrollLeft)).toBeGreaterThan(0)
+  }
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
 })
 
@@ -28,13 +31,13 @@ test('six day-planner regions fit desktop and explain certificates clearly', asy
     const media = button.querySelector('.tool-photo,.tool-choice-placeholder')?.getBoundingClientRect()
     return { width: bounds.width, height: bounds.height, mediaHeight: media?.height }
   }))
-  expect(Math.max(...cards.map(card => card.width))).toBeLessThanOrEqual(350)
-  expect(Math.max(...cards.map(card => card.height))).toBeLessThan(300)
+  expect(Math.max(...cards.map(card => card.width))).toBeLessThanOrEqual(320)
+  expect(Math.max(...cards.map(card => card.height))).toBeLessThan(340)
   expect(new Set(cards.map(card => Math.round(card.mediaHeight))).size).toBe(1)
-  expect(cards.every(card => card.mediaHeight >= 96 && card.mediaHeight <= 144)).toBe(true)
+  expect(cards.every(card => card.mediaHeight >= 170 && card.mediaHeight <= 215)).toBe(true)
   await expect(track.locator('.tool-choice-placeholder')).toHaveCount(1)
   await expect(track.locator('img')).toHaveCount(5)
-  if (info.project.name === 'desktop-chrome') expect(await track.evaluate(e => e.scrollWidth - e.clientWidth)).toBeLessThanOrEqual(2)
+  expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
   await page.getByRole('button', {name:/Palma and around/}).click()
   await page.getByRole('button', {name:/Relaxed golf/}).click()
   await page.getByRole('button', {name:/Casual/}).click()
@@ -71,6 +74,9 @@ test('blocked planner gives practical checks and preserves answers when editing'
   for (const name of [/Palma and around/, /Relaxed golf/, /Confident/, /Missing a certificate/, /Mid-morning/, /Wider fairways/]) {
     await page.getByRole('button', {name}).click()
   }
+  await expect(page.getByRole('heading',{name:'What would round out the day?'})).toBeVisible()
+  const widths=await page.locator('.gdb-opt').evaluateAll(es=>es.map(e=>e.getBoundingClientRect().width))
+  expect(Math.min(...widths)).toBeGreaterThanOrEqual(120)
   await page.getByRole('button',{name:'Continue',exact:true}).click()
   await page.getByRole('button',{name:/We will drive/}).click()
   await page.getByRole('button',{name:/A couple/}).click()

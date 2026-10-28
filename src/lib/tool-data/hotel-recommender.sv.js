@@ -752,28 +752,28 @@ const data = {
  },
  "questions": {
   "area": {
-   "title": "I vilken del av Mallorca tänker du spela golf?",
-   "sub": "Det avgör vilka banor du enkelt kan nå. Om du är osäker, välj sydväst: där finns flest banor.",
+   "title": "Var vill ni bo?",
+   "sub": "Välj ett område för ert hotellurval.",
    "opts": {
     "southwest": {
      "label": "Sydvästra Mallorca",
-     "desc": "Andratx, Santa Ponsa, Bendinat, Calvià. Det största golfområdet: 4 till 5 banor inom 15 minuter. Bästa basen för en golftung resa."
+     "desc": "Santa Ponsa, Calvià, Bendinat och Andratx."
     },
     "north": {
      "label": "Norra Mallorca",
-     "desc": "Alcúdia, Pollença, Formentor. Alcanada är en av öns bästa banor. Färre rundor tillgängliga, men en mer natursköna och avslappnad bas."
+     "desc": "Alcúdia, Pollença och Formentor. Här finns Alcanada och Golf Pollença."
     },
     "east": {
      "label": "Östra Mallorca",
-     "desc": "Capdepera, Canyamel, Pula, Son Servera, Vall d'Or. Lugnare, fina stränder, underskattade banor. Bra för familjer eller dem som vill ha lugn framför bekvämlighet."
+     "desc": "Capdepera, Canyamel, Pula, Son Servera och Vall d’Or."
     },
     "palma": {
      "label": "Nära Palma",
-     "desc": "Använd Palma som kvällsbas. Son Gual, Son Vida, Son Muntaner och Bendinat alla inom 20 minuter. Bra om stadens restauranger och nattliv betyder lika mycket som golfen."
+     "desc": "Palma, Son Vida, Son Muntaner och Son Quint."
     },
     "northwest": {
-     "label": "Nordväst: Tramuntana-upplevelsen",
-     "desc": "Sóller, Deià, Valldemossa. Spektakulärt landskap, men golf blir en planerad dagsutflykt snarare än en snabb lokal runda. Bäst som ett tillägg på 2 nätter till ett annat område."
+     "label": "Nordvästra Mallorca",
+     "desc": "Sóller, Deià och Valldemossa. Räkna med bilresa till golfen."
     }
    }
   },
@@ -782,24 +782,24 @@ const data = {
    "sub": "Välj allt som stämmer: vad vill gruppen mellan rundorna?",
    "opts": {
     "golf-focused": {
-     "label": "Vara så nära banorna som möjligt",
-     "desc": "På eller bredvid en bana, enkla tidiga starttider, inget som kommer i vägen för rundorna."
+     "label": "Nära golfen",
+     "desc": "Bo nära golfbanorna."
     },
     "beach": {
-     "label": "Strand och poolliv efter golfen",
-     "desc": "Återhämtning vid havet eller poolen efter rundan är lika viktig som själva rundan."
+     "label": "Strand och pool",
+     "desc": "Tid vid havet eller poolen."
     },
     "spa": {
-     "label": "Spa och wellness för återhämtning",
-     "desc": "Ett riktigt spa för ben och rygg efter flera rundor. Behandlingar, ånga, pool."
+     "label": "Spa",
+     "desc": "Tillgång till spa mellan rundorna."
     },
     "dining": {
-     "label": "Bra mat och kvällar ute",
-     "desc": "Restauranger, vin, lokala marknader. Kvällarna är lika viktiga som dagarna."
+     "label": "Mat och kvällsliv",
+     "desc": "Restauranger och kvällar ute."
     },
     "privacy": {
-     "label": "Avskildhet och utrymme: vårt eget ställe",
-     "desc": "Egen pool, eget schema, ingen hotelltidtabell. En villa där gruppen kan göra som den vill."
+     "label": "Avskildhet",
+     "desc": "Eget utrymme och egna faciliteter."
     }
    }
   },
@@ -847,24 +847,24 @@ const data = {
    "sub": "Det handlar inte om budget, utan om karaktär.",
    "opts": {
     "boutique": {
-     "label": "Boutique och intimt",
-     "desc": "Litet, karaktärsfullt, personlig service. Efter en dag kan du personalens namn."
+     "label": "Boutiquehotell",
+     "desc": "Mindre hotell med egen karaktär."
     },
     "resort": {
-     "label": "Fullt resort med alla faciliteter",
-     "desc": "Flera pooler, restauranger, ett spa, aktiviteter. Allt på ett ställe."
+     "label": "Resort",
+     "desc": "Pooler, restauranger och faciliteter på området."
     },
     "classic": {
-     "label": "Klassiskt och etablerat",
-     "desc": "Ett riktigt hotell, pålitlig service, inga Instagram-trick. Klarar sig själv."
+     "label": "Klassiskt hotell",
+     "desc": "Traditionella hotellrum och gemensamma faciliteter."
     },
     "villa": {
      "label": "Privat villa",
-     "desc": "Egen pool, eget kök, egen tidtabell. Ingen hotellobby, ingen utcheckningstid."
+     "desc": "Eget kök, sällskapsutrymmen och pool."
     },
     "countryside": {
-     "label": "Finca på landet eller lantligt avkopplingsställe",
-     "desc": "Ombyggd bondgård, olivlundar, lugn. Ön långt från kusten."
+     "label": "Finca på landet",
+     "desc": "Lantliga boenden utanför de stora semesterorterna."
     }
    }
   },

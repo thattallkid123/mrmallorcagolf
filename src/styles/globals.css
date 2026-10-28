@@ -697,11 +697,8 @@ body {
 }
 
 @media (max-width: 768px) {
-  .planning-tool .tool-choices.tool-choices--photos div.hr-options--photos { grid-template-columns: minmax(0,1fr); }
-  .planning-tool .tool-choices.tool-choices--photos .hr-options--photos > button.hr-opt { display: grid; grid-template-columns: minmax(80px,28%) minmax(0,1fr); }
-  .planning-tool .tool-choices.tool-choices--photos .hr-options--photos .tool-photo { height: 100%; min-height: 112px; }
-  .planning-tool .tool-choices div.tool-choice-track { grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-2); }
-  .planning-tool .tool-choices div.tool-choice-track--1 { grid-template-columns: minmax(0,1fr); }
+  .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track { --mobile-text-columns: 2; }
+  .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track.tool-choice-track--1 { --mobile-text-columns: 1; }
   .planning-tool .hc-card .hc-badge { max-width: 110px; }
   .nav { --nav-pad: 16px; padding: 0 var(--nav-pad); }
   .hero__content,
@@ -4490,9 +4487,6 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .planning-tool div.tool-trust-line { padding: var(--space-3) var(--space-5); gap: var(--space-2); }
 .planning-tool .tool-trust-line__byline { margin: 0; font-size: .8rem; line-height: 1.5; }
 .planning-tool div:is(.hr-quiz-wrap,.cst-wrap,.gdb-wrap) { max-width: 1100px; }
-.planning-tool div.tool-choice-track { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); overflow: visible; gap: var(--space-3); padding: var(--space-1); }
-.planning-tool div.tool-choice-track--1 { grid-template-columns: minmax(0,1fr); max-width: 520px; margin-inline: auto; }
-.planning-tool div:is(.tool-choice-track--2,.tool-choice-track--4) { grid-template-columns: repeat(2,minmax(0,1fr)); }
 .planning-tool div.tool-choice-track > button:nth-child(n) { width: 100%; max-width: none; min-width: 0; min-height: 64px; text-align: left; overflow-wrap: anywhere; }
 .planning-tool :is(.cst-opt-desc,.hr-opt-desc,.hr-step-sub,.gdb-qcard .sub,.gcc-card .sub,.cst-qsub) { color: var(--charcoal); }
 .planning-tool :is(.cst-nav-row,.gdb-nav-row,.gcc-nav,.hr-nav) { display: flex; align-items: stretch; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-5); }
@@ -4533,12 +4527,30 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .planning-tool .gdb-opt--photo .tool-photo { width: 100%; }
 .planning-tool .gdb-opt--photo .gdb-opt-copy { display: grid; gap: var(--space-2); padding: var(--space-4); }
 
-/* Choice cards stay compact even when an older quiz wrapper is full width. */
-.planning-tool div.tool-choices { max-width: 1040px; margin-inline: auto; }
-.planning-tool .tool-choices div.tool-choice-track > button:nth-child(n) { grid-column: auto; max-width: none; width: 100%; justify-self: stretch; }
-.planning-tool .tool-choices--photos { --choice-image-height: clamp(96px, 10vw, 144px); }
+
+/* Quiz choices are a single, keyboard-accessible horizontal track. */
+.planning-tool div.tool-choices { max-width: 1440px; margin-inline: auto; }
+.planning-tool .tool-choices div.tool-choice-track { display: flex; flex-flow: row nowrap; justify-content: safe center; align-items: stretch; gap: var(--space-3); overflow-x: auto; scroll-snap-type: x proximity; padding: var(--space-1) var(--space-1) var(--space-3); }
+.planning-tool .tool-choices div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(260px,calc((100% - (var(--choice-count) - 1) * 12px) / var(--choice-count)),320px); width: auto; min-width: 0; max-width: none; min-height: 72px; grid-column: auto; scroll-snap-align: start; overflow-wrap: anywhere; text-align: left; }
 .planning-tool .tool-choices--photos .tool-choice-track > button:nth-child(n) { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; padding: 0; overflow: hidden; }
-.planning-tool .tool-choices--photos :is(.tool-photo,.tool-choice-placeholder) { display: block; width: 100%; height: var(--choice-image-height); min-height: 0; aspect-ratio: auto; flex: 0 0 var(--choice-image-height); }
+.planning-tool .tool-choices--photos :is(.tool-photo,.tool-choice-placeholder) { width: 100%; height: auto; min-height: 0; aspect-ratio: 3 / 2; flex: 0 0 auto; }
+.planning-tool .tool-choices--photos .tool-photo__image { object-fit: contain; }
 .planning-tool .tool-choices--photos .tool-choice-track > button > :is(.gdb-opt-copy,.cst-opt-copy,.hr-opt-body) { width: 100%; padding: var(--space-4); text-align: left; flex: 1; }
 .planning-tool .tool-choices--photos span.tool-choice-placeholder { display: grid; place-items: center; color: var(--pine); background: linear-gradient(135deg,var(--pine-pale),var(--linen)); }
 .tool-choice-placeholder svg { width: 64px; height: 64px; }
+.planning-tool .hr-nav .hr-btn-next, .planning-tool .cst-nav-row .cst-btn, .planning-tool .gcc-nav .gcc-btn:last-child, .planning-tool .gdb-nav-row .gdb-btn-pine { margin-left: auto; }
+/* Once answering, retain the title and put the current question first. */
+.planning-tool[data-tool-active="true"] section:is(.cst-hero,.gf-hero,.hc-hero,.gdb-hero,.gcc-hero,.hr-hero) { padding-block: calc(var(--nav-h) + var(--space-2)) var(--space-3); }
+.planning-tool[data-tool-active="true"] section:is(.cst-hero,.gf-hero,.hc-hero,.gdb-hero,.gcc-hero,.hr-hero) :is(h1,h2) { font-size: 1.65rem; line-height: 1.2; margin: 0 auto; max-width: 100%; }
+.planning-tool[data-tool-active="true"] section:is(.cst-hero,.gf-hero,.hc-hero,.gdb-hero,.gcc-hero,.hr-hero) :is(.sub,.gdb-sub,.hr-sub,.cst-eyebrow,.gf-eyebrow,.hc-eyebrow,.gdb-eyebrow,.gcc-eyebrow,.hr-eyebrow,.gf-updated) { display: none; }
+.planning-tool[data-tool-active="true"] :is(.tool-trust-line,.hr-trust-wrap) { display: none; }
+.planning-tool[data-tool-active="true"] :is(.gdb-wrap,.cst-wrap,.hr-quiz-wrap,.gcc-wrap) { padding-top: var(--space-4); }
+.planning-tool[data-tool-active="true"] .gdb-progress { margin-bottom: var(--space-3); }
+.planning-tool[data-tool-active="true"] section:is(.cst-hero,.gf-hero,.hc-hero,.gdb-hero,.gcc-hero,.hr-hero) > p { display: none; }
+/* Text alternatives remain visible together; remaining items fill the last row. */
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track { flex-wrap: wrap; overflow: visible; scroll-snap-type: none; --text-columns: 3; }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track:is(.tool-choice-track--2,.tool-choice-track--4) { --text-columns: 2; }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--7 { --text-columns: 4; }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--1 { --text-columns: 1; }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track > button:nth-child(n) { flex: 1 1 calc((100% - (var(--mobile-text-columns,var(--text-columns)) - 1) * 12px) / var(--mobile-text-columns,var(--text-columns))); max-width: none; }
+.planning-tool div.gcc-nav { flex-direction: row; flex-wrap: nowrap; }

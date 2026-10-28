@@ -27,11 +27,19 @@ export default function ToolChoices({ children, locale = 'en', className = '' })
     })
   }) : choices
   const track = useRef(null)
+  const previousChoices = useRef(null)
+  const choiceSet = choices.map(choice => isValidElement(choice) ? choice.key : '').join('|')
   const id = useId()
   const [edges, setEdges] = useState({ overflow: false, previous: false, next: false })
   useEffect(() => {
     const el = track.current
     if (!el) return
+    if (previousChoices.current !== choiceSet) {
+      previousChoices.current = choiceSet
+      const selected = el.querySelector('[aria-pressed="true"],.selected')
+      const offset = selected ? selected.getBoundingClientRect().left - el.getBoundingClientRect().left + el.scrollLeft : 0
+      el.scrollLeft = selected ? Math.max(0, offset - (el.clientWidth - selected.clientWidth) / 2) : 0
+    }
     const update = () => {
       const overflow = el.scrollWidth > el.clientWidth + 2
       setEdges({ overflow, previous: el.scrollLeft > 2, next: el.scrollLeft + el.clientWidth < el.scrollWidth - 2 })
@@ -41,7 +49,7 @@ export default function ToolChoices({ children, locale = 'en', className = '' })
     observer.observe(el)
     el.addEventListener('scroll', update, { passive: true })
     return () => { cancelAnimationFrame(frame); observer.disconnect(); el.removeEventListener('scroll', update) }
-  }, [children])
+  }, [children, choiceSet])
   const [hint, previous, next] = getToolChoiceLabels(locale)
   function scroll(direction) {
     const el = track.current

@@ -1,4 +1,5 @@
 'use client'
+import useQuizTransition from '../../../../lib/use-quiz-transition'
 import { buildToolEnquiryHref } from '../../../../lib/tool-enquiry'
 import { getToolRecoveryT } from '../../../../lib/tool-recovery-content'
 import ToolChoices from '../../../../components/ToolChoices'
@@ -539,6 +540,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   const enquiryMessage = selectorAnswerSummary(answers, t.questions)
   const whatsappHref = `https://wa.me/34624466702?text=${encodeURIComponent([WA_MESSAGE, topCourses.map(c => c.name).join(', '), enquiryMessage].filter(Boolean).join('\n\n'))}`
   const containerRef = useRef(null)
+  const { scheduleAdvance, cancelAdvance } = useQuizTransition()
 
   function scrollToTop() {
     const el = containerRef.current
@@ -561,6 +563,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   const q = activeQs[qIndex]
 
   function startQuiz() {
+    cancelAdvance()
     setPhase('quiz')
     setQIndex(0)
     setAnswers({})
@@ -584,7 +587,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
       newAnswers[qId] = value
       setAnswers(newAnswers)
       // auto-advance after brief delay
-      setTimeout(() => advance(newAnswers), 220)
+      scheduleAdvance(() => advance(newAnswers))
     }
   }
 
@@ -599,6 +602,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   }
 
   function goBack() {
+    cancelAdvance()
     if (qIndex > 0) {
       setQIndex(i => i - 1)
       scrollToTop()
@@ -606,6 +610,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   }
 
   function continueMulti() {
+    cancelAdvance()
     advance(answers)
   }
 
@@ -701,6 +706,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   }
 
   function restart() {
+    cancelAdvance()
     setPhase('quiz')
     setQIndex(0)
     setAnswers({})
@@ -718,7 +724,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   const compareB = compareSelection.length >= 2 ? loc(SELECTOR_COURSES.find(c => c.id === compareSelection[1])) : null
 
   return (
-    <div ref={containerRef} className="course-selector-tool planning-tool">
+    <div ref={containerRef} className="course-selector-tool planning-tool" data-tool-active={qIndex > 0 || phase === 'results'}>
       <style jsx>{`
         .cst-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-4)) 24px var(--space-4); text-align:center; }
         .cst-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:8px; display:block; }
@@ -868,7 +874,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
               >
                 {t.progress.back}
               </button>
-              {q.multi && <button className="cst-btn gold" onClick={continueMulti}>{t.progress.showCourses}</button>}
+              <button className="cst-btn gold" onClick={continueMulti} disabled={!q.multi && !answers[q.id]}>{t.progress.showCourses}</button>
             </div>
           </div>
         )}

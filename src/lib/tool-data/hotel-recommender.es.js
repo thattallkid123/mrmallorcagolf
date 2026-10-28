@@ -752,28 +752,28 @@ const data = {
  },
  "questions": {
   "area": {
-   "title": "¿En qué zona de Mallorca piensa jugar al golf?",
-   "sub": "Esto determina qué grupos de campos puede alcanzar con facilidad. Si no está seguro, elija el suroeste: tiene más campos.",
+   "title": "¿Dónde le gustaría alojarse?",
+   "sub": "Elija una zona para su selección de hoteles.",
    "opts": {
     "southwest": {
      "label": "Suroeste de Mallorca",
-     "desc": "Andratx, Santa Ponsa, Bendinat, Calvià. El principal grupo de golf: de 4 a 5 campos a menos de 15 minutos. La mejor base para un viaje de mucho golf."
+     "desc": "Santa Ponsa, Calvià, Bendinat y Andratx."
     },
     "north": {
      "label": "Norte de Mallorca",
-     "desc": "Alcúdia, Pollença, Formentor. Alcanada es uno de los mejores campos de la isla. Menos rondas disponibles, pero una base más pintoresca y relajada."
+     "desc": "Alcúdia, Pollença y Formentor. Los campos incluyen Alcanada y Golf Pollença."
     },
     "east": {
      "label": "Este de Mallorca",
-     "desc": "Capdepera, Canyamel, Pula, Son Servera, Vall d'Or. Más tranquilo, playas estupendas, campos infravalorados. Bueno para familias o para quienes prefieren la calma a la comodidad."
+     "desc": "Capdepera, Canyamel, Pula, Son Servera y Vall d’Or."
     },
     "palma": {
      "label": "Cerca de Palma",
-     "desc": "Use Palma como base para las noches. Son Gual, Son Vida, Son Muntaner y Bendinat, todos a menos de 20 minutos. Bueno si los restaurantes de la ciudad y la vida nocturna importan tanto como el golf."
+     "desc": "Palma, Son Vida, Son Muntaner y Son Quint."
     },
     "northwest": {
-     "label": "Noroeste: experiencia Tramuntana",
-     "desc": "Sóller, Deià, Valldemossa. Paisaje espectacular, pero el golf se convierte en una excursión planificada y no en una ronda local rápida. Lo mejor es como complemento de 2 noches a otra zona."
+     "label": "Noroeste de Mallorca",
+     "desc": "Sóller, Deià y Valldemossa. Prevea desplazarse en coche para jugar al golf."
     }
    }
   },
@@ -782,24 +782,24 @@ const data = {
    "sub": "Elija todo lo que corresponda: entre rondas, ¿qué quiere el grupo?",
    "opts": {
     "golf-focused": {
-     "label": "Estar lo más cerca posible de los campos",
-     "desc": "En un campo o junto a él, horas de salida tempranas fáciles, nada que se interponga en las rondas."
+     "label": "Cerca del golf",
+     "desc": "Alojamiento cerca de los campos."
     },
     "beach": {
-     "label": "Playa y piscina después del golf",
-     "desc": "Recuperarse junto al mar o la piscina tras la ronda es tan importante como la ronda misma."
+     "label": "Playa y piscina",
+     "desc": "Tiempo junto al mar o la piscina."
     },
     "spa": {
-     "label": "Spa y recuperación de bienestar",
-     "desc": "Un spa de verdad para piernas y espalda tras varias rondas. Tratamientos, vapor, piscina."
+     "label": "Spa",
+     "desc": "Acceso a un spa entre rondas."
     },
     "dining": {
-     "label": "Buena comida y noches fuera",
-     "desc": "Restaurantes, vino, mercados locales. Las noches son tan importantes como los días."
+     "label": "Comida y salidas",
+     "desc": "Restaurantes y salidas por la noche."
     },
     "privacy": {
-     "label": "Privacidad y espacio: nuestro propio lugar",
-     "desc": "Piscina propia, horario propio, sin horarios de hotel. Una villa donde el grupo puede hacer lo que quiera."
+     "label": "Privacidad",
+     "desc": "Su propio espacio e instalaciones."
     }
    }
   },
@@ -847,24 +847,24 @@ const data = {
    "sub": "No se trata del presupuesto, sino del carácter.",
    "opts": {
     "boutique": {
-     "label": "Boutique e íntimo",
-     "desc": "Pequeño, con carácter, trato personal. Tras un día ya conoce al personal por su nombre."
+     "label": "Hotel boutique",
+     "desc": "Hoteles pequeños con carácter propio."
     },
     "resort": {
-     "label": "Resort completo con todas las instalaciones",
-     "desc": "Varias piscinas, restaurantes, spa, actividades. Todo en un solo lugar."
+     "label": "Resort",
+     "desc": "Piscinas, restaurantes e instalaciones en el recinto."
     },
     "classic": {
-     "label": "Clásico y consolidado",
-     "desc": "Un hotel de verdad, servicio fiable, sin trucos de Instagram. Se defiende solo."
+     "label": "Hotel clásico",
+     "desc": "Habitaciones tradicionales e instalaciones compartidas."
     },
     "villa": {
      "label": "Villa privada",
-     "desc": "Piscina propia, cocina propia, horario propio. Sin recepción de hotel, sin hora de salida."
+     "desc": "Su propia cocina, sala de estar y piscina."
     },
     "countryside": {
-     "label": "Finca rural o retiro en el campo",
-     "desc": "Casa de campo reformada, olivares, tranquilidad. La isla lejos de la costa."
+     "label": "Finca rural",
+     "desc": "Alojamiento rural fuera de los principales núcleos turísticos."
     }
    }
   },

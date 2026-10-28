@@ -752,28 +752,28 @@ const data = {
  },
  "questions": {
   "area": {
-   "title": "In welk deel van Mallorca bent u van plan te golfen?",
-   "sub": "Dit bepaalt welke banengroepen u gemakkelijk bereikt. Als u het niet zeker weet, kies dan het zuidwesten: daar zijn de meeste banen.",
+   "title": "Waar wilt u verblijven?",
+   "sub": "Kies een gebied voor uw hotelselectie.",
    "opts": {
     "southwest": {
      "label": "Zuidwest-Mallorca",
-     "desc": "Andratx, Santa Ponsa, Bendinat, Calvià. De belangrijkste golfgroep: 4 tot 5 banen binnen 15 minuten. Beste uitvalsbasis voor een golfintensieve reis."
+     "desc": "Santa Ponsa, Calvià, Bendinat en Andratx."
     },
     "north": {
      "label": "Noord-Mallorca",
-     "desc": "Alcúdia, Pollença, Formentor. Alcanada is een van de beste banen van het eiland. Minder rondes beschikbaar, maar een mooiere, ontspannen uitvalsbasis."
+     "desc": "Alcúdia, Pollença en Formentor. Golfbanen zijn Alcanada en Golf Pollença."
     },
     "east": {
      "label": "Oost-Mallorca",
-     "desc": "Capdepera, Canyamel, Pula, Son Servera, Vall d'Or. Rustiger, geweldige stranden, onderschatte banen. Goed voor gezinnen of wie rust boven gemak stelt."
+     "desc": "Capdepera, Canyamel, Pula, Son Servera en Vall d’Or."
     },
     "palma": {
      "label": "Bij Palma",
-     "desc": "Gebruik Palma als avondbasis. Son Gual, Son Vida, Son Muntaner en Bendinat allemaal binnen 20 minuten. Goed als stadsrestaurants en uitgaansleven net zo belangrijk zijn als golf."
+     "desc": "Palma, Son Vida, Son Muntaner en Son Quint."
     },
     "northwest": {
-     "label": "Noordwesten: Tramuntana-ervaring",
-     "desc": "Sóller, Deià, Valldemossa. Spectaculair landschap, maar golf wordt een geplande dagtrip in plaats van een snelle lokale ronde. Het best als toevoeging van 2 nachten aan een ander gebied."
+     "label": "Noordwest-Mallorca",
+     "desc": "Sóller, Deià en Valldemossa. Houd rekening met een autorit naar de golfbaan."
     }
    }
   },
@@ -782,24 +782,24 @@ const data = {
    "sub": "Kies alles wat van toepassing is: wat wil de groep tussen de rondes?",
    "opts": {
     "golf-focused": {
-     "label": "Zo dicht mogelijk bij de banen",
-     "desc": "Op of naast een baan, makkelijke vroege starttijden, niets wat de rondes in de weg zit."
+     "label": "Dicht bij de golfbaan",
+     "desc": "Verblijf dicht bij de banen."
     },
     "beach": {
-     "label": "Strand- en zwembadtijd na het golfen",
-     "desc": "Herstellen aan zee of aan het zwembad na de ronde is net zo belangrijk als de ronde zelf."
+     "label": "Strand en zwembad",
+     "desc": "Tijd aan zee of bij het zwembad."
     },
     "spa": {
-     "label": "Spa en wellnessherstel",
-     "desc": "Een echte spa voor benen en rug na meerdere rondes. Behandelingen, stoom, zwembad."
+     "label": "Spa",
+     "desc": "Toegang tot een spa tussen de rondes."
     },
     "dining": {
-     "label": "Goed eten en avonden uit",
-     "desc": "Restaurants, wijn, lokale markten. De avonden zijn net zo belangrijk als de dagen."
+     "label": "Eten en uitgaan",
+     "desc": "Restaurants en avondjes uit."
     },
     "privacy": {
-     "label": "Privacy en ruimte: onze eigen plek",
-     "desc": "Eigen zwembad, eigen schema, geen hoteltijden. Een villa waar de groep kan doen wat ze wil."
+     "label": "Privacy",
+     "desc": "Uw eigen ruimte en voorzieningen."
     }
    }
   },
@@ -847,24 +847,24 @@ const data = {
    "sub": "Het gaat niet om het budget, maar om het karakter.",
    "opts": {
     "boutique": {
-     "label": "Boutique en intiem",
-     "desc": "Klein, karaktervol, persoonlijke service. Na een dag kent u het personeel bij naam."
+     "label": "Boetiekhotel",
+     "desc": "Kleinere hotels met een eigen karakter."
     },
     "resort": {
-     "label": "Volledig resort met alle faciliteiten",
-     "desc": "Meerdere zwembaden, restaurants, een spa, activiteiten. Alles op één plek."
+     "label": "Resort",
+     "desc": "Zwembaden, restaurants en voorzieningen op het terrein."
     },
     "classic": {
-     "label": "Klassiek en gevestigd",
-     "desc": "Een echt hotel, betrouwbare service, geen Instagram-trucjes. Staat op eigen benen."
+     "label": "Klassiek hotel",
+     "desc": "Traditionele hotelkamers en gedeelde voorzieningen."
     },
     "villa": {
      "label": "Privévilla",
-     "desc": "Eigen zwembad, eigen keuken, eigen schema. Geen hotellobby, geen uitchecktijd."
+     "desc": "Een eigen keuken, leefruimte en zwembad."
     },
     "countryside": {
-     "label": "Finca op het platteland of landelijke retraite",
-     "desc": "Verbouwde boerderij, olijfgaarden, rust. Het eiland weg van de kust."
+     "label": "Landelijke finca",
+     "desc": "Landelijk verblijf buiten de grote badplaatsen."
     }
    }
   },

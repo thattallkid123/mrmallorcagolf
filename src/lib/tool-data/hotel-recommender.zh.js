@@ -752,28 +752,28 @@ const data = {
  },
  "questions": {
   "area": {
-   "title": "您打算在马略卡的哪个区域打球？",
-   "sub": "这决定了您能轻松到达哪些球场群。如果不确定，请选择西南部：那里球场最多。",
+   "title": "您想住在哪个区域？",
+   "sub": "选择一个区域，查看对应的住宿推荐。",
    "opts": {
     "southwest": {
      "label": "马略卡西南部",
-     "desc": "Andratx、Santa Ponsa、Bendinat、Calvià。主要的高尔夫集中区：15 分钟内有 4 至 5 座球场。适合以高尔夫为主的旅行的最佳基地。"
+     "desc": "Santa Ponsa、Calvià、Bendinat 和 Andratx。"
     },
     "north": {
      "label": "马略卡北部",
-     "desc": "Alcúdia、Pollença、Formentor。Alcanada 是岛上最好的球场之一。可打的球局较少，但风景更美、更轻松。"
+     "desc": "Alcúdia、Pollença 和 Formentor。球场包括 Alcanada 和 Golf Pollença。"
     },
     "east": {
      "label": "马略卡东部",
-     "desc": "Capdepera、Canyamel、Pula、Son Servera、Vall d'Or。更安静，海滩出色，球场被低估。适合家庭，或重视宁静胜过便利的人。"
+     "desc": "Capdepera、Canyamel、Pula、Son Servera 和 Vall d’Or。"
     },
     "palma": {
      "label": "帕尔马附近",
-     "desc": "把帕尔马作为晚上的基地。Son Gual、Son Vida、Son Muntaner 和 Bendinat 都在 20 分钟内。如果城市餐厅和夜生活与打球同样重要，这里很合适。"
+     "desc": "帕尔玛市区、Son Vida、Son Muntaner 和 Son Quint。"
     },
     "northwest": {
-     "label": "西北部：特拉蒙塔纳体验",
-     "desc": "Sóller、Deià、Valldemossa。风景壮观，但打球会变成有计划的一日游，而不是就近打一轮。最适合作为另一个区域之外增加的 2 晚。"
+     "label": "马略卡西北部",
+     "desc": "Sóller、Deià 和 Valldemossa。打球需安排驾车出行。"
     }
    }
   },
@@ -782,24 +782,24 @@ const data = {
    "sub": "请选择所有适用项：球局之间，团队想要什么？",
    "opts": {
     "golf-focused": {
-     "label": "尽可能靠近球场",
-     "desc": "在球场上或球场旁，容易安排清晨开球，不让任何事情妨碍球局。"
+     "label": "靠近球场",
+     "desc": "住在球场附近。"
     },
     "beach": {
-     "label": "打球后的海滩和泳池时光",
-     "desc": "打完球后在海边或泳池恢复，与球局本身同样重要。"
+     "label": "海滩和泳池",
+     "desc": "在海边或泳池边放松。"
     },
     "spa": {
-     "label": "水疗和康养恢复",
-     "desc": "连打几轮后，为腿和背准备的像样水疗。理疗、蒸汽、泳池。"
+     "label": "水疗",
+     "desc": "打球之余使用水疗设施。"
     },
     "dining": {
-     "label": "美食和外出的夜晚",
-     "desc": "餐厅、葡萄酒、本地市场。夜晚和白天同样重要。"
+     "label": "餐饮和夜间活动",
+     "desc": "餐厅和晚间外出。"
     },
     "privacy": {
-     "label": "隐私和空间：我们自己的地方",
-     "desc": "专属泳池、自己的时间表、没有酒店的作息。一座团队可以随心所欲的别墅。"
+     "label": "私密空间",
+     "desc": "独立空间和设施。"
     }
    }
   },
@@ -847,24 +847,24 @@ const data = {
    "sub": "与预算无关，而是关于个性。",
    "opts": {
     "boutique": {
-     "label": "精品且私密",
-     "desc": "小巧、有个性、服务个性化。一天之后您就能叫出员工的名字。"
+     "label": "精品酒店",
+     "desc": "规模较小、各具特色的酒店。"
     },
     "resort": {
-     "label": "设施齐全的完整度假村",
-     "desc": "多个泳池、餐厅、水疗、活动。一切都在一个地方。"
+     "label": "度假村",
+     "desc": "泳池、餐厅和园内设施。"
     },
     "classic": {
-     "label": "经典且历史悠久",
-     "desc": "真正的酒店，服务可靠，没有网红噱头。靠实力说话。"
+     "label": "经典酒店",
+     "desc": "传统客房和公共设施。"
     },
     "villa": {
      "label": "私人别墅",
-     "desc": "专属泳池、专属厨房、自己的时间表。没有酒店大堂，没有退房时间。"
+     "desc": "独立厨房、起居空间和泳池。"
     },
     "countryside": {
-     "label": "乡村庄园或乡间静修",
-     "desc": "改建的农舍、橄榄园、安静。远离海岸的岛屿。"
+     "label": "乡村庄园",
+     "desc": "位于主要度假区以外的乡村住宿。"
     }
    }
   },

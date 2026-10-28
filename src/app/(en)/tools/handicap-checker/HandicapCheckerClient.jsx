@@ -302,7 +302,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
   const hasBorderline = result ? result.results.some((x) => x.r.borderline) : false
 
   return (
-    <div className="hc planning-tool">
+    <div className="hc planning-tool" data-tool-active={Boolean(result)}>
       <style>{`
         .hc { --pine:#2D4A3E; --pine-dark:#223A30; --gold:#B8973C; --cream:#F7F4EF;
           --deep:#1A1916; --muted:#6B6862; --ok:#2D6A44; --ok-bg:#EAF3EC; --warn:#8a6f26;
