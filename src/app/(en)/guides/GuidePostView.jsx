@@ -2,7 +2,6 @@ import { Fragment } from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import PageLayout from '../../../components/PageLayout'
-import GuideSectionNav from '../../../components/GuideSectionNav'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
@@ -487,7 +486,6 @@ export default function GuidePostView({ locale = 'en', meta, blocks }) {
       <JsonLd data={buildReviewSchema(meta, blocks, locale)} />
       {buildFaqSchema(meta, blocks, locale) && <JsonLd data={buildFaqSchema(meta, blocks, locale)} />}
       <PostLayout meta={meta} lang={pageLang}>
-          <GuideSectionNav blocks={blocks} locale={locale} />
         {blocks.map((block, index) => {
           const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
           const renderedBlock = renderBlock(block, index, locale, currentImageOrdinal)

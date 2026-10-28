@@ -2,7 +2,6 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
 import PageLayout from '../../../components/PageLayout'
-import GuideSectionNav from '../../../components/GuideSectionNav'
 import StickyMobileCta from '../../../components/StickyMobileCta'
 import ToolPlacementCta from '../../../components/ToolPlacementCta'
 import GuideAskBox from '../../../components/GuideAskBox'
@@ -453,7 +452,6 @@ export default function GuideArticleView({ meta, blocks, locale = 'en', children
       <JsonLd data={buildBreadcrumbSchema(meta, locale)} />
       <>
         <PostLayout meta={meta} lang={locale}>
-          <GuideSectionNav blocks={blocks} locale={locale} />
           {blocks.map((block, index) => {
             const currentImageOrdinal = block.type === 'image' ? imageOrdinal++ : null
             const renderedBlock = renderBlock(block, index, locale, currentImageOrdinal, meta.slug)

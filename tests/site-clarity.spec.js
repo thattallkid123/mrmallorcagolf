@@ -55,15 +55,16 @@ test('booking policy is linked from pricing and footer without the large content
   await expect(page.locator('footer').getByRole('link', { name: 'Booking confidence', exact: true })).toHaveAttribute('href', '/terms')
 })
 
-test('guide navigation lands on the right original heading and course details expand', async ({ page }) => {
-  await page.goto('/guides/5-day-mallorca-golf-itinerary', { waitUntil: 'networkidle' })
-  const nav = page.locator('.guide-section-nav')
-  await nav.locator('summary').click()
-  const link = nav.getByRole('link', { name: 'Day 3 - Golf Son Gual', exact: true })
-  const target = await link.getAttribute('href')
-  await link.click()
-  await expect(page.locator(target)).toBeInViewport()
-  await page.goto('/golf-courses', { waitUntil: 'networkidle' })
+test('guides omit the contents box', async ({ page }) => {
+  for (const route of ['/guides/son-muntaner-review', '/guides/5-day-mallorca-golf-itinerary', '/de/guides/son-muntaner-review']) {
+    await page.goto(route, { waitUntil: 'domcontentloaded' })
+    await expect(page.locator('h1')).toBeVisible()
+    await expect(page.locator('.guide-section-nav')).toHaveCount(0)
+  }
+})
+
+test('course details expand', async ({ page }) => {
+  await page.goto('/golf-courses', { waitUntil: 'domcontentloaded' })
   const details = page.locator('.course__more').first()
   await details.locator('summary').click()
   await expect(details).toHaveAttribute('open', '')
