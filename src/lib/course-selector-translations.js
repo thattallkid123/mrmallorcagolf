@@ -623,9 +623,9 @@ export const COURSE_SELECTOR_T = {
     results: {
       eyebrow: 'Sus coincidencias',
       h2: 'Su selección de campos',
-      intro: (style, área) => {
+      intro: (style, area) => {
         const styleMap = { luxury: 'de lujo', scenic: 'paisajístico', relaxed: 'relajado', serious: 'de golf serio', family: 'familiar', 'bucket-list': 'de lista de deseos' }
-        const areaStr = área === 'flexible' ? 'en cualquier lugar de la isla' : `la zona ${area === 'North' ? 'norte y este' : área === 'Southwest' ? 'suroeste' : área === 'Palma' ? 'de Palma' : 'sur'}`
+        const areaStr = area === 'flexible' ? 'en cualquier lugar de la isla' : `la zona ${area === 'North' ? 'norte y este' : area === 'Southwest' ? 'suroeste' : area === 'Palma' ? 'de Palma' : 'sur'}`
         return `Campos adaptados a su juego, un viaje ${styleMap[style] || ''} y ${areaStr}. La selección solo muestra campos con reserva pública; para principiantes no exige certificado de hándicap. Las green fees son orientativas y yo confirmo la tarifa al reservar.`
       },
       ranks: ['#1 Coincidencia', '#2 Coincidencia', '#3 Coincidencia'],

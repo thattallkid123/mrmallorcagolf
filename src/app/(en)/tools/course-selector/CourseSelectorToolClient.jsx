@@ -711,15 +711,17 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   const compareB = compareSelection.length >= 2 ? loc(SELECTOR_COURSES.find(c => c.id === compareSelection[1])) : null
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} className="course-selector-tool">
       <style jsx>{`
-        .cst-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
-        .cst-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
-        .cst-h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
-        .cst-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
+        .cst-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-4)) 24px var(--space-4); text-align:center; }
+        .cst-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:8px; display:block; }
+        .cst-h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(1.8rem,3.5vw,2.5rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
+        .cst-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:560px; margin:10px auto 0; }
+        .course-selector-tool > .tool-trust-line { display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:center; gap:6px 18px; max-width:1000px; padding:var(--space-3) 18px; margin:0 auto; }
+        .course-selector-tool > .tool-trust-line .tool-trust-line__byline { margin:0; }
         .cst-wrap { max-width:800px; margin:0 auto; padding:0 18px 90px; }
         /* Progress */
-        .cst-progress { margin:32px auto 28px; max-width:560px; }
+        .cst-progress { margin:var(--space-3) auto var(--space-4); max-width:560px; }
         .cst-progress-track { height:3px; background:#EDE9E1; border-radius:99px; overflow:hidden; }
         .cst-progress-fill { height:100%; background:linear-gradient(90deg,#B8973C,#D4B068); transition:width .5s cubic-bezier(0.22,1,0.36,1); border-radius:99px; }
         .cst-progress-label { display:flex; justify-content:space-between; font-size:.7rem; color:#8A7F74; margin-top:9px; letter-spacing:.12em; text-transform:uppercase; }

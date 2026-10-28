@@ -1,4 +1,5 @@
 import { describe, expect, test } from 'vitest'
+import { COURSE_SELECTOR_T } from '../../src/lib/course-selector-translations'
 import {
   QUESTIONS,
   optionLabels,
@@ -10,6 +11,15 @@ import {
   DIFF_LABEL,
   getCourseFactsLine,
 } from '../../src/lib/course-selector-logic'
+
+test('each translated shortlist introduction renders every location without throwing', () => {
+  for (const copy of Object.values(COURSE_SELECTOR_T)) {
+    for (const area of ['flexible', 'North', 'Southwest', 'Palma', 'South']) {
+      expect(copy.results.intro('relaxed', area)).toBeTypeOf('string')
+      expect(copy.results.intro('relaxed', area)).not.toMatch(/undefined/)
+    }
+  }
+})
 
 function makeCourse(overrides = {}) {
   return {
