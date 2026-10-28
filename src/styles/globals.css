@@ -697,6 +697,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .planning-tool .tool-choices.tool-choices--photos div.hr-options--photos { grid-template-columns: minmax(0,1fr); }
+  .planning-tool .tool-choices.tool-choices--photos .hr-options--photos > button.hr-opt { display: grid; grid-template-columns: minmax(80px,28%) minmax(0,1fr); }
+  .planning-tool .tool-choices.tool-choices--photos .hr-options--photos .tool-photo { height: 100%; min-height: 112px; }
   .planning-tool .tool-choices div.tool-choice-track { grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-2); }
   .planning-tool .tool-choices div.tool-choice-track--1 { grid-template-columns: minmax(0,1fr); }
   .planning-tool .hc-card .hc-badge { max-width: 110px; }
@@ -4529,3 +4532,13 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .planning-tool button.gdb-opt--photo { display: flex; flex-direction: column; padding: 0; overflow: hidden; gap: 0; }
 .planning-tool .gdb-opt--photo .tool-photo { width: 100%; }
 .planning-tool .gdb-opt--photo .gdb-opt-copy { display: grid; gap: var(--space-2); padding: var(--space-4); }
+
+/* Choice cards stay compact even when an older quiz wrapper is full width. */
+.planning-tool div.tool-choices { max-width: 1040px; margin-inline: auto; }
+.planning-tool .tool-choices div.tool-choice-track > button:nth-child(n) { grid-column: auto; max-width: none; width: 100%; justify-self: stretch; }
+.planning-tool .tool-choices--photos { --choice-image-height: clamp(96px, 10vw, 144px); }
+.planning-tool .tool-choices--photos .tool-choice-track > button:nth-child(n) { display: flex; flex-direction: column; align-items: stretch; justify-content: flex-start; gap: 0; padding: 0; overflow: hidden; }
+.planning-tool .tool-choices--photos :is(.tool-photo,.tool-choice-placeholder) { display: block; width: 100%; height: var(--choice-image-height); min-height: 0; aspect-ratio: auto; flex: 0 0 var(--choice-image-height); }
+.planning-tool .tool-choices--photos .tool-choice-track > button > :is(.gdb-opt-copy,.cst-opt-copy,.hr-opt-body) { width: 100%; padding: var(--space-4); text-align: left; flex: 1; }
+.planning-tool .tool-choices--photos span.tool-choice-placeholder { display: grid; place-items: center; color: var(--pine); background: linear-gradient(135deg,var(--pine-pale),var(--linen)); }
+.tool-choice-placeholder svg { width: 64px; height: 64px; }
