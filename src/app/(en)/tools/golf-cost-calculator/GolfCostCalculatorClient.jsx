@@ -281,7 +281,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
   const r = results
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} className="planning-tool">
       <style jsx>{`
         .gcc-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
         .gcc-eyebrow { display:inline-block; font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; }

@@ -1,24 +1,24 @@
 const { test, expect } = require('@playwright/test')
 
+test.beforeEach(async ({ page }) => {
+  // Layout checks wait for their controls, not third-party analytics traffic.
+  await page.route(/googletagmanager|google-analytics|\/\_vercel\/insights\//, route => route.abort())
+})
+
 test('hotel choices align and use the available width', async ({ page }, info) => {
-  await page.goto('/tools/hotel-recommender', { waitUntil: 'networkidle' })
+  await page.goto('/tools/hotel-recommender', { waitUntil: 'load' })
   const track = page.locator('.tool-choice-track')
   await expect(track.locator('button')).toHaveCount(5)
   const bounds = await track.locator('img').evaluateAll(images => images.map(image => ({top:image.getBoundingClientRect().top, height:image.getBoundingClientRect().height})))
-  expect(new Set(bounds.map(b => Math.round(b.top))).size).toBe(1)
+  expect(new Set(bounds.map(b => Math.round(b.top))).size).toBe(info.project.name === 'desktop-chrome' ? 2 : 3)
   expect(new Set(bounds.map(b => Math.round(b.height))).size).toBe(1)
-  if (info.project.name === 'desktop-chrome') {
-    expect(await track.evaluate(e => e.scrollWidth - e.clientWidth)).toBeLessThanOrEqual(2)
-    await expect(page.getByRole('button', { name:'Next choices', exact:true })).toHaveCount(0)
-  } else {
-    await page.getByRole('button', { name:'Next choices', exact:true }).click()
-    await expect.poll(() => track.evaluate(e => e.scrollLeft)).toBeGreaterThan(0)
-  }
+  expect(await track.evaluate(e => e.scrollWidth - e.clientWidth)).toBeLessThanOrEqual(2)
+  await expect(page.getByRole('button', { name:'Next choices', exact:true })).toHaveCount(0)
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
 })
 
 test('six day-planner regions fit desktop and explain certificates clearly', async ({ page }, info) => {
-  await page.goto('/tools/golf-day-builder', { waitUntil: 'networkidle' })
+  await page.goto('/tools/golf-day-builder', { waitUntil: 'load' })
   const track = page.locator('.tool-choice-track')
   await expect(track.locator('button')).toHaveCount(6)
   if (info.project.name === 'desktop-chrome') expect(await track.evaluate(e => e.scrollWidth - e.clientWidth)).toBeLessThanOrEqual(2)
@@ -32,7 +32,7 @@ test('six day-planner regions fit desktop and explain certificates clearly', asy
 })
 
 test('five-course comparison resolves T Golf Palma and aligns external labels', async ({ page }, info) => {
-  await page.goto('/tools/green-fees', { waitUntil: 'networkidle' })
+  await page.goto('/tools/green-fees', { waitUntil: 'load' })
   await page.getByRole('tab', {name:'Head-to-head (up to 5)',exact:true}).click()
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
   await page.locator('#cmp-2').selectOption('T Golf Calvià')
@@ -54,7 +54,7 @@ test('five-course comparison resolves T Golf Palma and aligns external labels', 
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
 })
 test('blocked planner gives practical checks and preserves answers when editing', async ({ page }) => {
-  await page.goto('/tools/golf-day-builder', { waitUntil: 'networkidle' })
+  await page.goto('/tools/golf-day-builder', { waitUntil: 'load' })
   for (const name of [/Palma and around/, /Relaxed golf/, /Confident/, /Missing a certificate/, /Mid-morning/, /Wider fairways/]) {
     await page.getByRole('button', {name}).click()
   }

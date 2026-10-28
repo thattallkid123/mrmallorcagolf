@@ -5,6 +5,7 @@ import ToolChoices from '../../../components/ToolChoices'
 
 import ToolPhoto from '../../../components/ToolPhoto'
 import { planningImageText } from '../../../lib/planning-image-labels'
+import { getHotelChoicePhoto } from '../../../lib/hotel-images'
 
 import { useRef, useState } from 'react'
 import ToolTrustLine from '../../../components/ToolTrustLine'
@@ -271,7 +272,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
   ] : []
 
   return (
-    <div ref={containerRef}>
+    <div ref={containerRef} className="planning-tool">
       <style jsx>{`
         .gdb-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
         .gdb-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
@@ -402,20 +403,23 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
               {q.sub && !q.multi && <p className="sub">{q.sub}</p>}
               {q.multi && <div className="gdb-multi-note">{t.quiz.selectAny}</div>}
               <ToolChoices locale={lang} className="gdb-opts">
-                {q.opts.map(o => (
+                {q.opts.map(o => {
+                  const photo = q.key === 'region' ? getHotelChoicePhoto('area', o.v) || (o.v === 'south' ? { image: '/images/courses/son-antem-east.webp', name: 'Son Antem East', kind: 'course' } : null) : null
+                  return (
                   <button
                     key={o.v}
-                    className={`gdb-opt${isSelected(q.key, o.v, q.multi) ? ' selected' : ''}`}
+                    className={`gdb-opt${photo ? ' gdb-opt--photo' : ''}${isSelected(q.key, o.v, q.multi) ? ' selected' : ''}`}
                     aria-pressed={isSelected(q.key, o.v, q.multi)}
                     disabled={q.multi && (answers[q.key] || []).length >= 2 && !isSelected(q.key, o.v, q.multi)}
                     onClick={() => pick(q.key, o.v, q.multi)}
                   >
-                    <span>
+                    {photo && <ToolPhoto src={photo.image} alt={planningImageText(photo.kind, lang, photo.name)} sizes="(max-width: 768px) 50vw, 360px" />}
+                    <span className="gdb-opt-copy">
                       <span className="t">{o.t}</span>
                       <span className="d">{o.d}</span>
                     </span>
                   </button>
-                ))}
+                )})}
               </ToolChoices>
             </div>
             <div className="gdb-nav-row">

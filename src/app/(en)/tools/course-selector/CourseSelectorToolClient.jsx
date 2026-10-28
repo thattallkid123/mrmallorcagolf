@@ -28,6 +28,13 @@ import {
 } from '../../../../lib/course-selector-logic'
 
 const WA_MESSAGE = 'Hi Andy, I used the course selector on your site and I’d like help planning my Mallorca golf trip.'
+const AREA_PHOTOS = {
+  Southwest: { src: '/trip-preferences-assets/card-area-southwest.webp', name: 'Port Adriano', kind: 'area' },
+  Palma: { src: '/trip-preferences-assets/card-area-palma.webp', name: 'Palma', kind: 'area' },
+  North: { src: '/images/courses/alcanada.webp', name: 'Alcanada', kind: 'area' },
+  South: { src: '/images/courses/son-antem-east.webp', name: 'Son Antem East', kind: 'course' },
+  flexible: { src: '/images/courses/son-gual.webp', name: 'Son Gual', kind: 'course' },
+}
 const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
 
 function WhatsAppCta({ label, href = WA_HREF }) {
@@ -711,7 +718,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   const compareB = compareSelection.length >= 2 ? loc(SELECTOR_COURSES.find(c => c.id === compareSelection[1])) : null
 
   return (
-    <div ref={containerRef} className="course-selector-tool">
+    <div ref={containerRef} className="course-selector-tool planning-tool">
       <style jsx>{`
         .cst-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-4)) 24px var(--space-4); text-align:center; }
         .cst-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:8px; display:block; }
@@ -830,19 +837,24 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
 
             <ToolChoices locale={lang} className="cst-opts">
               {q.options.map(opt => {
+                const photo = q.id === 'area' ? AREA_PHOTOS[opt.value] : null
                 const isSelected = q.multi
                   ? (answers[q.id] || []).includes(opt.value)
                   : answers[q.id] === opt.value
                 return (
                   <button
                     key={opt.value}
-                    className={`cst-opt${isSelected ? ' selected' : ''}`}
+                    className={`cst-opt${photo ? ' cst-opt--photo' : ''}${isSelected ? ' selected' : ''}`}
+                    aria-pressed={isSelected}
                     onClick={() => selectOption(q.id, opt.value, q.multi)}
                   >
+                    {photo && <ToolPhoto src={photo.src} alt={planningImageText(photo.kind, lang, photo.name)} sizes="(max-width: 768px) 50vw, 360px" />}
+                    <span className="cst-opt-copy">
                     <span className="cst-opt-label">{t.questions[q.id]?.options?.[opt.value]?.label || opt.label}</span>
                     {(t.questions[q.id]?.options?.[opt.value]?.desc || opt.desc) && (
                       <span className="cst-opt-desc">{t.questions[q.id]?.options?.[opt.value]?.desc || opt.desc}</span>
                     )}
+                    </span>
                   </button>
                 )
               })}

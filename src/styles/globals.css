@@ -697,6 +697,9 @@ body {
 }
 
 @media (max-width: 768px) {
+  .planning-tool .tool-choices div.tool-choice-track { grid-template-columns: repeat(2,minmax(0,1fr)); gap: var(--space-2); }
+  .planning-tool .tool-choices div.tool-choice-track--1 { grid-template-columns: minmax(0,1fr); }
+  .planning-tool .hc-card .hc-badge { max-width: 110px; }
   .nav { --nav-pad: 16px; padding: 0 var(--nav-pad); }
   .hero__content,
   .pwap-hero__content,
@@ -4474,3 +4477,55 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .about-press-strip { margin: 0; padding: var(--space-4) clamp(20px, 5vw, 60px); text-align: center; font-size: 0.95rem; color: var(--taupe); background: var(--cream, transparent); }
 .about-press-strip__label { font-weight: 500; text-transform: uppercase; letter-spacing: 0.08em; font-size: 0.78rem; margin-right: var(--space-2); }
 .about-press-strip a { color: var(--gold); text-decoration: none; font-weight: 500; border-bottom: 1px solid var(--gold); padding-bottom: 2px; }
+
+/* Task-first planning tools: preserve photography while bringing choices forward. */
+.planning-tool section:is(.cst-hero,.gf-hero,.hc-hero,.gdb-hero,.gcc-hero,.hr-hero), section.zh-hero.zh-hero {
+  padding: calc(var(--nav-h) + var(--space-5)) var(--space-5) var(--space-5);
+}
+.planning-tool section:is(.gf-hero,.hc-hero,.gdb-hero,.gcc-hero,.hr-hero) h1 { font-size: clamp(2rem, 4vw, 3rem); line-height: 1.12; margin-block: var(--space-2) var(--space-3); }
+.planning-tool section:is(.cst-hero,.gf-hero,.hc-hero,.gdb-hero,.gcc-hero,.hr-hero) :is(.sub,.gdb-sub,.hr-sub) { max-width: 640px; font-size: .95rem; line-height: 1.65; margin-bottom: 0; }
+.planning-tool div.tool-trust-line { padding: var(--space-3) var(--space-5); gap: var(--space-2); }
+.planning-tool .tool-trust-line__byline { margin: 0; font-size: .8rem; line-height: 1.5; }
+.planning-tool div:is(.hr-quiz-wrap,.cst-wrap,.gdb-wrap) { max-width: 1100px; }
+.planning-tool div.tool-choice-track { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); overflow: visible; gap: var(--space-3); padding: var(--space-1); }
+.planning-tool div.tool-choice-track--1 { grid-template-columns: minmax(0,1fr); max-width: 520px; margin-inline: auto; }
+.planning-tool div:is(.tool-choice-track--2,.tool-choice-track--4) { grid-template-columns: repeat(2,minmax(0,1fr)); }
+.planning-tool div.tool-choice-track > button:nth-child(n) { width: 100%; max-width: none; min-width: 0; min-height: 64px; text-align: left; overflow-wrap: anywhere; }
+.planning-tool :is(.cst-opt-desc,.hr-opt-desc,.hr-step-sub,.gdb-qcard .sub,.gcc-card .sub,.cst-qsub) { color: var(--charcoal); }
+.planning-tool :is(.cst-nav-row,.gdb-nav-row,.gcc-nav,.hr-nav) { display: flex; align-items: stretch; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-5); }
+.planning-tool :is(.cst-nav-row,.gdb-nav-row,.gcc-nav,.hr-nav) > button { min-height: 48px; white-space: normal; }
+.planning-tool div.gf-disclaimer { padding: var(--space-3) var(--space-4); font-size: .85rem; line-height: 1.6; margin-bottom: var(--space-4); }
+.planning-tool .gf-guide { color: var(--pine); font-weight: 500; text-decoration: underline; text-underline-offset: 3px; }
+.planning-tool .gf-updated { margin-top: var(--space-3); }
+.planning-tool .gf-main { padding-top: var(--space-4); }
+.planning-tool .gf-compare__value { font-variant-numeric: tabular-nums; }
+.planning-tool div.hc-grid { gap: var(--space-4); }
+.planning-tool div.hc-card { display: grid; grid-template-columns: minmax(0,1fr) auto; gap: var(--space-2) var(--space-3); align-items: start; }
+.planning-tool .hc-card .meta { grid-column: 1; line-height: 1.6; }
+.planning-tool .hc-card .detail { grid-column: 1; grid-row: 2; line-height: 1.6; }
+.planning-tool .hc-card .hc-badge { grid-column: 2; grid-row: 1 / span 2; white-space: normal; max-width: 150px; text-align: center; }
+.planning-tool .hc-card .enquire { grid-column: 1 / -1; }
+.planning-tool .hc-seg button { min-height: 44px; }
+.planning-tool div.gdb-timeline { counter-reset: day-step; padding-left: 0; }
+.planning-tool div.gdb-tl-step { position: relative; counter-increment: day-step; padding: var(--space-4) var(--space-4) var(--space-4) var(--space-8); margin-bottom: var(--space-3); background: var(--cream); border: 1px solid var(--sand); border-left: 3px solid var(--pine); }
+.planning-tool .gdb-tl-step::before { content: counter(day-step, decimal-leading-zero); position: absolute; left: var(--space-3); top: var(--space-4); color: var(--pine); font-family: var(--font-serif); font-size: 1.35rem; }
+.planning-tool div.gdb-tl-time { color: var(--pine); font-weight: 500; }
+.planning-tool div.gcc-hero-est { border-radius: 4px; padding: var(--space-6) var(--space-5); }
+.planning-tool .gcc-hero-est .big { font-size: clamp(2.4rem,7vw,4rem); }
+.planning-tool .gcc-hero-est .per { color: var(--cream); line-height: 1.6; }
+.planning-tool div.gcc-mini { border-radius: 3px; box-shadow: none; }
+.planning-tool .gcc-grid2 .gcc-mini:first-child { border-color: var(--pine); background: var(--pine-pale); }
+.planning-tool .gcc-grid2 .gcc-mini:first-child .num { color: var(--pine); font-weight: 500; }
+.planning-tool .gcc-tools-panel { border-top: 1px solid var(--sand); padding-top: var(--space-5); }
+.planning-tool button.hr-btn-retry { color: var(--pine); border-color: var(--pine); background: var(--white); min-height: 48px; }
+.planning-tool button.hr-btn-retry:hover { color: var(--cream); border-color: var(--pine); background: var(--pine); }
+.planning-tool p.hr-step-num { color: var(--pine); font-weight: 500; }
+.planning-tool .hr-photo-caption, .planning-tool .hr-photo-caption--result { color: var(--charcoal); }
+.planning-tool .hr-hotel-card .tool-photo { aspect-ratio: 16 / 9; }
+.planning-tool .cst-opt-copy { display: grid; gap: var(--space-2); }
+.planning-tool button.cst-opt--photo { display: flex; flex-direction: column; padding: 0; overflow: hidden; gap: 0; }
+.planning-tool .cst-opt--photo .tool-photo { width: 100%; }
+.planning-tool .cst-opt--photo .cst-opt-copy { padding: var(--space-4); }
+.planning-tool button.gdb-opt--photo { display: flex; flex-direction: column; padding: 0; overflow: hidden; gap: 0; }
+.planning-tool .gdb-opt--photo .tool-photo { width: 100%; }
+.planning-tool .gdb-opt--photo .gdb-opt-copy { display: grid; gap: var(--space-2); padding: var(--space-4); }
