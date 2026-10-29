@@ -145,6 +145,85 @@ body {
 }
 
 /* ─── BUTTONS ─────────────────────────────────────────────── */
+.missing-page-body {
+  min-height: 100svh;
+  background: var(--cream);
+}
+.missing-page {
+  width: min(100%, 1008px);
+  margin-inline: auto;
+  padding: var(--space-6) var(--space-5) var(--space-8);
+}
+.missing-page__brand {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  width: fit-content;
+  color: var(--pine);
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-decoration: none;
+  margin-bottom: clamp(64px, 12vh, 128px);
+}
+.missing-page__brand img {
+  display: block;
+  width: 48px;
+  height: 48px;
+}
+.missing-page > .eyebrow {
+  color: var(--taupe-text);
+  margin-bottom: var(--space-4);
+}
+.missing-page h1 {
+  font-family: var(--font-serif);
+  font-size: clamp(2.75rem, 6vw, 4.5rem);
+  font-weight: 500;
+  line-height: 1.08;
+  color: var(--deep);
+  margin-bottom: var(--space-5);
+}
+.missing-page > p:not(.eyebrow) {
+  max-width: 440px;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  margin-bottom: var(--space-6);
+}
+.missing-page > .btn {
+  min-width: 200px;
+  min-height: 52px;
+  margin-bottom: var(--space-7);
+}
+.missing-page__links {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-5);
+  max-width: 560px;
+}
+.missing-page__links a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-3);
+  min-height: 52px;
+  border-top: 1px solid var(--sand);
+  color: var(--pine);
+  font-size: 1rem;
+  font-weight: 400;
+  text-decoration: none;
+}
+.missing-page__links a::after {
+  content: '\2192';
+}
+.missing-page__links a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.missing-page a:focus-visible {
+  outline: 2px solid var(--pine);
+  outline-offset: 4px;
+}
+
 .btn {
   display: inline-flex;
   align-items: center;
@@ -697,6 +776,16 @@ body {
 }
 
 @media (max-width: 768px) {
+  .missing-page__links {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+  .missing-page__links a:last-child {
+    border-bottom: 1px solid var(--sand);
+  }
+  .missing-page > .btn {
+    width: 100%;
+  }
   .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track { --mobile-text-columns: 1; --text-choice-max: 100%; --compact-choice-max: 100%; }
   .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track.tool-choice-track--1 { --mobile-text-columns: 1; }
   .planning-tool .hc-card .hc-badge { max-width: 110px; }

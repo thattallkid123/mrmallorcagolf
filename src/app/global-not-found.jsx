@@ -10,7 +10,7 @@ export const metadata = {
 export default function GlobalNotFound() {
   return (
     <html lang="en">
-      <body className={`${jost.variable} ${cormorantGaramond.variable}`}>
+      <body className={`missing-page-body ${jost.variable} ${cormorantGaramond.variable}`}>
         <main className="missing-page">
           <Link href="/" className="missing-page__brand" aria-label="Mr Mallorca Golf home">
             <img src="/logo-dark-green-96.webp" width="64" height="64" alt="" />
