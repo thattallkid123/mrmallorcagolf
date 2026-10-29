@@ -5,6 +5,10 @@ When a new bug is fixed, add it here so it never comes back.
 
 ---
 
+## Six-choice wrapping and day-result timeline
+**Pattern (October 2026):** A max-width cap changed flex row packing from 3 + 3 to 4 + 2. Global timeline rules removed the gutter but targeted nonexistent step classes, leaving the old connector through the text. A suitability box merely repeated holes/par.
+**Fix:** Six text choices use an explicit three-column grid with full-width phone rows. Compact numerical options and indicators are centred vertically. The actual timeline items use one scoped grid with a reserved number column and no connector, inside a centred readable column. The generic suitability box and its duplicate result/email paragraphs are removed; course facts remain on the course card. Regressions check every result tab, row counts, number alignment, and phone/translated layouts.
+
 ## Villa enquiries and content-sized quiz choices
 **Pattern (October 2026):** Generic villa-area records were filtered as if they were verified property capacities, so ordinary group sizes returned no results. A fixed three-column text layout also split five readable desktop choices into uneven rows and stretched pairs across the page.
 **Fix:** Villa selections always lead to a preferences summary and enquiry with all answers preserved, without property recommendations or a shortlist email. Whole-villa budgets stay separate from hotel room budgets. Text choice counts and compact labels determine desktop layout; larger sets retain balanced rows and phones keep full-width text choices. Browser regressions cover layout widths, all villa area/size combinations, locale actions and contact/WhatsApp hand-off.

@@ -4594,10 +4594,6 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .planning-tool .hc-card .hc-badge { grid-column: 2; grid-row: 1 / span 2; white-space: normal; max-width: 150px; text-align: center; }
 .planning-tool .hc-card .enquire { grid-column: 1 / -1; }
 .planning-tool .hc-seg button { min-height: 44px; }
-.planning-tool div.gdb-timeline { counter-reset: day-step; padding-left: 0; }
-.planning-tool div.gdb-tl-step { position: relative; counter-increment: day-step; padding: var(--space-4) var(--space-4) var(--space-4) var(--space-8); margin-bottom: var(--space-3); background: var(--cream); border: 1px solid var(--sand); border-left: 3px solid var(--pine); }
-.planning-tool .gdb-tl-step::before { content: counter(day-step, decimal-leading-zero); position: absolute; left: var(--space-3); top: var(--space-4); color: var(--pine); font-family: var(--font-serif); font-size: 1.35rem; }
-.planning-tool div.gdb-tl-time { color: var(--pine); font-weight: 500; }
 .planning-tool div.gcc-hero-est { border-radius: 4px; padding: var(--space-6) var(--space-5); }
 .planning-tool .gcc-hero-est .big { font-size: clamp(2.4rem,7vw,4rem); }
 .planning-tool .gcc-hero-est .per { color: var(--cream); line-height: 1.6; }
@@ -4647,6 +4643,10 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--1 { --text-columns: 1; }
 .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track > button:nth-child(n) { flex: 0 0 calc((100% - (var(--mobile-text-columns,var(--tablet-text-columns,var(--text-columns))) - 1) * 12px) / var(--mobile-text-columns,var(--tablet-text-columns,var(--text-columns)))); display: grid; grid-template-columns: minmax(0,1fr) 20px; align-items: start; gap: var(--space-3); max-width: var(--text-choice-max,340px); padding: var(--space-4); }
 .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track:is(.tool-choice-track--4,.tool-choice-track--5) > button[data-choice-compact="true"] { flex-basis: min(var(--compact-choice-max,160px),calc((100% - (var(--mobile-text-columns,var(--tablet-text-columns,var(--text-columns))) - 1) * 12px) / var(--mobile-text-columns,var(--tablet-text-columns,var(--text-columns))))); }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--6 { display: grid; grid-template-columns: repeat(var(--mobile-text-columns,3),minmax(0,1fr)); max-width: calc(3 * 340px + 2 * var(--space-3) + 2 * var(--space-1)); margin-inline: auto; }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track > button[data-choice-compact="true"] { align-items: center; }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track > button[data-choice-compact="true"] > .tool-choice-marker { align-self: center; }
+.planning-tool .gdb-opt[data-choice-compact="true"] .d:empty { display: none; }
 .planning-tool .tool-choices div.tool-choice-track > button { position: relative; }
 .tool-choice-marker { position: absolute; top: var(--space-3); right: var(--space-3); width: 20px; height: 20px; display: grid; place-items: center; border: 1px solid var(--stone); background: var(--white); color: var(--white); font-family: var(--font-sans); font-size: 14px; font-weight: 500; line-height: 1; pointer-events: none; }
 .tool-choice-marker--single { border-radius: 50%; }

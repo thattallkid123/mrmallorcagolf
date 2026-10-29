@@ -121,13 +121,24 @@ for (const width of [1280, 1920]) test(`day choices use readable single rows and
   test.skip(info.project.name !== 'desktop-chrome')
   await page.setViewportSize({width,height:1000})
   await page.goto('/tools/golf-day-builder',{waitUntil:'load'})
-  for (const name of [/Palma and around/, /Relaxed golf/, /Confident/]) await chooseAndContinue(page,page.getByRole('button',{name}),'day')
+  await chooseAndContinue(page,page.getByRole('button',{name:/Palma and around/}),'day')
+  await expect(page.locator('.gdb-step-label')).toHaveText('2 / 9')
+  const sixRows=await page.locator('.gdb-opt').evaluateAll(es=>Object.values(es.reduce((rows,e)=>{const y=Math.round(e.getBoundingClientRect().top);rows[y]=(rows[y]||0)+1;return rows},{})))
+  expect(sixRows).toEqual([3,3])
+  await page.locator('.tool-choice-track').screenshot({path:info.outputPath('six-choices.png')})
+  for (const name of [/Relaxed golf/, /Confident/]) await chooseAndContinue(page,page.getByRole('button',{name}),'day')
   await expect(page.locator('.gdb-step-label')).toHaveText('4 / 9')
   const cards=page.locator('.tool-choice-track >button')
   let bounds=await cards.evaluateAll(es=>es.map(e=>({top:Math.round(e.getBoundingClientRect().top),width:e.getBoundingClientRect().width,scroll:e.scrollWidth-e.clientWidth})))
   expect(new Set(bounds.map(b=>b.top)).size).toBe(1)
   expect(Math.max(...bounds.slice(0,3).map(b=>b.width))).toBeLessThan(Math.min(...bounds.slice(3).map(b=>b.width)))
   expect(bounds.every(b=>b.scroll<=1)).toBe(true)
+  const numerical=await cards.evaluateAll(es=>es.slice(0,3).map(e=>{
+    const card=e.getBoundingClientRect(),label=e.querySelector('.t').getBoundingClientRect(),marker=e.querySelector('.tool-choice-marker').getBoundingClientRect()
+    return {label:Math.abs(label.top+label.height/2-card.top-card.height/2),marker:Math.abs(marker.top+marker.height/2-card.top-card.height/2)}
+  }))
+  expect(numerical.every(x=>x.label<2&&x.marker<2)).toBe(true)
+
   await chooseAndContinue(page,page.getByRole('button',{name:'Up to 28',exact:true}),'day')
   await chooseAndContinue(page,page.getByRole('button',{name:/Mid-morning/}),'day')
   await expect(page.locator('.gdb-step-label')).toHaveText('6 / 9')
@@ -144,4 +155,57 @@ for (const width of [1280, 1920]) test(`day choices use readable single rows and
   expect(pair.every(b=>b.width<=340)).toBe(true)
   expect(Math.abs((pair[0].left+pair[1].right)/2-width/2)).toBeLessThan(2)
   expect(await page.locator('.tool-choice-track').evaluate(e=>e.scrollWidth-e.clientWidth)).toBeLessThanOrEqual(2)
+})
+
+for(const lang of ['en','de','fr','zh'])test(`day results have a readable timeline and no generic suitability box: ${lang}`,async({page},info)=>{
+  test.setTimeout(90000)
+  let emailed
+  await page.route('**/api/send-itinerary',async route=>{emailed=route.request().postDataJSON();await route.fulfill({json:{success:true}})})
+  await page.goto((lang==='en'?'':'/'+lang)+'/tools/golf-day-builder',{waitUntil:'load'})
+  for(const index of [1,0,2,0,2,0])await chooseAndContinue(page,page.locator('.gdb-opt').nth(index),'day')
+  await chooseAndContinue(page,page.locator('.gdb-opt').last(),'day')
+  await chooseAndContinue(page,page.locator('.gdb-opt').nth(1),'day')
+  await chooseAndContinue(page,page.locator('.gdb-opt').first(),'day')
+  const active=page.locator('.gdb-itin.active')
+  await expect(active).toBeVisible()
+  await expect(page.locator('.gdb-why-card')).toHaveCount(0)
+  const tabs=page.locator('.gdb-tab')
+  for(let i=0;i<await tabs.count();i++){
+    await tabs.nth(i).click()
+    const timeline=active.locator('.gdb-timeline')
+    const geometry=await timeline.evaluate(e=>{
+      const r=e.getBoundingClientRect(),card=e.parentElement.querySelector('.gdb-course-card').getBoundingClientRect()
+      return {width:r.width,centre:Math.abs(r.left+r.width/2-card.left-card.width/2),line:getComputedStyle(e,'::before').content}
+    })
+    expect(geometry.width).toBeLessThanOrEqual(780)
+    expect(geometry.centre).toBeLessThan(2)
+    expect(['none','normal']).toContain(geometry.line)
+    await timeline.screenshot({path:info.outputPath(`timeline-${i}.png`)})
+    const rows=await active.locator('.gdb-tl-item').evaluateAll(es=>es.map(e=>{
+      const n=e.querySelector('.gdb-tl-dot').getBoundingClientRect()
+      const text=[...e.querySelectorAll('.gdb-tl-time,.gdb-tl-title,.gdb-tl-desc')].map(x=>({left:x.getBoundingClientRect().left,overflow:x.scrollWidth-x.clientWidth}))
+      return {right:n.right,text}
+    }))
+    expect(rows.every(row=>row.text.every(t=>t.left-row.right>=12&&t.overflow<=1))).toBe(true)
+    await expect(active.locator('.gdb-pills')).not.toBeEmpty()
+    await expect(active.locator('.tool-photo img')).toHaveCount(1)
+  }
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
+  if(lang==='en'){
+    await page.locator('.gdb-cta-block input[type="email"]').fill('test@example.com')
+    await page.locator('.gdb-cta-block button').first().click()
+    await expect.poll(()=>emailed?.data?.itineraries?.length).toBeGreaterThan(0)
+    expect(emailed.data.itineraries.every(it=>!Object.hasOwn(it,'why'))).toBe(true)
+  }
+})
+
+for(const lang of ['en','de'])test(`six course preferences retain complete rows: ${lang}`,async({page},info)=>{
+  await page.goto((lang==='en'?'':'/'+lang)+'/tools/course-selector',{waitUntil:'load'})
+  await chooseAndContinue(page,page.locator('.cst-opt').last(),'course')
+  await chooseAndContinue(page,page.locator('.cst-opt').nth(2),'course')
+  await expect(page.locator('.cst-opt')).toHaveCount(6)
+  await page.mouse.move(0,0)
+  // Hover lifts a card by 2px; measure the settled rows rather than that animation.
+  await expect.poll(()=>page.locator('.cst-opt').evaluateAll(es=>Object.values(es.reduce((rows,e)=>{const y=Math.round(e.getBoundingClientRect().top);rows[y]=(rows[y]||0)+1;return rows},{})))).toEqual(info.project.name==='desktop-chrome'?[3,3]:[1,1,1,1,1,1])
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
 })

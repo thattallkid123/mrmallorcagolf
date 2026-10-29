@@ -19,7 +19,6 @@ import {
   QUESTIONS,
   GROUP_LABEL,
   REGION_LABEL,
-  whyCourseChosen,
 } from '../../../lib/golf-day-builder-logic'
 import {
   localizeQuestions,
@@ -228,7 +227,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
       name: it.name,
       courseName: displayCourseName(it.course.name, localData),
       note: it.note,
-      why: it.why,
       courseSummary: it.course.blurb,
       tagline: it.tagline,
       steps: it.steps.map(s => ({ kind: s.kind, time: s.time, title: s.title, desc: s.desc })),
@@ -316,18 +314,14 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         .gdb-pills { display:flex; flex-wrap:wrap; gap:8px; margin-top:18px; }
         .gdb-pill { font-size:.72rem; font-weight:400; letter-spacing:.04em; background:rgba(255,255,255,.08); border:1px solid rgba(255,255,255,.1); padding:5px 12px; color:rgba(255,255,255,0.85); }
         /* Timeline */
-        .gdb-timeline { position:relative; padding-left:40px; margin-bottom:8px; }
-        .gdb-timeline::before { content:""; position:absolute; left:13px; top:10px; bottom:14px; width:1px; background:linear-gradient(#B8973C, #E0D8CB); }
-        .gdb-tl-item { position:relative; padding-bottom:26px; }
-        .gdb-tl-item:last-child { padding-bottom:8px; }
-        .gdb-tl-dot { position:absolute; left:-40px; top:0; width:27px; height:27px; background:#fff; border:1px solid #B8973C; display:flex; align-items:center; justify-content:center; font-family:var(--font-serif); font-variant-numeric:lining-nums; font-style:italic; font-size:.8rem; color:#B8973C; }
-        .gdb-tl-time { font-size:9px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#B8973C; }
-        .gdb-tl-title { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.22rem; font-weight:500; color:#1A1916; margin-top:3px; line-height:1.25; }
-        .gdb-tl-desc { font-size:.85rem; font-weight:300; color:#2C2A27; margin-top:4px; line-height:1.75; max-width:52ch; }
-        .gdb-why-card { border-left:2px solid #B8973C; background:#F4EDD8; padding:24px 26px; margin-top:26px; }
-        .gdb-why-card h4 { font-weight:500; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:#B8973C; margin-bottom:10px; }
-        .gdb-why-card p { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-style:italic; font-size:1.1rem; color:#2D4A3E; line-height:1.6; }
-        .gdb-andy-card { background:#EDE9E1; padding:26px; margin-top:18px; }
+        .gdb-timeline { max-width:780px; margin:0 auto var(--space-2); }
+        .gdb-tl-item { display:grid; grid-template-columns:28px minmax(0,1fr); column-gap:var(--space-4); row-gap:var(--space-1); padding:var(--space-4); margin-bottom:var(--space-3); background:var(--cream); border:1px solid var(--sand); }
+        .gdb-tl-item:last-child { margin-bottom:0; }
+        .gdb-tl-dot { grid-column:1; grid-row:1 / span 3; align-self:start; width:27px; height:27px; background:var(--white); border:1px solid var(--gold); display:flex; align-items:center; justify-content:center; font-family:var(--font-serif); font-variant-numeric:lining-nums; font-style:italic; font-size:.8rem; color:var(--pine); }
+        .gdb-tl-time { grid-column:2; font-size:9px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--pine); }
+        .gdb-tl-title { grid-column:2; font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.22rem; font-weight:500; color:#1A1916; line-height:1.25; }
+        .gdb-tl-desc { grid-column:2; font-size:.85rem; font-weight:300; color:#2C2A27; line-height:1.75; }
+        .gdb-andy-card { background:#EDE9E1; padding:26px; max-width:780px; margin:var(--space-4) auto 0; }
         .gdb-andy-card h4 { font-weight:500; font-size:10px; letter-spacing:.22em; text-transform:uppercase; color:#B8973C; margin-bottom:14px; }
         .gdb-andy-card ul { list-style:none; }
         .gdb-andy-card li { font-size:.88rem; font-weight:300; padding:6px 0 6px 28px; position:relative; color:#2C2A27; }
@@ -464,9 +458,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
               <h2>{t.results.title}</h2>
               <p>
                 {builtLine(answers, localData, `${t.results.builtFor} ${GROUP_LABEL[answers.group]} ${t.results.staying} ${REGION_LABEL[answers.region]}.`)}
-                <span style={{ display:'block', marginTop:'6px', fontSize:'.82rem', color:'#8A7F74' }}>
-                  {t.results.courseChosen} {whyCourseChosen((itins[activeItin] || itins[0]).course, answers, planText(localData).whyCourse)}
-                </span>
               </p>
             </div>
 
@@ -505,11 +496,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
                       <div className="gdb-tl-desc">{s.desc}</div>
                     </div>
                   ))}
-                </div>
-
-                <div className="gdb-why-card">
-                  <h4>{t.results.whyCard}</h4>
-                  <p>{it.why}</p>
                 </div>
 
                 <div className="gdb-andy-card">
