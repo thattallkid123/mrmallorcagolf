@@ -1,5 +1,4 @@
 'use client'
-import useQuizTransition from '../../../lib/use-quiz-transition'
 import { getVillaBudgetT } from '../../../lib/hotel-villa-budget-content'
 import { buildToolEnquiryHref } from '../../../lib/tool-enquiry'
 import { getToolRecoveryT } from '../../../lib/tool-recovery-content'
@@ -41,7 +40,6 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   const [emailSent, setEmailSent] = useState(false)
   const [emailError, setEmailError] = useState(false)
   const containerRef = useRef(null)
-  const { scheduleAdvance, cancelAdvance } = useQuizTransition()
 
   function scrollToTop() {
     const el = containerRef.current
@@ -63,22 +61,15 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
       })
     } else {
       const newAnswers = { ...answers, [key]: val }
-      if (key === 'style') newAnswers.budget = val === 'villa' ? 'flexible' : undefined
+      if (key === 'style' && val !== answers.style) {
+        if (val === 'villa') newAnswers.budget = 'flexible'
+        else if (answers.style === 'villa') newAnswers.budget = undefined
+      }
       setAnswers(newAnswers)
-      scheduleAdvance(() => {
-        if (step === TOTAL) {
-          setResults(rankHotels(HOTELS, newAnswers))
-          scrollToTop()
-        } else {
-          setStep(s => s + 1)
-          scrollToTop()
-        }
-      })
     }
   }
 
   function next() {
-    cancelAdvance()
     if (step === TOTAL) {
       buildResults()
     } else {
@@ -88,19 +79,16 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   }
 
   function back() {
-    cancelAdvance()
     setStep(s => s - 1)
     scrollToTop()
   }
 
   function buildResults() {
-    cancelAdvance()
     setResults(rankHotels(HOTELS, answers))
     scrollToTop()
   }
 
   function editAnswer(key) {
-    cancelAdvance()
     setResults(null)
     setStep(QUESTIONS.findIndex(question => question.key === key) + 1)
     setEmailSent(false)
@@ -109,7 +97,6 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   }
 
   function restart() {
-    cancelAdvance()
     setStep(1)
     setAnswers({})
     setResults(null)
@@ -304,7 +291,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
               <input id="villa-nightly-budget" type="number" inputMode="decimal" min="1" step="0.01"
                 value={answers.villaBudget || ''} placeholder={villaT.unknown}
                 onChange={event => setAnswers(previous => ({ ...previous, villaBudget: event.target.value, budget: 'flexible' }))} />
-            </div> : <ToolChoices locale={lang} className={['area', 'style'].includes(currentQ.key) ? 'hr-options--photos' : ''}>
+            </div> : <ToolChoices locale={lang} selectionMode={currentQ.multi ? 'multiple' : 'single'} className={['area', 'style'].includes(currentQ.key) ? 'hr-options--photos' : ''}>
               {currentQ.opts.map(opt => (
                 <button
                   key={opt.val}

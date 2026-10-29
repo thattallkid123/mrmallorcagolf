@@ -201,19 +201,17 @@ export default function ZhCourseSelectorClient({ heroHeadingLevel = 1 }) {
   }
 
   function selectOption(qId, val) {
-    const newAnswers = { ...answers, [qId]: val }
-    setAnswers(newAnswers)
-    setTimeout(() => {
-      if (stepIdx < QUESTIONS.length - 1) {
-        setStepIdx(s => s + 1)
-        window.scrollTo({ top: 0 })
-      } else {
-        const picks = recommend(newAnswers)
-        setResults(picks)
-        setPhase('results')
-        window.scrollTo({ top: 0 })
-      }
-    }, 220)
+    setAnswers(previous => ({ ...previous, [qId]: val }))
+  }
+
+  function continueQuiz() {
+    if (answers[q.id] === undefined) return
+    if (stepIdx < QUESTIONS.length - 1) setStepIdx(s => s + 1)
+    else {
+      setResults(recommend(answers))
+      setPhase('results')
+    }
+    window.scrollTo({ top: 0 })
   }
 
   function goBack() {
@@ -298,6 +296,10 @@ export default function ZhCourseSelectorClient({ heroHeadingLevel = 1 }) {
         .zh-opt.selected .opt-note { color: rgba(212,176,104,0.82); }
         .q-back { margin-top: 12px; padding: 8px 0; background: none; border: none; color: #8A7F74; font-size: 11px; font-weight: 400; letter-spacing: 0.1em; text-transform: uppercase; cursor: pointer; font-family: inherit; }
         .q-back:hover { color: #2D4A3E; }
+        .q-nav { display: flex; align-items: center; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-4); }
+        .q-nav .q-back { margin-top: 0; }
+        .q-nav .btn-action { margin-left: auto; }
+        .q-nav .btn-action:disabled { opacity: .45; cursor: not-allowed; }
         /* Results */
         .results-header { text-align: center; padding: 40px 0 28px; }
         .results-header h2 { font-family: var(--font-serif); font-weight: 500; font-size: clamp(1.8rem, 4vw, 2.6rem); line-height: 1.08; color: #1A1916; margin-bottom: 10px; }
@@ -422,6 +424,7 @@ export default function ZhCourseSelectorClient({ heroHeadingLevel = 1 }) {
                   <button
                     key={String(opt.value)}
                     className={`zh-opt${answers[q.id] === opt.value ? ' selected' : ''}`}
+                    aria-pressed={answers[q.id] === opt.value}
                     onClick={() => selectOption(q.id, opt.value)}
                   >
                     <span>{opt.label}</span>
@@ -429,9 +432,12 @@ export default function ZhCourseSelectorClient({ heroHeadingLevel = 1 }) {
                   </button>
                 ))}
               </div>
-              {stepIdx > 0 && (
-                <button className="q-back" onClick={goBack}>← 上一题</button>
-              )}
+              <div className="q-nav">
+                {stepIdx > 0 && <button className="q-back" onClick={goBack}>← 上一题</button>}
+                <button className="btn-action btn-gold-solid" onClick={continueQuiz} disabled={answers[q.id] === undefined}>
+                  {stepIdx === QUESTIONS.length - 1 ? '查看推荐' : '继续'}
+                </button>
+              </div>
             </div>
           </div>
         )}

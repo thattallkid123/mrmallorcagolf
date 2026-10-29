@@ -1,4 +1,5 @@
 const { test, expect } = require('@playwright/test')
+const { chooseAndContinue } = require('./helpers/planning-quiz')
 
 test.beforeEach(async ({ page }) => {
   // Layout checks wait for their controls, not third-party analytics traffic.
@@ -21,6 +22,28 @@ test('hotel choices align and use the available width', async ({ page }, info) =
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
 })
 
+test('text choices keep uniform widths and make multiple selections visible',async({page})=>{
+  await page.goto('/tools/hotel-recommender',{waitUntil:'load'})
+  await chooseAndContinue(page,page.locator('.hr-opt').first(),'hotel')
+  const buttons=page.locator('.tool-choice-track >button')
+  await expect(buttons).toHaveCount(5)
+  const widths=await buttons.evaluateAll(es=>es.map(e=>e.getBoundingClientRect().width))
+  expect(Math.max(...widths)-Math.min(...widths)).toBeLessThanOrEqual(1)
+  const spacing=await buttons.evaluateAll(es=>es.map(e=>({
+    copyRight:e.querySelector('.hr-opt-body').getBoundingClientRect().right,
+    markerLeft:e.querySelector('.tool-choice-marker').getBoundingClientRect().left,
+  })))
+  expect(spacing.every(item=>item.markerLeft-item.copyRight>=8)).toBe(true)
+  await expect(page.locator('.tool-choice-marker--multiple')).toHaveCount(5)
+  await buttons.nth(0).click()
+  await buttons.nth(2).click()
+  await expect(buttons.nth(0)).toHaveAttribute('aria-pressed','true')
+  await expect(buttons.nth(2)).toHaveAttribute('aria-pressed','true')
+  await expect(buttons.nth(0).locator('.tool-choice-marker')).toHaveText('✓')
+  await expect(buttons.nth(2).locator('.tool-choice-marker')).toHaveText('✓')
+  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
+})
+
 test('six day-planner regions fit desktop and explain certificates clearly', async ({ page }, info) => {
   if (info.project.name === 'desktop-chrome') await page.setViewportSize({ width: 1920, height: 980 })
   await page.goto('/tools/golf-day-builder', { waitUntil: 'load' })
@@ -38,9 +61,9 @@ test('six day-planner regions fit desktop and explain certificates clearly', asy
   await expect(track.locator('.tool-choice-placeholder')).toHaveCount(1)
   await expect(track.locator('img')).toHaveCount(5)
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
-  await page.getByRole('button', {name:/Palma and around/}).click()
-  await page.getByRole('button', {name:/Relaxed golf/}).click()
-  await page.getByRole('button', {name:/Casual/}).click()
+  await chooseAndContinue(page,page.getByRole('button', {name:/Palma and around/}),'day')
+  await chooseAndContinue(page,page.getByRole('button', {name:/Relaxed golf/}),'day')
+  await chooseAndContinue(page,page.getByRole('button', {name:/Casual/}),'day')
   await expect(page.getByRole('heading', {name:'What is the highest handicap in your group?'})).toBeVisible()
   await expect(page.locator('.gdb-qcard .sub')).toContainText('every player can show a current handicap certificate')
   await expect(page.getByRole('button', {name:/Missing a certificate/})).toContainText('One or more players')
@@ -72,14 +95,14 @@ test('five-course comparison resolves T Golf Palma and aligns external labels', 
 test('blocked planner gives practical checks and preserves answers when editing', async ({ page }) => {
   await page.goto('/tools/golf-day-builder', { waitUntil: 'load' })
   for (const name of [/Palma and around/, /Relaxed golf/, /Confident/, /Missing a certificate/, /Mid-morning/, /Wider fairways/]) {
-    await page.getByRole('button', {name}).click()
+    await chooseAndContinue(page,page.getByRole('button', {name}),'day')
   }
   await expect(page.getByRole('heading',{name:'What would round out the day?'})).toBeVisible()
   const widths=await page.locator('.gdb-opt').evaluateAll(es=>es.map(e=>e.getBoundingClientRect().width))
   expect(Math.min(...widths)).toBeGreaterThanOrEqual(120)
   await page.getByRole('button',{name:'Continue',exact:true}).click()
-  await page.getByRole('button',{name:/We will drive/}).click()
-  await page.getByRole('button',{name:/A couple/}).click()
+  await chooseAndContinue(page,page.getByRole('button',{name:/We will drive/}),'day')
+  await chooseAndContinue(page,page.getByRole('button',{name:/A couple/}),'day')
   const result = page.locator('.gdb-no-match')
   await expect(result.getByRole('heading',{name:'Check access before choosing a course'})).toBeVisible()
   await expect(result).toContainText('This does not mean your group cannot play.')

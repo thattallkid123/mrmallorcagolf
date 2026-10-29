@@ -1,4 +1,5 @@
 const {test,expect}=require('@playwright/test')
+const {chooseAndContinue}=require('./helpers/planning-quiz')
 
 test.beforeEach(async({page})=>{await page.route(url=>url.protocol==='https:',route=>route.abort())})
 test('pre-round failure preserves answers; a retry confirms only after acceptance and displays answers as text',async({page})=>{
@@ -37,7 +38,7 @@ test('a Palma family hotel brief can find Saratoga and preserves the complete ho
  const choices=[3,2,2,1,2,0]
  for(let i=0;i<choices.length;i++){
   await expect.poll(async()=>Number((await page.locator('.hr-step-num').textContent()).match(/[0-9]+/)[0])).toBe(i+1)
-  await page.locator('.hr-opt').nth(choices[i]).click();if(i===1)await page.locator('.hr-btn-next').click()
+  await chooseAndContinue(page,page.locator('.hr-opt').nth(choices[i]),'hotel')
  }
  await expect(page.locator('.hr-hotel-card').first()).toContainText('Hotel Saratoga')
  await expect(page.locator('.hr-hotel-card')).toHaveCount(1)
@@ -53,9 +54,9 @@ test('a Palma family hotel brief can find Saratoga and preserves the complete ho
 
 test('golf-only and golf-with-lunch give distinct choices and a named restaurant',async({page})=>{
  await page.goto('/tools/golf-day-builder',{waitUntil:'networkidle'})
- for(const name of [/^Palma and around/,/^Relaxed golf/,/^Confident/,/^Up to 28/,/^Mid-morning/,/^Scenery/])await page.getByRole('button',{name}).click()
+ for(const name of [/Palma and around/,/^Relaxed golf/,/^Confident/,/^Up to 28/,/^Mid-morning/,/^Scenery/])await chooseAndContinue(page,page.getByRole('button',{name}),'day')
  await page.getByRole('button',{name:/^Lunch/}).click();await page.locator('.gdb-nav-row .gdb-btn-pine').click()
- await page.getByRole('button',{name:/^Ask about transfers/}).click();await page.getByRole('button',{name:/^Friends/}).click()
+ await chooseAndContinue(page,page.getByRole('button',{name:/^Ask about transfers/}),'day');await chooseAndContinue(page,page.getByRole('button',{name:/^Friends/}),'day')
  await expect(page.locator('.gdb-itin.active h3')).toContainText('Son Termes')
  await page.getByRole('button',{name:'Golf and lunch',exact:true}).click()
  await expect(page.locator('.gdb-itin.active h3')).toContainText('Son Quint')

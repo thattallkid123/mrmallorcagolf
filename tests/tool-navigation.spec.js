@@ -1,4 +1,5 @@
 const {test,expect}=require('@playwright/test')
+const {chooseAndContinue}=require('./helpers/planning-quiz')
 
 test.beforeEach(async({page})=>{
   await page.route(/googletagmanager|google-analytics|\/_vercel\/insights\//,r=>r.abort())
@@ -8,13 +9,19 @@ for(const [slug,options,next,progress]of[
   ['golf-day-builder','.gdb-opt','.gdb-btn-pine','.gdb-step-label'],
   ['hotel-recommender','.hr-opt','.hr-btn-next','.hr-step-num'],
   ['course-selector','.cst-opt','.cst-nav-row .cst-btn','.cst-progress-label'],
-])test(`${slug}: fast Continue advances once and Back stays on the prior question`,async({page})=>{
+])test(`${slug}: choices stay on the question until Continue and Back preserves the selection`,async({page})=>{
   await page.goto('/tools/'+slug,{waitUntil:'load'})
   await expect(page.locator(options).first()).toBeVisible()
   const first=await page.locator(options).first().innerText()
+  await expect(page.locator(next)).toBeDisabled()
   await page.locator(options).first().click()
-  // Exercise the same manual action while the automatic selection is pending.
-  await page.locator(next).evaluate(button=>button.click())
+  await expect(page.locator(options).first()).toHaveAttribute('aria-pressed','true')
+  await page.waitForTimeout(400)
+  await expect.poll(() => page.locator(options).first().innerText()).toBe(first)
+  await page.locator(options).nth(1).click()
+  await expect(page.locator(options).first()).toHaveAttribute('aria-pressed','false')
+  await expect(page.locator(options).nth(1)).toHaveAttribute('aria-pressed','true')
+  await page.locator(next).click()
   await page.waitForTimeout(450)
   const second=await page.locator(options).first().innerText()
   expect(second).not.toBe(first)
@@ -24,11 +31,12 @@ for(const [slug,options,next,progress]of[
   await back.click()
   await page.waitForTimeout(450)
   await expect.poll(() => page.locator(options).first().innerText()).toBe(first)
+  await expect(page.locator(options).nth(1)).toHaveAttribute('aria-pressed','true')
 })
 
 test('Hotel Finder keeps Back before Continue in DOM and visual order',async({page})=>{
   await page.goto('/tools/hotel-recommender',{waitUntil:'load'})
-  await page.locator('.hr-opt').first().click()
+  await chooseAndContinue(page,page.locator('.hr-opt').first(),'hotel')
   await expect(page.locator('.hr-step-num')).toContainText('2')
   const nav=page.locator('.hr-nav')
   expect(await nav.locator('button').evaluateAll(es=>es.map(e=>e.className))).toEqual(expect.arrayContaining([expect.stringContaining('hr-btn-back'),expect.stringContaining('hr-btn-next')]))
@@ -41,14 +49,14 @@ test('Hotel Finder keeps Back before Continue in DOM and visual order',async({pa
 
 test('Hotel Finder result summary retains every selected priority',async({page})=>{
   await page.goto('/tools/hotel-recommender',{waitUntil:'load'})
-  await page.locator('.hr-opt').first().click()
+  await chooseAndContinue(page,page.locator('.hr-opt').first(),'hotel')
   await expect(page.locator('.hr-step-num')).toContainText('2')
   await page.getByRole('button',{name:'Beach and pool',exact:false}).click()
   await page.getByRole('button',{name:'Spa',exact:false}).click()
   await page.locator('.hr-btn-next').click()
   for(const step of [3,4,5,6]){
     await expect(page.locator('.hr-step-num')).toHaveText(`Question ${step} of 6`)
-    await (step===6 ? page.locator('.hr-opt').last() : page.locator('.hr-opt').first()).click()
+    await chooseAndContinue(page,step===6 ? page.locator('.hr-opt').last() : page.locator('.hr-opt').first(),'hotel')
   }
   const summary=page.locator('.hr-results-hero p')
   await expect(summary).toContainText('with beach time after golf')
@@ -64,8 +72,7 @@ test('whole-villa budget stays separate and is included in the saved brief',asyn
   await page.goto('/tools/hotel-recommender',{waitUntil:'load'})
   for(const [step,index] of [[1,0],[2,4],[3,1],[4,2],[5,3]]){
     await expect(page.locator('.hr-step-num')).toHaveText(`Question ${step} of 6`)
-    await page.locator('.hr-opt').nth(index).click()
-    if(step===2)await page.locator('.hr-btn-next').click()
+    await chooseAndContinue(page,page.locator('.hr-opt').nth(index),'hotel')
   }
   const budget=page.getByLabel('Whole villa per night (€)')
   await expect(budget).toBeVisible()
@@ -82,4 +89,20 @@ test('whole-villa budget stays separate and is included in the saved brief',asyn
   expect(sent.data.answerSummary).not.toContain('/room')
   const href=await page.locator('.hr-cta-link-primary').getAttribute('href')
   expect(decodeURIComponent(href)).toContain('Whole-villa nightly budget: €600')
+})
+
+test('Chinese course finder also waits for Continue and keeps the selected answer on Back',async({page})=>{
+  await page.goto('/zh/tools/course-selector',{waitUntil:'load'})
+  const firstQuestion=await page.locator('.q-card h3').innerText()
+  const next=page.locator('.q-nav .btn-action')
+  await expect(next).toBeDisabled()
+  await page.locator('.zh-opt').first().click()
+  await page.waitForTimeout(400)
+  await expect(page.locator('.q-card h3')).toHaveText(firstQuestion)
+  await expect(page.locator('.zh-opt').first()).toHaveAttribute('aria-pressed','true')
+  await next.click()
+  await expect(page.locator('.q-card h3')).not.toHaveText(firstQuestion)
+  await page.locator('.q-back').click()
+  await expect(page.locator('.q-card h3')).toHaveText(firstQuestion)
+  await expect(page.locator('.zh-opt').first()).toHaveAttribute('aria-pressed','true')
 })

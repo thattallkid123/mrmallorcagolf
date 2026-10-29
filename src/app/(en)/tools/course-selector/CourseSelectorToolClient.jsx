@@ -1,5 +1,4 @@
 'use client'
-import useQuizTransition from '../../../../lib/use-quiz-transition'
 import { buildToolEnquiryHref } from '../../../../lib/tool-enquiry'
 import { getToolRecoveryT } from '../../../../lib/tool-recovery-content'
 import ToolChoices from '../../../../components/ToolChoices'
@@ -540,7 +539,6 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   const enquiryMessage = selectorAnswerSummary(answers, t.questions)
   const whatsappHref = `https://wa.me/34624466702?text=${encodeURIComponent([WA_MESSAGE, topCourses.map(c => c.name).join(', '), enquiryMessage].filter(Boolean).join('\n\n'))}`
   const containerRef = useRef(null)
-  const { scheduleAdvance, cancelAdvance } = useQuizTransition()
 
   function scrollToTop() {
     const el = containerRef.current
@@ -563,7 +561,6 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   const q = activeQs[qIndex]
 
   function startQuiz() {
-    cancelAdvance()
     setPhase('quiz')
     setQIndex(0)
     setAnswers({})
@@ -586,8 +583,6 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
     } else {
       newAnswers[qId] = value
       setAnswers(newAnswers)
-      // auto-advance after brief delay
-      scheduleAdvance(() => advance(newAnswers))
     }
   }
 
@@ -602,15 +597,13 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   }
 
   function goBack() {
-    cancelAdvance()
     if (qIndex > 0) {
       setQIndex(i => i - 1)
       scrollToTop()
     }
   }
 
-  function continueMulti() {
-    cancelAdvance()
+  function continueQuiz() {
     advance(answers)
   }
 
@@ -706,7 +699,6 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   }
 
   function restart() {
-    cancelAdvance()
     setPhase('quiz')
     setQIndex(0)
     setAnswers({})
@@ -841,7 +833,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
             <h2 className="cst-q-title">{t.questions[q.id]?.title || q.title}</h2>
             {(t.questions[q.id]?.sub || q.sub) && <p className="cst-q-sub">{t.questions[q.id]?.sub || q.sub}</p>}
 
-            <ToolChoices locale={lang} className="cst-opts">
+            <ToolChoices locale={lang} className="cst-opts" selectionMode={q.multi ? 'multiple' : 'single'}>
               {q.options.map(opt => {
                 const photo = q.id === 'area' ? AREA_PHOTOS[opt.value] : null
                 const isSelected = q.multi
@@ -874,7 +866,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
               >
                 {t.progress.back}
               </button>
-              <button className="cst-btn gold" onClick={continueMulti} disabled={!q.multi && !answers[q.id]}>{t.progress.showCourses}</button>
+              <button className="cst-btn gold" onClick={continueQuiz} disabled={!q.multi && !answers[q.id]}>{t.progress.showCourses}</button>
             </div>
           </div>
         )}

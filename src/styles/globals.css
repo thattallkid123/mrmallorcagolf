@@ -697,7 +697,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track { --mobile-text-columns: 2; }
+  .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track { --mobile-text-columns: 1; }
   .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track.tool-choice-track--1 { --mobile-text-columns: 1; }
   .planning-tool .hc-card .hc-badge { max-width: 110px; }
   .nav { --nav-pad: 16px; padding: 0 var(--nav-pad); }
@@ -4547,12 +4547,20 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .planning-tool[data-tool-active="true"] :is(.gdb-wrap,.cst-wrap,.hr-quiz-wrap,.gcc-wrap) { padding-top: var(--space-4); }
 .planning-tool[data-tool-active="true"] .gdb-progress { margin-bottom: var(--space-3); }
 .planning-tool[data-tool-active="true"] section:is(.cst-hero,.gf-hero,.hc-hero,.gdb-hero,.gcc-hero,.hr-hero) > p { display: none; }
-/* Text alternatives remain visible together; remaining items fill the last row. */
+/* Text alternatives keep the same width, with incomplete rows centred. */
 .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track { flex-wrap: wrap; overflow: visible; scroll-snap-type: none; --text-columns: 3; }
 .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track:is(.tool-choice-track--2,.tool-choice-track--4) { --text-columns: 2; }
 .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--7 { --text-columns: 4; }
 .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--1 { --text-columns: 1; }
-.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track > button:nth-child(n) { flex: 1 1 calc((100% - (var(--mobile-text-columns,var(--text-columns)) - 1) * 12px) / var(--mobile-text-columns,var(--text-columns))); max-width: none; }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track > button:nth-child(n) { flex: 0 0 calc((100% - (var(--mobile-text-columns,var(--text-columns)) - 1) * 12px) / var(--mobile-text-columns,var(--text-columns))); display: grid; grid-template-columns: minmax(0,1fr) 20px; align-items: start; gap: var(--space-3); max-width: none; padding: var(--space-4); }
+.planning-tool .tool-choices div.tool-choice-track > button { position: relative; }
+.tool-choice-marker { position: absolute; top: var(--space-3); right: var(--space-3); width: 20px; height: 20px; display: grid; place-items: center; border: 1px solid var(--stone); background: var(--white); color: var(--white); font-family: var(--font-sans); font-size: 14px; font-weight: 500; line-height: 1; pointer-events: none; }
+.tool-choice-marker--single { border-radius: 50%; }
+.tool-choice-marker--multiple { border-radius: 3px; }
+.planning-tool .tool-choices:not(.tool-choices--photos) .tool-choice-marker { position: static; align-self: start; }
+[aria-pressed="true"] > .tool-choice-marker { border-color: var(--pine); background: var(--pine); }
+.tool-choice-marker--single > span { width: 8px; height: 8px; border-radius: 50%; background: var(--white); }
+.planning-tool p.hr-step-num { text-align: center; }
 .planning-tool div.gcc-nav { flex-direction: row; flex-wrap: nowrap; }
 .hr-villa-budget { display: grid; gap: var(--space-2); max-width: 480px; margin-inline: auto; text-align: left; }
 .hr-villa-budget label { font-size: .95rem; color: var(--pine); }

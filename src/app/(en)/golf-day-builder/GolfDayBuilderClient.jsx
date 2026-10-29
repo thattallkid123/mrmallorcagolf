@@ -1,5 +1,4 @@
 'use client'
-import useQuizTransition from '../../../lib/use-quiz-transition'
 import { buildToolEnquiryHref } from '../../../lib/tool-enquiry'
 import { buildItineraries, buildDayEnquiryBrief } from '../../../lib/golf-day-planner'
 import ToolChoices from '../../../components/ToolChoices'
@@ -120,7 +119,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
   const [toast, setToast] = useState('')
   const [showToast, setShowToast] = useState(false)
   const containerRef = useRef(null)
-  const { scheduleAdvance, cancelAdvance } = useQuizTransition()
 
   function scrollToTop() {
     const el = containerRef.current
@@ -131,7 +129,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
   const q = localizeQuestions(QUESTIONS, localData)[stepIdx]
 
   function startBuilder() {
-    cancelAdvance()
     setPhase('quiz')
     scrollToTop()
   }
@@ -145,18 +142,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
     } else {
       const newAnswers = { ...answers, [key]: val }
       setAnswers(newAnswers)
-      scheduleAdvance(() => {
-        if (stepIdx < QUESTIONS.length - 1) {
-          setStepIdx(s => s + 1)
-          scrollToTop()
-        } else {
-          const built = buildItineraries(newAnswers, localData)
-          setItins(built)
-          setActiveItin(0)
-          setPhase('results')
-          scrollToTop()
-        }
-      })
     }
   }
 
@@ -172,7 +157,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
   }
 
   function nextStep() {
-    cancelAdvance()
     if (stepIdx < QUESTIONS.length - 1) {
       setStepIdx(s => s + 1)
       scrollToTop()
@@ -182,7 +166,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
   }
 
   function prevStep() {
-    cancelAdvance()
     if (stepIdx > 0) {
       setStepIdx(s => s - 1)
       scrollToTop()
@@ -190,7 +173,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
   }
 
   function generateItineraries() {
-    cancelAdvance()
     const built = buildItineraries(answers, localData)
     setItins(built)
     setActiveItin(0)
@@ -199,7 +181,6 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
   }
 
   function restart() {
-    cancelAdvance()
     setPhase('quiz')
     setStepIdx(0)
     setAnswers({})
@@ -409,7 +390,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
               <h2>{q.title}</h2>
               {q.sub && !q.multi && <p className="sub">{q.sub}</p>}
               {q.multi && <div className="gdb-multi-note">{t.quiz.selectAny}</div>}
-              <ToolChoices locale={lang} className="gdb-opts">
+              <ToolChoices locale={lang} className="gdb-opts" selectionMode={q.multi ? 'multiple' : 'single'}>
                 {q.opts.map(o => {
                   const photo = q.key === 'region' ? getHotelChoicePhoto('area', o.v) || (o.v === 'south' ? { image: '/images/courses/son-antem-east.webp', name: 'Son Antem East', kind: 'course' } : null) : null
                   return (

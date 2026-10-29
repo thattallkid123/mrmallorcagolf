@@ -18,7 +18,7 @@ export const COURSE_SELECTOR_T = {
       label: (n, total) => `Question ${n} of ${total}`,
       pct: p => `${p}%`,
       back: '← Back',
-      showCourses: 'Next',
+      showCourses: 'Continue',
     },
     questions: {
       ability: {
@@ -190,7 +190,7 @@ export const COURSE_SELECTOR_T = {
       label: (n, total) => `Frage ${n} von ${total}`,
       pct: p => `${p}%`,
       back: '← Zurück',
-      showCourses: 'Plätze anzeigen',
+      showCourses: 'Weiter',
     },
     questions: {
       ability: {
@@ -362,7 +362,7 @@ export const COURSE_SELECTOR_T = {
       label: (n, total) => `Question ${n} sur ${total}`,
       pct: p => `${p}%`,
       back: '← Retour',
-      showCourses: 'Afficher mes parcours',
+      showCourses: 'Continuer',
     },
     questions: {
       ability: {
@@ -534,7 +534,7 @@ export const COURSE_SELECTOR_T = {
       label: (n, total) => `Pregunta ${n} de ${total}`,
       pct: p => `${p}%`,
       back: '← Atrás',
-      showCourses: 'Ver mis campos',
+      showCourses: 'Continuar',
     },
     questions: {
       ability: {
@@ -706,7 +706,7 @@ export const COURSE_SELECTOR_T = {
       label: (n, total) => `Vraag ${n} van ${total}`,
       pct: p => `${p}%`,
       back: '← Terug',
-      showCourses: 'Mijn banen tonen',
+      showCourses: 'Doorgaan',
     },
     questions: {
       ability: {
@@ -878,7 +878,7 @@ export const COURSE_SELECTOR_T = {
       label: (n, total) => `Fråga ${n} av ${total}`,
       pct: p => `${p}%`,
       back: '← Tillbaka',
-      showCourses: 'Visa mina banor',
+      showCourses: 'Fortsätt',
     },
     questions: {
       ability: {

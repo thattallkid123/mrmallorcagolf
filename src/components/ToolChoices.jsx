@@ -17,15 +17,22 @@ function LocationIllustration() {
   </span>
 }
 
-export default function ToolChoices({ children, locale = 'en', className = '' }) {
+export default function ToolChoices({ children, locale = 'en', className = '', selectionMode }) {
   const choices = Children.toArray(children)
   const hasPhotos = choices.some(containsPhoto)
-  const balancedChoices = hasPhotos ? choices.map(choice => {
-    if (!isValidElement(choice) || choice.type !== 'button' || containsPhoto(choice)) return choice
+  const balancedChoices = choices.map(choice => {
+    if (!isValidElement(choice) || choice.type !== 'button') return choice
+    const selected = choice.props['aria-pressed'] === true
     return cloneElement(choice, {
-      children: [<LocationIllustration key="location-illustration" />, ...Children.toArray(choice.props.children)],
+      children: [
+        ...(hasPhotos && !containsPhoto(choice) ? [<LocationIllustration key="location-illustration" />] : []),
+        ...Children.toArray(choice.props.children),
+        ...(selectionMode ? [<span key="selection-marker" className={`tool-choice-marker tool-choice-marker--${selectionMode}`} aria-hidden="true">
+          {selected && (selectionMode === 'multiple' ? '✓' : <span />)}
+        </span>] : []),
+      ],
     })
-  }) : choices
+  })
   const track = useRef(null)
   const previousChoices = useRef(null)
   const choiceSet = choices.map(choice => isValidElement(choice) ? choice.key : '').join('|')
