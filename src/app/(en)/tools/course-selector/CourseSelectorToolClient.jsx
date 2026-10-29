@@ -826,7 +826,8 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
                 <div className="cst-progress-fill" style={{ width: `${(qIndex / activeQs.length) * 100}%` }} />
               </div>
               <div className="cst-progress-label">
-                <span>{t.progress.label(qIndex + 1, activeQs.length)}</span>
+                {/* No total here: a question is skipped for beginners and luxury trips, so "of N" changed part-way through. */}
+                <span>{t.progress.label(qIndex + 1)}</span>
                 <span>{t.progress.pct(Math.round((qIndex / activeQs.length) * 100))}</span>
               </div>
             </div>

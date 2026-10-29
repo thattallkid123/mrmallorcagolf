@@ -15,7 +15,7 @@ export const COURSE_SELECTOR_T = {
       cta: 'Start the course finder',
     },
     progress: {
-      label: (n, total) => `Question ${n} of ${total}`,
+      label: n => `Question ${n}`,
       pct: p => `${p}%`,
       back: '← Back',
       showCourses: 'Continue',
@@ -187,7 +187,7 @@ export const COURSE_SELECTOR_T = {
       cta: 'Platzfinder starten',
     },
     progress: {
-      label: (n, total) => `Frage ${n} von ${total}`,
+      label: n => `Frage ${n}`,
       pct: p => `${p}%`,
       back: '← Zurück',
       showCourses: 'Weiter',
@@ -359,7 +359,7 @@ export const COURSE_SELECTOR_T = {
       cta: 'Démarrer le sélecteur',
     },
     progress: {
-      label: (n, total) => `Question ${n} sur ${total}`,
+      label: n => `Question ${n}`,
       pct: p => `${p}%`,
       back: '← Retour',
       showCourses: 'Continuer',
@@ -531,7 +531,7 @@ export const COURSE_SELECTOR_T = {
       cta: 'Iniciar el selector de campos',
     },
     progress: {
-      label: (n, total) => `Pregunta ${n} de ${total}`,
+      label: n => `Pregunta ${n}`,
       pct: p => `${p}%`,
       back: '← Atrás',
       showCourses: 'Continuar',
@@ -703,7 +703,7 @@ export const COURSE_SELECTOR_T = {
       cta: 'Baankiezer starten',
     },
     progress: {
-      label: (n, total) => `Vraag ${n} van ${total}`,
+      label: n => `Vraag ${n}`,
       pct: p => `${p}%`,
       back: '← Terug',
       showCourses: 'Doorgaan',
@@ -875,7 +875,7 @@ export const COURSE_SELECTOR_T = {
       cta: 'Starta banväljaren',
     },
     progress: {
-      label: (n, total) => `Fråga ${n} av ${total}`,
+      label: n => `Fråga ${n}`,
       pct: p => `${p}%`,
       back: '← Tillbaka',
       showCourses: 'Fortsätt',
