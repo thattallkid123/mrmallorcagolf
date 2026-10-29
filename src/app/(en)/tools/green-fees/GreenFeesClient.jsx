@@ -388,7 +388,7 @@ export default function GreenFeesClient({ lang = 'en', localData = null }) {
         .gf-compare__intro { font-size:.9rem; color:var(--muted); line-height:1.6; margin-bottom:20px; }
         .gf-compare__pickers { display:flex; flex-wrap:wrap; gap:14px; margin-bottom:24px; }
         .gf-compare__pickers .gf-fg select { min-width:200px; }
-        @media (max-width:820px){ .gf-table-wrap { display:none; } .gf-cards { display:block; } .gf-count { width:100%; margin-left:0; } .gf-fg select { min-width:130px; } .gf-compare__pickers .gf-fg select { min-width:140px; } }
+        @media (max-width:820px){ .gf .gf-filters { grid-template-columns: repeat(2, minmax(0, 1fr)); } .gf-table-wrap { display:none; } .gf-cards { display:block; } .gf-count { width:100%; margin-left:0; } .gf-fg select { min-width:130px; } .gf-compare__pickers .gf-fg select { min-width:140px; } }
       `}</style>
 
       <section className="gf-hero">

@@ -4392,6 +4392,11 @@ button.hr-opt.hr-opt--photo { display: flex; flex-direction: column; justify-con
 /* Equal-width pickers: a flex row stretched the lone fifth picker across the whole last row. */
 .gf .gf-compare__pickers { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
 .gf .gf-compare__pickers > .gf-fg { min-width: 0; }
+/* Filters: equal-width columns that fill the row, so the left and right padding match at every width (flex left a ragged gap on the right). */
+.gf .gf-filters { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); align-items: end; }
+.gf .gf-filters > .gf-fg { min-width: 0; }
+.gf .gf-filters select { width: 100%; min-width: 0; }
+.gf .gf-filters > .gf-count { grid-column: 1 / -1; margin-left: 0; align-self: start; }
 .gf .gf-compare__pickers select { width: 100%; min-width: 0; }
 .tool-card { display: grid; grid-template-columns: 1fr auto; column-gap: var(--space-sm, 16px); }
 .tool-card > :not(.tool-photo) { grid-column: 1; }
