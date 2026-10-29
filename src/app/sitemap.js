@@ -47,7 +47,7 @@ const LAST_MODIFIED_BY_PATH = {
   '/tools/golf-cost-calculator': '2026-07-25',
   '/tools/hotel-recommender': '2026-07-25',
   '/tools/handicap-checker': '2026-07-25',
-  '/tools/green-fees': '2026-07-25',
+  '/tools/course-comparison': '2026-10-29',
   '/tools/golf-day-builder': '2026-07-25',
 }
 

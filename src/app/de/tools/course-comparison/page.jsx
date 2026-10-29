@@ -1,6 +1,6 @@
 export const dynamic = 'force-dynamic'
 
-export const metadata = buildPageMetadata('/tools/green-fees', 'de', {
+export const metadata = buildPageMetadata('/tools/course-comparison', 'de', {
 
   title: 'Mallorca-Greenfee-Vergleich',
   description: 'Vergleichen Sie die Greenfees aller 24 Golfplätze auf Mallorca nach Saison, Handicap und Buggy-Optionen.',

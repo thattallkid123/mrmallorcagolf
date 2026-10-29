@@ -83,6 +83,16 @@
       "permanent": true
     },
     {
+      "source": "/tools/green-fees",
+      "destination": "/tools/course-comparison",
+      "permanent": true
+    },
+    {
+      "source": "/:locale(de|es|fr|nl|sv|zh)/tools/green-fees",
+      "destination": "/:locale/tools/course-comparison",
+      "permanent": true
+    },
+    {
       "source": "/courses",
       "destination": "/golf-courses",
       "permanent": true

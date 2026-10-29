@@ -32,7 +32,7 @@ export const TOOLS_INDEX_CONTENT = {
         cta: 'Find my courses',
       },
       {
-        href: '/tools/green-fees',
+        href: '/tools/course-comparison',
         eyebrow: 'Choose Your Course',
         title: 'Browse All 24 Courses',
         desc: "Compare all 24 courses: green fees, buggy costs, walking rules, par, difficulty and handicap limits, with my verdict. Select up to five to compare side by side.",
@@ -99,7 +99,7 @@ export const TOOLS_INDEX_CONTENT = {
         cta: 'Meine Golfplätze finden',
       },
       {
-        href: '/de/tools/green-fees',
+        href: '/de/tools/course-comparison',
         eyebrow: 'Wählen Sie Ihren Platz',
         title: 'Alle 24 Plätze durchsuchen',
         desc: "Vergleichen Sie alle 24 Plätze: Greenfees, Buggy-Kosten, Regeln zum Gehen, Par, Schwierigkeit und Handicap-Grenzen, mit meinem Urteil. Wählen Sie bis zu fünf aus, um sie direkt nebeneinander zu vergleichen.",
@@ -166,7 +166,7 @@ export const TOOLS_INDEX_CONTENT = {
         cta: 'Encontrar mis campos',
       },
       {
-        href: '/es/tools/green-fees',
+        href: '/es/tools/course-comparison',
         eyebrow: 'Elija su campo',
         title: 'Examine los 24 campos',
         desc: "Compare los 24 campos: green fees, coste del buggy, normas para ir andando, par, dificultad y límites de hándicap, con mi valoración. Seleccione hasta cinco para compararlos uno al lado del otro.",
@@ -233,7 +233,7 @@ export const TOOLS_INDEX_CONTENT = {
         cta: 'Trouvez mes parcours',
       },
       {
-        href: '/fr/tools/green-fees',
+        href: '/fr/tools/course-comparison',
         eyebrow: 'Choisissez votre parcours',
         title: 'Explorez les 24 parcours',
         desc: "Comparez les 24 parcours : green fees, coût de la voiturette, règles concernant le jeu à pied, par, difficulté et limites de handicap, avec mon avis. Sélectionnez-en jusqu'à cinq pour les comparer côte à côte.",
@@ -300,7 +300,7 @@ export const TOOLS_INDEX_CONTENT = {
         cta: 'Vind mijn banen',
       },
       {
-        href: '/nl/tools/green-fees',
+        href: '/nl/tools/course-comparison',
         eyebrow: 'Kies uw baan',
         title: 'Verken alle 24 banen',
         desc: "Vergelijk alle 24 banen: greenfees, buggykosten, regels voor lopen, par, moeilijkheidsgraad en handicaplimieten, met mijn oordeel. Selecteer er maximaal vijf om ze naast elkaar te vergelijken.",
@@ -367,7 +367,7 @@ export const TOOLS_INDEX_CONTENT = {
         cta: 'Hitta mina banor',
       },
       {
-        href: '/sv/tools/green-fees',
+        href: '/sv/tools/course-comparison',
         eyebrow: 'Välj din bana',
         title: 'Utforska alla 24 banor',
         desc: "Jämför alla 24 banor: greenfee, kostnad för golfbil, regler för att gå, par, svårighetsgrad och handicapgränser, med mitt omdöme. Välj upp till fem för att jämföra dem sida vid sida.",
@@ -434,7 +434,7 @@ export const TOOLS_INDEX_CONTENT = {
         cta: '找到我的球场',
       },
       {
-        href: '/zh/tools/green-fees',
+        href: '/zh/tools/course-comparison',
         eyebrow: '选择球场',
         title: '探索所有24个球场',
         desc: "比较全部 24 座球场：果岭费、球车费用、步行规定、标准杆、难度和差点限制，并附我的评价。最多可选择 5 座并排比较。",

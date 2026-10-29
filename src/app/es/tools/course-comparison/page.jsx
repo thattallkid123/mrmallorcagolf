@@ -1,6 +1,6 @@
 export const dynamic = 'force-dynamic'
 
-export const metadata = buildPageMetadata('/tools/green-fees', 'es', {
+export const metadata = buildPageMetadata('/tools/course-comparison', 'es', {
 
   title: 'Comparador de green fees en Mallorca',
   description: 'Compare los green fees de los 24 campos de Mallorca por temporada, hándicap y opciones de buggy.',

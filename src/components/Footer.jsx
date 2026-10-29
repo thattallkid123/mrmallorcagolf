@@ -241,7 +241,7 @@ export default function Footer({ lang }) {
         <ul>
           <li><Link href={toolHref('/tools/course-selector', locale)} prefetch={false}>{copy.toolCourseSelector}</Link></li>
           <li><Link href={toolHref('/tools/handicap-checker', locale)} prefetch={false}>{copy.toolHandicapChecker}</Link></li>
-          <li><Link href={toolHref('/tools/green-fees', locale)} prefetch={false}>{copy.toolGreenFees}</Link></li>
+          <li><Link href={toolHref('/tools/course-comparison', locale)} prefetch={false}>{copy.toolGreenFees}</Link></li>
           <li><Link href={toolHref('/tools/golf-cost-calculator', locale)} prefetch={false}>{copy.toolCostCalculator}</Link></li>
           <li><Link href={toolHref('/tools/hotel-recommender', locale)} prefetch={false}>{copy.toolHotelRecommender}</Link></li>
           <li><Link href={toolHref('/tools/golf-day-builder', locale)} prefetch={false}>{copy.toolDayBuilder}</Link></li>

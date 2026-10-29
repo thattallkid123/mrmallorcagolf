@@ -154,7 +154,7 @@ export function hasLocaleRoute(pathname = '/', locale = 'en') {
   if (EN_ONLY_TOOL_PATHS.has(basePath)) return locale === 'en'
   if (basePath === '/tools') return LOCALES_FOR_GREEN_FEES_TOOL.has(locale)
   if (basePath === '/tools/course-selector') return LOCALES_FOR_COURSE_SELECTOR_TOOL.has(locale)
-  if (basePath === '/tools/green-fees') return LOCALES_FOR_GREEN_FEES_TOOL.has(locale)
+  if (basePath === '/tools/course-comparison') return LOCALES_FOR_GREEN_FEES_TOOL.has(locale)
   if (basePath === '/tools/golf-day-builder') return LOCALES_FOR_GOLF_DAY_BUILDER_TOOL.has(locale)
   if (basePath === '/tools/golf-cost-calculator') return LOCALES_FOR_GOLF_COST_CALCULATOR.has(locale)
   if (basePath === '/tools/hotel-recommender') return LOCALES_FOR_HOTEL_RECOMMENDER.has(locale)
@@ -275,7 +275,7 @@ export function getSitemapPaths() {
 
   // Green fees tool: available in all locales
   for (const locale of LOCALES_FOR_GREEN_FEES_TOOL) {
-    paths.push(buildLocalePath('/tools/green-fees', locale))
+    paths.push(buildLocalePath('/tools/course-comparison', locale))
   }
 
   // Golf day builder tool: available in all locales

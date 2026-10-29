@@ -127,7 +127,7 @@ export default function HomepageLeadPopup() {
           <Link href="/tools/course-selector" className="btn btn--gold" onClick={() => clickThrough('find_courses')}>
             Find my courses
           </Link>
-          <Link href="/tools/green-fees" className="btn btn--dark" onClick={() => clickThrough('compare_courses')}>
+          <Link href="/tools/course-comparison" className="btn btn--dark" onClick={() => clickThrough('compare_courses')}>
             Compare all 24 courses
           </Link>
         </div>

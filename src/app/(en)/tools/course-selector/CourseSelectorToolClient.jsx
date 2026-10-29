@@ -879,7 +879,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
           <h2>{recovery.courseTitle}</h2>
           <p>{recovery.courseCopy}</p>
           <button className="cst-restart" onClick={() => { setPhase('quiz'); setQIndex(0); scrollToTop() }}>{t.results.adjust}</button>
-          <a className="cst-link" href={buildLocalePath('/tools/green-fees',lang)}>{t.results.compare}</a>
+          <a className="cst-link" href={buildLocalePath('/tools/course-comparison',lang)}>{t.results.compare}</a>
         </section>}
         {phase === 'results' && topCourses.length > 0 && (
           <div>

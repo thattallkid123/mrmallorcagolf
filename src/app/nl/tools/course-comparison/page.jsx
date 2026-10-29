@@ -1,6 +1,6 @@
 export const dynamic = 'force-dynamic'
 
-export const metadata = buildPageMetadata('/tools/green-fees', 'nl', {
+export const metadata = buildPageMetadata('/tools/course-comparison', 'nl', {
 
   title: 'Mallorca greenfees vergelijken',
   description: 'Vergelijk de greenfees van alle 24 golfbanen op Mallorca per seizoen, handicap en buggyopties.',

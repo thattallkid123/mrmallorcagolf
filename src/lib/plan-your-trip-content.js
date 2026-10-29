@@ -215,7 +215,7 @@ export const PLAN_YOUR_TRIP_CONTENT = {
     "summary": "The point is simple: same hotel, sensible drives, and the hardest golf placed where it belongs.",
     "feesNote": "Green fees vary by season.",
     "feesCta": "Check current rates in the green fee tool",
-    "feesLink": "/tools/green-fees",
+    "feesLink": "/tools/course-comparison",
     "fullGuideLabel": "Read the 5-day guide",
     "fullGuideLink": "/guides/5-day-mallorca-golf-itinerary",
     "hotelEyebrow": "Where to stay",

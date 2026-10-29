@@ -1,6 +1,6 @@
 export const dynamic = 'force-dynamic'
 
-export const metadata = buildPageMetadata('/tools/green-fees', 'fr', {
+export const metadata = buildPageMetadata('/tools/course-comparison', 'fr', {
 
   title: 'Comparateur de green fees à Majorque',
   description: 'Comparez les green fees des 24 parcours de Majorque par saison, handicap et options de voiturette.',

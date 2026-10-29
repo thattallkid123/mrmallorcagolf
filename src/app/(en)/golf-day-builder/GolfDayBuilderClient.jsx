@@ -438,7 +438,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
             </ol>
             <div className="gdb-access-actions">
               <a className="gdb-btn-pine" href={buildLocalePath('/tools/handicap-checker',lang)}>{t.results.accessHelp.accessLink}</a>
-              <a className="gdb-btn-ghost" href={buildLocalePath('/tools/green-fees',lang)}>{t.results.accessHelp.compareLink}</a>
+              <a className="gdb-btn-ghost" href={buildLocalePath('/tools/course-comparison',lang)}>{t.results.accessHelp.compareLink}</a>
             </div>
           </div>
           <div className="gdb-access-actions">
