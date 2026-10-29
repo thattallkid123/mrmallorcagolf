@@ -4389,7 +4389,9 @@ button.hr-opt.hr-opt--photo { display: flex; flex-direction: column; justify-con
 .gf-compare__value { position: relative; margin: 0; padding: var(--space-sm, 14px); background: var(--white); border-bottom: 1px solid var(--sand); font-size: .9rem; line-height: 1.65; }
 .gf-compare__value:nth-child(odd) { background: var(--linen); }
 .gf-compare__value dd { margin: 0; overflow-wrap: anywhere; }
-.gf .gf-compare__pickers > .gf-fg { flex: 1 1 220px; min-width: 0; }
+/* Equal-width pickers: a flex row stretched the lone fifth picker across the whole last row. */
+.gf .gf-compare__pickers { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); }
+.gf .gf-compare__pickers > .gf-fg { min-width: 0; }
 .gf .gf-compare__pickers select { width: 100%; min-width: 0; }
 .tool-card { display: grid; grid-template-columns: 1fr auto; column-gap: var(--space-sm, 16px); }
 .tool-card > :not(.tool-photo) { grid-column: 1; }
