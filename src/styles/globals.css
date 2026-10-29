@@ -4374,7 +4374,7 @@ button.hr-opt.hr-opt--photo { display: flex; flex-direction: column; justify-con
 /* Labels sit outside the course columns; subgrid keeps every metric aligned. */
 .gf .gf-main:has(.gf-compare) { max-width: 1600px; }
 .gf-compare__scroll { overflow-x: auto; scrollbar-width: thin; scrollbar-color: var(--gold) var(--linen); }
-.gf-compare__matrix { display: grid; grid-template-columns: 145px repeat(var(--compare-count), minmax(220px, 1fr)); column-gap: 16px; min-width: max(720px, calc(145px + var(--compare-count) * 236px)); }
+.gf-compare__matrix { display: grid; grid-template-columns: 145px repeat(var(--compare-count), minmax(220px, 1fr)); column-gap: 16px; padding-right: 8px; /* matches the 8px label padding on the left, so the table has the same gap both sides */ min-width: max(728px, calc(153px + var(--compare-count) * 236px)); }
 .gf-compare__matrix--1 { --compare-count: 1; }
 .gf-compare__matrix--2 { --compare-count: 2; }
 .gf-compare__matrix--3 { --compare-count: 3; }
