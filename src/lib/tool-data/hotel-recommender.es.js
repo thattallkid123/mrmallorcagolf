@@ -73,7 +73,7 @@ const data = {
     "Golf de Andratx a 5 min"
    ],
    "why": "Resort de cinco estrellas a cinco minutos del Golf de Andratx. Se puede ir a la playa a pie. Buena relación calidad-precio si la mitad del grupo juega y la otra mitad no.",
-   "andy": "Una cosa que conviene planificar: el Golf de Andratx es el campo más difícil de la isla, con un límite de hándicap de 28. Para los jugadores menos expertos, combine con las rondas más fáciles de Santa Ponsa.",
+   "andy": "Golf de Andratx exige certificado de hándicap: máximo 28 para hombres y 36 para mujeres. Compruebe los límites de cada jugador antes de elegir el campo.",
    "golf": "Golf de Andratx 5 min. T Golf Calvià 20 min. grupo de Santa Ponsa 25 min.",
    "travelTime": "30 min del aeropuerto de Palma",
    "subname": "Camp de Mar"
@@ -263,9 +263,9 @@ const data = {
    "pills": [
     "Cinco estrellas boutique",
     "Spa de primer nivel",
-    "360 con vino"
+    "Restaurante 3\\65"
    ],
-   "why": "Monasterio del siglo XVIII convertido en un cinco estrellas boutique de primer nivel. El spa es uno de los mejores de la isla y el restaurante 360 usa productos de la propia finca.",
+   "why": "Monasterio del siglo XVIII convertido en hotel boutique de cinco estrellas, con spa y el restaurante 3\\65, que utiliza productos de la finca.",
    "andy": "Un argumento sólido para alojarse en el norte aunque busque golf en serio. Alcanada a 15 minutos. Tranquilo, de gran calidad y genuinamente mallorquín.",
    "golf": "Club de Golf Alcanada 15 min. Golf Pollença 5 min.",
    "travelTime": "50 min del aeropuerto de Palma",

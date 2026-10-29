@@ -16,8 +16,6 @@ import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 import { HOTELS, QUESTIONS_DATA, rankHotels, pillClass } from '../../../lib/hotel-recommender-logic'
 import { localizeHotel, localizeQuestions } from '../../../lib/hotel-recommender-localize'
 
-const WA_HOTEL_MESSAGE = 'Hi Andy, I used the hotel recommender on your site and I’d like help matching where I stay to the courses I want to play.'
-const WA_HOTEL_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_HOTEL_MESSAGE)}`
 
 function trackHotelWhatsApp() {
   trackEvent('whatsapp_click', { channel: 'whatsapp', page_path: currentPagePath(), tool: 'hotel-recommender' })
@@ -37,7 +35,8 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   const [email, setEmail] = useState('')
   const [newsletter, setNewsletter] = useState(false)
   const [emailSending, setEmailSending] = useState(false)
-  const [emailSent, setEmailSent] = useState(false)
+  const [sentAnswers, setEmailSent] = useState(false)
+  const emailSent = sentAnswers === JSON.stringify(answers)
   const [emailError, setEmailError] = useState(false)
   const containerRef = useRef(null)
 
@@ -151,7 +150,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
         }),
       })
       if (!response.ok) throw new Error('Email failed')
-      setEmailSent(true)
+      setEmailSent(JSON.stringify(answers))
     } catch {
       setEmailError(true)
     } finally {
@@ -176,6 +175,9 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   const villaMessage = [villaT.resultsTitle, ...villaSummary.map(item => `${item.label}: ${item.value}`)].join('\n')
   const villaEnquiryHref = buildToolEnquiryHref(lang, { serviceType: 'whole-trip', message: villaMessage })
   const villaWhatsAppHref = `https://wa.me/34624466702?text=${encodeURIComponent(villaMessage)}`
+  const hotelMessage = [...QUESTIONS.map(question => `${question.title}: ${question.opts.filter(option => Array.isArray(answers[question.key]) ? answers[question.key].includes(option.val) : answers[question.key] === option.val).map(option => option.label).join(', ')}`), ...(results || []).map(item => item.hotel.name)].join('\n')
+  const hotelEnquiryHref = buildToolEnquiryHref(lang, { serviceType: 'whole-trip', message: hotelMessage })
+  const hotelWhatsAppHref = `https://wa.me/34624466702?text=${encodeURIComponent(hotelMessage)}`
   const isLastStep = step === TOTAL
 
   return (
@@ -341,11 +343,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
         <>
           <div className="hr-results-hero">
             <h2>{isVilla ? villaT.resultsTitle : (results.length ? t.results.hero : recovery.hotelTitle)}</h2>
-            {!isVilla && results.length > 0 && <p>{t.results.heroSub
-              .replace('{group}', t.groupLabel[answers.group] || 'your group')
-              .replace('{priority}', (answers.priority || []).map(priority => t.priorityLabel[priority]).filter(Boolean).join(', '))
-              .replace('{area}', t.areaLabels[answers.area] || answers.area)}
-            </p>}
+            {!isVilla && results.length > 0 && <p>{[t.areaLabels[answers.area], t.groupLabel[answers.group], ...(answers.priority || []).map(priority => t.priorityLabel[priority])].filter(Boolean).join(' · ')}</p>}
             {isVilla && <p>{villaT.resultsNote}</p>}
           </div>
 
@@ -455,8 +453,8 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
               <h3>{t.cta.title}</h3>
               <p>{t.cta.body}</p>
               <div className="hr-cta-links">
-                <a href={buildToolEnquiryHref(lang, { serviceType: 'whole-trip', message: [t.results.heroSub.replace('{group}', t.groupLabel[answers.group]).replace('{priority}', (answers.priority || []).map(p => t.priorityLabel[p]).join(', ')).replace('{area}', t.areaLabels[answers.area]), budgetSummary, ...results.map(x => x.hotel.name)].filter(Boolean).join('\n') })} className="hr-cta-link hr-cta-link-primary">{t.cta.enquire}</a>
-                <a href={WA_HOTEL_HREF} data-analytics-manual="true" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>{t.cta.whatsapp}</a>
+                <a href={hotelEnquiryHref} className="hr-cta-link hr-cta-link-primary">{t.cta.enquire}</a>
+                <a href={hotelWhatsAppHref} data-analytics-manual="true" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>{t.cta.whatsapp}</a>
               </div>
             </div>
 

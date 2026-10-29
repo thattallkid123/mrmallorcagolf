@@ -1,5 +1,7 @@
 'use client'
 
+import { getToolValidationT } from '@lib/tool-validation-content'
+import { buildToolEnquiryHref } from '@lib/tool-enquiry'
 import { Fragment, useRef, useState } from 'react'
 import Link from 'next/link'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
@@ -11,16 +13,14 @@ import { getHandicapCheckerT } from '../../../../lib/handicap-checker-translatio
 import { buildLocalePath, getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
 
-const WA_MESSAGE = 'Hi Andy, I used the handicap checker on your site and I’d like help planning which Mallorca courses I can play.'
-const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
 
-function WhatsAppCta({ label }) {
+function WhatsAppCta({ label, message }) {
   function handleClick() {
     trackEvent('whatsapp_click', { channel: 'whatsapp', page_path: currentPagePath(), tool: 'handicap-checker' })
     trackLead('message_intent', { contact_method: 'whatsapp', page_path: currentPagePath(), tool: 'handicap-checker' })
   }
   return (
-    <a className="tool-whatsapp-link tool-whatsapp-link--dark" data-analytics-manual="true" href={WA_HREF} target="_blank" rel="noopener noreferrer" onClick={handleClick}>
+    <a className="tool-whatsapp-link tool-whatsapp-link--dark" data-analytics-manual="true" href={`https://wa.me/34624466702?text=${encodeURIComponent(message)}`} target="_blank" rel="noopener noreferrer" onClick={handleClick}>
       <svg viewBox="0 0 24 24" fill="currentColor" style={{ width: 17, height: 17, flexShrink: 0 }} aria-hidden="true">
         <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
       </svg>
@@ -222,6 +222,8 @@ function evaluate(course, hcp, hasHcp, hasCert, groupSize, gender, t) {
 
 export default function HandicapCheckerClient({ lang = 'en' }) {
   const t = getHandicapCheckerT(lang)
+  const validation = getToolValidationT(lang)
+  const [inputError, setInputError] = useState(false)
   const [hcp, setHcp] = useState('')
   const [noHcp, setNoHcp] = useState(false)
   const [gender, setGender] = useState('M')
@@ -235,8 +237,9 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
   const resultsRef = useRef(null)
 
   function runCheck() {
-    if (!noHcp && hcp === '') return
-    const hcpVal = noHcp ? null : Math.min(54, Math.max(0, parseFloat(hcp)))
+    if (!noHcp && (hcp.trim() === '' || !Number.isFinite(Number(hcp)) || Number(hcp) < 0 || Number(hcp) > 54)) { setInputError(true); setResult(null); return }
+    setInputError(false)
+    const hcpVal = noHcp ? null : Number(hcp)
     const hasCert = cert === 'yes' || cert === 'digital'
     const groupSize = parseInt(group, 10)
     const results = COURSES.map((c) => ({ course: c, r: evaluate(c, hcpVal, !noHcp, hasCert, groupSize, gender, t) }))
@@ -247,7 +250,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
     const recPool = (areaBookable.length ? areaBookable : bookable).slice(0, 3).map((x) => x.course.name)
 
     const pairNames = results.filter((x) => x.r.pairs).map((x) => x.course.name)
-    setResult({ hcp: noHcp ? 'none' : hcpVal, tier, results, recPool, area, group, pairNames })
+    setResult({ hcp: noHcp ? 'none' : hcpVal, tier, results, recPool, area, group, pairNames, gender, cert, areaFallback: area !== 'any' && !areaBookable.length })
     setEmailState('idle')
     setEmailMsg('')
     setTimeout(() => resultsRef.current?.scrollIntoView({ behavior: 'smooth', block: 'start' }), 40)
@@ -275,7 +278,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
         body: JSON.stringify({
           email,
           handicap: result.hcp,
-          gender: gender === 'M' ? t.inputs.male : t.inputs.female,
+          gender: result.gender === 'M' ? t.inputs.male : t.inputs.female,
           area: t.areas[result.area],
           tier: result.tier.label,
           recommendations: result.recPool,
@@ -297,6 +300,8 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
     }
   }
 
+  const planningMessage = result ? [t.hero.title, `${t.inputs.handicap}: ${result.hcp === 'none' ? t.inputs.noHandicap : result.hcp}`, `${t.inputs.groupSize}: ${result.group === '5' ? '5+' : result.group}`, `${t.inputs.gender}: ${result.gender === 'F' ? t.inputs.female : t.inputs.male}`, ...(result.hcp === 'none' ? [] : [`${t.inputs.cert}: ${result.cert === 'yes' ? t.inputs.yes : result.cert === 'digital' ? t.inputs.digital : t.inputs.no}`]), `${t.inputs.area}: ${t.areas[result.area]}`, result.recPool.join(', ')].join('\n') : ''
+  const enquiryHref = courses => buildToolEnquiryHref(lang, { serviceType: 'tee-time-booking', courses: courses || result?.recPool.join(', '), message: planningMessage })
   const okCount = result ? result.results.filter((x) => x.r.status === 'ok').length : 0
   const warnCount = result ? result.results.filter((x) => x.r.status === 'warn').length : 0
   const hasBorderline = result ? result.results.some((x) => x.r.borderline) : false
@@ -400,7 +405,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
             <div className="hc-field">
               <label className="top" htmlFor="hcp">{t.inputs.handicap}</label>
               <input type="number" id="hcp" min="0" max="54" step="0.1" placeholder={t.inputs.handicapPlaceholder}
-                value={hcp} disabled={noHcp} onChange={(e) => setHcp(e.target.value)} />
+                aria-invalid={inputError} aria-describedby={inputError ? 'hcp-error' : undefined} value={hcp} disabled={noHcp} onChange={(e) => setHcp(e.target.value)} />
               <label className="hc-nohcp">
                 <input type="checkbox" checked={noHcp} onChange={(e) => setNoHcp(e.target.checked)} />
                 {t.inputs.noHandicap}
@@ -410,23 +415,25 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
               <span className="top">{t.inputs.gender}</span>
               <div className="hc-seg">
                 {[['M', t.inputs.male], ['F', t.inputs.female]].map(([v, l]) => (
-                  <button key={v} type="button" className={gender === v ? 'active' : ''} onClick={() => setGender(v)}>{l}</button>
+                  <button key={v} type="button" aria-pressed={gender === v} className={gender === v ? 'active' : ''} onClick={() => setGender(v)}>{l}</button>
                 ))}
               </div>
             </div>
+            {!noHcp && (
             <div className="hc-field">
               <span className="top">{t.inputs.cert}</span>
               <div className="hc-seg">
                 {[['yes', t.inputs.yes], ['digital', t.inputs.digital], ['no', t.inputs.no]].map(([v, l]) => (
-                  <button key={v} type="button" className={cert === v ? 'active' : ''} onClick={() => setCert(v)}>{l}</button>
+                  <button key={v} type="button" aria-pressed={cert === v} className={cert === v ? 'active' : ''} onClick={() => setCert(v)}>{l}</button>
                 ))}
               </div>
             </div>
+            )}
             <div className="hc-field">
               <span className="top">{t.inputs.groupSize}</span>
               <div className="hc-seg">
-                {[['1', '1'], ['2', '2'], ['3', '3'], ['4', '4'], ['5', '4+']].map(([v, l]) => (
-                  <button key={v} type="button" className={group === v ? 'active' : ''} onClick={() => setGroup(v)}>{l}</button>
+                {[['1', '1'], ['2', '2'], ['3', '3'], ['4', '4'], ['5', '5+']].map(([v, l]) => (
+                  <button key={v} type="button" aria-pressed={group === v} className={group === v ? 'active' : ''} onClick={() => setGroup(v)}>{l}</button>
                 ))}
               </div>
             </div>
@@ -439,6 +446,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
               </select>
             </div>
           </div>
+          {inputError && <p id="hcp-error" role="alert">{validation.handicapError}</p>}
           <button className="hc-check" onClick={runCheck}>{t.inputs.check}</button>
         </section>
 
@@ -457,8 +465,9 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
             {result.recPool.length > 0 && (
               <div className="hc-rec">
                 <div className="lbl">{t.results.recLabel}</div>
+                {result.areaFallback && <p>{validation.areaFallback}</p>}
                 <p>
-                  {result.area !== 'any'
+                  {result.area !== 'any' && !result.areaFallback
                     ? fill(t.results.recTextArea, {
                         tier: result.tier.label,
                         area: t.areasShort[result.area],
@@ -484,7 +493,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
                         <div className="name">{name}</div>
                         <span className={`hc-badge ${r.status}`}>{r.label}</span>
                         <div className="detail">{r.detail}</div>
-                        {r.borderline && <Link className="enquire" href={`${buildLocalePath('/contact', lang)}?service=tee-time-booking`}>{t.results.askIfPossible}</Link>}
+                        {r.borderline && <Link className="enquire" href={enquiryHref(course.name)}>{t.results.askIfPossible}</Link>}
                       </div>
                     ))}
                   </div>
@@ -509,8 +518,8 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
                 <h3>{t.cta.borderline}</h3>
                 <p>{t.cta.borderlineDesc}</p>
                 <div className="hc-cta-btns">
-                  <Link className="btn" href={`${buildLocalePath('/contact', lang)}?service=tee-time-booking`}>{t.cta.enquireAccess}</Link>
-                  <WhatsAppCta label={t.cta.whatsappShort} />
+                  <Link className="btn" href={enquiryHref()}>{t.cta.enquireAccess}</Link>
+                  <WhatsAppCta message={planningMessage} label={t.cta.whatsappShort} />
                 </div>
               </div>
             )}
@@ -530,8 +539,8 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
                 <h3>{t.cta.ready}</h3>
                 <p>{t.cta.readyDesc}</p>
                 <div className="hc-cta-btns">
-                  <Link className="btn" href={`${buildLocalePath('/contact', lang)}?service=tee-time-booking`}>{t.cta.enquire}</Link>
-                  <WhatsAppCta label={t.cta.whatsapp} />
+                  <Link className="btn" href={enquiryHref()}>{t.cta.enquire}</Link>
+                  <WhatsAppCta message={planningMessage} label={t.cta.whatsapp} />
                 </div>
               </div>
             )}

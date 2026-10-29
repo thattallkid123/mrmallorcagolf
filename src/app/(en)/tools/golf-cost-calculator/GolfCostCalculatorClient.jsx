@@ -1,15 +1,14 @@
 'use client'
 
 import { useEffect, useRef, useState } from 'react'
+import { getToolValidationT } from '@lib/tool-validation-content'
 import ToolTrustLine from '../../../../components/ToolTrustLine'
 import { trackEvent, trackLead, currentPagePath } from '../../../../lib/analytics'
 import { getGolfCostCalculatorT } from '../../../../lib/golf-cost-calculator-translations'
 import { buildLocalePath, getLegalPath } from '@lib/site'
 import { getPrivacyLinkLabel } from '@lib/legal-note-content'
-import { calculate, getSuggestedCourses, fmt, fmtR, mid, DEFAULT_STATE } from '../../../../lib/golf-cost-calculator-logic'
+import { calculate, getSuggestedCourses, mid, DEFAULT_STATE } from '../../../../lib/golf-cost-calculator-logic'
 
-const WA_MESSAGE = 'Hi Andy, I used the trip cost calculator on your site and I’d like a real quote for my Mallorca golf trip.'
-const WA_HREF = `https://wa.me/34624466702?text=${encodeURIComponent(WA_MESSAGE)}`
 
 function formatText(template, values = {}) {
   return Object.entries(values).reduce(
@@ -18,14 +17,14 @@ function formatText(template, values = {}) {
   )
 }
 
-function WhatsAppQuoteLink({ t }) {
+function WhatsAppQuoteLink({ t, message }) {
   function handleClick() {
     trackEvent('whatsapp_click', { channel: 'whatsapp', page_path: currentPagePath(), tool: 'golf-cost-calculator' })
     trackLead('message_intent', { contact_method: 'whatsapp', page_path: currentPagePath(), tool: 'golf-cost-calculator' })
   }
   return (
     <a
-      href={WA_HREF}
+      href={`https://wa.me/34624466702?text=${encodeURIComponent(message)}`}
       data-analytics-manual="true"
       target="_blank"
       rel="noopener noreferrer"
@@ -44,11 +43,17 @@ const COST_GUIDE_PDF_URL = '/downloads/cost-guide.pdf'
 
 export default function GolfCostCalculatorClient({ lang = 'en' }) {
   const t = getGolfCostCalculatorT(lang)
+  const validation = getToolValidationT(lang)
+  const currency = new Intl.NumberFormat(lang === 'en' ? 'en-GB' : lang, { style: 'currency', currency: 'EUR', maximumFractionDigits: 0 })
+  const fmt = value => currency.format(Math.round(value))
+  const fmtR = pair => [...new Set(pair.map(fmt))].join(' – ')
   const [step, setStep] = useState(1)
+  const [planningError, setPlanningError] = useState(false)
   const [state, setState] = useState({ ...DEFAULT_STATE })
   const [results, setResults] = useState(null)
   const [email, setEmail] = useState('')
-  const [emailSent, setEmailSent] = useState(false)
+  const [sentAnswers, setEmailSent] = useState(false)
+  const emailSent = sentAnswers === JSON.stringify(state)
   const [emailError, setEmailError] = useState(false)
   const [emailSending, setEmailSending] = useState(false)
   const [pdfSent, setPdfSent] = useState(false)
@@ -86,10 +91,12 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
   }
 
   function set(key, val) {
+    setPlanningError(false)
     setState(prev => ({ ...prev, [key]: val }))
   }
 
   function goTo(n) {
+    if (n > 1 && state.rounds > state.days * 2) { setPlanningError(true); setStep(1); scrollToTop(); return }
     if (n === 4) {
       setResults(calculate(state))
     }
@@ -169,7 +176,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
       })
       setEmailSending(false)
       if (res.ok) {
-        setEmailSent(true)
+        setEmailSent(JSON.stringify(state))
       } else {
         setEmailError(true)
       }
@@ -238,34 +245,39 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
   const fieldStyle = { marginBottom: 18 }
   const labelStyle = { display:'block', fontFamily:'var(--font-sans)', fontSize:11, letterSpacing:'.08em', textTransform:'uppercase', color:'#2D4A3E', marginBottom:12, fontWeight:500 }
   const circleBtn = { width:44, height:44, borderRadius:'50%', border:'1.5px solid #B8973C', background:'#fff', color:'#2D4A3E', fontSize:22, cursor:'pointer', lineHeight:1, fontFamily:'inherit', flexShrink:0, display:'flex', alignItems:'center', justifyContent:'center' }
+  const unitText = key => validation.units[key][state[key] === 1 ? 0 : 1]
   const budgetLabel = t.step2Fields.budgetOpts.find((opt) => opt.val === state.budget)?.label || state.budget
+
+  const optionLabel = (options, value) => options.find(option => option.val === value)?.label || value
+  const planningMessage = [t.hero.title, ...['days', 'golfers', 'rounds'].map(key => `${t.step1Fields[key]}: ${state[key]}`), `${t.step2Fields.budget}: ${budgetLabel}`, ...[['area', t.step2Fields], ['preference', t.step2Fields], ...['buggy', 'clubs', 'transport', 'accommodation', 'dining'].map(key => [key, t.step3Fields])].map(([key, fields]) => `${fields[key]}: ${optionLabel(fields[key === 'preference' ? 'prefOpts' : key === 'accommodation' ? 'accomOpts' : `${key}Opts`] || [], state[key])}`), ...(results ? [`${t.results.total}: ${fmtR(results.total)}`, getSuggestedCourses(state).slice(0, state.rounds).join(', ')] : [])].join('\n')
 
   function Stepper({ label, stateKey, min, max, unit }) {
     return (
       <div style={fieldStyle}>
         <label style={labelStyle}>{label}</label>
         <div style={{ display:'flex', alignItems:'center', gap:12 }}>
-          <button type="button" style={circleBtn} onClick={() => set(stateKey, Math.max(min, state[stateKey] - 1))}>−</button>
+          <button type="button" style={circleBtn} aria-label={`− ${label}`} disabled={state[stateKey] <= min} onClick={() => set(stateKey, Math.max(min, state[stateKey] - 1))}>−</button>
           <span style={{ fontFamily:'var(--font-sans)', fontSize:26, color:'#2D4A3E', minWidth:48, textAlign:'center', fontWeight:400 }}>{state[stateKey]}</span>
-          <button type="button" style={circleBtn} onClick={() => set(stateKey, Math.min(max, state[stateKey] + 1))}>+</button>
+          <button type="button" style={circleBtn} aria-label={`+ ${label}`} disabled={state[stateKey] >= max} onClick={() => set(stateKey, Math.min(max, state[stateKey] + 1))}>+</button>
           <span style={{ fontFamily:'var(--font-sans)', fontSize:12, color:'#8A7F74', fontWeight:300 }}>{unit}</span>
         </div>
       </div>
     )
   }
 
-  function OptGroup({ label, stateKey, opts, cols }) {
-    const colCount = cols || 2
+  function OptGroup({ label, stateKey, opts }) {
     return (
       <div style={fieldStyle}>
         <label style={labelStyle}>{label}</label>
-        <div style={{ display:'grid', gridTemplateColumns:`repeat(${colCount}, 1fr)`, gap:8 }}>
+        <div className="gcc-options" role="group" aria-label={label}>
           {opts.map(o => {
             const sel = state[stateKey] === o.val
             return (
               <button
                 key={o.val}
-                style={{ border:`1.5px solid ${sel ? '#B8973C' : '#d9cfb8'}`, background: sel ? '#2D4A3E' : '#F7F4EF', borderRadius:10, padding:'13px 10px', cursor:'pointer', fontSize:13, fontFamily:'inherit', color: sel ? '#F7F4EF' : '#2C2A27', transition:'all .15s', textAlign:'center', fontWeight:500, lineHeight:1.3 }}
+                type="button"
+                aria-pressed={sel}
+                style={{ border:`1.5px solid ${sel ? '#B8973C' : '#d9cfb8'}`, background: sel ? '#2D4A3E' : '#F7F4EF', borderRadius:2, padding:'13px 10px', cursor:'pointer', fontSize:13, fontFamily:'inherit', color: sel ? '#F7F4EF' : '#2C2A27', transition:'all .15s', textAlign:'center', fontWeight:500, lineHeight:1.3 }}
                 onClick={() => set(stateKey, o.val)}
               >
                 {o.label}
@@ -283,6 +295,10 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
   return (
     <div ref={containerRef} className="planning-tool" data-tool-active={step > 1}>
       <style jsx>{`
+        .gcc-card :global(.gcc-options) { display:grid; grid-auto-flow:column; grid-auto-columns:minmax(0,1fr); gap:var(--space-2); }
+        .gcc-card :global(.gcc-options > button) { min-width:0; min-height:44px; overflow-wrap:anywhere; }
+        @media (max-width:600px) { .gcc-card :global(.gcc-options) { grid-auto-flow:row; grid-template-columns:1fr; } }
+
         .gcc-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
         .gcc-eyebrow { display:inline-block; font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; }
         .gcc-h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
@@ -369,10 +385,10 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-sheet-success__body { font-family:var(--font-sans); font-size:15px; color:#2c2a27; max-width:320px; margin:0 auto 18px; line-height:1.65; }
         @media (max-width:600px) {
           .gcc-nav {
-            flex-direction:column;
+            flex-direction:row;
             align-items:stretch;
           }
-          .gcc-nav .gcc-btn,
+          .gcc-nav .gcc-btn { width:auto; min-height:46px; }
           .gcc-quote-cta .gcc-btn,
           .gcc-tools-panel__link {
             width:100%;
@@ -403,9 +419,10 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
             <div className="gcc-step-label">{t.step1.label}</div>
             <h2>{t.step1.heading}</h2>
             <p className="sub">{t.step1.sub}</p>
-            <Stepper label={t.step1Fields.days} stateKey="days" min={1} max={7} unit="days" />
-            <Stepper label={t.step1Fields.golfers} stateKey="golfers" min={1} max={8} unit="golfers" />
-            <Stepper label={t.step1Fields.rounds} stateKey="rounds" min={1} max={6} unit="rounds" />
+            <Stepper label={t.step1Fields.days} stateKey="days" min={1} max={7} unit={unitText('days')} />
+            <Stepper label={t.step1Fields.golfers} stateKey="golfers" min={1} max={8} unit={unitText('golfers')} />
+            <Stepper label={t.step1Fields.rounds} stateKey="rounds" min={1} max={6} unit={unitText('rounds')} />
+            {planningError && <p role="alert">{validation.roundsError}</p>}
             <div className="gcc-nav">
               <button className="gcc-btn primary" onClick={() => goTo(2)}>{t.buttons.continue}</button>
             </div>
@@ -529,15 +546,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
               <div className="gcc-hero-est">
                 <div className="lab">{t.results.total}</div>
                 <div className="big">{fmtR(r.total)}</div>
-                <div className="per">{formatText(t.resultCards.summary, {
-                  golfers: s.golfers,
-                  golfersPlural: s.golfers > 1 ? 's' : '',
-                  days: s.days,
-                  daysPlural: s.days > 1 ? 's' : '',
-                  rounds: s.rounds,
-                  roundsPlural: s.rounds > 1 ? 's' : '',
-                  budget: s.budget,
-                })}</div>
+                <div className="per">{['golfers', 'days', 'rounds'].map(key => `${s[key]} ${unitText(key)}`).concat(budgetLabel).join(' · ')}</div>
                 <div className="gcc-approx">{t.results.approx}</div>
               </div>
 
@@ -604,7 +613,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       setQuoteBuilderOpen(true)
                     }}
                   >{t.quote.button}</button>
-                  <div style={{ marginTop:6, marginBottom:2 }}><WhatsAppQuoteLink t={t} /></div>
+                  <div style={{ marginTop:6, marginBottom:2 }}><WhatsAppQuoteLink t={t} message={planningMessage} /></div>
                   <div className="gcc-quote-cta__note">{t.quote.note}</div>
                 </div>
               </div>

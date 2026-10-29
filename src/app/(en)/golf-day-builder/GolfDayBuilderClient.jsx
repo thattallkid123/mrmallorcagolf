@@ -111,7 +111,8 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
   const [itins, setItins] = useState(null)
   const [activeItin, setActiveItin] = useState(0)
   const [email, setEmail] = useState('')
-  const [emailSent, setEmailSent] = useState(false)
+  const [sentAnswers, setEmailSent] = useState(false)
+  const emailSent = sentAnswers === JSON.stringify(answers)
   const [emailSending, setEmailSending] = useState(false)
   const [pdfSent, setPdfSent] = useState(false)
   const [subscribeNewsletter, setSubscribeNewsletter] = useState(false)
@@ -239,7 +240,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         body: JSON.stringify({ email, tool: 'golf-day-builder', subject: 'Your Mallorca golf day plan', data: { itineraries, answerSummary: localizeQuestions(QUESTIONS, localData).map(question => { const values = Array.isArray(answers[question.key]) ? answers[question.key] : [answers[question.key]]; return question.opts.filter(option => values.includes(option.v)).map(option => option.t).join(", ") }).filter(Boolean).join(" · ") }, subscribeNewsletter }),
       })
       setEmailSending(false)
-      if (res.ok) { setEmailSent(true) }
+      if (res.ok) { setEmailSent(JSON.stringify(answers)) }
       else { displayToast(t.cta.error) }
     } catch {
       setEmailSending(false)

@@ -73,7 +73,7 @@ const data = {
     "Golf de Andratx 5 min"
    ],
    "why": "Vijfsterrenresort op vijf minuten van Golf de Andratx. Het strand is te voet bereikbaar. Goede prijs-kwaliteit als de helft van de groep golft en de andere helft niet.",
-   "andy": "Eén ding om rekening mee te houden: Golf de Andratx is de zwaarste baan van het eiland, met een handicaplimiet van 28. Combineer het voor zwakkere spelers met de makkelijkere rondes in Santa Ponsa.",
+   "andy": "Golf de Andratx vereist een handicapcertificaat: maximaal 28 voor heren en 36 voor dames. Controleer de limieten voor elke speler voordat u de baan kiest.",
    "golf": "Golf de Andratx 5 min. T Golf Calvià 20 min. Santa Ponsa-groep 25 min.",
    "travelTime": "30 min van de luchthaven van Palma",
    "subname": "Camp de Mar"
@@ -263,9 +263,9 @@ const data = {
    "pills": [
     "Boutique vijfsterren",
     "Serieuze spa",
-    "360 met wijn"
+    "Restaurant 3\\65"
    ],
-   "why": "Achttiende-eeuws klooster, verbouwd tot een serieus boutique-vijfsterrenhotel. De spa is een van de beste van het eiland en restaurant 360 gebruikt producten van het landgoed zelf.",
+   "why": "Achttiende-eeuws klooster omgebouwd tot een vijfsterren boutiquehotel, met een spa en restaurant 3\\65, dat producten van het landgoed gebruikt.",
    "andy": "Een sterk argument om in het noorden te verblijven, ook als u serieus wilt golfen. Alcanada op 15 minuten. Rustig, van hoge kwaliteit en echt Mallorcaans.",
    "golf": "Club de Golf Alcanada 15 min. Golf Pollença 5 min.",
    "travelTime": "50 min van de luchthaven van Palma",

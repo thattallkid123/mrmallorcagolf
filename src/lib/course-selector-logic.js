@@ -150,13 +150,14 @@ export function scoreCourse(c, answers) {
   return s
 }
 
+export function isCourseEligible(course, ability) {
+  if (!course || course.membersOnly || (course.accessTypeCode && course.accessTypeCode !== 'public')) return false
+  return !(ability === 'beginner' && course.handicapRequired)
+}
+
 export function rankCourses(courses, answers, limit = 3) {
   return courses
-    .filter(course => {
-      if (course.membersOnly || (course.accessTypeCode && course.accessTypeCode !== 'public')) return false
-      if (answers.ability === 'beginner' && course.handicapRequired) return false
-      return true
-    })
+    .filter(course => isCourseEligible(course, answers.ability))
     .map(course => ({ course, score: scoreCourse(course, answers) }))
     .sort((a, b) => b.score - a.score)
     .slice(0, limit)

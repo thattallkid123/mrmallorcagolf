@@ -87,6 +87,8 @@ async function loadSources() {
   for (const [label, mod, fn] of [
     ['PWAP_EXPLAINED', 'src/lib/play-with-a-pro-explained-content.js', 'getPlayWithAProExplainedContent'],
     ['TOOLS_INDEX', 'src/lib/tools-index-content.js', 'getToolsIndexContent'],
+    ['TOOL_VALIDATION', 'src/lib/tool-validation-content.js', 'getToolValidationT'],
+    ['TRIP_COST', 'src/lib/golf-cost-calculator-translations.js', 'getGolfCostCalculatorT'],
     ['SIGNATURE_DAY', 'src/lib/signature-day-content.js', 'getSignatureDayContent'],
     ['SIGNATURE_DAY', 'src/lib/signature-day-content.js', 'getSignatureDayContent'],
   ]) {

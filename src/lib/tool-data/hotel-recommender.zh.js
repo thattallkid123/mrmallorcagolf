@@ -73,7 +73,7 @@ const data = {
     "距Golf de Andratx 5分钟"
    ],
    "why": "距 Golf de Andratx 五分钟的五星度假村。可步行到海滩。如果团队里一半人打球，一半人不打，性价比很高。",
-   "andy": "有一点要提前规划：Golf de Andratx 是岛上最难的球场，差点上限为 28。较弱的球手可搭配 Santa Ponsa 较容易的球局。",
+   "andy": "Golf de Andratx 要求出示差点证明：男性最高 28，女性最高 36。选择该球场前，请确认每位球员的限制。",
    "golf": "Golf de Andratx 5 分钟。T Golf Calvià 20 分钟。Santa Ponsa 球场群 25 分钟。",
    "travelTime": "距帕尔马机场 30 分钟",
    "subname": "Camp de Mar"
@@ -263,9 +263,9 @@ const data = {
    "pills": [
     "精品五星",
     "高水准水疗",
-    "360餐厅与美酒"
+    "3\\65 餐厅"
    ],
-   "why": "18 世纪修道院改建而成的精品五星酒店。水疗是岛上最好的之一，360 餐厅使用庄园自产食材。",
+   "why": "十八世纪的修道院改建为五星级精品酒店，设有水疗中心和 3\\65 餐厅，餐厅使用庄园自产的食材。",
    "andy": "即使想认真打球，也有很强的理由住在北部。到 Alcanada 15 分钟。安静、高品质，真正的马略卡风格。",
    "golf": "Club de Golf Alcanada 15 分钟。Golf Pollença 5 分钟。",
    "travelTime": "距帕尔马机场 50 分钟",

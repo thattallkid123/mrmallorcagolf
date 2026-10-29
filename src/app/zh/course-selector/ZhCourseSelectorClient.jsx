@@ -1,6 +1,9 @@
 'use client'
 
 import { useState } from 'react'
+import { getCourseAccessByName } from '@lib/course-access-data'
+import { isCourseEligible } from '@lib/course-selector-logic'
+import { buildToolEnquiryHref } from '@lib/tool-enquiry'
 import Link from 'next/link'
 import Image from 'next/image'
 import { ZH_COURSE_EDITORIAL, getZhGuideHref } from '@lib/zh-course-editorial'
@@ -169,6 +172,10 @@ const TAG_ZH = {
 
 function recommend(answers) {
   return COURSES
+    .filter(c => {
+      const access = getCourseAccessByName(c.en)
+      return access && isCourseEligible({ accessTypeCode: access.accessType, handicapRequired: access.handicapRequired }, answers.level === 1 ? 'beginner' : 'confident')
+    })
     .map(c => {
       let total = 0
       QUESTIONS.forEach(q => {
@@ -255,6 +262,9 @@ export default function ZhCourseSelectorClient({ heroHeadingLevel = 1 }) {
       setEmailError(true)
     }
   }
+
+  const enquiryMessage = QUESTIONS.map(question => `${question.title} ${question.options.find(option => option.value === answers[question.id])?.label || ''}`).join('\n')
+  const enquiryHref = (courses) => buildToolEnquiryHref('zh', { courses, message: enquiryMessage })
 
   const wantsPro = answers.pro === 'yes' || answers.pro === 'maybe'
 
@@ -486,7 +496,7 @@ export default function ZhCourseSelectorClient({ heroHeadingLevel = 1 }) {
                         {c.article ? (
                           <a className="cc-btn cc-btn-outline" href={c.article}>中文球场攻略 →</a>
                         ) : null}
-                        <a className="cc-btn cc-btn-gold" href="/zh/contact">预约咨询</a>
+                        <a className="cc-btn cc-btn-gold" href={enquiryHref(c.en)}>预约咨询</a>
                       </div>
                     </div>
                   </article>
@@ -532,7 +542,7 @@ export default function ZhCourseSelectorClient({ heroHeadingLevel = 1 }) {
                     </p>
                   </>
                 )}
-                <a className="btn-action btn-gold-solid" href="/zh/contact">联系 Andy 教练规划行程</a>
+                <a className="btn-action btn-gold-solid" href={enquiryHref(results.map(item => item.course.en).join(', '))}>联系 Andy 教练规划行程</a>
                 <a className="btn-action btn-outline-light" href="/zh/play-with-a-pro">预约陪打 / 下场指导体验</a>
                 <Link className="btn-action btn-outline-light" href="/zh/guides">查看中文球场攻略</Link>
               </div>

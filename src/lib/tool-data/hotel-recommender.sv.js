@@ -73,7 +73,7 @@ const data = {
     "Golf de Andratx 5 min"
    ],
    "why": "Femstjärnigt resort fem minuter från Golf de Andratx. Stranden går att promenera till. Prisvärt om hälften av gruppen spelar golf och hälften inte.",
-   "andy": "En sak att planera runt: Golf de Andratx är öns svåraste bana, med en handicapgräns på 28. Kombinera med de enklare rundorna i Santa Ponsa för svagare spelare.",
+   "andy": "Golf de Andratx kräver handicapintyg: högst 28 för herrar och 36 för damer. Kontrollera gränserna för varje spelare innan du väljer banan.",
    "golf": "Golf de Andratx 5 min. T Golf Calvià 20 min. Santa Ponsa-området 25 min.",
    "travelTime": "30 min från Palmas flygplats",
    "subname": "Camp de Mar"
@@ -263,9 +263,9 @@ const data = {
    "pills": [
     "Boutique med fem stjärnor",
     "Seriös spa",
-    "360 med vin"
+    "Restaurang 3\\65"
    ],
-   "why": "Kloster från 1700-talet ombyggt till ett seriöst femstjärnigt boutiquehotell. Spaet är ett av öns bästa och restaurang 360 använder egna produkter från egendomen.",
+   "why": "Kloster från 1700-talet som byggts om till ett femstjärnigt boutiquehotell, med spa och restaurangen 3\\65, som använder råvaror från godset.",
    "andy": "Ett starkt argument för att bo i norr även om du vill ha seriös golf. Alcanada 15 minuter. Lugnt, högklassigt och genuint mallorkinskt.",
    "golf": "Club de Golf Alcanada 15 min. Golf Pollença 5 min.",
    "travelTime": "50 min från Palmas flygplats",

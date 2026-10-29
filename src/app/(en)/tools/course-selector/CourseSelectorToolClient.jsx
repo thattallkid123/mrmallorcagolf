@@ -531,7 +531,8 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
   const [topCourses, setTopCourses] = useState([])
   const [compareSelection, setCompareSelection] = useState([])
   const [email, setEmail] = useState('')
-  const [emailSent, setEmailSent] = useState(false)
+  const [sentAnswers, setEmailSent] = useState(false)
+  const emailSent = sentAnswers === JSON.stringify(answers)
   const [emailError, setEmailError] = useState(false)
   const [emailSending, setEmailSending] = useState(false)
   const [pdfSent, setPdfSent] = useState(false)
@@ -668,7 +669,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
       })
       setEmailSending(false)
       if (res.ok) {
-        setEmailSent(true)
+        setEmailSent(JSON.stringify(answers))
       } else {
         setEmailError(true)
       }
