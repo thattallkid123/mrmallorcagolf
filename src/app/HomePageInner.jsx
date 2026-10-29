@@ -9,6 +9,12 @@ import { PWAP_PHOTOS } from '../lib/pwap-photos'
 import { localizeAlt } from '../lib/alt-text'
 import InlineRichText from './(en)/guides/InlineRichText'
 
+const SERVICE_IMAGES = [
+  { src: '/images/andy-coaching-swing.webp', alt: 'Andy coaching a golfer on the course' },
+  { src: '/images/son-gual-card.webp', alt: 'Son Gual golf course Mallorca' },
+  { src: '/images/hotels/hospes-maricel.webp', alt: 'Hotel beside the coast in Mallorca' },
+]
+
 const FEATURE_ICONS = {
   arranged: (
     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" style={{ width: 18, height: 18 }}>
@@ -73,8 +79,6 @@ export default function HomePageInner({ locale = 'en' }) {
   const home = getHomeContent(locale)
   const faqSchema = buildHomeFaqSchema(home, locale)
   const contactHref = locale === 'en' ? '/contact' : `/${locale}/contact`
-  const golfCoursesHref = locale === 'en' ? '/golf-courses' : `/${locale}/golf-courses`
-  const bestCoursesGuideHref = locale === 'en' ? '/guides/best-golf-courses-mallorca' : `/${locale}/guides/best-golf-courses-mallorca`
   const playWithAProHref = locale === 'en' ? '/play-with-a-pro' : `/${locale}/play-with-a-pro`
   const planYourTripHref = locale === 'en' ? '/plan-your-trip' : `/${locale}/plan-your-trip`
   const itineraryHref = home.hero.primaryHref ? localizePath(home.hero.primaryHref, locale) : playWithAProHref
@@ -146,70 +150,58 @@ export default function HomePageInner({ locale = 'en' }) {
         />
       ) : null}
 
-      <section className="intro reveal">
-        <div className="intro__left">
-          <p className="eyebrow">
-            {home.intro.eyebrow}
-          </p>
-          <h2 className="serif-display">
-            {home.intro.title}
-          </h2>
-          {home.intro.paragraphs.map((p, i) => (
-            <p key={i}>{p}</p>
-          ))}
-          {home.intro.coursesBlurb ? (
-            <p className="intro__course-links">
+      <section className="home-services reveal" aria-labelledby="home-services-title">
+        <div className="home-services__inner">
+          <header className="home-services__header">
+            <p className="eyebrow">{home.intro.eyebrow}</p>
+            <h2 id="home-services-title" className="serif-display home-services__title">{home.intro.title}</h2>
+            {home.intro.paragraphs.map((paragraph) => (
+              <p className="home-services__intro" key={paragraph}>{paragraph}</p>
+            ))}
+          </header>
+          <div className="home-services__cards">
+            {home.intro.services.map((service, index) => (
+              <a
+                key={service.href}
+                href={localizePath(service.href, locale)}
+                className="home-services__card"
+                aria-labelledby={`home-service-title-${index}`}
+                aria-describedby={`home-service-description-${index}`}
+              >
+                <div className="home-services__photo">
+                  <Image
+                    src={SERVICE_IMAGES[index].src}
+                    alt={localizeAlt(SERVICE_IMAGES[index].alt, locale)}
+                    fill
+                    quality={90}
+                    sizes="(max-width: 650px) 360px, (max-width: 1024px) 30vw, 400px"
+                  />
+                </div>
+                <div className="home-services__copy">
+                  <h3>
+                    <span id={`home-service-title-${index}`}>{service.title}</span>
+                    <span className="home-services__arrow" aria-hidden="true">→</span>
+                  </h3>
+                  <p id={`home-service-description-${index}`}>{service.text}</p>
+                </div>
+              </a>
+            ))}
+          </div>
+          <div className="home-services__bottom">
+            <p className="home-services__course-links">
               <InlineRichText text={home.intro.coursesBlurb} locale={locale} />
-              {home.intro.coursesBlurbLink ? <>{' '}<a href={golfCoursesHref} style={{ color: 'var(--gold, #b8975a)', textDecoration: 'none' }}>{home.intro.coursesBlurbLink}</a>.</> : null}
             </p>
-          ) : null}
-          {home.intro.guideBlurb ? (
-            <p>
-              {home.intro.guideBlurb}{' '}
-              <a href={bestCoursesGuideHref} style={{ color: 'var(--gold, #b8975a)', textDecoration: 'none' }}>{home.intro.guideBlurbLink}</a>.
-            </p>
-          ) : null}
-          {home.intro.services ? (
-            <div className={`intro__services${home.intro.services.length === 3 ? ' intro__services--three' : ''}`}>
-              {home.intro.services.map((service) => (
-                <a key={service.title} href={localizePath(service.href, locale)} className="intro-service">
-                  <strong>{service.title}</strong>
-                  <span>{service.text}</span>
-                  <em>{service.cta}</em>
-                </a>
+            <div className="home-services__credentials">
+              {[
+                { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 540, height: 588 },
+                { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438 },
+                { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918 },
+                { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091 },
+              ].map((logo) => (
+                <Image key={logo.name} src={logo.src} alt={logo.name} width={logo.width} height={logo.height} quality={90} sizes="80px" />
               ))}
             </div>
-          ) : null}
-        </div>
-        <div className="intro__media" aria-label="Andy Griffiths">
-          <Image
-                    src="/images/andy-on-course-smile.webp"
-            alt="Andy Griffiths, PGA Advanced Professional, Mallorca"
-            fill
-            quality={90}
-            sizes="(max-width: 900px) 100vw, 420px"
-            style={{ objectFit: 'cover', objectPosition: '50% 20%' }}
-          />
-        </div>
-        <div className="intro__creds">
-          {[
-            { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 540, height: 588, className: 'intro__cred-logo--pga' },
-            { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438, className: 'intro__cred-logo--tpi' },
-            { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918, className: 'intro__cred-logo--trackman' },
-            { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091, className: 'intro__cred-logo--uskids' },
-          ].map((logo) => (
-            <div className="intro__cred-item" key={logo.name}>
-              <Image
-                src={logo.src}
-                alt={logo.name}
-                width={logo.width}
-                height={logo.height}
-                className={`cred-logo-bar__img ${logo.className || ''}`}
-                quality={90}
-                sizes="(max-width: 700px) 45vw, 140px"
-              />
-            </div>
-          ))}
+          </div>
         </div>
       </section>
 

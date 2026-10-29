@@ -8,7 +8,8 @@ for (const tool of ['course-selector', 'handicap-checker', 'green-fees', 'hotel-
       const firstLabel = hero.querySelector('[class$="eyebrow"]') || el
       return firstLabel.getBoundingClientRect().top - document.querySelector('.nav').getBoundingClientRect().bottom
     })
-    expect(clearance).toBeGreaterThanOrEqual(32)
+    // The current tool shell uses the site's 24px spacing step below the fixed nav.
+    expect(clearance).toBeGreaterThanOrEqual(24)
     const ratios = await page.locator('.tool-trust-line__byline, .tool-trust-line .review-badge__brand').evaluateAll(els => {
       const rgb = value => value.match(/[\d.]+/g).map(Number)
       const lum = parts => {

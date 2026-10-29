@@ -25,9 +25,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "eyebrow": "Lo que hago",
       "title": "Juegue una vuelta conmigo, o deje que reserve su golf y planifique el viaje a su alrededor.",
       "paragraphs": [
-        "Play With A Pro es mi día en el campo con usted: un campo, 18 hoyos, gestión del campo, coaching integrado en la vuelta y el conocimiento local que convierte un buen día en un gran día.",
-        "Si prefiere jugar por su cuenta, reservo el golf: los campos adecuados, en el orden adecuado, con horas de salida y buggies confirmados antes de su llegada.",
-        "Yo planifico y reservo el golf. Un socio de viajes local de confianza ayuda con hoteles, traslados, restaurantes y actividades. Antes de reservar, acordamos el alcance, los costes y quién se ocupa de cada parte."
+        "Indíqueme las fechas, el tamaño del grupo y el rango de hándicaps."
       ],
       "stats": [
         {
@@ -44,24 +42,21 @@ export const HOME_LOCALIZED_CONTENT = {
       "services": [
         {
           "title": "Play With A Pro",
-          "text": "Un día de 18 hoyos conmigo en el campo que elija, con coaching integrado en la vuelta.",
-          "cta": "Ver Play With A Pro"
+          "text": "Un día de 18 hoyos conmigo, con enseñanza y estrategia de juego integradas en la vuelta."
         },
         {
           "title": "Reserve su golf",
-          "text": "Campos, horas de salida, buggies y palos de alquiler, con las vueltas en un orden lógico.",
-          "cta": "Reservar el golf"
+          "text": "Organizo los campos, las horas de salida, los buggies y los palos de alquiler según sus fechas."
         },
         {
           "title": "Planifique todo el viaje",
-          "text": "Golf más hotel, traslados, restaurantes y días libres, con un socio de viajes local de confianza.",
-          "cta": "Planificar el viaje completo"
+          "text": "Planifico el golf. Un socio de viajes local de confianza reserva y factura los hoteles, los traslados y los demás servicios ajenos al golf."
         }
       ],
-      "coursesBlurb": "Juego y reviso todos los campos de la isla: Son Gual, Alcanada, T Golf Calvià, Son Muntaner y el resto. Si quiere comparar campos antes de reservar,",
-      "coursesBlurbLink": "vea la lista completa",
-      "guideBlurb": "Para ver el ranking completo de los 24 campos de Mallorca, con green fees y a quién le conviene cada uno,",
-      "guideBlurbLink": "lea la guía de campos"
+      "coursesBlurb": "Compare <a href=\"/golf-courses\">los 24 campos</a> o consulte la <a href=\"/guides/best-golf-courses-mallorca\">guía de campos clasificados</a> para conocer los green fees y a qué jugadores se adapta cada campo.",
+      "coursesBlurbLink": "",
+      "guideBlurb": "",
+      "guideBlurbLink": ""
     },
     "journey": {
       "eyebrow": "Elija su punto de partida",
@@ -359,9 +354,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "eyebrow": "Was ich mache",
       "title": "Spielen Sie eine Runde mit mir, oder ich buche Ihr Golf und plane die Reise darum herum.",
       "paragraphs": [
-        "Play With A Pro ist mein Tag auf dem Platz mit Ihnen: ein Platz, 18 Löcher, Platzmanagement, Coaching mitten in der Runde und das lokale Wissen, das aus einem guten Tag einen großartigen macht.",
-        "Wenn Sie lieber unter sich spielen, buche ich das Golf: die passenden Plätze in der richtigen Reihenfolge, mit Startzeiten und Buggys, die vor Ihrer Ankunft bestätigt sind.",
-        "Ich plane und buche das Golf. Ein verlässlicher Reisepartner vor Ort hilft bei Hotels, Transfers, Restaurants und Aktivitäten. Vor der Buchung klären wir Umfang, Kosten und Zuständigkeiten."
+        "Teilen Sie mir Ihre Reisedaten, Gruppengröße und Handicap-Spanne mit."
       ],
       "stats": [
         {
@@ -379,24 +372,21 @@ export const HOME_LOCALIZED_CONTENT = {
       "services": [
         {
           "title": "Play With A Pro",
-          "text": "Ein 18-Loch-Tag mit mir auf dem Platz Ihrer Wahl, mit Coaching direkt in der Runde.",
-          "cta": "Play With A Pro ansehen"
+          "text": "Ein Tag mit mir über 18 Löcher, mit Coaching und Spielstrategie während der Runde."
         },
         {
           "title": "Golf buchen",
-          "text": "Plätze, Startzeiten, Buggys und Leihschläger, mit den Runden in einer sinnvollen Reihenfolge.",
-          "cta": "Golf buchen"
+          "text": "Ich organisiere die Plätze, Startzeiten, Buggys und Leihschläger passend zu Ihren Reisedaten."
         },
         {
           "title": "Die ganze Reise planen",
-          "text": "Golf plus Hotel, Transfers, Restaurants und freie Tage, mit einem bewährten lokalen Reisepartner.",
-          "cta": "Ganze Reise planen"
+          "text": "Ich plane das Golfprogramm. Ein bewährter lokaler Reisepartner bucht Hotels, Transfers und weitere Leistungen außerhalb des Golfs und stellt diese in Rechnung."
         }
       ],
-      "coursesBlurb": "Ich spiele und bewerte jeden Platz auf der Insel: Son Gual, Alcanada, T Golf Calvià, Son Muntaner und den Rest. Wenn Sie Plätze vor der Buchung vergleichen möchten,",
-      "coursesBlurbLink": "die vollständige Liste ansehen",
-      "guideBlurb": "Für die vollständige Rangliste aller 24 Mallorca-Plätze mit Greenfees und wem sie jeweils liegen,",
-      "guideBlurbLink": "den Platzführer lesen"
+      "coursesBlurb": "Vergleichen Sie <a href=\"/golf-courses\">alle 24 Plätze</a>, oder lesen Sie die <a href=\"/guides/best-golf-courses-mallorca\">Rangliste</a> mit Greenfees und Hinweisen dazu, für wen jeder Platz geeignet ist.",
+      "coursesBlurbLink": "",
+      "guideBlurb": "",
+      "guideBlurbLink": ""
     },
     "journey": {
       "eyebrow": "Wählen Sie Ihren Weg",
@@ -694,9 +684,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "eyebrow": "Ce que je fais",
       "title": "Faites un parcours avec moi, ou laissez-moi réserver votre golf et organiser le voyage autour.",
       "paragraphs": [
-        "Play With A Pro est ma journée sur le parcours avec vous : un parcours, 18 trous, gestion du parcours, coaching intégré à la partie et la connaissance locale qui transforme une bonne journée en excellente journée.",
-        "Si vous préférez jouer entre vous, je réserve le golf : les bons parcours, dans le bon ordre, avec départs et voiturettes confirmés avant votre arrivée.",
-        "Je planifie et réserve le golf. Un partenaire de voyage local de confiance aide pour les hôtels, transferts, restaurants et activités. Avant toute réservation, nous convenons des prestations, des coûts et du responsable de chaque partie."
+        "Indiquez-moi vos dates, la taille du groupe et la fourchette des handicaps."
       ],
       "stats": [
         {
@@ -714,24 +702,21 @@ export const HOME_LOCALIZED_CONTENT = {
       "services": [
         {
           "title": "Play With A Pro",
-          "text": "Une journée de 18 trous avec moi sur le parcours de votre choix, avec du coaching intégré à la partie.",
-          "cta": "Voir Play With A Pro"
+          "text": "Une journée de 18 trous avec moi, avec du coaching et de la stratégie de jeu tout au long de la partie."
         },
         {
           "title": "Réservez votre golf",
-          "text": "Parcours, départs, voiturettes et clubs de location, avec les parties dans un ordre logique.",
-          "cta": "Réserver le golf"
+          "text": "J'organise les parcours, les départs, les voiturettes et les clubs de location en fonction de vos dates."
         },
         {
           "title": "Organisez tout le voyage",
-          "text": "Le golf, plus l’hôtel, les transferts, les restaurants et les jours libres, avec un partenaire de voyage local de confiance.",
-          "cta": "Organiser tout le voyage"
+          "text": "Je planifie le golf. Un partenaire de voyage local de confiance réserve et facture les hôtels, les transferts et les autres prestations hors golf."
         }
       ],
-      "coursesBlurb": "Je joue et évalue chaque parcours de l'île : Son Gual, Alcanada, T Golf Calvià, Son Muntaner et les autres. Si vous voulez comparer les parcours avant de réserver,",
-      "coursesBlurbLink": "voir la liste complète",
-      "guideBlurb": "Pour le classement complet des 24 parcours de Majorque, avec les green fees et à qui chacun convient,",
-      "guideBlurbLink": "lire le guide des parcours"
+      "coursesBlurb": "Comparez <a href=\"/golf-courses\">les 24 parcours</a> ou consultez le <a href=\"/guides/best-golf-courses-mallorca\">classement des parcours</a> pour connaître les green fees et savoir à qui chaque parcours convient.",
+      "coursesBlurbLink": "",
+      "guideBlurb": "",
+      "guideBlurbLink": ""
     },
     "journey": {
       "eyebrow": "Choisissez votre point de départ",
@@ -1029,9 +1014,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "eyebrow": "Wat ik doe",
       "title": "Speel een ronde met mij, of laat mij uw golf boeken en de reis eromheen plannen.",
       "paragraphs": [
-        "Play With A Pro is mijn dag op de baan met u: één baan, 18 holes, baanmanagement, coaching verweven in de ronde en de lokale kennis die van een goede dag een geweldige dag maakt.",
-        "Wilt u liever zelf spelen, dan boek ik het golf: de juiste banen, in de juiste volgorde, met starttijden en buggy's bevestigd voordat u aankomt.",
-        "Ik plan en boek het golf. Een betrouwbare lokale reispartner helpt met hotels, transfers, restaurants en activiteiten. Voor het boeken spreken we af wat wordt geregeld, wat het kost en wie elk onderdeel verzorgt."
+        "Laat mij uw reisdata, groepsgrootte en het handicapbereik weten."
       ],
       "stats": [
         {
@@ -1049,24 +1032,21 @@ export const HOME_LOCALIZED_CONTENT = {
       "services": [
         {
           "title": "Play With A Pro",
-          "text": "Een dag van 18 holes met mij op de baan van uw keuze, met coaching verwerkt in de ronde.",
-          "cta": "Bekijk Play With A Pro"
+          "text": "Een dag van 18 holes met mij, met coaching en spelstrategie tijdens de ronde."
         },
         {
           "title": "Uw golf boeken",
-          "text": "Banen, starttijden, buggy's en huurclubs, met de rondes in een logische volgorde.",
-          "cta": "Golf boeken"
+          "text": "Ik regel de banen, starttijden, buggy's en huurclubs, afgestemd op uw reisdata."
         },
         {
           "title": "De hele reis plannen",
-          "text": "Golf plus hotel, transfers, restaurants en vrije dagen, met een vertrouwde lokale reispartner.",
-          "cta": "Hele reis plannen"
+          "text": "Ik plan uw golfprogramma. Een vertrouwde lokale reispartner verzorgt de boeking en facturatie van hotels, transfers en andere diensten buiten het golf."
         }
       ],
-      "coursesBlurb": "Ik speel en beoordeel elke baan op het eiland: Son Gual, Alcanada, T Golf Calvià, Son Muntaner en de rest. Wilt u banen vergelijken voordat u boekt,",
-      "coursesBlurbLink": "bekijk de volledige lijst",
-      "guideBlurb": "Voor het volledige gerangschikte overzicht van alle 24 Mallorca-banen, met greenfees en voor wie elke baan geschikt is,",
-      "guideBlurbLink": "lees de baangids"
+      "coursesBlurb": "Vergelijk <a href=\"/golf-courses\">alle 24 banen</a> of lees de <a href=\"/guides/best-golf-courses-mallorca\">ranglijst</a> voor greenfees en voor welke golfers elke baan geschikt is.",
+      "coursesBlurbLink": "",
+      "guideBlurb": "",
+      "guideBlurbLink": ""
     },
     "journey": {
       "eyebrow": "Kies uw startpunt",
@@ -1364,9 +1344,7 @@ export const HOME_LOCALIZED_CONTENT = {
       "eyebrow": "Vad jag gör",
       "title": "Spela en runda med mig, eller låt mig boka golfen och planera resan runt den.",
       "paragraphs": [
-        "Play With A Pro är min dag på banan med dig: en bana, 18 hål, banstrategi, coaching invävd i rundan och den lokala kunskap som gör en bra dag till en riktigt bra dag.",
-        "Vill du hellre spela på egen hand bokar jag golfen: rätt banor i rätt ordning, med starttider och golfbilar bekräftade innan du kommer.",
-        "Jag planerar och bokar golfen. En pålitlig lokal resepartner hjälper till med hotell, transfers, restauranger och aktiviteter. Före bokning kommer vi överens om innehåll, kostnader och vem som ansvarar för varje del."
+        "Berätta vilka datum du har, gruppens storlek och handicapspannet."
       ],
       "stats": [
         {
@@ -1384,24 +1362,21 @@ export const HOME_LOCALIZED_CONTENT = {
       "services": [
         {
           "title": "Play With A Pro",
-          "text": "En 18-hålsdag med mig på den bana du väljer, med coachning inbyggd i rundan.",
-          "cta": "Se Play With A Pro"
+          "text": "En 18-hålsdag med mig, med coachning och spelstrategi under rundan."
         },
         {
           "title": "Boka golfen",
-          "text": "Banor, starttider, golfbilar och hyrklubbor, med rundorna i en ordning som hänger ihop.",
-          "cta": "Boka golfen"
+          "text": "Jag ordnar banor, starttider, golfbilar och hyrklubbor utifrån dina datum."
         },
         {
           "title": "Planera hela resan",
-          "text": "Golf plus hotell, transfer, restauranger och lediga dagar, med en betrodd lokal resepartner.",
-          "cta": "Planera hela resan"
+          "text": "Jag planerar golfen. En betrodd lokal resepartner bokar och fakturerar hotell, transfer och andra arrangemang utanför golfen."
         }
       ],
-      "coursesBlurb": "Jag spelar och recenserar varje bana på ön: Son Gual, Alcanada, T Golf Calvià, Son Muntaner och resten. Vill du jämföra banor innan du bokar,",
-      "coursesBlurbLink": "se hela listan",
-      "guideBlurb": "För den fullständiga rankade genomgången av alla 24 Mallorcabanor, med green fees och vem varje bana passar,",
-      "guideBlurbLink": "läs banguiden"
+      "coursesBlurb": "Jämför <a href=\"/golf-courses\">alla 24 banor</a> eller läs <a href=\"/guides/best-golf-courses-mallorca\">rankningen</a> för att se greenfee och vilka golfare varje bana passar.",
+      "coursesBlurbLink": "",
+      "guideBlurb": "",
+      "guideBlurbLink": ""
     },
     "journey": {
       "eyebrow": "Välj din utgångspunkt",
@@ -1699,31 +1674,26 @@ export const HOME_LOCALIZED_CONTENT = {
       "eyebrow": "我做什么",
       "title": "与我同打一轮，或由我预订球场，并围绕球局规划行程。",
       "paragraphs": [
-        "Play With A Pro 是我陪您在球场上度过的一天：一座球场、18 洞、球场管理、融入球局的指导，以及把好的一天变得更好的本地经验。",
-        "如果您想自己打球，由我负责预订：合适的球场、合理的顺序，开球时间和球车在您抵达前全部确认。",
-        "我负责规划和预订高尔夫。可靠的当地旅行合作伙伴协助安排酒店、接送、餐厅和活动。预订前，我们会与您确认服务范围、费用以及各部分的负责人。"
+        "请告诉我您的日期、人数和差点范围。"
       ],
       "services": [
         {
           "title": "与我同场",
-          "text": "在您选择的球场与我同打 18 洞，指导融入整轮球局。",
-          "cta": "了解陪打服务"
+          "text": "与我同打 18 洞，实战指导和球场策略贯穿整轮球局。"
         },
         {
           "title": "预订球场",
-          "text": "球场、开球时间、球车和租杆，按合理的顺序安排每一轮。",
-          "cta": "了解球场预订"
+          "text": "我会根据您的日期安排球场、开球时间、球车和租用球杆。"
         },
         {
           "title": "规划整趟行程",
-          "text": "高尔夫之外，还有酒店、接送、餐厅和休息日，与可靠的本地旅行合作伙伴一起安排。",
-          "cta": "了解整趟规划"
+          "text": "我负责规划高尔夫。可靠的当地旅行合作伙伴负责酒店、接送及其他非高尔夫安排的预订和开票。"
         }
       ],
-      "coursesBlurb": "我在岛上打球，也写球场评价，包括 Son Gual、Alcanada、T Golf Calvia、Son Muntaner 等球场。如果您想在预订前比较球场，",
-      "coursesBlurbLink": "全部球场在这里",
-      "guideBlurb": "想看马略卡（Majorca）全部 24 座球场的完整排名，包括果岭费和每座球场适合谁，",
-      "guideBlurbLink": "阅读完整球场指南",
+      "coursesBlurb": "比较<a href=\"/golf-courses\">全部 24 座球场</a>，或阅读<a href=\"/guides/best-golf-courses-mallorca\">球场排名指南</a>，了解果岭费和各球场适合的球手。",
+      "coursesBlurbLink": "",
+      "guideBlurb": "",
+      "guideBlurbLink": "",
       "stats": [
         {
           "label": "岛上球场数量"

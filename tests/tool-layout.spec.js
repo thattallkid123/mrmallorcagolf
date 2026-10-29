@@ -120,7 +120,8 @@ test('blocked planner gives practical checks and preserves answers when editing'
 for (const width of [1280, 1920]) test(`day choices use readable single rows and compact small sets at ${width}px`, async ({page}, info) => {
   test.skip(info.project.name !== 'desktop-chrome')
   await page.setViewportSize({width,height:1000})
-  await page.goto('/tools/golf-day-builder',{waitUntil:'load'})
+  await page.goto('/tools/golf-day-builder',{waitUntil:'domcontentloaded'})
+  await page.evaluate(() => document.fonts.ready)
   await chooseAndContinue(page,page.getByRole('button',{name:/Palma and around/}),'day')
   await expect(page.locator('.gdb-step-label')).toHaveText('2 / 9')
   const sixRows=await page.locator('.gdb-opt').evaluateAll(es=>Object.values(es.reduce((rows,e)=>{const y=Math.round(e.getBoundingClientRect().top);rows[y]=(rows[y]||0)+1;return rows},{})))

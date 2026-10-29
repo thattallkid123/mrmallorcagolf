@@ -60,7 +60,7 @@ test('golf-only and golf-with-lunch give distinct choices and a named restaurant
  await expect(page.locator('.gdb-itin.active h3')).toContainText('Son Termes')
  await page.getByRole('button',{name:'Golf and lunch',exact:true}).click()
  await expect(page.locator('.gdb-itin.active h3')).toContainText('Son Quint')
- await expect(page.locator('.gdb-result-head')).toContainText('par 71')
+ await expect(page.locator('.gdb-itin.active .gdb-pills')).toContainText('Par 71')
  await expect(page.locator('.gdb-itin.active')).toContainText('Lunch at Son Quint Restaurant')
  await expect(page.locator('.gdb-itin.active')).not.toContainText('local travel partner')
  await page.getByRole('button',{name:'Ask me to build this for your group',exact:true}).click()

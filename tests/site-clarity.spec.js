@@ -11,22 +11,14 @@ for (const locale of ['en', 'de', 'es', 'fr', 'nl', 'sv', 'zh']) {
     }
     await expect(page.locator('.pyt-pro-cta')).toContainText(/5\s*%/)
     await expect(page.locator('.pyt-page .cst-wrap')).toHaveCount(0)
-    const supportLinks = page.locator('.pyt-hero__links a')
-    await expect(supportLinks).toHaveCount(2)
-    for (const support of await supportLinks.all()) {
-      await expect(support).not.toHaveClass(/\bbtn\b/)
-      await expect(support).toHaveCSS('font-weight', '400')
-      await expect(support).toHaveCSS('text-transform', 'none')
-      await expect(support.locator('svg')).toHaveAttribute('aria-hidden', 'true')
-      expect(await support.evaluate(e => e.getBoundingClientRect().height)).toBeGreaterThanOrEqual(44)
-    }
+    // The duplicate hero shortcuts were intentionally removed on 26 October.
+    await expect(page.locator('.pyt-hero__links')).toHaveCount(0)
+    await expect(page.locator('footer a[href="' + prefix + '/tools/course-selector"]')).toHaveCount(1)
     for (const action of await page.locator(".pyt-hero__actions a, .pyt-working-mode__link, .pyt-trip-ideas__cta a, .pyt-itin-invite__btn, .pyt-addon__btn").all()) {
       await expect(action).toHaveClass(/\bbtn\b/)
       await expect(action).toHaveCSS("text-align", "center")
       await expect(action).toHaveCSS("font-size", "10px")
     }
-    await expect(supportLinks.first()).toHaveAttribute('href', '#sample-itinerary')
-    await expect(supportLinks.last()).toHaveAttribute('href', prefix + '/tools/course-selector')
     await expect(page.locator('.pyt-itin-why, .pyt-itin-footer')).toHaveCount(0)
     await expect(page.locator('#sample-itinerary')).toBeVisible()
     await expect(page.locator('#sample-itinerary a[href="' + prefix + '/guides/5-day-mallorca-golf-itinerary"]')).toBeVisible()

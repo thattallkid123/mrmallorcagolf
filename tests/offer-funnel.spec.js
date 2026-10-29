@@ -59,12 +59,12 @@ test('contact navigation has one visible enquiry button and fits the viewport', 
 
 test('beginner shortlist excludes courses needing a handicap or member access', async ({ page }) => {
   await page.goto('/tools/course-selector', { waitUntil: 'networkidle' })
-  await page.getByRole('button', { name: /Beginner/ }).click()
-  await page.getByRole('button', { name: /Just me/ }).click()
-  await page.getByRole('button', { name: /Luxury/ }).click()
-  await page.locator('.cst-nav-row .cst-btn.gold').click()
-  await page.getByRole('button', { name: /Southwest/ }).click()
-  await page.getByRole('button', { name: /I like to walk/ }).click()
+  // Single-choice questions now require an explicit Continue, like the other planning tools.
+  for (const name of [/Beginner/, /Just me/, /Luxury/, /Southwest/, /I like to walk/]) {
+    await page.getByRole('button', { name }).click()
+    await page.locator('.cst-nav-row .cst-btn.gold').click()
+  }
+  // Extras are optional; finish without adding any.
   await page.locator('.cst-nav-row .cst-btn.gold').click()
 
   await expect(page.locator('.cst-course-card')).toHaveCount(1)

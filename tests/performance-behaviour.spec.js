@@ -33,7 +33,7 @@ test('reduced motion keeps strips still and manual scrolling usable', async ({ p
 
 test('hero photos have high priority and route styles do not affect other pages', async ({ page }) => {
   for (const route of ['/', '/about', '/play-with-a-pro', '/plan-your-trip', '/golf-courses', '/guides', '/contact']) {
-    await page.goto(route, { waitUntil: 'networkidle' })
+    await page.goto(route, { waitUntil: 'domcontentloaded' })
     const hero = page.locator('main img[fetchpriority="high"]').first()
     await expect(hero).toHaveAttribute('loading', 'eager')
     await expect.poll(() => hero.evaluate(e => e.complete && e.naturalWidth > 0)).toBe(true)
@@ -41,7 +41,7 @@ test('hero photos have high priority and route styles do not affect other pages'
   }
   // Tools intentionally uses a text header, rather than a photo, in both routes.
   for (const route of ['/tools', '/zh/tools']) {
-    await page.goto(route, { waitUntil: 'networkidle' })
+    await page.goto(route, { waitUntil: 'domcontentloaded' })
     await expect(page.locator('.tools-hero h1')).toBeVisible()
     await expect(page.locator('.tools-hero img')).toHaveCount(0)
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)

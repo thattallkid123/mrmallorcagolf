@@ -27,31 +27,26 @@ export const HOME_CONTENT = {
     "eyebrow": "What I do",
     "title": "Play a round with me, or let me book your golf and plan the trip around it.",
     "paragraphs": [
-      "Play With A Pro is my on-course day with you: one course, 18 holes, course management, coaching woven into the round, and the local knowledge that turns a good day into a great one.",
-      "If you want to play on your own, I book the golf: the right courses, in the right order, with tee times and buggies confirmed before you arrive.",
-      "I plan and book the golf. A trusted local travel partner helps with hotels, transfers, restaurants and activities. Before you book, we agree the scope, costs and who handles each part."
+      "Tell me your dates, group size and handicap range."
     ],
     "services": [
       {
         "title": "Play With A Pro",
-        "text": "An 18-hole day with me on the course you choose, with coaching built into the round.",
-        "cta": "See Play With A Pro",
+        "text": "An 18-hole day with me, with coaching and course management built into the round.",
         "href": "/play-with-a-pro"
       },
       {
         "title": "Book your golf",
-        "text": "Courses, tee times, buggies and rental clubs, with the rounds in an order that makes sense.",
-        "cta": "Book your golf",
+        "text": "I arrange the courses, tee times, buggies and rental clubs around your dates.",
         "href": "/plan-your-trip#professional-planning"
       },
       {
         "title": "Plan the whole trip",
-        "text": "Golf plus the hotel, transfers, restaurants and days off, with a trusted local travel partner.",
-        "cta": "Plan the whole trip",
+        "text": "I plan the golf. A trusted local travel partner books and invoices hotels, transfers and other non-golf arrangements.",
         "href": "/plan-your-trip#whole-trip"
       }
     ],
-    "coursesBlurb": "I play and review every course on the island: Son Gual, Alcanada, T Golf Calvia, Son Muntaner, and the rest. Compare all 24 courses before booking in the <a href=\"/golf-courses\">course list</a>, or read the <a href=\"/guides/best-golf-courses-mallorca\">ranked guide</a> for green fees and who each course suits.",
+    "coursesBlurb": "Compare <a href=\"/golf-courses\">all 24 courses</a>, or read the <a href=\"/guides/best-golf-courses-mallorca\">ranked guide</a> for green fees and who each course suits.",
     "coursesBlurbLink": "",
     "guideBlurb": "",
     "guideBlurbLink": "",

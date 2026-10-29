@@ -294,3 +294,5 @@ That is the standard this repo should follow from now on.
 <!-- 2026-10-18: Chinese course shortlist closing written by Opus and read in full. Golf booking remains Andy’s responsibility; other trip arrangements are planning advice. Existing WeChat CTA retained; no new supplier promise. Shared email presentation only for other locales. -->
 
 <!-- 2026-10-21: Consent controls (de/es/fr/nl/sv), EN/DE/ES/FR cookie notice and analytics-data list wording, and all six PWAP inclusion labels reviewed against English. Opus read the consent strings and inclusion labels in full; Swedish saved-choice wording corrected and French/Swedish arranging wording aligned. NL/SV have no legal-page routes; the shared notice is used only by EN/DE/ES/FR. No Chinese consent screen: GA remains excluded there. -->
+
+<!-- 2026-10-29: Approved homepage service intro, three descriptions, course-links sentence and two image alt texts: GPT drafted all six locales; Claude Opus reviewed all supplied strings in full in safe mode. Five wording fixes applied; final Dutch refinement re-reviewed and approved. Only the approved copy and translations were sent for review. -->
