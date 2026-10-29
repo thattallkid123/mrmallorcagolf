@@ -76,7 +76,7 @@ const COURSES = [
   {
     name: 'T Golf Calvia',
     location: 'Calvia',
-    fees: 'Peak €210 / Low €80 (dynamic)',
+    fees: 'Peak €210 / Low €105 (dynamic)',
     href: '/golf-courses',
     bestFor: ['intermediate', 'advanced', 'scenery', 'premium', 'weekend'],
     take: 'A polished southwest option with strong conditioning, wide driving lines, and enough water to keep the round honest.',
@@ -100,7 +100,7 @@ const COURSES = [
   {
     name: 'Golf Son Termes',
     location: 'Bunyola',
-    fees: 'Peak €110 / Low €90',
+    fees: 'Peak €110 / Low €85',
     href: '/golf-courses',
     bestFor: ['intermediate', 'scenery', 'value', 'week'],
     take: 'Shorter and more rugged, with Tramuntana mountain context on every hole. Buggy recommended, but the setting does a lot of work.',

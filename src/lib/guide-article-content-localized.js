@@ -134,7 +134,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Santa Ponsa 1",
               "Santa Ponsa",
               "72",
-              "€77-126",
+              "€69-126",
               "8/10",
               "4.0",
               "Sede del European Tour, acceso público"
@@ -170,7 +170,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Real Golf de Bendinat",
               "Bendinat",
               "70",
-              "€74-123",
+              "€67-123",
               "6/10",
               "3.5",
               "Valle arbolado, vistas a la bahía"
@@ -179,7 +179,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€90-110",
+              "€85-110",
               "6/10",
               "3.5",
               "Entorno de montaña de la Tramuntana"
@@ -251,7 +251,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Canyamel Golf",
               "Capdepera",
               "73",
-              "€85-145",
+              "€78-145",
               "6/10",
               "4.0",
               "El más fotografiado, costa este"
@@ -542,7 +542,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Santa Ponsa 1",
               "Santa Ponsa",
               "72",
-              "€77-126",
+              "€69-126",
               "8/10",
               "4.0",
               "European-Tour-Austragungsort, öffentlich zugänglich"
@@ -578,7 +578,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Real Golf de Bendinat",
               "Bendinat",
               "70",
-              "€74-123",
+              "€67-123",
               "6/10",
               "3.5",
               "Bewaldetes Tal, Blick auf die Bucht"
@@ -587,7 +587,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€90-110",
+              "€85-110",
               "6/10",
               "3.5",
               "Kulisse der Tramuntana-Berge"
@@ -659,7 +659,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Canyamel Golf",
               "Capdepera",
               "73",
-              "€85-145",
+              "€78-145",
               "6/10",
               "4.0",
               "Meistfotografiert, Ostküste"
@@ -950,7 +950,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Santa Ponsa 1",
               "Santa Ponsa",
               "72",
-              "€77-126",
+              "€69-126",
               "8/10",
               "4.0",
               "Site du circuit européen, accès public"
@@ -986,7 +986,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Real Golf de Bendinat",
               "Bendinat",
               "70",
-              "€74-123",
+              "€67-123",
               "6/10",
               "3.5",
               "Vallée boisée, vue sur la baie"
@@ -995,7 +995,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€90-110",
+              "€85-110",
               "6/10",
               "3.5",
               "Cadre de montagne de la Tramuntana"
@@ -1067,7 +1067,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Canyamel Golf",
               "Capdepera",
               "73",
-              "€85-145",
+              "€78-145",
               "6/10",
               "4.0",
               "Le plus photographié, côte est"
@@ -1358,7 +1358,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Santa Ponsa 1",
               "Santa Ponsa",
               "72",
-              "€77-126",
+              "€69-126",
               "8/10",
               "4.0",
               "Locatie van de European Tour, openbaar toegankelijk"
@@ -1394,7 +1394,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Real Golf de Bendinat",
               "Bendinat",
               "70",
-              "€74-123",
+              "€67-123",
               "6/10",
               "3.5",
               "Bosrijke vallei, uitzicht op de baai"
@@ -1403,7 +1403,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€90-110",
+              "€85-110",
               "6/10",
               "3.5",
               "Bergomgeving van de Tramuntana"
@@ -1475,7 +1475,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Canyamel Golf",
               "Capdepera",
               "73",
-              "€85-145",
+              "€78-145",
               "6/10",
               "4.0",
               "Meest gefotografeerd, oostkust"
@@ -1766,7 +1766,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Santa Ponsa 1",
               "Santa Ponsa",
               "72",
-              "€77-126",
+              "€69-126",
               "8/10",
               "4.0",
               "European Tour-arena, öppen för allmänheten"
@@ -1802,7 +1802,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Real Golf de Bendinat",
               "Bendinat",
               "70",
-              "€74-123",
+              "€67-123",
               "6/10",
               "3.5",
               "Skogsklädd dal, utsikt över viken"
@@ -1811,7 +1811,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€90-110",
+              "€85-110",
               "6/10",
               "3.5",
               "Tramuntanas bergsmiljö"
@@ -1883,7 +1883,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Canyamel Golf",
               "Capdepera",
               "73",
-              "€85-145",
+              "€78-145",
               "6/10",
               "4.0",
               "Mest fotograferad, östkusten"
@@ -2174,7 +2174,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Santa Ponsa 1",
               "Santa Ponsa",
               "72",
-              "€77-126",
+              "€69-126",
               "8/10",
               "4.0",
               "欧巡赛场地，对公众开放"
@@ -2210,7 +2210,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Real Golf de Bendinat",
               "Bendinat",
               "70",
-              "€74-123",
+              "€67-123",
               "6/10",
               "3.5",
               "树林山谷，海湾景色"
@@ -2219,7 +2219,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€90-110",
+              "€85-110",
               "6/10",
               "3.5",
               "特拉蒙塔纳山景"
@@ -2291,7 +2291,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Canyamel Golf",
               "Capdepera",
               "73",
-              "€85-145",
+              "€78-145",
               "6/10",
               "4.0",
               "最上镜，东海岸"

@@ -430,7 +430,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Santa Ponsa 1 Golf Review 2026",
         description:
-          "Santa Ponsa 1: €77-€126, par 72, one of the longest in Europe. Hosted the DP World Tour in 2021.",
+          "Santa Ponsa 1: €69-€126, par 72, one of the longest in Europe. Hosted the DP World Tour in 2021.",
         imagePath: '/images/santa-ponsa-blog/sp-hero.webp',
       },
       meta: {
@@ -509,7 +509,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['Peak €126 / Low €77', '2026 price guide'],
+            ['Peak €126 / Low €69', '2026 price guide'],
             ['8/10', 'Difficulty'],
             ['Par 72', 'Championship layout'],
             ['Public', 'Open to all visitors'],
@@ -518,7 +518,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: '2026 Green Fees' },
         {
           type: 'paragraph',
-          text: 'Peak price is €126 and the low-season entry point is €77. Full details at golf-santaponsa.com. A valid WHS handicap certificate is required.',
+          text: 'Peak price is €126 and the low-season entry point is €69. Full details at golf-santaponsa.com. A valid WHS handicap certificate is required.',
         },
         {
           type: 'paragraph',
@@ -737,7 +737,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Termes Golf - Honest Review 2026",
         description:
-          'Son Termes green fee around €90-110, par 70, 25 minutes from Palma. Mountain views, honest 6/10 verdict.',
+          'Son Termes green fee around €85-110, par 70, 25 minutes from Palma. Mountain views, honest 6/10 verdict.',
         imagePath: '/images/son-termes-blog/st-2.webp',
       },
       meta: {
@@ -892,7 +892,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: 'Son Termes delivers more character than most courses at this price level. The views from the back nine are the best available anywhere this close to Palma. The layout keeps you thinking throughout, and a second visit would unlock a better score. For a visiting golfer who wants something different from the premium courses, or a resident looking for a course with genuine personality at a sensible price, it is worth one of your rounds, at around €90-110 against €165 at Son Gual. If you\'re still working out the wider itinerary, the <a href="/plan-your-trip">trip planning guide</a> covers logistics and timing.',
+          text: 'Son Termes delivers more character than most courses at this price level. The views from the back nine are the best available anywhere this close to Palma. The layout keeps you thinking throughout, and a second visit would unlock a better score. For a visiting golfer who wants something different from the premium courses, or a resident looking for a course with genuine personality at a sensible price, it is worth one of your rounds, at around €85-110 against €165 at Son Gual. If you\'re still working out the wider itinerary, the <a href="/plan-your-trip">trip planning guide</a> covers logistics and timing.',
         },
         {
           type: 'cta',

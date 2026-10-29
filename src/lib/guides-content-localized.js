@@ -41,7 +41,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià: la opinión honesta de un profesional PGA (2026)",
         "intro": "Quince lagos, molinos de viento por todo el campo y algunos de los greens que mejor ruedan de la isla. Uno de los campos mejor cuidados de Mallorca. Un 9 sobre 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €80-210 · Suroeste de Mallorca · 15 lagos"
+        "keywords": "Par 72 · €105-210 · Suroeste de Mallorca · 15 lagos"
       },
       {
         "slug": "t-golf-palma-review",
@@ -50,7 +50,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Palma: la opinión honesta de un profesional PGA (2026)",
         "intro": "Greens rápidos y pequeños y hoyos de riesgo y recompensa que te hacen pensar desde el tee. Un 9 sobre 10 que merece su propia reputación, no solo la de T Golf Calvià.",
         "readTime": "6 min",
-        "keywords": "Par 71 · €80-150 · Palma · Diseño de Jack Nicklaus"
+        "keywords": "Par 71 · €75-150 · Palma · Diseño de Jack Nicklaus"
       },
       {
         "slug": "son-muntaner-review",
@@ -68,7 +68,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Santa Ponsa 1, Mallorca - análisis honesto de un Profesional PGA (2026)",
         "intro": "Uno de los campos más largos de Europa, historia real en el DP World Tour y uno de los sitios de la isla donde más se disfruta pegando el driver.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €77-126 · Acceso público"
+        "keywords": "Championship · Par 72 · €69-126 · Acceso público"
       },
       {
         "slug": "son-vida-review",
@@ -115,7 +115,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: reseña sincera de un profesional de la PGA (2026)",
         "intro": "Vistas de montaña sobre Palma, líneas de salida más exigentes de lo que parecen y uno de los recorridos con más personalidad de la isla en este rango de precio.",
         "readTime": "5 min de lectura",
-        "keywords": "Montaña · Par 70 · €90-110 · 25 min desde Palma"
+        "keywords": "Montaña · Par 70 · €85-110 · 25 min desde Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -282,7 +282,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)",
         "intro": "Fünfzehn Seen, Windmühlen auf dem gesamten Platz und Grüns, die so sauber rollen wie kaum andere auf der Insel. Einer der bestgepflegten Plätze Mallorcas. 9 von 10.",
         "readTime": "6 Min.",
-        "keywords": "Par 72 · €80-210 · Südwesten Mallorcas · 15 Seen"
+        "keywords": "Par 72 · €105-210 · Südwesten Mallorcas · 15 Seen"
       },
       {
         "slug": "t-golf-palma-review",
@@ -291,7 +291,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Palma Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)",
         "intro": "Schnelle, kleine Grüns und Risiko-Belohnung-Löcher, die einen vom Abschlag aus zum Nachdenken bringen. 9 von 10 - ein eigener Ruf, nicht nur der von T Golf Calvià.",
         "readTime": "6 Min.",
-        "keywords": "Par 71 · €80-150 · Palma · Jack-Nicklaus-Design"
+        "keywords": "Par 71 · €75-150 · Palma · Jack-Nicklaus-Design"
       },
       {
         "slug": "son-muntaner-review",
@@ -309,7 +309,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Santa Ponsa 1, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Einer der längsten Plätze Europas, echte Geschichte auf der DP World Tour und einer der Orte auf der Insel, an denen der Driver am meisten Spaß macht.",
         "readTime": "6 Min.",
-        "keywords": "Championship · Par 72 · €77-126 · Öffentlicher Zugang"
+        "keywords": "Championship · Par 72 · €69-126 · Öffentlicher Zugang"
       },
       {
         "slug": "son-vida-review",
@@ -356,7 +356,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Bergblicke über Palma, engere Abschlagslinien als man erwartet und eines der eigenständigsten Layouts der Insel in dieser Preisklasse.",
         "readTime": "5 Min. Lesezeit",
-        "keywords": "Bergplatz · Par 70 · €90-110 · 25 Min. von Palma"
+        "keywords": "Bergplatz · Par 70 · €85-110 · 25 Min. von Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -522,7 +522,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià : l'avis honnête d'un professionnel PGA (2026)",
         "intro": "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens qui roulent le mieux de l'île. L'un des parcours les mieux entretenus de Majorque. Un 9 sur 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €80-210 · Sud-ouest de Majorque · 15 lacs"
+        "keywords": "Par 72 · €105-210 · Sud-ouest de Majorque · 15 lacs"
       },
       {
         "slug": "t-golf-palma-review",
@@ -531,7 +531,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Palma : l'avis honnête d'un professionnel PGA (2026)",
         "intro": "Des greens rapides et petits et des trous à risque-récompense qui vous font réfléchir dès le départ. Un 9 sur 10 qui mérite sa propre réputation, pas seulement celle de T Golf Calvià.",
         "readTime": "6 min",
-        "keywords": "Par 71 · €80-150 · Palma · Design Jack Nicklaus"
+        "keywords": "Par 71 · €75-150 · Palma · Design Jack Nicklaus"
       },
       {
         "slug": "son-muntaner-review",
@@ -549,7 +549,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Santa Ponsa 1, Majorque - avis honnête d'un Professionnel PGA (2026)",
         "intro": "L'un des plus longs parcours d'Europe, une vraie histoire sur le DP World Tour et l'un des endroits de l'île où l'on prend le plus de plaisir au driver.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €77-126 · Accès public"
+        "keywords": "Championship · Par 72 · €69-126 · Accès public"
       },
       {
         "slug": "son-vida-review",
@@ -596,7 +596,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
         "intro": "Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu'elles n'en ont l'air et l'un des tracés les plus singuliers de l'île à ce niveau de prix.",
         "readTime": "5 min de lecture",
-        "keywords": "Montagne · Par 70 · €90-110 · 25 min de Palma"
+        "keywords": "Montagne · Par 70 · €85-110 · 25 min de Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -763,7 +763,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià: de eerlijke mening van een PGA-professional (2026)",
         "intro": "Vijftien meren, windmolens door de hele baan en enkele van de zuiverst rollende greens van het eiland. Een van de best onderhouden banen van Mallorca. Een 9 uit 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €80-210 · Zuidwest Mallorca · 15 meren"
+        "keywords": "Par 72 · €105-210 · Zuidwest Mallorca · 15 meren"
       },
       {
         "slug": "t-golf-palma-review",
@@ -772,7 +772,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Palma: de eerlijke mening van een PGA-professional (2026)",
         "intro": "Snelle, kleine greens en risk-reward holes die je vanaf de tee aan het denken zetten. Een 9 uit 10 die zijn eigen reputatie verdient, niet alleen die van T Golf Calvià.",
         "readTime": "6 min",
-        "keywords": "Par 71 · €80-150 · Palma · Jack Nicklaus-ontwerp"
+        "keywords": "Par 71 · €75-150 · Palma · Jack Nicklaus-ontwerp"
       },
       {
         "slug": "son-muntaner-review",
@@ -790,7 +790,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Santa Ponsa 1, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "Een van de langste banen van Europa, echte DP World Tour-geschiedenis en een van de plekken op het eiland waar de driver het meeste plezier geeft.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €77-126 · Toegankelijk voor bezoekers"
+        "keywords": "Championship · Par 72 · €69-126 · Toegankelijk voor bezoekers"
       },
       {
         "slug": "son-vida-review",
@@ -837,7 +837,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: de eerlijke review van een PGA-professional (2026)",
         "intro": "Bergzichten boven Palma, strakkere drivinglijnen dan je verwacht en een van de meest karaktervolle layouts op het eiland in deze prijsklasse.",
         "readTime": "5 min leestijd",
-        "keywords": "Bergbaan · Par 70 · €90-110 · 25 min van Palma"
+        "keywords": "Bergbaan · Par 70 · €85-110 · 25 min van Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -1004,7 +1004,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià: en PGA-professionals ärliga omdöme (2026)",
         "intro": "Femton sjöar, väderkvarnar på hela banan och några av de greener som rullar bäst på ön. En av de bäst skötta banorna på Mallorca. En 9 av 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €80-210 · Sydvästra Mallorca · 15 sjöar"
+        "keywords": "Par 72 · €105-210 · Sydvästra Mallorca · 15 sjöar"
       },
       {
         "slug": "t-golf-palma-review",
@@ -1013,7 +1013,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Palma: en PGA-professionals ärliga omdöme (2026)",
         "intro": "Snabba, små greener och risk-reward-hål som får en att tänka från tee. En 9 av 10 som förtjänar sitt eget rykte, inte bara T Golf Calviàs.",
         "readTime": "6 min",
-        "keywords": "Par 71 · €80-150 · Palma · Jack Nicklaus-design"
+        "keywords": "Par 71 · €75-150 · Palma · Jack Nicklaus-design"
       },
       {
         "slug": "son-muntaner-review",
@@ -1031,7 +1031,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Santa Ponsa 1, Mallorca - ärlig recension av en PGA Professional (2026)",
         "intro": "En av Europas längsta banor, riktig historia på DP World Tour och ett av de ställen på ön där det är roligast att slå driver.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €77-126 · Öppen för besökare"
+        "keywords": "Championship · Par 72 · €69-126 · Öppen för besökare"
       },
       {
         "slug": "son-vida-review",
@@ -1078,7 +1078,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: en ärlig recension av en PGA-proffs (2026)",
         "intro": "Bergsvyer ovanför Palma, tajtare utslagslinjer än man tror och en av öns mest personliga banlayouter i den här prisklassen.",
         "readTime": "5 min läsning",
-        "keywords": "Bergsbana · Par 70 · €90-110 · 25 min från Palma"
+        "keywords": "Bergsbana · Par 70 · €85-110 · 25 min från Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -1245,7 +1245,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià 评测 — PGA职业球员的真实评价（2026）",
         "intro": "十五个湖泊，风车遍布全场，果岭是岛上滚动最顺的之一。马略卡维护最佳的球场之一。综合评分9/10。",
         "readTime": "6分钟",
-        "keywords": "标准杆72 · €80-210 · 马略卡岛西南部 · 15座湖泊"
+        "keywords": "标准杆72 · €105-210 · 马略卡岛西南部 · 15座湖泊"
       },
       {
         "slug": "t-golf-palma-review",
@@ -1254,7 +1254,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Palma 评测 — PGA职业球员的真实评价（2026）",
         "intro": "果岭快而小，风险与回报并存的球洞逼你在发球台上多想一步。综合评分9/10，靠自身实力赢得的口碑，而不只是沾了T Golf Calvià的光。",
         "readTime": "6分钟",
-        "keywords": "标准杆71 · €80-150 · 帕尔马 · 杰克·尼克劳斯设计"
+        "keywords": "标准杆71 · €75-150 · 帕尔马 · 杰克·尼克劳斯设计"
       },
       {
         "slug": "son-muntaner-review",
@@ -1272,7 +1272,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "圣蓬萨1号高尔夫球场，马略卡 - PGA 职业教练诚实评测（2026）",
         "intro": "欧洲最长的球场之一，有真正的 DP World Tour 历史，也是岛上打一号木最痛快的地方之一。",
         "readTime": "6分钟",
-        "keywords": "锦标赛级 · 标准杆72 · €77-126 · 对外开放"
+        "keywords": "锦标赛级 · 标准杆72 · €69-126 · 对外开放"
       },
       {
         "slug": "son-vida-review",
@@ -1319,7 +1319,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "马略卡 Son Termes Golf：PGA 职业球员的真实评测（2026）",
         "intro": "帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。",
         "readTime": "5分钟",
-        "keywords": "山地球场 · 标准杆70 · €90-110 · 距帕尔马25分钟"
+        "keywords": "山地球场 · 标准杆70 · €85-110 · 距帕尔马25分钟"
       },
       {
         "slug": "play-with-a-pro-explained",

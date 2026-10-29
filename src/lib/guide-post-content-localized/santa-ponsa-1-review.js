@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Santa Ponsa 1 - Reseña & Tarifas",
-      "description": "Santa Ponsa 1: 77-126 €, par 72, uno de los campos más largos de Europa. Sede del DP World Tour en 2021."
+      "description": "Santa Ponsa 1: 69-126 €, par 72, uno de los campos más largos de Europa. Sede del DP World Tour en 2021."
     },
     "meta": {
       "badge": "Análisis del campo",
@@ -79,7 +79,7 @@ const content = {
       {
         "items": [
           [
-            "€77-126",
+            "€69-126",
             "Green fees 2026"
           ],
           [
@@ -100,7 +100,7 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "El precio máximo es de €126 y el de entrada en temporada baja es de €77. Todos los detalles en golf-santaponsa.com. Se exige un certificado de hándicap WHS válido."
+        "text": "El precio máximo es de €126 y el de entrada en temporada baja es de €69. Todos los detalles en golf-santaponsa.com. Se exige un certificado de hándicap WHS válido."
       },
       {
         "text": "Buggy: €43 por 18 hoyos. Alquiler de palos: €40. El campo es público y se puede reservar libremente, sin necesidad de acceso de socio. Conviene reservar con antelación en temporada alta; su historial de Tour europeo atrae a jugadores que saben exactamente a qué vienen."
@@ -147,7 +147,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Santa Ponsa 1 - Review & Gebühren",
-      "description": "Santa Ponsa 1: 77-126 €, Par 72, einer der längsten Plätze Europas. 2021 Austragungsort der DP World Tour."
+      "description": "Santa Ponsa 1: 69-126 €, Par 72, einer der längsten Plätze Europas. 2021 Austragungsort der DP World Tour."
     },
     "meta": {
       "badge": "Platzbewertung",
@@ -223,7 +223,7 @@ const content = {
       {
         "items": [
           [
-            "€77-126",
+            "€69-126",
             "Greenfee 2026"
           ],
           [
@@ -244,7 +244,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Der Spitzenpreis liegt bei €126, der Einstiegspreis der Nebensaison bei €77. Alle Details auf golf-santaponsa.com. Ein gültiger WHS-Handicap-Nachweis ist erforderlich."
+        "text": "Der Spitzenpreis liegt bei €126, der Einstiegspreis der Nebensaison bei €69. Alle Details auf golf-santaponsa.com. Ein gültiger WHS-Handicap-Nachweis ist erforderlich."
       },
       {
         "text": "Buggy: €43 für 18 Löcher. Leihschläger: €40. Der Platz ist öffentlich und frei buchbar - ohne Mitgliederzugang. In der Hochsaison lohnt sich frühes Buchen; die DP-World-Tour-Vergangenheit zieht Besucher an, die genau wissen, warum sie hier spielen wollen."
@@ -291,7 +291,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Santa Ponsa 1 - Avis & Tarifs",
-      "description": "Santa Ponsa 1 : 77-126 €, par 72, l'un des plus longs parcours d'Europe. A accueilli le DP World Tour en 2021."
+      "description": "Santa Ponsa 1 : 69-126 €, par 72, l'un des plus longs parcours d'Europe. A accueilli le DP World Tour en 2021."
     },
     "meta": {
       "badge": "Avis parcours",
@@ -367,7 +367,7 @@ const content = {
       {
         "items": [
           [
-            "€77-126",
+            "€69-126",
             "Green fees 2026"
           ],
           [
@@ -388,7 +388,7 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "Le tarif de pointe est de €126 et le tarif d'entrée de basse saison de €77. Tous les détails sur golf-santaponsa.com. Un certificat d'index WHS valide est exigé."
+        "text": "Le tarif de pointe est de €126 et le tarif d'entrée de basse saison de €69. Tous les détails sur golf-santaponsa.com. Un certificat d'index WHS valide est exigé."
       },
       {
         "text": "Buggy : €43 pour 18 trous. Location de clubs : €40. Le parcours est public et se réserve librement - aucun accès membre n'est nécessaire. Réservez tôt en haute saison ; son histoire sur le Tour européen attire les joueurs qui savent exactement ce qu'ils viennent chercher."
@@ -433,7 +433,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Santa Ponsa 1 - Review & Tarief",
-      "description": "Santa Ponsa 1: €77-€126, par 72, een van de langste banen van Europa. Gastheer van de DP World Tour in 2021."
+      "description": "Santa Ponsa 1: €69-€126, par 72, een van de langste banen van Europa. Gastheer van de DP World Tour in 2021."
     },
     "meta": {
       "badge": "Baanreview",
@@ -509,7 +509,7 @@ const content = {
       {
         "items": [
           [
-            "€77-126",
+            "€69-126",
             "Greenfees 2026"
           ],
           [
@@ -530,7 +530,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "De piekprijs is €126 en het instaptarief in het laagseizoen is €77. Alle details op golf-santaponsa.com. Een geldig WHS-handicapbewijs is vereist."
+        "text": "De piekprijs is €126 en het instaptarief in het laagseizoen is €69. Alle details op golf-santaponsa.com. Een geldig WHS-handicapbewijs is vereist."
       },
       {
         "text": "Buggy: €43 voor 18 holes. Clubhuur: €40. De baan is publiek en vrij boekbaar - er is geen ledenstatus nodig. Boek in het hoogseizoen ruim op tijd; de European Tour-geschiedenis trekt spelers die precies weten waarom ze hier willen spelen."
@@ -577,7 +577,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Santa Ponsa 1 - Recension & Avgifter",
-      "description": "Santa Ponsa 1: 77-126 €, par 72, en av Europas längsta banor. Värd för DP World Tour 2021."
+      "description": "Santa Ponsa 1: 69-126 €, par 72, en av Europas längsta banor. Värd för DP World Tour 2021."
     },
     "meta": {
       "badge": "Banrecension",
@@ -653,7 +653,7 @@ const content = {
       {
         "items": [
           [
-            "€77-126",
+            "€69-126",
             "Greenfees 2026"
           ],
           [
@@ -674,7 +674,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Topppriset är €126 och instegspriset i lågsäsong är €77. Alla detaljer på golf-santaponsa.com. Ett giltigt WHS-handicapintyg krävs."
+        "text": "Topppriset är €126 och instegspriset i lågsäsong är €69. Alla detaljer på golf-santaponsa.com. Ett giltigt WHS-handicapintyg krävs."
       },
       {
         "text": "Buggy: €43 för 18 hål. Klubbhyra: €40. Banan är publik och fritt bokningsbar - inget medlemskap krävs. Boka i god tid under högsäsong; European Tour-historien lockar spelare som vet exakt varför de vill spela här."
@@ -721,7 +721,7 @@ const content = {
   "zh": {
     "metadata": {
       "title": "圣蓬萨1号高尔夫球场 - PGA职业教练诚实评测",
-      "description": "Santa Ponsa 1：77-126 欧元，标准杆 72，欧洲最长的球场之一，2021 年举办过 DP World Tour。"
+      "description": "Santa Ponsa 1：69-126 欧元，标准杆 72，欧洲最长的球场之一，2021 年举办过 DP World Tour。"
     },
     "meta": {
       "badge": "球场评测",
@@ -797,7 +797,7 @@ const content = {
       {
         "items": [
           [
-            "€77-126",
+            "€69-126",
             "2026年果岭费"
           ],
           [
@@ -818,7 +818,7 @@ const content = {
         "text": "2026年果岭费"
       },
       {
-        "text": "旺季价格为 €126，淡季起步价为 €77。完整详情见 golf-santaponsa.com。需要有效的 WHS 差点证明。"
+        "text": "旺季价格为 €126，淡季起步价为 €69。完整详情见 golf-santaponsa.com。需要有效的 WHS 差点证明。"
       },
       {
         "text": "球车：18洞€43。球杆租赁：€40。球场对公众开放，可直接预订，不需要会员资格。旺季建议尽早订位；它的欧洲巡回赛背景会吸引那些真正懂这座球场价值的访客。"

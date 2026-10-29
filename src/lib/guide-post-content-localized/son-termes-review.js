@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Son Termes - Reseña & Tarifas",
-      "description": "Green fee de Son Termes de unos €90-110, par 70, a 25 minutos de Palma. Vistas de montaña y veredicto honesto: 6/10."
+      "description": "Green fee de Son Termes de unos €85-110, par 70, a 25 minutos de Palma. Vistas de montaña y veredicto honesto: 6/10."
     },
     "meta": {
       "badge": "Reseña de campo",
@@ -160,7 +160,7 @@ const content = {
         ]
       },
       {
-        "text": "Son Termes ofrece más personalidad que la mayoría de campos en este rango de precio. Las vistas de los nueve de vuelta son las mejores que se pueden encontrar tan cerca de Palma. El diseño te obliga a pensar todo el tiempo y una segunda vuelta probablemente sacaría una mejor tarjeta. Para el golfista visitante que quiera algo distinto de los campos premium, o para un residente que busque un recorrido con verdadera personalidad a un precio sensato, merece una de tus vueltas, por unos 90-110 € frente a los 165 € de Son Gual. Si todavía estás definiendo el itinerario completo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre la logística y los horarios."
+        "text": "Son Termes ofrece más personalidad que la mayoría de campos en este rango de precio. Las vistas de los nueve de vuelta son las mejores que se pueden encontrar tan cerca de Palma. El diseño te obliga a pensar todo el tiempo y una segunda vuelta probablemente sacaría una mejor tarjeta. Para el golfista visitante que quiera algo distinto de los campos premium, o para un residente que busque un recorrido con verdadera personalidad a un precio sensato, merece una de tus vueltas, por unos 85-110 € frente a los 165 € de Son Gual. Si todavía estás definiendo el itinerario completo, la <a href=\"/plan-your-trip\">guía de planificación del viaje</a> cubre la logística y los horarios."
       },
       {
         "text": "¿Estás pensando en Son Termes? Puedo decirte si encaja en tu viaje y si debería ser la ronda de la zona de Palma en torno a la cual organices el resto.",
@@ -171,7 +171,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Son Termes - Review & Gebühren",
-      "description": "Greenfee in Son Termes ca. €90-110, Par 70, 25 Minuten von Palma. Bergpanorama und ehrliches Urteil: 6/10."
+      "description": "Greenfee in Son Termes ca. €85-110, Par 70, 25 Minuten von Palma. Bergpanorama und ehrliches Urteil: 6/10."
     },
     "meta": {
       "badge": "Platz-Bewertung",
@@ -327,7 +327,7 @@ const content = {
         ]
       },
       {
-        "text": "Son Termes bietet mehr Charakter als die meisten Plätze in dieser Preisklasse. Die Ausblicke auf den Back Nine sind die besten, die man so nah an Palma bekommen kann. Das Layout fordert durchgehend Entscheidungen, und bei einem zweiten Besuch ist ein besserer Score sehr realistisch. Für Gastspieler, die etwas anderes als die Premiumplätze suchen, oder für Residenten, die einen Platz mit echter Persönlichkeit zu einem vernünftigen Preis wollen, ist Son Termes eine Ihrer Runden wert, mit rund 90-110 € gegenüber 165 € in Son Gual. Wenn Sie die restliche Reiseroute noch planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Logistik und Timing ab."
+        "text": "Son Termes bietet mehr Charakter als die meisten Plätze in dieser Preisklasse. Die Ausblicke auf den Back Nine sind die besten, die man so nah an Palma bekommen kann. Das Layout fordert durchgehend Entscheidungen, und bei einem zweiten Besuch ist ein besserer Score sehr realistisch. Für Gastspieler, die etwas anderes als die Premiumplätze suchen, oder für Residenten, die einen Platz mit echter Persönlichkeit zu einem vernünftigen Preis wollen, ist Son Termes eine Ihrer Runden wert, mit rund 85-110 € gegenüber 165 € in Son Gual. Wenn Sie die restliche Reiseroute noch planen, deckt der <a href=\"/plan-your-trip\">Reiseplanungs-Guide</a> Logistik und Timing ab."
       },
       {
         "text": "Sie überlegen, Son Termes zu spielen? Ich kann Ihnen sagen, ob er zu Ihrer Reise passt und ob er die Runde bei Palma sein sollte, um die Sie planen.",
@@ -338,7 +338,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Son Termes - Avis & Tarifs",
-      "description": "Green fee à Son Termes autour de €90-110, par 70, à 25 minutes de Palma. Vues sur la montagne, verdict honnête : 6/10."
+      "description": "Green fee à Son Termes autour de €85-110, par 70, à 25 minutes de Palma. Vues sur la montagne, verdict honnête : 6/10."
     },
     "meta": {
       "badge": "Test de parcours",
@@ -493,7 +493,7 @@ const content = {
         ]
       },
       {
-        "text": "Son Termes offre plus de caractère que la plupart des parcours à ce niveau de prix. Les vues du retour sont les plus belles que l'on puisse avoir aussi près de Palma. Le tracé oblige à réfléchir du début à la fin, et une deuxième partie permettrait sans doute de signer une meilleure carte. Pour un golfeur de passage qui cherche autre chose que les parcours premium, ou pour un résident qui veut un parcours avec une vraie personnalité à un tarif raisonnable, il mérite une de vos parties, à environ 90-110 € contre 165 € à Son Gual. Si vous finalisez encore l'itinéraire complet, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre la logistique et le timing."
+        "text": "Son Termes offre plus de caractère que la plupart des parcours à ce niveau de prix. Les vues du retour sont les plus belles que l'on puisse avoir aussi près de Palma. Le tracé oblige à réfléchir du début à la fin, et une deuxième partie permettrait sans doute de signer une meilleure carte. Pour un golfeur de passage qui cherche autre chose que les parcours premium, ou pour un résident qui veut un parcours avec une vraie personnalité à un tarif raisonnable, il mérite une de vos parties, à environ 85-110 € contre 165 € à Son Gual. Si vous finalisez encore l'itinéraire complet, le <a href=\"/plan-your-trip\">guide de planification du voyage</a> couvre la logistique et le timing."
       },
       {
         "text": "Vous pensez à Son Termes ? Je peux vous dire s'il convient à votre voyage et s'il doit être la partie autour de Palma sur laquelle vous construisez le reste.",
@@ -504,7 +504,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Son Termes - Review & Tarief",
-      "description": "Greenfee Son Termes circa €90-110, par 70, 25 minuten van Palma. Bergzichten en eerlijk oordeel: 6/10."
+      "description": "Greenfee Son Termes circa €85-110, par 70, 25 minuten van Palma. Bergzichten en eerlijk oordeel: 6/10."
     },
     "meta": {
       "badge": "Baanreview",
@@ -661,7 +661,7 @@ const content = {
         ]
       },
       {
-        "text": "Son Termes biedt meer karakter dan de meeste banen in deze prijsklasse. De uitzichten op de back nine zijn het beste wat je zo dicht bij Palma kunt krijgen. De lay-out blijft je de hele ronde aan het denken zetten, en een tweede bezoek zou vrijwel zeker een betere score opleveren. Voor een bezoekende golfer die iets anders wil dan de premiumbanen, of voor een local die een baan met echte persoonlijkheid zoekt voor een redelijke prijs, is Son Termes een van je rondes waard, voor ongeveer €90-€110 tegenover €165 op Son Gual. Ben je de rest van je reisschema nog aan het uitwerken? De <a href=\"/plan-your-trip\">reisplanningsgids</a> behandelt logistiek en timing."
+        "text": "Son Termes biedt meer karakter dan de meeste banen in deze prijsklasse. De uitzichten op de back nine zijn het beste wat je zo dicht bij Palma kunt krijgen. De lay-out blijft je de hele ronde aan het denken zetten, en een tweede bezoek zou vrijwel zeker een betere score opleveren. Voor een bezoekende golfer die iets anders wil dan de premiumbanen, of voor een local die een baan met echte persoonlijkheid zoekt voor een redelijke prijs, is Son Termes een van je rondes waard, voor ongeveer €85-€110 tegenover €165 op Son Gual. Ben je de rest van je reisschema nog aan het uitwerken? De <a href=\"/plan-your-trip\">reisplanningsgids</a> behandelt logistiek en timing."
       },
       {
         "text": "Denk je aan Son Termes? Ik kan je vertellen of hij bij je reis past en of het de ronde in de buurt van Palma moet zijn waaromheen je plant.",
@@ -672,7 +672,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Termes - Recension & Avgifter",
-      "description": "Green fee cirka €90-110, par 70, 25 minuter från Palma. Bergsvyer och ärligt betyg 6/10."
+      "description": "Green fee cirka €85-110, par 70, 25 minuter från Palma. Bergsvyer och ärligt betyg 6/10."
     },
     "meta": {
       "badge": "Banrecension",
@@ -829,7 +829,7 @@ const content = {
         ]
       },
       {
-        "text": "Son Termes erbjuder mer karaktär än de flesta banor i den här prisklassen. Utsikten från back nine är den bästa du hittar så här nära Palma. Layouten får dig att tänka hela vägen runt, och ett andra besök skulle sannolikt ge ett bättre score. För en golfresenär som vill spela något annat än premiumbanorna, eller en boende som söker en bana med verklig personlighet till ett vettigt pris, är den värd en av dina rundor, för cirka 90-110 € mot 165 € på Son Gual. Planerar du fortfarande resten av resan? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp logistik och timing."
+        "text": "Son Termes erbjuder mer karaktär än de flesta banor i den här prisklassen. Utsikten från back nine är den bästa du hittar så här nära Palma. Layouten får dig att tänka hela vägen runt, och ett andra besök skulle sannolikt ge ett bättre score. För en golfresenär som vill spela något annat än premiumbanorna, eller en boende som söker en bana med verklig personlighet till ett vettigt pris, är den värd en av dina rundor, för cirka 85-110 € mot 165 € på Son Gual. Planerar du fortfarande resten av resan? <a href=\"/plan-your-trip\">Reseplaneringsguiden</a> tar upp logistik och timing."
       },
       {
         "text": "Funderar du på Son Termes? Jag kan berätta om den passar din resa och om den bör vara rundan i Palmaområdet som du bygger kring.",
@@ -997,7 +997,7 @@ const content = {
         ]
       },
       {
-        "text": "在这个价位上，Son Termes 的个性强过大多数球场。后九的景观，是离帕尔马这么近的范围内最出色的。整座球场一路都在逼你思考打法，而第二次来打，大概率能把成绩再往下压。对来岛上打球、又想体验一点不同于高端名场风格的访客，或是想找一座价格合理、真正有性格球场的本地球手来说，它值得你安排一轮，果岭费约 90-110 欧元，而 Son Gual 是 165 欧元。还在规划整体行程？<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了后勤安排和时间安排。"
+        "text": "在这个价位上，Son Termes 的个性强过大多数球场。后九的景观，是离帕尔马这么近的范围内最出色的。整座球场一路都在逼你思考打法，而第二次来打，大概率能把成绩再往下压。对来岛上打球、又想体验一点不同于高端名场风格的访客，或是想找一座价格合理、真正有性格球场的本地球手来说，它值得你安排一轮，果岭费约 85-110 欧元，而 Son Gual 是 165 欧元。还在规划整体行程？<a href=\"/plan-your-trip\">行程规划指南</a>涵盖了后勤安排和时间安排。"
       },
       {
         "text": "在考虑 Son Termes 吗？我可以告诉你它是否适合你的行程，以及它是否应该成为你围绕安排的那场帕尔马地区球局。",

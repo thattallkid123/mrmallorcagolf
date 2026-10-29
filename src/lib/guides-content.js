@@ -50,7 +50,7 @@ export const GUIDES_CONTENT = {
       "title": "T Golf Calvià Review - A PGA Professional's Honest Take (2026)",
       "intro": "Fifteen lakes, windmills throughout, and some of the purest greens on the island. One of the best-conditioned courses in Mallorca. A 9 out of 10.",
       "readTime": "6 min read",
-      "keywords": "Par 72 · €80-210 · Southwest Mallorca · 15 lakes"
+      "keywords": "Par 72 · €105-210 · Southwest Mallorca · 15 lakes"
     },
     {
       "slug": "t-golf-palma-review",
@@ -61,7 +61,7 @@ export const GUIDES_CONTENT = {
       "title": "T Golf Palma Review - A PGA Professional's Honest Take (2026)",
       "intro": "Fast, small greens and risk-reward holes that make you think from the tee. A 9 out of 10 that deserves its own reputation, not just T Golf Calvià's.",
       "readTime": "6 min read",
-      "keywords": "Par 71 · €80-150 · Palma · Jack Nicklaus design"
+      "keywords": "Par 71 · €75-150 · Palma · Jack Nicklaus design"
     },
     {
       "slug": "son-muntaner-review",
@@ -83,7 +83,7 @@ export const GUIDES_CONTENT = {
       "title": "Golf Santa Ponsa 1, Mallorca - A PGA Professional's Honest Review (2026)",
       "intro": "One of Europe's longest courses, real DP World Tour history, and one of the easiest places on the island to enjoy hitting driver.",
       "readTime": "6 min read",
-      "keywords": "Championship · Par 72 · €77-126 · Public access"
+      "keywords": "Championship · Par 72 · €69-126 · Public access"
     },
     {
       "slug": "son-vida-review",
@@ -138,7 +138,7 @@ export const GUIDES_CONTENT = {
       "title": "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",
       "intro": "Mountain views above Palma, tighter driving lines than people expect, and one of the most distinctive layouts at this price point on the island.",
       "readTime": "5 min read",
-      "keywords": "Mountain course - Par 70 - €90-110 - 25 min from Palma"
+      "keywords": "Mountain course - Par 70 - €85-110 - 25 min from Palma"
     },
     {
       "slug": "play-with-a-pro-explained",
