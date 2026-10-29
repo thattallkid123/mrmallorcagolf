@@ -94,3 +94,21 @@ jobs:
           node scripts/check-rendered-english.mjs --base http://127.0.0.1:3001 && CHECK_EXIT=0 || CHECK_EXIT=$?
           kill $SERVER_PID 2>/dev/null || true
           exit $CHECK_EXIT
+
+      # Fails when a panel, bar, table or card row has a wider gap on one side than
+      # the other, when a short last row is left-aligned, or when a page scrolls
+      # sideways. Measured in Chromium at 375, 768 and 1280 px on every English page
+      # plus the main pages in each language. Added 2026-10-29 after the Course
+      # Comparison filter bar shipped with a wide right gap and Andy asked for the
+      # rule to be enforced everywhere. Known one-sided layouts: scripts/layout-symmetry-allowlist.json.
+      - name: Check layout symmetry
+        run: |
+          npx next start -p 3002 &
+          SERVER_PID=$!
+          for i in $(seq 1 30); do
+            curl -s -o /dev/null http://127.0.0.1:3002 && break
+            sleep 2
+          done
+          node scripts/check-layout-symmetry.mjs --base http://127.0.0.1:3002 && CHECK_EXIT=0 || CHECK_EXIT=$?
+          kill $SERVER_PID 2>/dev/null || true
+          exit $CHECK_EXIT

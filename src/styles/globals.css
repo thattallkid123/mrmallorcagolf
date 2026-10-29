@@ -2171,10 +2171,12 @@ select.form-control { cursor: pointer; }
 .pwap-explained-facts__grid {
   max-width: 700px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(160px,1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* a short last row sits centred, not stranded on the left */
   gap: 28px 40px;
 }
+.pwap-explained-facts__grid > * { flex: 0 1 200px; min-width: 0; }
 .pwap-explained-facts__label {
   font-size: 11px;
   font-weight: 500;
@@ -4254,8 +4256,9 @@ select.form-control { cursor: pointer; }
   background: var(--cream);
   border: 1px solid var(--surface-line);
   border-radius: 2px;
+  text-align: center; /* quote, label, stars and buttons share one centre line */
 }
-.tools-trust__rule { margin: 0 0 18px; }
+.tools-trust__rule { margin: 0 auto 18px; }
 .tools-trust__label { display: block; margin-bottom: 10px; }
 .tools-trust__text {
   font-size: clamp(1.05rem, 1.6vw, 1.22rem);

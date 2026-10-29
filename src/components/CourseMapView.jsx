@@ -248,9 +248,9 @@ export default function CourseMapView({ lang = 'en' }) {
       />
 
       {legend.length > 0 && (
-        <ol style={{ listStyle: 'none', margin: '18px 0 0', padding: 0, display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(210px, 1fr))', gap: '4px 18px' }}>
+        <ol style={{ listStyle: 'none', margin: '18px 0 0', padding: 0, display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '4px 18px' }}>
           {legend.map(item => (
-            <li key={item.num}>
+            <li key={item.num} style={{ flex: '0 0 210px', maxWidth: '100%' }}>
               <button
                 type="button"
                 onClick={() => focusPin(item)}
