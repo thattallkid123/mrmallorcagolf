@@ -10,7 +10,7 @@ export const HANDICAP_CHECKER_T = {
   en: {
     hero: { eyebrow: 'Free tool', title: 'Can I Play It?', sub: 'Enter your handicap and see instantly which of Mallorca\'s courses you can book, which need a certificate, and where I can arrange access for you.' },
     panel: { title: 'Your details' },
-    inputs: { handicap: 'Handicap index', handicapPlaceholder: 'e.g. 18.4', noHandicap: 'I don\'t have an official handicap', gender: 'Gender', male: 'Male', female: 'Female', cert: 'Handicap certificate', yes: 'Yes', digital: 'Digital (app)', no: 'No', groupSize: 'Group size', area: 'Where are you based or staying?', areaHint: '(optional, tailors your recommendation)', check: 'Check my access' },
+    inputs: { handicap: 'Handicap index', handicapPlaceholder: 'e.g. 18.4', noHandicap: 'I don\'t have an official handicap', gender: 'Gender', male: 'Male', female: 'Female', cert: 'Handicap certificate', yes: 'Yes', digital: 'Digital (app)', no: 'No', groupSize: 'Group size', groupHint: '(small groups may be paired at some clubs)', area: 'Where are you based or staying?', areaHint: '(optional, only changes the three courses I suggest)', check: 'Check my access' },
     tiers: { new: 'a newer golfer', low: 'a low-handicap golfer', mid: 'a solid club golfer', improver: 'an improving golfer', relaxed: 'a relaxed, higher-handicap golfer' },
     areas: { any: 'Anywhere on the island', palma: 'Palma & around', southwest: 'Southwest (Calvià, Santa Ponsa, Andratx)', south: 'South (Llucmajor, Son Antem)', east: 'East (Capdepera, Canyamel, Pula)', north: 'North (Alcúdia, Pollença)' },
     areasShort: { any: 'Anywhere on the island', palma: 'Palma', southwest: 'Southwest Mallorca', south: 'South Mallorca', east: 'East Mallorca', north: 'North Mallorca' },
@@ -62,7 +62,7 @@ export const HANDICAP_CHECKER_T = {
   de: {
     hero: { eyebrow: 'Kostenloses Werkzeug', title: 'Kann ich es spielen?', sub: 'Geben Sie Ihr Handicap ein und sehen Sie sofort, welche Plätze auf Mallorca Sie buchen können, welche ein Zertifikat benötigen und wo ich Zugang für Sie arrangieren kann.' },
     panel: { title: 'Ihre Angaben' },
-    inputs: { handicap: 'Handicap-Index', handicapPlaceholder: 'z. B. 18,4', noHandicap: 'Ich habe kein offizielles Handicap', gender: 'Geschlecht', male: 'Mann', female: 'Frau', cert: 'Handicap-Zertifikat', yes: 'Ja', digital: 'Digital (App)', no: 'Nein', groupSize: 'Gruppengröße', area: 'Wo befinden Sie sich oder übernachten Sie?', areaHint: '(optional – passt Ihre Empfehlung an)', check: 'Meinen Zugang überprüfen' },
+    inputs: { handicap: 'Handicap-Index', handicapPlaceholder: 'z. B. 18,4', noHandicap: 'Ich habe kein offizielles Handicap', gender: 'Geschlecht', male: 'Mann', female: 'Frau', cert: 'Handicap-Zertifikat', yes: 'Ja', digital: 'Digital (App)', no: 'Nein', groupSize: 'Gruppengröße', groupHint: '(kleine Gruppen werden bei manchen Clubs zusammengelegt)', area: 'Wo befinden Sie sich oder übernachten Sie?', areaHint: '(optional – ändert nur die drei Plätze, die ich vorschlage)', check: 'Meinen Zugang überprüfen' },
     tiers: { new: 'Einsteiger', low: 'Spieler mit niedrigem Handicap', mid: 'solider Clubgolfer', improver: 'Golfer, der sich stetig verbessert', relaxed: 'entspannter Golfer mit höherem Handicap' },
     areas: { any: 'Überall auf der Insel', palma: 'Palma und Umgebung', southwest: 'Südwesten (Calvià, Santa Ponsa, Andratx)', south: 'Süden (Llucmajor, Son Antem)', east: 'Osten (Capdepera, Canyamel, Pula)', north: 'Norden (Alcúdia, Pollença)' },
     areasShort: { any: 'die Insel', palma: 'Palma', southwest: 'den Südwesten', south: 'den Süden', east: 'den Osten', north: 'den Norden' },
@@ -114,7 +114,7 @@ export const HANDICAP_CHECKER_T = {
   es: {
     hero: { eyebrow: 'Herramienta gratuita', title: '¿Puedo jugar?', sub: 'Introduzca su hándicap y vea al instante cuáles de los campos de Mallorca puede reservar, cuáles necesitan certificado y dónde puedo gestionar el acceso para usted.' },
     panel: { title: 'Sus datos' },
-    inputs: { handicap: 'Índice de hándicap', handicapPlaceholder: 'p. ej. 18,4', noHandicap: 'No tengo un hándicap oficial', gender: 'Género', male: 'Hombre', female: 'Mujer', cert: 'Certificado de hándicap', yes: 'Sí', digital: 'Digital (app)', no: 'No', groupSize: 'Tamaño del grupo', area: '¿Dónde reside o se aloja?', areaHint: '(opcional — personaliza su recomendación)', check: 'Comprobar mi acceso' },
+    inputs: { handicap: 'Índice de hándicap', handicapPlaceholder: 'p. ej. 18,4', noHandicap: 'No tengo un hándicap oficial', gender: 'Género', male: 'Hombre', female: 'Mujer', cert: 'Certificado de hándicap', yes: 'Sí', digital: 'Digital (app)', no: 'No', groupSize: 'Tamaño del grupo', groupHint: '(los grupos pequeños pueden emparejarse en algunos clubes)', area: '¿Dónde reside o se aloja?', areaHint: '(opcional, solo cambia los tres campos que sugiero)', check: 'Comprobar mi acceso' },
     tiers: { new: 'un golfista que empieza', low: 'un golfista de hándicap bajo', mid: 'un sólido golfista de club', improver: 'un golfista en progresión', relaxed: 'un golfista relajado de hándicap alto' },
     areas: { any: 'Cualquier lugar de la isla', palma: 'Palma y alrededores', southwest: 'Suroeste (Calvià, Santa Ponsa, Andratx)', south: 'Sur (Llucmajor, Son Antem)', east: 'Este (Capdepera, Canyamel, Pula)', north: 'Norte (Alcúdia, Pollença)' },
     areasShort: { any: 'la isla', palma: 'Palma', southwest: 'el suroeste', south: 'el sur', east: 'el este', north: 'el norte' },
@@ -166,7 +166,7 @@ export const HANDICAP_CHECKER_T = {
   fr: {
     hero: { eyebrow: 'Outil gratuit', title: 'Puis-je y jouer?', sub: 'Entrez votre handicap et voyez instantanément quels parcours de Mallorca vous pouvez réserver, lesquels ont besoin d\'un certificat et où je peux vous arranger un accès.' },
     panel: { title: 'Vos informations' },
-    inputs: { handicap: 'Index de handicap', handicapPlaceholder: 'ex. 18,4', noHandicap: 'Je n\'ai pas de handicap officiel', gender: 'Sexe', male: 'Homme', female: 'Femme', cert: 'Certificat de handicap', yes: 'Oui', digital: 'Numérique (app)', no: 'Non', groupSize: 'Taille du groupe', area: 'Où êtes-vous basé ou logé?', areaHint: '(optionnel — adapte votre recommandation)', check: 'Vérifier mon accès' },
+    inputs: { handicap: 'Index de handicap', handicapPlaceholder: 'ex. 18,4', noHandicap: 'Je n\'ai pas de handicap officiel', gender: 'Sexe', male: 'Homme', female: 'Femme', cert: 'Certificat de handicap', yes: 'Oui', digital: 'Numérique (app)', no: 'Non', groupSize: 'Taille du groupe', groupHint: '(les petits groupes peuvent être associés dans certains clubs)', area: 'Où êtes-vous basé ou logé?', areaHint: '(facultatif, ne change que les trois parcours que je propose)', check: 'Vérifier mon accès' },
     tiers: { new: 'golfeur débutant', low: 'golfeur à petit index', mid: 'solide golfeur de club', improver: 'golfeur en progression', relaxed: 'golfeur détendu à index élevé' },
     areas: { any: 'N\'importe où sur l\'île', palma: 'Palma et alentours', southwest: 'Sud-ouest (Calvià, Santa Ponsa, Andratx)', south: 'Sud (Llucmajor, Son Antem)', east: 'Est (Capdepera, Canyamel, Pula)', north: 'Nord (Alcúdia, Pollença)' },
     areasShort: { any: 'de l\'île', palma: 'de Palma', southwest: 'du sud-ouest', south: 'du sud', east: 'de l\'est', north: 'du nord' },
@@ -218,7 +218,7 @@ export const HANDICAP_CHECKER_T = {
   nl: {
     hero: { eyebrow: 'Gratis hulpmiddel', title: 'Kan ik het spelen?', sub: 'Voer uw handicap in en zie onmiddellijk welke Mallorca-banen u kunt reserveren, welke een certificaat nodig hebben en waar ik toegang voor u kan regelen.' },
     panel: { title: 'Uw gegevens' },
-    inputs: { handicap: 'Handicap-index', handicapPlaceholder: 'bijv. 18,4', noHandicap: 'Ik heb geen officiële handicap', gender: 'Geslacht', male: 'Man', female: 'Vrouw', cert: 'Handicap-certificaat', yes: 'Ja', digital: 'Digitaal (app)', no: 'Nee', groupSize: 'Groepsgrootte', area: 'Waar bent u gebaseerd of verblijft u?', areaHint: '(optioneel — past uw aanbeveling aan)', check: 'Controleer mijn toegang' },
+    inputs: { handicap: 'Handicap-index', handicapPlaceholder: 'bijv. 18,4', noHandicap: 'Ik heb geen officiële handicap', gender: 'Geslacht', male: 'Man', female: 'Vrouw', cert: 'Handicap-certificaat', yes: 'Ja', digital: 'Digitaal (app)', no: 'Nee', groupSize: 'Groepsgrootte', groupHint: '(kleine groepen kunnen bij sommige clubs worden samengevoegd)', area: 'Waar bent u gebaseerd of verblijft u?', areaHint: '(optioneel, verandert alleen de drie banen die ik voorstel)', check: 'Controleer mijn toegang' },
     tiers: { new: 'een beginnende golfer', low: 'een golfer met een lage handicap', mid: 'een degelijke clubgolfer', improver: 'een golfer die zich verbetert', relaxed: 'een ontspannen golfer met een hoger handicap' },
     areas: { any: 'Overal op het eiland', palma: 'Palma en omgeving', southwest: 'Zuidwesten (Calvià, Santa Ponsa, Andratx)', south: 'Zuiden (Llucmajor, Son Antem)', east: 'Oosten (Capdepera, Canyamel, Pula)', north: 'Noorden (Alcúdia, Pollença)' },
     areasShort: { any: 'het eiland', palma: 'Palma', southwest: 'het zuidwesten', south: 'het zuiden', east: 'het oosten', north: 'het noorden' },
@@ -270,7 +270,7 @@ export const HANDICAP_CHECKER_T = {
   sv: {
     hero: { eyebrow: 'Gratis verktyg', title: 'Kan jag spela det?', sub: 'Ange ditt handikapp och se omedelbar vilka Mallorca-banor du kan boka, vilka behöver ett certifikat och var jag kan ordna åtkomst för dig.' },
     panel: { title: 'Dina uppgifter' },
-    inputs: { handicap: 'Handicap-index', handicapPlaceholder: 't.ex. 18,4', noHandicap: 'Jag har inget officiellt handikapp', gender: 'Kön', male: 'Man', female: 'Kvinna', cert: 'Handicap-certifikat', yes: 'Ja', digital: 'Digital (app)', no: 'Nej', groupSize: 'Gruppstorlek', area: 'Var är du baserad eller bor?', areaHint: '(valfritt — skräddarsyr din rekommendation)', check: 'Kontrollera min åtkomst' },
+    inputs: { handicap: 'Handicap-index', handicapPlaceholder: 't.ex. 18,4', noHandicap: 'Jag har inget officiellt handikapp', gender: 'Kön', male: 'Man', female: 'Kvinna', cert: 'Handicap-certifikat', yes: 'Ja', digital: 'Digital (app)', no: 'Nej', groupSize: 'Gruppstorlek', groupHint: '(små grupper kan paras ihop på vissa klubbar)', area: 'Var är du baserad eller bor?', areaHint: '(valfritt, ändrar bara de tre banor jag föreslår)', check: 'Kontrollera min åtkomst' },
     tiers: { new: 'en ny golfare', low: 'en golfare med lågt handikapp', mid: 'en stabil klubbgolfare', improver: 'en golfare som förbättras', relaxed: 'en avslappnad golfare med högre handikapp' },
     areas: { any: 'Var som helst på ön', palma: 'Palma med omnejd', southwest: 'Sydväst (Calvià, Santa Ponsa, Andratx)', south: 'Söder (Llucmajor, Son Antem)', east: 'Öster (Capdepera, Canyamel, Pula)', north: 'Norr (Alcúdia, Pollença)' },
     areasShort: { any: 'ön', palma: 'Palma', southwest: 'sydväst', south: 'söder', east: 'öster', north: 'norr' },
@@ -322,7 +322,7 @@ export const HANDICAP_CHECKER_T = {
   zh: {
     hero: { eyebrow: '免费工具', title: '我可以打吗？', sub: '输入您的差点，立即查看您可以预订马略卡哪些球场、需要证书的球场以及我可以为您安排入场的地方。' },
     panel: { title: '您的信息' },
-    inputs: { handicap: '差点指数', handicapPlaceholder: '例如 18.4', noHandicap: '我没有官方差点', gender: '性别', male: '男性', female: '女性', cert: '差点证书', yes: '是', digital: '数字（应用）', no: '否', groupSize: '团队大小', area: '您在哪里或住在哪里？', areaHint: '（可选 - 定制您的建议）', check: '检查我的访问权限' },
+    inputs: { handicap: '差点指数', handicapPlaceholder: '例如 18.4', noHandicap: '我没有官方差点', gender: '性别', male: '男性', female: '女性', cert: '差点证书', yes: '是', digital: '数字（应用）', no: '否', groupSize: '团队大小', groupHint: '（小团体在部分球会可能会被拼组）', area: '您在哪里或住在哪里？', areaHint: '（可选，仅影响我推荐的三座球场）', check: '检查我的访问权限' },
     tiers: { new: '刚入门的球手', low: '低差点球手', mid: '稳健的俱乐部球手', improver: '正在进步的球手', relaxed: '心态放松的高差点球手' },
     areas: { any: '全岛任意地点', palma: '帕尔马及周边', southwest: '西南部（Calvià、Santa Ponsa、Andratx）', south: '南部（Llucmajor、Son Antem）', east: '东部（Capdepera、Canyamel、Pula）', north: '北部（Alcúdia、Pollença）' },
     areasShort: { any: '全岛', palma: '帕尔马', southwest: '西南部', south: '南部', east: '东部', north: '北部' },

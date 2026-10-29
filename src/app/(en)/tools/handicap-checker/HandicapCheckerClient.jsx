@@ -430,7 +430,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
             </div>
             )}
             <div className="hc-field">
-              <span className="top">{t.inputs.groupSize}</span>
+              <span className="top">{t.inputs.groupSize} <span style={{ textTransform: 'none', letterSpacing: 0 }}>{t.inputs.groupHint}</span></span>
               <div className="hc-seg">
                 {[['1', '1'], ['2', '2'], ['3', '3'], ['4', '4'], ['5', '5+']].map(([v, l]) => (
                   <button key={v} type="button" aria-pressed={group === v} className={group === v ? 'active' : ''} onClick={() => setGroup(v)}>{l}</button>
@@ -484,11 +484,31 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
             {GROUP_KEYS.map((key) => {
               const items = result.results.filter((x) => x.r.status === key)
               if (!items.length) return null
+              // The bookable group repeats one line for most courses; show it once with the names, and keep cards for the exceptions.
+              let plain = []
+              let plainDetail = ''
+              let cards = mergeSiblingCards(items)
+              if (key === 'ok') {
+                const counts = {}
+                cards.forEach(({ r }) => { counts[r.detail] = (counts[r.detail] || 0) + 1 })
+                const common = Object.keys(counts).sort((x, y) => counts[y] - counts[x])[0]
+                if (counts[common] > 2) {
+                  plainDetail = common
+                  plain = cards.filter(({ r }) => r.detail === common)
+                  cards = cards.filter(({ r }) => r.detail !== common)
+                }
+              }
               return (
                 <div key={key}>
                   <h3 className="hc-group-head">{t.groups[key]} <span className="count">{t.results.courseCount(items.length)}</span></h3>
+                  {plain.length > 0 && (
+                    <div className="hc-plain">
+                      <p>{plainDetail}</p>
+                      <ul>{plain.map(({ name }) => <li key={name}>{name}</li>)}</ul>
+                    </div>
+                  )}
                   <div className="hc-cards">
-                    {mergeSiblingCards(items).map(({ course, name, r }) => (
+                    {cards.map(({ course, name, r }) => (
                       <div key={name} className={`hc-card ${r.status}`}>
                         <div className="name">{name}</div>
                         <span className={`hc-badge ${r.status}`}>{r.label}</span>

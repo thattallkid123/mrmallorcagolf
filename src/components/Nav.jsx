@@ -259,16 +259,19 @@ export default function Nav({ transparent = false, lang }) {
           {config.cta.label} {'->'}
         </Link>
         <div className="mob-lang">
-          {langCodes.map(({ code, locale, label }) => (
+          {langCodes.map(({ code, locale, label, name }) => (
             <Link
               key={code}
               href={getLanguageSwitchPath(resolvedPathname, locale)}
               prefetch={false}
               className={activeLangCode === code ? 'active' : ''}
-              aria-label={locale === activeLang ? `Current language: ${label}` : `Switch language to ${label}`}
+              lang={locale}
+              hrefLang={locale}
+              aria-label={locale === activeLang ? `Current language: ${name}` : `Switch language to ${name}`}
+              aria-current={locale === activeLang ? 'true' : undefined}
               onClick={() => setMenuOpen(false)}
             >
-              {label}
+              {name}
             </Link>
           ))}
         </div>

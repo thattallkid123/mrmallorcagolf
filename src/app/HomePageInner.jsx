@@ -191,16 +191,6 @@ export default function HomePageInner({ locale = 'en' }) {
             <p className="home-services__course-links">
               <InlineRichText text={home.intro.coursesBlurb} locale={locale} />
             </p>
-            <div className="home-services__credentials">
-              {[
-                { name: 'PGA Advanced Professional', src: '/images/credentials/logo-pga.png', width: 540, height: 588 },
-                { name: 'TPI Level 3', src: '/images/credentials/logo-tpi.png', width: 1261, height: 1438 },
-                { name: 'Trackman Master', src: '/images/credentials/logo-trackman.png', width: 1176, height: 918 },
-                { name: 'US Kids Top 50 Coach', src: '/images/credentials/logo-uskids.png', width: 1345, height: 1091 },
-              ].map((logo) => (
-                <Image key={logo.name} src={logo.src} alt={logo.name} width={logo.width} height={logo.height} quality={90} sizes="80px" />
-              ))}
-            </div>
           </div>
         </div>
       </section>
