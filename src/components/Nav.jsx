@@ -104,6 +104,7 @@ export default function Nav({ transparent = false, lang }) {
   const [scrolled, setScrolled] = useState(false)
   const [menuOpen, setMenuOpen] = useState(false)
   const [langOpen, setLangOpen] = useState(false)
+  const [mobLangOpen, setMobLangOpen] = useState(false)
   const langRef = useRef(null)
   const langPointer = useRef('')
   const pathname = usePathname()
@@ -259,21 +260,35 @@ export default function Nav({ transparent = false, lang }) {
           {config.cta.label} {'->'}
         </Link>
         <div className="mob-lang">
-          {langCodes.map(({ code, locale, label, name }) => (
-            <Link
-              key={code}
-              href={getLanguageSwitchPath(resolvedPathname, locale)}
-              prefetch={false}
-              className={activeLangCode === code ? 'active' : ''}
-              lang={locale}
-              hrefLang={locale}
-              aria-label={locale === activeLang ? `Current language: ${name}` : `Switch language to ${name}`}
-              aria-current={locale === activeLang ? 'true' : undefined}
-              onClick={() => setMenuOpen(false)}
-            >
-              {name}
-            </Link>
-          ))}
+          <button
+            type="button"
+            className="mob-lang__btn"
+            aria-expanded={mobLangOpen}
+            aria-controls="mobile-language-list"
+            aria-label={`Language: ${LANG_NAMES[activeLang] || activeLangCode}`}
+            onClick={() => setMobLangOpen((open) => !open)}
+          >
+            {activeLangCode}
+            <span className="nav__lang-chevron" aria-hidden="true" />
+          </button>
+          {mobLangOpen && (
+            <ul className="mob-lang__list" id="mobile-language-list">
+              {langCodes.filter(({ locale }) => locale !== activeLang).map(({ code, locale, name }) => (
+                <li key={code}>
+                  <Link
+                    href={getLanguageSwitchPath(resolvedPathname, locale)}
+                    prefetch={false}
+                    lang={locale}
+                    hrefLang={locale}
+                    aria-label={`Switch language to ${name}`}
+                    onClick={() => { setMenuOpen(false); setMobLangOpen(false) }}
+                  >
+                    {name}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
         </div>
       </div>
     </>

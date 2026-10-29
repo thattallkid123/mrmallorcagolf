@@ -564,25 +564,43 @@ body {
   border-bottom: none;
 }
 .nav__mobile .mob-lang {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 8px;
   margin-top: 16px;
-  padding-top: 16px;
+  padding-top: 8px;
   border-top: 1px solid var(--linen);
 }
-.nav__mobile .mob-lang a {
-  display: flex;
+.nav__mobile .mob-lang__btn {
+  display: inline-flex;
   align-items: center;
+  gap: 8px;
   min-height: 44px;
-  font-size: 14px;
-  letter-spacing: 0.04em;
+  padding: 0;
+  border: none;
+  background: transparent;
   color: var(--taupe-text);
-  border: 1px solid var(--linen);
-  padding: 0 14px;
+  font: inherit;
+  font-size: 11px;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  cursor: pointer;
 }
-.nav__mobile .mob-lang a.active { color: var(--pine); border-color: var(--gold); background: var(--linen); font-weight: 500; }
-.nav__mobile .mob-lang a:hover  { color: var(--pine); }
+.nav__mobile .mob-lang__btn::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  background: no-repeat center / contain url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23B8973C' stroke-width='1.6'><circle cx='12' cy='12' r='9'/><path d='M3 12h18M12 3c3 3.2 3 14.8 0 18M12 3c-3 3.2-3 14.8 0 18'/></svg>");
+}
+.nav__mobile .mob-lang__btn[aria-expanded="true"] .nav__lang-chevron { transform: rotate(225deg); }
+.nav__mobile .mob-lang__list { list-style: none; margin: 0; padding: 0 0 8px; }
+.nav__mobile .mob-lang__list a {
+  display: block;
+  padding: 10px 0;
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--taupe-text);
+  border-bottom: none;
+}
+.nav__mobile .mob-lang__list a:hover { color: var(--pine); }
 .home-nav__details {
   display: none;
 }
