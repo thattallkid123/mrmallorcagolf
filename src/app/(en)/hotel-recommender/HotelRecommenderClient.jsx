@@ -84,7 +84,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   }
 
   function buildResults() {
-    setResults(rankHotels(HOTELS, answers))
+    setResults(answers.style === 'villa' ? [] : rankHotels(HOTELS, answers))
     scrollToTop()
   }
 
@@ -166,6 +166,16 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
   const budgetSummary = answers.style === 'villa'
     ? `${villaT.summary}: ${answers.villaBudget ? `€${answers.villaBudget}` : villaT.unknown}`
     : ''
+  const isVilla = answers.style === 'villa'
+  const villaSummary = isVilla ? QUESTIONS.map((question, index) => ({
+    key: question.key,
+    label: villaT.detailLabels[index],
+    value: question.key === 'budget' ? (answers.villaBudget ? `€${answers.villaBudget}` : villaT.unknown)
+      : question.opts.filter(option => Array.isArray(answers[question.key]) ? answers[question.key].includes(option.val) : answers[question.key] === option.val).map(option => option.label).join(', '),
+  })) : []
+  const villaMessage = [villaT.resultsTitle, ...villaSummary.map(item => `${item.label}: ${item.value}`)].join('\n')
+  const villaEnquiryHref = buildToolEnquiryHref(lang, { serviceType: 'whole-trip', message: villaMessage })
+  const villaWhatsAppHref = `https://wa.me/34624466702?text=${encodeURIComponent(villaMessage)}`
   const isLastStep = step === TOTAL
 
   return (
@@ -295,6 +305,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
               {currentQ.opts.map(opt => (
                 <button
                   key={opt.val}
+                  data-choice-compact={!opt.desc || undefined}
                   className={`hr-opt${['area', 'style'].includes(currentQ.key) ? ' hr-opt--photo' : ''}${(Array.isArray(answers[currentQ.key]) ? answers[currentQ.key].includes(opt.val) : answers[currentQ.key] === opt.val) ? ' selected' : ''}`}
                   aria-pressed={Array.isArray(answers[currentQ.key]) ? answers[currentQ.key].includes(opt.val) : answers[currentQ.key] === opt.val}
                   onClick={() => selectAnswer(currentQ.key, opt.val)}
@@ -318,7 +329,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
             <div className="hr-nav">
               {step > 1 && <button className="hr-btn-back" onClick={back}>{t.buttons.back}</button>}
               <button className="hr-btn-next" onClick={next} disabled={!canContinue}>
-                {isLastStep ? t.buttons.seeRecommendations : t.buttons.continue}
+                {isLastStep ? (isVilla ? villaT.review : t.buttons.seeRecommendations) : t.buttons.continue}
               </button>
             </div>
           </div>
@@ -329,16 +340,30 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
       {results && (
         <>
           <div className="hr-results-hero">
-            <h2>{results.length ? (answers.style === 'villa' ? villaT.resultsTitle : t.results.hero) : (answers.style === 'villa' ? villaT.emptyTitle : recovery.hotelTitle)}</h2>
-            {results.length > 0 && <p>{t.results.heroSub
+            <h2>{isVilla ? villaT.resultsTitle : (results.length ? t.results.hero : recovery.hotelTitle)}</h2>
+            {!isVilla && results.length > 0 && <p>{t.results.heroSub
               .replace('{group}', t.groupLabel[answers.group] || 'your group')
               .replace('{priority}', (answers.priority || []).map(priority => t.priorityLabel[priority]).filter(Boolean).join(', '))
               .replace('{area}', t.areaLabels[answers.area] || answers.area)}
             </p>}
-            {results.length > 0 && answers.style === 'villa' && <><p>{budgetSummary}</p><p>{villaT.resultsNote}</p></>}
+            {isVilla && <p>{villaT.resultsNote}</p>}
           </div>
 
           <div className="hr-results-wrap">
+            {isVilla ? <section className="hr-villa-enquiry" aria-labelledby="villa-preferences-title">
+              <h3 id="villa-preferences-title">{villaT.review}</h3>
+              <dl className="hr-villa-summary">
+                {villaSummary.map(item => <div key={item.key}><dt>{item.label}</dt><dd>{item.value}</dd></div>)}
+              </dl>
+              <div className="hr-cta-links">
+                <a href={villaEnquiryHref} className="hr-cta-link hr-cta-link-primary">{villaT.enquire}</a>
+                <a href={villaWhatsAppHref} data-analytics-manual="true" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>{t.cta.whatsapp}</a>
+              </div>
+              <div className="tool-empty-result__actions">
+                {['area', 'style', 'budget'].map(key => <button className="hr-btn-retry" key={key} onClick={() => editAnswer(key)}>{recovery[key]}</button>)}
+              </div>
+            </section> : <>
+
             {answers.area === 'northwest' && (
               <div className="hr-area-warning">
                 <strong>{t.results.nwWarningTitle}</strong> {t.results.nwWarning}
@@ -348,11 +373,11 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
             {results.length > 0 && <p className="hr-results-label">{t.results.label.replace('{area}', t.areaLabels[answers.area] || answers.area)}</p>}
 
             {results.length === 0 ? (
-              <section className="tool-empty-result" aria-label={answers.style === 'villa' ? villaT.emptyTitle : recovery.hotelTitle}>
+              <section className="tool-empty-result" aria-label={recovery.hotelTitle}>
                 <p>{recovery.hotelCopy}</p>
-                <p>{answers.style === 'villa' ? villaT.emptyTip : recovery.hotelTip}</p>
+                <p>{recovery.hotelTip}</p>
                 <div className="tool-empty-result__actions">
-                  {(answers.style === 'villa' ? ['area','style','size'] : ['area','style','budget']).map(key => <button className="hr-btn-retry" key={key} onClick={() => editAnswer(key)}>{key === 'size' ? villaT.size : recovery[key]}</button>)}
+                  {['area','style','budget'].map(key => <button className="hr-btn-retry" key={key} onClick={() => editAnswer(key)}>{recovery[key]}</button>)}
                 </div>
               </section>
             ) : (
@@ -434,6 +459,8 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
                 <a href={WA_HOTEL_HREF} data-analytics-manual="true" target="_blank" rel="noopener noreferrer" className="hr-cta-link hr-cta-link-secondary" onClick={trackHotelWhatsApp}>{t.cta.whatsapp}</a>
               </div>
             </div>
+
+            </>}
 
             <div className="hr-retry-wrap">
               <button className="hr-btn-retry" onClick={() => { setResults(null); setStep(1); setAnswers({}); scrollToTop() }}>{t.buttons.reset}</button>

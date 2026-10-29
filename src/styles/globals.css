@@ -697,7 +697,7 @@ body {
 }
 
 @media (max-width: 768px) {
-  .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track { --mobile-text-columns: 1; }
+  .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track { --mobile-text-columns: 1; --text-choice-max: 100%; --compact-choice-max: 100%; }
   .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track.tool-choice-track--1 { --mobile-text-columns: 1; }
   .planning-tool .hc-card .hc-badge { max-width: 110px; }
   .nav { --nav-pad: 16px; padding: 0 var(--nav-pad); }
@@ -2063,6 +2063,8 @@ select.form-control { cursor: pointer; }
 
 /* ─── RESPONSIVE (page-specific) ────────────────────────── */
 @media (max-width: 1024px) {
+  .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--4 { --tablet-text-columns: 2; }
+  .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--5 { --tablet-text-columns: 3; }
   .page-layout { grid-template-columns: 1fr; }
   .page-sidebar { position: static; border-left: none; border-top: 1px solid var(--linen); }
   .story { grid-template-columns: 1fr; }
@@ -4324,8 +4326,8 @@ div.tool-choice-track > button:nth-child(n) { flex: 0 0 clamp(200px, calc((100% 
 .tool-empty-result__actions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-3); margin-top: var(--space-5); }
 .tool-empty-result button { font-family: var(--font-sans); }
 .tool-empty-result a { display: inline-block; color: var(--pine); margin-left: var(--space-3); text-underline-offset: 4px; }
-.tool-empty-result .tool-empty-result__actions button.hr-btn-retry { background: var(--white); color: var(--pine); border: 1px solid var(--pine); margin-top: 0; padding: 12px 10px; min-height: 44px; letter-spacing: .04em; line-height: 1.4; }
-.tool-empty-result .tool-empty-result__actions button.hr-btn-retry:hover { background: var(--pine); color: var(--white); border-color: var(--pine); }
+:is(.tool-empty-result,.hr-villa-enquiry) .tool-empty-result__actions button.hr-btn-retry { background: var(--white); color: var(--pine); border: 1px solid var(--pine); margin-top: 0; padding: 12px 10px; min-height: 44px; letter-spacing: .04em; line-height: 1.4; }
+:is(.tool-empty-result,.hr-villa-enquiry) .tool-empty-result__actions button.hr-btn-retry:hover { background: var(--pine); color: var(--white); border-color: var(--pine); }
 
 @media (max-width: 768px) { .tool-empty-result__actions { grid-template-columns: 1fr; } }
 
@@ -4547,12 +4549,15 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .planning-tool[data-tool-active="true"] :is(.gdb-wrap,.cst-wrap,.hr-quiz-wrap,.gcc-wrap) { padding-top: var(--space-4); }
 .planning-tool[data-tool-active="true"] .gdb-progress { margin-bottom: var(--space-3); }
 .planning-tool[data-tool-active="true"] section:is(.cst-hero,.gf-hero,.hc-hero,.gdb-hero,.gcc-hero,.hr-hero) > p { display: none; }
-/* Text alternatives keep the same width, with incomplete rows centred. */
+/* Text choices stay visible, with balanced rows when a single row is too dense. */
 .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track { flex-wrap: wrap; overflow: visible; scroll-snap-type: none; --text-columns: 3; }
-.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track:is(.tool-choice-track--2,.tool-choice-track--4) { --text-columns: 2; }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--2 { --text-columns: 2; }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--4 { --text-columns: 4; }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--5 { --text-columns: 5; }
 .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--7 { --text-columns: 4; }
 .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--1 { --text-columns: 1; }
-.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track > button:nth-child(n) { flex: 0 0 calc((100% - (var(--mobile-text-columns,var(--text-columns)) - 1) * 12px) / var(--mobile-text-columns,var(--text-columns))); display: grid; grid-template-columns: minmax(0,1fr) 20px; align-items: start; gap: var(--space-3); max-width: none; padding: var(--space-4); }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track > button:nth-child(n) { flex: 0 0 calc((100% - (var(--mobile-text-columns,var(--tablet-text-columns,var(--text-columns))) - 1) * 12px) / var(--mobile-text-columns,var(--tablet-text-columns,var(--text-columns)))); display: grid; grid-template-columns: minmax(0,1fr) 20px; align-items: start; gap: var(--space-3); max-width: var(--text-choice-max,340px); padding: var(--space-4); }
+.planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track:is(.tool-choice-track--4,.tool-choice-track--5) > button[data-choice-compact="true"] { flex-basis: min(var(--compact-choice-max,160px),calc((100% - (var(--mobile-text-columns,var(--tablet-text-columns,var(--text-columns))) - 1) * 12px) / var(--mobile-text-columns,var(--tablet-text-columns,var(--text-columns))))); }
 .planning-tool .tool-choices div.tool-choice-track > button { position: relative; }
 .tool-choice-marker { position: absolute; top: var(--space-3); right: var(--space-3); width: 20px; height: 20px; display: grid; place-items: center; border: 1px solid var(--stone); background: var(--white); color: var(--white); font-family: var(--font-sans); font-size: 14px; font-weight: 500; line-height: 1; pointer-events: none; }
 .tool-choice-marker--single { border-radius: 50%; }
@@ -4565,3 +4570,9 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .hr-villa-budget { display: grid; gap: var(--space-2); max-width: 480px; margin-inline: auto; text-align: left; }
 .hr-villa-budget label { font-size: .95rem; color: var(--pine); }
 .hr-villa-budget input { width: 100%; min-height: 48px; padding: var(--space-3); border: 1px solid var(--sand); color: var(--charcoal); background: var(--white); font: inherit; }
+
+.hr-villa-enquiry { padding: var(--space-5); border: 1px solid var(--sand); background: var(--cream); }
+.hr-villa-enquiry h3 { font: 500 1.6rem/1.2 var(--font-serif); color: var(--pine); }
+.hr-villa-summary { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,240px),1fr)); gap: var(--space-4); margin-block: var(--space-5); }
+.hr-villa-summary dt { font: 400 .8rem/1.5 var(--font-sans); color: var(--taupe); }
+.hr-villa-summary dd { margin: 0; font: 400 1rem/1.6 var(--font-sans); color: var(--charcoal); overflow-wrap: anywhere; }

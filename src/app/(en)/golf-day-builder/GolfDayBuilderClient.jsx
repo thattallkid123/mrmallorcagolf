@@ -396,6 +396,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
                   return (
                   <button
                     key={o.v}
+                    data-choice-compact={!o.d || undefined}
                     className={`gdb-opt${photo ? ' gdb-opt--photo' : ''}${isSelected(q.key, o.v, q.multi) ? ' selected' : ''}`}
                     aria-pressed={isSelected(q.key, o.v, q.multi)}
                     disabled={q.multi && (answers[q.key] || []).length >= 2 && !isSelected(q.key, o.v, q.multi)}

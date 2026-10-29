@@ -5,6 +5,10 @@ When a new bug is fixed, add it here so it never comes back.
 
 ---
 
+## Villa enquiries and content-sized quiz choices
+**Pattern (October 2026):** Generic villa-area records were filtered as if they were verified property capacities, so ordinary group sizes returned no results. A fixed three-column text layout also split five readable desktop choices into uneven rows and stretched pairs across the page.
+**Fix:** Villa selections always lead to a preferences summary and enquiry with all answers preserved, without property recommendations or a shortlist email. Whole-villa budgets stay separate from hotel room budgets. Text choice counts and compact labels determine desktop layout; larger sets retain balanced rows and phones keep full-width text choices. Browser regressions cover layout widths, all villa area/size combinations, locale actions and contact/WhatsApp hand-off.
+
 ## Translated course maps inherited the homepage canonical
 **Pattern (October 2026):** Six translated course-map pages declared titles and descriptions but no alternates, so Next.js inherited the root homepage canonical. The pages returned 200 while telling search engines to consolidate them into the English homepage.
 **Fix:** Set each translated map's alternates through `getAlternates()` with its full localized path. Verify the rendered canonical and all seven language alternates, rather than checking only that a canonical uses the correct domain.

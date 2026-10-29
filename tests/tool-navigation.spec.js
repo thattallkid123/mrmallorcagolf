@@ -63,12 +63,8 @@ test('Hotel Finder result summary retains every selected priority',async({page})
   await expect(summary).toContainText('with spa recovery between rounds')
 })
 
-test('whole-villa budget stays separate and is included in the saved brief',async({page})=>{
-  let sent
-  await page.route('**/api/send-itinerary',async route=>{
-    sent=route.request().postDataJSON()
-    await route.fulfill({json:{ok:true}})
-  })
+test('villa enquiry keeps every preference in the contact form and WhatsApp brief',async({page})=>{
+  test.setTimeout(90000)
   await page.goto('/tools/hotel-recommender',{waitUntil:'load'})
   for(const [step,index] of [[1,0],[2,4],[3,1],[4,2],[5,3]]){
     await expect(page.locator('.hr-step-num')).toHaveText(`Question ${step} of 6`)
@@ -79,16 +75,21 @@ test('whole-villa budget stays separate and is included in the saved brief',asyn
   await expect(page.getByRole('button',{name:/Up to €250/})).toHaveCount(0)
   await budget.fill('600')
   await page.locator('.hr-btn-next').click()
-  await expect(page.getByRole('heading',{name:'Villa area suggestions'})).toBeVisible()
-  await expect(page.locator('.hr-results-hero')).toContainText('Whole-villa nightly budget: €600')
-  await expect(page.locator('.hr-results-hero')).toContainText('not available properties or confirmed prices')
-  expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)
-  await page.locator('.hr-email-input').fill('layout-check@example.com')
-  await page.locator('.hr-btn-email').click()
-  await expect.poll(()=>sent?.data?.answerSummary).toContain('Whole-villa nightly budget: €600')
-  expect(sent.data.answerSummary).not.toContain('/room')
-  const href=await page.locator('.hr-cta-link-primary').getAttribute('href')
-  expect(decodeURIComponent(href)).toContain('Whole-villa nightly budget: €600')
+  await expect(page.locator('.hr-results-hero h2')).toHaveText('Enquire about a villa')
+  const panel=page.locator('.hr-villa-enquiry')
+  await expect(panel).toContainText('€600')
+  await expect(page.locator('.hr-results-hero')).toContainText('travel partner')
+  await expect(page.locator('.hr-hotel-card,.hr-email-section,.tool-empty-result')).toHaveCount(0)
+  const href=await panel.locator('.hr-cta-link-primary').getAttribute('href')
+  const fields=JSON.parse(new URLSearchParams(href.split('#')[1]).get('plan'))
+  for(const text of ['Southwest','Privacy','Group of friends','6 to 9','Private villa','Whole-villa nightly budget: €600']) expect(fields.message).toContain(text)
+  expect(fields.message).not.toContain('/room')
+  const wa=new URL(await panel.locator('.hr-cta-link-secondary').getAttribute('href'))
+  expect(wa.searchParams.get('text')).toBe(fields.message)
+  await panel.locator('.hr-cta-link-primary').click()
+  await page.waitForURL(/\/contact\?service=whole-trip/, {waitUntil:'domcontentloaded'})
+  await expect(page.locator('#message')).toHaveValue(fields.message,{timeout:30000})
+  await expect(page.getByRole('radio',{name:'Plan the whole trip',exact:true})).toBeChecked()
 })
 
 test('Chinese course finder also waits for Continue and keeps the selected answer on Back',async({page})=>{

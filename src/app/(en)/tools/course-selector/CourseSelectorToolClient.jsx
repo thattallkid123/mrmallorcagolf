@@ -842,6 +842,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
                 return (
                   <button
                     key={opt.value}
+                    data-choice-compact={!(t.questions[q.id]?.options?.[opt.value]?.desc || opt.desc) || undefined}
                     className={`cst-opt${photo ? ' cst-opt--photo' : ''}${isSelected ? ' selected' : ''}`}
                     aria-pressed={isSelected}
                     onClick={() => selectOption(q.id, opt.value, q.multi)}

@@ -1,25 +1,69 @@
 const COPY = {
-  en: ['What is your whole-villa budget per night?', 'Optional. Enter the total for the property. The tool suggests areas; I confirm villa options and prices for your dates.', 'Whole villa per night (€)', 'Not sure yet', 'Villa area suggestions', 'These are area suggestions, not available properties or confirmed prices. Capacity, dates and budget need checking before a villa is recommended.', 'Whole-villa nightly budget'],
-  de: ['Wie hoch ist Ihr Budget pro Nacht für die ganze Villa?', 'Optional. Geben Sie den Gesamtbetrag für das Haus an. Das Tool schlägt Regionen vor; ich bestätige Villen und Preise für Ihre Reisedaten.', 'Ganze Villa pro Nacht (€)', 'Noch unklar', 'Regionen für Ihre Villa', 'Dies sind Regionsvorschläge, keine verfügbaren Häuser oder bestätigten Preise. Belegung, Daten und Budget müssen vor einer Empfehlung geprüft werden.', 'Nächtliches Budget für die ganze Villa'],
-  es: ['¿Cuál es su presupuesto por noche para toda la villa?', 'Opcional. Indique el total para la propiedad. La herramienta sugiere zonas; yo confirmo villas y precios para sus fechas.', 'Villa completa por noche (€)', 'Aún no lo sé', 'Zonas para su villa', 'Son sugerencias de zonas, no propiedades disponibles ni precios confirmados. Hay que comprobar capacidad, fechas y presupuesto antes de recomendar una villa.', 'Presupuesto por noche para toda la villa'],
-  fr: ['Quel est votre budget par nuit pour la villa entière ?', 'Facultatif. Indiquez le total pour la propriété. L’outil propose des zones ; je confirme les villas et les prix pour vos dates.', 'Villa entière par nuit (€)', 'Pas encore décidé', 'Zones pour votre villa', 'Il s’agit de zones suggérées, pas de propriétés disponibles ni de prix confirmés. Capacité, dates et budget sont à vérifier avant de recommander une villa.', 'Budget par nuit pour la villa entière'],
-  nl: ['Wat is uw budget per nacht voor de hele villa?', 'Optioneel. Vul het totaal voor de woning in. De tool stelt gebieden voor; ik bevestig villa’s en prijzen voor uw data.', 'Hele villa per nacht (€)', 'Nog niet zeker', 'Gebieden voor uw villa', 'Dit zijn gebiedssuggesties, geen beschikbare woningen of bevestigde prijzen. Capaciteit, data en budget moeten worden gecontroleerd voordat ik een villa aanbeveel.', 'Nachtbudget voor de hele villa'],
-  sv: ['Vad är er budget per natt för hela villan?', 'Valfritt. Ange totalen för boendet. Verktyget föreslår områden; jag bekräftar villor och priser för era datum.', 'Hela villan per natt (€)', 'Inte säker än', 'Områden för er villa', 'Detta är områdesförslag, inte tillgängliga boenden eller bekräftade priser. Kapacitet, datum och budget behöver kontrolleras före en rekommendation.', 'Nattbudget för hela villan'],
-  zh: ['整栋别墅每晚的预算是多少？', '可不填。请输入整栋物业的总额。工具仅推荐区域，具体别墅及出行日期的价格由Andy确认。', '整栋别墅每晚（€）', '暂不确定', '适合寻找别墅的区域', '以下仅为区域建议，并非可预订的具体物业或已确认报价。推荐别墅前，还需核实入住人数、日期和预算。', '整栋别墅每晚预算'],
-}
-
-const RECOVERY = {
-  en: ['Change group size', 'No villa area suggestions for these answers', 'Try another area or style, or review the group size. Live villa availability has not been checked.'],
-  de: ['Gruppengröße ändern', 'Keine Villenregion für diese Angaben', 'Versuchen Sie eine andere Region oder Unterkunftsart oder prüfen Sie die Gruppengröße. Die aktuelle Verfügbarkeit wurde nicht geprüft.'],
-  es: ['Cambiar tamaño del grupo', 'Sin zonas de villas para estas respuestas', 'Pruebe otra zona o estilo, o revise el tamaño del grupo. No se ha comprobado la disponibilidad actual de villas.'],
-  fr: ['Modifier la taille du groupe', 'Aucune zone de villa pour ces réponses', 'Essayez une autre zone ou un autre style, ou revoyez la taille du groupe. La disponibilité actuelle des villas n’a pas été vérifiée.'],
-  nl: ['Groepsgrootte wijzigen', 'Geen villagebieden voor deze antwoorden', 'Probeer een ander gebied of type verblijf, of controleer de groepsgrootte. De actuele beschikbaarheid is niet gecontroleerd.'],
-  sv: ['Ändra gruppstorlek', 'Inga villaområden för dessa svar', 'Prova ett annat område eller en annan boendetyp, eller se över gruppstorleken. Aktuell tillgänglighet har inte kontrollerats.'],
-  zh: ['修改同行人数', '这些条件暂未匹配到别墅区域建议', '可更换区域或住宿类型，或核对同行人数。工具尚未查询具体别墅的实时空房。'],
+  en: {
+    title: 'What is your whole-villa budget per night?',
+    sub: 'Optional. Enter the total for the property, not a per-person or per-room amount.',
+    label: 'Whole villa per night (€)', unknown: 'Not sure yet', summary: 'Whole-villa nightly budget',
+    resultsTitle: 'Enquire about a villa',
+    resultsNote: 'Send your preferences and I can plan the golf with a trusted local travel partner, who handles villa options and bookings. Availability and prices are confirmed for your dates.',
+    enquire: 'Enquire about a villa', review: 'Your villa preferences',
+    detailLabels: ['Area', 'Priorities', 'Travellers', 'Group size', 'Accommodation', 'Whole-villa nightly budget'],
+  },
+  de: {
+    title: 'Wie hoch ist Ihr Budget pro Nacht für die ganze Villa?',
+    sub: 'Optional. Geben Sie den Gesamtbetrag für das Haus an, nicht pro Person oder Zimmer.',
+    label: 'Ganze Villa pro Nacht (€)', unknown: 'Weiß ich noch nicht', summary: 'Budget pro Nacht für die ganze Villa',
+    resultsTitle: 'Eine Villa anfragen',
+    resultsNote: 'Senden Sie Ihre Wünsche. Ich plane das Golfprogramm gemeinsam mit einem vertrauenswürdigen lokalen Reisepartner, der sich um Villenangebote und Buchungen kümmert. Verfügbarkeit und Preise werden für Ihre Reisedaten bestätigt.',
+    enquire: 'Eine Villa anfragen', review: 'Ihre Wünsche für die Villa',
+    detailLabels: ['Region', 'Prioritäten', 'Reisende', 'Gruppengröße', 'Unterkunft', 'Budget pro Nacht für die ganze Villa'],
+  },
+  es: {
+    title: '¿Cuál es su presupuesto por noche para toda la villa?',
+    sub: 'Opcional. Indique el total para la propiedad, no por persona ni por habitación.',
+    label: 'Villa completa por noche (€)', unknown: 'Aún no lo sé', summary: 'Presupuesto por noche para toda la villa',
+    resultsTitle: 'Consultar sobre una villa',
+    resultsNote: 'Envíeme sus preferencias y podré planificar el golf con un colaborador local de viajes de confianza, que se encarga de las opciones de villas y las reservas. La disponibilidad y los precios se confirman para sus fechas.',
+    enquire: 'Consultar sobre una villa', review: 'Sus preferencias para la villa',
+    detailLabels: ['Zona', 'Prioridades', 'Viajeros', 'Tamaño del grupo', 'Alojamiento', 'Presupuesto por noche para toda la villa'],
+  },
+  fr: {
+    title: 'Quel est votre budget par nuit pour la villa entière ?',
+    sub: 'Facultatif. Indiquez le total pour la propriété, et non par personne ou par chambre.',
+    label: 'Villa entière par nuit (€)', unknown: 'Je ne sais pas encore', summary: 'Budget par nuit pour la villa entière',
+    resultsTitle: 'Se renseigner sur une villa',
+    resultsNote: 'Envoyez-moi vos préférences. Je peux organiser le golf avec un partenaire de voyage local de confiance, qui gère les propositions de villas et les réservations. Les disponibilités et les prix sont confirmés pour vos dates.',
+    enquire: 'Se renseigner sur une villa', review: 'Vos préférences pour la villa',
+    detailLabels: ['Zone', 'Priorités', 'Voyageurs', 'Taille du groupe', 'Hébergement', 'Budget par nuit pour la villa entière'],
+  },
+  nl: {
+    title: 'Wat is uw budget per nacht voor de hele villa?',
+    sub: 'Optioneel. Vul het totaal voor de woning in, niet per persoon of per kamer.',
+    label: 'Hele villa per nacht (€)', unknown: 'Nog niet zeker', summary: 'Budget per nacht voor de hele villa',
+    resultsTitle: 'Informeer naar een villa',
+    resultsNote: 'Stuur uw wensen door. Ik kan het golfprogramma plannen met een vertrouwde lokale reispartner, die de villaopties en boekingen regelt. Beschikbaarheid en prijzen worden voor uw reisdata bevestigd.',
+    enquire: 'Informeer naar een villa', review: 'Uw wensen voor de villa',
+    detailLabels: ['Gebied', 'Prioriteiten', 'Reizigers', 'Groepsgrootte', 'Accommodatie', 'Budget per nacht voor de hele villa'],
+  },
+  sv: {
+    title: 'Vad är din budget per natt för hela villan?',
+    sub: 'Valfritt. Ange totalen för boendet, inte per person eller per rum.',
+    label: 'Hela villan per natt (€)', unknown: 'Vet inte än', summary: 'Budget per natt för hela villan',
+    resultsTitle: 'Fråga om en villa',
+    resultsNote: 'Skicka dina önskemål så kan jag planera golfen med en pålitlig lokal resepartner, som tar hand om villaförslag och bokningar. Tillgänglighet och priser bekräftas för dina resedatum.',
+    enquire: 'Fråga om en villa', review: 'Dina önskemål för villan',
+    detailLabels: ['Område', 'Prioriteringar', 'Resenärer', 'Gruppstorlek', 'Boende', 'Budget per natt för hela villan'],
+  },
+  zh: {
+    title: '整栋别墅每晚的预算是多少？',
+    sub: '选填。请输入整栋物业的总额，而不是每人或每间客房的费用。',
+    label: '整栋别墅每晚（€）', unknown: '暂不确定', summary: '整栋别墅每晚预算',
+    resultsTitle: '咨询别墅住宿',
+    resultsNote: '请发送您的住宿偏好。高尔夫行程由我规划，值得信赖的当地旅行合作伙伴负责别墅选择与预订。房源和价格会按您的出行日期确认。',
+    enquire: '咨询别墅住宿', review: '您的别墅住宿偏好',
+    detailLabels: ['区域', '优先事项', '同行人员', '同行人数', '住宿类型', '整栋别墅每晚预算'],
+  },
 }
 
 export function getVillaBudgetT(lang = 'en') {
-  const [title, sub, label, unknown, resultsTitle, resultsNote, summary] = COPY[lang] || COPY.en
-  const [size, emptyTitle, emptyTip] = RECOVERY[lang] || RECOVERY.en
-  return { title, sub, label, unknown, resultsTitle, resultsNote, summary, size, emptyTitle, emptyTip }
+  return COPY[lang] || COPY.en
 }
