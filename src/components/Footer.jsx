@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { NAV_LOCALES, getLegalPath, hasLocaleRoute, buildLocalePath } from '../lib/site'
 import ReviewBadge from './ReviewBadge'
+import FooterLanguage from './FooterLanguage'
 import { BookingTermsLink } from './BookingPolicyNotice'
 
 // Required by the PGA with every use of the Members' Crest (2025 brand guidelines). Legal wording: kept in English on every locale.
@@ -283,13 +284,7 @@ export default function Footer({ lang }) {
           <BookingTermsLink locale={locale} footer />
         </p>
         <p className="footer__trademark">{PGA_TRADEMARK_LINE}</p>
-        <div className="footer__lang">
-          {NAV_LOCALES.map((code) => (
-            <Link key={code} href={code === 'en' ? '/' : `/${code}`} prefetch={false}>
-              {code === 'zh' ? '中文' : code.toUpperCase()}
-            </Link>
-          ))}
-        </div>
+        <FooterLanguage lang={locale} />
       </div>
     </footer>
   )

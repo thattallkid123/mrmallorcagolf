@@ -281,7 +281,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                 onClick={() => set(stateKey, o.val)}
               >
                 {o.label}
-                {o.small && <span style={{ display:'block', fontSize:10, color: sel ? '#D4B068' : '#8A7F74', marginTop:3, fontWeight:300 }}>{o.small}</span>}
+                {o.small && <span style={{ display:'block', fontSize:11, color: sel ? '#D4B068' : '#8A7F74', marginTop:3, fontWeight:300 }}>{o.small}</span>}
               </button>
             )
           })}
