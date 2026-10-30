@@ -25,7 +25,7 @@ export const HOME_CONTENT = {
   },
   "intro": {
     "eyebrow": "What I do",
-    "title": "Play a round with me, or let me book your golf and plan the trip around it.",
+    "title": "A round with me, planning and booking your golf, or planning your whole trip here in Mallorca.",
     "paragraphs": [
       "Tell me your dates, group size and handicap range."
     ],

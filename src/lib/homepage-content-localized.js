@@ -23,7 +23,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "Lo que hago",
-      "title": "Juegue una vuelta conmigo, o deje que reserve su golf y planifique el viaje a su alrededor.",
+      "title": "Una vuelta conmigo, la planificación y reserva de sus partidas de golf, o la planificación de todo su viaje aquí en Mallorca.",
       "paragraphs": [
         "Indíqueme las fechas, el tamaño del grupo y el rango de hándicaps."
       ],
@@ -352,7 +352,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "Was ich mache",
-      "title": "Spielen Sie eine Runde mit mir, oder ich buche Ihr Golf und plane die Reise darum herum.",
+      "title": "Eine Runde mit mir, die Planung und Buchung Ihrer Golfrunden oder die Planung Ihrer gesamten Reise hier auf Mallorca.",
       "paragraphs": [
         "Teilen Sie mir Ihre Reisedaten, Gruppengröße und Handicap-Spanne mit."
       ],
@@ -682,7 +682,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "Ce que je fais",
-      "title": "Faites un parcours avec moi, ou laissez-moi réserver votre golf et organiser le voyage autour.",
+      "title": "Une partie avec moi, la planification et la réservation de vos parcours de golf, ou l’organisation de tout votre séjour ici à Majorque.",
       "paragraphs": [
         "Indiquez-moi vos dates, la taille du groupe et la fourchette des handicaps."
       ],
@@ -1012,7 +1012,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "Wat ik doe",
-      "title": "Speel een ronde met mij, of laat mij uw golf boeken en de reis eromheen plannen.",
+      "title": "Een ronde met mij, het plannen en boeken van uw golfrondes, of het plannen van uw hele reis hier op Mallorca.",
       "paragraphs": [
         "Laat mij uw reisdata, groepsgrootte en het handicapbereik weten."
       ],
@@ -1342,7 +1342,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "Vad jag gör",
-      "title": "Spela en runda med mig, eller låt mig boka golfen och planera resan runt den.",
+      "title": "En runda med mig, planering och bokning av dina golfrundor, eller planering av hela din resa här på Mallorca.",
       "paragraphs": [
         "Berätta vilka datum du har, gruppens storlek och handicapspannet."
       ],
@@ -1672,7 +1672,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "intro": {
       "eyebrow": "我做什么",
-      "title": "与我同打一轮，或由我预订球场，并围绕球局规划行程。",
+      "title": "与我同打一轮高尔夫、规划并预订您的高尔夫球局，或规划您在马略卡的整个行程。",
       "paragraphs": [
         "请告诉我您的日期、人数和差点范围。"
       ],
