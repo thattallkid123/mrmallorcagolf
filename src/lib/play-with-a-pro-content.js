@@ -119,6 +119,10 @@ export const PLAY_WITH_A_PRO_CONTENT = {
         "author": "Jo"
       },
       {
+        "text": "I'd trained with many different coaches over the years and never really improved, so I thought I was a hopeless case, stuck with my swing forever. Andy instantly saw what was causing my inconsistency, and he explained it so clearly that I knew exactly what to work on. I saw an immediate change in my ball flight and results. After the lesson, he even sent me a PDF and a video explaining what I was doing, what we changed, and what to keep working on. Overall, a great experience, and I'd highly recommend him!",
+        "author": "Gero"
+      },
+      {
         "text": "After years of playing only once or twice a year, I decided it was time to get back to the game I loved growing up in South Africa. I chose an on-course lesson with Andy because hitting the same shot over and over at a driving range wasn't teaching me how to play golf. Three weeks later, I'd gone from hacking around a couple of times a year to shooting in the low 90s, playing with confidence and loving golf again. I can't recommend Andy highly enough, especially if you want to improve your game, not just your swing.",
         "author": "Jannie"
       },

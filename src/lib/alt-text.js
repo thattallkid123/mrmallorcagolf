@@ -38,6 +38,14 @@ export const ALT_TEXT = {
     "sv": "Andy med John på Son Quint under en Play With A Pro-dag",
     "zh": "Andy 与 John 在 Son Quint 的 Play With A Pro 体验日"
   },
+  "Andy with Gero at Son Muntaner during a Play With A Pro day": {
+    "es": "Andy con Gero en Son Muntaner durante un día Play With A Pro",
+    "de": "Andy mit Gero in Son Muntaner bei einem Play-With-A-Pro-Tag",
+    "fr": "Andy avec Gero à Son Muntaner lors d'une journée Play With A Pro",
+    "nl": "Andy met Gero op Son Muntaner tijdens een Play With A Pro-dag",
+    "sv": "Andy med Gero på Son Muntaner under en Play With A Pro-dag",
+    "zh": "Andy 与 Gero 在 Son Muntaner 的 Play With A Pro 体验日"
+  },
   "Andy with Paul at Son Termes during a Play With A Pro day": {
     "de": "Andy mit Paul in Son Termes bei einem Play-With-A-Pro-Tag",
     "es": "Andy con Paul en Son Termes durante un día Play With A Pro",

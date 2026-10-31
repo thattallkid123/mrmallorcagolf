@@ -54,8 +54,8 @@ export const PLAY_WITH_A_PRO_EXPLAINED_CONTENT = {
       paragraph:
         "I send you video and written notes after the round, covering what changed and what to work on next.",
       quoteText:
-        'I found that he gave me clear and specific feedback that helped me correct several of my mistakes. Especially my putting, which I have struggled with, has improved a lot.',
-      quoteCredit: 'Synøve',
+        'After the lesson, he even sent me a PDF and a video explaining what I was doing, what we changed, and what to keep working on.',
+      quoteCredit: 'Gero',
     },
     whatChanges: {
       eyebrow: 'Afterward',

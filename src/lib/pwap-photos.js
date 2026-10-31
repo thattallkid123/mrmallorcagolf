@@ -20,4 +20,5 @@ export const PWAP_PHOTOS = [
   { src: '/images/client-son-gual2.webp', alt: 'Golfers at Son Gual with Andy Griffiths', position: 'center 45%', variant: 'portrait' },
   { src: '/images/client-son-gual-john.webp', alt: 'Andy with John at Son Gual during a Play With A Pro day', position: 'center 62%' },
   { src: '/images/client-t-golf-palma-sam.webp', alt: 'Andy with Sam at T Golf Palma during a Play With A Pro day', position: 'center 30%', variant: 'portrait' },
+  { src: '/images/client-son-muntaner-gero.webp', alt: 'Andy with Gero at Son Muntaner during a Play With A Pro day', position: 'center 22%', variant: 'portrait' },
 ]
