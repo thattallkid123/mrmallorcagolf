@@ -164,32 +164,34 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
           stripLabel: '与我同场照片',
           featuredLabel: '与我同场特色图片',
           featuredImageAlt: '马略卡私人高尔夫体验，海景与球道背景',
-          photos: [
-            'Alcanada 上与球手同场',
-            '带海景的小组高尔夫日',
-            '马略卡四人高尔夫小组',
-            'Son Gual 上的 Andy 与球手',
-            'Son Antem West 的同场高尔夫日',
-            '带水景的小组高尔夫日',
-            'Andy 与球手在 Santa Ponsa 的同场高尔夫日',
-            'Andy 与 Mark 在 Santa Ponsa 的同场高尔夫日',
-          ],
+          // Keyed by image, not position, so reordering pwap-photos.js cannot mismatch alt text.
+          photos: {
+            '/images/client-alcanada.webp': 'Alcanada 上与球手同场',
+            '/images/client-group-alcanada.webp': '带海景的小组高尔夫日',
+            '/images/client-group-valley.webp': '马略卡四人高尔夫小组',
+            '/images/client-son-gual.webp': 'Son Gual 上的 Andy 与球手',
+            '/images/son-antem-west-review-blog/son-antem-west-4.webp': 'Son Antem West 的同场高尔夫日',
+            '/images/client-group-pond.webp': '带水景的小组高尔夫日',
+            '/images/client-santa-ponsa.jpg': 'Andy 与球手在 Santa Ponsa 的同场高尔夫日',
+            '/images/client-santa-ponsa-mark.jpg': 'Andy 与 Mark 在 Santa Ponsa 的同场高尔夫日',
+          },
         }
       : {
           heroImageAlt: 'Andy Griffiths coaching a client on the golf course in Mallorca',
           stripLabel: 'Play With A Pro round photos',
           featuredLabel: 'Play With A Pro featured image',
           featuredImageAlt: 'Play With A Pro day in Mallorca with sea and fairway backdrop',
-          photos: [
-            'Andy with a client at Alcanada',
-            'Group golf day with sea views',
-            'Group of four golfers in Mallorca',
-            'Andy and client at Son Gual',
-            'Andy with two guests on a play-with-a-pro day at Son Antem West',
-            'Group day with water views',
-            'Andy with a client at Santa Ponsa during a Play With A Pro day',
-            'Andy with Mark at Santa Ponsa during a Play With A Pro day',
-          ],
+          // Keyed by image, not position, so reordering pwap-photos.js cannot mismatch alt text.
+          photos: {
+            '/images/client-alcanada.webp': 'Andy with a client at Alcanada',
+            '/images/client-group-alcanada.webp': 'Group golf day with sea views',
+            '/images/client-group-valley.webp': 'Group of four golfers in Mallorca',
+            '/images/client-son-gual.webp': 'Andy and client at Son Gual',
+            '/images/son-antem-west-review-blog/son-antem-west-4.webp': 'Andy with two guests on a play-with-a-pro day at Son Antem West',
+            '/images/client-group-pond.webp': 'Group day with water views',
+            '/images/client-santa-ponsa.jpg': 'Andy with a client at Santa Ponsa during a Play With A Pro day',
+            '/images/client-santa-ponsa-mark.jpg': 'Andy with Mark at Santa Ponsa during a Play With A Pro day',
+          },
         }
   const reviewLinks = {
     courses: buildLocalePath('/golf-courses', locale),
@@ -197,7 +199,7 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
   const finalPrimaryHref = localizedHref(content.finalCta.primaryHref, locale) || playWithAProContactHref(locale)
   const wechatHref = locale === 'zh' ? buildLocalePath('/contact#wechat', locale) : null
   const dayPhotos = [
-    ...PWAP_PHOTOS.map((photo, i) => ({ ...photo, alt: copy.photos[i] ?? photo.alt })),
+    ...PWAP_PHOTOS.map((photo) => ({ ...photo, alt: copy.photos[photo.src] ?? photo.alt })),
   ]
   const dayPhotosLoop = [...dayPhotos, ...dayPhotos]
 

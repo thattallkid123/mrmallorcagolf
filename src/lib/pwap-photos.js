@@ -5,20 +5,19 @@
 
 export const PWAP_PHOTOS = [
   { src: '/images/client-alcanada.webp', alt: 'Andy with a client at Alcanada', position: 'center 38%' },
-  { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', position: 'center 44%' },
   { src: '/images/client-group-valley.webp', alt: 'Group of four golfers in Mallorca', position: 'center 36%' },
   { src: '/images/client-son-gual.webp', alt: 'Andy and client at Son Gual', position: 'center 32%', variant: 'portrait' },
   { src: '/images/son-antem-west-review-blog/son-antem-west-4.webp', alt: 'Andy with Julien and Jo at Son Antem West during a Play With A Pro day', position: 'center 42%' },
+  { src: '/images/client-son-quint-john.webp', alt: 'Andy with John at Son Quint during a Play With A Pro day', position: 'center 38%', variant: 'portrait' },
   { src: '/images/client-group-pond.webp', alt: 'Group day with water views', position: 'center 26%', variant: 'portrait' },
   { src: '/images/client-santa-ponsa.jpg', alt: 'Andy with a client at Santa Ponsa during a Play With A Pro day', position: 'center 40%' },
   { src: '/images/client-santa-ponsa-mark.jpg', alt: 'Andy with Mark at Santa Ponsa during a Play With A Pro day', position: 'center 40%' },
   { src: '/images/client-tgolf-calvia-amanda.jpg', alt: 'Andy with Amanda at T Golf Calvia during a Play With A Pro day', position: 'center 35%', variant: 'portrait' },
   { src: '/images/client-son-gual-jannie.webp', alt: 'Andy with Jannie at Son Gual during a Play With A Pro day', position: 'center 30%', variant: 'portrait' },
-  { src: '/images/client-son-termes-paul.webp', alt: 'Andy with Paul at Son Termes during a Play With A Pro day', position: 'center 45%', variant: 'portrait' },
-  { src: '/images/client-son-quint-john.webp', alt: 'Andy with John at Son Quint during a Play With A Pro day', position: 'center 38%', variant: 'portrait' },
-  // Added 2026-10-26 (Andy's pick). Keep new photos at the end: Play With A Pro's localised alt list matches by position.
-  { src: '/images/client-son-gual2.webp', alt: 'Golfers at Son Gual with Andy Griffiths', position: 'center 45%', variant: 'portrait' },
-  { src: '/images/client-son-gual-john.webp', alt: 'Andy with John at Son Gual during a Play With A Pro day', position: 'center 62%' },
-  { src: '/images/client-t-golf-palma-sam.webp', alt: 'Andy with Sam at T Golf Palma during a Play With A Pro day', position: 'center 30%', variant: 'portrait' },
   { src: '/images/client-son-muntaner-gero.webp', alt: 'Andy with Gero at Son Muntaner during a Play With A Pro day', position: 'center 22%', variant: 'portrait' },
+  { src: '/images/client-son-termes-paul.webp', alt: 'Andy with Paul at Son Termes during a Play With A Pro day', position: 'center 45%', variant: 'portrait' },
+  { src: '/images/client-son-gual2.webp', alt: 'Golfers at Son Gual with Andy Griffiths', position: 'center 45%', variant: 'portrait' },
+  { src: '/images/client-t-golf-palma-sam.webp', alt: 'Andy with Sam at T Golf Palma during a Play With A Pro day', position: 'center 30%', variant: 'portrait' },
+  { src: '/images/client-son-gual-john.webp', alt: 'Andy with John at Son Gual during a Play With A Pro day', position: 'center 62%' },
+  { src: '/images/client-group-alcanada.webp', alt: 'Group golf day with sea views', position: 'center 44%' },
 ]
