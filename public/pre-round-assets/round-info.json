@@ -112,7 +112,7 @@
         "proShopOpens": "The pro shop is open every day 08:00-18:00.",
         "firstTee": "The first tee time is usually 08:00.",
         "earlyTee": "The pro shop and the driving range are open for the first tee times of the day.",
-        "rangeOpens": "Balls come from a card machine: €5 for 1 credit (about 40 balls), €20 for 5 credits, €35 for 10 and €60 for 20. TrackMan Range with 21 open and 7 covered bays.",
+        "rangeOpens": "Range use is free with a green fee. Balls come from a card machine: €5 for 1 credit (about 40 balls), €20 for 5 credits, €35 for 10 and €60 for 20. TrackMan Range with 21 open and 7 covered bays.",
         "practiceFacilities": "The practice facilities are a few minutes’ buggy drive from the first tee: a chipping green, a short game pitching area and a putting green, as well as the driving range.",
         "foodBeforeRound": "Restaurante Campino (Italian, terrace over the 18th) open every day 09:00-23:00.",
         "water": "Halfway House straight after hole 8: Mallorcan tapas and cold drinks. Free water from the refill station at the clubhouse.",
@@ -215,7 +215,6 @@
         "buggyTrolley": "The front nine is hilly, so a buggy is recommended there. The back nine is flatter and easy to walk. Buggies, manual trolleys and electric trolleys are available.",
         "proShopOpens": "The pro shop is open 08:00-19:00 and is where you check in.",
         "firstTee": "The first tee time is usually 09:00.",
-        "rangeOpens": "Range balls are €3 for a token of 38. Using the range without a green fee costs €10.",
         "practiceFacilities": "There is a driving range, a putting green, a pitching green, a chipping green and a practice bunker.",
         "foodBeforeRound": "The restaurant is open 09:00-20:00, depending on demand, so it is not open before the earliest tee times. Terrace on the 18th.",
         "water": "Water and tees come with the buggy.",
@@ -225,7 +224,8 @@
         "changingRooms": "Modern locker rooms with showers. Free lockers for valuables and clothes.",
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
-        "flights": "Tee times are for groups of four, so another player may book the same slot online."
+        "flights": "Tee times are for groups of four, so another player may book the same slot online.",
+        "rangeOpens": "Range balls are €3 for a token of 38. Using the range without a green fee costs €10."
       },
       "seasonal": {},
       "toCheck": [],
@@ -267,7 +267,6 @@
         "proShopOpens": "The pro shop is open 08:00-19:00 every day.",
         "firstTee": "The first tee time is 08:06, and 07:30 in July.",
         "earlyTee": "In July the first tee time is 07:30, half an hour before the pro shop opens, although staff are at the club from 07:30.",
-        "rangeOpens": "A range visit costs €10, with balls at €5 for 30, €9 for 60 or €12 for 90.",
         "practiceFacilities": "The range is next to the clubhouse, and there are three short-game areas.",
         "foodBeforeRound": "There is no coffee at the club before an early start, but water is sold in the shop. The kitchen at the Roca Viva restaurant opens at 12:00 and is closed on Mondays.",
         "water": "Water is sold in the pro shop.",
@@ -278,7 +277,8 @@
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
         "flights": "Another player can be added to a group of fewer than four, though it is rare for a single golfer to be booked in with a group.",
-        "arrivalNotes": "Dogs allowed on the course in the afternoon."
+        "arrivalNotes": "Dogs allowed on the course in the afternoon.",
+        "rangeOpens": "A range visit costs €10, with balls at €5 for 30, €9 for 60 or €12 for 90."
       },
       "seasonal": {},
       "toCheck": [],
@@ -319,7 +319,6 @@
         "buggyTrolley": "You can walk it if you are reasonably fit, but the final holes include two significant climbs, so take a buggy if that worries you. Buggies, trolleys and electric trolleys are available, and buggies are not guaranteed in high season, so book ahead.",
         "proShopOpens": "Reception opens at 07:30 and the first tee time is 08:00.",
         "firstTee": "The first tee time is 08:00.",
-        "rangeOpens": "Range tokens are €3 for 35 balls, or €25 for ten tokens. Using the range without a green fee costs €8.",
         "practiceFacilities": "There is a driving range with grass and mat hitting areas, a large putting green, an all-grass chipping and pitching area with slopes, and a bunker practice area.",
         "foodBeforeRound": "The restaurant does not open until 10:00. There is a coffee machine and cold drinks at the club, and a small shopping centre nearby where you can have breakfast.",
         "water": "There are no water fountains on the course. Water is sold in the pro shop, the restaurant and from vending machines on the course.",
@@ -330,7 +329,8 @@
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club. Buggies, trolleys and hire clubs are paid directly at the course.",
         "flights": "Another player can be added, but a single player rarely takes the fourth place. The club can try to reserve the spare place when you book.",
-        "arrivalNotes": "An active golf licence is required. Under-14s must be with an adult. Book hire equipment with the tee time."
+        "arrivalNotes": "An active golf licence is required. Under-14s must be with an adult. Book hire equipment with the tee time.",
+        "rangeOpens": "Range tokens are €3 for 35 balls, or €25 for ten tokens. Using the range without a green fee costs €8."
       },
       "seasonal": {},
       "toCheck": [],
@@ -450,7 +450,6 @@
         "buggyTrolley": "You can walk it if you are reasonably fit, but there are a few climbs and two of the longest holes in Mallorca, so a buggy suits many players. Buggies, push trolleys and electric trolleys are available.",
         "proShopOpens": "The club is open every day 07:30-20:00 from 1 April to 15 October. In winter it opens at about 08:00 and closes at about 18:30, depending on the daylight.",
         "firstTee": "The first tee time is usually 08:00.",
-        "rangeOpens": "The practice range costs €7, plus €5 for a bucket of 50 balls.",
         "practiceFacilities": "There is a driving range, a practice bunker, and pitching and putting greens.",
         "foodBeforeRound": "Clubhouse restaurant March to October with a daily three-course menu. In winter there is no food available at the club, so bring something with you.",
         "water": "There are water stations and shaded rest points on the course, and drinks carts in summer.",
@@ -460,7 +459,8 @@
         "changingRooms": "Locker rooms and showers.",
         "parking": "Parking on site.",
         "payment": "Cards are accepted at the club.",
-        "flights": "You can have a tee time with just three players, with no supplement."
+        "flights": "You can have a tee time with just three players, with no supplement.",
+        "rangeOpens": "The practice range costs €7, plus €5 for a bucket of 50 balls."
       },
       "seasonal": {},
       "toCheck": [],
@@ -595,7 +595,6 @@
         "buggyTrolley": "The course is flat but long, so it is easy to walk and a buggy is optional. Buggies, manual trolleys and electric trolleys are available.",
         "proShopOpens": "The pro shop opens at about 07:45.",
         "firstTee": "The first tee time for visitors who book directly is 09:04. If you book through me, tee times start from 08:00.",
-        "rangeOpens": "The range costs €8, plus €4 per ball token, in every season.",
         "practiceFacilities": "There is a driving range of about 200 yards, a chipping green with a bunker and a putting green.",
         "foodBeforeRound": "Bar and cafeteria beside the caddy master while the hotel is renovated: drinks and simple clubhouse food.",
         "water": "Water and drinks are only available at the clubhouse, which you pass after nine holes. It is closed for the first tee times of the day, so bring water with you.",
@@ -606,7 +605,8 @@
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
         "flights": "The club may add other players to a group of fewer than four.",
-        "arrivalNotes": "An official handicap is required to play."
+        "arrivalNotes": "An official handicap is required to play.",
+        "rangeOpens": "The range costs €8, plus €4 per ball token, in every season."
       },
       "seasonal": {},
       "toCheck": [],
@@ -696,7 +696,6 @@
         "buggyTrolley": "The course is flat and easy to walk, and buggies must stay on the paths. Buggies, push trolleys and electric trolleys are available.",
         "proShopOpens": "The pro shop is open every day, 07:15-20:00 from April to October and 07:15-18:30 from November to March.",
         "firstTee": "The first tee time is 07:30.",
-        "rangeOpens": "Academy range balls are 14 for €1, or €30 for a card of 500 balls.",
         "practiceFacilities": "There is a circular driving range, an approach green with bunkers and a putting green of about 1,000 square metres.",
         "foodBeforeRound": "The pro shop and a mini-market sell coffee and food, which suits an early round. The restaurant opens later.",
         "water": "The small shop by check-in sells water, coffee and snacks.",
@@ -707,7 +706,8 @@
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
         "flights": "The club may add other players to a group of fewer than four. For a group of three the club can block the tee time as an exception.",
-        "arrivalNotes": "Bring a handicap card: it is checked at registration."
+        "arrivalNotes": "Bring a handicap card: it is checked at registration.",
+        "rangeOpens": "Academy range balls are 14 for €1, or €30 for a card of 500 balls."
       },
       "seasonal": {},
       "toCheck": [],
@@ -748,7 +748,6 @@
         "buggyTrolley": "The course is flat and easy to walk, and buggies must stay on the paths. Buggies, push trolleys and electric trolleys are available.",
         "proShopOpens": "The pro shop is open every day, 07:15-20:00 from April to October and 07:15-18:30 from November to March.",
         "firstTee": "The first tee time is 07:30.",
-        "rangeOpens": "Academy range balls are 14 for €1, or €30 for a card of 500 balls.",
         "practiceFacilities": "There is a circular driving range with grass and artificial tees, an approach green with bunkers and a putting green of about 1,000 square metres.",
         "foodBeforeRound": "The pro shop and a mini-market sell coffee and food, which suits an early round. The restaurant opens later.",
         "water": "The small shop by check-in sells water, coffee and snacks.",
@@ -759,7 +758,8 @@
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
         "flights": "The club may add other players to a group of fewer than four.",
-        "arrivalNotes": "Bring a handicap card: it is checked at registration."
+        "arrivalNotes": "Bring a handicap card: it is checked at registration.",
+        "rangeOpens": "Academy range balls are 14 for €1, or €30 for a card of 500 balls."
       },
       "seasonal": {},
       "toCheck": [],
@@ -801,7 +801,6 @@
         "proShopOpens": "Reception is open 08:30-18:00.",
         "firstTee": "The course opens at 09:00, so the first tee time is 09:00.",
         "earlyTee": "On an early tee time, reception and the range are both open, but check-in takes a while, so there may not be time to reach the range before you tee off. Arrive early if you want to warm up.",
-        "rangeOpens": "The range costs €20 including 72 balls, or €4 for a token of 24 balls (€5 from 2027).",
         "practiceFacilities": "There is a driving range, a putting green and a short game area, and guests can use them as well as members.",
         "foodBeforeRound": "The clubhouse and bar open at 08:30 for drinks, before the course opens at 09:00. Restaurant 13:00-20:30 (kitchen closes 19:00).",
         "water": "There is no free water at check-in. There are water filter stations at the clubhouse, at the end of the front nine, where you can refill a bottle.",
@@ -811,7 +810,8 @@
         "changingRooms": "Locker rooms and showers, with towels, soap and the other essentials provided.",
         "parking": "Easy parking right by the clubhouse, with EV charging points.",
         "payment": "Cards are accepted at the club.",
-        "flights": "Son Gual may join players together to make groups of four."
+        "flights": "Son Gual may join players together to make groups of four.",
+        "rangeOpens": "The range costs €20 including 72 balls, or €4 for a token of 24 balls (€5 from 2027)."
       },
       "seasonal": {},
       "toCheck": [],
@@ -1185,11 +1185,11 @@
         "checkInMinutes": 45,
         "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "No need to bring water. Tees and water are provided.",
+        "hireBags": "Hire bags can be carried, so you do not need a trolley.",
         "buggyTrolley": "It is not very hilly and easy to walk, and buggies are allowed on the fairways when the weather permits. Buggies, manual trolleys and electric trolleys are available.",
         "proShopOpens": "The course and driving range are open 08:00-20:00.",
-        "firstTee": "The first tee time is 07:30 from May to September, and around 08:00 in winter.",
+        "firstTee": "Tee times are currently from 07:40, and the time varies with the date.",
         "earlyTee": "For an early tee time the pro shop may not have opened when you arrive. Wait for reception, then check in and collect your buggy before you tee off, so allow time for this.",
-        "rangeOpens": "Range balls are not included: a token of 30 balls costs €5.",
         "practiceFacilities": "There is a grass driving range with 40 stations and 7 target greens, two putting greens, two chipping greens, and two pitching and approach areas with practice bunkers.",
         "foodBeforeRound": "The restaurant is open every day 08:00-20:00. Breakfast is served 10:00-11:30, then baguettes only until 12:00, and the kitchen runs 12:00-19:00.",
         "water": "Tees and water are provided.",
@@ -1199,8 +1199,9 @@
         "changingRooms": "Changing room with lockers (electronic lockers reset daily) and showers.",
         "parking": "Easy parking right by the clubhouse.",
         "payment": "Cards are accepted at the club.",
-        "flights": "The club may add other players to a group of fewer than four.",
-        "arrivalNotes": "Official handicap required: 28 men, 34 ladies. Dogs on a lead allowed on the course and terrace."
+        "flights": "Another player may book the same tee time, though this is uncommon for a group of three. To have the course to yourselves you pay for four green fees.",
+        "arrivalNotes": "Official handicap required: 28 men, 34 ladies. Dogs on a lead allowed on the course and terrace.",
+        "rangeOpens": "Range balls are not included: a token of 30 balls costs €5."
       },
       "seasonal": {},
       "toCheck": [],
@@ -1237,11 +1238,12 @@
         "checkInMinutes": 45,
         "arrivalPoint": "Drive in to the club using the address shown and go to the pro shop or reception to check in.",
         "bringWater": "A water bottle. The halfway house is open 11:00 to 16:00 in peak season, and there is a drinks cart on the course.",
+        "hireBags": "Hire bags can be carried, so you do not need a trolley.",
         "buggyTrolley": "It is gently undulating and easy to walk, and there are buggy paths. Buggies can go onto the fairways when the weather permits. Buggies, manual trolleys and electric trolleys are available.",
         "proShopOpens": "The course is open from 07:30 to 20:00 in summer and 08:00 to 18:00 in winter.",
-        "firstTee": "The first tee time of the day is usually 07:30.",
+        "firstTee": "Tee times are currently from 07:40, and the time varies with the date.",
         "earlyTee": "An early group will find no coffee, and the range does not open until 08:00.",
-        "rangeOpens": "The range, pitching and putting areas are included with a 9 or 18-hole green fee on the same day, otherwise the practice fee is €15 per person. Range balls are not included: a token of 30 Wilson Premium balls costs €5.",
+        "rangeOpens": "The driving range is open 08:00-18:00, and closes at 16:00 on Tuesdays. The range, pitching and putting areas are included with a 9 or 18-hole green fee on the same day, otherwise the practice fee is €15 per person. Range balls are not included: a token of 30 Wilson Premium balls costs €5.",
         "practiceFacilities": "There is a 42-bay driving range with 14 covered bays, putting greens and a large short game area.",
         "foodBeforeRound": "Restaurant opens 08:30 (summer 08:30-20:00, winter 08:30-19:00); the kitchen runs 11:00-19:00 in summer, 11:00-17:45 in winter. Nothing is open before 08:30.",
         "water": "Halfway house open 11:00-16:00 in peak season. From mid-March there is a mandatory 10-minute stop at the halfway. Drinks cart on the course.",
@@ -1251,7 +1253,7 @@
         "changingRooms": "Locker room with heated floors, air conditioning, showers and lockers.",
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
-        "flights": "The club may group players into fourballs. A group can pay for the whole tee time to keep it to themselves, if the booking allows.",
+        "flights": "Another player may book the same tee time, though this is uncommon for a group of three. To have the course to yourselves you pay for four green fees.",
         "arrivalNotes": "Official handicap required: 28 men, 34 ladies. Dogs on a lead are allowed on the course and terrace. Keep an eye on your belongings, as the club warns of thefts at golf courses on the island."
       },
       "seasonal": {},
@@ -1295,7 +1297,6 @@
         "buggyTrolley": "The course is hilly, so a buggy is recommended, though you can walk it if you are fit. Buggies, trolleys and electric trolleys are available.",
         "proShopOpens": "Reception and the pro shop open at 07:30.",
         "firstTee": "The first tee time is 08:00.",
-        "rangeOpens": "A basket of range balls is €4. A practice-only green fee is €12.",
         "practiceFacilities": "There is a driving range with 18 teeing areas and sand bunkers, putting greens and a chipping green.",
         "foodBeforeRound": "Everything is open from 07:30, before the 08:00 first tee time. Maxime Restaurant has a terrace with sea and course views, and a Friday barbecue with live music from May to October.",
         "water": "There is no drinkable water on the course. Bottles are sold at the restaurant, or bring your own.",
@@ -1306,7 +1307,8 @@
         "parking": "Car park at the club.",
         "payment": "Cards are accepted at the club.",
         "flights": "The club cannot guarantee that a group of three plays alone, especially in high season. The only way to be sure is to pay for the whole flight.",
-        "arrivalNotes": "The course is open every day of the year."
+        "arrivalNotes": "The course is open every day of the year.",
+        "rangeOpens": "A basket of range balls is €4. A practice-only green fee is €12."
       },
       "seasonal": {},
       "toCheck": [],
