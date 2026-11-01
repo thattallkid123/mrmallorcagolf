@@ -127,7 +127,7 @@ export const GUIDES_CONTENT = {
       "title": "Son Antem West Golf Club, Mallorca - A PGA Professional's Honest Review (2026)",
       "intro": "A resort course 25 minutes from Palma. Good conditioning, open countryside, and a layout that suits a wide range of players.",
       "readTime": "6 min read",
-      "keywords": "Resort course - Par 72 - €109-135 - 25 min from Palma"
+      "keywords": "Resort course - Par 72 - €113-150 - 25 min from Palma"
     },
     {
       "slug": "son-termes-review",

@@ -1462,7 +1462,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'Where West falls short: a large part of it is flat and asks little from the tee, so you can play those holes on autopilot. The green fee, €109 to €145, is close to Son Gual\'s. On a Sunday at 7:50 there were already three or four groups waiting on the 1st, so book a weekday morning. More in the <a href=\'/guides/son-antem-west-review\'>Son Antem West review</a>.',
+        text: 'Where West falls short: a large part of it is flat and asks little from the tee, so you can play those holes on autopilot. The green fee, €113 to €150, is close to Son Gual\'s. On a Sunday at 7:50 there were already three or four groups waiting on the 1st, so book a weekday morning. More in the <a href=\'/guides/son-antem-west-review\'>Son Antem West review</a>.',
       },
       {
         type: 'paragraph',

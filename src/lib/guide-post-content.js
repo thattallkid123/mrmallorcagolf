@@ -1670,7 +1670,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Antem West - Honest Review 2026",
         description:
-          'Green fees from €109, par 72, 6,293m. Resort course near Palma, relaxed layout, good conditioning.',
+          'Green fees from €113, par 72, 6,293m. Resort course near Palma, relaxed layout, good conditioning.',
         imagePath: '/images/son-antem-west-review-blog/son-antem-west-1.webp',
       },
       meta: {
@@ -1814,7 +1814,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['€109-145', 'Green fee'],
+            ['€113-150', 'Green fee'],
             ['7/10', 'My rating'],
             ['Par 72', '6,293m'],
             ['Llucmajor', '25 min from Palma'],

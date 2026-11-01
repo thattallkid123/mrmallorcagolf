@@ -106,7 +106,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Antem West Golf Club, Mallorca - análisis honesto de un Profesional PGA (2026)",
         "intro": "Un campo de resort a 25 minutos de Palma. Buen mantenimiento, campo abierto y un recorrido que sirve para muchos tipos de jugador.",
         "readTime": "6 min",
-        "keywords": "Resort - Par 72 - €109-135 - 25 min desde Palma"
+        "keywords": "Resort - Par 72 - €113-150 - 25 min desde Palma"
       },
       {
         "slug": "son-termes-review",
@@ -347,7 +347,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Antem West Golf Club, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Ein Resortplatz 25 Minuten von Palma entfernt. Gute Pflege, offene Landschaft und ein Layout, das vielen Spielstärken entgegenkommt.",
         "readTime": "6 Min.",
-        "keywords": "Resortplatz - Par 72 - €109-135 - 25 Min. von Palma"
+        "keywords": "Resortplatz - Par 72 - €113-150 - 25 Min. von Palma"
       },
       {
         "slug": "son-termes-review",
@@ -587,7 +587,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Antem West Golf Club, Majorque - avis honnête d'un professionnel PGA (2026)",
         "intro": "Un parcours de resort à 25 minutes de Palma. Bon entretien, campagne ouverte et un tracé qui convient à beaucoup de joueurs.",
         "readTime": "6 min",
-        "keywords": "Resort - Par 72 - €109-135 - 25 min de Palma"
+        "keywords": "Resort - Par 72 - €113-150 - 25 min de Palma"
       },
       {
         "slug": "son-termes-review",
@@ -828,7 +828,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Antem West Golf Club, Mallorca - eerlijke review van een PGA Professional (2026)",
         "intro": "Een resortbaan op 25 minuten van Palma. Goede conditie, open landschap en een lay-out die voor veel spelers werkt.",
         "readTime": "6 min",
-        "keywords": "Resortbaan - Par 72 - €109-135 - 25 min van Palma"
+        "keywords": "Resortbaan - Par 72 - €113-150 - 25 min van Palma"
       },
       {
         "slug": "son-termes-review",
@@ -1069,7 +1069,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Antem West Golf Club, Mallorca - ärlig recension av en PGA Professional (2026)",
         "intro": "En resortbana 25 minuter från Palma. Bra skick, öppet landskap och en layout som passar många olika spelare.",
         "readTime": "6 min",
-        "keywords": "Resortbana - Par 72 - €109-135 - 25 min från Palma"
+        "keywords": "Resortbana - Par 72 - €113-150 - 25 min från Palma"
       },
       {
         "slug": "son-termes-review",
@@ -1310,7 +1310,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Antem West 高尔夫俱乐部，马略卡 - PGA 职业教练真实评测（2026）",
         "intro": "距离帕尔马25分钟的度假村球场。养护好，环境开阔，球场设计适合很多类型的球手。",
         "readTime": "6分钟",
-        "keywords": "度假村球场 - 标准杆72 - €109-135 - 距帕尔马25分钟"
+        "keywords": "度假村球场 - 标准杆72 - €113-150 - 距帕尔马25分钟"
       },
       {
         "slug": "son-termes-review",

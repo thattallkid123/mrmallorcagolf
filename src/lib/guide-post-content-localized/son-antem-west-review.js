@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Son Antem West - Análisis del resort 2026",
-      "description": "Son Antem West: green fees desde 109 €, par 72, 6.293 m. Campo de resort a 25 min de Palma, bien mantenido y fácil de jugar."
+      "description": "Son Antem West: green fees desde 113 €, par 72, 6.293 m. Campo de resort a 25 min de Palma, bien mantenido y fácil de jugar."
     },
     "meta": {
       "badge": "Análisis del campo",
@@ -109,7 +109,7 @@ const content = {
       {
         "items": [
           [
-            "109-145 €",
+            "113-150 €",
             "Green fee"
           ],
           [
@@ -177,7 +177,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Son Antem West - Resort-Bewertung 2026",
-      "description": "Son Antem West: Greenfees ab 109 €, Par 72, 6.293 m. Resortplatz 25 Minuten von Palma, gut gepflegt und entspannt zu spielen."
+      "description": "Son Antem West: Greenfees ab 113 €, Par 72, 6.293 m. Resortplatz 25 Minuten von Palma, gut gepflegt und entspannt zu spielen."
     },
     "meta": {
       "badge": "Platz-Bewertung",
@@ -283,7 +283,7 @@ const content = {
       {
         "items": [
           [
-            "109-145 €",
+            "113-150 €",
             "Greenfee"
           ],
           [
@@ -351,7 +351,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Son Antem West - Avis du resort 2026",
-      "description": "Son Antem West : green fees à partir de 109 €, par 72, 6 293 m. Parcours de resort à 25 min de Palma, bien entretenu et facile à jouer."
+      "description": "Son Antem West : green fees à partir de 113 €, par 72, 6 293 m. Parcours de resort à 25 min de Palma, bien entretenu et facile à jouer."
     },
     "meta": {
       "badge": "Avis parcours",
@@ -457,7 +457,7 @@ const content = {
       {
         "items": [
           [
-            "109-145 €",
+            "113-150 €",
             "Green fee"
           ],
           [
@@ -523,7 +523,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Son Antem West - Eerlijke review 2026",
-      "description": "Son Antem West: greenfees vanaf €109, par 72, 6.293 m. Resortbaan op 25 minuten van Palma, goed onderhouden en ontspannen speelbaar."
+      "description": "Son Antem West: greenfees vanaf €113, par 72, 6.293 m. Resortbaan op 25 minuten van Palma, goed onderhouden en ontspannen speelbaar."
     },
     "meta": {
       "badge": "Baanbeoordeling",
@@ -629,7 +629,7 @@ const content = {
       {
         "items": [
           [
-            "€109-145",
+            "€113-150",
             "Greenfee"
           ],
           [
@@ -697,7 +697,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Antem West - Ärlig recension 2026",
-      "description": "Son Antem West: greenfee från €109, par 72, 6 293 m. Resortbana 25 minuter från Palma med bra skick och avslappnad layout."
+      "description": "Son Antem West: greenfee från €113, par 72, 6 293 m. Resortbana 25 minuter från Palma med bra skick och avslappnad layout."
     },
     "meta": {
       "badge": "Banrecension",
@@ -803,7 +803,7 @@ const content = {
       {
         "items": [
           [
-            "109-145 €",
+            "113-150 €",
             "Greenfee"
           ],
           [
@@ -871,7 +871,7 @@ const content = {
   "zh": {
     "metadata": {
       "title": "Son Antem West 度假村球场 - PGA教练真实评测（2026）",
-      "description": "Son Antem West：果岭费109欧起，标准杆72，6,293米。距离帕尔马25分钟的度假村球场，养护不错，打法轻松。这里是它真实的下场体验，以及适合的人群。"
+      "description": "Son Antem West：果岭费113欧起，标准杆72，6,293米。距离帕尔马25分钟的度假村球场，养护不错，打法轻松。这里是它真实的下场体验，以及适合的人群。"
     },
     "meta": {
       "badge": "球场评测",
@@ -977,7 +977,7 @@ const content = {
       {
         "items": [
           [
-            "109-145欧",
+            "113-150欧",
             "果岭费"
           ],
           [
