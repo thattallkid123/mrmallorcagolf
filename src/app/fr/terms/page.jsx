@@ -53,7 +53,7 @@ export default function TermsFR() {
               <li>De 15 à 34 jours avant : l&rsquo;acompte de 50 % de ce parcours est conservé, et tout solde déjà versé est remboursé</li>
               <li>14 jours ou moins avant, ou en cas d&rsquo;absence : le prix total de ce parcours est facturé</li>
             </ul>
-            <p>Les parcours Arabella suivent les conditions d&rsquo;Arabella : remboursement intégral jusqu&rsquo;à 22 jours avant le jeu, 50 % de 8 à 21 jours avant, aucun remboursement dans les 7 jours. Votre proposition indique les dates limites exactes de chaque parcours, et ce sont ces dates qui s&rsquo;appliquent.</p>
+            <p>Les parcours Arabella suivent les conditions d&rsquo;Arabella, qui dépendent de la taille du groupe. Jusqu&rsquo;à 8 joueurs, Arabella ne facture la totalité que dans les 4 jours précédant le jeu. Pour plus de 8 joueurs : remboursement intégral jusqu&rsquo;à 22 jours avant le jeu, 50 % de 8 à 21 jours avant, aucun remboursement dans les 7 jours. Nous ajoutons un jour de marge à chaque date. Votre proposition indique les dates limites exactes de chaque parcours, et ce sont ces dates qui s&rsquo;appliquent.</p>
             <p><strong>Play With A Pro et coaching réservés seuls :</strong></p>
             <ul>
               <li>Plus de 14 jours avant : remboursement intégral des sommes versées</li>

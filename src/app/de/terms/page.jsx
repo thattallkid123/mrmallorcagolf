@@ -53,7 +53,7 @@ export default function TermsDE() {
               <li>15 bis 34 Tage vorher: Die Anzahlung von 50 % für diese Runde wird einbehalten, ein bereits gezahlter Restbetrag wird erstattet</li>
               <li>14 Tage oder weniger vorher oder bei Nichterscheinen: Der volle Preis dieser Runde wird berechnet</li>
             </ul>
-            <p>Für Runden bei Arabella gelten die Bedingungen von Arabella: vollständige Rückerstattung bis 22 Tage vor dem Spiel, 50 % von 8 bis 21 Tagen vorher, keine Erstattung innerhalb von 7 Tagen. Ihr Angebot nennt die genauen Fristen für jede Runde, und diese Fristen gelten.</p>
+            <p>Für Runden bei Arabella gelten die Bedingungen von Arabella, die von der Gruppengröße abhängen. Bei bis zu 8 Spielern berechnet Arabella den vollen Preis nur innerhalb von 4 Tagen vor dem Spiel. Bei mehr als 8 Spielern gilt: vollständige Rückerstattung bis 22 Tage vor dem Spiel, 50 % von 8 bis 21 Tagen vorher, keine Erstattung innerhalb von 7 Tagen. Wir rechnen bei jeder Frist einen Tag Puffer ein. Ihr Angebot nennt die genauen Fristen für jede Runde, und diese Fristen gelten.</p>
             <p><strong>Einzeln gebuchte Play-With-A-Pro-Tage und Coaching:</strong></p>
             <ul>
               <li>Mehr als 14 Tage vorher: vollständige Rückerstattung bereits gezahlter Beträge</li>

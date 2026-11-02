@@ -55,7 +55,7 @@ export default function Terms() {
               <li>15 to 34 days before: the 50% deposit for that round is kept, and any balance already paid is refunded</li>
               <li>14 days or fewer before, or a no-show: the full cost of that round is charged</li>
             </ul>
-            <p>Arabella rounds follow Arabella&apos;s own terms: full refund 22 days or more before play, 50% from 8 to 21 days before, nothing within 7 days. Your proposal lists the exact cut-off dates for each round, and those dates apply.</p>
+            <p>Arabella rounds follow Arabella&apos;s own terms, which depend on the size of the party. For up to 8 players, Arabella charges in full only within 4 days of play. For more than 8 players, it is a full refund 22 days or more before play, 50% from 8 to 21 days before, and nothing within 7 days. We add a day&apos;s margin to each date. Your proposal lists the exact cut-off dates for each round, and those dates apply.</p>
             <p><strong>Play With A Pro and coaching booked on their own:</strong></p>
             <ul>
               <li>More than 14 days before: full refund of anything paid</li>

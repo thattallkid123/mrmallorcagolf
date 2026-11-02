@@ -53,7 +53,7 @@ export default function TermsES() {
               <li>Entre 15 y 34 días antes: se retiene el depósito del 50 % de esa vuelta y se reembolsa el saldo ya abonado</li>
               <li>Con 14 días o menos, o si no te presentas: se cobra el importe completo de esa vuelta</li>
             </ul>
-            <p>Las vueltas en Arabella siguen las condiciones de Arabella: reembolso íntegro con 22 días o más de antelación, 50 % entre 8 y 21 días antes y nada en los 7 días previos. Tu propuesta indica las fechas límite exactas de cada vuelta, y son esas fechas las que se aplican.</p>
+            <p>Las vueltas en Arabella siguen las condiciones de Arabella, que dependen del tamaño del grupo. Con hasta 8 jugadores, Arabella cobra el importe completo solo en los 4 días previos al juego. Con más de 8 jugadores: reembolso íntegro con 22 días o más de antelación, 50 % entre 8 y 21 días antes y nada en los 7 días previos. Añadimos un día de margen a cada fecha. Tu propuesta indica las fechas límite exactas de cada vuelta, y son esas fechas las que se aplican.</p>
             <p><strong>Play With A Pro y coaching reservados por separado:</strong></p>
             <ul>
               <li>Con más de 14 días de antelación: reembolso íntegro de lo abonado</li>
