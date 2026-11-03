@@ -45,7 +45,7 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 - Manual worker root and retired-workspace path: see `cursor\CLAUDE.md` (canonical — do not duplicate here, the two have drifted apart before).
 - Use `$env:MMG_WORKSPACE_ROOT` and `$env:MMG_DRIVE_ROOT` instead of hardcoded paths when possible.
 
-**New PC (Andy) — primary** — Desktop is inside OneDrive folder on this machine
+**New PC (Andy) — primary** — the workspace left OneDrive on 2026-11-03 and lives at `C:\MMG\cursor`. The old `C:\OneDrive\Desktop\cursor` folder is a broken leftover (most files missing, `.git` reduced to conflict copies): never read or write there.
 - REPO_ROOT: `C:\MMG\cursor\mrmallorcagolf-real`
 - GOOGLE_DRIVE: `G:\My Drive` (Drive is a mapped letter on this machine, not a folder under the user profile)
 - DOCUMENTS: `C:\Users\Andy\Documents`
@@ -62,7 +62,7 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 **Claude/Codex config** lives at `~/.claude/` and `~/.codex/` on each machine. Sign in fresh on each — do not copy credentials between machines. Skills, agents, and memory folders should match.
 
 **Machine-portability gotchas** (all three caused real data loss or blind sessions in the July 2026 move):
-- **Claude memory is keyed by absolute path.** It lives in `~/.claude/projects/<mangled-path>/memory/` — this repo is `C--OneDrive-Desktop-cursor-mrmallorcagolf-real` on the new PC and `C--Users-andyg-Desktop-cursor-mrmallorcagolf-real` on the old one. Copying a backup verbatim puts it under a key nothing reads. Restore into the key that already exists on that machine.
+- **Claude memory is keyed by absolute path.** It lives in `~/.claude/projects/<mangled-path>/memory/` — this repo is `C--MMG-cursor-mrmallorcagolf-real` on the new PC (it was `C--OneDrive-Desktop-cursor-mrmallorcagolf-real` before the 2026-11-03 move) and `C--Users-andyg-Desktop-cursor-mrmallorcagolf-real` on the old one. Copying a backup verbatim puts it under a key nothing reads. Restore into the key that already exists on that machine.
 - **The workspace root repo (`cursor`) now has its own private GitHub remote.** Its `CLAUDE.md`, `AGENTS.md`, `PROJECTS.md`, `WHERE_THINGS_LIVE.md`, and the `WORKING_PREFERENCES.md` under its own docs folder live in `thattallkid123/mmg-workspace-root`; pull it like any other repo before cross-workspace work.
 - **Never put a credential in `~/.claude/settings.json` or Codex approval rules.** Both are synced to the backup repo. Use an env var or a gitignored file. `Run-ClaudeBackup.ps1` now blocks the commit if it finds a secret-shaped string.
 
