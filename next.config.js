@@ -5,11 +5,12 @@ const nextConfig = {
   experimental: { globalNotFound: true },
   outputFileTracingRoot: path.join(__dirname),
   images: {
-    formats: ['image/avif', 'image/webp'],
-    qualities: [75, 88, 90],
+    // Reuse a small set of cached variants across pages and browser sizes.
+    formats: ['image/webp'],
+    qualities: [75, 88],
     minimumCacheTTL: 31536000,
-    deviceSizes: [360, 414, 640, 750, 828, 1080, 1200, 1920, 2048, 3840],
-    imageSizes: [16, 24, 32, 48, 64, 96, 128, 256, 384],
+    deviceSizes: [640, 828, 1080, 1200, 1920],
+    imageSizes: [32, 64, 128, 256, 384],
   },
   async redirects() {
     return [
