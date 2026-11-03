@@ -11,7 +11,7 @@ For a fast reminder packet, run `node scripts/pricing-change-reminder.js --subje
 
 - For course green fees, edit the live Pricing Google Sheet — the single source of truth. Column reference: `mmg-tools/PRICING.md` > Editable Workbook Columns.
 - For MMG service prices (Play With A Pro, Signature Day), edit Control Panel > Service Prices, backed by `mmg-tools/pricing/edit/confirmed/service-pricing.json`.
-- For course pricing, run `.\mmg.ps1 pricing-publish` from `C:\OneDrive\Desktop\cursor\mmg-tools` to regenerate tool data and website outputs in one guarded pass.
+- For course pricing, run `.\mmg.ps1 pricing-publish` from `C:\MMG\cursor\mmg-tools` to regenerate tool data and website outputs in one guarded pass.
 - For service pricing only, run `node scripts/sync-site-pricing.js --dry-run` first, then `.\mmg.ps1 site`.
 - Treat the generated JSON and readable MD as outputs, not edit targets.
 - **Deals, vouchers and multi-round packs are a separate system** — they live in `mmg-tools/pricing/edit/confirmed/deal-products.json` and sync with `node scripts/sync-deal-products.js`, not through the Pricing Sheet or `.\mmg.ps1 pricing`. See `mmg-tools/DATA-FLOWS.md` > Deal Products Flow.

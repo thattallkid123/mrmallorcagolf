@@ -46,10 +46,10 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 - Use `$env:MMG_WORKSPACE_ROOT` and `$env:MMG_DRIVE_ROOT` instead of hardcoded paths when possible.
 
 **New PC (Andy) — primary** — Desktop is inside OneDrive folder on this machine
-- REPO_ROOT: `C:\OneDrive\Desktop\cursor\mrmallorcagolf-real`
+- REPO_ROOT: `C:\MMG\cursor\mrmallorcagolf-real`
 - GOOGLE_DRIVE: `G:\My Drive` (Drive is a mapped letter on this machine, not a folder under the user profile)
 - DOCUMENTS: `C:\Users\Andy\Documents`
-- PROJECTS_FILE: `C:\OneDrive\Desktop\cursor\PROJECTS.md`
+- PROJECTS_FILE: `C:\MMG\cursor\PROJECTS.md`
 
 **`MMG_DRIVE_ROOT` is authoritative over any path written here.** Scripts read it and fall back to a hardcoded default that is only right on one machine — `scripts/export-live-guide-content.mjs` defaults to `G:\My Drive\Mr Mallorca Golf`, which fails the pre-push hook on the old PC. Set the env var per machine and the fallback never matters.
 
@@ -120,7 +120,7 @@ The new PC is primary as of 30 July 2026; the old PC is secondary and its schedu
 | Lighthouse baseline | `npm run check:lighthouse` — audits the live site directly (no local build needed); update `docs/lighthouse-baseline.md` with the new numbers after |
 | Update Google review count | Add the review's `### Name` section (with `**Status:** ✓ Public-ready (Google review)` and `**Short excerpt:**`) to Drive `Reference/MMG_TESTIMONIALS_AND_FEEDBACK.md`, then `npm run sync:social-proof` — it regenerates `src/data/site-social-proof.json`, which drives the badge on every page. Never hand-edit the count; `check:social-proof` re-derives it. Use the `/update-testimonials` skill for the full workflow. |
 
-**Local path:** `C:\OneDrive\Desktop\cursor\mrmallorcagolf-real`. PowerShell does not support `&&` — use separate lines or `;`.
+**Local path:** `C:\MMG\cursor\mrmallorcagolf-real`. PowerShell does not support `&&` — use separate lines or `;`.
 
 ## Completion Gate (MANDATORY — READ EVERY SESSION)
 
