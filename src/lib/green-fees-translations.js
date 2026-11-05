@@ -235,7 +235,7 @@ export const GREEN_FEES_T = {
       },
       contact: {
         title: 'Möchten Sie, dass ich die Startzeiten regle?',
-        desc: 'Bestätigte Tarife ändern sich je nach Saison und Tag. Sagen Sie mir Ihre Termine und Gruppe, und ich bekomme Ihnen echte Preise und buche es um Ihren Golf — oder schreiben Sie mir einfach eine Nachricht, wenn das einfacher ist.',
+        desc: 'Bestätigte Tarife ändern sich je nach Saison und Tag. Sagen Sie mir Ihre Termine und Gruppe, und ich bekomme Ihnen echte Preise und buche es um Ihren Golf, oder schreiben Sie mir einfach eine Nachricht, wenn das einfacher ist.',
         enquire: 'Anfragen',
         whatsapp: 'Schreiben Sie mir auf WhatsApp',
       },
@@ -354,7 +354,7 @@ export const GREEN_FEES_T = {
       },
       contact: {
         title: '¿Quiere que organice yo los horarios de salida?',
-        desc: 'Las tarifas confirmadas cambian según la temporada y el día. Dígame sus fechas y grupo y le conseguiré precios reales y lo reservaré alrededor de su golf — o simplemente envíeme un mensaje si es más fácil.',
+        desc: 'Las tarifas confirmadas cambian según la temporada y el día. Dígame sus fechas y grupo y le conseguiré precios reales y lo reservaré alrededor de su golf, o simplemente envíeme un mensaje si es más fácil.',
         enquire: 'Consultar',
         whatsapp: 'Escríbame por WhatsApp',
       },
@@ -473,7 +473,7 @@ export const GREEN_FEES_T = {
       },
       contact: {
         title: 'Voulez-vous que j\'organise les horaires de départ ?',
-        desc: 'Les tarifs confirmés changent selon la saison et le jour. Dites-moi vos dates et votre groupe et je vous obtiendrai les vrais prix et réserverai autour de votre golf — ou envoyez-moi juste un message si c\'est plus facile.',
+        desc: 'Les tarifs confirmés changent selon la saison et le jour. Dites-moi vos dates et votre groupe et je vous obtiendrai les vrais prix et réserverai autour de votre golf, ou envoyez-moi juste un message si c\'est plus facile.',
         enquire: 'Demander',
         whatsapp: 'Écrivez-moi sur WhatsApp',
       },
@@ -592,7 +592,7 @@ export const GREEN_FEES_T = {
       },
       contact: {
         title: 'Wilt u dat ik de starttijden regel?',
-        desc: 'Bevestigde tarieven veranderen per seizoen en dag. Laat mij uw data en groep weten en ik zorg voor echte prijzen en boek het rond uw golf — of stuur mij gewoon een bericht als dat makkelijker is.',
+        desc: 'Bevestigde tarieven veranderen per seizoen en dag. Laat mij uw data en groep weten en ik zorg voor echte prijzen en boek het rond uw golf, of stuur mij gewoon een bericht als dat makkelijker is.',
         enquire: 'Informatie aanvragen',
         whatsapp: 'Stuur mij een bericht via WhatsApp',
       },
@@ -711,7 +711,7 @@ export const GREEN_FEES_T = {
       },
       contact: {
         title: 'Vill du att jag organiserar starttiderna?',
-        desc: 'Bekräftade avgifter ändras beroende på säsong och dag. Berätta för mig dina datum och grupp så får jag dig verkliga priser och bokar det omkring din golf — eller bara skicka mig ett meddelande om det är lättare.',
+        desc: 'Bekräftade avgifter ändras beroende på säsong och dag. Berätta för mig dina datum och grupp så får jag dig verkliga priser och bokar det omkring din golf, eller bara skicka mig ett meddelande om det är lättare.',
         enquire: 'Förfråga',
         whatsapp: 'Skicka mig ett meddelande på WhatsApp',
       },
@@ -830,7 +830,7 @@ export const GREEN_FEES_T = {
       },
       contact: {
         title: '希望我来安排开球时间？',
-        desc: '确认的费率因季节和日期而异。告诉我您的日期和团队，我会为您获取真实价格并围绕您的高尔夫安排——或者如果更容易的话，直接给我发消息。',
+        desc: '确认的费率因季节和日期而异。告诉我您的日期和团队，我会为您获取真实价格并围绕您的高尔夫安排，或者如果更容易的话，直接给我发消息。',
         enquire: '咨询',
         whatsapp: '通过 WhatsApp 给我发消息',
       },

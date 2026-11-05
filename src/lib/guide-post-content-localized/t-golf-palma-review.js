@@ -857,14 +857,14 @@ const content = {
   },
   "zh": {
     "metadata": {
-      "title": "T Golf Palma 评测（2026）— 果岭费、球场状况与真实评分",
+      "title": "T Golf Palma 评测（2026）：果岭费、球场状况与真实评分",
       "description": "PGA职业球员于2026年9月亲身体验后的T Golf Palma评测。旺季最高150欧元，淡季80欧元起。杰克·尼克劳斯设计，白色发球台6027米，状态评分9/10。"
     },
     "meta": {
       "badge": "球场评测",
       "readTime": "6分钟",
       "updated": "2026年9月",
-      "title": "T Golf Palma 评测 — PGA职业球员的真实评价（2026）",
+      "title": "T Golf Palma 评测：PGA职业球员的真实评价（2026）",
       "intro": "果岭又快又小，还常常有起伏，好几个洞都是风险与回报并存，逼你在发球台上多想一步。综合评分9/10，这座球场值得凭自身实力被评价，而不只是因为和姐妹球场T Golf Calvià同名。",
       "related": [
         {

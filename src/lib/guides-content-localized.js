@@ -56,7 +56,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "son-muntaner-review",
         "badge": "Análisis del campo",
         "badgeGold": true,
-        "title": "Golf Son Muntaner, Mallorca — análisis honesto de un Profesional PGA (2026)",
+        "title": "Golf Son Muntaner, Mallorca. Análisis honesto de un Profesional PGA (2026)",
         "intro": "Mejor campo de España en los World Golf Awards 2025. Lo jugué un sábado por la mañana con la hoja de salidas completa. Esto es lo que encontré.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy incluido"
@@ -297,7 +297,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "son-muntaner-review",
         "badge": "Platz-Bewertung",
         "badgeGold": true,
-        "title": "Golf Son Muntaner, Mallorca — Ehrliche Bewertung eines PGA-Professionals (2026)",
+        "title": "Golf Son Muntaner, Mallorca. Ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Bester Golfplatz Spaniens bei den World Golf Awards 2025. Ich habe ihn an einem Samstagmorgen bei voller Startliste gespielt. Das ist mir aufgefallen.",
         "readTime": "6 Min.",
         "keywords": "Championship · Par 72 · €110-260 · Buggy inklusive"
@@ -537,7 +537,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "son-muntaner-review",
         "badge": "Avis parcours",
         "badgeGold": true,
-        "title": "Golf Son Muntaner, Majorque — avis honnête d'un Professionnel PGA (2026)",
+        "title": "Golf Son Muntaner, Majorque. Avis honnête d'un Professionnel PGA (2026)",
         "intro": "Meilleur parcours d'Espagne aux World Golf Awards 2025. Je l'ai joué un samedi matin, avec une feuille de départs complète. Voici ce que j'y ai trouvé.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy inclus"
@@ -778,7 +778,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "son-muntaner-review",
         "badge": "Baanbeoordeling",
         "badgeGold": true,
-        "title": "Golf Son Muntaner, Mallorca — eerlijke beoordeling van een PGA Professional (2026)",
+        "title": "Golf Son Muntaner, Mallorca. Eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "Beste golfbaan van Spanje bij de World Golf Awards 2025. Ik speelde hem met een volle starttijdenlijst op een zaterdagochtend. Dit is wat ik vond.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy inbegrepen"
@@ -1019,7 +1019,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "son-muntaner-review",
         "badge": "Banomdöme",
         "badgeGold": true,
-        "title": "Golf Son Muntaner, Mallorca — ärlig recension av en PGA Professional (2026)",
+        "title": "Golf Son Muntaner, Mallorca. Ärlig recension av en PGA Professional (2026)",
         "intro": "Bästa golfbana i Spanien vid World Golf Awards 2025. Jag spelade den en lördagsmorgon med full startlista. Här är vad jag hittade.",
         "readTime": "6 min",
         "keywords": "Championship · Par 72 · €110-260 · Buggy ingår"
@@ -1242,7 +1242,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "t-golf-calvia-review",
         "badge": "球场评测",
         "badgeGold": true,
-        "title": "T Golf Calvià 评测 — PGA职业球员的真实评价（2026）",
+        "title": "T Golf Calvià 评测：PGA职业球员的真实评价（2026）",
         "intro": "十五个湖泊，风车遍布全场，果岭是岛上滚动最顺的之一。马略卡维护最佳的球场之一。综合评分9/10。",
         "readTime": "6分钟",
         "keywords": "标准杆72 · €105-210 · 马略卡岛西南部 · 15座湖泊"
@@ -1251,7 +1251,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "t-golf-palma-review",
         "badge": "球场评测",
         "badgeGold": true,
-        "title": "T Golf Palma 评测 — PGA职业球员的真实评价（2026）",
+        "title": "T Golf Palma 评测：PGA职业球员的真实评价（2026）",
         "intro": "果岭快而小，风险与回报并存的球洞逼你在发球台上多想一步。综合评分9/10，靠自身实力赢得的口碑，而不只是沾了T Golf Calvià的光。",
         "readTime": "6分钟",
         "keywords": "标准杆71 · €75-150 · 帕尔马 · 杰克·尼克劳斯设计"
@@ -1260,7 +1260,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "slug": "son-muntaner-review",
         "badge": "球场评测",
         "badgeGold": true,
-        "title": "Son Muntaner 高尔夫球场，马略卡 — PGA 职业教练诚实评测（2026）",
+        "title": "Son Muntaner 高尔夫球场，马略卡：PGA 职业教练诚实评测（2026）",
         "intro": "2025 年世界高尔夫奖西班牙最佳球场。我在周六早晨、开球表排满的情况下打了一轮。以下是我的发现。",
         "readTime": "6分钟",
         "keywords": "锦标赛级 · 标准杆72 · €110-260 · 含球车"

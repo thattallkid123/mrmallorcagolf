@@ -815,14 +815,14 @@ const content = {
   },
   "zh": {
     "metadata": {
-      "title": "T Golf Calvià 评测（2026）— 果岭费、球场状况与真实评分",
+      "title": "T Golf Calvià 评测（2026）：果岭费、球场状况与真实评分",
       "description": "PGA职业球员于2026年5月亲身体验后的T Golf Calvià评测。旺季最高210欧元，黄昏场从150欧元起。15个湖泊，后发球台6500米，状态评分9/10。"
     },
     "meta": {
       "badge": "球场评测",
       "readTime": "6分钟",
       "updated": "2026年5月",
-      "title": "T Golf Calvià 评测 — PGA职业球员的真实评价（2026）",
+      "title": "T Golf Calvià 评测：PGA职业球员的真实评价（2026）",
       "intro": "十五个湖泊，风车遍布全场，果岭是我在马略卡打过滚动最顺的之一。综合评分9/10，岛上维护最佳的球场之一。",
       "related": [
         {

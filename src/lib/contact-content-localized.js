@@ -145,7 +145,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "stayInTouch": {
       "heading": "Mantenerse en contacto",
-      "body": "Notas sobre campos y consejos de golf en Mallorca cada dos semanas — directamente en su bandeja de entrada."
+      "body": "Notas sobre campos y consejos de golf en Mallorca cada dos semanas, directamente en su bandeja de entrada."
     },
     "dateCta": "Dígame sus fechas",
     "trust": {
@@ -297,7 +297,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "stayInTouch": {
       "heading": "In Kontakt bleiben",
-      "body": "Platz-Updates und Mallorca-Golf-Einblicke alle zwei Wochen — direkt in Ihr Postfach."
+      "body": "Platz-Updates und Mallorca-Golf-Einblicke alle zwei Wochen, direkt in Ihr Postfach."
     },
     "dateCta": "Meine Daten mitteilen",
     "trust": {
@@ -449,7 +449,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "stayInTouch": {
       "heading": "Rester en contact",
-      "body": "Notes de parcours et conseils golf à Majorque toutes les deux semaines — directement dans votre boîte mail."
+      "body": "Notes de parcours et conseils golf à Majorque toutes les deux semaines, directement dans votre boîte mail."
     },
     "dateCta": "Dites-moi vos dates",
     "trust": {
@@ -601,7 +601,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "stayInTouch": {
       "heading": "Blijf op de hoogte",
-      "body": "Baannotities en Mallorca golf-inzichten elke twee weken — rechtstreeks in uw inbox."
+      "body": "Baannotities en Mallorca golf-inzichten elke twee weken, rechtstreeks in uw inbox."
     },
     "dateCta": "Vertel me uw data",
     "trust": {
@@ -753,7 +753,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "stayInTouch": {
       "heading": "Håll kontakten",
-      "body": "Bannoteringar och golfinblickar från Mallorca varannan vecka — direkt till din inkorg."
+      "body": "Bannoteringar och golfinblickar från Mallorca varannan vecka, direkt till din inkorg."
     },
     "dateCta": "Berätta dina datum",
     "trust": {
@@ -908,7 +908,7 @@ export const CONTACT_LOCALIZED_CONTENT = {
     },
     "stayInTouch": {
       "heading": "保持联系",
-      "body": "每两周发送一次马略卡球场动态和高尔夫资讯——直接发送到您的收件箱。"
+      "body": "每两周发送一次马略卡球场动态和高尔夫资讯，直接发送到您的收件箱。"
     },
     "dateCta": "告诉我您的日期",
     "trust": {

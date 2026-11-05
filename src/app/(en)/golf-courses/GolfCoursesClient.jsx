@@ -84,7 +84,7 @@ const SORT_UI = {
   },
   zh: {
     controlsIntro: '按地区筛选。每张卡片显示高峰和低价果岭费、标准杆、我的个人评分，以及开打前需要了解的要点。',
-    dynamicKey: '* 动态定价球场 — 价格因季节、时段或需求而变动。',
+    dynamicKey: '* 动态定价球场：价格因季节、时段或需求而变动。',
     sortLabel: '排序：',
     topRated: '评分最高',
     az: 'A-Z',
