@@ -866,7 +866,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "My most-played course on the island and the one I recommend most often for a proper test. Thomas Himmel's design sits in its own wind ecosystem in the hills above Palma - I've left my house, full of confidence, on a calm morning and arrived at the first tee to find it blowing hard and staying that way for the whole round. The greens are fast, raised, and unforgiving. The bunkering is aggressive and makes strategy and ball striking need to be top level, and the closing stretch is genuinely outstanding.",
+          "My most-played course on the island and the one I recommend most often for a proper test. Thomas Himmel's design sits in its own wind ecosystem in the hills above Palma - I've left my house, full of confidence, on a calm morning and arrived at the first tee to find it blowing hard and staying that way for the whole round. The greens are fast, raised, and unforgiving. The bunkering is aggressive and makes strategy and ball striking need to be top level, and the closing stretch is genuinely outstanding. Full <a href='/guides/son-gual-review'>Son Gual review</a>.",
       },
       {
         type: 'paragraph',
@@ -889,7 +889,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          "Standing on the elevated back tees is its own experience. You feel untouchable - so far from everything else that everyone below looks like a tiny dot. The lighthouse in front of you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling.",
+          "Standing on the elevated back tees is its own experience. You feel untouchable - so far from everything else that everyone below looks like a tiny dot. The lighthouse in front of you, the bay stretching out, and you're about to hit driver somewhere into the abyss. That's the feeling. More in the <a href='/guides/alcanada-review'>Alcanada review</a>.",
       },
       { type: 'subheading', text: 'For an East-Coast Surprise: Capdepera' },
       {
@@ -908,7 +908,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Named Best Golf Course in Spain at the 2025 World Golf Awards and well deserved. Hosted the Mallorca Golf Open and Ladies European Tour events. Wide fairways, but a lot of hazards and pine trees to guide you, technically demanding greens, fantastic conditioning and a really good test of golf.',
+          'Named Best Golf Course in Spain at the 2025 World Golf Awards and well deserved. Hosted the Mallorca Golf Open and Ladies European Tour events. Wide fairways, but a lot of hazards and pine trees to guide you, technically demanding greens, fantastic conditioning and a really good test of golf. The <a href="/guides/son-muntaner-review">Son Muntaner review</a> has the full breakdown.',
       },
       { type: 'subheading', text: 'For the Hardest Test: Golf de Andratx' },
       {
@@ -1412,7 +1412,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       { type: 'subheading', text: 'Which Arabella course first' },
       {
         type: 'paragraph',
-        text: 'If you are playing one Arabella round, book Son Muntaner. For two, play Son Quint first on its flat front nine, then Son Muntaner as the main round. Son Vida is the third choice, for the history or if you are staying at the Sheraton. It gets busy around the 1st tee by mid-morning, so book early.',
+        text: 'If you are playing one Arabella round, book Son Muntaner. For two, play Son Quint first on its flat front nine, then Son Muntaner as the main round. <a href="/guides/son-vida-review">Son Vida</a> is the third choice, for the history or if you are staying at the Sheraton. It gets busy around the 1st tee by mid-morning, so book early.',
       },
 
       { type: 'heading', text: 'T Golf Palma: the quiet one under the flight path' },

@@ -14,7 +14,7 @@ export const GOLF_COURSES_CONTENT = {
         "Played and Researched Properly",
         "PGA Professional"
       ],
-      "lead": "Browse all 24 courses by region. For a smarter shortlist, filtered by your handicap, budget, and trip style, use the course selector. Then send me your dates, handicap, and hotel area and I'll refine the recommendation."
+      "lead": "Browse all 24 courses by region, with 18-hole green fees from €55 to €260. For a smarter shortlist, filtered by your handicap, budget, and trip style, use the course selector. Then send me your dates, handicap, and hotel area and I'll refine the recommendation."
     },
     "regionHeaders": {
       "palma": {
@@ -46,7 +46,7 @@ export const GOLF_COURSES_CONTENT = {
     "ui": {
       "allCourses": "All Courses",
       "credentials": "UK PGA Advanced Professional · Trackman Master Certified · TPI Level 3 · 11 years in Shanghai · Based in Mallorca since March 2025",
-      "intro1": "Mallorca has more good golf than most visitors realise. There are 24 courses on the island and 21 are open to green-fee visitors, which is more depth than most people expect from one island.",
+      "intro1": "Mallorca has 24 golf courses and 21 of them take green-fee visitors. An 18-hole green fee runs from €55 to €260, depending on the course and the month.",
       "intro2": "I'm working my way through every course on the island, playing them and reviewing them honestly. Son Antem West is now in that played-and-reviewed list. Below is what I know so far.",
       "explorerIntro": "Browse by region. Each card shows price, difficulty rating, my rating, and any dynamic pricing or handicap requirement before booking.",
       "ctaEyebrow": "Narrowed it down?",

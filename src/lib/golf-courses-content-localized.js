@@ -14,7 +14,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Selbst gespielt oder sauber recherchiert",
         "PGA Professional"
       ],
-      "lead": "Alle 24 Plätze nach Region durchsuchen. Für eine intelligentere Shortlist - gefiltert nach Handicap, Budget und Reisestil - nutzen Sie den Platzauswahl-Assistenten. Schicken Sie mir dann Ihre Daten, Ihr Handicap und Ihre Hotelregion, und ich verfeinere die Empfehlung."
+      "lead": "Alle 24 Plätze nach Region durchsuchen, mit Greenfees für 18 Löcher zwischen 55 € und 260 €. Für eine intelligentere Shortlist - gefiltert nach Handicap, Budget und Reisestil - nutzen Sie den Platzauswahl-Assistenten. Schicken Sie mir dann Ihre Daten, Ihr Handicap und Ihre Hotelregion, und ich verfeinere die Empfehlung."
     },
     "regionHeaders": {
       "palma": {
@@ -42,6 +42,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
+      "intro1": "Mallorca hat 24 Golfplätze, und 21 davon sind für Greenfee-Gäste offen. Ein Greenfee für 18 Löcher kostet zwischen 55 € und 260 €, je nach Platz und Monat.",
       "explorerIntro": "Nach Region durchsuchen. Jede Karte zeigt Preis, Schwierigkeit, meine Bewertung sowie eventuelle dynamische Preise oder Handicap-Vorgaben vor der Buchung.",
       "faqEyebrow": "Fragen",
       "faqTitle": "Häufige Fragen",
@@ -91,7 +92,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Jugados o investigados a fondo",
         "Profesional PGA"
       ],
-      "lead": "Explore los 24 campos por región. Para una lista más inteligente - filtrada por su hándicap, presupuesto y estilo de viaje - use el selector de campos. Después envíeme sus fechas, hándicap y zona de hotel, y afinaré la recomendación."
+      "lead": "Explore los 24 campos de golf por región, con green fees de 18 hoyos entre 55 € y 260 €. Para una lista más inteligente - filtrada por su hándicap, presupuesto y estilo de viaje - use el selector de campos. Después envíeme sus fechas, hándicap y zona de hotel, y afinaré la recomendación."
     },
     "regionHeaders": {
       "palma": {
@@ -120,6 +121,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
+      "intro1": "Hay 24 campos de golf en Mallorca y 21 de ellos admiten visitantes con green fee. Un green fee de 18 hoyos cuesta entre 55 € y 260 €, según el campo y el mes.",
       "explorerIntro": "Explore por zona. Cada ficha muestra precio, dificultad, mi valoración y cualquier tarifa dinámica o requisito de hándicap antes de reservar.",
       "faqEyebrow": "Preguntas",
       "faqTitle": "Preguntas frecuentes",
@@ -169,7 +171,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Joués ou étudiés sérieusement",
         "Professionnel PGA"
       ],
-      "lead": "Parcourez les 24 parcours par région. Pour une short-list plus intelligente - filtrée selon votre index, votre budget et votre style de voyage - utilisez le sélecteur de parcours. Envoyez-moi ensuite vos dates, votre index et la zone de votre hôtel, et j'affinerai la recommandation."
+      "lead": "Parcourez les 24 parcours de Majorque par région, avec des green fees 18 trous entre 55 € et 260 €. Pour une short-list plus intelligente - filtrée selon votre index, votre budget et votre style de voyage - utilisez le sélecteur de parcours. Envoyez-moi ensuite vos dates, votre index et la zone de votre hôtel, et j'affinerai la recommandation."
     },
     "regionHeaders": {
       "palma": {
@@ -197,6 +199,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
+      "intro1": "On compte 24 parcours de golf à Majorque, dont 21 accueillent les visiteurs en green fee. Un green fee 18 trous coûte entre 55 € et 260 €, selon le parcours et le mois.",
       "explorerIntro": "Parcourez par région. Chaque fiche montre le prix, la difficulté, ma note et tout tarif dynamique ou exigence de handicap avant de réserver.",
       "faqEyebrow": "Questions",
       "faqTitle": "Questions fréquentes",
@@ -245,7 +248,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Gespeeld of grondig onderzocht",
         "PGA Professional"
       ],
-      "lead": "Blader door alle 24 banen per regio. Voor een slimmere shortlist - gefilterd op handicap, budget en reisstijl - gebruikt u de baanselector. Stuur me daarna uw data, handicap en hotelregio, en ik verfijn de aanbeveling."
+      "lead": "Blader door alle 24 banen per regio, met greenfees voor 18 holes tussen € 55 en € 260. Voor een slimmere shortlist - gefilterd op handicap, budget en reisstijl - gebruikt u de baanselector. Stuur me daarna uw data, handicap en hotelregio, en ik verfijn de aanbeveling."
     },
     "regionHeaders": {
       "palma": {
@@ -273,6 +276,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
+      "intro1": "Mallorca heeft 24 golfbanen en 21 daarvan zijn open voor greenfee-bezoekers. Een greenfee voor 18 holes kost tussen € 55 en € 260, afhankelijk van de baan en de maand.",
       "explorerIntro": "Blader per regio. Elke kaart toont prijs, moeilijkheid, mijn beoordeling en eventuele dynamische prijzen of handicapeisen voor het boeken.",
       "faqEyebrow": "Vragen",
       "faqTitle": "Veelgestelde vragen",
@@ -322,7 +326,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Spelade eller ordentligt granskade",
         "PGA Professional"
       ],
-      "lead": "Bläddra bland alla 24 banor efter region. För en smartare kortlista - filtrerad efter handicap, budget och resestil - använd banväljaren. Skicka sedan dina datum, ditt handicap och ditt hotellområde, så förfinar jag rekommendationen."
+      "lead": "Bläddra bland alla 24 banor efter region, med greenfee för 18 hål mellan 55 € och 260 €. För en smartare kortlista - filtrerad efter handicap, budget och resestil - använd banväljaren. Skicka sedan dina datum, ditt handicap och ditt hotellområde, så förfinar jag rekommendationen."
     },
     "regionHeaders": {
       "palma": {
@@ -350,6 +354,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
+      "intro1": "Mallorca har 24 golfbanor och 21 av dem tar emot greenfee-besökare. En greenfee för 18 hål kostar mellan 55 € och 260 €, beroende på bana och månad.",
       "explorerIntro": "Bläddra efter region. Varje kort visar pris, svårighetsgrad, mitt betyg och eventuell dynamisk prissättning eller handicapkrav före bokning.",
       "faqEyebrow": "Frågor",
       "faqTitle": "Vanliga frågor",
@@ -399,7 +404,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "亲自下场或认真调研",
         "PGA 职业教练"
       ],
-      "lead": "按地区浏览全部24座球场。想要更智能的候选清单——按差点、预算和行程风格筛选——请使用球场选择工具。然后把您的日期、差点和酒店区域发给我，我会进一步细化推荐。"
+      "lead": "按地区浏览全部24座球场，18 洞果岭费在 55 至 260 欧元之间。想要更智能的候选清单——按差点、预算和行程风格筛选——请使用球场选择工具。然后把您的日期、差点和酒店区域发给我，我会进一步细化推荐。"
     },
     "regionHeaders": {
       "palma": {
@@ -429,6 +434,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
+      "intro1": "马略卡岛共有 24 座高尔夫球场，其中 21 座接待支付果岭费的访客。18 洞果岭费在 55 至 260 欧元之间，视球场和月份而定。",
       "explorerIntro": "按地区浏览。每张卡片都会标出价格、难度、我的评分，以及预订前要注意的动态定价或差点要求。",
       "faqEyebrow": "问题",
       "faqTitle": "常见问题",

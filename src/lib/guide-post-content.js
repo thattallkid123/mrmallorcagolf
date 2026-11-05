@@ -407,7 +407,7 @@ export const GUIDE_POST_CONTENT = {
         { type: 'paragraph', text: "Dynamic pricing through the Arabella Golf Mallorca booking system. Peak rate currently €260 for 18 holes, with the lowest widely seen later-day rate around €110. That gap is significant enough to be worth tracking if you have flexibility on timing. Check current rates at arabellagolfmallorca.com. Handicap limit is 36 for both men and women. Buggy is included in the green fee from March through late November. A €3 daily Spanish Golf Federation licence is payable at check-in." },
         { type: 'heading', text: 'Common Questions' },
         { type: 'paragraph', text: "First time on this course? Walk to the front of the first tee box and take a proper look before you play. The driving range sits just out of sight to the right and is easy to drift toward from the tee if you have not seen the full picture. Most visitors who go right on the opening hole have simply not had a clear view of where they are going." },
-        { type: 'paragraph', text: "Son Muntaner is part of the Arabella Golf Mallorca group alongside Son Vida and Son Quint. All three courses are accessible from the same resort complex." },
+        { type: 'paragraph', text: "Son Muntaner is part of the Arabella Golf Mallorca group alongside <a href=\"/guides/son-vida-review\">Son Vida</a> and <a href=\"/guides/son-quint-review\">Son Quint</a>. All three courses are accessible from the same resort complex." },
         {
           type: 'notes',
           title: 'Four things I would know before booking Son Muntaner',

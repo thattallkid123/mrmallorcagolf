@@ -189,7 +189,7 @@ const content = {
         "text": "¿Es tu primera vez en este campo? Camina hasta el frente del primer tee y échale un buen vistazo antes de jugar. El campo de prácticas queda justo fuera de la vista a la derecha, y es fácil desviarse hacia él desde el tee si no has visto bien el panorama completo. La mayoría de los visitantes que se van a la derecha en el hoyo de salida simplemente no han tenido una vista clara de hacia dónde iban."
       },
       {
-        "text": "Son Muntaner forma parte del grupo Arabella Golf Mallorca, junto a Son Vida y Son Quint. Los tres campos son accesibles desde el mismo complejo resort."
+        "text": "Son Muntaner forma parte del grupo Arabella Golf Mallorca, junto a <a href=\"/guides/son-vida-review\">Son Vida</a> y <a href=\"/guides/son-quint-review\">Son Quint</a>. Los tres campos son accesibles desde el mismo complejo resort."
       },
       {
         "title": "Cuatro cosas que me habría gustado saber antes de reservar Son Muntaner",
@@ -415,7 +415,7 @@ const content = {
         "text": "Zum ersten Mal auf diesem Platz? Gehen Sie vor den ersten Abschlag und schauen Sie sich in Ruhe um, bevor Sie spielen. Die Driving Range liegt knapp außer Sichtweite rechts und es ist leicht, vom Abschlag aus dorthin abzudriften, wenn Sie das ganze Bild noch nicht gesehen haben. Die meisten Besucher, die auf dem Eröffnungsloch nach rechts geraten, hatten einfach keinen klaren Blick darauf, wohin sie spielen."
       },
       {
-        "text": "Son Muntaner gehört zur Arabella Golf Mallorca Gruppe, zusammen mit Son Vida und Son Quint. Alle drei Plätze sind vom selben Resort-Komplex aus zugänglich."
+        "text": "Son Muntaner gehört zur Arabella Golf Mallorca Gruppe, zusammen mit <a href=\"/guides/son-vida-review\">Son Vida</a> und <a href=\"/guides/son-quint-review\">Son Quint</a>. Alle drei Plätze sind vom selben Resort-Komplex aus zugänglich."
       },
       {
         "title": "Vier Dinge, die ich vor der Buchung von Son Muntaner klären würde",
@@ -642,7 +642,7 @@ const content = {
         "text": "C'est votre première fois sur ce parcours ? Avancez jusqu'à l'avant du premier départ et observez bien avant de jouer. Le practice se trouve juste hors de vue sur la droite, et il est facile de dériver dans cette direction depuis le départ si vous n'avez pas vu l'ensemble du tableau. La plupart des visiteurs qui partent à droite sur le trou d'ouverture n'ont tout simplement pas eu une vue claire de leur trajectoire."
       },
       {
-        "text": "Son Muntaner fait partie du groupe Arabella Golf Mallorca, aux côtés de Son Vida et Son Quint. Les trois parcours sont accessibles depuis le même complexe resort."
+        "text": "Son Muntaner fait partie du groupe Arabella Golf Mallorca, aux côtés de <a href=\"/guides/son-vida-review\">Son Vida</a> et <a href=\"/guides/son-quint-review\">Son Quint</a>. Les trois parcours sont accessibles depuis le même complexe resort."
       },
       {
         "title": "Quatre choses que je voudrais savoir avant de réserver Son Muntaner",
@@ -868,7 +868,7 @@ const content = {
         "text": "Voor het eerst op deze baan? Loop naar de voorkant van de eerste afslagplaats en bekijk het geheel goed voordat je speelt. De driving range ligt net buiten het zicht aan de rechterkant en het is makkelijk om daar vanaf de tee naartoe af te drijven als je niet het volledige beeld hebt gezien. De meeste bezoekers die op de openingshole naar rechts gaan, hebben simpelweg geen duidelijk zicht gehad op waar ze naartoe speelden."
       },
       {
-        "text": "Son Muntaner maakt deel uit van de Arabella Golf Mallorca groep, samen met Son Vida en Son Quint. Alle drie de banen zijn bereikbaar vanuit hetzelfde resortcomplex."
+        "text": "Son Muntaner maakt deel uit van de Arabella Golf Mallorca groep, samen met <a href=\"/guides/son-vida-review\">Son Vida</a> en <a href=\"/guides/son-quint-review\">Son Quint</a>. Alle drie de banen zijn bereikbaar vanuit hetzelfde resortcomplex."
       },
       {
         "title": "Vier dingen die ik zou willen weten voor ik Son Muntaner boek",
@@ -1094,7 +1094,7 @@ const content = {
         "text": "Första gången på den här banan? Gå fram till framkanten av det första utslaget och ta en ordentlig titt innan du spelar. Drivingrangen ligger precis utom synhåll till höger och det är lätt att driva åt det hållet från tee om du inte har sett hela bilden. De flesta besökare som går åt höger på öppningshålet har helt enkelt inte haft en tydlig bild av vart de var på väg."
       },
       {
-        "text": "Son Muntaner är en del av Arabella Golf Mallorca-gruppen tillsammans med Son Vida och Son Quint. Alla tre banorna är tillgängliga från samma resortanläggning."
+        "text": "Son Muntaner är en del av Arabella Golf Mallorca-gruppen tillsammans med <a href=\"/guides/son-vida-review\">Son Vida</a> och <a href=\"/guides/son-quint-review\">Son Quint</a>. Alla tre banorna är tillgängliga från samma resortanläggning."
       },
       {
         "title": "Fyra saker jag skulle vilja veta innan jag bokar Son Muntaner",
@@ -1321,7 +1321,7 @@ const content = {
         "text": "第一次来这个球场？开球前先走到第一发球台前方，好好观察一下场地。练习场就在右侧视线之外的地方，如果你没看清全貌，很容易从发球台不自觉地偏向那个方向。大多数在首洞打偏右的球手，只是没能清楚看到自己该往哪里打。"
       },
       {
-        "text": "Son Muntaner隶属于Arabella高尔夫马略卡集团，与Son Vida和Son Quint同属一家。三个球场均可从同一度假村建筑群进入。"
+        "text": "Son Muntaner隶属于Arabella高尔夫马略卡集团，与<a href=\"/guides/son-vida-review\">Son Vida</a>和<a href=\"/guides/son-quint-review\">Son Quint</a>同属一家。三个球场均可从同一度假村建筑群进入。"
       },
       {
         "title": "预订 Son Muntaner 前值得先知道的四件事",

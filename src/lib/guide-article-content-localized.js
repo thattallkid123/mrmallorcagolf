@@ -300,7 +300,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - campo de prueba de campeonato"
         },
         {
-          "text": "Mi campo más jugado de la isla y el que más recomiendo para una prueba de verdad. El diseño de Thomas Himmel está en su propio ecosistema de viento en las colinas sobre Palma: he salido de casa, muy confiado, en una mañana en calma y he llegado al primer tee para encontrarlo soplando fuerte y seguir así toda la ronda. Los greens son rápidos, elevados e implacables. Los bunkers son agresivos y exigen un nivel muy alto de estrategia y de golpeo, y el tramo final es realmente sobresaliente."
+          "text": "Mi campo más jugado de la isla y el que más recomiendo para una prueba de verdad. El diseño de Thomas Himmel está en su propio ecosistema de viento en las colinas sobre Palma: he salido de casa, muy confiado, en una mañana en calma y he llegado al primer tee para encontrarlo soplando fuerte y seguir así toda la ronda. Los greens son rápidos, elevados e implacables. Los bunkers son agresivos y exigen un nivel muy alto de estrategia y de golpeo, y el tramo final es realmente sobresaliente. Aquí tienes el <a href='/guides/son-gual-review'>análisis completo de Son Gual</a>."
         },
         {
           "text": "Rafa Nadal juega aquí con regularidad y ha dicho que es su campo favorito de la isla. Barack Obama jugó aquí en noviembre de 2024 y le gustó tanto que prometió volver. En este popular campo también se celebran muchos torneos importantes de aficionados y profesionales."
@@ -316,7 +316,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Alcanada es el campo que elijo cuando alguien pide un día que se le quede grabado. Las vistas son espectaculares de principio a fin, pero no es solo una ronda bonita. Es un serio trazado de campeonato de Robert Trent Jones Jr. con greens rápidos y ondulados y bunkers estratégicos que plantean buenas preguntas todo el día."
         },
         {
-          "text": "Estar en las salidas traseras elevadas es toda una experiencia. Te sientes intocable, tan lejos de todo que quienes están abajo parecen puntos diminutos. El faro delante de ti, la bahía extendiéndose y estás a punto de pegar el driver hacia el abismo. Esa es la sensación."
+          "text": "Estar en las salidas traseras elevadas es toda una experiencia. Te sientes intocable, tan lejos de todo que quienes están abajo parecen puntos diminutos. El faro delante de ti, la bahía extendiéndose y estás a punto de pegar el driver hacia el abismo. Esa es la sensación. Más en el <a href='/guides/alcanada-review'>análisis de Alcanada</a>."
         },
         {
           "text": "Para una sorpresa en la costa este: Capdepera"
@@ -332,7 +332,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Muntaner - Mejor Campo de Golf de España 2025"
         },
         {
-          "text": "Elegido Mejor Campo de Golf de España en los World Golf Awards 2025, y bien merecido. Ha acogido el Mallorca Golf Open y torneos del Ladies European Tour. Calles anchas, pero con muchos obstáculos y pinos que te guían, greens técnicamente exigentes, un mantenimiento fantástico y una prueba de golf realmente buena."
+          "text": "Elegido Mejor Campo de Golf de España en los World Golf Awards 2025, y bien merecido. Ha acogido el Mallorca Golf Open y torneos del Ladies European Tour. Calles anchas, pero con muchos obstáculos y pinos que te guían, greens técnicamente exigentes, un mantenimiento fantástico y una prueba de golf realmente buena. El <a href='/guides/son-muntaner-review'>análisis de Son Muntaner</a> lo explica todo en detalle."
         },
         {
           "text": "Para la prueba más dura: Golf de Andratx"
@@ -708,7 +708,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - der Championship-Testplatz"
         },
         {
-          "text": "Mein meistgespielter Platz der Insel und der, den ich am häufigsten für einen echten Test empfehle. Thomas Himmels Design liegt in seinem eigenen Windökosystem in den Hügeln über Palma - ich bin schon voller Zuversicht an einem windstillen Morgen von zu Hause losgefahren und kam am ersten Abschlag an, wo es kräftig blies und die ganze Runde über so blieb. Die Grüns sind schnell, erhöht und gnadenlos. Die Bunkerung ist aggressiv und verlangt Strategie und Ballkontrolle auf Top-Niveau, und der Schlussabschnitt ist wirklich herausragend."
+          "text": "Mein meistgespielter Platz der Insel und der, den ich am häufigsten für einen echten Test empfehle. Thomas Himmels Design liegt in seinem eigenen Windökosystem in den Hügeln über Palma - ich bin schon voller Zuversicht an einem windstillen Morgen von zu Hause losgefahren und kam am ersten Abschlag an, wo es kräftig blies und die ganze Runde über so blieb. Die Grüns sind schnell, erhöht und gnadenlos. Die Bunkerung ist aggressiv und verlangt Strategie und Ballkontrolle auf Top-Niveau, und der Schlussabschnitt ist wirklich herausragend. Alles Weitere in der ausführlichen <a href='/guides/son-gual-review'>Bewertung von Son Gual</a>."
         },
         {
           "text": "Rafa Nadal spielt hier regelmäßig und hat gesagt, es sei sein Lieblingsplatz auf der Insel. Barack Obama spielte im November 2024 hier und war so begeistert, dass er versprach wiederzukommen. Auch viele hochkarätige Amateur- und Profi-Turniere werden auf diesem beliebten Platz ausgetragen."
@@ -724,7 +724,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Alcanada ist der Platz, den ich wähle, wenn jemand einen Tag möchte, der ihm in Erinnerung bleibt. Die Aussichten sind von Anfang bis Ende spektakulär, aber das ist nicht nur eine hübsche Runde. Es ist ein ernsthaftes Championship-Layout von Robert Trent Jones Jr. mit schnellen, konturierten Grüns und strategischer Bunkerung, die den ganzen Tag gute Fragen stellt."
         },
         {
-          "text": "Auf den erhöhten hinteren Abschlägen zu stehen, ist ein Erlebnis für sich. Man fühlt sich unantastbar - so weit weg von allem, dass alle da unten wie winzige Punkte aussehen. Der Leuchtturm vor Ihnen, die Bucht, die sich ausbreitet, und Sie sind dabei, den Driver irgendwo in den Abgrund zu schlagen. Dieses Gefühl."
+          "text": "Auf den erhöhten hinteren Abschlägen zu stehen, ist ein Erlebnis für sich. Man fühlt sich unantastbar - so weit weg von allem, dass alle da unten wie winzige Punkte aussehen. Der Leuchtturm vor Ihnen, die Bucht, die sich ausbreitet, und Sie sind dabei, den Driver irgendwo in den Abgrund zu schlagen. Dieses Gefühl. Mehr in der <a href='/guides/alcanada-review'>Bewertung von Alcanada</a>."
         },
         {
           "text": "Für eine Überraschung an der Ostküste: Capdepera"
@@ -740,7 +740,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Muntaner - Spaniens bester Golfplatz 2025"
         },
         {
-          "text": "Bei den World Golf Awards 2025 zum besten Golfplatz Spaniens gekürt, und das zu Recht. Austragungsort der Mallorca Golf Open und von Turnieren der Ladies European Tour. Breite Fairways, aber viele Hindernisse und Pinien, die Sie lenken, technisch anspruchsvolle Grüns, fantastische Pflege und ein wirklich guter Golftest."
+          "text": "Bei den World Golf Awards 2025 zum besten Golfplatz Spaniens gekürt, und das zu Recht. Austragungsort der Mallorca Golf Open und von Turnieren der Ladies European Tour. Breite Fairways, aber viele Hindernisse und Pinien, die Sie lenken, technisch anspruchsvolle Grüns, fantastische Pflege und ein wirklich guter Golftest. Die <a href='/guides/son-muntaner-review'>Bewertung von Son Muntaner</a> enthält alle Details."
         },
         {
           "text": "Für die härteste Prüfung: Golf de Andratx"
@@ -1116,7 +1116,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - parcours de championnat"
         },
         {
-          "text": "Mon parcours le plus joué de l'île et celui que je recommande le plus souvent pour un vrai test. Le tracé de Thomas Himmel vit dans son propre écosystème de vent dans les collines au-dessus de Palma : je suis parti de chez moi, plein de confiance, par un matin calme et je suis arrivé au premier départ pour le trouver en train de souffler fort, et il l'est resté toute la partie. Les greens sont rapides, surélevés et sans pitié. Les bunkers sont agressifs et exigent une stratégie et un jeu de fer de très haut niveau, et la fin du parcours est vraiment remarquable."
+          "text": "Mon parcours le plus joué de l'île et celui que je recommande le plus souvent pour un vrai test. Le tracé de Thomas Himmel vit dans son propre écosystème de vent dans les collines au-dessus de Palma : je suis parti de chez moi, plein de confiance, par un matin calme et je suis arrivé au premier départ pour le trouver en train de souffler fort, et il l'est resté toute la partie. Les greens sont rapides, surélevés et sans pitié. Les bunkers sont agressifs et exigent une stratégie et un jeu de fer de très haut niveau, et la fin du parcours est vraiment remarquable. Lire l'<a href='/guides/son-gual-review'>avis complet sur Son Gual</a>."
         },
         {
           "text": "Rafa Nadal y joue régulièrement et a dit que c'est son parcours préféré de l'île. Barack Obama y a joué en novembre 2024 et l'a tellement apprécié qu'il a promis d'y revenir. De nombreux grands tournois amateurs et professionnels s'y tiennent aussi."
@@ -1132,7 +1132,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Alcanada est le parcours que je choisis quand quelqu'un demande une journée qui lui restera en mémoire. Les vues sont spectaculaires du début à la fin, mais ce n'est pas seulement une jolie partie. C'est un vrai tracé de championnat de Robert Trent Jones Jr. avec des greens rapides et vallonnés et des bunkers stratégiques qui posent de bonnes questions toute la journée."
         },
         {
-          "text": "Se tenir sur les départs arrière surélevés est une expérience en soi. On se sent intouchable, si loin de tout que ceux d'en bas ressemblent à de minuscules points. Le phare devant vous, la baie qui s'étend, et vous êtes sur le point de frapper le driver quelque part dans le vide. C'est cette sensation."
+          "text": "Se tenir sur les départs arrière surélevés est une expérience en soi. On se sent intouchable, si loin de tout que ceux d'en bas ressemblent à de minuscules points. Le phare devant vous, la baie qui s'étend, et vous êtes sur le point de frapper le driver quelque part dans le vide. C'est cette sensation. Plus dans l'<a href='/guides/alcanada-review'>avis sur Alcanada</a>."
         },
         {
           "text": "Pour une surprise sur la côte est : Capdepera"
@@ -1148,7 +1148,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Muntaner - meilleur parcours de golf d'Espagne 2025"
         },
         {
-          "text": "Élu meilleur parcours de golf d'Espagne aux World Golf Awards 2025, et bien mérité. A accueilli le Mallorca Golf Open et des épreuves du Ladies European Tour. Des fairways larges, mais beaucoup d'obstacles et de pins pour vous guider, des greens techniquement exigeants, un entretien fantastique et un vrai bon test de golf."
+          "text": "Élu meilleur parcours de golf d'Espagne aux World Golf Awards 2025, et bien mérité. A accueilli le Mallorca Golf Open et des épreuves du Ladies European Tour. Des fairways larges, mais beaucoup d'obstacles et de pins pour vous guider, des greens techniquement exigeants, un entretien fantastique et un vrai bon test de golf. L'<a href='/guides/son-muntaner-review'>avis sur Son Muntaner</a> détaille tout."
         },
         {
           "text": "Pour le test le plus dur : Golf de Andratx"
@@ -1524,7 +1524,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - kampioenschapstestbaan"
         },
         {
-          "text": "Mijn meestgespeelde baan op het eiland en degene die ik het vaakst aanraad voor een echte test. Het ontwerp van Thomas Himmel ligt in zijn eigen winden-ecosysteem in de heuvels boven Palma - ik ben vol vertrouwen van huis vertrokken op een windstille ochtend en kwam bij de eerste tee aan om te merken dat het hard waaide en dat de hele ronde bleef doen. De greens zijn snel, verhoogd en meedogenloos. De bunkering is agressief en vraagt om strategie en balcontact op topniveau, en het slotstuk is echt uitstekend."
+          "text": "Mijn meestgespeelde baan op het eiland en degene die ik het vaakst aanraad voor een echte test. Het ontwerp van Thomas Himmel ligt in zijn eigen winden-ecosysteem in de heuvels boven Palma - ik ben vol vertrouwen van huis vertrokken op een windstille ochtend en kwam bij de eerste tee aan om te merken dat het hard waaide en dat de hele ronde bleef doen. De greens zijn snel, verhoogd en meedogenloos. De bunkering is agressief en vraagt om strategie en balcontact op topniveau, en het slotstuk is echt uitstekend. Lees de volledige <a href='/guides/son-gual-review'>review van Son Gual</a>."
         },
         {
           "text": "Rafa Nadal speelt hier regelmatig en heeft gezegd dat het zijn favoriete baan op het eiland is. Barack Obama speelde hier in november 2024 en vond het zo geweldig dat hij beloofde terug te komen. Op deze populaire baan worden ook veel topevenementen voor amateurs en professionals gehouden."
@@ -1540,7 +1540,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Alcanada is de baan die ik kies als iemand om een dag vraagt die hem bijblijft. De uitzichten zijn van begin tot eind spectaculair, maar dit is niet zomaar een mooie ronde. Het is een serieuze kampioenschapsbaan van Robert Trent Jones Jr. met snelle, glooiende greens en strategische bunkering die de hele dag goede vragen stelt."
         },
         {
-          "text": "Op de verhoogde achterste afslagen staan is een ervaring op zich. Je voelt je onaantastbaar - zo ver van alles dat iedereen beneden eruitziet als een klein stipje. De vuurtoren voor je, de baai die zich uitstrekt, en je staat op het punt de driver ergens de afgrond in te slaan. Dat is het gevoel."
+          "text": "Op de verhoogde achterste afslagen staan is een ervaring op zich. Je voelt je onaantastbaar - zo ver van alles dat iedereen beneden eruitziet als een klein stipje. De vuurtoren voor je, de baai die zich uitstrekt, en je staat op het punt de driver ergens de afgrond in te slaan. Dat is het gevoel. Meer in de <a href='/guides/alcanada-review'>review van Alcanada</a>."
         },
         {
           "text": "Voor een verrassing aan de oostkust: Capdepera"
@@ -1556,7 +1556,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Muntaner - beste golfbaan van Spanje 2025"
         },
         {
-          "text": "Bij de World Golf Awards 2025 uitgeroepen tot beste golfbaan van Spanje, en terecht. Gastheer van de Mallorca Golf Open en evenementen van de Ladies European Tour. Brede fairways, maar veel hindernissen en dennenbomen die je sturen, technisch veeleisende greens, fantastische conditie en een echt goede test van golf."
+          "text": "Bij de World Golf Awards 2025 uitgeroepen tot beste golfbaan van Spanje, en terecht. Gastheer van de Mallorca Golf Open en evenementen van de Ladies European Tour. Brede fairways, maar veel hindernissen en dennenbomen die je sturen, technisch veeleisende greens, fantastische conditie en een echt goede test van golf. De <a href='/guides/son-muntaner-review'>review van Son Muntaner</a> zet alles op een rij."
         },
         {
           "text": "Voor de zwaarste test: Golf de Andratx"
@@ -1932,7 +1932,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - mästerskapsbana"
         },
         {
-          "text": "Min mest spelade bana på ön och den jag rekommenderar oftast för ett riktigt test. Thomas Himmels design ligger i sitt eget vindekosystem i kullarna ovanför Palma - jag har åkt hemifrån, full av självförtroende, en lugn morgon och kommit till första tee och funnit att det blåser hårt och fortsätter så hela rundan. Greenerna är snabba, upphöjda och obarmhärtiga. Bunkringen är aggressiv och kräver strategi och bollträff på toppnivå, och avslutningen är verkligen enastående."
+          "text": "Min mest spelade bana på ön och den jag rekommenderar oftast för ett riktigt test. Thomas Himmels design ligger i sitt eget vindekosystem i kullarna ovanför Palma - jag har åkt hemifrån, full av självförtroende, en lugn morgon och kommit till första tee och funnit att det blåser hårt och fortsätter så hela rundan. Greenerna är snabba, upphöjda och obarmhärtiga. Bunkringen är aggressiv och kräver strategi och bollträff på toppnivå, och avslutningen är verkligen enastående. Läs hela <a href='/guides/son-gual-review'>recensionen av Son Gual</a>."
         },
         {
           "text": "Rafa Nadal spelar här regelbundet och har sagt att det är hans favoritbana på ön. Barack Obama spelade här i november 2024 och gillade det så mycket att han lovade att komma tillbaka. Många stora amatör- och proffstävlingar hålls också på den populära banan."
@@ -1948,7 +1948,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Alcanada är banan jag väljer när någon ber om en dag som ska stanna kvar. Utsikten är spektakulär från start till mål, men det här är inte bara en vacker runda. Det är en seriös mästerskapsbana av Robert Trent Jones Jr. med snabba, kuperade greener och strategiska bunkrar som ställer bra frågor hela dagen."
         },
         {
-          "text": "Att stå på de upphöjda bakre tee-platserna är en upplevelse i sig. Du känner dig orörbar - så långt från allt att alla därnere ser ut som små prickar. Fyren framför dig, viken som breder ut sig, och du är på väg att slå driver någonstans ut i avgrunden. Det är känslan."
+          "text": "Att stå på de upphöjda bakre tee-platserna är en upplevelse i sig. Du känner dig orörbar - så långt från allt att alla därnere ser ut som små prickar. Fyren framför dig, viken som breder ut sig, och du är på väg att slå driver någonstans ut i avgrunden. Det är känslan. Mer i <a href='/guides/alcanada-review'>recensionen av Alcanada</a>."
         },
         {
           "text": "För en överraskning på östkusten: Capdepera"
@@ -1964,7 +1964,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Muntaner - Spaniens bästa golfbana 2025"
         },
         {
-          "text": "Utsedd till Spaniens bästa golfbana vid World Golf Awards 2025, och välförtjänt. Har varit värd för Mallorca Golf Open och Ladies European Tour-evenemang. Breda fairways, men många hinder och tallar som guidar dig, tekniskt krävande greener, fantastiskt skick och ett riktigt bra golftest."
+          "text": "Utsedd till Spaniens bästa golfbana vid World Golf Awards 2025, och välförtjänt. Har varit värd för Mallorca Golf Open och Ladies European Tour-evenemang. Breda fairways, men många hinder och tallar som guidar dig, tekniskt krävande greener, fantastiskt skick och ett riktigt bra golftest. <a href='/guides/son-muntaner-review'>Recensionen av Son Muntaner</a> går igenom allt i detalj."
         },
         {
           "text": "För det tuffaste testet: Golf de Andratx"
@@ -2340,7 +2340,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Gual - 锦标赛级考验球场"
         },
         {
-          "text": "这是我在岛上打得最多的球场，也是我最常推荐给想要真正考验的人的那一座。Thomas Himmel 的设计处在帕尔马上方山丘里自成一体的风场中：我曾在一个无风的早晨信心满满地从家里出发，到了第一洞发球台才发现风刮得很大，而且整轮都是这样。果岭又快、又高、毫不留情。沙坑设置很有攻击性，要求战略和击球都要达到顶级水平，收尾几洞更是真正出色。"
+          "text": "这是我在岛上打得最多的球场，也是我最常推荐给想要真正考验的人的那一座。Thomas Himmel 的设计处在帕尔马上方山丘里自成一体的风场中：我曾在一个无风的早晨信心满满地从家里出发，到了第一洞发球台才发现风刮得很大，而且整轮都是这样。果岭又快、又高、毫不留情。沙坑设置很有攻击性，要求战略和击球都要达到顶级水平，收尾几洞更是真正出色。完整内容见 <a href='/guides/son-gual-review'>Son Gual 评测</a>。"
         },
         {
           "text": "Rafa Nadal 经常来这里打球，并说这是他在岛上最喜欢的球场。Barack Obama 在 2024 年 11 月来这里打过球，非常喜欢，还承诺会再来。很多顶级业余和职业赛事也在这座热门球场举办。"
@@ -2356,7 +2356,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "当有人想要一天难忘的经历时，我会选择 Alcanada。从头到尾景色都壮观，但这不只是一轮好看的球。这是一座由 Robert Trent Jones Jr. 设计的严肃锦标赛球场，果岭快而有起伏，沙坑布置讲究策略，整天都在提出好问题。"
         },
         {
-          "text": "站在抬高的后发球台上本身就是一种体验。你会觉得自己无人能及，离一切那么远，下面的人都像小点。眼前是灯塔，海湾向远处铺开，而你正要把一号木打向深渊的某处。那就是那种感觉。"
+          "text": "站在抬高的后发球台上本身就是一种体验。你会觉得自己无人能及，离一切那么远，下面的人都像小点。眼前是灯塔，海湾向远处铺开，而你正要把一号木打向深渊的某处。那就是那种感觉。详见 <a href='/guides/alcanada-review'>Alcanada 评测</a>。"
         },
         {
           "text": "想要东海岸的惊喜：Capdepera"
@@ -2372,7 +2372,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "caption": "Son Muntaner - 2025 年西班牙最佳高尔夫球场"
         },
         {
-          "text": "在 2025 年世界高尔夫奖中被评为西班牙最佳高尔夫球场，实至名归。曾承办马略卡高尔夫公开赛和女子欧巡赛。球道宽阔，但有很多障碍和松树为你指引，果岭技术要求高，养护出色，是一场真正出色的高尔夫考验。"
+          "text": "在 2025 年世界高尔夫奖中被评为西班牙最佳高尔夫球场，实至名归。曾承办马略卡高尔夫公开赛和女子欧巡赛。球道宽阔，但有很多障碍和松树为你指引，果岭技术要求高，养护出色，是一场真正出色的高尔夫考验。<a href='/guides/son-muntaner-review'>Son Muntaner 评测</a>里有完整解析。"
         },
         {
           "text": "想要最难的考验：Golf de Andratx"
