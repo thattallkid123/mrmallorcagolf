@@ -13,8 +13,9 @@ test('hotel choices align and use the available width', async ({ page }, info) =
   const bounds = await track.locator('img').evaluateAll(images => images.map(image => ({top:image.getBoundingClientRect().top, height:image.getBoundingClientRect().height, width:image.getBoundingClientRect().width})))
   expect(new Set(bounds.map(b => Math.round(b.top))).size).toBe(1)
   expect(new Set(bounds.map(b => Math.round(b.height))).size).toBe(1)
-  expect(bounds.every(b => b.width >= 258 && b.width <= 320 && b.height >= 170)).toBe(true)
-  await expect(track.locator('img').first()).toHaveCSS('object-fit', 'contain')
+  // Photo choices were made compact on 28 Oct 2026 (about 256 x 128 on desktop), so the floor is the compact size.
+  expect(bounds.every(b => b.width >= 240 && b.width <= 320 && b.height >= 120)).toBe(true)
+  await expect(track.locator('img').first()).toHaveCSS('object-fit', 'cover')
   if (await track.evaluate(e => e.scrollWidth - e.clientWidth) > 2) {
     await page.getByRole('button', { name:'Next choices', exact:true }).click()
     await expect.poll(() => track.evaluate(e => e.scrollLeft)).toBeGreaterThan(0)
@@ -57,7 +58,7 @@ test('six day-planner regions fit desktop and explain certificates clearly', asy
   expect(Math.max(...cards.map(card => card.width))).toBeLessThanOrEqual(320)
   expect(Math.max(...cards.map(card => card.height))).toBeLessThan(340)
   expect(new Set(cards.map(card => Math.round(card.mediaHeight))).size).toBe(1)
-  expect(cards.every(card => card.mediaHeight >= 170 && card.mediaHeight <= 215)).toBe(true)
+  expect(cards.every(card => card.mediaHeight >= 120 && card.mediaHeight <= 215)).toBe(true)
   await expect(track.locator('.tool-choice-placeholder')).toHaveCount(1)
   await expect(track.locator('img')).toHaveCount(5)
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
@@ -71,7 +72,8 @@ test('six day-planner regions fit desktop and explain certificates clearly', asy
 })
 
 test('five-course comparison resolves T Golf Palma and aligns external labels', async ({ page }, info) => {
-  await page.goto('/tools/green-fees', { waitUntil: 'load' })
+  // The comparison tool moved from /tools/green-fees to /tools/course-comparison (the old address redirects).
+  await page.goto('/tools/course-comparison', { waitUntil: 'load' })
   await page.getByRole('tab', {name:'Head-to-head (up to 5)',exact:true}).click()
   expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(true)
   await page.locator('#cmp-2').selectOption('T Golf Calvià')
@@ -108,7 +110,7 @@ test('blocked planner gives practical checks and preserves answers when editing'
   await expect(result).toContainText('This does not mean your group cannot play.')
   await expect(result.locator('li')).toHaveCount(3)
   await expect(result.getByRole('link',{name:'Check course access',exact:true})).toHaveAttribute('href','/tools/handicap-checker')
-  await expect(result.getByRole('link',{name:'Compare course requirements',exact:true})).toHaveAttribute('href','/tools/green-fees')
+  await expect(result.getByRole('link',{name:'Compare course requirements',exact:true})).toHaveAttribute('href','/tools/course-comparison')
   const titleFont = await result.locator('h2').evaluate(e=>getComputedStyle(e).fontFamily)
   expect(titleFont).toEqual(await page.locator('h1').evaluate(e=>getComputedStyle(e).fontFamily))
   expect(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth)).toBe(true)

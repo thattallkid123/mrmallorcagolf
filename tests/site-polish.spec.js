@@ -1,6 +1,6 @@
 const { test, expect } = require('@playwright/test')
 
-for (const tool of ['course-selector', 'handicap-checker', 'green-fees', 'hotel-recommender', 'golf-cost-calculator', 'golf-day-builder']) {
+for (const tool of ['course-selector', 'handicap-checker', 'course-comparison', 'hotel-recommender', 'golf-cost-calculator', 'golf-day-builder']) {
   test(tool + ' leaves the full tool heading below the fixed navigation', async ({ page }) => {
     await page.goto('/tools/' + tool, { waitUntil: 'networkidle' })
     const clearance = await page.locator('main h1').evaluate(el => {
