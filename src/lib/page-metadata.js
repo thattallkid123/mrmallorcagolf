@@ -79,17 +79,17 @@ const GOLF_COURSES_METADATA = {
       'All 24 Mallorca golf courses with green fees €55–€260, regions, difficulty and which course fits your trip.',
   },
   de: {
-    title: '24 Golfplätze - Gebühren & Tipps',
+    title: 'Golfplätze auf Mallorca & Preise',
     description:
       '24 Golfplätze auf Mallorca: Gebühren €55–€260, Schwierigkeit, Regionen, welcher passt zu Ihnen.',
   },
   es: {
-    title: '24 Campos - Guía Completa',
+    title: 'Campos de Golf en Mallorca',
     description:
       '24 campos de golf en Mallorca: green fees €55–€260, dificultad, zonas, cuál te conviene.',
   },
   fr: {
-    title: '24 Parcours - Guide Complet',
+    title: 'Parcours de Golf à Majorque',
     description:
       '24 parcours à Majorque: green fees €55–€260, difficulté, régions, lequel vous convient.',
   },

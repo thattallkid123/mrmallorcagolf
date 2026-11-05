@@ -10,6 +10,7 @@ import PdfGuidePrompt from '../../../components/PdfGuidePrompt'
 import { SITE_ORIGIN, buildLocalePath } from '../../../lib/site'
 import InlineRichText from '../guides/InlineRichText'
 import { localizeGuideHref } from '../../../lib/guide-link'
+import { getCourseReviewSlug } from '../../../lib/golf-courses-helpers'
 
 function FillImageFrame({ src, alt, sizes = '(max-width: 768px) 100vw, 720px', priority = false, containerStyle, imageStyle }) {
   return (
@@ -301,7 +302,13 @@ function renderBlock(block, index, locale, imageOrdinal, articleSlug) {
                   const isStarsColumn = block.headers[ci] === 'Stars'
                   return (
                     <td key={ci} style={{ padding: '0.4rem 0.75rem', verticalAlign: 'top' }}>
-                      {isStarsColumn ? renderStars(cell) : cell}
+                      {isStarsColumn ? renderStars(cell) : (() => {
+                        // Course names in the ranking table link to their review (derived, never typed).
+                        const reviewSlug = ci === 0 && articleSlug === 'best-golf-courses-mallorca' ? getCourseReviewSlug(cell) : null
+                        return reviewSlug ? (
+                          <Link href={buildLocalePath(`/guides/${reviewSlug}`, locale)} className="guide-table-link">{cell}</Link>
+                        ) : cell
+                      })()}
                     </td>
                   )
                 })}

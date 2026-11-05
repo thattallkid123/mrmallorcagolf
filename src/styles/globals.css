@@ -4727,3 +4727,10 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
 .hr-villa-summary { display: grid; grid-template-columns: repeat(auto-fit,minmax(min(100%,240px),1fr)); gap: var(--space-4); margin-block: var(--space-5); }
 .hr-villa-summary dt { font: 400 .8rem/1.5 var(--font-sans); color: var(--taupe); }
 .hr-villa-summary dd { margin: 0; font: 400 1rem/1.6 var(--font-sans); color: var(--charcoal); overflow-wrap: anywhere; }
+
+.guide-table-link {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--gold, #b8933a);
+  text-underline-offset: 3px;
+}

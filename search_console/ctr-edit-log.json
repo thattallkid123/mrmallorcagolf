@@ -98,7 +98,13 @@
       ]
     },
     "/de/golf-courses": {
-      "edits": []
+      "edits": [
+        {
+          "date": "2026-11-05",
+          "commit": "pending",
+          "summary": "title now carries the query words (\"Golfplätze auf Mallorca & Preise\"); was a count-led label with no \"Mallorca\"/\"golf\". Judge after ~2026-12-03."
+        }
+      ]
     },
     "/guides/son-muntaner-review": {
       "edits": [
@@ -395,6 +401,33 @@
           "date": "2026-10-27",
           "commit": "DIAGNOSIS-ONLY, no code change",
           "summary": "'golf majorque' 68 impressions at position 11.2 (page 2). Title already holds the query words; rank, not copy. Google prefers is-mallorca-good-for-golf for this query (position 7.8), which got the query-led title instead."
+        }
+      ]
+    },
+    "/es/golf-courses": {
+      "edits": [
+        {
+          "date": "2026-11-05",
+          "commit": "pending",
+          "summary": "title now carries the query words (\"Campos de Golf en Mallorca\"); was a count-led label with no \"Mallorca\"/\"golf\". Judge after ~2026-12-03."
+        }
+      ]
+    },
+    "/fr/golf-courses": {
+      "edits": [
+        {
+          "date": "2026-11-05",
+          "commit": "pending",
+          "summary": "title now carries the query words (\"Parcours de Golf à Majorque\"); was a count-led label with no \"Mallorca\"/\"golf\". Judge after ~2026-12-03."
+        }
+      ]
+    },
+    "/guides/best-golf-courses-mallorca": {
+      "edits": [
+        {
+          "date": "2026-11-05",
+          "commit": "pending",
+          "summary": "Course names in the ranking table now link to each course review (all locales, derived via getCourseReviewSlug). Internal-link push to son-muntaner, alcanada, son-gual, andratx, son-vida reviews. Protect this page: no copy change. Judge the linked reviews after ~2026-12-03."
         }
       ]
     }
