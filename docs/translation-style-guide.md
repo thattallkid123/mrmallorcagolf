@@ -30,7 +30,7 @@ Prompt to start a translation run (paste, then add the file and keys):
 - **Never add a claim the English does not make.** No "exclusive access", no "best price", no extra services. If a sentence feels thin, leave it thin.
 - **Names stay as they are:** courses (Son Gual, Alcanada, T Golf Calvià), restaurants, hotels, towns (Palma, Port de Sóller, Canyamel), "Play With A Pro", "Signature Day", "PGA Advanced Professional", "Trackman". Exceptions: French writes "Majorque" for Mallorca; Chinese writes 马略卡 and 帕尔马, and zh card titles and buttons may use the Chinese-facing service names the pages already use (与我同场, 陪打服务, 规划行程) rather than the English product name (see the `localize-check` skill).
 - **Keep Spanish place spellings with accents:** Calvià, Sóller, Artà.
-- **Prices and numbers must match the English exactly.** Format the euro the way the language does (de/es/fr/sv "200 €", nl "€ 200", zh "200 欧元"), but never change the number.
+- **Prices and numbers must match the English exactly.** Format the euro the way the language does (de/es/fr/sv "200 €", nl "€ 200", zh "200 欧元", or "€55 至 €260" for a range, Andy's call 5 Nov 2026), but never change the number.
 - **One form of address per page type** (decided 2026-10-03):
 
   | Language | Pages, tools, forms, emails | Reviews and guide articles |
