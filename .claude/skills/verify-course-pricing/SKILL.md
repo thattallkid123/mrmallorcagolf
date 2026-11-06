@@ -19,7 +19,7 @@ most of a day on 2026-09-03, and most of it was avoidable:
    single slowest part of the last pass. Do not re-derive them.
 2. **Check what the automation already knows** before opening any club site:
    - Hermes green-fee tracker alerts (Telegram) — P1 price mismatches, season
-     definition gaps, season inversions. It runs Mon/Wed/Fri/Sat.
+     definition gaps, season inversions. It runs Mon/Fri. The Sunday "MMG Live Rates Watch" Telegram message (live booking systems vs the app's rack, incl. next-year rack and hire prices) is the other thing to read first.
    - `MMG_DYNAMIC_PRICING.xlsx` > `Pricing Review Queue` (Drive
      `Reference/GreenFeeTracker/`) — every course with a rack-vs-repo gap,
      already graded P1/P2/P3.

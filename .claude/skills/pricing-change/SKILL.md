@@ -27,7 +27,7 @@ MMG service prices: edit Control Panel > Service Prices, backed by `mmg-tools/pr
 - Green-fee narrative: `src/lib/guide-article-content.js` (EN) and `src/lib/guide-article-content-localized.js` (all 6 languages). Includes the "All 24 Courses" quick-reference `type: 'table'` — a per-course **Green Fee** column that has drifted from canonical before.
 - Any `guide-post-content.js` entry mentioning the changed price
 - Any Drive, PDF, partner, social, MailerLite, Google Business Profile, WhatsApp, about.me, Trustpilot, or sent proposal surface listed in `docs/pricing-surfaces-inventory.md`
-- `src/lib/mallorca-tracker-courses.js` is prototype placeholder data — do NOT update it
+- `src/lib/mallorca-tracker-courses.js` feeds the strokes-gained tool and holds no green-fee prices, so a price change never edits it (its par and tees come from `.\mmg.ps1 scorecards`)
 
 **A price that only applies from a future date** (a club's 2027 list arrives in autumn): do NOT edit the Sheet, the public pills or the site before the changeover, or 2026 dates show the wrong price. Stage it for the internal quote builder only (`future-course-rates.json` or `course-rate-calendars.json` in mmg-tools, then `node scripts/sync-pricing.js`), using the mmg-tools skills `new-to-contract` and `mmg-internal-quote-app`, and leave the changeover steps in `mmg-tools/pricing/pending/`. To see what a club charges right now for a date, use the internal app's Live prices card (public booking systems) instead of a manual sweep.
 

@@ -1,3 +1,5 @@
+// Status (2026-11-06): LIVE. Course pack for the strokes-gained tool (read by scripts/export-strokes-gained-course-data.mjs and
+// mmg-tools scripts/sync-scorecards.js), built on course-catalog.js. It holds no green-fee prices, so a price change never edits it.
 import { CANONICAL_COURSE_DATA } from './course-catalog.js'
 
 const PRIORITY_COURSE_NAMES = new Set([

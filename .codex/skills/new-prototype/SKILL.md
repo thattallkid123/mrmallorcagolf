@@ -14,7 +14,7 @@ Two stages: a standalone HTML prototype for iteration, then promotion to a Next.
   - Guide card images if they exist: `/images/{slug}-card.webp` (alcanada, son-gual, t-golf-calvia, son-muntaner, santa-ponsa, andratx)
   - Fallback for all 24 courses: `/images/courses/{slug}.webp`
   - `loading="lazy"` and honest `alt` text on every image
-- Course facts/pricing shown in the tool must match `src/lib/golf-courses-data.js` — don't invent or copy from external sites. (`src/lib/mallorca-tracker-courses.js` is placeholder data — never source from it.)
+- Course facts/pricing shown in the tool must match `src/lib/golf-courses-data.js` — don't invent or copy from external sites. (`src/lib/mallorca-tracker-courses.js` feeds the strokes-gained tool and holds no prices: never source prices from it.)
 
 ## Stage 2 — Promote to a live route
 
