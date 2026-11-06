@@ -834,7 +834,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "fr": {
       "metadata": {
         "imageAlt": "Les meilleurs parcours de golf de Majorque - le guide honnête d'un Professionnel PGA (2026)",
-        "title": "Les 24 parcours de golf à Majorque 2026",
+        "title": "Golf à Majorque : les 24 parcours",
         "description": "Les 24 parcours de Majorque classés par un pro PGA. Green fees €55–€260, difficulté, à qui convient chacun."
       },
       "meta": {
