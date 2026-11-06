@@ -252,7 +252,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 70,
     "designer": "Opened in 1995 | José María Olazábal redesign completed in 2006",
     "opened": "1995",
-    "signatureHole": "Olazábal redesign completed in 2006 — \"Challenging but Fair\"",
+    "signatureHole": "Olazábal redesign completed in 2006: \"Challenging but Fair\"",
     "practiceFacilities": "Two-level public TrackMan Range | 2 putting greens | Pitching green | Short-game area and bunkers | Head pro: Miquel Tous"
   },
   "rotana": {
