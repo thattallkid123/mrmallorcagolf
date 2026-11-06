@@ -5,7 +5,9 @@ const nextConfig = {
   experimental: { globalNotFound: true },
   outputFileTracingRoot: path.join(__dirname),
   images: {
-    // Reuse a small set of cached variants across pages and browser sizes.
+    // Responsive files are generated before each build; no on-demand transformations.
+    loader: 'custom',
+    loaderFile: './src/lib/static-image-loader.js',
     formats: ['image/webp'],
     qualities: [75, 88],
     minimumCacheTTL: 31536000,

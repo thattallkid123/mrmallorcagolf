@@ -116,3 +116,7 @@ outputs/pdf-text/
 # Backup of OAuth token (never commit)
 token.json.bak
 *.bak
+
+# Build-generated responsive image files and loader manifest
+/public/images/responsive/
+/src/data/image-variants.generated.json

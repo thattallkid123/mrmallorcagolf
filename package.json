@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "next dev",
-    "prebuild": "node scripts/convert-og-images.mjs",
+    "prebuild": "node scripts/generate-image-variants.mjs && node scripts/convert-og-images.mjs",
     "build": "next build --webpack",
     "start": "next start",
     "prepare": "node scripts/setup-git-hooks.js",
@@ -83,7 +83,8 @@
     "test": "vitest run",
     "test:watch": "vitest",
     "export:hotel-reference": "node scripts/export-hotel-reference.mjs",
-    "check:hotel-reference": "node scripts/export-hotel-reference.mjs --check"
+    "check:hotel-reference": "node scripts/export-hotel-reference.mjs --check",
+    "predev": "node scripts/generate-image-variants.mjs"
   },
   "dependencies": {
     "@upstash/redis": "^1.38.0",

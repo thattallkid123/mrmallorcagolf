@@ -19,6 +19,12 @@ The same source photo can already be on the site under a generic filename/captio
 - Resize to max 1600px longest edge, Lanczos, **WebP quality 82**. Target <600 KB per file. (Full-viewport page heroes are the exception — see `scripts/optimize-images.js` for their widths/quality.)
 - WebP→JPEG pairs: the OG system needs JPEG. `npm run build` auto-converts all WebP in `public/images/` via prebuild; standalone: `npm run convert-og-images`.
 
+## Responsive delivery
+
+- Keep page image paths pointing at their normal source assets. `predev` and `prebuild` run `scripts/generate-image-variants.mjs`, which generates responsive WebP derivatives and the loader manifest without changing the sources.
+- Generated derivatives and the JSON loader manifest are ignored by Git and regenerated on the host. Never hand-link generated filenames or upload original-size photos to bypass this pipeline.
+- `next/image` uses the static loader, so mobile/desktop sizes keep working without Vercel image transformations. New photos added to `public/` are included automatically on the next build.
+
 ## Naming and destinations
 
 | Photo type | Location | Naming |
