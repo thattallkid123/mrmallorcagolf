@@ -29,6 +29,9 @@ MMG service prices: edit Control Panel > Service Prices, backed by `mmg-tools/pr
 - Any Drive, PDF, partner, social, MailerLite, Google Business Profile, WhatsApp, about.me, Trustpilot, or sent proposal surface listed in `docs/pricing-surfaces-inventory.md`
 - `src/lib/mallorca-tracker-courses.js` is prototype placeholder data — do NOT update it
 
+**A price that only applies from a future date** (a club's 2027 list arrives in autumn): do NOT edit the Sheet, the public pills or the site before the changeover, or 2026 dates show the wrong price. Stage it for the internal quote builder only (`future-course-rates.json` or `course-rate-calendars.json` in mmg-tools, then `node scripts/sync-pricing.js`), using the mmg-tools skills `new-to-contract` and `mmg-internal-quote-app`, and leave the changeover steps in `mmg-tools/pricing/pending/`. To see what a club charges right now for a date, use the internal app's Live prices card (public booking systems) instead of a manual sweep.
+
+
 ## 3. Grep-driven sweep
 
 Run `node scripts/price-sweep.mjs --old <old> --new <new> --label "<what changed>"` — greps the OLD price (as a standalone number, avoiding false hits on longer numbers) across every surface group in the inventory below, prints the rendered locale phrase variants to eyeball by hand, confirms the NEW price's hit count, and lists the external/manual surfaces to report. It does not understand context (a match may be a stroke index or a year) — read each hit before editing, and it doesn't replace the sweep in this order:
