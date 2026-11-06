@@ -201,6 +201,11 @@
           "date": "2026-10-19",
           "commit": "DIAGNOSIS-ONLY, no code change",
           "summary": "Re-flagged on the same brand term 'mr mallorca golf' at pos 1.0 (see 2026-09-14). Brand searches land on the homepage; not a CTR defect on this page."
+        },
+        {
+          "date": "2026-11-06",
+          "commit": "991f2c1c",
+          "summary": "Mobile first screen: photo 58svh to about 38svh with focus moved down (less sky), breadcrumb hidden on phones, eyebrow and headline on one line, Enquire button above the review quotes, trailing 'coaching as we go' clause cut in all 7 languages. Reason: GA4 30 days showed 39 sessions (62% mobile) and 0 contact_page_click. Re-measure on 2026-12-03: contact_page_click from /play-with-a-pro (event labels, not play_with_a_pro_click)."
         }
       ]
     },
