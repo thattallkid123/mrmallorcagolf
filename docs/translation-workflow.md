@@ -215,6 +215,36 @@ The release standard is:
 
 Before writing or proofreading any translation, read `docs/translation-style-guide.md`: register per language, golf vocabulary, and the mistakes review has actually found, with fixes. When a review finds a new kind of mistake, add it there, and if a pattern can catch it, add a rule to `scripts/translation-mistakes.json` so `check:translation-mistakes` fails on it from then on.
 
+## Locale Sync And Rendered-English Checks (reference)
+
+Moved here from `CLAUDE.md` (2026-11-06) so the rule there stays short. Why it exists: translation overlays store only the translated text, so for months a changed English sentence left its old translation live (homepage English: 81 edits since May, translation file touched in 9; a German card still promised video analysis the English offer had dropped).
+
+**How the fingerprint works**
+- `scripts/locale-sync-manifest.json` records the English each translation was confirmed against. `npm run check:locale-sync` (inside `check:content`, so pre-commit, pre-push and CI) fails on **STALE** keys (English changed after the translation was confirmed) and on any rise in **UNVERIFIED** strings. The unverified backlog is 0 (cleared 2026-10-04); keep it there.
+- Labels: `HOME`, `PLAY_WITH_A_PRO`, `PLAN_YOUR_TRIP`, `ABOUT`, `CONTACT`, `GOLF_COURSES`, `GUIDES_INDEX`, `COACHING`, `GUIDE_ARTICLE:<slug>`, `GUIDE_POST:<slug>`. `check:tool-data` does the same job for the tools (a hotel, course or verdict with no translation).
+
+**When you change English copy**
+1. Run `npm run check:locale-sync` to see the stale keys and update every language.
+2. Confirm with `node scripts/check-locale-sync.mjs --confirm <LABEL> --prefix <path>`. It refuses a key whose translation text is untouched since the English changed; `--allow-unchanged` only when the edit did not change the meaning.
+3. Audit a page with `--report <LABEL> --locale de --unverified` and `--facts <LABEL>` (numbers and prices that differ), confirm what you checked, then lower the baseline with `--ratchet`.
+4. **Never bulk-confirm to get a check green; that recreates the drift.**
+
+**Coverage rules**
+- Strings nobody has audited yet are not exempt: `--snapshot-english` records the English they sit against, so a later English edit fails for them too. Run it after adding a new overlay pair or label.
+- Pages hard-coded in JSX with no data object (privacy policy, terms) are guarded by file hash: change the English file and the check fails until you update the translation files and run `--ack-file <path>`. (Signature Day used to be one; it now lives in `signature-day-content.js`.)
+- A new overlay pair must be registered in `scripts/lib/overlay-configs.cjs` (or the `getter(locale)` list in `check-locale-sync.mjs`); an unregistered pair is invisible to every check.
+- Guide index and guide block overlays are matched by slug/index against the BUILT English (`getGuideArticleContent`), not the raw object.
+- Copy in a content file that no component reads (old homepage sections, contact `experiences`) is listed in `DEAD_COPY` in `check-locale-sync.mjs` and is not audited; the check fails if a listed renderer starts reading a key, so dead copy cannot come back to life unaudited.
+- A translation word for word the English fails too (`--identical`; Title Case phrases like "A Day With Andy" slipped past `check:rendered-english` because it cannot tell them from place names). Names meant to read the same go in `identicalOk` in the manifest (`--allow-identical`, after reading the list). `--parens` lists translations that lost a parenthetical (report only).
+- It also fails on mechanical text damage: French elisions without the apostrophe, Swedish ae/oe for ä/ö, ASCII punctuation in Chinese.
+
+**CI: `check:rendered-english`** runs against the production build: any sentence that appears word for word on a translated page and its English twin fails (text hard-coded in a component, tool data, a missing overlay key). Intentional English goes in `scripts/rendered-english-allowlist.json`; English image alt text is ratcheted down from `scripts/rendered-english-baseline.json`.
+
+**Traps**
+- **Inline `<a href>` in translated prose takes the unprefixed path** (`/guides/x`, `/plan-your-trip`): `InlineRichText` adds the locale, so `/de/guides/x` becomes `/de/de/guides/x`.
+- Image alt text hard-coded in components or shared photo data is translated in `src/lib/alt-text.js` (keyed by the English string, applied with `localizeAlt`). `check:guide-alt` fails on an untranslated guide image alt, and the rendered-English alt ratchet is now 0, so any new English alt fails CI.
+- **Fixing accents with a frequency word list cannot catch words that are valid both ways** (Swedish saker/säker, French joue/joué and ou/où, Spanish esta/está). Only reading finds those, so proofread any new translation rather than trusting the scans.
+
 ## Review Log
 
 - 21 October 2026: Eight short pre-round labels per language (suggested arrival, grouped tee times, trip overview and booking/club contact distinction) were written and reread in full by Opus through the signed-in Claude CLI, then checked against the English by Codex. Existing course answers are unchanged. No native-speaker review claimed.
