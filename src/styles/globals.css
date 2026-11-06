@@ -4618,6 +4618,18 @@ h2[id^="guide-section-"] { scroll-margin-top: calc(var(--nav-h) + var(--space-6)
   .pwap-hero__inner { padding: var(--space-5) var(--space-5) var(--space-8); }
   .pwap-hero__content { padding: 0; text-shadow: none; }
   .pwap-hero__actions { flex-direction: column; align-items: stretch; }
+  /* 6 Nov 2026: phone first screen shows the offer and the button, not just the photo. Less sky, no breadcrumb, eyebrow and headline on one line, proof quotes move below the button. */
+  .pwap-hero__bg { height: clamp(260px, 38svh, 340px); }
+  .pwap-hero--split .pwap-hero__photo { object-position: center 62%; }
+  .pwap-hero .breadcrumb { display: none; }
+  .pwap-hero__inner { padding-top: var(--space-5); }
+  .pwap-hero__content { display: flex; flex-direction: column; }
+  .pwap-hero__eyebrow { margin: 0 0 var(--space-2); font-size: clamp(0.62rem, 2.7vw, 0.69rem); font-weight: 500; letter-spacing: 0.12em; }
+  .pwap-hero__title { margin-bottom: var(--space-3); font-size: clamp(1.7rem, 9vw, 2.4rem); }
+  .pwap-hero__body { margin-bottom: var(--space-3); }
+  .pwap-hero__actions { order: 1; margin-bottom: var(--space-5); }
+  .pwap-hero__proof { order: 2; }
+  .pwap-hero__note { order: 3; }
   .pwap-clients { padding: var(--space-6) 20px var(--space-5); }
   .guide-ask { padding: var(--space-5); }
 }
