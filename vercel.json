@@ -5,6 +5,14 @@
   ],
   "headers": [
     {
+      "source": "/green-fees-preview",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
+    },
+    {
+      "source": "/green-fees-preview.html",
+      "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
+    },
+    {
       "source": "/trip-preferences.html",
       "headers": [{ "key": "X-Robots-Tag", "value": "noindex, nofollow, noarchive" }]
     },
@@ -33,6 +41,7 @@
     }
   ],
   "rewrites": [
+    { "source": "/green-fees-preview", "destination": "/green-fees-preview.html" },
     { "source": "/trip-planning-preview", "destination": "/trip-preferences.html" },
     { "source": "/pre-round", "destination": "/pre-round.html" }
   ],
