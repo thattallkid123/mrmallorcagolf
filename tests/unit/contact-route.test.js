@@ -46,6 +46,32 @@ describe('contact enquiry email', () => {
     expect(mail.html).not.toContain('<script>')
   })
 
+  test('one-tap replies carry the message and the personal links, with the right one suggested', async () => {
+    process.env.GOLF_BRIEF_ENABLED = '1'
+    try {
+      await post(body)
+      const html = andyMail().html
+      const hrefs = [...html.matchAll(/href="(mailto:[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, '&'))
+      const bodies = hrefs.filter((h) => h.includes('body=')).map((h) => decodeURIComponent(h.split('body=')[1]))
+      expect(bodies).toHaveLength(3)
+      const both = bodies.find((b) => b.includes('Two short questionnaires'))
+      expect(both).toMatch(/^Hi Sam,/)
+      expect(both).toMatch(/golf-brief\.html\?ref=[0-9a-f-]{36}#context=/)
+      expect(both).toMatch(/trip-preferences\.html\?ref=[0-9a-f-]{36}#context=/)
+      expect(html).toContain('Suggested: both.')
+      expect(html).toMatch(/background:#2D4A3E;color:#ffffff">Reply with both</)
+
+      send.mockClear()
+      await post({ ...body, serviceType: 'pwap', experience: 'pwap' })
+      const pwap = andyMail().html
+      expect(pwap).not.toContain('Reply with golf questionnaire')
+      expect(pwap).toContain('Reply with trip preferences')
+      expect(pwap).toContain('Most of these need a normal reply first.')
+    } finally {
+      delete process.env.GOLF_BRIEF_ENABLED
+    }
+  })
+
   test('the follow-up link carries the visitor language so the questionnaire opens in it', async () => {
     await post({ ...body, lang: 'de' })
     expect(andyMail().html).toMatch(/trip-preferences\.html\?ref=[0-9a-f-]{36}&amp;lang=de/)

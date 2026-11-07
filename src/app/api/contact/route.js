@@ -145,9 +145,25 @@ export async function POST(request) {
       : process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL || 'www.mrmallorcagolf.com'
     const enquiryContext = sealEnquiry(enquiryRef, { name: fullName, email, dates, groupsize, handicap, courses, hotelHelp: HOTEL_HELP_LABELS[hotelHelp] || '', service: serviceTypeLabel, format: pwapFormatLabel, message })
     const preferencesUrl = `https://${preferencesHost}/trip-preferences.html?ref=${enquiryRef}${/^(DE|ES|FR|NL|SV|ZH)$/.test(lang) ? `&lang=${lang.toLowerCase()}` : ''}#context=${enquiryContext}`
-    const golfBriefUrl = process.env.GOLF_BRIEF_ENABLED === '1' && ['trip-planning', 'tee-time-booking', 'both'].includes(serviceType)
+    const golfBriefUrl = process.env.GOLF_BRIEF_ENABLED === '1' && ['trip-planning', 'tee-time-booking', 'both', 'whole-trip'].includes(serviceType)
       ? `https://${preferencesHost}/golf-brief.html?ref=${enquiryRef}#context=${sealEnquiry(enquiryRef, { name: fullName, email, dates, groupsize, handicap, courses }, undefined, 'golf-brief')}`
       : ''
+    // One-tap replies for Andy: each opens a reply to the client with the message and the personal link already in it.
+    const LINE = String.fromCharCode(10)
+    const replyBody = (paragraphs) => [`Hi ${fname},`, ...paragraphs, 'Fill in what you know and leave the rest blank. I will come back to you once I have your answers.', 'Andy'].join(LINE + LINE)
+    const replyHref = (paragraphs) => `mailto:${email}?subject=${encodeURIComponent('Your Mallorca golf trip')}&body=${encodeURIComponent(replyBody(paragraphs))}`
+    const replies = []
+    if (golfBriefUrl) replies.push({ key: 'golf', label: 'Reply with golf questionnaire', href: replyHref(['Thanks for your enquiry. To price this accurately I need a few more details. This short golf questionnaire covers your dates, tee times, budget and equipment, and takes about five minutes:', golfBriefUrl]) })
+    if (golfBriefUrl) replies.push({ key: 'both', label: 'Reply with both', href: replyHref(['Thanks for your enquiry. Two short questionnaires will help me plan this properly. The first covers the golf: dates, tee times, budget and equipment.', golfBriefUrl, 'The second covers the rest of the trip, such as hotels, transfers and restaurants:', preferencesUrl]) })
+    replies.push({ key: 'trip', label: 'Reply with trip preferences', href: replyHref(['Thanks for your enquiry. This short questionnaire covers the rest of the trip, such as hotels, transfers and restaurants, and takes about five minutes:', preferencesUrl]) })
+    const suggestedReply = serviceType === 'whole-trip' && golfBriefUrl ? 'both' : golfBriefUrl ? 'golf' : ''
+    const replyAdvice = suggestedReply === 'both'
+      ? 'Suggested: both. The golf answers feed your quote; hotel, transfer and restaurant wishes are for the call and for Shane.'
+      : suggestedReply === 'golf'
+        ? 'Suggested: the golf questionnaire. It gives you dates, tee times, budget and hire for the quote.'
+        : 'Most of these need a normal reply first. Send the trip preferences only if they want help with the wider trip.'
+    const replyButton = (reply) => `<a href="${escapeHtml(reply.href)}" style="display:inline-block;margin:0 8px 8px 0;padding:10px 14px;border:1px solid #2D4A3E;border-radius:3px;text-decoration:none;font-size:14px;${reply.key === suggestedReply ? 'background:#2D4A3E;color:#ffffff' : 'background:#ffffff;color:#2D4A3E'}">${escapeHtml(reply.label)}</a>`
+
     const brief = buildEnquiryBrief({
       serviceType,
       serviceTypeLabel,
@@ -208,10 +224,11 @@ export async function POST(request) {
             <ul style="margin:0;padding-left:20px;color:#333;line-height:1.6">${brief.questions.map((question) => `<li>${escapeHtml(question)}</li>`).join('')}</ul>
           </div>
           <div style="margin-top:24px;font-size:13px;line-height:1.5">
-            <p style="margin:0 0 8px"><strong>Questionnaires to send if useful</strong></p>
-            ${golfBriefUrl ? `<p><a href="${escapeHtml(golfBriefUrl)}">Golf questionnaire</a> for dates, tee times, budget and equipment you still need to prepare a quote.</p>` : ''}
-            <p><a href="${escapeHtml(preferencesUrl)}">Trip preferences</a> when the client wants help with the wider trip, such as hotels and transport.</p>
-            <p style="color:#666">Copy the relevant link into your reply. The links are personal and expire after 30 days.</p>
+            <p style="margin:0 0 8px"><strong>Reply with a questionnaire</strong></p>
+            <p style="margin:0 0 12px;color:#333">${escapeHtml(replyAdvice)}</p>
+            <div>${replies.map(replyButton).join('')}</div>
+            <p style="color:#666">Each button opens a reply to ${escapeHtml(fname)} with the message and link filled in, ready to edit and send.${lang !== 'EN' ? ` They wrote from the ${escapeHtml(lang)} site, and the message is in English.` : ''} The links are personal and expire after 30 days.</p>
+            <p style="color:#666">Links on their own: ${golfBriefUrl ? `<a href="${escapeHtml(golfBriefUrl)}">golf questionnaire</a>, ` : ''}<a href="${escapeHtml(preferencesUrl)}">trip preferences</a>.</p>
           </div>
           <p style="margin-top:32px;color:#999;font-size:12px">Reply directly to this email to respond to ${escapeHtml(fname)}.</p>
         </div>
