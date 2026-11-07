@@ -130,9 +130,33 @@ form.addEventListener('submit', async event => {
   finally { sending = false; byId('continue').disabled = false; }
 });
 
+// Turns the client's own wording ("12-13 December 2026", "10 Mar to 14 Mar 2027") into two dates.
+// It answers only when the text is a plain day range with a year; anything else stays blank for the client.
+function datesFromEnquiry(text) {
+  const months = { jan: 1, feb: 2, mar: 3, apr: 4, may: 5, jun: 6, jul: 7, aug: 8, sep: 9, sept: 9, oct: 10, nov: 11, dec: 12 };
+  const mon = '(jan(?:uary)?|feb(?:ruary)?|mar(?:ch)?|apr(?:il)?|may|june?|july?|aug(?:ust)?|sept?(?:ember)?|oct(?:ober)?|nov(?:ember)?|dec(?:ember)?)';
+  const sep = '\\s*(?:-|to|until)\\s*';
+  const t = String(text || '').toLowerCase().replace(/[–—]/g, '-').replace(/(\d)(?:st|nd|rd|th)\b/g, '$1').replace(/[.,]+$/, '').trim();
+  const month = name => months[name.slice(0, name.startsWith('sept') ? 4 : 3)];
+  let m, parts;
+  if ((m = t.match(new RegExp('^(\\d{1,2})' + sep + '(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})$')))) parts = [[+m[4], month(m[3]), +m[1]], [+m[4], month(m[3]), +m[2]]];
+  else if ((m = t.match(new RegExp('^(\\d{1,2})\\s+' + mon + sep + '(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})$')))) parts = [[+m[5], month(m[2]), +m[1]], [+m[5], month(m[4]), +m[3]]];
+  else if ((m = t.match(new RegExp('^(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})' + sep + '(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})$')))) parts = [[+m[3], month(m[2]), +m[1]], [+m[6], month(m[5]), +m[4]]];
+  else if ((m = t.match(new RegExp('^(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})$')))) parts = [[+m[3], month(m[2]), +m[1]]];
+  if (!parts) return null;
+  const iso = ([y, mo, d]) => {
+    const date = new Date(Date.UTC(y, mo - 1, d));
+    return date.getUTCFullYear() === y && date.getUTCMonth() === mo - 1 && date.getUTCDate() === d ? date.toISOString().slice(0, 10) : '';
+  };
+  const from = iso(parts[0]), to = iso(parts[1] || parts[0]);
+  return from && to && to >= from ? { from, to } : null;
+}
+
 async function initBrief() {
   try {
     const { brief, originalDates } = await request('load');
+    const guessed = !brief.from && !brief.to ? datesFromEnquiry(originalDates) : null;
+    if (guessed) Object.assign(brief, guessed);
     if (originalDates) {
       const hint = document.createElement('p');
       hint.className = 'hint wide';
