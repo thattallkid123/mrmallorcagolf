@@ -145,6 +145,9 @@ export async function POST(request) {
       : process.env.VERCEL_BRANCH_URL || process.env.VERCEL_URL || 'www.mrmallorcagolf.com'
     const enquiryContext = sealEnquiry(enquiryRef, { name: fullName, email, dates, groupsize, handicap, courses, hotelHelp: HOTEL_HELP_LABELS[hotelHelp] || '', service: serviceTypeLabel, format: pwapFormatLabel, message })
     const preferencesUrl = `https://${preferencesHost}/trip-preferences.html?ref=${enquiryRef}${/^(DE|ES|FR|NL|SV|ZH)$/.test(lang) ? `&lang=${lang.toLowerCase()}` : ''}#context=${enquiryContext}`
+    const golfBriefUrl = process.env.GOLF_BRIEF_ENABLED === '1' && ['trip-planning', 'tee-time-booking', 'both'].includes(serviceType)
+      ? `https://${preferencesHost}/golf-brief.html?ref=${enquiryRef}#context=${sealEnquiry(enquiryRef, { name: fullName, email, dates, groupsize, handicap, courses }, undefined, 'golf-brief')}`
+      : ''
     const brief = buildEnquiryBrief({
       serviceType,
       serviceTypeLabel,
@@ -205,6 +208,7 @@ export async function POST(request) {
             <ul style="margin:0;padding-left:20px;color:#333;line-height:1.6">${brief.questions.map((question) => `<li>${escapeHtml(question)}</li>`).join('')}</ul>
           </div>
           <p style="margin-top:24px;font-size:13px"><strong>Optional next step:</strong> After reviewing this enquiry, send the client this <a href="${escapeHtml(preferencesUrl)}">trip preferences link</a> before your call. It loads an encrypted copy of this enquiry for 30 days. Keep the personal link private: anyone with it can view those details. Their answers will carry the same reference.</p>
+          ${golfBriefUrl ? `<p><a href="${escapeHtml(golfBriefUrl)}">Golf questionnaire link</a> for dates, tee times, budget and equipment. Forward it to the client if you need these details for the quote.</p>` : ''}
           <p style="margin-top:32px;color:#999;font-size:12px">Reply directly to this email to respond to ${escapeHtml(fname)}.</p>
         </div>
       `,

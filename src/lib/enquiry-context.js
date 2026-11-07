@@ -20,23 +20,23 @@ function key() {
   return hkdfSync('sha256', secret, 'mmg-trip-preferences-v1', 'enquiry-context', 32)
 }
 
-export function sealEnquiry(enquiryRef, enquiry, now = Date.now()) {
+export function sealEnquiry(enquiryRef, enquiry, now = Date.now(), purpose = '') {
   if (!UUID.test(enquiryRef)) throw new Error('Invalid enquiry reference')
   const iv = randomBytes(12)
   const cipher = createCipheriv('aes-256-gcm', key(), iv)
-  cipher.setAAD(Buffer.from(enquiryRef))
+  cipher.setAAD(Buffer.from(purpose ? purpose + ':' + enquiryRef : enquiryRef))
   const body = deflateRawSync(Buffer.from(JSON.stringify({ enquiry, expires: now + LIFETIME })))
   const encrypted = Buffer.concat([cipher.update(body), cipher.final()])
   return Buffer.concat([iv, cipher.getAuthTag(), encrypted]).toString('base64url')
 }
 
-export function openEnquiry(enquiryRef, token, now = Date.now()) {
+export function openEnquiry(enquiryRef, token, now = Date.now(), purpose = '') {
   try {
     if (!UUID.test(enquiryRef) || typeof token !== 'string' || token.length > 16000 || !/^[\w-]+$/.test(token)) return null
     const packed = Buffer.from(token, 'base64url')
     if (packed.length < 29) return null
     const decipher = createDecipheriv('aes-256-gcm', key(), packed.subarray(0, 12))
-    decipher.setAAD(Buffer.from(enquiryRef))
+    decipher.setAAD(Buffer.from(purpose ? purpose + ':' + enquiryRef : enquiryRef))
     decipher.setAuthTag(packed.subarray(12, 28))
     const decrypted = Buffer.concat([decipher.update(packed.subarray(28)), decipher.final()])
     const data = JSON.parse(inflateRawSync(decrypted, { maxOutputLength: 24 * 1024 }).toString('utf8'))

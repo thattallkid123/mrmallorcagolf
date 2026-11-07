@@ -1,5 +1,6 @@
 {
-  "src/app/api/contact/route.js": "865c8506cf8577c3",
+  "src/app/api/contact/route.js": "8a3f528d3aef4622",
+  "src/app/api/golf-brief/route.js": "287fb96408cb657a",
   "src/app/api/handicap-checker-submit/route.js": "38db8a7ecf78c773",
   "src/app/api/lead-magnet-signup/route.js": "fb90cb92c5455b9d",
   "src/app/api/questionnaire/route.js": "61b63a09f0690ba5",
