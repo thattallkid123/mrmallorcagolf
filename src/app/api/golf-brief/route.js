@@ -1,7 +1,7 @@
 import { Resend } from 'resend'
 import { openEnquiry } from '../../../lib/enquiry-context.js'
 import { checkRateLimit, escapeHtml, getClientKey, isAllowedOrigin, isJsonRequest, isPayloadTooLarge, isValidEmail, sanitizeText } from '../../../lib/request-safety.js'
-import { normalize, valid } from '../../../lib/golf-brief.js'
+import { briefSummaryLines, normalize, valid } from '../../../lib/golf-brief.js'
 
 const reply = (status, data) => Response.json(data, { status, headers: { 'Cache-Control': 'private, no-store' } })
 const unavailable = () => reply(404, { error: 'This golf brief link is unavailable.' })
@@ -46,15 +46,17 @@ export async function POST(request) {
     if (inserted && process.env.RESEND_API_KEY && process.env.GOLF_BRIEF_NOTIFY === '1') {
       const clientName = sanitizeText(brief.name, 120)
       const internalUrl = 'https://internal.mrmallorcagolf.com/?golf-brief=' + encodeURIComponent(ref)
+      const summary = briefSummaryLines(brief)
       try {
         const result = await new Resend(process.env.RESEND_API_KEY).emails.send({
           from: 'Mr Mallorca Golf <enquiries@mrmallorcagolf.com>', to: 'andy@mrmallorcagolf.com',
           subject: `Golf brief received from ${clientName}`,
           html: `<div style="font-family:sans-serif;line-height:1.5">
+            <table style="border-collapse:collapse;margin:0 0 12px">${summary.map(([label, value]) => `<tr><td style="padding:3px 16px 3px 0;color:#666;vertical-align:top;white-space:nowrap">${escapeHtml(label)}</td><td style="padding:3px 0">${escapeHtml(value)}</td></tr>`).join('')}</table>
             <p><a href="${escapeHtml(internalUrl)}">Open brief in Internal</a></p>
             <p style="color:#666;font-size:13px;overflow-wrap:anywhere">Enquiry reference ${escapeHtml(ref)}</p>
           </div>`,
-          text: `Open brief in Internal\n${internalUrl}\n\nEnquiry reference ${ref}`,
+          text: `${summary.map(([label, value]) => `${label}: ${value}`).join('\n')}\n\nOpen brief in Internal\n${internalUrl}\n\nEnquiry reference ${ref}`,
         })
         if (result.error) console.error('Golf brief notification failed')
       } catch { console.error('Golf brief notification failed') }

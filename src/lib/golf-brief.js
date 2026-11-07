@@ -31,3 +31,27 @@ export function valid(data) {
   return data.name && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email) && data.golfers && data.window && data.priority
     && (data.dateMode === 'unknown' || (data.dateMode && data.from && data.to && data.from <= data.to));
 }
+
+const MONTHS = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+function shortDate(iso) { const [y, m, d] = iso.split('-').map(Number); return d + ' ' + MONTHS[m - 1] + ' ' + y; }
+function datesText(brief) {
+  if (!brief.from) return 'Not decided';
+  const text = brief.to && brief.to !== brief.from ? shortDate(brief.from) + ' to ' + shortDate(brief.to) : shortDate(brief.from);
+  return text + (brief.dateMode === 'flexible' ? ' (flexible)' : '');
+}
+const WINDOWS = { any: 'Any start time', early: 'Before 09:00', 'before-ten': 'Before 10:00', morning: '09:00 to 12:00', afternoon: 'After 12:00' };
+const PRIORITIES = { balance: 'balance of price and time', price: 'lower price', times: 'preferred start times' };
+
+// The facts Andy needs to judge a brief from the email alone, in the order he answers them.
+export function briefSummaryLines(brief) {
+  const lines = [['Dates', datesText(brief)]];
+  lines.push(['Golfers', brief.golfers + (brief.rounds ? ', ' + brief.rounds + (brief.rounds === 1 ? ' round' : ' rounds') : '')]);
+  if (brief.handicap) lines.push(['Handicap', brief.handicap]);
+  lines.push(['Start times', (WINDOWS[brief.window] || '') + (brief.window !== 'any' && brief.windowRule ? (brief.windowRule === 'fixed' ? ', keep to this window' : ', other times welcome') : '') + ', priority ' + (PRIORITIES[brief.priority] || '')]);
+  if (brief.courses) lines.push(['Must-play courses', brief.courses]);
+  if (brief.area) lines.push(['Staying', brief.area]);
+  if (brief.budget) lines.push(['Budget', '€' + brief.budget + ' per person']);
+  if (brief.buggies != null || brief.clubs != null) lines.push(['Hire per round', (brief.buggies ?? 'not sure') + ' buggies, ' + (brief.clubs ?? 'not sure') + ' club sets']);
+  if (brief.notes) lines.push(['Notes', brief.notes]);
+  return lines;
+}
