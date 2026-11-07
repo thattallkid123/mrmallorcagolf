@@ -171,7 +171,7 @@ export async function POST(request) {
       from: 'Mr Mallorca Golf <enquiries@mrmallorcagolf.com>',
       to: 'andy@mrmallorcagolf.com',
       replyTo: email,
-      subject: `New enquiry from ${fullName}${subjectSuffix} [${enquiryRef}]`,
+      subject: `New enquiry from ${fullName}${subjectSuffix}`,
       html: `
         <div style="font-family:sans-serif;max-width:600px;margin:0 auto;padding:24px">
           <h2 style="color:#2D4A3E;margin-bottom:16px">New enquiry - Mr Mallorca Golf</h2>
@@ -204,11 +204,15 @@ export async function POST(request) {
           </table>
           ${message ? `<div style="margin-top:24px"><p style="color:#666;margin-bottom:8px">Message:</p><p style="white-space:pre-wrap;background:#f7f4ef;padding:16px;border-radius:4px">${escapeHtml(message)}</p></div>` : ''}
           <div style="margin-top:24px">
-            <p style="color:#666;margin:0 0 8px">Still to ask in your reply:</p>
+            <p style="color:#666;margin:0 0 8px">Details to check if needed</p>
             <ul style="margin:0;padding-left:20px;color:#333;line-height:1.6">${brief.questions.map((question) => `<li>${escapeHtml(question)}</li>`).join('')}</ul>
           </div>
-          <p style="margin-top:24px;font-size:13px"><strong>Optional next step:</strong> After reviewing this enquiry, send the client this <a href="${escapeHtml(preferencesUrl)}">trip preferences link</a> before your call. It loads an encrypted copy of this enquiry for 30 days. Keep the personal link private: anyone with it can view those details. Their answers will carry the same reference.</p>
-          ${golfBriefUrl ? `<p><a href="${escapeHtml(golfBriefUrl)}">Golf questionnaire link</a> for dates, tee times, budget and equipment. Forward it to the client if you need these details for the quote.</p>` : ''}
+          <div style="margin-top:24px;font-size:13px;line-height:1.5">
+            <p style="margin:0 0 8px"><strong>Questionnaires to send if useful</strong></p>
+            ${golfBriefUrl ? `<p><a href="${escapeHtml(golfBriefUrl)}">Golf questionnaire</a> for dates, tee times, budget and equipment you still need to prepare a quote.</p>` : ''}
+            <p><a href="${escapeHtml(preferencesUrl)}">Trip preferences</a> when the client wants help with the wider trip, such as hotels and transport.</p>
+            <p style="color:#666">Copy the relevant link into your reply. The links are personal and expire after 30 days.</p>
+          </div>
           <p style="margin-top:32px;color:#999;font-size:12px">Reply directly to this email to respond to ${escapeHtml(fname)}.</p>
         </div>
       `,

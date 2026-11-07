@@ -1,6 +1,6 @@
 import { Resend } from 'resend'
 import { openEnquiry } from '../../../lib/enquiry-context.js'
-import { checkRateLimit, getClientKey, isAllowedOrigin, isJsonRequest, isPayloadTooLarge, isValidEmail } from '../../../lib/request-safety.js'
+import { checkRateLimit, escapeHtml, getClientKey, isAllowedOrigin, isJsonRequest, isPayloadTooLarge, isValidEmail, sanitizeText } from '../../../lib/request-safety.js'
 import { normalize, valid } from '../../../lib/golf-brief.js'
 
 const reply = (status, data) => Response.json(data, { status, headers: { 'Cache-Control': 'private, no-store' } })
@@ -44,11 +44,17 @@ export async function POST(request) {
     const inserted = await saved.json()
     if (typeof inserted !== 'boolean') throw new Error('Invalid intake response')
     if (inserted && process.env.RESEND_API_KEY && process.env.GOLF_BRIEF_NOTIFY === '1') {
+      const clientName = sanitizeText(brief.name, 120)
+      const internalUrl = 'https://internal.mrmallorcagolf.com/?golf-brief=' + encodeURIComponent(ref)
       try {
         const result = await new Resend(process.env.RESEND_API_KEY).emails.send({
           from: 'Mr Mallorca Golf <enquiries@mrmallorcagolf.com>', to: 'andy@mrmallorcagolf.com',
-          subject: 'Golf brief received [' + ref + ']',
-          text: 'A golf brief is ready to review.\n\nOpen in Internal:\nhttps://internal.mrmallorcagolf.com/?golf-brief=' + encodeURIComponent(ref),
+          subject: `Golf brief received from ${clientName}`,
+          html: `<div style="font-family:sans-serif;line-height:1.5">
+            <p><a href="${escapeHtml(internalUrl)}">Open brief in Internal</a></p>
+            <p style="color:#666;font-size:13px;overflow-wrap:anywhere">Enquiry reference ${escapeHtml(ref)}</p>
+          </div>`,
+          text: `Open brief in Internal\n${internalUrl}\n\nEnquiry reference ${ref}`,
         })
         if (result.error) console.error('Golf brief notification failed')
       } catch { console.error('Golf brief notification failed') }
