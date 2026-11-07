@@ -130,7 +130,8 @@ test('first enquiry email includes the matching follow-up link for Andy', async 
   const result = await response.json()
   expect(result.ok).toBe(true)
   expect(result.enquiryRef).toMatch(/^[0-9a-f-]{36}$/)
-  expect(send.mock.calls[0][0].subject).toContain(result.enquiryRef)
+  expect(send.mock.calls[0][0].subject).toBe('New enquiry from Alex Example - Golf trip')
+  expect(send.mock.calls[0][0].html).toMatch(new RegExp(`Enquiry reference</td><td[^>]*>${result.enquiryRef}</td>`))
   expect(send.mock.calls[0][0].html).toContain(`https://mmg-preview.example.vercel.app/trip-preferences.html?ref=${result.enquiryRef}`)
   delete process.env.VERCEL_URL
   delete process.env.VERCEL_ENV

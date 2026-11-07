@@ -25,10 +25,11 @@ describe('contact enquiry email', () => {
     send.mockReset().mockResolvedValue({ data: { id: 'id' }, error: null })
   })
 
-  test('shows courses, hotel help and the visitor country, and tags the subject', async () => {
+  test('shows courses, hotel help and the visitor country, and keeps the enquiry reference in the body', async () => {
     expect((await post(body, { 'x-vercel-ip-country': 'GB' })).status).toBe(200)
     const mail = andyMail()
-    expect(mail.subject).toMatch(/^New enquiry from Sam Example - Whole trip \[[0-9a-f-]{36}\]$/)
+    expect(mail.subject).toBe('New enquiry from Sam Example - Whole trip')
+    expect(mail.html).toMatch(/Enquiry reference<\/td><td[^>]*>[0-9a-f-]{36}<\/td>/)
     expect(mail.html).toContain('/trip-preferences.html?ref=')
     expect(mail.html).toContain('Visiting from:</strong> United Kingdom (GB)')
     expect(mail.html).toContain('Son Gual, Alcanada')
