@@ -232,6 +232,7 @@ export default function Footer({ lang }) {
           <li><Link href={`${prefix}/play-with-a-pro`} prefetch={false}>{copy.pwap}</Link></li>
           <li><Link href={buildLocalePath('/guides/play-with-a-pro-explained', locale)} prefetch={false}>{copy.pwapGuide}</Link></li>
           {copy.lessons ? <li><Link href={buildLocalePath('/guides/on-course-coaching-mallorca', locale)} prefetch={false}>{copy.lessons}</Link></li> : null}
+          {locale === 'en' ? <li><Link href="/guides/corporate-golf-days-mallorca" prefetch={false}>Corporate and group golf</Link></li> : null}
           {copy.enquire ? <li><Link href={`${prefix}/contact`} prefetch={false}>{copy.enquire}</Link></li> : null}
         </ul>
       </div>

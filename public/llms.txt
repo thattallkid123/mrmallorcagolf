@@ -15,6 +15,7 @@ Canonical domain: https://www.mrmallorcagolf.com
 - [Guides](https://www.mrmallorcagolf.com/guides): Destination, planning, and course review articles.
 - [Tools](https://www.mrmallorcagolf.com/tools): Free planning tools — course selector, golf day builder, cost calculator, hotel recommender.
 - [Golf Lessons in Mallorca](https://www.mrmallorcagolf.com/guides/on-course-coaching-mallorca): On-course golf lessons with a UK PGA Advanced Professional. Every lesson is an 18-hole round, from €795 solo or €950 for a group, for visitors and residents.
+- [Corporate and Group Golf Days](https://www.mrmallorcagolf.com/guides/corporate-golf-days-mallorca): Golf days, clinics with a scramble and Play With A Pro for larger groups, plus a one-day plan from Palma port. Price on enquiry.
 - [Contact](https://www.mrmallorcagolf.com/contact): Enquiry page for dates, itinerary, and booking discussions.
 
 ## Guides

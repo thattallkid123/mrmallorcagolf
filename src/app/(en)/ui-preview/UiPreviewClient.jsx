@@ -14,6 +14,7 @@ const categories = [
 const guideCategoryMap = {
   'play-with-a-pro-explained': 'planning',
   'on-course-coaching-mallorca': 'planning',
+  'corporate-golf-days-mallorca': 'planning',
   'best-golf-courses-mallorca': 'planning',
   'is-mallorca-good-for-golf': 'planning',
   'best-time-play-golf-mallorca': 'planning',

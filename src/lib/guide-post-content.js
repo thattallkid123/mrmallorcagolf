@@ -2002,6 +2002,106 @@ export const GUIDE_POST_CONTENT = {
     },
   },
 
+  'corporate-golf-days-mallorca': {
+    en: {
+      metadata: {
+        title: 'Corporate and Group Golf in Mallorca',
+        description:
+          'Group and corporate golf days in Mallorca: golf days, clinics with a scramble and Play With A Pro for larger groups. Also from Palma port.',
+        imagePath: '/images/client-group-valley.webp',
+      },
+      meta: {
+        badge: 'Groups',
+        badgeGold: true,
+        readTime: '3 min read',
+        updated: 'November 2026',
+        title: 'Corporate and Group Golf Days in Mallorca',
+        intro:
+          'Play With A Pro takes up to three guests alongside me, four players in all. For a larger group I organise a different format: a golf day, a short coaching session or a clinic, with the golf arranged around it. Price is on enquiry.',
+        related: [
+          { slug: 'play-with-a-pro-explained', title: 'What "Play With A Pro" Actually Looks Like' },
+          { slug: 'on-course-coaching-mallorca', title: 'Golf Lessons in Mallorca: 18 Holes With a PGA Professional' },
+          { slug: 'golf-trip-planning-mallorca', title: 'How to Plan the Perfect Golf Trip to Mallorca' },
+          { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+        ],
+      },
+      blocks: [
+        {
+          type: 'image',
+          src: '/images/client-group-valley.webp',
+          alt: 'Group of four golfers in Mallorca',
+        },
+        {
+          type: 'paragraph',
+          text: 'Play With A Pro is built for up to three guests alongside me, four players in all. A company team, a golf society or a group of friends is usually bigger than that, so I organise the day around the group.',
+        },
+        { type: 'heading', text: 'The Formats' },
+        {
+          type: 'notes',
+          eyebrow: 'Group formats',
+          items: [
+            ['A golf day', 'I organise the golf for the whole group: the course, the tee times and the logistics around them.'],
+            ['A short coaching session', 'A mini coaching session for the group, run on its own or alongside the golf.'],
+            ['A clinic with a scramble', 'I run a clinic, then the group plays a scramble.'],
+            ['Play With A Pro for a larger group', 'The <a href="/play-with-a-pro">day I run for four</a>, with my time split between the groups.'],
+          ],
+        },
+        { type: 'heading', text: 'Cruise Passengers From Palma Port' },
+        {
+          type: 'paragraph',
+          text: 'If you arrive by ship, I plan a one-day Play With A Pro itinerary from Palma port. I organise the golf, and a trusted local travel partner books and invoices the transfers. Send me the arrival and departure times of your ship and I will say what fits.',
+        },
+        { type: 'heading', text: 'Who It Suits' },
+        {
+          type: 'paragraph',
+          text: 'Company teams, incentive trips, golf societies and groups of friends. If you are a UK company planning a trip to Mallorca, send me the dates, the number of people and what the day is for, and I will say which format fits.',
+        },
+        { type: 'heading', text: 'What It Costs' },
+        {
+          type: 'paragraph',
+          text: 'Price is on enquiry, because it depends on the number of people, the course and what you want arranged around the golf. I quote each group individually.',
+        },
+        { type: 'heading', text: 'One Thing to Note' },
+        {
+          type: 'paragraph',
+          text: 'Play With A Pro itself stays at four players in all. A bigger group gets one of the formats above.',
+        },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: 'How many people can play? Play With A Pro takes up to three guests alongside me. For a larger group I organise a golf day, a short coaching session or a clinic, with the golf arranged around it.',
+        },
+        {
+          type: 'paragraph',
+          text: 'How much does a group or corporate golf day cost? Price is on enquiry. It depends on the number of people, the course and what you want arranged, and I quote each group individually.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Can you run a clinic with a scramble? Yes. I run a clinic, then the group plays a scramble.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Can you organise a golf day for cruise passengers? Yes, from Palma port. I plan a one-day Play With A Pro itinerary and organise the golf, and a trusted local travel partner books and invoices the transfers.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Do you organise transfers and the rest of the day? I organise the golf. A trusted local travel partner books and invoices transfers and other non-golf arrangements.',
+        },
+        {
+          type: 'paragraph',
+          text: 'How do I enquire about a group day? Send the dates, the number of people, where you are staying or your port, and what the day is for. I reply personally within 24 hours.',
+        },
+        {
+          type: 'cta',
+          text: 'Planning a group day in Mallorca? Send me the dates and the numbers.',
+          linkLabel: 'Enquire about a group day →',
+          href: '/contact',
+          internal: true,
+        },
+      ],
+    },
+  },
+
 }
 
 export function getGuidePostContent(slug, locale = 'en') {

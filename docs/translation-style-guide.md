@@ -137,7 +137,7 @@ The English placeholder "e.g. Son Gual, Alcanada, or suggest some for me" (the v
 
 ### 9. Typography
 
-- French: a space before ? ! : ; and « guillemets » around quoted labels; apostrophes as ’.
+- French: a space before ? ! : ; and « guillemets » around quoted labels. Apostrophes are the plain ' the whole site already uses (decided 2026-11-08: the earlier rule asking for ’ had never been applied to a single string, so the guide now matches the site). Never mix the two on a page.
 - German quotation marks „…“; Dutch ‘…’ for quoted labels.
 - Chinese: full-width punctuation （），。？！：, no space between Chinese characters, a space either side of a Latin name or number (在 Son Gual 打球, 约 1 小时).
 - List items after a label ("Best tee time: early afternoon …") continue the label, so they start in lower case in every language, as the English does. German nouns keep their capital, but "Auf dem Papier …" after "Gut zu wissen:" should be "auf dem Papier …".
@@ -178,7 +178,7 @@ The page text and the course answers (opening times, dress code, water, parking)
 - **sv:** "green fee" is two words in Swedish ("greenfee" is the Dutch and German form); "förändras" for players becomes "utvecklas"; "håller dig försiktig" becomes "spelar säkert"; "en väg förbi en platå" becomes "ett sätt att ta dig förbi en platå"; "Vad du går härifrån med" becomes "Det här tar du med dig".
 - **zh:** a space around a Latin name next to a link (在 Son Gual 进行); full-width colon in titles (Son Gual Golf：真实评测 2026); place before the verb in questions (在马略卡跟你上课); answer a yes/no question with 不是, not a bare 不; "只能 … 完全不同" adds words the English does not have.
 - **Reused strings carry the old register.** The old Spanish caption and button were "usted" and the guide is "tú". When a string moves to another page type, re-read it for form of address.
-- **French apostrophes.** The site writes straight apostrophes everywhere; the "’" rule in section 9 has never been applied. Do not mix the two. If Andy wants typographic apostrophes, do one site-wide pass.
+- **French apostrophes.** The site writes straight apostrophes everywhere, so section 9 now says so instead of asking for "’". Do not mix the two.
 
 ## Checklist before a translation ships
 

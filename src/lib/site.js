@@ -52,7 +52,9 @@ export const LOCALIZED_POST_SLUGS = new Set([
   'on-course-coaching-mallorca',
 ])
 
-export const EN_ONLY_REVIEW_POST_SLUGS = new Set([])
+export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
+  'corporate-golf-days-mallorca',
+])
 
 export const ARTICLE_SLUGS = new Set([
   'best-golf-courses-mallorca',

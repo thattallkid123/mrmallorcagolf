@@ -510,7 +510,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "quote": {
       "text": "Nach nur 18 Löchern zusammen habe ich eine neue Grenze meines Potenzials entdeckt.",
-      "attribution": "Jo, nach einem Play With A Pro Tag"
+      "attribution": "Jo, nach einem Tag mit Play With A Pro"
     },
     "winners": {
       "eyebrow": "Belege der Arbeit",
@@ -1170,7 +1170,7 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "quote": {
       "text": "Na slechts 18 holes samen heb ik een nieuw plafond in mijn potentieel ontdekt.",
-      "attribution": "Jo, na een Play With A Pro dag"
+      "attribution": "Jo, na een Play With A Pro-dag"
     },
     "winners": {
       "eyebrow": "Bewijs op de baan",

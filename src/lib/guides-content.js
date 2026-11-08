@@ -162,6 +162,17 @@ export const GUIDES_CONTENT = {
       "keywords": "Golf lessons · PGA Advanced Professional · On-course coaching"
     },
     {
+      "slug": "corporate-golf-days-mallorca",
+      "badge": "Groups",
+      "badgeGold": true,
+      "img": "/images/client-group-valley.webp",
+      "imgPosition": "center 36%",
+      "title": "Corporate and Group Golf Days in Mallorca",
+      "intro": "Golf days, clinics with a scramble and Play With A Pro for larger groups, plus a one-day plan from Palma port. Price on enquiry.",
+      "readTime": "3 min read",
+      "keywords": "Corporate golf days · Clinics · Palma port"
+    },
+    {
       "slug": "best-golf-courses-mallorca",
       "badge": "Guide",
       "img": "/images/blog-best-golf-courses/Son Gual.webp",
