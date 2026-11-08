@@ -113,10 +113,11 @@ function buildPersonSchema(lang) {
     sameAs: [
       'https://www.instagram.com/mrmallorcagolf',
       'https://www.linkedin.com/in/andygriffithsgolf',
+      'https://about.me/andygriffiths',
     ],
     knowsAbout: zh
-      ? ['高尔夫教学', '场上指导', '马略卡高尔夫球场', '球场管理', '高尔夫行程规划']
-      : ['Golf coaching', 'On-course coaching', 'Mallorca golf courses', 'Course management', 'Golf trip planning'],
+      ? ['高尔夫教学', '高尔夫课程', '场上指导', '马略卡高尔夫球场', '球场管理', '高尔夫行程规划', '团体与企业高尔夫日']
+      : ['Golf coaching', 'Golf lessons', 'On-course coaching', 'Mallorca golf courses', 'Course management', 'Golf trip planning', 'Group and corporate golf days'],
     hasCredential: [
       zh
         ? { '@type': 'EducationalOccupationalCredential', name: 'PGA 高级职业教练', credentialCategory: '职业资质' }
@@ -153,6 +154,7 @@ function buildLocalBusinessSchema(lang) {
       'https://www.instagram.com/mrmallorcagolf',
       'https://www.linkedin.com/in/andygriffithsgolf',
       'https://share.google/5bKiLcjCTCf1zsLD7',
+      'https://www.trustpilot.com/review/mrmallorcagolf.com',
     ],
     logo: {
       '@type': 'ImageObject',
@@ -172,7 +174,10 @@ function buildLocalBusinessSchema(lang) {
     geo: { '@type': 'GeoCoordinates', latitude: 39.6953, longitude: 3.0176 },
     priceRange: 'EUR',
     currenciesAccepted: 'EUR',
-    areaServed: { '@type': 'Place', name: 'Mallorca, Spain' },
+    areaServed: [
+      { '@type': 'Place', name: 'Mallorca, Spain' },
+      { '@type': 'City', name: 'Palma' },
+    ],
     aggregateRating: {
       '@type': 'AggregateRating',
       ratingValue,
@@ -205,6 +210,7 @@ function buildOrganizationSchema() {
     sameAs: [
       'https://www.instagram.com/mrmallorcagolf',
       'https://www.linkedin.com/in/andygriffithsgolf',
+      'https://www.trustpilot.com/review/mrmallorcagolf.com',
     ],
     founder: { '@id': `${SITE_ORIGIN}/#person-andy-griffiths` },
   }
