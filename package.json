@@ -93,7 +93,8 @@
     "next": "^16.3.0",
     "react": "^18",
     "react-dom": "^18",
-    "resend": "^6.12.3"
+    "resend": "^6.12.3",
+    "turndown": "7.2.0"
   },
   "devDependencies": {
     "@playwright/test": "^1.60.0",

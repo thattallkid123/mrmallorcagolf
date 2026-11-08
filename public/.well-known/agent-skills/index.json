@@ -1,0 +1,12 @@
+{
+  "$schema": "https://schemas.agentskills.io/discovery/0.2.0/schema.json",
+  "skills": [
+    {
+      "name": "plan-mallorca-golf-trip",
+      "type": "skill-md",
+      "description": "Help a visiting golfer plan a golf trip to Mallorca using the guides, tools and private coaching days published by Mr Mallorca Golf (Andy Griffiths, UK PGA Advanced Professional). Use when someone asks which Mallorca courses to play, what a round costs, where to stay, or how to book golf lessons or a coached round in Mallorca.",
+      "url": "https://www.mrmallorcagolf.com/.well-known/agent-skills/plan-mallorca-golf-trip/SKILL.md",
+      "digest": "sha256:b860bcec5a5b7606f51f936d2cd1ae421473cb7e6238e12781e5b5b54aacadb8"
+    }
+  ]
+}

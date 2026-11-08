@@ -52,6 +52,7 @@ const CHECKS = [
   { name: 'check:pointers', script: 'check-doc-pointers.mjs' },
   { name: 'check:doc-commands', script: 'check-doc-commands.mjs' },
   { name: 'check:links', script: 'check-internal-links.mjs' },
+  { name: 'check:agent-skills', script: 'build-agent-skills-index.mjs', args: ['--check'] },
   { name: 'check:voice', script: 'check-voice.mjs' },
   { name: 'check:api-safety', script: 'check-api-safety.mjs' },
   { name: 'check:trip-preferences-i18n', script: 'check-trip-preferences-i18n.mjs' },

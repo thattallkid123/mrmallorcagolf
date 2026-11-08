@@ -62,6 +62,30 @@ const nextConfig = {
 
     return [
       {
+        // RFC 8288 Link headers on the homepage so agents can find the
+        // machine-readable resources without parsing HTML.
+        source: '/',
+        headers: [
+          {
+            key: 'Link',
+            value: [
+              '</llms.txt>; rel="describedby"; type="text/plain"',
+              '</sitemap.xml>; rel="sitemap"; type="application/xml"',
+              '</feed.xml>; rel="alternate"; type="application/rss+xml"; title="Mr Mallorca Golf guides"',
+              '</.well-known/ai-catalog.json>; rel="describedby"; type="application/json"',
+              '</.well-known/agent-skills/index.json>; rel="describedby"; type="application/json"',
+            ].join(', '),
+          },
+        ],
+      },
+      {
+        source: '/.well-known/:path*',
+        headers: [
+          { key: 'Access-Control-Allow-Origin', value: '*' },
+          { key: 'Cache-Control', value: 'public, max-age=0, s-maxage=3600, must-revalidate' },
+        ],
+      },
+      {
         source: '/images/:path*',
         headers: [
           { key: 'Cache-Control', value: 'public, max-age=31536000, immutable' },

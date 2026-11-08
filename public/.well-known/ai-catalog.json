@@ -1,0 +1,44 @@
+{
+  "specVersion": "1.0",
+  "host": {
+    "displayName": "Mr Mallorca Golf",
+    "identifier": "did:web:www.mrmallorcagolf.com"
+  },
+  "entries": [
+    {
+      "identifier": "urn:air:www.mrmallorcagolf.com:docs:site-overview",
+      "displayName": "Mr Mallorca Golf site overview for AI agents",
+      "type": "text/plain",
+      "url": "https://www.mrmallorcagolf.com/llms.txt",
+      "representativeQueries": [
+        "which golf courses should I play in Mallorca",
+        "how much does a round of golf cost in Mallorca",
+        "golf lessons or a golf coach in Mallorca",
+        "private golf day with a PGA professional in Mallorca"
+      ]
+    },
+    {
+      "identifier": "urn:air:www.mrmallorcagolf.com:skill:plan-mallorca-golf-trip",
+      "displayName": "Plan a Mallorca golf trip",
+      "type": "text/markdown",
+      "url": "https://www.mrmallorcagolf.com/.well-known/agent-skills/plan-mallorca-golf-trip/SKILL.md",
+      "representativeQueries": [
+        "plan a golf trip to Mallorca",
+        "best Mallorca golf courses for a 20 handicapper",
+        "how many days of golf in Mallorca",
+        "where to stay for golf in Mallorca"
+      ]
+    },
+    {
+      "identifier": "urn:air:www.mrmallorcagolf.com:feed:guides",
+      "displayName": "Mallorca golf course reviews and planning guides (RSS)",
+      "type": "application/rss+xml",
+      "url": "https://www.mrmallorcagolf.com/feed.xml",
+      "representativeQueries": [
+        "Son Gual golf course review",
+        "Mallorca golf course reviews by a PGA professional",
+        "best time of year to play golf in Mallorca"
+      ]
+    }
+  ]
+}

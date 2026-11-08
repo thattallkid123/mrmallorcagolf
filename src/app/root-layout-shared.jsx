@@ -9,6 +9,7 @@ import IntentTracker from '../components/IntentTracker.jsx'
 import PageViewTracker from '../components/PageViewTracker.jsx'
 import ScrollDepthTracker from '../components/ScrollDepthTracker.jsx'
 import ScrollToTop from './scroll-to-top.jsx'
+import WebMcpTools from '../components/WebMcpTools.jsx'
 
 export const viewport = {
   width: 'device-width',
@@ -296,6 +297,7 @@ export default function SiteRootLayout({ lang, children }) {
         <PageViewTracker />
         <ScrollDepthTracker />
         <IntentTracker />
+        <WebMcpTools />
         {children}
       </body>
     </html>
