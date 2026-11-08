@@ -22,6 +22,7 @@ const FOOTER_COPY = {
     itinerary: 'Plan Your Trip',
     pwap: 'Play With A Pro',
     pwapGuide: 'What Play With A Pro Looks Like',
+    lessons: 'Golf lessons in Mallorca',
     guide: 'Golf Guides',
     guideArticles: 'Planning Articles',
     about: 'About',
@@ -47,6 +48,7 @@ const FOOTER_COPY = {
     itinerary: 'Reise planen',
     pwap: 'Mit Profi spielen',
     pwapGuide: 'Wie Play With A Pro aussieht',
+    lessons: 'Golfunterricht auf Mallorca',
     guide: 'Golfführer',
     about: 'Über Andy',
     allCourses: 'Alle Plätze',
@@ -71,6 +73,7 @@ const FOOTER_COPY = {
     itinerary: 'Planificar el viaje',
     pwap: 'Jugar con un Pro',
     pwapGuide: 'Cómo es jugar con un Pro',
+    lessons: 'Clases de golf en Mallorca',
     guide: 'Guía de Golf',
     about: 'Sobre Andy',
     allCourses: 'Todos los campos',
@@ -95,6 +98,7 @@ const FOOTER_COPY = {
     itinerary: 'Planifier le séjour',
     pwap: 'Jouer avec un Pro',
     pwapGuide: 'À quoi ressemble Play With A Pro',
+    lessons: 'Cours de golf à Majorque',
     guide: 'Guide Golf',
     about: 'À propos',
     allCourses: 'Tous les parcours',
@@ -119,6 +123,7 @@ const FOOTER_COPY = {
     itinerary: 'Reis plannen',
     pwap: 'Spelen met een Pro',
     pwapGuide: 'Hoe Play With A Pro eruitziet',
+    lessons: 'Golfles op Mallorca',
     guide: 'Golfgids',
     about: 'Over Andy',
     allCourses: 'Alle banen',
@@ -143,6 +148,7 @@ const FOOTER_COPY = {
     itinerary: 'Planera resan',
     pwap: 'Spela med ett proffs',
     pwapGuide: 'Så här är det att spela med ett proffs',
+    lessons: 'Golflektioner på Mallorca',
     guide: 'Golfguide',
     about: 'Om Andy',
     allCourses: 'Alla banor',
@@ -167,6 +173,7 @@ const FOOTER_COPY = {
     itinerary: '行程规划',
     pwap: '与职业球手同场',
     pwapGuide: '与职业球手同场的体验',
+    lessons: '马略卡高尔夫课程',
     guide: '高尔夫指南',
     about: '关于 Andy',
     allCourses: '全部球场',
@@ -224,6 +231,7 @@ export default function Footer({ lang }) {
           {copy.itinerary ? <li><Link href={`${prefix}/plan-your-trip`} prefetch={false}>{copy.itinerary}</Link></li> : null}
           <li><Link href={`${prefix}/play-with-a-pro`} prefetch={false}>{copy.pwap}</Link></li>
           <li><Link href={buildLocalePath('/guides/play-with-a-pro-explained', locale)} prefetch={false}>{copy.pwapGuide}</Link></li>
+          {copy.lessons ? <li><Link href={buildLocalePath('/guides/on-course-coaching-mallorca', locale)} prefetch={false}>{copy.lessons}</Link></li> : null}
           {copy.enquire ? <li><Link href={`${prefix}/contact`} prefetch={false}>{copy.enquire}</Link></li> : null}
         </ul>
       </div>

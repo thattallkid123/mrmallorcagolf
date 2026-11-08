@@ -46,7 +46,7 @@ export const HOME_CONTENT = {
         "href": "/plan-your-trip#whole-trip"
       }
     ],
-    "coursesBlurb": "Compare <a href=\"/golf-courses\">all 24 courses</a>, or read the <a href=\"/guides/best-golf-courses-mallorca\">ranked guide</a> for green fees and who each course suits.",
+    "coursesBlurb": "Compare <a href=\"/golf-courses\">all 24 courses</a>, read the <a href=\"/guides/best-golf-courses-mallorca\">ranked guide</a> for green fees and who each course suits, or see how <a href=\"/guides/on-course-coaching-mallorca\">golf lessons with me</a> work.",
     "coursesBlurbLink": "",
     "guideBlurb": "",
     "guideBlurbLink": "",

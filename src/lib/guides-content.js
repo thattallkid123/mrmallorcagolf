@@ -156,10 +156,10 @@ export const GUIDES_CONTENT = {
       "badgeGold": true,
       "img": "/images/son-gual-blog/sg-swing.webp",
       "imgPosition": "center 40%",
-      "title": "On-Course Golf Coaching in Mallorca. Play Better, Right Now",
-      "intro": "Most lessons happen on a range. On-course coaching happens where the game actually is. Here is what it involves and what to expect.",
-      "readTime": "5 min read",
-      "keywords": "On-course coaching · PGA Advanced Professional · Real situations"
+      "title": "Golf Lessons in Mallorca: 18 Holes With a PGA Professional",
+      "intro": "Every lesson I give is an 18-hole round on the course. How it works, what it costs and who it suits, for visitors and residents.",
+      "readTime": "6 min read",
+      "keywords": "Golf lessons · PGA Advanced Professional · On-course coaching"
     },
     {
       "slug": "best-golf-courses-mallorca",

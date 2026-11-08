@@ -126,6 +126,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Play With A Pro · Día completo · Coaching en el campo"
       },
       {
+        "slug": "on-course-coaching-mallorca",
+        "badge": "Guía de coaching",
+        "badgeGold": true,
+        "title": "Clases de golf en Mallorca: 18 hoyos con un profesional PGA",
+        "intro": "Cada clase es una vuelta de 18 hoyos en el campo. Cómo funciona, cuánto cuesta y a quién le conviene, para visitantes y residentes.",
+        "readTime": "6 min de lectura",
+        "keywords": "Clases de golf · PGA Advanced Professional · Coaching en el campo"
+      },
+      {
         "slug": "best-golf-courses-mallorca",
         "badge": "Guía",
         "title": "Los mejores campos de golf de Mallorca - ranking honesto de un Profesional PGA",
@@ -367,6 +376,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Play With A Pro · Ganzer Tag · Coaching auf dem Platz"
       },
       {
+        "slug": "on-course-coaching-mallorca",
+        "badge": "Coaching-Guide",
+        "badgeGold": true,
+        "title": "Golfunterricht auf Mallorca: 18 Löcher mit einem PGA-Professional",
+        "intro": "Jede Lektion ist eine Runde über 18 Löcher auf dem Platz. So läuft es ab, was es kostet und für wen es passt, für Besucher und Residenten.",
+        "readTime": "6 Min. Lesezeit",
+        "keywords": "Golfunterricht · PGA Advanced Professional · Coaching auf dem Platz"
+      },
+      {
         "slug": "best-golf-courses-mallorca",
         "badge": "Ratgeber",
         "title": "Die besten Golfplätze auf Mallorca - ehrliches Ranking eines PGA-Professionals",
@@ -605,6 +623,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Une journée complète sur le parcours avec un professionnel PGA. Ce qui se passe, ce que cela change, et ce que les golfeurs en retirent sans s'y attendre.",
         "readTime": "5 min de lecture",
         "keywords": "Play With A Pro · Journée complète · Coaching sur parcours"
+      },
+      {
+        "slug": "on-course-coaching-mallorca",
+        "badge": "Guide de coaching",
+        "badgeGold": true,
+        "title": "Cours de golf à Majorque : 18 trous avec un professionnel PGA",
+        "intro": "Chaque cours est une partie de 18 trous sur le parcours. Comment cela se passe, ce que cela coûte et à qui cela convient, pour les visiteurs et les résidents.",
+        "readTime": "6 min de lecture",
+        "keywords": "Cours de golf · PGA Advanced Professional · Coaching sur le parcours"
       },
       {
         "slug": "best-golf-courses-mallorca",
@@ -848,6 +875,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Play With A Pro · Hele dag · Coaching op de baan"
       },
       {
+        "slug": "on-course-coaching-mallorca",
+        "badge": "Coachinggids",
+        "badgeGold": true,
+        "title": "Golfles op Mallorca: 18 holes met een PGA-professional",
+        "intro": "Elke les is een ronde van 18 holes op de baan. Hoe het werkt, wat het kost en voor wie het is, voor bezoekers en inwoners.",
+        "readTime": "6 min leestijd",
+        "keywords": "Golfles · PGA Advanced Professional · Coaching op de baan"
+      },
+      {
         "slug": "best-golf-courses-mallorca",
         "badge": "Gids",
         "title": "De beste golfbanen van Mallorca - eerlijke ranking van een PGA Professional",
@@ -1089,6 +1125,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Play With A Pro · Hel dag · Coaching på banan"
       },
       {
+        "slug": "on-course-coaching-mallorca",
+        "badge": "Coachingguide",
+        "badgeGold": true,
+        "title": "Golflektioner på Mallorca: 18 hål med ett PGA-proffs",
+        "intro": "Varje lektion är en runda på 18 hål på banan. Så fungerar det, vad det kostar och vem det passar, för besökare och boende.",
+        "readTime": "6 min läsning",
+        "keywords": "Golflektioner · PGA Advanced Professional · Coaching på banan"
+      },
+      {
         "slug": "best-golf-courses-mallorca",
         "badge": "Guide",
         "title": "De bästa golfbanorna på Mallorca - en PGA-professionells ärliga ranking",
@@ -1328,6 +1373,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "与PGA职业教练共度完整的一天球场时光。会发生什么、会改变什么，以及球手们收获的、事先没想到的东西。",
         "readTime": "5 分钟阅读",
         "keywords": "Play With A Pro · 完整一天 · 球场教学"
+      },
+      {
+        "slug": "on-course-coaching-mallorca",
+        "badge": "教学指南",
+        "badgeGold": true,
+        "title": "马略卡高尔夫课程：与 PGA 职业球手同场 18 洞",
+        "intro": "每堂课都是在球场上打完整一轮 18 洞。课程如何进行、费用多少、适合谁，游客与当地居民都适用。",
+        "readTime": "6 分钟阅读",
+        "keywords": "高尔夫课程 · PGA 高级职业球手 · 球场指导"
       },
       {
         "slug": "best-golf-courses-mallorca",

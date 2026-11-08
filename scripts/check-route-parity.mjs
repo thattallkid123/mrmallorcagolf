@@ -2,6 +2,7 @@ import {
   ALL_LOCALES,
   ARTICLE_SLUGS,
   REVIEW_POST_SLUGS,
+  LOCALIZED_POST_SLUGS,
   buildLocalePath,
   getSitemapPaths,
   hasLocaleRoute,
@@ -25,7 +26,7 @@ function assert(condition, message) {
 // sets themselves are correct."
 function checkGuideParity() {
   const sitemapPaths = new Set(getSitemapPaths())
-  const guideSlugs = [...REVIEW_POST_SLUGS, ...ARTICLE_SLUGS]
+  const guideSlugs = [...REVIEW_POST_SLUGS, ...LOCALIZED_POST_SLUGS, ...ARTICLE_SLUGS]
   const failures = []
 
   for (const slug of guideSlugs) {

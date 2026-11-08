@@ -3,11 +3,11 @@ import { notFound } from 'next/navigation'
 import { buildGuidePostMetadata } from '../../lib/page-metadata'
 import { getGuidePostContent } from '../../lib/guide-post-content'
 import { getGuideArticleContent, buildGuideArticleMetadata } from '../../lib/guide-article-content'
-import { ARTICLE_SLUGS, REVIEW_POST_SLUGS, isPublishedGuideSlug, isArticleSlug, hasLocaleRoute } from '../../lib/site'
+import { ARTICLE_SLUGS, LOCALIZED_POST_SLUGS, REVIEW_POST_SLUGS, isPublishedGuideSlug, isArticleSlug, hasLocaleRoute } from '../../lib/site'
 import GuidePostView from '../(en)/guides/GuidePostView'
 import GuideArticleView from '../(en)/guides/GuideArticleView'
 
-const GUIDE_SLUGS = [...REVIEW_POST_SLUGS, ...ARTICLE_SLUGS]
+const GUIDE_SLUGS = [...REVIEW_POST_SLUGS, ...LOCALIZED_POST_SLUGS, ...ARTICLE_SLUGS]
 
 export function createGuideSlugStaticParams() {
   return GUIDE_SLUGS.map((slug) => ({ slug }))

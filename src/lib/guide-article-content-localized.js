@@ -4227,7 +4227,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
         },
         {
           "text": "Möchten Sie einen kompletten Golftag organisiert haben, mit Platz, Tee Time, Coaching und allem vor Ihrer Ankunft geklärt?",
-          "linkLabel": "Play With A Pro Tag auf Mallorca buchen →"
+          "linkLabel": "Einen Tag mit Play With A Pro auf Mallorca buchen →"
         }
       ]
     },

@@ -384,14 +384,14 @@ function buildReviewSchema(meta, blocks, locale) {
 
 function extractQaPairs(text) {
   const clean = text.replace(/<[^>]+>/g, '')
-  const sentences = clean.match(/[^.!?]+[.!?]+/g) || [clean]
+  const sentences = clean.match(/[^.!?。！？]+[.!?。！？]+/g) || [clean]
   const pairs = []
   let question = null
   let answerParts = []
   for (const raw of sentences) {
     const sentence = raw.trim()
     if (!sentence) continue
-    if (sentence.endsWith('?')) {
+    if (sentence.endsWith('?') || sentence.endsWith('？')) {
       if (question && answerParts.length) pairs.push({ question, answer: answerParts.join(' ').trim() })
       question = sentence
       answerParts = []
@@ -403,6 +403,17 @@ function extractQaPairs(text) {
   return pairs
 }
 
+// The Common Questions heading in every language the guides are published in; the Q&A paragraphs under it become FAQPage data.
+const FAQ_HEADINGS = new Set([
+  'Common Questions',
+  'Preguntas frecuentes', 'Preguntas Frecuentes',
+  'Häufige Fragen',
+  'Questions fréquentes', 'Questions Fréquentes',
+  'Veelgestelde vragen', 'Veelgestelde Vragen',
+  'Vanliga frågor', 'Vanliga Frågor',
+  '常见问题',
+])
+
 function buildFaqSchema(meta, blocks, locale) {
   const items = []
   for (let i = 0; i < blocks.length - 1; i++) {
@@ -413,7 +424,7 @@ function buildFaqSchema(meta, blocks, locale) {
         items.push({ question: block.text.replace(/^Quick Answer:\s*/i, '').trim(), answer: next.text.replace(/<[^>]+>/g, '') })
       }
     }
-    if (block.type === 'heading' && block.text.trim() === 'Common Questions') {
+    if (block.type === 'heading' && FAQ_HEADINGS.has(block.text.trim())) {
       for (let j = i + 1; j < blocks.length && blocks[j].type === 'paragraph'; j++) {
         items.push(...extractQaPairs(blocks[j].text))
       }

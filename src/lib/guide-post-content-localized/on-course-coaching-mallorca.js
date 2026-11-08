@@ -1,38 +1,85 @@
-// Localized copy for the "on-course-coaching-mallorca" guide. See src/lib/guide-post-content-localized.js for the assembly and lookup API.
+// Localized copy for the "on-course-coaching-mallorca" guide (golf lessons). See src/lib/guide-post-content-localized.js for the assembly and lookup API.
+// Written 2026-11-08 against the rewritten English guide: block order and count must match it exactly (check:guide-parity).
 const content = {
   "es": {
+    "metadata": {
+      "title": "Clases de golf en Mallorca con pro PGA",
+      "description": "Clases de golf en el campo en Mallorca con un UK PGA Advanced Professional: 18 hoyos, desde 795 € en solitario. Para visitantes y residentes."
+    },
     "meta": {
-      "badge": "Guía de Coaching",
-      "title": "Coaching de golf en el campo en Mallorca. Juegue mejor, ahora mismo",
-      "intro": "La mayoría de las clases se dan en el campo de prácticas. El coaching en el campo ocurre donde realmente se juega. Esto es lo que implica, a quién le conviene, y qué puede esperar de un día conmigo."
+      "badge": "Guía de coaching",
+      "readTime": "6 min de lectura",
+      "updated": "Noviembre 2026",
+      "title": "Clases de golf en Mallorca: 18 hoyos con un profesional PGA",
+      "intro": "Cada clase que doy en Mallorca es una vuelta de 18 hoyos en el campo. Elijo el campo según tu juego, juego a tu lado y te guío en cada golpe cuando lo tienes delante. Así funciona, cuánto cuesta y a quién le conviene, tanto para visitantes como para golfistas que viven en la isla.",
+      "related": [
+        {
+          "slug": "best-golf-courses-mallorca",
+          "title": "Los mejores campos de golf de Mallorca 2026"
+        },
+        {
+          "slug": "son-gual-review",
+          "title": "Son Gual Golf: análisis honesto 2026"
+        },
+        {
+          "slug": "golf-cost-mallorca",
+          "title": "¿Cuánto cuesta jugar al golf en Mallorca?"
+        },
+        {
+          "slug": "best-golf-practice-facilities-mallorca",
+          "title": "Las mejores instalaciones de prácticas de golf de Mallorca"
+        }
+      ]
     },
     "blocks": [
       {
-        "caption": "Coaching en el campo en Son Gual. El campo de prácticas le muestra una cosa. El campo de juego muestra algo distinto."
+        "alt": "Andy Griffiths dando coaching en el campo de golf en Mallorca",
+        "caption": "Coaching en el campo en Son Gual. El campo de prácticas te muestra una cosa. El campo de juego te muestra algo distinto."
       },
       {
-        "text": "Las clases en el campo de prácticas resuelven problemas de campo de prácticas. El coaching en el campo resuelve problemas de golf real. La diferencia importa más de lo que la mayoría cree hasta que ha probado ambas cosas."
+        "text": "No enseño en el campo de prácticas. Cada clase de golf que doy en Mallorca es una vuelta de 18 hoyos, porque el campo es donde más progresan los jugadores. Juego contigo y el coaching llega en el momento que importa: la elección de palo con viento cruzado, dónde fallar un green, una bola en pendiente, si intentar pasar el agua o quedarte corto."
       },
       {
-        "text": "Soy PGA Advanced Professional y llevo más de una década enseñando a todos los niveles. Las sesiones que encuentro más efectivas, y de las que los clientes hablan durante más tiempo después, son las que ocurren en el propio campo, en situaciones reales, en condiciones que no se pueden replicar en un campo de prácticas."
+        "text": "Tras años dando clases sobre terreno llano en el campo de prácticas, descubrí que el feedback se asienta cuando va seguido de un golpe real. Es el único formato que ofrezco."
       },
       {
-        "text": "Qué implica realmente el coaching en el campo"
+        "text": "Cómo es una clase de golf conmigo"
       },
       {
-        "text": "Jugamos una vuelta juntos. Esa es la estructura. Pero en lugar de solo jugar, trabajamos cada punto de decisión a medida que ocurre: elección de palo con viento cruzado, dónde fallar un green, cómo leer una tirada en pendiente, cuándo arriesgar un carry sobre agua y cuándo quedarse corto. Rutina previa al golpe. Gestión del campo. El juego mental bajo presión."
+        "text": "Me envías tus fechas, el tamaño del grupo y tu rango de hándicap a través de la <a href=\"/contact\">página de contacto</a>. Te respondo personalmente en 24 horas. Después elijo el campo según tu juego, reservo la hora de salida y te mando un cuestionario breve para entender cómo juegas y qué quieres sacar del día."
       },
       {
-        "text": "También observo su swing en las condiciones que realmente lo afectan: firmeza del terreno, pendiente, rough, viento. No una base plana de prácticas. Veo cosas en el campo que no vería en el campo de prácticas, y el feedback es inmediatamente relevante porque está a punto de dar el siguiente golpe."
+        "text": "Jugamos 18 hoyos juntos, desde el mismo tee, en la misma vuelta. Observo tu swing en las condiciones que lo afectan: firmeza del terreno, pendiente, rough y viento. Después te envío vídeos y notas escritas con lo que ha cambiado y en qué trabajar a continuación."
       },
       {
-        "text": "A quién le conviene"
+        "text": "Qué te llevas"
       },
       {
-        "text": "El coaching en el campo funciona bien para una amplia variedad de jugadores. Si juega a un nivel razonable pero siente que su gestión del campo le está frenando, una vuelta conmigo lo abordará directamente. Si está visitando Mallorca y quiere sacar el máximo partido a jugar Son Gual, Alcanada o cualquiera de los otros campos de aquí, es la forma más rápida de mejorar tanto el disfrute como el resultado."
+        "text": "La mayoría de los jugadores se va con tres o cuatro cosas concretas que practicar, las pocas que les cuestan golpes en vueltas reales. También te llevas un plan más claro para manejar un campo: dónde arriesgar, dónde ser conservador y cómo decidir bajo presión."
       },
       {
-        "text": "También es una muy buena opción para parejas o grupos pequeños. Dos o tres jugadores que quieren recibir coaching juntos, en un formato relajado, en un campo que quieren jugar. Así es exactamente como están estructurados los días de Play With A Pro."
+        "text": "Quién soy"
+      },
+      {
+        "text": "Soy UK PGA Advanced Professional y coach TPI Level 3. Pasé once años en Shanghái, donde fui el primer Trackman Master de China y entrené a jugadores de la selección nacional. Me mudé a Mallorca en marzo de 2025 y doy clases en inglés y en mandarín fluido."
+      },
+      {
+        "text": "Para quién son las clases"
+      },
+      {
+        "text": "Si estás de visita, la clase es también una vuelta en un campo adecuado a tu hándicap. Algunos de los mejores campos de la isla son solo para socios y no se pueden reservar por cuenta propia. Puedo gestionarlos cuando quieras jugar uno."
+      },
+      {
+        "text": "Si vives aquí, el formato es el mismo: alguien que observa cómo gestionas el campo y te dice qué te está costando golpes, o una salida a un estancamiento. Mándame tu rango de hándicap y te diré qué campo pone a prueba la parte de tu juego que quieres mejorar."
+      },
+      {
+        "text": "La fórmula funciona muy bien para parejas y grupos pequeños. Hasta tres invitados pueden recibir coaching juntos en la misma vuelta."
+      },
+      {
+        "text": "Cuánto cuesta"
+      },
+      {
+        "text": "Un día de clase en solitario cuesta desde 795 €. Un día de grupo, con hasta tres invitados, desde 950 € en total. Los green fees se pagan aparte y te los confirmo antes de reservar, para que el coste completo esté claro antes del día."
       },
       {
         "text": "Los campos que usamos"
@@ -41,132 +88,254 @@ const content = {
         "text": "La mayoría de los días de Play With A Pro tienen lugar en <a href=\"/guides/son-gual-review\">Son Gual</a>, mi campo más jugado de la isla y una de las mejores pruebas de gestión de campo disponibles aquí. También usamos <a href=\"/guides/alcanada-review\">Alcanada</a> para grupos que quieren la vuelta más espectacular, y otros campos según el nivel del grupo y en qué quieran trabajar."
       },
       {
-        "text": "Qué se lleva de la experiencia"
+        "text": "Una cosa a tener en cuenta"
       },
       {
-        "text": "La mayoría de los jugadores se van con tres o cuatro cosas concretas en las que trabajar. No una lista de veinte fallos de swing, sino el puñado de cosas que realmente les cuestan golpes en vueltas reales. También entenderá mejor cómo gestionar un campo de golf: dónde arriesgar, dónde ser conservador, y cómo tomar decisiones bajo presión."
-      },
-      {
-        "text": "Más allá del coaching, obtiene una vuelta en Mallorca en uno de los campos más destacados de la isla, con alguien que conoce cada hoyo y puede hacer que el día sea genuinamente disfrutable. Esa combinación es la base de la <a href=\"/play-with-a-pro\">experiencia Play With A Pro</a>."
+        "text": "No doy clases de una hora ni sesiones en el campo de prácticas, así que el día no encaja si es eso lo que necesitas. Para una sesión de campo de prácticas, mi guía de <a href=\"/guides/best-golf-practice-facilities-mallorca\">instalaciones de práctica en Mallorca</a> compara las opciones."
       },
       {
         "text": "Preguntas frecuentes"
       },
       {
-        "text": "El coaching en el campo funciona bien para una amplia gama de jugadores, desde quienes tienen un nivel razonable pero su gestión del campo les frena, hasta visitantes que quieren aprovechar más su vuelta en campos como Son Gual o Alcanada. También es una buena opción para parejas o grupos pequeños que reciben clases juntos. Las sesiones se realizan principalmente en Son Gual, el campo donde Andy juega con más frecuencia en la isla, o en Alcanada para grupos que buscan la vuelta más espectacular; se usan otros campos según el grupo y lo que quieran trabajar. La mayoría de los jugadores terminan con tres o cuatro aspectos concretos en los que trabajar, en lugar de una larga lista de defectos de swing, además de una idea más clara de la gestión del campo: cuándo arriesgar y cuándo jugar seguro."
+        "text": "¿Cuánto cuestan las clases de golf en Mallorca contigo? Un día en solitario cuesta desde 795 € y un día de grupo, con hasta tres invitados, desde 950 € en total. Los green fees se pagan aparte y se confirman antes de reservar."
       },
       {
-        "text": "Una nota sobre las clases en el campo de prácticas"
+        "text": "¿Das clases en el campo de prácticas? No. Cada clase es una vuelta de 18 hoyos en el campo, porque es donde más progresan los jugadores."
       },
       {
-        "text": "También ofrezco sesiones en el campo de prácticas para jugadores que quieren trabajar en elementos técnicos concretos antes de llevarlos al campo. Los dos enfoques funcionan bien juntos. Pero si tienes poco tiempo en Mallorca y quieres la mejora más rápida y práctica en tu juego real, el campo es el sitio por donde empezar."
+        "text": "¿Puedo reservar una clase de golf si vivo en Mallorca? Sí. Los residentes reservan igual que los visitantes: envía tus fechas, el tamaño del grupo y tu rango de hándicap, y te respondo personalmente en 24 horas."
       },
       {
-        "text": "¿Le interesa un día de Play With A Pro? Coaching en el campo en uno de los mejores campos de Mallorca.",
-        "linkLabel": "Vea cómo funciona →"
+        "text": "¿En qué campo jugaremos? Lo elijo según tu juego y reservo la hora de salida. La mayoría de los días son en Son Gual o Alcanada, y puedo gestionar campos solo para socios cuando quieras jugar uno."
+      },
+      {
+        "text": "¿Para qué nivel de jugador son las clases? Para jugadores con hándicap, parejas y grupos pequeños que quieren jugar los campos como se debe. Dime tu rango de hándicap al escribirme y te diré qué campo te conviene."
+      },
+      {
+        "text": "¿Cuánto dura una clase? La clase es la vuelta, así que dura lo que dura una vuelta de 18 hoyos. Confirmo la hora de salida al reservar."
+      },
+      {
+        "text": "¿Qué recibo después de la clase? Vídeos y notas escritas con lo que ha cambiado y en qué trabajar a continuación."
+      },
+      {
+        "text": "¿Das clases en otros idiomas? Doy clases en inglés y en mandarín fluido."
+      },
+      {
+        "text": "¿Cómo reservo una clase de golf? Envía tus fechas, el tamaño del grupo y tu rango de hándicap a través de la página de contacto. Te respondo personalmente en 24 horas."
+      },
+      {
+        "text": "¿Una clase y una vuelta en el mismo día? Mira cómo funciona el día Play With A Pro.",
+        "linkLabel": "Mira cómo funciona →"
       }
     ]
   },
   "de": {
+    "metadata": {
+      "title": "Golfunterricht auf Mallorca mit PGA-Pro",
+      "description": "Golfunterricht auf Mallorcas Plätzen mit einem UK PGA Advanced Professional: 18 Löcher, ab 795 € für eine Person. Für Urlauber und Residenten."
+    },
     "meta": {
       "badge": "Coaching-Guide",
-      "title": "On-Course-Golfcoaching auf Mallorca. Jetzt besser spielen",
-      "intro": "Die meisten Lektionen finden auf der Range statt. On-Course-Coaching findet dort statt, wo das Spiel wirklich stattfindet. Das erwartet Sie, für wen es geeignet ist und was ein Tag mit mir bedeutet."
+      "readTime": "6 Min. Lesezeit",
+      "updated": "November 2026",
+      "title": "Golfunterricht auf Mallorca: 18 Löcher mit einem PGA-Professional",
+      "intro": "Jede Lektion, die ich auf Mallorca gebe, ist eine Runde über 18 Löcher auf dem Platz. Ich wähle den Platz passend zu Ihrem Spiel, spiele mit Ihnen zusammen und coache die Schläge genau dann, wenn sie anstehen. So läuft es ab, was es kostet und für wen es passt, für Besucher und für Golfer, die auf der Insel leben.",
+      "related": [
+        {
+          "slug": "best-golf-courses-mallorca",
+          "title": "Die besten Golfplätze auf Mallorca 2026"
+        },
+        {
+          "slug": "son-gual-review",
+          "title": "Son Gual Golf: ehrliche Bewertung 2026"
+        },
+        {
+          "slug": "golf-cost-mallorca",
+          "title": "Was kostet Golf auf Mallorca?"
+        },
+        {
+          "slug": "best-golf-practice-facilities-mallorca",
+          "title": "Die besten Übungsanlagen für Golf auf Mallorca"
+        }
+      ]
     },
     "blocks": [
       {
-        "caption": "On-Course-Coaching in Son Gual. Die Range zeigt Ihnen eine Sache. Der Platz zeigt etwas anderes."
+        "alt": "Andy Griffiths coacht auf dem Golfplatz auf Mallorca",
+        "caption": "Coaching auf dem Platz in Son Gual. Die Range zeigt Ihnen das eine, der Platz etwas anderes."
       },
       {
-        "text": "Range-Lektionen lösen Range-Probleme. On-Course-Coaching löst Golf-Probleme. Der Unterschied ist größer, als die meisten denken, bis sie beides erlebt haben."
+        "text": "Ich unterrichte nicht auf der Range. Jede Golflektion, die ich auf Mallorca gebe, ist eine Runde über 18 Löcher, weil Spieler auf dem Platz die größten Fortschritte machen. Ich spiele mit Ihnen zusammen, und das Coaching kommt genau dann, wenn es zählt: die Schlägerwahl bei Seitenwind, wo Sie ein Grün verfehlen sollten, ein Ball in Hanglage, die Entscheidung, einen Carry über Wasser zu spielen oder vorzulegen."
       },
       {
-        "text": "Ich bin PGA Advanced Professional und coache seit über einem Jahrzehnt auf allen Spielstärken. Die Sessions, die ich am effektivsten finde und über die Kunden am längsten sprechen, sind die, die direkt auf dem Platz stattfinden, in echten Situationen, unter Bedingungen, die sich auf der Range nicht nachbilden lassen."
+        "text": "Nach Jahren Unterricht aus ebener Lage auf der Range habe ich festgestellt, dass Feedback hängen bleibt, wenn danach ein echter Schlag folgt. Das ist das einzige Format, das ich anbiete."
       },
       {
-        "text": "Was On-Course-Coaching wirklich bedeutet"
+        "text": "So läuft eine Golflektion mit mir ab"
       },
       {
-        "text": "Wir spielen zusammen eine Runde. Das ist der Rahmen. Aber statt nur zu spielen, arbeiten wir jeden Entscheidungspunkt durch, sobald er auftritt: Schlägerwahl bei Seitenwind, wo man das Grün besser verfehlt, wie man eine Hanglage liest, wann man einen Carry über Wasser wagt und wann man kurz spielt. Pre-Shot-Routine. Platzmanagement. Das mentale Spiel unter Druck."
+        "text": "Sie schicken mir über die <a href=\"/contact\">Kontaktseite</a> Ihre Termine, die Gruppengröße und Ihre Handicap-Spanne. Ich antworte persönlich innerhalb von 24 Stunden. Dann wähle ich den Platz passend zu Ihrem Spiel, buche die Startzeit und schicke einen kurzen Fragebogen, damit ich verstehe, wie Sie spielen und was Sie sich von dem Tag wünschen."
       },
       {
-        "text": "Ich beobachte außerdem Ihren Schwung unter den Bedingungen, die ihn tatsächlich beeinflussen: Bodenhärte, Hanglage, Rough, Wind. Keine flache Übungsmatte. Ich sehe Dinge auf dem Platz, die ich auf der Range nicht sehen würde, und das Feedback ist sofort relevant, weil der nächste Schlag unmittelbar bevorsteht."
+        "text": "Wir spielen 18 Löcher zusammen, vom selben Abschlag, in derselben Runde. Ich beobachte Ihren Schwung unter den Bedingungen, die ihn beeinflussen: Bodenfestigkeit, Gefälle, Rough und Wind. Danach schicke ich Ihnen Videos und schriftliche Notizen dazu, was sich verändert hat und woran Sie als Nächstes arbeiten sollten."
       },
       {
-        "text": "Für wen es geeignet ist"
+        "text": "Was Sie mitnehmen"
       },
       {
-        "text": "On-Course-Coaching passt für ein breites Spektrum an Spielern. Wenn Sie auf ordentlichem Niveau spielen, aber das Gefühl haben, dass Ihr Platzmanagement Sie zurückhält, wird eine Runde mit mir das direkt angehen. Wenn Sie Mallorca besuchen und das Beste aus Son Gual, Alcanada oder den anderen Plätzen hier herausholen möchten, ist das der schnellste Weg, um sowohl den Spaß als auch das Ergebnis zu verbessern."
+        "text": "Die meisten Spieler gehen mit drei oder vier konkreten Punkten zum Üben nach Hause, den wenigen, die sie in echten Runden Schläge kosten. Dazu bekommen Sie einen klareren Plan, wie Sie einen Platz spielen: wo Sie Risiko eingehen, wo Sie vorsichtig bleiben und wie Sie unter Druck entscheiden."
       },
       {
-        "text": "Es ist auch eine sehr gute Option für Paare oder kleine Gruppen. Zwei oder drei Spieler, die gemeinsam gecoacht werden möchten, in einem entspannten Format, auf einem Platz, den sie spielen wollen. Genau so sind auch die Play With A Pro Tage aufgebaut."
+        "text": "Wer ich bin"
+      },
+      {
+        "text": "Ich bin UK PGA Advanced Professional und TPI-Level-3-Coach. Ich habe elf Jahre in Shanghai gearbeitet, wo ich der erste Trackman Master in China wurde und Spieler aus der Nationalmannschaft trainiert habe. Im März 2025 bin ich nach Mallorca gezogen. Ich coache auf Englisch und in fließendem Mandarin."
+      },
+      {
+        "text": "Für wen sich die Lektionen eignen"
+      },
+      {
+        "text": "Wenn Sie zu Besuch sind, ist die Lektion zugleich eine Runde auf einem Platz, der zu Ihrem Handicap passt. Einige der besten Plätze der Insel sind nur für Mitglieder und lassen sich nicht selbstständig buchen. Ich kann sie organisieren, wenn Sie einen davon spielen möchten."
+      },
+      {
+        "text": "Wenn Sie hier leben, ist das Format dasselbe: jemand, der Ihr Platzmanagement beobachtet und Ihnen sagt, was Sie Schläge kostet, oder ein Weg aus einem Leistungsplateau. Schicken Sie mir Ihre Handicap-Spanne, und ich sage Ihnen, welcher Platz den Teil Ihres Spiels fordert, den Sie verbessern möchten."
+      },
+      {
+        "text": "Für Paare und kleine Gruppen eignet sich das gut. Bis zu drei Gäste können gemeinsam in derselben Runde gecoacht werden."
+      },
+      {
+        "text": "Was es kostet"
+      },
+      {
+        "text": "Ein Lektionstag für eine Person kostet ab 795 €. Ein Gruppentag mit bis zu drei Gästen kostet ab 950 € insgesamt. Greenfees kommen separat dazu, und ich bestätige sie vor der Buchung, damit die Gesamtkosten vor dem Tag klar sind."
       },
       {
         "text": "Die Plätze, die wir nutzen"
       },
       {
-        "text": "Die meisten Play With A Pro Tage finden in <a href=\"/guides/son-gual-review\">Son Gual</a> statt, meinem meistgespielten Platz auf der Insel und einem der besten Tests fürs Platzmanagement hier. Für Gruppen, die die landschaftlich schönste Runde wollen, nutzen wir auch <a href=\"/guides/alcanada-review\">Alcanada</a>, sowie weitere Plätze je nach Spielstärke der Gruppe und woran sie arbeiten möchten."
+        "text": "Die meisten Tage mit Play With A Pro finden in <a href=\"/guides/son-gual-review\">Son Gual</a> statt, meinem meistgespielten Platz auf der Insel und einem der besten Tests fürs Platzmanagement hier. Für Gruppen, die die landschaftlich schönste Runde wollen, nutzen wir auch <a href=\"/guides/alcanada-review\">Alcanada</a>, sowie weitere Plätze je nach Spielstärke der Gruppe und woran sie arbeiten möchten."
       },
       {
-        "text": "Was Sie davon haben"
+        "text": "Eine Sache vorab"
       },
       {
-        "text": "Die meisten Spieler gehen mit drei oder vier konkreten Punkten zum Arbeiten nach Hause. Keine Liste von zwanzig Schwungfehlern, sondern die Handvoll Dinge, die sie in echten Runden tatsächlich Schläge kosten. Sie werden außerdem besser verstehen, wie man einen Golfplatz managt: wo man Risiko eingeht, wo man vorsichtig spielt, und wie man unter Druck Entscheidungen trifft."
-      },
-      {
-        "text": "Über das Coaching hinaus bekommen Sie eine Runde auf Mallorca auf einem der herausragenden Plätze der Insel, mit jemandem, der jedes Loch kennt und den Tag wirklich genussvoll gestalten kann. Genau diese Kombination steht im Zentrum des <a href=\"/play-with-a-pro\">Play With A Pro Erlebnisses</a>."
+        "text": "Ich gebe keine einstündigen Lektionen und keine Range-Einheiten, der Tag passt also nicht, wenn Sie genau das brauchen. Für eine Range-Einheit vergleicht mein Guide zu den <a href=\"/guides/best-golf-practice-facilities-mallorca\">Übungsanlagen auf Mallorca</a> die Möglichkeiten."
       },
       {
         "text": "Häufige Fragen"
       },
       {
-        "text": "On-Course-Coaching eignet sich für ein breites Spektrum an Spielern, von jenen mit solidem Niveau, deren Platzmanagement sie zurückhält, bis zu Besuchern, die mehr aus Runden auf Plätzen wie Son Gual oder Alcanada herausholen wollen. Es ist auch eine gute Option für Paare oder kleine Gruppen, die gemeinsam gecoacht werden. Die Sessions finden meist auf Son Gual statt, dem Platz, den Andy auf der Insel am häufigsten spielt, oder auf Alcanada für Gruppen, die die landschaftlich schönste Runde wollen; andere Plätze werden je nach Gruppe und Trainingsziel genutzt. Die meisten Spieler verlassen die Runde mit drei oder vier konkreten Punkten zum Arbeiten, statt einer langen Liste von Schwungfehlern, plus einem klareren Gefühl für Platzmanagement: wann man Risiko eingeht und wann man sicher spielt."
+        "text": "Was kostet Golfunterricht bei Ihnen auf Mallorca? Ein Tag für eine Person kostet ab 795 €, ein Gruppentag mit bis zu drei Gästen ab 950 € insgesamt. Greenfees kommen separat dazu und werden vor der Buchung bestätigt."
       },
       {
-        "text": "Ein Hinweis zu Range-Lektionen"
+        "text": "Unterrichten Sie auf der Range? Nein. Jede Lektion ist eine Runde über 18 Löcher auf dem Platz, weil Spieler dort die größten Fortschritte machen."
       },
       {
-        "text": "Ich biete auch Range- und Übungsanlagen-Sessions für Spieler an, die vor dem Platzbesuch an bestimmten technischen Elementen arbeiten möchten. Beide Ansätze ergänzen sich gut. Aber wenn Sie in Mallorca wenig Zeit haben und die schnellste, praktischste Verbesserung Ihres tatsächlichen Spiels wollen, ist On-Course der richtige Startpunkt."
+        "text": "Kann ich eine Golflektion buchen, wenn ich auf Mallorca lebe? Ja. Residenten buchen genauso wie Besucher: Schicken Sie Ihre Termine, die Gruppengröße und Ihre Handicap-Spanne, und ich antworte persönlich innerhalb von 24 Stunden."
       },
       {
-        "text": "Interessiert an einem Play With A Pro Tag? On-Course-Coaching auf einem der besten Plätze Mallorcas.",
+        "text": "Auf welchem Platz spielen wir? Ich wähle ihn passend zu Ihrem Spiel und buche die Startzeit. Die meisten Tage finden in Son Gual oder Alcanada statt, und Plätze nur für Mitglieder kann ich organisieren, wenn Sie einen davon möchten."
+      },
+      {
+        "text": "Für welches Spielniveau sind die Lektionen? Für Handicap-Spieler, Paare und kleine Gruppen, die die Plätze richtig spielen wollen. Nennen Sie mir bei der Anfrage Ihre Handicap-Spanne, und ich sage Ihnen, welcher Platz passt."
+      },
+      {
+        "text": "Wie lange dauert eine Lektion? Die Lektion ist die Runde, sie dauert also so lange wie 18 Löcher. Die Startzeit bestätige ich bei der Buchung."
+      },
+      {
+        "text": "Was bekomme ich nach der Lektion? Videos und schriftliche Notizen dazu, was sich verändert hat und woran Sie als Nächstes arbeiten sollten."
+      },
+      {
+        "text": "Coachen Sie in anderen Sprachen? Ich coache auf Englisch und in fließendem Mandarin."
+      },
+      {
+        "text": "Wie buche ich eine Golflektion? Schicken Sie Ihre Termine, die Gruppengröße und Ihre Handicap-Spanne über die Kontaktseite. Ich antworte persönlich innerhalb von 24 Stunden."
+      },
+      {
+        "text": "Eine Lektion und eine Runde an einem Tag? Sehen Sie, wie ein Tag mit Play With A Pro abläuft.",
         "linkLabel": "So funktioniert es →"
       }
     ]
   },
   "fr": {
+    "metadata": {
+      "title": "Cours de golf à Majorque avec un pro PGA",
+      "description": "Cours de golf sur le parcours à Majorque avec un UK PGA Advanced Professional : 18 trous, dès 795 € en solo. Visiteurs et résidents."
+    },
     "meta": {
-      "badge": "Guide Coaching",
-      "title": "Coaching de golf sur le parcours à Majorque. Jouez mieux, maintenant",
-      "intro": "La plupart des leçons se déroulent sur le practice. Le coaching sur le parcours se passe là où le jeu se joue vraiment. Voici ce que cela implique, à qui cela convient, et à quoi s'attendre d'une journée avec moi."
+      "badge": "Guide de coaching",
+      "readTime": "6 min de lecture",
+      "updated": "Novembre 2026",
+      "title": "Cours de golf à Majorque : 18 trous avec un professionnel PGA",
+      "intro": "Chaque cours que je donne à Majorque est une partie de 18 trous sur le parcours. Je choisis le parcours selon votre jeu, je joue avec vous et je coache chaque coup au moment où il se présente. Voici comment cela se passe, ce que cela coûte et à qui cela convient, pour les visiteurs comme pour les golfeurs qui vivent sur l'île.",
+      "related": [
+        {
+          "slug": "best-golf-courses-mallorca",
+          "title": "Les meilleurs parcours de golf à Majorque 2026"
+        },
+        {
+          "slug": "son-gual-review",
+          "title": "Son Gual Golf : avis honnête 2026"
+        },
+        {
+          "slug": "golf-cost-mallorca",
+          "title": "Combien coûte le golf à Majorque ?"
+        },
+        {
+          "slug": "best-golf-practice-facilities-mallorca",
+          "title": "Les meilleures installations d'entraînement de golf à Majorque"
+        }
+      ]
     },
     "blocks": [
       {
+        "alt": "Andy Griffiths donne un cours sur le parcours de golf à Majorque",
         "caption": "Coaching sur le parcours à Son Gual. Le practice vous montre une chose. Le parcours montre autre chose."
       },
       {
-        "text": "Les leçons au practice règlent des problèmes de practice. Le coaching sur le parcours règle des problèmes de golf. La différence compte plus que ce que la plupart des gens imaginent, jusqu'à ce qu'ils aient essayé les deux."
+        "text": "Je n'enseigne pas sur le practice. Chaque cours de golf que je donne à Majorque est une partie de 18 trous, parce que c'est sur le parcours que les joueurs progressent le plus. Je joue avec vous et le coaching arrive au moment où il compte : le choix du club par vent de travers, où manquer un green, une balle en pente, le choix entre tenter de passer l'eau et rester court."
       },
       {
-        "text": "Je suis PGA Advanced Professional et j'entraîne depuis plus d'une décennie à tous les niveaux. Les sessions que je trouve les plus efficaces, et dont les clients parlent le plus longtemps ensuite, sont celles qui se déroulent sur le parcours lui-même, dans des situations réelles, dans des conditions qu'on ne peut pas reproduire sur un practice."
+        "text": "Après des années de leçons sur terrain plat au practice, j'ai constaté que les conseils restent quand ils sont suivis d'un vrai coup à jouer. C'est le seul format que je propose."
       },
       {
-        "text": "Ce qu'implique vraiment le coaching sur le parcours"
+        "text": "Comment se déroule un cours de golf avec moi"
       },
       {
-        "text": "Nous jouons une partie ensemble. C'est la structure. Mais au lieu de simplement jouer, nous travaillons chaque point de décision au moment où il se présente : choix de club par vent de travers, où manquer un green, comment lire une pente, quand tenter un carry au-dessus de l'eau et quand jouer court. Routine avant le coup. Gestion du parcours. Le jeu mental sous pression."
+        "text": "Vous m'envoyez vos dates, la taille du groupe et votre fourchette de handicap via la <a href=\"/contact\">page de contact</a>. Je réponds personnellement sous 24 heures. Ensuite je choisis le parcours selon votre jeu, je réserve l'heure de départ et je vous envoie un court questionnaire pour comprendre comment vous jouez et ce que vous attendez de la journée."
       },
       {
-        "text": "J'observe également votre swing dans les conditions qui l'affectent vraiment : fermeté du sol, pente, rough, vent. Pas un practice plat. Je vois sur le parcours des choses que je ne verrais pas au practice, et le retour est immédiatement pertinent puisque vous êtes sur le point de jouer le coup suivant."
+        "text": "Nous jouons 18 trous ensemble, depuis les mêmes départs, dans la même partie. J'observe votre swing dans les conditions qui l'influencent : fermeté du sol, pente, rough et vent. Ensuite je vous envoie une vidéo et des notes écrites sur ce qui a changé et sur ce qu'il faut travailler ensuite."
       },
       {
-        "text": "À qui cela convient"
+        "text": "Ce que vous emportez"
       },
       {
-        "text": "Le coaching sur le parcours convient à un large éventail de joueurs. Si vous jouez à un niveau raisonnable mais sentez que votre gestion du parcours vous freine, une partie avec moi s'attaquera directement à cela. Si vous visitez Majorque et voulez tirer le meilleur de Son Gual, Alcanada ou n'importe quel autre parcours ici, c'est le moyen le plus rapide d'améliorer à la fois votre plaisir de jeu et votre score."
+        "text": "La plupart des joueurs repartent avec trois ou quatre points précis à travailler, les quelques-uns qui leur coûtent des coups en situation réelle. Vous repartez aussi avec un plan plus clair pour jouer un parcours : où prendre des risques, où rester prudent et comment décider sous pression."
       },
       {
-        "text": "C'est aussi une très bonne option pour des duos ou de petits groupes. Deux ou trois joueurs qui veulent être coachés ensemble, dans un format détendu, sur un parcours qu'ils veulent jouer. C'est exactement ainsi que sont structurées les journées Play With A Pro."
+        "text": "Qui je suis"
+      },
+      {
+        "text": "Je suis UK PGA Advanced Professional et coach TPI Level 3. J'ai passé onze ans à Shanghai, où je suis devenu le premier Trackman Master de Chine et où j'ai entraîné des joueurs de l'équipe nationale. Je me suis installé à Majorque en mars 2025 et je donne mes cours en anglais et en mandarin courant."
+      },
+      {
+        "text": "À qui s'adressent les cours"
+      },
+      {
+        "text": "Si vous êtes de passage, le cours est aussi une partie sur un parcours adapté à votre handicap. Certains des meilleurs parcours de l'île sont réservés aux membres et ne peuvent pas être réservés par vos propres moyens. Je peux les organiser si vous souhaitez en jouer un."
+      },
+      {
+        "text": "Si vous vivez ici, le format est le même : quelqu'un qui observe votre gestion du parcours et vous dit ce qui vous coûte des coups, ou un moyen de franchir un palier. Envoyez-moi votre fourchette de handicap et je vous dirai quel parcours met à l'épreuve la partie de votre jeu que vous voulez améliorer."
+      },
+      {
+        "text": "La formule convient bien aux duos et aux petits groupes. Jusqu'à trois invités peuvent être coachés ensemble dans la même partie."
+      },
+      {
+        "text": "Combien ça coûte"
+      },
+      {
+        "text": "Une journée de cours en solo coûte à partir de 795 €. Une journée de groupe, avec jusqu'à trois invités, coûte à partir de 950 € au total. Les green fees sont à part et je vous les confirme avant la réservation, pour que le coût complet soit clair avant la journée."
       },
       {
         "text": "Les parcours que nous utilisons"
@@ -175,132 +344,254 @@ const content = {
         "text": "La plupart des journées Play With A Pro ont lieu à <a href=\"/guides/son-gual-review\">Son Gual</a>, mon parcours le plus joué sur l'île et l'un des meilleurs tests de gestion de parcours disponibles ici. Nous utilisons aussi <a href=\"/guides/alcanada-review\">Alcanada</a> pour les groupes qui veulent la partie la plus spectaculaire, et d'autres parcours selon le niveau du groupe et ce qu'ils veulent travailler."
       },
       {
-        "text": "Ce que vous en retirez"
+        "text": "Une chose à savoir"
       },
       {
-        "text": "La plupart des joueurs repartent avec trois ou quatre points précis à travailler. Pas une liste de vingt défauts de swing, mais la poignée de choses qui leur coûtent réellement des coups en conditions de jeu réelles. Vous comprendrez aussi mieux comment gérer un parcours de golf : où prendre des risques, où rester prudent, et comment décider sous pression."
-      },
-      {
-        "text": "Au-delà du coaching, vous obtenez une partie à Majorque sur l'un des parcours remarquables de l'île, avec quelqu'un qui connaît chaque trou et peut rendre la journée réellement agréable. C'est cette combinaison qui est au cœur de l'<a href=\"/play-with-a-pro\">expérience Play With A Pro</a>."
+        "text": "Je ne donne ni cours d'une heure ni séances au practice, la journée ne convient donc pas si c'est ce qu'il vous faut. Pour une séance au practice, mon guide des <a href=\"/guides/best-golf-practice-facilities-mallorca\">installations d'entraînement à Majorque</a> compare les options."
       },
       {
         "text": "Questions fréquentes"
       },
       {
-        "text": "Le coaching sur le parcours convient à un large éventail de joueurs, de ceux dont la gestion de parcours freine un niveau de jeu raisonnable, aux visiteurs qui veulent tirer davantage de parcours comme Son Gual ou Alcanada. C'est aussi une bonne option pour des duos ou petits groupes coachés ensemble. Les sessions ont lieu principalement à Son Gual, le parcours qu'Andy joue le plus sur l'île, ou à Alcanada pour les groupes qui veulent le parcours le plus spectaculaire ; d'autres parcours sont utilisés selon le groupe et ce qu'il souhaite travailler. La plupart des joueurs repartent avec trois ou quatre points précis à travailler, plutôt qu'une longue liste de défauts de swing, ainsi qu'une compréhension plus claire de la gestion de parcours : quand prendre des risques et quand jouer la sécurité."
+        "text": "Combien coûtent les cours de golf à Majorque avec vous ? Une journée en solo coûte à partir de 795 € et une journée de groupe, avec jusqu'à trois invités, à partir de 950 € au total. Les green fees sont à part et confirmés avant la réservation."
       },
       {
-        "text": "Un mot sur les leçons au practice"
+        "text": "Donnez-vous des cours au practice ? Non. Chaque cours est une partie de 18 trous sur le parcours, parce que c'est là que les joueurs progressent le plus."
       },
       {
-        "text": "Je propose également des sessions au practice pour les joueurs qui veulent travailler des éléments techniques précis avant de les emmener sur le parcours. Les deux approches se complètent bien. Mais si vous avez peu de temps à Majorque et voulez l'amélioration la plus rapide et la plus concrète de votre jeu réel, le parcours est le point de départ."
+        "text": "Puis-je réserver un cours de golf si je vis à Majorque ? Oui. Les résidents réservent comme les visiteurs : envoyez vos dates, la taille du groupe et votre fourchette de handicap, et je réponds personnellement sous 24 heures."
       },
       {
-        "text": "Intéressé par une journée Play With A Pro ? Coaching sur le parcours sur l'un des meilleurs parcours de Majorque.",
+        "text": "Sur quel parcours jouerons-nous ? Je le choisis selon votre jeu et je réserve l'heure de départ. La plupart des journées ont lieu à Son Gual ou à Alcanada, et je peux organiser des parcours réservés aux membres quand vous en voulez un."
+      },
+      {
+        "text": "Pour quel niveau de joueur sont ces cours ? Pour les joueurs avec un handicap, les duos et les petits groupes qui veulent jouer les parcours comme il se doit. Indiquez-moi votre fourchette de handicap en m'écrivant et je vous dirai quel parcours convient."
+      },
+      {
+        "text": "Combien de temps dure un cours ? Le cours, c'est la partie : il dure aussi longtemps que 18 trous. Je confirme l'heure de départ à la réservation."
+      },
+      {
+        "text": "Que recevrai-je après le cours ? Une vidéo et des notes écrites sur ce qui a changé et sur ce qu'il faut travailler ensuite."
+      },
+      {
+        "text": "Coachez-vous dans d'autres langues ? Je coache en anglais et en mandarin courant."
+      },
+      {
+        "text": "Comment réserver un cours de golf ? Envoyez vos dates, la taille du groupe et votre fourchette de handicap via la page de contact. Je réponds personnellement sous 24 heures."
+      },
+      {
+        "text": "Un cours et une partie dans la même journée ? Découvrez comment fonctionne la journée Play With A Pro.",
         "linkLabel": "Voir comment ça marche →"
       }
     ]
   },
   "nl": {
+    "metadata": {
+      "title": "Golfles op Mallorca met een PGA-pro",
+      "description": "Golfles op de baan op Mallorca met een UK PGA Advanced Professional: 18 holes, vanaf € 795 solo. Voor bezoekers en inwoners."
+    },
     "meta": {
       "badge": "Coachinggids",
-      "title": "On-course golfcoaching op Mallorca. Nu meteen beter spelen",
-      "intro": "De meeste lessen vinden plaats op de driving range. On-course coaching vindt plaats waar het spel echt gebeurt. Dit is wat het inhoudt, voor wie het geschikt is, en wat je kunt verwachten van een dag met mij."
+      "readTime": "6 min leestijd",
+      "updated": "November 2026",
+      "title": "Golfles op Mallorca: 18 holes met een PGA-professional",
+      "intro": "Elke les die ik op Mallorca geef is een ronde van 18 holes op de baan. Ik kies de baan op basis van jouw spel, speel met je mee en coach elke slag op het moment dat je hem moet spelen. Zo werkt het, wat het kost en voor wie het geschikt is, voor bezoekers en voor golfers die op het eiland wonen.",
+      "related": [
+        {
+          "slug": "best-golf-courses-mallorca",
+          "title": "De beste golfbanen van Mallorca 2026"
+        },
+        {
+          "slug": "son-gual-review",
+          "title": "Son Gual Golf: eerlijke review 2026"
+        },
+        {
+          "slug": "golf-cost-mallorca",
+          "title": "Wat kost golf op Mallorca?"
+        },
+        {
+          "slug": "best-golf-practice-facilities-mallorca",
+          "title": "De beste oefenfaciliteiten voor golf op Mallorca"
+        }
+      ]
     },
     "blocks": [
       {
-        "caption": "On-course coaching bij Son Gual. De driving range laat je het ene zien. De baan laat iets anders zien."
+        "alt": "Andy Griffiths coacht op de golfbaan op Mallorca",
+        "caption": "Coaching op de baan bij Son Gual. De driving range laat je het ene zien. De baan laat iets anders zien."
       },
       {
-        "text": "Lessen op de driving range lossen driving-range-problemen op. On-course coaching lost golfproblemen op. Het verschil is groter dan de meeste mensen beseffen tot ze beide hebben meegemaakt."
+        "text": "Ik geef geen les op de driving range. Elke golfles die ik op Mallorca geef is een ronde van 18 holes, omdat spelers op de baan de meeste vooruitgang boeken. Ik speel met je mee en de coaching komt op het moment dat het telt: clubkeuze bij zijwind, waar je een green moet missen, een bal op een helling, of je een carry over water aandurft of veilig speelt."
       },
       {
-        "text": "Ik ben PGA Advanced Professional en coach al meer dan tien jaar op elk niveau. De sessies die ik het meest effectief vind, en waar cliënten achteraf het langst over praten, zijn de sessies die op de baan zelf plaatsvinden, in echte situaties, onder omstandigheden die op een oefenveld niet na te bootsen zijn."
+        "text": "Na jaren lessen op een vlakke ondergrond op de range merkte ik dat feedback blijft hangen als er daarna een echte slag volgt. Dat is de enige vorm van les die ik aanbied."
       },
       {
-        "text": "Wat on-course coaching echt inhoudt"
+        "text": "Zo werkt een golfles met mij"
       },
       {
-        "text": "We spelen samen een ronde. Dat is de structuur. Maar in plaats van gewoon te spelen, werken we elk beslismoment door zodra het zich voordoet: clubkeuze bij zijwind, waar je een green het beste kunt missen, hoe je een hellende ligging leest, wanneer je een carry over water aandurft en wanneer je kort speelt. Pre-shot routine. Baanmanagement. Het mentale spel onder druk."
+        "text": "Je stuurt me via de <a href=\"/contact\">contactpagina</a> je reisdata, de groepsgrootte en je handicapbereik. Ik reageer persoonlijk binnen 24 uur. Daarna kies ik de baan op basis van jouw spel, boek ik de starttijd en stuur ik een korte vragenlijst, zodat ik begrijp hoe je speelt en wat je van de dag wilt meenemen."
       },
       {
-        "text": "Ik kijk ook naar je swing onder de omstandigheden die hem daadwerkelijk beïnvloeden: bodemhardheid, helling, rough, wind. Geen vlakke oefenmat. Ik zie dingen op de baan die ik op de driving range niet zou zien, en de feedback is direct relevant omdat je zo de volgende slag speelt."
+        "text": "We spelen samen 18 holes, vanaf dezelfde tee, in dezelfde ronde. Ik kijk naar je swing onder de omstandigheden die hem beïnvloeden: hardheid van de grond, helling, rough en wind. Daarna stuur ik je video's en schriftelijke notities over wat er is veranderd en waar je daarna aan kunt werken."
       },
       {
-        "text": "Voor wie dit geschikt is"
+        "text": "Wat je meeneemt"
       },
       {
-        "text": "On-course coaching werkt goed voor een breed scala aan spelers. Als je op een redelijk niveau speelt maar het gevoel heeft dat je baanmanagement je tegenhoudt, pakt een ronde met mij dat direct aan. Als je Mallorca bezoekt en het meeste uit het spelen van Son Gual, Alcanada of een van de andere banen hier wilt halen, is dit de snelste manier om zowel je plezier als je score te verbeteren."
+        "text": "De meeste spelers nemen drie of vier concrete punten mee om te oefenen, de paar punten die hun in echte rondes slagen kosten. Je neemt ook een duidelijker plan mee voor het spelen van een baan: waar je risico neemt, waar je voorzichtig blijft en hoe je onder druk beslist."
       },
       {
-        "text": "Het is ook een heel goede optie voor koppels of kleine groepen. Twee of drie spelers die samen gecoacht willen worden, in een ontspannen vorm, op een baan die ze willen spelen. Precies zo zijn de Play With A Pro dagen opgebouwd."
+        "text": "Wie ik ben"
+      },
+      {
+        "text": "Ik ben UK PGA Advanced Professional en TPI Level 3-coach. Ik heb elf jaar in Shanghai gewerkt, waar ik de eerste Trackman Master van China werd en spelers uit het nationale team trainde. In maart 2025 ben ik naar Mallorca verhuisd en ik coach in het Engels en in vloeiend Mandarijn."
+      },
+      {
+        "text": "Voor wie de lessen zijn"
+      },
+      {
+        "text": "Als je op bezoek bent, is de les ook een ronde op een baan die bij je handicap past. Een aantal van de beste banen van het eiland is alleen voor leden en niet zelfstandig te boeken. Ik kan ze regelen als je er een wilt spelen."
+      },
+      {
+        "text": "Als je hier woont, is de opzet hetzelfde: iemand die kijkt naar hoe je de baan speelt en je vertelt wat je slagen kost, of een manier om door een plateau heen te breken. Stuur me je handicapbereik en ik zeg je welke baan het deel van je spel test dat je wilt verbeteren."
+      },
+      {
+        "text": "Dit werkt goed voor koppels en kleine groepen. Tot drie gasten kunnen samen worden gecoacht in dezelfde ronde."
+      },
+      {
+        "text": "Wat het kost"
+      },
+      {
+        "text": "Een lesdag voor één persoon kost vanaf € 795. Een groepsdag met maximaal drie gasten kost vanaf € 950 in totaal. Greenfees komen er apart bij en ik bevestig ze voordat je boekt, zodat de totale kosten vóór de speeldag duidelijk zijn."
       },
       {
         "text": "De banen die we gebruiken"
       },
       {
-        "text": "De meeste Play With A Pro dagen vinden plaats op <a href=\"/guides/son-gual-review\">Son Gual</a>, de baan waar ik het meest speel op het eiland en een van de beste tests voor baanmanagement hier. We gebruiken ook <a href=\"/guides/alcanada-review\">Alcanada</a> voor groepen die de meest fotogenieke ronde willen, en andere banen afhankelijk van het niveau van de groep en waar ze aan willen werken."
+        "text": "De meeste Play With A Pro-dagen vinden plaats op <a href=\"/guides/son-gual-review\">Son Gual</a>, de baan waar ik het meest speel op het eiland en een van de beste tests voor baanmanagement hier. We gebruiken ook <a href=\"/guides/alcanada-review\">Alcanada</a> voor groepen die de mooiste ronde qua uitzicht willen, en andere banen afhankelijk van het niveau van de groep en waar ze aan willen werken."
       },
       {
-        "text": "Wat je eraan overhoudt"
+        "text": "Eén ding om te weten"
       },
       {
-        "text": "De meeste spelers gaan naar huis met drie of vier concrete punten om aan te werken. Geen lijst van twintig swingfouten, maar de handvol dingen die hen in echte rondes daadwerkelijk slagen kosten. Je begrijpt ook beter hoe je een golfbaan managet: waar je risico neemt, waar je voorzichtig bent, en hoe je onder druk beslissingen neemt."
-      },
-      {
-        "text": "Naast de coaching krijg je een ronde op Mallorca op een van de uitstekende banen van het eiland, met iemand die elke hole kent en de dag echt aangenaam kan maken. Die combinatie is waar de <a href=\"/play-with-a-pro\">Play With A Pro ervaring</a> om draait."
+        "text": "Ik geef geen lessen van een uur en geen rangesessies, dus de dag past niet als je dat zoekt. Voor een rangesessie vergelijkt mijn gids over de <a href=\"/guides/best-golf-practice-facilities-mallorca\">oefenfaciliteiten op Mallorca</a> de opties."
       },
       {
         "text": "Veelgestelde vragen"
       },
       {
-        "text": "On-course coaching werkt goed voor een breed scala aan spelers, van spelers met een redelijk niveau wiens baanmanagement hen tegenhoudt, tot bezoekers die meer uit banen als Son Gual of Alcanada willen halen. Het is ook een goede optie voor duo's of kleine groepen die samen begeleid worden. Sessies vinden meestal plaats op Son Gual, de baan die Andy het vaakst speelt op het eiland, of op Alcanada voor groepen die de meest schilderachtige ronde willen; andere banen worden gebruikt afhankelijk van de groep en waar ze aan willen werken. De meeste spelers gaan naar huis met drie of vier concrete verbeterpunten, in plaats van een lange lijst swingfouten, plus een duidelijker beeld van baanmanagement: wanneer risico nemen en wanneer veilig spelen."
+        "text": "Wat kosten golflessen op Mallorca bij jou? Een dag voor één persoon kost vanaf € 795 en een groepsdag met maximaal drie gasten vanaf € 950 in totaal. Greenfees komen er apart bij en worden vóór het boeken bevestigd."
       },
       {
-        "text": "Een woord over lessen op de driving range"
+        "text": "Geef je les op de range? Nee. Elke les is een ronde van 18 holes op de baan, omdat spelers daar de meeste vooruitgang boeken."
       },
       {
-        "text": "Ik bied ook sessies op de driving range en oefenfaciliteiten aan voor spelers die aan specifieke technische elementen willen werken voordat ze de baan op gaan. De twee benaderingen werken goed samen. Maar als je weinig tijd heeft op Mallorca en de snelste, meest praktische verbetering van je echte spel wilt, is on-course de plek om te beginnen."
+        "text": "Kan ik een golfles boeken als ik op Mallorca woon? Ja. Inwoners boeken op dezelfde manier als bezoekers: stuur je reisdata, de groepsgrootte en je handicapbereik, en ik reageer persoonlijk binnen 24 uur."
       },
       {
-        "text": "Geïnteresseerd in een Play With A Pro dag? On-course coaching op een van de beste banen van Mallorca.",
+        "text": "Op welke baan spelen we? Ik kies die op basis van jouw spel en boek de starttijd. De meeste dagen zijn op Son Gual of Alcanada, en banen die alleen voor leden zijn kan ik regelen als je er een wilt."
+      },
+      {
+        "text": "Voor welk niveau zijn de lessen? Voor spelers met handicap, paren en kleine groepen die de banen goed willen spelen. Geef je handicapbereik door als je me schrijft en ik zeg je welke baan past."
+      },
+      {
+        "text": "Hoe lang duurt een les? De les is de ronde, dus hij duurt zo lang als 18 holes duren. De starttijd bevestig ik bij het boeken."
+      },
+      {
+        "text": "Wat krijg ik na de les? Video's en schriftelijke notities over wat er is veranderd en waar je daarna aan kunt werken."
+      },
+      {
+        "text": "Geef je les in andere talen? Ik coach in het Engels en in vloeiend Mandarijn."
+      },
+      {
+        "text": "Hoe boek ik een golfles? Stuur je reisdata, de groepsgrootte en je handicapbereik via de contactpagina. Ik reageer persoonlijk binnen 24 uur."
+      },
+      {
+        "text": "Een les en een ronde op één dag? Bekijk hoe de Play With A Pro-dag werkt.",
         "linkLabel": "Bekijk hoe het werkt →"
       }
     ]
   },
   "sv": {
+    "metadata": {
+      "title": "Golflektioner på Mallorca med PGA-pro",
+      "description": "Golflektioner på banan på Mallorca med en UK PGA Advanced Professional: 18 hål, från 795 € för en person. För besökare och boende."
+    },
     "meta": {
       "badge": "Coachingguide",
-      "title": "Golfcoaching på banan på Mallorca. Spela bättre, direkt",
-      "intro": "De flesta lektioner sker på rangen. On-course coaching sker där spelet faktiskt utspelar sig. Så här fungerar det, vem det passar för, och vad du kan förvänta dig av en dag med mig."
+      "readTime": "6 min läsning",
+      "updated": "November 2026",
+      "title": "Golflektioner på Mallorca: 18 hål med ett PGA-proffs",
+      "intro": "Varje lektion jag ger på Mallorca är en runda på 18 hål på banan. Jag väljer bana efter ditt spel, spelar tillsammans med dig och coachar varje slag när du står inför det. Så fungerar det, vad det kostar och för vem det passar, för besökare och för golfare som bor på ön.",
+      "related": [
+        {
+          "slug": "best-golf-courses-mallorca",
+          "title": "De bästa golfbanorna på Mallorca 2026"
+        },
+        {
+          "slug": "son-gual-review",
+          "title": "Son Gual Golf: ärlig recension 2026"
+        },
+        {
+          "slug": "golf-cost-mallorca",
+          "title": "Vad kostar golf på Mallorca?"
+        },
+        {
+          "slug": "best-golf-practice-facilities-mallorca",
+          "title": "Mallorcas bästa träningsanläggningar för golf"
+        }
+      ]
     },
     "blocks": [
       {
-        "caption": "On-course coaching vid Son Gual. Rangen visar dig en sak. Banan visar något annat."
+        "alt": "Andy Griffiths coachar på golfbanan på Mallorca",
+        "caption": "Coaching på banan på Son Gual. Rangen visar dig en sak. Banan visar något annat."
       },
       {
-        "text": "Lektioner på rangen löser rangeproblem. On-course coaching löser golfproblem. Skillnaden betyder mer än de flesta inser förrän de har provat båda."
+        "text": "Jag undervisar inte på rangen. Varje golflektion jag ger på Mallorca är en runda på 18 hål, eftersom det är på banan som spelare utvecklas mest. Jag spelar tillsammans med dig och coachingen kommer när det gäller: klubbval i sidvind, var du ska missa en green, en boll i sluttning, om du ska slå över vattnet eller lägga upp."
       },
       {
-        "text": "Jag är PGA Advanced Professional och har coachat i över ett decennium på alla nivåer. De sessioner jag tycker är mest effektiva, och de som klienter pratar om längst efteråt, är de som sker på banan själv, i verkliga situationer, under förhållanden som inte går att återskapa på en övningsbana."
+        "text": "Efter år av lektioner på plan mark på rangen har jag sett att feedback fastnar när den följs av ett riktigt slag att spela. Det är det enda format jag erbjuder."
       },
       {
-        "text": "Vad on-course coaching faktiskt innebär"
+        "text": "Så fungerar en golflektion med mig"
       },
       {
-        "text": "Vi spelar en runda tillsammans. Det är strukturen. Men i stället för att bara spela går vi igenom varje beslutspunkt när den uppstår: klubbval i sidvind, var man ska missa en green, hur man läser ett sluttande läge, när man ska ta en carry över vatten och när man ska lägga upp kort. Pre-shot-rutin. Banstrategi. Det mentala spelet under press."
+        "text": "Du skickar dina datum, gruppstorlek och handicapspann via <a href=\"/contact\">kontaktsidan</a>. Jag svarar personligen inom 24 timmar. Sedan väljer jag bana efter ditt spel, bokar starttiden och skickar ett kort frågeformulär så att jag förstår hur du spelar och vad du vill få ut av dagen."
       },
       {
-        "text": "Jag observerar också din sving under de förhållanden som faktiskt påverkar den: markens hårdhet, lutning, rough, vind. Inte en platt övningsmatta. Jag ser saker på banan som jag inte skulle se på rangen, och feedbacken är direkt relevant eftersom du strax ska slå nästa slag."
+        "text": "Vi spelar 18 hål tillsammans, från samma tee, i samma runda. Jag tittar på din sving under de förhållanden som påverkar den: markens hårdhet, lutning, rough och vind. Efteråt skickar jag video och skriftliga anteckningar om vad som har förändrats och vad du ska arbeta med härnäst."
       },
       {
-        "text": "Vem det passar för"
+        "text": "Det här tar du med dig"
       },
       {
-        "text": "On-course coaching fungerar bra för ett brett spektrum av spelare. Om du spelar på en rimlig nivå men känner att din banstrategi håller dig tillbaka, tar en runda med mig itu med det direkt. Om du besöker Mallorca och vill få ut det mesta av att spela Son Gual, Alcanada eller någon av de andra banorna här, är det det snabbaste sättet att förbättra både din upplevelse och ditt resultat."
+        "text": "De flesta spelare går därifrån med tre eller fyra konkreta saker att öva på, de få som kostar dem slag i riktiga rundor. Du går också därifrån med en tydligare plan för hur du spelar en bana: var du tar risker, var du spelar säkert och hur du bestämmer dig under press."
       },
       {
-        "text": "Det är också ett mycket bra alternativ för par eller små grupper. Två eller tre spelare som vill ha coaching tillsammans, i ett avslappnat format, på en bana de vill spela. Så är Play With A Pro-dagarna precis upplagda."
+        "text": "Vem jag är"
+      },
+      {
+        "text": "Jag är UK PGA Advanced Professional och TPI Level 3-coach. Jag tillbringade elva år i Shanghai, där jag blev den första Trackman Master i Kina och coachade spelare från landslaget. Jag flyttade till Mallorca i mars 2025 och coachar på engelska och på flytande mandarin."
+      },
+      {
+        "text": "Vem lektionerna passar"
+      },
+      {
+        "text": "Om du är på besök är lektionen också en runda på en bana som passar ditt handicap. Några av öns bästa banor är endast för medlemmar och går inte att boka på egen hand. Jag kan ordna dem när du vill spela en."
+      },
+      {
+        "text": "Om du bor här är formatet detsamma: någon som tittar på hur du hanterar banan och säger vad som kostar dig slag, eller ett sätt att ta dig förbi en platå. Skicka ditt handicapspann så säger jag vilken bana som testar den del av ditt spel du vill förbättra."
+      },
+      {
+        "text": "Det fungerar bra för par och små grupper. Upp till tre gäster kan coachas tillsammans i samma runda."
+      },
+      {
+        "text": "Vad det kostar"
+      },
+      {
+        "text": "En lektionsdag för en person kostar från 795 €. En gruppdag med upp till tre gäster kostar från 950 € totalt. Green fees tillkommer separat och jag bekräftar dem innan du bokar, så att hela kostnaden är tydlig före dagen."
       },
       {
         "text": "Banorna vi använder"
@@ -309,95 +600,171 @@ const content = {
         "text": "De flesta Play With A Pro-dagar äger rum på <a href=\"/guides/son-gual-review\">Son Gual</a>, min mest spelade bana på ön och ett av de bästa testerna av banstrategi som finns här. Vi använder även <a href=\"/guides/alcanada-review\">Alcanada</a> för grupper som vill ha den mest natursköna rundan, samt andra banor beroende på gruppens nivå och vad de vill arbeta med."
       },
       {
-        "text": "Vad du får ut av det"
+        "text": "En sak att veta"
       },
       {
-        "text": "De flesta spelare går därifrån med tre eller fyra konkreta saker att jobba på. Inte en lista med tjugo svingfel, utan den handfull saker som faktiskt kostar dem slag i verkliga rundor. Du kommer också förstå bättre hur man hanterar en golfbana: var man tar risker, var man är försiktig, och hur man fattar beslut under press."
-      },
-      {
-        "text": "Utöver coachingen får du en runda på Mallorca på en av öns bästa banor, med någon som känner varje hål och kan göra dagen genuint njutbar. Den kombinationen är vad <a href=\"/play-with-a-pro\">Play With A Pro-upplevelsen</a> bygger på."
+        "text": "Jag ger inga lektioner på en timme och inga rangepass, så dagen passar inte om det är vad du behöver. För ett rangepass jämför min guide till <a href=\"/guides/best-golf-practice-facilities-mallorca\">träningsanläggningar på Mallorca</a> alternativen."
       },
       {
         "text": "Vanliga frågor"
       },
       {
-        "text": "On-course-coaching fungerar bra för ett brett spann av spelare, från dem med en rimlig nivå vars banhantering håller dem tillbaka, till besökare som vill få ut mer av att spela banor som Son Gual eller Alcanada. Det är också ett bra alternativ för par eller små grupper som coachas tillsammans. Sessionerna sker mestadels på Son Gual, banan Andy spelar mest på ön, eller på Alcanada för grupper som vill ha den mest natursköna rundan; andra banor används beroende på gruppen och vad de vill jobba med. De flesta spelare går därifrån med tre eller fyra konkreta saker att jobba på, snarare än en lång lista med svingfel, plus en tydligare känsla för banhantering: när man ska ta risker och när man ska spela säkert."
+        "text": "Vad kostar golflektioner på Mallorca hos dig? En dag för en person kostar från 795 € och en gruppdag med upp till tre gäster från 950 € totalt. Green fees tillkommer separat och bekräftas innan du bokar."
       },
       {
-        "text": "Ett ord om lektioner på rangen"
+        "text": "Undervisar du på rangen? Nej. Varje lektion är en runda på 18 hål på banan, eftersom det är där spelare utvecklas mest."
       },
       {
-        "text": "Jag erbjuder även range- och övningsanläggningssessioner för spelare som vill jobba med specifika tekniska delar innan de tar med dem ut på banan. De två tillvägagångssätten fungerar bra tillsammans. Men om du har begränsat med tid på Mallorca och vill ha den snabbaste, mest praktiska förbättringen av ditt faktiska spel, är on-course rätt ställe att börja."
+        "text": "Kan jag boka en golflektion om jag bor på Mallorca? Ja. Boende bokar på samma sätt som besökare: skicka dina datum, gruppstorlek och handicapspann så svarar jag personligen inom 24 timmar."
       },
       {
-        "text": "Intresserad av en Play With A Pro-dag? On-course coaching på en av Mallorcas bästa banor.",
+        "text": "Vilken bana spelar vi på? Jag väljer den efter ditt spel och bokar starttiden. De flesta dagar är på Son Gual eller Alcanada, och jag kan ordna banor som bara är för medlemmar när du vill spela en."
+      },
+      {
+        "text": "Vilken nivå är lektionerna för? För spelare med handicap, par och små grupper som vill spela banorna ordentligt. Berätta ditt handicapspann när du skriver så säger jag vilken bana som passar."
+      },
+      {
+        "text": "Hur lång tid tar en lektion? Lektionen är rundan, så den tar lika lång tid som 18 hål. Jag bekräftar starttiden när vi bokar."
+      },
+      {
+        "text": "Vad får jag efter lektionen? Video och skriftliga anteckningar om vad som har förändrats och vad du ska arbeta med härnäst."
+      },
+      {
+        "text": "Coachar du på andra språk? Jag coachar på engelska och på flytande mandarin."
+      },
+      {
+        "text": "Hur bokar jag en golflektion? Skicka dina datum, gruppstorlek och handicapspann via kontaktsidan. Jag svarar personligen inom 24 timmar."
+      },
+      {
+        "text": "En lektion och en runda på samma dag? Se hur Play With A Pro-dagen fungerar.",
         "linkLabel": "Se hur det fungerar →"
       }
     ]
   },
   "zh": {
+    "metadata": {
+      "title": "马略卡高尔夫课程：PGA 教练球场教学",
+      "description": "马略卡球场上的高尔夫课程，由英国 PGA 高级职业球手亲自授课：18 洞，单人 795 欧元起。欢迎游客与当地居民。"
+    },
     "meta": {
       "badge": "教学指南",
-      "title": "马略卡球场实战指导：立刻打得更好",
-      "intro": "大多数课程都在练习场进行。球场实战指导发生在真正比赛的地方。这里是它包含的内容、适合什么样的球手，以及和我共度一天你可以期待什么。"
+      "readTime": "6 分钟阅读",
+      "updated": "2026年11月",
+      "title": "马略卡高尔夫课程：与 PGA 职业球手同场 18 洞",
+      "intro": "我在马略卡教的每一堂课，都是在球场上完整打一轮 18 洞。我会根据你的球技选择球场，陪你一起打，并在你面对每一杆的当下给出指导。下面介绍课程如何进行、费用多少、适合哪些人，对象既有来旅行的球友，也有住在岛上的球友。",
+      "related": [
+        {
+          "slug": "best-golf-courses-mallorca",
+          "title": "马略卡最佳高尔夫球场 2026"
+        },
+        {
+          "slug": "son-gual-review",
+          "title": "Son Gual Golf：真实评测 2026"
+        },
+        {
+          "slug": "golf-cost-mallorca",
+          "title": "在马略卡打高尔夫要多少钱？"
+        },
+        {
+          "slug": "best-golf-practice-facilities-mallorca",
+          "title": "马略卡最好的高尔夫练习设施"
+        }
+      ]
     },
     "blocks": [
       {
-        "caption": "在Son Gual进行的球场实战指导。练习场只能告诉你一件事，球场会告诉你完全不同的东西。"
+        "alt": "Andy Griffiths 在马略卡的高尔夫球场上指导球员",
+        "caption": "在 Son Gual 进行的球场实战指导。练习场告诉你的是一回事，球场告诉你的是另一回事。"
       },
       {
-        "text": "练习场的课程解决的是练习场问题，球场实战指导解决的是真正的高尔夫问题。这个差别比大多数人想象的更重要，直到他们亲身体验过两者。"
+        "text": "我不在练习场教学。我在马略卡的每一堂高尔夫课都是在球场上打完整的 18 洞，因为球员在球场上进步最大。我陪你一起打，指导会在关键时刻出现：侧风下的选杆、果岭该往哪边失误、斜坡上的球位、要不要冒险飞越水障碍，还是保守过渡。"
       },
       {
-        "text": "我是PGA高级职业教练，执教超过十年，服务过各个水平的球手。我发现最有效、也是客人事后谈论最久的，是那些真正在球场上进行的课程：在真实场景、在练习场无法复制的条件下进行。"
+        "text": "多年在练习场平地球位上授课之后，我发现，只有紧接着有一杆真实的球要打，反馈才会留得住。这是我唯一提供的授课形式。"
       },
       {
-        "text": "球场实战指导到底包含什么"
+        "text": "和我上一堂高尔夫课是怎样的"
       },
       {
-        "text": "我们会一起打一轮球，这就是基本形式。但我们不只是打球，而是在每个决策点实时讨论：侧风时如何选杆、错失果岭时该往哪偏、如何判断坡度球位、什么时候该冒险越水攻果岭、什么时候该保守打上前区。击球前的准备流程、球场策略、以及压力下的心理博弈。"
+        "text": "你通过<a href=\"/contact\">联系页面</a>把日期、人数和差点范围发给我，我会在 24 小时内亲自回复。接着我根据你的球技选择球场、预订开球时间，并发给你一份简短的问卷，让我了解你怎么打球，以及你希望这一天带来什么。"
       },
       {
-        "text": "我还会在真正影响挥杆的条件下观察你的挥杆：地面硬度、坡度、长草区、风。不是平坦的练习垫。我在球场上能看到练习场看不到的东西，而且这些反馈马上就能用上，因为你马上就要打下一杆。"
+        "text": "我们一起打 18 洞，同一个发球台，同一轮球。我会在会影响你挥杆的真实条件下观察它：地面软硬、坡度、长草区和风。之后我会发给你视频和书面笔记，说明哪里有变化，以及接下来该练什么。"
       },
       {
-        "text": "适合什么样的球手"
+        "text": "你会带走什么"
       },
       {
-        "text": "球场实战指导适合各种水平的球手。如果你已经打到一定水准，但感觉球场策略在拖后腿，和我打一轮球会直接解决这个问题。如果你正在马略卡游玩，想在Son Gual、Alcanada或岛上其他球场获得最好的体验，这是提升享受度和成绩最快的方式。"
+        "text": "大多数球员会带走三四个具体的练习重点，也就是真实球局里让他们丢杆的那几件事。你也会得到一套更清晰的球场管理思路：哪里冒险，哪里保守，以及压力下怎么决定。"
       },
       {
-        "text": "这也非常适合两人或小型团体。两三位球手希望一起接受指导，形式轻松，选一座他们想打的球场。这正是陪打体验（Play With A Pro）的安排方式。"
+        "text": "关于我"
+      },
+      {
+        "text": "我是英国 PGA 高级职业球手，也是 TPI Level 3 教练。我在上海工作了十一年，成为中国第一位 Trackman Master，并指导过国家队球员。2025年3月我搬到马略卡，我用英语和流利的普通话授课。"
+      },
+      {
+        "text": "这些课适合谁"
+      },
+      {
+        "text": "如果你是来旅行，这堂课同时也是在一座适合你差点的球场上的一轮球。岛上一些最好的球场只对会员开放，无法自行预订，你想打的话我可以安排。"
+      },
+      {
+        "text": "如果你住在这里，形式是一样的：有人观察你的球场管理，告诉你什么在让你丢杆，或者帮你突破瓶颈。把你的差点范围发给我，我会告诉你哪座球场最能考验你想提高的那部分球技。"
+      },
+      {
+        "text": "两人或小组同行效果很好。最多三位客人可以在同一轮球里一起接受指导。"
+      },
+      {
+        "text": "费用"
+      },
+      {
+        "text": "单人课程日 795 欧元起。最多三位客人的小组日，总价 950 欧元起。果岭费另计，我会在你预订前确认，让你在当天之前就清楚全部费用。"
       },
       {
         "text": "我们使用的球场"
       },
       {
-        "text": "大多数陪打体验安排在<a href=\"/guides/son-gual-review\">Son Gual</a>进行，这是我在岛上打得最多的球场，也是这里对球场策略要求最高的考验之一。对于想要最具风景感的一轮球的团体，我们也会使用<a href=\"/guides/alcanada-review\">Alcanada</a>，具体球场则视团队水平与训练重点而定。"
+        "text": "大多数陪打体验安排在 <a href=\"/guides/son-gual-review\">Son Gual</a> 进行，这是我在岛上打得最多的球场，也是这里对球场策略要求最高的考验之一。对于想要最具风景感的一轮球的团体，我们也会使用 <a href=\"/guides/alcanada-review\">Alcanada</a>，另外也会根据团队水平与训练重点安排其他球场。"
       },
       {
-        "text": "你能从中获得什么"
+        "text": "需要说明的一点"
       },
       {
-        "text": "大多数球手离开时会带走三到四个具体的改进方向，而不是二十条挥杆问题清单，而是真正在实战中让他们丢杆的那几个关键点。你也会更理解如何管理一座球场：何时该冒险、何时该保守、以及如何在压力下做决定。"
-      },
-      {
-        "text": "除了指导本身，你还能在马略卡岛上一座出色的球场打上一轮球，身边是熟悉每一个洞的人，让这一天真正令人享受。这种组合正是<a href=\"/play-with-a-pro\">陪打体验（Play With A Pro）</a>的核心。"
+        "text": "我不提供一小时的课程，也不在练习场授课，所以如果你需要这些，这一天并不合适。想上练习场课程，可以看我写的<a href=\"/guides/best-golf-practice-facilities-mallorca\">马略卡练习设施</a>指南，里面对各个选择做了比较。"
       },
       {
         "text": "常见问题"
       },
       {
-        "text": "随场教学适合各种水平的球手，无论是水平尚可但球场管理拖了后腿的球手，还是想在 Son Gual 或 Alcanada 这样的球场打出更好表现的访客。它也很适合两人或小团体一起接受指导。课程大多安排在 Son Gual（Andy 在岛上打得最多的球场）或 Alcanada（适合想要最美风景的团体）；也会根据团体情况和想练习的内容选择其他球场。大多数球手离开时都会带走三四个具体的改进点，而不是一长串挥杆问题清单，同时也会对球场管理有更清晰的认识：什么时候该冒险，什么时候该稳妥求安。"
+        "text": "在马略卡跟你上高尔夫课要多少钱？单人课程日 795 欧元起，最多三位客人的小组日总价 950 欧元起。果岭费另计，预订前确认。"
       },
       {
-        "text": "关于练习场课程的说明"
+        "text": "你在练习场教学吗？不是。每堂课都是在球场上打 18 洞，因为球员在那里进步最大。"
       },
       {
-        "text": "对于希望在上场前先解决具体技术问题的球手，我也提供练习场和训练设施课程。这两种方式可以很好地结合。但如果你在马略卡时间有限，想要最快、最实用地提升你的实战水平，球场实战指导才是最好的起点。"
+        "text": "我住在马略卡，可以预订高尔夫课吗？可以。居民和游客的预订方式一样：把日期、人数和差点范围发给我，我会在 24 小时内亲自回复。"
       },
       {
-        "text": "对陪打体验（Play With A Pro）感兴趣吗？在马略卡最好的球场之一进行球场实战指导。",
+        "text": "我们会在哪座球场打？我根据你的球技选择，并预订开球时间。大多数日子在 Son Gual 或 Alcanada，你想打会员制球场的话我可以安排。"
+      },
+      {
+        "text": "这些课适合什么水平的球员？适合有差点、想把球场认真打好的球员、两人组合和小组。联系我时告诉我你的差点范围，我会告诉你哪座球场合适。"
+      },
+      {
+        "text": "一堂课要多长时间？这堂课就是一轮球，所以时长和打完 18 洞一样。预订时我会确认开球时间。"
+      },
+      {
+        "text": "课后我会收到什么？视频和书面笔记，说明哪里有变化，以及接下来该练什么。"
+      },
+      {
+        "text": "你能用其他语言授课吗？我用英语和流利的普通话授课。"
+      },
+      {
+        "text": "怎么预订高尔夫课？通过联系页面把日期、人数和差点范围发给我，我会在 24 小时内亲自回复。"
+      },
+      {
+        "text": "想在同一天上课并打一轮球吗？看看 Play With A Pro 的一天是怎样的。",
         "linkLabel": "了解具体安排 →"
       }
     ]

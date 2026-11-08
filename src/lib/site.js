@@ -45,9 +45,14 @@ export const REVIEW_POST_SLUGS = new Set([
   'son-quint-review',
 ])
 
-export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
+// Guide posts that are not course reviews but are published in every language.
+// Kept apart from REVIEW_POST_SLUGS because that set drives course-only checks
+// (course listing links, review schema, zh course editorial).
+export const LOCALIZED_POST_SLUGS = new Set([
   'on-course-coaching-mallorca',
 ])
+
+export const EN_ONLY_REVIEW_POST_SLUGS = new Set([])
 
 export const ARTICLE_SLUGS = new Set([
   'best-golf-courses-mallorca',
@@ -129,7 +134,7 @@ export function isDraftGuideSlug(slug) {
 }
 
 export function isReviewPostSlug(slug) {
-  return REVIEW_POST_SLUGS.has(slug) || EN_ONLY_REVIEW_POST_SLUGS.has(slug)
+  return REVIEW_POST_SLUGS.has(slug) || LOCALIZED_POST_SLUGS.has(slug) || EN_ONLY_REVIEW_POST_SLUGS.has(slug)
 }
 
 export function isArticleSlug(slug) {
@@ -164,6 +169,7 @@ export function hasLocaleRoute(pathname = '/', locale = 'en') {
 
   const slug = getGuideSlug(basePath)
   if (REVIEW_POST_SLUGS.has(slug)) return true
+  if (LOCALIZED_POST_SLUGS.has(slug)) return ALL_LOCALES.includes(locale)
   if (EN_ONLY_REVIEW_POST_SLUGS.has(slug)) return locale === 'en'
   if (EN_ONLY_ARTICLE_SLUGS.has(slug)) return locale === 'en'
   if (isArticleSlug(slug)) return ALL_LOCALES.includes(locale)
@@ -241,6 +247,13 @@ export function getSitemapPaths() {
 
   // Review posts: include ALL locales (published in all languages)
   for (const slug of REVIEW_POST_SLUGS) {
+    for (const locale of ALL_LOCALES) {
+      paths.push(buildLocalePath(`/guides/${slug}`, locale))
+    }
+  }
+
+  // Non-review guide posts published in all languages
+  for (const slug of LOCALIZED_POST_SLUGS) {
     for (const locale of ALL_LOCALES) {
       paths.push(buildLocalePath(`/guides/${slug}`, locale))
     }

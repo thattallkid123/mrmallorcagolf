@@ -53,7 +53,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "text": "Planifico el golf. Un socio de viajes local de confianza reserva y factura los hoteles, los traslados y los demás servicios ajenos al golf."
         }
       ],
-      "coursesBlurb": "Compare <a href=\"/golf-courses\">los 24 campos</a> o consulte la <a href=\"/guides/best-golf-courses-mallorca\">guía de campos clasificados</a> para conocer los green fees y a qué jugadores se adapta cada campo.",
+      "coursesBlurb": "Compare <a href=\"/golf-courses\">los 24 campos</a>, consulte la <a href=\"/guides/best-golf-courses-mallorca\">clasificación de campos</a> para conocer los green fees y a qué jugadores se adapta cada campo, o vea cómo funcionan las <a href=\"/guides/on-course-coaching-mallorca\">clases de golf conmigo</a>.",
       "coursesBlurbLink": "",
       "guideBlurb": "",
       "guideBlurbLink": ""
@@ -383,7 +383,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "text": "Ich plane das Golfprogramm. Ein bewährter lokaler Reisepartner bucht Hotels, Transfers und weitere Leistungen außerhalb des Golfs und stellt diese in Rechnung."
         }
       ],
-      "coursesBlurb": "Vergleichen Sie <a href=\"/golf-courses\">alle 24 Plätze</a>, oder lesen Sie die <a href=\"/guides/best-golf-courses-mallorca\">Rangliste</a> mit Greenfees und Hinweisen dazu, für wen jeder Platz geeignet ist.",
+      "coursesBlurb": "Vergleichen Sie <a href=\"/golf-courses\">alle 24 Plätze</a>, lesen Sie die <a href=\"/guides/best-golf-courses-mallorca\">Rangliste</a> mit Greenfees und Hinweisen dazu, für wen jeder Platz geeignet ist, oder sehen Sie, wie <a href=\"/guides/on-course-coaching-mallorca\">Golfunterricht bei mir</a> abläuft.",
       "coursesBlurbLink": "",
       "guideBlurb": "",
       "guideBlurbLink": ""
@@ -713,7 +713,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "text": "Je planifie le golf. Un partenaire de voyage local de confiance réserve et facture les hôtels, les transferts et les autres prestations hors golf."
         }
       ],
-      "coursesBlurb": "Comparez <a href=\"/golf-courses\">les 24 parcours</a> ou consultez le <a href=\"/guides/best-golf-courses-mallorca\">classement des parcours</a> pour connaître les green fees et savoir à qui chaque parcours convient.",
+      "coursesBlurb": "Comparez <a href=\"/golf-courses\">les 24 parcours</a>, consultez le <a href=\"/guides/best-golf-courses-mallorca\">classement des parcours</a> pour connaître les green fees et savoir à qui chaque parcours convient, ou découvrez comment se déroulent <a href=\"/guides/on-course-coaching-mallorca\">les cours de golf avec moi</a>.",
       "coursesBlurbLink": "",
       "guideBlurb": "",
       "guideBlurbLink": ""
@@ -1043,7 +1043,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "text": "Ik plan uw golfprogramma. Een vertrouwde lokale reispartner verzorgt de boeking en facturatie van hotels, transfers en andere diensten buiten het golf."
         }
       ],
-      "coursesBlurb": "Vergelijk <a href=\"/golf-courses\">alle 24 banen</a> of lees de <a href=\"/guides/best-golf-courses-mallorca\">ranglijst</a> voor greenfees en voor welke golfers elke baan geschikt is.",
+      "coursesBlurb": "Vergelijk <a href=\"/golf-courses\">alle 24 banen</a>, lees de <a href=\"/guides/best-golf-courses-mallorca\">ranglijst</a> voor greenfees en voor welke golfers elke baan geschikt is, of bekijk hoe <a href=\"/guides/on-course-coaching-mallorca\">golfles bij mij</a> werkt.",
       "coursesBlurbLink": "",
       "guideBlurb": "",
       "guideBlurbLink": ""
@@ -1373,7 +1373,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "text": "Jag planerar golfen. En betrodd lokal resepartner bokar och fakturerar hotell, transfer och andra arrangemang utanför golfen."
         }
       ],
-      "coursesBlurb": "Jämför <a href=\"/golf-courses\">alla 24 banor</a> eller läs <a href=\"/guides/best-golf-courses-mallorca\">rankningen</a> för att se greenfee och vilka golfare varje bana passar.",
+      "coursesBlurb": "Jämför <a href=\"/golf-courses\">alla 24 banor</a>, läs <a href=\"/guides/best-golf-courses-mallorca\">rankningen</a> för att se green fee och vilka golfare varje bana passar, eller se hur <a href=\"/guides/on-course-coaching-mallorca\">golflektioner med mig</a> fungerar.",
       "coursesBlurbLink": "",
       "guideBlurb": "",
       "guideBlurbLink": ""
@@ -1690,7 +1690,7 @@ export const HOME_LOCALIZED_CONTENT = {
           "text": "我负责规划高尔夫。可靠的当地旅行合作伙伴负责酒店、接送及其他非高尔夫安排的预订和开票。"
         }
       ],
-      "coursesBlurb": "比较<a href=\"/golf-courses\">全部 24 座球场</a>，或阅读<a href=\"/guides/best-golf-courses-mallorca\">球场排名指南</a>，了解果岭费和各球场适合的球手。",
+      "coursesBlurb": "比较<a href=\"/golf-courses\">全部 24 座球场</a>，阅读<a href=\"/guides/best-golf-courses-mallorca\">球场排名指南</a>，了解果岭费和各球场适合的球手，或了解<a href=\"/guides/on-course-coaching-mallorca\">我的高尔夫课程</a>是怎么上的。",
       "coursesBlurbLink": "",
       "guideBlurb": "",
       "guideBlurbLink": "",

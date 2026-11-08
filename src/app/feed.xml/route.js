@@ -16,7 +16,7 @@ const GUIDE_DATES = {
   'son-termes-review': '2026-08-22',
   'son-antem-west-review': '2026-08-22',
   't-golf-calvia-review': '2026-05-01',
-  'on-course-coaching-mallorca': '2026-08-22',
+  'on-course-coaching-mallorca': '2026-11-08',
   'is-mallorca-good-for-golf': '2026-04-01',
   'mallorca-course-map': '2026-07-23',
   '5-day-mallorca-golf-itinerary': '2026-08-10',

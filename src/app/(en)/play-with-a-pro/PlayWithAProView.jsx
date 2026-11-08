@@ -331,6 +331,12 @@ export default function PlayWithAProView({ content, locale = 'en' }) {
                   <Link href={buildLocalePath('/signature-day', locale)}>{content.offerSummary.signatureRoute.cta}</Link>
                 </div>
               ) : null}
+              {content.offerSummary.lessonsRoute ? (
+                <div className="pwap-summary__signature">
+                  <p>{content.offerSummary.lessonsRoute.text}</p>
+                  <Link href={buildLocalePath('/guides/on-course-coaching-mallorca', locale)}>{content.offerSummary.lessonsRoute.cta}</Link>
+                </div>
+              ) : null}
             </div>
           </section>
         ) : null}

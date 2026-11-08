@@ -16,7 +16,7 @@ async function main() {
   ])
 
   const articleSlugs = [...siteModule.ARTICLE_SLUGS]
-  const postSlugs = [...siteModule.REVIEW_POST_SLUGS]
+  const postSlugs = [...siteModule.REVIEW_POST_SLUGS, ...siteModule.LOCALIZED_POST_SLUGS]
 
   const missingArticles = []
   for (const slug of articleSlugs) {

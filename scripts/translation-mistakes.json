@@ -440,6 +440,16 @@
       "lang": "zh",
       "pattern": "苦艾酒",
       "fix": "味美思 for vermouth (苦艾酒 is absinthe)"
+    },
+    {
+      "lang": "de",
+      "pattern": "(?<!nach einem )\\bPlay With A Pro[ ]Tag(e|en|es)?\\b",
+      "fix": "Tag mit Play With A Pro / der Tag mit Play With A Pro (German does not allow an unhyphenated compound with a brand name). Skips the existing testimonial label \"Jo, nach einem Play With A Pro Tag\" (Andy decides on testimonial wording)"
+    },
+    {
+      "lang": "nl",
+      "pattern": "(?<!na een )\\bPlay With A Pro[ ]dag(en)?\\b",
+      "fix": "Play With A Pro-dag(en), with the hyphen. Skips the existing testimonial label \"Jo, na een Play With A Pro dag\" (Andy decides on testimonial wording)"
     }
   ]
 }

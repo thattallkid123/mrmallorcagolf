@@ -67,7 +67,7 @@ async function main() {
     }
   }
 
-  for (const slug of siteModule.REVIEW_POST_SLUGS) {
+  for (const slug of [...siteModule.REVIEW_POST_SLUGS, ...siteModule.LOCALIZED_POST_SLUGS]) {
     for (const locale of LOCALES) {
       const content = postModule.getLocalizedGuidePostContent(slug, locale)
       if (!content) continue

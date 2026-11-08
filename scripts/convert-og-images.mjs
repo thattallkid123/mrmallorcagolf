@@ -13,6 +13,7 @@ import {
   ARTICLE_SLUGS,
   EN_ONLY_ARTICLE_SLUGS,
   EN_ONLY_REVIEW_POST_SLUGS,
+  LOCALIZED_POST_SLUGS,
   REVIEW_POST_SLUGS,
 } from '../src/lib/site.js'
 
@@ -32,7 +33,7 @@ function addWebPPath(paths, imageValue) {
 
 function collectSocialWebPs() {
   const paths = new Set()
-  const reviewSlugs = new Set([...REVIEW_POST_SLUGS, ...EN_ONLY_REVIEW_POST_SLUGS])
+  const reviewSlugs = new Set([...REVIEW_POST_SLUGS, ...LOCALIZED_POST_SLUGS, ...EN_ONLY_REVIEW_POST_SLUGS])
 
   for (const slug of reviewSlugs) {
     const locales = EN_ONLY_REVIEW_POST_SLUGS.has(slug) ? ['en'] : ALL_LOCALES

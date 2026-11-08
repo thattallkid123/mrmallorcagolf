@@ -41,6 +41,10 @@ export const PLAY_WITH_A_PRO_CONTENT = {
     "signatureRoute": {
       "text": "For a private tee time, a post-round recovery session, transfers and an evening arranged around your group, see Signature Day.",
       "cta": "Explore Signature Day →"
+    },
+    "lessonsRoute": {
+      "text": "Looking for golf lessons in Mallorca? Every lesson I give is an 18-hole round on the course, for visitors and for residents.",
+      "cta": "How the lessons work →"
     }
   },
   "day": {

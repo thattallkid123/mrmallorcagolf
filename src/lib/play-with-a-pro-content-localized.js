@@ -16,6 +16,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "signatureRoute": {
         "text": "Si quiere un tee time privado, una sesión de recuperación después de la vuelta, traslados y una velada organizada para su grupo, vea Signature Day.",
         "cta": "Explorar Signature Day →"
+      },
+      "lessonsRoute": {
+        "text": "¿Busca clases de golf en Mallorca? Cada clase que doy es una vuelta de 18 hoyos en el campo, para visitantes y para residentes.",
+        "cta": "Cómo funcionan las clases →"
       }
     },
     "hero": {
@@ -310,6 +314,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "signatureRoute": {
         "text": "Für eine private Startzeit, eine Recovery-Einheit nach der Runde, Transfers und einen Abend für Ihre Gruppe gibt es den Signature Day.",
         "cta": "Signature Day ansehen →"
+      },
+      "lessonsRoute": {
+        "text": "Suchen Sie Golfunterricht auf Mallorca? Jede Lektion, die ich gebe, ist eine Runde über 18 Löcher auf dem Platz, für Besucher und für Residenten.",
+        "cta": "So funktioniert der Unterricht →"
       }
     },
     "hero": {
@@ -604,6 +612,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "signatureRoute": {
         "text": "Pour un départ privé, une séance de récupération après la partie, les transferts et une soirée organisée pour votre groupe, découvrez Signature Day.",
         "cta": "Découvrir Signature Day →"
+      },
+      "lessonsRoute": {
+        "text": "Vous cherchez des cours de golf à Majorque ? Chaque cours que je donne est une partie de 18 trous sur le parcours, pour les visiteurs et pour les résidents.",
+        "cta": "Comment se déroulent les cours →"
       }
     },
     "hero": {
@@ -898,6 +910,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "signatureRoute": {
         "text": "Voor een privéstarttijd, een herstelsessie na de ronde, transfers en een avond voor uw groep is er Signature Day.",
         "cta": "Bekijk Signature Day →"
+      },
+      "lessonsRoute": {
+        "text": "Op zoek naar golfles op Mallorca? Elke les die ik geef is een ronde van 18 holes op de baan, voor bezoekers en voor inwoners.",
+        "cta": "Zo werken de lessen →"
       }
     },
     "hero": {
@@ -1191,6 +1207,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "signatureRoute": {
         "text": "För en privat starttid, ett återhämtningspass efter rundan, transfer och en kväll ordnad för gruppen finns Signature Day.",
         "cta": "Se Signature Day →"
+      },
+      "lessonsRoute": {
+        "text": "Letar du efter golflektioner på Mallorca? Varje lektion jag ger är en runda på 18 hål på banan, för besökare och för boende.",
+        "cta": "Så fungerar lektionerna →"
       }
     },
     "hero": {
@@ -1485,6 +1505,10 @@ export const PLAY_WITH_A_PRO_LOCALIZED_CONTENT = {
       "signatureRoute": {
         "text": "如果希望安排私人开球时间、赛后的训练恢复环节、接送和适合团队的晚间活动，可以了解 Signature Day。",
         "cta": "了解 Signature Day →"
+      },
+      "lessonsRoute": {
+        "text": "想在马略卡上高尔夫课吗？我教的每一堂课都是在球场上打完整一轮 18 洞，游客和当地居民都适用。",
+        "cta": "了解课程如何进行 →"
       }
     },
     "hero": {
