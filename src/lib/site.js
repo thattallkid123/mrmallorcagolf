@@ -54,6 +54,8 @@ export const LOCALIZED_POST_SLUGS = new Set([
 
 export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
   'corporate-golf-days-mallorca',
+  'golf-lessons-cost-mallorca',
+  'golf-lessons-mallorca-mandarin',
 ])
 
 export const ARTICLE_SLUGS = new Set([

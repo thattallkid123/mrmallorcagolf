@@ -179,6 +179,10 @@ The page text and the course answers (opening times, dress code, water, parking)
 - **zh:** a space around a Latin name next to a link (在 Son Gual 进行); full-width colon in titles (Son Gual Golf：真实评测 2026); place before the verb in questions (在马略卡跟你上课); answer a yes/no question with 不是, not a bare 不; "只能 … 完全不同" adds words the English does not have.
 - **Reused strings carry the old register.** The old Spanish caption and button were "usted" and the guide is "tú". When a string moves to another page type, re-read it for form of address.
 - **French apostrophes.** The site writes straight apostrophes everywhere, so section 9 now says so instead of asking for "’". Do not mix the two.
+- **A golf course is played, not used.** "Nous utilisons Alcanada", "We gebruiken Alcanada" and "Vi använder Alcanada" are calques of "we use": French "nous jouons à", Dutch "we spelen op", Swedish "vi spelar på".
+- **"Solo" for a one-person price.** German and Dutch say "für eine Person" and "voor één persoon"; "run" is English and left inside the Dutch sentence ("ik heb geen golfacademie").
+- **Swedish:** "hour-long lessons" is "timslånga lektioner" ("på en timme" reads as "within an hour"); "för vem det passar" ends with the preposition ("vem det passar för"); "om det är det du behöver".
+- **zh:** "range session" means practising alone (去练习场练球), not a range lesson (练习场课程); "风景感" is not natural, say 风景最美.
 
 ## Checklist before a translation ships
 

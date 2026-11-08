@@ -162,6 +162,17 @@ export const GUIDES_CONTENT = {
       "keywords": "Golf lessons · PGA Advanced Professional · On-course coaching"
     },
     {
+      "slug": "golf-lessons-cost-mallorca",
+      "badge": "Coaching Guide",
+      "badgeGold": true,
+      "img": "/images/son-gual-blog/sg-swing.webp",
+      "imgPosition": "center 40%",
+      "title": "How Much Do Golf Lessons Cost in Mallorca?",
+      "intro": "From €795 solo and from €950 for a group. What the price covers, what it does not, and why a lesson is a day on the course.",
+      "readTime": "3 min read",
+      "keywords": "Golf lesson prices · What is included · Green fees"
+    },
+    {
       "slug": "best-golf-courses-mallorca",
       "badge": "Guide",
       "img": "/images/blog-best-golf-courses/Son Gual.webp",
@@ -281,6 +292,17 @@ export const GUIDES_CONTENT = {
       "intro": "TrackMan, Toptracer and grass ranges compared: where to measure, where to warm up and where to work on the short game.",
       "readTime": "4 min read",
       "keywords": "TrackMan · Toptracer · Short game"
+    },
+    {
+      "slug": "golf-lessons-mallorca-mandarin",
+      "badge": "Coaching Guide",
+      "badgeGold": true,
+      "img": "/images/son-gual-blog/sg-swing.webp",
+      "imgPosition": "center 40%",
+      "title": "Golf Lessons in Mallorca in Mandarin",
+      "intro": "I coach in fluent Mandarin as well as English. The same 18-hole lesson on the course, for visitors and residents.",
+      "readTime": "3 min read",
+      "keywords": "Mandarin golf lessons · Chinese-speaking coach · On-course coaching"
     },
     {
       "slug": "corporate-golf-days-mallorca",

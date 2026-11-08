@@ -8,6 +8,8 @@ const INDEXNOW_GUIDES = [
   '/guides/golf-trip-planning-mallorca',
   '/guides/is-mallorca-good-for-golf',
   '/guides/on-course-coaching-mallorca',
+  '/guides/golf-lessons-cost-mallorca',
+  '/guides/golf-lessons-mallorca-mandarin',
   '/guides/corporate-golf-days-mallorca',
   '/guides/best-golf-courses-mallorca',
   '/guides/best-time-play-golf-mallorca',

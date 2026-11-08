@@ -4,14 +4,14 @@ const content = {
   "es": {
     "metadata": {
       "title": "Clases de golf en Mallorca con pro PGA",
-      "description": "Clases de golf en el campo en Mallorca con un UK PGA Advanced Professional: 18 hoyos, desde 795 € en solitario. Para visitantes y residentes."
+      "description": "Clases de golf y coaching en Mallorca con un profesor PGA: 18 hoyos en el campo, desde 795 € en solitario. Visitantes y residentes."
     },
     "meta": {
       "badge": "Guía de coaching",
       "readTime": "6 min de lectura",
       "updated": "Noviembre 2026",
       "title": "Clases de golf en Mallorca: 18 hoyos con un profesional PGA",
-      "intro": "Cada clase que doy en Mallorca es una vuelta de 18 hoyos en el campo. Elijo el campo según tu juego, juego a tu lado y te guío en cada golpe cuando lo tienes delante. Así funciona, cuánto cuesta y a quién le conviene, tanto para visitantes como para golfistas que viven en la isla.",
+      "intro": "¿Buscas un profesor o entrenador de golf en Mallorca? Cada clase que doy es una vuelta de 18 hoyos en el campo. Elijo el campo según tu juego, juego a tu lado y te guío en cada golpe cuando lo tienes delante. Así funciona, cuánto cuesta y a quién le conviene, tanto para visitantes como para golfistas que viven en la isla.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -85,13 +85,13 @@ const content = {
         "text": "Los campos que usamos"
       },
       {
-        "text": "La mayoría de los días de Play With A Pro tienen lugar en <a href=\"/guides/son-gual-review\">Son Gual</a>, mi campo más jugado de la isla y una de las mejores pruebas de gestión de campo disponibles aquí. También usamos <a href=\"/guides/alcanada-review\">Alcanada</a> para grupos que quieren la vuelta más espectacular, y otros campos según el nivel del grupo y en qué quieran trabajar."
+        "text": "La mayoría de los días de Play With A Pro tienen lugar en <a href=\"/guides/son-gual-review\">Son Gual</a>, mi campo más jugado de la isla, cerca de Palma, y una de las mejores pruebas de gestión de campo disponibles aquí. También usamos <a href=\"/guides/alcanada-review\">Alcanada</a>, en el noreste, en Alcúdia, para grupos que quieren la vuelta más espectacular, y otros campos según el nivel del grupo y en qué quieran trabajar."
       },
       {
         "text": "Una cosa a tener en cuenta"
       },
       {
-        "text": "No doy clases de una hora ni sesiones en el campo de prácticas, así que el día no encaja si es eso lo que necesitas. Para una sesión de campo de prácticas, mi guía de <a href=\"/guides/best-golf-practice-facilities-mallorca\">instalaciones de práctica en Mallorca</a> compara las opciones."
+        "text": "No dirijo una academia ni una escuela de golf, y no doy clases de una hora ni sesiones en el campo de prácticas, así que el día no encaja si es eso lo que necesitas. Para una sesión de campo de prácticas, mi guía de <a href=\"/guides/best-golf-practice-facilities-mallorca\">instalaciones de práctica en Mallorca</a> compara las opciones."
       },
       {
         "text": "Preguntas frecuentes"
@@ -132,14 +132,14 @@ const content = {
   "de": {
     "metadata": {
       "title": "Golfunterricht auf Mallorca mit PGA-Pro",
-      "description": "Golfunterricht auf Mallorcas Plätzen mit einem UK PGA Advanced Professional: 18 Löcher, ab 795 € für eine Person. Für Urlauber und Residenten."
+      "description": "Golfunterricht auf Mallorca mit einem PGA-Golftrainer: 18 Löcher auf dem Platz, ab 795 € für eine Person. Für Urlauber und Residenten."
     },
     "meta": {
       "badge": "Coaching-Guide",
       "readTime": "6 Min. Lesezeit",
       "updated": "November 2026",
       "title": "Golfunterricht auf Mallorca: 18 Löcher mit einem PGA-Professional",
-      "intro": "Jede Lektion, die ich auf Mallorca gebe, ist eine Runde über 18 Löcher auf dem Platz. Ich wähle den Platz passend zu Ihrem Spiel, spiele mit Ihnen zusammen und coache die Schläge genau dann, wenn sie anstehen. So läuft es ab, was es kostet und für wen es passt, für Besucher und für Golfer, die auf der Insel leben.",
+      "intro": "Sie suchen einen Golftrainer oder Golflehrer auf Mallorca? Jede Lektion, die ich gebe, ist eine Runde über 18 Löcher auf dem Platz. Ich wähle den Platz passend zu Ihrem Spiel, spiele mit Ihnen zusammen und coache die Schläge genau dann, wenn sie anstehen. So läuft es ab, was es kostet und für wen es passt, für Besucher und für Golfer, die auf der Insel leben.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -213,13 +213,13 @@ const content = {
         "text": "Die Plätze, die wir nutzen"
       },
       {
-        "text": "Die meisten Tage mit Play With A Pro finden in <a href=\"/guides/son-gual-review\">Son Gual</a> statt, meinem meistgespielten Platz auf der Insel und einem der besten Tests fürs Platzmanagement hier. Für Gruppen, die die landschaftlich schönste Runde wollen, nutzen wir auch <a href=\"/guides/alcanada-review\">Alcanada</a>, sowie weitere Plätze je nach Spielstärke der Gruppe und woran sie arbeiten möchten."
+        "text": "Die meisten Tage mit Play With A Pro finden in <a href=\"/guides/son-gual-review\">Son Gual</a> statt, meinem meistgespielten Platz auf der Insel, in der Nähe von Palma, und einem der besten Tests fürs Platzmanagement hier. Für Gruppen, die die landschaftlich schönste Runde wollen, nutzen wir auch <a href=\"/guides/alcanada-review\">Alcanada</a> im Nordosten bei Alcúdia, sowie weitere Plätze je nach Spielstärke der Gruppe und woran sie arbeiten möchten."
       },
       {
         "text": "Eine Sache vorab"
       },
       {
-        "text": "Ich gebe keine einstündigen Lektionen und keine Range-Einheiten, der Tag passt also nicht, wenn Sie genau das brauchen. Für eine Range-Einheit vergleicht mein Guide zu den <a href=\"/guides/best-golf-practice-facilities-mallorca\">Übungsanlagen auf Mallorca</a> die Möglichkeiten."
+        "text": "Ich betreibe keine Golfakademie und keine Golfschule und gebe keine einstündigen Lektionen und keine Range-Einheiten, der Tag passt also nicht, wenn Sie genau das brauchen. Für eine Range-Einheit vergleicht mein Guide zu den <a href=\"/guides/best-golf-practice-facilities-mallorca\">Übungsanlagen auf Mallorca</a> die Möglichkeiten."
       },
       {
         "text": "Häufige Fragen"
@@ -260,14 +260,14 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Cours de golf à Majorque avec un pro PGA",
-      "description": "Cours de golf sur le parcours à Majorque avec un UK PGA Advanced Professional : 18 trous, dès 795 € en solo. Visiteurs et résidents."
+      "description": "Cours de golf et coaching à Majorque avec un professeur PGA : 18 trous sur le parcours, dès 795 € en solo. Visiteurs et résidents."
     },
     "meta": {
       "badge": "Guide de coaching",
       "readTime": "6 min de lecture",
       "updated": "Novembre 2026",
       "title": "Cours de golf à Majorque : 18 trous avec un professionnel PGA",
-      "intro": "Chaque cours que je donne à Majorque est une partie de 18 trous sur le parcours. Je choisis le parcours selon votre jeu, je joue avec vous et je coache chaque coup au moment où il se présente. Voici comment cela se passe, ce que cela coûte et à qui cela convient, pour les visiteurs comme pour les golfeurs qui vivent sur l'île.",
+      "intro": "Vous cherchez un professeur ou un coach de golf à Majorque ? Chaque cours que je donne est une partie de 18 trous sur le parcours. Je choisis le parcours selon votre jeu, je joue avec vous et je coache chaque coup au moment où il se présente. Voici comment cela se passe, ce que cela coûte et à qui cela convient, pour les visiteurs comme pour les golfeurs qui vivent sur l'île.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -341,13 +341,13 @@ const content = {
         "text": "Les parcours que nous utilisons"
       },
       {
-        "text": "La plupart des journées Play With A Pro ont lieu à <a href=\"/guides/son-gual-review\">Son Gual</a>, mon parcours le plus joué sur l'île et l'un des meilleurs tests de gestion de parcours disponibles ici. Nous utilisons aussi <a href=\"/guides/alcanada-review\">Alcanada</a> pour les groupes qui veulent la partie la plus spectaculaire, et d'autres parcours selon le niveau du groupe et ce qu'ils veulent travailler."
+        "text": "La plupart des journées Play With A Pro ont lieu à <a href=\"/guides/son-gual-review\">Son Gual</a>, mon parcours le plus joué sur l'île, près de Palma, et l'un des meilleurs tests de gestion de parcours disponibles ici. Nous jouons aussi à <a href=\"/guides/alcanada-review\">Alcanada</a>, au nord-est, à Alcúdia, pour les groupes qui veulent la partie la plus spectaculaire, et d'autres parcours selon le niveau du groupe et ce qu'ils veulent travailler."
       },
       {
         "text": "Une chose à savoir"
       },
       {
-        "text": "Je ne donne ni cours d'une heure ni séances au practice, la journée ne convient donc pas si c'est ce qu'il vous faut. Pour une séance au practice, mon guide des <a href=\"/guides/best-golf-practice-facilities-mallorca\">installations d'entraînement à Majorque</a> compare les options."
+        "text": "Je ne dirige ni académie ni école de golf, et je ne donne ni cours d'une heure ni séances au practice, la journée ne convient donc pas si c'est ce qu'il vous faut. Pour une séance au practice, mon guide des <a href=\"/guides/best-golf-practice-facilities-mallorca\">installations d'entraînement à Majorque</a> compare les options."
       },
       {
         "text": "Questions fréquentes"
@@ -388,14 +388,14 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Golfles op Mallorca met een PGA-pro",
-      "description": "Golfles op de baan op Mallorca met een UK PGA Advanced Professional: 18 holes, vanaf € 795 solo. Voor bezoekers en inwoners."
+      "description": "Golfles en coaching op Mallorca met een PGA-golfleraar: 18 holes op de baan, vanaf € 795 voor één persoon. Voor bezoekers en inwoners."
     },
     "meta": {
       "badge": "Coachinggids",
       "readTime": "6 min leestijd",
       "updated": "November 2026",
       "title": "Golfles op Mallorca: 18 holes met een PGA-professional",
-      "intro": "Elke les die ik op Mallorca geef is een ronde van 18 holes op de baan. Ik kies de baan op basis van jouw spel, speel met je mee en coach elke slag op het moment dat je hem moet spelen. Zo werkt het, wat het kost en voor wie het geschikt is, voor bezoekers en voor golfers die op het eiland wonen.",
+      "intro": "Zoek je een golfleraar of golfcoach op Mallorca? Elke les die ik geef is een ronde van 18 holes op de baan. Ik kies de baan op basis van jouw spel, speel met je mee en coach elke slag op het moment dat je hem moet spelen. Zo werkt het, wat het kost en voor wie het geschikt is, voor bezoekers en voor golfers die op het eiland wonen.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -469,13 +469,13 @@ const content = {
         "text": "De banen die we gebruiken"
       },
       {
-        "text": "De meeste Play With A Pro-dagen vinden plaats op <a href=\"/guides/son-gual-review\">Son Gual</a>, de baan waar ik het meest speel op het eiland en een van de beste tests voor baanmanagement hier. We gebruiken ook <a href=\"/guides/alcanada-review\">Alcanada</a> voor groepen die de mooiste ronde qua uitzicht willen, en andere banen afhankelijk van het niveau van de groep en waar ze aan willen werken."
+        "text": "De meeste Play With A Pro-dagen vinden plaats op <a href=\"/guides/son-gual-review\">Son Gual</a>, de baan waar ik het meest speel op het eiland, dicht bij Palma, en een van de beste tests voor baanmanagement hier. We spelen ook op <a href=\"/guides/alcanada-review\">Alcanada</a>, in het noordoosten bij Alcúdia, voor groepen die de mooiste ronde qua uitzicht willen, en andere banen afhankelijk van het niveau van de groep en waar ze aan willen werken."
       },
       {
         "text": "Eén ding om te weten"
       },
       {
-        "text": "Ik geef geen lessen van een uur en geen rangesessies, dus de dag past niet als je dat zoekt. Voor een rangesessie vergelijkt mijn gids over de <a href=\"/guides/best-golf-practice-facilities-mallorca\">oefenfaciliteiten op Mallorca</a> de opties."
+        "text": "Ik heb geen golfacademie of golfschool en geef geen lessen van een uur en geen rangesessies, dus de dag past niet als je dat zoekt. Voor een rangesessie vergelijkt mijn gids over de <a href=\"/guides/best-golf-practice-facilities-mallorca\">oefenfaciliteiten op Mallorca</a> de opties."
       },
       {
         "text": "Veelgestelde vragen"
@@ -516,14 +516,14 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Golflektioner på Mallorca med PGA-pro",
-      "description": "Golflektioner på banan på Mallorca med en UK PGA Advanced Professional: 18 hål, från 795 € för en person. För besökare och boende."
+      "description": "Golflektioner och coachning på Mallorca med en PGA-golftränare: 18 hål på banan, från 795 € för en person. För besökare och boende."
     },
     "meta": {
       "badge": "Coachingguide",
       "readTime": "6 min läsning",
       "updated": "November 2026",
       "title": "Golflektioner på Mallorca: 18 hål med ett PGA-proffs",
-      "intro": "Varje lektion jag ger på Mallorca är en runda på 18 hål på banan. Jag väljer bana efter ditt spel, spelar tillsammans med dig och coachar varje slag när du står inför det. Så fungerar det, vad det kostar och för vem det passar, för besökare och för golfare som bor på ön.",
+      "intro": "Letar du efter en golftränare eller golflärare på Mallorca? Varje lektion jag ger är en runda på 18 hål på banan. Jag väljer bana efter ditt spel, spelar tillsammans med dig och coachar varje slag när du står inför det. Så fungerar det, vad det kostar och vem det passar för, för besökare och för golfare som bor på ön.",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -597,13 +597,13 @@ const content = {
         "text": "Banorna vi använder"
       },
       {
-        "text": "De flesta Play With A Pro-dagar äger rum på <a href=\"/guides/son-gual-review\">Son Gual</a>, min mest spelade bana på ön och ett av de bästa testerna av banstrategi som finns här. Vi använder även <a href=\"/guides/alcanada-review\">Alcanada</a> för grupper som vill ha den mest natursköna rundan, samt andra banor beroende på gruppens nivå och vad de vill arbeta med."
+        "text": "De flesta Play With A Pro-dagar äger rum på <a href=\"/guides/son-gual-review\">Son Gual</a>, min mest spelade bana på ön, nära Palma, och ett av de bästa testerna av banstrategi som finns här. Vi spelar även på <a href=\"/guides/alcanada-review\">Alcanada</a>, i nordost vid Alcúdia, för grupper som vill ha den mest natursköna rundan, samt andra banor beroende på gruppens nivå och vad de vill arbeta med."
       },
       {
         "text": "En sak att veta"
       },
       {
-        "text": "Jag ger inga lektioner på en timme och inga rangepass, så dagen passar inte om det är vad du behöver. För ett rangepass jämför min guide till <a href=\"/guides/best-golf-practice-facilities-mallorca\">träningsanläggningar på Mallorca</a> alternativen."
+        "text": "Jag driver ingen golfakademi eller golfskola och ger inga timslånga lektioner och inga rangepass, så dagen passar inte om det är det du behöver. För ett rangepass jämför min guide till <a href=\"/guides/best-golf-practice-facilities-mallorca\">träningsanläggningar på Mallorca</a> alternativen."
       },
       {
         "text": "Vanliga frågor"
@@ -644,14 +644,14 @@ const content = {
   "zh": {
     "metadata": {
       "title": "马略卡高尔夫课程：PGA 教练球场教学",
-      "description": "马略卡球场上的高尔夫课程，由英国 PGA 高级职业球手亲自授课：18 洞，单人 795 欧元起。欢迎游客与当地居民。"
+      "description": "马略卡高尔夫教学与教练：英国 PGA 高级职业球手亲自授课，球场上完整打 18 洞，单人 795 欧元起。游客与当地居民均可。"
     },
     "meta": {
       "badge": "教学指南",
       "readTime": "6 分钟阅读",
       "updated": "2026年11月",
       "title": "马略卡高尔夫课程：与 PGA 职业球手同场 18 洞",
-      "intro": "我在马略卡教的每一堂课，都是在球场上完整打一轮 18 洞。我会根据你的球技选择球场，陪你一起打，并在你面对每一杆的当下给出指导。下面介绍课程如何进行、费用多少、适合哪些人，对象既有来旅行的球友，也有住在岛上的球友。",
+      "intro": "想在马略卡找高尔夫教练？我教的每一堂课，都是在球场上完整打一轮 18 洞。我会根据你的球技选择球场，陪你一起打，并在你面对每一杆的当下给出指导。下面介绍课程如何进行、费用多少、适合哪些人，对象既有来旅行的球友，也有住在岛上的球友。",
       "related": [
         {
           "slug": "best-golf-courses-mallorca",
@@ -725,13 +725,13 @@ const content = {
         "text": "我们使用的球场"
       },
       {
-        "text": "大多数陪打体验安排在 <a href=\"/guides/son-gual-review\">Son Gual</a> 进行，这是我在岛上打得最多的球场，也是这里对球场策略要求最高的考验之一。对于想要最具风景感的一轮球的团体，我们也会使用 <a href=\"/guides/alcanada-review\">Alcanada</a>，另外也会根据团队水平与训练重点安排其他球场。"
+        "text": "大多数陪打体验安排在 <a href=\"/guides/son-gual-review\">Son Gual</a> 进行，靠近帕尔马，是我在岛上打得最多的球场，也是这里对球场策略要求最高的考验之一。对于想要风景最美的一轮球的团体，我们也会使用位于岛屿东北部阿尔库迪亚的 <a href=\"/guides/alcanada-review\">Alcanada</a>，另外也会根据团队水平与训练重点安排其他球场。"
       },
       {
         "text": "需要说明的一点"
       },
       {
-        "text": "我不提供一小时的课程，也不在练习场授课，所以如果你需要这些，这一天并不合适。想上练习场课程，可以看我写的<a href=\"/guides/best-golf-practice-facilities-mallorca\">马略卡练习设施</a>指南，里面对各个选择做了比较。"
+        "text": "我没有开设高尔夫学院或学校，也不提供一小时的课程，不在练习场授课，所以如果你需要这些，这一天并不合适。想去练习场练球，可以看我写的<a href=\"/guides/best-golf-practice-facilities-mallorca\">马略卡练习设施</a>指南，里面对各个选择做了比较。"
       },
       {
         "text": "常见问题"

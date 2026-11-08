@@ -7,6 +7,8 @@ import { useMemo, useState } from 'react'
 const GUIDE_CATEGORY_BY_SLUG = {
   'play-with-a-pro-explained': 'planning',
   'on-course-coaching-mallorca': 'planning',
+  'golf-lessons-cost-mallorca': 'planning',
+  'golf-lessons-mallorca-mandarin': 'planning',
   'corporate-golf-days-mallorca': 'planning',
   'best-golf-courses-mallorca': 'planning',
   'is-mallorca-good-for-golf': 'planning',

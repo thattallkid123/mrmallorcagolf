@@ -1874,7 +1874,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: 'Golf Lessons in Mallorca with a PGA Pro',
         description:
-          'On-course golf lessons in Mallorca with a UK PGA Advanced Professional. 18 holes, from €795 solo. For visitors and residents.',
+          'Golf lessons and coaching in Mallorca from a UK PGA Advanced Professional. 18 holes on the course, from €795 solo. Visitors and residents.',
         imagePath: '/images/son-gual-blog/sg-swing.webp',
       },
       meta: {
@@ -1884,7 +1884,7 @@ export const GUIDE_POST_CONTENT = {
         updated: 'November 2026',
         title: 'Golf Lessons in Mallorca: 18 Holes With a PGA Professional',
         intro:
-          'Every lesson I give in Mallorca is an 18-hole round on the course. I choose the course for your game, play alongside you and coach the shots as you face them. This is how it works, what it costs and who it suits, for visitors and for golfers who live on the island.',
+          'Looking for a golf coach or instructor in Mallorca? Every lesson I give is an 18-hole round on the course. I choose the course for your game, play alongside you and coach the shots as you face them. This is how it works, what it costs and who it suits, for visitors and for golfers who live on the island.',
         related: [
           { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
           { slug: 'son-gual-review', title: 'Son Gual Golf - Honest Review 2026' },
@@ -1947,12 +1947,12 @@ export const GUIDE_POST_CONTENT = {
         { type: 'heading', text: 'The Courses We Use' },
         {
           type: 'paragraph',
-          text: 'Most Play With A Pro days take place at <a href="/guides/son-gual-review">Son Gual</a>, my most-played course on the island and one of the best tests of course management available here. We also use <a href="/guides/alcanada-review">Alcanada</a> for groups who want the most scenic round, and other courses depending on the group level and what they want to work on.',
+          text: 'Most Play With A Pro days take place at <a href="/guides/son-gual-review">Son Gual</a>, my most-played course on the island, close to Palma, and one of the best tests of course management available here. We also use <a href="/guides/alcanada-review">Alcanada</a>, in the north-east at Alcúdia, for groups who want the most scenic round, and other courses depending on the group level and what they want to work on.',
         },
         { type: 'heading', text: 'One Thing to Note' },
         {
           type: 'paragraph',
-          text: 'I do not give hour-long lessons or range sessions, so the day is not the right fit if that is what you need. For a range session, my guide to the <a href="/guides/best-golf-practice-facilities-mallorca">practice facilities in Mallorca</a> compares the options.',
+          text: 'I do not run a golf academy or a golf school, and I do not give hour-long lessons or range sessions, so the day is not the right fit if that is what you need. For a range session, my guide to the <a href="/guides/best-golf-practice-facilities-mallorca">practice facilities in Mallorca</a> compares the options.',
         },
         { type: 'heading', text: 'Common Questions' },
         {
@@ -2096,6 +2096,174 @@ export const GUIDE_POST_CONTENT = {
           text: 'Planning a group day in Mallorca? Send me the dates and the numbers.',
           linkLabel: 'Enquire about a group day →',
           href: '/contact',
+          internal: true,
+        },
+      ],
+    },
+  },
+
+  'golf-lessons-cost-mallorca': {
+    en: {
+      metadata: {
+        title: 'Golf Lesson Prices in Mallorca',
+        description:
+          'What a golf lesson costs in Mallorca with a PGA Professional: from €795 solo, from €950 for a group. What the price covers and what it does not.',
+        imagePath: '/images/son-gual-blog/sg-swing.webp',
+      },
+      meta: {
+        badge: 'Coaching Guide',
+        badgeGold: true,
+        readTime: '3 min read',
+        updated: 'November 2026',
+        title: 'How Much Do Golf Lessons Cost in Mallorca?',
+        intro:
+          'A golf lesson with me costs from €795 for one player and from €950 in total for a group of up to three guests. Every lesson is a round of 18 holes, so the price covers a day on the course, not an hour.',
+        related: [
+          { slug: 'on-course-coaching-mallorca', title: 'Golf Lessons in Mallorca: 18 Holes With a PGA Professional' },
+          { slug: 'golf-cost-mallorca', title: 'How Much Does Golf Cost in Mallorca?' },
+          { slug: 'play-with-a-pro-explained', title: 'What "Play With A Pro" Actually Looks Like' },
+          { slug: 'best-golf-practice-facilities-mallorca', title: 'Best Golf Practice Facilities in Mallorca' },
+        ],
+      },
+      blocks: [
+        {
+          type: 'image',
+          src: '/images/son-gual-blog/sg-swing.webp',
+          alt: 'Andy Griffiths coaching on the golf course in Mallorca',
+          caption: 'On-course coaching at Son Gual. The range tells you one thing. The course tells you something different.',
+        },
+        {
+          type: 'paragraph',
+          text: 'A solo golf lesson in Mallorca with me is from €795. A group day, with up to three guests, is from €950 total. Green fees are separate and I confirm them before you book, so the full cost is clear before the day.',
+        },
+        { type: 'heading', text: 'What the Price Covers' },
+        {
+          type: 'paragraph',
+          text: 'I choose the course for your game, book the tee time and send a short questionnaire so I understand how you play. We play 18 holes together and I coach the shots as you face them. Afterwards I send video and written notes on what changed and what to work on next.',
+        },
+        { type: 'heading', text: 'What Is Not Included' },
+        {
+          type: 'paragraph',
+          text: 'Green fees are paid separately, and so is a buggy or club hire if you want one. I confirm the green fee for the course we choose before you book. For what a round costs on each course, read <a href="/guides/golf-cost-mallorca">how much golf costs in Mallorca</a>.',
+        },
+        { type: 'heading', text: 'Why It Is a Day and Not an Hour' },
+        {
+          type: 'paragraph',
+          text: 'I do not give hour-long lessons or range sessions. On the course the feedback comes with a real shot to play next, which is where players change most. If a range session is what you need, my guide to the <a href="/guides/best-golf-practice-facilities-mallorca">practice facilities in Mallorca</a> compares the options.',
+        },
+        { type: 'heading', text: 'Visitors, Residents and Groups' },
+        {
+          type: 'paragraph',
+          text: 'Visitors and residents book the same way: send your dates, group size and handicap range and I reply personally within 24 hours. Pairs and small groups work well, with up to three guests coached together in the same round.',
+        },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: 'How much does a golf lesson cost in Mallorca? With me it is from €795 for one player and from €950 in total for a group of up to three guests. Green fees are separate.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Is there a golf academy or golf school in Mallorca? I do not run an academy or a school. I teach on the course, in a round of 18 holes, and I do not give range sessions.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Are green fees included in the price? No. I confirm the green fee for the course we choose before you book.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Do you give one-hour golf lessons? No. Every lesson is a round of 18 holes on the course.',
+        },
+        {
+          type: 'paragraph',
+          text: 'How do I book a golf lesson? Send your dates, group size and handicap range through the contact page. I reply personally within 24 hours.',
+        },
+        {
+          type: 'cta',
+          text: 'Want the full picture of how a lesson works?',
+          linkLabel: 'How the lessons work →',
+          href: '/guides/on-course-coaching-mallorca',
+          internal: true,
+        },
+      ],
+    },
+  },
+
+  'golf-lessons-mallorca-mandarin': {
+    en: {
+      metadata: {
+        title: 'Golf Lessons in Mallorca in Mandarin',
+        description:
+          'Golf lessons in Mallorca taught in fluent Mandarin by a UK PGA Advanced Professional who coached in Shanghai for eleven years. 18 holes, from €795.',
+        imagePath: '/images/son-gual-blog/sg-swing.webp',
+      },
+      meta: {
+        badge: 'Coaching Guide',
+        badgeGold: true,
+        readTime: '3 min read',
+        updated: 'November 2026',
+        title: 'Golf Lessons in Mallorca in Mandarin',
+        intro:
+          'I coach in English and in fluent Mandarin. If you or your group would rather have a golf lesson in Mallorca in Mandarin, the format is the same: a round of 18 holes on the course, with me alongside you.',
+        related: [
+          { slug: 'on-course-coaching-mallorca', title: 'Golf Lessons in Mallorca: 18 Holes With a PGA Professional' },
+          { slug: 'golf-lessons-cost-mallorca', title: 'How Much Do Golf Lessons Cost in Mallorca?' },
+          { slug: 'play-with-a-pro-explained', title: 'What "Play With A Pro" Actually Looks Like' },
+          { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
+        ],
+      },
+      blocks: [
+        {
+          type: 'image',
+          src: '/images/son-gual-blog/sg-swing.webp',
+          alt: 'Andy Griffiths coaching on the golf course in Mallorca',
+          caption: 'On-course coaching at Son Gual. The range tells you one thing. The course tells you something different.',
+        },
+        {
+          type: 'paragraph',
+          text: 'I coach in fluent Mandarin as well as English, for Chinese-speaking visitors and for Chinese-speaking golfers who live on the island.',
+        },
+        { type: 'heading', text: 'Why I Coach in Mandarin' },
+        {
+          type: 'paragraph',
+          text: 'I spent eleven years in Shanghai, where I became the first Trackman Master in China and coached players from the national team. I moved to Mallorca in March 2025 and I still coach in Mandarin.',
+        },
+        { type: 'heading', text: 'How a Lesson in Mandarin Works' },
+        {
+          type: 'paragraph',
+          text: 'You send your dates, group size and handicap range through the <a href="/contact">contact page</a>. I reply personally within 24 hours, choose the course for your game and book the tee time. We play 18 holes together, in Mandarin or English, whichever you prefer, and afterwards I send video and written notes.',
+        },
+        { type: 'heading', text: 'What It Costs' },
+        {
+          type: 'paragraph',
+          text: 'A solo lesson day is from €795. A group day, with up to three guests, is from €950 total. Green fees are separate and I confirm them before you book. The full breakdown is in <a href="/guides/golf-lessons-cost-mallorca">what golf lessons cost in Mallorca</a>.',
+        },
+        { type: 'heading', text: 'A Chinese Version of the Lessons Page' },
+        {
+          type: 'paragraph',
+          text: 'The full lessons page is also available in Chinese, written for Chinese-speaking visitors and residents. You can read the <a href="/zh/guides/on-course-coaching-mallorca">Chinese version of the lessons page</a>.',
+        },
+        { type: 'heading', text: 'Common Questions' },
+        {
+          type: 'paragraph',
+          text: 'Can I have a golf lesson in Mandarin in Mallorca? Yes. I coach in fluent Mandarin as well as English.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Do you coach Chinese-speaking golfers who live in Mallorca? Yes. Residents book the same way as visitors, and I reply personally within 24 hours.',
+        },
+        {
+          type: 'paragraph',
+          text: 'Is the lesson on the range? No. Every lesson is a round of 18 holes on the course, because that is where players change most.',
+        },
+        {
+          type: 'paragraph',
+          text: 'How do I book a golf lesson in Mandarin? Send your dates, group size and handicap range through the contact page and say you would like to be coached in Mandarin.',
+        },
+        {
+          type: 'cta',
+          text: 'Want to see how an on-course lesson works in full?',
+          linkLabel: 'How the lessons work →',
+          href: '/guides/on-course-coaching-mallorca',
           internal: true,
         },
       ],
