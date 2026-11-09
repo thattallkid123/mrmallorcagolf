@@ -3481,6 +3481,12 @@ select.form-control { cursor: pointer; }
 @media (max-width: 640px) {
   .pricing-grid { grid-template-columns: 1fr; }
   .pwap-packages .pricing-grid { grid-template-columns: 1fr; }
+  /* Phone: rows of controls and hero chips are equal-width columns, not content-sized wrapping rows with a stranded last item. */
+  .sort-controls { display: grid; grid-template-columns: minmax(0, 1fr); flex: 1 1 100%; width: 100%; }
+  .sort-controls__grid, .guides-filter-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .sort-controls__grid > *, .guides-filter-tabs > * { width: 100%; justify-content: center; }
+  .page-hero__meta { display: grid; grid-template-columns: minmax(0, 1fr); }
+  .page-hero__meta > * { text-align: center; }
 }
 
 @media (prefers-reduced-motion: reduce) {
