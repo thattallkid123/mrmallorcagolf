@@ -8,7 +8,6 @@
   "src/app/(en)/hotel-recommender/HotelRecommenderClient.jsx": 13,
   "src/app/(en)/subscribe/SubscribeClient.jsx": 5,
   "src/app/(en)/tools/course-selector/CourseSelectorToolClient.jsx": 15,
-  "src/app/(en)/tools/golf-cost-calculator/GolfCostCalculatorClient.jsx": 2,
   "src/app/(en)/tools/green-fees/GreenFeesClient.jsx": 1,
   "src/app/(en)/tools/handicap-checker/HandicapCheckerClient.jsx": 4,
   "src/app/(en)/ui-preview/UiPreviewClient.jsx": 13,
