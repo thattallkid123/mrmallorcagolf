@@ -71,6 +71,7 @@ const CHECKS = [
   { name: 'check:discovery', script: 'sync-discovery.mjs', args: ['--check'] },
   { name: 'check:meta-length', script: 'check-meta-length.mjs' },
   { name: 'check:css-hygiene', script: 'check-css-hygiene.mjs' },
+  { name: 'check:text-colour-tokens', script: 'check-text-colour-tokens.mjs' },
   { name: 'check:guide-review-keywords', script: 'check-guide-review-keywords.js' },
   { name: 'check:guide-surfaces', script: 'check-guide-surfaces.mjs' },
   { name: 'check:course-facts-reviewed', script: 'check-course-facts-reviewed.mjs' },

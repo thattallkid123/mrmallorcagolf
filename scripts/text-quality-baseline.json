@@ -1,0 +1,8 @@
+{
+ "note": "Known text-quality cases, frozen. Fix, do not add. Regenerate with --update after a fix.",
+ "keys": [
+  "contrast|/signature-day|div.pwap-hero__inner > div.pwap-hero__content > p.eyebrow",
+  "contrast|/signature-day|div.pwap-hero__inner > div.pwap-hero__content > p.pwap-hero__price",
+  "measure|/guides/play-with-a-pro-explained|section.pwap-explained-section > div.pwap-explained-section__inner > p.pwap-explained-section__copy"
+ ]
+}

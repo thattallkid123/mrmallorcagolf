@@ -184,7 +184,7 @@ export default function HotelRecommenderClient({ lang = 'en', localData = null }
     <div ref={containerRef} className="planning-tool" data-tool-active={step > 1 || Boolean(results)}>
       <style jsx>{`
         .hr-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
-        .hr-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
+        .hr-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#D4B068; margin-bottom:16px; display:block; }
         .hr-h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
         .hr-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .hr-trust-wrap { background:#2D4A3E; padding:0 24px 24px; display:flex; justify-content:center; }

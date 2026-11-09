@@ -99,9 +99,6 @@ export default function HomePageInner({ locale = 'en' }) {
             style={{ objectFit: 'cover', objectPosition: 'center 50%' }}
           />
         </div>
-        <div className="hero__fx hero__fx--a" aria-hidden="true"></div>
-        <div className="hero__fx hero__fx--b" aria-hidden="true"></div>
-        <div className="hero__fx-grid" aria-hidden="true"></div>
         <div className="hero__bg"></div>
         <div className="hero__content">
           <p className="hero__eyebrow">{home.hero.eyebrow}</p>
@@ -153,7 +150,6 @@ export default function HomePageInner({ locale = 'en' }) {
       <section className="home-services reveal" aria-labelledby="home-services-title">
         <div className="home-services__inner">
           <header className="home-services__header">
-            <p className="eyebrow">{home.intro.eyebrow}</p>
             <h2 id="home-services-title" className="serif-display home-services__title">{home.intro.title}</h2>
             {home.intro.paragraphs.map((paragraph) => (
               <p className="home-services__intro" key={paragraph}>{paragraph}</p>
@@ -245,14 +241,15 @@ export default function HomePageInner({ locale = 'en' }) {
 
       <section className="packages">
         <div className="packages__header reveal">
-          <p className="eyebrow">{home.packages.eyebrow}</p>
           <h2 className="serif-display">{home.packages.title}</h2>
           <p>{home.packages.body}</p>
         </div>
         <div className="packages__grid packages__grid--paid">
           {home.packages.items.map((pkg, index) => (
             <div key={`${pkg.eyebrow}-${pkg.name}-${index}`} className={`tier${pkg.signature ? ' tier--signature' : pkg.featured ? ' tier--feature' : ''} reveal${index ? ` reveal-delay-${index}` : ''}`}>
-              <p className="tier__name-small">{pkg.eyebrow}</p>
+              {pkg.signature || index === 3
+                ? <p className="tier__name-small" aria-hidden="true">&nbsp;</p>
+                : <p className="tier__name-small">{pkg.eyebrow}</p>}
               <h3 className="tier__name">{pkg.name}</h3>
               {pkg.price && <p className="tier__price">{pkg.price}</p>}
               <div className="tier__rule"></div>
@@ -298,7 +295,6 @@ export default function HomePageInner({ locale = 'en' }) {
 
       <section className="faq home-faq">
         <div className="faq__left reveal">
-          <p className="eyebrow">{home.faq.eyebrow}</p>
           <h2 className="serif-display">{home.faq.title}</h2>
           <p>{home.faq.intro}</p>
         </div>
@@ -321,7 +317,6 @@ export default function HomePageInner({ locale = 'en' }) {
 
       <section className="cta-final">
         <div className="cta-final__left reveal">
-          <p className="eyebrow eyebrow--gold">{home.finalCta.eyebrow}</p>
           <h2 className="serif-display" style={{ color: '#fff' }}>
             {home.finalCta.title.split('. ').map((line, index, arr) => (
               <span key={index}>

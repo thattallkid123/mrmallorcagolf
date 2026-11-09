@@ -291,7 +291,7 @@ function renderBlock(block, index, locale, imageOrdinal, articleSlug) {
           <thead>
             <tr style={{ borderBottom: '2px solid var(--gold, #b8933a)' }}>
               {block.headers.map((h) => (
-                <th key={h} style={{ textAlign: 'left', padding: '0.45rem 0.75rem', fontWeight: 500, whiteSpace: 'nowrap', color: 'var(--gold, #b8933a)' }}>{h}</th>
+                <th key={h} style={{ textAlign: 'left', padding: '0.45rem 0.75rem', fontWeight: 500, whiteSpace: 'nowrap', color: 'var(--gold-readable, #876A1C)' }}>{h}</th>
               ))}
             </tr>
           </thead>

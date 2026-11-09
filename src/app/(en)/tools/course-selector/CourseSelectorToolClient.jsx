@@ -720,7 +720,7 @@ export default function CourseSelectorToolClient({ lang = 'en', heroHeadingLevel
     <div ref={containerRef} className="course-selector-tool planning-tool" data-tool-active={qIndex > 0 || phase === 'results'}>
       <style jsx>{`
         .cst-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-4)) 24px var(--space-4); text-align:center; }
-        .cst-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:8px; display:block; }
+        .cst-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#D4B068; margin-bottom:8px; display:block; }
         .cst-h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(1.8rem,3.5vw,2.5rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
         .cst-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:560px; margin:10px auto 0; }
         .course-selector-tool > .tool-trust-line { display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:center; gap:6px 18px; max-width:1000px; padding:var(--space-3) 18px; margin:0 auto; }

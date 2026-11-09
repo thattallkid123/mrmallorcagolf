@@ -34,16 +34,6 @@ export default function HomeToolsStrip({ locale = 'en' }) {
           padding: 0;
           text-align: left;
         }
-        .hts-eyebrow {
-          display: inline-block;
-          font-family: var(--font-sans);
-          font-size: 11px;
-          font-weight: 500;
-          letter-spacing: .18em;
-          text-transform: uppercase;
-          color: #B8973C;
-          margin-bottom: 10px;
-        }
         .hts-title {
           font-family: var(--font-serif);
           font-weight: 500;
@@ -133,7 +123,6 @@ export default function HomeToolsStrip({ locale = 'en' }) {
         }
       `}</style>
 
-      <span className="hts-eyebrow">Free planning tools</span>
       <h2 className="hts-title">Plan your Mallorca golf trip in ten minutes</h2>
 
       <div className="hts-grid">

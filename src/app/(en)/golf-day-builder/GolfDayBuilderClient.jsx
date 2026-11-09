@@ -262,7 +262,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
     <div ref={containerRef} className="planning-tool" data-tool-active={stepIdx > 0 || phase === 'results'}>
       <style jsx>{`
         .gdb-hero { background:#2D4A3E; color:#F7F4EF; padding:calc(var(--nav-h) + var(--space-7)) 24px 48px; text-align:center; }
-        .gdb-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#CBA968; margin-bottom:16px; display:block; }
+        .gdb-eyebrow { font-family:var(--font-sans); font-size:11px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#D4B068; margin-bottom:16px; display:block; }
         .gdb-h1 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-weight:500; font-size:clamp(2.1rem,5vw,3.2rem); line-height:1.1; color:#F7F4EF; max-width:600px; margin:0 auto; }
         .gdb-sub { font-family:var(--font-sans); font-weight:300; font-size:1rem; line-height:1.6; color:rgba(247,244,239,0.78); max-width:480px; margin:16px auto 0; }
         .gdb-wrap { max-width:800px; margin:0 auto; padding:0 22px 90px; }
@@ -276,10 +276,10 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         .gdb-progress { display:flex; gap:4px; justify-content:center; margin:34px auto 10px; max-width:300px; }
         .gdb-progress span { flex:1; height:2px; background:#E0D8CB; transition:background .3s; }
         .gdb-progress span.done { background:#B8973C; }
-        .gdb-step-label { text-align:center; font-weight:400; font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:#8A7F74; margin-bottom:8px; }
+        .gdb-step-label { text-align:center; font-weight:400; font-size:9px; letter-spacing:.14em; text-transform:uppercase; color:var(--taupe-text); margin-bottom:8px; }
         /* Question cards */
         .gdb-qcard h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(1.7rem,4vw,2.3rem); font-weight:500; line-height:1.12; color:#1A1916; text-align:center; margin:16px 0 4px; }
-        .gdb-qcard .sub { text-align:center; color:#8A7F74; font-size:.95rem; margin-bottom:26px; line-height:1.6; }
+        .gdb-qcard .sub { text-align:center; color:var(--taupe-text); font-size:.95rem; margin-bottom:26px; line-height:1.6; }
         .gdb-multi-note { text-align:center; font-weight:400; font-size:9px; color:#B8973C; margin-bottom:16px; letter-spacing:.14em; text-transform:uppercase; }
         .gdb-opts { display:grid; grid-template-columns:1fr; gap:10px; }
         @media(min-width:560px) {
@@ -290,20 +290,20 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         .gdb-opt:hover { border-color:#B8973C; transform:translateY(-1px); }
         .gdb-opt.selected { border-color:#B8973C; background:#F4EDD8; }
         .gdb-opt .t { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.18rem; font-weight:500; color:#1A1916; line-height:1.2; }
-        .gdb-opt .d { font-size:.78rem; font-weight:400; color:#8A7F74; margin-top:2px; line-height:1.5; display:block; }
+        .gdb-opt .d { font-size:.78rem; font-weight:400; color:var(--taupe-text); margin-top:2px; line-height:1.5; display:block; }
         .gdb-nav-row { display:flex; justify-content:space-between; margin-top:28px; gap:12px; }
         .gdb-btn-pine { background:#2D4A3E; color:#fff; border:none; padding:16px 34px; font-family:var(--font-sans); font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:background .25s, transform .25s; border-radius:2px; }
         .gdb-btn-pine:hover { background:#3D6455; }
         .gdb-btn-pine:disabled { opacity:.35; cursor:not-allowed; }
-        .gdb-btn-ghost { background:transparent; color:#8A7F74; border:1px solid #E0D8CB; padding:16px 34px; font-family:var(--font-sans); font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:border-color .25s, color .25s, transform .25s; border-radius:2px; }
+        .gdb-btn-ghost { background:transparent; color:var(--taupe-text); border:1px solid #E0D8CB; padding:16px 34px; font-family:var(--font-sans); font-weight:500; font-size:10px; letter-spacing:.18em; text-transform:uppercase; cursor:pointer; transition:border-color .25s, color .25s, transform .25s; border-radius:2px; }
         .gdb-btn-ghost:hover { border-color:#B8973C; color:#2C2A27; }
         /* Results */
         .gdb-result-head { text-align:center; padding-top:40px; margin-bottom:8px; }
         .gdb-result-head .eyebrow { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#B8973C; margin-bottom:12px; display:block; }
         .gdb-result-head h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:clamp(1.9rem,4.5vw,2.7rem); font-weight:500; color:#1A1916; line-height:1.1; }
-        .gdb-result-head p { color:#8A7F74; margin-top:10px; font-size:.95rem; }
+        .gdb-result-head p { color:var(--taupe-text); margin-top:10px; font-size:.95rem; }
         .gdb-tabs { display:flex; gap:2px; margin:28px 0 24px; border:1px solid #E0D8CB; background:#fff; }
-        .gdb-tab { flex:1; border:none; padding:14px 6px; cursor:pointer; font-family:var(--font-sans); font-weight:500; font-size:9px; letter-spacing:.12em; text-transform:uppercase; line-height:1.5; background:transparent; color:#8A7F74; transition:background .25s, color .25s; }
+        .gdb-tab { flex:1; border:none; padding:14px 6px; cursor:pointer; font-family:var(--font-sans); font-weight:500; font-size:9px; letter-spacing:.12em; text-transform:uppercase; line-height:1.5; background:transparent; color:var(--taupe-text); transition:background .25s, color .25s; }
         .gdb-tab.active { background:#2D4A3E; color:#fff; }
         .gdb-itin { display:none; }
         .gdb-itin.active { display:block; }
@@ -327,7 +327,7 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         .gdb-andy-card ul { list-style:none; }
         .gdb-andy-card li { font-size:.88rem; font-weight:300; padding:6px 0 6px 28px; position:relative; color:#2C2A27; }
         .gdb-andy-card li::before { content:'·'; position:absolute; left:6px; font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:1.4rem; line-height:1; top:6px; color:#B8973C; }
-        .gdb-estimate-note { font-size:.74rem; font-weight:300; font-style:italic; color:#8A7F74; text-align:center; margin-top:22px; line-height:1.7; }
+        .gdb-estimate-note { font-size:.74rem; font-weight:300; font-style:italic; color:var(--taupe-text); text-align:center; margin-top:22px; line-height:1.7; }
         /* CTA block */
         .gdb-cta-block { margin-top:38px; background:#1A1916; padding:44px 28px; text-align:center; color:#fff; }
         .gdb-cta-block .eyebrow { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#D4B068; margin-bottom:14px; display:block; }
@@ -342,10 +342,10 @@ export default function GolfDayBuilderClient({ lang = 'en', localData = null }) 
         .gdb-cta-secondary { display:flex; gap:8px; margin-top:6px; }
         .gdb-cta-secondary .gdb-btn-secondary { flex:1; background:transparent; color:rgba(255,255,255,0.85); border:1px solid rgba(255,255,255,.22); padding:13px 6px; font-family:var(--font-sans); font-size:9px; font-weight:500; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; border-radius:2px; transition:border-color .25s, color .25s, transform .25s; }
         .gdb-cta-secondary .gdb-btn-secondary:hover { border-color:#D4B068; color:#D4B068; }
-        .gdb-restart { display:block; margin:18px auto 0; background:none; border:none; cursor:pointer; font-family:var(--font-sans); font-weight:400; font-size:10px; letter-spacing:.14em; text-transform:uppercase; padding:14px 12px 2px; color:#8A7F74; border-bottom:1px solid #C4BAA9; }
+        .gdb-restart { display:block; margin:18px auto 0; background:none; border:none; cursor:pointer; font-family:var(--font-sans); font-weight:400; font-size:10px; letter-spacing:.14em; text-transform:uppercase; padding:14px 12px 2px; color:var(--taupe-text); border-bottom:1px solid #C4BAA9; }
         .gdb-restart:hover { color:#2C2A27; border-color:#B8973C; }
         .gdb-more-tools { background:#f4f1eb; border:1px solid #e0d8cb; border-radius:14px; padding:18px 20px; margin-top:20px; text-align:center; }
-        .gdb-more-tools-label { font-family:var(--font-sans); font-size:10px; text-transform:uppercase; letter-spacing:.18em; color:#8A7F74; margin-bottom:12px; font-weight:500; }
+        .gdb-more-tools-label { font-family:var(--font-sans); font-size:10px; text-transform:uppercase; letter-spacing:.18em; color:var(--taupe-text); margin-bottom:12px; font-weight:500; }
         .gdb-tool-links { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
         .gdb-tool-link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 18px; font-size:10px; font-family:var(--font-sans); font-weight:500; letter-spacing:.14em; text-transform:uppercase; border:1px solid rgba(45,74,62,.18); background:#fff; color:#2d4a3e; text-decoration:none; border-radius:2px; transition:border-color .25s, color .25s, transform .25s; }
         .gdb-tool-link:hover { border-color:#B8973C; color:#1A1916; }

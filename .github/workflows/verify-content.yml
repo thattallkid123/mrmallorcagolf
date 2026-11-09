@@ -112,3 +112,18 @@ jobs:
           node scripts/check-layout-symmetry.mjs --base http://127.0.0.1:3002 && CHECK_EXIT=0 || CHECK_EXIT=$?
           kill $SERVER_PID 2>/dev/null || true
           exit $CHECK_EXIT
+
+      # Ratchet against the reading-quality fixes of 9 Nov 2026 (Impeccable scan): fails on a NEW
+      # low-contrast text, lone last word or over-long paragraph. Known cases are frozen in
+      # scripts/text-quality-baseline.json; fix them rather than adding to it.
+      - name: Check text quality
+        run: |
+          npx next start -p 3003 &
+          SERVER_PID=$!
+          for i in $(seq 1 30); do
+            curl -s -o /dev/null http://127.0.0.1:3003 && break
+            sleep 2
+          done
+          node scripts/check-text-quality.mjs --base http://127.0.0.1:3003 && CHECK_EXIT=0 || CHECK_EXIT=$?
+          kill $SERVER_PID 2>/dev/null || true
+          exit $CHECK_EXIT

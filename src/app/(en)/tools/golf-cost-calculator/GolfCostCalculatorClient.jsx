@@ -259,7 +259,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
           <button type="button" style={circleBtn} aria-label={`− ${label}`} disabled={state[stateKey] <= min} onClick={() => set(stateKey, Math.max(min, state[stateKey] - 1))}>−</button>
           <span style={{ fontFamily:'var(--font-sans)', fontSize:26, color:'#2D4A3E', minWidth:48, textAlign:'center', fontWeight:400 }}>{state[stateKey]}</span>
           <button type="button" style={circleBtn} aria-label={`+ ${label}`} disabled={state[stateKey] >= max} onClick={() => set(stateKey, Math.min(max, state[stateKey] + 1))}>+</button>
-          <span style={{ fontFamily:'var(--font-sans)', fontSize:12, color:'#8A7F74', fontWeight:300 }}>{unit}</span>
+          <span style={{ fontFamily:'var(--font-sans)', fontSize:12, color:'var(--taupe-text)', fontWeight:300 }}>{unit}</span>
         </div>
       </div>
     )
@@ -281,7 +281,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                 onClick={() => set(stateKey, o.val)}
               >
                 {o.label}
-                {o.small && <span style={{ display:'block', fontSize:11, color: sel ? '#D4B068' : '#8A7F74', marginTop:3, fontWeight:300 }}>{o.small}</span>}
+                {o.small && <span style={{ display:'block', fontSize:11, color: sel ? '#D4B068' : 'var(--taupe-text)', marginTop:3, fontWeight:300 }}>{o.small}</span>}
               </button>
             )
           })}
@@ -307,10 +307,10 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-progress { display:flex; gap:6px; margin:22px 0 18px; }
         .gcc-progress span { flex:1; height:4px; border-radius:2px; background:#ddd4c0; transition:background .3s; }
         .gcc-progress span.on { background:#B8973C; }
-        .gcc-step-label { font-family:var(--font-sans); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:#8A7F74; margin-bottom:6px; }
+        .gcc-step-label { font-family:var(--font-sans); font-size:11px; letter-spacing:.16em; text-transform:uppercase; color:var(--taupe-text); margin-bottom:6px; }
         .gcc-card { background:#fff; border:1px solid #e6ddc9; border-radius:14px; padding:22px 18px; box-shadow:0 2px 10px rgba(21,57,43,.06); }
         .gcc-card h2 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:26px; color:#2D4A3E; margin-bottom:6px; font-weight:500; line-height:1.15; }
-        .gcc-card .sub { font-size:13px; color:#8A7F74; margin-bottom:20px; line-height:1.6; font-weight:300; }
+        .gcc-card .sub { font-size:13px; color:var(--taupe-text); margin-bottom:20px; line-height:1.6; font-weight:300; }
         .gcc-field { margin-bottom:18px; }
         .gcc-flabel { display:block; font-family:var(--font-sans); font-size:11px; letter-spacing:.08em; text-transform:uppercase; color:#2D4A3E; margin-bottom:12px; font-weight:600; }
         .gcc-opts { display:grid; grid-template-columns:1fr 1fr; gap:8px; }
@@ -322,13 +322,13 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-stepper button { width:44px; height:44px; border-radius:50%; border:1.5px solid #B8973C; background:#fff; color:#2D4A3E; font-size:22px; cursor:pointer; line-height:1; font-family:inherit; }
         .gcc-stepper button:active { background:#EDE9E1; }
         .gcc-val { font-family:var(--font-sans); font-size:26px; color:#2D4A3E; min-width:48px; text-align:center; font-weight:400; }
-        .gcc-unit { font-family:var(--font-sans); font-size:12px; color:#8A7F74; font-weight:300; }
+        .gcc-unit { font-family:var(--font-sans); font-size:12px; color:var(--taupe-text); font-weight:300; }
         .gcc-nav { display:flex; gap:10px; margin-top:22px; }
         .gcc-btn { border:none; border-radius:2px; padding:16px 24px; font-size:11px; cursor:pointer; font-family:var(--font-sans); font-weight:500; letter-spacing:.16em; line-height:1.25; text-transform:uppercase; transition:opacity .15s, transform .15s; }
         .gcc-btn:hover { transform:translateY(-1px); }
         .gcc-btn.primary { background:#2D4A3E; color:#F7F4EF; flex:1; }
         .gcc-btn.primary:hover { background:#3D6455; }
-        .gcc-btn.ghost { background:transparent; color:#8A7F74; border:1.5px solid #d9cfb8; }
+        .gcc-btn.ghost { background:transparent; color:var(--taupe-text); border:1.5px solid #d9cfb8; }
         .gcc-btn.gold { background:#B8973C; color:#1A1916; flex:1; }
         .gcc-btn.gold:hover { opacity:.9; }
         /* Results */
@@ -341,7 +341,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-approx { font-size:12px; color:#D4B068; margin-top:10px; font-style:italic; }
         .gcc-grid2 { display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-bottom:14px; }
         .gcc-mini { background:#fff; border:1px solid #e6ddc9; border-radius:14px; padding:16px; text-align:center; }
-        .gcc-mini .lab { font-family:var(--font-sans); font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:#8A7F74; font-weight:500; }
+        .gcc-mini .lab { font-family:var(--font-sans); font-size:9px; letter-spacing:.12em; text-transform:uppercase; color:var(--taupe-text); font-weight:500; }
         .gcc-mini .num { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:20px; color:#2D4A3E; font-weight:500; margin-top:6px; line-height:1.1; }
         .gcc-rcard { background:#fff; border:1px solid #e6ddc9; border-radius:14px; padding:20px 18px; margin-bottom:14px; }
         .gcc-rcard h3 { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:20px; color:#2D4A3E; margin-bottom:12px; display:flex; align-items:center; gap:8px; font-weight:500; line-height:1.2; }
@@ -350,7 +350,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-rcard li { padding:8px 0; border-bottom:1px solid #f1ead9; font-size:13px; display:flex; justify-content:space-between; gap:10px; font-weight:300; color:#2C2A27; }
         .gcc-rcard li:last-child { border-bottom:none; }
         .gcc-rcard li .amt { color:#2D4A3E; font-weight:400; white-space:nowrap; font-family:var(--font-sans); }
-        .gcc-rcard p { font-family:var(--font-sans); font-size:13px; font-weight:300; line-height:1.6; color:#8A7F74; }
+        .gcc-rcard p { font-family:var(--font-sans); font-size:13px; font-weight:300; line-height:1.6; color:var(--taupe-text); }
         .gcc-tag { display:inline-flex; align-items:center; min-height:34px; background:#F7F4EF; border:1px solid #D4B068; color:#2D4A3E; border-radius:999px; padding:6px 14px; font-size:11px; font-family:var(--font-sans); font-weight:500; letter-spacing:.12em; text-transform:uppercase; margin:4px 6px 4px 0; }
         .gcc-bar { height:10px; border-radius:5px; background:#EDE9E1; overflow:hidden; margin:4px 0 10px; }
         .gcc-bar i { display:block; height:100%; background:#B8973C; border-radius:5px; }
@@ -369,7 +369,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-email-capture { display:flex; flex-direction:column; gap:8px; margin-bottom:6px; align-items:center; }
         .gcc-email-capture input { width:100%; border:none; border-radius:10px; padding:14px 16px; font-size:15px; font-family:inherit; text-align:center; }
         .gcc-email-capture button { width:100%; }
-        .gcc-disclaimer { font-family:var(--font-sans); font-size:11px; color:#8A7F74; text-align:center; margin-top:20px; font-weight:300; line-height:1.5; }
+        .gcc-disclaimer { font-family:var(--font-sans); font-size:11px; color:var(--taupe-text); text-align:center; margin-top:20px; font-weight:300; line-height:1.5; }
         .gcc-tools-panel { background:#f4f1eb; border:1px solid #e0d8cb; border-radius:14px; padding:18px 20px; margin:20px 0; text-align:center; }
         .gcc-tools-panel__label { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#8a7f74; margin-bottom:12px; }
         .gcc-tools-panel__links { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
@@ -871,7 +871,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
                       {quoteSubmitting ? t.quoteForm.sending : t.quoteForm.button}
                     </button>
 
-                    <p style={{ fontSize:12, color:'#8a7f74', textAlign:'center', marginTop:12, fontStyle:'italic' }}>{t.quoteForm.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
+                    <p style={{ fontSize:12, color:'var(--taupe-text)', textAlign:'center', marginTop:12, fontStyle:'italic' }}>{t.quoteForm.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
                   </form>
                 </>
               ) : (

@@ -2,6 +2,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import ToolPhoto from './ToolPhoto'
 import { toolDirectoryPhoto } from '../lib/hotel-images'
+import { bindTail } from '../lib/bind-tail'
 import PageLayout from './PageLayout'
 import ReviewBadge from './ReviewBadge'
 import PdfGuidePrompt, { PDF_GUIDE_ORDER } from './PdfGuidePrompt'
@@ -107,7 +108,7 @@ export default function ToolsIndexView({ locale = 'en', heroImage = null }) {
               <ToolPhoto src={toolDirectoryPhoto(tool.href)} alt="" className="tool-photo--directory" sizes="128px" />
               <span className="tool-card__eyebrow">{tool.eyebrow}</span>
               <h2 className="tool-card__title">{tool.title}</h2>
-              <p className="tool-card__desc">{tool.desc}</p>
+              <p className="tool-card__desc">{bindTail(tool.desc)}</p>
               <span className="tool-card__footer">
                 <span className="tool-card__cta">{tool.cta}</span>
                 <span className="tool-card__time">
@@ -134,7 +135,7 @@ export default function ToolsIndexView({ locale = 'en', heroImage = null }) {
       <section className="tools-trust">
         <div className="tools-trust__panel">
           <span className="gold-rule tools-trust__rule" aria-hidden="true" />
-          <p className="eyebrow tools-trust__label">{content.trust.label}</p>
+          <p className="eyebrow tools-trust__label">{bindTail(content.trust.label)}</p>
           <p className="serif-italic tools-trust__text">{content.trust.text}</p>
           <div className="tools-trust__badge">
             <ReviewBadge variant="text" theme="light" locale={locale} />
