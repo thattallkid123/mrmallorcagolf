@@ -31,6 +31,7 @@ const GUIDE_DATES = {
   'southwest-mallorca-golf-courses-compared': '2026-10-09',
   'best-mallorca-golf-courses-higher-handicappers': '2026-10-09',
   'best-golf-practice-facilities-mallorca': '2026-10-09',
+  'bendinat-review': '2026-11-10',
 }
 
 function escapeXml(str) {

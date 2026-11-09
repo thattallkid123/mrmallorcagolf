@@ -40,6 +40,7 @@ const LAST_MODIFIED_BY_PATH = {
   '/guides/southwest-mallorca-golf-courses-compared': '2026-10-09',
   '/guides/best-mallorca-golf-courses-higher-handicappers': '2026-10-09',
   '/guides/best-golf-practice-facilities-mallorca': '2026-10-09',
+  '/guides/bendinat-review': '2026-11-10',
   '/play-with-a-pro': '2026-08-26',
   '/signature-day': '2026-09-26',
   '/about': '2026-04-01',

@@ -30,6 +30,7 @@ const INDEXNOW_GUIDES = [
   '/guides/southwest-mallorca-golf-courses-compared',
   '/guides/best-mallorca-golf-courses-higher-handicappers',
   '/guides/best-golf-practice-facilities-mallorca',
+  '/guides/bendinat-review',
 ]
 
 const MAX_URLS_PER_REQUEST = 50

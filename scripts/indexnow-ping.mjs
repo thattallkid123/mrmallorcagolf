@@ -58,6 +58,7 @@ const INDEXNOW_GUIDES = [
   'https://www.mrmallorcagolf.com/guides/southwest-mallorca-golf-courses-compared',
   'https://www.mrmallorcagolf.com/guides/best-mallorca-golf-courses-higher-handicappers',
   'https://www.mrmallorcagolf.com/guides/best-golf-practice-facilities-mallorca',
+  'https://www.mrmallorcagolf.com/guides/bendinat-review',
 ]
 
 // Get guide slugs that changed since last push

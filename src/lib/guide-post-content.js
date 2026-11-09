@@ -1869,6 +1869,276 @@ export const GUIDE_POST_CONTENT = {
   },
 
 
+  'bendinat-review': {
+    en: {
+      "metadata": {
+        "title": "Bendinat - Honest Review 2026",
+        "description": "Bendinat green fee €67-€123, par 69, 15 minutes from Palma. A narrow, boxed-in front nine and a much better back nine.",
+        "imagePath": "/images/bendinat-blog/bendinat-6.webp"
+      },
+      "meta": {
+        "badge": "Course Review",
+        "badgeGold": true,
+        "readTime": "6 min read",
+        "updated": "November 2026",
+        "title": "Real Golf de Bendinat, Mallorca: A PGA Professional's Honest Review (2026)",
+        "intro": "A Martin Hawtree course 7 km west of Palma, par 69. The front nine is narrow and boxed in by buildings. The back nine, from the 11th, opens out to mountain views and the holes I would go back for.",
+        "related": [
+          {
+            "slug": "son-vida-review",
+            "title": "Son Vida Golf: Honest Review 2026"
+          },
+          {
+            "slug": "golf-andratx-review",
+            "title": "Golf de Andratx: Honest Review 2026"
+          },
+          {
+            "slug": "son-quint-review",
+            "title": "Son Quint Golf: Honest Review 2026"
+          },
+          {
+            "slug": "best-golf-courses-mallorca",
+            "title": "Best Golf Courses in Mallorca 2026"
+          }
+        ]
+      },
+      "blocks": [
+        {
+          "type": "image",
+          "src": "/images/bendinat-blog/bendinat-1.webp",
+          "alt": "Terracotta entrance sign reading Real Golf de Bendinat with the club crest, behind a hedge of flowering shrubs",
+          "caption": "The entrance to Real Golf de Bendinat.",
+          "priority": true,
+          "presentation": "natural",
+          "naturalWidth": 1600,
+          "naturalHeight": 1200
+        },
+        {
+          "type": "paragraph",
+          "text": "We teed off at 12:50 on a Monday in November and the course was busier than I expected. Four hours and ten minutes later I had birdied the 18th and wanted to come back, which was not how I felt after nine holes. Bendinat is two different golf courses, and I liked the second one far more."
+        },
+        {
+          "type": "heading",
+          "text": "Arrival And Clubhouse"
+        },
+        {
+          "type": "paragraph",
+          "text": "The club sits about 7 km west of Palma, in a wooded valley between the mountains and the sea. Martin Hawtree designed it: nine holes opened in 1986 and the full 18 followed in 1995. The clubhouse was renovated earlier this year and the money shows. It is modern, with the pro shop and offices under the same roof, and check-in was easy."
+        },
+        {
+          "type": "paragraph",
+          "text": "There is a small putting green and a chipping green. I did not visit the driving range. After the round we had a drink on the seating area overlooking the course, a good spot to sit."
+        },
+        {
+          "type": "image",
+          "src": "/images/bendinat-blog/bendinat-2.webp",
+          "alt": "Clubhouse with a tiled roof and flagpoles at sunset, flowering shrubs in front and a castle on the wooded skyline behind",
+          "caption": "The clubhouse at sunset, with Bendinat Castle on the skyline.",
+          "presentation": "natural",
+          "naturalWidth": 1200,
+          "naturalHeight": 1600
+        },
+        {
+          "type": "heading",
+          "text": "The Front Nine"
+        },
+        {
+          "type": "paragraph",
+          "text": "The first six holes are the narrowest. The 1st tee shot is half blind: you can see enough to start, but not where the hole turns. The 5th is a long par 4 with a very narrow landing area, especially from the back tee, and the 6th has trees hanging over the corridor. On both, an iron off the tee is the safe play, and it leaves a second shot longer than the one you just hit. Most tee shots go through chutes between trees, so anything but a straight ball is punished. That makes the course play longer than the card says, and it is hard going if you draw or fade the ball a lot."
+        },
+        {
+          "type": "paragraph",
+          "text": "The 4th now plays as a par 3. I imagine that is because of the hotel down the right, where driver from the old par 4 tee would have been dangerous. The 9th was my pick of the nine: a short par 4 where you can hit over the trees and cut off a lot of distance."
+        },
+        {
+          "type": "paragraph",
+          "text": "Apartment blocks and hotels frame many holes, so the front nine feels boxed in. It is not dull, but it has less space and less to look at than the back. Some of the early greens are small, and you are hitting long irons into them."
+        },
+        {
+          "type": "heading",
+          "text": "The Climb To The 10th"
+        },
+        {
+          "type": "paragraph",
+          "text": "The walk to the 10th tee is a long way uphill. The hole is a par 4 that does not look long on the card, but the climb and a narrow landing area make it play much harder. I hit an iron off the tee for safety and still had around 200 yards left. It was sunny and not too warm, and I was sweating by the top. After another walk under the motorway you reach the 11th, and the course changes."
+        },
+        {
+          "type": "heading",
+          "text": "The Back Nine"
+        },
+        {
+          "type": "paragraph",
+          "text": "The last eight holes are the reason to play here. There is far more space around them, and this is where I could start using driver again. The 11th was my favourite hole on the course. It is a slight dogleg left with a narrow landing area, played from an elevated tee with the mountains in front of you. I think it would feel more intimidating the second time, once you know the line."
+        },
+        {
+          "type": "image",
+          "src": "/images/bendinat-blog/bendinat-3.webp",
+          "alt": "View from the elevated 11th tee down a fairway with two bunkers and a wooded mountain behind at Real Golf de Bendinat",
+          "caption": "The 11th, from the elevated tee, with the mountains behind.",
+          "presentation": "natural",
+          "naturalWidth": 1200,
+          "naturalHeight": 1600
+        },
+        {
+          "type": "paragraph",
+          "text": "The 12th is a short par 3 played downhill, with a view towards the water. It is another good-looking hole."
+        },
+        {
+          "type": "image",
+          "src": "/images/bendinat-blog/bendinat-4.webp",
+          "alt": "Downhill par 3 at Bendinat seen from the tee, with a green, a bunker, a pond on the left and pine woods behind",
+          "caption": "The par 3 12th from the tee, with water below on the left.",
+          "presentation": "natural",
+          "naturalWidth": 1200,
+          "naturalHeight": 1600
+        },
+        {
+          "type": "paragraph",
+          "text": "The 14th is a par 5. From the 13th green a courtesy buggy takes you up to the 14th tee, which helps given the terrain. A stone wall runs beside the green. I reached it in two and just missed the eagle putt."
+        },
+        {
+          "type": "image",
+          "src": "/images/bendinat-blog/bendinat-5.webp",
+          "alt": "White courtesy buggy sign asking players to use the buggy to reach the men's 14th tee, in front of a dry stone wall",
+          "caption": "The courtesy buggy sign between the 13th green and the men's 14th tee.",
+          "presentation": "natural",
+          "naturalWidth": 1200,
+          "naturalHeight": 1600
+        },
+        {
+          "type": "image",
+          "src": "/images/bendinat-blog/bendinat-6.webp",
+          "alt": "Green with a white flag at Real Golf de Bendinat, with a stone wall and arch on the right and pine trees behind",
+          "caption": "The stone wall and arch beside the 14th green.",
+          "presentation": "natural",
+          "naturalWidth": 1600,
+          "naturalHeight": 1200
+        },
+        {
+          "type": "paragraph",
+          "text": "The 16th is a short par 4 that plays even shorter off an elevated tee, with the green set among the trees. The 18th is a par 5, and I finished with a birdie."
+        },
+        {
+          "type": "image",
+          "src": "/images/bendinat-blog/bendinat-7.webp",
+          "alt": "View from the high 15th tee over a fairway and bunkers towards houses on the far side and the sea on the horizon",
+          "caption": "The view from the 15th tee, looking towards the sea.",
+          "presentation": "natural",
+          "naturalWidth": 1200,
+          "naturalHeight": 1600
+        },
+        {
+          "type": "paragraph",
+          "text": "From the high tees you can see the mountains, the water and Bendinat Castle. In places the back nine runs close to the road, but I could not hear the cars, and you do not see houses the way you do on the front."
+        },
+        {
+          "type": "heading",
+          "text": "Conditioning And Service"
+        },
+        {
+          "type": "paragraph",
+          "text": "The course was in good condition, with room to improve. The ground was wet underfoot early on, which surprised me because there had not been much rain, and some tee shots stopped almost where they landed. That helped us. In summer, with firmer ground, I would expect the sloping landing areas and roll-offs to be much harder."
+        },
+        {
+          "type": "paragraph",
+          "text": "The greens were not fast, but they rolled true. Small ones on the front nine, medium ones elsewhere, and quite a few flags at the back. There were no big breaks. Some tee boxes were being restored, with sand on the surface, and the back nine looked and felt better than the front. Greenkeepers were out all afternoon, cutting round the bunker edges by hand. I did not hit into a bunker, so I cannot speak for the sand, but they looked in good order."
+        },
+        {
+          "type": "paragraph",
+          "text": "The staff were friendly from check-in to the end of the day, and after the round they asked how we had found the course. Our main feedback was the signage. We took a few wrong turns off greens because it was not clear where the next tee was, and when we found a sign it was often too late. Walkers feel this most. The staff took it well."
+        },
+        {
+          "type": "paragraph",
+          "text": "Round time was 4 hours 10 minutes. There were a few small holdups later on and we played through a few groups."
+        },
+        {
+          "type": "heading",
+          "text": "Practical Information"
+        },
+        {
+          "type": "facts",
+          "items": [
+            [
+              "€105",
+              "What my playing partner paid on the day"
+            ],
+            [
+              "7.5/10",
+              "My rating"
+            ],
+            [
+              "Par 69",
+              "18 holes, Martin Hawtree design"
+            ],
+            [
+              "Buggy advised",
+              "I walked all 18"
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Green fees run from €67 in low season to €123 at peak. My playing partner paid €105 on the day, with no buggy included. The handicap limit is 36 with a certificate required, and there is no separate daily federation licence charge. Bendinat is about 15 minutes from Palma. Walking is allowed. Buggies cost €35 to €43 for 18 holes depending on the season, and manual trolleys are available. Hire clubs cost €30 to €40, and there are only a few sets, so reserve them by email. I did not see the hire sets on the day. The pro shop has a water refill, and there is no halfway house or drinks cart, so bring a bottle."
+        },
+        {
+          "type": "paragraph",
+          "text": "I walked all 18, as I do everywhere. The front nine has hills but was fine. The back nine is harder, especially the climb at the 10th, and I was tired at the end. I would not recommend walking to most golfers."
+        },
+        {
+          "type": "paragraph",
+          "text": "The negatives from the day: the front nine was wet and squelchy underfoot, some tee boxes were mid-restoration, the signs to the next tee come too late, and the greens were slower than I like. The greenkeepers were already working on the course."
+        },
+        {
+          "type": "heading",
+          "text": "Common Questions"
+        },
+        {
+          "type": "paragraph",
+          "text": "The handicap limit is 36, with a certificate required at booking. Walking is allowed, but the course is very hilly, so take a buggy unless you are fit and used to hills. It suits golfers who keep the ball in play. If you shape the ball a lot, the front nine will frustrate you. First-timers are surprised by how different the two nines feel. Local tip: take an iron off the tee on the 5th, 6th and 10th and plan for a long second shot."
+        },
+        {
+          "type": "heading",
+          "text": "Verdict"
+        },
+        {
+          "type": "paragraph",
+          "text": "7.5/10. Bendinat is short on the card and hard on the course. The front nine is narrow and boxed in by buildings. The back nine, from the 11th, has the elevated tees, the mountain views and the holes I would go back for. It suits golfers who hit fairways and want a good back nine close to Palma. It is a weaker choice if you want an easy walk. My playing partner was happy with €105 for the round."
+        },
+        {
+          "type": "notes",
+          "title": "Four things I would know before booking Bendinat",
+          "items": [
+            [
+              "Take a buggy",
+              "Walking is allowed, but the climb to the 10th and the hills on the back nine tire most people. Buggies are €35 to €43."
+            ],
+            [
+              "Iron on the narrow holes",
+              "The 5th, 6th and 10th have narrow landing areas. An iron is the safe play, and it leaves a long second shot."
+            ],
+            [
+              "Check the next tee",
+              "The signs between holes are sparse, and they are the biggest issue if you walk. Know where the next tee is before you leave the green."
+            ],
+            [
+              "Winter against summer",
+              "We played on soft ground in November. In summer the landing areas and roll-offs will be firmer, and the course will be harder."
+            ]
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "I enjoyed Bendinat and want to go back, this time knowing the line off the 11th tee. It pairs well with <a href=\"/guides/golf-andratx-review\">Golf de Andratx</a> if you are planning a day in the southwest, and <a href=\"/guides/son-vida-review\">Son Vida</a> is close by. If you are building out the wider trip, the <a href=\"/plan-your-trip\">trip planning guide</a> covers how to sequence the courses."
+        },
+        {
+          "type": "cta",
+          "text": "Thinking about Bendinat? I can tell you whether it fits your game and which tee time to book.",
+          "linkLabel": "Get in touch →",
+          "href": "/contact"
+        }
+      ]
+    },
+  },
   'on-course-coaching-mallorca': {
     en: {
       metadata: {
