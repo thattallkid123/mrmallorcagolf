@@ -87,7 +87,7 @@ function FunnelCtaBlock({ locale, courseName }) {
 const COURSE_REVIEW_DETAILS = {
   'bendinat-review': {
     name: 'Real Golf de Bendinat',
-    ratingValue: 3.75, // Andy's 7.5/10 on the 1-5 scale
+    ratingValue: 4, // Andy's 7.5/10, rounded to 4 stars like Golf de Andratx
     addressLocality: 'Bendinat',
   },
   'son-vida-review': {

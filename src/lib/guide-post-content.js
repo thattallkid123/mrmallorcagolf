@@ -1874,7 +1874,7 @@ export const GUIDE_POST_CONTENT = {
       "metadata": {
         "title": "Bendinat - Honest Review 2026",
         "description": "Bendinat green fee €67-€123, par 69, 15 minutes from Palma. A narrow, boxed-in front nine and a much better back nine.",
-        "imagePath": "/images/bendinat-blog/bendinat-8.webp"
+        "imagePath": "/images/bendinat-blog/bendinat-9.webp"
       },
       "meta": {
         "badge": "Course Review",
@@ -1935,6 +1935,15 @@ export const GUIDE_POST_CONTENT = {
           "naturalHeight": 1600
         },
         {
+          "type": "image",
+          "src": "/images/bendinat-blog/bendinat-3.webp",
+          "alt": "Round club crest with a crown above pine trees and the words Real Golf de Bendinat, on the wall beside the glass clubhouse doors",
+          "caption": "The club crest beside the clubhouse entrance.",
+          "presentation": "natural",
+          "naturalWidth": 1200,
+          "naturalHeight": 1600
+        },
+        {
           "type": "heading",
           "text": "The Front Nine"
         },
@@ -1944,7 +1953,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "image",
-          "src": "/images/bendinat-blog/bendinat-3.webp",
+          "src": "/images/bendinat-blog/bendinat-4.webp",
           "alt": "Tee shot view down the narrow 5th at Real Golf de Bendinat, a ball on the tee and a corridor of pine trees either side",
           "caption": "The 5th from the tee, a corridor between the trees.",
           "presentation": "natural",
@@ -1965,7 +1974,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "image",
-          "src": "/images/bendinat-blog/bendinat-4.webp",
+          "src": "/images/bendinat-blog/bendinat-5.webp",
           "alt": "View from the 10th tee at Real Golf de Bendinat over a sloping fairway with a bunker, a cart path and wooded hills behind",
           "caption": "The 10th from the tee.",
           "presentation": "natural",
@@ -1982,7 +1991,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "image",
-          "src": "/images/bendinat-blog/bendinat-5.webp",
+          "src": "/images/bendinat-blog/bendinat-6.webp",
           "alt": "Golfer in a red cap and shirt finishing a shot from the 11th tee at Bendinat, with a wooded mountain behind the fairway",
           "caption": "Hitting from the 11th tee, with the mountains ahead.",
           "presentation": "natural",
@@ -1995,7 +2004,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "image",
-          "src": "/images/bendinat-blog/bendinat-6.webp",
+          "src": "/images/bendinat-blog/bendinat-7.webp",
           "alt": "Downhill par 3 at Bendinat seen from the tee, with a green, a bunker, a pond on the left and pine woods behind",
           "caption": "The par 3 12th from the tee, with water below on the left.",
           "presentation": "natural",
@@ -2008,7 +2017,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "image",
-          "src": "/images/bendinat-blog/bendinat-7.webp",
+          "src": "/images/bendinat-blog/bendinat-8.webp",
           "alt": "White courtesy buggy sign asking players to use the buggy to reach the men's 14th tee, in front of a dry stone wall",
           "caption": "The courtesy buggy sign between the 13th green and the men's 14th tee.",
           "presentation": "natural",
@@ -2017,7 +2026,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "image",
-          "src": "/images/bendinat-blog/bendinat-8.webp",
+          "src": "/images/bendinat-blog/bendinat-9.webp",
           "alt": "Green with a white flag at Bendinat, a stone arch on the right and pine trees behind",
           "caption": "The wall and arch beside the 14th green.",
           "presentation": "natural",
@@ -2030,7 +2039,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "image",
-          "src": "/images/bendinat-blog/bendinat-9.webp",
+          "src": "/images/bendinat-blog/bendinat-10.webp",
           "alt": "View from the high 15th tee over a fairway and bunkers towards houses on the far side and the sea on the horizon",
           "caption": "The view from the 15th tee, looking towards the sea.",
           "presentation": "natural",
