@@ -15,7 +15,7 @@
  *
  * Run:  node scripts/check-text-quality.mjs --base http://127.0.0.1:3001   (against a production build)
  *       --report   list everything found, no failure       --update   rewrite the baseline from this run
- *       --pages /guides,/tools   limit to some paths        --widths 375,1280
+ *       --pages /guides,/tools   limit to some paths        --widths 375,1280        --no-deep   skip the click-through of tool pages
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -149,6 +149,40 @@ function measure() {
   return out
 }
 
+// Tools reveal their results only after answers are given. Click through up to 14 steps (preferring Continue,
+// Next, Start, Calculate and similar), measuring after each, so text in results panels is covered too. Best effort:
+// a tool that needs typed input may stop early, so this lowers the blind spot without claiming full coverage.
+const DEEP = !args.includes('--no-deep')
+const TOOL_PAGE = /^\/(tools\/|hotel-recommender|golf-day-builder|golf-trip-calculator|course-selector)/
+async function walkTool(page) {
+  const out = []
+  let steps = 0
+  for (let step = 0; step < 14; step++) {
+    const clicked = await page.evaluate(() => {
+      const main = document.querySelector('main') || document.body
+      const skip = /back|restart|reset|previous|menu|close|language|whatsapp|cookie|accept|decline|share|print|save|email|download|enquir|subscribe|submit|send/i
+      const cands = [...main.querySelectorAll('button, [role=button], summary')].filter((b) => {
+        if (b.closest('header,nav,footer,[role=dialog]') || b.disabled || b.getAttribute('aria-disabled') === 'true' || b.dataset.deepClicked) return false
+        const r = b.getBoundingClientRect()
+        const label = (b.textContent || '').trim()
+        return r.width > 2 && r.height > 2 && label && !skip.test(label) && !skip.test(b.getAttribute('aria-label') || '')
+      })
+      const pick = cands.find((b) => /continue|next|start|show|see|calculate|check|results|build|find|compare/i.test(b.textContent)) || cands[0]
+      if (!pick) return false
+      pick.dataset.deepClicked = '1'
+      pick.scrollIntoView({ block: 'center' })
+      pick.click()
+      return true
+    })
+    if (!clicked) break
+    await page.waitForTimeout(450)
+    out.push(...(await page.evaluate(measure)))
+    steps += 1
+  }
+  if (args.includes('--verbose')) console.error(`  ${page.url()}: clicked through ${steps} step(s)`)
+  return out
+}
+
 const browser = await chromium.launch()
 const found = []
 for (const w of WIDTHS) {
@@ -159,6 +193,9 @@ for (const w of WIDTHS) {
       await page.goto(BASE + p, { waitUntil: 'networkidle', timeout: 60000 })
       await page.waitForTimeout(500)
       for (const it of await page.evaluate(measure)) found.push({ page: p, width: w, ...it })
+      if (DEEP && TOOL_PAGE.test(p)) {
+        for (const it of await walkTool(page)) found.push({ page: p, width: w, ...it })
+      }
     } catch (e) {
       found.push({ page: p, width: w, rule: 'error', sel: '', msg: String(e.message || e).split('\n')[0] })
     }

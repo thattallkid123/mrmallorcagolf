@@ -22,7 +22,6 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "intro": {
-      "eyebrow": "Lo que hago",
       "title": "Una vuelta conmigo, la planificación y reserva de sus partidas de golf, o la planificación de todo su viaje aquí en Mallorca.",
       "paragraphs": [
         "Indíqueme las fechas, el tamaño del grupo y el rango de hándicaps."
@@ -189,7 +188,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "testimonial": "Juego al golf desde los cinco años. Pensaba que ya tenía la base hecha y que solo necesitaba más repeticiones, no un coach. Luego me regalaron una sesión con Andy y decidí probar. Menos mal. Afinamos detalles de mi swing, el contacto de bola, la transferencia de peso y la mecánica. Incluso cambios pequeños dieron resultados constantes, y estoy seguro de que me ahorrarán entre cinco y diez golpes. Andy fue un auténtico profesional. No puedo agradecérselo lo suficiente."
     },
     "packages": {
-      "eyebrow": "Lo que ofrezco",
       "title": "Un día en el campo conmigo. O el viaje entero, construido a su alrededor.",
       "body": "El servicio principal es Play With A Pro, un día de 18 hoyos conmigo. Solo y grupo son las tarifas diarias principales. Los campos pueden juntar reservas cuando hay mucha afluencia, y en temporada alta ocurre. Si quiere la hora de salida en privado, reservo los huecos libres y repercuto el cargo del campo a precio de coste. Está incluido de serie en el Signature Day. Si quiere que le planifique todo el viaje en torno a ello, también es posible.",
       "items": [
@@ -230,7 +228,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Signature Day",
-          "eyebrow": "Signature Day",
           "name": "Signature Day",
           "features": [
             "Campo, hora de salida privada y un día de golf guiado",
@@ -249,7 +246,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Planificación del viaje",
-          "eyebrow": "Planificación del viaje",
           "name": "Planifique su viaje",
           "price": "Precio a consultar",
           "features": [
@@ -277,7 +273,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "intro": "Solo y Grupo son las tarifas base de Play With A Pro. Siempre intento conseguir la salida más personal posible, pero en días de mucha demanda el campo puede agrupar partidas. Una salida privada garantizada normalmente puede organizarse como extra, y viene incluida de serie en Signature Day."
     },
     "faq": {
-      "eyebrow": "Preguntas",
       "title": "Preguntas frecuentes antes de reservar.",
       "intro": "Lo que no esté cubierto aquí, lo mejor es preguntarlo directamente. Respondo personalmente.",
       "items": [
@@ -312,7 +307,6 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
-      "eyebrow": "¿Listo para planificar su viaje?",
       "title": "Cuénteme el viaje que quiere. Yo preparo el plan a partir de ahí.",
       "body": "Empiece con sus fechas, el tamaño del grupo, el rango de hándicap, el presupuesto y el tipo de golf que quiere. Le ayudaré a convertirlo en un plan de golf para Mallorca que funcione sobre el terreno.",
       "quote": "El campo adecuado en el día adecuado vale más que un nombre famoso en el horario equivocado.",
@@ -351,7 +345,6 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "intro": {
-      "eyebrow": "Was ich mache",
       "title": "Eine Runde mit mir, die Planung und Buchung Ihrer Golfrunden oder die Planung Ihrer gesamten Reise hier auf Mallorca.",
       "paragraphs": [
         "Teilen Sie mir Ihre Reisedaten, Gruppengröße und Handicap-Spanne mit."
@@ -519,7 +512,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "testimonial": "Ich spiele seit meinem fünften Lebensjahr Golf. Ich dachte, ich bräuchte nur mehr Wiederholungen, keinen Coach. Dann bekam ich eine Stunde mit Andy geschenkt und habe sie ausprobiert. Es hat sich gelohnt. Kleine Anpassungen führten sofort zu konstant besseren Treffern und echtem Fortschritt."
     },
     "packages": {
-      "eyebrow": "Was ich anbiete",
       "title": "Ein Tag auf dem Platz mit mir. Oder die ganze Reise, darum herum geplant.",
       "body": "Der Kern meines Angebots ist Play With A Pro, ein 18-Loch-Tag mit mir. Solo und Gruppe sind die Kern-Tagessätze. An vollen Tagen können Plätze Buchungen zusammenlegen, und in der Hochsaison passiert das. Wenn Sie die Startzeit privat möchten, reserviere ich die freien Plätze und gebe die Gebühr des Platzes zum Selbstkostenpreis weiter. Beim Signature Day ist sie standardmäßig enthalten. Wenn Sie die ganze Reise darum herum geplant haben möchten, ist das ebenfalls möglich.",
       "items": [
@@ -560,7 +552,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Signature Day",
-          "eyebrow": "Signature Day",
           "name": "Signature Day",
           "features": [
             "Platz, private Startzeit und ein geführter Golftag",
@@ -579,7 +570,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Reiseplanung",
-          "eyebrow": "Reiseplanung",
           "name": "Ihre Reise planen",
           "price": "Preis auf Anfrage",
           "features": [
@@ -607,7 +597,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "intro": "Solo und Gruppe sind die regulären Play With A Pro Tagessätze. Ich versuche immer, die persönlichste Startzeit für Sie zu sichern, aber an vollen Tagen kann der Golfplatz Flights zusammenlegen. Eine garantierte private Startzeit lässt sich in der Regel als Zusatz buchen und ist beim Signature Day standardmäßig enthalten."
     },
     "faq": {
-      "eyebrow": "Fragen",
       "title": "Häufige Fragen vor der Buchung.",
       "intro": "Was hier nicht beantwortet wird, fragen Sie am besten direkt. Ich antworte persönlich.",
       "items": [
@@ -642,7 +631,6 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "finalCta": {
-      "eyebrow": "Bereit, Ihre Reise zu planen?",
       "title": "Sagen Sie mir, welche Reise Sie wollen. Ich baue den Plan darum herum.",
       "body": "Beginnen Sie mit Ihren Daten, der Gruppengröße, dem Handicap-Bereich, dem Budget und der Art von Golf, die Sie sich wünschen. Ich helfe Ihnen, daraus einen Golfplan für Mallorca zu machen, der vor Ort funktioniert.",
       "quote": "Der richtige Platz am richtigen Tag schlägt einen berühmten Namen zur falschen Zeit.",
@@ -681,7 +669,6 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "intro": {
-      "eyebrow": "Ce que je fais",
       "title": "Une partie avec moi, la planification et la réservation de vos parcours de golf, ou l’organisation de tout votre séjour ici à Majorque.",
       "paragraphs": [
         "Indiquez-moi vos dates, la taille du groupe et la fourchette des handicaps."
@@ -849,7 +836,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "testimonial": "Je joue au golf depuis l'âge de cinq ans. Je pensais avoir les bases et avoir surtout besoin de répétitions, pas d'un coach. Puis on m'a offert une séance avec Andy, et j'ai décidé d'essayer. J'ai bien fait. Nous avons travaillé les détails fins du swing, la qualité du contact, le transfert d'appui et la mécanique. Même de petits ajustements ont produit des résultats réguliers, et je suis convaincu qu'ils peuvent me faire gagner 5 à 10 coups avec une seule séance. Andy a été irréprochable du début à la fin. Je ne le remercierai jamais assez."
     },
     "packages": {
-      "eyebrow": "Ce que je propose",
       "title": "Une journée sur le parcours avec moi. Ou tout le séjour, construit autour.",
       "body": "Le service principal est Play With A Pro, une journée de 18 trous avec moi. Solo et groupe sont les tarifs journaliers de base. Les parcours peuvent regrouper des réservations quand ils sont chargés, et en haute saison cela arrive. Si vous voulez le départ en privé, je réserve les places libres et je répercute les frais du parcours au prix coûtant. C'est inclus d'office avec le Signature Day. Si vous voulez que tout le séjour soit planifié autour, c'est également possible.",
       "items": [
@@ -890,7 +876,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Signature Day",
-          "eyebrow": "Signature Day",
           "name": "Signature Day",
           "features": [
             "Parcours, départ privé et journée de golf accompagnée",
@@ -909,7 +894,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Planification du séjour",
-          "eyebrow": "Planification du séjour",
           "name": "Planifiez votre séjour",
           "price": "Prix sur demande",
           "features": [
@@ -937,7 +921,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "intro": "Solo et Groupe sont les tarifs de base de Play With A Pro. Je cherche toujours à obtenir le départ le plus personnel possible, mais les jours de forte affluence le golf peut regrouper les réservations. Un départ privé garanti peut généralement être organisé en option, et il est inclus d'office avec le Signature Day."
     },
     "faq": {
-      "eyebrow": "Questions fréquentes",
       "title": "Questions fréquentes avant de réserver.",
       "intro": "Ce qui n'est pas couvert ici se demande directement. Je réponds personnellement.",
       "items": [
@@ -973,7 +956,6 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "quote": "Le bon parcours le bon jour vaut mieux qu'un nom célèbre au mauvais créneau.",
-      "eyebrow": "Prêt à planifier votre séjour ?",
       "title": "Dites-moi le séjour que vous voulez. Je construis le plan à partir de là.",
       "body": "Commencez par vos dates, la taille du groupe, votre fourchette de handicap, votre budget et le type de golf que vous souhaitez. Je vous aiderai à en faire un plan de golf pour Majorque qui fonctionne sur le terrain.",
       "primaryCta": "Planifiez votre voyage"
@@ -1011,7 +993,6 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "intro": {
-      "eyebrow": "Wat ik doe",
       "title": "Een ronde met mij, het plannen en boeken van uw golfrondes, of het plannen van uw hele reis hier op Mallorca.",
       "paragraphs": [
         "Laat mij uw reisdata, groepsgrootte en het handicapbereik weten."
@@ -1179,7 +1160,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "testimonial": "Ik speel golf sinds mijn vijfde. Ik dacht dat de basis er wel was en dat ik vooral meer herhalingen nodig had, niet per se een coach. Toen kreeg ik een les met Andy cadeau en besloot ik het toch te proberen. Gelukkig maar. We gingen door de fijnere details van mijn swing, beter balcontact, gewichtsverplaatsing en mechaniek. Zelfs kleine aanpassingen gaven meteen constantere resultaten, en ik ben ervan overtuigd dat ze me met één sessie al vijf tot tien slagen kunnen schelen. Andy was van begin tot eind een absolute professional. Ik kan hem niet genoeg bedanken."
     },
     "packages": {
-      "eyebrow": "Wat ik aanbied",
       "title": "Een dag op de baan met mij. Of de hele reis, daaromheen gebouwd.",
       "body": "De kernservice is Play With A Pro, een dag van 18 holes met mij. Solo en groep zijn de basisdagtarieven. Banen kunnen boekingen samenvoegen wanneer het druk is, en in het hoogseizoen gebeurt dat. Wilt u de starttijd privé, dan reserveer ik de vrije plekken en reken ik de kosten van de baan door tegen kostprijs. Bij Signature Day is dit standaard inbegrepen. Wilt u de hele reis eromheen laten plannen, dan kan dat ook.",
       "items": [
@@ -1220,7 +1200,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Signature Day",
-          "eyebrow": "Signature Day",
           "name": "Signature Day",
           "features": [
             "Baan, privé starttijd en een begeleide golfdag",
@@ -1239,7 +1218,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Reisplanning",
-          "eyebrow": "Reisplanning",
           "name": "Plan uw reis",
           "price": "Prijs op aanvraag",
           "features": [
@@ -1267,7 +1245,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "intro": "Solo en groep zijn de standaard Play With A Pro dagtarieven. Ik probeer altijd de meest persoonlijke starttijd mogelijk te regelen, maar op drukke dagen kan de golfbaan flights samenvoegen. Een gegarandeerd privé starttijdslot kan meestal als extra worden geregeld, en is standaard inbegrepen bij Signature Day."
     },
     "faq": {
-      "eyebrow": "Vragen",
       "title": "Veelgestelde vragen vóór het boeken.",
       "intro": "Wat hier niet staat, vraagt u het best rechtstreeks. Ik antwoord persoonlijk.",
       "items": [
@@ -1303,7 +1280,6 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "quote": "De juiste baan op de juiste dag verslaat een beroemde naam op het verkeerde tijdstip.",
-      "eyebrow": "Klaar om uw reis te plannen?",
       "title": "Vertel me welke reis u wilt. Ik bouw het plan eromheen.",
       "body": "Begin met uw data, groepsgrootte, handicapbereik, budget en het soort golf dat u wilt. Ik help u dat om te zetten in een golfplan voor Mallorca dat op het eiland echt werkt.",
       "primaryCta": "Plan uw reis"
@@ -1341,7 +1317,6 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "intro": {
-      "eyebrow": "Vad jag gör",
       "title": "En runda med mig, planering och bokning av dina golfrundor, eller planering av hela din resa här på Mallorca.",
       "paragraphs": [
         "Berätta vilka datum du har, gruppens storlek och handicapspannet."
@@ -1509,7 +1484,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "testimonial": "Jag har spelat golf sedan jag var fem. Jag trodde att jag hade grunderna och mest behövde fler repetitioner, inte en coach. Sedan fick jag en lektion med Andy i present och bestämde mig för att ge det en chans. Det är jag glad för. Vi jobbade igenom de finare detaljerna i svingen, bättre bollträff, viktförflyttning och mekanik. Även små justeringar gav stabila resultat direkt, och jag är övertygad om att de kan spara fem till tio slag för mig efter bara en session. Andy var oerhört professionell hela vägen. Jag kan inte tacka honom nog."
     },
     "packages": {
-      "eyebrow": "Det här erbjuder jag",
       "title": "En dag på banan med mig. Eller hela resan, byggd runt den.",
       "body": "Kärntjänsten är Play With A Pro, en dag med 18 hål tillsammans med mig. Solo och grupp är grunddagspriserna. Banor kan slå ihop bokningar när det är fullt, och under högsäsong händer det. Vill du ha starttiden privat bokar jag de lediga platserna och för banans avgift vidare till självkostnadspris. I Signature Day ingår det som standard. Vill du att hela resan planeras runt detta går det också att ordna.",
       "items": [
@@ -1550,7 +1524,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Signature Day",
-          "eyebrow": "Signature Day",
           "name": "Signature Day",
           "features": [
             "Bana, privat starttid och en guidad golfdag",
@@ -1569,7 +1542,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Reseplanering",
-          "eyebrow": "Reseplanering",
           "name": "Planera din resa",
           "price": "Pris på förfrågan",
           "features": [
@@ -1597,7 +1569,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "intro": "Solo och grupp är de ordinarie Play With A Pro-priserna per dag. Jag försöker alltid ordna den mest personliga starttiden som är möjlig, men under fullbokade dagar kan golfbanan slå ihop bokningar. En garanterad privat starttid kan oftast ordnas som tillval och ingår som standard i Signature Day."
     },
     "faq": {
-      "eyebrow": "Frågor",
       "title": "Vanliga frågor innan du bokar.",
       "intro": "Det som inte besvaras här frågar du bäst direkt. Jag svarar personligen.",
       "items": [
@@ -1633,7 +1604,6 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "quote": "Rätt bana på rätt dag slår ett känt namn på fel tid.",
-      "eyebrow": "Redo att planera din resa?",
       "title": "Berätta vilken resa du vill ha. Jag bygger planen runt den.",
       "body": "Börja med dina datum, gruppstorlek, handicapintervall, budget och vilken sorts golf du vill ha. Jag hjälper dig att göra det till en golfplan för Mallorca som fungerar på plats.",
       "primaryCta": "Planera din resa"
@@ -1671,7 +1641,6 @@ export const HOME_LOCALIZED_CONTENT = {
       ]
     },
     "intro": {
-      "eyebrow": "我做什么",
       "title": "与我同打一轮高尔夫、规划并预订您的高尔夫球局，或规划您在马略卡的整个行程。",
       "paragraphs": [
         "请告诉我您的日期、人数和差点范围。"
@@ -1846,7 +1815,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "testimonial": "我从五岁开始打高尔夫。我一直以为自己的基本功已经有了，只需要多打一点，而不是找教练。后来有人送了我一节 Andy 的课，我决定试试看。结果证明这决定很值。我们把挥杆里的细节、扎实击球、重心转移和动作机制都重新梳理了一遍。哪怕只是很小的调整，也带来了持续稳定的效果，我很有信心，仅凭这一节课就能让我少打 5 到 10 杆。Andy 从头到尾都非常专业，我真的非常感谢他。"
     },
     "packages": {
-      "eyebrow": "我提供什么",
       "title": "与我同在球场的一天，或围绕这一天打造的整趟行程。",
       "body": "核心服务是 Play With A Pro，也就是与我同打 18 洞的一天。单人和小组是基础日费。球场繁忙时可能会拼组预订，旺季尤其常见。如果您希望开球时段不被拼组，我会预留空位，并按成本价转付球场收取的费用。Signature Day 默认包含这一项。如果您希望围绕这一天规划整趟行程，也可以安排。",
       "items": [
@@ -1887,7 +1855,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "Signature Day",
-          "eyebrow": "Signature Day",
           "name": "Signature Day",
           "features": [
             "球场、私人开球时段与全程陪同的高尔夫日",
@@ -1906,7 +1873,6 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "tier": "行程规划",
-          "eyebrow": "行程规划",
           "name": "规划您的行程",
           "price": "咨询定价",
           "features": [
@@ -1934,7 +1900,6 @@ export const HOME_LOCALIZED_CONTENT = {
       "intro": "单人和小组是 Play With A Pro 的基础日费方案。我都会尽量安排最具私密感的开球时间，但在球场繁忙时，球场可能会将不同预订拼组。如需保证私密开球时间，通常可以作为加购安排，而 Signature Day 则已默认包含。"
     },
     "faq": {
-      "eyebrow": "常见问题",
       "title": "预订前的常见问题。",
       "intro": "这里没有涵盖的问题，最好直接问我。我会亲自回复。",
       "items": [
@@ -1970,7 +1935,6 @@ export const HOME_LOCALIZED_CONTENT = {
     },
     "finalCta": {
       "quote": "对的球场遇上对的日子，胜过在错误时段打一个响亮的名字。",
-      "eyebrow": "准备好规划您的行程了吗？",
       "title": "告诉我您想要的行程。我来围绕它搭建计划。",
       "body": "先告诉我日期、人数、差点范围、预算，以及您想要的高尔夫类型。我会帮您把它变成一份在马略卡真正行得通的高尔夫规划。",
       "primaryCta": "了解行程规划",

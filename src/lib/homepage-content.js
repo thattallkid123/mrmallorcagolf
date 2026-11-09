@@ -24,7 +24,6 @@ export const HOME_CONTENT = {
     ]
   },
   "intro": {
-    "eyebrow": "What I do",
     "title": "A round with me, planning and booking your golf, or planning your whole trip here in Mallorca.",
     "paragraphs": [
       "Tell me your dates, group size and handicap range."
@@ -289,7 +288,6 @@ export const HOME_CONTENT = {
     "attribution": "Adam"
   },
   "packages": {
-    "eyebrow": "What I offer",
     "title": "A day on the course with me. Or the whole trip, built around it.",
     "body": "The core service is Play With A Pro, an 18-hole day with me. Solo and group are the core day rates. Courses can pair bookings when they are busy, and in peak season that happens. If you want the tee time privatised, I reserve the spare slots and pass the course's charge through at cost. It is included as standard with Signature Day. If you want the whole trip planned around it, that is available too.",
     "items": [
@@ -331,7 +329,6 @@ export const HOME_CONTENT = {
       },
       {
         "tier": "Signature Day",
-        "eyebrow": "Signature Day",
         "name": "Signature Day",
         "price": "On request",
         "signature": true,
@@ -351,7 +348,6 @@ export const HOME_CONTENT = {
       },
       {
         "tier": "Trip Planning",
-        "eyebrow": "Trip Planning",
         "name": "Plan Your Trip",
         "price": "Price on enquiry",
         "featured": false,
@@ -378,7 +374,6 @@ export const HOME_CONTENT = {
     "intro": "Both are arranged by me and played on one of the island's finest courses. The homepage stays light; the full experience and pricing sit on the next page."
   },
   "faq": {
-    "eyebrow": "Questions",
     "title": "Common questions before booking.",
     "intro": "Anything not covered here is best asked directly. I reply personally.",
     "items": [
@@ -413,7 +408,6 @@ export const HOME_CONTENT = {
     ]
   },
   "finalCta": {
-    "eyebrow": "Ready to plan your trip?",
     "title": "Tell me the trip you want. I'll build the plan around it.",
     "body": "Start with your dates, group size, handicap range, budget, and the kind of golf you want. I will help you turn that into a Mallorca golf plan that works on the ground.",
     "quote": "The right course on the right day beats a famous name in the wrong slot.",

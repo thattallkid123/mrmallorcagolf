@@ -333,6 +333,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-btn.gold:hover { opacity:.9; }
         /* Results */
         .gcc-assumptions { margin:var(--space-4) 0; font-family:var(--font-sans); font-size:13px; line-height:1.65; color:#6F665B; }
+        .gcc-assumptions p { max-width:60ch; }
         .gcc-assumptions summary { cursor:pointer; color:#2D4A3E; font-weight:500; padding:var(--space-3) 0; }
         .gcc-hero-est { background:#2D4A3E; color:#F7F4EF; border-radius:14px; padding:26px 20px; text-align:center; margin-bottom:14px; }
         .gcc-hero-est .lab { font-family:var(--font-sans); font-size:10px; letter-spacing:.18em; text-transform:uppercase; color:#D4B068; font-weight:500; }
@@ -371,7 +372,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-email-capture button { width:100%; }
         .gcc-disclaimer { font-family:var(--font-sans); font-size:11px; color:var(--taupe-text); text-align:center; margin-top:20px; font-weight:300; line-height:1.5; }
         .gcc-tools-panel { background:#f4f1eb; border:1px solid #e0d8cb; border-radius:14px; padding:18px 20px; margin:20px 0; text-align:center; }
-        .gcc-tools-panel__label { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:#8a7f74; margin-bottom:12px; }
+        .gcc-tools-panel__label { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.18em; text-transform:uppercase; color:var(--taupe-text); margin-bottom:12px; }
         .gcc-tools-panel__links { display:flex; flex-wrap:wrap; gap:8px; justify-content:center; }
         .gcc-tools-panel__link { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:10px 18px; font-size:10px; font-family:var(--font-sans); font-weight:500; letter-spacing:.14em; text-transform:uppercase; border:1px solid rgba(45,74,62,.18); color:#2d4a3e; text-decoration:none; border-radius:2px; background:#fff; transition:border-color .2s, color .2s, transform .2s; }
         .gcc-tools-panel__link:hover { border-color:#B8973C; color:#1A1916; transform:translateY(-1px); }
@@ -379,7 +380,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
         .gcc-sheet-head__eyebrow { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.22em; text-transform:uppercase; color:#cdb98a; margin-bottom:4px; }
         .gcc-sheet-head__title { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:24px; color:#fff; font-weight:500; padding-right:36px; line-height:1.08; }
         .gcc-sheet-head__close { position:absolute; top:16px; right:16px; width:34px; height:34px; border-radius:50%; border:1px solid rgba(205,185,138,.5); background:transparent; color:#f7f2e7; font-size:17px; line-height:1; cursor:pointer; font-family:var(--font-sans); }
-        .gcc-sheet-summary__label { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:#8a7f74; margin-bottom:8px; }
+        .gcc-sheet-summary__label { font-family:var(--font-sans); font-size:10px; font-weight:500; letter-spacing:.16em; text-transform:uppercase; color:var(--taupe-text); margin-bottom:8px; }
         .gcc-sheet-success__icon { width:54px; height:54px; border-radius:50%; background:#15392b; color:#cdb98a; display:flex; align-items:center; justify-content:center; font-size:24px; margin:0 auto 16px; }
         .gcc-sheet-success__title { font-family:var(--font-serif); font-variant-numeric:lining-nums; font-size:24px; color:#15392b; margin-bottom:8px; line-height:1.08; }
         .gcc-sheet-success__body { font-family:var(--font-sans); font-size:15px; color:#2c2a27; max-width:320px; margin:0 auto 18px; line-height:1.65; }
@@ -677,7 +678,7 @@ export default function GolfCostCalculatorClient({ lang = 'en' }) {
 
                 {emailError && <p style={{ fontSize:'13px', color:'#e8b4a8', marginBottom:'10px' }}>{t.email.error}</p>}
 
-                <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.45)', marginBottom:'12px' }}>{t.email.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
+                <p style={{ fontSize:'11px', color:'rgba(247,244,239,0.75)', marginBottom:'12px' }}>{t.email.disclaimer} <a href={getLegalPath('privacy-policy', lang)} style={{ color:'inherit' }}>{getPrivacyLinkLabel(lang)}</a></p>
                 <a
                   className="gcc-btn primary"
                   style={{ background:'#3D6455' }}
