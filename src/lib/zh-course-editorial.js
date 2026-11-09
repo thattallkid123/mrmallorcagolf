@@ -303,7 +303,7 @@ export const ZH_COURSE_EDITORIAL = {
     zhTagline: "帕尔马松维达区 · 2025 西班牙最佳",
     regionZh: "帕尔马附近（松维达区）",
     region: "palma",
-    difficulty: "7/10 · 中高难度",
+    difficulty: "8/10 · 中高难度",
     forWho: "追求顶级养护和五星酒店配套的高端客人；商务接待的最稳妥选择。",
     why: "2025 年世界高尔夫大奖\"西班牙最佳球场\"。养护水准全岛顶级，第 15 洞旁有一棵千年橄榄树，俯瞰帕尔马湾。",
     photoNote: "适合拍照 · 最适合商务接待 · 五星酒店配套",

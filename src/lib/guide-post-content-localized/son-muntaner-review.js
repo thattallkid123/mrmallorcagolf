@@ -60,7 +60,7 @@ const content = {
             "Desde el centro de Palma"
           ],
           [
-            "7/10",
+            "8/10",
             "Dificultad"
           ]
         ]
@@ -163,7 +163,7 @@ const content = {
             "Green fee 2026"
           ],
           [
-            "7/10",
+            "8/10",
             "Dificultad"
           ],
           [
@@ -286,7 +286,7 @@ const content = {
             "Vom Zentrum Palmas"
           ],
           [
-            "7/10",
+            "8/10",
             "Schwierigkeit"
           ]
         ]
@@ -389,7 +389,7 @@ const content = {
             "Greenfee-Spanne 2026"
           ],
           [
-            "7/10",
+            "8/10",
             "Schwierigkeit"
           ],
           [
@@ -513,7 +513,7 @@ const content = {
             "Depuis le centre de Palma"
           ],
           [
-            "7/10",
+            "8/10",
             "Difficulté"
           ]
         ]
@@ -616,7 +616,7 @@ const content = {
             "Green fees 2026"
           ],
           [
-            "7/10",
+            "8/10",
             "Difficulté"
           ],
           [
@@ -739,7 +739,7 @@ const content = {
             "Vanaf het centrum van Palma"
           ],
           [
-            "7/10",
+            "8/10",
             "Moeilijkheidsgraad"
           ]
         ]
@@ -842,7 +842,7 @@ const content = {
             "Greenfee 2026"
           ],
           [
-            "7/10",
+            "8/10",
             "Moeilijkheidsgraad"
           ],
           [
@@ -965,7 +965,7 @@ const content = {
             "Från centrala Palma"
           ],
           [
-            "7/10",
+            "8/10",
             "Svårighetsgrad"
           ]
         ]
@@ -1068,7 +1068,7 @@ const content = {
             "Greenfee 2026"
           ],
           [
-            "7/10",
+            "8/10",
             "Svårighetsgrad"
           ],
           [
@@ -1192,7 +1192,7 @@ const content = {
             "距帕尔马市中心"
           ],
           [
-            "7/10",
+            "8/10",
             "难度"
           ]
         ]
@@ -1295,7 +1295,7 @@ const content = {
             "2026年果岭费区间"
           ],
           [
-            "7/10",
+            "8/10",
             "难度"
           ],
           [

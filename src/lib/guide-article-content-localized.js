@@ -90,7 +90,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Vida - Palma",
               "72",
               "€125-260",
-              "7/10",
+              "8/10",
               "4.5",
               "El mejor cuidado, cerca de Palma"
             ],
@@ -498,7 +498,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Vida - Palma",
               "72",
               "€125-260",
-              "7/10",
+              "8/10",
               "4.5",
               "Am besten gepflegt, nah an Palma"
             ],
@@ -906,7 +906,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Vida - Palma",
               "72",
               "€125-260",
-              "7/10",
+              "8/10",
               "4.5",
               "Le mieux entretenu, proche de Palma"
             ],
@@ -1314,7 +1314,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Vida - Palma",
               "72",
               "€125-260",
-              "7/10",
+              "8/10",
               "4.5",
               "Best onderhouden, dicht bij Palma"
             ],
@@ -1722,7 +1722,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Vida - Palma",
               "72",
               "€125-260",
-              "7/10",
+              "8/10",
               "4.5",
               "Bäst skötta, nära Palma"
             ],
@@ -2130,7 +2130,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Vida - Palma",
               "72",
               "€125-260",
-              "7/10",
+              "8/10",
               "4.5",
               "养护最好，靠近帕尔马"
             ],

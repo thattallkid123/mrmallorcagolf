@@ -133,7 +133,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "badge": "Mejor campo de España 2025",
-          "difficulty": "7/10 Dificultad",
+          "difficulty": "8/10 Dificultad",
           "excerpt": "Nombrado Mejor Campo de Golf de España en los World Golf Awards 2025, con vistas a la bahía de Palma y un olivo milenario en el hoyo 15."
         },
         {
@@ -457,7 +457,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "badge": "Bester Platz Spaniens 2025",
-          "difficulty": "7/10 Schwierigkeit",
+          "difficulty": "8/10 Schwierigkeit",
           "excerpt": "Bei den World Golf Awards 2025 als bester Golfplatz Spaniens ausgezeichnet, mit Blick über die Bucht von Palma und einem tausendjährigen Olivenbaum an Loch 15."
         },
         {
@@ -781,7 +781,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "badge": "Meilleur d'Espagne 2025",
-          "difficulty": "7/10 de difficulté",
+          "difficulty": "8/10 de difficulté",
           "excerpt": "Élu meilleur parcours d'Espagne aux World Golf Awards 2025, avec vue sur la baie de Palma et un olivier millénaire au 15."
         },
         {
@@ -1105,7 +1105,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "badge": "Beste van Spanje 2025",
-          "difficulty": "7/10 moeilijkheid",
+          "difficulty": "8/10 moeilijkheid",
           "excerpt": "Uitgeroepen tot beste golfbaan van Spanje bij de World Golf Awards 2025, met uitzicht over de baai van Palma en een duizend jaar oude olijfboom bij hole 15."
         },
         {
@@ -1429,7 +1429,7 @@ export const HOME_LOCALIZED_CONTENT = {
         },
         {
           "badge": "Bäst i Spanien 2025",
-          "difficulty": "7/10 svårighet",
+          "difficulty": "8/10 svårighet",
           "excerpt": "Utsedd till Spaniens bästa golfbana vid World Golf Awards 2025, med utsikt över Palmabukten och ett tusenårigt olivträd vid hål 15."
         },
         {
@@ -1760,7 +1760,7 @@ export const HOME_LOCALIZED_CONTENT = {
         {
           "badge": "2025 西班牙最佳",
           "region": "松维达 · 帕尔马",
-          "difficulty": "7/10 难度",
+          "difficulty": "8/10 难度",
           "excerpt": "在 2025 年世界高尔夫大奖中被评为西班牙最佳球场，能俯瞰帕尔马湾，第 15 洞旁还有一棵千年橄榄树。"
         },
         {

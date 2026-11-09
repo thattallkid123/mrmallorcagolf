@@ -177,7 +177,7 @@ export const HOME_CONTENT = {
           "€110-260"
         ],
         "stars": "★★★★★",
-        "difficulty": "7/10 Difficulty",
+        "difficulty": "8/10 Difficulty",
         "excerpt": "Named Best Golf Course in Spain at the 2025 World Golf Awards, with Palma Bay views and a thousand-year-old olive tree on 15.",
         "img": "/images/son-muntaner.webp",
         "href": "/guides/son-muntaner-review"

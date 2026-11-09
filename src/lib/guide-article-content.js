@@ -823,7 +823,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         rows: [
           ['Son Gual', 'Palma', '72', '\u20AC115-165', '9/10', '5.0', 'Serious championship round'],
           ['Club de Golf Alcanada', "Port d'Alcudia", '72', '\u20AC115-230', '7/10', '5.0', 'Spectacular views, championship quality'],
-          ['Son Muntaner', 'Son Vida - Palma', '72', '\u20AC125-260', '7/10', '4.5', 'Best-conditioned, close to Palma'],
+          ['Son Muntaner', 'Son Vida - Palma', '72', '\u20AC125-260', '8/10', '4.5', 'Best-conditioned, close to Palma'],
           ['T Golf Calvi\u00E0', 'Calvi\u00E0', '72', '\u20AC170-210', '7/10', '5.0', 'Premium all-round experience'],
           ['Golf de Andratx', 'Camp de Mar', '72', '\u20AC90-140', '9/10', '4.0', 'Hardest test on the island'],
           ['Golf Son Vida', 'Son Vida - Palma', '70', '\u20AC80-190', '8/10', '4.5', 'Historic course, Seve won here'],
