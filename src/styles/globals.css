@@ -2217,6 +2217,9 @@ select.form-control { cursor: pointer; }
 
 /* ─── RESPONSIVE (page-specific) ────────────────────────── */
 @media (max-width: 1024px) {
+  .page-hero__meta { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-hero__meta > * { text-align: center; }
+  .page-hero__meta > :last-child:nth-child(odd) { grid-column: 1 / -1; }
   .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--4 { --tablet-text-columns: 2; }
   .planning-tool .tool-choices:not(.tool-choices--photos) div.tool-choice-track--5 { --tablet-text-columns: 3; }
   .page-layout { grid-template-columns: 1fr; }

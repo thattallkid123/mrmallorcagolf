@@ -330,6 +330,7 @@ export default function HandicapCheckerClient({ lang = 'en' }) {
           padding:11px 14px; border:1px solid rgba(45,74,62,.18); border-radius:999px; background:#fff; color:var(--deep); }
         .hc-field input:focus, .hc-field select:focus { outline:2px solid var(--gold); outline-offset:1px; }
         .hc-seg { display:flex; flex-wrap:wrap; gap:8px; }
+        .hc-seg button { flex:1 1 6.5rem; }
         .hc-seg button { font-family:var(--font-sans); font-size:.82rem; letter-spacing:.12em; text-transform:uppercase; cursor:pointer; padding:9px 16px;
           border:1px solid rgba(45,74,62,.3); border-radius:2px; background:#fff; color:var(--deep); transition:all .15s; }
         .hc-seg button.active { background:var(--pine); color:#fff; border-color:var(--pine); }
