@@ -114,6 +114,7 @@ function buildPersonSchema(lang) {
       'https://www.instagram.com/mrmallorcagolf',
       'https://www.linkedin.com/in/andygriffithsgolf',
       'https://about.me/andygriffiths',
+      'https://www.pgaplay.co.uk/find-a-golf-lesson/profile/0122535/',
     ],
     knowsAbout: zh
       ? ['高尔夫教学', '高尔夫课程', '场上指导', '马略卡高尔夫球场', '球场管理', '高尔夫行程规划', '团体与企业高尔夫日']
@@ -155,6 +156,7 @@ function buildLocalBusinessSchema(lang) {
       'https://www.linkedin.com/in/andygriffithsgolf',
       'https://share.google/5bKiLcjCTCf1zsLD7',
       'https://www.trustpilot.com/review/mrmallorcagolf.com',
+      'https://www.pgaplay.co.uk/find-a-golf-lesson/profile/0122535/',
     ],
     logo: {
       '@type': 'ImageObject',
