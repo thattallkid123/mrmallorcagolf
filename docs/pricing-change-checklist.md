@@ -70,6 +70,7 @@ Manual surfaces to remember in the same pass:
 - Trust Pilot business page
 - Google business page
 - WhatsApp business page
+- Angloinfo business listing (description carries the prices): edit it from the Angloinfo account
 - mallorca.com classified listing (price box and description): edit it from the mallorca.com dashboard
 - PGA Play golf lessons profile (`pga.info/pga_play_profile/golf_lessons_profile/`): preview line, biography and pricing boxes all carry the price. Save, then Publish to PGA Play, then check `pgaplay.co.uk/find-a-golf-lesson/profile/0122535/`
 
