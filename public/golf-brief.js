@@ -10,7 +10,7 @@ const labels = {
   dateMode: { fixed: 'Fixed', flexible: 'Flexible', unknown: 'Dates to decide' },
   window: { any: 'Any time', early: 'Before 09:00', 'before-ten': 'Before 10:00', morning: '09:00 to 12:00', afternoon: 'After 12:00' },
   priority: { balance: 'Balance of price and time', price: 'Lower price', times: 'Preferred times' },
-  nearby: { yes: 'Keep the starts close', flexible: 'A wider gap is fine', unknown: 'To decide' }
+  nearby: { yes: 'Tee off close together', flexible: 'A wider gap is fine', unknown: 'To decide' }
 };
 
 let step = 0;
@@ -52,11 +52,11 @@ function briefMarkup(data) {
   const fields = [
     ['Name', data.name, true], ['Email', data.email, true], ['Playing dates', dates, true],
     ['Date flexibility', data.dateMode === 'unknown' ? '' : labels.dateMode[data.dateMode]],
-    ['Golfers', data.golfers], ['Rounds wanted', data.rounds || 'To decide'], ['Handicap range', data.handicap],
-    ['Start window', time], ['Priority', labels.priority[data.priority]], ['Group starts', labels.nearby[data.nearby]],
+    ['Golfers', data.golfers], ['Rounds to play', data.rounds || 'To decide'], ['Handicaps', data.handicap],
+    ['Tee-off time', time], ['Priority', labels.priority[data.priority]], ['Groups tee off', labels.nearby[data.nearby]],
     ['Must-play courses', data.courses, true], ['Hotel or area', data.area, true],
     ['Golf budget per person', data.budget ? currency.format(data.budget) : 'Flexible'],
-    ['Buggies per round', hire(data.buggies)], ['Hire sets per round', hire(data.clubs)], ['Other notes', data.notes, true]
+    ['Buggies per round', hire(data.buggies)], ['Hire club sets per round', hire(data.clubs)], ['Other notes', data.notes, true]
   ];
   return fields.filter(([, value]) => value !== '' && value != null)
     .map(([label, value, wide]) => `<div${wide ? ' class="brief-wide"' : ''}><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`).join('');

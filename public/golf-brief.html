@@ -55,22 +55,22 @@
                 <div class="field"><label for="from">First day you can play</label><input id="from" name="from" type="date" required></div>
                 <div class="field"><label for="to">Last day you can play</label><input id="to" name="to" type="date" required><span class="hint">Use the same date for a single day.</span></div>
               </div>
-              <div class="field"><label for="golfers">Number of golfers</label><input id="golfers" name="golfers" type="number" inputmode="numeric" min="1" max="40" required></div>
-              <div class="field"><label for="rounds">Rounds wanted</label><input id="rounds" name="rounds" type="number" inputmode="numeric" min="1" max="14" placeholder="Not sure"></div>
-              <div class="field wide"><label for="handicap">Handicap range <span class="optional">optional</span></label><input id="handicap" name="handicap" placeholder="For example, 12–24" maxlength="100"></div>
+              <div class="field"><label for="golfers">Number of golfers in your group</label><input id="golfers" name="golfers" type="number" inputmode="numeric" min="1" max="40" required></div>
+              <div class="field"><label for="rounds">How many rounds do you want to play?</label><input id="rounds" name="rounds" type="number" inputmode="numeric" min="1" max="14" placeholder="Not sure"><span class="hint">Rounds for each golfer across the whole trip.</span></div>
+              <div class="field wide"><label for="handicap">Handicaps in your group <span class="optional">optional</span></label><input id="handicap" name="handicap" placeholder="For example, 12–24, or just 18" maxlength="100"></div>
             </div>
           </section>
           <section data-step="1" aria-labelledby="step-1-title" hidden>
             <header><h2 id="step-1-title" tabindex="-1">What matters most?</h2><p>Tell me which starts or courses are worth paying a little more for.</p></header>
             <div class="grid">
-              <div class="field full-mobile"><label for="window">Preferred start</label><select id="window" name="window"><option value="any">Any time</option><option value="early">Before 09:00</option><option value="before-ten">Before 10:00</option><option value="morning">09:00 to 12:00</option><option value="afternoon">After 12:00</option></select></div>
+              <div class="field full-mobile"><label for="window">Preferred tee-off time</label><select id="window" name="window"><option value="any">Any time</option><option value="early">Before 09:00</option><option value="before-ten">Before 10:00</option><option value="morning">09:00 to 12:00</option><option value="afternoon">After 12:00</option></select></div>
               <div class="field full-mobile"><label for="windowRule">If that window is unavailable</label><select id="windowRule" name="windowRule"><option value="flexible">Show me other times</option><option value="fixed">Keep to this window</option></select></div>
               <fieldset class="choices wide"><legend>What should I prioritise?</legend>
                 <label class="choice"><input name="priority" type="radio" value="balance" checked>Balance of price and time</label>
                 <label class="choice"><input name="priority" type="radio" value="price">Lower price</label>
                 <label class="choice"><input name="priority" type="radio" value="times">Preferred times</label>
               </fieldset>
-              <div class="field wide" id="nearby-field" hidden><label for="nearby">Should your groups start close together?</label><select id="nearby" name="nearby"><option value="yes">Yes, keep our starts close</option><option value="flexible">A wider gap is fine</option><option value="unknown">Not sure yet</option></select></div>
+              <div class="field wide" id="nearby-field" hidden><label for="nearby">Should your groups tee off close together?</label><select id="nearby" name="nearby"><option value="yes">Yes, keep our starts close</option><option value="flexible">A wider gap is fine</option><option value="unknown">Not sure yet</option></select></div>
               <div class="field wide"><label for="courses">Any must-play courses? <span class="optional">optional</span></label><textarea id="courses" name="courses" maxlength="500" rows="2" placeholder="Tell me if there’s a course you want included."></textarea></div>
               <div class="field wide"><label for="area">Where are you staying? <span class="optional">optional</span></label><input id="area" name="area" maxlength="120" placeholder="Hotel or area, if you know it"></div>
             </div>
@@ -79,9 +79,9 @@
             <header><h2 id="step-2-title" tabindex="-1">Budget and hire</h2><p>Include golf and any equipment you’d like me to price.</p></header>
             <div class="grid">
               <div class="field wide"><label for="budget">Golf budget per person for the trip (€) <span class="optional">optional</span></label><input id="budget" name="budget" type="number" inputmode="decimal" min="1" max="20000" step="1" placeholder="Leave blank if you’re flexible"></div>
-              <div class="field"><label for="buggies">Buggies per round</label><select id="buggies" name="buggies"></select></div>
-              <div class="field"><label for="clubs">Hire sets per round</label><select id="clubs" name="clubs"></select></div>
-              <div class="field wide"><label for="notes">Anything else I should know? <span class="optional">optional</span></label><textarea id="notes" name="notes" rows="2" maxlength="700" placeholder="For example, the last round needs to finish by 14:00."></textarea></div>
+              <div class="field"><label for="buggies">Buggies per round, whole group</label><select id="buggies" name="buggies"></select></div>
+              <div class="field"><label for="clubs">Hire club sets per round, whole group</label><select id="clubs" name="clubs"></select></div>
+              <div class="field wide"><label for="notes">Anything else I should know? <span class="optional">optional</span></label><textarea id="notes" name="notes" rows="2" maxlength="700" placeholder="Your landing and departure times are helpful. For example, the last round needs to finish by 14:00."></textarea></div>
             </div>
           </section>
           <section data-step="3" aria-labelledby="step-3-title" hidden><header><h2 id="step-3-title" tabindex="-1">Check your answers</h2><p>Go back to change anything before you finish.</p></header><dl class="brief-grid" id="client-review"></dl></section>
