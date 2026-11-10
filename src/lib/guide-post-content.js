@@ -1949,7 +1949,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "paragraph",
-          "text": "The first six holes are the narrowest, and every tee asks a question. The 1st is half blind: you can see enough to start, but not where the hole turns. The 5th is a long par 4 with a narrow landing area, especially from the back tee, and trees hang over the 6th. An iron off the tee is the safe play on both, though it leaves a longer second shot. That makes the course play longer than the card says, and it is tough if you draw or fade the ball a lot."
+          "text": "The first six holes are the narrowest. The 1st tee shot is half blind: you can see enough to start, but not where the hole turns. The 5th is a long par 4 with a very narrow landing area, especially from the back tee, and trees hang over the 6th. On both, an iron off the tee is safe, but it leaves a second shot longer than the one you just hit. Anything but a straight ball is punished. That makes the course play longer than the card says, and it is hard work if you draw or fade it."
         },
         {
           "type": "image",
@@ -1962,7 +1962,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "paragraph",
-          "text": "The 4th is now a par 3. I imagine that is because of the hotel down the right, where driver from the old par 4 tee would have been dangerous. The 9th was my pick of the nine, a short par 4 where you can hit over the trees and cut off a lot of distance. Apartment blocks and hotels frame many holes and the early greens are small, but nearly every tee gives you a decision to make."
+          "text": "The 4th is now a par 3. I imagine that is because of the hotel down the right, where driver from the old par 4 tee would have been dangerous. The 9th was my pick of the nine, a short par 4 where you can hit over the trees and cut off a lot of distance. Apartment blocks and hotels frame many holes, so you feel boxed in, and the early greens are small."
         },
         {
           "type": "heading",
