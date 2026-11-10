@@ -20,7 +20,12 @@ describe('trip estimates use the selected course itinerary', () => {
     expect(calculate({ ...DEFAULT_STATE, budget: 'premium', rounds: 1, golfers: 3 }).buggy).toEqual([90, 90])
   })
   test('essential buggies remain included when no is selected', () => {
-    expect(calculate({ ...DEFAULT_STATE, rounds: 1, buggy: 'no' }).buggy).toEqual([43, 43])
+    // Andratx is the fifth premium course and the only one in that mix where walking is not allowed.
+    // (Bendinat used to carry this test; it now allows walking, so its buggy is optional.)
+    expect(calculate({ ...DEFAULT_STATE, budget: 'premium', rounds: 5, buggy: 'no' }).buggy).toEqual([45, 45])
+  })
+  test('Bendinat allows walking, so no buggy is added when no is selected', () => {
+    expect(calculate({ ...DEFAULT_STATE, rounds: 1, buggy: 'no' }).buggy).toEqual([0, 0])
   })
   test('walking round adds no optional buggy', () => {
     expect(calculate({ ...DEFAULT_STATE, budget: 'premium', rounds: 1, buggy: 'no' }).buggy).toEqual([0, 0])
