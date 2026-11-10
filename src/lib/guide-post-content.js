@@ -1873,7 +1873,7 @@ export const GUIDE_POST_CONTENT = {
     en: {
       "metadata": {
         "title": "Bendinat - Honest Review 2026",
-        "description": "Bendinat green fee €67-€123, par 69, 15 minutes from Palma. A narrow, boxed-in front nine and a much better back nine.",
+        "description": "Bendinat green fee €67-€123, par 69, 15 minutes from Palma. A narrow front nine and a stronger back nine.",
         "imagePath": "/images/bendinat-blog/bendinat-9.webp"
       },
       "meta": {
@@ -1882,7 +1882,7 @@ export const GUIDE_POST_CONTENT = {
         "readTime": "5 min read",
         "updated": "November 2026",
         "title": "Real Golf de Bendinat, Mallorca: A PGA Professional's Honest Review (2026)",
-        "intro": "A Martin Hawtree course 7 km west of Palma, par 69. The first nine is narrow and boxed in by buildings. From the 11th it opens out to mountain views and the holes I would go back for.",
+        "intro": "A Martin Hawtree course 7 km west of Palma, par 69. The first nine is narrow and set among buildings. From the 11th it opens out to mountain views and the holes I would go back for.",
         "related": [
           {
             "slug": "son-vida-review",
@@ -1915,7 +1915,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "paragraph",
-          "text": "We teed off at 12:50 on a Monday in November and the course was busier than I expected. Four hours and ten minutes later I had birdied the 18th and wanted to come back, which was not how I felt after nine holes. Bendinat plays like two courses, and I liked the second one far more."
+          "text": "We teed off at 12:50 on a Monday in November and the course was busier than I expected. Four hours and ten minutes later I had birdied the 18th and wanted to come back. Bendinat has two different halves, and the second is the better one."
         },
         {
           "type": "heading",
@@ -1949,7 +1949,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "paragraph",
-          "text": "The first six holes are the narrowest. The 1st tee shot is half blind: you can see enough to start, but not where the hole turns. The 5th is a long par 4 with a very narrow landing area, especially from the back tee, and trees hang over the 6th. On both, an iron off the tee is safe, but it leaves a second shot longer than the one you just hit. Anything but a straight ball is punished. That makes the course play longer than the card says, and it is hard work if you draw or fade it."
+          "text": "The first six holes are the narrowest, and every tee asks a question. The 1st is half blind: you can see enough to start, but not where the hole turns. The 5th is a long par 4 with a narrow landing area, especially from the back tee, and trees hang over the 6th. An iron off the tee is the safe play on both, though it leaves a longer second shot. That makes the course play longer than the card says, and it is tough if you draw or fade the ball a lot."
         },
         {
           "type": "image",
@@ -1962,7 +1962,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "paragraph",
-          "text": "The 4th is now a par 3. I imagine that is because of the hotel down the right, where driver from the old par 4 tee would have been dangerous. The 9th was my pick of the nine, a short par 4 where you can hit over the trees and cut off a lot of distance. Apartment blocks and hotels frame many holes, so you feel boxed in, and the early greens are small."
+          "text": "The 4th is now a par 3. I imagine that is because of the hotel down the right, where driver from the old par 4 tee would have been dangerous. The 9th was my pick of the nine, a short par 4 where you can hit over the trees and cut off a lot of distance. Apartment blocks and hotels frame many holes and the early greens are small, but nearly every tee gives you a decision to make."
         },
         {
           "type": "heading",
@@ -2060,7 +2060,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "paragraph",
-          "text": "The staff were friendly from check-in to the end of the day, and afterwards they asked how we had found the course. Our main feedback was the signage. We took a few wrong turns off greens because it was not clear where the next tee was, and when we found a sign it was often too late. Walkers feel this most. The staff took it well. Round time was 4 hours 10 minutes, with a few small holdups later on, and we played through a few groups."
+          "text": "The staff were friendly from check-in to the end of the day, and afterwards they asked how we had found the course. Our main feedback was the signage. We took a few wrong turns off greens because it was not clear where the next tee was, and when we found a sign it was often too late, which matters most if you walk. The staff were receptive and seemed to want the feedback. Round time was 4 hours 10 minutes, with a few small holdups later on, and we played through a few groups."
         },
         {
           "type": "heading",
@@ -2097,7 +2097,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "paragraph",
-          "text": "The negatives from the day: wet, squelchy ground early on, tee boxes mid-restoration, signs to the next tee that come too late, and greens slower than I like. The greenkeepers were already working on the course."
+          "text": "The negatives from the day: wet, squelchy ground early on, tee boxes mid-restoration, signs to the next tee that come too late, and greens slower than I like."
         },
         {
           "type": "heading",
@@ -2105,7 +2105,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "paragraph",
-          "text": "The handicap limit is 36, with a certificate required at booking. Walking is allowed, but the course is very hilly, so take a buggy unless you are fit and used to hills. It suits golfers who keep the ball in play. If you shape the ball a lot, the early holes will frustrate you. First-timers are surprised by how different the two halves feel. Local tip: take an iron off the tee on the 5th, 6th and 10th and plan for a long second shot."
+          "text": "The handicap limit is 36, with a certificate required at booking. Walking is allowed, but the course is very hilly, so take a buggy unless you are fit and used to hills. It suits golfers who keep the ball in play. If you shape the ball a lot, the early holes will frustrate you. First-timers are surprised by how different the two halves feel."
         },
         {
           "type": "heading",
@@ -2113,7 +2113,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           "type": "paragraph",
-          "text": "7.5/10. Bendinat is short on the card and hard on the course. The first nine is narrow and boxed in by buildings. From the 11th you get the elevated tees, the mountain views and the holes I would go back for. It suits golfers who hit fairways and want a good finish close to Palma. It is a weaker choice if you want an easy walk. My playing partner was happy with €105."
+          "text": "7.5/10. Bendinat is short on the card and hard on the course. The first nine is narrow and set among buildings. From the 11th you get the elevated tees, the mountain views and the holes I would go back for. It suits golfers who hit fairways and want a good finish close to Palma. It is a weaker choice if you want an easy walk. My playing partner was happy with €105."
         },
         {
           "type": "notes",
