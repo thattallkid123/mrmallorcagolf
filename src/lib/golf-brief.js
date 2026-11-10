@@ -21,6 +21,19 @@ export function properName(value) {
     ? word : word.replace(/(^|[-'’])(\p{L})/gu, (_, lead, letter) => lead + letter.toUpperCase())).join(' ');
 }
 
+// The courses box is prefilled from the enquiry, where clients type "son vida /son quint/alcanada". A short list of
+// names is rewritten as "Son Vida, Son Quint, Alcanada", keeping de, del, la, of and the lower case inside a name.
+// Anything that reads like a sentence (full stops, long phrases) is left exactly as the client wrote it.
+const COURSE_LOWER = new Set(['de', 'del', 'della', 'la', 'las', 'el', 'los', 'des', 'da', 'do', 'di', 'of', 'the', 'at']);
+export function tidyCourses(value) {
+  const text = typeof value === 'string' ? value.trim() : '';
+  if (!text || /[.!?:;]/.test(text)) return text;
+  const parts = text.split(/\s*(?:\/|,|&|\+|\n|\band\b)\s*/i).map(part => part.trim()).filter(Boolean);
+  if (!parts.length || parts.some(part => part.split(/\s+/).length > 5)) return text;
+  return parts.map(part => part.split(/\s+/).map((word, i) => i > 0 && COURSE_LOWER.has(word.toLowerCase()) ? word.toLowerCase()
+    : word.replace(/(^|[-'’])(\p{L})/gu, (_, lead, letter) => lead + letter.toUpperCase())).join(' ')).join(', ');
+}
+
 export function normalize(data) {
   const dateMode = choice(data.dateMode, ['fixed', 'flexible', 'unknown']);
   const golfers = number(data.golfers, 40);

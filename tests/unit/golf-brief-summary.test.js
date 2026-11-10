@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
 
-import { briefSummaryLines, normalize, properName } from '../../src/lib/golf-brief.js'
+import { briefSummaryLines, normalize, properName, tidyCourses } from '../../src/lib/golf-brief.js'
 
 const base = {
   name: 'Test Client', email: 'T@Example.com', dateMode: 'fixed', from: '2027-03-10', to: '2027-03-14',
@@ -53,5 +53,20 @@ describe('names typed in lower case or capitals', () => {
 
   test('normalize fixes the name before it is saved or emailed', () => {
     expect(normalize({ ...base, name: 'gijs verkaik' }).name).toBe('Gijs Verkaik')
+  })
+})
+
+describe('must-play courses prefilled from the enquiry', () => {
+  test('a typed list becomes capitalised names, with de and the like left lower case', () => {
+    expect(tidyCourses('Son vida /son quint/son muntaner/alcanada')).toBe('Son Vida, Son Quint, Son Muntaner, Alcanada')
+    expect(tidyCourses('golf de andratx and club de golf alcanada')).toBe('Golf de Andratx, Club de Golf Alcanada')
+    expect(tidyCourses('t golf calvia, son gual & son antem')).toBe('T Golf Calvia, Son Gual, Son Antem')
+  })
+
+  test('leaves a sentence or anything unclear exactly as written', () => {
+    expect(tidyCourses('We would like to play Son Vida if there is space.')).toBe('We would like to play Son Vida if there is space.')
+    expect(tidyCourses('whatever you recommend for a group of nine golfers in September')).toBe('whatever you recommend for a group of nine golfers in September')
+    expect(tidyCourses('')).toBe('')
+    expect(tidyCourses(undefined)).toBe('')
   })
 })

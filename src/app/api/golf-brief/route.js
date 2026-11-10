@@ -1,7 +1,7 @@
 import { Resend } from 'resend'
 import { openEnquiry } from '../../../lib/enquiry-context.js'
 import { checkRateLimit, escapeHtml, getClientKey, isAllowedOrigin, isJsonRequest, isPayloadTooLarge, isValidEmail, sanitizeText } from '../../../lib/request-safety.js'
-import { briefSummaryLines, normalize, properName, valid } from '../../../lib/golf-brief.js'
+import { briefSummaryLines, normalize, properName, tidyCourses, valid } from '../../../lib/golf-brief.js'
 
 const reply = (status, data) => Response.json(data, { status, headers: { 'Cache-Control': 'private, no-store' } })
 const unavailable = () => reply(404, { error: 'This golf brief link is unavailable.' })
@@ -22,7 +22,7 @@ export async function POST(request) {
   const ref = typeof body?.ref === 'string' ? body.ref : ''
   const enquiry = openEnquiry(ref, body?.context, undefined, 'golf-brief')
   if (!enquiry) return unavailable()
-  const original = { name: properName(enquiry.name), email: enquiry.email, handicap: enquiry.handicap, courses: enquiry.courses }
+  const original = { name: properName(enquiry.name), email: enquiry.email, handicap: enquiry.handicap, courses: tidyCourses(enquiry.courses) }
   const count = String(enquiry.groupsize || '').trim().match(/^(\d{1,2})(?:\s*(?:golfer|player)s?)?$/i)
   if (count && Number(count[1]) >= 1 && Number(count[1]) <= 40) original.golfers = Number(count[1])
   if (body.action === 'load') return reply(200, { brief: original, originalDates: enquiry.dates || '' })
