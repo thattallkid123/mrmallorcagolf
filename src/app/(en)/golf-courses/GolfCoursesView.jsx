@@ -196,7 +196,7 @@ export default function GolfCoursesView({ locale = 'en', content }) {
             </p>
             <Link
               href={joinHref(locale, '/guides/mallorca-course-map')}
-              className="btn btn--gold"
+              className="btn btn--gold page-hero__btn"
               style={{ marginTop: 22 }}
             >
               {MAP_BUTTON_LABELS[locale] || MAP_BUTTON_LABELS.en}

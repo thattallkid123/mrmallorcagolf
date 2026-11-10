@@ -2213,6 +2213,7 @@ select.form-control { cursor: pointer; }
 
 .page-hero__meta { display: flex; gap: 10px; flex-wrap: wrap; margin-top: 1.25rem; }
 .page-hero__tag { font-size: 11px; letter-spacing: 0.15em; text-transform: uppercase; color: rgba(255,255,255,0.85); background: rgba(0,0,0,0.35); padding: 6px 12px; border: 1px solid rgba(255,255,255,0.18); }
+.hero-anchors { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 1.75rem; }
 .page-hero__tag--gold { color: var(--gold-light); border-color: rgba(184,151,60,0.5); background: rgba(0,0,0,0.35); }
 
 /* ─── RESPONSIVE (page-specific) ────────────────────────── */
@@ -3482,6 +3483,12 @@ select.form-control { cursor: pointer; }
   .pricing-grid { grid-template-columns: 1fr; }
   .pwap-packages .pricing-grid { grid-template-columns: 1fr; }
   /* Phone: rows of controls are equal-width columns, not content-sized wrapping rows with a stranded last item. */
+  /* Page-hero chips and buttons: equal columns on a phone (three chips in a row, four as two by two); buttons share one width. */
+  .page-hero__meta { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+  .page-hero__meta:has(> :nth-child(4)) { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .page-hero__tag { display: flex; align-items: center; justify-content: center; min-height: 44px; padding: 9px 6px; font-size: 9.5px; letter-spacing: 0.12em; line-height: 1.5; text-align: center; overflow-wrap: break-word; }
+  .hero-anchors { flex-direction: column; }
+  .hero-anchors .btn, .page-hero__btn { width: 100%; justify-content: center; text-align: center; }
   .sort-controls { display: grid; grid-template-columns: minmax(0, 1fr); flex: 1 1 100%; width: 100%; }
   .sort-controls__grid, .guides-filter-tabs { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .sort-controls__grid > *, .guides-filter-tabs > * { width: 100%; justify-content: center; }

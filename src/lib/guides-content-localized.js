@@ -11,7 +11,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "lead": "Análisis de campos, planificación de viajes, green fees y cuándo visitar, escritos por un Profesional PGA que juega aquí cada semana.",
       "tags": [
         "Actualizado 2026",
-        "Análisis de primera mano",
+        "Análisis propios",
         "PGA Professional"
       ]
     },
@@ -261,7 +261,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "lead": "Platz-Bewertungen, Reiseplanung, Greenfees und die beste Reisezeit, geschrieben von einem PGA Professional, der hier jede Woche spielt.",
       "tags": [
         "Aktualisiert 2026",
-        "Bewertungen aus erster Hand",
+        "Eigene Bewertungen",
         "PGA Professional"
       ]
     },
@@ -510,7 +510,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "lead": "Avis sur les parcours, planification de voyage, green fees et meilleure période pour venir, écrits par un Professionnel PGA qui joue ici chaque semaine.",
       "tags": [
         "Mis à jour 2026",
-        "Avis de première main",
+        "Avis personnels",
         "PGA Professional"
       ]
     },
@@ -760,7 +760,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
       "lead": "Baanbeoordelingen, reisplanning, greenfees en wanneer u het best kunt komen, geschreven door een PGA Professional die hier elke week speelt.",
       "tags": [
         "Bijgewerkt 2026",
-        "Beoordelingen uit eerste hand",
+        "Eigen beoordelingen",
         "PGA Professional"
       ]
     },

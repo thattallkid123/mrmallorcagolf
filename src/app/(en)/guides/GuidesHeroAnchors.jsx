@@ -15,7 +15,7 @@ function scrollToHash(hash) {
 
 export default function GuidesHeroAnchors({ reviewsLabel, articlesLabel }) {
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', gap: '12px', marginTop: '1.75rem' }}>
+    <div className="hero-anchors">
       <a
         href="#course-reviews"
         className="btn btn--gold"
