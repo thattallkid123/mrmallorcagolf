@@ -1,3 +1,4 @@
+// SUPERSEDED (Nov 2026): this example moves the logo between slides, which the mmg-course-carousel skill forbids. Copy scripts/carousel/bendinat-example/ instead. Kept for reference only.
 import { chromium } from 'playwright';
 import fs from 'fs';
 
