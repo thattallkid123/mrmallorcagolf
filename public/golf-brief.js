@@ -139,7 +139,8 @@ function datesFromEnquiry(text) {
   const t = String(text || '').toLowerCase().replace(/[–—]/g, '-').replace(/(\d)(?:st|nd|rd|th)\b/g, '$1').replace(/[.,]+$/, '').trim();
   const month = name => months[name.slice(0, name.startsWith('sept') ? 4 : 3)];
   let m, parts;
-  if ((m = t.match(new RegExp('^(\\d{1,2})' + sep + '(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})$')))) parts = [[+m[4], month(m[3]), +m[1]], [+m[4], month(m[3]), +m[2]]];
+  if ((m = t.match(new RegExp('^' + mon + '\\s*(\\d{1,2})' + sep + '(\\d{1,2}),?\\s*(\\d{4})$')))) parts = [[+m[4], month(m[1]), +m[2]], [+m[4], month(m[1]), +m[3]]];
+  else if ((m = t.match(new RegExp('^(\\d{1,2})' + sep + '(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})$')))) parts = [[+m[4], month(m[3]), +m[1]], [+m[4], month(m[3]), +m[2]]];
   else if ((m = t.match(new RegExp('^(\\d{1,2})\\s+' + mon + sep + '(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})$')))) parts = [[+m[5], month(m[2]), +m[1]], [+m[5], month(m[4]), +m[3]]];
   else if ((m = t.match(new RegExp('^(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})' + sep + '(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})$')))) parts = [[+m[3], month(m[2]), +m[1]], [+m[6], month(m[5]), +m[4]]];
   else if ((m = t.match(new RegExp('^(\\d{1,2})\\s+' + mon + '\\s+(\\d{4})$')))) parts = [[+m[3], month(m[2]), +m[1]]];

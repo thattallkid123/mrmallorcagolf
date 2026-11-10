@@ -11,12 +11,22 @@ function date(value) {
   return Number.isFinite(time) && new Date(time).toISOString().slice(0, 10) === value ? value : '';
 }
 
+// Clients often type their name in lower case ("gijs verkaik") or all capitals. Fix only those two cases and
+// leave a name that already has mixed case alone, so "McDonald" and "de Vries" are never overwritten.
+const NAME_PARTICLES = new Set(['van', 'von', 'de', 'der', 'den', 'del', 'della', 'di', 'da', 'la', 'le', 'ter', 'ten', 'af', 'av']);
+export function properName(value) {
+  const name = typeof value === 'string' ? value.trim().replace(/\s+/g, ' ') : '';
+  if (!name || (name !== name.toLowerCase() && name !== name.toUpperCase())) return name;
+  return name.toLowerCase().split(' ').map((word, i) => i > 0 && NAME_PARTICLES.has(word)
+    ? word : word.replace(/(^|[-'’])(\p{L})/gu, (_, lead, letter) => lead + letter.toUpperCase())).join(' ');
+}
+
 export function normalize(data) {
   const dateMode = choice(data.dateMode, ['fixed', 'flexible', 'unknown']);
   const golfers = number(data.golfers, 40);
   const window = choice(data.window, ['any', 'early', 'before-ten', 'morning', 'afternoon']);
   return {
-    name: clean(data.name, 120), email: clean(data.email, 180).toLowerCase(), dateMode,
+    name: properName(clean(data.name, 120)), email: clean(data.email, 180).toLowerCase(), dateMode,
     from: dateMode === 'unknown' ? '' : date(data.from), to: dateMode === 'unknown' ? '' : date(data.to),
     golfers, rounds: number(data.rounds, 14), handicap: clean(data.handicap, 100), window,
     windowRule: window === 'any' ? '' : choice(data.windowRule, ['fixed', 'flexible']),

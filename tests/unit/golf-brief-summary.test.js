@@ -1,6 +1,6 @@
 import { describe, expect, test } from 'vitest'
 
-import { briefSummaryLines, normalize } from '../../src/lib/golf-brief.js'
+import { briefSummaryLines, normalize, properName } from '../../src/lib/golf-brief.js'
 
 const base = {
   name: 'Test Client', email: 'T@Example.com', dateMode: 'fixed', from: '2027-03-10', to: '2027-03-14',
@@ -33,5 +33,25 @@ describe('golf brief summary for the notification email', () => {
   test('marks flexible dates and a single day', () => {
     const text = Object.fromEntries(briefSummaryLines(normalize({ ...base, dateMode: 'flexible', to: '2027-03-10' })))
     expect(text.Dates).toBe('10 Mar 2027 (flexible)')
+  })
+})
+
+describe('names typed in lower case or capitals', () => {
+  test('are written in capital case, keeping Dutch name particles lower case', () => {
+    expect(properName('gijs verkaik')).toBe('Gijs Verkaik')
+    expect(properName('JAN VAN DER BERG')).toBe('Jan van der Berg')
+    expect(properName("sean o'brien-smith")).toBe("Sean O'Brien-Smith")
+    expect(properName('  anna   lopez ')).toBe('Anna Lopez')
+  })
+
+  test('leaves a name that already has mixed case alone', () => {
+    expect(properName('Ian McDonald')).toBe('Ian McDonald')
+    expect(properName('Pieter de Vries')).toBe('Pieter de Vries')
+    expect(properName('')).toBe('')
+    expect(properName(undefined)).toBe('')
+  })
+
+  test('normalize fixes the name before it is saved or emailed', () => {
+    expect(normalize({ ...base, name: 'gijs verkaik' }).name).toBe('Gijs Verkaik')
   })
 })
