@@ -59,6 +59,7 @@
     "check:course-facts-reviewed": "node --no-warnings scripts/check-course-facts-reviewed.mjs",
     "check:review-schema": "node --no-warnings scripts/check-review-schema.mjs",
     "check:meta-length": "node --no-warnings scripts/check-meta-length.mjs",
+    "check:form-alignment": "node scripts/check-form-alignment.mjs",
     "check:css-hygiene": "node --no-warnings scripts/check-css-hygiene.mjs",
     "sync:discovery": "node --no-warnings scripts/sync-discovery.mjs",
     "check:course-data": "node --no-warnings scripts/check-course-destinations.js && node --no-warnings scripts/check-scorecard-data.js && node --no-warnings scripts/check-course-access-data.js && node --no-warnings scripts/check-tracker-course-pack.js && node --no-warnings scripts/check-strokes-gained-export.js && node --no-warnings scripts/check-zh-course-editorial.mjs",
