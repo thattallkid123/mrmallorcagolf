@@ -70,3 +70,23 @@ describe('must-play courses prefilled from the enquiry', () => {
     expect(tidyCourses(undefined)).toBe('')
   })
 })
+
+describe('group make-up, two rounds a day and days that cannot be played', () => {
+  test('keeps only known make-up values and a yes for two rounds, and lists them for Andy', () => {
+    const lines = Object.fromEntries(briefSummaryLines(normalize({ ...base, mix: 'mixed', twoRounds: 'yes', unavailable: 'Tuesday 14th' })))
+    expect(lines.Group).toBe('Men and women')
+    expect(lines['Two rounds in a day']).toBe('Happy to')
+    expect(lines['Cannot play']).toBe('Tuesday 14th')
+    const odd = normalize({ ...base, mix: 'everyone', twoRounds: 'maybe' })
+    expect(odd.mix).toBe('')
+    expect(odd.twoRounds).toBe('')
+    expect(Object.keys(Object.fromEntries(briefSummaryLines(odd)))).not.toContain('Group')
+  })
+
+  test('adds nothing when the client leaves them blank', () => {
+    const labels = briefSummaryLines(normalize(base)).map(([label]) => label)
+    expect(labels).not.toContain('Group')
+    expect(labels).not.toContain('Two rounds in a day')
+    expect(labels).not.toContain('Cannot play')
+  })
+})

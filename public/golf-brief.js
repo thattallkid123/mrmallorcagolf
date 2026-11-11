@@ -53,6 +53,7 @@ function briefMarkup(data) {
     ['Name', data.name, true], ['Email', data.email, true], ['Playing dates', dates, true],
     ['Date flexibility', data.dateMode === 'unknown' ? '' : labels.dateMode[data.dateMode]],
     ['Golfers', data.golfers], ['Rounds to play', data.rounds || 'To decide'], ['Handicaps', data.handicap],
+    ['Group', { men: 'All men', mixed: 'Men and women', women: 'All women' }[data.mix] || ''], ['Two rounds in a day', data.twoRounds ? 'Happy to' : '', true], ['Days you cannot play', data.unavailable, true],
     ['Tee-off time', time], ['Priority', labels.priority[data.priority]], ['Groups tee off', labels.nearby[data.nearby]],
     ['Must-play courses', data.courses, true], ['Hotel or area', data.area, true],
     ['Golf budget per person', data.budget ? currency.format(data.budget) : 'Flexible'],

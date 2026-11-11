@@ -45,6 +45,7 @@ export function normalize(data) {
     windowRule: window === 'any' ? '' : choice(data.windowRule, ['fixed', 'flexible']),
     priority: choice(data.priority, ['balance', 'price', 'times']),
     nearby: golfers > 4 ? choice(data.nearby, ['yes', 'flexible', 'unknown']) : '',
+    mix: choice(data.mix, ['men', 'mixed', 'women']), twoRounds: choice(data.twoRounds, ['yes']), unavailable: clean(data.unavailable, 200),
     courses: clean(data.courses, 500), area: clean(data.area, 120), budget: number(data.budget, 20000),
     buggies: number(data.buggies, golfers || 40, 0), clubs: number(data.clubs, golfers || 40, 0), notes: clean(data.notes, 700)
   };
@@ -63,6 +64,7 @@ function datesText(brief) {
   return text + (brief.dateMode === 'flexible' ? ' (flexible)' : '');
 }
 const WINDOWS = { any: 'Any start time', early: 'Before 09:00', 'before-ten': 'Before 10:00', morning: '09:00 to 12:00', afternoon: 'After 12:00' };
+const MIX = { men: 'All men', mixed: 'Men and women', women: 'All women' };
 const PRIORITIES = { balance: 'balance of price and time', price: 'lower price', times: 'preferred start times' };
 
 // The facts Andy needs to judge a brief from the email alone, in the order he answers them.
@@ -70,6 +72,9 @@ export function briefSummaryLines(brief) {
   const lines = [['Dates', datesText(brief)]];
   lines.push(['Golfers', brief.golfers + (brief.rounds ? ', ' + brief.rounds + (brief.rounds === 1 ? ' round' : ' rounds') : '')]);
   if (brief.handicap) lines.push(['Handicap', brief.handicap]);
+  if (brief.mix) lines.push(['Group', MIX[brief.mix]]);
+  if (brief.twoRounds) lines.push(['Two rounds in a day', 'Happy to']);
+  if (brief.unavailable) lines.push(['Cannot play', brief.unavailable]);
   lines.push(['Start times', (WINDOWS[brief.window] || '') + (brief.window !== 'any' && brief.windowRule ? (brief.windowRule === 'fixed' ? ', keep to this window' : ', other times welcome') : '') + ', priority ' + (PRIORITIES[brief.priority] || '')]);
   if (brief.courses) lines.push(['Must-play courses', brief.courses]);
   if (brief.area) lines.push(['Staying', brief.area]);

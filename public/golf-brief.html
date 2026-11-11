@@ -58,6 +58,9 @@
               <div class="field"><label for="golfers">Number of golfers in your group</label><input id="golfers" name="golfers" type="number" inputmode="numeric" min="1" max="40" required></div>
               <div class="field"><label for="rounds">How many rounds do you want to play?</label><input id="rounds" name="rounds" type="number" inputmode="numeric" min="1" max="14" placeholder="Not sure"><span class="hint">Rounds for each golfer across the whole trip.</span></div>
               <div class="field wide"><label for="handicap">Handicaps in your group <span class="optional">optional</span></label><input id="handicap" name="handicap" placeholder="For example, 12–24, or just 18" maxlength="100"></div>
+              <div class="field wide"><label for="mix">Who is in your group? <span class="optional">optional</span></label><select id="mix" name="mix"><option value="">Prefer not to say</option><option value="men">All men</option><option value="mixed">Men and women</option><option value="women">All women</option></select><span class="hint">Some courses have different handicap limits for men and women.</span></div>
+              <div class="field wide"><label for="twoRounds">Would anyone play two rounds in one day? <span class="optional">optional</span></label><select id="twoRounds" name="twoRounds"><option value="">No, one round a day</option><option value="yes">Yes, that is fine</option></select></div>
+              <div class="field wide"><label for="unavailable">Any days you cannot play? <span class="optional">optional</span></label><input id="unavailable" name="unavailable" maxlength="200" placeholder="For example, Tuesday 14th"></div>
             </div>
           </section>
           <section data-step="1" aria-labelledby="step-1-title" hidden>
@@ -72,7 +75,7 @@
               </fieldset>
               <div class="field wide" id="nearby-field" hidden><label for="nearby">Should your groups tee off close together?</label><select id="nearby" name="nearby"><option value="yes">Yes, keep our starts close</option><option value="flexible">A wider gap is fine</option><option value="unknown">Not sure yet</option></select></div>
               <div class="field wide"><label for="courses">Any must-play courses? <span class="optional">optional</span></label><textarea id="courses" name="courses" maxlength="500" rows="2" placeholder="Tell me if there’s a course you want included."></textarea></div>
-              <div class="field wide"><label for="area">Where are you staying? <span class="optional">optional</span></label><input id="area" name="area" maxlength="120" placeholder="Hotel or area, if you know it"></div>
+              <div class="field wide"><label for="area">Where are you staying? <span class="optional">optional</span></label><input id="area" name="area" maxlength="120" placeholder="Hotel or area, or “nothing booked yet”"></div>
             </div>
           </section>
           <section data-step="2" aria-labelledby="step-2-title" hidden>
