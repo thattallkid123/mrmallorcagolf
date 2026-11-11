@@ -7,6 +7,9 @@ node scripts/export-hotel-reference.mjs
 echo "Running content guardrails before push..."
 npm run check:content
 
+echo "Checking form alignment..."
+npm run check:form-alignment
+
 if [ "${SKIP_MMG_CONTENT_EXPORT:-}" = "1" ]; then
   echo "Skipping MMG Blog Content export because SKIP_MMG_CONTENT_EXPORT=1."
   exit 0
