@@ -16,7 +16,7 @@ export default function PrivacyPolicyDE() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Datenschutzerklärung</h1>
-            <p className="legal-page__updated">Zuletzt aktualisiert: 18. Oktober 2026</p>
+            <p className="legal-page__updated">Zuletzt aktualisiert: 12. November 2026</p>
           </div>
 
           <section className="legal-section">
@@ -30,7 +30,7 @@ export default function PrivacyPolicyDE() {
             <p>Wir erheben personenbezogene Daten nur, wenn Sie sie uns freiwillig zur Verfügung stellen oder wenn Sie unsere Website besuchen. Dazu gehören:</p>
             <ul>
               <li><strong>Kontaktformular:</strong> Ihr Name, Ihre E-Mail-Adresse, gewählter Service sowie gegebenenfalls Reisedaten, Gruppengröße, Handicap, gewünschte Plätze, Hotelwunsch und Nachricht. Soweit verfügbar erfassen wir auch die Website-Seite und Kampagne, über die Sie zum Formular kamen, sowie das Land, aus dem Ihre Verbindung zu stammen scheint (nur das Land, beim Absenden des Formulars ausgelesen und nur in der Anfrage-E-Mail gespeichert).</li>
-              <li><strong>Golf-Fragebogen:</strong> Wenn Sie den privaten Folgelink nutzen, erfassen wir Ihren Namen, Ihre E-Mail-Adresse, Ihre Anfragereferenz und Ihre Angaben zum Golf, etwa Spieltermine, Gruppengröße, Plätze, Budget und benötigte Ausrüstung. Wir speichern Ihre Antworten in unserem internen Angebotssystem, um Ihr Angebot vorzubereiten. Der Link enthält ausgewählte Angaben aus Ihrer Anfrage in verschlüsselter Form und läuft nach 30 Tagen ab. Bitte behandeln Sie ihn vertraulich, da jeder mit dem vollständigen Link diese Angaben sehen kann.</li>
+              <li><strong>Golf-Fragebogen:</strong> Wenn Sie den privaten Folgelink nutzen (wir senden ihn Ihnen in der Bestätigung Ihrer Anfrage oder in einer Antwort per E-Mail), erfassen wir Ihren Namen, Ihre E-Mail-Adresse, Ihre Anfragereferenz und Ihre Angaben zum Golf, etwa Spieltermine, Gruppengröße, Plätze, Budget und benötigte Ausrüstung. Wir speichern Ihre Antworten in unserem internen Angebotssystem, um Ihr Angebot vorzubereiten. Der Link enthält ausgewählte Angaben aus Ihrer Anfrage in verschlüsselter Form und läuft nach 30 Tagen ab. Bitte behandeln Sie ihn vertraulich, da jeder mit dem vollständigen Link diese Angaben sehen kann.</li>
               <li><strong>Reisepräferenzen:</strong> Wenn Sie einen Folgelink nutzen, erfassen wir Ihren Namen, Ihre E-Mail-Adresse, Ihre Anfragereferenz sowie die Angaben zu Gruppe, Reisedaten, Flugzeiten, Unterkunft, Zimmern, Transfers, Restaurants, Aktivitäten, praktischen Bedürfnissen (etwa dem Alter von Kindern) und Ihren Wünschen für die Reise, die Sie mit uns teilen möchten. Ihre Antworten werden uns per E-Mail zugestellt, damit wir das Gespräch und passende Optionen vorbereiten können. Ihr persönlicher Folgelink enthält eine verschlüsselte Kopie Ihrer ursprünglichen Anfrage, die 30 Tage lang verfügbar ist. Jeder mit dem vollständigen Link kann diese Angaben sehen. Bitte behandeln Sie ihn vertraulich.</li>
               <li><strong>Fragebogen vor der Runde:</strong> Ihr Name, Ihre E-Mail-Adresse, Ihr Handicap und Ihre Antworten zu Ihrem Spiel, Ihrem Training und Ihren Zielen. Altersgruppe und Wohnort sind freiwillig. Die Antworten werden uns per E-Mail zugestellt und dienen der Planung Ihres Termins.</li>
               <li><strong>Anfragen per E-Mail und WhatsApp:</strong> Ihr Name und Ihre Kontaktdaten, wenn Sie sich direkt an uns wenden</li>

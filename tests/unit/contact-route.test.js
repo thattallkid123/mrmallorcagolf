@@ -46,30 +46,45 @@ describe('contact enquiry email', () => {
     expect(mail.html).not.toContain('<script>')
   })
 
-  test('one-tap replies carry the message and the personal links, with the right one suggested', async () => {
+  test('English enquirers get the golf questionnaire in their confirmation; Andy gets the trip-preferences reply only', async () => {
     process.env.GOLF_BRIEF_ENABLED = '1'
     try {
       await post(body)
+      const confirmation = send.mock.calls.map((call) => call[0]).find((message) => message.to === 'sam@example.com')
+      expect(confirmation.html).toMatch(/href="https:\/\/[^"]+\/golf-brief\.html\?ref=[0-9a-f-]{36}#context=/)
+      expect(confirmation.html).toContain('Open the golf questionnaire')
       const html = andyMail().html
-      const hrefs = [...html.matchAll(/href="(mailto:[^"]+)"/g)].map((m) => m[1].replace(/&amp;/g, '&'))
-      const bodies = hrefs.filter((h) => h.includes('body=')).map((h) => decodeURIComponent(h.split('body=')[1]))
-      expect(bodies).toHaveLength(3)
-      const both = bodies.find((b) => b.includes('Two short questionnaires'))
-      expect(both).toMatch(/^Hi Sam,/)
-      expect(both).toMatch(/golf-brief\.html\?ref=[0-9a-f-]{36}#context=/)
-      expect(both).toMatch(/trip-preferences\.html\?ref=[0-9a-f-]{36}#context=/)
-      expect(html).toContain('Suggested: both.')
-      expect(html).toMatch(/background:#2D4A3E;color:#ffffff">Reply with both</)
+      expect(html).toContain('went to them automatically')
+      expect(html).not.toContain('Reply with golf questionnaire')
+      expect(html).not.toContain('Reply with both')
+      expect(html).toContain('Reply with trip preferences')
+      const trip = [...html.matchAll(/href="(mailto:[^"]+)"/g)].map((m) => decodeURIComponent(m[1].replace(/&amp;/g, '&').split('body=')[1] || '')).filter(Boolean)
+      expect(trip).toHaveLength(1)
+      expect(trip[0]).toMatch(/trip-preferences\.html\?ref=[0-9a-f-]{36}#context=/)
 
+      // a PWAP enquiry has no golf questionnaire, so nothing automatic goes out
       send.mockClear()
       await post({ ...body, serviceType: 'pwap', experience: 'pwap' })
-      const pwap = andyMail().html
-      expect(pwap).not.toContain('Reply with golf questionnaire')
-      expect(pwap).toContain('Reply with trip preferences')
-      expect(pwap).toContain('Most of these need a normal reply first.')
+      const pwapConfirmation = send.mock.calls.map((call) => call[0]).find((message) => message.to === 'sam@example.com')
+      expect(pwapConfirmation.html).not.toContain('golf-brief')
+      expect(andyMail().html).toContain('Most of these need a normal reply first.')
+
+      // other languages keep the manual route, because the questionnaire is English only
+      send.mockClear()
+      await post({ ...body, lang: 'de' })
+      const deConfirmation = send.mock.calls.map((call) => call[0]).find((message) => message.to === 'sam@example.com')
+      expect(deConfirmation.html).not.toContain('golf-brief')
+      expect(andyMail().html).toContain('Reply with golf questionnaire')
     } finally {
       delete process.env.GOLF_BRIEF_ENABLED
     }
+  })
+
+  test('with the questionnaire switched off nothing about it is sent', async () => {
+    await post(body)
+    const confirmation = send.mock.calls.map((call) => call[0]).find((message) => message.to === 'sam@example.com')
+    expect(confirmation.html).not.toContain('golf-brief')
+    expect(andyMail().html).not.toContain('went to them automatically')
   })
 
   test('the follow-up link carries the visitor language so the questionnaire opens in it', async () => {

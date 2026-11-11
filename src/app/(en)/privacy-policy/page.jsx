@@ -16,7 +16,7 @@ export default function PrivacyPolicy() {
             </p>
 
             <h1 style={{marginBottom:'0.5rem'}}>Privacy Policy</h1>
-            <p className="legal-page__updated">Last updated: 18 October 2026</p>
+            <p className="legal-page__updated">Last updated: 12 November 2026</p>
           </div>
 
           <section className="legal-section">
@@ -30,7 +30,7 @@ export default function PrivacyPolicy() {
             <p>We collect personal data only when you voluntarily provide it or when you visit our website. This includes:</p>
             <ul>
               <li><strong>Contact form submissions:</strong> your name, email address, chosen service, dates, group size, handicap, courses you would like to play, whether you want help with a hotel, and message where provided. We also record the site page and campaign that led to the form, when available, and the country your connection appears to come from (country only, read when you send the form and kept only in the enquiry email).</li>
-              <li><strong>Golf questionnaire:</strong> when you use a private follow-up link, we collect your name, email address, enquiry reference and the golf details you share, including dates, group size, courses, budget and equipment needs. We save your answers in our private quote system so we can prepare your quote. The link contains an encrypted copy of selected enquiry details and expires after 30 days. Keep it private, as anyone with the full link can view those details.</li>
+              <li><strong>Golf questionnaire:</strong> when you use a private follow-up link (we email it to you in your enquiry confirmation or in a reply), we collect your name, email address, enquiry reference and the golf details you share, including dates, group size, courses, budget and equipment needs. We save your answers in our private quote system so we can prepare your quote. The link contains an encrypted copy of selected enquiry details and expires after 30 days. Keep it private, as anyone with the full link can view those details.</li>
               <li><strong>Trip preferences:</strong> when you use a follow-up link, we collect your name, email address, enquiry reference and any group, date, flight time, hotel, room, transfer, dining, activity and practical requirements (such as children&rsquo;s ages) you choose to share, and what you hope to get from the trip. Your answers are emailed to us to prepare for your call and plan suitable options. Your personal follow-up link contains an encrypted copy of the original enquiry, available for 30 days. Anyone with the full link can view those details, so keep it private.</li>
               <li><strong>Pre-round questionnaire:</strong> your name, email address, handicap and your answers about your game, practice and goals. Age range and where you live are optional. The answers are emailed to us and used to plan your session.</li>
               <li><strong>Email and WhatsApp enquiries:</strong> your name and contact details when you reach out directly</li>

@@ -148,16 +148,21 @@ export async function POST(request) {
     const golfBriefUrl = process.env.GOLF_BRIEF_ENABLED === '1' && ['trip-planning', 'tee-time-booking', 'both', 'whole-trip'].includes(serviceType)
       ? `https://${preferencesHost}/golf-brief.html?ref=${enquiryRef}#context=${sealEnquiry(enquiryRef, { name: fullName, email, dates, groupsize, handicap, courses }, undefined, 'golf-brief')}`
       : ''
+    // The golf questionnaire goes to English-language enquirers automatically, in their confirmation email, so Andy has the answers
+    // without a manual reply. The questionnaire itself is English only, so other languages keep the manual route.
+    const autoGolfBrief = Boolean(golfBriefUrl) && lang === 'EN'
     // One-tap replies for Andy: each opens a reply to the client with the message and the personal link already in it.
     const LINE = String.fromCharCode(10)
     const replyBody = (paragraphs) => [`Hi ${fname},`, ...paragraphs, 'Fill in what you know and leave the rest blank. I will come back to you once I have your answers.', 'Andy'].join(LINE + LINE)
     const replyHref = (paragraphs) => `mailto:${email}?subject=${encodeURIComponent('Your Mallorca golf trip')}&body=${encodeURIComponent(replyBody(paragraphs))}`
     const replies = []
-    if (golfBriefUrl) replies.push({ key: 'golf', label: 'Reply with golf questionnaire', href: replyHref(['Thanks for your enquiry. To price this accurately I need a few more details. This short golf questionnaire covers your dates, tee times, budget and equipment, and takes about five minutes:', golfBriefUrl]) })
-    if (golfBriefUrl) replies.push({ key: 'both', label: 'Reply with both', href: replyHref(['Thanks for your enquiry. Two short questionnaires will help me plan this properly. The first covers the golf: dates, tee times, budget and equipment.', golfBriefUrl, 'The second covers the rest of the trip, such as hotels, transfers and restaurants:', preferencesUrl]) })
+    if (golfBriefUrl && !autoGolfBrief) replies.push({ key: 'golf', label: 'Reply with golf questionnaire', href: replyHref(['Thanks for your enquiry. To price this accurately I need a few more details. This short golf questionnaire covers your dates, tee times, budget and equipment, and takes about five minutes:', golfBriefUrl]) })
+    if (golfBriefUrl && !autoGolfBrief) replies.push({ key: 'both', label: 'Reply with both', href: replyHref(['Thanks for your enquiry. Two short questionnaires will help me plan this properly. The first covers the golf: dates, tee times, budget and equipment.', golfBriefUrl, 'The second covers the rest of the trip, such as hotels, transfers and restaurants:', preferencesUrl]) })
     replies.push({ key: 'trip', label: 'Reply with trip preferences', href: replyHref(['Thanks for your enquiry. This short questionnaire covers the rest of the trip, such as hotels, transfers and restaurants, and takes about five minutes:', preferencesUrl]) })
-    const suggestedReply = serviceType === 'whole-trip' && golfBriefUrl ? 'both' : golfBriefUrl ? 'golf' : ''
-    const replyAdvice = suggestedReply === 'both'
+    const suggestedReply = autoGolfBrief ? '' : serviceType === 'whole-trip' && golfBriefUrl ? 'both' : golfBriefUrl ? 'golf' : ''
+    const replyAdvice = autoGolfBrief
+      ? 'The golf questionnaire link went to them automatically in their confirmation email. Their answers will arrive in Internal. Send the trip preferences only if they want help with hotels or transfers.'
+      : suggestedReply === 'both'
       ? 'Suggested: both. The golf answers feed your quote; hotel, transfer and restaurant wishes are for the call and for Shane.'
       : suggestedReply === 'golf'
         ? 'Suggested: the golf questionnaire. It gives you dates, tee times, budget and hire for the quote.'
@@ -244,11 +249,16 @@ export async function POST(request) {
     const whatsappHref = localeKey === 'zh' ? 'https://www.mrmallorcagolf.com/zh/contact#wechat' : 'https://wa.me/34624466702'
     try {
       const confirmContent = getContactContent(localeKey)
+      const briefHtml = autoGolfBrief
+        ? emailParagraph('To price this accurately I need a few more details. This short golf questionnaire covers your dates, tee times, budget and hire, and takes about five minutes. Fill in what you know and leave the rest blank.')
+          + '<p style="margin:0 0 24px;"><a href="' + escapeHtml(golfBriefUrl) + '" style="display:inline-block;padding:12px 20px;background:#2D4A3E;font-family:Jost,Arial,Helvetica,sans-serif;font-size:15px;font-weight:500;color:#FFFFFF;text-decoration:none;">Open the golf questionnaire</a></p>'
+          + emailParagraph('If you would rather talk it through, just reply to this email.')
+        : ''
       const { error: confirmationError } = await resend.emails.send({
         from: 'Andy Griffiths <andy@mrmallorcagolf.com>',
         to: email,
         subject: confirmContent.success.title,
-        html: buildToolEmail(escapeHtml(confirmContent.success.title), emailParagraph(escapeHtml(confirmContent.success.body)) + '<p style="margin:24px 0 0;"><a href="'+whatsappHref+'" style="display:inline-block;padding:12px 20px;background:#2D4A3E;font-family:Jost,Arial,Helvetica,sans-serif;font-size:15px;font-weight:500;color:#FFFFFF;text-decoration:none;">'+escapeHtml(confirmContent.cards.whatsappValue)+'</a></p>', {includeIntroduction:false, footerHtml:'', lang:localeKey}),
+        html: buildToolEmail(escapeHtml(confirmContent.success.title), emailParagraph(escapeHtml(confirmContent.success.body)) + briefHtml + '<p style="margin:24px 0 0;"><a href="'+whatsappHref+'" style="display:inline-block;padding:12px 20px;background:#2D4A3E;font-family:Jost,Arial,Helvetica,sans-serif;font-size:15px;font-weight:500;color:#FFFFFF;text-decoration:none;">'+escapeHtml(confirmContent.cards.whatsappValue)+'</a></p>', {includeIntroduction:false, footerHtml:'', lang:localeKey}),
       })
       if (confirmationError) console.error('Resend confirmation email error:', confirmationError)
     } catch (confirmError) {
