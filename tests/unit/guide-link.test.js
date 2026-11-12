@@ -8,9 +8,11 @@ describe('guide download destinations', () => {
       expect(localizeGuideHref(`/${locale}/guides/cost-guide`, locale)).toBe('/guides/cost-guide')
     }
   })
-  test('course comparison uses a translation only where one exists', () => {
-    for (const locale of ['nl','sv']) expect(localizeGuideHref('/guides/course-comparison', locale)).toBe('/guides/course-comparison')
-    for (const locale of ['de','es','fr','zh']) expect(localizeGuideHref('/guides/course-comparison', locale)).toBe(`/${locale}/guides/course-comparison`)
+  test('all translated course-comparison buttons go directly to the English download page', () => {
+    for (const locale of ['de','es','fr','nl','sv','zh']) {
+      expect(localizeGuideHref('/guides/course-comparison', locale)).toBe('/guides/course-comparison')
+      expect(localizeGuideHref(`/${locale}/guides/course-comparison`, locale)).toBe('/guides/course-comparison')
+    }
   })
   test('retains enquiry parameters and anchors without doubling the language prefix', () => {
     expect(localizeGuideHref('/contact?service=pwap#form', 'de')).toBe('/de/contact?service=pwap#form')
