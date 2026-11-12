@@ -17,6 +17,7 @@ import {
 import { getExperienceLabel, OFFER_IDS } from '../../../lib/offers-content.js'
 import { getContactContent } from '../../../lib/contact-content.js'
 import { buildEnquiryBrief } from '../../../lib/enquiry-brief.js'
+import { properName, tidyCourses } from '../../../lib/golf-brief.js'
 
 const SERVICE_TYPE_LABELS = {
   pwap: 'Play With A Pro',
@@ -135,7 +136,8 @@ export async function POST(request) {
     const serviceTypeLabel = SERVICE_TYPE_LABELS[serviceType] || serviceType || 'Not specified'
     const pwapFormatLabel = EXPERIENCE_LABELS[pwapFormat] || pwapFormat || ''
     const experienceLabel = EXPERIENCE_LABELS[experience] || SERVICE_TYPE_LABELS[experience] || experience || ''
-    const fullName = `${fname} ${lname}`.trim()
+    // clients often type names and courses in lower case: show them capitalised to Andy (a name or list already in mixed case is left alone)
+    const fullName = properName(`${fname} ${lname}`.trim())
     const safeEmail = escapeHtml(email)
 
     const country = describeCountry(request)
@@ -209,7 +211,7 @@ export async function POST(request) {
             ${renderRow('Dates', dates)}
             ${renderRow('Handicap', handicap)}
             ${renderRow('Group size', groupsize)}
-            ${renderRow('Courses in mind', courses)}
+            ${renderRow('Courses in mind', tidyCourses(courses))}
             ${renderRow('Hotel help', HOTEL_HELP_LABELS[hotelHelp] || '')}
             ${renderRow('Country', country)}
             ${renderRow('Main enquiry', serviceTypeLabel)}
@@ -252,7 +254,7 @@ export async function POST(request) {
       const briefHtml = autoGolfBrief
         ? emailParagraph('To price this accurately I need a few more details. This short golf questionnaire covers your dates, tee times, budget and hire, and takes about five minutes. Fill in what you know and leave the rest blank.')
           + '<p style="margin:0 0 24px;"><a href="' + escapeHtml(golfBriefUrl) + '" style="display:inline-block;padding:12px 20px;background:#2D4A3E;font-family:Jost,Arial,Helvetica,sans-serif;font-size:15px;font-weight:500;color:#FFFFFF;text-decoration:none;">Open the golf questionnaire</a></p>'
-          + emailParagraph('If you would rather talk it through, just reply to this email.')
+          + emailParagraph('If you would rather talk it through, reply with a good time for a call, or message me on WhatsApp.')
         : ''
       const { error: confirmationError } = await resend.emails.send({
         from: 'Andy Griffiths <andy@mrmallorcagolf.com>',

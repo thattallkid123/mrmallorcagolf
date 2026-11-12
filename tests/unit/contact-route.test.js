@@ -38,6 +38,17 @@ describe('contact enquiry email', () => {
     expect(mail.html).not.toContain('Not recorded')
   })
 
+  test('shows lower-case names and courses capitalised to Andy, and leaves mixed case alone', async () => {
+    await post({ ...body, fname: 'sam', lname: 'example', courses: 'son gual /son quint/alcanada' })
+    const mail = andyMail()
+    expect(mail.subject).toBe('New enquiry from Sam Example - Whole trip')
+    expect(mail.html).toContain('Son Gual, Son Quint, Alcanada')
+    send.mockClear()
+    await post({ ...body, fname: 'Sam', lname: 'McDonald', courses: 'I would like Son Gual first. Then Alcanada if open.' })
+    expect(andyMail().subject).toBe('New enquiry from Sam McDonald - Whole trip')
+    expect(andyMail().html).toContain('I would like Son Gual first. Then Alcanada if open.')
+  })
+
   test('ignores a malformed country header and an unknown hotel option', async () => {
     await post({ ...body, hotelHelp: '<script>' }, { 'x-vercel-ip-country': 'not-a-country' })
     const mail = andyMail()
@@ -53,6 +64,7 @@ describe('contact enquiry email', () => {
       const confirmation = send.mock.calls.map((call) => call[0]).find((message) => message.to === 'sam@example.com')
       expect(confirmation.html).toMatch(/href="https:\/\/[^"]+\/golf-brief\.html\?ref=[0-9a-f-]{36}#context=/)
       expect(confirmation.html).toContain('Open the golf questionnaire')
+      expect(confirmation.html).toContain('reply with a good time for a call, or message me on WhatsApp')
       const html = andyMail().html
       expect(html).toContain('went to them automatically')
       expect(html).not.toContain('Reply with golf questionnaire')
