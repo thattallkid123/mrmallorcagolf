@@ -6,12 +6,13 @@ export const COURSE_ACCESS_LIST = [
   {
     name: "Canyamel Golf",
     handicapMen: 36,
-    handicapWomen: 45,
+    handicapWomen: 36,
     certificateRequired: true,
     handicapRequired: true,
     accessType: "public",
     holes: 18,
     confidence: "high",
+    sourceNote: "2026-11-12: canyamelgolf.com/prices-and-offers says players with a handicap above 36 are only allowed in high season from 2pm; no separate ladies limit is published, so 36 for both (was 45 for ladies). Andy agreed.",
   },
   {
     name: "Capdepera Golf",
