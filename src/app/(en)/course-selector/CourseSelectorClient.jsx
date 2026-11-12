@@ -100,7 +100,7 @@ const COURSES = [
   {
     name: 'Golf Son Termes',
     location: 'Bunyola',
-    fees: 'Peak €110 / Low €85',
+    fees: 'Peak €110 / Low €90',
     href: '/golf-courses',
     bestFor: ['intermediate', 'scenery', 'value', 'week'],
     take: 'Shorter and more rugged, with Tramuntana mountain context on every hole. Buggy recommended, but the setting does a lot of work.',

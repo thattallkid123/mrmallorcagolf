@@ -18,7 +18,7 @@ export const COURSE_PRICING_BY_NAME = {
   "Golf Son Antem West": {"low":113,"peak":150,"dynamic":true,"licenceFee":0,"junior18HLow":55,"junior18HPeak":74,"juniorAgeMax":18},
   "Golf Son Gual": {"low":115,"peak":165,"dynamic":false,"licenceFee":0,"junior18HLow":80,"junior18HPeak":105,"junior9H":65,"juniorAgeMax":17},
   "Golf Son Quint": {"low":76,"peak":172,"dynamic":true,"licenceFee":3,"junior18HLow":39,"junior18HPeak":85,"junior9H":33,"juniorAgeMax":17},
-  "Golf Son Termes": {"low":85,"peak":110,"dynamic":false,"licenceFee":0},
+  "Golf Son Termes": {"low":90,"peak":110,"dynamic":false,"licenceFee":0},
   "Golf Son Vida": {"low":84,"peak":190,"dynamic":true,"licenceFee":3,"junior18HLow":42,"junior18HPeak":95,"junior9H":37,"juniorAgeMax":17},
   "Palma Pitch & Putt": {"low":27,"peak":30,"dynamic":true,"licenceFee":2,"holes":9,"feeMode":"pitch_putt","junior18HLow":14,"junior18HPeak":15,"junior9H":10,"juniorAgeMax":17},
   "Pula Golf": {"low":69,"peak":145,"dynamic":true,"licenceFee":0},

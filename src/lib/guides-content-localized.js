@@ -124,7 +124,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: reseña sincera de un profesional de la PGA (2026)",
         "intro": "Vistas de montaña sobre Palma, líneas de salida más exigentes de lo que parecen y uno de los recorridos con más personalidad de la isla en este rango de precio.",
         "readTime": "5 min de lectura",
-        "keywords": "Montaña · Par 70 · €85-110 · 25 min desde Palma"
+        "keywords": "Montaña · Par 70 · €90-110 · 25 min desde Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -383,7 +383,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: Die ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Bergblicke über Palma, engere Abschlagslinien als man erwartet und eines der eigenständigsten Layouts der Insel in dieser Preisklasse.",
         "readTime": "5 Min. Lesezeit",
-        "keywords": "Bergplatz · Par 70 · €85-110 · 25 Min. von Palma"
+        "keywords": "Bergplatz · Par 70 · €90-110 · 25 Min. von Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -641,7 +641,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Majorque : avis honnête d'un professionnel PGA (2026)",
         "intro": "Des vues de montagne au-dessus de Palma, des mises en jeu plus exigeantes qu'elles n'en ont l'air et l'un des tracés les plus singuliers de l'île à ce niveau de prix.",
         "readTime": "5 min de lecture",
-        "keywords": "Montagne · Par 70 · €85-110 · 25 min de Palma"
+        "keywords": "Montagne · Par 70 · €90-110 · 25 min de Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -900,7 +900,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: de eerlijke review van een PGA-professional (2026)",
         "intro": "Bergzichten boven Palma, strakkere drivinglijnen dan je verwacht en een van de meest karaktervolle layouts op het eiland in deze prijsklasse.",
         "readTime": "5 min leestijd",
-        "keywords": "Bergbaan · Par 70 · €85-110 · 25 min van Palma"
+        "keywords": "Bergbaan · Par 70 · €90-110 · 25 min van Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -1159,7 +1159,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Termes Golf, Mallorca: en ärlig recension av en PGA-proffs (2026)",
         "intro": "Bergsvyer ovanför Palma, tajtare utslagslinjer än man tror och en av öns mest personliga banlayouter i den här prisklassen.",
         "readTime": "5 min läsning",
-        "keywords": "Bergsbana · Par 70 · €85-110 · 25 min från Palma"
+        "keywords": "Bergsbana · Par 70 · €90-110 · 25 min från Palma"
       },
       {
         "slug": "play-with-a-pro-explained",
@@ -1418,7 +1418,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "马略卡 Son Termes Golf：PGA 职业球员的真实评测（2026）",
         "intro": "帕尔马上方的山景、比预想中更紧的开球线路，以及这个价位段里岛上最有个性的球场布局之一。",
         "readTime": "5分钟",
-        "keywords": "山地球场 · 标准杆70 · €85-110 · 距帕尔马25分钟"
+        "keywords": "山地球场 · 标准杆70 · €90-110 · 距帕尔马25分钟"
       },
       {
         "slug": "play-with-a-pro-explained",

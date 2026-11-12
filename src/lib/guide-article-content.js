@@ -833,7 +833,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Golf Santa Ponsa 3', 'Santa Ponsa', '30 (9H)', 'Members only · guest with member', '4/10', '3.0', 'Beginners, approach practice'],
           ['Golf Son Quint', 'Son Vida - Palma', '71', '\u20AC70-140', '5/10', '4.0', 'All levels, Tiger Woods played here'],
           ['Real Golf de Bendinat', 'Bendinat', '70', '\u20AC67-123', '6/10', '3.5', 'Wooded valley, bay views'],
-          ['Golf Son Termes', 'Bunyola', '70', '\u20AC85-110', '6/10', '3.5', 'Tramuntana mountain setting'],
+          ['Golf Son Termes', 'Bunyola', '70', '\u20AC90-110', '6/10', '3.5', 'Tramuntana mountain setting'],
           ['Golf Son Antem West', 'Llucmajor', '72', '\u20AC90-135', '7/10', '4.0', 'Resort course, tougher than Son Antem East'],
           ['Golf Son Antem East', 'Llucmajor', '72', '\u20AC90-140', '6/10', '3.5', 'Wide fairways, resort golf'],
           ['Golf Maioris', 'Llucmajor', '72', '\u20AC91-110', '7/10', '3.5', 'Underrated, quieter option'],

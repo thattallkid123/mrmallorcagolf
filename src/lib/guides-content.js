@@ -149,7 +149,7 @@ export const GUIDES_CONTENT = {
       "title": "Son Termes Golf, Mallorca: A PGA Professional's Honest Review (2026)",
       "intro": "Mountain views above Palma, tighter driving lines than people expect, and one of the most distinctive layouts at this price point on the island.",
       "readTime": "5 min read",
-      "keywords": "Mountain course - Par 70 - €85-110 - 25 min from Palma"
+      "keywords": "Mountain course - Par 70 - €90-110 - 25 min from Palma"
     },
     {
       "slug": "play-with-a-pro-explained",

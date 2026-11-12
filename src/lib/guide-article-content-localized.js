@@ -179,7 +179,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€85-110",
+              "€90-110",
               "6/10",
               "3.5",
               "Entorno de montaña de la Tramuntana"
@@ -587,7 +587,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€85-110",
+              "€90-110",
               "6/10",
               "3.5",
               "Kulisse der Tramuntana-Berge"
@@ -995,7 +995,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€85-110",
+              "€90-110",
               "6/10",
               "3.5",
               "Cadre de montagne de la Tramuntana"
@@ -1403,7 +1403,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€85-110",
+              "€90-110",
               "6/10",
               "3.5",
               "Bergomgeving van de Tramuntana"
@@ -1811,7 +1811,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€85-110",
+              "€90-110",
               "6/10",
               "3.5",
               "Tramuntanas bergsmiljö"
@@ -2219,7 +2219,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Golf Son Termes",
               "Bunyola",
               "70",
-              "€85-110",
+              "€90-110",
               "6/10",
               "3.5",
               "特拉蒙塔纳山景"

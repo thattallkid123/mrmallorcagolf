@@ -352,7 +352,7 @@ const COURSES = [
     id:'son-termes', name:'Golf Son Termes',
     area:'Palma', areaLabel:'Bunyola · Palma',
     diff10:6, scenery:5, prestige:3, value:5, walkability:2,
-    greenFee:'Peak €110 / Low €85',
+    greenFee:'Peak €110 / Low €90',
     buggyNote:'Front nine walkable; back nine steep. Buggy advised unless very fit',
     bestFor:'The best views closest to Palma, at a sensible price',
     why:'Located in the Tramuntana foothills near Bunyola, 25 minutes from Palma but feeling entirely removed from the city. On a clear day the Castell de Bellver and Palma Cathedral are visible from the upper holes, with the Mediterranean behind. Not a long course, but blind tee shots, sharp doglegs, and elevation swings keep every hole interesting.',
