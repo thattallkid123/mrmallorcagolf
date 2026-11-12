@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Golf Son Muntaner - Análisis honesto 2026",
-      "description": "Son Muntaner está a 15 minutos de Palma, €110–€260 con buggy incluido, y fue elegido Mejor Campo de Golf de España en 2025. Reseña de un pro PGA.",
+      "description": "Son Muntaner está a 15 minutos de Palma, €110–€290 con buggy incluido, y fue elegido Mejor Campo de Golf de España en 2025. Reseña de un pro PGA.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -48,7 +48,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "Green fee 2026"
           ],
           [
@@ -159,7 +159,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "Green fee 2026"
           ],
           [
@@ -180,7 +180,7 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "Precios dinámicos a través del sistema de reservas de Arabella Golf Mallorca. La tarifa máxima actual es de €260 por 18 hoyos, con la tarifa más baja que se ve con frecuencia en horarios tardíos de unos €110. Esa diferencia es lo bastante grande como para seguirla si tienes flexibilidad de horario. Consulta las tarifas actuales en arabellagolfmallorca.com. El límite de hándicap es 36 tanto para hombres como para mujeres. El buggy está incluido en el green fee de marzo a finales de noviembre. Se paga una licencia diaria de la Federación Española de Golf de €3 en el check-in."
+        "text": "Precios dinámicos a través del sistema de reservas de Arabella Golf Mallorca. La tarifa máxima actual es de €290 por 18 hoyos, con la tarifa más baja que se ve con frecuencia en horarios tardíos de unos €110. Esa diferencia es lo bastante grande como para seguirla si tienes flexibilidad de horario. Consulta las tarifas actuales en arabellagolfmallorca.com. El límite de hándicap es 36 tanto para hombres como para mujeres. El buggy está incluido en el green fee de marzo a finales de noviembre. Se paga una licencia diaria de la Federación Española de Golf de €3 en el check-in."
       },
       {
         "text": "Preguntas frecuentes"
@@ -230,7 +230,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Son Muntaner - Bewertung & Gebühren",
-      "description": "Son Muntaner liegt 15 Minuten von Palma, €110–€260 inklusive Buggy, und wurde 2025 zum besten Golfplatz Spaniens gekürt. Review eines PGA-Pros.",
+      "description": "Son Muntaner liegt 15 Minuten von Palma, €110–€290 inklusive Buggy, und wurde 2025 zum besten Golfplatz Spaniens gekürt. Review eines PGA-Pros.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -274,7 +274,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "Greenfee-Spanne 2026"
           ],
           [
@@ -385,7 +385,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "Greenfee-Spanne 2026"
           ],
           [
@@ -406,7 +406,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Dynamische Preisgestaltung über das Buchungssystem von Arabella Golf Mallorca. Der Spitzenpreis liegt derzeit bei €260 für 18 Löcher, der niedrigste häufig zu sehende Preis für spätere Startzeiten bei etwa €110. Diese Spanne ist groß genug, um sie im Blick zu behalten, wenn Sie bei der Zeit flexibel sind. Aktuelle Preise auf arabellagolfmallorca.com. Die Handicap-Grenze liegt bei 36 für Herren und Damen. Der Buggy ist von März bis Ende November im Greenfee enthalten. Eine tägliche Lizenz des spanischen Golfverbands von €3 ist beim Check-in zu zahlen."
+        "text": "Dynamische Preisgestaltung über das Buchungssystem von Arabella Golf Mallorca. Der Spitzenpreis liegt derzeit bei €290 für 18 Löcher, der niedrigste häufig zu sehende Preis für spätere Startzeiten bei etwa €110. Diese Spanne ist groß genug, um sie im Blick zu behalten, wenn Sie bei der Zeit flexibel sind. Aktuelle Preise auf arabellagolfmallorca.com. Die Handicap-Grenze liegt bei 36 für Herren und Damen. Der Buggy ist von März bis Ende November im Greenfee enthalten. Eine tägliche Lizenz des spanischen Golfverbands von €3 ist beim Check-in zu zahlen."
       },
       {
         "text": "Häufige Fragen"
@@ -456,7 +456,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Son Muntaner - Avis & Tarifs",
-      "description": "Son Muntaner est à 15 minutes de Palma, €110–€260 avec voiturette incluse, et élu meilleur parcours de golf d'Espagne 2025. Avis d'un pro PGA.",
+      "description": "Son Muntaner est à 15 minutes de Palma, €110–€290 avec voiturette incluse, et élu meilleur parcours de golf d'Espagne 2025. Avis d'un pro PGA.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -501,7 +501,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "Green fees 2026"
           ],
           [
@@ -612,7 +612,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "Green fees 2026"
           ],
           [
@@ -633,7 +633,7 @@ const content = {
         "text": "Green fees 2026"
       },
       {
-        "text": "Tarification dynamique via le système de réservation d'Arabella Golf Mallorca. Le tarif de pointe est actuellement de €260 pour 18 trous, avec le tarif le plus bas couramment constaté en fin de journée autour de €110. Cet écart est assez important pour être suivi si vous avez de la flexibilité sur les horaires. Consultez les tarifs actuels sur arabellagolfmallorca.com. La limite d'index est de 36 pour les hommes comme pour les femmes. La voiturette est incluse dans le green fee de mars à fin novembre. Une licence quotidienne de la Fédération espagnole de golf de €3 est payable à l'accueil."
+        "text": "Tarification dynamique via le système de réservation d'Arabella Golf Mallorca. Le tarif de pointe est actuellement de €290 pour 18 trous, avec le tarif le plus bas couramment constaté en fin de journée autour de €110. Cet écart est assez important pour être suivi si vous avez de la flexibilité sur les horaires. Consultez les tarifs actuels sur arabellagolfmallorca.com. La limite d'index est de 36 pour les hommes comme pour les femmes. La voiturette est incluse dans le green fee de mars à fin novembre. Une licence quotidienne de la Fédération espagnole de golf de €3 est payable à l'accueil."
       },
       {
         "text": "Questions fréquentes"
@@ -683,7 +683,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Son Muntaner - Beoordeling & Tarief",
-      "description": "Son Muntaner ligt 15 minuten van Palma, €110–€260 inclusief buggy, en werd in 2025 beste golfbaan van Spanje. Review van een PGA-pro.",
+      "description": "Son Muntaner ligt 15 minuten van Palma, €110–€290 inclusief buggy, en werd in 2025 beste golfbaan van Spanje. Review van een PGA-pro.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -727,7 +727,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "Greenfee 2026"
           ],
           [
@@ -838,7 +838,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "Greenfee 2026"
           ],
           [
@@ -859,7 +859,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Dynamische prijzen via het boekingssysteem van Arabella Golf Mallorca. Het piektarief is momenteel €260 voor 18 holes, met het laagste vaak geziene tarief voor latere starttijden rond €110. Dat verschil is groot genoeg om in de gaten te houden als je flexibel bent met de tijd. Controleer actuele tarieven op arabellagolfmallorca.com. De handicaplimiet is 36 voor zowel heren als dames. De buggy is van maart tot eind november inbegrepen in de greenfee. Een dagelijkse licentie van de Spaanse golfbond van €3 moet bij het inchecken worden betaald."
+        "text": "Dynamische prijzen via het boekingssysteem van Arabella Golf Mallorca. Het piektarief is momenteel €290 voor 18 holes, met het laagste vaak geziene tarief voor latere starttijden rond €110. Dat verschil is groot genoeg om in de gaten te houden als je flexibel bent met de tijd. Controleer actuele tarieven op arabellagolfmallorca.com. De handicaplimiet is 36 voor zowel heren als dames. De buggy is van maart tot eind november inbegrepen in de greenfee. Een dagelijkse licentie van de Spaanse golfbond van €3 moet bij het inchecken worden betaald."
       },
       {
         "text": "Veelgestelde vragen"
@@ -909,7 +909,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Muntaner - Recension & Avgifter",
-      "description": "Son Muntaner ligger 15 minuter från Palma, €110–€260 med buggy inkluderad, och utsågs till Spaniens bästa golfbana 2025. Recension av en PGA-pro.",
+      "description": "Son Muntaner ligger 15 minuter från Palma, €110–€290 med buggy inkluderad, och utsågs till Spaniens bästa golfbana 2025. Recension av en PGA-pro.",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -953,7 +953,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "Greenfee 2026"
           ],
           [
@@ -1064,7 +1064,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "Greenfee 2026"
           ],
           [
@@ -1085,7 +1085,7 @@ const content = {
         "text": "Greenfees 2026"
       },
       {
-        "text": "Dynamisk prissättning via bokningssystemet hos Arabella Golf Mallorca. Topppriset är för närvarande €260 för 18 hål, med det lägsta ofta sedda priset för senare starttider runt €110. Skillnaden är tillräckligt stor för att vara värd att bevaka om du är flexibel med tiden. Kontrollera aktuella priser på arabellagolfmallorca.com. Handicapgränsen är 36 för både herrar och damer. Buggy ingår i greenfeen från mars till slutet av november. En daglig licens från det spanska golfförbundet på €3 betalas vid incheckning."
+        "text": "Dynamisk prissättning via bokningssystemet hos Arabella Golf Mallorca. Topppriset är för närvarande €290 för 18 hål, med det lägsta ofta sedda priset för senare starttider runt €110. Skillnaden är tillräckligt stor för att vara värd att bevaka om du är flexibel med tiden. Kontrollera aktuella priser på arabellagolfmallorca.com. Handicapgränsen är 36 för både herrar och damer. Buggy ingår i greenfeen från mars till slutet av november. En daglig licens från det spanska golfförbundet på €3 betalas vid incheckning."
       },
       {
         "text": "Vanliga frågor"
@@ -1135,7 +1135,7 @@ const content = {
   "zh": {
     "metadata": {
       "title": "Son Muntaner 高尔夫 - 诚实评测（2026）",
-      "description": "Son Muntaner 距帕尔马 15 分钟车程，€110–€260 含球车，并在 2025 年被评为西班牙最佳高尔夫球场。PGA 职业教练评测。",
+      "description": "Son Muntaner 距帕尔马 15 分钟车程，€110–€290 含球车，并在 2025 年被评为西班牙最佳高尔夫球场。PGA 职业教练评测。",
       "imagePath": "/images/son-muntaner-blog/sm-8.webp"
     },
     "meta": {
@@ -1180,7 +1180,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "2026年果岭费区间"
           ],
           [
@@ -1291,7 +1291,7 @@ const content = {
       {
         "items": [
           [
-            "€110–260",
+            "€110–290",
             "2026年果岭费区间"
           ],
           [
@@ -1312,7 +1312,7 @@ const content = {
         "text": "2026年果岭费"
       },
       {
-        "text": "通过 Arabella Golf Mallorca 的预订系统实行动态定价。目前 18 洞最高价为 €260，较晚时段常见的最低价约为 €110。如果你的时间比较灵活，这个差距大到值得关注。当前价格请查看 arabellagolfmallorca.com。差点限制男女均为 36。3 月至 11 月底，果岭费包含球车。入场时需另付每日 €3 的西班牙高尔夫联合会执照费。"
+        "text": "通过 Arabella Golf Mallorca 的预订系统实行动态定价。目前 18 洞最高价为 €290，较晚时段常见的最低价约为 €110。如果你的时间比较灵活，这个差距大到值得关注。当前价格请查看 arabellagolfmallorca.com。差点限制男女均为 36。3 月至 11 月底，果岭费包含球车。入场时需另付每日 €3 的西班牙高尔夫联合会执照费。"
       },
       {
         "text": "常见问题"

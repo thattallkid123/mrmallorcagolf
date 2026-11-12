@@ -8,6 +8,10 @@ description: Annual/periodic verification that recorded course green fees and ex
 Different job from `/pricing-change`. That one applies a price Andy already
 knows. This one **finds out whether what is recorded is still true**.
 
+## First: read the contract and the scan history
+
+Contract clubs (Alcanada, Andratx, Maioris, Son Antem, Arabella, Pula, Son Servera, Son Gual, Vall d'Or) get their seasons and rack from the contract: read the matching text in Drive `Private\Contracts\_text` first. Then use `mmg-tools\pricingrchive\live-price-checks\season-scan-history.csv` (monthly scan plus Hermes' dated readings; highest price ever shown per club is `ceilingEUR`). Far-out dates at dynamic clubs are base tiers, not peaks. The professional rate (`myPlayRateFlat`) is never a price source. Details: workspace `CLAUDE.md`, "Course prices".
+
 ## Do these two things before any manual checking
 
 This is the whole point of the skill. A full manual sweep of 24 courses took

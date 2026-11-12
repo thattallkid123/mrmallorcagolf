@@ -41,7 +41,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià: la opinión honesta de un profesional PGA (2026)",
         "intro": "Quince lagos, molinos de viento por todo el campo y algunos de los greens que mejor ruedan de la isla. Uno de los campos mejor cuidados de Mallorca. Un 9 sobre 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €105-210 · Suroeste de Mallorca · 15 lagos"
+        "keywords": "Par 72 · €105-220 · Suroeste de Mallorca · 15 lagos"
       },
       {
         "slug": "t-golf-palma-review",
@@ -59,7 +59,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Son Muntaner, Mallorca. Análisis honesto de un Profesional PGA (2026)",
         "intro": "Mejor campo de España en los World Golf Awards 2025. Lo jugué un sábado por la mañana con la hoja de salidas completa. Esto es lo que encontré.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €110-260 · Buggy incluido"
+        "keywords": "Championship · Par 72 · €110-290 · Buggy incluido"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -77,7 +77,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Vida Golf, Mallorca - análisis honesto de un Profesional PGA (2026)",
         "intro": "El campo más antiguo de Mallorca, abierto en 1964, donde Seve Ballesteros ganó el Open de Baleares de 1990. Greens inclinados de dos niveles y unos últimos seis hoyos más abiertos. Un 7 sobre 10.",
         "readTime": "6 min",
-        "keywords": "Campo histórico · Par 70 · €84-190 · Son Vida, Palma"
+        "keywords": "Campo histórico · Par 70 · €84-215 · Son Vida, Palma"
       },
       {
         "slug": "golf-andratx-review",
@@ -86,7 +86,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf de Andratx - análisis honesto de un Profesional PGA (2026)",
         "intro": "El par 5 más largo de España, vistas de montaña sobre el suroeste y un recorrido que premia la gestión del juego mucho más que la distancia. Un 7,5 sobre 10.",
         "readTime": "6 min",
-        "keywords": "Campo de montaña · Par 72 · €90-140 · Suroeste de Mallorca"
+        "keywords": "Campo de montaña · Par 72 · €95-180 · Suroeste de Mallorca"
       },
       {
         "slug": "bendinat-review",
@@ -104,7 +104,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Quint Golf, Mallorca - análisis honesto de un Profesional PGA (2026)",
         "intro": "El campo más nuevo del grupo Arabella Golf y el más amable. Sus greens firmes y bien defendidos hacen que no sea nada fácil. Un 8 sobre 10.",
         "readTime": "6 min",
-        "keywords": "Campo accesible · Par 71 · €76-172 · Son Vida, Palma"
+        "keywords": "Campo accesible · Par 71 · €76-185 · Son Vida, Palma"
       },
       {
         "slug": "son-antem-west-review",
@@ -165,7 +165,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "¿Cuánto cuesta el golf en Mallorca? Green fees, alquiler y costes ocultos",
         "intro": "La foto completa de lo que cuesta realmente un viaje de golf aquí: green fees, alquiler, caddies y dónde ahorrar sin sacrificar calidad.",
         "readTime": "5 min",
-        "keywords": "€55-260 green fees · Alquiler · Caddies · Precios 2026"
+        "keywords": "€55-290 green fees · Alquiler · Caddies · Precios 2026"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -300,7 +300,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)",
         "intro": "Fünfzehn Seen, Windmühlen auf dem gesamten Platz und Grüns, die so sauber rollen wie kaum andere auf der Insel. Einer der bestgepflegten Plätze Mallorcas. 9 von 10.",
         "readTime": "6 Min.",
-        "keywords": "Par 72 · €105-210 · Südwesten Mallorcas · 15 Seen"
+        "keywords": "Par 72 · €105-220 · Südwesten Mallorcas · 15 Seen"
       },
       {
         "slug": "t-golf-palma-review",
@@ -318,7 +318,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Son Muntaner, Mallorca. Ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Bester Golfplatz Spaniens bei den World Golf Awards 2025. Ich habe ihn an einem Samstagmorgen bei voller Startliste gespielt. Das ist mir aufgefallen.",
         "readTime": "6 Min.",
-        "keywords": "Championship · Par 72 · €110-260 · Buggy inklusive"
+        "keywords": "Championship · Par 72 · €110-290 · Buggy inklusive"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -336,7 +336,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Vida Golf, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Der älteste Platz Mallorcas, 1964 eröffnet, wo Seve Ballesteros 1990 die Open de Baleares gewann. Abschüssige Greens auf zwei Ebenen und ein offeneres Finale. Eine 7 von 10.",
         "readTime": "6 Min.",
-        "keywords": "Traditionsplatz · Par 70 · €84-190 · Son Vida, Palma"
+        "keywords": "Traditionsplatz · Par 70 · €84-215 · Son Vida, Palma"
       },
       {
         "slug": "golf-andratx-review",
@@ -345,7 +345,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf de Andratx Bewertung - Die ehrliche Einschätzung eines PGA-Professionals (2026)",
         "intro": "Das längste Par 5 Spaniens, Bergblicke über den Südwesten und ein Layout, das Spielmanagement weit mehr belohnt als Weite. Eine 7,5 von 10.",
         "readTime": "6 Min.",
-        "keywords": "Bergplatz · Par 72 · €90-140 · Südwesten Mallorcas"
+        "keywords": "Bergplatz · Par 72 · €95-180 · Südwesten Mallorcas"
       },
       {
         "slug": "bendinat-review",
@@ -363,7 +363,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Quint Golf, Mallorca - ehrliche Bewertung eines PGA-Professionals (2026)",
         "intro": "Der neueste Platz der Arabella Golf Gruppe und der freundlichste. Feste, gut verteidigte Greens sorgen dafür, dass er nicht leicht ist. Eine 8 von 10.",
         "readTime": "6 Min.",
-        "keywords": "Zugänglicher Platz · Par 71 · €76-172 · Son Vida, Palma"
+        "keywords": "Zugänglicher Platz · Par 71 · €76-185 · Son Vida, Palma"
       },
       {
         "slug": "son-antem-west-review",
@@ -424,7 +424,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Was kostet Golf auf Mallorca? Greenfees, Leihausrüstung und versteckte Kosten",
         "intro": "Das vollständige Bild, was ein Golftrip hier wirklich kostet: Greenfees, Leihausrüstung, Caddies und wo man sparen kann.",
         "readTime": "5 Min.",
-        "keywords": "€55-260 Greenfees · Leihausrüstung · Caddies · Preise 2026"
+        "keywords": "€55-290 Greenfees · Leihausrüstung · Caddies · Preise 2026"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -558,7 +558,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià : l'avis honnête d'un professionnel PGA (2026)",
         "intro": "Quinze lacs, des moulins à vent sur tout le parcours et certains des greens qui roulent le mieux de l'île. L'un des parcours les mieux entretenus de Majorque. Un 9 sur 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €105-210 · Sud-ouest de Majorque · 15 lacs"
+        "keywords": "Par 72 · €105-220 · Sud-ouest de Majorque · 15 lacs"
       },
       {
         "slug": "t-golf-palma-review",
@@ -576,7 +576,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Son Muntaner, Majorque. Avis honnête d'un Professionnel PGA (2026)",
         "intro": "Meilleur parcours d'Espagne aux World Golf Awards 2025. Je l'ai joué un samedi matin, avec une feuille de départs complète. Voici ce que j'y ai trouvé.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €110-260 · Buggy inclus"
+        "keywords": "Championship · Par 72 · €110-290 · Buggy inclus"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -594,7 +594,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Vida Golf, Majorque - avis honnête d'un Professionnel PGA (2026)",
         "intro": "Le plus ancien parcours de Majorque, ouvert en 1964, où Seve Ballesteros a remporté l'Open de Baleares en 1990. Des greens en pente à deux niveaux et des six derniers trous plus ouverts. Un 7 sur 10.",
         "readTime": "6 min",
-        "keywords": "Parcours historique · Par 70 · €84-190 · Son Vida, Palma"
+        "keywords": "Parcours historique · Par 70 · €84-215 · Son Vida, Palma"
       },
       {
         "slug": "golf-andratx-review",
@@ -603,7 +603,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf de Andratx - avis honnête d'un Professionnel PGA (2026)",
         "intro": "Le par 5 le plus long d'Espagne, des vues de montagne sur le sud-ouest et un tracé qui récompense la gestion du jeu bien plus que la distance. Un 7,5 sur 10.",
         "readTime": "6 min",
-        "keywords": "Parcours de montagne · Par 72 · €90-140 · Sud-ouest de Majorque"
+        "keywords": "Parcours de montagne · Par 72 · €95-180 · Sud-ouest de Majorque"
       },
       {
         "slug": "bendinat-review",
@@ -621,7 +621,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Quint Golf, Majorque - avis honnête d'un Professionnel PGA (2026)",
         "intro": "Le parcours le plus récent du groupe Arabella Golf et le plus accueillant. Des greens fermes et bien défendus font qu'il n'est pas facile. Un 8 sur 10.",
         "readTime": "6 min",
-        "keywords": "Parcours accessible · Par 71 · €76-172 · Son Vida, Palma"
+        "keywords": "Parcours accessible · Par 71 · €76-185 · Son Vida, Palma"
       },
       {
         "slug": "son-antem-west-review",
@@ -682,7 +682,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Combien coûte le golf à Majorque ? Green fees, location et coûts cachés",
         "intro": "Le tableau complet de ce que coûte réellement un séjour golf ici: green fees, location, caddies et où économiser sans compromis.",
         "readTime": "5 min",
-        "keywords": "€55-260 green fees · Location · Caddies · Tarifs 2026"
+        "keywords": "€55-290 green fees · Location · Caddies · Tarifs 2026"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -817,7 +817,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià: de eerlijke mening van een PGA-professional (2026)",
         "intro": "Vijftien meren, windmolens door de hele baan en enkele van de zuiverst rollende greens van het eiland. Een van de best onderhouden banen van Mallorca. Een 9 uit 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €105-210 · Zuidwest Mallorca · 15 meren"
+        "keywords": "Par 72 · €105-220 · Zuidwest Mallorca · 15 meren"
       },
       {
         "slug": "t-golf-palma-review",
@@ -835,7 +835,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Son Muntaner, Mallorca. Eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "Beste golfbaan van Spanje bij de World Golf Awards 2025. Ik speelde hem met een volle starttijdenlijst op een zaterdagochtend. Dit is wat ik vond.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €110-260 · Buggy inbegrepen"
+        "keywords": "Championship · Par 72 · €110-290 · Buggy inbegrepen"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -853,7 +853,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Vida Golf, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "De oudste baan van Mallorca, geopend in 1964, waar Seve Ballesteros in 1990 de Open de Baleares won. Hellende greens op twee niveaus en een opener slotgedeelte. Een 7 op 10.",
         "readTime": "6 min",
-        "keywords": "Historische baan · Par 70 · €84-190 · Son Vida, Palma"
+        "keywords": "Historische baan · Par 70 · €84-215 · Son Vida, Palma"
       },
       {
         "slug": "golf-andratx-review",
@@ -862,7 +862,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf de Andratx - eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "De langste par 5 van Spanje, bergzichten over het zuidwesten en een layout die baanmanagement veel meer beloont dan lengte. Een 7,5 op 10.",
         "readTime": "6 min",
-        "keywords": "Bergbaan · Par 72 · €90-140 · Zuidwest-Mallorca"
+        "keywords": "Bergbaan · Par 72 · €95-180 · Zuidwest-Mallorca"
       },
       {
         "slug": "bendinat-review",
@@ -880,7 +880,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Quint Golf, Mallorca - eerlijke beoordeling van een PGA Professional (2026)",
         "intro": "De nieuwste baan van de Arabella Golf-groep en de vriendelijkste. Stevige, goed verdedigde greens zorgen ervoor dat hij niet makkelijk is. Een 8 op 10.",
         "readTime": "6 min",
-        "keywords": "Toegankelijke baan · Par 71 · €76-172 · Son Vida, Palma"
+        "keywords": "Toegankelijke baan · Par 71 · €76-185 · Son Vida, Palma"
       },
       {
         "slug": "son-antem-west-review",
@@ -941,7 +941,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Hoeveel kost golf op Mallorca? Greenfees, verhuur en verborgen kosten",
         "intro": "Het volledige beeld van wat een golfreis hier werkelijk kost: greenfees, verhuur, caddies en waar je kunt besparen zonder in te leveren.",
         "readTime": "5 min",
-        "keywords": "€55-260 greenfees · Verhuur · Caddies · Prijzen 2026"
+        "keywords": "€55-290 greenfees · Verhuur · Caddies · Prijzen 2026"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -1076,7 +1076,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià: en PGA-professionals ärliga omdöme (2026)",
         "intro": "Femton sjöar, väderkvarnar på hela banan och några av de greener som rullar bäst på ön. En av de bäst skötta banorna på Mallorca. En 9 av 10.",
         "readTime": "6 min",
-        "keywords": "Par 72 · €105-210 · Sydvästra Mallorca · 15 sjöar"
+        "keywords": "Par 72 · €105-220 · Sydvästra Mallorca · 15 sjöar"
       },
       {
         "slug": "t-golf-palma-review",
@@ -1094,7 +1094,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf Son Muntaner, Mallorca. Ärlig recension av en PGA Professional (2026)",
         "intro": "Bästa golfbana i Spanien vid World Golf Awards 2025. Jag spelade den en lördagsmorgon med full startlista. Här är vad jag hittade.",
         "readTime": "6 min",
-        "keywords": "Championship · Par 72 · €110-260 · Buggy ingår"
+        "keywords": "Championship · Par 72 · €110-290 · Buggy ingår"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -1112,7 +1112,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Vida Golf, Mallorca - ärlig recension av en PGA Professional (2026)",
         "intro": "Mallorcas äldsta bana, öppnad 1964, där Seve Ballesteros vann Open de Baleares 1990. Sluttande greener på två nivåer och en öppnare slutsträcka. En 7 av 10.",
         "readTime": "6 min",
-        "keywords": "Historisk bana · Par 70 · €84-190 · Son Vida, Palma"
+        "keywords": "Historisk bana · Par 70 · €84-215 · Son Vida, Palma"
       },
       {
         "slug": "golf-andratx-review",
@@ -1121,7 +1121,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf de Andratx - ärlig recension av en PGA Professional (2026)",
         "intro": "Spaniens längsta par 5, bergsvyer över sydväst och en layout som belönar banstrategi mycket mer än längd. En 7,5 av 10.",
         "readTime": "6 min",
-        "keywords": "Bergsbana · Par 72 · €90-140 · Sydvästra Mallorca"
+        "keywords": "Bergsbana · Par 72 · €95-180 · Sydvästra Mallorca"
       },
       {
         "slug": "bendinat-review",
@@ -1139,7 +1139,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Quint Golf, Mallorca - ärlig recension av en PGA Professional (2026)",
         "intro": "Den nyaste banan i Arabella Golf-gruppen och den vänligaste. Fasta, väl försvarade greener gör att den inte är lätt. En 8 av 10.",
         "readTime": "6 min",
-        "keywords": "Lättillgänglig bana · Par 71 · €76-172 · Son Vida, Palma"
+        "keywords": "Lättillgänglig bana · Par 71 · €76-185 · Son Vida, Palma"
       },
       {
         "slug": "son-antem-west-review",
@@ -1200,7 +1200,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Vad kostar golf på Mallorca? Greenfees, uthyrning och dolda kostnader",
         "intro": "Den fullständiga bilden av vad en golfresa hit faktiskt kostar: greenfees, uthyrning, caddies och var du kan spara utan att kompromissa.",
         "readTime": "5 min",
-        "keywords": "€55-260 greenfees · Uthyrning · Caddies · Priser 2026"
+        "keywords": "€55-290 greenfees · Uthyrning · Caddies · Priser 2026"
       },
       {
         "slug": "best-time-play-golf-mallorca",
@@ -1335,7 +1335,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "T Golf Calvià 评测：PGA职业球员的真实评价（2026）",
         "intro": "十五个湖泊，风车遍布全场，果岭是岛上滚动最顺的之一。马略卡维护最佳的球场之一。综合评分9/10。",
         "readTime": "6分钟",
-        "keywords": "标准杆72 · €105-210 · 马略卡岛西南部 · 15座湖泊"
+        "keywords": "标准杆72 · €105-220 · 马略卡岛西南部 · 15座湖泊"
       },
       {
         "slug": "t-golf-palma-review",
@@ -1353,7 +1353,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Muntaner 高尔夫球场，马略卡：PGA 职业教练诚实评测（2026）",
         "intro": "2025 年世界高尔夫奖西班牙最佳球场。我在周六早晨、开球表排满的情况下打了一轮。以下是我的发现。",
         "readTime": "6分钟",
-        "keywords": "锦标赛级 · 标准杆72 · €110-260 · 含球车"
+        "keywords": "锦标赛级 · 标准杆72 · €110-290 · 含球车"
       },
       {
         "slug": "santa-ponsa-1-review",
@@ -1371,7 +1371,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Vida 高尔夫球场 - PGA 职业教练诚实评测（2026）",
         "intro": "马略卡最古老的球场，1964年开业，塞维·巴列斯特罗斯1990年在这里赢得巴利阿里公开赛。果岭有坡度且分两层，后六洞更开阔。评分7/10。",
         "readTime": "6分钟",
-        "keywords": "历史名场 · 标准杆70 · €84-190 · Son Vida，帕尔马"
+        "keywords": "历史名场 · 标准杆70 · €84-215 · Son Vida，帕尔马"
       },
       {
         "slug": "golf-andratx-review",
@@ -1380,7 +1380,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Golf de Andratx 高尔夫球场 - PGA 职业教练诚实评测（2026）",
         "intro": "西班牙最长的标准杆5洞，俯瞰西南部的山景，以及一个更考验球场管理能力而非距离的球场。评分7.5/10。",
         "readTime": "6分钟",
-        "keywords": "山地球场 · 标准杆72 · €90-140 · 马略卡西南部"
+        "keywords": "山地球场 · 标准杆72 · €95-180 · 马略卡西南部"
       },
       {
         "slug": "bendinat-review",
@@ -1398,7 +1398,7 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "title": "Son Quint 高尔夫球场 - PGA 职业教练诚实评测（2026）",
         "intro": "Arabella Golf 集团旗下最新也是最友好的球场。偏硬、防守到位的果岭让它并不简单。评分8/10。",
         "readTime": "6分钟",
-        "keywords": "易上手球场 · 标准杆71 · €76-172 · Son Vida，帕尔马"
+        "keywords": "易上手球场 · 标准杆71 · €76-185 · Son Vida，帕尔马"
       },
       {
         "slug": "son-antem-west-review",

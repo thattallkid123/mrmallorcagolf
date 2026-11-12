@@ -50,7 +50,7 @@ export const GUIDES_CONTENT = {
       "title": "T Golf Calvià Review - A PGA Professional's Honest Take (2026)",
       "intro": "Fifteen lakes, windmills throughout, and some of the purest greens on the island. One of the best-conditioned courses in Mallorca. A 9 out of 10.",
       "readTime": "6 min read",
-      "keywords": "Par 72 · €105-210 · Southwest Mallorca · 15 lakes"
+      "keywords": "Par 72 · €105-220 · Southwest Mallorca · 15 lakes"
     },
     {
       "slug": "t-golf-palma-review",
@@ -72,7 +72,7 @@ export const GUIDES_CONTENT = {
       "title": "Golf Son Muntaner, Mallorca. A PGA Professional's Honest Review (2026)",
       "intro": "Best Golf Course in Spain at the 2025 World Golf Awards. I played it on a full tee sheet on a Saturday morning. Here's what I found.",
       "readTime": "6 min read",
-      "keywords": "Championship · Par 72 · €110-260 · Buggy included"
+      "keywords": "Championship · Par 72 · €110-290 · Buggy included"
     },
     {
       "slug": "santa-ponsa-1-review",
@@ -94,7 +94,7 @@ export const GUIDES_CONTENT = {
       "title": "Son Vida Golf, Mallorca: A PGA Professional's Honest Review (2026)",
       "intro": "The oldest course in Mallorca, opened in 1964, where Seve Ballesteros won the 1990 Open de Baleares. Sloping two-tier greens and a more open back six. A 7 out of 10.",
       "readTime": "6 min read",
-      "keywords": "Historic course · Par 70 · €84-190 · Son Vida, Palma"
+      "keywords": "Historic course · Par 70 · €84-215 · Son Vida, Palma"
     },
     {
       "slug": "golf-andratx-review",
@@ -127,7 +127,7 @@ export const GUIDES_CONTENT = {
       "title": "Son Quint Golf, Mallorca: A PGA Professional's Honest Review (2026)",
       "intro": "The newest course in the Arabella Golf group and the friendliest. Firm, well-defended greens make sure it is not an easy one. An 8 out of 10.",
       "readTime": "6 min read",
-      "keywords": "Accessible course · Par 71 · €76-172 · Son Vida, Palma"
+      "keywords": "Accessible course · Par 71 · €76-185 · Son Vida, Palma"
     },
     {
       "slug": "son-antem-west-review",
@@ -211,7 +211,7 @@ export const GUIDES_CONTENT = {
       "title": "How Much Does Golf Cost in Mallorca? Green Fees, Hire, and Hidden Costs",
       "intro": "The full picture on what a golf trip here actually costs - green fees, hire, caddies, and where you can save without compromising.",
       "readTime": "5 min read",
-      "keywords": "€55-260 green fees · Hire · Caddies · 2026 prices"
+      "keywords": "€55-290 green fees · Hire · Caddies · 2026 prices"
     },
     {
       "slug": "best-time-play-golf-mallorca",

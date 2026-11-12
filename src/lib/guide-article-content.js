@@ -5,12 +5,12 @@ import { mergeGuideContent } from './guide-content-localization.js'
 export const GUIDE_ARTICLE_CONTENT = {
   'golf-cost-mallorca': {
     metadata: {
-      title: 'Mallorca Golf Green Fees 2026 (€55–€260)',
+      title: 'Mallorca Golf Green Fees 2026 (€55–€290)',
       description:
-        'Mallorca green fees are €55–€260. See buggy costs, value months, dynamic pricing and when to book early for each course.',
+        'Mallorca green fees are €55–€290. See buggy costs, value months, dynamic pricing and when to book early for each course.',
       canonical: 'https://www.mrmallorcagolf.com/guides/golf-cost-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/courses/palma-pitch-putt.webp',
-      imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€260, Club Hire & What to Budget',
+      imageAlt: 'Golf Cost in Mallorca 2026: Green Fees €55–€290, Club Hire & What to Budget',
     },
     meta: {
       badge: 'Green Fees',
@@ -19,7 +19,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       updated: 'March 2026',
       title: 'Golf Cost in Mallorca (2026)',
       intro:
-        'Public 18-hole golf in Mallorca runs from about €55 at the value end up to around €260 at Son Muntaner in peak season. Here is the honest 2026 breakdown from someone who plays here most weeks.',
+        'Public 18-hole golf in Mallorca runs from about €55 at the value end up to around €290 at Son Muntaner in peak season. Here is the honest 2026 breakdown from someone who plays here most weeks.',
       related: [
         { slug: 'best-golf-courses-mallorca', title: 'Best Golf Courses in Mallorca 2026' },
         { slug: 'golf-club-hire-mallorca', title: 'Golf Club Hire in Mallorca' },
@@ -57,7 +57,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'paragraph',
         text:
-          'Son Gual sits around €115-165. Alcanada runs roughly €115-230. Son Muntaner reaches around €260 at peak and drops to around €125 in the value window. T Golf Calvià can push to around €210, and Son Vida to around €190. The top end in Mallorca is higher than many older guides suggest.',
+          'Son Gual sits around €115-165. Alcanada runs roughly €115-230. Son Muntaner reaches around €290 at peak and drops to around €125 in the value window. T Golf Calvià can push to around €220, and Son Vida to around €215. The top end in Mallorca is higher than many older guides suggest.',
       },
       {
         type: 'paragraph',
@@ -785,7 +785,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: "24 Best Golf Courses in Mallorca, Ranked",
       description:
-        'All 24 Mallorca courses ranked by a PGA pro. Green fees €55–€260, difficulty, who each suits.',
+        'All 24 Mallorca courses ranked by a PGA pro. Green fees €55–€290, difficulty, who each suits.',
       canonical: 'https://www.mrmallorcagolf.com/guides/best-golf-courses-mallorca',
       image: 'https://www.mrmallorcagolf.com/images/blog-best-golf-courses/Son Gual.webp',
       imageAlt: "The Best Golf Courses in Mallorca - A PGA Professional's Honest Guide (2026)",
@@ -823,8 +823,8 @@ export const GUIDE_ARTICLE_CONTENT = {
         rows: [
           ['Son Gual', 'Palma', '72', '\u20AC115-165', '9/10', '5.0', 'Serious championship round'],
           ['Club de Golf Alcanada', "Port d'Alcudia", '72', '\u20AC115-230', '7/10', '5.0', 'Spectacular views, championship quality'],
-          ['Son Muntaner', 'Son Vida - Palma', '72', '\u20AC125-260', '8/10', '4.5', 'Best-conditioned, close to Palma'],
-          ['T Golf Calvi\u00E0', 'Calvi\u00E0', '72', '\u20AC170-210', '7/10', '5.0', 'Premium all-round experience'],
+          ['Son Muntaner', 'Son Vida - Palma', '72', '\u20AC125-290', '8/10', '4.5', 'Best-conditioned, close to Palma'],
+          ['T Golf Calvi\u00E0', 'Calvi\u00E0', '72', '\u20AC170-220', '7/10', '5.0', 'Premium all-round experience'],
           ['Golf de Andratx', 'Camp de Mar', '72', '\u20AC90-140', '9/10', '4.0', 'Hardest test on the island'],
           ['Golf Son Vida', 'Son Vida - Palma', '70', '\u20AC80-190', '8/10', '4.5', 'Historic course, Seve won here'],
           ['T Golf Palma (Puntiro)', 'Palma', '71', '\u20AC100-140', '7/10', '4.5', 'Only Nicklaus design on island'],
@@ -972,7 +972,7 @@ export const GUIDE_ARTICLE_CONTENT = {
         type: 'facts',
         items: [
           ['24', 'Courses on the island'],
-          ['€55-260', '18-hole green fee range'],
+          ['€55-290', '18-hole green fee range'],
           ['300', 'Days of sunshine'],
           ['12 mo', 'Golf played year-round'],
         ],
@@ -1138,7 +1138,7 @@ export const GUIDE_ARTICLE_CONTENT = {
     metadata: {
       title: "Is Mallorca Good for Golf? Yes",
       description:
-        "24 courses, year-round sunshine, €55–€260. PGA pro's honest answer: courses, conditions, expectations.",
+        "24 courses, year-round sunshine, €55–€290. PGA pro's honest answer: courses, conditions, expectations.",
       canonical: 'https://www.mrmallorcagolf.com/guides/is-mallorca-good-for-golf',
       image: 'https://www.mrmallorcagolf.com/images/courses/pollensa.webp',
       imageAlt: "Is Mallorca Good for Golf? A PGA Professional's Answer",
@@ -1348,7 +1348,7 @@ export const GUIDE_ARTICLE_CONTENT = {
           ['Max handicap', '36', '54', '54'],
           ['Buggy', 'Included, March to late November', 'Optional', 'Optional'],
           ['Practice', 'Toptracer range', 'Net and putting green only', 'Separate driving range'],
-          ['2026 green fee', '€99-€260', '€84-€190', '€76-€172'],
+          ['2026 green fee', '€99-€290', '€84-€215', '€76-€185'],
         ],
       },
       { type: 'subheading', text: 'Son Muntaner' },
@@ -1368,7 +1368,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'It is 15 minutes from the cathedral, and the buggy comes with the green fee from March to late November, which you will want on the climbs to several tees. One thing to note: bunker sand was inconsistent when I played, firmer in some bunkers and softer in others. It has dynamic pricing, from around €99 at quiet times to €260 at peak, so with flexible dates the same round can cost less than half as much. Full detail in the <a href=\'/guides/son-muntaner-review\'>Son Muntaner review</a>.',
+        text: 'It is 15 minutes from the cathedral, and the buggy comes with the green fee from March to late November, which you will want on the climbs to several tees. One thing to note: bunker sand was inconsistent when I played, firmer in some bunkers and softer in others. It has dynamic pricing, from around €99 at quiet times to €290 at peak, so with flexible dates the same round can cost less than half as much. Full detail in the <a href=\'/guides/son-muntaner-review\'>Son Muntaner review</a>.',
       },
       { type: 'subheading', text: 'Son Vida' },
       {
@@ -1569,7 +1569,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       },
       {
         type: 'paragraph',
-        text: 'I gave it 9/10. The limit is 28 for men and 34 for ladies, and I would not put a higher handicapper here as the first round of a holiday. Book a midweek twilight slot: the twilight rate starts at €150 against a peak fee of €210, and the light is at its best. The range is grass, which not every Mallorca club offers, and with this many carries it is worth hitting balls before the 1st. Full detail in the <a href=\'/guides/t-golf-calvia-review\'>T Golf Calvià review</a>.',
+        text: 'I gave it 9/10. The limit is 28 for men and 34 for ladies, and I would not put a higher handicapper here as the first round of a holiday. Book a midweek twilight slot: the twilight rate starts at €150 against a peak fee of €220, and the light is at its best. The range is grass, which not every Mallorca club offers, and with this many carries it is worth hitting balls before the 1st. Full detail in the <a href=\'/guides/t-golf-calvia-review\'>T Golf Calvià review</a>.',
       },
 
       { type: 'heading', text: 'Golf de Andratx: the hardest test, and the views' },

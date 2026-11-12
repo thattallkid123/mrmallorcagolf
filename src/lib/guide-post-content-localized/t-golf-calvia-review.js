@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "T Golf Calvià - Análisis & Tarifas",
-      "description": "T Golf Calvià en Mallorca: 15 lagos, 210 € punta, 9/10 estado."
+      "description": "T Golf Calvià en Mallorca: 15 lagos, 220 € punta, 9/10 estado."
     },
     "meta": {
       "badge": "Análisis de Campo",
@@ -91,7 +91,7 @@ const content = {
       {
         "items": [
           [
-            "Hasta 210 €",
+            "Hasta 220 €",
             "Greenfee hora punta"
           ],
           [
@@ -166,7 +166,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "T Golf Calvià - Bewertung & Gebühren",
-      "description": "T Golf Calvià auf Mallorca: 15 Seen, 210 € Peak, 9/10 Zustand."
+      "description": "T Golf Calvià auf Mallorca: 15 Seen, 220 € Peak, 9/10 Zustand."
     },
     "meta": {
       "badge": "Platz-Bewertung",
@@ -254,7 +254,7 @@ const content = {
       {
         "items": [
           [
-            "Bis 210 €",
+            "Bis 220 €",
             "Peak-Greenfee"
           ],
           [
@@ -329,7 +329,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "T Golf Calvià - Avis & Tarifs",
-      "description": "T Golf Calvià à Majorque: 15 lacs, 210 € haute saison, 9/10 état."
+      "description": "T Golf Calvià à Majorque: 15 lacs, 220 € haute saison, 9/10 état."
     },
     "meta": {
       "badge": "Avis Parcours",
@@ -417,7 +417,7 @@ const content = {
       {
         "items": [
           [
-            "Jusqu'à 210 €",
+            "Jusqu'à 220 €",
             "Green fee haute saison"
           ],
           [
@@ -490,7 +490,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "T Golf Calvià - Review & Tarief",
-      "description": "T Golf Calvià op Mallorca: 15 meren, €210 piek, 9/10 conditie."
+      "description": "T Golf Calvià op Mallorca: 15 meren, €220 piek, 9/10 conditie."
     },
     "meta": {
       "badge": "Baanreview",
@@ -578,7 +578,7 @@ const content = {
       {
         "items": [
           [
-            "Tot €210",
+            "Tot €220",
             "Piekperiode greenfee"
           ],
           [
@@ -653,7 +653,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "T Golf Calvià - Recension & Avgifter",
-      "description": "T Golf Calvià på Mallorca: 15 sjöar, 210 € högsäsong, 9/10 skick."
+      "description": "T Golf Calvià på Mallorca: 15 sjöar, 220 € högsäsong, 9/10 skick."
     },
     "meta": {
       "badge": "Banrecension",
@@ -741,7 +741,7 @@ const content = {
       {
         "items": [
           [
-            "Upp till 210 €",
+            "Upp till 220 €",
             "Högsäsong greenfee"
           ],
           [

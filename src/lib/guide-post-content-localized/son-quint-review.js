@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Son Quint - Análisis honesto 2026",
-      "description": "Son Quint: green fee 76-172 € (dinámico), par 71, a 15 minutos de Palma. Amable para todos y una buena prueba desde los tees blancos y con banderas atrás."
+      "description": "Son Quint: green fee 76-185 € (dinámico), par 71, a 15 minutos de Palma. Amable para todos y una buena prueba desde los tees blancos y con banderas atrás."
     },
     "meta": {
       "badge": "Análisis del campo",
@@ -124,7 +124,7 @@ const content = {
         ]
       },
       {
-        "text": "Los green fees son dinámicos, desde unos 76 € en temporada baja hasta 172 € en temporada alta, más la licencia federativa diaria de 3 € si no eres jugador federado. El green fee de mi cliente ese día fue de 120 €. Hay buggies disponibles por 55 €, pero son opcionales; nosotros hicimos toda la vuelta andando. El límite de hándicap es 54 para hombres y mujeres, con certificado obligatorio al reservar. Si reservas como jugador individual, lo normal es que te agrupen con otra partida; nosotros habíamos reservado y privatizado nuestra propia salida."
+        "text": "Los green fees son dinámicos, desde unos 76 € en temporada baja hasta 185 € en temporada alta, más la licencia federativa diaria de 3 € si no eres jugador federado. El green fee de mi cliente ese día fue de 120 €. Hay buggies disponibles por 55 €, pero son opcionales; nosotros hicimos toda la vuelta andando. El límite de hándicap es 54 para hombres y mujeres, con certificado obligatorio al reservar. Si reservas como jugador individual, lo normal es que te agrupen con otra partida; nosotros habíamos reservado y privatizado nuestra propia salida."
       },
       {
         "alt": "Mapa del recorrido del campo de golf Son Quint en Mallorca, con el trazado de los 18 hoyos",
@@ -178,7 +178,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Son Quint - Ehrliche Bewertung 2026",
-      "description": "Son Quint: Greenfee 76-172 € (dynamisch), Par 71, 15 Minuten von Palma. Freundlich für alle und ein guter Test von den weißen Tees mit Fahnen hinten."
+      "description": "Son Quint: Greenfee 76-185 € (dynamisch), Par 71, 15 Minuten von Palma. Freundlich für alle und ein guter Test von den weißen Tees mit Fahnen hinten."
     },
     "meta": {
       "badge": "Platz-Bewertung",
@@ -299,7 +299,7 @@ const content = {
         ]
       },
       {
-        "text": "Die Greenfees sind dynamisch und reichen von etwa 76 € in der Nebensaison bis 172 € in der Hauptsaison, dazu kommt die übliche tägliche Verbandsgebühr von 3 €, wenn man kein Verbandsmitglied ist. Das Greenfee meines Kunden lag am Spieltag bei 120 €. Buggys gibt es für 55 €, sie sind aber optional; wir sind die ganze Runde gelaufen. Das Handicap-Limit liegt bei 54 für Herren und Damen, bei der Buchung ist ein Handicap-Nachweis nötig. Wer als Einzelspieler bucht, wird in der Regel mit einer anderen Gruppe zusammengelegt; wir hatten unsere eigene Startzeit gebucht und für uns allein reserviert."
+        "text": "Die Greenfees sind dynamisch und reichen von etwa 76 € in der Nebensaison bis 185 € in der Hauptsaison, dazu kommt die übliche tägliche Verbandsgebühr von 3 €, wenn man kein Verbandsmitglied ist. Das Greenfee meines Kunden lag am Spieltag bei 120 €. Buggys gibt es für 55 €, sie sind aber optional; wir sind die ganze Runde gelaufen. Das Handicap-Limit liegt bei 54 für Herren und Damen, bei der Buchung ist ein Handicap-Nachweis nötig. Wer als Einzelspieler bucht, wird in der Regel mit einer anderen Gruppe zusammengelegt; wir hatten unsere eigene Startzeit gebucht und für uns allein reserviert."
       },
       {
         "alt": "Platzplan des Golfplatzes Son Quint auf Mallorca mit dem Verlauf aller 18 Löcher",
@@ -353,7 +353,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Son Quint - Avis honnête 2026",
-      "description": "Son Quint : green fee 76-172 € (dynamique), par 71, à 15 minutes de Palma. Accueillant pour tous et un bon test des départs blancs, drapeaux à l'arrière."
+      "description": "Son Quint : green fee 76-185 € (dynamique), par 71, à 15 minutes de Palma. Accueillant pour tous et un bon test des départs blancs, drapeaux à l'arrière."
     },
     "meta": {
       "badge": "Avis parcours",
@@ -474,7 +474,7 @@ const content = {
         ]
       },
       {
-        "text": "Les green fees sont dynamiques, d'environ 76 € en basse saison jusqu'à 172 € en haute saison, plus la licence fédérale journalière de 3 € si vous n'êtes pas licencié. Le green fee de mon client le jour de la partie était de 120 €. Des voiturettes sont disponibles à 55 €, mais elles sont facultatives ; nous avons fait tout le parcours à pied. La limite d'index est de 54 pour les hommes et les femmes, avec un certificat exigé à la réservation. Si vous réservez en individuel, vous serez généralement associé à un autre groupe ; nous avions réservé et privatisé notre propre départ."
+        "text": "Les green fees sont dynamiques, d'environ 76 € en basse saison jusqu'à 185 € en haute saison, plus la licence fédérale journalière de 3 € si vous n'êtes pas licencié. Le green fee de mon client le jour de la partie était de 120 €. Des voiturettes sont disponibles à 55 €, mais elles sont facultatives ; nous avons fait tout le parcours à pied. La limite d'index est de 54 pour les hommes et les femmes, avec un certificat exigé à la réservation. Si vous réservez en individuel, vous serez généralement associé à un autre groupe ; nous avions réservé et privatisé notre propre départ."
       },
       {
         "alt": "Plan du parcours de golf de Son Quint à Majorque montrant le tracé des 18 trous",
@@ -528,7 +528,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Son Quint - Eerlijke review 2026",
-      "description": "Son Quint: greenfee €76-€172 (dynamisch), par 71, 15 min van Palma. Vriendelijk voor elk niveau en een goede test vanaf witte tees met vlaggen achteraan."
+      "description": "Son Quint: greenfee €76-€185 (dynamisch), par 71, 15 min van Palma. Vriendelijk voor elk niveau en een goede test vanaf witte tees met vlaggen achteraan."
     },
     "meta": {
       "badge": "Baanreview",
@@ -649,7 +649,7 @@ const content = {
         ]
       },
       {
-        "text": "Greenfees zijn dynamisch en lopen van ongeveer €76 in het laagseizoen tot €172 in het hoogseizoen, plus de gebruikelijke dagelijkse federatielicentie van €3 als je geen lid van de federatie bent. De greenfee van mijn klant op de dag was €120. Buggy's zijn beschikbaar voor €55 maar optioneel; wij hebben de hele ronde gelopen. De handicaplimiet is 54 voor mannen en vrouwen, met een certificaat verplicht bij het boeken. Boek je als individuele speler, dan word je meestal bij een andere groep ingedeeld; wij hadden onze eigen starttijd geboekt en volledig voor onszelf gereserveerd."
+        "text": "Greenfees zijn dynamisch en lopen van ongeveer €76 in het laagseizoen tot €185 in het hoogseizoen, plus de gebruikelijke dagelijkse federatielicentie van €3 als je geen lid van de federatie bent. De greenfee van mijn klant op de dag was €120. Buggy's zijn beschikbaar voor €55 maar optioneel; wij hebben de hele ronde gelopen. De handicaplimiet is 54 voor mannen en vrouwen, met een certificaat verplicht bij het boeken. Boek je als individuele speler, dan word je meestal bij een andere groep ingedeeld; wij hadden onze eigen starttijd geboekt en volledig voor onszelf gereserveerd."
       },
       {
         "alt": "Plattegrond van golfbaan Son Quint op Mallorca met de ligging van alle 18 holes",
@@ -703,7 +703,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Son Quint - Ärlig recension 2026",
-      "description": "Son Quint: greenfee 76-172 € (dynamisk), par 71, 15 minuter från Palma. Vänlig för alla nivåer och ett bra test från vit tee med flaggorna längst bak."
+      "description": "Son Quint: greenfee 76-185 € (dynamisk), par 71, 15 minuter från Palma. Vänlig för alla nivåer och ett bra test från vit tee med flaggorna längst bak."
     },
     "meta": {
       "badge": "Banrecension",
@@ -824,7 +824,7 @@ const content = {
         ]
       },
       {
-        "text": "Greenfee är dynamisk och ligger på ungefär 76 € i lågsäsong upp till 172 € i högsäsong, plus den vanliga dagliga federationslicensen på 3 € om du inte är federationsmedlem. Min kunds greenfee den dagen var 120 €. Buggy finns för 55 € men är valfritt; vi gick hela rundan. Handicapgränsen är 54 för både herrar och damer, med intyg som krävs vid bokning. Bokar du som enskild spelare blir du oftast ihopkopplad med en annan grupp; vi hade bokat och reserverat hela vår egen starttid."
+        "text": "Greenfee är dynamisk och ligger på ungefär 76 € i lågsäsong upp till 185 € i högsäsong, plus den vanliga dagliga federationslicensen på 3 € om du inte är federationsmedlem. Min kunds greenfee den dagen var 120 €. Buggy finns för 55 € men är valfritt; vi gick hela rundan. Handicapgränsen är 54 för både herrar och damer, med intyg som krävs vid bokning. Bokar du som enskild spelare blir du oftast ihopkopplad med en annan grupp; vi hade bokat och reserverat hela vår egen starttid."
       },
       {
         "alt": "Banskiss över golfbanan Son Quint på Mallorca som visar dragningen för alla 18 hål",

@@ -348,7 +348,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: 'Son Muntaner Golf Review 2026',
         description:
-          "Son Muntaner is 15 mins from Palma, €110–€260 with buggy included, and Best Golf Course in Spain 2025. PGA pro review.",
+          "Son Muntaner is 15 mins from Palma, €110–€290 with buggy included, and Best Golf Course in Spain 2025. PGA pro review.",
         imagePath: '/images/son-muntaner-blog/sm-4.webp',
       },
       meta: {
@@ -373,7 +373,7 @@ export const GUIDE_POST_CONTENT = {
           type: 'paragraph',
           text: "Book Son Muntaner if you want premium conditioning close to Palma, with a buggy included and a layout that rewards positional golf over pure power. If your group prefers a bigger visual experience, compare it with <a href='/guides/alcanada-review'>Alcanada</a>; if you want the sternest championship test, compare <a href='/guides/son-gual-review'>Son Gual</a>.",
         },
-        { type: 'facts', items: [['€110-€260', '2026 green fee range'], ['Included', 'Buggy'], ['15 mins', 'From central Palma'], ['8/10', 'Difficulty']] },
+        { type: 'facts', items: [['€110-€290', '2026 green fee range'], ['Included', 'Buggy'], ['15 mins', 'From central Palma'], ['8/10', 'Difficulty']] },
         { type: 'heading', text: 'Getting There' },
         { type: 'paragraph', text: "About fifteen minutes from central Palma, twenty from the airport. Son Gual takes twenty minutes from the city, Alcanada fifty. If you're based in the city and want a serious round without building a half-day around the drive, Son Muntaner is the answer." },
         { type: 'paragraph', text: "The service from arrival through to the round was smooth. The team are attentive without being intrusive. Range balls, practice facilities, and the overall operation all sit at the level the course's reputation would lead you to expect." },
@@ -402,9 +402,9 @@ export const GUIDE_POST_CONTENT = {
         { type: 'image', src: '/images/son-muntaner-blog/sm-2.webp', alt: 'Ancient olive tree on hole 15 at Son Muntaner golf course Mallorca with Na Burguesa mountains behind', caption: "Hole 15. That olive tree has been standing for roughly a thousand years. The Balearic government declared it a natural monument. Someone decided to build a golf hole around it, and I'm glad they did." },
         { type: 'heading', text: 'The Restaurant' },
         { type: 'paragraph', text: "Not an afterthought. The food matches the standard of the course. Worth staying for after the round rather than heading straight back to Palma." },
-        { type: 'facts', items: [['Peak €260 / Low €110', '2026 price guide'], ['8/10', 'Difficulty'], ['Par 72', 'Championship layout'], ['Included', 'Buggy in green fee']] },
+        { type: 'facts', items: [['Peak €290 / Low €110', '2026 price guide'], ['8/10', 'Difficulty'], ['Par 72', 'Championship layout'], ['Included', 'Buggy in green fee']] },
         { type: 'heading', text: '2026 Green Fees' },
-        { type: 'paragraph', text: "Dynamic pricing through the Arabella Golf Mallorca booking system. Peak rate currently €260 for 18 holes, with the lowest widely seen later-day rate around €110. That gap is significant enough to be worth tracking if you have flexibility on timing. Check current rates at arabellagolfmallorca.com. Handicap limit is 36 for both men and women. Buggy is included in the green fee from March through late November. A €3 daily Spanish Golf Federation licence is payable at check-in." },
+        { type: 'paragraph', text: "Dynamic pricing through the Arabella Golf Mallorca booking system. Peak rate currently €290 for 18 holes, with the lowest widely seen later-day rate around €110. That gap is significant enough to be worth tracking if you have flexibility on timing. Check current rates at arabellagolfmallorca.com. Handicap limit is 36 for both men and women. Buggy is included in the green fee from March through late November. A €3 daily Spanish Golf Federation licence is payable at check-in." },
         { type: 'heading', text: 'Common Questions' },
         { type: 'paragraph', text: "First time on this course? Walk to the front of the first tee box and take a proper look before you play. The driving range sits just out of sight to the right and is easy to drift toward from the tee if you have not seen the full picture. Most visitors who go right on the opening hole have simply not had a clear view of where they are going." },
         { type: 'paragraph', text: "Son Muntaner is part of the Arabella Golf Mallorca group alongside <a href=\"/guides/son-vida-review\">Son Vida</a> and <a href=\"/guides/son-quint-review\">Son Quint</a>. All three courses are accessible from the same resort complex." },
@@ -559,7 +559,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Golf de Andratx Review: 7.5/10 (2026)",
         description:
-          "Golf de Andratx: 7.5/10, green fees €95-€170 by date and tee time, and the longest par 5 in Spain (609m). My honest verdict.",
+          "Golf de Andratx: 7.5/10, green fees €95-€180 by date and tee time, and the longest par 5 in Spain (609m). My honest verdict.",
         imagePath: '/images/golf-andratx-blog/andratx-hole-8.webp',
       },
       meta: {
@@ -1277,7 +1277,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: "Son Vida - Honest Review 2026",
         description:
-          "Son Vida green fee €84-€190 (dynamic), par 70, 15 minutes from Palma. Mallorca's oldest course (1964), with two-tier greens.",
+          "Son Vida green fee €84-€215 (dynamic), par 70, 15 minutes from Palma. Mallorca's oldest course (1964), with two-tier greens.",
         imagePath: '/images/son-vida-blog/son-vida-6.webp',
       },
       meta: {
@@ -1437,7 +1437,7 @@ export const GUIDE_POST_CONTENT = {
         },
         {
           type: 'paragraph',
-          text: "Green fees are dynamic, running from around €84 in low season up to €190 at peak, plus the standard €3 daily federation licence if you are not a federated player. My client paid €88 on the day as a Sheraton guest. Handicap limit is 54 with a certificate required, and Son Vida is about 15 minutes from Palma. Buggies are optional. Singles can book and will usually be paired with another group, as we were. Standard golf dress code applies, soft spikes are required, and club hire is available. The scorecard shows two versions of the course: par 70 with the 2nd as a 191m par 3, and par 71 with it as a 259m par 4. We played the par 3.",
+          text: "Green fees are dynamic, running from around €84 in low season up to €215 at peak, plus the standard €3 daily federation licence if you are not a federated player. My client paid €88 on the day as a Sheraton guest. Handicap limit is 54 with a certificate required, and Son Vida is about 15 minutes from Palma. Buggies are optional. Singles can book and will usually be paired with another group, as we were. Standard golf dress code applies, soft spikes are required, and club hire is available. The scorecard shows two versions of the course: par 70 with the 2nd as a 191m par 3, and par 71 with it as a 259m par 4. We played the par 3.",
         },
         {
           type: 'paragraph',
@@ -1481,7 +1481,7 @@ export const GUIDE_POST_CONTENT = {
       metadata: {
         title: 'T Golf Calvià - Honest Review 2026',
         description:
-          'Peak €210, twilight €150. 15 lakes, 6,500m back tees, 9/10 conditioning.',
+          'Peak €220, twilight €150. 15 lakes, 6,500m back tees, 9/10 conditioning.',
         imagePath: '/images/t-golf-calvia-social.jpg',
       },
       meta: {
@@ -1602,7 +1602,7 @@ export const GUIDE_POST_CONTENT = {
         {
           type: 'facts',
           items: [
-            ['Up to €210', 'Peak green fee'],
+            ['Up to €220', 'Peak green fee'],
             ['From €150', 'Twilight rate'],
             ['9/10', "My rating"],
             ['6,500m', 'Back tees (Par 72)'],

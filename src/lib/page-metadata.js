@@ -76,32 +76,32 @@ const GOLF_COURSES_METADATA = {
     title: 'Mallorca Golf Courses & Green Fees',
     socialImage: '/images/golf-courses.jpg',
     description:
-      'All 24 Mallorca golf courses with green fees €55–€260, regions, difficulty and which course fits your trip.',
+      'All 24 Mallorca golf courses with green fees €55–€290, regions, difficulty and which course fits your trip.',
   },
   de: {
     title: 'Golfplätze auf Mallorca & Preise',
     description:
-      '24 Golfplätze auf Mallorca: Gebühren €55–€260, Schwierigkeit, Regionen, welcher passt zu Ihnen.',
+      '24 Golfplätze auf Mallorca: Gebühren €55–€290, Schwierigkeit, Regionen, welcher passt zu Ihnen.',
   },
   es: {
     title: 'Campos de Golf en Mallorca',
     description:
-      '24 campos de golf en Mallorca: green fees €55–€260, dificultad, zonas, cuál te conviene.',
+      '24 campos de golf en Mallorca: green fees €55–€290, dificultad, zonas, cuál te conviene.',
   },
   fr: {
     title: 'Parcours de Golf à Majorque',
     description:
-      '24 parcours à Majorque: green fees €55–€260, difficulté, régions, lequel vous convient.',
+      '24 parcours à Majorque: green fees €55–€290, difficulté, régions, lequel vous convient.',
   },
   nl: {
     title: '24 Banen - Gids & Greenfees',
     description:
-      '24 banen op Mallorca: greenfees €55–€260, moeilijkheid, regio\'s, welke past bij u.',
+      '24 banen op Mallorca: greenfees €55–€290, moeilijkheid, regio\'s, welke past bij u.',
   },
   sv: {
     title: '24 Banor - Guide & Avgifter',
     description:
-      '24 banor på Mallorca: greenavgifter €55–€260, svårighet, regioner, vilken passar dig.',
+      '24 banor på Mallorca: greenavgifter €55–€290, svårighet, regioner, vilken passar dig.',
   },
   zh: {
     title: '马略卡高尔夫球场指南 2026 - 岛上全部球场',

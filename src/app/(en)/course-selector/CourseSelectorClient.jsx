@@ -76,7 +76,7 @@ const COURSES = [
   {
     name: 'T Golf Calvia',
     location: 'Calvia',
-    fees: 'Peak €210 / Low €105 (dynamic)',
+    fees: 'Peak €220 / Low €105 (dynamic)',
     href: '/golf-courses',
     bestFor: ['intermediate', 'advanced', 'scenery', 'premium', 'weekend'],
     take: 'A polished southwest option with strong conditioning, wide driving lines, and enough water to keep the round honest.',
@@ -84,7 +84,7 @@ const COURSES = [
   {
     name: 'Son Muntaner',
     location: 'Son Vida, Palma',
-    fees: 'Peak €260 / Low €99 (dynamic)',
+    fees: 'Peak €290 / Low €99 (dynamic)',
     href: '/golf-courses',
     bestFor: ['intermediate', 'advanced', 'premium', 'scenery', 'weekend'],
     take: 'Top-end Palma golf with excellent conditioning and a strong setting. Good when you want a premium round close to the city.',
@@ -92,7 +92,7 @@ const COURSES = [
   {
     name: 'Golf de Andratx',
     location: 'Camp de Mar',
-    fees: 'Peak €170 / Low €95 (dynamic)',
+    fees: 'Peak €180 / Low €95 (dynamic)',
     href: '/golf-courses',
     bestFor: ['advanced', 'difficulty', 'weekend'],
     take: 'The hardest recommendation on the list. Bring extra balls and no ego, especially if this is your first Mallorca round.',
@@ -108,7 +108,7 @@ const COURSES = [
   {
     name: 'Golf Son Quint',
     location: 'Son Vida, Palma',
-    fees: 'Peak €172 / Low €76 (dynamic)',
+    fees: 'Peak €185 / Low €76 (dynamic)',
     href: '/golf-courses',
     bestFor: ['beginner', 'walkability', 'value', 'one'],
     take: 'One of the more approachable full courses near Palma. A sensible first round for newer golfers or mixed-ability groups.',

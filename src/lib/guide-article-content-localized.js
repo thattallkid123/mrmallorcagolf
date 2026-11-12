@@ -19,7 +19,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       "metadata": {
         "imageAlt": "Los mejores campos de golf de Mallorca - la guía honesta de un Profesional PGA (2026)",
         "title": "Los 24 campos de golf en Mallorca 2026",
-        "description": "Los 24 campos de Mallorca, clasificados por un pro PGA. Green fees €55–€260, dificultad y a quién le conviene cada uno."
+        "description": "Los 24 campos de Mallorca, clasificados por un pro PGA. Green fees €55–€290, dificultad y a quién le conviene cada uno."
       },
       "meta": {
         "badge": "Guía de campos",
@@ -89,7 +89,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "€125-260",
+              "€125-290",
               "8/10",
               "4.5",
               "El mejor cuidado, cerca de Palma"
@@ -98,7 +98,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "T Golf Calvià",
               "Calvià",
               "72",
-              "€170-210",
+              "€170-220",
               "7/10",
               "5.0",
               "Experiencia premium completa"
@@ -385,7 +385,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Campos en la isla"
             ],
             [
-              "€55-260",
+              "€55-290",
               "Rango de green fee de 18 hoyos"
             ],
             [
@@ -427,7 +427,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       "metadata": {
         "imageAlt": "Die besten Golfplätze auf Mallorca - der ehrliche Guide eines PGA Professionals (2026)",
         "title": "Alle 24 Golfplätze auf Mallorca 2026",
-        "description": "Alle 24 Golfplätze Mallorcas, von einem PGA-Pro gerankt. Greenfees €55–€260, Schwierigkeit, für wen sich welcher Platz eignet."
+        "description": "Alle 24 Golfplätze Mallorcas, von einem PGA-Pro gerankt. Greenfees €55–€290, Schwierigkeit, für wen sich welcher Platz eignet."
       },
       "meta": {
         "badge": "Platz-Guide",
@@ -497,7 +497,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "€125-260",
+              "€125-290",
               "8/10",
               "4.5",
               "Am besten gepflegt, nah an Palma"
@@ -506,7 +506,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "T Golf Calvià",
               "Calvià",
               "72",
-              "€170-210",
+              "€170-220",
               "7/10",
               "5.0",
               "Rundum Premium-Erlebnis"
@@ -793,7 +793,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Plätze auf der Insel"
             ],
             [
-              "€55-260",
+              "€55-290",
               "Preisspanne für 18 Löcher"
             ],
             [
@@ -835,7 +835,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       "metadata": {
         "imageAlt": "Les meilleurs parcours de golf de Majorque - le guide honnête d'un Professionnel PGA (2026)",
         "title": "Golf à Majorque : les 24 parcours",
-        "description": "Les 24 parcours de Majorque classés par un pro PGA. Green fees €55–€260, difficulté, à qui convient chacun."
+        "description": "Les 24 parcours de Majorque classés par un pro PGA. Green fees €55–€290, difficulté, à qui convient chacun."
       },
       "meta": {
         "badge": "Guide des parcours",
@@ -905,7 +905,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "€125-260",
+              "€125-290",
               "8/10",
               "4.5",
               "Le mieux entretenu, proche de Palma"
@@ -914,7 +914,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "T Golf Calvià",
               "Calvià",
               "72",
-              "€170-210",
+              "€170-220",
               "7/10",
               "5.0",
               "Expérience premium complète"
@@ -1201,7 +1201,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Parcours sur l'île"
             ],
             [
-              "€55-260",
+              "€55-290",
               "Fourchette de green fee pour 18 trous"
             ],
             [
@@ -1243,7 +1243,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       "metadata": {
         "imageAlt": "De beste golfbanen op Mallorca - de eerlijke gids van een PGA Professional (2026)",
         "title": "Alle 24 golfbanen op Mallorca 2026",
-        "description": "Alle 24 banen op Mallorca gerangschikt door een PGA-pro. Greenfees €55–€260, moeilijkheid en voor wie elke baan geschikt is."
+        "description": "Alle 24 banen op Mallorca gerangschikt door een PGA-pro. Greenfees €55–€290, moeilijkheid en voor wie elke baan geschikt is."
       },
       "meta": {
         "badge": "Baangids",
@@ -1313,7 +1313,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "€125-260",
+              "€125-290",
               "8/10",
               "4.5",
               "Best onderhouden, dicht bij Palma"
@@ -1322,7 +1322,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "T Golf Calvià",
               "Calvià",
               "72",
-              "€170-210",
+              "€170-220",
               "7/10",
               "5.0",
               "Premiumervaring voor alle doeleinden"
@@ -1609,7 +1609,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Banen op het eiland"
             ],
             [
-              "€55-260",
+              "€55-290",
               "Greenfee-bereik voor 18 holes"
             ],
             [
@@ -1651,7 +1651,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       "metadata": {
         "imageAlt": "De bästa golfbanorna på Mallorca - en PGA-professionals ärliga guide (2026)",
         "title": "Alla 24 golfbanor på Mallorca 2026",
-        "description": "Alla 24 banor på Mallorca rangordnade av en PGA-pro. Greenfees €55–€260, svårighet och vem varje bana passar."
+        "description": "Alla 24 banor på Mallorca rangordnade av en PGA-pro. Greenfees €55–€290, svårighet och vem varje bana passar."
       },
       "meta": {
         "badge": "Banguide",
@@ -1721,7 +1721,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "€125-260",
+              "€125-290",
               "8/10",
               "4.5",
               "Bäst skötta, nära Palma"
@@ -1730,7 +1730,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "T Golf Calvià",
               "Calvià",
               "72",
-              "€170-210",
+              "€170-220",
               "7/10",
               "5.0",
               "Premiumupplevelse på alla sätt"
@@ -2017,7 +2017,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Banor på ön"
             ],
             [
-              "€55-260",
+              "€55-290",
               "Greenfee-spann för 18 hål"
             ],
             [
@@ -2059,7 +2059,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
       "metadata": {
         "imageAlt": "马略卡最佳高尔夫球场 - PGA 职业教练的诚实指南（2026）",
         "title": "马略卡全部24座高尔夫球场 2026",
-        "description": "PGA 职业教练为马略卡全部 24 座球场排名。果岭费 €55–€260、难度，以及每座球场适合谁。"
+        "description": "PGA 职业教练为马略卡全部 24 座球场排名。果岭费 €55–€290、难度，以及每座球场适合谁。"
       },
       "meta": {
         "badge": "球场指南",
@@ -2129,7 +2129,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "Son Muntaner",
               "Son Vida - Palma",
               "72",
-              "€125-260",
+              "€125-290",
               "8/10",
               "4.5",
               "养护最好，靠近帕尔马"
@@ -2138,7 +2138,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "T Golf Calvià",
               "Calvià",
               "72",
-              "€170-210",
+              "€170-220",
               "7/10",
               "5.0",
               "全面的高端体验"
@@ -2425,7 +2425,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
               "岛上球场"
             ],
             [
-              "€55-260",
+              "€55-290",
               "18 洞果岭费区间"
             ],
             [
@@ -3954,14 +3954,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "es": {
       "metadata": {
         "title": "¿Cuánto cuesta el golf en Mallorca? 2026",
-        "description": "Los green fees en Mallorca cuestan €55–€260. Costes de buggy, meses con mejor precio, tarifas dinámicas y cuándo reservar pronto, campo a campo."
+        "description": "Los green fees en Mallorca cuestan €55–€290. Costes de buggy, meses con mejor precio, tarifas dinámicas y cuándo reservar pronto, campo a campo."
       },
       "meta": {
         "badge": "Greenfees",
         "readTime": "5 min de lectura",
         "updated": "Marzo 2026",
         "title": "Cuánto cuesta el golf en Mallorca (2026)",
-        "intro": "Una ronda pública de 18 hoyos en Mallorca va desde unos 55 € en el extremo económico hasta unos 260 € en Son Muntaner en temporada alta. Este es el desglose honesto para 2026 de alguien que juega aquí casi cada semana.",
+        "intro": "Una ronda pública de 18 hoyos en Mallorca va desde unos 55 € en el extremo económico hasta unos 290 € en Son Muntaner en temporada alta. Este es el desglose honesto para 2026 de alguien que juega aquí casi cada semana.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4008,7 +4008,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Campos premium"
         },
         {
-          "text": "Son Gual ronda los €115-165. Alcanada va de unos €115 a €230. Son Muntaner llega a unos €260 en temporada alta y baja a unos €125 en la ventana de mejor precio. T Golf Calvià puede subir hasta unos €210 y Son Vida hasta unos €190. El extremo alto en Mallorca es más caro de lo que sugieren muchas guías antiguas."
+          "text": "Son Gual ronda los €115-165. Alcanada va de unos €115 a €230. Son Muntaner llega a unos €290 en temporada alta y baja a unos €125 en la ventana de mejor precio. T Golf Calvià puede subir hasta unos €220 y Son Vida hasta unos €215. El extremo alto en Mallorca es más caro de lo que sugieren muchas guías antiguas."
         },
         {
           "text": "Alrededor de la mitad de la isla usa ya precios dinámicos, incluidos los campos de Arabella, los dos T Golf, Pula, Capdepera y Son Antem East y West. La regla práctica es sencilla: cuanto antes reserves, más probabilidades tendrás de asegurar el extremo bajo del rango. El Black Friday, el invierno y las ofertas de varias rondas con socios pueden ahorrar dinero de verdad si eliges bien el momento. Si quieres que la elección de campos y las salidas estén resueltas antes de llegar, empieza por la <a href='/plan-your-trip'>planificación del viaje</a>."
@@ -4094,14 +4094,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "de": {
       "metadata": {
         "title": "Was kostet Golf auf Mallorca? 2026",
-        "description": "Greenfees auf Mallorca: €55–€260. Buggy-Kosten, günstige Monate, dynamische Preise und wann Sie früh buchen sollten, Platz für Platz."
+        "description": "Greenfees auf Mallorca: €55–€290. Buggy-Kosten, günstige Monate, dynamische Preise und wann Sie früh buchen sollten, Platz für Platz."
       },
       "meta": {
         "badge": "Greenfees",
         "readTime": "5 Min. Lesezeit",
         "updated": "März 2026",
         "title": "Was Golf auf Mallorca kostet (2026)",
-        "intro": "Eine öffentliche 18-Loch-Runde auf Mallorca kostet von rund 55 € im günstigen Bereich bis zu etwa 260 € in Son Muntaner in der Hochsaison. Hier ist der ehrliche Überblick für 2026 von jemandem, der hier fast jede Woche spielt.",
+        "intro": "Eine öffentliche 18-Loch-Runde auf Mallorca kostet von rund 55 € im günstigen Bereich bis zu etwa 290 € in Son Muntaner in der Hochsaison. Hier ist der ehrliche Überblick für 2026 von jemandem, der hier fast jede Woche spielt.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4148,7 +4148,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Premiumplätze"
         },
         {
-          "text": "Son Gual liegt bei etwa €115-165. Alcanada bei grob €115-230. Son Muntaner erreicht in der Spitze rund €260 und fällt im günstigen Zeitfenster auf etwa €125. T Golf Calvià kann auf rund €210 steigen, Son Vida auf etwa €190. Das obere Ende auf Mallorca liegt höher, als viele ältere Guides vermuten lassen."
+          "text": "Son Gual liegt bei etwa €115-165. Alcanada bei grob €115-230. Son Muntaner erreicht in der Spitze rund €290 und fällt im günstigen Zeitfenster auf etwa €125. T Golf Calvià kann auf rund €220 steigen, Son Vida auf etwa €215. Das obere Ende auf Mallorca liegt höher, als viele ältere Guides vermuten lassen."
         },
         {
           "text": "Rund die Hälfte der Insel arbeitet inzwischen mit dynamischen Preisen, darunter die Arabella-Plätze, beide T-Golf-Anlagen, Pula, Capdepera sowie Son Antem East und West. Die Faustregel ist einfach: Je früher Sie buchen, desto größer die Chance auf das untere Ende der Preisspanne. Black Friday, Winter und Mehrfachrunden-Angebote der Partner können echtes Geld sparen, wenn Sie den Zeitpunkt klug wählen. Wenn Platzauswahl und Startzeiten schon vor Ihrer Ankunft erledigt sein sollen, beginnen Sie mit der <a href='/plan-your-trip'>Reiseplanung</a>."
@@ -4234,14 +4234,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "fr": {
       "metadata": {
         "title": "Combien coûte le golf à Majorque? 2026",
-        "description": "Les green fees à Majorque coûtent €55–€260. Voiturettes, mois les moins chers, tarifs dynamiques et quand réserver tôt, parcours par parcours."
+        "description": "Les green fees à Majorque coûtent €55–€290. Voiturettes, mois les moins chers, tarifs dynamiques et quand réserver tôt, parcours par parcours."
       },
       "meta": {
         "badge": "Green fees",
         "readTime": "5 min de lecture",
         "updated": "Mars 2026",
         "title": "Combien coûte le golf à Majorque ? Le vrai détail 2026",
-        "intro": "Une partie de 18 trous en accès public à Majorque coûte d'environ 55 € dans la gamme accessible jusqu'à environ 260 € à Son Muntaner en haute saison. Voici le détail honnête pour 2026, donné par quelqu'un qui joue ici presque chaque semaine.",
+        "intro": "Une partie de 18 trous en accès public à Majorque coûte d'environ 55 € dans la gamme accessible jusqu'à environ 290 € à Son Muntaner en haute saison. Voici le détail honnête pour 2026, donné par quelqu'un qui joue ici presque chaque semaine.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4288,7 +4288,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Parcours premium"
         },
         {
-          "text": "Son Gual tourne autour de €115-165. Alcanada va d'environ €115 à €230. Son Muntaner atteint environ €260 en pointe et descend autour de €125 pendant la période la moins chère. T Golf Calvià peut grimper jusqu'à environ €210, et Son Vida jusqu'à environ €190. Le haut de la fourchette à Majorque est plus élevé que ne le laissent penser beaucoup de guides anciens."
+          "text": "Son Gual tourne autour de €115-165. Alcanada va d'environ €115 à €230. Son Muntaner atteint environ €290 en pointe et descend autour de €125 pendant la période la moins chère. T Golf Calvià peut grimper jusqu'à environ €220, et Son Vida jusqu'à environ €215. Le haut de la fourchette à Majorque est plus élevé que ne le laissent penser beaucoup de guides anciens."
         },
         {
           "text": "Environ la moitié de l'île applique désormais des tarifs dynamiques, dont les parcours Arabella, les deux T Golf, Pula, Capdepera et Son Antem East et West. La règle pratique est simple : plus vous réservez tôt, plus vous avez de chances de décrocher le bas de la fourchette. Le Black Friday, l'hiver et les offres multi-parties des clubs partenaires peuvent encore faire économiser de l'argent si vous choisissez bien le moment. Si vous voulez que le choix des parcours et les départs soient réglés avant votre arrivée, commencez par la <a href='/plan-your-trip'>planification du voyage</a>."
@@ -4374,14 +4374,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "nl": {
       "metadata": {
         "title": "Wat kost golf op Mallorca? 2026",
-        "description": "Greenfees op Mallorca kosten €55–€260. Buggykosten, voordelige maanden, dynamische prijzen en wanneer je vroeg moet boeken, per baan."
+        "description": "Greenfees op Mallorca kosten €55–€290. Buggykosten, voordelige maanden, dynamische prijzen en wanneer je vroeg moet boeken, per baan."
       },
       "meta": {
         "badge": "Greenfees",
         "readTime": "5 min leestijd",
         "updated": "Maart 2026",
         "title": "Wat kost golf op Mallorca? Het complete overzicht voor 2026",
-        "intro": "Een openbare ronde van 18 holes op Mallorca kost van ongeveer 55 € aan de voordelige kant tot circa 260 € op Son Muntaner in het hoogseizoen. Dit is de eerlijke uitsplitsing voor 2026 van iemand die hier bijna elke week speelt.",
+        "intro": "Een openbare ronde van 18 holes op Mallorca kost van ongeveer 55 € aan de voordelige kant tot circa 290 € op Son Muntaner in het hoogseizoen. Dit is de eerlijke uitsplitsing voor 2026 van iemand die hier bijna elke week speelt.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4428,7 +4428,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Premiumbanen"
         },
         {
-          "text": "Son Gual zit rond €115-165. Alcanada loopt van ongeveer €115 tot €230. Son Muntaner haalt in het hoogseizoen zo'n €260 en zakt in de voordelige periode naar ongeveer €125. T Golf Calvià kan oplopen tot circa €210 en Son Vida tot circa €190. De top van de markt op Mallorca ligt hoger dan veel oudere gidsen suggereren."
+          "text": "Son Gual zit rond €115-165. Alcanada loopt van ongeveer €115 tot €230. Son Muntaner haalt in het hoogseizoen zo'n €290 en zakt in de voordelige periode naar ongeveer €125. T Golf Calvià kan oplopen tot circa €220 en Son Vida tot circa €215. De top van de markt op Mallorca ligt hoger dan veel oudere gidsen suggereren."
         },
         {
           "text": "Ongeveer de helft van het eiland hanteert nu dynamische prijzen, waaronder de Arabella-banen, beide T Golf-locaties, Pula, Capdepera en Son Antem East en West. De vuistregel is simpel: hoe eerder je boekt, hoe groter de kans dat je het onderste deel van de prijsrange vastlegt. Black Friday, de winter en partneraanbiedingen voor meerdere rondes kunnen nog steeds echt geld besparen als je de timing goed kiest. Wil je dat de baankeuze en starttijden geregeld zijn voordat je aankomt, begin dan met de <a href='/plan-your-trip'>reisplanning</a>."
@@ -4514,14 +4514,14 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "sv": {
       "metadata": {
         "title": "Hur mycket kostar golf på Mallorca? 2026",
-        "description": "Greenfees på Mallorca kostar €55–€260. Buggykostnader, förmånliga månader, dynamiska priser och när du bör boka tidigt, bana för bana."
+        "description": "Greenfees på Mallorca kostar €55–€290. Buggykostnader, förmånliga månader, dynamiska priser och när du bör boka tidigt, bana för bana."
       },
       "meta": {
         "badge": "Greenfee",
         "readTime": "5 min läsning",
         "updated": "Mars 2026",
         "title": "Vad golf kostar på Mallorca (2026)",
-        "intro": "En offentlig 18-hålsrunda på Mallorca kostar från ungefär 55 € i den prisvärda delen upp till runt 260 € på Son Muntaner under högsäsong. Här är den ärliga genomgången för 2026 från någon som spelar här nästan varje vecka.",
+        "intro": "En offentlig 18-hålsrunda på Mallorca kostar från ungefär 55 € i den prisvärda delen upp till runt 290 € på Son Muntaner under högsäsong. Här är den ärliga genomgången för 2026 från någon som spelar här nästan varje vecka.",
         "related": [
           {
             "slug": "best-golf-courses-mallorca",
@@ -4568,7 +4568,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "Premiumbanor"
         },
         {
-          "text": "Son Gual ligger runt €115-165. Alcanada går från ungefär €115 till €230. Son Muntaner når omkring €260 under högsäsong och sjunker till omkring €125 under det förmånliga fönstret. T Golf Calvià kan gå upp till omkring €210 och Son Vida till omkring €190. Toppnivån på Mallorca ligger högre än många äldre guider antyder."
+          "text": "Son Gual ligger runt €115-165. Alcanada går från ungefär €115 till €230. Son Muntaner når omkring €290 under högsäsong och sjunker till omkring €125 under det förmånliga fönstret. T Golf Calvià kan gå upp till omkring €220 och Son Vida till omkring €215. Toppnivån på Mallorca ligger högre än många äldre guider antyder."
         },
         {
           "text": "Ungefär hälften av öns banor använder numera dynamiska priser, bland annat Arabella-banorna, båda T Golf-anläggningarna, Pula, Capdepera samt Son Antem East och West. Den praktiska regeln är enkel: ju tidigare du bokar, desto större chans att låsa det lägre priset. Black Friday, vintern och partnererbjudanden för flera rundor kan fortfarande spara riktiga pengar om du väljer tidpunkt väl. Vill du ha banval och starttider ordnade innan du kommer, börja med <a href='/plan-your-trip'>reseplaneringen</a>."
@@ -4654,7 +4654,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "zh": {
       "metadata": {
         "title": "马略卡高尔夫要花多少钱 2026",
-        "description": "马略卡果岭费为 €55–€260。了解球车费用、性价比高的月份、动态定价，以及每座球场该何时提前预订。"
+        "description": "马略卡果岭费为 €55–€290。了解球车费用、性价比高的月份、动态定价，以及每座球场该何时提前预订。"
       },
       "meta": {
         "badge": "费用指南",
@@ -4708,7 +4708,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
           "text": "高端球场"
         },
         {
-          "text": "Son Gual 大约 €115-165。Alcanada 大约 €115-230。Son Muntaner 旺季约 €260，在性价比时段会降到约 €125。T Golf Calvià 最高可达约 €210，Son Vida 约 €190。马略卡的高端价位，比许多旧指南说的要高。"
+          "text": "Son Gual 大约 €115-165。Alcanada 大约 €115-230。Son Muntaner 旺季约 €290，在性价比时段会降到约 €125。T Golf Calvià 最高可达约 €220，Son Vida 约 €215。马略卡的高端价位，比许多旧指南说的要高。"
         },
         {
           "text": "岛上大约一半的球场现在采用动态定价，包括 Arabella 旗下球场、两家 T Golf、Pula、Capdepera 以及 Son Antem East 和 West。实用规则很简单：订得越早，越有可能锁定价格区间的低端。黑色星期五、冬季以及合作伙伴的多轮优惠，只要时机选得好，仍然能省下真金白银。如果你希望在抵达前就把球场选择和开球时间安排好，可以从<a href='/plan-your-trip'>行程规划</a>开始。"
@@ -5542,7 +5542,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "es": {
       "metadata": {
         "title": "¿Mallorca es buena para el golf? Sí",
-        "description": "24 campos, sol todo el año, €55–€260. La respuesta honesta de un pro PGA: campos, condiciones y expectativas.",
+        "description": "24 campos, sol todo el año, €55–€290. La respuesta honesta de un pro PGA: campos, condiciones y expectativas.",
         "imageAlt": "¿Es Mallorca buena para el golf? La respuesta de un Profesional PGA"
       },
       "meta": {
@@ -5670,7 +5670,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "de": {
       "metadata": {
         "title": "Ist Mallorca gut für Golf? Ja",
-        "description": "24 Plätze, Sonne das ganze Jahr, €55–€260. Die ehrliche Antwort eines PGA-Pros: Plätze, Bedingungen, Erwartungen.",
+        "description": "24 Plätze, Sonne das ganze Jahr, €55–€290. Die ehrliche Antwort eines PGA-Pros: Plätze, Bedingungen, Erwartungen.",
         "imageAlt": "Ist Mallorca gut für Golf? Die Antwort eines PGA Professionals"
       },
       "meta": {
@@ -5798,7 +5798,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "fr": {
       "metadata": {
         "title": "Le golf à Majorque vaut-il le voyage ?",
-        "description": "24 parcours, du soleil toute l'année, green fees de 55 à 260 €. La réponse honnête d'un pro PGA : parcours, conditions, à quoi s'attendre.",
+        "description": "24 parcours, du soleil toute l'année, green fees de 55 à 290 €. La réponse honnête d'un pro PGA : parcours, conditions, à quoi s'attendre.",
         "imageAlt": "Majorque est-elle bonne pour le golf ? La réponse d'un Professionnel PGA"
       },
       "meta": {
@@ -5926,7 +5926,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "nl": {
       "metadata": {
         "title": "Is Mallorca goed voor golf? Ja",
-        "description": "24 banen, het hele jaar zon, €55–€260. Het eerlijke antwoord van een PGA-pro: banen, omstandigheden, verwachtingen.",
+        "description": "24 banen, het hele jaar zon, €55–€290. Het eerlijke antwoord van een PGA-pro: banen, omstandigheden, verwachtingen.",
         "imageAlt": "Is Mallorca goed voor golf? Het antwoord van een PGA Professional"
       },
       "meta": {
@@ -6054,7 +6054,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "sv": {
       "metadata": {
         "title": "Är Mallorca bra för golf? Ja",
-        "description": "24 banor, sol året runt, €55–€260. En PGA-pros ärliga svar: banor, förhållanden, förväntningar.",
+        "description": "24 banor, sol året runt, €55–€290. En PGA-pros ärliga svar: banor, förhållanden, förväntningar.",
         "imageAlt": "Är Mallorca bra för golf? Ett svar från en PGA Professional"
       },
       "meta": {
@@ -6182,7 +6182,7 @@ export const LOCALIZED_GUIDE_ARTICLE_CONTENT = {
     "zh": {
       "metadata": {
         "title": "马略卡适合打高尔夫吗？诚实答案",
-        "description": "24 座球场，全年阳光，€55–€260。PGA 职业教练的坦诚回答：球场、状态与预期。",
+        "description": "24 座球场，全年阳光，€55–€290。PGA 职业教练的坦诚回答：球场、状态与预期。",
         "imageAlt": "马略卡适合打高尔夫吗？PGA 职业教练的回答"
       },
       "meta": {

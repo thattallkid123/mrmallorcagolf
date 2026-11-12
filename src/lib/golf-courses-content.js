@@ -14,7 +14,7 @@ export const GOLF_COURSES_CONTENT = {
         "Played and Researched Properly",
         "PGA Professional"
       ],
-      "lead": "Browse all 24 courses by region, with 18-hole green fees from €55 to €260. For a smarter shortlist, filtered by your handicap, budget, and trip style, use the course selector. Then send me your dates, handicap, and hotel area and I'll refine the recommendation."
+      "lead": "Browse all 24 courses by region, with 18-hole green fees from €55 to €290. For a smarter shortlist, filtered by your handicap, budget, and trip style, use the course selector. Then send me your dates, handicap, and hotel area and I'll refine the recommendation."
     },
     "regionHeaders": {
       "palma": {
@@ -46,7 +46,7 @@ export const GOLF_COURSES_CONTENT = {
     "ui": {
       "allCourses": "All Courses",
       "credentials": "UK PGA Advanced Professional · Trackman Master Certified · TPI Level 3 · 11 years in Shanghai · Based in Mallorca since March 2025",
-      "intro1": "Mallorca has 24 golf courses and 21 of them take green-fee visitors. An 18-hole green fee runs from €55 to €260, depending on the course and the month.",
+      "intro1": "Mallorca has 24 golf courses and 21 of them take green-fee visitors. An 18-hole green fee runs from €55 to €290, depending on the course and the month.",
       "intro2": "I'm working my way through every course on the island, playing them and reviewing them honestly. Son Antem West is now in that played-and-reviewed list. Below is what I know so far.",
       "explorerIntro": "Browse by region. Each card shows price, difficulty rating, my rating, and any dynamic pricing or handicap requirement before booking.",
       "ctaEyebrow": "Narrowed it down?",
@@ -69,7 +69,7 @@ export const GOLF_COURSES_CONTENT = {
         },
         {
           "q": "How much does it cost to play golf in Mallorca?",
-          "a": "Standard full-size rounds range from around €55 at the value end up to around €260 at the top in peak season. Palma Pitch & Putt is cheaper, but it is a separate short-course option rather than a typical visitor round. Most visitor rounds fall between €85 and €165. Buggy hire is typically €35 to €55 extra."
+          "a": "Standard full-size rounds range from around €55 at the value end up to around €290 at the top in peak season. Palma Pitch & Putt is cheaper, but it is a separate short-course option rather than a typical visitor round. Most visitor rounds fall between €85 and €165. Buggy hire is typically €35 to €55 extra."
         },
         {
           "q": "Do you need a handicap certificate to play golf in Mallorca?",

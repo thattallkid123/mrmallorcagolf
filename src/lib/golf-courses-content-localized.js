@@ -14,7 +14,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Selbst gespielt oder sauber recherchiert",
         "PGA Professional"
       ],
-      "lead": "Alle 24 Plätze nach Region durchsuchen, mit Greenfees für 18 Löcher zwischen 55 € und 260 €. Für eine intelligentere Shortlist - gefiltert nach Handicap, Budget und Reisestil - nutzen Sie den Platzauswahl-Assistenten. Schicken Sie mir dann Ihre Daten, Ihr Handicap und Ihre Hotelregion, und ich verfeinere die Empfehlung."
+      "lead": "Alle 24 Plätze nach Region durchsuchen, mit Greenfees für 18 Löcher zwischen 55 € und 290 €. Für eine intelligentere Shortlist - gefiltert nach Handicap, Budget und Reisestil - nutzen Sie den Platzauswahl-Assistenten. Schicken Sie mir dann Ihre Daten, Ihr Handicap und Ihre Hotelregion, und ich verfeinere die Empfehlung."
     },
     "regionHeaders": {
       "palma": {
@@ -42,7 +42,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "intro1": "Mallorca hat 24 Golfplätze, und 21 davon sind für Greenfee-Gäste offen. Ein Greenfee für 18 Löcher kostet zwischen 55 € und 260 €, je nach Platz und Monat.",
+      "intro1": "Mallorca hat 24 Golfplätze, und 21 davon sind für Greenfee-Gäste offen. Ein Greenfee für 18 Löcher kostet zwischen 55 € und 290 €, je nach Platz und Monat.",
       "explorerIntro": "Nach Region durchsuchen. Jede Karte zeigt Preis, Schwierigkeit, meine Bewertung sowie eventuelle dynamische Preise oder Handicap-Vorgaben vor der Buchung.",
       "faqEyebrow": "Fragen",
       "faqTitle": "Häufige Fragen",
@@ -58,7 +58,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Was kostet eine Runde Golf auf Mallorca?",
-          "a": "Die Greenfees reichen von rund 55 € im günstigen Bereich bis rund 260 € an der Spitze in der Hochsaison. Palma Pitch & Putt ist günstiger, aber das ist eine separate Kurzplatz-Option und keine typische Gästerunde. Die meisten Gästerunden liegen zwischen 85 € und 165 €. Ein Buggy kostet meist 35 € bis 55 € zusätzlich."
+          "a": "Die Greenfees reichen von rund 55 € im günstigen Bereich bis rund 290 € an der Spitze in der Hochsaison. Palma Pitch & Putt ist günstiger, aber das ist eine separate Kurzplatz-Option und keine typische Gästerunde. Die meisten Gästerunden liegen zwischen 85 € und 165 €. Ein Buggy kostet meist 35 € bis 55 € zusätzlich."
         },
         {
           "q": "Braucht man für Mallorca ein Handicap-Zertifikat?",
@@ -92,7 +92,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Jugados o investigados a fondo",
         "Profesional PGA"
       ],
-      "lead": "Explore los 24 campos de golf por región, con green fees de 18 hoyos entre 55 € y 260 €. Para una lista más inteligente - filtrada por su hándicap, presupuesto y estilo de viaje - use el selector de campos. Después envíeme sus fechas, hándicap y zona de hotel, y afinaré la recomendación."
+      "lead": "Explore los 24 campos de golf por región, con green fees de 18 hoyos entre 55 € y 290 €. Para una lista más inteligente - filtrada por su hándicap, presupuesto y estilo de viaje - use el selector de campos. Después envíeme sus fechas, hándicap y zona de hotel, y afinaré la recomendación."
     },
     "regionHeaders": {
       "palma": {
@@ -121,7 +121,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "intro1": "Hay 24 campos de golf en Mallorca y 21 de ellos admiten visitantes con green fee. Un green fee de 18 hoyos cuesta entre 55 € y 260 €, según el campo y el mes.",
+      "intro1": "Hay 24 campos de golf en Mallorca y 21 de ellos admiten visitantes con green fee. Un green fee de 18 hoyos cuesta entre 55 € y 290 €, según el campo y el mes.",
       "explorerIntro": "Explore por zona. Cada ficha muestra precio, dificultad, mi valoración y cualquier tarifa dinámica o requisito de hándicap antes de reservar.",
       "faqEyebrow": "Preguntas",
       "faqTitle": "Preguntas frecuentes",
@@ -137,7 +137,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "¿Cuánto cuesta jugar al golf en Mallorca?",
-          "a": "Los green fees van desde unos 55 € en la franja de valor hasta unos 260 € en lo más alto en temporada alta. Palma Pitch & Putt es más barato, pero es una opción de campo corto independiente, no una vuelta de visitante típica. La mayoría de las rondas de visitante se sitúan entre 85 € y 165 €. El buggy suele costar de 35 € a 55 € aparte."
+          "a": "Los green fees van desde unos 55 € en la franja de valor hasta unos 290 € en lo más alto en temporada alta. Palma Pitch & Putt es más barato, pero es una opción de campo corto independiente, no una vuelta de visitante típica. La mayoría de las rondas de visitante se sitúan entre 85 € y 165 €. El buggy suele costar de 35 € a 55 € aparte."
         },
         {
           "q": "¿Hace falta certificado de hándicap para jugar en Mallorca?",
@@ -171,7 +171,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Joués ou étudiés sérieusement",
         "Professionnel PGA"
       ],
-      "lead": "Parcourez les 24 parcours de Majorque par région, avec des green fees 18 trous entre 55 € et 260 €. Pour une short-list plus intelligente - filtrée selon votre index, votre budget et votre style de voyage - utilisez le sélecteur de parcours. Envoyez-moi ensuite vos dates, votre index et la zone de votre hôtel, et j'affinerai la recommandation."
+      "lead": "Parcourez les 24 parcours de Majorque par région, avec des green fees 18 trous entre 55 € et 290 €. Pour une short-list plus intelligente - filtrée selon votre index, votre budget et votre style de voyage - utilisez le sélecteur de parcours. Envoyez-moi ensuite vos dates, votre index et la zone de votre hôtel, et j'affinerai la recommandation."
     },
     "regionHeaders": {
       "palma": {
@@ -199,7 +199,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "intro1": "On compte 24 parcours de golf à Majorque, dont 21 accueillent les visiteurs en green fee. Un green fee 18 trous coûte entre 55 € et 260 €, selon le parcours et le mois.",
+      "intro1": "On compte 24 parcours de golf à Majorque, dont 21 accueillent les visiteurs en green fee. Un green fee 18 trous coûte entre 55 € et 290 €, selon le parcours et le mois.",
       "explorerIntro": "Parcourez par région. Chaque fiche montre le prix, la difficulté, ma note et tout tarif dynamique ou exigence de handicap avant de réserver.",
       "faqEyebrow": "Questions",
       "faqTitle": "Questions fréquentes",
@@ -215,7 +215,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Combien coûte une partie de golf à Majorque ?",
-          "a": "Les green fees vont d'environ 55 € dans la gamme accessible jusqu'à environ 260 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c'est une option de parcours court à part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coûte généralement de 35 € à 55 € en plus."
+          "a": "Les green fees vont d'environ 55 € dans la gamme accessible jusqu'à environ 290 € au sommet en haute saison. Palma Pitch & Putt est moins cher, mais c'est une option de parcours court à part, pas une partie de visiteur typique. La plupart des parties de visiteurs se situent entre 85 € et 165 €. La voiturette coûte généralement de 35 € à 55 € en plus."
         },
         {
           "q": "Faut-il un certificat de handicap pour jouer à Majorque ?",
@@ -248,7 +248,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Gespeeld of grondig onderzocht",
         "PGA Professional"
       ],
-      "lead": "Blader door alle 24 banen per regio, met greenfees voor 18 holes tussen € 55 en € 260. Voor een slimmere shortlist - gefilterd op handicap, budget en reisstijl - gebruikt u de baanselector. Stuur me daarna uw data, handicap en hotelregio, en ik verfijn de aanbeveling."
+      "lead": "Blader door alle 24 banen per regio, met greenfees voor 18 holes tussen € 55 en € 290. Voor een slimmere shortlist - gefilterd op handicap, budget en reisstijl - gebruikt u de baanselector. Stuur me daarna uw data, handicap en hotelregio, en ik verfijn de aanbeveling."
     },
     "regionHeaders": {
       "palma": {
@@ -276,7 +276,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "intro1": "Mallorca heeft 24 golfbanen en 21 daarvan zijn open voor greenfee-bezoekers. Een greenfee voor 18 holes kost tussen € 55 en € 260, afhankelijk van de baan en de maand.",
+      "intro1": "Mallorca heeft 24 golfbanen en 21 daarvan zijn open voor greenfee-bezoekers. Een greenfee voor 18 holes kost tussen € 55 en € 290, afhankelijk van de baan en de maand.",
       "explorerIntro": "Blader per regio. Elke kaart toont prijs, moeilijkheid, mijn beoordeling en eventuele dynamische prijzen of handicapeisen voor het boeken.",
       "faqEyebrow": "Vragen",
       "faqTitle": "Veelgestelde vragen",
@@ -292,7 +292,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Wat kost een rondje golf op Mallorca?",
-          "a": "De greenfees lopen van rond 55 € in het voordelige segment tot rond 260 € aan de top in het hoogseizoen. Palma Pitch & Putt is goedkoper, maar het is een aparte kortebaanoptie in plaats van een typische bezoekersronde. De meeste bezoekersrondes liggen tussen 85 € en 165 €. Een buggy kost meestal 35 € tot 55 € extra."
+          "a": "De greenfees lopen van rond 55 € in het voordelige segment tot rond 290 € aan de top in het hoogseizoen. Palma Pitch & Putt is goedkoper, maar het is een aparte kortebaanoptie in plaats van een typische bezoekersronde. De meeste bezoekersrondes liggen tussen 85 € en 165 €. Een buggy kost meestal 35 € tot 55 € extra."
         },
         {
           "q": "Heeft u een handicapbewijs nodig om op Mallorca te spelen?",
@@ -326,7 +326,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "Spelade eller ordentligt granskade",
         "PGA Professional"
       ],
-      "lead": "Bläddra bland alla 24 banor efter region, med greenfee för 18 hål mellan 55 € och 260 €. För en smartare kortlista - filtrerad efter handicap, budget och resestil - använd banväljaren. Skicka sedan dina datum, ditt handicap och ditt hotellområde, så förfinar jag rekommendationen."
+      "lead": "Bläddra bland alla 24 banor efter region, med greenfee för 18 hål mellan 55 € och 290 €. För en smartare kortlista - filtrerad efter handicap, budget och resestil - använd banväljaren. Skicka sedan dina datum, ditt handicap och ditt hotellområde, så förfinar jag rekommendationen."
     },
     "regionHeaders": {
       "palma": {
@@ -354,7 +354,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "intro1": "Mallorca har 24 golfbanor och 21 av dem tar emot greenfee-besökare. En greenfee för 18 hål kostar mellan 55 € och 260 €, beroende på bana och månad.",
+      "intro1": "Mallorca har 24 golfbanor och 21 av dem tar emot greenfee-besökare. En greenfee för 18 hål kostar mellan 55 € och 290 €, beroende på bana och månad.",
       "explorerIntro": "Bläddra efter region. Varje kort visar pris, svårighetsgrad, mitt betyg och eventuell dynamisk prissättning eller handicapkrav före bokning.",
       "faqEyebrow": "Frågor",
       "faqTitle": "Vanliga frågor",
@@ -370,7 +370,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         },
         {
           "q": "Vad kostar det att spela golf på Mallorca?",
-          "a": "Greenfees går från runt 55 € i den prisvärda delen upp till runt 260 € i toppen under högsäsong. Palma Pitch & Putt är billigare, men det är ett separat kortbanealternativ snarare än en typisk besöksrunda. De flesta besöksrundor ligger mellan 85 € och 165 €. En golfbil kostar oftast 35 € till 55 € extra."
+          "a": "Greenfees går från runt 55 € i den prisvärda delen upp till runt 290 € i toppen under högsäsong. Palma Pitch & Putt är billigare, men det är ett separat kortbanealternativ snarare än en typisk besöksrunda. De flesta besöksrundor ligger mellan 85 € och 165 €. En golfbil kostar oftast 35 € till 55 € extra."
         },
         {
           "q": "Behöver man ett handicapintyg för att spela på Mallorca?",
@@ -404,7 +404,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
         "亲自下场或认真调研",
         "PGA 职业教练"
       ],
-      "lead": "按地区浏览全部24座球场，18 洞果岭费在 €55 至 €260 之间。想要更智能的候选清单（按差点、预算和行程风格筛选），请使用球场选择工具。然后把您的日期、差点和酒店区域发给我，我会进一步细化推荐。"
+      "lead": "按地区浏览全部24座球场，18 洞果岭费在 €55 至 €290 之间。想要更智能的候选清单（按差点、预算和行程风格筛选），请使用球场选择工具。然后把您的日期、差点和酒店区域发给我，我会进一步细化推荐。"
     },
     "regionHeaders": {
       "palma": {
@@ -434,7 +434,7 @@ export const GOLF_COURSES_LOCALIZED_CONTENT = {
       }
     },
     "ui": {
-      "intro1": "马略卡岛共有 24 座高尔夫球场，其中 21 座接待支付果岭费的访客。18 洞果岭费在 €55 至 €260 之间，视球场和月份而定。",
+      "intro1": "马略卡岛共有 24 座高尔夫球场，其中 21 座接待支付果岭费的访客。18 洞果岭费在 €55 至 €290 之间，视球场和月份而定。",
       "explorerIntro": "按地区浏览。每张卡片都会标出价格、难度、我的评分，以及预订前要注意的动态定价或差点要求。",
       "faqEyebrow": "问题",
       "faqTitle": "常见问题",

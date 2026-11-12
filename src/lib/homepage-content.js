@@ -174,7 +174,7 @@ export const HOME_CONTENT = {
         "meta": [
           "DP World Tour",
           "Par 72 · Yellow 5,985m",
-          "€110-260"
+          "€110-290"
         ],
         "stars": "★★★★★",
         "difficulty": "8/10 Difficulty",

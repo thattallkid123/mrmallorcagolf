@@ -3,7 +3,7 @@ const content = {
   "es": {
     "metadata": {
       "title": "Golf de Andratx - Análisis honesto 2026",
-      "description": "Golf de Andratx: 7,5/10, green fees de €95-€170 según fecha y hora de salida, y el par 5 más largo de España (609 m). Mi veredicto honesto."
+      "description": "Golf de Andratx: 7,5/10, green fees de €95-€180 según fecha y hora de salida, y el par 5 más largo de España (609 m). Mi veredicto honesto."
     },
     "meta": {
       "badge": "Análisis del campo",
@@ -161,7 +161,7 @@ const content = {
   "de": {
     "metadata": {
       "title": "Golf de Andratx - Ehrliche Bewertung 2026",
-      "description": "Golf de Andratx: 7,5/10, Greenfees €95-€170 je nach Datum und Startzeit, Spaniens längstes Par 5 (609 m). Mein ehrliches Urteil."
+      "description": "Golf de Andratx: 7,5/10, Greenfees €95-€180 je nach Datum und Startzeit, Spaniens längstes Par 5 (609 m). Mein ehrliches Urteil."
     },
     "meta": {
       "badge": "Platz-Bewertung",
@@ -319,7 +319,7 @@ const content = {
   "fr": {
     "metadata": {
       "title": "Golf de Andratx - Avis honnête 2026",
-      "description": "Golf de Andratx : 7,5/10, green fees €95-€170 selon la date et l'heure de départ, plus long par 5 d'Espagne (609 m). Mon verdict honnête."
+      "description": "Golf de Andratx : 7,5/10, green fees €95-€180 selon la date et l'heure de départ, plus long par 5 d'Espagne (609 m). Mon verdict honnête."
     },
     "meta": {
       "badge": "Avis parcours",
@@ -475,7 +475,7 @@ const content = {
   "nl": {
     "metadata": {
       "title": "Golf de Andratx - Eerlijke review 2026",
-      "description": "Golf de Andratx: 7,5/10, greenfees €95-€170 afhankelijk van datum en starttijd, langste par 5 van Spanje (609 m). Mijn eerlijke oordeel."
+      "description": "Golf de Andratx: 7,5/10, greenfees €95-€180 afhankelijk van datum en starttijd, langste par 5 van Spanje (609 m). Mijn eerlijke oordeel."
     },
     "meta": {
       "badge": "Baan Review",
@@ -633,7 +633,7 @@ const content = {
   "sv": {
     "metadata": {
       "title": "Golf de Andratx - Ärlig recension 2026",
-      "description": "Golf de Andratx: 7,5/10, green fee €95-€170 beroende på datum och starttid, Spaniens längsta par 5 (609 m). Mitt ärliga omdöme."
+      "description": "Golf de Andratx: 7,5/10, green fee €95-€180 beroende på datum och starttid, Spaniens längsta par 5 (609 m). Mitt ärliga omdöme."
     },
     "meta": {
       "badge": "Banrecension",
@@ -791,7 +791,7 @@ const content = {
   "zh": {
     "metadata": {
       "title": "Golf de Andratx 球场 - PGA教练真实评测（2026）",
-      "description": "Golf de Andratx：7.5/10，果岭费 €95-€170（视日期和开球时间而定），西班牙最长的 5 杆洞（609 米）。我的诚实结论。"
+      "description": "Golf de Andratx：7.5/10，果岭费 €95-€180（视日期和开球时间而定），西班牙最长的 5 杆洞（609 米）。我的诚实结论。"
     },
     "meta": {
       "badge": "球场评测",
