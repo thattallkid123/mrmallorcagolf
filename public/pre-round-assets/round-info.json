@@ -1589,6 +1589,46 @@
       "from": "2027-10-09",
       "to": "2027-10-15",
       "text": "The greens have just been aerated or are recovering around this date, so they may be rougher than usual. The course stays open."
+    },
+    {
+      "courses": [
+        "son_gual"
+      ],
+      "from": "2026-12-01",
+      "to": "2026-12-02",
+      "text": "Only nine holes are open on this date because of work on the course. Message me before the day and we will plan around it."
+    },
+    {
+      "courses": [
+        "son_gual"
+      ],
+      "from": "2027-01-11",
+      "to": "2027-01-18",
+      "text": "Holes 10-18 are closed on this date, so only nine holes can be played. Message me before the day and we will plan around it."
+    },
+    {
+      "courses": [
+        "son_gual"
+      ],
+      "from": "2027-01-19",
+      "to": "2027-01-25",
+      "text": "Holes 1-9 are closed on this date, so only nine holes can be played. Message me before the day and we will plan around it."
+    },
+    {
+      "courses": [
+        "son_gual"
+      ],
+      "from": "2027-01-26",
+      "to": "2027-01-31",
+      "text": "Only nine holes are open on this date because of work on the course. Message me before the day and we will plan around it."
+    },
+    {
+      "courses": [
+        "son_gual"
+      ],
+      "from": "2027-12-01",
+      "to": "2027-12-02",
+      "text": "Only nine holes are open on this date because of work on the course. Message me before the day and we will plan around it."
     }
   ]
 }
