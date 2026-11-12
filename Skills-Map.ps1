@@ -32,5 +32,6 @@ $MmgSkillsMap = @(
     @{Drive="MMG_SKILL_EXPENSE_LOGGING.md"; Target="mmg-expense-logging"},
     @{Drive="MMG_SKILL_COURSE_CAROUSEL.md"; Target="mmg-course-carousel"},
     @{Drive="MMG_SKILL_INSTAGRAM_FRAMES.md"; Target="mmg-instagram-frames"},
-    @{Drive="MMG_SKILL_AFTER_ROUND.md"; Target="mmg-after-round"}
+    @{Drive="MMG_SKILL_AFTER_ROUND.md"; Target="mmg-after-round"},
+    @{Drive="MMG_SKILL_IG_ENGINE.md"; Target="mmg-ig-engine"}
 )
