@@ -556,7 +556,7 @@ export const COURSE_FACTS = Object.freeze({
     "region": "Palma",
     "holes": 18,
     "par": 70,
-    "low": 85,
+    "low": 90,
     "mid": null,
     "peak": 110,
     "dynamic": false,
