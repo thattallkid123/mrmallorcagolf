@@ -1957,7 +1957,7 @@ export const GUIDE_ARTICLE_CONTENT = {
       {
         type: 'cta',
         text: 'The range tells you your numbers. Using them on the course is the part I coach, during a full round where the shots count.',
-        href: '/coaching',
+        href: '/play-with-a-pro',
         linkLabel: 'On-course coaching',
         internal: true,
       },

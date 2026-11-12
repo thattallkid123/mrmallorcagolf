@@ -7,6 +7,6 @@ export function localizeGuideHref(href, locale = 'en') {
   const [, path, suffix] = href.match(/^([^?#]*)(.*)$/)
   const canonical = path.replace(/^\/(?:de|es|fr|nl|sv|zh)(?=\/|$)/, '') || '/'
   const download = canonical.match(/^\/guides\/(cost-guide|course-comparison)\/?$/)?.[1]
-  if (download === 'cost-guide' || (download === 'course-comparison' && ['nl', 'sv'].includes(locale))) return canonical + suffix
+  if (download) return canonical + suffix
   return buildLocalePath(canonical, locale) + suffix
 }
