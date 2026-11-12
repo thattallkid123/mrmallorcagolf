@@ -81,7 +81,7 @@ export const COURSE_FACTS = Object.freeze({
     "travelFromPalmaMinutes": 15,
     "designer": "Martin Hawtree",
     "opened": "1986 (9 holes; extended to 18 in 1995)",
-    "signatureHole": "12th (par 3) - raised tee over a lake to a wide green [unconfirmed - published-review candidate, Andy has not played this course]",
+    "signatureHole": "11th - Andy's pick: slight dogleg left from an elevated tee, with a narrow landing area and mountains ahead.",
     "practiceFacilities": "Driving range (hitting mats) | Putting green | Chipping area"
   },
   "canyamel": {

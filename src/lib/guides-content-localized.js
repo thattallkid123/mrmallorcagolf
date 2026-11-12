@@ -89,6 +89,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Campo de montaña · Par 72 · €90-140 · Suroeste de Mallorca"
       },
       {
+        "slug": "bendinat-review",
+        "badge": "Reseña de campo",
+        "badgeGold": true,
+        "title": "Real Golf de Bendinat, Mallorca: la reseña honesta de un profesional PGA (2026)",
+        "intro": "Un campo de Martin Hawtree a 7 km al oeste de Palma, par 69. Los primeros nueve son estrechos y están entre edificios. Desde el 11 se abre a vistas de montaña y a los hoyos por los que yo volvería.",
+        "readTime": "5 min de lectura",
+        "keywords": "Par 69 · €67-123 · A 15 min de Palma"
+      },
+      {
         "slug": "son-quint-review",
         "badge": "Análisis del campo",
         "badgeGold": true,
@@ -339,6 +348,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Bergplatz · Par 72 · €90-140 · Südwesten Mallorcas"
       },
       {
+        "slug": "bendinat-review",
+        "badge": "Platzbericht",
+        "badgeGold": true,
+        "title": "Real Golf de Bendinat, Mallorca: Der ehrliche Testbericht eines PGA Professionals (2026)",
+        "intro": "Ein Platz von Martin Hawtree, 7 km westlich von Palma, Par 69. Die ersten neun Löcher sind eng und von Gebäuden umgeben. Ab der 11 öffnet sich alles zu Bergblicken und zu den Löchern, für die ich wiederkommen würde.",
+        "readTime": "5 min Lesezeit",
+        "keywords": "Par 69 · €67-123 · 15 Min. von Palma"
+      },
+      {
         "slug": "son-quint-review",
         "badge": "Platz-Bewertung",
         "badgeGold": true,
@@ -586,6 +604,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "Le par 5 le plus long d'Espagne, des vues de montagne sur le sud-ouest et un tracé qui récompense la gestion du jeu bien plus que la distance. Un 7,5 sur 10.",
         "readTime": "6 min",
         "keywords": "Parcours de montagne · Par 72 · €90-140 · Sud-ouest de Majorque"
+      },
+      {
+        "slug": "bendinat-review",
+        "badge": "Avis de parcours",
+        "badgeGold": true,
+        "title": "Real Golf de Bendinat, Majorque : l'avis honnête d'un professionnel PGA (2026)",
+        "intro": "Un parcours signé Martin Hawtree à 7 km à l'ouest de Palma, par 69. Les neuf premiers trous sont étroits et encadrés par des immeubles. À partir du 11, le parcours s'ouvre sur les montagnes et sur les trous pour lesquels je reviendrais.",
+        "readTime": "5 min de lecture",
+        "keywords": "Par 69 · €67-123 · À 15 min de Palma"
       },
       {
         "slug": "son-quint-review",
@@ -838,6 +865,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Bergbaan · Par 72 · €90-140 · Zuidwest-Mallorca"
       },
       {
+        "slug": "bendinat-review",
+        "badge": "Baanreview",
+        "badgeGold": true,
+        "title": "Real Golf de Bendinat, Mallorca: de eerlijke review van een PGA-professional (2026)",
+        "intro": "Een baan van Martin Hawtree, 7 km westelijk van Palma, par 69. De eerste negen is smal en ligt tussen de gebouwen. Vanaf hole 11 opent de baan zich met uitzicht op de bergen en de holes waarvoor ik terug zou komen.",
+        "readTime": "5 min leestijd",
+        "keywords": "Par 69 · €67-123 · 15 min van Palma"
+      },
+      {
         "slug": "son-quint-review",
         "badge": "Baanbeoordeling",
         "badgeGold": true,
@@ -1088,6 +1124,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "keywords": "Bergsbana · Par 72 · €90-140 · Sydvästra Mallorca"
       },
       {
+        "slug": "bendinat-review",
+        "badge": "Banrecension",
+        "badgeGold": true,
+        "title": "Real Golf de Bendinat, Mallorca: en PGA-professionells ärliga recension (2026)",
+        "intro": "En bana av Martin Hawtree 7 km väster om Palma, par 69. Första nian är smal och ligger bland byggnader. Från 11:e öppnar det upp sig med utsikt mot bergen och hålen jag skulle komma tillbaka för.",
+        "readTime": "5 min läsning",
+        "keywords": "Par 69 · €67-123 · 15 min från Palma"
+      },
+      {
         "slug": "son-quint-review",
         "badge": "Banomdöme",
         "badgeGold": true,
@@ -1336,6 +1381,15 @@ export const GUIDES_LOCALIZED_CONTENT = {
         "intro": "西班牙最长的标准杆5洞，俯瞰西南部的山景，以及一个更考验球场管理能力而非距离的球场。评分7.5/10。",
         "readTime": "6分钟",
         "keywords": "山地球场 · 标准杆72 · €90-140 · 马略卡西南部"
+      },
+      {
+        "slug": "bendinat-review",
+        "badge": "球场评测",
+        "badgeGold": true,
+        "title": "马略卡 Real Golf de Bendinat：一位 PGA 职业教练的诚实评测（2026）",
+        "intro": "一座由 Martin Hawtree 设计的球场，位于帕尔马以西 7 公里，par 69。前九狭窄，夹在建筑之间。从 11 号洞开始视野打开，有群山景色，也有我愿意再来打的球洞。",
+        "readTime": "阅读时间 5 分钟",
+        "keywords": "Par 69 · €67-123 · 距帕尔马 15 分钟"
       },
       {
         "slug": "son-quint-review",

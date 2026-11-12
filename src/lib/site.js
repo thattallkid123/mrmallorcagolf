@@ -41,6 +41,7 @@ export const REVIEW_POST_SLUGS = new Set([
   't-golf-calvia-review',
   't-golf-palma-review',
   'golf-andratx-review',
+  'bendinat-review',
   'son-antem-west-review',
   'son-quint-review',
 ])
@@ -53,7 +54,6 @@ export const LOCALIZED_POST_SLUGS = new Set([
 ])
 
 export const EN_ONLY_REVIEW_POST_SLUGS = new Set([
-  'bendinat-review', // English draft for Andy's read; move to REVIEW_POST_SLUGS once approved and translated
   'corporate-golf-days-mallorca',
   'golf-lessons-cost-mallorca',
   'golf-lessons-mallorca-mandarin',

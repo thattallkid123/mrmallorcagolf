@@ -108,6 +108,17 @@ export const GUIDES_CONTENT = {
       "keywords": "Mountain course · Par 72 · €90-140 · Southwest Mallorca"
     },
     {
+      "slug": "bendinat-review",
+      "badge": "Course Review",
+      "badgeGold": true,
+      "img": "/images/bendinat-card.webp",
+      "imgPosition": "center 50%",
+      "title": "Real Golf de Bendinat, Mallorca: A PGA Professional's Honest Review (2026)",
+      "intro": "A Martin Hawtree course 7 km west of Palma, par 69. The first nine is narrow and set among buildings. From the 11th it opens out to mountain views and the holes I would go back for.",
+      "readTime": "5 min read",
+      "keywords": "Par 69 · €67-123 · 15 min from Palma"
+    },
+    {
       "slug": "son-quint-review",
       "badge": "Course Review",
       "badgeGold": true,
