@@ -27,6 +27,7 @@ export async function generateImageVariants({ publicDirectory, outputDirectory, 
   await fs.mkdir(outputDirectory, { recursive: true })
   const expectedFiles = new Set()
   const generatedKeys = new Set()
+  const originalQualitiesByKey = new Map()
   const manifest = {}
   let created = 0
   let reused = 0
@@ -44,21 +45,47 @@ export async function generateImageVariants({ publicDirectory, outputDirectory, 
       const widths = [...new Set([...WIDTHS.filter(width => width < maxWidth), maxWidth])]
       const key = createHash('sha256').update(RECIPE).update(input).digest('hex').slice(0, 24)
       const src = '/' + path.relative(publicDirectory, source).split(path.sep).join('/')
-      manifest[src] = { key, widths }
+      let originalQualities = originalQualitiesByKey.get(key)
+      if (!originalQualities) {
+        originalQualities = []
+        originalQualitiesByKey.set(key, originalQualities)
+      }
+      manifest[src] = { key, widths, originalQualities }
       if (generatedKeys.has(key)) continue
       generatedKeys.add(key)
+      const canUseOriginal = metadata.format === 'webp' && maxWidth === sourceWidth &&
+        (!metadata.orientation || metadata.orientation === 1)
       for (const width of widths) {
         for (const quality of QUALITIES) {
           const filename = key + '-' + width + '-q' + quality + '.webp'
-          expectedFiles.add(filename)
           const destination = path.join(outputDirectory, filename)
-          try { await fs.access(destination); reused++; continue } catch { /* New derivative. */ }
+          const existing = await fs.stat(destination).catch(error => {
+            if (error.code !== 'ENOENT') throw error
+            return null
+          })
+          const compareOriginal = canUseOriginal && width === maxWidth
+          if (existing && (!compareOriginal || existing.size < input.length)) {
+            expectedFiles.add(filename)
+            reused++
+            continue
+          }
+          if (compareOriginal && existing) {
+            originalQualities.push(quality)
+            continue
+          }
+          const encoded = await sharp(input).rotate().resize({ width, withoutEnlargement: true }).webp({ quality }).toBuffer()
+          if (compareOriginal && encoded.length >= input.length) {
+            originalQualities.push(quality)
+            continue
+          }
           const temporary = destination + ".tmp"
-          await sharp(input).rotate().resize({ width, withoutEnlargement: true }).webp({ quality }).toFile(temporary)
+          await fs.writeFile(temporary, encoded)
           await fs.rename(temporary, destination)
+          expectedFiles.add(filename)
           created++
         }
       }
+      originalQualities.sort((a, b) => a - b)
     }
   }
   await Promise.all(Array.from({ length: 2 }, worker))

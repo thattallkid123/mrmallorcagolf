@@ -52,3 +52,21 @@ test('image URLs stay static for every size and supported quality', () => {
   }
   expect(staticImageUrl(manifest, { src: '/logo.svg', width: 64 })).toBe('/logo.svg')
 })
+
+test('a larger full-width WebP encode is skipped while smaller widths remain available', async () => {
+  const directory = await fs.mkdtemp(path.join(os.tmpdir(), 'mmg-responsive-original-'))
+  directories.push(directory)
+  const publicDirectory = path.join(directory, 'public')
+  const outputDirectory = path.join(publicDirectory, 'images/responsive')
+  const manifestPath = path.join(directory, 'manifest.json')
+  await fs.mkdir(publicDirectory)
+  const source = path.join(publicDirectory, 'photo.webp')
+  const pixels = Buffer.from(Array.from({ length: 640 * 360 * 3 }, (_, index) => (index * 97 + (index >> 3)) & 255))
+  await sharp(pixels, { raw: { width: 640, height: 360, channels: 3 } }).webp({ quality: 10 }).toFile(source)
+  const manifest = await generateImageVariants({ publicDirectory, outputDirectory, manifestPath })
+  const url = staticImageUrl(manifest, { src: '/photo.webp', width: 1920, quality: 88 })
+  expect(url).toBe('/photo.webp')
+  const smaller = staticImageUrl(manifest, { src: '/photo.webp', width: 128, quality: 88 })
+  expect((await sharp(await fs.readFile(path.join(publicDirectory, smaller))).metadata()).width).toBe(128)
+  await expect(fs.access(path.join(outputDirectory, manifest['/photo.webp'].key + '-640-q88.webp'))).rejects.toThrow()
+})

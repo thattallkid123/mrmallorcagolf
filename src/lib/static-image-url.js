@@ -5,5 +5,6 @@ export function staticImageUrl(manifest, { src, width, quality = 75 }) {
   if (!image) return src
   const selectedWidth = image.widths.find(candidate => candidate >= width) || image.widths.at(-1)
   const selectedQuality = quality >= 82 ? 88 : 75
+  if (selectedWidth === image.widths.at(-1) && image.originalQualities?.includes(selectedQuality)) return src
   return '/images/responsive/' + image.key + '-' + selectedWidth + '-q' + selectedQuality + '.webp'
 }
