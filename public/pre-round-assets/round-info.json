@@ -161,7 +161,13 @@
       "guideUrl": "https://www.realgolfbendinat.com/club/",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Eagle Restaurant",
+          "url": "https://www.realgolfbendinat.com/en/club-english/",
+          "note": "A menu of national dishes, with a bar and cocktail bar in the clubhouse. The page gives no opening hours."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 15,
@@ -215,9 +221,9 @@
       "rentalSummaryUrl": null,
       "restaurants": [
         {
-          "name": "Canyamel Golf clubhouse restaurant",
+          "name": "Canyamel Golf Bistro",
           "url": "https://canyamelgolf.com/clubhouse",
-          "note": "Mediterranean cuisine with views over the course. Phone +34 971 841 313."
+          "note": "Mediterranean cooking with views over the course; phone +34 971 841 225. The page gives no opening hours."
         }
       ],
       "meetAtGate": false,
@@ -329,7 +335,13 @@
       "guideUrl": "https://golfmaioris.com/club/",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "L-Club Restaurant & Bar",
+          "url": "https://www.lclub-mallorca.com",
+          "note": "In the clubhouse, with a menu from the club's chefs. The page gives no opening hours."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 25,
@@ -460,7 +472,13 @@
       "guideUrl": "https://golfpollensa.com/en/services",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Club restaurant",
+          "url": "https://golfpollensa.com/en/services",
+          "note": "A restaurant and a specialist shop at the club. The club is open 07:30 to 20:00 every day from 1 April to 15 October; the page gives no separate restaurant hours."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 45,
@@ -568,7 +586,23 @@
       "guideUrl": null,
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Restaurante Rotana",
+          "url": "https://www.reservarotana.com/gastronomia/",
+          "note": "Mediterranean cooking with French influences, directed by Andreu Genestra. Open to people not staying at the hotel. Book through the hotel's TheFork link."
+        },
+        {
+          "name": "La Terraza",
+          "url": "https://www.reservarotana.com/gastronomia/",
+          "note": "Outdoor dining with views of the golf course, service 18:00 to 22:30. Book through TheFork."
+        },
+        {
+          "name": "Sa Vinya d'es Mayolet",
+          "url": "https://www.reservarotana.com/gastronomia/",
+          "note": "Dining in the vineyard. Book through TheFork."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 60,
@@ -613,7 +647,13 @@
       "guideUrl": null,
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Snack bar",
+          "url": "https://golf-santaponsa.com/en/club-eng/",
+          "note": "Next to the caddy master and the pro shop. The page gives no menu or opening hours."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 25,
@@ -665,7 +705,13 @@
       "guideUrl": null,
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Snack bar",
+          "url": "https://golf-santaponsa.com/en/club-eng/",
+          "note": "Next to the caddy master and the pro shop. The page gives no menu or opening hours."
+        }
+      ],
       "meetAtGate": true,
       "travel": {
         "palma": 25,
@@ -1101,7 +1147,13 @@
       "guideUrl": null,
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Restaurant and terraces",
+          "url": "https://golfsontermes.com/",
+          "note": "Listed among the club's services, with a shop, equipment hire and changing rooms. The page gives no menu or opening hours."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 25,
@@ -1290,7 +1342,13 @@
       "guideUrl": "https://t-golf.club/palma/clubhouse/",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "T-elicious (T Golf Palma restaurant)",
+          "url": "https://t-golf.club/palma/gastronomy/",
+          "note": "Modern and traditional Mediterranean cooking from fresh, organic, farm-to-table produce. The page gives no opening hours."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 25,
