@@ -40,7 +40,18 @@
       "guideUrl": "https://www.golf-alcanada.com/practice-facilities/",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Restaurante Golf Alcanada",
+          "url": "https://www.golf-alcanada.com/es/restaurante",
+          "note": "Mediterranean dishes on a terrace overlooking most of the course and the Bay of Alcudia; evening dining by the Alcanada lighthouse."
+        },
+        {
+          "name": "Lighthouse Bar (halfway)",
+          "url": "https://www.golf-alcanada.com/es/halfway",
+          "note": "Between the 16th tee and the 15th green, with a terrace; drinks and bocadillos."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 50,
@@ -93,7 +104,13 @@
       "guideUrl": "https://www.golfdeandratx.com/club",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Halfway house",
+          "url": "https://www.golfdeandratx.com/halfway-house",
+          "note": "Shaded terrace over the Camp de Mar bay; typical Mallorcan tapas and drinks."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 30,
@@ -196,7 +213,13 @@
       "guideUrl": "https://canyamelgolf.com/clubhouse/",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Canyamel Golf clubhouse restaurant",
+          "url": "https://canyamelgolf.com/clubhouse",
+          "note": "Mediterranean cuisine with views over the course. Phone +34 971 841 313."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 75,
@@ -247,7 +270,13 @@
       "guideUrl": null,
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Roca Viva",
+          "url": "https://www.golfcapdepera.com/restaurant-roca-viva",
+          "note": "The club restaurant (opening hours not on the page)."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 70,
@@ -482,7 +511,13 @@
       "guideUrl": "https://www.pulagolf.com/servicios.html",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "S'Era de Pula",
+          "url": "https://www.pulagolf.com/gastronomia-tipica-local:-sera-de-pula.html",
+          "note": "Mediterranean, farm-to-table cooking with views of the course, from the resort's own 6,000 m2 vegetable garden. Adapts to intolerances, vegetarian, vegan and gluten-free diets."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 70,
@@ -679,7 +714,13 @@
       "guideUrl": "https://www.sonantemgolf.com/the-clubhouse/",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "La Terrassa",
+          "url": "https://www.sonantemgolf.com/bar-restaurant",
+          "note": "Overlooks the golf course. Tapas, paella, salads, sandwiches and international classics. Open for lunch and dinner."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 25,
@@ -731,7 +772,13 @@
       "guideUrl": "https://www.sonantemgolf.com/the-clubhouse/",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "La Terrassa",
+          "url": "https://www.sonantemgolf.com/bar-restaurant",
+          "note": "Overlooks the golf course. Tapas, paella, salads, sandwiches and international classics. Open for lunch and dinner."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 25,
@@ -783,7 +830,13 @@
       "guideUrl": null,
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Son Gual restaurant",
+          "url": "https://son-gual.com/restaurant",
+          "note": "Light Mediterranean setting; the chef cooks Mediterranean dishes, Mallorcan fish and traditional meat dishes by season. Menu to download on the page."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 20,
@@ -992,7 +1045,13 @@
       "guideUrl": null,
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Costa de los Pinos",
+          "url": "https://golfsonservera.com/ya-has-probado-nuestro-restaurante-costa-de-los-pinos/",
+          "note": "In the clubhouse, with panoramic views of the course; also hosts events."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 70,
@@ -1172,7 +1231,13 @@
       "guideUrl": "https://t-golf.club/calvia/clubhouse/",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "T-elicious (T Golf Calvià restaurant)",
+          "url": "https://t-golf.club/calvia/gastronomy",
+          "note": "Open every day 08:00-20:00. Breakfast 10:00-11:30, baguettes only 11:30-12:00, kitchen 12:00-19:00. Creative Mediterranean cooking."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 30,
@@ -1280,7 +1345,13 @@
       "guideUrl": "https://valldorgolf.com/el-club/servicios/",
       "rentalUrl": null,
       "rentalSummaryUrl": null,
-      "restaurants": [],
+      "restaurants": [
+        {
+          "name": "Restaurante Vall d'Or",
+          "url": "https://valldorgolf.com/el-restaurante-nuevo",
+          "note": "Mediterranean cooking with views; book a table."
+        }
+      ],
       "meetAtGate": false,
       "travel": {
         "palma": 55,
